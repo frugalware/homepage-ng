@@ -2,7 +2,7 @@
 ?>
 <!-- footer start -->
 <div id="footer">
-	&copy; 2006. IroNiQ <!--The Frugalware Developer Team-->
+	&copy; <?php echo $copydate; ?>. IroNiQ <!--The Frugalware Developer Team-->
 </div>
 <!-- footer end -->
 
