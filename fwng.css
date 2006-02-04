@@ -1,0 +1,144 @@
+BODY {
+	background-color : #e6edff;
+	color : #000000;
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 12px;
+	font-style : normal;
+	text-decoration : none;
+}
+
+IMG {
+	border-width: 0px;
+}
+
+#header {
+	border-color : #8296bb;
+	border-style : solid;
+	border-width : 1px;
+	padding : 0.5em;
+}
+
+#header #txt1 {
+	font-size : 18px;
+	font-style : normal;
+	font-weight : bold;
+}
+
+#header #txt2 {
+	font-style : italic;
+}
+
+#header #search {
+	margin-top: 5px;
+	float : right;
+	vertical-align : middle;
+}
+
+#header #search P {
+	display : inline;
+	position : absolute;
+	margin-left : -80px;
+	margin-top : 0px;
+}
+
+#main {
+	padding-top : 1em;
+	width : 100%;
+}
+
+#main #leftbox {
+	position : absolute;
+	left : 10px;
+	width : 17%;
+}
+
+#main #leftbox .header {
+	border-width : 1px;
+	border-style : solid;
+	border-color : #8296bb;
+	background-color : #8296bb;
+	text-align : center;
+	margin : 0px;
+	padding : 0px;
+	color : #ffffff;
+}
+
+#main #leftbox .content {
+	border-width : 1px;
+	border-style : solid;
+	border-color : #8296bb;
+	color : #000000;
+	background-color : #e6edff;
+}
+
+#main #leftbox .freespace {
+	height : 15px;
+	font-size : 15px;
+}
+
+#main #middlebox {
+	margin-left : 18%;
+	margin-right : 18%;
+}
+
+#main #middlebox .header {
+	border-width : 1px;
+	border-style : solid;
+	border-color : #8296bb;
+	background-color : #8296bb;
+	text-align : center;
+	margin : 0px;
+	padding : 0px;
+	color : #ffffff;
+}
+
+#main #middlebox .content {
+	border-width : 1px;
+	border-style : solid;
+	border-color : #8296bb;
+	background-color : #ffffff;
+	color : #000000;
+}
+
+#main #middlebox .freespace {
+	height : 15px;
+	font-size : 15px;
+}
+
+#main #rightbox {
+	position : absolute;
+	right : 10px;
+	width : 17%;
+}
+
+#main #rightbox .header {
+	border-width : 1px;
+	border-style : solid;
+	border-color : #8296bb;
+	background-color : #8296bb;
+	text-align : center;
+	margin : 0px;
+	padding : 0px;
+	color : #ffffff;
+}
+
+#main #rightbox .content {
+	border-width : 1px;
+	border-style : solid;
+	border-color : #8296bb;
+	color : #000000;
+	background-color : #e6edff;
+}
+
+#main #rightbox .freespace {
+	height : 15px;
+	font-size : 15px;
+}
+
+#footer {
+	border-color : #8296bb;
+	border-style : solid;
+	border-width : 1px;
+	padding : 0.5em;
+	text-align : center;
+}
