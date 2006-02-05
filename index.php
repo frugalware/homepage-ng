@@ -63,8 +63,8 @@ fwnewbox(gettext("Information"), $validcontent);
 
 	<div id="middlebox">
 <?php
-fwnewbox("middlebox1", "content1");
-fwnewbox("middlebox2", "content2");
+fwnewbox("Translations", "The translation will be ready only after the whole site is complete. Please be patient.<br />A további fordítások csak az oldal teljes elkészülte után lesznek készen");
+//fwnewbox("middlebox2", "content2");
 ?>
 	</div>
 </div>
