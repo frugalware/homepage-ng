@@ -51,7 +51,7 @@ include("functions.inc");
 	<div id="leftbox">
 <?php
 fwnewbox(gettext("Menu"), $menucontent);
-fwnewbox(gettext("Languages"), $langcontent);
+//fwnewbox(gettext("Languages"), $langcontent);
 ?>
 	</div>
 
@@ -65,16 +65,9 @@ fwnewbox(gettext("Information"), $validcontent);
 <?php
 fwnewbox("Translations", "The translation will be ready only after the whole site is complete. Please be patient.<br />A további fordítások csak az oldal teljes elkészülte után lesznek készen");
 ?>
-		<!-- footer start -->
-		<div class="footer">
-			&copy; <?php echo $copydate; ?>. IroNiQ &amp; The Frugalware Developer Team
-		</div>
-		<div class="freespace">
-			&nbsp;
-		</div>
-		<!-- footer end -->
 	</div>
 
+	<div class="clear">&nbsp;</div>
 </div>
 <!-- main content end -->
 

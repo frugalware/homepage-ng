@@ -152,15 +152,6 @@ A:visited {
 	font-size : 15px;
 }
 
-
-#main #middlebox .footer {
-	border-color : #8296bb;
-	border-style : solid;
-	border-width : 1px;
-	padding : 0.5em;
-	text-align : center;
-}
-
 .imgcontent {
 	text-align : center;
 	vertical-align : bottom;
@@ -184,4 +175,19 @@ A:visited {
 	visibility : hidden;
 	text-decoration : blink;
 	font-weight : bold;
+}
+
+#footer {
+	clear : both;
+	border-color : #8296bb;
+	border-style : solid;
+	border-width : 1px;
+	padding : 0.5em;
+	text-align : center;
+}
+
+#main .clear {
+	clear : both;
+	font-size: 1px;
+	line-height: 0px;
 }
