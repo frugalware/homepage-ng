@@ -41,8 +41,8 @@ bindtextdomain($domain, "locale");
 textdomain($domain);
 
 include("config.inc");
-include("functions.inc");
 include("header.php");
+include("functions.inc");
 
 ?>
 
@@ -50,14 +50,14 @@ include("header.php");
 <div id="main">
 	<div id="leftbox">
 <?php
-fwnewbox(gettext("Menu"), "Menu content");
-fwnewbox(gettext("Languages"), $langmenu);
+fwnewbox(gettext("Menu"), $menucontent);
+fwnewbox(gettext("Languages"), $langcontent);
 ?>
 	</div>
 
 	<div id="rightbox">
 <?php
-fwnewbox(gettext("Information"), $rightcontent);
+fwnewbox(gettext("Information"), $validcontent);
 ?>
 	</div>
 

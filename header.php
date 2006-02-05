@@ -5,7 +5,16 @@
 <head>
 	<title><?php echo $title; ?></title>
 	<link rel="stylesheet" type="text/css" href="fwng.css" />
+	<link rel="icon" href="images/favicon.ico" />
 	<meta http-equiv="Content-type" content="text/html; charset=iso-8859-2" />
+	<script language="javascript">
+	<!--
+		function chgclass(divid, vis)
+		{
+			document.getElementById(divid).style.visibility=vis;
+		}
+	-->
+	</script>
 </head>
 <body>
 

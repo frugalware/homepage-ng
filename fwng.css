@@ -11,6 +11,23 @@ IMG {
 	border-width: 0px;
 }
 
+A {
+	color: #58657E;
+	text-decoration: none;
+}
+A:link:hover {
+	color: #58657E;
+	text-decoration: underline;
+}
+A:visited:hover {
+	color: #58657E;
+	text-decoration: underline;
+}
+A:visited {
+	color: #58657E;
+	text-decoration: none;
+}
+
 #header {
 	border-color : #8296bb;
 	border-style : solid;
@@ -139,6 +156,25 @@ IMG {
 	text-align : center;
 	vertical-align : bottom;
 	font-size : 16px;
+}
+
+#mainmenu ul {
+	margin-left : 0px;
+	margin-right : 0px;
+	margin-top : 1px;
+	margin-bottom : 1px;
+	padding : 0px;
+}
+
+#mainmenu ul li {
+	list-style-position : inside;
+	list-style-image : url('images/menuitem.gif');
+}
+
+.blinkmenu {
+	visibility : hidden;
+	text-decoration : blink;
+	font-weight : bold;
 }
 
 #footer {
