@@ -10,4 +10,9 @@ $sqldb="fwng";
 
 $copydate="2006";
 
+$langs = array(
+	"en" => "en",
+	"hu" => "hu_HU"
+);
+
 ?>

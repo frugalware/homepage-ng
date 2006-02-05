@@ -135,6 +135,12 @@ IMG {
 	font-size : 15px;
 }
 
+.imgcontent {
+	text-align : center;
+	vertical-align : bottom;
+	font-size : 16px;
+}
+
 #footer {
 	border-color : #8296bb;
 	border-style : solid;

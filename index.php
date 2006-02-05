@@ -2,6 +2,8 @@
 
 #homepage-ng: startpage
 
+include("config.inc");
+
 if (isset($_COOKIE["fwcurrlang"])) {
 	$lang=$_COOKIE["fwcurrlang"];
 }
@@ -29,7 +31,12 @@ if ( $lang == "" ) {
 	$lang="en";
 }
 
-include("config.inc");
+putenv("LANG=".$langs[$lang]);
+setlocale(LC_ALL,$langs[$lang]);
+$domain = 'messages';
+bindtextdomain($domain, "/var/www/vhosts/ironiq.xx/fwng/locale");
+textdomain($domain);
+
 include("functions.inc");
 include("header.php");
 
@@ -40,20 +47,26 @@ $rightcontent = "<div align=\"center\">
 <a href=\"http://feedvalidator.org/check.cgi?url=http://frugalware.org/rss2.php?lang=en\"><img src=\"images/valid-rss.png\" border=\"0\" alt=\"Valid RSS!\" title=\"Valid RSS!\" /></a-->
 </div>\n";
 
+$mainmenu="";
+$langmenu="<div class=\"imgcontent\"><a href=\"?lang=en\"><img alt=\"".gettext("Change lanugage")."\" title=\"".gettext("Change lanugage")."\" src=\"images/english.gif\" border=\"0\"></a> | <a href=\"?lang=hu\"><img alt=\"".gettext("Change lanugage")."\" title=\"".gettext("Change lanugage")."\" src=\"images/hungarian.gif\" border=\"0\"></a></div>";
+/*
+| <a href="?lang=es"><img alt="Váltson nyelvet" title="Váltson nyelvet" src="images/spanish.gif" border="0"></a>
+<a href="?lang=fr"><img alt="Váltson nyelvet" title="Váltson nyelvet" src="images/french.gif" border="0"></a>";
+*/
 ?>
 
 <!-- main content start -->
 <div id="main">
 	<div id="leftbox">
 <?php
-fwnewbox("leftbox1", "content1");
-fwnewbox("", "content2");
+fwnewbox(gettext("Menu"), "content1");
+fwnewbox(gettext("Languages"), $langmenu);
 ?>
 	</div>
 
 	<div id="rightbox">
 <?php
-fwnewbox("Information", $rightcontent);
+fwnewbox(gettext("Information"), $rightcontent);
 ?>
 	</div>
 
