@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Frugalware Homepage v2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-02-05 11:52+0100\n"
+"POT-Creation-Date: 2006-02-05 12:21+0100\n"
 "PO-Revision-Date: 2006-02-05 11:52+0100\n"
 "Last-Translator: Krisztian VASAS <iron@frugalware.org>\n"
 "Language-Team: Frugalware Developer Team <frugalware-devel@frugalware.org>\n"
@@ -16,18 +16,18 @@ msgstr ""
 "Content-Type: text/plain; charset=ISO-8859-2\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: index.php:51
-msgid "Change lanugage"
-msgstr ""
-
-#: index.php:62
+#: index.php:49
 msgid "Menu"
 msgstr ""
 
-#: index.php:63
+#: index.php:50
 msgid "Languages"
 msgstr ""
 
-#: index.php:69
+#: index.php:56
 msgid "Information"
+msgstr ""
+
+#: config.inc:26
+msgid "Change language"
 msgstr ""
