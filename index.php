@@ -34,7 +34,7 @@ if ( $lang == "" ) {
 putenv("LANG=".$langs[$lang]);
 setlocale(LC_ALL,$langs[$lang]);
 $domain = 'messages';
-bindtextdomain($domain, "/var/www/vhosts/ironiq.xx/fwng/locale");
+bindtextdomain($domain, "locale");
 textdomain($domain);
 
 include("functions.inc");
