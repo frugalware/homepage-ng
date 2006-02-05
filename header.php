@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="fwng.css" />
 	<link rel="icon" href="images/favicon.ico" />
 	<meta http-equiv="Content-type" content="text/html; charset=iso-8859-2" />
-	<script language="javascript">
+	<script language="javascript" type="text/javascript">
 	<!--
 		function chgclass(divid, vis)
 		{
