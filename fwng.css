@@ -24,6 +24,10 @@ HTML, BODY {
   padding		: 0px;
   background-color	: #e6edff;
   color			: #000000;
+  font-family : Arial, Helvetica, sans-serif;
+  font-size : 12px;
+  font-style : normal;
+  text-decoration : none;
 }
 
 DIV {
