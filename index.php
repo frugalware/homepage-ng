@@ -63,7 +63,7 @@ fwsidebox(gettext("Information"), $validcontent);
 
 	<div id="centercolumn">
 <?php
-fwmiddlebox("Webpage Reloaded", "<div align=\"justify\">This will be the new webpage of Frugalware Linux, with many new things. This site is totally table-free, uses only css. Please write me your comment to the frugalware-devel or the frugalware-usere mailing list.<br />Thanks:<br />IroNiQ</div>");
+fwmiddlebox("Webpage Reloaded", "<div align=\"justify\">This will be the new webpage of Frugalware Linux, with many new things. This site is totally table-free, uses only css. Please write me your comment to the frugalware-devel or the frugalware-users mailing list.<br />Thanks:<br />IroNiQ</div>");
 fwmiddlebox("Translations", "The translation will be ready only after the whole site is complete. Please be patient.<br />A további fordítások csak az oldal teljes elkészülte után lesznek készen");
 ?>
 	</div>
