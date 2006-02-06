@@ -27,7 +27,7 @@
       </p>
       <form action="http://www.google.com/custom" method="get" enctype="multipart/form-data">
         <input type="text" name="q" size="15" maxlength="150" />
-        <input type="submit" name="sa" value="Keres" />
+        <input type="submit" name="sa" value="<?php echo gettext("Search"); ?>" />
         <input type="hidden" name="domains" value="frugalware.org" />
         <input type="hidden" name="sitesearch" value="frugalware.org" />
       </form>
