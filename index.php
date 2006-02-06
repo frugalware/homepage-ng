@@ -47,23 +47,23 @@ include("functions.inc");
 ?>
 
 <!-- main content start -->
-<div id="main">
-	<div id="leftbox">
+<div id="columns">
+	<div id="leftcolumn">
 <?php
-fwnewbox(gettext("Menu"), $menucontent);
-//fwnewbox(gettext("Languages"), $langcontent);
+fwsidebox(gettext("Menu"), $menucontent);
+fwsidebox(gettext("Languages"), $langcontent);
 ?>
 	</div>
 
-	<div id="rightbox">
+	<div id="rightcolumn">
 <?php
-fwnewbox(gettext("Information"), $validcontent);
+fwsidebox(gettext("Information"), $validcontent);
 ?>
 	</div>
 
-	<div id="middlebox">
+	<div id="centercolumn">
 <?php
-fwnewbox("Translations", "The translation will be ready only after the whole site is complete. Please be patient.<br />A további fordítások csak az oldal teljes elkészülte után lesznek készen");
+fwmiddlebox("Translations", "The translation will be ready only after the whole site is complete. Please be patient.<br />A további fordítások csak az oldal teljes elkészülte után lesznek készen");
 ?>
 	</div>
 
