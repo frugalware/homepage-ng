@@ -1,0 +1,218 @@
+IMG {
+	border-width: 0px;
+}
+
+A {
+	color: #58657E;
+	text-decoration: none;
+}
+A:link:hover {
+	color: #58657E;
+	text-decoration: underline;
+}
+A:visited:hover {
+	color: #58657E;
+	text-decoration: underline;
+}
+A:visited {
+	color: #58657E;
+	text-decoration: none;
+}
+
+HTML, BODY {
+  margin		: 0px;
+  padding		: 0px;
+  background-color	: #e6edff;
+  color			: #000000;
+}
+
+DIV {
+  border		: none;
+  margin		: 0px;
+  padding		: 0px;
+}
+
+#header {
+  margin-top		: 5px;
+  margin-left		: 5px;
+  margin-right		: 5px;
+  margin-bottom		: -3px;
+  padding		: 0px;
+  color			: #000000;
+}
+
+#header #txt1 {
+  font-size : 18px;
+  font-style : normal;
+  font-weight : bold;
+}
+
+#header #txt2 {
+  font-style : italic;
+}
+
+#header #search {
+  margin-top: 5px;
+  float : right;
+  vertical-align : middle;
+}
+
+#header #search P {
+  display : inline;
+  position : absolute;
+  margin-left : -80px;
+  margin-top : 0px;
+}
+
+/* -21px is for who? Netscape 4, I would guess - er yes */
+#columns {
+  margin-left		: 5px;
+  margin-right		: 5px;
+  margin-bottom		: 5px;
+  margin-top		: -21px;
+  padding-top		: 10px;
+  color			: #ffffff;
+}
+/* NB - OmniWeb displays the 1px space as looking somewhat thicker, but set it to 0px and there is no space */
+/* IE5 gets the spacing all wrong: -18px puts it right. Then use the tantek-family hack to make everything right again */
+#columns {
+  margin-top		: -18px;
+  font-family		: Arial, Helvetica, sans-serif;
+  margin-top		: 1px;
+}
+
+/* empty required to get IE5 vback on track */
+#empty{}
+
+#columns #leftcolumn {
+  float			: left;
+  left			: 0px;
+  width			: 17%;
+  margin		: 0px;
+  margin-top		: -11px;
+  padding		: 0px;
+  color			: #000000;
+}
+#columns #leftcolumn {
+  margin-top		: 0px;
+}
+
+/*
+make sure that the hack widths equals the value of .centercolumn's margin-right
+the initial width is for NN4 - experiment and set to what seems best
+*/
+#columns #rightcolumn {
+  position		: static;
+  float			: right;
+  width			: 17%;
+  margin		: 0px;
+  padding		: 0px;
+  z-index		: 3;
+  color			: #000000;
+}
+
+/*
+For NN4, -25px is the margin-left setting to make the centercolumn column but up against the left column. (OmniWeb is much the same, but this stylesheet makes no allowances for it).
+For other browsers, the equivalent margin-left setting is equal to the width of the left column.
+margin-right is set to the value of the overriding values for .rightcolumn's width.
+A margin can be created between these two columns either by changing these values, or by setting the padding of the relevant #...padding divs.
+margin-top is set to -1px to make NN4 line up correctly.
+*/
+#columns #centercolumn {
+  margin		: 0px;
+  padding		: 0px;
+  color			: #000000;
+  z-index		: 4;
+}
+#columns #centercolumn {
+  margin-right		: 0px;
+  margin-top		: -1px;
+  margin-bottom		: 0px;
+  margin-left		: -25px;
+}
+/* IE5 once again goes awry - shift it down (29px is right for this layout but no doubt the exact value will vary [sigh]) and then zap
+empty because otherwise IE5 goes rampaging on */
+#columns #centercolumn {
+  margin-right		: 18%;
+  margin-left		: 18%;
+  margin-top		: 29px;
+  font-family		: inherit;
+  margin-top		: 0px;
+}
+
+#empty{}
+
+/* following bit only necessary if OmniWeb to be handled - the .fake bit is only picked up by OmniWeb, IE and, er, Amaya
+see  http://www.fu2k.org/alex/css/test/OmniWebInlineHack.mhtml
+But exclude it from IE5/mac */
+.fake #centercolumn {
+  margin-right		: 1px;
+  margin-left		: 1px;
+}
+/* this bit resets for IE */
+* html #centercolumn {
+  margin-right		: 18%;
+  margin-left		: 18%;
+}
+/* End of OmniWeb shenanigans */
+
+#footer {
+  clear			: both;
+  margin-top		: -11px;
+  margin-left		: 5px;
+  margin-right		: 5px;
+  margin-bottom		: 5px;
+  padding		: 1px;
+  color			: #000000;
+  border-color		: #8296bb;
+  border-style		: solid;
+  border-width		: 1px;
+  text-align		: center;
+}
+#footer {
+  margin-top		: 0px;
+}
+
+.clear {
+  clear			: both;
+  font-size		: 2px;
+  line-height		: 2px;
+}
+
+.freespace {
+  clear : both;
+  font-size: 7px;
+  line-height: 7px;
+}
+
+.headerpadding, .leftpadding, .centerpadding, .rightpadding {
+  border-width		: 1px;
+  border-style		: solid;
+  border-color		: #8296bb;
+  margin		: 0px;
+  padding		: 0px;
+}
+
+.boxheader {
+  background-color	: #8296bb;
+  color			: #ffffff;
+  text-align		: center;
+}
+
+.boxcontent {
+  background-color	: #ffffff;
+  color			: #000000;
+}
+
+.leftcontent {
+  color			: #000000;
+}
+
+/* following styles have nothing to do with the structural layout */
+H1, H2 {
+  margin-top		: 0px;
+}
+
+P {
+  margin-bottom		: 0px;
+}
