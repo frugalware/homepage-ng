@@ -1,245 +1,96 @@
-IMG {
-	border-width: 0px;
+body {
+	background-color: #e6edff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000;
 }
-
-A {
-	color: #58657E;
+a {
+	color: #58657e;
+	background-color: transparent;
 	text-decoration: none;
 }
-A:link:hover {
-	color: #58657E;
+a:hover {
 	text-decoration: underline;
 }
-A:visited:hover {
-	color: #58657E;
-	text-decoration: underline;
-}
-A:visited {
-	color: #58657E;
+a:visited {
 	text-decoration: none;
 }
-
-HTML, BODY {
-  margin		: 0px;
-  padding		: 0px;
-  background-color	: #e6edff;
-  color			: #000000;
-  font-family : Arial, Helvetica, sans-serif;
-  font-size : 12px;
-  font-style : normal;
-  text-decoration : none;
+div#header {
+	/* köz szélessége a fejléc alatt */
+	margin-bottom: 7px;
+}
+div#header div#txt1 {
+	font-size: 18px;
+	font-weight: bold;
+}
+div#header div#txt2 {
+	font-style: italic;
+}
+div#header div#search {
+	float: right;
+	vertical-align: middle;
+	/* ez tolja egy vonalba a Google feliratot az input aljával */
+	margin-top: 7px;
+}
+div#header div#search p {
+	display: inline;
+	position: absolute;
+	margin-left: -80px;
+	/* ez tolja egy vonalba a Google feliratot az input aljával */
+	margin-top: 0px;
 }
 
-DIV {
-  border		: none;
-  margin		: 0px;
-  padding		: 0px;
+div#columns div#leftcolumn {
+	/* hogy a közt fixen lehessen beállítani, abszolút hasábszélességet használunk - ez lehet akármennyi */
+	width: 167px;
+	float: left;
+}
+div#columns div#rightcolumn {
+	/* hogy a közt fixen lehessen beállítani, abszolút hasábszélességet használunk - ez lehet akármennyi */
+	width: 167px;
+	float: right;
+	position:absolute;
+	right:10px;
+}
+div#columns div#centercolumn {
+	/* hogy a közt fixen lehessen beállítani, abszolút hasábszélességet használunk - ez a fenti hasábszélesség + közszélesség */
+	margin: 0px 174px;
 }
 
-#header {
-  margin-top		: 5px;
-  margin-left		: 5px;
-  margin-right		: 5px;
-  margin-bottom		: -3px;
-  padding		: 0px;
-  color			: #000000;
+div#footer {
+	clear: both;
+	border: 1px solid #8296bb;
+	text-align: center;
+}
+div.boxpadding {
+	border: 1px solid #8296bb;
+	/* köz szélessége az egyes dobozok alatt (és így között) */
+	margin-bottom: 7px;
+}
+div.freespace {
+	display: none;
 }
 
-#header #txt1 {
-  font-size : 18px;
-  font-style : normal;
-  font-weight : bold;
+div#mainmenu ul {
+	margin: 1px 0px;
+	padding: 0px;
+}
+div#mainmenu ul li {
+	list-style-position: inside;
+	list-style-image: url('images/menuitem.gif');
+}
+div.boxheader {
+	background-color: #8296bb;
+	color: #fff;
+	text-align: center;
+}
+div.boxcontent {
+	background-color: #fff;
+	color: #000;
+}
+div.imgcontent {
+	text-align: center;
+	vertical-align: bottom;
+	font-size: 16px;
 }
 
-#header #txt2 {
-  font-style : italic;
-}
-
-#header #search {
-  margin-top: 5px;
-  float : right;
-  vertical-align : middle;
-}
-
-#header #search P {
-  display : inline;
-  position : absolute;
-  margin-left : -80px;
-  margin-top : 0px;
-}
-
-/* -21px is for who? Netscape 4, I would guess - er yes */
-#columns {
-  margin-left		: 5px;
-  margin-right		: 5px;
-  margin-bottom		: 5px;
-  margin-top		: -21px;
-  padding-top		: 10px;
-  color			: #ffffff;
-}
-/* NB - OmniWeb displays the 1px space as looking somewhat thicker, but set it to 0px and there is no space */
-/* IE5 gets the spacing all wrong: -18px puts it right. Then use the tantek-family hack to make everything right again */
-#columns {
-  margin-top		: -18px;
-  font-family		: Arial, Helvetica, sans-serif;
-  margin-top		: 1px;
-}
-
-/* empty required to get IE5 vback on track */
-#empty{}
-
-#columns #leftcolumn {
-  float			: left;
-  left			: 0px;
-  width			: 17%;
-  margin		: 0px;
-  margin-top		: -11px;
-  padding		: 0px;
-  color			: #000000;
-}
-#columns #leftcolumn {
-  margin-top		: 0px;
-}
-
-/*
-make sure that the hack widths equals the value of .centercolumn's margin-right
-the initial width is for NN4 - experiment and set to what seems best
-*/
-#columns #rightcolumn {
-  position		: static;
-  float			: right;
-  width			: 17%;
-  margin		: 0px;
-  padding		: 0px;
-  z-index		: 3;
-  color			: #000000;
-}
-
-/*
-For NN4, -25px is the margin-left setting to make the centercolumn column but up against the left column. (OmniWeb is much the same, but this stylesheet makes no allowances for it).
-For other browsers, the equivalent margin-left setting is equal to the width of the left column.
-margin-right is set to the value of the overriding values for .rightcolumn's width.
-A margin can be created between these two columns either by changing these values, or by setting the padding of the relevant #...padding divs.
-margin-top is set to -1px to make NN4 line up correctly.
-*/
-#columns #centercolumn {
-  margin		: 0px;
-  padding		: 0px;
-  color			: #000000;
-  z-index		: 4;
-}
-#columns #centercolumn {
-  margin-right		: 0px;
-  margin-top		: -1px;
-  margin-bottom		: 0px;
-  margin-left		: -25px;
-}
-/* IE5 once again goes awry - shift it down (29px is right for this layout but no doubt the exact value will vary [sigh]) and then zap
-empty because otherwise IE5 goes rampaging on */
-#columns #centercolumn {
-  margin-right		: 18%;
-  margin-left		: 18%;
-  margin-top		: 29px;
-  font-family		: inherit;
-  margin-top		: 0px;
-}
-
-#empty{}
-
-/* following bit only necessary if OmniWeb to be handled - the .fake bit is only picked up by OmniWeb, IE and, er, Amaya
-see  http://www.fu2k.org/alex/css/test/OmniWebInlineHack.mhtml
-But exclude it from IE5/mac */
-.fake #centercolumn {
-  margin-right		: 1px;
-  margin-left		: 1px;
-}
-/* this bit resets for IE */
-* html #centercolumn {
-  margin-right		: 18%;
-  margin-left		: 18%;
-}
-/* End of OmniWeb shenanigans */
-
-#mainmenu ul {
-  margin-left		: 0px;
-  margin-right		: 0px;
-  margin-top		: 1px;
-  margin-bottom		: 1px;
-  padding		: 0px;
-}
-
-#mainmenu ul li {
-  list-style-position	: inside;
-  list-style-image	: url('images/menuitem.gif');
-}
-
-.blinkmenu {
-  visibility		: hidden;
-  text-decoration	: blink;
-  font-weight		: bold;
-}
-
-#footer {
-  clear			: both;
-  margin-top		: -11px;
-  margin-left		: 5px;
-  margin-right		: 5px;
-  margin-bottom		: 5px;
-  padding		: 1px;
-  color			: #000000;
-  border-color		: #8296bb;
-  border-style		: solid;
-  border-width		: 1px;
-  text-align		: center;
-}
-#footer {
-  margin-top		: 0px;
-}
-
-.clear {
-  clear			: both;
-  font-size		: 1px;
-}
-
-.freespace {
-  clear			: both;
-  font-size		: 7px;
-}
-
-.boxpadding {
-  border-width		: 1px;
-  border-style		: solid;
-  border-color		: #8296bb;
-  margin		: 0px;
-  padding		: 0px;
-}
-
-.boxheader {
-  background-color	: #8296bb;
-  color			: #ffffff;
-  text-align		: center;
-}
-
-.boxcontent {
-  background-color	: #ffffff;
-  color			: #000000;
-}
-
-.sidecontent {
-  color			: #000000;
-}
-
-.imgcontent {
-  text-align		: center;
-  vertical-align	: bottom;
-  font-size		: 16px;
-}
-
-/* following styles have nothing to do with the structural layout */
-H1, H2 {
-  margin-top		: 0px;
-}
-
-P {
-  margin-bottom		: 0px;
-}
