@@ -4,13 +4,14 @@
 
 require_once("adodb/adodb.inc.php");
 
-class FwDB ()
+class FwDB
 {
-	var $db = "";
+	var $db;
 
 	function FwDB ()
 	{
-		$this->db = new NewADOConnection($sqltype);
+		global $sqltype;
+		$this->db = &ADONewConnection($sqltype);
 	}
 
 	function dbUndefToEmpty($arr)
@@ -32,10 +33,10 @@ class FwDB ()
 		return $arr;
 	}
 
-
-	function Connect()
+	function doConnect()
 	{
-		$res = $this->db->Connect($sqlhost, $sqluser, $sqlpass, $sqldb);
+		global $sqlhost, $sqluser, $sqlpass, $sqldb;
+		$res = $this->db->PConnect($sqlhost, $sqluser, $sqlpass, $sqldb);
 		$this->db->SetFetchMode(ADODB_FETCH_MODE);
 		return $res;
 	}
@@ -46,19 +47,19 @@ class FwDB ()
 		$ADODB_FETCH_MODE = ADODB_FETCH_ASSOC;
 		if (($numrows>=0) or ($offset>=0))
 		{
-			$result =  $this->dblink->SelectLimit($sql, $numrows, $offset, $inputarr);
+			$result =  $this->db->SelectLimit($query, $numrows, $offset, $inputarr);
 		}
 		else
 		{
-			$result =  $this->dblink->Execute($sql, $inputarr);
+			$result =  $this->db->Execute($query, $inputarr);
 		}
 		if (!$result)
 		{
-			die("Query ".$sql." failed with the following error: ".$this->dblink->ErrorMsg());
+			die("Query ".$query." failed with the following error: ".$this->db->ErrorMsg());
 		}
 		return $result;
 	}
-	
+
 	function doClose()
 	{
 		$this->db->Close();
@@ -68,12 +69,12 @@ class FwDB ()
 	{
 		return $res->GetRows($this->doFetchRow(&$res));
 	}
-	
+
 	function doFetchRow($res)
 	{
 		return $res->FetchRow();
 	}
-	
+
 	function doCountRows($res)
 	{
 		return $res->RecordCount();
