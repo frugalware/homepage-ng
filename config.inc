@@ -2,6 +2,7 @@
 #config.inc
 
 #sql settings
+$sqltype = "mysql";
 $sqlhost = "localhost";
 $sqluser = "root";
 $sqlpass = "";
