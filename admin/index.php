@@ -9,6 +9,8 @@ include("login.inc");
 $login = new Login();
 $login->doLogin();
 
-echo "logged in...";
+include("../header.php");
+echo "<div align=\"center\">You are now logged in. If you want to log out, click <a href=\"?logout=\">here</a></div>";
+include("../footer.php");
 
 ?>

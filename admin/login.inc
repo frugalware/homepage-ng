@@ -1,6 +1,12 @@
 <?php
 
 #login.inc
+$parts=explode('/', $_SERVER["PHP_SELF"]);
+$_SELF=$parts[count($parts)-1];
+
+if (defined("login.php"))
+	return;
+define("login.php", "1");
 
 class Login
 {
@@ -12,12 +18,18 @@ class Login
 
 	function Login()
 	{
+		$logout = $_GET["logout"];
 		$this->level = 0;
 		$this->triedIt = false;
 		$this->loggedIn = false;
 		$this->loginName = '';
 		$this->db = new FwDB();
 		$this->db->doConnect();
+
+		if (isset($logout))
+		{
+			$this->doLogout();
+		}
 	}
 
 	function doLogin()
@@ -34,21 +46,19 @@ class Login
 				$this->triedIt = true;
 				$this->loggedIn = true;
 				$this->loginName = $uName;
-				$_COOKIE['level'] = $this->level;
-				$_COOKIE['triedIt'] = 1;
-				$_COOKIE['loggedIn'] = 1;
-				$_COOKIE['loginName'] = $uName;
+				$_SESSION['level'] = $this->level;
+				$_SESSION['loginName'] = $uName;
 			}
 			else
 			{
 				$this->triedIt = true;
 			}
 		}
-		elseif (isset($_COOKIE['loginName']))
+		elseif (isset($_SESSION['loginName']))
 		{
-			$this->loginName=$_COOKIE['loginName'];
-			$this->level = $_COOKIE['level'];
-			$this->loggedIn = true;
+			$this->loginName=$_SESSION['loginName'];
+			$this->level = $_SESSION['level'];
+			$this->loggedIn = 1;
 		}
 
 		if (!$this->loggedIn)
@@ -60,7 +70,49 @@ class Login
 
 	function loginForm()
 	{
-		print "foobar";
+		global $_SELF;
+		include("../header.php");
+?>
+<form action="<?php echo $_SELF; ?>" method="post" enctype="multipart/form-data">
+<p align=center>
+  <b>
+<?php ($this->triedIt) ? print gettext("You have entered wrong password!") : print gettext("You have to login to view this site!"); ?>
+  </b>
+</p>
+<br />
+<div align="center">
+  <table align="center" border="0" cellspacing="2" cellpadding="0" width="60%">
+    <tr valign="middle">
+      <td width="50%" align="right"><?php echo gettext("Login name"); ?>:&nbsp;&nbsp;&nbsp;</td>
+      <td><input type="text" name="uName" class="input"></td>
+    </tr>
+    <tr valign="middle">
+      <td width="50%" align="right"><?php echo gettext("Password"); ?>:&nbsp;&nbsp;&nbsp;</td>
+      <td><input type="password" name="uPass" class="input"></td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center"><input type="submit" value="<?php echo gettext("Enter"); ?>" class="button"></td>
+    </tr>
+  </table>
+</div>
+</form>
+<?php
+		include("../footer.php");
+	}
+
+	function doLogout()
+	{
+		unset($_SESSION["loginName"]);
+		unset($_SESSION["level"]);
+		$this->loginName="";
+		$this->loggedIn=false;
+		$this->triedIt=false;
+		$this->level=0;
+		header("Location: index.php");
+	}
+
+	function printInfo($user)
+	{
 	}
 
 }

@@ -27,7 +27,7 @@ class FwDB
 					$arr[$i] = '';
 				}
 				// This line safely escapes sql before it goes to the db
-				$this->dblink->qmagic($arr[$i]);
+				$this->db->qmagic($arr[$i]);
 			}
 		}
 		return $arr;
