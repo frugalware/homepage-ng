@@ -4,9 +4,9 @@
 #sql settings
 $sqltype = "mysql";
 $sqlhost = "localhost";
-$sqluser = "root";
-$sqlpass = "";
-$sqldb = "fwng";
+$sqluser = "homepage";
+$sqlpass = "tA1r.5Sll";
+$sqldb = "homepage";
 
 #not translated changing vars
 $title = "Homepage - Reloaded";
