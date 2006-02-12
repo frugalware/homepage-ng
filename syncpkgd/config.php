@@ -1,0 +1,3 @@
+<?
+$logdir="/var/log/syncpkg";
+?>
