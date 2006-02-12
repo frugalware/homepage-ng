@@ -24,10 +24,11 @@ function display_day($day, $param=null)
 	}
 	else
 	{
+		// sanility checks
 		if(strstr($param, "..") or strchr($param, "/"))
 			die("nice try ;)");
-		header("Content-type: text/plain");
-		include("$logdir/$day/$param");
+		$log="$logdir/$day/$param";
+		include("templates/log.php");
 	}
 }
 
