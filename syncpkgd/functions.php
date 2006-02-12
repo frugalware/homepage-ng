@@ -90,6 +90,6 @@ function list_days()
 	$str = explode(" ", file_get_contents("/proc/loadavg"));
 	$loadstat = $str[0];
 
-	include("templates/daylist.php");
+	include("templates/main.php");
 }
 ?>
