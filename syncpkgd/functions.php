@@ -7,16 +7,19 @@ function display_day($day, $param=null)
 	{
 		if ($dir = @opendir($logdir . "/" . $day))
 		{
+			$packages = array();
 			while ($file = readdir($dir))
 			{
 				if ($file != "." and $file != ".." and substr($file, -4, 4) == ".log")
 				{
-					print(date(DATE_RFC822, filemtime("$logdir/$day/$file")) .
-					": <a href=\"$day/$file\">" . substr($file,0,strlen($file)-4) . "</a> " .
-					(file_get_contents("$logdir/$day/$file.exitcode")==0 ? "built" : "failed") .
-					"<br>\n");
+					$pkg["date"] = date(DATE_RFC822, filemtime("$logdir/$day/$file"));
+					$pkg["url"] = "$day/$file";
+					$pkg["fullname"] = substr($file,0,strlen($file)-4);
+					$pkg["exitcode"] = !file_get_contents("$logdir/$day/$file.exitcode");
+					$packages[] = $pkg;
 				}
 			}
+			include("templates/day.php");
 		}
 	}
 	else
