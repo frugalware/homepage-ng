@@ -62,7 +62,7 @@ function list_days()
 		{
 			if ($file != "." and $file != ".." and is_dir($logdir . "/" . $file))
 			{
-				$days[] = "<li><a href=\"$file\">$file</a></li>\n";
+				$days[] = $file;
 			}
 		}
 	}

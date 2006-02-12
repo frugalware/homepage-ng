@@ -4,7 +4,7 @@
 	"The following buildlogs are available:<br><ul>\n");
 	foreach($days as $i)
 	{
-		print($i);
+		print("<li><a href=\"$i\">$i</a></li>\n");
 	}
 	print("</ul>\n");
 	print("General statistics:<br>\n");
