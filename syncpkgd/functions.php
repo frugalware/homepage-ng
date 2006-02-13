@@ -15,7 +15,7 @@ function display_day($day, $param=null)
 					$pkg["date"] = date(DATE_RFC822, filemtime("$logdir/$day/$file"));
 					$pkg["url"] = "$day/$file";
 					$pkg["fullname"] = substr($file,0,strlen($file)-4);
-					$pkg["exitcode"] = !file_get_contents("$logdir/$day/$file.exitcode");
+					$pkg["exitcode"] = !trim(file_get_contents("$logdir/$day/$file.exitcode"));
 					$packages[] = $pkg;
 				}
 			}
