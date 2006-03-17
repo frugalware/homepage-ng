@@ -3,10 +3,10 @@ include("lastRSS.php");
 
 function display_feed($feed, $param)
 {
+	$rss = new lastRSS;
+
 	if($feed=="cia")
 	{
-		$rss = new lastRSS; 
-
 		if ($feed = $rss->get("http://cia.navi.cx/stats/project/Frugalware/.rss"))
 		{
 			$lines=array();
@@ -43,6 +43,25 @@ function display_feed($feed, $param)
 					'chr(\1)');
 				$lines[] = htmlentities(preg_replace($search, $replace,
 					html_entity_decode($item['description']))) . "<br />\n";
+			}
+			include("templates/feed.php");
+		}
+		else
+		{
+			$error = "Failed to fetch the feed.";
+			include("templates/error.php");
+		}
+	}
+	else if ($feed=="bts")
+	{
+		if ($feed = $rss->get("http://frugalware.org/rss.php?type=bugs"))
+		{
+			$lines=array();
+			foreach($feed['items'] as $item)
+			{
+				$lines[] = htmlentities('#' . substr(strrchr($item['link'], "="), 1) .
+					" - " . $item['title'] .
+					" - " . $item['author']) . "<br />\n";
 			}
 			include("templates/feed.php");
 		}
