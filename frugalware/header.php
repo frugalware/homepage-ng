@@ -5,8 +5,8 @@
 <head>
   <title>Frugalware - HpReloaded</title>
   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2" />
-  <link rel="stylesheet" type="text/css" href="fwng.css" />
-  <link rel="icon" href="images/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="<?php echo $fwng_root; ?>fwng.css" />
+  <link rel="icon" href="<?php echo $fwng_root; ?>images/favicon.ico" />
   <script language="javascript" type="text/javascript">
   <!--
     function chgclass(divid, vis)
@@ -23,7 +23,7 @@
   <div class="boxpadding">
     <div id="search">
       <p>
-        <a href="http://www.google.com/"><img src="images/google.gif" alt="Google" width="75" height="32" align="middle" border="0" title="Google" /></a>
+	      <a href="http://www.google.com/"><img src="<?php echo $fwng_root; ?>images/google.gif" alt="Google" width="75" height="32" align="middle" border="0" title="Google" /></a>
       </p>
       <form action="http://www.google.com/custom" method="get" enctype="multipart/form-data">
         <input type="text" name="q" size="15" maxlength="150" />

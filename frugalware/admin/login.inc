@@ -1,12 +1,12 @@
 <?php
 
 #login.inc
-$parts=explode('/', $_SERVER["PHP_SELF"]);
+$parts=explode('/', $_SERVER[REQUEST_URI]);
 $_SELF=$parts[count($parts)-1];
 
-if (defined("login.php"))
+if (defined("login.class"))
 	return;
-define("login.php", "1");
+define("login.class", "1");
 
 class Login
 {
@@ -70,7 +70,7 @@ class Login
 
 	function loginForm()
 	{
-		global $_SELF;
+		global $_SELF, $fwng_root;
 		include("../header.php");
 ?>
 <form action="<?php echo $_SELF; ?>" method="post" enctype="multipart/form-data">

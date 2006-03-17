@@ -2,47 +2,17 @@
 
 #homepage-ng: startpage
 
-if (isset($_COOKIE["fwcurrlang"])) {
-	$lang=$_COOKIE["fwcurrlang"];
-}
+include("functions.inc");
+$lang = getlang();
 
-if (isset($lang) && $lang != "" ) {
-	if (isset($_GET["lang"]) && $_GET["lang"] != "") {
-		$nlang = $_GET["lang"];
-		if ($nlang != $lang) {
-			$lang = $nlang;
-			setcookie("fwcurrlang", $lang, time()+3*365*24*3600);
-		}
-	}
-}
-else {
-	if (isset($_GET["lang"]) && $_GET["lang"] != "") {
-		$lang=$_GET["lang"];
-		setcookie("fwcurrlang", $lang, time()+3*365*24*3600);
-	}
-	else {
-		$lang=preg_replace( "/^([a-z]*)-.*/", "$1",
-		preg_replace("/^([a-z\-]*),.*/", "$1", $_SERVER['HTTP_ACCEPT_LANGUAGE']));
-	}
-}
-if ( $lang == "" ) {
-	$lang="en";
-}
-
-$langs = array(
-	"en" => "en",
-	"hu" => "hu_HU"
-);
-
-putenv("LANG=".$langs[$lang]);
-setlocale(LC_ALL,$langs[$lang]);
+putenv("LANG=".$lang);
+setlocale(LC_ALL,$lang);
 $domain = 'messages';
 bindtextdomain($domain, "locale");
 textdomain($domain);
 
 include("config.inc");
 include("header.php");
-include("functions.inc");
 
 ?>
 
