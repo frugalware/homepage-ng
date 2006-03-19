@@ -26,7 +26,7 @@
 		else
 			print("The package builder is sleeping, will be started again on " .
 				$syncdate . ".<br />\n");
-		print("Current avarage for the past one minute: " . $loadstat . "<br />\n");
+		print("Avarage load for the past one minute: " . $loadstat . "<br />\n");
 		print("<a href=\"/hardware\">Hardware informations</a>.<br />\n"); ?>
 		</div>
 	</body>
