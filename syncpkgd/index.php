@@ -13,6 +13,8 @@ if($param==$day)
 
 if ($day == "")
 	list_days();
+else if($day == "hardware")
+	query_hardware();
 else
 	display_day($day, $param);
 ?>

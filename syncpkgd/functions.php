@@ -50,9 +50,26 @@ function processtime($pid)
 	return($btime+$ptime[21]/100);
 }
 
+function query_hardware()
+{
+	global $providers;
+
+	$host = trim(`hostname`);
+	$cpuinfo = file("/proc/cpuinfo");
+	$cpuinfo = trim(substr($cpuinfo[4], 13));
+	$provider = $providers[$host];
+	$pp = popen("free", "r");
+	fgets($pp);
+	$meminfo = (int)(trim(substr(trim(substr(fgets($pp), 4)), 0, 10))/1000);
+	pclose($pp);
+	// TODO: disk space
+
+	include("templates/hardware.php");
+}
+
 function list_days()
 {
-	global $logdir;
+	global $logdir, $providers;
 
 	$host = trim(`hostname`) . "." . trim(`dnsdomainname`);
 	$arch = trim(`uname -m`);
