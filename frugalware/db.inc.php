@@ -2,7 +2,7 @@
 
 # db.inc
 
-require_once("adodb/adodb.inc.php");
+require_once($adodb_path."/adodb/adodb.inc.php");
 
 class FwDB
 {

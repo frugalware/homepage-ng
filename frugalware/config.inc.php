@@ -12,6 +12,7 @@ $sqldb = "homepage";
 
 #site settings
 $fwng_root = "/";
+$adodb_path = "/usr/lib/php";
 
 #not translated changing vars
 $title = "Homepage - Reloaded";
