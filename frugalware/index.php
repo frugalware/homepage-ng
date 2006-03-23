@@ -2,7 +2,7 @@
 
 #homepage-ng: startpage
 
-include("functions.inc");
+include("functions.inc.php");
 $lang = getlang();
 
 putenv("LANG=".$lang);
@@ -11,7 +11,7 @@ $domain = 'messages';
 bindtextdomain($domain, "locale");
 textdomain($domain);
 
-include("config.inc");
+include("config.inc.php");
 include("header.php");
 
 ?>

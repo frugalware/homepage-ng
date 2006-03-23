@@ -2,7 +2,7 @@
 
 #admin site
 
-include("../functions.inc");
+include("../functions.inc.php");
 $lang = getlang();
 
 putenv("LANG=".$lang);
@@ -11,12 +11,14 @@ $domain = 'messages';
 bindtextdomain($domain, "locale");
 textdomain($domain);
 
-include("../config.inc");
-include("../db.inc");
-include("login.inc");
+include("../config.inc.php");
+include("../db.inc.php");
+include("login.inc.php");
 
 $login = new Login();
 $login->doLogin();
+
+require("admin.inc.php")
 
 include("../header.php");
 ?>
