@@ -70,11 +70,11 @@ class Login
 
 	function loginForm()
 	{
-		global $_SELF, $fwng_root;
+		global $_SELF, $fwng_root, $lang;
 		include("../header.php");
 ?>
 <form action="<?php echo $_SELF; ?>" method="post" enctype="multipart/form-data">
-<p align=center>
+<p align="center">
   <b>
 <?php ($this->triedIt) ? print gettext("You have entered wrong password!") : print gettext("You have to login to view this site!"); ?>
   </b>
@@ -84,14 +84,14 @@ class Login
   <table align="center" border="0" cellspacing="2" cellpadding="0" width="60%">
     <tr valign="middle">
       <td width="50%" align="right"><?php echo gettext("Login name"); ?>:&nbsp;&nbsp;&nbsp;</td>
-      <td><input type="text" name="uName" class="input"></td>
+      <td><input type="text" name="uName" class="input" /></td>
     </tr>
     <tr valign="middle">
       <td width="50%" align="right"><?php echo gettext("Password"); ?>:&nbsp;&nbsp;&nbsp;</td>
-      <td><input type="password" name="uPass" class="input"></td>
+      <td><input type="password" name="uPass" class="input" /></td>
     </tr>
     <tr>
-      <td colspan="2" align="center"><input type="submit" value="<?php echo gettext("Enter"); ?>" class="button"></td>
+      <td colspan="2" align="center"><input type="submit" value="<?php echo gettext("Enter"); ?>" class="button" /></td>
     </tr>
   </table>
 </div>
