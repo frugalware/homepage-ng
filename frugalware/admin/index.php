@@ -18,14 +18,17 @@ include("login.inc.php");
 $login = new Login();
 $login->doLogin();
 
-require("admin.inc.php")
+require("admin.inc.php");
 
-include("../header.php");
+function main()
+{
+	global $fwng_root, $langcontent, $validcontent;
+	include("../header.php");
 ?>
 <div id="columns">
 	<div id="leftcolumn">
 		<?php
-			fwsidebox(gettext("Menu"), "<p>content</p>");
+			fwsidebox(gettext("Menu"), get_admin_menu($_SESSION[level]));
 			fwsidebox(gettext("Languages"), $langcontent);
 		?>
 	</div>
@@ -43,6 +46,40 @@ include("../header.php");
 	</div>
 </div>
 <?php
-include("../footer.php");
+	include("../footer.php");
+}
 
+function addnews()
+{
+	print "addnews";
+}
+
+function editnews()
+{
+	print "editnews";
+}
+
+function editusers()
+{
+	print "editusers";
+}
+
+switch($_GET["do"])
+{
+	case "addnews":
+		addnews();
+	break;
+
+	case "editnews":
+		editnews();
+	break;
+
+	case "editusers":
+		editusers();
+	break;
+
+	default:
+		main();
+	break;
+}
 ?>
