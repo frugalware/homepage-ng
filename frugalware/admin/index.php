@@ -41,7 +41,7 @@ function main()
 
 	<div id="centercolumn">
 		<?php
-			fwmiddlebox(gettext("Main"), "<div align=\"center\">You are now logged in. If you want to log out, click <a href=\"?logout=\">here</a></div>");
+			fwmiddlebox(gettext("Main"), "<div align=\"center\">You are now logged in.</div>");
 		?>
 	</div>
 </div>
