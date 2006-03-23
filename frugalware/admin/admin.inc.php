@@ -8,21 +8,21 @@ function get_admin_menu($level)
 	switch($level)
 	{
 		case "1":
-			$menu .= "\t\t<li><a href=\"?do=addnews\">".gettext("Add news")."</a></li>\n";
+			$menu .= "\t\t<li><a href=\"?do=addnews\">".gettext("add news")."</a></li>\n";
 		break;
 
 		case "5":
-			$menu .= "\t\t<li><a href=\"?do=addnews\">".gettext("Add news")."</a></li>
-		<li><a href=\"?do=editnews\">".gettext("Edit news")."</a></li>\n";
+			$menu .= "\t\t<li><a href=\"?do=addnews\">".gettext("add news")."</a></li>
+		<li><a href=\"?do=editnews\">".gettext("edit news")."</a></li>\n";
 		break;
 
 		case "10":
-			$menu .= "\t\t<li><a href=\"?do=addnews\">".gettext("Add news")."</a></li>
-		<li><a href=\"?do=editnews\">".gettext("Edit news")."</a></li>
-		<li><a href=\"?do=editusers\">".gettext("Edit users")."</a></li>\n";
+			$menu .= "\t\t<li><a href=\"?do=addnews\">".gettext("add news")."</a></li>
+		<li><a href=\"?do=editnews\">".gettext("edit news")."</a></li>
+		<li><a href=\"?do=editusers\">".gettext("edit users")."</a></li>\n";
 		break;
 	}
-	$menu .= "\t\t<li><a href=\"?logout=\">".gettext("Logout")."</a></li>\n";
+	$menu .= "\t\t<li><a href=\"?logout=\">".gettext("logout")."</a></li>\n";
 	$menu .= "\t</ul>\n</div>";
 	return $menu;
 }
