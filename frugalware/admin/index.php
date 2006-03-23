@@ -51,7 +51,31 @@ function main()
 
 function addnews()
 {
-	print "addnews";
+	global $fwng_root, $langcontent, $validcontent;
+	include("../header.php");
+?>
+<div id="columns">
+	<div id="leftcolumn">
+		<?php
+			fwsidebox(gettext("Menu"), get_admin_menu($_SESSION[level], true));
+			fwsidebox(gettext("Languages"), $langcontent);
+		?>
+	</div>
+
+	<div id="rightcolumn">
+		<?php
+			fwsidebox(gettext("Information"), $validcontent);
+		?>
+	</div>
+
+	<div id="centercolumn">
+		<?php
+			fwmiddlebox(gettext("Add news"), "<div align=\"center\">Add news</div>");
+		?>
+	</div>
+</div>
+<?php
+	include("../footer.php");
 }
 
 function editnews()
