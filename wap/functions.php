@@ -1,6 +1,13 @@
 <?
 include("lastRSS.php");
 
+function first_words($str)
+{
+	$words = explode(' ', strip_tags($str));
+	$words = array_slice($words, 0, 5);
+	return(implode(' ', $words) . "...");
+}
+
 function display_feed($feed, $param)
 {
 	$rss = new lastRSS;
@@ -62,6 +69,25 @@ function display_feed($feed, $param)
 				$lines[] = htmlentities('#' . substr(strrchr($item['link'], "="), 1) .
 					" - " . $item['title'] .
 					" - " . $item['author']) . "<br />\n";
+			}
+			include("templates/feed.php");
+		}
+		else
+		{
+			$error = "Failed to fetch the feed.";
+			include("templates/error.php");
+		}
+	}
+	else if ($feed=="blog")
+	{
+		if ($feed = $rss->get("http://blogs.frugalware.org/xmlsrv/rss2.php?blog=1"))
+		{
+			$lines=array();
+			foreach($feed['items'] as $item)
+			{
+				$lines[] = preg_replace("/.*, (.*) \+.*/", '$1 ', $item['pubDate']) .
+				preg_replace('|http://[^/]*/([^/]+)/.*|', '$1: ', $item['link']) .
+				($item['title'] ? $item['title'] : first_words($item['description'])) . "<br />";
 			}
 			include("templates/feed.php");
 		}

@@ -12,6 +12,7 @@ print('<?xml version="1.0" encoding="utf8"?>');
 The following feeds are available:<br />
 <a href="/cia">Darcs commits</a><br />
 <a href="/bts">BTS entries</a><br />
+<a href="/blog">Blog posts</a><br />
 </p>
 </card>
 
