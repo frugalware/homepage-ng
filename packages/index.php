@@ -6,6 +6,9 @@ function bar($baz) {
 
 function foo() {
 	$url = 'http://frugalware.org/packages.php?op=';
+	if(isset($_GET['search'])) {
+		$_SERVER['PATH_INFO'] = $_GET['search'];
+	}
 	$req = ltrim($_SERVER['PATH_INFO'],'/');
 	if(substr($req,0,5) == 'file:') {
 		return $url . 'file&amp;srch=' . bar(substr($req, 5)) . '&amp;repo=all';
