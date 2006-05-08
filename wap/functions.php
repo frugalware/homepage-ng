@@ -78,6 +78,24 @@ function display_feed($feed, $param)
 			include("templates/error.php");
 		}
 	}
+	else if ($feed=="packages")
+	{
+		if ($feed = $rss->get("http://frugalware.org/rss.php?type=packages"))
+		{
+			$lines=array();
+			foreach($feed['items'] as $item)
+			{
+				$lines[] = preg_replace("/.*, (.*) \+.*/", '$1', $item['pubDate']) . "<br />\n";
+				$lines[] = $item['author'] . ": " . $item['title'] . "<br />\n";
+			}
+			include("templates/feed.php");
+		}
+		else
+		{
+			$error = "Failed to fetch the feed.";
+			include("templates/error.php");
+		}
+	}
 	else if ($feed=="blog")
 	{
 		if ($feed = $rss->get("http://blogs.frugalware.org/xmlsrv/rss2.php?blog=1"))
