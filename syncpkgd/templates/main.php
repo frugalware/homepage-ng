@@ -16,8 +16,12 @@
 		</ul>
 		<div>General statistics:<br />
 		<? if($syncd)
+		{
 			print("The package builder daemon is running, started on " .
 				$syncddate . ".<br />\n");
+			if($buildstat != false)
+				print("Currently building the $buildstat package.<br />\n");
+		}
 		else
 			print("The package builder daemon is not running.<br />\n");
 		if($sync)
@@ -27,7 +31,8 @@
 			print("The package builder is sleeping, will be started again on " .
 				$syncdate . ".<br />\n");
 		print("Avarage load for the past one minute: " . $loadstat . "<br />\n");
-		print("<a href=\"/hardware\">Hardware informations</a>.<br />\n"); ?>
+		print("<a href=\"/hardware\">Hardware informations</a>.<br />\n");
+		?>
 		</div>
 	</body>
 </html>

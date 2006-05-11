@@ -111,6 +111,10 @@ function list_days()
 	}
 	$str = explode(" ", file_get_contents("/proc/loadavg"));
 	$loadstat = $str[0];
+	if(file_exists("/tmp/sync.pkg"))
+		$buildstat = trim(file_get_contents("/tmp/sync.pkg"));
+	else
+		$buildstat = false;
 
 	include("templates/main.php");
 }
