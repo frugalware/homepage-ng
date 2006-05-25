@@ -7,7 +7,7 @@ include("functions.inc.php");
 $lang = getlang();
 $llang = getllang($lang);
 $flang = ( $lang == "en" ) ? "" : "_$lang";
-$xmlfile = "news".$flang.".xml";
+$xmlfile = "xml/news".$flang.".xml";
 
 putenv("LANG=".$llang);
 setlocale(LC_ALL,$llang);
