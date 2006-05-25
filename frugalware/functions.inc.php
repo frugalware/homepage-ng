@@ -13,8 +13,7 @@ function fwsidebox($boxhead="", $content)
       <div class=\"sidecontent\">
         $content
       </div>
-    </div>
-    <div class=\"freespace\">&nbsp;</div>\n";
+    </div>\n";
 	}
 	else
 	{
@@ -35,8 +34,7 @@ function fwmiddlebox($boxhead="", $content)
       <div class=\"boxcontent\">
         $content
       </div>
-    </div>
-    <div class=\"freespace\">&nbsp;</div>\n";
+    </div>\n";
 	}
 	else
 	{
@@ -83,6 +81,11 @@ function getlang()
 		$lang="en";
 	}
 
+	return $lang;
+}
+
+function getllang($lang)
+{
 	$langs = array(
 		"en" => "en",
 		"hu" => "hu_HU"
