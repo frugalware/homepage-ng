@@ -2,6 +2,8 @@
 
 # db.inc
 
+// This is a frontend for adodb, i used it to make the database usage more easly
+
 require_once($adodb_path."/adodb/adodb.inc.php");
 
 class FwDB
@@ -10,6 +12,7 @@ class FwDB
 
 	function FwDB ()
 	{
+		// the $sqltype comes from config.inc.php
 		global $sqltype;
 		$this->db = &ADONewConnection($sqltype);
 	}
@@ -35,6 +38,8 @@ class FwDB
 
 	function doConnect()
 	{
+		// Global variables come from config.inc
+		// We use persistent connections - probably fewer connections will be
 		global $sqlhost, $sqluser, $sqlpass, $sqldb;
 		$res = $this->db->PConnect($sqlhost, $sqluser, $sqlpass, $sqldb);
 		$this->db->SetFetchMode(ADODB_FETCH_MODE);

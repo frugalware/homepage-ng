@@ -7,14 +7,14 @@
   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2" />
   <link rel="stylesheet" type="text/css" href="<?php echo $fwng_root; ?>fwng.css" />
   <link rel="icon" href="<?php echo $fwng_root; ?>images/favicon.ico" />
-  <script language="javascript" type="text/javascript">
-  <!--
+  <!--script language="javascript" type="text/javascript">
+  <!- Don't know why is this here, have to test whether it's used or not...
     function chgclass(divid, vis)
     {
       document.getElementById(divid).style.visibility=vis;
     }
-  -->
-</script>
+  ->
+</script-->
 </head>
 <body>
 
@@ -23,7 +23,7 @@
   <div class="boxpadding">
     <div id="search">
       <p>
-	      <a href="http://www.google.com/"><img src="<?php echo $fwng_root; ?>images/google.gif" alt="Google" width="75" height="32" align="middle" border="0" title="Google" /></a>
+        <a href="http://www.google.com/"><img src="<?php echo $fwng_root; ?>images/google.gif" alt="Google" width="75" height="32" align="middle" border="0" title="Google" /></a>
       </p>
       <form action="http://www.google.com/custom" method="get" enctype="multipart/form-data">
         <input type="text" name="q" size="15" maxlength="150" />
