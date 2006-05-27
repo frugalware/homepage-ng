@@ -1,8 +1,28 @@
 <?php
+/**
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License v2 as published by
+ the Free Software Foundation
 
-# functions.inc
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.See the
+ GNU General Public License for more details.
+ */
 
-// Creates a left/right side box
+/**
+ * extra functions to the homepage
+ *
+ * @author Krisztian VASAS <iron@frugalware.org>
+ * @copyright Copyright (c) 2006. Krisztian VASAS
+ */
+
+/**
+ * Creates a left/right side box
+ *
+ * @param string $boxhead
+ * @param string $content
+ */
 function fwsidebox($boxhead="", $content)
 {
 	// boxhead is given, displays a simple box with darker head
@@ -26,7 +46,12 @@ function fwsidebox($boxhead="", $content)
 	}
 }
 
-// The main content: box of the news
+/**
+ * The main content: box of the news
+ *
+ * @param string $boxhead
+ * @param string $content
+ */
 function fwmiddlebox($boxhead="", $content)
 {
 	if ($boxhead != "")
@@ -48,7 +73,9 @@ function fwmiddlebox($boxhead="", $content)
 	}
 }
 
-// Decides the language of the page from cookie, url or former settings
+/**
+ * Decides the language of the page from cookie, url or former settings
+ */
 function getlang()
 {
 	// If the lang comes from cookie, set it...
@@ -97,9 +124,13 @@ function getlang()
 	return $lang;
 }
 
+/**
+ * gives the complete locale for gettext()
+ *
+ * @param string $lang
+ */
 function getllang($lang)
 {
-	// gives the complete locale for gettext()
 	$langs = array(
 		"en" => "en",
 		"hu" => "hu_HU"

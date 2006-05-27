@@ -70,7 +70,7 @@ class Login
 
 	function loginForm()
 	{
-		global $_SELF, $fwng_root, $lang;
+		global $_SELF, $fwng_root, $lang, $copydate;
 		include("../header.php");
 ?>
 <form action="<?php echo $_SELF; ?>" method="post" enctype="multipart/form-data">
