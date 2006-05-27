@@ -16,7 +16,7 @@ a:visited {
 	text-decoration: none;
 }
 div#header {
-	/* köz szélessége a fejléc alatt */
+	/*  width below the header */
 	margin-bottom: 7px;
 }
 div#header div#txt1 {
@@ -29,31 +29,30 @@ div#header div#txt2 {
 div#header div#search {
 	float: right;
 	vertical-align: middle;
-	/* ez tolja egy vonalba a Google feliratot az input aljával */
+	/* to be in line the Google pic with the bottom of the input box */
 	margin-top: 7px;
 }
 div#header div#search p {
 	display: inline;
 	position: absolute;
 	margin-left: -80px;
-	/* ez tolja egy vonalba a Google feliratot az input aljával */
+	/* to be in line the Google pic with the bottom of the input box */
 	margin-top: 0px;
 }
 
 div#columns div#leftcolumn {
-	/* hogy a közt fixen lehessen beállítani, abszolút hasábszélességet használunk - ez lehet akármennyi */
+	/* we use fix column width to get fix space between boxes */
 	width: 167px;
 	float: left;
 }
 div#columns div#rightcolumn {
-	/* hogy a közt fixen lehessen beállítani, abszolút hasábszélességet használunk - ez lehet akármennyi */
+	/* we use fix column width to get fix space between boxes */
 	width: 167px;
 	float: right;
 	position:absolute;
 	right:10px;
 }
 div#columns div#centercolumn {
-	/* hogy a közt fixen lehessen beállítani, abszolút hasábszélességet használunk - ez a fenti hasábszélesség + közszélesség */
 	margin: 0px 174px;
 }
 
@@ -64,7 +63,7 @@ div#footer {
 }
 div.boxpadding {
 	border: 1px solid #8296bb;
-	/* köz szélessége az egyes dobozok alatt (és így között) */
+	/* the height of the space below the boxes */
 	margin-bottom: 7px;
 }
 div.freespace {
