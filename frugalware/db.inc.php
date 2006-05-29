@@ -58,11 +58,10 @@ class FwDB
 	/**
 	 * Database connection
 	 */
-	function doConnect()
+	function doConnect($sqlhost, $sqluser, $sqlpass, $sqldb)
 	{
-		// Global variables come from config.inc
+		// Global variables come from config.inc.php
 		// We use persistent connections - probably fewer connections will be
-		global $sqlhost, $sqluser, $sqlpass, $sqldb;
 		$res = $this->db->PConnect($sqlhost, $sqluser, $sqlpass, $sqldb);
 		$this->db->SetFetchMode(ADODB_FETCH_MODE);
 		return $res;
