@@ -7,7 +7,7 @@
 $sqltype = "mysql";
 $sqlhost = "localhost";
 $sqluser = "homepage";
-$sqlpass = "tA1r.5Sll";
+$sqlpass = "85Tdjf{Od";
 $sqldb = "homepage";
 
 #site settings
