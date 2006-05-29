@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $lang; ?>" lang="<?php echo $lang; ?>">
 <head>
   <title>Frugalware Linux - Let's make things Frugal!</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <link rel="stylesheet" type="text/css" href="<?php echo $fwng_root; ?>fwng.css" />
   <link rel="icon" href="<?php echo $fwng_root; ?>images/favicon.ico" />
   <!--script language="javascript" type="text/javascript">
