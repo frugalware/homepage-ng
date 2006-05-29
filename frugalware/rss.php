@@ -36,11 +36,16 @@ switch($_GET['type'])
 		$result = $db->doQuery($query);
 		while ($i = $db->doFetchAssoc($result))
 		{
+			print "<pre>";
+			print_r($i);
+			print "</pre>";
+/*
 			$handle['items'][] = array(
 				"title" => "frugalware-" . $i['version'],
 				"desc" => $i['desc'],
 				"link" => "http://frugalware.org/download.php?url=frugalware-" . $i['version'] . "-iso/frugalware-" . $i['version'] . "-dvd.iso"
 			);
+*/
 		}
 		$db->doClose();
 		break;
@@ -112,7 +117,7 @@ switch($_GET['type'])
 		include("footer.php");
 		die();
 }
-
+/*
 header('Content-Type: application/xml; charset=utf-8');
 print("<?xml version=\"1.0\" encoding=\"utf-8\"?>
 <rss version=\"2.0\">
@@ -135,4 +140,5 @@ foreach( $handle['items'] as $i )
 	print("</item>\n");
 }
 print("</channel>\n</rss>");
+*/
 ?>
