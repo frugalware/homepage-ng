@@ -36,16 +36,11 @@ switch($_GET['type'])
 		$result = $db->doQuery($query);
 		while ($i = $db->doFetchRow($result))
 		{
-			print "<pre>";
-			print_r($i);
-			print "</pre>";
-/*
 			$handle['items'][] = array(
 				"title" => "frugalware-" . $i['version'],
 				"desc" => $i['desc'],
 				"link" => "http://frugalware.org/download.php?url=frugalware-" . $i['version'] . "-iso/frugalware-" . $i['version'] . "-dvd.iso"
 			);
-*/
 		}
 		$db->doClose();
 		break;
@@ -59,7 +54,7 @@ switch($_GET['type'])
 		$handle['link']="http://frugalware.org/packages.php";
 		$query="select groups, pkgname, id, pkgver, pkgrel, arch, `desc`, unix_timestamp(updated), uploader from packages order by updated desc limit 10";
 		$result = $db->doQuery($query);
-		while ($i = $db->doFetchAssoc($result))
+		while ($i = $db->doFetchRow($result))
 		{
 			$handle['items'][] = array(
 				"title" => preg_replace("/^([^ ]*) .*/", "$1", $i['groups']) . "/${i['pkgname']}-${i['pkgver']}-${i['pkgrel']}-${i['arch']}",
@@ -117,7 +112,6 @@ switch($_GET['type'])
 		include("footer.php");
 		die();
 }
-/*
 header('Content-Type: application/xml; charset=utf-8');
 print("<?xml version=\"1.0\" encoding=\"utf-8\"?>
 <rss version=\"2.0\">
@@ -140,5 +134,4 @@ foreach( $handle['items'] as $i )
 	print("</item>\n");
 }
 print("</channel>\n</rss>");
-*/
 ?>
