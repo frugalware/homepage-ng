@@ -27,7 +27,7 @@ switch($_GET['type'])
 {
 	case "stable":
 		$db = new FwDB();
-		$db->doConnect();
+		$db->doConnect($sqlhost, $sqluser, $sqlpass, "frugalware");
 
 		$handle['title']="Frugalware Linux";
 		$handle['desc']="Frugalware Linux is general purpose Linux distribution designed for intermediate users. Some of its elements were borrowed from Slackware Linux and Arch Linux.";
@@ -47,7 +47,7 @@ switch($_GET['type'])
 
 	case "packages":
 		$db  = new FwDB();
-		$db->doConnect();
+		$db->doConnect($sqlhost, $sqluser, $sqlpass, "frugalware");
 
 		$handle['title']="Frugalware Linux Packages";
 		$handle['desc']="Latest updates to the Frugalware Linux package repositories.";
