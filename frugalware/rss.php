@@ -34,7 +34,7 @@ switch($_GET['type'])
 		$handle['link']="http://frugalware.org/";
 		$query="select version, `desc` from releases where type='stable' order by date desc";
 		$result = $db->doQuery($query);
-		while ($i = $db->doFetchAssoc($result))
+		while ($i = $db->doFetchRow($result))
 		{
 			print "<pre>";
 			print_r($i);
