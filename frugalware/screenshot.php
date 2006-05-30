@@ -33,7 +33,7 @@ textdomain($domain);
 
 // include the config and let's start page
 include("config.inc.php");
-include("shots/".$lang.".php");
+include("includes/shots.".$lang.".php");
 include("header.php");
 
 ?>
