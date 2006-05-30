@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE roadmap [
+<!ELEMENT roadmap (release)*>
+<!ELEMENT release (name , definition , version , date , status , prerelease+)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT definition (#PCDATA)>
+<!ELEMENT version (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT status (#PCDATA)>
+<!ELEMENT prerelease (preversion , predate , prestatus)>
+<!ELEMENT preversion (#PCDATA)>
+<!ELEMENT predate (#PCDATA)>
+<!ELEMENT prestatus (#PCDATA)>
+]>
+
+<!-- if you modify this file, be sure it's still valid - xmllint is your friend
+-->
+
+<!-- <pre/status> - 0 == pending, 1 == done -->
+<!-- <pre/date> - In the format DD-MM-YYYY i.e. 30-09-2006 -->
+
+<roadmap>
+	<release>
+		<name>Siwenna</name>
+		<definition>A planet prominent in Foundation and Foundation and Empire.</definition>
+		<version>0.5</version>
+		<date>30-09-2006</date>
+		<status>0</status>
+		<prerelease>
+			<preversion>rc2</preversion>
+			<predate>31-08-2006</predate>
+			<prestatus>0</prestatus>
+		</prerelease>
+		<prerelease>
+			<preversion>rc1</preversion>
+			<predate>17-08-2006</predate>
+			<prestatus>0</prestatus>
+		</prerelease>
+		<prerelease>
+			<preversion>pre2</preversion>
+			<predate>20-07-2006</predate>
+			<prestatus>0</prestatus>
+		</prerelease>
+		<prerelease>
+			<preversion>pre1</preversion>
+			<predate>25-05-2006</predate>
+			<prestatus>1</prestatus>
+		</prerelease>
+	</release>
+	<release>
+		<name>Wanda</name>
+		<definition>The temporary headquarters for the navy of Bel Riose, during the war between the Empire and the Foundation.</definition>
+		<version>0.4</version>
+		<date>30-03-2006</date>
+		<status>0</status>
+		<prerelease>
+			<preversion>rc2</preversion>
+			<predate>16-03-2006</predate>
+			<prestatus>1</prestatus>
+		</prerelease>
+		<prerelease>
+			<preversion>rc1</preversion>
+			<predate>02-03-2006</predate>
+			<prestatus>1</prestatus>
+		</prerelease>
+		<prerelease>
+			<preversion>pre2</preversion>
+			<predate>02-02-2006</predate>
+			<prestatus>1</prestatus>
+		</prerelease>
+		<prerelease>
+			<preversion>pre1</preversion>
+			<predate>08-12-2003</predate>
+			<prestatus>1</prestatus>
+		</prerelease>
+	</release>
+	<release>
+		<name>Trantor</name>
+		<definition>A fictional planet in Isaac Asimov's Foundation series and Empire series of science-fiction novels</definition>
+		<version>0.3</version>
+		<date>13-10-2005</date>
+		<status>1</status>
+		<prerelease>
+			<preversion>rc2</preversion>
+			<predate>04-10-2005</predate>
+			<prestatus>1</prestatus>
+		</prerelease>
+		<prerelease>
+			<preversion>rc1</preversion>
+			<predate>16-09-2005</predate>
+			<prestatus>1</prestatus>
+		</prerelease>
+		<prerelease>
+			<preversion>pre2</preversion>
+			<predate>18-08-2005</predate>
+			<prestatus>1</prestatus>
+		</prerelease>
+		<prerelease>
+			<preversion>pre1</preversion>
+			<predate>23-06-2005</predate>
+			<prestatus>1</prestatus>
+		</prerelease>
+	</release>
+	<release>
+		<name>Aurora</name>
+		<definition>A fictional planet in Isaac Asimov's Robot Series.</definition>
+		<version>0.2</version>
+		<date>28-04-2006</date>
+		<status>1</status>
+		<prerelease>
+			<preversion>rc2</preversion>
+			<predate>18-04-2005</predate>
+			<prestatus>1</prestatus>
+		</prerelease>
+		<prerelease>
+			<preversion>rc1</preversion>
+			<predate>07-04-2005</predate>
+			<prestatus>1</prestatus>
+		</prerelease>
+		<prerelease>
+			<preversion>pre2</preversion>
+			<predate>24-02-2006</predate>
+			<prestatus>1</prestatus>
+		</prerelease>
+		<prerelease>
+			<preversion>pre1</preversion>
+			<predate>10-01-2006</predate>
+			<prestatus>1</prestatus>
+		</prerelease>
+	</release>
+	<release>
+		<name>Genesis</name>
+		<definition>The first book of the Hebrew Bible.</definition>
+		<version>0.1</version>
+		<date>02-11-2004</date>
+		<status>1</status>
+		<prerelease>
+			<preversion>rc2</preversion>
+			<predate>11-10-2004</predate>
+			<prestatus>1</prestatus>
+		</prerelease>
+		<prerelease>
+			<preversion>rc1</preversion>
+			<predate>29-09-2004</predate>
+			<prestatus>1</prestatus>
+		</prerelease>
+	</release>
+</roadmap>
