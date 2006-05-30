@@ -31,7 +31,7 @@ $validcontent = "<div align=\"center\">
 $menucontent = "<a class=\"menu\" href=\"index.php\">".gettext("news")."</a> &middot; \n";
 $menucontent .= "<a class=\"menu\" href=\"\" onClick=\"return clickreturnvalue()\" onMouseover=\"dropdownmenu(this, event, 'aboutmenu')\">".gettext("about")."</a> &middot; \n";
 $menucontent .= "<div id=\"aboutmenu\" class=\"menulinkcss\" align=\"left\">\n";
-$menucontent .= "	<a href=\"index.php\">".gettext("summary")."</a>\n";
+$menucontent .= "	<a href=\"about.php\">".gettext("summary")."</a>\n";
 $menucontent .= "	<a href=\"index.php\">".gettext("docs")."</a>\n";
 $menucontent .= "</div>\n";
 $menucontent .= "<a class=\"menu\" href=\"\" onClick=\"return clickreturnvalue()\" onMouseover=\"dropdownmenu(this, event, 'commmenu')\">".gettext("community")."</a> &middot; \n";
@@ -50,6 +50,7 @@ $menucontent .= "	<a href=\"index.php\">".gettext("packages")."</a>\n";
 $menucontent .= "</div>\n";
 $menucontent .= "<a class=\"menu\" href=\"\" onClick=\"return clickreturnvalue()\" onMouseover=\"dropdownmenu(this, event, 'develmenu')\">".gettext("development")."</a> &middot; \n";
 $menucontent .= "<div id=\"develmenu\" class=\"menulinkcss\" align=\"left\">\n";
+$menucontent .= "	<a href=\"roadmap.php\">".gettext("roadmap")."</a>\n";
 $menucontent .= "	<a href=\"http://darcs.frugalware.org/\">".gettext("darcs")."</a>\n";
 $menucontent .= "	<a href=\"http://bugs.frugalware.org/\">".gettext("bugs")."</a>\n";
 $menucontent .= "	<a href=\"index.php\">".gettext("changelog")."</a></li>\n";
