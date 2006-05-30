@@ -108,6 +108,8 @@ div#centercolumn {
 div#footer {
 	clear: both;
 	border: 1px solid #8296bb;
+	background-color: #8296bb;
+	color: #fff;
 	text-align: center;
 }
 
@@ -119,16 +121,6 @@ div.boxpadding {
 
 div.freespace {
 	display: none;
-}
-
-div#mainmenu ul {
-	margin: 1px 0px;
-	padding: 0px;
-}
-
-div#mainmenu ul li {
-	list-style-position: inside;
-	list-style-image: url('images/menuitem.gif');
 }
 
 div.boxheader {
