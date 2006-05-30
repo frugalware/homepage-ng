@@ -3,6 +3,7 @@
 	&copy; <?php echo $copydate; ?>. IroNiQ, AlexExtreme &amp; The Frugalware Developer Team
 </div>
 <!-- footer end -->
-
+</div>
+<!-- wrapper end -->
 </body>
 </html>

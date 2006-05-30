@@ -1,37 +1,88 @@
+/**
+ * Frugalware.org Homepage Stylesheet
+ * Copyright (C) 2006 Frugalware Development Team
+**/
+
 body {
-	background-color: #e6edff;
+	background-color: #6a6d72;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 12px;
 	color: #000;
 }
+
+div#wrapper {
+	width: 85%;
+	height: 100%;
+	color: #000;
+	margin: 0 auto;
+	position: relative;
+	background-color: #fff;
+	text-align: left;
+	border: 0;
+	padding: 5px;
+}
+
+div#nav {
+	width: 100%;
+	height: 19px;
+	padding: 0;
+	padding-top: 3px;
+	padding-left: 5px;
+	margin: 0;
+	margin-top: 5px;
+	margin-bottom: 6px;
+	text-align: left;
+	background-color: #8296bb;
+	color: #fff;
+	border: 0;
+}
+
 a {
 	color: #58657e;
 	background-color: transparent;
 	text-decoration: none;
 }
+
 a:hover {
 	text-decoration: underline;
 }
+
 a:visited {
 	text-decoration: none;
 }
+
+a.menu {
+	color: #fff;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a.menu:hover {
+	text-decoration: underline;
+}
+
 div#header {
 	/*  width below the header */
 	margin-bottom: 7px;
+	background-image: url(./images/header_bg.png);
 }
+
 div#header div#txt1 {
 	font-size: 18px;
 	font-weight: bold;
 }
+
 div#header div#txt2 {
 	font-style: italic;
 }
+
 div#header div#search {
 	float: right;
 	vertical-align: middle;
 	/* to be in line the Google pic with the bottom of the input box */
 	margin-top: 7px;
 }
+
 div#header div#search p {
 	display: inline;
 	position: absolute;
@@ -45,6 +96,7 @@ div#columns div#leftcolumn {
 	width: 167px;
 	float: left;
 }
+
 div#columns div#rightcolumn {
 	/* we use fix column width to get fix space between boxes */
 	width: 167px;
@@ -52,6 +104,7 @@ div#columns div#rightcolumn {
 	position:absolute;
 	right:10px;
 }
+
 div#columns div#centercolumn {
 	margin: 0px 174px;
 }
@@ -61,11 +114,13 @@ div#footer {
 	border: 1px solid #8296bb;
 	text-align: center;
 }
+
 div.boxpadding {
 	border: 1px solid #8296bb;
 	/* the height of the space below the boxes */
 	margin-bottom: 7px;
 }
+
 div.freespace {
 	display: none;
 }
@@ -74,34 +129,41 @@ div#mainmenu ul {
 	margin: 1px 0px;
 	padding: 0px;
 }
+
 div#mainmenu ul li {
 	list-style-position: inside;
 	list-style-image: url('images/menuitem.gif');
 }
+
 div.boxheader {
 	background-color: #8296bb;
 	color: #fff;
 	text-align: center;
 }
+
 div.boxcontent {
 	background-color: #fff;
 	color: #000;
 }
+
 div.imgcontent {
 	text-align: center;
 	vertical-align: bottom;
 	font-size: 16px;
 }
+
 div.screenshots {
 	border: 1px solid rgb(0, 0, 0);
 	margin-top: 0px;
 }
+
 div.screenshots div {
 	margin-top: 1px;
 	float: left;
 	width: 220px;
 	height: 180px;
 }
+
 FIELDSET.fieldset LEGEND {
 	font: bold 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
 	letter-spacing: .1em;
@@ -109,10 +171,26 @@ FIELDSET.fieldset LEGEND {
 	padding: 0 0.5em;
 	vertical-align: top;
 }
+
 FIELDSET.fieldset {
 	border: 1px solid rgb(130, 150, 187);
 	clear: left;
 	margin-top: 0 0 0 0;
 	padding: 4px 8px 4px 8px;
 	text-align: left;
+}
+
+.menulinkcss {
+	position:absolute;
+	visibility: hidden;
+	border:1px solid #8296BB;
+	background-color: #FFFFFF;
+	margin-left: -78px;
+	margin-top: -8px;
+}
+
+.menulinkcss a {
+	display: block;
+	padding-left: 5px;
+	padding-right: 5px;
 }
