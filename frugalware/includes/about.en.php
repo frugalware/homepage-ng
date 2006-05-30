@@ -1,5 +1,5 @@
 <?
-$fwshortabout="Frugalware is general purpose linux distribution, designed for intermediate users (who are not afraid of text mode).";
+$fwshortabout="Frugalware is a general purpose linux distribution, designed for intermediate users (who are not afraid of text mode).";
 $fwabout= array (
 	array ("What branches does Frugalware have?", 
 		"We have a <i>current</i> and a <i>stable</i> branch. The <i>current</i> branch is updated daily, and we update our <i>stable</i> branch around every 6 months."), 
@@ -10,7 +10,7 @@ $fwabout= array (
 	array ("What package manager does Frugalware use?",
 	"We don't have our own package manager, we use Judd Vinet's great work, the <a href=\"http://www.archlinux.org/pacman\">pacman</a> package manager. It's a tar.bz2 based package manager, similar to Slackware's .tgz. Our packages' extension is .fpm to differentiate them from regular tarballs. Unlike Slackware's scripts, pacman is written in C, so it's much faster."),
 	array ("How does Frugalware manage updating obsolete packages?",
-		"We don't have any standalone program for updating packages as pacman manages this task too. To update your package database, use <tt>pacman&nbsp;-Sy</tt>, an to update your packages according the just synchronized package database, you use <tt>pacman&nbsp;-Su</tt>. To install a package with the necessary dependencies directly from a mirror ftp server, you issue <tt>pacman&nbsp;-S&nbsp;foo</tt>. For more information, refer to the pacman man page."),
+		"We don't have any standalone program for updating packages as pacman manages this task too. To update your package database, use <tt>pacman&nbsp;-Sy</tt>, and to update your packages according the just synchronized package database, you use <tt>pacman&nbsp;-Su</tt>. To install a package with the necessary dependencies directly from a mirror ftp server, you issue <tt>pacman&nbsp;-S&nbsp;foo</tt>. For more information, refer to the pacman man page."),
 	array ("Is there any community support available for Frugalware?",
 		"Currently we have three mailing lists, an irc channel and forums that can be used to communicate with us or other users and to get help. The irc channel is on the Freenode network (server: irc.freenode.net). For more information about our mailing lists, please refer to the <a href=\"mailman/listinfo\">list section</a> of our web site."),
 	array("Is there any commercial support available for Frugalware?",
@@ -20,7 +20,7 @@ $fwabout= array (
 	array("How to become a developer?",
 		"Get involved! :) If you installed Frugalware from CDs, get the full FST via repoman, which is available in pacman-tools. The sources are included in the DVD edition. Then start to play with the FrugalBuild scripts, for a typical example, refer to the <a href=\"packages.php?pkgname=cabextract\">cabextract</a> package. Try to improve them, or write a new one for a currently unsupported program. Then send your patches to the <a href=\"mailman/listinfo/frugalware-devel\">devel</a> mailing list. From this point everything will come naturally to you :)"),
 	array("What do developers do?",
-		"In short, what they want to, if they play a square game. They may maintain packages: building them if a newer version available and update the FrugalBuild scripts to work correctly against a newer version. They can contribute a new build script to a previously non-existant package. They can write articles about Frugalware, or anything else in connection with the Frugalware community. If you only want to help us, but you don't want to hack, you may help in translating Frugalware to your or other language. And, of course, we happily accept <a href=\"donations.php\">donations</a> :)"),
+		"In short, what they want to, if they play a square game. They may maintain packages: building them if a newer version is available and update the FrugalBuild scripts to work correctly against a newer version. They can contribute a new build script to a previously non-existent package. They can write articles about Frugalware, or anything else in connection with the Frugalware community. If you only want to help us, but you don't want to hack, you may help in translating Frugalware to your or other language. And, of course, we happily accept <a href=\"donations.php\">donations</a> :)"),
 	array("Who develops Frugalware?",
 		"A young group, but your age is not conditional to become a developer"),
 	array("Is Frugalware specialized in a certain purpose?",
