@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE news [
 <!ELEMENT news (post)*>
-<!ELEMENT post (title, date, author, editedby*, content)>
+<!ELEMENT post (id, title, date, author, editedby*, content)>
+<!ELEMENT id (#PCDATA)>
 <!ELEMENT date (#PCDATA)>
 <!ELEMENT title (#PCDATA)>
 <!ELEMENT author (#PCDATA)>
@@ -11,17 +12,19 @@
 ]>
 <news>
 	<post>
-		<title>test post</title>
+		<id>2</id>
+		<title>second test post</title>
 		<date>Fri May 12 21:38:39 CEST 2006</date>
 		<author>IroNiQ</author>
 		<content><![CDATA[
-			This is a test post.<br />
+			This is the second test post.<br />
 			It can have more than one line.<br />
 			]]>
 		</content>
 	</post>
 	<post>
-		<title>second test post</title>
+		<id>1</id>
+		<title>first test post</title>
 		<date>Fri May 12 21:38:39 CEST 2006</date>
 		<author>IroNiQ</author>
 		<editedby>
@@ -33,7 +36,7 @@
 			<date>Fri May 12 22:11:18 CEST 2006</date>
 		</editedby>
 		<content><![CDATA[
-			This is the second test post.<br />
+			This is a test post.<br />
 			It can have more than one line, too.<br />
 			]]>
 		</content>
