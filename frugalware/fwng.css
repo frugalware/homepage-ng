@@ -174,7 +174,7 @@ FIELDSET.fieldset LEGEND {
 FIELDSET.fieldset {
 	border: 1px solid rgb(130, 150, 187);
 	clear: left;
-	margin-top: 0 0 0 0;
+	margin: 0 0 0 0;
 	padding: 4px 8px 4px 8px;
 	text-align: left;
 }

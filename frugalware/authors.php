@@ -70,13 +70,14 @@ switch($who)
 		{
 			$email = str_replace("@", " at ", $parser->document->author[$i]->email[0]->tagData);
 			$email = str_replace(".", " dot ", $email);
-			$authors .= "<p>\n".$parser->document->author[$i]->name[0]->tagData." (".$parser->document->author[$i]->nick[0]->tagData.") &lt;".$email."&gt;<br>\n<ul>\n";
+			$authors .= $parser->document->author[$i]->name[0]->tagData." (".$parser->document->author[$i]->nick[0]->tagData.") &lt;".$email."&gt;<br />\n<ul>\n";
 			for ( $j=0; $j<count($parser->document->author[$i]->role); $j++ )
 			{
 				$authors.= "<li>".$parser->document->author[$i]->role[$j]->tagData."</li>\n";
 			}
-			$authors .= "</ul>\n</p>\n";
+			$authors .= "</ul>\n";
 		}
+		$authors .= "<br />\n";
 		$title = gettext("Developers");
 		break;
 
