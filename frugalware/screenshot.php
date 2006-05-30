@@ -36,25 +36,6 @@ include("config.inc.php");
 include("includes/shots.".$lang.".php");
 include("header.php");
 
-?>
-
-<!-- main content start -->
-<div id="columns">
-	<div id="leftcolumn">
-<?php
-fwsidebox(gettext("Languages"), $langcontent);
-?>
-	</div>
-
-	<div id="rightcolumn">
-<?php
-fwsidebox(gettext("Information"), $validcontent);
-?>
-	</div>
-
-	<div id="centercolumn">
-<?php
-
 $maincont = "<div class=\"screenshots\">\n";
 $maincont .= "<form>\n<fieldset class=\"fieldset\" id=\"installer\">\n<legend>Installer</legend>\n";
 for ($i=0; $i<count($shots[inst]); $i++)
@@ -76,12 +57,5 @@ $maincont .= "</form>\n</div>\n";
 #fwmiddlebox("", $maincont);
 print $maincont;
 
-?>
-	</div>
-
-</div>
-<!-- main content end -->
-
-<?php
 include("footer.php");
 ?>

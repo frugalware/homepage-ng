@@ -37,25 +37,6 @@ textdomain($domain);
 include("config.inc.php");
 include("header.php");
 
-?>
-
-<!-- main content start -->
-<div id="columns">
-	<div id="leftcolumn">
-<?php
-fwsidebox(gettext("Languages"), $langcontent);
-?>
-	</div>
-
-	<div id="rightcolumn">
-<?php
-fwsidebox(gettext("Information"), $validcontent);
-?>
-	</div>
-
-	<div id="centercolumn">
-<?php
-
 // This includes the news.xml XML parser
 include("xml.inc.php");
 
@@ -77,7 +58,7 @@ $news = $parser->document->post;
 for ( $i=0; $i<count($news); $i++)
 {
 	$posts[$i][id] = $news[$i]->id[0]->tagData;
-	$posts[$i][title] = "<a href=\"".$SERVER[PHP_SELF]."?id=".$posts[$i]['id']."\">".$news[$i]->title[0]->tagData."</a>";
+	$posts[$i][title] = "<a class=\"menu\" href=\"".$SERVER[PHP_SELF]."?id=".$posts[$i]['id']."\">".$news[$i]->title[0]->tagData."</a>";
 	$posts[$i][date] = $news[$i]->date[0]->tagData;
 	$posts[$i][author] = $news[$i]->author[0]->tagData;
 	$posts[$i][content] = trim($news[$i]->content[0]->tagData);
@@ -105,12 +86,6 @@ else
 		fwmiddlebox($posts[$i][title], "<div align=\"right\"><small>".$posts[$i][date]."<br />".gettext("posted by")." ".$posts[$i][author]."</small></div>\n<div align=\"justify\">\n".$posts[$i][content]."\n</div>");
 	}
 }
-?>
-	</div>
 
-</div>
-<!-- main content end -->
-
-<?php
 include("footer.php");
 ?>

@@ -16,7 +16,7 @@ div#wrapper {
 	color: #000;
 	margin: 0 auto;
 	position: relative;
-	background-color: #fff;
+	background-color: #eff3fb;
 	text-align: left;
 	border: 0;
 	padding: 5px;
@@ -90,22 +90,19 @@ div#header div#search p {
 	margin-top: 0px;
 }
 
-div#columns div#leftcolumn {
+div#leftcolumn {
 	/* we use fix column width to get fix space between boxes */
 	width: 167px;
 	float: left;
+	padding: 0px;
+	margin: 0px;
+	height: 100%;
 }
 
-div#columns div#rightcolumn {
-	/* we use fix column width to get fix space between boxes */
-	width: 167px;
-	float: right;
-	position:absolute;
-	right:5px;
-}
-
-div#columns div#centercolumn {
-	margin: 0px 174px;
+div#centercolumn {
+	margin-left: 177px;
+	padding: 0px;
+	width: 100%px;
 }
 
 div#footer {

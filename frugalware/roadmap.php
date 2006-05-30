@@ -39,25 +39,6 @@ textdomain($domain);
 include("config.inc.php");
 include("header.php");
 
-?>
-
-<!-- main content start -->
-<div id="columns">
-	<div id="leftcolumn">
-<?php
-fwsidebox(gettext("Languages"), $langcontent);
-?>
-	</div>
-
-	<div id="rightcolumn">
-<?php
-fwsidebox(gettext("Information"), $validcontent);
-?>
-	</div>
-
-	<div id="centercolumn">
-<?php
-
 fwmiddlebox("0.5 (<acronym title=\"A planet prominent in Foundation and Foundation and Empire.\">Siwenna</acronym>)",
 "<table width=\"100%\">
 <tr><td>Sep 30, 2006<td>0.5<td><i>pending</i>
@@ -105,11 +86,6 @@ fwmiddlebox("0.1 (<acronym title=\"the first book of the Hebrew Bible\">Genesis<
 <tr><td width=\"30%\">Sep 29, 2004<td width=\"30%\">0.1rc1<td width=\"30%\"><i>done</i>
 </table>
 ");
-?>
-	</div>
-</div>
-<!-- main content end -->
 
-<?php
 include("footer.php");
 ?>

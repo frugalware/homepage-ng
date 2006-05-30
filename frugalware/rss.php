@@ -81,22 +81,7 @@ switch($_GET['type'])
 		die();
 	default:
 		include("header.php");
-?>
-<div id="columns">
-        <div id="leftcolumn">
-<?php
-	fwsidebox(gettext("Menu"), $menucontent);
-	fwsidebox(gettext("Languages"), $langcontent);
-?>
-        </div>
-        <div id="rightcolumn">
-<?php
-	fwsidebox(gettext("Information"), $validcontent);
-?>
-        </div>
-        <div id="centercolumn">
-<?php
-	fwmiddlebox("RSS",'<div align="left"><ul>
+		fwmiddlebox("RSS",'<div align="left"><ul>
 			<li><a href="/rss.php?type=stable">Stable releases</a></li>
 			<li><a href="/rss.php?type=darcs">Darcs commits</a></li>
 			<li><a href="/rss.php?type=bugs">BTS entries</a></li>
@@ -104,11 +89,6 @@ switch($_GET['type'])
 			<li><a href="/rss.php?type=blogs">Blog posts</a></li>
 			</ul></div>'
 		);
-?>
-        </div>
-</div>
-<!-- main content end -->
-<?php
 		include("footer.php");
 		die();
 }

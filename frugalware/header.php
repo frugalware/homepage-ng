@@ -47,3 +47,12 @@
         &ensp;<?php echo $menucontent; ?>
 </div>
 <!-- nav end -->
+
+<!-- main content start -->
+<div id="leftcolumn">
+<?php
+fwsidebox(gettext("Languages"), $langcontent);
+fwsidebox(gettext("Information"), $validcontent);
+?>
+</div>
+<div id="centercolumn">

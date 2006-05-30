@@ -36,25 +36,6 @@ textdomain($domain);
 include("config.inc.php");
 include("header.php");
 
-?>
-
-<!-- main content start -->
-<div id="columns">
-	<div id="leftcolumn">
-<?php
-fwsidebox(gettext("Languages"), $langcontent);
-?>
-	</div>
-
-	<div id="rightcolumn">
-<?php
-fwsidebox(gettext("Information"), $validcontent);
-?>
-	</div>
-
-	<div id="centercolumn">
-<?php
-
 include("xml.inc.php");
 $who = ($_GET['who'] != "") ? $_GET['who'] : "devel";
 
@@ -102,11 +83,6 @@ switch($who)
 		break;
 }
 fwmiddlebox($title, $authors);
-?>
-	</div>
-</div>
-<!-- main content end -->
 
-<?php
 include("footer.php");
 ?>

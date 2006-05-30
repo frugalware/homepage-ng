@@ -39,25 +39,6 @@ textdomain($domain);
 include("config.inc.php");
 include("header.php");
 
-?>
-
-<!-- main content start -->
-<div id="columns">
-	<div id="leftcolumn">
-<?php
-fwsidebox(gettext("Languages"), $langcontent);
-?>
-	</div>
-
-	<div id="rightcolumn">
-<?php
-fwsidebox(gettext("Information"), $validcontent);
-?>
-	</div>
-
-	<div id="centercolumn">
-<?php
-
 include($aboutfile);
 fwmiddlebox(gettext("Short"), $fwshortabout);
 $cont = "";
@@ -67,11 +48,6 @@ for ( $i=0; $i<count($fwabout); $i++ )
 	$cont .= "<p align=\"justify\">".gettext("Answer").":&nbsp;&nbsp;".$fwabout[$i][1]."</p>\n";
 }
 fwmiddlebox(gettext("Long"), $cont);
-?>
-	</div>
-</div>
-<!-- main content end -->
 
-<?php
 include("footer.php");
 ?>
