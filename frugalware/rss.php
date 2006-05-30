@@ -59,7 +59,7 @@ switch($_GET['type'])
 			$handle['items'][] = array(
 				"title" => preg_replace("/^([^ ]*) .*/", "$1", $i['groups']) . "/${i['pkgname']}-${i['pkgver']}-${i['pkgrel']}-${i['arch']}",
 				"desc" => $i['desc'],
-				"author" => $i['uploader'],
+				"author" => $i['uploader']."@nospam.frugalware.org",
 				"pubDate" => date(DATE_RFC2822, $i['unix_timestamp(updated)']),
 				"link" => "http://frugalware.org/packages.php?id=${i['id']}"
 			);
