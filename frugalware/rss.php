@@ -101,7 +101,7 @@ print("<?xml version=\"1.0\" encoding=\"utf-8\"?>
 	<link>".$handle['link']."</link>\n");
 foreach( $handle['items'] as $i )
 {
-	print("<item>\n<title>".$i['title']."</title>\n<description>".htmlspecialchars($i['desc'])."</description>\n<link>".$i['link']."</link>\n<guid>".$handle['link']."#top</guid>\n");
+	print("<item>\n<title>".$i['title']."</title>\n<description>".htmlspecialchars($i['desc'])."</description>\n<link>".$i['link']."</link>\n<guid>".$i['link']."#top</guid>\n");
 	if(isset($i['author']))
 	{
 		print("<author>".$i['author']."</author>\n");
