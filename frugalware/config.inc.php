@@ -37,7 +37,7 @@ $menucontent .= "</div>\n";
 $menucontent .= "<a class=\"menu\" href=\"\" onClick=\"return clickreturnvalue()\" onMouseover=\"dropdownmenu(this, event, 'commmenu')\">".gettext("community")."</a> &middot; \n";
 $menucontent .= "<div id=\"commmenu\" class=\"menulinkcss\" align=\"left\">\n";
 $menucontent .= "	<a href=\"http://frugalware.org/mailman/listinfo\">".gettext("mailing lists")."</a>\n";
-$menucontent .= "	<a href=\"http://forums.frugalware.org/\">".gettext("discusison forums")."</a>\n";
+$menucontent .= "	<a href=\"http://forums.frugalware.org/\">".gettext("discussion forums")."</a>\n";
 $menucontent .= "	<a href=\"http://wiki.frugalware.org/\">".gettext("wiki")."</a>\n";
 $menucontent .= "	<a href=\"index.php\">".gettext("irc")."</a>\n";
 $menucontent .= "	<a href=\"screenshot.php\">".gettext("screenshots")."</a>\n";
