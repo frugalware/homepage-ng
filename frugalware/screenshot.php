@@ -42,7 +42,6 @@ include("header.php");
 <div id="columns">
 	<div id="leftcolumn">
 <?php
-fwsidebox(gettext("Menu"), $menucontent);
 fwsidebox(gettext("Languages"), $langcontent);
 ?>
 	</div>

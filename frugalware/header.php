@@ -41,3 +41,9 @@
   <img src="<?php echo $fwng_root; ?>images/header.png" alt="Frugalware Linux - Let's make things Frugal!" />
 </div>
 <!-- header end -->
+
+<!-- nav start -->
+<div id="nav">
+        &ensp;<?php echo $menucontent; ?>
+</div>
+<!-- nav end -->

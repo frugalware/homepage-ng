@@ -39,15 +39,10 @@ include("header.php");
 
 ?>
 
-<div id="nav">
-	&ensp;<?php echo $menucontent; ?>
-</div>
-
 <!-- main content start -->
 <div id="columns">
 	<div id="leftcolumn">
 <?php
-//fwsidebox(gettext("Menu"), $menucontent);
 fwsidebox(gettext("Languages"), $langcontent);
 ?>
 	</div>
