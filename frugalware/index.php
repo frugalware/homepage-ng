@@ -61,7 +61,12 @@ for ( $i=0; $i<count($news); $i++)
 	$posts[$i][title] = "<a class=\"menu\" href=\"".$SERVER[PHP_SELF]."?id=".$posts[$i]['id']."\">".$news[$i]->title[0]->tagData."</a>";
 	$posts[$i][date] = $news[$i]->date[0]->tagData;
 	$posts[$i][author] = $news[$i]->author[0]->tagData;
-	$posts[$i][content] = trim($news[$i]->content[0]->tagData);
+	$posts[$i][content] = $news[$i]->content[0]->tagData;
+	for ( $j=0; $j<count($news[$i]->editedby); $j++ )
+	{
+		$posts[$i][editedby][$j][name] = $news[$i]->editedby[$j]->name[0]->tagData;
+		$posts[$i][editedby][$j][date] = $news[$i]->editedby[$j]->date[0]->tagData;
+	}
 }
 // Let's write out the news in separate boxes.
 // TODO: clicking on the title the page shows the history of the news (editedby)
@@ -73,7 +78,13 @@ if ( $id != -1 )
 	{
 		if ( $id == $posts[$i]['id'] )
 		{
+			$edited = "";
+			for ( $j=0; $j<count($posts[$i][editedby]); $j++ )
+			{
+				$edited .= $posts[$i][editedby][$j][name]." ".gettext(" edited this news on ").$posts[$i][editedby][$j][date]."<br />";
+			}
 			fwmiddlebox($posts[$i][title], "<div align=\"right\"><small>".$posts[$i][date]."<br />".gettext("posted by")." ".$posts[$i][author]."</small></div>\n<div align=\"justify\">\n".$posts[$i][content]."\n</div>");
+			if ( $edited != "" ) fwmiddlebox(gettext("News history"), $edited);
 		}
 	}
 }
