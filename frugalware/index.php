@@ -40,7 +40,7 @@ include("header.php");
 ?>
 
 <div id="nav">
-	<?php echo $menucontent; ?>
+	&ensp;<?php echo $menucontent; ?>
 </div>
 
 <!-- main content start -->
