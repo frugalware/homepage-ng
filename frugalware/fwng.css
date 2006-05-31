@@ -140,11 +140,6 @@ div.imgcontent {
 	font-size: 16px;
 }
 
-div.screenshots {
-	border: 1px solid rgb(0, 0, 0);
-	margin-top: 0px;
-}
-
 div.screenshots div {
 	margin-top: 1px;
 	float: left;
@@ -162,7 +157,7 @@ FIELDSET.fieldset LEGEND {
 
 FIELDSET.fieldset {
 	border: 1px solid rgb(130, 150, 187);
-	clear: left;
+	/* clear: left; */
 	margin: 0 0 0 0;
 	padding: 4px 8px 4px 8px;
 	text-align: left;
