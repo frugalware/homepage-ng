@@ -91,7 +91,7 @@ for( $i=0; $i < count($releases); $i++ ) {
 	
 	for ( $j=0; $j < count($releases[$i][prerelease]); $j++ ) {
 		
-		$content .= '<tr><td>' . $releases[$i][prerelease][$j][predate] . '</td><td>' . $releases[$i][version] . $releases[$i][prerelease][$j][preversion] . '</td><td>' . $releases[$i][prerelease][$j][prestatus] . '</td></tr>';
+		$content .= '<tr><td>' . $releases[$i][prerelease][$j][predate] . '</td><td>' . $releases[$i][version] . $releases[$i][prerelease][$j][preversion] . '</td><td></i>' . $releases[$i][prerelease][$j][prestatus] . '</i></td></tr>';
 		
 	}
 	
