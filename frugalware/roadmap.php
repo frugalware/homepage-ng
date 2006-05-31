@@ -74,7 +74,7 @@ for ( $i = 0; $i < count($roadmap); $i++) {
 	for ( $j=0; $j < count($roadmap[$i]->prerelease); $j++ ) {
 		
 		$releases[$i][prerelease][$j][preversion] = $roadmap[$i]->prerelease[$j]->preversion[0]->tagData;
-		$releases[$i][prerelease][$j][predate] = date('M d, Y', strtotime($roadmap[$i]->prerelease[$j]->predate[0]->tagData));
+		$releases[$i][prerelease][$j][predate] = $roadmap[$i]->prerelease[$j]->predate[0]->tagData;
 		if ($roadmap[$i]->prerelease[$j]->prestatus[0]->tagData == 1)
 			$releases[$i][prerelease][$j][prestatus] = gettext('done');
 		else

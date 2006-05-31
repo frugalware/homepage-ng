@@ -17,33 +17,33 @@
 -->
 
 <!-- <pre/status> - 0 == pending, 1 == done -->
-<!-- <pre/date> - In the format DD-MM-YYYY i.e. 30-09-2006 -->
+<!-- <pre/date> - In the format Mmm DD, YYYY i.e. Sep 30, 2006 -->
 
 <roadmap>
 	<release>
 		<name>Siwenna</name>
 		<definition>A planet prominent in Foundation and Foundation and Empire.</definition>
 		<version>0.5</version>
-		<date>30-09-2006</date>
+		<date>Sep 30, 2006</date>
 		<status>0</status>
 		<prerelease>
 			<preversion>rc2</preversion>
-			<predate>31-08-2006</predate>
+			<predate>Aug 31, 2006</predate>
 			<prestatus>0</prestatus>
 		</prerelease>
 		<prerelease>
 			<preversion>rc1</preversion>
-			<predate>17-08-2006</predate>
+			<predate>Aug 17, 2006</predate>
 			<prestatus>0</prestatus>
 		</prerelease>
 		<prerelease>
 			<preversion>pre2</preversion>
-			<predate>20-07-2006</predate>
+			<predate>Jul 20, 2006</predate>
 			<prestatus>0</prestatus>
 		</prerelease>
 		<prerelease>
 			<preversion>pre1</preversion>
-			<predate>25-05-2006</predate>
+			<predate>May 25, 2006</predate>
 			<prestatus>1</prestatus>
 		</prerelease>
 	</release>
@@ -55,22 +55,22 @@
 		<status>1</status>
 		<prerelease>
 			<preversion>rc2</preversion>
-			<predate>16-03-2006</predate>
+			<predate>Mar 16, 2006</predate>
 			<prestatus>1</prestatus>
 		</prerelease>
 		<prerelease>
 			<preversion>rc1</preversion>
-			<predate>02-03-2006</predate>
+			<predate>Mar 02, 2006</predate>
 			<prestatus>1</prestatus>
 		</prerelease>
 		<prerelease>
 			<preversion>pre2</preversion>
-			<predate>02-02-2006</predate>
+			<predate>Feb 02, 2006</predate>
 			<prestatus>1</prestatus>
 		</prerelease>
 		<prerelease>
 			<preversion>pre1</preversion>
-			<predate>08-12-2003</predate>
+			<predate>Dec 08, 2005</predate>
 			<prestatus>1</prestatus>
 		</prerelease>
 	</release>
@@ -78,26 +78,26 @@
 		<name>Trantor</name>
 		<definition>A fictional planet in Isaac Asimov's Foundation series and Empire series of science-fiction novels</definition>
 		<version>0.3</version>
-		<date>13-10-2005</date>
+		<date>Oct 13, 2005</date>
 		<status>1</status>
 		<prerelease>
 			<preversion>rc2</preversion>
-			<predate>04-10-2005</predate>
+			<predate>Oct 04, 2005</predate>
 			<prestatus>1</prestatus>
 		</prerelease>
 		<prerelease>
 			<preversion>rc1</preversion>
-			<predate>16-09-2005</predate>
+			<predate>Sep 16, 2005</predate>
 			<prestatus>1</prestatus>
 		</prerelease>
 		<prerelease>
 			<preversion>pre2</preversion>
-			<predate>18-08-2005</predate>
+			<predate>Aug 18, 2005</predate>
 			<prestatus>1</prestatus>
 		</prerelease>
 		<prerelease>
 			<preversion>pre1</preversion>
-			<predate>23-06-2005</predate>
+			<predate>Jul 23, 2005</predate>
 			<prestatus>1</prestatus>
 		</prerelease>
 	</release>
@@ -105,26 +105,26 @@
 		<name>Aurora</name>
 		<definition>A fictional planet in Isaac Asimov's Robot Series.</definition>
 		<version>0.2</version>
-		<date>28-04-2006</date>
+		<date>Apr 28, 2005</date>
 		<status>1</status>
 		<prerelease>
 			<preversion>rc2</preversion>
-			<predate>18-04-2005</predate>
+			<predate>Apr 18, 2005</predate>
 			<prestatus>1</prestatus>
 		</prerelease>
 		<prerelease>
 			<preversion>rc1</preversion>
-			<predate>07-04-2005</predate>
+			<predate>Apr 07, 2005</predate>
 			<prestatus>1</prestatus>
 		</prerelease>
 		<prerelease>
 			<preversion>pre2</preversion>
-			<predate>24-02-2006</predate>
+			<predate>Feb 24, 2006</predate>
 			<prestatus>1</prestatus>
 		</prerelease>
 		<prerelease>
 			<preversion>pre1</preversion>
-			<predate>10-01-2006</predate>
+			<predate>Jan 10, 2006</predate>
 			<prestatus>1</prestatus>
 		</prerelease>
 	</release>
@@ -132,16 +132,16 @@
 		<name>Genesis</name>
 		<definition>The first book of the Hebrew Bible.</definition>
 		<version>0.1</version>
-		<date>02-11-2004</date>
+		<date>Nov 02, 2004</date>
 		<status>1</status>
 		<prerelease>
 			<preversion>rc2</preversion>
-			<predate>11-10-2004</predate>
+			<predate>Oct 11, 2004</predate>
 			<prestatus>1</prestatus>
 		</prerelease>
 		<prerelease>
 			<preversion>rc1</preversion>
-			<predate>29-09-2004</predate>
+			<predate>Sep 29, 2004</predate>
 			<prestatus>1</prestatus>
 		</prerelease>
 	</release>
