@@ -43,7 +43,7 @@ $menucontent .= '	<a href="http://www.frappr.com/frugalware">' . gettext('Map') 
 $menucontent .= "</div>\n";
 $menucontent .= '<a class="menu" href="" onClick="return clickreturnvalue()" onMouseover="dropdownmenu(this, event, \'dlmenu\')">' . gettext('Download') . "</a> &middot; \n";
 $menucontent .= '<div id="dlmenu" class="menulinkcss" align="left">' . "\n";
-$menucontent .= '	<a href="index.php">' . gettext('ISO images') . "</a>\n";
+$menucontent .= '	<a href="download.php">' . gettext('ISO images') . "</a>\n";
 $menucontent .= '	<a href="packages.php">' . gettext('Packages') . "</a>\n";
 $menucontent .= "</div>\n";
 $menucontent .= '<a class="menu" href="" onClick="return clickreturnvalue()" onMouseover="dropdownmenu(this, event, \'develmenu\')">' . gettext('Development') . "</a>\n";
