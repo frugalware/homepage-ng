@@ -71,7 +71,7 @@ for ( $i=0; $i<count($mirrors); $i++ )
 	}
 	if ( $mirrors[$i][type] == "buycd" )
 	{
-		$buycdcont .= "<li><a href=\"".$mirrors[$i][path]."\">".$mirrors[$i][name]."</li>\n";
+		$buycdcont .= "<li><a href=\"".$mirrors[$i][path]."\">".$mirrors[$i][name]."</a></li>\n";
 	}
 }
 $ftpcont .= "</table>\n";
