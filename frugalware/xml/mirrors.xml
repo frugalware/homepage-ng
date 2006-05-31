@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mirrors [
+<!ELEMENT mirrors (mirror)*>
+<!ELEMENT mirror (name , type , path , description)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT type (#PCDATA)>
+<!ELEMENT path (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+]>
+
+<!-- if you modify this file, be sure it's still valid - xmllint is your friend
+-->
+
+<mirrors>
+	<mirror>
+		<name>ftp3.frugalware.org</name>
+		<type>ftp</type>
+		<path>mirrors/frugalware/frugalware</path>
+		<description>Hungary (100 MBit)</description>
+	</mirror>
+	<mirror>
+		<name>ftp4.frugalware.org</name>
+		<type>ftp</type>
+		<path>pub/linux/distributions/frugalware</path>
+		<description>Hungary (2x100 MBit, ftp.fsn.hu)</description>
+	</mirror>
+	<mirror>
+		<name>ftp5.frugalware.org</name>
+		<type>ftp</type>
+		<path>packages/frugalware/pub/frugalware</path>
+		<description>Belgium (2x1GBit, ftp.belnet.be)</description>
+	</mirror>
+	<mirror>
+		<name>ftp8.frugalware.org</name>
+		<type>ftp</type>
+		<path>pub/Frugalware</path>
+		<description>Silicon Valley, CA, USA (ISO only, 2x1 GBit, www.madtux.org)</description>
+	</mirror>
+	<mirror>
+		<name>ftp9.frugalware.org</name>
+		<type>ftp</type>
+		<path>pub/frugalware</path>
+		<description>Taipei City, Taiwan (National Taiwan University, cle.linux.org.tw)</description>
+	</mirror>
+	<mirror>
+		<name>www5.frugalware.org</name>
+		<type>http</type>
+		<path>linux/frugalware/pub/frugalware</path>
+		<description>Belgium (2x1GBit, ftp.belnet.be)</description>
+	</mirror>
+	<mirror>
+		<name>www7.frugalware.org</name>
+		<type>http</type>
+		<path>pub/frugalware</path>
+		<description>Germany (100MBit, pimpmylinux.org)</description>
+	</mirror>
+	<mirror>
+		<name>ftp4.frugalware.org</name>
+		<type>rsync</type>
+		<path>ftp/pub/linux/distributions/frugalware</path>
+		<description>Hungary (2x100 MBit, ftp.fsn.hu)</description>
+	</mirror>
+	<mirror>
+		<name>ftp5.frugalware.org</name>
+		<type>rsync</type>
+		<path>packages/frugalware/pub/frugalware</path>
+		<description>Belgium (2x1GBit, ftp.belnet.be)</description>
+	</mirror>
+	<mirror>
+		<name>Lidux.de</name>
+		<type>buycd</type>
+		<path>http://www.lidux.de/index.php/cPath/2_58</path>
+		<description></description>
+	</mirror>
+	<mirror>
+		<name>OSDisc.com</name>
+		<type>buycd</type>
+		<path>http://www.osdisc.com/cgi-bin/view.cgi/products/linux/frugalware</path>
+		<description></description>
+	</mirror>
+	<mirror>
+		<name>CheapISO.com</name>
+		<type>buycd</type>
+		<path>http://cheapiso.com/index.php?manufacturers_id=55</path>
+		<description></description>
+	</mirror>
+	<mirror>
+		<name>BudgetLinuxCDS</name>
+		<type>buycd</type>
+		<path>http://budgetlinuxcds.com/index.php?page=Choose&amp;letter=Frugalware</path>
+		<description></description>
+	</mirror>
+	<mirror>
+		<name>cdiras.projectinfo.hu</name>
+		<type>buycd</type>
+		<path>http://cdiras.projektinfo.hu/index.php?r=1&amp;op=linux</path>
+		<description></description>
+	</mirror>
+	<mirror>
+		<name>LinuxMedia.hu</name>
+		<type>buycd</type>
+		<path>http://www.linuxmedia.hu/?ref=frugalware</path>
+		<description></description>
+	</mirror>
+</mirrors>
