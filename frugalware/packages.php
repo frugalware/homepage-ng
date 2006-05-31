@@ -62,7 +62,7 @@ function main()
 		$content = "<form name=\"pkgsrch\" action=\"packages.php\" method=\"get\">
 	<fieldset class=\"pkg\"><legend>".gettext("Package search")."</legend>
 		<input type=\"hidden\" name=\"op\" value=\"pkg\" />
-		<label for=\"pkgsrc\">".gettext("Search for a package:")."</label><input type=\"text\" id=\"pkgsrc\" name=\"srch\" size=\"40\" />
+		<label for=\"pkgsrc\">".gettext("Search for a package:")."</label><input class=\"required\" type=\"text\" id=\"pkgsrc\" name=\"srch\" size=\"40\" />
 		<br />
 		<input type=\"checkbox\" name=\"sub\" id=\"substr\" /><label for=\"substr\" class=\"pkg-phrasing\">".gettext("Search for substring")."</label>
 		<br />
@@ -97,7 +97,7 @@ function main()
 <form name=\"filesrch\" action=\"packages.php\" method=\"get\">
 	<fieldset class=\"pkg\"><legend>".gettext("File search")."</legend>
 		<input type=\"hidden\" name=\"op\" value=\"file\" />
-		<label for=\"filesrc\">".gettext("Search for a file:")."</label><input type=\"text\" id=\"filesrc\" name=\"srch\" size=\"40\" />
+		<label for=\"filesrc\">".gettext("Search for a file:")."</label><input class=\"required\" type=\"text\" id=\"filesrc\" name=\"srch\" size=\"40\" />
 		<br />
 		<label for=\"frepos\">".gettext("Repository:")."</label><select name=\"repo\" id=\"frepos\">
 			<option value=\"all\" selected=\"selected\">all</option>
@@ -141,7 +141,7 @@ function search_pkg()
 	($_GET['sub'] == "on") ? $sub = 1 : $sub = 0; # whether the search is for a substring or exact match
 
 	$query = "select id, pkgname, pkgver, pkgrel, fwver, repo, arch from packages where ";
-	# if the 'desc' is set (searching in description, too) I have to put 
+	# if the 'desc' is set (searching in description, too) I have to put
 	# the restrictions between brackets, because of the 'repo' below...
 	if ($sub == 0){
 		($_GET['desc'] == "on" || $_GET['desc'] == 1) ? $query .= "(pkgname='$search' or `desc`='$search')" : $query .= "(pkgname='$search')"; # if the desc is set, the search is for description, too
@@ -248,7 +248,7 @@ function pkg_from_id($id)
 	{
 		$id_set[$i['pkgname']]=$i['id'];
 	}
-	
+
 	$title = gettext("Package information:")." ".$arr['pkgname'];
 	$content = "<table border=0 width=100%>\n";
 	$content .= "<tr><td>Name:</td><td><a href=\"packages.php?id=".$id."&s=f\">".$arr['pkgname']."</a></td></tr>\n";
