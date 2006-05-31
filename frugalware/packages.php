@@ -64,25 +64,25 @@ function main()
 		<input type=\"hidden\" name=\"op\" value=\"pkg\" />
 		<label for=\"pkgsrc\">".gettext("Search for a package:")."</label><input class=\"required\" type=\"text\" id=\"pkgsrc\" name=\"srch\" size=\"40\" />
 		<br />
-		<input type=\"checkbox\" name=\"sub\" id=\"substr\" /><label for=\"substr\" class=\"pkg-phrasing\">".gettext("Search for substring")."</label>
+		<input class=\"required\" type=\"checkbox\" name=\"sub\" id=\"substr\" /><label for=\"substr\" class=\"pkg-phrasing\">".gettext("Search for substring")."</label>
 		<br />
-		<input type=\"checkbox\" name=\"desc\" id=\"descr\" /><label for=\"descr\" class=\"pkg-phrasing\">".gettext("Search in description")."</label>
+		<input class=\"required\" type=\"checkbox\" name=\"desc\" id=\"descr\" /><label for=\"descr\" class=\"pkg-phrasing\">".gettext("Search in description")."</label>
 		<br />
 		<label for=\"repos\">".gettext("Repository:")."</label>
-		<select name=\"repo\" id=\"repos\">
+		<select name=\"repo\" id=\"repos\" class=\"required\">
 			<option value=\"all\" selected=\"selected\">all</option>
 			<option value=\"frugalware\">frugalware</option>
 			<option value=\"extra\">extra</option>
 		</select>
 		<br />
 		<label for=\"archs\">".gettext("Architecture:")."</label>
-		<select name=\"arch\" id=\"archs\">
-			<option value=\"i686\" selected=\"selected\">i686</option>
+		<select name=\"arch\" id=\"archs\" class=\"required\">
+			<option value=\"i686\" selected=\"selected\" class=\"required\">i686</option>
 			<option value=\"x86_64\">x86_64</option>
 		</select>
 		<br />
 		<label for=\"fwver\">".gettext("Version:")."</label>
-		<select name=\"ver\" id=\"fwver\">
+		<select name=\"ver\" id=\"fwver\" class=\"required\">
 			<option value=\"current\" selected=\"selected\">current</option>\n";
 		foreach ( $arr as $i )
 		{
@@ -99,7 +99,7 @@ function main()
 		<input type=\"hidden\" name=\"op\" value=\"file\" />
 		<label for=\"filesrc\">".gettext("Search for a file:")."</label><input class=\"required\" type=\"text\" id=\"filesrc\" name=\"srch\" size=\"40\" />
 		<br />
-		<label for=\"frepos\">".gettext("Repository:")."</label><select name=\"repo\" id=\"frepos\">
+		<label for=\"frepos\">".gettext("Repository:")."</label><select name=\"repo\" id=\"frepos\" class=\"required\">
 			<option value=\"all\" selected=\"selected\">all</option>
 			<option value=\"frugalware\">frugalware</option>
 			<option value=\"extra\">extra</option>
