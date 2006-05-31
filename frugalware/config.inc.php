@@ -38,7 +38,7 @@ $menucontent .= '	<a href="http://frugalware.org/mailman/listinfo">' . gettext('
 $menucontent .= '	<a href="http://forums.frugalware.org/">' . gettext('Discussion Forums') . "</a>\n";
 $menucontent .= '	<a href="http://wiki.frugalware.org/">' . gettext('Wiki') . "</a>\n";
 $menucontent .= '	<a href="index.php">' . gettext('IRC') . "</a>\n";
-$menucontent .= '	<a href="screenshot.php">' . gettext('Screenshots') . "</a>\n";
+$menucontent .= '	<a href="screenshots.php">' . gettext('Screenshots') . "</a>\n";
 $menucontent .= '	<a href="http://www.frappr.com/frugalware">' . gettext('Map') . "</a>\n";
 $menucontent .= "</div>\n";
 $menucontent .= '<a class="menu" href="" onClick="return clickreturnvalue()" onMouseover="dropdownmenu(this, event, \'dlmenu\')">' . gettext('Download') . "</a> &middot; \n";
