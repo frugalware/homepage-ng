@@ -10,7 +10,7 @@ FORM {
 }
 
 /**
- * általános activeform modul:
+ * General activeform modul:
  * normal, hover, focus
  */
 FIELDSET.pkg INPUT[type=text],
@@ -29,13 +29,13 @@ FIELDSET.pkg INPUT[type=text],
 FIELDSET.pkg INPUT[type=password],
 FIELDSET.pkg INPUT[type=file], 
 FIELDSET.pkg SELECT { 
-	height: 18px; /* opera presto miatt, gecko pont ekkora */
+	height: 18px; /* because of opera presto, gecko is exactly this size */
 }
 FIELDSET.pkg INPUT[type=file] {
 	font-size: 12px;
 }
 FIELDSET.pkg SELECT {
-	padding: 0; /* selectre nem kell padding sehol sem */
+	padding: 0; /* padding not needed for select */
 	font-size: 12px;
 }
 FIELDSET.pkg SELECT[multiple] {
@@ -45,7 +45,7 @@ FIELDSET.pkg INPUT[type=text],
 FIELDSET.pkg INPUT[type=password], 
 FIELDSET.pkg INPUT[type=file], 
 FIELDSET.pkg TEXTAREA  { 
-	margin-bottom: 1px; /* gecko igényli */
+	margin-bottom: 1px; /* needed by gecko */
 }
 FIELDSET.pkg INPUT[type=password] {
 	background-image: url(image/pkg_special.gif) ;
@@ -86,7 +86,7 @@ FIELDSET.pkg OPTION[disabled] {
 	background-color: rgb(242, 242, 242);
 	color: rgb(212, 208, 200);
 }
-FIELDSET.pkg LABEL.disabled { /* pkg automata osztály */
+FIELDSET.pkg LABEL.disabled { /* pkg automatic class */
 	color: rgb(212, 208, 200) !important; 
 }
 /* readonly */
@@ -100,7 +100,7 @@ FIELDSET.pkg TEXTAREA[readonly],             FIELDSET.pkg LABEL:hover + TEXTAREA
 
 
 /**
- * felépítés
+ * build-up
  */
 FIELDSET.pkg {
 	border: 1px solid rgb(130, 150, 187);
@@ -152,7 +152,7 @@ FIELDSET.pkg TABLE {
 	margin-bottom: 4px;
 }
 FIELDSET.pkg COL.pkg-colA {
-	width: 270px; /* 541 a teljes dupla XXX 540? */
+	width: 270px;
 }
 FIELDSET.pkg COL.pkg-colB {
 	width: 270px;
@@ -166,7 +166,7 @@ FIELDSET.pkg COL.pkg-colD {
 FIELDSET.pkg TD {
 	vertical-align: top;
 	border: none;
-	padding: 2px 0 6px 4px; /* vagy padding-bottom vagy border-bottom */
+	padding: 2px 0 6px 4px; /* or padding-bottom, or border-bottom */
 }
 FIELDSET.pkg TD.middle {
 	vertical-align: middle;
@@ -224,7 +224,7 @@ FIELDSET.pkg INPUT.required:focus,
 FIELDSET.pkg SELECT.required:hover,          FIELDSET.pkg LABEL:hover + SELECT.required,
 FIELDSET.pkg SELECT.required:focus,
 FIELDSET.pkg TEXTAREA.required:hover,        FIELDSET.pkg LABEL:hover + TEXTAREA.required,
-FIELDSET.pkg TEXTAREA.required:focus {  /* ennek nincs megfelelője IE-ben */
+FIELDSET.pkg TEXTAREA.required:focus {  /* there is no equivalent in IE */
 	background-color: rgb(139, 215, 250);
 	border: 1px solid rgb(0, 80, 154);
 	color: black;
@@ -298,7 +298,7 @@ FIELDSET.pkg .panel SPAN.movedown.disabled {
 	background-position: -32px -48px;
 }
 /**
- * Egyéb
+ * Others
  */
 FIELDSET.pkg SPAN.pkg-button,
 FIELDSET.pkg A.pkg-button {
@@ -310,14 +310,16 @@ FIELDSET.pkg A.pkg-button {
 	white-space: nowrap;
 	text-decoration: underline;
 }
-/*FIELDSET.pkg TD SPAN.pkg-button,
+/*
+FIELDSET.pkg TD SPAN.pkg-button,
 FIELDSET.pkg TD A.pkg-button:link,
 FIELDSET.pkg TD A.pkg-button:visited,
 FIELDSET.pkg TD A.pkg-button:active,
 FIELDSET.pkg TD A.pkg-button:hover {
 	display: inline;
 	margin: none
-}*/
+}
+ */
 FIELDSET.pkg TABLE.insert-nonvisible, 
 FIELDSET.pkg SPAN.insert-nonvisible,
 FIELDSET.pkg A.insert-nonvisible,
@@ -335,12 +337,12 @@ FIELDSET.pkg A:hover {
 	color: rgb(79, 76, 76);
 	text-decoration: underline;
 }
-/* üzenetek */
+/* Messages */
 P.pkg-successful,
 P.pkg-error,
 FIELDSET.pkg P.pkg-help, 
 FIELDSET.pkg UL.pkg-error,
-FIELDSET.pkg P.pkg-text { /* súgószöveg, hibajelzés, visszajelzés a csoportban */
+FIELDSET.pkg P.pkg-text { /* help, error and return messages in this group */
 	font: normal 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
 	border-left: 3px solid rgb(0, 80, 154);
 	padding: .5em 1em;
@@ -375,7 +377,7 @@ FIELDSET.pkg P.pkg-text {
 
 
 /**
- * submit terület
+ * submit area
  */
 DIV.pkg-submit {
 	border-top: 2px solid rgb(212, 208, 200);
@@ -419,7 +421,7 @@ DIV.pkg-submit.mini INPUT.pkg-tertiary  {
 }
 
 /**
- * egyszerű plugin
+ * simple plugin
  */
 FIELDSET.pkg INPUT.datepicker {
 	background-image: url(image/pkg_special.gif);
@@ -436,7 +438,7 @@ BODY FIELDSET.pkg TEXTAREA.textareaautoheight {
 }
 
 
-/* admin szélességek */
+/* admin width */
 BODY.admin FIELDSET.pkg { width: 732px; /* 750 */ }
 BODY.admin FIELDSET.pkg COL.pkg-colA { width : 366px; }
 BODY.admin FIELDSET.pkg COL.pkg-colB { width : 366px; }
