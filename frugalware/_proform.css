@@ -17,18 +17,18 @@ FIELDSET.pkg INPUT[type=text],
 FIELDSET.pkg INPUT[type=password],
 FIELDSET.pkg INPUT[type=file],
 FIELDSET.pkg SELECT,
-FIELDSET.pkg TEXTAREA { 
+FIELDSET.pkg TEXTAREA {
 	font: 13px Arial, Helvetica, sans-serif;
 	border: 1px solid rgb(238, 238, 238);
-	background-color: white; 
+	background-color: white;
 	margin-top: 1px;
 	color: black;
 	padding: 0 2px;
 }
 FIELDSET.pkg INPUT[type=text],
 FIELDSET.pkg INPUT[type=password],
-FIELDSET.pkg INPUT[type=file], 
-FIELDSET.pkg SELECT { 
+FIELDSET.pkg INPUT[type=file],
+FIELDSET.pkg SELECT {
 	height: 18px; /* because of opera presto, gecko is exactly this size */
 }
 FIELDSET.pkg INPUT[type=file] {
@@ -41,10 +41,10 @@ FIELDSET.pkg SELECT {
 FIELDSET.pkg SELECT[multiple] {
 	height: auto;
 }
-FIELDSET.pkg INPUT[type=text], 
-FIELDSET.pkg INPUT[type=password], 
-FIELDSET.pkg INPUT[type=file], 
-FIELDSET.pkg TEXTAREA  { 
+FIELDSET.pkg INPUT[type=text],
+FIELDSET.pkg INPUT[type=password],
+FIELDSET.pkg INPUT[type=file],
+FIELDSET.pkg TEXTAREA  {
 	margin-bottom: 1px; /* needed by gecko */
 }
 FIELDSET.pkg INPUT[type=password] {
@@ -87,7 +87,7 @@ FIELDSET.pkg OPTION[disabled] {
 	color: rgb(212, 208, 200);
 }
 FIELDSET.pkg LABEL.disabled { /* pkg automatic class */
-	color: rgb(212, 208, 200) !important; 
+	color: rgb(212, 208, 200) !important;
 }
 /* readonly */
 FIELDSET.pkg INPUT[type=text][readonly],     FIELDSET.pkg LABEL:hover + INPUT[type=text][readonly],
@@ -97,7 +97,6 @@ FIELDSET.pkg TEXTAREA[readonly],             FIELDSET.pkg LABEL:hover + TEXTAREA
 	color: rgb(79, 76, 76);
 	background-color: transparent;
 }
-
 
 /**
  * build-up
@@ -200,10 +199,10 @@ FIELDSET.pkg .pkg-equal.half {
 }
 FIELDSET.pkg .pkg-equal.quarter {
 	width: 60px;
-}  
+}
 FIELDSET.pkg .pkg-equal.quarterto {
 	width: 180px;
-} 
+}
 FIELDSET.pkg .pkg-equal.double {
 	width: 513px;
 }
@@ -219,7 +218,7 @@ FIELDSET.pkg TEXTAREA.required {
 	border: 1px solid rgb(56, 189, 250);
 	color: black;
 }
-FIELDSET.pkg INPUT.required:hover,           FIELDSET.pkg LABEL:hover + INPUT.required, 
+FIELDSET.pkg INPUT.required:hover,           FIELDSET.pkg LABEL:hover + INPUT.required,
 FIELDSET.pkg INPUT.required:focus,
 FIELDSET.pkg SELECT.required:hover,          FIELDSET.pkg LABEL:hover + SELECT.required,
 FIELDSET.pkg SELECT.required:focus,
@@ -244,7 +243,7 @@ FIELDSET.pkg TEXTAREA.warning:focus {
 	cursor: help !important;
 }
 /**
- * panel kezelőfelület
+ * panel interface
  */
 FIELDSET.pkg .panel {
 	width: 100px;
@@ -320,7 +319,7 @@ FIELDSET.pkg TD A.pkg-button:hover {
 	margin: none
 }
  */
-FIELDSET.pkg TABLE.insert-nonvisible, 
+FIELDSET.pkg TABLE.insert-nonvisible,
 FIELDSET.pkg SPAN.insert-nonvisible,
 FIELDSET.pkg A.insert-nonvisible,
 DIV.insert-nonvisible {
@@ -340,7 +339,7 @@ FIELDSET.pkg A:hover {
 /* Messages */
 P.pkg-successful,
 P.pkg-error,
-FIELDSET.pkg P.pkg-help, 
+FIELDSET.pkg P.pkg-help,
 FIELDSET.pkg UL.pkg-error,
 FIELDSET.pkg P.pkg-text { /* help, error and return messages in this group */
 	font: normal 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
@@ -373,8 +372,6 @@ FIELDSET.pkg P.pkg-text {
 	background: transparent;
 	border-left-color: rgb(79, 76, 76);
 }
-
-
 
 /**
  * submit area
@@ -436,7 +433,6 @@ BODY FIELDSET.pkg TEXTAREA.textareaautoheight {
 	height: 35px;
 	min-height: 35px;
 }
-
 
 /* admin width */
 BODY.admin FIELDSET.pkg { width: 732px; /* 750 */ }
