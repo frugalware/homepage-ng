@@ -52,7 +52,7 @@ $xml = file_get_contents($xmlfile);
 $parser = new XMLParser($xml);
 $parser->Parse();
 $news = $parser->document->post;
-// I hata writing a lot. And also the parser creates too long and unuseful object hierarchy
+// I hate writing a lot. And also the parser creates too long and unuseful object hierarchy,
 // so create a better-readable one.
 // TODO: handle the editedby fields
 for ( $i=0; $i<count($news); $i++)
