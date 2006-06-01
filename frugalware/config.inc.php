@@ -30,6 +30,7 @@ $menucontent = '<a class="menu" href="index.php">' . gettext('News') . "</a> &mi
 $menucontent .= '<a class="menu" href="" onClick="return clickreturnvalue()" onMouseover="dropdownmenu(this, event, \'aboutmenu\')">' . gettext('About') . "</a> &middot; \n";
 $menucontent .= '<div id="aboutmenu" class="menulinkcss" align="left">' . "\n";
 $menucontent .= '	<a href="about.php">' . gettext('Summary') . "</a>\n";
+$menucontent .= '	<a href="media.php">' . gettext('Frugalware in the Press') . "</a>\n";
 $menucontent .= '	<a href="index.php">' . gettext('Documentation') . "</a>\n";
 $menucontent .= "</div>\n";
 $menucontent .= '<a class="menu" href="" onClick="return clickreturnvalue()" onMouseover="dropdownmenu(this, event, \'commmenu\')">' . gettext('Community') . "</a> &middot; \n";
