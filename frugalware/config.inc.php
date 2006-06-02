@@ -13,7 +13,8 @@ $sqldb = "homepage";
 #site settings
 $fwng_root = "/";
 $adodb_path = "/usr/lib/php";
-$docs_path = "/home/ftp/pub/frugalware/frugalware-current/docs";
+$top_path = "/home/ftp/pub/frugalware/frugalware-current";
+$docs_path = $top_path."/docs";
 
 #not translated changing vars
 $title = "Homepage - Reloaded";
@@ -55,7 +56,7 @@ $menucontent .= '<div id="develmenu" class="menulinkcss" align="left">' . "\n";
 $menucontent .= '	<a href="roadmap.php">' . gettext('Roadmap') . "</a>\n";
 $menucontent .= '	<a href="http://darcs.frugalware.org/">' . gettext('Darcs repository') . "</a>\n";
 $menucontent .= '	<a href="http://bugs.frugalware.org/">' . gettext('Bug Tracker') . "</a>\n";
-$menucontent .= '	<a href="index.php">' . gettext('ChangeLog') . "</a>\n";
+$menucontent .= '	<a href="changelog.php">' . gettext('ChangeLog') . "</a>\n";
 $menucontent .= '	<a href="http://blogs.frugalware.org/">' . gettext('Blogs') . "</a>\n";
 $menucontent .= '	<a href="index.php">' . gettext('Donations') . "</a>\n";
 $menucontent .= '	<a href="authors.php?who=devel">' . gettext('Developers') . "</a>\n";
