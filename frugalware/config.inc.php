@@ -13,6 +13,7 @@ $sqldb = "homepage";
 #site settings
 $fwng_root = "/";
 $adodb_path = "/usr/lib/php";
+$docs_path = "/home/ftp/pub/frugalware/frugalware-current/docs";
 
 #not translated changing vars
 $title = "Homepage - Reloaded";

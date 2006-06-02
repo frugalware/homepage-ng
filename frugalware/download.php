@@ -20,12 +20,16 @@
  * @copyright Copyright (c) 2005-2006. Miklos Vajna
  */
 
-// include some useful functions
+// include some useful functions and the config
 include("functions.inc.php");
+include("config.inc.php");
 
 $lang = getlang();
 $llang = getllang($lang);
-$mirrorsfile = "xml/mirrors.xml";
+if (file_exists("xml/mirrors.xml"))
+	$mirrorsfile = "xml/mirrors.xml";
+else
+	$mirrorsfile = $docs_path."/xml/mirrors.xml";
 
 // set the locale settings for gettext
 putenv("LANG=".$llang);
@@ -34,8 +38,7 @@ $domain = 'messages';
 bindtextdomain($domain, "locale");
 textdomain($domain);
 
-// include the config and let's start page
-include("config.inc.php");
+// let's start page
 include("header.php");
 include("xml.inc.php");
 

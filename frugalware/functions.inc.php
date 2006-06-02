@@ -138,4 +138,13 @@ function getllang($lang)
 	return $langs[$lang];
 }
 
+function getnlang($lang)
+{
+	$nlangs = array(
+		"en_US" => "English",
+		"hu_HU" => "Hungarian"
+	);
+	return $nlangs[$lang];
+}
+
 ?>

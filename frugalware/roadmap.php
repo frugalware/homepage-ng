@@ -23,13 +23,17 @@
  * @copyright Copyright (c) 2006. Alex Smith
  */
 
-// Include some useful functions
+// Include some useful functions and the config
 include('functions.inc.php');
+include('config.inc.php');
 
 // Some definitions
 $lang = getlang();
 $llang = getllang($lang);
-$xmlfile = 'xml/roadmap.xml';
+if (file_exists('xml/roadmap.xml'))
+	$xmlfile = 'xml/roadmap.xml';
+else
+	$xmlfile = $docs_path.'xml/roadmap.xml';
 
 // Set the locale settings for gettext
 putenv("LANG=" . $llang);
@@ -38,8 +42,7 @@ $domain = 'messages';
 bindtextdomain($domain, 'locale');
 textdomain($domain);
 
-// Include the config and start the page
-include('config.inc.php');
+// Let's start the page
 include('header.php');
 
 // This includes the XML parser

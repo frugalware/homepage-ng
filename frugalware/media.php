@@ -18,13 +18,17 @@
  * @copyright Copyright (C) 2006 Alex Smith
  */
 
-// Include some useful functions
+// Include some useful functions and the config
 include('functions.inc.php');
+include('config.inc.php');
 
 $lang = getlang();
 $llang = getllang($lang);
 $flang = ( $lang == 'en' ) ? "" : "_$lang";
-$xmlfile = 'xml/media.xml';
+if (file_exists('xml/media.xml'))
+	$xmlfile = 'xml/media.xml';
+else
+	$xmlfile = $docs_path.'xml/media.xml';
 
 // Set the locale settings for gettext
 putenv("LANG=".$llang);
@@ -33,8 +37,7 @@ $domain = 'messages';
 bindtextdomain($domain, 'locale');
 textdomain($domain);
 
-// Include the config and start the page
-include('config.inc.php');
+// Let's start the page
 include('header.php');
 
 // This includes the XML parser

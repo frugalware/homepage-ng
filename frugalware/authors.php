@@ -18,12 +18,12 @@
  * @copyright Copyright (c) 2006. Krisztian VASAS
  */
 
-// include some useful functions
+// include some useful functions and the config
 include("functions.inc.php");
+include("config.inc.php");
 
 $lang = getlang();
 $llang = getllang($lang);
-$xmlfile = "xml/authors.xml";
 
 // set the locale settings for gettext
 putenv("LANG=".$llang);
@@ -32,8 +32,7 @@ $domain = 'messages';
 bindtextdomain($domain, "locale");
 textdomain($domain);
 
-// include the config and let's start page
-include("config.inc.php");
+// let's start page
 include("header.php");
 
 include("xml.inc.php");
@@ -42,7 +41,10 @@ $who = ($_GET['who'] != "") ? $_GET['who'] : "devel";
 switch($who)
 {
 	case "devel":
-		$xmlfile="xml/authors.xml";
+		if (file_exists("xml/authors.xml"))
+			$xmlfile = "xml/authors.xml";
+		else
+			$xmlfile = $docs_path."/xml/authors.xml";
 		$xml = file_get_contents($xmlfile);
 		$parser = new XMLParser($xml);
 		$parser->Parse();
@@ -63,7 +65,10 @@ switch($who)
 		break;
 
 	case "contrib";
-		$xmlfile="xml/contributors.xml";
+		if(file_exists("xml/contributors.xml"))
+			$xmlfile = "xml/contributors.xml";
+		else
+			$xmlfile = "xml/contributors.xml";
 		$xml = file_get_contents($xmlfile);
 		$parser = new XMLParser($xml);
 		$parser->Parse();

@@ -18,13 +18,17 @@
  * @copyright Copyright (c) 2006. Krisztian VASAS
  */
 
-// include some useful functions
+// include some useful functions and the config
 include("functions.inc.php");
+include("config.inc.php");
 
 $lang = getlang();
 $llang = getllang($lang);
 $flang = ( $lang == "en" ) ? "" : "_$lang";
-$xmlfile = "xml/news".$flang.".xml";
+if (file_exists("xml/news".$flang.".xml"))
+	$xmlfile = "xml/news".$flang.".xml";
+else
+	$xmlfile = $docs_path."/xml/news".$flang.".xml";
 
 // set the locale settings for gettext
 putenv("LANG=".$llang);
@@ -33,8 +37,7 @@ $domain = 'messages';
 bindtextdomain($domain, "locale");
 textdomain($domain);
 
-// include the config and let's start page
-include("config.inc.php");
+// let's start page
 include("header.php");
 
 // This includes the news.xml XML parser
@@ -45,7 +48,10 @@ $nolang = 0;
 if (!file_exists($xmlfile))
 {
 	$nolang = 1;
-	$xmlfile = "xml/news.xml";
+	if (file_exists("xml/news.xml"))
+		$xmlfile = "xml/news.xml";
+	else
+		$xmlfile = $docs_path."/xml/news.xml";
 }
 $id = ( $_GET['id'] != "" ) ? $_GET['id'] : -1;
 $xml = file_get_contents($xmlfile);
