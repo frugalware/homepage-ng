@@ -34,7 +34,7 @@ $menucontent .= '<a class="menu" href="" onClick="return clickreturnvalue()" onM
 $menucontent .= '<div id="aboutmenu" class="menulinkcss" align="left">' . "\n";
 $menucontent .= '	<a href="about.php">' . gettext('Summary') . "</a>\n";
 $menucontent .= '	<a href="media.php">' . gettext('Frugalware in the Press') . "</a>\n";
-$menucontent .= '	<a href="index.php">' . gettext('Documentation') . "</a>\n";
+$menucontent .= '	<a href="docs.php">' . gettext('Documentation') . "</a>\n";
 $menucontent .= "</div>\n";
 $menucontent .= '<a class="menu" href="" onClick="return clickreturnvalue()" onMouseover="dropdownmenu(this, event, \'commmenu\')">' . gettext('Community') . "</a> &middot; \n";
 $menucontent .= '<div id="commmenu" class="menulinkcss" align="left">' . "\n";
