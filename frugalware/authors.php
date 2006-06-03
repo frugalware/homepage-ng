@@ -68,7 +68,7 @@ switch($who)
 		if(file_exists("xml/contributors.xml"))
 			$xmlfile = "xml/contributors.xml";
 		else
-			$xmlfile = "xml/contributors.xml";
+			$xmlfile = $docs_path."xml/contributors.xml";
 		$xml = file_get_contents($xmlfile);
 		$parser = new XMLParser($xml);
 		$parser->Parse();
