@@ -68,7 +68,7 @@ for ( $i = 0; $i < count($roadmap); $i++) {
 	$releases[$i][name] = $roadmap[$i]->name[0]->tagData;
 	$releases[$i][definition] = $roadmap[$i]->definition[0]->tagData;
 	$releases[$i][version] = $roadmap[$i]->version[0]->tagData;
-	$releases[$i][date] = date('M d, Y', strtotime($roadmap[$i]->date[0]->tagData));
+	$releases[$i][date] = $roadmap[$i]->date[0]->tagData;
 	if ($roadmap[$i]->status[0]->tagData == 1)
 		$releases[$i][status] = gettext('done');
 	else
