@@ -1,5 +1,5 @@
 php_value session.auto_start 1
 
-<Files *.inc>
+<Files *.inc.php>
 	deny from all
 </Files>
