@@ -114,7 +114,8 @@ function main()
 		<br />
 		<label for=\"fwver\">".gettext("Version:")."</label>
 		<select name=\"ver\" id=\"fwver\" class=\"required\">
-			<option value=\"current\" selected=\"selected\">current</option>\n";
+			<option value=\"all\" selected=\"selected\">all</option>
+			<option value=\"current\">current</option>\n";
 		foreach ( $arr as $i )
 		{
 			$content .= $i;
@@ -218,7 +219,7 @@ function search_file()
 	{
 		$query .= " and arch='$arch'";
 	}
-	if ($fwver != "" && $fwver != "current")
+	if ($fwver != "" && $fwver != "all")
 	{
 		$query .= " and fwver='$fwver'";
 	}
