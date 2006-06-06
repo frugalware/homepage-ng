@@ -28,7 +28,7 @@ $llang = getllang($lang);
 // set the locale settings for gettext
 putenv("LANG=".$llang);
 setlocale(LC_ALL,$llang);
-$domain = 'messages';
+$domain = 'homepage';
 bindtextdomain($domain, "locale");
 textdomain($domain);
 

@@ -19,6 +19,7 @@ $docs_path = $top_path."/docs";
 #not translated changing vars
 $title = "Homepage - Reloaded";
 $copydate = "2006";
+$domain = 'homepage';
 
 ## Main page ##
 

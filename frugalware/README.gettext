@@ -1,8 +1,8 @@
 Instructions for the translations:
 
-1. First get the .po file from the php files: xgettext -n *.php
-2. Translate the messages.po file
-3. Create the $LANG/LC_MESSAGES directory in locales/
-4. Copy your translation to this newly created dir
-5. Create the .mo file: with the command: cd locales/$LANG/LC_MESSAGES/ && msgfmt -c messages.po
+1. First generate a .pot file from the php files: make -C po pot
+2. Create a the new po file: cd po && msginit -l xx_YY
+3. Translate the po/xx.po file
+4. Put it under version control: cd po && darcs add xx.po
+5. Add the language to po/Makefile
 6. Check functions.inc.php file: in getllang() function i created the $langs array to assign short lang and $LANG variable

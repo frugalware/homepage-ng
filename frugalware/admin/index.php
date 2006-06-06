@@ -7,7 +7,7 @@ $lang = getlang();
 
 putenv("LANG=".$lang);
 setlocale(LC_ALL,$lang);
-$domain = 'messages';
+$domain = 'homepage';
 bindtextdomain($domain, "locale");
 textdomain($domain);
 
