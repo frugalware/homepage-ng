@@ -333,9 +333,8 @@ msgid "Blogs"
 msgstr ""
 
 #: ../config.inc.php:61 ../donations.php:52
-#, fuzzy
 msgid "Donations"
-msgstr "Információ"
+msgstr ""
 
 #: ../config.inc.php:67 ../config.inc.php:69
 msgid "Change language"
@@ -455,9 +454,8 @@ msgid "News history"
 msgstr ""
 
 #: ../irc.php:41
-#, fuzzy
 msgid "General information"
-msgstr "Információ"
+msgstr "Általános információ"
 
 #: ../irc.php:41
 msgid ""
@@ -533,7 +531,6 @@ msgid "Date"
 msgstr ""
 
 #: ../media.php:82
-#, fuzzy
 msgid "Language"
 msgstr "Nyelvek"
 
@@ -597,9 +594,8 @@ msgid "Search result for:"
 msgstr ""
 
 #: ../packages.php:292
-#, fuzzy
 msgid "Package information:"
-msgstr "Információ"
+msgstr ""
 
 #: ../packages.php:351
 msgid "File list for"
