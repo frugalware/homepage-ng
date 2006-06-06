@@ -27,7 +27,7 @@ $llang = getllang($lang);
 // set the locale settings for gettext
 putenv("LANG=".$llang);
 setlocale(LC_ALL,$llang);
-bindtextdomain($domain, "locale");
+bindtextdomain('homepage', "locale");
 textdomain($domain);
 
 $shots[inst][0][name]="01_splash.png";

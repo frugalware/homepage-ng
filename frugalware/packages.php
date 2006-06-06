@@ -30,7 +30,7 @@ $llang = getllang($lang);
 // set the locale settings for gettext
 putenv("LANG=".$llang);
 setlocale(LC_ALL,$llang);
-bindtextdomain($domain, "locale");
+bindtextdomain('homepage', "locale");
 textdomain($domain);
 
 // include the config and let's start page
