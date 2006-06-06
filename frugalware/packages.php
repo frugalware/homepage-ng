@@ -105,6 +105,23 @@ function main()
 			<option value=\"extra\">extra</option>
 		</select>
 		<br />
+		<label for=\"archs\">".gettext("Architecture:")."</label>
+		<select name=\"arch\" id=\"archs\" class=\"required\">
+			<option value=\"all\" selected=\"selected\">all</option>
+			<option value=\"i686\">i686</option>
+			<option value=\"x86_64\">x86_64</option>
+		</select>
+		<br />
+		<label for=\"fwver\">".gettext("Version:")."</label>
+		<select name=\"ver\" id=\"fwver\" class=\"required\">
+			<option value=\"current\" selected=\"selected\">current</option>\n";
+		foreach ( $arr as $i )
+		{
+			$content .= $i;
+		}
+		$content .= "
+		</select>
+		<br />
 		<input type=\"submit\" value=\"".gettext("Search")."\" /> <input type=\"reset\" value=\"".gettext("Reset")."\" />
 	</fieldset>
 </form>
@@ -138,38 +155,46 @@ function search_pkg()
 	$repo = $_GET['repo'];
 	$arch = $_GET['arch'];
 	$fwver = $_GET['ver'];
-	($_GET['sub'] == "on") ? $sub = 1 : $sub = 0; # whether the search is for a substring or exact match
+	$sub = ($_GET['sub'] == "on") ? 1 : 0; # whether the search is for a substring or exact match
 
 	$query = "select id, pkgname, pkgver, pkgrel, fwver, repo, arch from packages where ";
 	# if the 'desc' is set (searching in description, too) I have to put
 	# the restrictions between brackets, because of the 'repo' below...
-	if ($sub == 0){
+	if ($sub == 0)
+	{
 		($_GET['desc'] == "on" || $_GET['desc'] == 1) ? $query .= "(pkgname='$search' or `desc`='$search')" : $query .= "(pkgname='$search')"; # if the desc is set, the search is for description, too
 	}
-	else {
+	else
+	{
 		($_GET['desc'] == "on" || $_GET['desc'] == 1) ? $query .= "(pkgname like '%$search%' or `desc` like '%$search%')" : $query .= "(pkgname like '%$search%')";
 	}
-	if ($repo != "" && $repo != "all") { # if repo is set to frugalware or extra
+	if ($repo != "" && $repo != "all") # if repo is set to frugalware or extra
+	{
 		$query .= " and repo='$repo'";
 	}
-	if ($arch != "") {
+	if ($arch != "")
+	{
 		$query .= " and arch='$arch'";
 	}
-	if ($fwver != "") {
+	if ($fwver != "")
+	{
 		$query .= " and fwver='$fwver'";
 	}
 	$query .= " order by fwver desc";
 	$db = new FwDB();
 	$db->doConnect($sqlhost, $sqluser, $sqlpass, "frugalware");
 	$res = $db->doQuery($query);
-	if ($db->doCountRows($res) > 0) {
-		while ($i = $db->doFetchRow($res)) {
+	if ($db->doCountRows($res) > 0)
+	{
+		while ($i = $db->doFetchRow($res))
+		{
 			$res_set[] = $i;
 		}
 		$db->doClose();
 		res_show($res_set, 'p', $search);
 	}
-	else {
+	else
+	{
 		print "<h3>".gettext("No package found")."</h3>";
 		$db->doClose();
 		main();
@@ -182,9 +207,19 @@ function search_file()
 	$res_set = array();
 	$search = (substr($_GET['srch'], 0, 1) == '/') ? substr($_GET['srch'], 1) : $_GET['srch'];
 	$repo = $_GET['repo'];
+	$arch = $_GET['arch'];
+	$fwver = $_GET['ver'];
 	$query = "select id, pkgname, pkgver, pkgrel, fwver, repo, arch from packages where files like '%$search%' ";
 	if ($repo != "" && $repo != "all")
 		$query .= "and repo='$repo'";
+	if ($arch != "" || $arch != "all")
+	{
+		$query .= " and arch='$arch'";
+	}
+	if ($fwver != "" || $fwver != "current")
+	{
+		$query .= " and fwver='$fwver'";
+	}
 	$query .= " order by fwver desc";
 	$db = new FwDB();
 	$db->doConnect($sqlhost, $sqluser, $sqlpass, "frugalware");
@@ -239,7 +274,9 @@ function pkg_from_id($id)
 	if ($arr['parent'] != NULL and $arr['parent'] != 'NULL')
 		$arrstr[] = $arr['parent'];
 	foreach($arrstr as $i)
+
 		$query .= " or pkgname='" . preg_replace('/(<>|>=|<=|=).*/', '', $i) . "'";
+
 	$query = preg_replace("/or /", "", $query, 1) . " ) and " .
 		"fwver='" . $arr['fwver'] . "' and " .
 		"arch='" . $arr['arch'] . "'";
@@ -253,6 +290,7 @@ function pkg_from_id($id)
 	$content = "<table border=0 width=100%>\n";
 	$content .= "<tr><td>Name:</td><td><a href=\"packages.php?id=".$id."&s=f\">".$arr['pkgname']."</a></td></tr>\n";
 	if ($arr['parent'] != NULL and $arr['parent'] != 'NULL')
+
 		$content .= "<tr><td>Parent:</td><td><a href=\"packages.php?id=" . $id_set[preg_replace('/(<>|>=|<=|=).*/', '', $arr['parent'])] . "\">".$arr['parent']."</a></td></tr>\n";
 	$content .= "<tr><td>Version:</td><td>".$arr['pkgver']."-".$arr['pkgrel']."</td></tr>\n";
 	if ($arr['repo']=="extra")
@@ -263,6 +301,7 @@ function pkg_from_id($id)
 	else
 		$pkgpath = "/frugalware-" . $arr['arch'];
 	$groupdir=preg_replace("/-extra/", "", $arr['groups']);
+
 	$content .= "<tr><td>Changelog:</td><td><a href=\"http://ftp.frugalware.org/pub/frugalware/frugalware-" . $arr['fwver'] . "$repodir/source/" . preg_replace("/^([^ ]*) .*/", "$1", $groupdir) . "/" . (($arr['parent'] != NULL and $arr['parent'] != 'NULL') ? $arr['parent'] : $arr['pkgname']) . "/Changelog\">Changelog</a></td></tr>\n";
 	$content .= "<tr><td>Darcs:</td><td><a href=\"http://darcs.frugalware.org/darcsweb/darcsweb.cgi?r=frugalware-" . $arr['fwver'] . ";a=tree;f=$repodir/source/" . preg_replace("/^([^ ]*) .*/", "$1", $groupdir) . "/" . (($arr['parent'] != NULL and $arr['parent'] != 'NULL') ? $arr['parent'] : $arr['pkgname']) . "\">View entry</a></td></tr>\n";
 	if ($arr['groups'] != 'NULL') $content .= "<tr><td>Groups:</td><td>".$arr['groups']."</td></tr>\n";
@@ -271,6 +310,7 @@ function pkg_from_id($id)
 	{
 		$content .= "<tr><td>Depends:</td><td>";
 		foreach(explode(" ", strtr($arr['depends'], "\n", " ")) as $i)
+
 			$content .= "<a href=\"packages.php?id=" . $id_set[preg_replace('/(<>|>=|<=|=).*/', '', $i)] . "\">$i</a> ";
 		$content .= "</td></tr>\n";
 	}
@@ -295,6 +335,7 @@ function pkg_from_id($id)
 	$db->doClose();
 	fwmiddlebox($title, $content);
 }
+
 
 function file_from_id($id)
 {
