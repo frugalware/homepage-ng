@@ -38,18 +38,18 @@ textdomain($domain);
 include("config.inc.php");
 include("header.php");
 
-$fwdonatewelcome="<div align=left>Donations are a great way to show your appreciation ";
-$fwdonatewelcome.="and support for Frugalware Linux. On this page we list the donations we have ";
-$fwdonatewelcome.="received so far and those that would help us in our work on Frugalware Linux. ";
-$fwdonatewelcome.="If you have a piece of hardware or something whose Frugalware support could be ";
-$fwdonatewelcome.="improved, a good way to achieve this is to donate it to a developer.<br /><br />";
-$fwdonatewelcome.="If you would like to donate something to the whole project (i.e. a mirror), ";
-$fwdonatewelcome.="please send a mail to the <a href=\"http://frugalware.org/mailman/listinfo/frugalware-devel\">frugalware-devel</a> ";
-$fwdonatewelcome.="list, or if you do not wish to subscribe, send a mail directly to vmiklos_at_frugalware_dot_org. ";
-$fwdonatewelcome.="If you wish to donate something to an individual developer, see the <a href=\"authors.php\">authors</a> ";
-$fwdonatewelcome.="page and send the developer a mail.</div>";
+$fwdonatewelcome = gettext("<div align=left>Donations are a great way to show your appreciation
+and support for Frugalware Linux. On this page we list the donations we have
+received so far and those that would help us in our work on Frugalware Linux.;
+If you have a piece of hardware or something whose Frugalware support could be
+improved, a good way to achieve this is to donate it to a developer.<br /><br />
+If you would like to donate something to the whole project (i.e. a mirror),
+please send a mail to the <a href=\"http://frugalware.org/mailman/listinfo/frugalware-devel\">frugalware-devel</a>
+list, or if you do not wish to subscribe, send a mail directly to vmiklos_at_frugalware_dot_org.
+If you wish to donate something to an individual developer, see the <a href=\"authors.php\">authors</a>
+page and send the developer a mail.</div>");
 
-fwmiddlebox(gettext("Donations"), gettext($fwdonatewelcome));
+fwmiddlebox(gettext("Donations"), $fwdonatewelcome);
 
 $cont1 = "<div align=left>Wishes:<ul>
 <li>American, <i>not</i> ISO-only mirror</li>
