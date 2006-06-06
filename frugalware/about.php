@@ -74,7 +74,6 @@ $fwabout= array (
 include("config.inc.php");
 include("header.php");
 
-include($aboutfile);
 fwmiddlebox(gettext("Short"), $fwshortabout);
 $cont = "";
 for ( $i=0; $i<count($fwabout); $i++ )
