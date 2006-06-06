@@ -211,12 +211,14 @@ function search_file()
 	$fwver = $_GET['ver'];
 	$query = "select id, pkgname, pkgver, pkgrel, fwver, repo, arch from packages where files like '%$search%' ";
 	if ($repo != "" && $repo != "all")
+	{
 		$query .= "and repo='$repo'";
-	if ($arch != "" || $arch != "all")
+	}
+	if ($arch != "" && $arch != "all")
 	{
 		$query .= " and arch='$arch'";
 	}
-	if ($fwver != "" || $fwver != "current")
+	if ($fwver != "" && $fwver != "current")
 	{
 		$query .= " and fwver='$fwver'";
 	}
