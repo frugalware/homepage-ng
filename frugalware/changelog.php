@@ -29,7 +29,7 @@ foreach($changelogf as $i)
 			}
 			else
 			{
-				$content .= $i."<br />";
+				$content .= $i."<br />\n";
 			}
 		}
 		else

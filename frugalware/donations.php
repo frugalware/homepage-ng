@@ -1,0 +1,86 @@
+<?
+
+/**
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License v2 as published by
+ the Free Software Foundation
+
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.See the
+ GNU General Public License for more details.
+ */
+
+/**
+ * Frugalware Linux Homepage - Donations page
+ *
+ * @author Krisztian VASAS <iron@frugalware.org>
+ * @author Miklos Vajna <vmiklos@frugalware.org>
+ *
+ * @copyright Copyright (c) 2006. Krisztian VASAS
+ * @copyright Copyright (c) 2005-2006. Miklos Vajna
+ */
+
+// include some useful functions
+include("functions.inc.php");
+
+$lang = getlang();
+$llang = getllang($lang);
+
+// set the locale settings for gettext
+putenv("LANG=".$llang);
+setlocale(LC_ALL,$llang);
+$domain = 'messages';
+bindtextdomain($domain, "locale");
+textdomain($domain);
+
+// include the config and let's start page
+include("config.inc.php");
+include("header.php");
+
+$fwdonatewelcome="<div align=left>Donations are a great way to show your appreciation ";
+$fwdonatewelcome.="and support for Frugalware Linux. On this page we list the donations we have ";
+$fwdonatewelcome.="received so far and those that would help us in our work on Frugalware Linux. ";
+$fwdonatewelcome.="If you have a piece of hardware or something whose Frugalware support could be ";
+$fwdonatewelcome.="improved, a good way to achieve this is to donate it to a developer.<br /><br />";
+$fwdonatewelcome.="If you would like to donate something to the whole project (i.e. a mirror), ";
+$fwdonatewelcome.="please send a mail to the <a href=\"http://frugalware.org/mailman/listinfo/frugalware-devel\">frugalware-devel</a> ";
+$fwdonatewelcome.="list, or if you do not wish to subscribe, send a mail directly to vmiklos_at_frugalware_dot_org. ";
+$fwdonatewelcome.="If you wish to donate something to an individual developer, see the <a href=\"authors.php\">authors</a> ";
+$fwdonatewelcome.="page and send the developer a mail.</div>";
+
+fwmiddlebox(gettext("Donations"), gettext($fwdonatewelcome));
+
+$cont1 = "<div align=left>Wishes:<ul>
+<li>American, <i>not</i> ISO-only mirror</li>
+<li>10-20GB IDE HDD for testing Xen</li>
+<li>10GB IDE HDD for testing the setup</li>
+<li>PegasosPPC or/and other PowerPC computer to use as buildserver</li>
+<li>2 pieces of IDE harddisks as big as can be - into x86_64 buildserver</li>
+<li>a powerful i686 buildserver</li>
+</ul>Received:<ul>
+<li>Socket939 Motherboard + AMD Athlon64 3000+ CPU Socket939 version + 512MB DDR400 RAM (this will be our x86_64 buildserver)</li>
+<li>Codegen case for the new x86_64 buildserver (Krisztian VASAS)</li>
+<li>i586 Server: Pentium MMX 200 Mhz CPU, 64 Mb memory, 2.8Gb + 37Gb HDD (Botond Balazs, Miklos Vajna)</li>
+<li>Main server hosting (Sandor Szentirmay)</li>
+<li>Hungarian mirrors: inflame.hu, linuxforum.hu, FSN.hu</li>
+<li>European mirrors: belnet.be</li>
+<li>Asian mirror: Taipei City, Taiwan (National Taiwan University, cle.linux.org.tw)</li>
+<li>i686 Server: Pentium III (Coppermine) 600 Mhz, 256 Mb memory (the developer team)</li>
+<li>i686 build server: Pentium II (Deschutes) 300 Mhz, 384 Mb memory</li>
+<li>i686 build server hosting</li>
+<li>Advertising: linuxuser.hu, linuxlinks.com</li>
+<li>2x40GB IDE HDD (Szalai, Ervin)</li>
+<li>2x160GB IDE HDD for the i686 server (Miklos Vajna)</li>
+<li>40GB IDE HDD (Kovacs, Janos)</li>
+<li>Dell Optiplex P4 1.6GHz machine for main server</li>
+</ul></div>";
+fwmiddlebox(gettext("The Frugalware Team"), $cont1);
+
+$cont2 = "<div align=left>Received:<ul>
+<li>Ati video card for fglrx package testing (David Kimpe)</li>
+</ul></div>";
+fwmiddlebox("Andras Voroskoi", $cont2);
+
+include("footer.php");
+?>

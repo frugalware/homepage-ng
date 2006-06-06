@@ -58,7 +58,7 @@ $menucontent .= '	<a href="http://darcs.frugalware.org/">' . gettext('Darcs repo
 $menucontent .= '	<a href="http://bugs.frugalware.org/">' . gettext('Bug Tracker') . "</a>\n";
 $menucontent .= '	<a href="changelog.php">' . gettext('ChangeLog') . "</a>\n";
 $menucontent .= '	<a href="http://blogs.frugalware.org/">' . gettext('Blogs') . "</a>\n";
-$menucontent .= '	<a href="index.php">' . gettext('Donations') . "</a>\n";
+$menucontent .= '	<a href="donations.php">' . gettext('Donations') . "</a>\n";
 $menucontent .= '	<a href="authors.php?who=devel">' . gettext('Developers') . "</a>\n";
 $menucontent .= '	<a href="authors.php?who=contrib">' . gettext('Contributors') . "</a>\n";
 $menucontent .= "</div>\n";
