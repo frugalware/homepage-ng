@@ -7,10 +7,10 @@ header("Content-type: text/html; charset=UTF-8");
 <head>
   <title>Frugalware Linux - Let's make things Frugal!</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <link rel="stylesheet" type="text/css" href="<?php echo $fwng_root; ?>fwng.css" />
-  <link rel="stylesheet" type="text/css" href="<?php echo $fwng_root; ?>_proform.css" />
+  <link rel="stylesheet" type="text/css" href="<?php echo $fwng_root; ?>static/fwng.css" />
+  <link rel="stylesheet" type="text/css" href="<?php echo $fwng_root; ?>static/_proform.css" />
   <link rel="icon" href="<?php echo $fwng_root; ?>images/favicon.ico" />
-  <script type="text/javascript" src="menu.js">
+  <script type="text/javascript" src="static/menu.js">
   /* AnyLink CSS Menu script- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
    * This notice MUST stay intact for legal use
    * Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code */
