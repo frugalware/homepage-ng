@@ -31,37 +31,37 @@ $validcontent = '<div align="center">
 	  <a href="http://feedvalidator.org/check.cgi?url=http://frugalware.org/rss2.php?lang=en"><img src="' . $fwng_root . 'images/valid-rss.png" border="0" alt="Valid RSS!" title="Valid RSS!" /></a-->
 	</div>';
 
-$menucontent = '<a class="menu" href="index.php">' . gettext('News') . "</a> &middot; \n";
+$menucontent = '<a class="menu" href="' . $fwng_root . 'index.php">' . gettext('News') . "</a> &middot; \n";
 $menucontent .= '<a class="menu" href="" onClick="return clickreturnvalue()" onMouseover="dropdownmenu(this, event, \'aboutmenu\')">' . gettext('About') . "</a> &middot; \n";
 $menucontent .= '<div id="aboutmenu" class="menulinkcss" align="left">' . "\n";
-$menucontent .= '	<a href="about.php">' . gettext('Summary') . "</a>\n";
-$menucontent .= '	<a href="media.php">' . gettext('Frugalware in the Press') . "</a>\n";
-$menucontent .= '	<a href="docs.php">' . gettext('Documentation') . "</a>\n";
+$menucontent .= '	<a href="' . $fwng_root . 'about.php">' . gettext('Summary') . "</a>\n";
+$menucontent .= '	<a href="' . $fwng_root . 'media.php">' . gettext('Frugalware in the Press') . "</a>\n";
+$menucontent .= '	<a href="' . $fwng_root . 'docs.php">' . gettext('Documentation') . "</a>\n";
 $menucontent .= "</div>\n";
 $menucontent .= '<a class="menu" href="" onClick="return clickreturnvalue()" onMouseover="dropdownmenu(this, event, \'commmenu\')">' . gettext('Community') . "</a> &middot; \n";
 $menucontent .= '<div id="commmenu" class="menulinkcss" align="left">' . "\n";
 $menucontent .= '	<a href="http://frugalware.org/mailman/listinfo">' . gettext('Mailing Lists') . "</a>\n";
 $menucontent .= '	<a href="http://forums.frugalware.org/">' . gettext('Discussion Forums') . "</a>\n";
 $menucontent .= '	<a href="http://wiki.frugalware.org/">' . gettext('Wiki') . "</a>\n";
-$menucontent .= '	<a href="irc.php">' . gettext('IRC') . "</a>\n";
-$menucontent .= '	<a href="screenshots.php">' . gettext('Screenshots') . "</a>\n";
+$menucontent .= '	<a href="' . $fwng_root . 'irc.php">' . gettext('IRC') . "</a>\n";
+$menucontent .= '	<a href="' . $fwng_root . 'screenshots.php">' . gettext('Screenshots') . "</a>\n";
 $menucontent .= '	<a href="http://www.frappr.com/frugalware">' . gettext('Map') . "</a>\n";
 $menucontent .= "</div>\n";
 $menucontent .= '<a class="menu" href="" onClick="return clickreturnvalue()" onMouseover="dropdownmenu(this, event, \'dlmenu\')">' . gettext('Download') . "</a> &middot; \n";
 $menucontent .= '<div id="dlmenu" class="menulinkcss" align="left">' . "\n";
-$menucontent .= '	<a href="download.php">' . gettext('ISO images') . "</a>\n";
-$menucontent .= '	<a href="packages.php">' . gettext('Packages') . "</a>\n";
+$menucontent .= '	<a href="' . $fwng_root . 'download.php">' . gettext('ISO images') . "</a>\n";
+$menucontent .= '	<a href="' . $fwng_root . 'packages.php">' . gettext('Packages') . "</a>\n";
 $menucontent .= "</div>\n";
 $menucontent .= '<a class="menu" href="" onClick="return clickreturnvalue()" onMouseover="dropdownmenu(this, event, \'develmenu\')">' . gettext('Development') . "</a>\n";
 $menucontent .= '<div id="develmenu" class="menulinkcss" align="left">' . "\n";
-$menucontent .= '	<a href="roadmap.php">' . gettext('Roadmap') . "</a>\n";
+$menucontent .= '	<a href="' . $fwng_root . 'roadmap.php">' . gettext('Roadmap') . "</a>\n";
 $menucontent .= '	<a href="http://darcs.frugalware.org/">' . gettext('Darcs repository') . "</a>\n";
 $menucontent .= '	<a href="http://bugs.frugalware.org/">' . gettext('Bug Tracker') . "</a>\n";
-$menucontent .= '	<a href="changelog.php">' . gettext('ChangeLog') . "</a>\n";
+$menucontent .= '	<a href="' . $fwng_root . 'changelog.php">' . gettext('ChangeLog') . "</a>\n";
 $menucontent .= '	<a href="http://blogs.frugalware.org/">' . gettext('Blogs') . "</a>\n";
-$menucontent .= '	<a href="donations.php">' . gettext('Donations') . "</a>\n";
-$menucontent .= '	<a href="authors.php?who=devel">' . gettext('Developers') . "</a>\n";
-$menucontent .= '	<a href="authors.php?who=contrib">' . gettext('Contributors') . "</a>\n";
+$menucontent .= '	<a href="' . $fwng_root . 'donations.php">' . gettext('Donations') . "</a>\n";
+$menucontent .= '	<a href="' . $fwng_root . 'authors.php?who=devel">' . gettext('Developers') . "</a>\n";
+$menucontent .= '	<a href="' . $fwng_root . 'authors.php?who=contrib">' . gettext('Contributors') . "</a>\n";
 $menucontent .= "</div>\n";
 
 $langcontent = '<div class="imgcontent">
