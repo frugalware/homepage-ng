@@ -78,6 +78,8 @@ function fwmiddlebox($boxhead="", $content)
  */
 function getlang($forcelanguage="")
 {
+	global $fwng_root;
+
 	// If the lang comes from cookie, set it...
 	if (isset($_COOKIE["fwcurrlang"]))
 	{
@@ -97,7 +99,7 @@ function getlang($forcelanguage="")
 			{
 				// if the previous setting is not the same as the new, we set the new into cookie
 				$lang = $nlang;
-				setcookie("fwcurrlang", $lang, time()+3*365*24*3600);
+				setcookie("fwcurrlang", $lang, time()+3*365*24*3600, $fwng_root);
 			}
 		}
 	}
@@ -110,7 +112,7 @@ function getlang($forcelanguage="")
 			$lang=$_GET["lang"];
 			if($forcelanguage!="")
 				$lang=$forcelanguage;
-			setcookie("fwcurrlang", $lang, time()+3*365*24*3600);
+			setcookie("fwcurrlang", $lang, time()+3*365*24*3600, $fwng_root);
 		}
 		else
 		{
