@@ -3,3 +3,9 @@ php_value session.auto_start 1
 <Files *.inc.php>
 	deny from all
 </Files>
+
+RewriteEngine on
+RewriteCond %{REQUEST_URI} !^/.*\.php
+RewriteCond %{REQUEST_URI} !^/images
+RewriteCond %{REQUEST_URI} !^/static
+RewriteRule (.*) /rewrite.php/$1
