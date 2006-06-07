@@ -84,13 +84,6 @@ if($_SERVER["QUERY_STRING"]!="")
 
 // build the url
 $url="http://" . $_SERVER["SERVER_NAME"] . "/$page.php$urlsuffix";
-if(isset($lang))
-{
-	if(!isset($urlsuffix))
-		$url.="?lang=$lang";
-	else
-		$url.="&lang=$lang";
-}
 
 if($page=="rss" and isset($urlsuffix))
 {
@@ -100,6 +93,14 @@ if($page=="rss" and isset($urlsuffix))
 }
 else
 {
+	if(isset($lang))
+		$lang = getlang($lang);
+	else
+		$lang = getlang();
+	if(!isset($urlsuffix))
+		$url.="?lang=$lang";
+	else
+		$url.="&lang=$lang";
 	header("Content-type: text/html; charset=UTF-8");
 	include($url);
 }

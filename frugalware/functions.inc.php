@@ -76,7 +76,7 @@ function fwmiddlebox($boxhead="", $content)
 /**
  * Decides the language of the page from cookie, url or former settings
  */
-function getlang()
+function getlang($forcelanguage="")
 {
 	// If the lang comes from cookie, set it...
 	if (isset($_COOKIE["fwcurrlang"]))
@@ -87,10 +87,12 @@ function getlang()
 	if (isset($lang) && $lang != "" )
 	{
 		// $lang is set and not empty
-		if (isset($_GET["lang"]) && $_GET["lang"] != "")
+		if ((isset($_GET["lang"]) && $_GET["lang"] != "") or ($forcelanguage!=""))
 		{
 			// the lang variable is in the URL, we override the previous setting
 			$nlang = $_GET["lang"];
+			if($forcelanguage!="")
+				$nlang=$forcelanguage;
 			if ($nlang != $lang)
 			{
 				// if the previous setting is not the same as the new, we set the new into cookie
@@ -102,10 +104,12 @@ function getlang()
 	else
 	{
 		// $lang is not set or empty
-		if (isset($_GET["lang"]) && $_GET["lang"] != "")
+		if ((isset($_GET["lang"]) && $_GET["lang"] != "") or ($forcelanguage!=""))
 		{
 			// we lang comes from url, we put it into a cookie
 			$lang=$_GET["lang"];
+			if($forcelanguage!="")
+				$lang=$forcelanguage;
 			setcookie("fwcurrlang", $lang, time()+3*365*24*3600);
 		}
 		else
