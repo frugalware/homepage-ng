@@ -58,7 +58,7 @@ function main()
 			$arr[] = "\t\t\t<option value=\"".$row[0]."\">".$row[0]."</option>\n";
 		}
 		$db->doClose();
-		$content = "<form name=\"pkgsrch\" action=\"packages.php\" method=\"get\">
+		$content = "<form name=\"pkgsrch\" action=\"/packages/\" method=\"get\">
 	<fieldset class=\"pkg\"><legend>".gettext("Package search")."</legend>
 		<input type=\"hidden\" name=\"op\" value=\"pkg\" />
 		<label for=\"pkgsrc\">".gettext("Search for a package:")."</label><input class=\"required\" type=\"text\" id=\"pkgsrc\" name=\"srch\" size=\"40\" />
@@ -93,7 +93,7 @@ function main()
 		<input type=\"submit\" value=\"".gettext("Search")."\" /> <input type=\"reset\" value=\"".gettext("Reset")."\" />
 	</fieldset>
 </form>
-<form name=\"filesrch\" action=\"packages.php\" method=\"get\">
+<form name=\"filesrch\" action=\"/packages/\" method=\"get\">
 	<fieldset class=\"pkg\"><legend>".gettext("File search")."</legend>
 		<input type=\"hidden\" name=\"op\" value=\"file\" />
 		<label for=\"filesrc\">".gettext("Search for a file:")."</label><input class=\"required\" type=\"text\" id=\"filesrc\" name=\"srch\" size=\"40\" />
@@ -246,7 +246,7 @@ function res_show($res_set, $what, $search) {
 			$title = gettext("Search result for:")." ".$search;
 			$content = "<div align=\"left\">\n";
 			for ($i=0,$j=1;$i<count($res_set);$i++,$j++) {
-				$content .= "<p>".$j.". <a href=\"packages.php?id=".$res_set[$i]['id']."\">".$res_set[$i]['pkgname']."</a> ".$res_set[$i]['pkgver']."-".$res_set[$i]['pkgrel']."<br />".gettext("Version:")." ".$res_set[$i]['fwver']."; ".gettext("Repository:")." ".$res_set[$i]['repo']."; ".gettext("Architecture:")." ".$res_set[$i]['arch']."</p>\n";
+				$content .= "<p>".$j.". <a href=\"/packages/".$res_set[$i]['id']."\">".$res_set[$i]['pkgname']."</a> ".$res_set[$i]['pkgver']."-".$res_set[$i]['pkgrel']."<br />".gettext("Version:")." ".$res_set[$i]['fwver']."; ".gettext("Repository:")." ".$res_set[$i]['repo']."; ".gettext("Architecture:")." ".$res_set[$i]['arch']."</p>\n";
 			}
 			$content .= "</div>\n";
 			fwmiddlebox($title, $content);
@@ -255,7 +255,7 @@ function res_show($res_set, $what, $search) {
 			$title = gettext("Search result for:")." ".$search;
 			$content = "<div align=\"left\">\n";
 			for ($i=0,$j=1;$i<count($res_set);$i++,$j++) {
-				$content .= "<p>".$j.". <a href=\"packages.php?id=".$res_set[$i]['id']."&s=f\">".$res_set[$i]['pkgname']."</a> ".$res_set[$i]['pkgver']."-".$res_set[$i]['pkgrel']."<br />".gettext("Version:")." ".$res_set[$i]['fwver']."; ".gettext("Repository:")." ".$res_set[$i]['repo']."; ".gettext("Architecture:")." ".$res_set[$i]['arch']."</p>\n";
+				$content .= "<p>".$j.". <a href=\"/packages/".$res_set[$i]['id']."/files\">".$res_set[$i]['pkgname']."</a> ".$res_set[$i]['pkgver']."-".$res_set[$i]['pkgrel']."<br />".gettext("Version:")." ".$res_set[$i]['fwver']."; ".gettext("Repository:")." ".$res_set[$i]['repo']."; ".gettext("Architecture:")." ".$res_set[$i]['arch']."</p>\n";
 			}
 			$content .= "</div>\n";
 			fwmiddlebox($title, $content);
@@ -290,10 +290,10 @@ function pkg_from_id($id)
 
 	$title = gettext("Package information:")." ".$arr['pkgname'];
 	$content = "<table border=0 width=100%>\n";
-	$content .= "<tr><td>Name:</td><td><a href=\"packages.php?id=".$id."&s=f\">".$arr['pkgname']."</a></td></tr>\n";
+	$content .= "<tr><td>Name:</td><td><a href=\"/packages/".$id."/files\">".$arr['pkgname']."</a></td></tr>\n";
 	if ($arr['parent'] != NULL and $arr['parent'] != 'NULL')
 
-		$content .= "<tr><td>Parent:</td><td><a href=\"packages.php?id=" . $id_set[preg_replace('/(<>|>=|<=|=).*/', '', $arr['parent'])] . "\">".$arr['parent']."</a></td></tr>\n";
+		$content .= "<tr><td>Parent:</td><td><a href=\"/packages/" . $id_set[preg_replace('/(<>|>=|<=|=).*/', '', $arr['parent'])] . "\">".$arr['parent']."</a></td></tr>\n";
 	$content .= "<tr><td>Version:</td><td>".$arr['pkgver']."-".$arr['pkgrel']."</td></tr>\n";
 	if ($arr['repo']=="extra")
 	{
@@ -313,7 +313,7 @@ function pkg_from_id($id)
 		$content .= "<tr><td>Depends:</td><td>";
 		foreach(explode(" ", strtr($arr['depends'], "\n", " ")) as $i)
 
-			$content .= "<a href=\"packages.php?id=" . $id_set[preg_replace('/(<>|>=|<=|=).*/', '', $i)] . "\">$i</a> ";
+			$content .= "<a href=\"/packages/" . $id_set[preg_replace('/(<>|>=|<=|=).*/', '', $i)] . "\">$i</a> ";
 		$content .= "</td></tr>\n";
 	}
 	# this %PROVID stuff is just a workaround for an fdb2db bug
@@ -349,7 +349,7 @@ function file_from_id($id)
 	$db->doClose();
 	$title = gettext("File list for")." ".$arr['pkgname'];
 	$content .= "<table border=0 width=100%>\n";
-	$content .= "<tr><td>Name:</td><td><a href=\"packages.php?id=".$id."\">".$arr['pkgname']."</a></td></tr>\n";
+	$content .= "<tr><td>Name:</td><td><a href=\"/packages/".$id."\">".$arr['pkgname']."</a></td></tr>\n";
 	$content .= "<tr><td>Version:</td><td>".$arr['pkgver']."-".$arr['pkgrel']."</td></tr>\n";
 	$content .= "<tr><td colspan=2>Files:</td></tr>\n";
 	$files = explode("\n", substr($arr['files'], 0, -1));
