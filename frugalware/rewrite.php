@@ -58,9 +58,8 @@ if(count($params)>0)
 			$urlsuffix="?who=".$params[0];
 	}
 	else if($page=="download")
-	{
-		$urlsuffix="?url=".$params[0];
-	}
+		// don't use $params[0] since the path can contain slashes
+		$urlsuffix="?url=".substr(trim(addslashes(stripslashes($_SERVER["PATH_INFO"])), "/"), 9);
 	else if($page=="index")
 	{
 		$urlsuffix="?id=".$params[0];
