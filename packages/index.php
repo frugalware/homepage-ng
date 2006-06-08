@@ -3,7 +3,7 @@
 $fwversions = array('0.1', '0.2', '0.3', '0.4');
 
 function bar($baz) {
-	return preg_replace('|/([a-z0-9_+-]+).*|','$1',$baz);
+	return preg_replace('|/([a-z0-9_+-]+).*|','$1',urlencode($baz));
 }
 
 function foo() {
