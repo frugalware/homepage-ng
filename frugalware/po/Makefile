@@ -1,4 +1,4 @@
-LANGS=hu
+LANGS=hu_HU
 
 mos:
 	for i in $(LANGS); do \

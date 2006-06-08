@@ -13,7 +13,7 @@ msgstr ""
 "Last-Translator: Krisztian VASAS <iron@frugalware.org>\n"
 "Language-Team: Frugalware Developer Team <frugalware-devel@frugalware.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ISO-8859-2\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../about.php:37
@@ -234,11 +234,11 @@ msgstr ""
 
 #: ../authors.php:64 ../config.inc.php:62
 msgid "Developers"
-msgstr ""
+msgstr "Fejlesztők"
 
 #: ../authors.php:87 ../config.inc.php:63
 msgid "Contributors"
-msgstr ""
+msgstr "Közreműködők"
 
 #: ../changelog.php:43
 msgid "Read full current changelog"
@@ -250,111 +250,111 @@ msgstr ""
 
 #: ../config.inc.php:33
 msgid "News"
-msgstr ""
+msgstr "Hírek"
 
 #: ../config.inc.php:34
 msgid "About"
-msgstr ""
+msgstr "Rólunk"
 
 #: ../config.inc.php:36
 msgid "Summary"
-msgstr ""
+msgstr "Összegzés"
 
 #: ../config.inc.php:37
 msgid "Frugalware in the Press"
-msgstr ""
+msgstr "Rólunk írták"
 
 #: ../config.inc.php:38
 msgid "Documentation"
-msgstr ""
+msgstr "Dokumentáció"
 
 #: ../config.inc.php:40
 msgid "Community"
-msgstr ""
+msgstr "Közösség"
 
 #: ../config.inc.php:42
 msgid "Mailing Lists"
-msgstr ""
+msgstr "Levelező listák"
 
 #: ../config.inc.php:43
 msgid "Discussion Forums"
-msgstr ""
+msgstr "Fórum"
 
 #: ../config.inc.php:44
 msgid "Wiki"
-msgstr ""
+msgstr "Wiki"
 
 #: ../config.inc.php:45
 msgid "IRC"
-msgstr ""
+msgstr "IRC"
 
 #: ../config.inc.php:46
 msgid "Screenshots"
-msgstr ""
+msgstr "Képernyőmentések"
 
 #: ../config.inc.php:47
 msgid "Map"
-msgstr ""
+msgstr "Térkép"
 
 #: ../config.inc.php:49
 msgid "Download"
-msgstr ""
+msgstr "Letöltés"
 
 #: ../config.inc.php:51
 msgid "ISO images"
-msgstr ""
+msgstr "ISO képek"
 
 #: ../config.inc.php:52
 msgid "Packages"
-msgstr ""
+msgstr "Csomagok"
 
 #: ../config.inc.php:54
 msgid "Development"
-msgstr ""
+msgstr "Fejlesztés"
 
 #: ../config.inc.php:56
 msgid "Roadmap"
-msgstr ""
+msgstr "Útiterv"
 
 #: ../config.inc.php:57
 msgid "Darcs repository"
-msgstr ""
+msgstr "Darcs"
 
 #: ../config.inc.php:58
 msgid "Bug Tracker"
-msgstr ""
+msgstr "Hibák"
 
 #: ../config.inc.php:59
 msgid "ChangeLog"
-msgstr ""
+msgstr "Changelog"
 
 #: ../config.inc.php:60
 msgid "Blogs"
-msgstr ""
+msgstr "Blogok"
 
 #: ../config.inc.php:61 ../donations.php:52
 msgid "Donations"
-msgstr ""
+msgstr "Adományok"
 
 #: ../config.inc.php:67 ../config.inc.php:69
 msgid "Change language"
-msgstr "V�ltson nyelvet"
+msgstr "Váltson nyelvet"
 
 #: ../docs.php:82
 msgid " or "
-msgstr ""
+msgstr " vagy "
 
 #: ../docs.php:82 ../docs.php:93
 msgid "Plain text"
-msgstr ""
+msgstr "Sima szöveg"
 
 #: ../docs.php:101
 msgid "Sorry, no documentation available currently"
-msgstr ""
+msgstr "Elnézést, jelenleg nincs elérhető dokumentáció"
 
 #: ../docs.php:103
 msgid "View online documentation"
-msgstr ""
+msgstr "Online olvasás"
 
 #: ../donations.php:41
 msgid ""
@@ -427,7 +427,7 @@ msgstr ""
 
 #: ../header.php:40 ../packages.php:94 ../packages.php:126
 msgid "Search"
-msgstr ""
+msgstr "Keresés"
 
 #: ../header.php:58
 msgid "Languages"
@@ -435,27 +435,27 @@ msgstr "Nyelvek"
 
 #: ../header.php:59
 msgid "Information"
-msgstr "Inform�ci�"
+msgstr "Információ"
 
 #: ../index.php:82 ../index.php:100
 msgid "Sorry, no news on your language, using English instead."
-msgstr ""
+msgstr "Sajnos az Ön nyelvén nincsenek hírek, helyette az angol nyelvűt használom."
 
 #: ../index.php:90
 msgid " edited this news on "
-msgstr ""
+msgstr " frissítette ekkor: "
 
 #: ../index.php:92 ../index.php:103
 msgid "posted by"
-msgstr ""
+msgstr "beküldte:"
 
 #: ../index.php:93
 msgid "News history"
-msgstr ""
+msgstr "Hír módosításai"
 
 #: ../irc.php:41
 msgid "General information"
-msgstr "�ltal�nos inform�ci�"
+msgstr "Általános információ"
 
 #: ../irc.php:41
 msgid ""
@@ -826,4 +826,4 @@ msgid "Default Desktop"
 msgstr ""
 
 #~ msgid "Menu"
-#~ msgstr "Men�"
+#~ msgstr "Menü"

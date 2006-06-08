@@ -68,7 +68,10 @@ $menucontent .= "</div>\n";
 if($_SERVER["PHP_SELF"]=="/index.php")
 	$langpage=$fwng_root;
 else
-	$langpage=$fwng_root . substr($_SERVER["PHP_SELF"], 1, strlen($_SERVER["PHP_SELF"])-5) . "/";
+{
+	$arr = explode(".", substr($_SERVER["PHP_SELF"], 1));
+	$langpage=$fwng_root . $arr[0] . "/";
+}
 $langcontent = '<div class="imgcontent">
 	  <a href="' . $langpage . 'en"><img alt="' . gettext('Change language') . '" title="' . gettext('Change language') . '" src="' . $fwng_root . 'images/english.gif" border="0" /></a>
 	  | 

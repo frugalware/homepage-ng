@@ -20,10 +20,10 @@
 
 // include some useful functions and the config
 include("functions.inc.php");
-include("config.inc.php");
 
 $lang = getlang();
 $llang = getllang($lang);
+$domain = 'homepage';
 
 // set the locale settings for gettext
 putenv("LANG=".$llang);
@@ -33,6 +33,7 @@ bindtextdomain($domain, "locale");
 textdomain($domain);
 
 // let's start page
+include("config.inc.php");
 include("header.php");
 
 include("xml.inc.php");

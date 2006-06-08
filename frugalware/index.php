@@ -20,21 +20,23 @@
 
 // include some useful functions and the config
 include("functions.inc.php");
-include("config.inc.php");
 
 $lang = getlang();
 $llang = getllang($lang);
+
+// set the locale settings for gettext
+putenv("LANG=".$llang.".utf8");
+setlocale(LC_ALL,$llang.".utf8");
+bindtextdomain("homepage", "locale");
+textdomain("homepage");
+
+include("config.inc.php");
+
 $flang = ( $lang == "en" ) ? "" : "_$lang";
 if (file_exists("xml/news".$flang.".xml"))
 	$xmlfile = "xml/news".$flang.".xml";
 else
 	$xmlfile = $docs_path."/xml/news".$flang.".xml";
-
-// set the locale settings for gettext
-putenv("LANG=".$llang);
-setlocale(LC_ALL,$llang);
-bindtextdomain($domain, "locale");
-textdomain($domain);
 
 // let's start page
 include("header.php");
@@ -52,6 +54,7 @@ if (!file_exists($xmlfile))
 	else
 		$xmlfile = $docs_path."/xml/news.xml";
 }
+
 $id = ( $_GET['id'] != "" ) ? $_GET['id'] : -1;
 $xml = file_get_contents($xmlfile);
 $parser = new XMLParser($xml);

@@ -31,7 +31,7 @@ $llang = getllang($lang);
 putenv("LANG=".$llang);
 setlocale(LC_ALL,$llang);
 bindtextdomain('homepage', "locale");
-textdomain($domain);
+textdomain('homepage');
 
 // include the config and let's start page
 include("config.inc.php");
