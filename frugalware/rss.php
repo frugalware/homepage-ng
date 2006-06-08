@@ -25,6 +25,7 @@ include("db.inc.php");
 
 switch($_GET['type'])
 {
+	// FIXME: the source of this feed should be roadmap.xml, and the link should be the news id
 	case "stable":
 		$db = new FwDB();
 		$db->doConnect($sqlhost, $sqluser, $sqlpass, "frugalware");
@@ -39,7 +40,7 @@ switch($_GET['type'])
 			$handle['items'][] = array(
 				"title" => "frugalware-" . $i['version'],
 				"desc" => $i['desc'],
-				"link" => "http://frugalware.org/download.php?url=frugalware-" . $i['version'] . "-iso/frugalware-" . $i['version'] . "-dvd.iso"
+				"link" => "http://frugalware.org/download/frugalware-" . $i['version'] . "-iso/frugalware-" . $i['version'] . "-dvd.iso"
 			);
 		}
 		$db->doClose();
@@ -61,7 +62,7 @@ switch($_GET['type'])
 				"desc" => $i['desc'],
 				"author" => $i['uploader']."@nospam.frugalware.org",
 				"pubDate" => date(DATE_RFC2822, $i['unix_timestamp(updated)']),
-				"link" => "http://frugalware.org/packages.php?id=${i['id']}"
+				"link" => "http://frugalware.org/packages/${i['id']}"
 			);
 		}
 		$db->doClose();
@@ -82,11 +83,11 @@ switch($_GET['type'])
 	default:
 		include("header.php");
 		fwmiddlebox("RSS",'<div align="left"><ul>
-			<li><a href="/rss.php?type=stable">Stable releases</a></li>
-			<li><a href="/rss.php?type=darcs">Darcs commits</a></li>
-			<li><a href="/rss.php?type=bugs">BTS entries</a></li>
-			<li><a href="/rss.php?type=packages">Package updates</a></li>
-			<li><a href="/rss.php?type=blogs">Blog posts</a></li>
+			<li><a href="/rss/stable">Stable releases</a></li>
+			<li><a href="/rss/darcs">Darcs commits</a></li>
+			<li><a href="/rss/bugs">BTS entries</a></li>
+			<li><a href="/rss/packages">Package updates</a></li>
+			<li><a href="/rss/blogs">Blog posts</a></li>
 			</ul></div>'
 		);
 		include("footer.php");

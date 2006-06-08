@@ -84,7 +84,7 @@ if($_SERVER["QUERY_STRING"]!="")
 }
 
 // build the url
-$url="http://" . $_SERVER["SERVER_NAME"] . "/$page.php$urlsuffix";
+$url="http://" . $_SERVER["SERVER_NAME"] . "$fwng_root$page.php$urlsuffix";
 
 if($page=="rss" and isset($urlsuffix))
 {

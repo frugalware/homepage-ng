@@ -324,7 +324,7 @@ function pkg_from_id($id)
 	if ($arr['desc'] != 'NULL') $content .= "<tr><td>Description:</td><td>".$arr['desc']."</td></tr>\n";
 	if ($arr['maintainer'] != 'NULL') $content .= "<tr><td>Maintainer:</td><td>".$arr['maintainer']."</td></tr>\n";
 	if ($arr['uploader'] != 'NULL') $content .= "<tr><td>Uploaded by:</td><td>".$arr['uploader']."</td></tr>\n";
-	$content .= "<tr><td>Download: </td><td><a href=\"download.php?url=frugalware-" . $arr['fwver'] . "/" . $pkgpath . "/" . $arr['pkgname'] . "-" . $arr['pkgver'] . "-" . $arr['pkgrel'] . "-" . $arr['arch'] . ".fpm\">" . $arr['pkgname'] . "-" . $arr['pkgver'] . "-" . $arr['pkgrel'] . "-" . $arr['arch'] . ".fpm</a></td></tr>";
+	$content .= "<tr><td>Download: </td><td><a href=\"/download/frugalware-" . $arr['fwver'] . "/" . $pkgpath . "/" . $arr['pkgname'] . "-" . $arr['pkgver'] . "-" . $arr['pkgrel'] . "-" . $arr['arch'] . ".fpm\">" . $arr['pkgname'] . "-" . $arr['pkgver'] . "-" . $arr['pkgrel'] . "-" . $arr['arch'] . ".fpm</a></td></tr>";
 	$content .= "<tr><td>Forums:</td><td><a href=\"http://forums.frugalware.org/index.php?t=search&srch=".$arr['pkgname']."\">forums.frugalware.org</a></td></tr>\n";
 	$content .= "<tr><td>Wiki:</td><td><a href=\"http://wiki.frugalware.org/Special:Search?search=".$arr['pkgname']."\">wiki.frugalware.org</a></td></tr>\n";
 	$content .= "<tr><td>Bug Tracking System:</td><td><a href=\"http://bugs.frugalware.org/index.php?string=".$arr['pkgname']."\">related open bugs</a>; file a feature request, bug report or mark outdated <a href=\"http://bugs.frugalware.org/?do=newtask&project=1\">here</td></tr>\n";
