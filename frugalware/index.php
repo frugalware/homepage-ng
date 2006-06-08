@@ -63,7 +63,7 @@ $news = $parser->document->post;
 for ( $i=0; $i<count($news); $i++)
 {
 	$posts[$i][id] = $news[$i]->id[0]->tagData;
-	$posts[$i][title] = "<a class=\"menu\" href=\"".$SERVER[PHP_SELF]."?id=".$posts[$i]['id']."\">".$news[$i]->title[0]->tagData."</a>";
+	$posts[$i][title] = "<a class=\"menu\" href=\"".$fwng_root."news/".$posts[$i]['id']."\">".$news[$i]->title[0]->tagData."</a>";
 	$posts[$i][date] = $news[$i]->date[0]->tagData;
 	$posts[$i][author] = $news[$i]->author[0]->tagData;
 	$posts[$i][content] = $news[$i]->content[0]->tagData;
