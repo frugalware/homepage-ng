@@ -28,10 +28,8 @@ $lang = getlang();
 $llang = getllang($lang);
 
 // set the locale settings for gettext
-putenv("LANG=".$llang);
-setlocale(LC_ALL,$llang);
-bindtextdomain('homepage', "locale");
-textdomain('homepage');
+$domain = "homepage";
+set_locale($llang, $domain);
 
 // include the config and let's start page
 include("config.inc.php");

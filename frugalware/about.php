@@ -28,10 +28,8 @@ $lang = getlang();
 $llang = getllang($lang);
 
 // set the locale settings for gettext
-putenv("LANG=".$llang);
-setlocale(LC_ALL,$llang);
-bindtextdomain('homepage', "locale");
-textdomain($domain);
+$domain = "homepage";
+set_locale($llang, $domain);
 
 $fwshortabout = gettext("Frugalware is a general purpose linux distribution, designed for intermediate users (who are not afraid of text mode).");
 $fwabout= array (

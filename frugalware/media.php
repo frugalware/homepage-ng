@@ -20,29 +20,27 @@
 
 // Include some useful functions and the config
 include('functions.inc.php');
-include('config.inc.php');
 
 $lang = getlang();
 $llang = getllang($lang);
-$flang = ( $lang == 'en' ) ? "" : "_$lang";
-if (file_exists('xml/media.xml'))
-	$xmlfile = 'xml/media.xml';
-else
-	$xmlfile = $docs_path.'xml/media.xml';
 
 // Set the locale settings for gettext
-putenv("LANG=".$llang);
-setlocale(LC_ALL,$llang);
-bindtextdomain($domain, 'locale');
-textdomain($domain);
+$domain = "homepage";
+set_locale($llang, $domain);
 
 // Let's start the page
+include('config.inc.php');
 include('header.php');
 
 // This includes the XML parser
 include('xml.inc.php');
 
 // Let's see whether the media file exist or not
+$flang = ( $lang == 'en' ) ? "" : "_$lang";
+if (file_exists('xml/media.xml'))
+	$xmlfile = 'xml/media.xml';
+else
+	$xmlfile = $docs_path.'xml/media.xml';
 if (!file_exists($xmlfile)) {
 	
 	echo(gettext('Sorry, a media file has not been written yet.'));

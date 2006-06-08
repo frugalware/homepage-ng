@@ -153,4 +153,12 @@ function getnlang($lang)
 	return $nlangs[$lang];
 }
 
+function set_locale($lang, $domain)
+{
+	putenv("LANG=".$lang.".utf8");
+	setlocale(LC_ALL,$lang.".utf8");
+	bindtextdomain($domain, "locale");
+	textdomain($domain);
+}
+
 ?>

@@ -1,5 +1,7 @@
 <?php
 include("functions.inc.php");
+$domain = "homepage";
+set_locale(getllang(getlang()), $domain);
 include("config.inc.php");
 include("header.php");
 

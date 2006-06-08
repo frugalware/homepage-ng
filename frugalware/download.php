@@ -22,25 +22,23 @@
 
 // include some useful functions and the config
 include("functions.inc.php");
-include("config.inc.php");
 
 $lang = getlang();
 $llang = getllang($lang);
+
+// set the locale settings for gettext
+$domain = "homepage";
+set_locale($llang, $domain);
+
+// let's start page
+include("config.inc.php");
+include("header.php");
+include("xml.inc.php");
+
 if (file_exists("xml/mirrors.xml"))
 	$mirrorsfile = "xml/mirrors.xml";
 else
 	$mirrorsfile = $docs_path."/xml/mirrors.xml";
-
-// set the locale settings for gettext
-putenv("LANG=".$llang);
-setlocale(LC_ALL,$llang);
-bindtextdomain($domain, "locale");
-textdomain($domain);
-
-// let's start page
-include("header.php");
-include("xml.inc.php");
-
 $mirr = file_get_contents($mirrorsfile);
 $parser = new XMLParser($mirr);
 $parser->Parse();

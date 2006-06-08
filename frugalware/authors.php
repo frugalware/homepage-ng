@@ -23,14 +23,10 @@ include("functions.inc.php");
 
 $lang = getlang();
 $llang = getllang($lang);
-$domain = 'homepage';
 
 // set the locale settings for gettext
-putenv("LANG=".$llang);
-setlocale(LC_ALL,$llang);
-$domain = 'homepage';
-bindtextdomain($domain, "locale");
-textdomain($domain);
+$domain = "homepage";
+set_locale($llang, $domain);
 
 // let's start page
 include("config.inc.php");

@@ -22,18 +22,16 @@
 
 // include some useful functions and the config
 include("functions.inc.php");
-include("config.inc.php");
 
 $lang = getlang();
 $llang = getllang($lang);
 
 // set the locale settings for gettext
-putenv("LANG=".$llang);
-setlocale(LC_ALL,$llang);
-bindtextdomain($domain, "locale");
-textdomain($domain);
+$domain = "homepage";
+set_locale($llang, $domain);
 
 // let's start page
+include("config.inc.php");
 include("header.php");
 $langs = array();
 $txtdir = $docs_path."/txt";

@@ -25,29 +25,27 @@
 
 // Include some useful functions and the config
 include('functions.inc.php');
-include('config.inc.php');
 
 // Some definitions
 $lang = getlang();
 $llang = getllang($lang);
-if (file_exists('xml/roadmap.xml'))
-	$xmlfile = 'xml/roadmap.xml';
-else
-	$xmlfile = $docs_path.'xml/roadmap.xml';
 
 // Set the locale settings for gettext
-putenv("LANG=" . $llang);
-setlocale(LC_ALL, $llang);
-bindtextdomain($domain, 'locale');
-textdomain($domain);
+$domain = "homepage";
+set_locale($llang, $domain);
 
 // Let's start the page
+include('config.inc.php');
 include('header.php');
 
 // This includes the XML parser
 include('xml.inc.php');
 
 // Let's see whether the roadmap file exists or not
+if (file_exists('xml/roadmap.xml'))
+	$xmlfile = 'xml/roadmap.xml';
+else
+	$xmlfile = $docs_path.'xml/roadmap.xml';
 if (!file_exists($xmlfile)) {
 	
 	echo(gettext('Sorry, a roadmap has not been written yet.'));
