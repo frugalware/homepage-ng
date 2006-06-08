@@ -106,15 +106,15 @@ function main()
 		<br />
 		<label for=\"archs\">".gettext("Architecture:")."</label>
 		<select name=\"arch\" id=\"archs\" class=\"required\">
-			<option value=\"all\" selected=\"selected\">all</option>
-			<option value=\"i686\">i686</option>
+			<option value=\"all\">all</option>
+			<option value=\"i686\" selected=\"selected\">i686</option>
 			<option value=\"x86_64\">x86_64</option>
 		</select>
 		<br />
 		<label for=\"fwver\">".gettext("Version:")."</label>
 		<select name=\"ver\" id=\"fwver\" class=\"required\">
-			<option value=\"all\" selected=\"selected\">all</option>
-			<option value=\"current\">current</option>\n";
+			<option value=\"all\">all</option>
+			<option value=\"current\" selected=\"selected\">current</option>\n";
 		foreach ( $arr as $i )
 		{
 			$content .= $i;
