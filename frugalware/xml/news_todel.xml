@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE news [
+<!ELEMENT news (post)*>
+<!ELEMENT post (id, title, date, author, editedby*, content)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT content (#PCDATA)>
+<!ELEMENT editedby (name, date)>
+<!ELEMENT name (#PCDATA)>
+]>
+<news>
+	<post>
+		<id>3</id>
+		<title>New page arrived</title>
+		<date>Mon Jun  5 21:56:09 CEST 2006</date>
+		<author>IroNiQ</author>
+		<content><![CDATA[
+			As you have probably seen/heared, a new webpage is under development (this one). The layout is 
+			<a href="http://blogs.frugalware.org/alex">AlexExtreme</a>'s work (many thanks for him), 
+			the base of the page and most of the functionalities are created/ported by me. Currently there's no translation is available, but
+			the translation of the page will be much more easy, because the whole page use gettext(). Please test the site and write the comments to
+			the <a href="http://frugalware.org/mailman/listinfo/frugalware-devel">frugalware-devel</a> mailing list.<br />Thanks.
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>2</id>
+		<title>second test post</title>
+		<date>Fri May 12 21:38:39 CEST 2006</date>
+		<author>IroNiQ</author>
+		<content><![CDATA[
+			This is the second test post.<br />
+			It can have more than one line.<br />
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>1</id>
+		<title>first test post</title>
+		<date>Fri May 12 21:38:39 CEST 2006</date>
+		<author>IroNiQ</author>
+		<editedby>
+			<name>VMiklos</name>
+			<date>Fri May 12 22:11:03 CEST 2006</date>
+		</editedby>
+		<editedby>
+			<name>boobaa</name>
+			<date>Fri May 12 22:11:18 CEST 2006</date>
+		</editedby>
+		<content><![CDATA[
+			This is a test post.<br />
+			It can have more than one line, too.<br />
+			]]>
+		</content>
+	</post>
+</news>
