@@ -60,7 +60,7 @@ $news = $parser->document->post;
 // I hate writing a lot. And also the parser creates too long and unuseful object hierarchy,
 // so create a better-readable one.
 // TODO: handle the editedby fields
-for ( $i=0; $i<count($news); $i++)
+for ( $i=0; $i<$news_limit; $i++)
 {
 	$posts[$i][id] = $news[$i]->id[0]->tagData;
 	$posts[$i][title] = "<a class=\"menu\" href=\"".$fwng_root."news/".$posts[$i]['id']."\">".$news[$i]->title[0]->tagData."</a>";

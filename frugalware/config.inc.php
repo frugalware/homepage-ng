@@ -15,6 +15,7 @@ $fwng_root = "/";
 $adodb_path = "/usr/lib/php";
 $top_path = "/home/ftp/pub/frugalware/frugalware-current";
 $docs_path = $top_path."/docs";
+$news_limit = 10;
 
 #not translated changing vars
 $title = "Homepage - Reloaded";
