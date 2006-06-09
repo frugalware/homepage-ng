@@ -283,7 +283,7 @@ function pkg_from_id($id)
 		"fwver='" . $arr['fwver'] . "' and " .
 		"arch='" . $arr['arch'] . "'";
 	$res2 = $db->doQuery($query);
-	while ( $i = $db->doFetchAssoc($res2) )
+	while ( $i = $db->doFetchRow($res2) )
 	{
 		$id_set[$i['pkgname']]=$i['id'];
 	}
@@ -312,7 +312,6 @@ function pkg_from_id($id)
 	{
 		$content .= "<tr><td>Depends:</td><td>";
 		foreach(explode(" ", strtr($arr['depends'], "\n", " ")) as $i)
-
 			$content .= "<a href=\"/packages/" . $id_set[preg_replace('/(<>|>=|<=|=).*/', '', $i)] . "\">$i</a> ";
 		$content .= "</td></tr>\n";
 	}
