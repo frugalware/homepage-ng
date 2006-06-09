@@ -68,6 +68,30 @@ switch($_GET['type'])
 		$db->doClose();
 		break;
 
+	case "news";
+		include("xml.inc.php");
+		if (file_exists("xml/news.xml"))
+			$xmlfile = "xml/news.xml";
+		else
+			$xmlfile = $docs_path."/xml/news.xml";
+		$xml = file_get_contents($xmlfile);
+		$parser = new XMLParser($xml);
+		$parser->Parse();
+		$news = $parser->document->post;
+		$handle['title']="Frugalware Linux News";
+		$handle['desc']="Latest news of Frugalware Linux.";
+		$handle['link']="http://frugalware.org/";
+		for ( $i=0; $i<$news_limit; $i++)
+		{
+			$handle['items'][] = array(
+				"title" => $news[$i]->title[0]->tagData,
+				"link" => "http://www2.frugalware.org/news/".$news[$i]->id[0]->tagData,
+				"pubDate" => date(DATE_RFC2822, strtotime($news[$i]->date[0]->tagData)),
+				"desc" => preg_replace('/(<a href=.*>|<\/a>)/', '', $news[$i]->content[0]->tagData),
+			);
+		}
+		break;
+
 	case "darcs":
 		header('Content-Type: application/xml; charset=utf-8');
 		print(file_get_contents("http://darcs.frugalware.org/genesis.darcsweb/darcsweb.cgi?r=frugalware-current;a=rss"));
@@ -82,13 +106,14 @@ switch($_GET['type'])
 		die();
 	default:
 		include("header.php");
-		fwmiddlebox("RSS",'<div align="left"><ul>
+		fwmiddlebox("RSS",'<ul>
+			<li><a href="/rss/news">News</a></li>
 			<li><a href="/rss/stable">Stable releases</a></li>
 			<li><a href="/rss/darcs">Darcs commits</a></li>
 			<li><a href="/rss/bugs">BTS entries</a></li>
 			<li><a href="/rss/packages">Package updates</a></li>
 			<li><a href="/rss/blogs">Blog posts</a></li>
-			</ul></div>'
+			</div>'
 		);
 		include("footer.php");
 		die();
@@ -102,7 +127,11 @@ print("<?xml version=\"1.0\" encoding=\"utf-8\"?>
 	<link>".$handle['link']."</link>\n");
 foreach( $handle['items'] as $i )
 {
-	print("<item>\n<title>".$i['title']."</title>\n<description>".htmlspecialchars($i['desc'])."</description>\n<link>".$i['link']."</link>\n<guid>".$i['link']."#top</guid>\n");
+	print("<item>\n<title>".$i['title']."</title>\n<link>".$i['link']."</link>\n<guid>".$i['link']."#top</guid>\n");
+	if(isset($i['desc']))
+	{
+		print "<description>".htmlspecialchars($i['desc'])."</description>\n";
+	}
 	if(isset($i['author']))
 	{
 		print("<author>".$i['author']."</author>\n");
