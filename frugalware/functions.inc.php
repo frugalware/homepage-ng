@@ -148,6 +148,7 @@ function getnlang($lang)
 {
 	$nlangs = array(
 		"en_US" => "English",
+		"fr_FR" => "French",
 		"hu_HU" => "Hungarian"
 	);
 	return $nlangs[$lang];
