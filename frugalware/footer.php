@@ -3,7 +3,7 @@
 
 <!-- footer start -->
 <div id="footer">
-	&copy; <?php echo $copydate; ?>. IroNiQ, AlexExtreme &amp; The Frugalware Developer Team
+	&copy; <?php echo $copydate; ?>. <a href="mailto:frugalware-devel@frugalware.org">The Frugalware Developer Team</a>
 </div>
 <!-- footer end -->
 

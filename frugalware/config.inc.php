@@ -19,7 +19,7 @@ $news_limit = 10;
 
 #not translated changing vars
 $title = "Homepage - Reloaded";
-$copydate = "2006";
+$copydate = "2003-2006";
 $domain = 'homepage';
 
 ## Main page ##
