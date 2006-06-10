@@ -35,8 +35,6 @@ set_locale($llang, $domain);
 include("config.inc.php");
 include("db.inc.php");
 include("header.php");
-print('<link rel="alternate" type="application/rss+xml" title="RSS" href="http://'
-	. $_SERVER["SERVER_NAME"] . "${fwng_root}rss/packages\" />\n");
 
 function main()
 {

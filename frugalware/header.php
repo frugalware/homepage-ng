@@ -23,6 +23,14 @@ header("Content-type: text/html; charset=UTF-8");
     }
   ->
 </script-->
+<?
+if($_SERVER['PHP_SELF']=="/index.php")
+	print('<link rel="alternate" type="application/rss+xml" title="RSS" href="http://'
+		. $_SERVER["SERVER_NAME"] . "${fwng_root}rss/news\" />\n");
+else if($_SERVER['PHP_SELF']=="/packages.php")
+	print('<link rel="alternate" type="application/rss+xml" title="RSS" href="http://'
+		. $_SERVER["SERVER_NAME"] . "${fwng_root}rss/packages\" />\n");
+?>
 </head>
 <body>
 
