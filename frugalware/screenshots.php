@@ -26,7 +26,7 @@ $llang = getllang($lang);
 
 // set the locale settings for gettext
 $domain = "homepage";
-set_locale($llang, $homepage);
+set_locale($llang, $domain);
 
 $shots[inst][0][name]="01_splash.png";
 $shots[inst][0][title]=gettext("01_splash.png");
