@@ -17,6 +17,10 @@
  * @copyright Copyright (c) 2006, Krisztian VASAS
  */
 
+if (defined("db.inc"))
+	return;
+define("db.inc", 1);
+
 require_once($adodb_path."/adodb/adodb.inc.php");
 
 class FwDB

@@ -1,5 +1,28 @@
 <?php
 header("Content-type: text/html; charset=UTF-8");
+
+include("db.inc.php");
+if(file_exists($pkgcache))
+	        $info = stat($pkgcache);
+if(!(isset($info) && ((time() - $info["mtime"])<$pkgcachetimeout)))
+{
+	$db = new FwDB();
+	$db->doConnect($sqlhost, $sqluser, $sqlpass, $sqldb);
+	$query = "select groups, pkgname, id, pkgver, pkgrel, arch from packages order by updated desc limit 10";
+	$result = $db->doQuery($query);
+	while($i = $db->doFetchRow($result))
+		$pkgs[] = $i;
+	$db->doClose();
+	$fp = fopen($pkgcache, "w");
+	fwrite($fp, "<div align=\"left\">\n");
+	foreach($pkgs as $i)
+		fwrite($fp, preg_replace("/^([^ ]*) .*/", "$1", $i['groups']) . "/${i['pkgname']}<br>" .
+		"<a href=\"packages.php?id=${i['id']}\">${i['pkgver']}-${i['pkgrel']}-${i['arch']}</a><br>");
+	fwrite($fp, "</div><p>");
+	fwrite($fp, "<a href=\"/rss.php?type=packages\">RSS</a>");
+	fclose($fp);
+}
+$recupd = file_get_contents($pkgcache);
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -63,6 +86,7 @@ else if($_SERVER['PHP_SELF']=="/packages.php")
 <!-- main content start -->
 <div id="leftcolumn">
 <?php
+fwsidebox(gettext("Recent updates"), $recupd);
 fwsidebox(gettext("Languages"), $langcontent);
 fwsidebox(gettext("Information"), $validcontent);
 ?>

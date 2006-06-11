@@ -1,6 +1,10 @@
 <?php
 #config.inc
 
+if (defined("config.inc"))
+	return;
+define("config.inc", 1);
+
 ## Settings ##
 
 #sql settings
@@ -8,7 +12,7 @@ $sqltype = "mysql";
 $sqlhost = "localhost";
 $sqluser = "homepage";
 $sqlpass = "85Tdjf{Od";
-$sqldb = "homepage";
+$sqldb = "frugalware";
 
 #site settings
 $fwng_root = "/";
@@ -16,6 +20,8 @@ $adodb_path = "/usr/lib/php";
 $top_path = "/home/ftp/pub/frugalware/frugalware-current";
 $docs_path = $top_path."/docs";
 $news_limit = 10;
+$pkgcache = "/tmp/pkgcache.info";
+$pkgcachetimeout = 180;
 
 #not translated changing vars
 $title = "Homepage - Reloaded";

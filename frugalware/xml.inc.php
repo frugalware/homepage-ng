@@ -22,6 +22,10 @@
  * @version 1.2.0
  */
 
+if (defined("xml.inc"))
+	return;
+define("xml.inc", 1);
+
 class XMLParser
 {
 	/**

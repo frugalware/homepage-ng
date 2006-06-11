@@ -17,6 +17,10 @@
  * @copyright Copyright (c) 2006. Krisztian VASAS
  */
 
+if (defined("functions.inc"))
+	return;
+define("functions.inc", 1);
+
 /**
  * Creates a left/right side box
  *
