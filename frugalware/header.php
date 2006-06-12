@@ -21,10 +21,10 @@ if(!(isset($info) && ((time() - $info["mtime"])<$pkgcachetimeout)))
 		if (strlen($writeout) > 26)
 			$writeout = preg_replace("/^([^ ]*) .*/", "$1", $i['groups']) . "/<br />&nbsp;${i['pkgname']}";
 		fwrite($fp, $writeout."<br />" .
-			"<a href=\"packages.php?id=${i['id']}\">${i['pkgver']}-${i['pkgrel']}-${i['arch']}</a><br>");
+			"<a href=\"packages.php?id=${i['id']}\">${i['pkgver']}-${i['pkgrel']}-${i['arch']}</a><br />");
 	}
 	fwrite($fp, "</div><p>");
-	fwrite($fp, "<a href=\"/rss.php?type=packages\">RSS</a>");
+	fwrite($fp, "<a href=\"${fwng_root}rss/packages\">RSS</a>");
 	fclose($fp);
 }
 $recupd = file_get_contents($pkgcache);
