@@ -22,6 +22,7 @@ $docs_path = $top_path."/docs";
 $news_limit = 10;
 $pkgcache = "/tmp/pkgcache.info";
 $pkgcachetimeout = 180;
+$upfile = "/proc/uptime";
 
 #not translated changing vars
 $title = "Homepage - Reloaded";

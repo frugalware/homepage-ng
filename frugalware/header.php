@@ -23,6 +23,21 @@ if(!(isset($info) && ((time() - $info["mtime"])<$pkgcachetimeout)))
 	fclose($fp);
 }
 $recupd = file_get_contents($pkgcache);
+
+$statf=file($upfile);
+list($uptime, $junk) = split(" ", $statf[0]);
+$secuptime=floor($uptime);
+// sec
+$minuptime=60*floor($uptime/60);
+$sec= $secuptime - $minuptime;
+// min
+$houruptime=3600*floor($minuptime/3600);
+$min= $minuptime - $houruptime;
+// hour
+$dayuptime=86400*floor($houruptime/86400);
+$hour= $houruptime - $dayuptime;
+$uptime = "Uptime:<br />" . $dayuptime/86400 ." ". gettext("day(s)") ." ". $hour/3600 ." ". gettext("h") ." ". $min/60 ." ". gettext("m") ." ". $sec ." ". gettext("s");
+
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -89,6 +104,7 @@ else if($_SERVER['PHP_SELF']=="/packages.php")
 fwsidebox(gettext("Recent updates"), $recupd);
 fwsidebox(gettext("Languages"), $langcontent);
 fwsidebox(gettext("Information"), $validcontent);
+fwsidebox(gettext("Server informations"), $uptime);
 ?>
 </div>
 <div id="centercolumn">
