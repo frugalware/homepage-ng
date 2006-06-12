@@ -16,8 +16,13 @@ if(!(isset($info) && ((time() - $info["mtime"])<$pkgcachetimeout)))
 	$fp = fopen($pkgcache, "w");
 	fwrite($fp, "<div align=\"left\">\n");
 	foreach($pkgs as $i)
-		fwrite($fp, preg_replace("/^([^ ]*) .*/", "$1", $i['groups']) . "/${i['pkgname']}<br>" .
-		"<a href=\"packages.php?id=${i['id']}\">${i['pkgver']}-${i['pkgrel']}-${i['arch']}</a><br>");
+	{
+		$writeout = preg_replace("/^([^ ]*) .*/", "$1", $i['groups']) . "/${i['pkgname']}";
+		if (strlen($writeout) > 28)
+			$writeout = preg_replace("/^([^ ]*) .*/", "$1", $i['groups']) . "/<br />${i['pkgname']}";
+		fwrite($fp, $writeout."<br />" .
+			"<a href=\"packages.php?id=${i['id']}\">${i['pkgver']}-${i['pkgrel']}-${i['arch']}</a><br>");
+	}
 	fwrite($fp, "</div><p>");
 	fwrite($fp, "<a href=\"/rss.php?type=packages\">RSS</a>");
 	fclose($fp);
