@@ -18,8 +18,8 @@ if(!(isset($info) && ((time() - $info["mtime"])<$pkgcachetimeout)))
 	foreach($pkgs as $i)
 	{
 		$writeout = preg_replace("/^([^ ]*) .*/", "$1", $i['groups']) . "/${i['pkgname']}";
-		if (strlen($writeout) > 28)
-			$writeout = preg_replace("/^([^ ]*) .*/", "$1", $i['groups']) . "/<br />${i['pkgname']}";
+		if (strlen($writeout) > 27)
+			$writeout = preg_replace("/^([^ ]*) .*/", "$1", $i['groups']) . "/<br />&nbsp;${i['pkgname']}";
 		fwrite($fp, $writeout."<br />" .
 			"<a href=\"packages.php?id=${i['id']}\">${i['pkgver']}-${i['pkgrel']}-${i['arch']}</a><br>");
 	}
