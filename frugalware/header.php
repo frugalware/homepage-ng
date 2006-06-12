@@ -36,7 +36,7 @@ $min= $minuptime - $houruptime;
 // hour
 $dayuptime=86400*floor($houruptime/86400);
 $hour= $houruptime - $dayuptime;
-$uptime = "Uptime:<br />" . $dayuptime/86400 ." ". gettext("day(s)") ." ". $hour/3600 ." ". gettext("h") ." ". $min/60 ." ". gettext("m") ." ". $sec ." ". gettext("s");
+$uptime = sprintf(gettext("Uptime:<br /> %d day(s) %d h %d m %d s"), $dayuptime/86400, $hour/3600, $min/60, $sec);
 
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
