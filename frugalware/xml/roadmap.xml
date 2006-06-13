@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE roadmap [
 <!ELEMENT roadmap (release)*>
-<!ELEMENT release (name , definition , version , date , status , prerelease+)>
+<!ELEMENT release (name , definition , version , date , status , newsid , prerelease+)>
 <!ELEMENT name (#PCDATA)>
 <!ELEMENT definition (#PCDATA)>
 <!ELEMENT version (#PCDATA)>
 <!ELEMENT date (#PCDATA)>
 <!ELEMENT status (#PCDATA)>
+<!ELEMENT newsid (#PCDATA)>
 <!ELEMENT prerelease (preversion , predate , prestatus)>
 <!ELEMENT preversion (#PCDATA)>
 <!ELEMENT predate (#PCDATA)>
@@ -26,6 +27,7 @@
 		<version>0.5</version>
 		<date>Sep 30, 2006</date>
 		<status>0</status>
+		<newsid></newsid>
 		<prerelease>
 			<preversion>rc2</preversion>
 			<predate>Aug 31, 2006</predate>
@@ -53,6 +55,7 @@
 		<version>0.4</version>
 		<date>Mar 30, 2006</date>
 		<status>1</status>
+		<newsid>34</newsid>
 		<prerelease>
 			<preversion>rc2</preversion>
 			<predate>Mar 16, 2006</predate>
@@ -80,6 +83,7 @@
 		<version>0.3</version>
 		<date>Oct 13, 2005</date>
 		<status>1</status>
+		<newsid>28</newsid>
 		<prerelease>
 			<preversion>rc2</preversion>
 			<predate>Oct 04, 2005</predate>
@@ -107,6 +111,7 @@
 		<version>0.2</version>
 		<date>Apr 28, 2005</date>
 		<status>1</status>
+		<newsid>19</newsid>
 		<prerelease>
 			<preversion>rc2</preversion>
 			<predate>Apr 18, 2005</predate>
@@ -134,6 +139,7 @@
 		<version>0.1</version>
 		<date>Nov 02, 2004</date>
 		<status>1</status>
+		<newsid>4</newsid>
 		<prerelease>
 			<preversion>rc2</preversion>
 			<predate>Oct 11, 2004</predate>

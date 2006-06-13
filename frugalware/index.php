@@ -60,7 +60,6 @@ $parser->Parse();
 $news = $parser->document->post;
 // I hate writing a lot. And also the parser creates too long and unuseful object hierarchy,
 // so create a better-readable one.
-// TODO: handle the editedby fields
 for ( $i=0; $i<$news_limit; $i++)
 {
 	$posts[$i][id] = $news[$i]->id[0]->tagData;
@@ -75,7 +74,6 @@ for ( $i=0; $i<$news_limit; $i++)
 	}
 }
 // Let's write out the news in separate boxes.
-// TODO: clicking on the title the page shows the history of the news (editedby)
 if ( $id != -1 )
 {
 	if ( $nolang == 1 )
