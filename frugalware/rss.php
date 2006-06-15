@@ -113,11 +113,12 @@ switch($_GET['type'])
 			<li><a href="/rss/bugs">BTS entries</a></li>
 			<li><a href="/rss/packages">Package updates</a></li>
 			<li><a href="/rss/blogs">Blog posts</a></li>
-			</div>'
+			</ul>'
 		);
 		include("footer.php");
 		die();
 }
+
 header('Content-Type: application/xml; charset=utf-8');
 print("<?xml version=\"1.0\" encoding=\"utf-8\"?>
 <rss version=\"2.0\">
