@@ -25,25 +25,32 @@ include("db.inc.php");
 
 switch($_GET['type'])
 {
-	// FIXME: the source of this feed should be roadmap.xml, and the link should be the news id
-	case "stable":
-		$db = new FwDB();
-		$db->doConnect($sqlhost, $sqluser, $sqlpass, "frugalware");
-
-		$handle['title']="Frugalware Linux";
+	case "releases":
+		include("xml.inc.php");
+		if (file_exists("xml/roadmap.xml"))
+			$xmlfile = "xml/roadmap.xml";
+		else
+			$xmlfile = $docs_path."/xml/roadmap.xml";
+		$xml = file_get_contents($xmlfile);
+		$parser = new XMLParser($xml);
+		$parser->Parse();
+		$releases = $parser->document->release;
+		$handle['title']="Frugalware Linux ";
 		$handle['desc']="Frugalware Linux is general purpose Linux distribution designed for intermediate users. Some of its elements were borrowed from Slackware Linux and Arch Linux.";
 		$handle['link']="http://frugalware.org/";
-		$query="select version, `desc` from releases where type='stable' order by date desc";
-		$result = $db->doQuery($query);
-		while ($i = $db->doFetchRow($result))
+		for ( $i=0; $i < count($releases); $i++)
 		{
-			$handle['items'][] = array(
-				"title" => "frugalware-" . $i['version'],
-				"desc" => $i['desc'],
-				"link" => "http://frugalware.org/download/frugalware-" . $i['version'] . "-iso/frugalware-" . $i['version'] . "-dvd.iso"
-			);
+			if ($releases[$i]->status[0]->tagData == '1') {
+				
+				$handle['items'][] = array(
+					"title" => 'frugalware-' . $releases[$i]->version[0]->tagData,
+					"link" => 'http://www2.frugalware.org/news/' . $releases[$i]->newsid[0]->tagData,
+					"desc" => '',
+					"pubDate" => date(DATE_RFC2822, strtotime($releases[$i]->date[0]->tagData)),
+				);
+				
+			}
 		}
-		$db->doClose();
 		break;
 
 	case "packages":
@@ -108,7 +115,7 @@ switch($_GET['type'])
 		include("header.php");
 		fwmiddlebox("RSS",'<ul>
 			<li><a href="/rss/news">News</a></li>
-			<li><a href="/rss/stable">Stable releases</a></li>
+			<li><a href="/rss/releases">Stable releases</a></li>
 			<li><a href="/rss/darcs">Darcs commits</a></li>
 			<li><a href="/rss/bugs">BTS entries</a></li>
 			<li><a href="/rss/packages">Package updates</a></li>
