@@ -27,7 +27,7 @@ for ( $i=0; $i<count($stable); $i++ )
 {
 	$rels .= "<p><a href=\"".$fwng_root."news/".$stable[$i][newsid]."\">frugalware-".$stable[$i][version]." (".$stable[$i][name].")</a><br />".$stable[$i][date]."</p>\n";
 }
-$rels .= "<p>\n<div align=\"center\"><a href=\"${fwng_root}rss/releases\">RSS</a></div>\n</p>\n";
+$rels .= "<p>\n<span style=\"text-align: center\"><a href=\"${fwng_root}rss/releases\">RSS</a></span>\n</p>\n";
 
 include("db.inc.php");
 if(file_exists($pkgcache))
