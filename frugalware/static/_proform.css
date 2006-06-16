@@ -190,10 +190,10 @@ FIELDSET.pkg TABLE TFOOT TR TD {
 FIELDSET.pkg SELECT {
 	margin: 0;
 }
-FIELDSET.pkg .pkg-equal {
+/*FIELDSET.pkg .pkg-equal {
 	width: 244px;
-	-moz-box-sizing: border-box; /* XXX */
-}
+	-moz-box-sizing: border-box; /* XXX
+}*/
 FIELDSET.pkg .pkg-equal.half {
 	width: 120px;
 }
