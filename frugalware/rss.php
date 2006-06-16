@@ -19,8 +19,17 @@
  * @copyright Copyright (c) 2006. Krisztian VASAS
  */
 
-include("config.inc.php");
+// include some useful functions and the config
 include("functions.inc.php");
+
+$lang = getlang();
+$llang = getllang($lang);
+
+// set the locale settings for gettext
+$domain = "homepage";
+set_locale($llang, $domain);
+
+include("config.inc.php");
 include("db.inc.php");
 
 switch($_GET['type'])
@@ -114,12 +123,12 @@ switch($_GET['type'])
 	default:
 		include("header.php");
 		fwmiddlebox("RSS",'<ul>
-			<li><a href="/rss/news">News</a></li>
-			<li><a href="/rss/releases">Stable releases</a></li>
-			<li><a href="/rss/darcs">Darcs commits</a></li>
-			<li><a href="/rss/bugs">BTS entries</a></li>
-			<li><a href="/rss/packages">Package updates</a></li>
-			<li><a href="/rss/blogs">Blog posts</a></li>
+			<li><a href="/rss/news">' . gettext('News') . '</a></li>
+			<li><a href="/rss/releases">' . gettext('Stable releases') . '</a></li>
+			<li><a href="/rss/darcs">' . gettext('Darcs commits') . '</a></li>
+			<li><a href="/rss/bugs">' . gettext('BTS entries') . '</a></li>
+			<li><a href="/rss/packages">' . gettext('Package updates') . '</a></li>
+			<li><a href="/rss/blogs">' . gettext('Blog posts') . '</a></li>
 			</ul>'
 		);
 		include("footer.php");
