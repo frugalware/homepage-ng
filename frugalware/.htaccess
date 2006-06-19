@@ -8,4 +8,5 @@ RewriteEngine on
 RewriteCond %{REQUEST_URI} !^/.*\.php
 RewriteCond %{REQUEST_URI} !^/images
 RewriteCond %{REQUEST_URI} !^/static
+RewriteCond %{REQUEST_URI} !^/_darcs/
 RewriteRule (.*) /rewrite.php/$1
