@@ -12,6 +12,26 @@
 ]>
 <news>
 	<post>
+		<id>37</id>
+		<title>Új Frugalware honlap!</title>
+		<date>Tue Jun 20 09:22:37 CEST 2006</date>
+		<author>IroNiQ</author>
+		<content><![CDATA[
+			Üdvözöljük a megújult Frugalware honlapon. Az oldal teljesen újra lett írva, rengeteg újdonságot felhasználva: táblázatmentes dizájn, XML alapú adattárolás és könnyű fordítási lehetőség a gettext() segítségével. Ha szeretne segíteni az oldal lefordításában, akkor kérem küldjön levelet a frugalware-devel levelezőlistára (angol nyelvű lista). Ha valamilyen hibát talál az oldalon, akkor azt a <a href="http://bugs.frugalware.org">megszokott helyen</a> teheti meg.
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>36</id>
+		<title>Ati és nVidia bináris driver nem működik a -current ágban</title>
+		<date>Tue Jun 20 09:10:57 CEST 2006</date>
+		<author>IroNiQ</author>
+		<content><![CDATA[
+			Akik a bináris Ati vagy nVidia drivert használnak a current ágban, valószínűleg tapasztalták, hogy bizonyos dolgok nem működnek. Ennek oka az, hogy frissítettünk Xorg 7.1 -re. A tünet: nem látszódnak a fontok a képernyőn. Amíg nem adnak ki újabb változatot a bináris driverekből, kettő megoldást tudunk ajánlani: vagy a régebbi, Xorg 7.0 -s csomagok visszarakása, vagy ideiglenesen visszatérni a nyílt forrású driverekhez a /etc/X11/Xorg.conf fájlban (ati vagy nv). Megjegyzés: a Frugalware 0.5pre1 nem érintett mindaddig, amíg nincs frissítés.
+			]]>
+		</content>
+	</post>
+	<post>
 		<id>35</id>
 		<title>Megjelent a Frugalware 0.5pre1-i686</title>
 		<date>Mon May 29 21:39:21 CEST 2006</date>
