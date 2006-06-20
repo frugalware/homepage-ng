@@ -1,56 +1,59 @@
+# translation of hu_HU.po to
 # Frugalware New Homepage Translation.
 # Copyright (C) 2006 Krisztian VASAS <iron@frugalware.org>
 # This file is distributed under the GNU General Public Licence.
-# Krisztian VASAS <iron@frugalware.org>, 2006.
 #
-#, fuzzy
+# Krisztian VASAS <iron@frugalware.org>, 2006.
+# Miklos Vajna <vmiklos@frugalware.org>, 2006.
+# VMiklos <vmiklos@frugalware.org>, 2006.
 msgid ""
 msgstr ""
-"Project-Id-Version: Frugalware Homepage v2.0\n"
+"Project-Id-Version: hu_HU\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-06-07 00:42+0200\n"
-"PO-Revision-Date: 2006-02-05 11:52+0100\n"
-"Last-Translator: Krisztian VASAS <iron@frugalware.org>\n"
-"Language-Team: Frugalware Developer Team <frugalware-devel@frugalware.org>\n"
+"POT-Creation-Date: 2006-06-20 00:29+0200\n"
+"PO-Revision-Date: 2006-06-20 02:20+0200\n"
+"Last-Translator: VMiklos <vmiklos@frugalware.org>\n"
+"Language-Team:  <hu@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.2\n"
 
-#: ../about.php:37
+#: ../about.php:34
 msgid ""
 "Frugalware is a general purpose linux distribution, designed for "
 "intermediate users (who are not afraid of text mode)."
-msgstr ""
+msgstr "A Frugalware egy általános célú Linux-disztribúció, mely a középhaladó felhasználóknak lett kitalálva, akik nem ijednek meg a karakteres felülettől."
 
-#: ../about.php:39
+#: ../about.php:36
 msgid "What branches does Frugalware have?"
-msgstr ""
+msgstr "Milyen ágai vannak a Frugalware-nek?"
 
-#: ../about.php:40
+#: ../about.php:37
 msgid ""
 "We have a <i>current</i> and a <i>stable</i> branch. The <i>current</i> "
 "branch is updated daily, and we update our <i>stable</i> branch around every "
 "6 months."
-msgstr ""
+msgstr "<i>current</i>, és <i>stable</i> ág van. A <i>current</i> ág gyakorlatilag naponta, a <i>stable</i> pedig félévente frissül."
 
-#: ../about.php:41
+#: ../about.php:38
 msgid "What is &quot;The Frugalware Philosophy&quot; about?"
-msgstr ""
+msgstr "Miről szól a  &quot;Frugalware Filozófia&quot;?"
 
-#: ../about.php:42
+#: ../about.php:39
 msgid ""
 "Briefly: simplicity, multimedia, design. We try to make Frugalware as simple "
 "as possible while not forgetting to keep it comfortable. We try to ship "
 "fresh and stable software, as close to the original source as possible, "
 "because in our opinion most software is the best as is, and doesn't need "
 "patching."
-msgstr ""
+msgstr "Röviden: egyszerűség, multimédia, dizájn. Megpróbálunk egy egyszerű, mégis könnyen használható rendszert készíteni. Az eredeti forráshoz lehetőleg minél közelebb álló, friss es stabil szoftvert próbálunk kiadni, mert véleményünk szerint a legtöbb szoftver úgy jó, ahogy van, nem igényel módosítást."
 
-#: ../about.php:43
+#: ../about.php:40
 msgid "What is the license of Frugalware?"
-msgstr ""
+msgstr "Mi a Frugalware licence?"
 
-#: ../about.php:44
+#: ../about.php:41
 msgid ""
 "That's two questions. Most software included in Frugalware have a GPL or BSD "
 "compatible license, for more information about a license of a specific "
@@ -61,26 +64,26 @@ msgid ""
 "by Patrick J. Volkerding. We GPL our additions, but Patrick J. Volkerding's "
 "code is still under the BSD license. For more information, refer to the "
 "COPYRIGHT file in the root directory of the FST (Frugalware Source Tree)."
-msgstr ""
+msgstr "Ez két kérdés. A legtöbb, a Frugalware-ben található szoftver vagy GPL, vagy BSD kompatibilis licenccel rendelkezik. Ezekről bővebben az adott csomag forrásában található LICENSE vagy COPYRIGHT fájlban olvashat. A Frugalware csapat által írt részek (FrugalBuild szkriptek, telepítő, weboldal, stb) GPL licenc alatt lettek kiadva. Hogy ne legyen ennyire egyszerű a dolog, a telepítő szkript némely része Patrick J. Volkerding munkája. Az általunk hozzáadott rész GPL -es, de Patrick J. Volkerding kódja még mindig BSD licencű. Bővebb információért tekintse meg a COPYRIGHT fájlt a Frugalware Forrásfa gyökérkönyvtárában."
 
-#: ../about.php:45
+#: ../about.php:42
 msgid "What package manager does Frugalware use?"
-msgstr ""
+msgstr "Milyen csomagkezelőt használ a Frugalware?"
 
-#: ../about.php:46
+#: ../about.php:43
 msgid ""
 "We don't have our own package manager, we use Judd Vinet's great work, the "
 "<a href=\"http://www.archlinux.org/pacman\">pacman</a> package manager. It's "
 "a tar.bz2 based package manager, similar to Slackware's .tgz. Our packages' "
 "extension is .fpm to differentiate them from regular tarballs. Unlike "
 "Slackware's scripts, pacman is written in C, so it's much faster."
-msgstr ""
+msgstr "Nincs sajátunk, Judd Vinet nagyszerű, <a href=\"http://www.archlinux.org/pacman\">pacman</a> nevű csomagkezelőjét használjuk. Ez egy tar.gz alapú csomagkezelő, hasonló a Slackware által használt .tgz -hez. A csomagjaink kiterjesztése .fpm a hagyományos forráskódtól való könnyű megkülönböztetés miatt. A Slackware szkriptjeitől eltérően, a pacman C -ben lett írva, magyarul jóval gyorsabb annál."
 
-#: ../about.php:47
+#: ../about.php:44
 msgid "How does Frugalware manage updating obsolete packages?"
-msgstr ""
+msgstr "Hogy kezeli a Frugalware az elavult csomagok frissítését?"
 
-#: ../about.php:48
+#: ../about.php:45
 msgid ""
 "We don't have any standalone program for updating packages as pacman manages "
 "this task too. To update your package database, use <tt>pacman&nbsp;-Sy</"
@@ -89,61 +92,61 @@ msgid ""
 "necessary dependencies directly from a mirror ftp server, you issue "
 "<tt>pacman&nbsp;-S&nbsp;foo</tt>. For more information, refer to the pacman "
 "man page."
-msgstr ""
+msgstr "Nincs külön programunk a csomagok frissítésére, mindezt a pacman kezeli. A csomagadatbázis frissítéséhez használja a <tt>pacman&nbsp;-Sy</tt>, a frissített adatbázisban levő csomagok frissítéséhez pedig a <tt>pacman&nbsp;-Su</tt> parancsot. Egy csomagot a <tt>pacman&nbsp;-S&nbsp;csomagnév</tt> paranccsal lehet telepíteni (a szükséges függőségekkel együtt) közvetlenül valamelyik tükörszerverről. Bővebb információért nézze meg a pacman manual (man) oldalát."
 
-#: ../about.php:49
+#: ../about.php:46
 msgid "Is there any community support available for Frugalware?"
-msgstr ""
+msgstr "Van-e közösségi támogatás a Frugalware-hez?"
 
-#: ../about.php:50
+#: ../about.php:47
 msgid ""
 "Currently we have three mailing lists, an irc channel and forums that can be "
 "used to communicate with us or other users and to get help. The irc channel "
 "is on the Freenode network (server: irc.freenode.net). For more information "
 "about our mailing lists, please refer to the <a href=\"mailman/listinfo"
 "\">list section</a> of our web site."
-msgstr ""
+msgstr "Jelenleg 3 levelezőlistánk és egy IRC csatornánk van, ahol kapcsolatba léphet velünk és más felhasználókkal, valamint segítséget kérhet. Az IRC csatorna a Freenode hálózatán van (szerver: irc.freenode.net, csatorna: #frugalware). A levelező listákkal kapcsolatban bővebb információt <a href=\"mailman/listinfo\">itt</a> találhat."
+
+#: ../about.php:48
+msgid "Is there any commercial support available for Frugalware?"
+msgstr "Van kereskedelmi támogatás a Frugalware-hez?"
+
+#: ../about.php:49
+msgid "No, there isn't for now, and <i>currently</i> it isn't planned, either."
+msgstr "Nem, nincs és <i>jelenleg</i> nem is tervezzük."
+
+#: ../about.php:50
+msgid "For whom is Frugalware recommended to use?"
+msgstr "Kinek ajánlott a Frugalware használata?"
 
 #: ../about.php:51
-msgid "Is there any commercial support available for Frugalware?"
-msgstr ""
-
-#: ../about.php:52
-msgid "No, there isn't for now, and <i>currently</i> it isn't planned, either."
-msgstr ""
-
-#: ../about.php:53
-msgid "For whom is Frugalware recommended to use?"
-msgstr ""
-
-#: ../about.php:54
 msgid ""
 "Frugalware is designed for intermediate users. Installing Frugalware is not "
 "a magic, of course, but you should know what a partition, an MBR (Master "
 "Boot Record), etc. is."
-msgstr ""
+msgstr "A Frugalware a középhaladó felhasználóknak lett tervezve. A Frugalware telepítése nem egy nagy varázslat, de természetesen tudni kell, mi is az a partíció, az MBR (Master Boot Record), stb."
 
-#: ../about.php:55
+#: ../about.php:52
 msgid "How to become a developer?"
-msgstr ""
+msgstr "Hogy lehet valaki fejlesztő?"
 
-#: ../about.php:56
+#: ../about.php:53
 msgid ""
 "Get involved! :) If you installed Frugalware from CDs, get the full FST via "
 "repoman, which is available in pacman-tools. The sources are included in the "
 "DVD edition. Then start to play with the FrugalBuild scripts, for a typical "
-"example, refer to the <a href=\"packages.php?pkgname=cabextract"
-"\">cabextract</a> package. Try to improve them, or write a new one for a "
-"currently unsupported program. Then send your patches to the <a href="
-"\"mailman/listinfo/frugalware-devel\">devel</a> mailing list. From this "
-"point everything will come naturally to you :)"
-msgstr ""
+"example, refer to the <a href=\"/packages/44\">cabextract</a> package. Try "
+"to improve them, or write a new one for a currently unsupported program. "
+"Then send your patches to the <a href=\"mailman/listinfo/frugalware-devel"
+"\">devel</a> mailing list. From this point everything will come naturally to "
+"you :)"
+msgstr "Kedvet kapott? :) Ha a Frugalware-t CDről telepíti, töltse le a teljes Frugalware Forrásfát. Ez a DVD verziónál a lemezen megtalálható. Ezután csak kezdjen el játszani a FrugalBuild szkriptekkel, példaként használható a <a href=\"packages.php?pkgname=cabextract\">cabextract</a> csomag. Próbálja meg tökéletesíteni őket, vagy készítsen csomagot egy eddig nem támogatott programból. Ezek után küldje el a patch -et a <a href=\"mailman/listinfo/frugalware-devel\">frugalware-devel</a> levelezőlistára. Innentől már minden menni fog a maga útján."
 
-#: ../about.php:57
+#: ../about.php:54
 msgid "What do developers do?"
-msgstr ""
+msgstr "Mit csinál egy fejlesztő?"
 
-#: ../about.php:58
+#: ../about.php:55
 msgid ""
 "In short, what they want to, if they play a square game. They may maintain "
 "packages: building them if a newer version is available and update the "
@@ -153,59 +156,59 @@ msgid ""
 "Frugalware community. If you only want to help us, but you don't want to "
 "hack, you may help in translating Frugalware to your or other language. And, "
 "of course, we happily accept <a href=\"donations.php\">donations</a> :)"
-msgstr ""
+msgstr "Röviden: amit akar, ha betart néhány szabályt. Karbantartja a csomagokat: újrafordítja őket ha újabb verzió jelenik meg, és frissíti a FrugalBuild szkripteket, hogy jól működjenek az új verzióval is. Új csomagkészítő szkriptet készíthet egy korábban nem létező csomaghoz. Cikkeket írhat a Frugalware-ről, vagy bármi mást, ami kapcsolatban van a Frugalware közösséggel. Ha segíteni kíván, de nem szertne belefolyni komolyabban a fejlesztésbe, akkor segíthet a Frugalware más nyelvekre való fordításában. És persze boldogan fogadunk <a href=\"donations.php\">adományokat</a> is. :)"
+
+#: ../about.php:56
+msgid "Who develops Frugalware?"
+msgstr "Kik fejlesztik a Frugalware-t?"
+
+#: ../about.php:57
+msgid "A young group, but your age is not conditional to become a developer"
+msgstr "Egy fiatalokból álló csoport, de az életkor nem meghatározó tényező a fejleszővé váláshoz."
+
+#: ../about.php:58
+msgid "Is Frugalware specialized in a certain purpose?"
+msgstr "A Frugalware speciálisan valamilyen célra készült?"
 
 #: ../about.php:59
-msgid "Who develops Frugalware?"
-msgstr ""
+msgid "No, it's a general purpose distribution, for desktops and servers."
+msgstr "Nem, ez egy általános célú disztribúció, munkaállomásnak és szervernek egyaránt."
 
 #: ../about.php:60
-msgid "A young group, but your age is not conditional to become a developer"
-msgstr ""
+msgid "Do you plan to release a live cd?"
+msgstr "Tervezik-e egy live cd kiadását?"
 
 #: ../about.php:61
-msgid "Is Frugalware specialized in a certain purpose?"
-msgstr ""
-
-#: ../about.php:62
-msgid "No, it's a general purpose distribution, for desktops and servers."
-msgstr ""
-
-#: ../about.php:63
-msgid "Do you plan to release a live cd?"
-msgstr ""
-
-#: ../about.php:64
 msgid ""
 "Well, we have already a live cd, called FwLive. Now it supports only i686 "
 "version, but the x86_64 version is also under development. You can find it "
 "<a href=\"http://fwlive.frugalware.hu\">here</a>."
-msgstr ""
+msgstr "Nos, már elérhető a live cdnk, FwLive néven. Jelenleg csak az i686 verzió támogatott, de az x86_64 verzió is már fejlesztés alatt áll. Megtalálható <a href=\"http://fwlive.frugalware.hu\">itt</a>."
 
-#: ../about.php:65
+#: ../about.php:62
 msgid "Does Frugalware support languages other than English?"
-msgstr ""
+msgstr "Támogat a Frugalware az angolon kívül más nyelveket is?"
 
-#: ../about.php:66
+#: ../about.php:63
 msgid ""
 "Yes, it supports all languages supported by the packages. If the init "
 "scripts or the setup is not available in your language, then it simply means "
 "it haven't yet translated."
-msgstr ""
+msgstr "Igen, támogat. (Ezt is magyarul olvassa :-)) Ha a rendszerindító vagy a telepítő szkriptek nem érhetők el az adott nyelven, akkor az egyszerűen csak azt jelenti, hogy még nincs lefordítva."
+
+#: ../about.php:64
+msgid "What about Asian languages?"
+msgstr "Mi a helyzet az ázsiai nyelvekkel?"
+
+#: ../about.php:65
+msgid "Frugalware does not support Asian languages currently."
+msgstr "A Frugalware jelenleg nem támogatja az ázsiai nyelveket."
+
+#: ../about.php:66
+msgid "What architectures does Frugalware support?"
+msgstr "Mely architektúrákat támogatja a Frugalware?"
 
 #: ../about.php:67
-msgid "What about Asian languages?"
-msgstr ""
-
-#: ../about.php:68
-msgid "Frugalware does not support Asian languages currently."
-msgstr ""
-
-#: ../about.php:69
-msgid "What architectures does Frugalware support?"
-msgstr ""
-
-#: ../about.php:70
 msgid ""
 "Currently we support x86 and x86_64 platforms, and inside x86, only i686 "
 "(Pentium Pro or higher instruction set) and inside x86_64 only k8 (amd64). "
@@ -214,149 +217,149 @@ msgid ""
 "currently we don't have any non-x86 hardware, but happily accept such "
 "patches or any effort to create non-x86 optimized packages. We are also "
 "working on a PowerPC port"
-msgstr ""
+msgstr "Jelenleg az x86 és x86_64 platformokat támogatjuk, azon belül is csak az i686 (Pentium Pro és az annál újabb utasításkészletű), valamint k8 (amd64) processzorok támogatottak. Ha van rá igény, nyitunk egy i386 portot is, de jelenleg sajnos nincs erőforrásunk újrafordítani és kezelni ezeket a csomagokat. Jelenleg nincs nem-x86 architektúrájú hardverünk, de szívesen fogadunk bármilyen patch-et vagy erőfeszítést nem-x86-ra optimalizált csomagok készítéséhez. Ezen kívül elkezdődött a munka a PowerPC porton"
 
-#: ../about.php:77
+#: ../about.php:74
 msgid "Short"
-msgstr ""
+msgstr "Röviden"
+
+#: ../about.php:78
+msgid "Question"
+msgstr "Kérdés"
+
+#: ../about.php:79
+msgid "Answer"
+msgstr "Válasz"
 
 #: ../about.php:81
-msgid "Question"
-msgstr ""
-
-#: ../about.php:82
-msgid "Answer"
-msgstr ""
-
-#: ../about.php:84
 msgid "Long"
-msgstr ""
+msgstr "Bővebben"
 
-#: ../authors.php:64 ../config.inc.php:62
+#: ../authors.php:61 ../config.inc.php:64
 msgid "Developers"
 msgstr "Fejlesztők"
 
-#: ../authors.php:87 ../config.inc.php:63
+#: ../authors.php:84 ../config.inc.php:65
 msgid "Contributors"
 msgstr "Közreműködők"
 
-#: ../changelog.php:43
+#: ../changelog.php:45
 msgid "Read full current changelog"
-msgstr ""
+msgstr "A teljes current változási naplót elolvashatja"
 
-#: ../changelog.php:43
+#: ../changelog.php:45
 msgid "here"
-msgstr ""
+msgstr "itt"
 
-#: ../config.inc.php:33
+#: ../config.inc.php:35
 msgid "News"
 msgstr "Hírek"
 
-#: ../config.inc.php:34
+#: ../config.inc.php:36
 msgid "About"
 msgstr "Rólunk"
 
-#: ../config.inc.php:36
+#: ../config.inc.php:38
 msgid "Summary"
 msgstr "Összegzés"
 
-#: ../config.inc.php:37
+#: ../config.inc.php:39
 msgid "Frugalware in the Press"
 msgstr "Rólunk írták"
 
-#: ../config.inc.php:38
+#: ../config.inc.php:40
 msgid "Documentation"
 msgstr "Dokumentáció"
 
-#: ../config.inc.php:40
+#: ../config.inc.php:42
 msgid "Community"
 msgstr "Közösség"
 
-#: ../config.inc.php:42
+#: ../config.inc.php:44
 msgid "Mailing Lists"
 msgstr "Levelező listák"
 
-#: ../config.inc.php:43
+#: ../config.inc.php:45
 msgid "Discussion Forums"
 msgstr "Fórum"
 
-#: ../config.inc.php:44
+#: ../config.inc.php:46
 msgid "Wiki"
 msgstr "Wiki"
 
-#: ../config.inc.php:45
+#: ../config.inc.php:47
 msgid "IRC"
 msgstr "IRC"
 
-#: ../config.inc.php:46
+#: ../config.inc.php:48
 msgid "Screenshots"
 msgstr "Képernyőmentések"
 
-#: ../config.inc.php:47
+#: ../config.inc.php:49
 msgid "Map"
 msgstr "Térkép"
 
-#: ../config.inc.php:49
+#: ../config.inc.php:51
 msgid "Download"
 msgstr "Letöltés"
 
-#: ../config.inc.php:51
+#: ../config.inc.php:53
 msgid "ISO images"
 msgstr "ISO képek"
 
-#: ../config.inc.php:52
+#: ../config.inc.php:54
 msgid "Packages"
 msgstr "Csomagok"
 
-#: ../config.inc.php:54
+#: ../config.inc.php:56
 msgid "Development"
 msgstr "Fejlesztés"
 
-#: ../config.inc.php:56
+#: ../config.inc.php:58
 msgid "Roadmap"
 msgstr "Útiterv"
 
-#: ../config.inc.php:57
+#: ../config.inc.php:59
 msgid "Darcs repository"
 msgstr "Darcs"
 
-#: ../config.inc.php:58
+#: ../config.inc.php:60
 msgid "Bug Tracker"
 msgstr "Hibák"
 
-#: ../config.inc.php:59
+#: ../config.inc.php:61
 msgid "ChangeLog"
 msgstr "Changelog"
 
-#: ../config.inc.php:60
+#: ../config.inc.php:62
 msgid "Blogs"
 msgstr "Blogok"
 
-#: ../config.inc.php:61 ../donations.php:52
+#: ../config.inc.php:63 ../donations.php:49
 msgid "Donations"
 msgstr "Adományok"
 
-#: ../config.inc.php:67 ../config.inc.php:69
+#: ../config.inc.php:76 ../config.inc.php:78
 msgid "Change language"
 msgstr "Váltson nyelvet"
 
-#: ../docs.php:82
+#: ../docs.php:79
 msgid " or "
 msgstr " vagy "
 
-#: ../docs.php:82 ../docs.php:93
+#: ../docs.php:79 ../docs.php:90
 msgid "Plain text"
 msgstr "Sima szöveg"
 
-#: ../docs.php:101
+#: ../docs.php:98
 msgid "Sorry, no documentation available currently"
 msgstr "Elnézést, jelenleg nincs elérhető dokumentáció"
 
-#: ../docs.php:103
+#: ../docs.php:100
 msgid "View online documentation"
 msgstr "Online olvasás"
 
-#: ../donations.php:41
+#: ../donations.php:38
 msgid ""
 "<div align=left>Donations are a great way to show your appreciation\n"
 "and support for Frugalware Linux. On this page we list the donations we "
@@ -376,64 +379,76 @@ msgid ""
 "\"authors.php\">authors</a>\n"
 "page and send the developer a mail.</div>"
 msgstr ""
+"<div align=left>Az adományozás jó mód arra, hogy mutassa támogatását és elismerését "
+"a Frugalware Linux iránt. Ezen a lapon összegyűjtöttük azokat az adományokat, amiket eddig kaptunk, "
+"valamint azokat, amik nagy segítséget nyújtatnának munkánk során. Ha van valamilyen hardware eszköze vagy valami, "
+"amihez még nincs a Frugalware -ben támogatás, adományozza a fejlesztőknek, hogy minél előbb bekerülhessen a Frugalware -be.<br /><br /> "
+"Ha a teljes projektnek szeretne adományozni (pl. egy mirrort),\n"
+"kérjük küldjon egy levelet a <a href=\"http://frugalware.org/mailman/listinfo/"
+"frugalware-devel\">frugalware-devel</a>\n"
+"listára (angolul), vagy ha nem szerente feliratkozni, írjon közvetlenül a "
+"vmiklos_kukac_frugalware_pont_org címre.\n"
+"Ha egy fejlesztőnek szerente adományozni, tekintse meg a <a href="
+"\"authors.php\">fejlesztők</a>\n"
+"oldalát és küldjön a fejlesztőnek egy levelet.</div>"
 
-#: ../donations.php:78
+#: ../donations.php:75
 msgid "The Frugalware Team"
-msgstr ""
+msgstr "A Frugalware Csapat"
 
-#: ../download.php:57
+#: ../download.php:54
 msgid "You can buy Frugalware CDs at the following sites:"
-msgstr ""
+msgstr "Frugalware CDket vásárolhat a következő oldalakon:"
 
-#: ../download.php:86
+#: ../download.php:83
 msgid "Full mirroring (~27GB)"
-msgstr ""
+msgstr "Teljes tükrözés (~27GB)"
 
-#: ../download.php:88
+#: ../download.php:85
 msgid "Only a specified tree (~5GB, for example -current)"
-msgstr ""
+msgstr "Csak egy adott fát (~5GB, például a -currentet)"
 
-#: ../download.php:93
+#: ../download.php:90
 msgid "Download file (via ftp)"
-msgstr ""
+msgstr "Fájl letöltése (ftpn keresztül)"
 
-#: ../download.php:94
+#: ../download.php:91
 msgid "Downloan file (via http"
-msgstr ""
+msgstr "Fájl letöltése (httpn keresztül"
 
-#: ../download.php:95
+#: ../download.php:92
 msgid "Download file (via rsync)"
-msgstr ""
+msgstr "Fájl letöltése (rsyncken keresztül"
+
+#: ../download.php:96
+msgid "Via FTP"
+msgstr "FTPn keresztül"
+
+#: ../download.php:97
+msgid "Via HTTP"
+msgstr "HTTPn keresztül"
+
+#: ../download.php:98
+msgid "Via Rsync"
+msgstr "Rsyncken keresztül"
 
 #: ../download.php:99
-msgid "Via FTP"
-msgstr ""
+msgid "Rsync mini-howto"
+msgstr "Rsync mini-hogyan"
 
 #: ../download.php:100
-msgid "Via HTTP"
-msgstr ""
-
-#: ../download.php:101
-msgid "Via Rsync"
-msgstr ""
-
-#: ../download.php:102
-msgid "Rsync mini-howto"
-msgstr ""
-
-#: ../download.php:103
 msgid "Get a CD"
-msgstr ""
+msgstr "Kérjen egy CDt"
 
-#: ../header.php:40 ../packages.php:94 ../packages.php:126
+#: ../header.php:48 ../packages.php:91 ../packages.php:123
 msgid "Search"
 msgstr "Keresés"
 
-#: ../header.php:58
+#: ../header.php:66
 msgid "Languages"
 msgstr "Nyelvek"
 
-#: ../header.php:59
+#: ../header.php:67
 msgid "Information"
 msgstr "Információ"
 
@@ -453,377 +468,375 @@ msgstr "beküldte:"
 msgid "News history"
 msgstr "Hír módosításai"
 
-#: ../irc.php:41
+#: ../irc.php:38
 msgid "General information"
 msgstr "Általános információ"
 
-#: ../irc.php:41
+#: ../irc.php:38
 msgid ""
 "Our irc channel is on the freenode network (server: irc.freenode.net), at "
 "#frugalware. This is the official Frugalware Linux irc help station."
-msgstr ""
+msgstr "A #frugalware.hu csatorna a freenode hálózaton található (szerver: irc.freenode.net). Ez a hivatalos magyar Frugalware Linux irc segítőállomás."
 
-#: ../irc.php:87
+#: ../irc.php:84
 msgid "Please enter a valid nickname"
-msgstr ""
+msgstr "Kérem adjon meg egy érvényes becenevet"
 
-#: ../irc.php:103
+#: ../irc.php:100
 msgid "Nickname:"
-msgstr ""
+msgstr "Bevenév:"
 
-#: ../irc.php:107
+#: ../irc.php:104
 msgid "Server:"
-msgstr ""
+msgstr "Szerver:"
 
-#: ../irc.php:111
+#: ../irc.php:108
 msgid "Channel:"
-msgstr ""
+msgstr "Csatorna:"
 
-#: ../irc.php:115
+#: ../irc.php:112
 msgid "Advanced..."
-msgstr ""
+msgstr "Haladó..."
 
-#: ../irc.php:116
+#: ../irc.php:113
 msgid "Login"
-msgstr ""
+msgstr "Belépés"
 
-#: ../irc.php:122
+#: ../irc.php:119
 msgid "Login via web"
-msgstr ""
+msgstr "Belépés weben keresztül"
 
-#: ../irc.php:123
+#: ../irc.php:120
 msgid "Social diagram"
-msgstr ""
+msgstr "Szociális hálózati diagram"
 
-#: ../irc.php:152 ../irc.php:154
+#: ../irc.php:149 ../irc.php:151
 msgid "Log of the channel: #frugalware"
-msgstr ""
+msgstr "A #frugalwrae csatorna naplója"
 
-#: ../irc.php:152
+#: ../irc.php:149
 msgid "Sorry, currently no log available"
-msgstr ""
+msgstr "Sajnos jelenleg nem érhető el napló"
 
-#: ../media.php:49
+#: ../media.php:46
 msgid "Sorry, a media file has not been written yet."
-msgstr ""
+msgstr "Sajnos még nem lett megírva a média fájl."
 
-#: ../media.php:55
+#: ../media.php:52
 msgid "Frugalware in the press"
-msgstr ""
+msgstr "Frugalware a sajtóban"
 
-#: ../media.php:56
+#: ../media.php:53
 msgid ""
 "This page contains details about some of the articles that have been posted "
 "on the Internet about Frugalware. If you find an article not listed here, "
 "please tell us about it!"
-msgstr ""
+msgstr "Ez a lap néhány részletet tartalmaz olyan cikkekről amelyek az Interneten jelentek meg a Frugalware-ről. Ha olyan cikket talál amely nem szerepel itt, kérjük írja meg nekünk! "
+
+#: ../media.php:76
+msgid "Title"
+msgstr "Cím"
+
+#: ../media.php:77
+msgid "Where"
+msgstr "Hol"
+
+#: ../media.php:78
+msgid "Date"
+msgstr "Dátum"
 
 #: ../media.php:79
-msgid "Title"
-msgstr ""
-
-#: ../media.php:80
-msgid "Where"
-msgstr ""
-
-#: ../media.php:81
-msgid "Date"
-msgstr ""
-
-#: ../media.php:82
 msgid "Language"
 msgstr "Nyelvek"
 
-#: ../media.php:83
+#: ../media.php:80
 msgid "Link"
-msgstr ""
+msgstr "Link"
 
-#: ../packages.php:63
+#: ../packages.php:60
 msgid "Package search"
-msgstr ""
+msgstr "Csomag keresés"
 
-#: ../packages.php:65
+#: ../packages.php:62
 msgid "Search for a package:"
-msgstr ""
+msgstr "Csomag keresése:"
 
-#: ../packages.php:67
+#: ../packages.php:64
 msgid "Search for substring"
-msgstr ""
+msgstr "Keresés részszóra"
 
-#: ../packages.php:69
+#: ../packages.php:66
 msgid "Search in description"
-msgstr ""
+msgstr "Keresés a leírásokban"
 
-#: ../packages.php:71 ../packages.php:102 ../packages.php:250
-#: ../packages.php:259
+#: ../packages.php:68 ../packages.php:99 ../packages.php:247
+#: ../packages.php:256
 msgid "Repository:"
-msgstr ""
+msgstr "Repó:"
 
-#: ../packages.php:78 ../packages.php:108 ../packages.php:250
-#: ../packages.php:259
+#: ../packages.php:75 ../packages.php:105 ../packages.php:247
+#: ../packages.php:256
 msgid "Architecture:"
-msgstr ""
+msgstr "Architektúra:"
 
-#: ../packages.php:84 ../packages.php:115 ../packages.php:250
-#: ../packages.php:259
+#: ../packages.php:81 ../packages.php:112 ../packages.php:247
+#: ../packages.php:256
 msgid "Version:"
-msgstr ""
+msgstr "Verzió"
 
-#: ../packages.php:94 ../packages.php:126
+#: ../packages.php:91 ../packages.php:123
 msgid "Reset"
-msgstr ""
+msgstr "Törlés"
 
-#: ../packages.php:98
+#: ../packages.php:95
 msgid "File search"
-msgstr ""
+msgstr "Fájlkeresés"
 
-#: ../packages.php:100
+#: ../packages.php:97
 msgid "Search for a file:"
-msgstr ""
+msgstr "Keresés fájlra:"
 
-#: ../packages.php:199
+#: ../packages.php:196
 msgid "No package found"
-msgstr ""
+msgstr "Nem található csomag"
 
-#: ../packages.php:238
+#: ../packages.php:235
 msgid "No such file or directory"
-msgstr ""
+msgstr "Nincs ilyen fájl vagy könyvtár"
 
-#: ../packages.php:247 ../packages.php:256
+#: ../packages.php:244 ../packages.php:253
 msgid "Search result for:"
-msgstr ""
+msgstr "Keresési találatok: "
 
-#: ../packages.php:292
+#: ../packages.php:289
 msgid "Package information:"
-msgstr ""
+msgstr "Csomaginformáció:"
 
-#: ../packages.php:351
+#: ../packages.php:348
 msgid "File list for"
-msgstr ""
+msgstr "Fájlok listája: "
 
-#: ../roadmap.php:54
+#: ../roadmap.php:51
 msgid "Sorry, a roadmap has not been written yet."
-msgstr ""
+msgstr "Sajnos jelenleg nem elérhető útiterv."
 
-#: ../roadmap.php:73 ../roadmap.php:82
+#: ../roadmap.php:70 ../roadmap.php:79
 msgid "done"
-msgstr ""
+msgstr "elkészült"
 
-#: ../roadmap.php:75 ../roadmap.php:84
+#: ../roadmap.php:72 ../roadmap.php:81
 msgid "pending"
-msgstr ""
+msgstr "függőben"
 
-#: ../screenshots.php:35
+#: ../screenshots.php:32
 msgid "01_splash.png"
-msgstr ""
+msgstr "üdvözlő képernyő"
 
-#: ../screenshots.php:37
+#: ../screenshots.php:34
 msgid "02_lang.png"
-msgstr ""
+msgstr "nyelv"
 
-#: ../screenshots.php:39
+#: ../screenshots.php:36
 msgid "03_welcome.png"
-msgstr ""
+msgstr "üdvözlés"
 
-#: ../screenshots.php:41
+#: ../screenshots.php:38
 msgid "04_key.png"
-msgstr ""
+msgstr "billentyűzetkiosztás"
 
-#: ../screenshots.php:43
+#: ../screenshots.php:40
 msgid "05_raid.png"
-msgstr ""
+msgstr "raid"
 
-#: ../screenshots.php:45
+#: ../screenshots.php:42
 msgid "06_part.png"
-msgstr ""
+msgstr "particionálás"
 
-#: ../screenshots.php:47
+#: ../screenshots.php:44
 msgid "07_part.png"
-msgstr ""
+msgstr "particionálás"
 
-#: ../screenshots.php:49
+#: ../screenshots.php:46
 msgid "08_part.png"
-msgstr ""
+msgstr "particionálás"
 
-#: ../screenshots.php:51
+#: ../screenshots.php:48
 msgid "09_part.png"
-msgstr ""
+msgstr "particionálás"
 
-#: ../screenshots.php:53
+#: ../screenshots.php:50
 msgid "10_part.png"
-msgstr ""
+msgstr "particionálás"
 
-#: ../screenshots.php:55
+#: ../screenshots.php:52
 msgid "11_part.png"
-msgstr ""
+msgstr "particionálás"
 
-#: ../screenshots.php:57
+#: ../screenshots.php:54
 msgid "12_part.png"
-msgstr ""
+msgstr "particionálás"
 
-#: ../screenshots.php:59
+#: ../screenshots.php:56
 msgid "13_part.png"
-msgstr ""
+msgstr "particionálás"
 
-#: ../screenshots.php:61
+#: ../screenshots.php:58
 msgid "14_part.png"
-msgstr ""
+msgstr "particionálás"
 
-#: ../screenshots.php:63
+#: ../screenshots.php:60
 msgid "15_pack.png"
-msgstr ""
+msgstr "csomagok"
 
-#: ../screenshots.php:65
+#: ../screenshots.php:62
 msgid "16_pack.png"
-msgstr ""
+msgstr "csomagok"
 
-#: ../screenshots.php:67
+#: ../screenshots.php:64
 msgid "17_pack.png"
-msgstr ""
+msgstr "csomagok"
 
-#: ../screenshots.php:69
+#: ../screenshots.php:66
 msgid "18_pack.png"
-msgstr ""
+msgstr "csomagok"
 
-#: ../screenshots.php:71
+#: ../screenshots.php:68
 msgid "19_pack.png"
-msgstr ""
+msgstr "csomagok"
 
-#: ../screenshots.php:73
+#: ../screenshots.php:70
 msgid "20_grub.png"
-msgstr ""
+msgstr "grub"
 
-#: ../screenshots.php:75
+#: ../screenshots.php:72
 msgid "21_grub.png"
-msgstr ""
+msgstr "grub"
 
-#: ../screenshots.php:77
+#: ../screenshots.php:74
 msgid "22_modules.png"
-msgstr ""
+msgstr "modulok"
 
-#: ../screenshots.php:79
+#: ../screenshots.php:76
 msgid "23_root.png"
-msgstr ""
+msgstr "rendszergazda"
 
-#: ../screenshots.php:81
+#: ../screenshots.php:78
 msgid "24_root.png"
-msgstr ""
+msgstr "rendszergazda"
 
-#: ../screenshots.php:83
+#: ../screenshots.php:80
 msgid "25_user.png"
-msgstr ""
+msgstr "felhasználó"
 
-#: ../screenshots.php:85
+#: ../screenshots.php:82
 msgid "26_user.png"
-msgstr ""
+msgstr "felhasználó"
 
-#: ../screenshots.php:87
+#: ../screenshots.php:84
 msgid "27_user.png"
-msgstr ""
+msgstr "felhasználó"
 
-#: ../screenshots.php:89
+#: ../screenshots.php:86
 msgid "28_hostname.png"
-msgstr ""
+msgstr "gépnév"
 
-#: ../screenshots.php:91
+#: ../screenshots.php:88
 msgid "29_network.png"
-msgstr ""
+msgstr "hálózat"
 
-#: ../screenshots.php:93
+#: ../screenshots.php:90
 msgid "30_network.png"
-msgstr ""
+msgstr "hálózat"
 
-#: ../screenshots.php:95
+#: ../screenshots.php:92
 msgid "31_config.png"
-msgstr ""
+msgstr "konfiguráció"
 
-#: ../screenshots.php:97
+#: ../screenshots.php:94
 msgid "32_localtime.png"
-msgstr ""
+msgstr "helyi idő"
 
-#: ../screenshots.php:99
+#: ../screenshots.php:96
 msgid "33_timezone.png"
-msgstr ""
+msgstr "időzóna"
 
-#: ../screenshots.php:101
+#: ../screenshots.php:98
 msgid "34_mouse.png"
-msgstr ""
+msgstr "egér"
 
-#: ../screenshots.php:103
+#: ../screenshots.php:100
 msgid "35_success.png"
-msgstr ""
+msgstr "siker"
 
-#: ../screenshots.php:105
+#: ../screenshots.php:102
 msgid "01_grub.png"
-msgstr ""
+msgstr "grub"
 
-#: ../screenshots.php:107
+#: ../screenshots.php:104
 msgid "02_boot.png"
-msgstr ""
+msgstr "betöltés"
 
-#: ../screenshots.php:109
+#: ../screenshots.php:106
 msgid "03_boot.png"
-msgstr ""
+msgstr "betöltés"
 
-#: ../screenshots.php:111
+#: ../screenshots.php:108
 msgid "04_boot.png"
-msgstr ""
+msgstr "betöltés"
 
-#: ../screenshots.php:113
+#: ../screenshots.php:110
 msgid "05_console.png"
-msgstr ""
+msgstr "konzol"
 
-#: ../screenshots.php:115
+#: ../screenshots.php:112
 msgid "06_console.png"
-msgstr ""
+msgstr "konzol"
 
-#: ../screenshots.php:117
+#: ../screenshots.php:114
 msgid "08_kde_login.png"
-msgstr ""
+msgstr "kde belépés"
 
-#: ../screenshots.php:119
+#: ../screenshots.php:116
 msgid "09_kde.png"
-msgstr ""
+msgstr "kde"
 
-#: ../screenshots.php:121
+#: ../screenshots.php:118
 msgid "10_kde_menu.png"
-msgstr ""
+msgstr "kde menü"
 
-#: ../screenshots.php:123
+#: ../screenshots.php:120
 msgid "11_gdm.png"
-msgstr ""
+msgstr "gdm"
 
-#: ../screenshots.php:125
+#: ../screenshots.php:122
 msgid "13_gnome.png"
-msgstr ""
+msgstr "gnome"
 
-#: ../screenshots.php:127
+#: ../screenshots.php:124
 msgid "14_gnome_menu.png"
-msgstr ""
+msgstr "gnome menü"
 
-#: ../screenshots.php:129
+#: ../screenshots.php:126
 msgid "15_gnome_menu.png"
-msgstr ""
+msgstr "gnome menü"
 
-#: ../screenshots.php:131
+#: ../screenshots.php:128
 msgid "16_gnome_menu.png"
-msgstr ""
+msgstr "gnome menü"
 
-#: ../screenshots.php:133
+#: ../screenshots.php:130
 msgid "17_package_manager.png"
-msgstr ""
+msgstr "csomagkezelő"
 
-#: ../screenshots.php:135
+#: ../screenshots.php:132
 msgid "18_runlevel_editor.png"
-msgstr ""
+msgstr "futási szint szerkesztő"
 
-#: ../screenshots.php:142
+#: ../screenshots.php:139
 msgid "Installer"
-msgstr ""
+msgstr "Telepítő"
 
-#: ../screenshots.php:150
+#: ../screenshots.php:147
 msgid "Default Desktop"
-msgstr ""
+msgstr "Alapértelmezett Asztal"
 
-#~ msgid "Menu"
-#~ msgstr "Menü"
