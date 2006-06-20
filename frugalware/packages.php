@@ -129,8 +129,8 @@ function addEngine()
 	if ((typeof window.sidebar == \"object\") && (typeof window.sidebar.addSearchEngine == \"function\"))
 	{
 		window.sidebar.addSearchEngine(
-		\"http://frugalware.org/static/search/Frugalware_Packages.src\",
-		\"http://frugalware.org/static/search/Frugalware_Packages.png\",
+		\"http://frugalware.org/static/Frugalware_Packages.src\",
+		\"http://frugalware.org/static/Frugalware_Packages.png\",
 		\"Frugalware_Packages\", \"Programming\" );
 	}
 	else

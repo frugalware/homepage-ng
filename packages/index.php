@@ -8,7 +8,7 @@ function bar($baz) {
 
 function foo() {
 	global $fwversions;
-	$url = 'http://www2.frugalware.org/packages.php?op=';
+	$url = 'http://frugalware.org/packages.php?op=';
 	if(isset($_GET['search'])) {
 		$_SERVER['PATH_INFO'] = $_GET['search'];
 	}
