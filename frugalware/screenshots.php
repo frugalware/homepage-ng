@@ -148,7 +148,7 @@ $maincont .= "<legend>".gettext("Default Desktop")."</legend>\n";
 for ($i=0; $i<count($shots[defdesk]); $i++)
 {
 	$maincont .= "<div><a href=\"".$fwng_root."images/screenshots/default/".$shots[defdesk][$i][name]."\">".
-	"<img src=\""$fwng_root."images/screenshots/default/thumbnails/".$shots[defdesk][$i][name]."\"></a>".
+	"<img src=\"".$fwng_root."images/screenshots/default/thumbnails/".$shots[defdesk][$i][name]."\"></a>".
 	"<br />".$shots[defdesk][$i][title]."</div>\n";
 }
 $maincont .= "</form>\n</div>\n";
