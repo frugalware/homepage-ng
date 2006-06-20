@@ -132,6 +132,11 @@ div.boxheader {
 div.boxcontent {
 	background-color: #fff;
 	color: #000;
+        padding: 4px;
+}
+
+div.sidecontent {
+        padding: 2px;
 }
 
 div.imgcontent {
