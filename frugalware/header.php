@@ -138,7 +138,7 @@ fwsidebox(gettext("Releases"), $rels);
 fwsidebox(gettext("Recent updates"), $recupd);
 fwsidebox(gettext("Languages"), $langcontent);
 fwsidebox(gettext("Information"), $validcontent);
-fwsidebox(gettext("Server informations"), $uptime);
+fwsidebox(gettext("Server information"), $uptime);
 ?>
 </div>
 <div id="centercolumn">

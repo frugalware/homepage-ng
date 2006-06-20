@@ -143,6 +143,7 @@ function getllang($lang)
 {
 	$langs = array(
 		"en" => "en_US",
+		"fr" => "fr_FR",
 		"hu" => "hu_HU"
 	);
 	return $langs[$lang];
