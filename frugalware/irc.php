@@ -92,7 +92,7 @@ function setcharset() {
 setcharset();
 -->
 </script>
-<form method=\"post\" action=\"http://frugalware.org/irc/irc.cgi\" name=\"loginform\" onsubmit=\"setjs();return nickvalid()\">
+<form method=\"post\" action=\"http://frugalware.org/cgiirc/irc.cgi\" name=\"loginform\" onsubmit=\"setjs();return nickvalid()\">
 <input type=\"hidden\" name=\"interface\" value=\"nonjs\" />
 <div align=\"center\">
 <table border=\"0\" cellpadding=\"5\" cellspacing=\"0\">
@@ -109,7 +109,7 @@ setcharset();
     <td align=\"left\"><input type=\"text\" name=\"Channel\" value=\"#frugalware\" disabled=\"disabled\" /></td>
   </tr>
   <tr>
-    <td align=\"left\"><small><a href=\"http://frugalware.org/irc/irc.cgi?adv=1\">".gettext("Advanced...")."</a></small></td>
+    <td align=\"left\"><small><a href=\"http://frugalware.org/cgiirc/irc.cgi?adv=1\">".gettext("Advanced...")."</a></small></td>
     <td align=\"right\"><input type=\"submit\" value=\"".gettext("Login")."\" /></td>
   </tr>
 </table>
