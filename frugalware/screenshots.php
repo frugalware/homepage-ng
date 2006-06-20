@@ -139,21 +139,20 @@ $maincont = "<div class=\"screenshots\">\n";
 $maincont .= "<form>\n<fieldset class=\"fieldset\" id=\"installer\">\n<legend>".gettext("Installer")."</legend>\n";
 for ($i=0; $i<count($shots[inst]); $i++)
 {
-	$maincont .= "<div><a href=\"http://www2.frugalware.org/images/screenshots/installer/".$shots[inst][$i][name]."\">".
-	"<img src=\"http://www2.frugalware.org/images/screenshots/installer/thumbnails/".$shots[inst][$i][name]."\"></a>".
+	$maincont .= "<div><a href=\"".$fwng_root."images/screenshots/installer/".$shots[inst][$i][name]."\">".
+	"<img src=\"".$fwng_root."images/screenshots/installer/thumbnails/".$shots[inst][$i][name]."\"></a>".
 	"<br />".$shots[inst][$i][title]."</div>\n";
 }
 $maincont .= "</fieldset>\n<fieldset class=\"fieldset\" id=\"default\">\n";
 $maincont .= "<legend>".gettext("Default Desktop")."</legend>\n";
 for ($i=0; $i<count($shots[defdesk]); $i++)
 {
-	$maincont .= "<div><a href=\"http://www2.frugalware.org/images/screenshots/default/".$shots[defdesk][$i][name]."\">".
-	"<img src=\"http://www2.frugalware.org/images/screenshots/default/thumbnails/".$shots[defdesk][$i][name]."\"></a>".
+	$maincont .= "<div><a href=\"".$fwng_root."images/screenshots/default/".$shots[defdesk][$i][name]."\">".
+	"<img src=\""$fwng_root."images/screenshots/default/thumbnails/".$shots[defdesk][$i][name]."\"></a>".
 	"<br />".$shots[defdesk][$i][title]."</div>\n";
 }
 $maincont .= "</form>\n</div>\n";
 
-#fwmiddlebox("", $maincont);
 print $maincont;
 
 include("footer.php");
