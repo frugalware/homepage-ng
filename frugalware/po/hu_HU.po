@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: hu_HU\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-06-20 02:42+0200\n"
-"PO-Revision-Date: 2006-06-20 02:55+0200\n"
+"PO-Revision-Date: 2006-06-20 02:57+0200\n"
 "Last-Translator: VMiklos <vmiklos@frugalware.org>\n"
 "Language-Team:  <hu@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -517,7 +517,7 @@ msgstr "Kérjen egy CDt"
 #: ../header.php:72
 #, php-format
 msgid "Uptime:<br /> %d day(s) %d h %d m %d s"
-msgstr "Uptime:<br /> %d nap %d ü %d p %d mp"
+msgstr "Uptime:<br /> %d nap %d ó %d p %d mp"
 
 #: ../header.php:119 ../packages.php:91 ../packages.php:123
 msgid "Search"
