@@ -129,17 +129,17 @@ function addEngine()
 	if ((typeof window.sidebar == \"object\") && (typeof window.sidebar.addSearchEngine == \"function\"))
 	{
 		window.sidebar.addSearchEngine(
-		\"http://frugalware.org/search/Frugalware_Packages.src\",
-		\"http://frugalware.org/search/Frugalware_Packages.png\",
+		\"http://frugalware.org/static/search/Frugalware_Packages.src\",
+		\"http://frugalware.org/static/search/Frugalware_Packages.png\",
 		\"Frugalware_Packages\", \"Programming\" );
 	}
 	else
 	{
-		alert(\"You will need a Mozilla based browser to install a search plugin.\");
+		alert(\"" . gettext("You will need a Mozilla based browser to install a search plugin.") . "\");
 	}
 }
 </script>
-<div align=\"center\">Click <a href=\"javascript:addEngine()\">here</a> to install the Firefox search plugin.</div>&nbsp;\n";
+<div align=\"center\">" . gettext("Click <a href=\"javascript:addEngine()\">here</a> to install the Firefox search plugin.") , "</div>&nbsp;\n";
 		print $content;
 	}
 }
@@ -288,11 +288,11 @@ function pkg_from_id($id)
 
 	$title = gettext("Package information:")." ".$arr['pkgname'];
 	$content = "<table border=0 width=100%>\n";
-	$content .= "<tr><td>Name:</td><td><a href=\"/packages/".$id."/files\">".$arr['pkgname']."</a></td></tr>\n";
+	$content .= "<tr><td>" . gettext("Name:") . "</td><td><a href=\"/packages/".$id."/files\">".$arr['pkgname']."</a></td></tr>\n";
 	if ($arr['parent'] != NULL and $arr['parent'] != 'NULL')
 
-		$content .= "<tr><td>Parent:</td><td><a href=\"/packages/" . $id_set[preg_replace('/(<>|>=|<=|=).*/', '', $arr['parent'])] . "\">".$arr['parent']."</a></td></tr>\n";
-	$content .= "<tr><td>Version:</td><td>".$arr['pkgver']."-".$arr['pkgrel']."</td></tr>\n";
+		$content .= "<tr><td>" . gettext("Parent:") . "</td><td><a href=\"/packages/" . $id_set[preg_replace('/(<>|>=|<=|=).*/', '', $arr['parent'])] . "\">".$arr['parent']."</a></td></tr>\n";
+	$content .= "<tr><td>" . gettext("Version:") . "</td><td>".$arr['pkgver']."-".$arr['pkgrel']."</td></tr>\n";
 	if ($arr['repo']=="extra")
 	{
 		$repodir="/" . $arr['repo'];
@@ -302,34 +302,34 @@ function pkg_from_id($id)
 		$pkgpath = "/frugalware-" . $arr['arch'];
 	$groupdir=preg_replace("/-extra/", "", $arr['groups']);
 
-	$content .= "<tr><td>Changelog:</td><td><a href=\"http://ftp.frugalware.org/pub/frugalware/frugalware-" . $arr['fwver'] . "$repodir/source/" . preg_replace("/^([^ ]*) .*/", "$1", $groupdir) . "/" . (($arr['parent'] != NULL and $arr['parent'] != 'NULL') ? $arr['parent'] : $arr['pkgname']) . "/Changelog\">Changelog</a></td></tr>\n";
-	$content .= "<tr><td>Darcs:</td><td><a href=\"http://darcs.frugalware.org/darcsweb/darcsweb.cgi?r=frugalware-" . $arr['fwver'] . ";a=tree;f=$repodir/source/" . preg_replace("/^([^ ]*) .*/", "$1", $groupdir) . "/" . (($arr['parent'] != NULL and $arr['parent'] != 'NULL') ? $arr['parent'] : $arr['pkgname']) . "\">View entry</a></td></tr>\n";
-	if ($arr['groups'] != 'NULL') $content .= "<tr><td>Groups:</td><td>".$arr['groups']."</td></tr>\n";
-	if ($arr['provides'] != 'NULL') $content .= "<tr><td>Provides:</td><td>".$arr['provides']."</td></tr>\n";
+	$content .= "<tr><td>" . gettext("Changelog:") . "</td><td><a href=\"http://ftp.frugalware.org/pub/frugalware/frugalware-" . $arr['fwver'] . "$repodir/source/" . preg_replace("/^([^ ]*) .*/", "$1", $groupdir) . "/" . (($arr['parent'] != NULL and $arr['parent'] != 'NULL') ? $arr['parent'] : $arr['pkgname']) . "/Changelog\">Changelog</a></td></tr>\n";
+	$content .= "<tr><td>" . gettext("Darcs:") . "</td><td><a href=\"http://darcs.frugalware.org/darcsweb/darcsweb.cgi?r=frugalware-" . $arr['fwver'] . ";a=tree;f=$repodir/source/" . preg_replace("/^([^ ]*) .*/", "$1", $groupdir) . "/" . (($arr['parent'] != NULL and $arr['parent'] != 'NULL') ? $arr['parent'] : $arr['pkgname']) . "\">View entry</a></td></tr>\n";
+	if ($arr['groups'] != 'NULL') $content .= "<tr><td>" . gettext("Groups:") . "</td><td>".$arr['groups']."</td></tr>\n";
+	if ($arr['provides'] != 'NULL') $content .= "<tr><td>" . gettext("Provides:") . "</td><td>".$arr['provides']."</td></tr>\n";
 	if ($arr['depends'] != 'NULL')
 	{
-		$content .= "<tr><td>Depends:</td><td>";
+		$content .= "<tr><td>" . gettext("Depends:") . "</td><td>";
 		foreach(explode(" ", strtr($arr['depends'], "\n", " ")) as $i)
 			$content .= "<a href=\"/packages/" . $id_set[preg_replace('/(<>|>=|<=|=).*/', '', $i)] . "\">$i</a> ";
 		$content .= "</td></tr>\n";
 	}
 	# this %PROVID stuff is just a workaround for an fdb2db bug
-	if ($arr['conflicts'] != ('NULL' || '%PROVID')) $content .= "<tr><td>Conflicts:</td><td>".$arr['conflicts']."</td></tr>\n";
-	if ($arr['replaces'] != 'NULL') $content .= "<tr><td>Replaces:</td><td>".$arr['replaces']."</td></tr>\n";
-	if ($arr['csize'] != 'NULL') $content .= sprintf("%s%.2f%s", "<tr><td>Compressed size:</td><td>", $arr['csize']/1048576, "MiB</td></tr>\n");
-	if ($arr['arch'] != 'NULL') $content .= "<tr><td>Arch:</td><td>".$arr['arch']."</td></tr>\n";
-	if ($arr['desc'] != 'NULL') $content .= "<tr><td>Description:</td><td>".$arr['desc']."</td></tr>\n";
-	if ($arr['maintainer'] != 'NULL') $content .= "<tr><td>Maintainer:</td><td>".$arr['maintainer']."</td></tr>\n";
-	if ($arr['uploader'] != 'NULL') $content .= "<tr><td>Uploaded by:</td><td>".$arr['uploader']."</td></tr>\n";
-	$content .= "<tr><td>Download: </td><td><a href=\"/download/frugalware-" . $arr['fwver'] . "/" . $pkgpath . "/" . $arr['pkgname'] . "-" . $arr['pkgver'] . "-" . $arr['pkgrel'] . "-" . $arr['arch'] . ".fpm\">" . $arr['pkgname'] . "-" . $arr['pkgver'] . "-" . $arr['pkgrel'] . "-" . $arr['arch'] . ".fpm</a></td></tr>";
-	$content .= "<tr><td>Forums:</td><td><a href=\"http://forums.frugalware.org/index.php?t=search&srch=".$arr['pkgname']."\">forums.frugalware.org</a></td></tr>\n";
-	$content .= "<tr><td>Wiki:</td><td><a href=\"http://wiki.frugalware.org/Special:Search?search=".$arr['pkgname']."\">wiki.frugalware.org</a></td></tr>\n";
-	$content .= "<tr><td>Bug Tracking System:</td><td><a href=\"http://bugs.frugalware.org/index.php?string=".$arr['pkgname']."\">related open bugs</a>; file a feature request, bug report or mark outdated <a href=\"http://bugs.frugalware.org/?do=newtask&project=1\">here</td></tr>\n";
-	if ($arr['md5'] != 'NULL') $content .= "<tr><td>MD5 Sum:</td><td>".$arr['md5']."</td></tr>\n";
-	if ($arr['sha1'] != '') $content .= "<tr><td>SHA1 Sum:</td><td>".$arr['sha1']."</td></tr>\n";
-	if ($arr['fwver'] != 'NULL') $content .= "<tr><td>Frugalware version:</td><td>".$arr['fwver']."</td></tr>\n";
-	if ($arr['repo'] != 'NULL') $content .= "<tr><td>Repository:</td><td>".$arr['repo']."</td></tr>\n";
-	if ($arr['updated'] != 'NULL') $content .= "<tr><td>Updated:</td><td>".$arr['updated']."</td></tr>\n";
+	if ($arr['conflicts'] != ('NULL' || '%PROVID')) $content .= "<tr><td>" . gettext("Conflicts:") . "</td><td>".$arr['conflicts']."</td></tr>\n";
+	if ($arr['replaces'] != 'NULL') $content .= "<tr><td>" . gettext("Replaces:") . "</td><td>".$arr['replaces']."</td></tr>\n";
+	if ($arr['csize'] != 'NULL') $content .= sprintf("%s%.2f%s", "<tr><td>" . gettext("Compressed size:") . "</td><td>", $arr['csize']/1048576, "MiB</td></tr>\n");
+	if ($arr['arch'] != 'NULL') $content .= "<tr><td>" . gettext("Arch:") . "</td><td>".$arr['arch']."</td></tr>\n";
+	if ($arr['desc'] != 'NULL') $content .= "<tr><td>" . gettext("Description:") . "</td><td>".$arr['desc']."</td></tr>\n";
+	if ($arr['maintainer'] != 'NULL') $content .= "<tr><td>" . gettext("Maintainer:") . "</td><td>".$arr['maintainer']."</td></tr>\n";
+	if ($arr['uploader'] != 'NULL') $content .= "<tr><td>" . gettext("Uploaded by:") . "</td><td>".$arr['uploader']."</td></tr>\n";
+	$content .= "<tr><td>" . gettext("Download:") . " </td><td><a href=\"/download/frugalware-" . $arr['fwver'] . "/" . $pkgpath . "/" . $arr['pkgname'] . "-" . $arr['pkgver'] . "-" . $arr['pkgrel'] . "-" . $arr['arch'] . ".fpm\">" . $arr['pkgname'] . "-" . $arr['pkgver'] . "-" . $arr['pkgrel'] . "-" . $arr['arch'] . ".fpm</a></td></tr>";
+	$content .= "<tr><td>" . gettext("Forums:") . "</td><td><a href=\"http://forums.frugalware.org/index.php?t=search&srch=".$arr['pkgname']."\">forums.frugalware.org</a></td></tr>\n";
+	$content .= "<tr><td>" . gettext("Wiki:") . "</td><td><a href=\"http://wiki.frugalware.org/Special:Search?search=".$arr['pkgname']."\">wiki.frugalware.org</a></td></tr>\n";
+	$content .= "<tr><td>" . gettext("Bug Tracking System:") . "</td><td><a href=\"http://bugs.frugalware.org/index.php?string=".$arr['pkgname']."\">" . gettext("related open bugs") . "</a>; " . gettext("file a feature request, bug report or mark outdated <a href=\"http://bugs.frugalware.org/?do=newtask&project=1\">here") . "</td></tr>\n";
+	if ($arr['md5'] != 'NULL') $content .= "<tr><td>" . gettext("MD5 Sum:") . "</td><td>".$arr['md5']."</td></tr>\n";
+	if ($arr['sha1'] != '') $content .= "<tr><td>" . gettext("SHA1 Sum:") . "</td><td>".$arr['sha1']."</td></tr>\n";
+	if ($arr['fwver'] != 'NULL') $content .= "<tr><td>" . gettext("Frugalware version:") . "</td><td>".$arr['fwver']."</td></tr>\n";
+	if ($arr['repo'] != 'NULL') $content .= "<tr><td>" . gettext("Repository:") . "</td><td>".$arr['repo']."</td></tr>\n";
+	if ($arr['updated'] != 'NULL') $content .= "<tr><td>" . gettext("Updated:") . "</td><td>".$arr['updated']."</td></tr>\n";
 	$content .= "</table>\n";
 	$db->doClose();
 	fwmiddlebox($title, $content);
