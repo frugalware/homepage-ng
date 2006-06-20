@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: hu_HU\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-06-20 02:42+0200\n"
-"PO-Revision-Date: 2006-06-20 02:48+0200\n"
+"PO-Revision-Date: 2006-06-20 02:55+0200\n"
 "Last-Translator: VMiklos <vmiklos@frugalware.org>\n"
 "Language-Team:  <hu@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -605,7 +605,7 @@ msgstr "Szociális hálózati diagram"
 
 #: ../irc.php:149 ../irc.php:151
 msgid "Log of the channel: #frugalware"
-msgstr "A #frugalwrae csatorna naplója"
+msgstr "A #frugalware csatorna naplója"
 
 #: ../irc.php:149
 msgid "Sorry, currently no log available"
