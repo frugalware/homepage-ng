@@ -12,6 +12,16 @@
 ]>
 <news>
 	<post>
+		<id>37</id>
+		<title>New Frugalware homepage!</title>
+		<date>Tue Jun 20 07:59:25 CEST 2006</date>
+		<author>AlexExtreme</author>
+		<content><![CDATA[
+			Welcome to the brand new Frugalware homepage! This is a complete rewrite of our homepage, featuring table-less design, XML for data storage and easy translations with Gettext. If you would like to help translate the page, please post to the frugalware-devel mailing list. If you find any bugs while using the page, please report them to the <a href="http://bugs.frugalware.org">Bug Tracker</a>.
+			<br />
+			]]>
+		</content>
+	<post>
 		<id>36</id>
 		<title>ATI and nVidia binary drivers broken in current</title>
 		<date>Sat May 27 20:53:09 CEST 2006</date>
