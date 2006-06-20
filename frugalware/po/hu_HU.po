@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hu_HU\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-06-20 02:29+0200\n"
-"PO-Revision-Date: 2006-06-20 02:32+0200\n"
+"POT-Creation-Date: 2006-06-20 02:42+0200\n"
+"PO-Revision-Date: 2006-06-20 02:48+0200\n"
 "Last-Translator: VMiklos <vmiklos@frugalware.org>\n"
 "Language-Team:  <hu@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -666,7 +666,7 @@ msgid "Search in description"
 msgstr "Keresés a leírásokban"
 
 #: ../packages.php:68 ../packages.php:99 ../packages.php:247
-#: ../packages.php:256
+#: ../packages.php:256 ../packages.php:331
 msgid "Repository:"
 msgstr "Repó:"
 
@@ -676,7 +676,7 @@ msgid "Architecture:"
 msgstr "Architektúra:"
 
 #: ../packages.php:81 ../packages.php:112 ../packages.php:247
-#: ../packages.php:256
+#: ../packages.php:256 ../packages.php:295
 msgid "Version:"
 msgstr "Verzió"
 
@@ -691,6 +691,18 @@ msgstr "Fájlkeresés"
 #: ../packages.php:97
 msgid "Search for a file:"
 msgstr "Keresés fájlra:"
+
+#: ../packages.php:138
+msgid "You will need a Mozilla based browser to install a search plugin."
+msgstr "Egy Mozilla alapú böngészrőre lesz szüksége a kereső plugin telepítéséhez."
+
+#: ../packages.php:142
+msgid ""
+"Click <a href=\"javascript:addEngine()\">here</a> to install the Firefox "
+"search plugin."
+msgstr ""
+"Kattintson <a href=\"javascript:addEngine()\">ide</a> a Firefox "
+"kereső plugin telepítéséhez."
 
 #: ../packages.php:196
 msgid "No package found"
@@ -707,6 +719,107 @@ msgstr "Keresési találatok: "
 #: ../packages.php:289
 msgid "Package information:"
 msgstr "Csomaginformáció:"
+
+#: ../packages.php:291
+msgid "Name:"
+msgstr "Név:"
+
+#: ../packages.php:294
+msgid "Parent:"
+msgstr "Szülő:"
+
+#: ../packages.php:305
+msgid "Changelog:"
+msgstr "Changelog:"
+
+#: ../packages.php:306
+msgid "Darcs:"
+msgstr "Darcs:"
+
+#: ../packages.php:307
+msgid "Groups:"
+msgstr "Csoportok:"
+
+#: ../packages.php:308
+msgid "Provides:"
+msgstr "Szolgáltatja:"
+
+#: ../packages.php:311
+msgid "Depends:"
+msgstr "Függ:"
+
+#. this %PROVID stuff is just a workaround for an fdb2db bug
+#: ../packages.php:317
+msgid "Conflicts:"
+msgstr "Ütközik:"
+
+#: ../packages.php:318
+msgid "Replaces:"
+msgstr "Lecseréli:"
+
+#: ../packages.php:319
+msgid "Compressed size:"
+msgstr "Tömörített méret:"
+
+#: ../packages.php:320
+msgid "Arch:"
+msgstr "Architektúra:"
+
+#: ../packages.php:321
+msgid "Description:"
+msgstr "Leírás:"
+
+#: ../packages.php:322
+msgid "Maintainer:"
+msgstr "Karbantartó:"
+
+#: ../packages.php:323
+msgid "Uploaded by:"
+msgstr "Feltöltő:"
+
+#: ../packages.php:324
+msgid "Download:"
+msgstr "Letöltés:"
+
+#: ../packages.php:325
+msgid "Forums:"
+msgstr "Fórumok:"
+
+#: ../packages.php:326
+msgid "Wiki:"
+msgstr "Wiki:"
+
+#: ../packages.php:327
+msgid "Bug Tracking System:"
+msgstr "Hibakövető rendszer:"
+
+#: ../packages.php:327
+msgid "related open bugs"
+msgstr "ide vonatkozó ismert hibák"
+
+#: ../packages.php:327
+msgid ""
+"file a feature request, bug report or mark outdated <a href=\"http://bugs."
+"frugalware.org/?do=newtask&project=1\">here"
+msgstr ""
+"funkció kérése vagy megjelölés elavultként <a href=\"http://bugs."
+"frugalware.org/?do=newtask&project=1\">itt"
+
+#: ../packages.php:328
+msgid "MD5 Sum:"
+msgstr "MD5 Szumma:"
+
+#: ../packages.php:329
+msgid "SHA1 Sum:"
+msgstr "SHA1 Szumma:"
+
+#: ../packages.php:330
+msgid "Frugalware version:"
+msgstr "Frugalware verzió:"
+
+#: ../packages.php:332
+msgid "Updated:"
+msgstr "Frissítve:"
 
 #: ../packages.php:347
 msgid "File list for"
