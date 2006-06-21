@@ -86,7 +86,8 @@ function display_feed($feed, $param)
 			foreach($feed['items'] as $item)
 			{
 				$lines[] = preg_replace("/.*, (.*) \+.*/", '$1', $item['pubDate']) . "<br />\n";
-				$lines[] = $item['author'] . ": " . $item['title'] . "<br />\n";
+				$lines[] = substr($item['author'], 0, strpos($item['author'], "@")) . ": " .
+					$item['title'] . "<br />\n";
 			}
 			include("templates/feed.php");
 		}
