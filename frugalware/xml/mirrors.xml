@@ -31,16 +31,22 @@
 		<description>Belgium (2x1GBit, ftp.belnet.be)</description>
 	</mirror>
 	<mirror>
-		<name>ftp8.frugalware.org</name>
-		<type>ftp</type>
-		<path>pub/Frugalware</path>
-		<description>Silicon Valley, CA, USA (ISO only, 2x1 GBit, www.madtux.org)</description>
-	</mirror>
-	<mirror>
 		<name>ftp9.frugalware.org</name>
 		<type>ftp</type>
 		<path>pub/frugalware</path>
 		<description>Taipei City, Taiwan (National Taiwan University, cle.linux.org.tw)</description>
+	</mirror>
+	<mirror>
+		<name>ftp10.frugalware.org</name>
+		<type>ftp</type>
+		<path>pub/frugalware/pub/frugalware</path>
+		<description>United States (mirrors.tds.net)</description>
+	</mirror>
+	<mirror>
+		<name>www4.frugalware.org</name>
+		<type>http</type>
+		<path>pub/linux/distributions/frugalware</path>
+		<description>Hungary (2x100 MBit, ftp.fsn.hu)</description>
 	</mirror>
 	<mirror>
 		<name>www5.frugalware.org</name>
@@ -53,6 +59,12 @@
 		<type>http</type>
 		<path>pub/frugalware</path>
 		<description>Germany (100MBit, pimpmylinux.org)</description>
+	</mirror>
+	<mirror>
+		<name>www10.frugalware.org</name>
+		<type>http</type>
+		<path>pub/frugalware/pub/frugalware</path>
+		<description>United States (mirrors.tds.net)</description>
 	</mirror>
 	<mirror>
 		<name>ftp4.frugalware.org</name>
