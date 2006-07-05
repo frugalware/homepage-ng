@@ -39,7 +39,7 @@
 	<mirror>
 		<name>ftp10.frugalware.org</name>
 		<type>ftp</type>
-		<path>pub/frugalware/pub/frugalware</path>
+		<path>pub/linux/frugalware</path>
 		<description>United States (mirrors.tds.net)</description>
 	</mirror>
 	<mirror>
@@ -63,7 +63,7 @@
 	<mirror>
 		<name>www10.frugalware.org</name>
 		<type>http</type>
-		<path>pub/frugalware/pub/frugalware</path>
+		<path>pub/linux/frugalware</path>
 		<description>United States (mirrors.tds.net)</description>
 	</mirror>
 	<mirror>
