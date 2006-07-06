@@ -79,6 +79,12 @@
 		<description>Belgium (2x1GBit, ftp.belnet.be)</description>
 	</mirror>
 	<mirror>
+		<name>ftp10.frugalware.org</name>
+		<type>rsync</type>
+		<path>frugalware</path>
+		<description>United States (mirrors.tds.net)</description>
+	</mirror>
+	<mirror>
 		<name>Lidux.de</name>
 		<type>buycd</type>
 		<path>http://www.lidux.de/index.php/cPath/2_58</path>
