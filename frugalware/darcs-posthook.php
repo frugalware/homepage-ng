@@ -34,7 +34,7 @@ if ($xmllatestid > $latestid) {
 	$author = $news[0]->author[0]->tagData;
 	$content = strip_tags(preg_replace("#<br />#", "\n", $news[0]->content[0]->tagData));
 	
-	mail("alex.extreme2@gmail.com", $title, $content, 'From: ' . $author . ' <noreply@frugalware.org>' . "\r\n");
+	mail("frugalware-announce@frugalware.org", $title, $content, 'From: ' . $author . ' <noreply@frugalware.org>' . "\r\n");
 	
 	$handle = fopen('_darcs/third_party/latest', 'w');
 	fwrite($handle, $xmllatestid);
