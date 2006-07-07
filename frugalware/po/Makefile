@@ -7,7 +7,7 @@ mos:
 		msgfmt -c --statistics -o ../locale/`basename $$i .po`/LC_MESSAGES/homepage.mo $$i; \
 	done
 	# ugly hack till we don't know how to handle multiple apply hooks..
-	cd .. && php frugalware/darcs-posthook.php
+	cd ../.. && php frugalware/darcs-posthook.php
 
 pot:
 	intltool-update --pot --gettext-package=homepage
