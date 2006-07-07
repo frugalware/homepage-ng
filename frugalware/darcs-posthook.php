@@ -17,7 +17,7 @@
  * @copyright Copyright (C) 2006 Alex Smith
  */
 
-$latestid = file_get_contents('_darcs/third_party/latest');
+$latestid = trim(file_get_contents('_darcs/third_party/latest'));
 
 require('frugalware/xml.inc.php');
 
@@ -34,7 +34,7 @@ if ($xmllatestid > $latestid) {
 	$author = $news[0]->author[0]->tagData;
 	$content = strip_tags(preg_replace("#<br />#", "\n", $news[0]->content[0]->tagData));
 	
-	mail("frugalware-announce@frugalware.org", $title, $content, 'From: ' . $author . ' <noreply@frugalware.org>' . "\r\n");
+	mail("frugalware-announce@frugalware.org", $title, wordwrap($content, 70), 'From: ' . $author . ' <noreply@frugalware.org>' . "\r\n");
 	
 	$handle = fopen('_darcs/third_party/latest', 'w');
 	fwrite($handle, $xmllatestid);
