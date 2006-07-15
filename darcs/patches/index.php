@@ -9,7 +9,7 @@ if($patch==$repo)
 	$patch=null;
 
 if ($repo == "")
-	die();
+	die("usage: http://darcs.frugalware.org/patches/project/hash-without-dot-gz.patch");
 $patch = substr($patch, 0, strlen($patch)-6);
 header('Content-Type: text/plain; charset=utf8');
 include("http://darcs.frugalware.org/darcsweb/darcsweb.cgi?r=$repo;a=plain_commitdiff;h=$patch.gz;");
