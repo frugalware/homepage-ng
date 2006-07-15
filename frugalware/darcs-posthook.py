@@ -91,7 +91,7 @@ if __name__ == "__main__":
 		parser.close()
 		import smtplib
 		fro = author + " <noreply@frugalware.org>"
-		to = "vmiklos@gmail.com"
+		to = "frugalware-announce@frugalware.org"
 		msg = "From: %s \r\nTo: %s\r\nSubject: %s\r\n\r\n" \
 			% (fro, to, title)
 		msg += parser.output()
