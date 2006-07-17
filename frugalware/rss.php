@@ -114,7 +114,7 @@ switch($_GET['type'])
 		die();
 	case "bugs":
 		header('Content-Type: application/xml; charset=utf-8');
-		print(file_get_contents("http://bugs.frugalware.org/rss.php?type=new"));
+		print(file_get_contents("http://bugs.frugalware.org/feed.php?feed_type=rss2&project=0"));
 		die();
 	case "blogs":
 		header('Content-Type: application/xml; charset=utf-8');
