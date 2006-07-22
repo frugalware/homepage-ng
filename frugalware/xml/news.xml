@@ -12,6 +12,22 @@
 ]>
 <news>
 	<post>
+		<id>40</id>
+		<title>Gnome upgrade done (for now)</title>
+		<date>Tue Jul 22 09:09:41 CEST 2006</date>
+		<author>AlexExtreme</author>
+		<content><![CDATA[
+			All the GNOME packages have been updated to 2.15, so now would be the time to starting posting reports about any problems that you find. To do this, you can use our <a href="http://bugs.frugalware.org">Bug Tracker</a>. There are currently several known issues that we will try to fix soon. These are as follows<br />
+			<ul>
+				<li>Gaim gets SIGABRT when trying to add an account.</li>
+				<li>Banshee Segmentation Faults at startup</li>
+				<li>File-roller segmentation faults at startup</li>
+			</ul>
+			<br />
+			]]>
+		</content>
+	</post>
+	<post>
 		<id>39</id>
 		<title>Gnome and GTK breakage in -current</title>
 		<date>Tue Jul  8 17:03:46 CEST 2006</date>
