@@ -48,7 +48,7 @@ class BaseHTMLProcessor(SGMLParser):
 		for k, v in attrs:
 			if k == "href":
 				self.refs.append(v)
-		self.pieces.append("[%d]" % len(self.refs))
+		self.pieces.append(" [%d] " % len(self.refs))
 	
 	def start_ul(self, attrs):
 		self.enum += 1
