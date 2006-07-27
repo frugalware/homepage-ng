@@ -67,7 +67,7 @@ class BaseHTMLProcessor(SGMLParser):
 	def output(self):
 		"""Return processed HTML as a single string"""
 		if len(self.refs) > 0:
-			self.pieces.append("References\n\n")
+			self.pieces.append("\nReferences\n\n")
 			for i in self.refs:
 				str = i
 				try:
