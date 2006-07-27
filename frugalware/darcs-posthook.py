@@ -55,8 +55,11 @@ class BaseHTMLProcessor(SGMLParser):
 	
 	def end_ul(self):
 		self.enum -= 1
-		if self.pieces[-1][-1] != "\n":
-			self.pieces.append("\n")
+		try:
+			if self.pieces[-1][-1] != "\n":
+				self.pieces.append("\n")
+		except IndexError:
+			pass
 	
 	def handle_data(self, text):
 		self.pieces.append(self.wrap(text.strip(), 80).replace("\n", "\n" + self.enumbrks[self.enum]))
