@@ -48,8 +48,7 @@ if(!(isset($info) && ((time() - $info["mtime"])<$pkgcachetimeout)))
 		$writeout = preg_replace("/^([^ ]*) .*/", "$1", $i['groups']) . "/${i['pkgname']}";
 		if (strlen($writeout) > 26)
 			$writeout = preg_replace("/^([^ ]*) .*/", "$1", $i['groups']) . "/<br />&nbsp;${i['pkgname']}";
-		fwrite($fp, $writeout."<br />\n" .
-			"<a href=\"${fwng_root}packages/${i['id']}\">${i['pkgver']}-${i['pkgrel']}-${i['arch']}</a><br />\n");
+		fwrite($fp, "<a href=\"{$fwng_root}packages/${i['id']}\" title=\"${i['pkgver']}-${i['pkgrel']}-${i['arch']}\">$writeout</a><br />\n");
 	}
 	fwrite($fp, "</div>");
 	fwrite($fp, "<br />\n<div align=\"center\"><a href=\"${fwng_root}rss/packages\">RSS</a></div>");
