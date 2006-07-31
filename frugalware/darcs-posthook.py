@@ -50,16 +50,24 @@ class BaseHTMLProcessor(SGMLParser):
 				self.refs.append(v)
 		self.pieces.append(" [%d] " % len(self.refs))
 	
+	def end_a(self):
+		self.pieces.append(" ")
+	
+	def start_br(self, attrs):
+		self.pieces.append("\n")
+	
+	def start_pre(self, attrs):
+		self.pieces.append("\n")
+	
+	def end_pre(self):
+		self.pieces.append("\n")
+	
 	def start_ul(self, attrs):
 		self.enum += 1
 	
 	def end_ul(self):
 		self.enum -= 1
-		try:
-			if self.pieces[-1][-1] != "\n":
-				self.pieces.append("\n")
-		except IndexError:
-			pass
+		self.pieces.append("\n")
 	
 	def handle_data(self, text):
 		self.pieces.append(self.wrap(text.strip(), 80).replace("\n", "\n" + self.enumbrks[self.enum]))
