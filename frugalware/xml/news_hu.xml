@@ -11,6 +11,120 @@
 <!ELEMENT name (#PCDATA)>
 ]>
 <news>
+  <post>
+    <id>41</id>
+    <title>Megjelent a Frugalware 0.5pre2 (Siwenna)</title>
+    <date>Mon Jul 31 01:17:32 CEST 2006</date>
+    <author>IroNiQ</author>
+    <content><![CDATA[
+			A Frugalware Fejlesztői Csapat örömmel <a href="http://frugalware.org/news/41/hu">jelenti be</a> a Frugalware 0.5pre2, mint a 0.5 -ös verzió második előzetes változatát.<br />
+			Egy rövid, nem teljes lista a 0.5pre1 óta történt változásokról:
+			<ul>
+				<li>Frissítések:
+					<ul>
+						<li>Linux 2.6.17 (+ biztonsági frissítések)</li>
+						<li>GCC 4.1.1</li>
+            <li>Apache 2.2.3</li>
+            <li>XOrg 7.1 (frissített fglrx driver, nVIDIA még nem működik)</li>
+            <li>GNOME 2.16 Beta 1 (problémák lehetnek egyes GTK és Gnome programmal, lásd korábbi hír)</li>
+            <li>OpenOffice.org 2.0.3 (mostantól natív verzió elérhető x86_64 felhasználóknak is)</li>
+          </ul>
+        <li>Újdonságok:
+          <ul>
+            <li>Minden konfigurációs eszköz frissítve lett az új keretrendszerre, elérésükhöz csak a "setup" parancsot kell begépelni</li>
+            <li>Átváltottunk splashy -re bootsplash -ről, így mostmár nem kell külön patch -elni a kernelt</li>
+            <li>Francia lokalizáció a csomagkezelőnél</li>
+          </ul>
+        <li>Telepítő:
+          <ul>
+            <li>Tetris lett a telepítőbe építve, igy a tty5 -ön hálózatos telepítés (netinstall) közben lehet játszani is :)</li>
+            <li>Számos utf8-specifikus frissítés a távol-keleti felhasználóknak</li>
+            <li>Vezetéknélküli hálózat támogatás hálózatos telepítőben</li>
+            <li>Francia nyelvű telepítő</li>
+            <li>A DVD iso szét lett darabolva, így megint fel lehet írni egyrétegű DVD lemezre<br />
+              <b>Figyelem</b>: A második DVD -re csak akkor van szükség, ha nincs otthoni internet-kapcsolat</li>
+						<li>Minden csomag elérhető CDn is<br />
+              <b>Figyelem</b>: A 3-9. CD -kre csak akkor van szükség, ha nincs otthoni internet-kapcsolat</li>
+            <li>A telepítő mostantól felismeri az operácis rendszer specifikus informácíókat, úgymint a már telepített másik disztribúció vagy egyéb más operációs rendszerek verziói</li>
+          </ul>
+        <li>Csomagok:
+          <ul>
+            <li>Több, mint 2600 csomag lett frissítve</li>
+            <li>Több, mint 220 új csomag</li>
+          </ul>
+        </li>
+			</ul>
+			Bővebb informácóért a changelog <a href="http://darcs.frugalware.org/darcsweb/darcsweb.cgi?r=frugalware-current;a=log">itt</a> érhető el.<br />
+      Letöltés i686 -ra:
+        <a href="download/frugalware-current-iso/frugalware-0.5pre2-i686-net.iso">netinstall</a> (20M),
+        <a href="download/frugalware-current-iso/frugalware-0.5pre2-i686-cd1.iso">cd1</a> (643M),
+        <a href="download/frugalware-current-iso/frugalware-0.5pre2-i686-cd2.iso">cd2</a> (633M),
+        <a href="download/frugalware-current-iso/frugalware-0.5pre2-i686-cd3.iso">cd3</a> (640M),
+        <a href="download/frugalware-current-iso/frugalware-0.5pre2-i686-cd4.iso">cd4</a> (642M),
+        <a href="download/frugalware-current-iso/frugalware-0.5pre2-i686-cd5.iso">cd5</a> (554M),
+        <a href="download/frugalware-current-iso/frugalware-0.5pre2-i686-cd6.iso">cd6</a> (642M),
+        <a href="download/frugalware-current-iso/frugalware-0.5pre2-i686-cd7.iso">cd7</a> (643M),
+        <a href="download/frugalware-current-iso/frugalware-0.5pre2-i686-cd8.iso">cd8</a> (558M),
+        <a href="download/frugalware-current-iso/frugalware-0.5pre2-i686-cd9.iso">cd9</a> (385M),
+        <a href="download/frugalware-current-iso/frugalware-0.5pre2-i686-dvd1.iso">dvd1</a> (4.4G)
+        <a href="download/frugalware-current-iso/frugalware-0.5pre2-i686-dvd2.iso">dvd2</a> (712M)
+        <br />
+			SHA1SUMok:
+      <pre>
+07271ddb32e831ebeecdc7c01d1bdb6c429b5ef4  frugalware-0.5pre2-i686-cd1.iso
+07c5b548d8d9e7a011a3ab7a145c48731e5fbee4  frugalware-0.5pre2-i686-cd2.iso
+7354ff3d44f480dfae8d27fde0c22343f042d349  frugalware-0.5pre2-i686-cd3.iso
+07ff975bf2b554fcf9f4c4bca171613f7456567e  frugalware-0.5pre2-i686-cd4.iso
+fd9a48885cc66d7dfc35ac0060b7804cbb55ef4a  frugalware-0.5pre2-i686-cd5.iso
+0a4acbdb359f0424f6f081b134964d231648fe1c  frugalware-0.5pre2-i686-cd6.iso
+539eb9b343466f7428dbe185aaa9a7b5b6cc94fb  frugalware-0.5pre2-i686-cd7.iso
+a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
+257a426eb08230ae24d7b81af042c30f995b6f0e  frugalware-0.5pre2-i686-cd9.iso
+64c2662ca21407bbe548ce6396aab659376184a0  frugalware-0.5pre2-i686-dvd1.iso
+44dd9bb8c98a1370571ed799e53e8129ad78a3e4  frugalware-0.5pre2-i686-dvd2.iso
+0c0cedda6de27378916f4093ba7c7145f3487455  frugalware-0.5pre2-i686-net.iso
+      </pre>
+      ]]>
+    </content>
+  </post>
+  <post>
+    <id>40</id>
+    <title>Gnome frissítés kész</title>
+    <date>Tue Jul 22 09:09:41 CEST 2006</date>
+    <author>IroNiQ</author>
+		<content><![CDATA[
+			Minden GNOME csomag frissítve lett 2.15 -ös verzióra, így mostantól lehet küldeni a jelentéseket mindenféle fellelt hibáról. Ehhez kérjük használja a <a href="http://bugs.frugalware.org">Hibakövető rendszerünket</a>. Jelenleg is van pár ismert hiba, amit megpróbálunk minél hamarabb javítani. Ezek a következőek:<br />
+      <ul>
+        <li>Gaim SIGABRT szignált kap, ha új account -ot veszünk fel</li>
+        <li>Banshee Segmentation Fault (szegmentációs hiba) induláskor</li>
+        <li>File-roller segmentation faults induláskor</li>
+      </ul>
+      <br />
+      ]]>
+    </content>
+  </post>
+  <post>
+    <id>39</id>
+    <title>Gnome és GTK probémák -current ágban</title>
+    <date>Tue Jul  8 17:03:46 CEST 2006</date>
+    <author>IroNiQ</author>
+		<content><![CDATA[
+			Igen, tudjuk, hogy a Gnome és a GTK -s programok hibásan működnek a -current ágban.<br /><br />
+			Mindez azért van, mert egyrészt frissítettünk GTK 2.10 -re, másrészt frissítjük a Gnome -ot a fejlesztői változatra (az okok a frugalware-devel levelezőlista archívumában olvashatók). Kérjük, hogy legyen kicsit türelemmel, amíg lezajlik ez a dolog. Az eredmény remélhetőleg egy gyorsabb és szebb Gnome lesz. Mindenképpen jelezni fogjuk, ha a frissítési procedúra lezajlott és lehet küldeni hibajelentéseket a fellelt problémákról.<br /><br />
+      ]]>
+    </content>
+  </post>
+  <post>
+    <id>38</id>
+    <title>Újdonságok a honlapon</title>
+    <date>Tue Jul  7 21:11:32 CEST 2006</date>
+    <author>IroNiQ</author>
+		<content><![CDATA[
+			Meglepő módon, mióta az új honlap megjelent, csak 1 bugreport volt a csomagok résznél. Így most nekiállhatunk egy pár érdekes dolgot megvalósítani. AlexExtrem írt egyfajta robotot, mely automatikusan postázza az oldalon megjelent új híreket a frugalware-announce listára. Ez a darcs post-hook -nak köszönhető, tehát ha valaki módosítást küld be a honlaphoz, ez a szkript ellenőrzi az új híreket. Kérjük, hogy ha hibát talál, jelezze a felénk ezt.<br />
+			<br />
+      ]]>
+    </content>
+  </post>
 	<post>
 		<id>37</id>
 		<title>Új Frugalware honlap!</title>
