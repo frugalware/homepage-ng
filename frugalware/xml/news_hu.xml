@@ -97,7 +97,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
       <ul>
         <li>Gaim SIGABRT szignált kap, ha új account -ot veszünk fel</li>
         <li>Banshee Segmentation Fault (szegmentációs hiba) induláskor</li>
-        <li>File-roller segmentation faults induláskor</li>
+        <li>File-roller segmentation fault induláskor</li>
       </ul>
       <br />
       ]]>
