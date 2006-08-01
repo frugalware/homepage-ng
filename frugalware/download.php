@@ -88,7 +88,7 @@ $howto = "<div align=left><ul>
 if ( $url != "" )
 {
 	fwmiddlebox(gettext("Download file (via ftp)"), $ftpcont);
-	fwmiddlebox(gettext("Downloan file (via http"), $httpcont);
+	fwmiddlebox(gettext("Download file (via http)"), $httpcont);
 	fwmiddlebox(gettext("Download file (via rsync)"), $rsynccont);
 }
 else
