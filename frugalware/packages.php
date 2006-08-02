@@ -328,7 +328,6 @@ function pkg_from_id($id)
 	if ($arr['md5'] != 'NULL') $content .= "<tr><td>" . gettext("MD5 Sum:") . "</td><td>".$arr['md5']."</td></tr>\n";
 	if ($arr['sha1'] != '') $content .= "<tr><td>" . gettext("SHA1 Sum:") . "</td><td>".$arr['sha1']."</td></tr>\n";
 	if ($arr['fwver'] != 'NULL') $content .= "<tr><td>" . gettext("Frugalware version:") . "</td><td>".$arr['fwver']."</td></tr>\n";
-	if ($arr['repo'] != 'NULL') $content .= "<tr><td>" . gettext("Repository:") . "</td><td>".$arr['repo']."</td></tr>\n";
 	if ($arr['updated'] != 'NULL') $content .= "<tr><td>" . gettext("Updated:") . "</td><td>".$arr['updated']."</td></tr>\n";
 	$content .= "</table>\n";
 	$db->doClose();
