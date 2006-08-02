@@ -296,7 +296,7 @@ function pkg_from_id($id)
 	if ($arr['repo']=="extra")
 	{
 		$repodir="/";
-		$pkgpath = $arr['repo'] . "/frugalware-" . $arr['arch'];
+		$pkgpath = "/frugalware-" . $arr['arch'];
 	}
 	else
 		$pkgpath = "/frugalware-" . $arr['arch'];
