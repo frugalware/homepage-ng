@@ -65,13 +65,6 @@ function main()
 		<br />
 		<input class=\"required\" type=\"checkbox\" name=\"desc\" id=\"descr\" /><label for=\"descr\" class=\"pkg-phrasing\">".gettext("Search in description")."</label>
 		<br />
-		<label for=\"repos\">".gettext("Repository:")."</label>
-		<select name=\"repo\" id=\"repos\" class=\"required\">
-			<option value=\"all\" selected=\"selected\">all</option>
-			<option value=\"frugalware\">frugalware</option>
-			<option value=\"extra\">extra</option>
-		</select>
-		<br />
 		<label for=\"archs\">".gettext("Architecture:")."</label>
 		<select name=\"arch\" id=\"archs\" class=\"required\">
 			<option value=\"i686\" selected=\"selected\" class=\"required\">i686</option>
@@ -95,12 +88,6 @@ function main()
 	<fieldset class=\"pkg\"><legend>".gettext("File search")."</legend>
 		<input type=\"hidden\" name=\"op\" value=\"file\" />
 		<label for=\"filesrc\">".gettext("Search for a file:")."</label><input class=\"required\" type=\"text\" id=\"filesrc\" name=\"srch\" size=\"40\" />
-		<br />
-		<label for=\"frepos\">".gettext("Repository:")."</label><select name=\"repo\" id=\"frepos\" class=\"required\">
-			<option value=\"all\" selected=\"selected\">all</option>
-			<option value=\"frugalware\">frugalware</option>
-			<option value=\"extra\">extra</option>
-		</select>
 		<br />
 		<label for=\"archs\">".gettext("Architecture:")."</label>
 		<select name=\"arch\" id=\"archs\" class=\"required\">
@@ -150,7 +137,6 @@ function search_pkg()
 	$res_set = array();
 
 	$search = $_GET['srch'];
-	$repo = $_GET['repo'];
 	$arch = $_GET['arch'];
 	$fwver = $_GET['ver'];
 	$sub = ($_GET['sub'] == "on") ? 1 : 0; # whether the search is for a substring or exact match
