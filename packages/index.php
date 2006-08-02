@@ -29,19 +29,7 @@ function foo() {
 		$url .= '&amp;desc=on';
 		$req = substr($req, 5);
 	}
-	$url .= '&amp;repo=';
-	if(substr($req,0,3) == 'fw:') {
-		$repo .= 'frugalware';
-		$req = substr($req, 3);
-	}
-	elseif(substr($req,0,6) == 'extra:') {
-		$repo .= 'extra';
-		$req = substr($req, 6);
-	}
-	else {
-		$repo .= 'all';
-	}
-	$url .= $repo . '&amp;arch=';
+	$url .= '&amp;arch=';
 	if(substr($req,0,7) == 'x86_64:') {
 		$arch .= 'x86_64';
 		$req = substr($req, 7);
