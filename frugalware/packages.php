@@ -80,7 +80,8 @@ function main()
 		}
 		$content .= "
 		</select>
-		<br />
+    <br />
+    <br />
 		<input type=\"submit\" value=\"".gettext("Search")."\" /> <input type=\"reset\" value=\"".gettext("Reset")."\" />
 	</fieldset>
 </form>
@@ -106,7 +107,8 @@ function main()
 		}
 		$content .= "
 		</select>
-		<br />
+    <br />
+    <br />
 		<input type=\"submit\" value=\"".gettext("Search")."\" /> <input type=\"reset\" value=\"".gettext("Reset")."\" />
 	</fieldset>
 </form>
@@ -141,7 +143,7 @@ function search_pkg()
 	$fwver = $_GET['ver'];
 	$sub = ($_GET['sub'] == "on") ? 1 : 0; # whether the search is for a substring or exact match
 
-	$query = "select id, pkgname, pkgver, pkgrel, fwver, repo, arch from packages where ";
+	$query = "select id, pkgname, pkgver, pkgrel, fwver, arch from packages where ";
 	# if the 'desc' is set (searching in description, too) I have to put
 	# the restrictions between brackets, because of the 'repo' below...
 	if ($sub == 0)
@@ -151,10 +153,6 @@ function search_pkg()
 	else
 	{
 		($_GET['desc'] == "on" || $_GET['desc'] == 1) ? $query .= "(pkgname like '%$search%' or `desc` like '%$search%')" : $query .= "(pkgname like '%$search%')";
-	}
-	if ($repo != "" && $repo != "all") # if repo is set to frugalware or extra
-	{
-		$query .= " and repo='$repo'";
 	}
 	if ($arch != "")
 	{
