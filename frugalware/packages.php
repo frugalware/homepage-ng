@@ -295,12 +295,11 @@ function pkg_from_id($id)
 	$content .= "<tr><td>" . gettext("Version:") . "</td><td>".$arr['pkgver']."-".$arr['pkgrel']."</td></tr>\n";
 	if ($arr['repo']=="extra")
 	{
-		$repodir="/" . $arr['repo'];
+		$repodir="/";
 		$pkgpath = $arr['repo'] . "/frugalware-" . $arr['arch'];
 	}
 	else
 		$pkgpath = "/frugalware-" . $arr['arch'];
-  //$groupdir=preg_replace("/-extra/", "", $arr['groups']);
     $groupdir = $arr['groups'];
 
 	$content .= "<tr><td>" . gettext("Changelog:") . "</td><td><a href=\"http://ftp.frugalware.org/pub/frugalware/frugalware-" . $arr['fwver'] . "$repodir/source/" . preg_replace("/^([^ ]*) .*/", "$1", $groupdir) . "/" . (($arr['parent'] != NULL and $arr['parent'] != 'NULL') ? $arr['parent'] : $arr['pkgname']) . "/Changelog\">Changelog</a></td></tr>\n";
