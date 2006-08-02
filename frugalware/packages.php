@@ -300,7 +300,7 @@ function pkg_from_id($id)
 	}
 	else
 		$pkgpath = "/frugalware-" . $arr['arch'];
-	$groupdir=preg_replace("/-extra/", "", $arr['groups']);
+	//$groupdir=preg_replace("/-extra/", "", $arr['groups']);
 
 	$content .= "<tr><td>" . gettext("Changelog:") . "</td><td><a href=\"http://ftp.frugalware.org/pub/frugalware/frugalware-" . $arr['fwver'] . "$repodir/source/" . preg_replace("/^([^ ]*) .*/", "$1", $groupdir) . "/" . (($arr['parent'] != NULL and $arr['parent'] != 'NULL') ? $arr['parent'] : $arr['pkgname']) . "/Changelog\">Changelog</a></td></tr>\n";
 	$content .= "<tr><td>" . gettext("Darcs:") . "</td><td><a href=\"http://darcs.frugalware.org/darcsweb/darcsweb.cgi?r=frugalware-" . $arr['fwver'] . ";a=tree;f=$repodir/source/" . preg_replace("/^([^ ]*) .*/", "$1", $groupdir) . "/" . (($arr['parent'] != NULL and $arr['parent'] != 'NULL') ? $arr['parent'] : $arr['pkgname']) . "\">View entry</a></td></tr>\n";
