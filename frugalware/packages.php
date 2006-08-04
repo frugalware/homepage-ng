@@ -228,7 +228,7 @@ function res_show($res_set, $what, $search) {
 			$title = gettext("Search result for:")." ".$search;
 			$content = "<div align=\"left\">\n";
 			for ($i=0,$j=1;$i<count($res_set);$i++,$j++) {
-				$content .= "<p>".$j.". <a href=\"/packages/".$res_set[$i]['id']."\">".$res_set[$i]['pkgname']."</a> ".$res_set[$i]['pkgver']."-".$res_set[$i]['pkgrel']."<br />".gettext("Version:")." ".$res_set[$i]['fwver']."; ".gettext("Repository:")." ".$res_set[$i]['repo']."; ".gettext("Architecture:")." ".$res_set[$i]['arch']."</p>\n";
+				$content .= "<p>".$j.". <a href=\"/packages/".$res_set[$i]['id']."\">".$res_set[$i]['pkgname']."</a> ".$res_set[$i]['pkgver']."-".$res_set[$i]['pkgrel']."<br />".gettext("Version:")." ".$res_set[$i]['fwver']."; ".gettext("Architecture:")." ".$res_set[$i]['arch']."</p>\n";
 			}
 			$content .= "</div>\n";
 			fwmiddlebox($title, $content);
@@ -237,7 +237,7 @@ function res_show($res_set, $what, $search) {
 			$title = gettext("Search result for:")." ".$search;
 			$content = "<div align=\"left\">\n";
 			for ($i=0,$j=1;$i<count($res_set);$i++,$j++) {
-				$content .= "<p>".$j.". <a href=\"/packages/".$res_set[$i]['id']."/files\">".$res_set[$i]['pkgname']."</a> ".$res_set[$i]['pkgver']."-".$res_set[$i]['pkgrel']."<br />".gettext("Version:")." ".$res_set[$i]['fwver']."; ".gettext("Repository:")." ".$res_set[$i]['repo']."; ".gettext("Architecture:")." ".$res_set[$i]['arch']."</p>\n";
+				$content .= "<p>".$j.". <a href=\"/packages/".$res_set[$i]['id']."/files\">".$res_set[$i]['pkgname']."</a> ".$res_set[$i]['pkgver']."-".$res_set[$i]['pkgrel']."<br />".gettext("Version:")." ".$res_set[$i]['fwver']."; ".gettext("Architecture:")." ".$res_set[$i]['arch']."</p>\n";
 			}
 			$content .= "</div>\n";
 			fwmiddlebox($title, $content);
