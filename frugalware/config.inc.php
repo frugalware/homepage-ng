@@ -12,7 +12,7 @@ $sqltype = "mysql";
 $sqlhost = "localhost";
 $sqluser = "homepage";
 $sqlpass = "85Tdjf{Od";
-$sqldb = "frugalware";
+$sqldb = "frugalware2";
 
 #site settings
 $fwng_root = "/";

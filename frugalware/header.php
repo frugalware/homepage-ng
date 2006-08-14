@@ -36,7 +36,13 @@ if(!(isset($info) && ((time() - $info["mtime"])<$pkgcachetimeout)))
 {
 	$db = new FwDB();
 	$db->doConnect($sqlhost, $sqluser, $sqlpass, $sqldb);
-	$query = "select groups, pkgname, id, pkgver, pkgrel, arch from packages order by updated desc limit 10";
+	$query = "select packages.pkgname, groups.name, packages.id, 
+		packages.pkgver, packages.arch, packages.`desc`, 
+		unix_timestamp(packages.builddate) from packages, groups, 
+		ct_groups where packages.id = ct_groups.pkg_id and 
+		ct_groups.group_id = groups.id group by 
+		concat(packages.pkgname, packages.arch) order by 
+		packages.builddate desc limit 10";
 	$result = $db->doQuery($query);
 	while($i = $db->doFetchRow($result))
 		$pkgs[] = $i;
@@ -45,11 +51,11 @@ if(!(isset($info) && ((time() - $info["mtime"])<$pkgcachetimeout)))
 	fwrite($fp, "<div align=\"left\">\n");
 	foreach($pkgs as $i)
 	{
-		$writeout = preg_replace("/^([^ ]*) .*/", "$1", $i['groups']) . "/${i['pkgname']}";
+		$writeout = $i['name'] . "/${i['pkgname']}";
 		if (strlen($writeout) > 26)
-			$writeout = preg_replace("/^([^ ]*) .*/", "$1", $i['groups']) . "/<br />&nbsp;${i['pkgname']}";
+			$writeout = $i['name'] . "/<br />&nbsp;${i['pkgname']}";
 		fwrite($fp, $writeout."<br />\n" .
-			"<a href=\"${fwng_root}packages/${i['id']}\">${i['pkgver']}-${i['pkgrel']}-${i['arch']}</a><br />\n");
+			"<a href=\"${fwng_root}packages/${i['id']}\">${i['pkgver']}-${i['arch']}</a><br />\n");
 	}
 	fwrite($fp, "</div>");
 	fwrite($fp, "<br />\n<div align=\"center\"><a href=\"${fwng_root}rss/packages\">RSS</a></div>");
