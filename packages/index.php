@@ -1,13 +1,14 @@
 <?php
 
 $fwversions = array('0.1', '0.2', '0.3', '0.4');
+$fwarchs = array('i686', 'x86_64', 'ppc');
 
 function bar($baz) {
 	return preg_replace('|/([a-z0-9_+-]+).*|','$1',urlencode($baz));
 }
 
 function foo() {
-	global $fwversions;
+	global $fwversions, $fwarchs;
 	$url = 'http://frugalware.org/packages/?op=';
 	if(isset($_GET['search'])) {
 		$_SERVER['PATH_INFO'] = $_GET['search'];
@@ -30,18 +31,15 @@ function foo() {
 		$req = substr($req, 5);
 	}
 	$url .= '&amp;arch=';
-	if(substr($req,0,7) == 'x86_64:') {
-		$arch .= 'x86_64';
-		$req = substr($req, 7);
-	}
-	elseif(substr($req,0,5) == 'i686:') {
-		$arch .= 'i686';
-		$req = substr($req, 5);
+	$arr = explode(':', $req);
+	if(!in_array($arr[0], $fwarchs)) {
+		$arch = $arr[0];
 	}
 	else {
 		$arch .= 'i686';
 	}
 	$url .= $arch . '&amp;ver=';
+	$req = substr($req, strlen($arch)+1);
 	if(in_array(substr($req,0,3), $fwversions)) {
 		$ver .= substr($req,0,3);
 		$req = substr($req, 4);
