@@ -72,12 +72,12 @@ switch($_GET['type'])
 		$query = 'select packages.pkgname, uploaders.login,
 			groups.name, packages.id, packages.pkgver,
 			packages.arch, packages.`desc`,
-			unix_timestamp(packages.updated) from packages, groups,
+			unix_timestamp(packages.builddate) from packages, groups,
 			ct_groups, uploaders where packages.id =
 			ct_groups.pkg_id and ct_groups.group_id = groups.id and
 			packages.uploader_id = uploaders.id group by
 			concat(packages.pkgname, packages.arch) order by
-			packages.updated desc limit
+			packages.builddate desc limit
 			10';
 		$result = $db->doQuery($query);
 		while ($i = $db->doFetchRow($result))
@@ -86,7 +86,7 @@ switch($_GET['type'])
 				"title" => preg_replace("/^([^ ]*) .*/", "$1", $i['name']) . "/${i['pkgname']}-${i['pkgver']}-${i['arch']}",
 				"desc" => $i['desc'],
 				"author" => $i['login']."@nospam.frugalware.org",
-				"pubDate" => date(DATE_RFC2822, $i['unix_timestamp(packages.updated)']),
+				"pubDate" => date(DATE_RFC2822, $i['unix_timestamp(packages.builddate)']),
 				"link" => "http://frugalware.org/packages/${i['id']}"
 			);
 		}
