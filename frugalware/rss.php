@@ -76,7 +76,8 @@ switch($_GET['type'])
 			ct_groups, uploaders where packages.id =
 			ct_groups.pkg_id and ct_groups.group_id = groups.id and
 			packages.uploader_id = uploaders.id group by
-			packages.pkgname order by packages.updated desc limit
+			concat(packages.pkgname, packages.arch) order by
+			packages.updated desc limit
 			10';
 		$result = $db->doQuery($query);
 		while ($i = $db->doFetchRow($result))
