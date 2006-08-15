@@ -120,6 +120,11 @@ function search_pkg()
 	global $sqlhost, $sqluser, $sqlpass;
 	$res_set = array();
 
+	if(strlen($_GET['srch'])==0)
+	{
+		main();
+		return;
+	}
 	$search = $_GET['srch'];
 	$arch = $_GET['arch'];
 	$fwver = $_GET['ver'];
