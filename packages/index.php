@@ -32,14 +32,14 @@ function foo() {
 	}
 	$url .= '&amp;arch=';
 	$arr = explode(':', $req);
-	if(!in_array($arr[0], $fwarchs)) {
+	if(in_array($arr[0], $fwarchs)) {
 		$arch = $arr[0];
+		$req = substr($req, strlen($arch)+1);
 	}
 	else {
 		$arch .= 'i686';
 	}
 	$url .= $arch . '&amp;ver=';
-	$req = substr($req, strlen($arch)+1);
 	if(in_array(substr($req,0,3), $fwversions)) {
 		$ver .= substr($req,0,3);
 		$req = substr($req, 4);
