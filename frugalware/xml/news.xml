@@ -29,12 +29,14 @@
 						<li>GNOME 2.16 Beta 1 (there may be some problems with some Gnome and GTK software - see earlier news posts)</li>
 						<li>OpenOffice.org 2.0.3 (this time a native version is available for x86_64 users, too)</li>
 					</ul>
+				</li>
 				<li>New features:
 					<ul>
 						<li>All configuration tools have been updated to the new framework, type "setup" to reach them</li>
 						<li>Switched to splashy from bootsplash, so that the splash can be used with any custom vanilla kernel, too</li>
 						<li>Added French localization for the package manager</li>
 					</ul>
+				</li>
 				<li>Installer:
 					<ul>
 						<li>Added an eyecandy tetris, use it on tty5 while netinstall downloads the selected packages :)</li>
@@ -47,6 +49,7 @@
 							<b>Note</b>: Don't download CDs 3 - 9 unless you don't have an internet connection</li>
 						<li>The installer now recognizes os-specific informations, like the name of the already installed other distributions or the version of many other operating systems</li>
 					</ul>
+				</li>
 				<li>Packages:
 					<ul>
 						<li>More than 2600 packages have been updated</li>
