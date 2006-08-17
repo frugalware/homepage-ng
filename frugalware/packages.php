@@ -383,7 +383,7 @@ function pkg_from_id($id)
 	}
 	if (count($conflicts))
 	{
-		$content .= "<tr><td>" . gettext("Concflicts:") . "</td><td>";
+		$content .= "<tr><td>" . gettext("Conflicts:") . "</td><td>";
 		foreach($conflicts as $i)
 			$content .= "<a href=\"/packages/" . $i['conflict_id'] . "\">".$i['pkgname']."</a> ";
 		$content .= "</td></tr>\n";
