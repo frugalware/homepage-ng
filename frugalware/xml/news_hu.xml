@@ -11,20 +11,19 @@
 <!ELEMENT name (#PCDATA)>
 ]>
 <news>
-  <post>
 	<post>
 		<id>42</id>
 		<title>Megjelent a Frugalware 0.5rc1 (Siwenna)</title>
 		<date>Thu Aug 17 01:31:02 CEST 2006</date>
 		<author>VMiklos</author>
 		<content><![CDATA[
-						A Frugalware Fejlesztõi Csapat örömmel <a
+						A Frugalware FejlesztÅ‘i Csapat Ã¶rÃ¶mmel <a
 										href="http://frugalware.org/news/41/hu">jelenti be</a> a
-						Frugalware 0.5rc1-et, mint a 0.5 -ös verzió elsõ, kiadásra jelölt
-						változatát.<br />
-			Egy rövid, nem teljes lista a 0.5pre2 óta történt változásokról:<br />
+						Frugalware 0.5rc1-et, mint a 0.5 -Ã¶s verziÃ³ elsÅ‘, kiadÃ¡sra jelÃ¶lt
+						vÃ¡ltozatÃ¡t.<br />
+			Egy rÃ¶vid, nem teljes lista a 0.5pre2 Ã³ta tÃ¶rtÃ©nt vÃ¡ltozÃ¡sokrÃ³l:<br />
 			<ul>
-				<li>Frissítések:
+				<li>FrissÃ­tÃ©sek:
 					<ul>
 						<li>Linux 2.6.17.8</li>
 						<li>KDE 3.5.4</li>
@@ -33,34 +32,34 @@
 						<li>Gnome 2.16 Beta 2 (2.15.91)</li>
 					</ul>
 				</li>
-				<li>Újdonságok:
+				<li>ÃšjdonsÃ¡gok:
 					<ul>
-						<li>Feldaraboltuk a MySQL, PostgreSQL, Samba és LDAP csomagokat,
-										így ezeknek a szolgáltatásoknak a telepítése a továbbiakban
-										desktop környezetben már nem kötelezõ</li>
-						<li>fwmirror: Egy új eszköz a  Frugalware mirrorozásához</li>
-						<li>fw-xgl-control: Az Xgl egyetlen egyszerû paranccsal ki- és bekapcsolható</li>
-						<li>Honlap: a csomagkeresõ továbbfejlesztése révén már kategóriák
-										szerint is lehet keresni, illetve lehetõség van a fordított
-										függõségek (az adott csomagot függõségként igénylõ
-										csomagok) megjelenítésére is</li>
-						<li>Az NVIDIA videokártyák Xorg 7.1 alatti használatát lehetõvé tevõ workaround beépítése</li>
-						<li>Új 0.5 artwork (a KDE kivételével)</li>
+						<li>Feldaraboltuk a MySQL, PostgreSQL, Samba Ã©s LDAP csomagokat,
+										Ã­gy ezeknek a szolgÃ¡ltatÃ¡soknak a telepÃ­tÃ©se a tovÃ¡bbiakban
+										desktop kÃ¶rnyezetben mÃ¡r nem kÃ¶telezÅ‘</li>
+						<li>fwmirror: Egy Ãºj eszkÃ¶z a  Frugalware mirrorozÃ¡sÃ¡hoz</li>
+						<li>fw-xgl-control: Az Xgl egyetlen egyszerÅ± paranccsal ki- Ã©s bekapcsolhatÃ³</li>
+						<li>Honlap: a csomagkeresÅ‘ tovÃ¡bbfejlesztÃ©se rÃ©vÃ©n mÃ¡r kategÃ³riÃ¡k
+										szerint is lehet keresni, illetve lehetÅ‘sÃ©g van a fordÃ­tott
+										fÃ¼ggÅ‘sÃ©gek (az adott csomagot fÃ¼ggÅ‘sÃ©gkÃ©nt igÃ©nylÅ‘
+										csomagok) megjelenÃ­tÃ©sÃ©re is</li>
+						<li>Az NVIDIA videokÃ¡rtyÃ¡k Xorg 7.1 alatti hasznÃ¡latÃ¡t lehetÅ‘vÃ© tevÅ‘ workaround beÃ©pÃ­tÃ©se</li>
+						<li>Ãšj 0.5 artwork (a KDE kivÃ©telÃ©vel)</li>
 					</ul>
 				</li>
-				<li>Hibajavítások:
+				<li>HibajavÃ­tÃ¡sok:
 					<ul>
-						<li>A nyelvi csomagoknál a függõségek kezelésének kijavítása</li>
-						<li>A netinstall telepítõ javítása PPPoE (ADSL) kapcsolat használata esetén</li>
-						<li>Az elsõ DVD ISO kiírásához nincs szükség a túlírás engedélyezésére</li>
+						<li>A nyelvi csomagoknÃ¡l a fÃ¼ggÅ‘sÃ©gek kezelÃ©sÃ©nek kijavÃ­tÃ¡sa</li>
+						<li>A netinstall telepÃ­tÅ‘ javÃ­tÃ¡sa PPPoE (ADSL) kapcsolat hasznÃ¡lata esetÃ©n</li>
+						<li>Az elsÅ‘ DVD ISO kiÃ­rÃ¡sÃ¡hoz nincs szÃ¼ksÃ©g a tÃºlÃ­rÃ¡s engedÃ©lyezÃ©sÃ©re</li>
 					</ul>
 				</li>
 			</ul>
-			Bõvebb informácóért a Changelog <a
+			BÅ‘vebb informÃ¡cÃ³Ã©rt a Changelog <a
 							href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">itt</a>
-			érhetõ el.<br />
-			Letöltés i686-ra:<br />
-			<b>MEGJEGYZÉS</b>: A 3-9. CD-re és a 2. DVD-re csak akkor van szükség, ha nincs otthoni internet-kapcsolat<br />
+			Ã©rhetÅ‘ el.<br />
+			LetÃ¶ltÃ©s i686-ra:<br />
+			<b>MEGJEGYZÃ‰S</b>: A 3-9. CD-re Ã©s a 2. DVD-re csak akkor van szÃ¼ksÃ©g, ha nincs otthoni internet-kapcsolat<br />
 				<a href="download/frugalware-current-iso/frugalware-0.5rc1-i686-net.iso">netinstall</a> (20M),
 				<a href="download/frugalware-current-iso/frugalware-0.5rc1-i686-cd1.iso">cd1</a> (635M),
 				<a href="download/frugalware-current-iso/frugalware-0.5rc1-i686-cd2.iso">cd2</a> (638M),
@@ -92,6 +91,7 @@ a62f42f3135f1415edced1db5c9f9511de598fd7  frugalware-0.5rc1-i686-net.iso
 			]]>
 		</content>
 	</post>
+  <post>
     <id>41</id>
     <title>Megjelent a Frugalware 0.5pre2 (Siwenna)</title>
     <date>Mon Jul 31 01:17:32 CEST 2006</date>
