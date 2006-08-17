@@ -12,6 +12,86 @@
 ]>
 <news>
   <post>
+	<post>
+		<id>42</id>
+		<title>Megjelent a Frugalware 0.5rc1 (Siwenna)</title>
+		<date>Thu Aug 17 01:31:02 CEST 2006</date>
+		<author>VMiklos</author>
+		<content><![CDATA[
+						A Frugalware Fejlesztõi Csapat örömmel <a
+										href="http://frugalware.org/news/41/hu">jelenti be</a> a
+						Frugalware 0.5rc1-et, mint a 0.5 -ös verzió elsõ, kiadásra jelölt
+						változatát.<br />
+			Egy rövid, nem teljes lista a 0.5pre2 óta történt változásokról:<br />
+			<ul>
+				<li>Frissítések:
+					<ul>
+						<li>Linux 2.6.17.8</li>
+						<li>KDE 3.5.4</li>
+						<li>Firefox 1.5.0.6</li>
+						<li>Thunderbird 1.5.0.5</li>
+						<li>Gnome 2.16 Beta 2 (2.15.91)</li>
+					</ul>
+				</li>
+				<li>Újdonságok:
+					<ul>
+						<li>Feldaraboltuk a MySQL, PostgreSQL, Samba és LDAP csomagokat,
+										így ezeknek a szolgáltatásoknak a telepítése a továbbiakban
+										desktop környezetben már nem kötelezõ</li>
+						<li>fwmirror: Egy új eszköz a  Frugalware mirrorozásához</li>
+						<li>fw-xgl-control: Az Xgl egyetlen egyszerû paranccsal ki- és bekapcsolható</li>
+						<li>Honlap: a csomagkeresõ továbbfejlesztése révén már kategóriák
+										szerint is lehet keresni, illetve lehetõség van a fordított
+										függõségek (az adott csomagot függõségként igénylõ
+										csomagok) megjelenítésére is</li>
+						<li>Az NVIDIA videokártyák Xorg 7.1 alatti használatát lehetõvé tevõ workaround beépítése</li>
+						<li>Új 0.5 artwork (a KDE kivételével)</li>
+					</ul>
+				</li>
+				<li>Hibajavítások:
+					<ul>
+						<li>A nyelvi csomagoknál a függõségek kezelésének kijavítása</li>
+						<li>A netinstall telepítõ javítása PPPoE (ADSL) kapcsolat használata esetén</li>
+						<li>Az elsõ DVD ISO kiírásához nincs szükség a túlírás engedélyezésére</li>
+					</ul>
+				</li>
+			</ul>
+			Bõvebb informácóért a Changelog <a
+							href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">itt</a>
+			érhetõ el.<br />
+			Letöltés i686-ra:<br />
+			<b>MEGJEGYZÉS</b>: A 3-9. CD-re és a 2. DVD-re csak akkor van szükség, ha nincs otthoni internet-kapcsolat<br />
+				<a href="download/frugalware-current-iso/frugalware-0.5rc1-i686-net.iso">netinstall</a> (20M),
+				<a href="download/frugalware-current-iso/frugalware-0.5rc1-i686-cd1.iso">cd1</a> (635M),
+				<a href="download/frugalware-current-iso/frugalware-0.5rc1-i686-cd2.iso">cd2</a> (638M),
+				<a href="download/frugalware-current-iso/frugalware-0.5rc1-i686-cd3.iso">cd3</a> (635M),
+				<a href="download/frugalware-current-iso/frugalware-0.5rc1-i686-cd4.iso">cd4</a> (639M),
+				<a href="download/frugalware-current-iso/frugalware-0.5rc1-i686-cd5.iso">cd5</a> (580M),
+				<a href="download/frugalware-current-iso/frugalware-0.5rc1-i686-cd6.iso">cd6</a> (642M),
+				<a href="download/frugalware-current-iso/frugalware-0.5rc1-i686-cd7.iso">cd7</a> (638M),
+				<a href="download/frugalware-current-iso/frugalware-0.5rc1-i686-cd8.iso">cd8</a> (642M),
+				<a href="download/frugalware-current-iso/frugalware-0.5rc1-i686-cd9.iso">cd9</a> (394M),
+				<a href="download/frugalware-current-iso/frugalware-0.5rc1-i686-dvd1.iso">dvd1</a> (4.2G)
+				<a href="download/frugalware-current-iso/frugalware-0.5rc1-i686-dvd2.iso">dvd2</a> (1.1G)
+				<br />
+			SHA1SUMS:
+			<pre>
+385719ecc1e68a5e4b2f8c6fb49e79b7333fe820  frugalware-0.5rc1-i686-cd1.iso
+c9324c9a6bcf5024076a5f5f494fecada7d383ac  frugalware-0.5rc1-i686-cd2.iso
+ae5d33bc4c69978cbedcb4bbf3182253cc9eaecd  frugalware-0.5rc1-i686-cd3.iso
+31d386c3d81a64c3d554b186973df41071741fe9  frugalware-0.5rc1-i686-cd4.iso
+529bfcb37b7feb24e8bf62316371c54e8c4d402d  frugalware-0.5rc1-i686-cd5.iso
+b7278a5147102a1e049cdb7fb81d136893d1c4cf  frugalware-0.5rc1-i686-cd6.iso
+09a5098c561dcf406a83bfb8e5a6eec1e192aa52  frugalware-0.5rc1-i686-cd7.iso
+36e300772e5052aa5b81308af8288374c0a930d4  frugalware-0.5rc1-i686-cd8.iso
+a1a0864648db68b9c01f274ddffc9172b3ae6908  frugalware-0.5rc1-i686-cd9.iso
+0216a7ee71b0dda9d00d64fc093b993f2af47a2b  frugalware-0.5rc1-i686-dvd1.iso
+987d2302a1268a2b1033f8d00e84f8c8ce290ae9  frugalware-0.5rc1-i686-dvd2.iso
+a62f42f3135f1415edced1db5c9f9511de598fd7  frugalware-0.5rc1-i686-net.iso
+			</pre>
+			]]>
+		</content>
+	</post>
     <id>41</id>
     <title>Megjelent a Frugalware 0.5pre2 (Siwenna)</title>
     <date>Mon Jul 31 01:17:32 CEST 2006</date>
