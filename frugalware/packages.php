@@ -343,7 +343,7 @@ function pkg_from_id($id)
 	while ( $i = $db->doFetchRow($res) )
 		$revdeps[]=$i;
 	// groups
-	$query = "select ct_groups.pkg_id, groups.id, groups.name from groups, ct_groups where (ct_groups.pkg_id=$id or ct_groups.pkg_id=".$arr['parent_id'].") and ct_groups.group_id = groups.id";
+	$query = "select ct_groups.pkg_id, groups.id, groups.name from groups, ct_groups where (ct_groups.pkg_id=$id or ct_groups.pkg_id=".$arr['parent_id'].") and ct_groups.group_id = groups.id order by groups.id";
 	$res = $db->doQuery($query);
 	while($i=$db->doFetchRow($res))
 		if($i['pkg_id']==$id)
@@ -352,9 +352,6 @@ function pkg_from_id($id)
 			$parent['group']=$i['name'];
 	if(!isset($parent['group']))
 	$parent['group']=$groups[0]['name'];
-
-	// Strip "-core" from group name to generate correct changelog and darcs urls
-	$parent['group'] = str_replace("-core","",$parent['group']);
 
 	$title = gettext("Package information:")." ".$arr['pkgname'];
 	$content = "<table border=\"0\" width=\"100%\">\n";
