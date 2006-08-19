@@ -351,10 +351,10 @@ function pkg_from_id($id)
 		else if(!isset($parent['group']))
 			$parent['group']=$i['name'];
 	if(!isset($parent['group']))
-    $parent['group']=$groups[0]['name'];
-  
-  // Strip "-core" from group name to generate correct changelog and darcs urls
-  $parent['group'] = str_replace("-core","",$parent['group']);
+	$parent['group']=$groups[0]['name'];
+
+	// Strip "-core" from group name to generate correct changelog and darcs urls
+	$parent['group'] = str_replace("-core","",$parent['group']);
 
 	$title = gettext("Package information:")." ".$arr['pkgname'];
 	$content = "<table border=\"0\" width=\"100%\">\n";
