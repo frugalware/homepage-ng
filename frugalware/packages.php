@@ -399,7 +399,8 @@ function pkg_from_id($id)
 	if ($arr['usize'] > 0) $content .= sprintf("%s%.2f%s", "<tr><td>" . gettext("Uncompressed size:") . "</td><td>", $arr['usize']/1048576, "MiB</td></tr>\n");
 	if ($arr['arch'] != 'NULL') $content .= "<tr><td>" . gettext("Arch:") . "</td><td>".$arr['arch']."</td></tr>\n";
 	if ($arr['desc'] != 'NULL') $content .= "<tr><td>" . gettext("Description:") . "</td><td>".$arr['desc']."</td></tr>\n";
-	if ($arr['maintainer'] != 'NULL') $content .= "<tr><td>" . gettext("Maintainer:") . "</td><td>".str_replace("@", " at ", htmlspecialchars($arr['maintainer']))."</td></tr>\n";
+	// FIXME: latin -> utf8 conversion hardwired
+	if ($arr['maintainer'] != 'NULL') $content .= "<tr><td>" . gettext("Maintainer:") . "</td><td>".iconv("ISO-8859-1", "UTF-8",str_replace("@", " at ", htmlspecialchars($arr['maintainer'])))."</td></tr>\n";
 	$content .= "<tr><td>" . gettext("Uploaded by:") . "</td><td>".$arr['login']."</td></tr>\n";
 	$content .= "<tr><td>" . gettext("Download:") . " </td><td><a href=\"/download/frugalware-" . $arr['fwver'] . "/frugalware-" . $arr['arch'] . "/" . $arr['pkgname'] . "-" . $arr['pkgver'] . "-" . $arr['arch'] . ".fpm\">" . $arr['pkgname'] . "-" . $arr['pkgver'] . "-" . $arr['arch'] . ".fpm</a></td></tr>";
 	$content .= "<tr><td>" . gettext("Forums:") . "</td><td><a href=\"http://forums.frugalware.org/index.php?t=search&amp;srch=".$arr['pkgname']."\">forums.frugalware.org</a></td></tr>\n";
