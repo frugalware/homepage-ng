@@ -28,19 +28,19 @@
 			Please refer to the Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Testing ChangeLog</a> for more information.<br />
 			Download for i686:<br />
 			<b>NOTE</b>: Don't download CDs 3-9 or the second DVD unless you don't have an internet connection<br />
-				<a href="/download/frugalware-current-iso/frugalware-0.5rc1-i686-net.iso">netinstall</a> (21M),
-				<a href="/download/frugalware-current-iso/frugalware-0.5rc1-i686-cd1.iso">cd1</a> (632M),
-				<a href="/download/frugalware-current-iso/frugalware-0.5rc1-i686-cd2.iso">cd2</a> (641M),
-				<a href="/download/frugalware-current-iso/frugalware-0.5rc1-i686-cd3.iso">cd3</a> (643M),
-				<a href="/download/frugalware-current-iso/frugalware-0.5rc1-i686-cd4.iso">cd4</a> (640M),
-				<a href="/download/frugalware-current-iso/frugalware-0.5rc1-i686-cd5.iso">cd5</a> (599M),
-				<a href="/download/frugalware-current-iso/frugalware-0.5rc1-i686-cd6.iso">cd6</a> (630M),
-				<a href="/download/frugalware-current-iso/frugalware-0.5rc1-i686-cd7.iso">cd7</a> (627M),
-				<a href="/download/frugalware-current-iso/frugalware-0.5rc1-i686-cd8.iso">cd8</a> (417M),
-				<a href="/download/frugalware-current-iso/frugalware-0.5rc1-i686-cd9.iso">cd9</a> (638M),
-				<a href="/download/frugalware-current-iso/frugalware-0.5rc1-i686-cd9.iso">cd10</a> (128M),
-				<a href="/download/frugalware-current-iso/frugalware-0.5rc1-i686-dvd1.iso">dvd1</a> (4.2G)
-				<a href="/download/frugalware-current-iso/frugalware-0.5rc1-i686-dvd2.iso">dvd2</a> (1.2G)
+				<a href="/download/frugalware-current-iso/frugalware-0.5rc2-i686-net.iso">netinstall</a> (21M),
+				<a href="/download/frugalware-current-iso/frugalware-0.5rc2-i686-cd1.iso">cd1</a> (632M),
+				<a href="/download/frugalware-current-iso/frugalware-0.5rc2-i686-cd2.iso">cd2</a> (641M),
+				<a href="/download/frugalware-current-iso/frugalware-0.5rc2-i686-cd3.iso">cd3</a> (643M),
+				<a href="/download/frugalware-current-iso/frugalware-0.5rc2-i686-cd4.iso">cd4</a> (640M),
+				<a href="/download/frugalware-current-iso/frugalware-0.5rc2-i686-cd5.iso">cd5</a> (599M),
+				<a href="/download/frugalware-current-iso/frugalware-0.5rc2-i686-cd6.iso">cd6</a> (630M),
+				<a href="/download/frugalware-current-iso/frugalware-0.5rc2-i686-cd7.iso">cd7</a> (627M),
+				<a href="/download/frugalware-current-iso/frugalware-0.5rc2-i686-cd8.iso">cd8</a> (417M),
+				<a href="/download/frugalware-current-iso/frugalware-0.5rc2-i686-cd9.iso">cd9</a> (638M),
+				<a href="/download/frugalware-current-iso/frugalware-0.5rc2-i686-cd9.iso">cd10</a> (128M),
+				<a href="/download/frugalware-current-iso/frugalware-0.5rc2-i686-dvd1.iso">dvd1</a> (4.2G)
+				<a href="/download/frugalware-current-iso/frugalware-0.5rc2-i686-dvd2.iso">dvd2</a> (1.2G)
 				<br />
 			SHA1SUMS:
 			<pre>
