@@ -81,7 +81,7 @@ class BaseHTMLProcessor(SGMLParser):
 				try:
 					str.index("http://")
 				except ValueError:
-					str = "http://frugalware.org/" + str
+					str = "http://frugalware.org" + str
 				self.pieces.append("%d. %s\n" % (self.refs.index(i)+1, str))
 		return string.strip("".join(self.pieces))
 
