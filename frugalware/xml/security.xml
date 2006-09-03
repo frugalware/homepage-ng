@@ -35,10 +35,7 @@
 		<unaffected>1.2.3-2wanda1</unaffected>
 		<bts>http://bugs.frugalware.org/983</bts>
 		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-0059</cve>
-		<desc><![CDATA[
-			zlib is a compression/decompression library.<br />
-			This is just a fake FSA for testing purposes.<br />
-			]]>
-		</desc>
+		<desc>zlib is a compression/decompression library.
+			This is just a fake FSA for testing purposes.</desc>
 	</fsa>
 </fsas>
