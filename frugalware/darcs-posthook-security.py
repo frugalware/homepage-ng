@@ -76,7 +76,7 @@ if __name__ == "__main__":
 	if f.id > latest:
 		import smtplib
 		fro = f.author + " <noreply@frugalware.org>"
-		to = "frugalware-security@gmail.com"
+		to = "frugalware-security@frugalware.org"
 		msg = "From: %s \r\nTo: %s\r\nSubject: %s\r\n\r\n" \
 			% (fro, to, f.subject)
 		msg += f.output()
