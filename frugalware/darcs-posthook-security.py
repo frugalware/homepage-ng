@@ -60,7 +60,7 @@ If found, then you should upgrade to the latest version:
 """ % (self.package, self.package, self.package))
 
 	def output(self):
-		pout, pin = popen2.popen2('gpg --comment "%s" --clearsign' % self.comment) #TODO: -u id
+		pout, pin = popen2.popen2('gpg --comment "%s" --clearsign -u 20F55619' % self.comment)
 		pin.write("".join(self.lines))
 		pin.close()
 		ret = "".join(pout.readlines())
