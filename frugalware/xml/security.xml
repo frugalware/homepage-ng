@@ -2,14 +2,23 @@
 <!DOCTYPE fsas [
 <!ELEMENT fsas (fsa)*>
 <!ELEMENT fsa (id , date , author, package, vulnerable , unaffected , bts , cve , desc)>
+<!-- must be an integer -->
 <!ELEMENT id (#PCDATA)>
+<!-- in YYYY-MM-DD format -->
 <!ELEMENT date (#PCDATA)>
+<!-- your darcs account, if an error occures, a mail will be sent to author@frugalware.org -->
 <!ELEMENT author (#PCDATA)>
+<!-- package name, without group, version, etc -->
 <!ELEMENT package (#PCDATA)>
+<!-- the old version -->
 <!ELEMENT vulnerable (#PCDATA)>
+<!-- the new (backported) version -->
 <!ELEMENT unaffected (#PCDATA)>
+<!-- bts url -->
 <!ELEMENT bts (#PCDATA)>
+<!-- cve url -->
 <!ELEMENT cve (#PCDATA)>
+<!-- description, can be more than one line -->
 <!ELEMENT desc (#PCDATA)>
 ]>
 
