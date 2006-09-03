@@ -211,9 +211,3 @@ elseif ($page['current_format']!='text')
 //
 include("layout.php");
 
-
-
-
-  
-
-

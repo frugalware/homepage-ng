@@ -245,11 +245,11 @@ if (isset($page['post']['pid']))
 if (isset($_GET['help']))
 {
 	?>
-	<h1>What is pastebin?</h1>
-	<p>pastebin is here to help you collaborate on debugging code snippets. If you're
+	<h1>What is Frugalware Pastebin?</h1>
+	<p>Frugalware Pastebin is here to help you collaborate on debugging code snippets. If you're
 	not familiar with the idea, most people use it like this:</p>
 	<ul>
-	<li><a href="/">submit</a> a code fragment to pastebin, getting a url like http://pastebin.com/1234</li>
+	<li><a href="/paste">submit</a> a code fragment to pastebin, getting a url like http://frugalware.org/paste/1234</li>
 	<li>paste the url into an IRC or IM conversation</li>
 	<li>someone responds by reading and perhaps submitting a modification of your code</li>
 	<li>you then view the modification, maybe using the built in diff tool to help locate the changes</li>
@@ -261,59 +261,6 @@ if (isset($_GET['help']))
 	'diff' link which allows you to compare the changes between the old and the new version</p>
 <p>This is a powerful feature, great for seeing exactly what lines someone changed.</p>	
 
-	
-	<h1>What's a private pastebin and how do I get one?</h1>
-	<p>You get a private pastebin simply by thinking up a domain name no-one else is using,
-	e.g. http://private.pastebin.com or http://this-is-my.pastebin.com. Posts made into a
-	subdomain only show up on that domain, making it easy for you to collaborate without the
-	'noise' of the regular service at <a href="http://pastebin.com">http://pastebin.com</a>.</p>
-	
-	<p>All you need to do is change the web address in your browser to access a private pastebin,
-	or you can simply enter the domain you'd like below</p>
-	
-	<form method="get" action="<?php echo $CONF['this_script']?>">
-	<input type="hidden" name="help" value="1"/>
-	<p>Go to http://<input type="text" name="goprivate" value="<?php echo stripslashes($_GET['goprivate']) ?>" size="10"/>.pastebin.com 
-	<input type="submit" name="go" value="Go"/></p>
-	<?php if (isset($_GET['goprivate'])) { echo "<p>Please use only characters a-z,0-9, dash '-' and period '.'. Your name must start and end with a letter or number.</p>"; } ?>
-	</form>
-	
-	<p>Please note that there is no password protection - subdomains are accessible to anyone
-	who knows the domain name you've chosen, but we do not publish a list of domains used.</p>
-	
-	<h1>Subdomains for your language...</h1>
-	
-	<p>If a subdomain matches a language name, the required syntax highlighting is selected
-		for you, so ruby.pastebin.com will preselect Ruby automatically. </p>
-	
-	<p><?php 
-	
-	$sep="";
-	foreach($CONF['all_syntax'] as $langcode=>$langname)
-	{
-		if ($langcode=='text')
-			$langname="Plain Text";
-		echo "{$sep}<a title=\"{$langname} Pastebin\" href=\"http://{$langcode}.pastebin.com\">{$langname}</a>";
-		$sep=", ";
-	}	
-		
-		
-		?></p>
-	
-	<h1>And this is all free?</h1>
-	<p>It will always be free, our hosting and maintenance costs are paid for through advertising.</p>
-	
-	<h1>Can I get the source?</h1>
-	<p>The source code to this site is available under a GPL licence. You can <a title="Pastebin source code, 130Kb" href="pastebin.tar.gz">download it here</a></p>
-	
-	<p>More news available on my <a title="View pastebin related posts on my blog" href="http://blog.dixo.net/category/pastebin/">blog</a>.</p>
-
-	
-	<h1>I have some feedback, who do I contact?</h1>
-	<p>Use the feedback box in the sidebar or email <script type="text/javascript">eval(unescape('%64%6f%63%75%6d%65%6e%74%2e%77%72%69%74%65%28%27%3c%61%20%68%72%65%66%3d%22%6d%61%69%6c%74%6f%3a%70%61%75%6c%40%65%6c%70%68%69%6e%2e%63%6f%6d%22%20%3e%50%61%75%6c%20%44%69%78%6f%6e%3c%2f%61%3e%27%29%3b'))</script> 
-	</p>
-	
- 
 	<?php
 }
 else
