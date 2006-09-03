@@ -8,6 +8,7 @@ mos:
 	done
 	# ugly hack till we don't know how to handle multiple apply hooks..
 	cd ../.. && python frugalware/darcs-posthook.py
+	cd ../.. && python frugalware/darcs-posthook-security.py
 
 pot:
 	intltool-update --pot --gettext-package=homepage
