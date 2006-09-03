@@ -96,6 +96,7 @@ for a variety of options.</p>
 <p>Pastebin is a tool for collaborative debugging or editing, <a href="<?php echo $CONF['this_script'].'?help=1' ?>">see help</a>
 for more information.</p>
 
+</div>
 <div id="content">
 	
 	<?php
