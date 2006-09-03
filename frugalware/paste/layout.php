@@ -92,81 +92,9 @@ for a variety of options.</p>
 <li><a href="<?php echo $CONF['this_script'] ?>">Make new post</a></li>
 </ul>
 
-<h1>News</h1>
-<p>You can now choose how long your posts
-are retained for. More features coming soon for
-helping you store permanent snippets of code</p>
-
-<?php
-if ($subdomain=='')
-{
-?>
-
-<h1>Free subdomains!</h1>
-<p>Want your own xyz.pastebin.com sub-domain for your community? 
-Just type the address into your browser address bar! 
-<a href="<?php echo $CONF['this_script'].'?help=1' ?>">See help</a> for more information</p>
-	
-<?php 
-}
-?>
-
 <h1>About</h1>
 <p>Pastebin is a tool for collaborative debugging or editing, <a href="<?php echo $CONF['this_script'].'?help=1' ?>">see help</a>
 for more information.</p>
-
-<p>More news available on my <a title="View pastebin related posts on my blog" href="http://blog.dixo.net/category/pastebin/">blog</a>.</p>
-
-<p>Please send feedback below...</p>
-
-<?php 
-if (isset($page['thankyou']))
-{
-	echo "<p style=\"color:red;\">{$page['thankyou']}</p>";
-}
-else
-{
-?>
-<a name="feedback"></a>
-<form method="post" action="<?php echo $CONF['this_script'].'#feedback' ?>">
-<textarea name="msg" rows="5" style="width:100%;font-size:8pt;font-family:Arial;"></textarea>
-<input type="hidden" name="feedback" value="1"/>
-<input type="submit" value="send feedback"/>
-</form>
-<?php } ?>
-
-
-
-<form method="get" action="http://www.php.net/search.php">
-<h1>PHP Manual</h1>
-<input type="text" size="9" name="pattern"/>
-<input type="hidden" name="show" value="quickref"/>
-<input type="submit" value="go"/>
-</form>
-
-<form method="get" action="http://www.mysql.com/search/?">
-<h1>MySQL Manual</h1>
-<input type="hidden" name="base" value="http://dev.mysql.com"/>
-<input type="hidden" name="lang" value="en"/>
-<input type="hidden" name="doc" value="1"/>
-<input type="hidden" name="m" value="o"/>
-<input type="text" size="9" name="q"/>
-<input type="submit" value="go"/>
-</form>
-
-<h1>Credits</h1>
-<p>Developed and hosted by <a title="My blog, mainly about software development" href="http://blog.dixo.net">Paul Dixon</a></p>
-
-<!--  
-<p>
-    <a href="http://validator.w3.org/check/referer"><img
-        src="http://www.w3.org/Icons/valid-xhtml10"
-        alt="Valid XHTML 1.0!" height="31" width="88" border="0"/></a>
-</p>
--->
-
-</div>
-
 
 <div id="content">
 	
