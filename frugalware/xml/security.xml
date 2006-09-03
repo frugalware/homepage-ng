@@ -6,7 +6,7 @@
 <!ELEMENT id (#PCDATA)>
 <!-- in YYYY-MM-DD format -->
 <!ELEMENT date (#PCDATA)>
-<!-- your darcs account, if an error occures, a mail will be sent to author@frugalware.org -->
+<!-- your nick, then the From header will be something like "nick <noreply@frugalware.org>" -->
 <!ELEMENT author (#PCDATA)>
 <!-- package name, without group, version, etc -->
 <!ELEMENT package (#PCDATA)>
@@ -29,7 +29,7 @@
 	<fsa>
 		<id>1</id>
 		<date>2006-09-03</date>
-		<author>vmiklos</author>
+		<author>VMiklos</author>
 		<package>zlib</package>
 		<vulnerable>1.2.3-1</vulnerable>
 		<unaffected>1.2.3-2wanda1</unaffected>
