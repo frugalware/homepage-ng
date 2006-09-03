@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fsas [
+<!ELEMENT fsas (fsa)*>
+<!ELEMENT fsa (id , date , package, vulnerable , unaffected , bts , cve , desc)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT language (#PCDATA)>
+<!ELEMENT where (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT link (#PCDATA)>
+]>
+
+<!-- if you modify this file, be sure it's still valid - xmllint is your friend
+-->
+
+<fsas>
+	<fsa>
+		<id>1</id>
+		<date>2006-09-03</date>
+		<package>zlib</package>
+		<vulnerable>1.2.3-1</vulnerable>
+		<unaffected>1.2.3-2wanda1</unaffected>
+		<bts>http://bugs.frugalware.org/983</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-0059</cve>
+		<desc>zlib is a compression/decompression library.<br />
+			This is just a fake FSA for testing purposes</desc>
+	</fsa>
+</fsas>
