@@ -12,6 +12,18 @@
 ]>
 <news>
 	<post>
+		<id>44</id>
+		<title>Frissítés az újabb típusú nvidia csomagra</title>
+		<date>Sat Sep  9 00:20:50 CEST 2006</date>
+		<author>Boobaa</author>
+		<content><![CDATA[
+			Többeknek gondot okozott a régi (telepítéskor helyben fordított) nvidia csomagról az újabb, bináris csomagra való frissítés. Íme a megoldás (feltéve, hogy az adatbázis és a többi csomag naprakész):<br />
+			<pre>pacman -Sfd nvidia --noconfirm</pre>
+			Reméljük, hogy jövő vasárnap az SFD-n már legalább az érintettek fújják, hogyan kell 0.4-ről 0.5-re frissíteni - már ami az nvidiát illeti...
+			]]>
+		</content>
+	</post>
+	<post>
 		<id>43</id>
 		<title>Megjelent a Frugalware 0.5rc2 (Siwenna)</title>
 		<date>Fri Sep  3 22:59:15 CEST 2006</date>

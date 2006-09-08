@@ -12,6 +12,18 @@
 ]>
 <news>
 	<post>
+		<id>44</id>
+		<title>Upgrade to the new type of nvidia package</title>
+		<date>Sat Sep  9 00:35:47 CEST 2006</date>
+		<author>Boobaa</author>
+		<content><![CDATA[
+      It was a trouble for several users to upgrade the old nvidia package (locally-compiled at install) to the new, binary one. Here is the solution (provided that the database and the other packages are up-to-date):<br />
+			<pre>pacman -Sfd nvidia --noconfirm</pre>
+			(No, it does not mean that we dislike the Software Freedom Day...)
+			]]>
+		</content>
+	</post>
+	<post>
 		<id>43</id>
 		<title>Frugalware 0.5rc2 (Siwenna) released</title>
 		<date>Fri Sep  1 11:26:39 CEST 2006</date>
