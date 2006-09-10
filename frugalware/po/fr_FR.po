@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: fr_FR\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-06-20 00:39+0200\n"
-"PO-Revision-Date: 2006-06-20 02:11+0100\n"
+"PO-Revision-Date: 2006-09-10 03:44+0100\n"
 "Last-Translator: Enda <enda@netou.com>\n"
 "Language-Team: French <traduc@traduc.org>\n"
 "MIME-Version: 1.0\n"
@@ -23,7 +23,7 @@ msgstr "Frugalware est une distribution Linux à vocation généraliste, conçue pou
 
 #: ../about.php:36
 msgid "What branches does Frugalware have?"
-msgstr "De quelle branches Frugalware dispose?"
+msgstr "Quelle sont les branches de Frugalware?"
 
 #: ../about.php:37
 msgid "We have a <i>current</i> and a <i>stable</i> branch. The <i>current</i> branch is updated daily, and we update our <i>stable</i> branch around every 6 months."
@@ -43,7 +43,7 @@ msgstr "Quelle est la licence de Frugalware?"
 
 #: ../about.php:41
 msgid "That's two questions. Most software included in Frugalware have a GPL or BSD compatible license, for more information about a license of a specific package, refer to the LICENSE or COPYRIGHT file in the source tarball of the package. On the other hand, the part written by our team (FrugalBuild scripts, setup, homepage, etc) is released under GPL license. To make it even more complicated, some parts of the setup and init scripts are written by Patrick J. Volkerding. We GPL our additions, but Patrick J. Volkerding's code is still under the BSD license. For more information, refer to the COPYRIGHT file in the root directory of the FST (Frugalware Source Tree)."
-msgstr "Il s'agit de deux questions. La plupart des logiciels inclus dans Frugalware ont une licence compatible GPL ou BSD, pour plus d'information sur la licence d'un paquet spécifique, se référer au fichier LICENSE ou COPYRIGHT dans les fichiers sources du paquet. D'un autre coté, les éléments écrit par notre équipe (les scripts FrugalBuild, configuration, page d'accueil, etc) sont produit sous licence GPL. Pour rendre les chose un peu plus compliquées, certaines partie des éléments de configurations et scripts de démarrage ont été écrits par Patrick J. Volkerding. Nous avons laissé sous GPL nos ajouts, mais les codes de Patrick J. Volkerding's sont encore sous licence BSD. Pour plus d'informations, referez vous au fichier COPYRIGHT à la racine du FST (Frugalware Source Tree)."
+msgstr "Il s'agit de deux questions. La plupart des logiciels inclus dans Frugalware ont une licence compatible GPL ou BSD, pour plus d'information sur la licence d'un paquet spécifique, se référer au fichier LICENSE ou COPYRIGHT dans les fichiers sources du paquet. D'un autre coté, les éléments écrits par notre équipe (les scripts FrugalBuild, configuration, page d'accueil, etc) sont produits sous licence GPL. Pour rendre les choses un peu plus compliquées, certaines parties des éléments de configurations et scripts de démarrage ont été écrits par Patrick J. Volkerding. Nous avons laissé sous GPL nos ajouts, mais les codes de Patrick J. Volkerding's sont encore sous licence BSD. Pour plus d'informations, referez vous au fichier COPYRIGHT à la racine du FST (Frugalware Source Tree)."
 
 #: ../about.php:42
 msgid "What package manager does Frugalware use?"
@@ -59,7 +59,7 @@ msgstr "Comment est-ce que Frugalware gère la mise à jour des paquets obsolètes?
 
 #: ../about.php:45
 msgid "We don't have any standalone program for updating packages as pacman manages this task too. To update your package database, use <tt>pacman&nbsp;-Sy</tt>, and to update your packages according the just synchronized package database, you use <tt>pacman&nbsp;-Su</tt>. To install a package with the necessary dependencies directly from a mirror ftp server, you issue <tt>pacman&nbsp;-S&nbsp;foo</tt>. For more information, refer to the pacman man page."
-msgstr "Nous n'avons pas de programme indépendant pour la mise à jour des paquets parce que pacman gère aussi cela. Pour mettre à jour la liste de vos paquets, utilisez <tt>pacman&nbsp;-Sy</tt>, et pour mettre à jours vos paquets conformément à la liste que vous venez d'actualiser, vous pouvez utiliser <tt>pacman&nbsp;-Su</tt>. Pour installer un paquet avec les dépendances nécessaires directement depuis un miroir ftp, tapez <tt>pacman&nbsp;-S&nbsp;foo</tt>. Pour plus d'informations, référez à la doc \"man pacman\"."
+msgstr "Nous n'avons pas de programme indépendant pour la mise à jour des paquets parce que pacman gère aussi cela. Pour mettre à jour la liste de vos paquets, utilisez <tt>pacman&nbsp;-Sy</tt>, et pour mettre à jours vos paquets conformément à la liste que vous venez d'actualiser, vous pouvez utiliser <tt>pacman&nbsp;-Su</tt>. Pour installer un paquet avec les dépendances nécessaires directement depuis un miroir ftp, tapez <tt>pacman&nbsp;-S&nbsp;foo</tt>. Pour plus d'informations, référez vous à la doc \"man pacman\"."
 
 #: ../about.php:46
 msgid "Is there any community support available for Frugalware?"
@@ -67,7 +67,7 @@ msgstr "Y'a t'il un support communautaire pour Frugalware?"
 
 #: ../about.php:47
 msgid "Currently we have three mailing lists, an irc channel and forums that can be used to communicate with us or other users and to get help. The irc channel is on the Freenode network (server: irc.freenode.net). For more information about our mailing lists, please refer to the <a href=\"mailman/listinfo\">list section</a> of our web site."
-msgstr "Actuellement nous avons trois mailing lists, un canal irc et des forums qui peuvent être utilisés pour communiquer avec nous ou d'autres utilisateurs et obtenir de l'aide [NDT: je ne suis pas irc, mais pour le reste je suis dispo]. Le canal irc est sur le réseau Freenode (serveur: irc.freenode.net). Pour plus d'information au sujet de nos mailing lists, merci de vous référer  à la <a href=\"mailman/listinfo\">section listes</a> de notre site web."
+msgstr "Actuellement nous avons trois mailing listes, un canal irc et des forums qui peuvent être utilisés pour communiquer avec nous ou d'autres utilisateurs et obtenir de l'aide. Le canal irc est sur le réseau Freenode (serveur: irc.freenode.net). Pour plus d'information au sujet de nos mailing lists, merci de vous référer  à la <a href=\"mailman/listinfo\">section listes</a> de notre site web."
 
 #: ../about.php:48
 msgid "Is there any commercial support available for Frugalware?"
@@ -79,11 +79,11 @@ msgstr "Non, il n'y en a pas actuellement, et ce n'est <i>actuellement</i> pas p
 
 #: ../about.php:50
 msgid "For whom is Frugalware recommended to use?"
-msgstr "A l'intention de qui Frugalware est elle déstinée?"
+msgstr "A quel type(s) d'utilisateurs Frugalware est elle déstinée?"
 
 #: ../about.php:51
 msgid "Frugalware is designed for intermediate users. Installing Frugalware is not a magic, of course, but you should know what a partition, an MBR (Master Boot Record), etc. is."
-msgstr "Frugalware est prévue pour les utilisateur de niveau intermédiaire. Installer Frugalware n'est évidement pas un tour de magie, mais vous devez savoir ce qu'est une partition, une MBR (Master Boot Record), etc..."
+msgstr "Frugalware est prévue pour les utilisateurs de niveau intermédiaire. Installer Frugalware n'est évidement pas un tour de magie, mais vous devez savoir ce qu'est une partition, une MBR (Master Boot Record), etc..."
 
 #: ../about.php:52
 msgid "How to become a developer?"
@@ -123,7 +123,7 @@ msgstr "Avez vous prévu de distribuer un live cd?"
 
 #: ../about.php:61
 msgid "Well, we have already a live cd, called FwLive. Now it supports only i686 version, but the x86_64 version is also under development. You can find it <a href=\"http://fwlive.frugalware.hu\">here</a>."
-msgstr "Et bien, nous avons déja un live cd, appelé FwLive. Pour le moment il ne fonctionne que sur i686, mais la plateforme x86_64 est également en cours développement. Vous pouvez le trouver <a href=\"http://fwlive.frugalware.hu\">ici</a> [NDT: ne vous y fiez pas trop, si la distrib est sensas, je trouve que le live cd ne lui rend pas grâce pour le moment]."
+msgstr "Et bien, nous avons déja un live cd, appelé FwLive. Pour le moment il ne fonctionne que sur i686, mais la plateforme x86_64 est également en cours développement. Vous pouvez le trouver <a href=\"http://fwlive.frugalware.hu\">ici</a>."
 
 #: ../about.php:62
 msgid "Does Frugalware support languages other than English?"
@@ -131,7 +131,7 @@ msgstr "Est-ce que Frugalware supporte d'autre langues que l'anglais?"
 
 #: ../about.php:63
 msgid "Yes, it supports all languages supported by the packages. If the init scripts or the setup is not available in your language, then it simply means it haven't yet translated."
-msgstr "Oui, toutes les langues supportées par les paquets. si les scripts d'initialisation ou de configuration ne sont pas disponibles dans votre langue, cela veut simplement dire que ça n'a pas encore été traduit."
+msgstr "Oui, toutes les langues supportées par les paquets. si les scripts d'initialisation ou de configuration ne sont pas disponibles dans votre langue, cela veut simplement dire qu'ils n'ont pas encore été traduits."
 
 #: ../about.php:64
 msgid "What about Asian languages?"
@@ -206,7 +206,7 @@ msgstr "Documentation"
 
 #: ../config.inc.php:49
 msgid "Community"
-msgstr "Communité"
+msgstr "Communauté"
 
 #: ../config.inc.php:51
 msgid "Mailing Lists"
@@ -226,7 +226,7 @@ msgstr "IRC"
 
 #: ../config.inc.php:55
 msgid "Screenshots"
-msgstr "Capture d'écran"
+msgstr "Captures d'écran"
 
 #: ../config.inc.php:56
 msgid "Map"
@@ -309,7 +309,7 @@ msgid ""
 "page and send the developer a mail.</div>"
 msgstr ""
 "<div align=left>Les dons sont un bon moyen de montrer votre appréciation\n"
-"et voter soutient à Frugalware Linux. Sur cette page nous listons les dons que\n"
+"et votre soutient à Frugalware Linux. Sur cette page nous listons les dons que\n"
 "nous avons déjà reçus et ceux qui nous aideraient dans notre travail sur Frugalware Linux.;\n"
 "Si vous avez du matériel ou quelque chose qui pourrait améliorer le support Frugalware support,\n"
 "un bon moyen de contribuer serait de le donner à un développeur.<br /><br />\n"
@@ -371,7 +371,7 @@ msgstr "Obtenir un CD"
 #: ../header.php:72
 #, php-format
 msgid "Uptime:<br /> %d day(s) %d h %d m %d s"
-msgstr "Uptime:<br /> %d day(s) %d h %d m %d s"
+msgstr "Temps de fonctionnement:<br /> %d jour(s) %d h %d m %d s"
 
 #: ../header.php:119
 #: ../packages.php:91
@@ -508,7 +508,7 @@ msgstr "Chercher un paquet:"
 
 #: ../packages.php:64
 msgid "Search for substring"
-msgstr "Chercher un sous chaine"
+msgstr "Chercher une sous chaine"
 
 #: ../packages.php:66
 msgid "Search in description"
@@ -814,5 +814,4 @@ msgstr "Installateur"
 #: ../screenshots.php:147
 msgid "Default Desktop"
 msgstr "Bureau par défaut"
-
 
