@@ -144,7 +144,7 @@ function getllang($lang)
 	$langs = array(
 		"en" => "en_US",
 		"fr" => "fr_FR",
-		"hu" => "hu_HU"
+		"hu" => "hu_HU",
 		"pl" => "pl_PL"
 	);
 	return $langs[$lang];
@@ -155,7 +155,7 @@ function getnlang($lang)
 	$nlangs = array(
 		"en_US" => "English",
 		"fr_FR" => "French",
-		"hu_HU" => "Hungarian"
+		"hu_HU" => "Hungarian",
 		"pl_PL" => "Polish"
 	);
 	return $nlangs[$lang];
