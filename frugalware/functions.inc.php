@@ -145,6 +145,7 @@ function getllang($lang)
 		"en" => "en_US",
 		"fr" => "fr_FR",
 		"hu" => "hu_HU"
+		"pl" => "pl_PL"
 	);
 	return $langs[$lang];
 }
@@ -155,6 +156,7 @@ function getnlang($lang)
 		"en_US" => "English",
 		"fr_FR" => "French",
 		"hu_HU" => "Hungarian"
+		"pl_PL" => "Polish"
 	);
 	return $nlangs[$lang];
 }
