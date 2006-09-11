@@ -229,7 +229,7 @@ if (strlen($page['post']['posttitle']))
 		
 		echo "<span id=\"copytoclipboard\"></span>";
 		
-		echo "<a href=\"/\" title=\"make new post\">new post</a>";
+		echo "<a href=\"/paste\" title=\"make new post\">new post</a>";
 		
 		echo "</h1>";
 }
