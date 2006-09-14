@@ -99,7 +99,7 @@ function display_feed($feed, $param)
 	}
 	else if ($feed=="blog")
 	{
-		if ($feed = $rss->get("http://blogs.frugalware.org/xmlsrv/rss2.php?blog=1"))
+		if ($feed = $rss->get("http://planet.frugalware.org/rss20.xml"))
 		{
 			$lines=array();
 			foreach($feed['items'] as $item)

@@ -67,7 +67,7 @@ $menucontent .= '	<a href="' . $fwng_root . 'roadmap">' . gettext('Roadmap') . "
 $menucontent .= '	<a href="http://darcs.frugalware.org/">' . gettext('Darcs repository') . "</a>\n";
 $menucontent .= '	<a href="http://bugs.frugalware.org/">' . gettext('Bug Tracker') . "</a>\n";
 $menucontent .= '	<a href="' . $fwng_root . 'changelog">' . gettext('ChangeLog') . "</a>\n";
-$menucontent .= '	<a href="http://blogs.frugalware.org/">' . gettext('Blogs') . "</a>\n";
+$menucontent .= '	<a href="http://planet.frugalware.org/">' . gettext('Blogs') . "</a>\n";
 $menucontent .= '	<a href="' . $fwng_root . 'donations">' . gettext('Donations') . "</a>\n";
 $menucontent .= '	<a href="' . $fwng_root . 'authors/devel">' . gettext('Developers') . "</a>\n";
 $menucontent .= '	<a href="' . $fwng_root . 'authors/contrib">' . gettext('Contributors') . "</a>\n";

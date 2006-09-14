@@ -127,7 +127,7 @@ switch($_GET['type'])
 		die();
 	case "blogs":
 		header('Content-Type: application/xml; charset=utf-8');
-		print(file_get_contents("http://blogs.frugalware.org/xmlsrv/rss2.php?blog=1"));
+		print(file_get_contents("http://planet.frugalware.org/rss20.xml"));
 		die();
 	default:
 		include("header.php");
