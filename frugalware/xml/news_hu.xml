@@ -17,7 +17,7 @@
 		<date>Wed Sep 14 09:10:25 CEST 2006</date>
 		<author>Boobaa</author>
 		<content><![CDATA[
-			A Frugalware Fejlesztői Csapat örömmel <a href="/news/45">jelenti be</a> a Frugalware 0.5 azonnali elérhetőségét, mint ötödik stabil kidásunkat.<br />
+			A Frugalware Fejlesztői Csapat örömmel <a href="/news/45">jelenti be</a> a Frugalware 0.5 azonnali elérhetőségét, mint ötödik stabil kiadásunkat.<br />
 			Egy rövid, nem teljes lista a 0.5rc2 óta történt változásokról:<br />
 			<ul>
 				<li>Linux 2.6.17.11</li>
@@ -36,7 +36,7 @@
 				<li>fwmirror: egy új eszköz a Frugalware tükrözéséhez.</li>
 			</ul>
 			Bővebb információért tekintse meg a Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-0.5/ChangeLog.txt">0.5 Változások Listáját</a>.<br />
-			Ha nincs helye a Frugalware tükrözéséhez, de szeretne más i686 felhasználóknak hamar a Frugalware-hez jutni, használja a <a href="http://linuxtracker.org/torrents-details.php?id=2863">CD</a> vagy <a href="http://linuxtracker.org/torrents-details.php?id=2864">DVD</a> torrenteket.<br />
+			Ha nincs helye a Frugalware tükrözéséhez, de szeretné megkönnyíteni más i686 felhasználók gyors hozzáférését a Frugalware-hez, használja a <a href="http://linuxtracker.org/torrents-details.php?id=2863">CD</a> vagy <a href="http://linuxtracker.org/torrents-details.php?id=2864">DVD</a> torrenteket.<br />
 			Ha támogatni szeretne bennünket a hatalmas képfájlok letöltése nélkül, rendelje meg az <a href="http://on-disk.com/product_info.php/products_id/162">i686 CD-ket</a>, <a href="http://on-disk.com/product_info.php/products_id/163">i686 DVD-ket</a>, <a href="http://on-disk.com/product_info.php/products_id/164">x86_64 CD-ket</a> vagy <a href="http://on-disk.com/product_info.php/products_id/165">x86_64 DVD-ket</a>, ugyanis az összeg egy része a Frugalware folyamatos fejlesztésére fordítódik!<br />
 			Letöltés i686-ra:<br />
 				<a href="/download/frugalware-0.5-iso/frugalware-0.5-i686-net.iso">netinstall</a> (21M),
@@ -631,7 +631,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
 		<date>2005. sze. 15., csütörtök, 22.15.47 CEST</date>
 		<author>VMiklos</author>
 		<content><![CDATA[
-			</p><div align="left">A Frugalware Fejlesztői Csapat örömmel jelenti be a Frugalware 0.3rc1-i686 azonnali elérhetőségét, mely a 0.3-i686 stabil verzió első kidásra jelölt változata.
+			</p><div align="left">A Frugalware Fejlesztői Csapat örömmel jelenti be a Frugalware 0.3rc1-i686 azonnali elérhetőségét, mely a 0.3-i686 stabil verzió első kiadásra jelölt változata.
 			Egy rövid lista a legfontosabb változásokról, melyek a 0.3pre2-i686 óta történtek:<ul><li>Újdonságok:
 				<ul><li>Telepítő: megjelent az XFS támogatás, valamint beállíthatjuk a telepítés forrását (telepítés saját tükörről vagy HDD-ről)
 				</li><li>Elkészültek a nyelvi csomagok a hunspellhez és az mbrolához.
