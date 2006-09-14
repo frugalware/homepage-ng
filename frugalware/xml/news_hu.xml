@@ -12,6 +12,94 @@
 ]>
 <news>
 	<post>
+		<id>45</id>
+		<title>Megjelent a Frugalware 0.5 (Siwenna) i686-ra és x86_64-re</title>
+		<date>Wed Sep 14 09:10:25 CEST 2006</date>
+		<author>Boobaa</author>
+		<content><![CDATA[
+			A Frugalware Fejlesztői Csapat örömmel <a href="/news/45">jelenti be</a> a Frugalware 0.5 azonnali elérhetőségét, mint ötödik stabil kidásunkat.<br />
+			Egy rövid, nem teljes lista a 0.5rc2 óta történt változásokról:<br />
+			<ul>
+				<li>Linux 2.6.17.11</li>
+				<li>Büszkék vagyunk rá, hogy egyike vagyunk az első disztribúcióknak, akik a stabil GNOME 2.16-ot szállítják</li>
+				<li>20 új csomag</li>
+			</ul>
+			Ha nem követte a változásokat a pre/rc kiadások alatt, íme a legfontosabb változások a 0.4 óta:<br />
+			<ul>
+				<li>Naprakész csomagok: GNU C Library 2.4, GCC 4.1.1, KDE 3.5.4, XOrg 7.1, OpenOffice.org 2.0.3 (natív változat a x86_64 felhasználóknak is)</li>
+				<li>Biztonsági támogatás: a Frugalware-0.5 megjelenésétől a stabil Frugalware-0.6 megjelenéséig biztonságilag támogatott. A -stable frissítések csak biztonsági, illetve hibajavításokat tartalmaznak, újdonságok nélkül.</li>
+				<li>Egy új, 'setup' nevű eszköz az elérhető konfigurációs eszközök összegyűjtésére.</li>
+				<li>Lokalizált csomagkezelő (francia, német és magyar fordítások elérhetők)</li>
+				<li>Váltás bootsplashről splashyre, így az indítási képernyő bármilyen saját vanilla kernellel is használható.</li>
+				<li>Fejlesztések a telepítőben: drótnélküli támogatás, más disztribúciók és operációs rendszerek felismerésének támogatása, utf8-specifikus frissítések, minden csomag elérhető CD-ken.</li>
+				<li>fw-xgl-control: könnyen engedélyezhető/letiltható az Xgl a rendszerén, egyetlen egyszerű paranccsal.</li>
+				<li>fwmirror: egy új eszköz a Frugalware tükrözéséhez.</li>
+			</ul>
+			Bővebb információért tekintse meg a Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-0.5/ChangeLog.txt">0.5 Változások Listáját</a>.<br />
+			Ha nincs helye a Frugalware tükrözéséhez, de szeretne más i686 felhasználóknak hamar a Frugalware-hez jutni, használja a <a href="http://linuxtracker.org/torrents-details.php?id=2863">CD</a> vagy <a href="http://linuxtracker.org/torrents-details.php?id=2864">DVD</a> torrenteket.<br />
+			Ha támogatni szeretne bennünket a hatalmas képfájlok letöltése nélkül, rendelje meg az <a href="http://on-disk.com/product_info.php/products_id/162">i686 CD-ket</a>, <a href="http://on-disk.com/product_info.php/products_id/163">i686 DVD-ket</a>, <a href="http://on-disk.com/product_info.php/products_id/164">x86_64 CD-ket</a> vagy <a href="http://on-disk.com/product_info.php/products_id/165">x86_64 DVD-ket</a>, ugyanis az összeg egy része a Frugalware folyamatos fejlesztésére fordítódik!<br />
+			Letöltés i686-ra:<br />
+				<a href="/download/frugalware-0.5-iso/frugalware-0.5-i686-net.iso">netinstall</a> (21M),
+				<a href="/download/frugalware-0.5-iso/frugalware-0.5-i686-cd1.iso">cd1</a> (644M),
+				<a href="/download/frugalware-0.5-iso/frugalware-0.5-i686-cd2.iso">cd2</a> (644M),
+				<a href="/download/frugalware-0.5-iso/frugalware-0.5-i686-cd3.iso">cd3</a> (638M),
+				<a href="/download/frugalware-0.5-iso/frugalware-0.5-i686-cd4.iso">cd4</a> (639M),
+				<a href="/download/frugalware-0.5-iso/frugalware-0.5-i686-cd5.iso">cd5</a> (590M),
+				<a href="/download/frugalware-0.5-iso/frugalware-0.5-i686-cd6.iso">cd6</a> (627M),
+				<a href="/download/frugalware-0.5-iso/frugalware-0.5-i686-cd7.iso">cd7</a> (632M),
+				<a href="/download/frugalware-0.5-iso/frugalware-0.5-i686-cd8.iso">cd8</a> (427M),
+				<a href="/download/frugalware-0.5-iso/frugalware-0.5-i686-cd9.iso">cd9</a> (640M),
+				<a href="/download/frugalware-0.5-iso/frugalware-0.5-i686-cd10.iso">cd10</a> (129M),
+				<a href="/download/frugalware-0.5-iso/frugalware-0.5-i686-dvd1.iso">dvd1</a> (4.2G)
+				<a href="/download/frugalware-0.5-iso/frugalware-0.5-i686-dvd2.iso">dvd2</a> (1.2G)
+				<br />
+			Letöltés x86_64-re:<br />
+				<a href="/download/frugalware-0.5-iso/frugalware-0.5-x86_64-net.iso">netinstall</a> (21M),
+				<a href="/download/frugalware-0.5-iso/frugalware-0.5-x86_64-cd1.iso">cd1</a> (643M),
+				<a href="/download/frugalware-0.5-iso/frugalware-0.5-x86_64-cd2.iso">cd2</a> (644M),
+				<a href="/download/frugalware-0.5-iso/frugalware-0.5-x86_64-cd3.iso">cd3</a> (642M),
+				<a href="/download/frugalware-0.5-iso/frugalware-0.5-x86_64-cd4.iso">cd4</a> (644M),
+				<a href="/download/frugalware-0.5-iso/frugalware-0.5-x86_64-cd5.iso">cd5</a> (644M),
+				<a href="/download/frugalware-0.5-iso/frugalware-0.5-x86_64-cd6.iso">cd6</a> (642M),
+				<a href="/download/frugalware-0.5-iso/frugalware-0.5-x86_64-cd7.iso">cd7</a> (635M),
+				<a href="/download/frugalware-0.5-iso/frugalware-0.5-x86_64-cd8.iso">cd8</a> (92M),
+				<a href="/download/frugalware-0.5-iso/frugalware-0.5-x86_64-dvd1.iso">dvd1</a> (4.1G)
+				<a href="/download/frugalware-0.5-iso/frugalware-0.5-x86_64-dvd2.iso">dvd2</a> (264M)
+				<br />
+			<b>MEGJEGYZÉS</b>: a 3-10. CD-k vagy a második DVD csak azok számára szükséges, akik nem rendelkeznek internet-kapcsolattal!<br />
+			SHA1SUMok:
+			<pre>
+5829cbb49528b60627fa290c2d0f8c66439139ab  frugalware-0.5-i686-cd10.iso
+7972d7ae74da64794d627b5058f4f23ac06fa0b5  frugalware-0.5-i686-cd1.iso
+e0a5e842d84bb4196cf05eb9d9d53bff038faef0  frugalware-0.5-i686-cd2.iso
+dc0c16158368bf198714ebeff3f6338f96ac5510  frugalware-0.5-i686-cd3.iso
+ade3147023769155cf35ead2738632499607ee44  frugalware-0.5-i686-cd4.iso
+9810ebcd5743461e79aafce74d7abd9981326ce0  frugalware-0.5-i686-cd5.iso
+919ca39d89699a8462f4ee8ac49853baf5af1caa  frugalware-0.5-i686-cd6.iso
+1efdb0b68bbb1a92e86341fbab171a24b661edf5  frugalware-0.5-i686-cd7.iso
+ef572faa5f6a6f103f48a7465d0ec8aeced4791f  frugalware-0.5-i686-cd8.iso
+6563f6b87cecd1c54914fc130798cbc8eb49ea5e  frugalware-0.5-i686-cd9.iso
+913aeea9426a9ec0453d9abd16c9e8e9b9c00cb2  frugalware-0.5-i686-dvd1.iso
+635c5df1312bcf0a7f86f08d3dec77111e7fe348  frugalware-0.5-i686-dvd2.iso
+b22d26e26b1ed07c285cba3c83162173fa2c4ff7  frugalware-0.5-i686-net.iso
+7a7342d42f53a50bb316c596fe4188d9ae72d051  frugalware-0.5-x86_64-cd1.iso
+6f13b4d6cffe3d42510ccb944268e34c2d587d40  frugalware-0.5-x86_64-cd2.iso
+8824fdd05c11473cb2c7bb5a3a2d32c74d999378  frugalware-0.5-x86_64-cd3.iso
+e8d4933ee2d1d45d827b2dd54090d5172bc4cb2c  frugalware-0.5-x86_64-cd4.iso
+ed78594a70af0dded0483914437566702b05b576  frugalware-0.5-x86_64-cd5.iso
+720c0f6bf84ca222a9bf000300d49783efe176fd  frugalware-0.5-x86_64-cd6.iso
+9ec70d74470ceb69e8a4e5eb4ecb1b61b083fc21  frugalware-0.5-x86_64-cd7.iso
+089b510f3bf59b7ea04041f237a4beb26ef50993  frugalware-0.5-x86_64-cd8.iso
+4f1c3871c3b6b03773090c8509b730a8d59fae64  frugalware-0.5-x86_64-dvd1.iso
+1ad4968050816e4854f5fbde8016a4a5c45be947  frugalware-0.5-x86_64-dvd2.iso
+81e26cd95c1ad3502bfee1f125e19f4c81f357a6  frugalware-0.5-x86_64-net.iso
+			</pre>
+			A telepítési képfájlok kiadása óta napvilágra került hibák listája megtekinthető <a href="http://wiki.frugalware.org/KnownBugs-0.5">itt</a>.<br />
+			Ha korábbi stabil kiadásunkról frissít, valószínűleg el szeretné olvasni a <a href="http://wiki.frugalware.org/Upgrade-0.4-0.5">mini-howtot</a> a témáról (angolul).<br />
+			]]>
+		</content>
+	</post>
+	<post>
 		<id>44</id>
 		<title>Frissítés az újabb típusú nvidia csomagra</title>
 		<date>Sat Sep  9 00:20:50 CEST 2006</date>
