@@ -107,7 +107,6 @@ function display_feed($feed, $param)
 			foreach($feed['items'] as $item)
 			{
 				$lines[] = preg_replace("/.*, (.*) \+.*/", '$1 ', $item['pubDate']) .
-				preg_replace('|http://[^/]*/([^/]+)/.*|', '$1: ', $item['link']) .
 				($item['title'] ? $item['title'] : first_words($item['description'])) . "<br />";
 			}
 			include("templates/feed.php");
