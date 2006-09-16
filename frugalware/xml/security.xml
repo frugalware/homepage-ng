@@ -28,14 +28,14 @@
 <fsas>
 	<fsa>
 		<id>1</id>
-		<date>2006-09-03</date>
-		<author>VMiklos</author>
-		<package>zlib</package>
-		<vulnerable>1.2.3-1</vulnerable>
-		<unaffected>1.2.3-2wanda1</unaffected>
-		<bts>http://bugs.frugalware.org/983</bts>
-		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-0059</cve>
-		<desc>zlib is a compression/decompression library.
-			This is just a fake FSA for testing purposes.</desc>
+		<date>2006-09-16</date>
+		<author>voroskoi</author>
+		<package>libxfont</package>
+		<vulnerable>1.2.0-2</vulnerable>
+		<unaffected>1.2.2-1siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/1137</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-3739,
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-3740</cve>
+		<desc>libxfont is the X.Org Xfont library</desc>
 	</fsa>
 </fsas>
