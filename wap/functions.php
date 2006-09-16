@@ -66,9 +66,9 @@ function display_feed($feed, $param)
 			$lines=array();
 			foreach($feed['items'] as $item)
 			{
-				$lines[] = htmlentities('#' . substr(strrchr($item['link'], "="), 1) .
-					" - " . $item['title'] .
-					" - " . $item['author']) . "<br />\n";
+				$lines[] = str_replace("&", "&amp;", htmlentities('#' . substr(strrchr($item['link'], "/"), 1) .
+					" - " . $item['title'])) .
+					" - " . $item['author'] . "<br />\n";
 			}
 			include("templates/feed.php");
 		}
