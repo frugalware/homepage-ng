@@ -33,6 +33,7 @@ function display_feed($feed, $param)
 					'@&(cent|#162);@i',
 					'@&(pound|#163);@i',
 					'@&(copy|#169);@i',
+					'@\(link\)@i',
 					'@&#(\d+);@e'); // evaluate as php
 
 				$replace = array ('',
@@ -47,6 +48,7 @@ function display_feed($feed, $param)
 					chr(162),
 					chr(163),
 					chr(169),
+					'',
 					'chr(\1)');
 				$lines[] = htmlentities(preg_replace($search, $replace,
 					html_entity_decode($item['description']))) . "<br />\n";
