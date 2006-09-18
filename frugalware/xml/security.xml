@@ -38,4 +38,16 @@
 			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-3740</cve>
 		<desc>libxfont is the X.Org Xfont library</desc>
 	</fsa>
+	<fsa>
+		<id>2</id>
+		<date>2006-09-18</date>
+		<author>voroskoi</author>
+		<package>nss</package>
+		<vulnerable>3.11.2-1</vulnerable>
+		<unaffected>3.11.3-2siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/1148</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4339
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4340</cve>
+		<desc>nss is Mozilla's Network Security Services library.</desc>
+	</fsa>
 </fsas>
