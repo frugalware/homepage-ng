@@ -24,7 +24,7 @@
 				<li>We are proud to be one of the first distributions that ship the stable GNOME 2.16</li>
 				<li>20 new packages</li>
 			</ul>
-			If you did't follow the changes during the pre/rc releases, here are the most important changes since 0.4:<br />
+			If you didn't follow the changes during the pre/rc releases, here are the most important changes since 0.4:<br />
 			<ul>
 				<li>Up-to-date packages: GNU C Library 2.4, GCC 4.1.1, KDE 3.5.4, XOrg 7.1, OpenOffice.org 2.0.3 (a native version for x86_64 users, too)</li>
 				<li>Security support: as of Frugalware-0.5, security support is provided until the release of the stable Frugalware-0.6. The -stable updates are only security fixes and bugfixes, no new features are added.</li>
