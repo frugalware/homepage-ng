@@ -12,6 +12,18 @@
 ]>
 <news>
 	<post>
+		<id>46</id>
+		<title>Please, don't file bug reports about DBUS in current (yet!)</title>
+		<date>Sun Sep 24 17:02:53 CEST 2006</date>
+		<author>AlexExtreme</author>
+		<content><![CDATA[
+			We've upgraded to DBUS 0.9x in -current, meaning that some apps will be broken. We currently don't want any reports on these so we don't get flooded by bug reports!
+			We have a very big list of things that need rebuilding, so we'll probably cover most apps over this week. We'll post a note when we want your bug reports again!<br /><br />
+			Thanks!
+			]]>
+		</content>
+	</post>		
+	<post>
 		<id>45</id>
 		<title>Frugalware 0.5 (Siwenna) for i686 and x86_64 released</title>
 		<date>Wed Sep 14 00:08:25 CEST 2006</date>
