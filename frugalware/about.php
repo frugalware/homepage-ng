@@ -58,7 +58,7 @@ $fwabout= array (
 	array (gettext("Is Frugalware specialized in a certain purpose?"),
 		gettext("No, it's a general purpose distribution, for desktops and servers.")),
 	array (gettext("Do you plan to release a live cd?"),
-		gettext("Well, we have already a live cd, called FwLive. Now it supports only i686 version, but the x86_64 version is also under development. You can find it <a href=\"http://fwlive.frugalware.hu\">here</a>.")),
+		gettext("Well, we have already a live cd, called FwLive. Currently it supports only i686, but an x86_64 version is also under development. You can find it <a href=\"http://fwlive.frugalware.hu\">here</a>.")),
 	array (gettext("Does Frugalware support languages other than English?"),
 		gettext("Yes, it supports all languages supported by the packages. If the init scripts or the setup is not available in your language, then it simply means it haven't yet translated.")),
 	array (gettext("What about Asian languages?"),
