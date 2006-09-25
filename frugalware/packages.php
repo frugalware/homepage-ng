@@ -356,7 +356,7 @@ function pkg_from_id($id)
 	$title = gettext("Package information:")." ".$arr['pkgname'];
 	$content = "<table border=\"0\" width=\"100%\">\n";
 	$content .= "<tr><td>" . gettext("Name:") . "</td><td><a href=\"/packages/".$id."/files\">".$arr['pkgname']."</a></td></tr>\n";
-	if ($arr['parent_id'] != 0) $content .= "<tr><td>" . gettext("Parent:") . "</td><td><a href=\"/packages/" . $arr['parent_id']. "\">".$parent['pkgname']."</a></td></tr>\n";
+	if ($arr['parent_id'] != 0 and $arr['parent_id'] != $id) $content .= "<tr><td>" . gettext("Parent:") . "</td><td><a href=\"/packages/" . $arr['parent_id']. "\">".$parent['pkgname']."</a></td></tr>\n";
 	$content .= "<tr><td>" . gettext("Version:") . "</td><td>".$arr['pkgver']."</td></tr>\n";
 	$content .= "<tr><td>" . gettext("Changelog:") . "</td><td><a href=\"http://ftp.frugalware.org/pub/frugalware/frugalware-" . $arr['fwver'] . "/source/" . $parent['group']."/".$parent['pkgname']."/Changelog\">Changelog</a></td></tr>\n";
 	$content .= "<tr><td>" . gettext("Darcs:") . "</td><td><a href=\"http://darcs.frugalware.org/darcsweb/darcsweb.cgi?r=frugalware-" . $arr['fwver'] . ";a=tree;f=/source/" . $parent['group']."/".str_replace("+", "%2b", $parent['pkgname']). "\">View entry</a></td></tr>\n";
