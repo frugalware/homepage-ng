@@ -27,6 +27,21 @@
 
 <fsas>
 	<fsa>
+		<id>3</id>
+		<date>2006-09-25</date>
+		<author>voroskoi</author>
+		<package>gzip</package>
+		<vulnerable>1.2.4b-1</vulnerable>
+		<unaffected>1.2.4b-2siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/1189</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4334
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4335
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4336
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4337
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4338</cve>
+		<desc>Tavis Ormandy from the Google Security Team discovered several vulnerabilities in gzip, the GNU compression utility.</desc>
+	</fsa>
+	<fsa>
 		<id>2</id>
 		<date>2006-09-18</date>
 		<author>voroskoi</author>
