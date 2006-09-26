@@ -27,6 +27,17 @@
 
 <fsas>
 	<fsa>
+		<id>5</id>
+		<date>2006-09-26</date>
+		<author>voroskoi</author>
+		<package>gnutls</package>
+		<vulnerable>1.5.0-2</vulnerable>
+		<unaffected>1.5.1-1siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/1196</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4790</cve>
+		<desc>A vulnerability has been reported in GnuTLS, which can be exploited by malicious people to bypass certain security restrictions. The vulnerability is caused due to an error in the verification of certain signatures.</desc>
+	</fsa>
+	<fsa>
 		<id>4</id>
 		<date>2006-09-26</date>
 		<author>voroskoi</author>
