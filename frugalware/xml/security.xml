@@ -27,6 +27,24 @@
 
 <fsas>
 	<fsa>
+		<id>6</id>
+		<date>2006-09-26</date>
+		<author>voroskoi</author>
+		<package>thunderbird</package>
+		<vulnerable>1.5.0.5-2</vulnerable>
+		<unaffected>1.5.0.7-1siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/1145</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4253
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4339
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4340
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4565
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4566
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4567
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4570
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4571</cve>
+		<desc>Some vulnerabilities have been reported in Mozilla Thunderbird, which can be exploited by malicious people to conduct man-in-the-middle attacks, bypass certain security restrictions, and potentially compromise a user's system.</desc>
+	</fsa>
+	<fsa>
 		<id>5</id>
 		<date>2006-09-26</date>
 		<author>voroskoi</author>
