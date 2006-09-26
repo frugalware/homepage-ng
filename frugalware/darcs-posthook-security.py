@@ -14,7 +14,7 @@
 
 """
 from xml.dom import minidom
-import sys, re, popen2
+import sys, re, popen2, pwd, os
 
 class fsa:
 	def __init__(self, xmldoc):
@@ -60,7 +60,7 @@ If found, then you should upgrade to the latest version:
 """ % (self.package, self.package, self.package))
 
 	def output(self):
-		pout, pin = popen2.popen2('gpg --comment "%s" --clearsign -u 20F55619' % self.comment)
+		pout, pin = popen2.popen2('gpg --comment "%s" --clearsign --homedir /home/%s/.gnupg -u 20F55619' % (self.comment, pwd.getpwuid(os.getuid())[0]))
 		pin.write("".join(self.lines))
 		pin.close()
 		ret = "".join(pout.readlines())
