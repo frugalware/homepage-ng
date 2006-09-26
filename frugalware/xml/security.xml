@@ -27,6 +27,24 @@
 
 <fsas>
 	<fsa>
+		<id>4</id>
+		<date>2006-09-26</date>
+		<author>voroskoi</author>
+		<package>firefox</package>
+		<vulnerable>1.5.0.6-2</vulnerable>
+		<unaffected>1.5.0.7-1siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/1147</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4253
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4339
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4340
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4565
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4566
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4567
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4568
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4571</cve>
+		<desc>Some vulnerabilities have been reported in Mozilla Firefox, which can be exploited by malicious people to conduct man-in-the-middle, spoofing, and cross-site scripting attacks, and potentially compromise a user's system.</desc>
+	</fsa>
+	<fsa>
 		<id>3</id>
 		<date>2006-09-25</date>
 		<author>voroskoi</author>
