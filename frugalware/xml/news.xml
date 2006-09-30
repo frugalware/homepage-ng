@@ -12,6 +12,16 @@
 ]>
 <news>
 	<post>
+		<id>47</id>
+		<title>We want your DBUS bug reports!</title>
+		<date>Sun Sep 30 12:01:44 CEST 2006</date>
+		<author>AlexExtreme</author>
+		<content><![CDATA[
+			If you find any apps that don't start with a message about libdbus-1.so.2 not found, we want to know about it now! Just submit a report with the package's name to the <a href="http://bugs.frugalware.org">Bug Tracker</a>. Thanks!
+			]]>
+		</content>
+	</post>		
+	<post>
 		<id>46</id>
 		<title>Please, don't file bug reports about DBUS in current (yet!)</title>
 		<date>Sun Sep 24 17:02:53 CEST 2006</date>
