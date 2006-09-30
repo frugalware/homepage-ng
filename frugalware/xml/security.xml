@@ -27,6 +27,20 @@
 
 <fsas>
 	<fsa>
+		<id>10</id>
+		<date>2006-09-30</date>
+		<author>voroskoi</author>
+		<package>mailman</package>
+		<vulnerable>2.1.8-1</vulnerable>
+		<unaffected>2.1.9-1siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/1101</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-2191
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-2941
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-3636
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4624</cve>
+		<desc>Some vulnerabilities have been reported in Mailman, which can be exploited by malicious people to conduct cross-site scripting and phishing attacks, and cause a DoS (Denial of Service).</desc>
+	</fsa>
+	<fsa>
 		<id>9</id>
 		<date>2006-09-30</date>
 		<author>voroskoi</author>
