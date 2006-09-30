@@ -27,6 +27,17 @@
 
 <fsas>
 	<fsa>
+		<id>9</id>
+		<date>2006-09-30</date>
+		<author>voroskoi</author>
+		<package>openssh</package>
+		<vulnerable>4.3p2-3</vulnerable>
+		<unaffected>4.3p2-4siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/1215</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4924</cve>
+		<desc>Tavis Ormandy has reported a vulnerability in OpenSSH, which can be exploited by malicious people to cause a DoS (Denial of Service).</desc>
+	</fsa>
+	<fsa>
 		<id>8</id>
 		<date>2006-09-30</date>
 		<author>voroskoi</author>
