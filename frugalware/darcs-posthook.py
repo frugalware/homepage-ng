@@ -92,7 +92,7 @@ if __name__ == "__main__":
 	sock.close()
 	xmldoc = minidom.parse('frugalware/xml/news.xml')
 	id = xmldoc.getElementsByTagName('id')[0].firstChild.toxml()
-	if id > latest:
+	if id != latest:
 		title = xmldoc.getElementsByTagName('title')[0].firstChild.toxml()
 		author = xmldoc.getElementsByTagName('author')[0].firstChild.toxml()
 		htmlSource = xmldoc.getElementsByTagName('content')[0].firstChild.toxml()
