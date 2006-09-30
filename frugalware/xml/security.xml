@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>8</id>
+		<date>2006-09-30</date>
+		<author>voroskoi</author>
+		<package>flashplugin</package>
+		<vulnerable>7.0r63-1</vulnerable>
+		<unaffected>7.0r68-1siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/1160</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-3014
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-3311
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4640</cve>
+		<desc>Multiple vulnerabilities have been reported in Adobe Flash Player, which can be exploited by malicious people to bypass certain security restrictions or compromise a user's system.</desc>
+	</fsa>
+	<fsa>
 		<id>7</id>
 		<date>2006-09-30</date>
 		<author>voroskoi</author>
