@@ -73,7 +73,7 @@ if __name__ == "__main__":
 	latest = sock.read().strip()
 	sock.close()
 	f = fsa(minidom.parse('frugalware/xml/security.xml'))
-	if f.id > latest:
+	if f.id != latest:
 		import smtplib
 		fro = f.author + " <noreply@frugalware.org>"
 		to = "frugalware-security@frugalware.org"
