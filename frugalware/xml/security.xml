@@ -27,6 +27,20 @@
 
 <fsas>
 	<fsa>
+		<id>11</id>
+		<date>2006-10-01</date>
+		<author>voroskoi</author>
+		<package>openssl</package>
+		<vulnerable>0.9.8-4</vulnerable>
+		<unaffected>0.9.8-5siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/1228</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-2937
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-2940
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-3738
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4343</cve>
+		<desc>Some vulnerabilities have been reported in OpenSSL, which can be exploited by malicious people to cause a DoS (Denial of Service) and compromise a vulnerable system.</desc>
+	</fsa>
+	<fsa>
 		<id>10</id>
 		<date>2006-09-30</date>
 		<author>voroskoi</author>
