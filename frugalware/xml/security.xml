@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>12</id>
+		<date>2006-10-01</date>
+		<author>voroskoi</author>
+		<package>openssh</package>
+		<vulnerable>4.3p2-4siwenna1</vulnerable>
+		<unaffected>4.4p1-1siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/1235</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-5051
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-5052</cve>
+		<desc>Mark Dowd reported a vulnerability in OpenSSH, which can be exploited by malicious people to cause a DoS (Denial of Service) and potentially compromise of a vulnerable system.</desc>
+	</fsa>
+	<fsa>
 		<id>11</id>
 		<date>2006-10-01</date>
 		<author>voroskoi</author>
