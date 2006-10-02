@@ -27,6 +27,17 @@
 
 <fsas>
 	<fsa>
+		<id>15</id>
+		<date>2006-10-02</date>
+		<author>voroskoi</author>
+		<package>phpmyadmin</package>
+		<vulnerable>2.8.2.4-1</vulnerable>
+		<unaffected>2.9.1_rc1-1siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/1229</bts>
+		<cve>There is no CVE entry for this issue, see: http://secunia.com/advisories/22126</cve>
+		<desc>Sebastian Mendel, Stefan Esser, and Michael Heimpold Some have reported Some vulnerabilities with unknown impacts in phpMyAdmin.</desc>
+	</fsa>
+	<fsa>
 		<id>14</id>
 		<date>2006-10-02</date>
 		<author>voroskoi</author>
