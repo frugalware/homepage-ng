@@ -27,6 +27,17 @@
 
 <fsas>
 	<fsa>
+		<id>14</id>
+		<date>2006-10-02</date>
+		<author>voroskoi</author>
+		<package>openvpn</package>
+		<vulnerable>2.0.7-1</vulnerable>
+		<unaffected>2.0.8-1siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/1162</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4339</cve>
+		<desc>A vulnerability has been reported in OpenVPN, which potentially can be exploited by malicious people to bypass certain security restrictions.</desc>
+	</fsa>
+	<fsa>
 		<id>13</id>
 		<date>2006-10-02</date>
 		<author>voroskoi</author>
