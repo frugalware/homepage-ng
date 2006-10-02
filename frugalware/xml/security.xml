@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>13</id>
+		<date>2006-10-02</date>
+		<author>voroskoi</author>
+		<package>bind</package>
+		<vulnerable>9.3.2-1</vulnerable>
+		<unaffected>9.3.2_P1-1siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/1161</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4095
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4096</cve>
+		<desc>Some vulnerabilities have been reported in BIND, which can be exploited by malicious people to cause a DoS (Denial of Service).</desc>
+	</fsa>
+	<fsa>
 		<id>12</id>
 		<date>2006-10-01</date>
 		<author>voroskoi</author>
