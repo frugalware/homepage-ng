@@ -27,6 +27,20 @@
 
 <fsas>
 	<fsa>
+		<id>18</id>
+		<date>2006-10-03</date>
+		<author>voroskoi</author>
+		<package>openvpn</package>
+		<vulnerable>2.0.8-1siwenna1</vulnerable>
+		<unaffected>2.0.9-1siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1246</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-2937
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-2940
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-3738
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4343</cve>
+		<desc>Some vulnerabilities have been reported in OpenVPN, which can be exploited by malicious people to cause a DoS (Denial of Service) or potentially compromise a vulnerable system.</desc>
+	</fsa>
+	<fsa>
 		<id>17</id>
 		<date>2006-10-03</date>
 		<author>voroskoi</author>
