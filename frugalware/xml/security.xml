@@ -27,6 +27,17 @@
 
 <fsas>
 	<fsa>
+		<id>17</id>
+		<date>2006-10-03</date>
+		<author>voroskoi</author>
+		<package>gst-ffmpeg</package>
+		<vulnerable>0.10.1-2</vulnerable>
+		<unaffected>0.10.1-3siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1239</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4800</cve>
+		<desc>Some vulnerabilities have been reported in GStreamer FFmpeg Plug-in, which can be exploited by malicious people to cause a DoS (Denial of Service) and potentially compromise a vulnerable system.</desc>
+	</fsa>
+	<fsa>
 		<id>16</id>
 		<date>2006-10-03</date>
 		<author>voroskoi</author>
