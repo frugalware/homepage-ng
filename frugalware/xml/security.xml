@@ -27,6 +27,17 @@
 
 <fsas>
 	<fsa>
+		<id>19</id>
+		<date>2006-10-09</date>
+		<author>voroskoi</author>
+		<package>j2re</package>
+		<vulnerable>5.0_08-1</vulnerable>
+		<unaffected>5.0_09-1siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1251</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4339</cve>
+		<desc>Sun has acknowledged a vulnerability in Sun JDK / SDK, which potentially can be exploited by malicious people to bypass certain security restrictions.</desc>
+	</fsa>
+	<fsa>
 		<id>18</id>
 		<date>2006-10-03</date>
 		<author>voroskoi</author>
