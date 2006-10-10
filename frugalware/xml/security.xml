@@ -27,6 +27,17 @@
 
 <fsas>
 	<fsa>
+		<id>21</id>
+		<date>2006-10-10</date>
+		<author>voroskoi</author>
+		<package>mono</package>
+		<vulnerable>1.1.17.1-2</vulnerable>
+		<unaffected>1.1.17.2-1siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1261</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-5072</cve>
+		<desc>A vulnerability has been reported in Mono, which can be exploited by malicious, local users to perform certain actions with escalated privileges.</desc>
+	</fsa>
+	<fsa>
 		<id>20</id>
 		<date>2006-10-09</date>
 		<author>voroskoi</author>
