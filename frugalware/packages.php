@@ -313,7 +313,7 @@ function pkg_from_id($id)
 	global $sqlhost, $sqluser, $sqlpass;
 	$db = new FwDB();
 	$db->doConnect($sqlhost, $sqluser, $sqlpass, "frugalware2");
-	$res = $db->doQuery("select uploaders.login, packages.pkgname, packages.pkgver, packages.size, packages.usize, packages.arch, packages.`desc`, packages.maintainer, packages.sha1sum, packages.fwver, packages.builddate, packages.parent_id from packages, uploaders where packages.id=$id and packages.uploader_id = uploaders.id group by concat(packages.fwver, packages.pkgname, packages.arch)");
+	$res = $db->doQuery("select uploaders.login, packages.pkgname, packages.pkgver, packages.size, packages.usize, packages.arch, packages.`desc`, packages.maintainer, packages.sha1sum, packages.fwver, packages.builddate, packages.parent_id, packages.url from packages, uploaders where packages.id=$id and packages.uploader_id = uploaders.id group by concat(packages.fwver, packages.pkgname, packages.arch)");
 	$arr = $db->doFetchRow($res);
 	if($arr['parent_id']!=0)
 	{
@@ -367,6 +367,7 @@ function pkg_from_id($id)
 			$content .= "<a href=\"/packages/?op=groups&amp;id=" . $i['id'] . "&amp;arch=".$arr['arch']."&amp;ver=".$arr['fwver']."\">".$i['name']."</a> ";
 		$content .= "</td></tr>\n";
 	}
+	if ($arr['url'] != "") $content .= "<tr><td>" . gettext("URL:") . "</td><td><a href=\"" . $arr['url']. "\">".$arr['url']."</a></td></tr>\n";
 	if (count($deps))
 	{
 		$content .= "<tr><td>" . gettext("Depends:") . "</td><td>";
