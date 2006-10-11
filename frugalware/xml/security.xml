@@ -27,6 +27,20 @@
 
 <fsas>
 	<fsa>
+		<id>22</id>
+		<date>2006-10-11</date>
+		<author>voroskoi</author>
+		<package>php</package>
+		<vulnerable>5.1.6-1</vulnerable>
+		<unaffected>5.1.6-2siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1266
+			http://bugs.frugalware.org/task/1291</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4625
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4812</cve>
+		<desc>A vulnerability has been reported in PHP, which can be exploited by malicious people to cause a DoS (Denial of Service) or potentially compromise a vulnerable system.
+		Maksymilian Arciemowicz has reported a vulnerability in PHP, which can be exploited by malicious, local users to bypass certain security restrictions.</desc>
+	</fsa>
+	<fsa>
 		<id>21</id>
 		<date>2006-10-10</date>
 		<author>voroskoi</author>
