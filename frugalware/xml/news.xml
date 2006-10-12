@@ -12,6 +12,16 @@
 ]>
 <news>
 	<post>
+		<id>48</id>
+		<title>ftp5.frugalware.org is currently out of sync</title>
+		<date>Sun Oct 12 17:41:12 CEST 2006</date>
+		<author>AlexExtreme</author>
+		<content><![CDATA[
+			ftp5.frugalware.org is currently out of sync for -current users. Please temporarily switch to a different mirror in /etc/pacman.d/frugalware-current!
+			]]>
+		</content>
+	</post>		
+	<post>
 		<id>47</id>
 		<title>We want your DBUS bug reports!</title>
 		<date>Sun Sep 30 12:01:44 CEST 2006</date>
