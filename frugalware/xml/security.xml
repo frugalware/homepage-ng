@@ -27,6 +27,17 @@
 
 <fsas>
 	<fsa>
+		<id>23</id>
+		<date>2006-10-12</date>
+		<author>voroskoi</author>
+		<package>python</package>
+		<vulnerable>2.4.3-3</vulnerable>
+		<unaffected>2.4.3-4siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1284</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4980</cve>
+		<desc>A vulnerability has been reported in Python, which can be exploited by malicious people to cause a DoS (Denial of Service) and potentially compromise a vulnerable system.</desc>
+	</fsa>
+	<fsa>
 		<id>22</id>
 		<date>2006-10-11</date>
 		<author>voroskoi</author>
