@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>24</id>
+		<date>2006-10-19</date>
+		<author>voroskoi</author>
+		<package>clamav</package>
+		<vulnerable>0.88.4-1</vulnerable>
+		<unaffected>0.88.5-1siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1316</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4182
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-5295</cve>
+		<desc>Two vulnerabilities have been reported in Clam AntiVirus, which can be exploited by malicious people to cause a DoS (Denial of Service) or potentially compromise a vulnerable system.</desc>
+	</fsa>
+	<fsa>
 		<id>23</id>
 		<date>2006-10-12</date>
 		<author>voroskoi</author>
