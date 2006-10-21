@@ -110,7 +110,7 @@ switch($_GET['type'])
 		{
 			$handle['items'][] = array(
 				"title" => $news[$i]->title[0]->tagData,
-				"link" => "http://www2.frugalware.org/news/".$news[$i]->id[0]->tagData,
+				"link" => "http://www.frugalware.org/news/".$news[$i]->id[0]->tagData,
 				"pubDate" => date(DATE_RFC2822, strtotime($news[$i]->date[0]->tagData)),
 				"desc" => preg_replace('/(<a href=.*>|<\/a>)/', '', $news[$i]->content[0]->tagData),
 			);
