@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fr_FR\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-10-21 13:19+0200\n"
+"POT-Creation-Date: 2006-10-21 13:49+0200\n"
 "PO-Revision-Date: 2006-09-10 03:44+0100\n"
 "Last-Translator: Enda <enda@netou.com>\n"
 "Language-Team: French <traduc@traduc.org>\n"
@@ -671,7 +671,7 @@ msgstr "Titre"
 msgid "Where"
 msgstr "Où"
 
-#: ../media.php:78
+#: ../media.php:78 ../security.php:81
 msgid "Date"
 msgstr "Date"
 
@@ -1109,6 +1109,54 @@ msgstr "Installateur"
 #: ../screenshots.php:147
 msgid "Default Desktop"
 msgstr "Bureau par défaut"
+
+#: ../security.php:46
+#, fuzzy
+msgid "Sorry, a security file has not been written yet."
+msgstr "Désolé, aucun fichier de média n'a encoré été écrit."
+
+#: ../security.php:52
+msgid "Frugalware Security Announcements (FSAs)"
+msgstr ""
+
+#: ../security.php:53
+msgid ""
+"This is a list of security announcments that have been released for the "
+"current stable version of Frugalware"
+msgstr ""
+
+#: ../security.php:80
+#, fuzzy
+msgid "Package"
+msgstr "Paquets"
+
+#: ../security.php:82
+#, fuzzy
+msgid "Posted by"
+msgstr "posté par"
+
+#: ../security.php:83
+#, fuzzy
+msgid "Vulnerable version"
+msgstr "Frugalware dans la presse"
+
+#: ../security.php:84
+msgid "Unaffected version"
+msgstr ""
+
+#: ../security.php:85
+#, fuzzy
+msgid "Bug tracker entry"
+msgstr "Suivi des Bugs"
+
+#: ../security.php:86
+msgid "CVEs"
+msgstr ""
+
+#: ../security.php:87
+#, fuzzy
+msgid "Description"
+msgstr "Rechercher dans les descriptions"
 
 #~ msgid "Downloan file (via http"
 #~ msgstr "Télécharger le fichier (par http"
