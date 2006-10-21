@@ -117,6 +117,30 @@ switch($_GET['type'])
 		}
 		break;
 
+	case "security";
+		include("xml.inc.php");
+		if (file_exists("xml/security.xml"))
+			$xmlfile = "xml/security.xml";
+		else
+			$xmlfile = $docs_path."/xml/security.xml";
+		$xml = file_get_contents($xmlfile);
+		$parser = new XMLParser($xml);
+		$parser->Parse();
+		$fsas = $parser->document->fsa;
+		$handle['title']="Frugalware Linux Security";
+		$handle['desc']="Security announcements for Frugalware stable releases";
+		$handle['link']="http://frugalware.org/";
+		for ( $i=0; $i<$news_limit; $i++)
+		{
+			$handle['items'][] = array(
+				"title" => 'FSA' . $fsas[$i]->id[0]->tagData . ' - ' $fsas[$i]->package[0]->tagData,
+				"link" => $fsas[$i]->bts[0]->tagData,
+				"pubDate" => date(DATE_RFC2822, strtotime($fsas[$i]->date[0]->tagData)),
+				"desc" => preg_replace('/(<a href=.*>|<\/a>)/', '', $fsas[$i]->desc[0]->tagData),
+			);
+		}
+		break;
+
 	case "darcs":
 		header('Content-Type: application/xml; charset=utf-8');
 		print(file_get_contents("http://darcs.frugalware.org/genesis.darcsweb/darcsweb.cgi?r=frugalware-current;a=rss"));
