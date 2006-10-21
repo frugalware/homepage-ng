@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hu_HU\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-10-21 13:19+0200\n"
-"PO-Revision-Date: 2006-10-21 13:25+0200\n"
+"POT-Creation-Date: 2006-10-21 13:49+0200\n"
+"PO-Revision-Date: 2006-10-21 13:53+0200\n"
 "Last-Translator: VMiklos <vmiklos@frugalware.org>\n"
 "Language-Team:  <hu@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -649,7 +649,7 @@ msgstr "Cím"
 msgid "Where"
 msgstr "Hol"
 
-#: ../media.php:78
+#: ../media.php:78 ../security.php:81
 msgid "Date"
 msgstr "Dátum"
 
@@ -1083,6 +1083,48 @@ msgstr "Telepítő"
 #: ../screenshots.php:147
 msgid "Default Desktop"
 msgstr "Alapértelmezett Asztal"
+
+#: ../security.php:46
+msgid "Sorry, a security file has not been written yet."
+msgstr "Sajnos még nem lett megírva a biztonsági fájl."
+
+#: ../security.php:52
+msgid "Frugalware Security Announcements (FSAs)"
+msgstr "Frugalware Biztonsági Bejelentések (FSAk)"
+
+#: ../security.php:53
+msgid ""
+"This is a list of security announcments that have been released for the "
+"current stable version of Frugalware"
+msgstr "Ez a biztonsági bejelentések egy listája a Frugalware jelenlegi stabil verziójához"
+
+#: ../security.php:80
+msgid "Package"
+msgstr "Csomag"
+
+#: ../security.php:82
+msgid "Posted by"
+msgstr "Beküldte:"
+
+#: ../security.php:83
+msgid "Vulnerable version"
+msgstr "Sebezhető verzió:"
+
+#: ../security.php:84
+msgid "Unaffected version"
+msgstr "Nem érintett verzió"
+
+#: ../security.php:85
+msgid "Bug tracker entry"
+msgstr "Hibákövető rendszer bejegyzés"
+
+#: ../security.php:86
+msgid "CVEs"
+msgstr "CVEk"
+
+#: ../security.php:87
+msgid "Description"
+msgstr "Leírás"
 
 #~ msgid "Downloan file (via http"
 #~ msgstr "Fájl letöltése (httpn keresztül"
