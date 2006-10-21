@@ -25,7 +25,7 @@ include("config.inc.php");
 
 $pages = array('about', 'donations', 'irc', 'screenshots', 'authors',
 	'download', 'media', 'roadmap', 'changelog', 'docs', 'news',
-	'packages', 'rss');
+	'packages', 'rss', 'security');
 
 // anti-slash for kiddies
 $params = explode("/", trim(addslashes(stripslashes($_SERVER["PATH_INFO"])), "/"));
