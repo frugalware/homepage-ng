@@ -10,14 +10,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hu_HU\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-06-20 02:42+0200\n"
-"PO-Revision-Date: 2006-08-04 21:23+0200\n"
+"POT-Creation-Date: 2006-10-21 13:19+0200\n"
+"PO-Revision-Date: 2006-10-21 13:25+0200\n"
 "Last-Translator: VMiklos <vmiklos@frugalware.org>\n"
 "Language-Team:  <hu@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.2\n"
+"Content-Transfer-Encoding: 8bit"
 
 #: ../about.php:34
 msgid ""
@@ -47,10 +46,10 @@ msgstr "Miről szól a  &quot;Frugalware Filozófia&quot;?"
 #: ../about.php:39
 msgid ""
 "Briefly: simplicity, multimedia, design. We try to make Frugalware as simple "
-"as possible while not forgetting to keep it comfortable. We try to ship "
-"fresh and stable software, as close to the original source as possible, "
-"because in our opinion most software is the best as is, and doesn't need "
-"patching."
+"as possible while not forgetting to keep it comfortable for the user. We try "
+"to ship fresh and stable software, as close to the original source as "
+"possible, because in our opinion most software is the best as is, and "
+"doesn't need patching."
 msgstr ""
 "Röviden: egyszerűség, multimédia, dizájn. Megpróbálunk egy egyszerű, mégis "
 "könnyen használható rendszert készíteni. Az eredeti forráshoz lehetőleg "
@@ -239,9 +238,9 @@ msgstr "Tervezik-e egy live cd kiadását?"
 
 #: ../about.php:61
 msgid ""
-"Well, we have already a live cd, called FwLive. Now it supports only i686 "
-"version, but the x86_64 version is also under development. You can find it "
-"<a href=\"http://fwlive.frugalware.hu\">here</a>."
+"Well, we have already a live cd, called FwLive. Currently it supports only "
+"i686, but an x86_64 version is also under development. You can find it <a "
+"href=\"http://fwlive.frugalware.hu\">here</a>."
 msgstr ""
 "Nos, már elérhető a live cdnk, FwLive néven. Jelenleg csak az i686 verzió "
 "támogatott, de az x86_64 verzió is már fejlesztés alatt áll. Megtalálható <a "
@@ -307,11 +306,11 @@ msgstr "Válasz"
 msgid "Long"
 msgstr "Bővebben"
 
-#: ../authors.php:61 ../config.inc.php:71
+#: ../authors.php:61 ../config.inc.php:73
 msgid "Developers"
 msgstr "Fejlesztők"
 
-#: ../authors.php:84 ../config.inc.php:72
+#: ../authors.php:84 ../config.inc.php:74
 msgid "Contributors"
 msgstr "Közreműködők"
 
@@ -323,7 +322,7 @@ msgstr "A teljes current változási naplót elolvashatja"
 msgid "here"
 msgstr "itt"
 
-#: ../config.inc.php:42 ../rss.php:126
+#: ../config.inc.php:42 ../rss.php:159
 msgid "News"
 msgstr "Hírek"
 
@@ -364,54 +363,66 @@ msgid "IRC"
 msgstr "IRC"
 
 #: ../config.inc.php:55
+msgid "Pastebin"
+msgstr "Pastebin"
+
+#: ../config.inc.php:56
 msgid "Screenshots"
 msgstr "Képernyőmentések"
 
-#: ../config.inc.php:56
+#: ../config.inc.php:57
 msgid "Map"
 msgstr "Térkép"
 
 #: ../config.inc.php:58
+msgid "Last.fm group"
+msgstr "Last.fm csoport"
+
+#: ../config.inc.php:60
 msgid "Download"
 msgstr "Letöltés"
 
-#: ../config.inc.php:60
+#: ../config.inc.php:62
 msgid "ISO images"
 msgstr "ISO képek"
 
-#: ../config.inc.php:61
+#: ../config.inc.php:63
 msgid "Packages"
 msgstr "Csomagok"
 
-#: ../config.inc.php:63
+#: ../config.inc.php:65
 msgid "Development"
 msgstr "Fejlesztés"
 
-#: ../config.inc.php:65
+#: ../config.inc.php:67
 msgid "Roadmap"
 msgstr "Útiterv"
 
-#: ../config.inc.php:66
+#: ../config.inc.php:68
 msgid "Darcs repository"
 msgstr "Darcs"
 
-#: ../config.inc.php:67
+#: ../config.inc.php:69
 msgid "Bug Tracker"
 msgstr "Hibák"
 
-#: ../config.inc.php:68
+#: ../config.inc.php:70
 msgid "ChangeLog"
 msgstr "Changelog"
 
-#: ../config.inc.php:69
+#: ../config.inc.php:71
 msgid "Blogs"
 msgstr "Blogok"
 
-#: ../config.inc.php:70 ../donations.php:49
+#: ../config.inc.php:72 ../donations.php:49
 msgid "Donations"
 msgstr "Adományok"
 
-#: ../config.inc.php:83 ../config.inc.php:85
+#: ../config.inc.php:75 ../rss.php:165
+msgid "Security announcements"
+msgstr "Biztonsági bejelentések"
+
+#: ../config.inc.php:86 ../config.inc.php:88 ../config.inc.php:90
 msgid "Change language"
 msgstr "Váltson nyelvet"
 
@@ -487,8 +498,8 @@ msgid "Download file (via ftp)"
 msgstr "Fájl letöltése (ftpn keresztül)"
 
 #: ../download.php:91
-msgid "Downloan file (via http"
-msgstr "Fájl letöltése (httpn keresztül"
+msgid "Download file (via http)"
+msgstr "Fájl letöltése (httpn keresztül)"
 
 #: ../download.php:92
 msgid "Download file (via rsync)"
@@ -514,38 +525,39 @@ msgstr "Rsync mini-hogyan"
 msgid "Get a CD"
 msgstr "Kérjen egy CDt"
 
-#: ../header.php:72
+#: ../header.php:78
 #, php-format
 msgid "Uptime:<br /> %d day(s) %d h %d m %d s"
 msgstr "Uptime:<br /> %d nap %d ó %d p %d mp"
 
-#: ../header.php:119 ../packages.php:91 ../packages.php:123
+#: ../header.php:125 ../packages.php:95
 msgid "Search"
 msgstr "Keresés"
 
-#: ../header.php:137
+#: ../header.php:143
 msgid "Releases"
 msgstr "Kiadások"
 
-#: ../header.php:138
+#: ../header.php:144
 msgid "Recent updates"
 msgstr "Legfrissebb csomagok"
 
-#: ../header.php:139
+#: ../header.php:145
 msgid "Languages"
 msgstr "Nyelvek"
 
-#: ../header.php:140
+#: ../header.php:146
 msgid "Information"
 msgstr "Információ"
 
-#: ../header.php:141
-msgid "Server informations"
+#: ../header.php:147
+msgid "Server information"
 msgstr "Szerver információk"
 
 #: ../index.php:80 ../index.php:98
 msgid "Sorry, no news on your language, using English instead."
-msgstr "Sajnos az Ön nyelvén nincsenek hírek, helyette az angol nyelvűt használom."
+msgstr ""
+"Sajnos az Ön nyelvén nincsenek hírek, helyette az angol nyelvűt használom."
 
 #: ../index.php:88
 msgid " edited this news on "
@@ -649,179 +661,182 @@ msgstr "Nyelvek"
 msgid "Link"
 msgstr "Link"
 
-#: ../packages.php:60
+#: ../packages.php:67
 msgid "Package search"
 msgstr "Csomag keresés"
 
-#: ../packages.php:62
-msgid "Search for a package:"
-msgstr "Csomag keresése:"
+#: ../packages.php:68
+msgid "Search for:"
+msgstr "Keressen:"
 
-#: ../packages.php:64
-msgid "Search for substring"
-msgstr "Keresés részszóra"
-
-#: ../packages.php:66
+#: ../packages.php:70
 msgid "Search in description"
 msgstr "Keresés a leírásokban"
 
-#: ../packages.php:68 ../packages.php:99 ../packages.php:247
-#: ../packages.php:256 ../packages.php:331
-msgid "Repository:"
-msgstr "Repó:"
+#: ../packages.php:73
+msgid "Regular expression"
+msgstr "Reguláris kifejezés"
 
-#: ../packages.php:75 ../packages.php:105 ../packages.php:247
-#: ../packages.php:256
+#: ../packages.php:76 ../packages.php:294 ../packages.php:303
 msgid "Architecture:"
 msgstr "Architektúra:"
 
-#: ../packages.php:81 ../packages.php:112 ../packages.php:247
-#: ../packages.php:256 ../packages.php:295
+#: ../packages.php:83 ../packages.php:294 ../packages.php:303
+#: ../packages.php:360
 msgid "Version:"
 msgstr "Verzió:"
 
-#: ../packages.php:91 ../packages.php:123
+#: ../packages.php:95
 msgid "Reset"
 msgstr "Törlés"
 
-#: ../packages.php:95
-msgid "File search"
-msgstr "Fájlkeresés"
-
-#: ../packages.php:97
-msgid "Search for a file:"
-msgstr "Keresés fájlra:"
-
-#: ../packages.php:138
+#: ../packages.php:109
 msgid "You will need a Mozilla based browser to install a search plugin."
-msgstr "Egy Mozilla alapú böngészrőre lesz szüksége a kereső plugin telepítéséhez."
+msgstr ""
+"Egy Mozilla alapú böngészrőre lesz szüksége a kereső plugin telepítéséhez."
 
-#: ../packages.php:142
+#: ../packages.php:113
 msgid ""
 "Click <a href=\"javascript:addEngine()\">here</a> to install the Firefox "
 "search plugin."
 msgstr ""
-"Kattintson <a href=\"javascript:addEngine()\">ide</a> a Firefox "
-"kereső plugin telepítéséhez."
+"Kattintson <a href=\"javascript:addEngine()\">ide</a> a Firefox kereső "
+"plugin telepítéséhez."
 
-#: ../packages.php:196
+#: ../packages.php:160
 msgid "No package found"
 msgstr "Nem található csomag"
 
-#: ../packages.php:235
+#: ../packages.php:197
 msgid "No such file or directory"
 msgstr "Nincs ilyen fájl vagy könyvtár"
 
-#: ../packages.php:244 ../packages.php:253
+#: ../packages.php:236 ../packages.php:269
+msgid "No such group"
+msgstr "Nincs ilyen csoport"
+
+#: ../packages.php:278
+msgid "Listing groups"
+msgstr "Csoportok listázása"
+
+#: ../packages.php:289
+msgid "Listing contents of group:"
+msgstr "Csoport tartalmának listázása:"
+
+#: ../packages.php:291 ../packages.php:300
 msgid "Search result for:"
 msgstr "Keresési találatok: "
 
-#: ../packages.php:289
+#: ../packages.php:356
 msgid "Package information:"
 msgstr "Csomaginformáció:"
 
-#: ../packages.php:291
+#: ../packages.php:358
 msgid "Name:"
 msgstr "Név:"
 
-#: ../packages.php:294
+#: ../packages.php:359
 msgid "Parent:"
 msgstr "Szülő:"
 
-#: ../packages.php:305
+#: ../packages.php:361
 msgid "Changelog:"
 msgstr "Changelog:"
 
-#: ../packages.php:306
+#: ../packages.php:362
 msgid "Darcs:"
 msgstr "Darcs:"
 
-#: ../packages.php:307
+#: ../packages.php:365
 msgid "Groups:"
 msgstr "Csoportok:"
 
-#: ../packages.php:308
-msgid "Provides:"
-msgstr "Szolgáltatja:"
+#: ../packages.php:370
+msgid "URL:"
+msgstr "URL:"
 
-#: ../packages.php:311
+#: ../packages.php:373
 msgid "Depends:"
 msgstr "Függ:"
 
-#. this %PROVID stuff is just a workaround for an fdb2db bug
-#: ../packages.php:317
+#: ../packages.php:380
+msgid "Reverse depends:"
+msgstr "Ráépülő csomagok:"
+
+#: ../packages.php:387
 msgid "Conflicts:"
 msgstr "Ütközik:"
 
-#: ../packages.php:318
-msgid "Replaces:"
-msgstr "Lecseréli:"
+#: ../packages.php:394
+msgid "Provides:"
+msgstr "Szolgáltatja:"
 
-#: ../packages.php:319
+#: ../packages.php:399
 msgid "Compressed size:"
 msgstr "Tömörített méret:"
 
-#: ../packages.php:320
+#: ../packages.php:400
+msgid "Uncompressed size:"
+msgstr "Tömörítetlen méret:"
+
+#: ../packages.php:401
 msgid "Arch:"
 msgstr "Architektúra:"
 
-#: ../packages.php:321
+#: ../packages.php:402
 msgid "Description:"
 msgstr "Leírás:"
 
-#: ../packages.php:322
+#. FIXME: latin -> utf8 conversion hardwired
+#: ../packages.php:404
 msgid "Maintainer:"
 msgstr "Karbantartó:"
 
-#: ../packages.php:323
+#: ../packages.php:405
 msgid "Uploaded by:"
 msgstr "Feltöltő:"
 
-#: ../packages.php:324
+#: ../packages.php:406
 msgid "Download:"
 msgstr "Letöltés:"
 
-#: ../packages.php:325
+#: ../packages.php:407
 msgid "Forums:"
 msgstr "Fórumok:"
 
-#: ../packages.php:326
+#: ../packages.php:408
 msgid "Wiki:"
 msgstr "Wiki:"
 
-#: ../packages.php:327
+#: ../packages.php:409
 msgid "Bug Tracking System:"
 msgstr "Hibakövető rendszer:"
 
-#: ../packages.php:327
+#: ../packages.php:409
 msgid "related open bugs"
 msgstr "ide vonatkozó ismert hibák"
 
-#: ../packages.php:327
+#: ../packages.php:409
 msgid ""
 "file a feature request, bug report or mark outdated <a href=\"http://bugs."
-"frugalware.org/?do=newtask&project=1\">here"
+"frugalware.org/?do=newtask&amp;project=1\">here</a>"
 msgstr ""
-"funkció kérése vagy megjelölés elavultként <a href=\"http://bugs."
-"frugalware.org/?do=newtask&project=1\">itt"
+"funkció kérése vagy megjelölés elavultként <a href=\"http://bugs.frugalware."
+"org/?do=newtask&amp;project=1\">itt</a>"
 
-#: ../packages.php:328
-msgid "MD5 Sum:"
-msgstr "MD5 Szumma:"
-
-#: ../packages.php:329
+#: ../packages.php:410
 msgid "SHA1 Sum:"
 msgstr "SHA1 Szumma:"
 
-#: ../packages.php:330
+#: ../packages.php:411
 msgid "Frugalware version:"
 msgstr "Frugalware verzió:"
 
-#: ../packages.php:332
+#: ../packages.php:412
 msgid "Updated:"
 msgstr "Frissítve:"
 
-#: ../packages.php:347
+#: ../packages.php:427
 msgid "File list for"
 msgstr "Fájlok listája: "
 
@@ -837,23 +852,23 @@ msgstr "elkészült"
 msgid "pending"
 msgstr "függőben"
 
-#: ../rss.php:127
+#: ../rss.php:160
 msgid "Stable releases"
 msgstr "Stabil kiadások"
 
-#: ../rss.php:128
+#: ../rss.php:161
 msgid "Darcs commits"
 msgstr "Darcs commitok"
 
-#: ../rss.php:129
+#: ../rss.php:162
 msgid "BTS entries"
 msgstr "BTS bejegyzések"
 
-#: ../rss.php:130
+#: ../rss.php:163
 msgid "Package updates"
 msgstr "Csomag frissítések"
 
-#: ../rss.php:131
+#: ../rss.php:164
 msgid "Blog posts"
 msgstr "Blog bejegyzések"
 
@@ -1069,3 +1084,23 @@ msgstr "Telepítő"
 msgid "Default Desktop"
 msgstr "Alapértelmezett Asztal"
 
+#~ msgid "Downloan file (via http"
+#~ msgstr "Fájl letöltése (httpn keresztül"
+
+#~ msgid "Search for a package:"
+#~ msgstr "Csomag keresése:"
+
+#~ msgid "Search for substring"
+#~ msgstr "Keresés részszóra"
+
+#~ msgid "Repository:"
+#~ msgstr "Repó:"
+
+#~ msgid "File search"
+#~ msgstr "Fájlkeresés"
+
+#~ msgid "Replaces:"
+#~ msgstr "Lecseréli:"
+
+#~ msgid "MD5 Sum:"
+#~ msgstr "MD5 Szumma:"
