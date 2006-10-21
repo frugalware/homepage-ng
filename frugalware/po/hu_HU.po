@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: hu_HU\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-10-21 13:49+0200\n"
-"PO-Revision-Date: 2006-10-21 13:53+0200\n"
+"PO-Revision-Date: 2006-10-21 13:56+0200\n"
 "Last-Translator: VMiklos <vmiklos@frugalware.org>\n"
 "Language-Team:  <hu@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -1104,11 +1104,11 @@ msgstr "Csomag"
 
 #: ../security.php:82
 msgid "Posted by"
-msgstr "Beküldte:"
+msgstr "Beküldte"
 
 #: ../security.php:83
 msgid "Vulnerable version"
-msgstr "Sebezhető verzió:"
+msgstr "Sebezhető verzió"
 
 #: ../security.php:84
 msgid "Unaffected version"
