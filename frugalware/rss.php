@@ -129,14 +129,14 @@ switch($_GET['type'])
 		$fsas = $parser->document->fsa;
 		$handle['title']="Frugalware Linux Security";
 		$handle['desc']="Security announcements for Frugalware stable releases";
-		$handle['link']="http://frugalware.org/";
+		$handle['link']="http://frugalware.org/security";
 		for ( $i=0; $i<$news_limit; $i++)
 		{
 			$handle['items'][] = array(
 				"title" => 'FSA' . $fsas[$i]->id[0]->tagData . ' - ' . $fsas[$i]->package[0]->tagData,
 				"link" => $fsas[$i]->bts[0]->tagData,
 				"pubDate" => date(DATE_RFC2822, strtotime($fsas[$i]->date[0]->tagData)),
-				"desc" => preg_replace('/(<a href=.*>|<\/a>)/', '', $fsas[$i]->desc[0]->tagData),
+				"desc" => preg_replace('/(<a href=.*>|<\/a>)/', '', $fsas[$i]->desc[0]->tagData) . 'Vulnerable version: ' . $fsas[$i]->vulnerable[0]->tagData . ', Unaffected version: ' . $fsas[$i]->unaffected[0]->tagData . ', CVEs: ' . $fsas[$i]->cve[0]->tagData,
 			);
 		}
 		break;
@@ -162,6 +162,7 @@ switch($_GET['type'])
 			<li><a href="/rss/bugs">' . gettext('BTS entries') . '</a></li>
 			<li><a href="/rss/packages">' . gettext('Package updates') . '</a></li>
 			<li><a href="/rss/blogs">' . gettext('Blog posts') . '</a></li>
+			<li><a href="/rss/security">' . gettext('Security announcements') . '</a></li>
 			</ul>'
 		);
 		include("footer.php");
