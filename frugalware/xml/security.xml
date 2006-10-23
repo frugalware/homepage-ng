@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>29</id>
+		<date>2006-10-24</date>
+		<author>voroskoi</author>
+		<package>asterisk</package>
+		<vulnerable>asterisk-1.2.11-1</vulnerable>
+		<unaffected>asterisk-1.2.13-1siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1339</bts>
+		<cve>There is no CVE entry for this issue, see: http://lists.grok.org.uk/pipermail/full-disclosure/2006-October/050171.html</cve>
+		<desc>Adam Boileau has reported a vulnerability in Asterisk, which can be exploited by malicious people to cause a DoS (Denial of Service) and potentially compromise a vulnerable system.
+			The vulnerability is caused due to an integer overflow within the "get_input()" function in chan_skinny.c. This can be exploited to cause a heap-based buffer overflow by sending specially crafted packets to the Asterisk Skinny channel driver.
+			Successful exploitation may allow the execution of arbitrary code, but requires that "chan_skinny" is loaded.</desc>
+	</fsa>
+	<fsa>
 		<id>28</id>
 		<date>2006-10-24</date>
 		<author>voroskoi</author>
