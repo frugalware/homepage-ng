@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>26</id>
+		<date>2006-10-24</date>
+		<author>voroskoi</author>
+		<package>qt</package>
+		<vulnerable>3.3.6-4</vulnerable>
+		<unaffected>3.3.6-5</unaffected>
+		<bts>http://bugs.frugalware.org/task/1335</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4811</cve>
+		<desc>A vulnerability has been reported in Qt, which can be exploited by malicious people to cause a DoS (Denial of Service) and potentially compromise an application using the library.
+			The vulnerability is caused due to an integer overflow within the way Qt handles certain pixmap images. This can potentially be exploited to execute arbitrary code by e.g. causing an application linked against Qt to process a specially crafted pixmap image.</desc>
+	</fsa>
+	<fsa>
 		<id>25</id>
 		<date>2006-10-21</date>
 		<author>voroskoi</author>
