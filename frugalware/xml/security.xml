@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>28</id>
+		<date>2006-10-24</date>
+		<author>voroskoi</author>
+		<package>nvidia</package>
+		<vulnerable>1.0_8774-4siwenna1</vulnerable>
+		<unaffected>1.0_8776-1siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1326</bts>
+		<cve>There is no CVE entry for this issue, see: http://www.rapid7.com/advisories/R7-0025.jsp</cve>
+		<desc>Rapid7 has reported a vulnerability in NVIDIA Binary Graphics Driver for Linux, which can be exploited by malicious, local users to gain escalated privileges and potentially by malicious people to compromise a user's system.
+			A boundary error when performing accelerated rendering of glyphs can be exploited to cause a buffer overflow via a specially crafted short sequence of user-supplied glyphs.
+			Successful exploitation allows execution of arbitrary code with "root" privileges.</desc>
+	</fsa>
+	<fsa>
 		<id>27</id>
 		<date>2006-10-24</date>
 		<author>voroskoi</author>
