@@ -58,6 +58,10 @@ $xml = file_get_contents($xmlfile);
 $parser = new XMLParser($xml);
 $parser->Parse();
 $news = $parser->document->post;
+
+if ( $id != -1 )
+	$news_limit = count($news);
+
 // I hate writing a lot. And also the parser creates too long and unuseful object hierarchy,
 // so create a better-readable one.
 for ( $i=0; $i<$news_limit; $i++)
