@@ -32,7 +32,7 @@ function fwsidebox($boxhead="", $content)
 	// boxhead is given, displays a simple box with darker head
 	if ($boxhead != "")
 	{
-		print "    <div class=\"boxpadding\">
+		print "    <div class=\"sideboxpadding\">
       <div class=\"boxheader\">
         $boxhead
       </div>
@@ -44,7 +44,7 @@ function fwsidebox($boxhead="", $content)
 	// the opposite, no boxhead
 	else
 	{
-		print "    <div class=\"boxpadding\">
+		print "    <div class=\"sideboxpadding\">
       $content
     </div>\n";
 	}

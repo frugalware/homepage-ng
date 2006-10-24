@@ -7,8 +7,5 @@
 </div>
 <!-- footer end -->
 
-</div>
-<!-- wrapper end -->
-
 </body>
 </html>

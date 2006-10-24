@@ -67,7 +67,7 @@ if ( $id != -1 )
 for ( $i=0; $i<$news_limit; $i++)
 {
 	$posts[$i][id] = $news[$i]->id[0]->tagData;
-	$posts[$i][title] = "<a class=\"menu\" href=\"".$fwng_root."news/".$posts[$i]['id']."\">".$news[$i]->title[0]->tagData."</a>";
+	$posts[$i][title] = "<a class=\"boxheader\" href=\"".$fwng_root."news/".$posts[$i]['id']."\">".$news[$i]->title[0]->tagData."</a>";
 	$posts[$i][date] = $news[$i]->date[0]->tagData;
 	$posts[$i][author] = $news[$i]->author[0]->tagData;
 	$posts[$i][content] = $news[$i]->content[0]->tagData;
@@ -91,7 +91,7 @@ if ( $id != -1 )
 			{
 				$edited .= $posts[$i][editedby][$j][name]." ".gettext(" edited this news on ").$posts[$i][editedby][$j][date]."<br />";
 			}
-			fwmiddlebox($posts[$i][title], "<div align=\"right\"><small>".$posts[$i][date]."<br />".gettext("posted by")." ".$posts[$i][author]."</small></div>\n<div align=\"justify\">\n".$posts[$i][content]."\n</div>");
+			fwmiddlebox($posts[$i][title], "<span style=\"color: #999\">".gettext("Posted by")." ".$posts[$i][author]." - ".$posts[$i][date]."</span><br /><br />\n<div align=\"justify\">\n".$posts[$i][content]."\n</div>");
 			if ( $edited != "" ) fwmiddlebox(gettext("News history"), $edited);
 		}
 	}
@@ -102,7 +102,7 @@ else
 		print gettext("Sorry, no news on your language, using English instead.");
 	for( $i=0; $i<count($posts); $i++ )
 	{
-		fwmiddlebox($posts[$i][title], "<div align=\"right\"><small>".$posts[$i][date]."<br />".gettext("posted by")." ".$posts[$i][author]."</small></div>\n<div align=\"justify\">\n".$posts[$i][content]."\n</div>");
+		fwmiddlebox($posts[$i][title], "<span style=\"color: #999\">".gettext("Posted by")." ".$posts[$i][author]." - ".$posts[$i][date]."</span><br /><br />\n<div align=\"justify\">\n".$posts[$i][content]."\n</div>");
 	}
 }
 

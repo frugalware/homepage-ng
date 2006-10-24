@@ -32,7 +32,7 @@ $domain = 'homepage';
 ## Main page ##
 
 # box contents
-$validcontent = '<div align="center">
+$validcontent = '<div align="left">
 	  <a href="http://' . $_SERVER["SERVER_NAME"] . '/"><img src="' . $fwng_root . 'images/frugalware80x15.png" alt="Go Frugalware, Go" border="0" title="Go Frugalware, Go" /></a><br />
 	  <a href="http://validator.w3.org/check/referer"><img src="' . $fwng_root . 'images/xhtml10.png" alt="Valid XHTML 1.0!" border="0" title="Valid XHTML 1.0!" /></a><br />
 	  <a href="http://jigsaw.w3.org/css-validator/check/referer"><img src="' . $fwng_root . 'images/css.png" alt="Valid CSS!" title="Valid CSS!" border="0" /></a><br />

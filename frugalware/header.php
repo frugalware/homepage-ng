@@ -52,7 +52,7 @@ if(!(isset($info) && ((time() - $info["mtime"])<$pkgcachetimeout)))
 	foreach($pkgs as $i)
 	{
 		$writeout = $i['name'] . "/${i['pkgname']}";
-		if (strlen($writeout) > 26)
+		if (strlen($writeout) > 20)
 			$writeout = $i['name'] . "/<br />&nbsp;${i['pkgname']}";
 		fwrite($fp, $writeout."<br />\n" .
 			"<a href=\"${fwng_root}packages/${i['id']}\">${i['pkgver']}-${i['arch']}</a><br />\n");
@@ -110,9 +110,6 @@ else if($_SERVER['PHP_SELF']=="/packages.php")
 ?>
 </head>
 <body>
-
-<!-- wrapper start -->
-<div id="wrapper">
 
 <!-- header start -->
 <div id="header">
