@@ -93,6 +93,7 @@ if ( $id != -1 )
 			}
 			fwmiddlebox($posts[$i][title], "<span style=\"color: #999\">".gettext("Posted by")." ".$posts[$i][author]." - ".$posts[$i][date]."</span><br /><br />\n<div align=\"justify\">\n".$posts[$i][content]."\n</div>");
 			if ( $edited != "" ) fwmiddlebox(gettext("News history"), $edited);
+			print "<hr /><br />";
 		}
 	}
 }
@@ -103,6 +104,7 @@ else
 	for( $i=0; $i<count($posts); $i++ )
 	{
 		fwmiddlebox($posts[$i][title], "<span style=\"color: #999\">".gettext("Posted by")." ".$posts[$i][author]." - ".$posts[$i][date]."</span><br /><br />\n<div align=\"justify\">\n".$posts[$i][content]."\n</div>");
+		print "<hr /><br />";
 	}
 }
 

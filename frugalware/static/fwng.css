@@ -184,3 +184,11 @@ FIELDSET.fieldset {
 	padding-left: 5px;
 	padding-right: 5px;
 }
+
+hr {
+	background-color: #6D62FF;
+	color: #fff;
+	height: 1px;
+	border: 1px solid #6D62FF;
+	margin: 5px 0 0 0;
+}
