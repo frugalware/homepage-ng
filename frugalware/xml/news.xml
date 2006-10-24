@@ -12,6 +12,18 @@
 ]>
 <news>
 	<post>
+		<id>49</id>
+		<title>Yet another homepage redesign!</title>
+		<date>Sun Oct 24 20:37:14 CEST 2006</date>
+		<author>AlexExtreme</author>
+		<content><![CDATA[
+			I'm one of the fussy web-designers. I create a design, a few months later I think it's rubbish. So I created a new design :) Feel free to drop your comments to the Frugalware-devel list.<br /><br />
+			
+			In other news, ftp5 should be back in sync. Have a good day! ;)
+			]]>
+		</content>
+	</post>		
+	<post>
 		<id>48</id>
 		<title>ftp5.frugalware.org is currently out of sync</title>
 		<date>Sun Oct 12 17:41:12 CEST 2006</date>
