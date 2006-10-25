@@ -1,81 +1,11 @@
 <?php
 header("Content-type: text/html; charset=UTF-8");
 
-include("xml.inc.php");
-if (file_exists('xml/roadmap.xml'))
-	$xmlfl = 'xml/roadmap.xml';
-else
-	$xmlfl = $docs_path.'xml/roadmap.xml';
-$xml = file_get_contents($xmlfl);
-$parser = new XMLParser($xml);
-$parser->Parse();
-$roadmap = $parser->document->release;
-$j = 0;
-for ( $i = 0; $i < count($roadmap); $i++)
-{
-	if ($roadmap[$i]->status[0]->tagData == 1)
-	{
-		$stable[$j][name] = $roadmap[$i]->name[0]->tagData;
-		$stable[$j][version] = $roadmap[$i]->version[0]->tagData;
-		$stable[$j][date] = $roadmap[$i]->date[0]->tagData;
-		$stable[$j][newsid] = $roadmap[$i]->newsid[0]->tagData;
-		$j++;
-	}
-}
-$rels = "";
-for ( $i=0; $i<count($stable); $i++ )
-{
-	$rels .= "<p><a href=\"".$fwng_root."news/".$stable[$i][newsid]."\">frugalware-".$stable[$i][version]." (".$stable[$i][name].")</a><br />".$stable[$i][date]."</p>\n";
-}
-$rels .= "<p align=\"center\">\n<a href=\"${fwng_root}rss/releases\">RSS</a>\n</p>\n";
+include("header.inc.php");
 
-include("db.inc.php");
-if(file_exists($pkgcache))
-	        $info = stat($pkgcache);
-if(!(isset($info) && ((time() - $info["mtime"])<$pkgcachetimeout)))
-{
-	$db = new FwDB();
-	$db->doConnect($sqlhost, $sqluser, $sqlpass, $sqldb);
-	$query = "select packages.pkgname, groups.name, packages.id, 
-		packages.pkgver, packages.arch, packages.`desc`, 
-		unix_timestamp(packages.builddate) from packages, groups, 
-		ct_groups where packages.id = ct_groups.pkg_id and 
-		ct_groups.group_id = groups.id group by 
-		concat(packages.pkgname, packages.arch) order by 
-		packages.builddate desc limit 10";
-	$result = $db->doQuery($query);
-	while($i = $db->doFetchRow($result))
-		$pkgs[] = $i;
-	$db->doClose();
-	$fp = fopen($pkgcache, "w");
-	fwrite($fp, "<div align=\"left\">\n");
-	foreach($pkgs as $i)
-	{
-		$writeout = $i['name'] . "/${i['pkgname']}";
-		if (strlen($writeout) > 20)
-			$writeout = $i['name'] . "/<br />&nbsp;${i['pkgname']}";
-		fwrite($fp, $writeout."<br />\n" .
-			"<a href=\"${fwng_root}packages/${i['id']}\">${i['pkgver']}-${i['arch']}</a><br />\n");
-	}
-	fwrite($fp, "</div>");
-	fwrite($fp, "<br />\n<div align=\"center\"><a href=\"${fwng_root}rss/packages\">RSS</a></div>");
-	fclose($fp);
-}
-$recupd = file_get_contents($pkgcache);
+$data = genHeader();
 
-$statf=file($upfile);
-list($uptime, $junk) = split(" ", $statf[0]);
-$secuptime=floor($uptime);
-// sec
-$minuptime=60*floor($uptime/60);
-$sec= $secuptime - $minuptime;
-// min
-$houruptime=3600*floor($minuptime/3600);
-$min= $minuptime - $houruptime;
-// hour
-$dayuptime=86400*floor($houruptime/86400);
-$hour= $houruptime - $dayuptime;
-$uptime = sprintf(gettext("Uptime:<br /> %d day(s) %d h %d m %d s"), $dayuptime/86400, $hour/3600, $min/60, $sec);
+
 
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -137,11 +67,11 @@ else if($_SERVER['PHP_SELF']=="/packages.php")
 <!-- main content start -->
 <div id="leftcolumn">
 <?php
-fwsidebox(gettext("Releases"), $rels);
-fwsidebox(gettext("Recent updates"), $recupd);
+fwsidebox(gettext("Releases"), $data['releases']);
+fwsidebox(gettext("Recent updates"), $data['packages']);
 fwsidebox(gettext("Languages"), $langcontent);
 fwsidebox(gettext("Information"), $validcontent);
-fwsidebox(gettext("Server information"), $uptime);
+fwsidebox(gettext("Server information"), $data['uptime']);
 ?>
 </div>
 <div id="centercolumn">
