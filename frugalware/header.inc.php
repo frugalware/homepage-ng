@@ -23,6 +23,7 @@ include("db.inc.php");
 
 function genHeader($usegettext = true, $url = "") {
 	
+	global $fwng_root;
 	global $sqltype;
 	global $sqlhost;
 	global $sqluser;
