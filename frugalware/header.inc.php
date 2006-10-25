@@ -21,7 +21,7 @@ include("xml.inc.php");
 include("config.inc.php");
 include("db.inc.php");
 
-function genHeader($usegettext = true, $url = "") {
+function genHeader($usegettext = true) {
 	
 	global $fwng_root;
 	global $sqltype;
@@ -66,11 +66,11 @@ function genHeader($usegettext = true, $url = "") {
 	$rels = "";
 	for ( $i=0; $i<count($stable); $i++ ) {
 		
-		$rels .= "<p><a href=\"".$url.$fwng_root."news/".$stable[$i][newsid]."\">frugalware-".$stable[$i][version]." (".$stable[$i][name].")</a><br />".$stable[$i][date]."</p>\n";
+		$rels .= "<p><a href=\"".$fwng_root."news/".$stable[$i][newsid]."\">frugalware-".$stable[$i][version]." (".$stable[$i][name].")</a><br />".$stable[$i][date]."</p>\n";
 		
 	}
 	
-	$rels .= "<p align=\"center\">\n<a href=\"${url}${fwng_root}rss/releases\">RSS</a>\n</p>\n";
+	$rels .= "<p align=\"center\">\n<a href=\"${fwng_root}rss/releases\">RSS</a>\n</p>\n";
 	
 	if(file_exists($pkgcache))
 		$info = stat($pkgcache);
@@ -102,12 +102,12 @@ function genHeader($usegettext = true, $url = "") {
 			if (strlen($writeout) > 20)
 				$writeout = $i['name'] . "/<br />&nbsp;${i['pkgname']}";
 			fwrite($fp, $writeout."<br />\n" .
-				"<a href=\"${url}${fwng_root}packages/${i['id']}\">${i['pkgver']}-${i['arch']}</a><br />\n");
+				"<a href=\"${fwng_root}packages/${i['id']}\">${i['pkgver']}-${i['arch']}</a><br />\n");
 			
 		}
 		
 		fwrite($fp, "</div>");
-		fwrite($fp, "<br />\n<div align=\"center\"><a href=\"${url}${fwng_root}rss/packages\">RSS</a></div>");
+		fwrite($fp, "<br />\n<div align=\"center\"><a href=\"${fwng_root}rss/packages\">RSS</a></div>");
 		fclose($fp);
 		
 	}
