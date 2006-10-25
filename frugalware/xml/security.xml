@@ -27,6 +27,21 @@
 
 <fsas>
 	<fsa>
+		<id>30</id>
+		<date>2006-10-25</date>
+		<author>voroskoi</author>
+		<package>drupal</package>
+		<vulnerable>4.7.3-1</vulnerable>
+		<unaffected>4.7.3-2siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1338</bts>
+		<cve>There is no CVE for this issue, see: http://secunia.com/advisories/22486</cve>
+		<desc>Some vulnerabilities have been reported in Drupal, which can be exploited by malicious users to conduct script insertion attacks, and by malicious people to conduct cross-site scripting and cross-site request forgery attacks.
+			1) Some unspecified input is not properly sanitised in the XML parser before being used. This can be exploited to execute arbitrary HTML and script code in a user's browser session in context of an affected site via a specially crafted RSS feed. Successful exploitation requires that the PHP "mbstring" extension is disabled.
+			2) Some unspecified input is not properly sanitised before being used in the "aggregator", "profile", and "forum" module. This can be exploited to insert arbitrary HTML and script code, which will be executed in a user's browser session in context of an affected site.
+			3) An error exists due to the application allowing users to perform certain actions via HTTP requests without performing any validity checks to verify the user's request. This can e.g. be exploited to change passwords, post PHP code, or create new users.
+			4) Some input to unspecified parameters is not properly sanitised before being returned to the user. This can be exploited to redirect a user's form submission to an attackers site when the user is tricked to use a specially crafted link.</desc>
+	</fsa>
+	<fsa>
 		<id>29</id>
 		<date>2006-10-24</date>
 		<author>voroskoi</author>
