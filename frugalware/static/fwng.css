@@ -6,7 +6,7 @@
 body {
 	background-color: #fff;
 	font-family: Bitstream Vera Sans, Lucida Grande, Arial, sans-serif;
-	font-size: 0.70em;
+	font-size: 0.75em;
 	color: #000;
 	padding: 0;
 	margin: 0;
@@ -82,7 +82,7 @@ div#header div#search p {
 
 div#leftcolumn {
 	/* we use fix column width to get fix space between boxes */
-	width: 167px;
+	width: 175px;
 	float: left;
 	padding: 10px;
 	margin: 0px;
@@ -92,7 +92,7 @@ div#leftcolumn {
 }
 
 div#centercolumn {
-	margin-left: 187px;
+	margin-left: 195px;
 	padding: 10px;
 	background-color: #fff;
 }
@@ -125,7 +125,7 @@ div.freespace {
 
 div.boxheader {
 	color: #4d54a4;
-	font-size: 1.5em;
+	font-size: 1.3em;
 	text-align: left;
 	background-color: transparent;
 }
