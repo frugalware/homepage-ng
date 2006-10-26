@@ -22,13 +22,13 @@ div#nav {
 	margin-top: 0px;
 	margin-bottom: 0px;
 	text-align: left;
-	background-color: #8aa6ec;
+	background-color: #204bac;
 	color: #fff;
 	border: 0;
 }
 
 a {
-	color: #4951a2;
+	color: #204bac;
 	background-color: transparent;
 	text-decoration: none;
 }
@@ -113,7 +113,7 @@ div.boxpadding {
 }
 
 div.sideboxpadding {
-	border: 1px solid #758cff;
+	border: 1px solid #204bac;
 	background-color: #e2e5ff;
 	/* the height of the space below the boxes */
 	margin-bottom: 10px;
@@ -125,7 +125,7 @@ div.freespace {
 }
 
 div.boxheader {
-	color: #4d54a4;
+	color: #204bac;
 	font-size: 1.3em;
 	text-align: left;
 	background-color: transparent;
@@ -174,10 +174,10 @@ FIELDSET.fieldset {
 .menulinkcss {
 	position:absolute;
 	visibility: hidden;
-	border:1px solid #8aa6ec;
+	border:1px solid #204bac;
 	background-color: #FFFFFF;
 	margin-left: 0px;
-	margin-top: 3px;
+	margin-top: 2px;
 }
 
 .menulinkcss a {
@@ -187,9 +187,9 @@ FIELDSET.fieldset {
 }
 
 hr {
-	background-color: #6D62FF;
+	background-color: #204bac;
 	color: #fff;
 	height: 1px;
-	border: 1px solid #6D62FF;
+	border: 1px solid #204bac;
 	margin: 5px 0 0 0;
 }
