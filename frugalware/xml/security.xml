@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>32</id>
+		<date>2006-10-26</date>
+		<author>voroskoi</author>
+		<package>screen</package>
+		<vulnerable>4.0.2-2</vulnerable>
+		<unaffected>4.0.3-1siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1366</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4573</cve>
+		<desc>Some vulnerabilities have been reported in GNU Screen, which can be exploited by malicious people to cause a DoS (Denial of Service) or potentially compromise a vulnerable system.
+			The vulnerabilities are caused due to errors within the handling of certain UTF-8 characters. This can be exploited to crash GNU Screen or potentially execute arbitrary code by printing a specially crafted string to the window.</desc>
+	</fsa>
+	<fsa>
 		<id>31</id>
 		<date>2006-10-26</date>
 		<author>voroskoi</author>
