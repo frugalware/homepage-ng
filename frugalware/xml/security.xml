@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>31</id>
+		<date>2006-10-26</date>
+		<author>voroskoi</author>
+		<package>cscope</package>
+		<vulnerable>15.5-1</vulnerable>
+		<unaffected>15.6-1siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1340</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4262</cve>
+		<desc>Will Drewry has reported some vulnerabilities in Cscope, which potentially can be exploited by malicious people to compromise a vulnerable system.
+			1) Various boundary errors within the parsing of file lists or the expansion of environment variables can be exploited to cause stack-based buffer overflows when parsing specially crafted "cscope.lists" files or directories.
+			2) A boundary error within the parsing of command line arguments can be exploited to cause a stack-based buffer overflow when supplying an overly long "reffile" argument.</desc>
+	</fsa>
+	<fsa>
 		<id>30</id>
 		<date>2006-10-25</date>
 		<author>voroskoi</author>
