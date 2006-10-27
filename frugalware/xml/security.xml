@@ -27,6 +27,20 @@
 
 <fsas>
 	<fsa>
+		<id>33</id>
+		<date>2006-10-27</date>
+		<author>voroskoi</author>
+		<package>postgresql</package>
+		<vulnerable>8.1.4-2</vulnerable>
+		<unaffected>8.1.5-1siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1367</bts>
+		<cve>There is no CVE for this issue, see: http://secunia.com/advisories/22562</cve>
+		<desc>Some vulnerabilities have been reported in PostgreSQL, which can be exploited by malicious users to cause a DoS (Denial of Service).
+			1) An incorrect type check before coercing unknown literals into the ANYARRAY type can be exploited to cause a crash when converting certain literals into ANYARRAY.
+			2) An error exists within the handling of aggregate functions in UPDATE statements, which can be exploited to crash the server backend.
+			3) An error within the logging of V3-protocol execute messages of ROLLBACK or COMMIT statements can be exploited to cause a crash.</desc>
+	</fsa>
+	<fsa>
 		<id>32</id>
 		<date>2006-10-26</date>
 		<author>voroskoi</author>
