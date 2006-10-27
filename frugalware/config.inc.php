@@ -15,7 +15,8 @@ $sqlpass = "85Tdjf{Od";
 $sqldb = "frugalware2";
 
 #site settings
-$fwng_root = $myurl."/";
+$fwng_root_pre = "/";
+$fwng_root = $myurl.$fwng_root_pre;
 $adodb_path = "/usr/lib/php";
 $top_path = "/home/ftp/pub/frugalware/frugalware-current";
 $docs_path = $top_path."/docs";
