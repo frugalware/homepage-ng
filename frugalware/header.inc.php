@@ -102,7 +102,7 @@ function genHeader($usegettext = true) {
 			if (strlen($writeout) > 20)
 				$writeout = $i['name'] . "/<br />&nbsp;${i['pkgname']}";
 			fwrite($fp, $writeout."<br />\n" .
-				"<a href=\"${fwng_root_pre}packages/${i['id']}\">${i['pkgver']}-${i['arch']}</a><br />\n");
+				"<a href=\"${fwng_root}packages/${i['id']}\">${i['pkgver']}-${i['arch']}</a><br />\n");
 			
 		}
 		
