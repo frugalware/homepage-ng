@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>34</id>
+		<date>2006-10-31</date>
+		<author>voroskoi</author>
+		<package>wv</package>
+		<vulnerable>1.2.1-1</vulnerable>
+		<unaffected>1.2.4-1siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1374</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4513</cve>
+		<desc>Some vulnerabilities have been reported in wvWare, which can be exploited by malicious people to cause a DoS (Denial of Service) and potentially compromise an application using the library.
+			The vulnerabilities are caused due to integer overflows within the "wvGetLFO_records()" and "wvGetLFO_PLF()" functions. These can be exploited to cause heap-based buffer overflows by e.g. tricking a user to open a specially crafted Microsoft Word document with an application using the library.</desc>
+	</fsa>
+	<fsa>
 		<id>33</id>
 		<date>2006-10-27</date>
 		<author>voroskoi</author>
