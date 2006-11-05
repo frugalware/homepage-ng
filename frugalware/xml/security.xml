@@ -27,6 +27,23 @@
 
 <fsas>
 	<fsa>
+		<id>35</id>
+		<date>2006-11-05</date>
+		<author>voroskoi</author>
+		<package>wireshark</package>
+		<vulnerable>0.99.3a-1</vulnerable>
+		<unaffected>0.99.4-1siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1376</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-5468
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-5740
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4805
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-5469
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4574
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-5595</cve>
+		<desc>Some vulnerabilities have been reported in Wireshark, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			Errors within the HTTP, LDAP, XOT, WBXML, and MIME parsers can be exploited to cause a crash or consume large amounts of memory when parsing a specially crafted packet that is either captured off the wire or loaded via a capture file.</desc>
+	</fsa>
+	<fsa>
 		<id>34</id>
 		<date>2006-10-31</date>
 		<author>voroskoi</author>
