@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>39</id>
+		<date>2006-11-06</date>
+		<author>voroskoi</author>
+		<package>php</package>
+		<vulnerable>5.1.6-2siwenna1</vulnerable>
+		<unaffected>5.1.6-3siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1419</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-5465</cve>
+		<desc>Some vulnerabilities have been reported in PHP, which can be exploited by malicious people to cause a DoS (Denial of Service) or potentially compromise a vulnerable system.
+			The vulnerabilities are caused due to boundary errors within the "htmlentities()" and "htmlspecialchars()" functions. If a PHP application uses these functions to process user-supplied input, this can be exploited to cause a heap-based buffer overflow by passing specially crafted data to the affected application.
+			Successful exploitation may allow execution of arbitrary code, but requires that the UTF-8 character set is selected.</desc>
+	</fsa>
+	<fsa>
 		<id>38</id>
 		<date>2006-11-06</date>
 		<author>voroskoi</author>
