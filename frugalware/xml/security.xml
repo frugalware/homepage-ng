@@ -27,6 +27,20 @@
 
 <fsas>
 	<fsa>
+		<id>36</id>
+		<date>2006-11-06</date>
+		<author>voroskoi</author>
+		<package>mutt</package>
+		<vulnerable>1.4.2.2-1</vulnerable>
+		<unaffected>1.4.2.2-2siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1399</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-5297
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-5298</cve>
+		<desc>Some weaknesses have been reported in mutt, which potentially can be exploited by malicious, local users to perform certain actions with escalated privileges.
+			1) The "safe_open()" function insecurely creates temporary files on NFS directories, because the O_EXEC flag is not always correctly honored. This may be exploited to overwrite arbitrary files.
+			2) A race condition exists within the "mutt_adv_mktemp()" function between calling "mktemp()" and "safe_fopen()". This may be exploited to create files with weak permissions.</desc>
+	</fsa>
+	<fsa>
 		<id>35</id>
 		<date>2006-11-05</date>
 		<author>voroskoi</author>
