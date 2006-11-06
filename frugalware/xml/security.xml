@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>38</id>
+		<date>2006-11-06</date>
+		<author>voroskoi</author>
+		<package>libx11</package>
+		<vulnerable>1.0.3-1</vulnerable>
+		<unaffected>1.0.3-2siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1416</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-5397</cve>
+		<desc>Kees Cook has reported a vulnerability in libX11, which can be exploited by malicious, local users to disclose potentially sensitive information.
+			The vulnerability is caused due to a file descriptor leak in the Xinput module, which can be exploited to disclose the content of certain files.</desc>
+	</fsa>
+	<fsa>
 		<id>37</id>
 		<date>2006-11-06</date>
 		<author>voroskoi</author>
