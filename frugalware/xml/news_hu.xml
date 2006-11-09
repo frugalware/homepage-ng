@@ -12,6 +12,83 @@
 ]>
 <news>
 	<post>
+		<id>50</id>
+		<title>Megjelent a Frugalware 0.6pre1 (Terminus)</title>
+		<date>Thu Nov  9 09:22:04 CET 2006</date>
+		<author>Boobaa</author>
+		<content><![CDATA[
+			A Frugalware Fejlesztői Csapat örömmel <a href="/news/50">jelenti be</a> a Frugalware 0.6pre1 azonnali elérhetőségét, mint az eljövendő 0.6-os stabil kiadás első előzetes változatát.<br />
+			Egy rövid, nem teljes lista a 0.5 óta történt változásokról:<br />
+			<ul>
+				<li>Újdonságok:
+					<ul>
+						<li>Az összes alapértelmezésben telepített csomagot a gcj-vel/ecj-vel fordítottuk,
+							a javac csak alternatívaként szerepel.</li>
+						<li>Támogatjuk az USB meghajtóról való telepítést.</li>
+						<li>23 nyelven csomagoltunk PHP dokumentációt.</li>
+					</ul>
+				</li>
+				<li>Frissítések:
+					<ul>
+									<li>Linux 2.6.18 erősen továbbfejlesztett SATA réteggel és néhány új driverrel</li>
+									<li>GNU C Library 2.5 az új ELF hashtábla-formátum támogatásával</li>
+									<li>Mozilla Firefox 2.0 továbbfejlesztett füles böngészéssel és beépített helyesírás-ellenőrzővel</li>
+									<li>Xfce 4.4rc1, ami megoldja a pluginek összeomlását okozó hibát a régi Xfce 4.2.x-ből,
+													valamint sokkal stabilabb</li>
+									<li>KDE 3.5.5 KHTML fejlesztésekkel és sudo támogatással a kdesu-ban</li>
+									<li>OpenOffice.org 2.0.4 LaTeX exportszűrővel és titkosítás-támogatással
+													a PDF exportszűrőben</li>
+									<li>D-Bus 0.93 rengeteg memóriaszivárgási és egyéb hiba javításával</li>
+									<li>neon 0.26.1 nemzetközi támogatással</li>
+									<li>Xen 3.0.3 HVM és XenFB támogatással; a Xen kerneleket frissítettük 2.6.18-ra</li>
+									<li>db 4.5.20 Multi-Version Concurrency Control (MVCC) támogatással</li>
+									<li>Python 2.5 érdekes nyelvi és könyvtári fejlesztések keverékével</li>
+									<li>GNOME 2.17.1 különböző hibajavításokkal és újdonságokkal</li>
+									<li>Binutils 2.17.50.0.6, mely lehetővé teszi számunkra az új ELF hashtábla-formátum
+													használatát, amit alapértelmezésben bekapcsoltunk a fordítóinkban. Ez jelentős
+													teljesítménynövekedést jelent az újonnan fordított csomagjainknál.</li>
+					</ul>
+				</li>
+			</ul>
+			Bővebb információért tekintse meg a Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Testing változáslistát</a><br />
+			Letöltés i686-ra:<br />
+			<b>MEGJEGYZÉS</b>: Ne töltse le a 3-10. CD-ket vagy a második DVD-t, csak ha nincs internet-kapcsolata<br />
+				<a href="/download/frugalware-testing-iso/frugalware-0.6pre1-i686-net.iso">netinstall</a> (20M),
+				<a href="/download/frugalware-testing-iso/frugalware-0.6pre1-i686-usb.tar.gz">usb</a> (18M),
+				<a href="/download/frugalware-testing-iso/frugalware-0.6pre1-i686-cd1.iso">cd1</a> (642M),
+				<a href="/download/frugalware-testing-iso/frugalware-0.6pre1-i686-cd2.iso">cd2</a> (643M),
+				<a href="/download/frugalware-testing-iso/frugalware-0.6pre1-i686-cd3.iso">cd3</a> (639M),
+				<a href="/download/frugalware-testing-iso/frugalware-0.6pre1-i686-cd4.iso">cd4</a> (642M),
+				<a href="/download/frugalware-testing-iso/frugalware-0.6pre1-i686-cd5.iso">cd5</a> (636M),
+				<a href="/download/frugalware-testing-iso/frugalware-0.6pre1-i686-cd6.iso">cd6</a> (641M),
+				<a href="/download/frugalware-testing-iso/frugalware-0.6pre1-i686-cd7.iso">cd7</a> (642M),
+				<a href="/download/frugalware-testing-iso/frugalware-0.6pre1-i686-cd8.iso">cd8</a> (641M),
+				<a href="/download/frugalware-testing-iso/frugalware-0.6pre1-i686-cd9.iso">cd9</a> (642M),
+				<a href="/download/frugalware-testing-iso/frugalware-0.6pre1-i686-cd9.iso">cd10</a> (250M),
+				<a href="/download/frugalware-testing-iso/frugalware-0.6pre1-i686-dvd1.iso">dvd1</a> (4.2G)
+				<a href="/download/frugalware-testing-iso/frugalware-0.6pre1-i686-dvd2.iso">dvd2</a> (1.6G)
+				<br />
+			SHA1SUMok:
+			<pre>
+9519c08313fd786e3b1f858e8d03fc82cf0298b3  frugalware-0.6pre1-i686-cd1.iso
+e0689fe3716099b2e052779ee41966ba428f0dd9  frugalware-0.6pre1-i686-cd2.iso
+f1bd6cafa9fcb40542a9ccb7413c1a68a503fb7b  frugalware-0.6pre1-i686-cd3.iso
+f09367e36cd1f9b8d9608d23113866a271b800d0  frugalware-0.6pre1-i686-cd4.iso
+5ebc71fa7fd6761a736d3d76970e8e392834cc2f  frugalware-0.6pre1-i686-cd5.iso
+bd4c83b05a8a1a5d59829dcef0654c4d54efb919  frugalware-0.6pre1-i686-cd6.iso
+fc1c0e4f80e290cee0450fa1812e9d549ca75572  frugalware-0.6pre1-i686-cd7.iso
+8166ca475dd2320687d0caaa30bfb5e7eb88344b  frugalware-0.6pre1-i686-cd8.iso
+19bdbe64efdb050ef1c0c551157e86b51fa05e1b  frugalware-0.6pre1-i686-cd9.iso
+08110f0ad259d2f1b2b44048a34af70ab615150b  frugalware-0.6pre1-i686-cd10.iso
+36b3c488cf625b090e399f655a03e55517993623  frugalware-0.6pre1-i686-dvd1.iso
+34c610b521a998d87f1e5fafff4a34e310f61e92  frugalware-0.6pre1-i686-dvd2.iso
+eeaa4b9bafab9b1c3c5454c1599687fd600b3525  frugalware-0.6pre1-i686-net.iso
+6b59b1e750626f907107bcec6ead006d8e6a69a7  frugalware-0.6pre1-i686-usb.tar.gz
+			</pre>
+			]]>
+		</content>
+	</post>
+	<post>
 		<id>45</id>
 		<title><![CDATA[Megjelent a Frugalware 0.5 (Siwenna) i686-ra  és x86_64-re]]></title>
 		<date>Wed Sep 14 09:10:25 CEST 2006</date>
