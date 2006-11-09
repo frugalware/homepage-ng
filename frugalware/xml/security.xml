@@ -27,6 +27,20 @@
 
 <fsas>
 	<fsa>
+		<id>40</id>
+		<date>2006-11-09</date>
+		<author>voroskoi</author>
+		<package>bind</package>
+		<vulnerable>9.3.2_P1-1siwenna1</vulnerable>
+		<unaffected>9.3.2_P2-1siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1420</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4339
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-2937
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-2940</cve>
+		<desc>Some vulnerabilities have been reported in BIND, which can be exploited by malicious people to bypass certain security restrictions or cause a DoS (Denial of Service).
+			The vulnerabilities are caused due to the potential use of vulnerable OpenSSL libraries.</desc>
+	</fsa>
+	<fsa>
 		<id>39</id>
 		<date>2006-11-06</date>
 		<author>voroskoi</author>
