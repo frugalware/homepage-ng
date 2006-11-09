@@ -24,7 +24,7 @@
 					<ul>
 						<li>All installed-by-default packages are now built using gcj/ecj, javac is
 							only provided as an alternate compiler.</li>
-						<li>Installing from an usb stick is now supported.</li>
+						<li>Installing from a USB stick is now supported.</li>
 						<li>Added PHP documentation for 23 languages.</li>
 					</ul>
 				</li>
