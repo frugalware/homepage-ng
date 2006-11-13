@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>41</id>
+		<date>2006-11-13</date>
+		<author>voroskoi</author>
+		<package>kernel</package>
+		<vulnerable>2.6.17-6siwenna1</vulnerable>
+		<unaffected>2.6.17-6siwenna2</unaffected>
+		<bts>http://bugs.frugalware.org/task/1423</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-5619</cve>
+		<desc>A vulnerability has been reported in the Linux Kernel, which can be exploited by malicious, local users to cause a DoS (Denial of Service).
+			The vulnerability is caused due to an error within the handling of seqfiles for "/proc/net/ip6_flowlabel", which can be exploited to cause kernel lockups and crashes via specially crafted flow labels.</desc>
+	</fsa>
+	<fsa>
 		<id>40</id>
 		<date>2006-11-09</date>
 		<author>voroskoi</author>
