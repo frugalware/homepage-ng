@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>45</id>
+		<date>2006-11-14</date>
+		<author>voroskoi</author>
+		<package>ruby</package>
+		<vulnerable>1.8.5-1</vulnerable>
+		<unaffected>1.8.5-2siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1418</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-0983
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-5467</cve>
+		<desc>A vulnerability has been reported in Ruby, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			The vulnerability is caused due to an input validation error in "cgi.rb". This can be exploited to consume a large amount of CPU resources by sending a specially crafted HTTP POST request.</desc>
+	</fsa>
+	<fsa>
 		<id>44</id>
 		<date>2006-11-14</date>
 		<author>voroskoi</author>
