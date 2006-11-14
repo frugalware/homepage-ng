@@ -27,6 +27,27 @@
 
 <fsas>
 	<fsa>
+		<id>46</id>
+		<date>2006-11-14</date>
+		<author>voroskoi</author>
+		<package>thundeerbird</package>
+		<vulnerable>1.5.0.7-1siwenna1</vulnerable>
+		<unaffected>1.5.0.8-1siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1435</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-5464
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-5747
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-5748
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-5462
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-5463</cve>
+		<desc>Some vulnerabilities have been reported in Mozilla Thunderbird, which can be exploited by malicious people to bypass certain security restrictions, conduct cross-site scripting attacks, and potentially compromise a vulnerable system.
+			1) The bundled Network Security Services (NSS) library contains an incomplete fix for the RSA signature verification vulnerability reported in MFSA 2006-60.
+			2) An error exists within the handling of Script objects. This can be potentially be exploited to execute arbitrary JavaScript bytecode by modifying already running Script objects.
+			Successful exploitation requires that JavaScript is enabled.
+			3) Some unspecified errors in the layout engine and memory corruption errors in the JavaScript engine can be exploited to crash the application and may allow the execution of arbitrary code.
+			Successful exploitation of some of these vulnerabilities requires that JavaScript is enabled.
+			4) An unspecified error within XML.prototype.hasOwnProperty can potentially be exploited to execute arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>45</id>
 		<date>2006-11-14</date>
 		<author>voroskoi</author>
