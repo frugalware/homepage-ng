@@ -89,8 +89,7 @@ if($page=="rss" and isset($urlsuffix))
 {
 	// special header + those page can have <?xml..
 	header('Content-Type: application/xml; charset=utf-8');
-	header('Location: ' . $url);
-	//readfile($url);
+	readfile($url);
 }
 else
 {
@@ -103,7 +102,6 @@ else
 	else
 		$url.="&lang=$lang";
 	header("Content-type: text/html; charset=UTF-8");
-	header('Location: ' . $url);
-	//include($url);
+	include($url);
 }
 ?>
