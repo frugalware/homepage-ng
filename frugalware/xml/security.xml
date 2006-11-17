@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>47</id>
+		<date>2006-11-17</date>
+		<author>voroskoi</author>
+		<package>openssh</package>
+		<vulnerable>4.4p1-1siwenna1</vulnerable>
+		<unaffected>4.5p1-1siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1438</bts>
+		<cve>There is no CVE for this issue, see: http://secunia.com/advisories/22771</cve>
+		<desc>A weakness has been reported in OpenSSH, which can be exploited by malicious people to bypass certain security restrictions.
+			The weakness is caused due to an error within the privilege separation monitor, which may weaken the authentication process.
+			Reportedly, the weakness can only be exploited in combination with other vulnerabilities.</desc>
+	</fsa>
+	<fsa>
 		<id>46</id>
 		<date>2006-11-14</date>
 		<author>voroskoi</author>
