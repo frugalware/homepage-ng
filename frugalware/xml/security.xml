@@ -27,6 +27,17 @@
 
 <fsas>
 	<fsa>
+		<id>51</id>
+		<date>2006-11-23</date>
+		<author>voroskoi</author>
+		<package>libarchive</package>
+		<vulnerable>1.2.57-1</vulnerable>
+		<unaffected>1.2.57-2siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1442</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-5680</cve>
+		<desc>If the end of an archive is reached while attempting to "skip" past a region of an archive, libarchive will enter an infinite loop wherein it repeatedly attempts (and fails) to read further data.</desc>
+	</fsa>
+	<fsa>
 		<id>50</id>
 		<date>2006-11-23</date>
 		<author>voroskoi</author>
