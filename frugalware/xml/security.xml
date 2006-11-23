@@ -27,6 +27,20 @@
 
 <fsas>
 	<fsa>
+		<id>49</id>
+		<date>2006-11-23</date>
+		<author>voroskoi</author>
+		<package>pdns-recursor</package>
+		<vulnerable>3.1.2-1</vulnerable>
+		<unaffected>3.1.4-1siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1454</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4251
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4252</cve>
+		<desc>Two vulnerabilities have been reported in PowerDNS Recursor, which can be exploited by malicious people to cause a DoS (Denial of Service) and potentially compromise a vulnerable system.
+			1) An error in length calculation when handling TCP DNS queries can be exploited to cause an overly large copy via a specially crafted packet. Successful exploitation may allow execution of arbitrary code.
+			2) An error in the handling CNAME records can be exploited to crash the service.</desc>
+	</fsa>
+	<fsa>
 		<id>48</id>
 		<date>2006-11-23</date>
 		<author>voroskoi</author>
