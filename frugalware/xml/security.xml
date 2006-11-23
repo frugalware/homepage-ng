@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>55</id>
+		<date>2006-11-23</date>
+		<author>voroskoi</author>
+		<package>phpmyadmin</package>
+		<vulnerable>2.9.1_rc1-1siwenna1</vulnerable>
+		<unaffected>2.9.1.1-1siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1417
+			http://bugs.frugalware.org/task/1469</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-5718</cve>
+		<desc>Input containing UTF-7 encoded characters passed to the script which displays error messages is not properly sanitised before being returned to the user. This can be exploited to execute arbitrary HTML and script code in a user's browser session in context of an affected site.
+			Three other security issues fixed too, see http://www.phpmyadmin.net/home_page/security.php?issue=PMASA-2006-{7,8,9} for details.</desc>
+	</fsa>
+	<fsa>
 		<id>54</id>
 		<date>2006-11-23</date>
 		<author>voroskoi</author>
