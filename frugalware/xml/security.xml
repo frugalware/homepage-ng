@@ -27,6 +27,17 @@
 
 <fsas>
 	<fsa>
+		<id>48</id>
+		<date>2006-11-23</date>
+		<author>voroskoi</author>
+		<package>kernel</package>
+		<vulnerable>2.6.17-6siwenna2</vulnerable>
+		<unaffected>2.6.17-6siwenna3</unaffected>
+		<bts>http://bugs.frugalware.org/task/1474</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-4352</cve>
+		<desc>By setting the system time to the end of unixtime, it is possible to reset the system time to the lowest possible integer of unixtime. When the systemclock reaches "Tue Jan 19 03:14:08 UTC 2038", the 32-bit signed integer containing the time will overflow and the system time will be reset to "Fri Dec 13 20:45:52 UTC 1901". This is known as the Year 2038 Problem.</desc>
+	</fsa>
+	<fsa>
 		<id>47</id>
 		<date>2006-11-17</date>
 		<author>voroskoi</author>
