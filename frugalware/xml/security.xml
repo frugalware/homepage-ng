@@ -27,6 +27,17 @@
 
 <fsas>
 	<fsa>
+		<id>53</id>
+		<date>2006-11-23</date>
+		<author>voroskoi</author>
+		<package>texinfo</package>
+		<vulnerable>4.8-7</vulnerable>
+		<unaffected>4.8-8siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1460</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4810</cve>
+		<desc>A boundary error exists within the "readline()" function in texindex.c. This can be exploited to cause a heap-based buffer overflow by e.g. tricking a user into opening a specially crafted Texinfo file.</desc>
+	</fsa>
+	<fsa>
 		<id>52</id>
 		<date>2006-11-23</date>
 		<author>voroskoi</author>
