@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>52</id>
+		<date>2006-11-23</date>
+		<author>voroskoi</author>
+		<package>openldap</package>
+		<vulnerable>2.3.27-1</vulnerable>
+		<unaffected>2.3.29-1siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1459</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-5779</cve>
+		<desc>Evgeny Legerov has reported a vulnerability in OpenLDAP, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			The vulnerability is caused due to an error when processing certain BIND requests. This can be exploited to cause a crash by sending specially crafted BIND requests to an OpenLDAP server.</desc>
+	</fsa>
+	<fsa>
 		<id>51</id>
 		<date>2006-11-23</date>
 		<author>voroskoi</author>
