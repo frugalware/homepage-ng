@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>57</id>
+		<date>2006-11-24</date>
+		<author>voroskoi</author>
+		<package>elinks</package>
+		<vulnerable>0.11.1-5</vulnerable>
+		<unaffected>0.11.1-6siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1468</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-5925</cve>
+		<desc>Teemu Salmela has discovered a vulnerability in ELinks, which can be exploited by malicious people to expose sensitive information and manipulate data.
+			The vulnerability is caused due to an error in the validation of "smb://" URLs when ELinks runs smbclient commands. This can be exploited to download and overwrite local files or upload local files to a SMB share by injecting smbclient commands in the "smb://" URL.
+			Successful exploitation allows exposure of sensitive information or manipulation of data, but requires that the user visits a malicious "smb://" URL or gets redirected to such an URL by a malicious URL, and that the user has the smbclient program installed.</desc>
+	</fsa>
+	<fsa>
 		<id>56</id>
 		<date>2006-11-24</date>
 		<author>voroskoi</author>
