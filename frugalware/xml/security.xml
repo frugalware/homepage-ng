@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>54</id>
+		<date>2006-11-23</date>
+		<author>voroskoi</author>
+		<package>libpng</package>
+		<vulnerable>1.2.12-4</vulnerable>
+		<unaffected>1.2.13-1siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1467</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-5793</cve>
+		<desc>Tavis Ormandy has reported a vulnerability in libpng, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			The vulnerability is caused due to an out-of-bounds read error in the "png_set_sPLT()" function in pngset.c. This can be exploited by tricking an application using the library to process a specially crafted PNG file.</desc>
+	</fsa>
+	<fsa>
 		<id>53</id>
 		<date>2006-11-23</date>
 		<author>voroskoi</author>
