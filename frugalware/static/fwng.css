@@ -216,7 +216,7 @@ hr {
  
 .entry .date {
 	font-family: "Bitstream Vera Sans", sans-serif;
-	color: grey;
+	color: #999;
 }
 
 .entry .date a {
