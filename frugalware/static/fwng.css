@@ -227,4 +227,5 @@ hr {
 img.face {
         float: right;
         margin-top: -3em;
+	padding-left: 10px;
 }
