@@ -60,16 +60,14 @@ function fwmiddlebox($boxhead="", $content)
 {
 	if ($boxhead != "")
 	{
-		print "    <div class=\"boxpadding\">
-      <div class=\"postheader\">
-        $boxhead
-      </div>
-      <div>
-	<div class=\"entry\">
-          <div class=\"content\">
-            $content
-          </div>
-         </div>
+		print "    <div class=\"postheader\">
+      $boxhead
+    </div>
+    <div>
+      <div class=\"entry\">
+        <div class=\"content\">
+          $content
+        </div>
       </div>
     </div>\n";
 	}

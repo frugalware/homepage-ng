@@ -197,6 +197,7 @@ hr {
 .postheader {
 	font-family: "Bitstream Vera Sans", sans-serif;
 	font-weight: normal;
+	font-size: 1.2em;
 	
 	background-color: #a0c0ff;
 	border: 1px solid #5080b0;
@@ -214,7 +215,6 @@ hr {
 }
  
 .entry .date {
-	font-size: 1.1em;
 	font-family: "Bitstream Vera Sans", sans-serif;
 	color: grey;
 }
