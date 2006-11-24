@@ -224,3 +224,7 @@ hr {
 	color: inherit;
 }
 
+img.face {
+        float: right;
+        margin-top: -3em;
+}
