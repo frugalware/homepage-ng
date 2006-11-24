@@ -100,6 +100,7 @@ eeaa4b9bafab9b1c3c5454c1599687fd600b3525  frugalware-0.6pre1-i686-net.iso
 			In other news, ftp5 should be back in sync. Have a good day! ;)
 			]]>
 		</content>
+		<icon>/images/icons/homepage.png</icon>
 	</post>		
 	<post>
 		<id>48</id>
@@ -110,6 +111,7 @@ eeaa4b9bafab9b1c3c5454c1599687fd600b3525  frugalware-0.6pre1-i686-net.iso
 			ftp5.frugalware.org is currently out of sync for -current users. Please temporarily switch to a different mirror in /etc/pacman.d/frugalware-current!
 			]]>
 		</content>
+		<icon>/images/icons/homepage.png</icon>
 	</post>		
 	<post>
 		<id>47</id>
@@ -120,6 +122,7 @@ eeaa4b9bafab9b1c3c5454c1599687fd600b3525  frugalware-0.6pre1-i686-net.iso
 			If you find any apps that don't start with a message about libdbus-1.so.2 not found, we want to know about it now! Just submit a report with the package's name to the <a href="http://bugs.frugalware.org">Bug Tracker</a>. Thanks!
 			]]>
 		</content>
+		<icon>/images/icons/bug.png</icon>
 	</post>		
 	<post>
 		<id>46</id>
@@ -132,6 +135,7 @@ eeaa4b9bafab9b1c3c5454c1599687fd600b3525  frugalware-0.6pre1-i686-net.iso
 			Thanks!
 			]]>
 		</content>
+		<icon>/images/icons/bug.png</icon>
 	</post>		
 	<post>
 		<id>45</id>
@@ -232,6 +236,7 @@ ed78594a70af0dded0483914437566702b05b576  frugalware-0.5-x86_64-cd5.iso
 			(No, it does not mean that we dislike the Software Freedom Day...)
 			]]>
 		</content>
+		<icon>/images/icons/bug.png</icon>
 	</post>
 	<post>
 		<id>43</id>
