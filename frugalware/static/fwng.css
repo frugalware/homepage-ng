@@ -204,6 +204,11 @@ hr {
 	padding: 4px;
 }
 
+.postheader a {
+	text-decoration: none;
+	color: inherit;
+}
+
 .entry {
 	margin-bottom: 2em;
 }
