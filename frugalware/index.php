@@ -103,8 +103,7 @@ else
 		print gettext("Sorry, no news on your language, using English instead.");
 	for( $i=0; $i<count($posts); $i++ )
 	{
-		fwmiddlebox($posts[$i][title], "<span style=\"color: #999\">".gettext("Posted by")." ".$posts[$i][author]." - ".$posts[$i][date]."</span><br /><br />\n<div align=\"justify\">\n".$posts[$i][content]."\n</div>");
-		print "<hr /><br />";
+		fwmiddlebox($posts[$i][title], "<span style=\"color: #999\">".gettext("Posted by")." ".$posts[$i][author]." - ".$posts[$i][date]."</span><br /><br />\n<div align=\"justify\">\n".$posts[$i][content]."\n</div><p class=\"date\">".gettext("Posted by")." ".$posts[$i][author]." - ".$posts[$i][date]."</p>");
 	}
 }
 
