@@ -65,8 +65,8 @@ function fwmiddlebox($boxhead="", $content)
         $boxhead
       </div>
       <div>
-	<div class="entry">
-          <div class="content">
+	<div class=\"entry\">
+          <div class=\"content\">
             $content
           </div>
          </div>
