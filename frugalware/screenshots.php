@@ -140,7 +140,7 @@ $maincont .= "<form action=\"screenshots\" method=\"get\">\n<fieldset class=\"fi
 for ($i=0; $i<count($shots[inst]); $i++)
 {
 	$maincont .= "<div><a href=\"".$fwng_root."images/screenshots/installer/".$shots[inst][$i][name]."\">".
-	"<img src=\"".$fwng_root."images/screenshots/installer/thumbnails/".$shots[inst][$i][name]."\"></a>".
+	"<img src=\"".$fwng_root."images/screenshots/installer/thumbnails/".$shots[inst][$i][name]."\" alt=\"screenshot\" /></a>".
 	"<br />".$shots[inst][$i][title]."</div>\n";
 }
 $maincont .= "</fieldset>\n<fieldset class=\"fieldset\" id=\"default\">\n";
@@ -148,7 +148,7 @@ $maincont .= "<legend>".gettext("Default Desktop")."</legend>\n";
 for ($i=0; $i<count($shots[defdesk]); $i++)
 {
 	$maincont .= "<div><a href=\"".$fwng_root."images/screenshots/default/".$shots[defdesk][$i][name]."\">".
-	"<img src=\"".$fwng_root."images/screenshots/default/thumbnails/".$shots[defdesk][$i][name]."\"></a>".
+	"<img src=\"".$fwng_root."images/screenshots/default/thumbnails/".$shots[defdesk][$i][name]."\" alt=\"screenshot\" /></a>".
 	"<br />".$shots[defdesk][$i][title]."</div>\n";
 }
 $maincont .= "</fieldset></form>\n</div>\n";
