@@ -65,22 +65,22 @@ function main()
 		}
 		$content = "<form name=\"pkgsrch\" action=\"/packages/\" method=\"get\">
 		<fieldset class=\"pkg\"><legend>".gettext("Package search")."</legend>
-		<label for=\"op\">".gettext("Search for:")."</label>
-		<input type=\"radio\" name=\"op\" value=\"pkg\" checked=\"yes\"/>packages<br />
+		".gettext("Search for:")."
+		<input type=\"radio\" name=\"op\" value=\"pkg\" checked=\"checked\"/>packages<br />
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class=\"required\" type=\"checkbox\" name=\"desc\" id=\"descr\" /><label for=\"descr\" class=\"pkg-phrasing\">".gettext("Search in description")."</label><br />
 		<input type=\"radio\" name=\"op\" value=\"file\" />files<br />
 		<input type=\"radio\" name=\"op\" value=\"groups\" />groups<br />
 		<input class=\"required\" type=\"text\" id=\"pkgsrc\" name=\"srch\" size=\"40\" title=\"".gettext("Regular expression")."\"/>
 		<br />
 		<br />
-		<label for=\"archs\">".gettext("Architecture:")."</label>
+		".gettext("Architecture:")."
 		<select name=\"arch\" id=\"archs\" class=\"required\">
 			<option value=\"all\">all</option>
 			<option value=\"i686\" selected=\"selected\" class=\"required\">i686</option>
 			<option value=\"x86_64\">x86_64</option>
 		</select>
 		<br />
-		<label for=\"fwver\">".gettext("Version:")."</label>
+		".gettext("Version:")."
 		<select name=\"ver\" id=\"fwver\" class=\"required\">
 			<option value=\"all\">all</option>
 			<option value=\"current\" selected=\"selected\">current</option>\n";
@@ -93,7 +93,7 @@ function main()
     <br />
     <br />
 		<input type=\"submit\" value=\"".gettext("Search")."\" /> <input type=\"reset\" value=\"".gettext("Reset")."\" />
-	</fieldset>
+	</fieldset></form>
 <script type=\"text/javascript\">
 function addEngine()
 {
