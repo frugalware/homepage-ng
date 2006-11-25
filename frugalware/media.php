@@ -77,7 +77,7 @@ for( $i = 0; $i < count($articles); $i++ ) {
 		<tr><td>' . gettext('Where') . ':</td><td>' . $articles[$i][where] . '</td></tr>
 		<tr><td>' . gettext('Date') . ':</td><td>' . $articles[$i][date] . '</td></tr>
 		<tr><td>' . gettext('Language') . ':</td><td>' . $articles[$i][language] . '</td></tr>
-		<tr><td>' . gettext('Link') . ':</td><td><a href="' . $articles[$i][link] . '">' . $articles[$i][link] . '</a></td></tr></table>');
+		<tr><td>' . gettext('Link') . ':</td><td><a href="' . htmlentities($articles[$i][link]) . '">' . htmlentities($articles[$i][link]) . '</a></td></tr></table>');
 	
 }
 
