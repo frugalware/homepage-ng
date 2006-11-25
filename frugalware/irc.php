@@ -134,12 +134,13 @@ if ($dir = @opendir("/home/xbit/public_html/irclog"))
 	}
 	closedir($dir);
 	
-	$logcont .= "<div align=left><table>";
+	$logcont .= "<div align=\"left\"><table>";
 	foreach($logs as $key => $value)
 	{
-		$logcont .= "<tr><td>$key";
+		$logcont .= "<tr><td>$key</td>";
 		foreach($value as $i)
-			$logcont .= "<td><a href=\"/~xbit/irclog/$i\">" . preg_replace("/3-0-([0-9]*)-([0-9]*)-([0-9]*)\.html/", "$2", $i) . "</a>";
+			$logcont .= "<td><a href=\"/~xbit/irclog/$i\">" . preg_replace("/3-0-([0-9]*)-([0-9]*)-([0-9]*)\.html/", "$2", $i) . "</a></td>";
+		$logcont .= "</tr>";
 	}
 	$logcont .= "</table></div>";
 	$logcont .= sprintf($fwstrirclogd, "/~xbit/irclog/log.html");
