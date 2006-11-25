@@ -105,7 +105,7 @@ a.menu:hover {
 }
 
 #leftcolumn ul li:hover {
-	color: grey;
+	color: #999;
 }
 
 #leftcolumn ul li a {
@@ -168,7 +168,7 @@ a.menu:hover {
 
 .entry .date {
 	font-family: "Bitstream Vera Sans", sans-serif;
-	color: grey;
+	color: #999;
 }
 
 .entry .date a {
