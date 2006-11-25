@@ -35,6 +35,10 @@ body {
 	background-image: url(../images/header_bg.png);
 }
 
+#header img {
+	border: 0;
+}
+
 #leftcolumn {
 	width: 175px;
 	float: left;

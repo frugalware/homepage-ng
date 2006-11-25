@@ -36,7 +36,7 @@ else if($_SERVER['PHP_SELF']=="/packages.php")
 
 <!-- header start -->
 <div id="header">
-	<a href="<?php echo $_SERVER["SERVER_NAME"]; ?>"><img src="<?php echo $fwng_root; ?>images/header.png" alt="Frugalware Linux - Let's make things Frugal!" /></a>
+	<a href="http://<?php echo $_SERVER["SERVER_NAME"]; ?>"><img src="<?php echo $fwng_root; ?>images/header.png" alt="Frugalware Linux - Let's make things Frugal!" /></a>
 </div>
 <!-- header end -->
 
