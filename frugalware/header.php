@@ -23,7 +23,6 @@ $data = genHeader();
    * This notice MUST stay intact for legal use
    * Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code */
   </script>
-  <!--script language="javascript" type="text/javascript">
 <?
 if($_SERVER['PHP_SELF']=="/index.php")
 	print('<link rel="alternate" type="application/rss+xml" title="RSS" href="http://'
