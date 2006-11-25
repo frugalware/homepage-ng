@@ -35,7 +35,7 @@ set_locale($llang, $domain);
 include("config.inc.php");
 include("header.php");
 
-$fwdonatewelcome = gettext("<div align=left>Donations are a great way to show your appreciation
+$fwdonatewelcome = gettext("<div align=\"left\">Donations are a great way to show your appreciation
 and support for Frugalware Linux. On this page we list the donations we have
 received so far and those that would help us in our work on Frugalware Linux.;
 If you have a piece of hardware or something whose Frugalware support could be
@@ -48,7 +48,7 @@ page and send the developer a mail.</div>");
 
 fwmiddlebox(gettext("Donations"), $fwdonatewelcome);
 
-$cont1 = "<div align=left>Wishes:<ul>
+$cont1 = "<div align=\"left\">Wishes:<ul>
 <li>American, <i>not</i> ISO-only mirror</li>
 <li>10-20GB IDE HDD for testing Xen</li>
 <li>10GB IDE HDD for testing the setup</li>
@@ -74,7 +74,7 @@ $cont1 = "<div align=left>Wishes:<ul>
 </ul></div>";
 fwmiddlebox(gettext("The Frugalware Team"), $cont1);
 
-$cont2 = "<div align=left>Received:<ul>
+$cont2 = "<div align=\"left\">Received:<ul>
 <li>Ati video card for fglrx package testing (David Kimpe)</li>
 </ul></div>";
 fwmiddlebox("Andras Voroskoi", $cont2);
