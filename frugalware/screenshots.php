@@ -136,7 +136,7 @@ include("config.inc.php");
 include("header.php");
 
 $maincont = "<div class=\"screenshots\">\n";
-$maincont .= "<form>\n<fieldset class=\"fieldset\" id=\"installer\">\n<legend>".gettext("Installer")."</legend>\n";
+$maincont .= "<form action=\"screenshots\" method=\"get\">\n<fieldset class=\"fieldset\" id=\"installer\">\n<legend>".gettext("Installer")."</legend>\n";
 for ($i=0; $i<count($shots[inst]); $i++)
 {
 	$maincont .= "<div><a href=\"".$fwng_root."images/screenshots/installer/".$shots[inst][$i][name]."\">".
@@ -151,7 +151,7 @@ for ($i=0; $i<count($shots[defdesk]); $i++)
 	"<img src=\"".$fwng_root."images/screenshots/default/thumbnails/".$shots[defdesk][$i][name]."\"></a>".
 	"<br />".$shots[defdesk][$i][title]."</div>\n";
 }
-$maincont .= "</form>\n</div>\n";
+$maincont .= "</fieldset></form>\n</div>\n";
 
 print $maincont;
 
