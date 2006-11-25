@@ -65,7 +65,7 @@ function main()
 		}
 		$content = "<form name=\"pkgsrch\" action=\"/packages/\" method=\"get\">
 		<fieldset class=\"pkg\"><legend>".gettext("Package search")."</legend>
-		".gettext("Search for:")."
+		".gettext("Search for:")."<br />
 		<input type=\"radio\" name=\"op\" value=\"pkg\" checked=\"checked\"/>packages<br />
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class=\"required\" type=\"checkbox\" name=\"desc\" id=\"descr\" /><label for=\"descr\" class=\"pkg-phrasing\">".gettext("Search in description")."</label><br />
 		<input type=\"radio\" name=\"op\" value=\"file\" />files<br />
@@ -73,14 +73,14 @@ function main()
 		<input class=\"required\" type=\"text\" id=\"pkgsrc\" name=\"srch\" size=\"40\" title=\"".gettext("Regular expression")."\"/>
 		<br />
 		<br />
-		".gettext("Architecture:")."
+		".gettext("Architecture:")."<br />
 		<select name=\"arch\" id=\"archs\" class=\"required\">
 			<option value=\"all\">all</option>
 			<option value=\"i686\" selected=\"selected\" class=\"required\">i686</option>
 			<option value=\"x86_64\">x86_64</option>
 		</select>
 		<br />
-		".gettext("Version:")."
+		".gettext("Version:")."<br />
 		<select name=\"ver\" id=\"fwver\" class=\"required\">
 			<option value=\"all\">all</option>
 			<option value=\"current\" selected=\"selected\">current</option>\n";
