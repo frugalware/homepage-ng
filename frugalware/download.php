@@ -59,19 +59,19 @@ for ( $i=0; $i<count($mirrors); $i++ )
 {
 	if ( $mirrors[$i][type] == "ftp" )
 	{
-		$ftpcont .= "<tr><td width=\"50%\"><a href=\"ftp://".$mirrors[$i][name]."/".$mirrors[$i][path]."/$url\">".$mirrors[$i][name]."</td><td>".$mirrors[$i][desc]."</td></tr>\n";
+		$ftpcont .= "<tr><td width=\"50%\"><a href=\"ftp://".$mirrors[$i][name]."/".$mirrors[$i][path]."/$url\">".$mirrors[$i][name]."</a></td><td>".$mirrors[$i][desc]."</td></tr>\n";
 	}
 	if ( $mirrors[$i][type] == "http" )
 	{
-		$httpcont .= "<tr><td width=\"50%\"><a href=\"http://".$mirrors[$i][name]."/".$mirrors[$i][path]."/$url\">".$mirrors[$i][name]."</td><td>".$mirrors[$i][desc]."</td></tr>\n";
+		$httpcont .= "<tr><td width=\"50%\"><a href=\"http://".$mirrors[$i][name]."/".$mirrors[$i][path]."/$url\">".$mirrors[$i][name]."</a></td><td>".$mirrors[$i][desc]."</td></tr>\n";
 	}
 	if ( $mirrors[$i][type] == "rsync" )
 	{
-		$rsynccont .= "<tr><td width=\"50%\"><a href=\"rsync://".$mirrors[$i][name]."/".$mirrors[$i][path]."/$url\">".$mirrors[$i][name]."</td><td>".$mirrors[$i][desc]."</td></tr>\n";
+		$rsynccont .= "<tr><td width=\"50%\"><a href=\"rsync://".$mirrors[$i][name]."/".$mirrors[$i][path]."/$url\">".$mirrors[$i][name]."</a></td><td>".$mirrors[$i][desc]."</td></tr>\n";
 	}
 	if ( $mirrors[$i][type] == "buycd" )
 	{
-		$buycdcont .= "<li><a href=\"".$mirrors[$i][path]."\">".$mirrors[$i][name]."</a></li>\n";
+		$buycdcont .= "<li><a href=\"" . htmlentities($mirrors[$i][path]). "\">".$mirrors[$i][name]."</a></li>\n";
 	}
 }
 $ftpcont .= "</table>\n";
@@ -79,7 +79,7 @@ $httpcont .= "</table>\n";
 $rsynccont .= "</table>\n";
 $buycdcont .= "</ul>\n";
 
-$howto = "<div align=left><ul>
+$howto = "<div align=\"left\"><ul>
 	<li>".gettext("Full mirroring (~27GB)").":<br />
 	<br /><tt>rsync -avP --delete-after <i>server</i> /download/directory</tt><br />&nbsp;</li>
 	<li>".gettext("Only a specified tree (~5GB, for example -current)").":<br />
