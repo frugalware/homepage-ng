@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>60</id>
+		<date>2006-11-28</date>
+		<author>voroskoi</author>
+		<package>fvwm-devel</package>
+		<vulnerable>2.5.17-1</vulnerable>
+		<unaffected>2.5.17-2siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1485</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-5969</cve>
+		<desc>Tavis Ormandy has reported a security issue in FVWM, which can be exploited by malicious, local users to bypass certain security restrictions.
+			The security issue is caused due to an input validation error in the "evalFolderLine()" function. This can be exploited to execute arbitrary commands by tricking a user into using the "fvwm-menu-directory" command on a specially crafted directory.</desc>
+	</fsa>
+	<fsa>
 		<id>59</id>
 		<date>2006-11-25</date>
 		<author>voroskoi</author>
