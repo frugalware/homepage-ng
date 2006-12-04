@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>62</id>
+		<date>2006-12-04</date>
+		<author>voroskoi</author>
+		<package>kile</package>
+		<vulnerable>1.9.2-1</vulnerable>
+		<unaffected>1.9.3-1siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1493</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-6085</cve>
+		<desc>A security issue has been reported in Kile, which can be exploited by malicious, local users to gain knowledge of certain information.
+			The security issue is caused due to backup files being created with default permissions even when the original file had more restrictive permissions set. This can potentially disclose the contents of files edited by other users.</desc>
+	</fsa>
+	<fsa>
 		<id>61</id>
 		<date>2006-12-04</date>
 		<author>voroskoi</author>
