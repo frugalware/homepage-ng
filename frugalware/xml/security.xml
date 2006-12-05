@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>64</id>
+		<date>2006-12-05</date>
+		<author>voroskoi</author>
+		<package>tar</package>
+		<vulnerable>1.15.1-4</vulnerable>
+		<unaffected>1.15.1-5siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1496</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-6097</cve>
+		<desc>Teemu Salmela has reported a security issue in GNU tar, which can be exploited by malicious people to overwrite arbitrary files.
+			The security issue is caused due to the "extract_archive()" function in extract.c and the "extract_mangle()" function in mangle.c still processing the deprecated "GNUTYPE_NAMES" record type containing symbolic links. This can be exploited to overwrite arbitrary files by e.g. tricking a user into unpacking a specially crafted tar file.</desc>
+	</fsa>
+	<fsa>
 		<id>63</id>
 		<date>2006-12-05</date>
 		<author>voroskoi</author>
