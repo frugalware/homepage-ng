@@ -27,6 +27,21 @@
 
 <fsas>
 	<fsa>
+		<id>68</id>
+		<date>2006-12-06</date>
+		<author>voroskoi</author>
+		<package>lha</package>
+		<vulnerable>114i-1</vulnerable>
+		<unaffected>1.14i_ac20050924p1-1siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1501</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4335
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4337
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4338</cve>
+		<desc>Some vulnerabilities have been reported in LHa, which can be exploited by malicious people to cause a DoS (Denial of Service) and potentially compromise a vulnerable system.
+			1) An infinite loop within the "read_pt_len()", "read_c_len()", "decode_c_st1()", and "decode_p_st1()" function in huf.c can be exploited to cause a DoS due to CPU consumption by e.g. tricking a user or automated system into unpacking a specially crafted archive.
+			2) A buffer overflow and a boundary error within the "make_table()" function in maketbl.c can be exploited to modify certain stack data and cause a buffer overflow by e.g. tricking a user or automated system into unpacking a specially crafted archive.</desc>
+	</fsa>
+	<fsa>
 		<id>67</id>
 		<date>2006-12-06</date>
 		<author>voroskoi</author>
