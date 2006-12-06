@@ -27,6 +27,20 @@
 
 <fsas>
 	<fsa>
+		<id>66</id>
+		<date>2006-12-06</date>
+		<author>voroskoi</author>
+		<package>gnupg</package>
+		<vulnerable>1.4.5-1</vulnerable>
+		<unaffected>1.4.5-2siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1497</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-6169</cve>
+		<desc>Hugh Warrington has reported a vulnerability in GnuPG, which potentially can be exploited by malicious people to compromise a user's system.
+			The vulnerability is caused due to a boundary error in the "ask_outfile_name()" function in openfile.c, because the "make_printable_string()" function can return a string longer than the expected "NAMELEN". This can be exploited to cause a buffer overflow by e.g. tricking a user into processing a specially crafted file using the interactive mode.
+			Successful exploitation may allow the execution of arbitrary code, but requires that the interactive mode is used. Applications using the batch mode (e.g. most e-mail clients) are not affected.
+		</desc>
+	</fsa>
+	<fsa>
 		<id>65</id>
 		<date>2006-12-06</date>
 		<author>voroskoi</author>
