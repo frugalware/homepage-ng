@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>73</id>
+		<date>2006-12-09</date>
+		<author>voroskoi</author>
+		<package>madwifi-ng</package>
+		<vulnerable>r1491_20060404-9</vulnerable>
+		<unaffected>0.9.2.1-1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1513</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-6332</cve>
+		<desc>Laurent Butti, Jerome Raznieski, and Julien Tinnes have reported a vulnerability in MadWifi, which can be exploited by malicious people to compromise a vulnerable system.
+			The vulnerability is caused due to a boundary error and can be exploited to cause a buffer overflow, which allows execution of arbitrary code with kernel privileges.</desc>
+	</fsa>
+	<fsa>
 		<id>72</id>
 		<date>2006-12-09</date>
 		<author>voroskoi</author>
