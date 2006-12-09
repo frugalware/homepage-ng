@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>72</id>
+		<date>2006-12-09</date>
+		<author>voroskoi</author>
+		<package>gnupg</package>
+		<vulnerable>1.4.5-2siwenna1</vulnerable>
+		<unaffected>1.4.5-3siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1512</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-6235</cve>
+		<desc>Tavis Ormandy has reported a vulnerability in GnuPG, which can be exploited by malicious people to compromise a vulnerable system.
+			The vulnerability is caused due to an error within the decryption of malformed OpenPGP messages. This can be exploited to corrupt memory when decrypting a specially crafted OpenPGP message.
+			Successful exploitation allows execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>71</id>
 		<date>2006-12-09</date>
 		<author>voroskoi</author>
