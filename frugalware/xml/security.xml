@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>74</id>
+		<date>2006-12-10</date>
+		<author>voroskoi</author>
+		<package>denyhosts</package>
+		<vulnerable>2.5-2</vulnerable>
+		<unaffected>2.6-1siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1517</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-6301</cve>
+		<desc>Tavis Ormandy has discovered a vulnerability in DenyHosts, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			The vulnerability is caused due to an error in the parsing of log files before adding an entry in /etc/hosts.deny. This can be exploited to add arbitrary IP addresses to /etc/hosts.deny resulting in a DoS for that IP.</desc>
+	</fsa>
+	<fsa>
 		<id>73</id>
 		<date>2006-12-09</date>
 		<author>voroskoi</author>
