@@ -64,6 +64,10 @@ if(count($params)>0)
 	{
 		$urlsuffix="?id=".$params[0];
 	}
+	else if($page=="newsletter")
+	{
+		$urlsuffix="?id=".$params[0];
+	}
 	else if($page=="rss")
 	{
 		$urlsuffix="?type=".$params[0];
