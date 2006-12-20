@@ -4,8 +4,41 @@
 <h2>Table of Contents</h2>
 <p>
 	<ul>
-		<li><a href="#features">1. New features in current</a></li>
-		<li><a href="#fixes">2. Bug fixes</a></li>
-		<li><a href="#stats">3. Statistics</a></li>
+		<li><a href="#features">1. New features</a></li>
+		<li><a href="#upcoming">2. Upcoming features</a></li>
+		<li><a href="#fixes">3. Bug fixes</a></li>
+		<li><a href="#stats">4. Statistics</a></li>
+	</ul>
+</p>
+<h2>New features</h2>
+<p>
+	TODO
+</p>
+<h2>Upcoming features</h2>
+<p>
+	We've got a whole load of new features planned for Frugalware 0.6, and some of us are also looking forward to 0.7. Here's a short list of things we've been discussing recently:
+	<ul>
+		<li>
+			<h3>Initramfs</h3>
+			Initramfs is a replacement for the old initial ramdisk system that was used to provide a small system that runs from memory when the kernel starts which loads kernel modules that enable the rest of your system to boot. Frugalware didn't use initrd, which meant that some systems with hardware that has it's drivers compiled as a module may not be able to boot.
+			Soon we'll be adding support for initramfs to Frugalware, which means Frugalware should run on a much wider range of computers, especially servers with the root file system on a SCSI drive.
+		</li>
+		<li>
+			<h3>New init system</h3>
+			Quite a few of you may have heard our plans to replace SysV INIT, the program which boots the system, in either 0.6 or 0.7. Ubuntu have also done this, and we hope to use their great work, Upstart.
+			I (AlexExtreme) am working with the Upstart developer, helping with the design, contributing a few patches, and things like that. Hopefully it'll be ready for 0.6, if not, 0.7 will have Upstart.
+		</li>
+		<li>
+			<h3>Setup improvements</h3>
+			Currently our installation program is rather buggy, and has some usability problems. Also it doesn't work for unknown reasons on some machines. We're going to try our best to fix a lot of these problems for 0.6, and improve the overall stability and usability of Setup.
+		</li>
+		<li>
+			<h3>FwLive</h3>
+			FwLive is a LiveCD version of Frugalware, which is currently in development. It runs completely from the CD, with GNOME, KDE and Server versions. You can also create your own custom CDs, too. We are also writing a new installation program which installs the content of the Live CD to your hard disk, in a similar fashion to the Ubuntu and Mandriva One live installers.
+		</li>
+		<li>
+			<h3>NetworkManager</h3>
+			Users of wireless networks will be pleased to know that we are in the process of trying to get NetworkManager, a great networking management tool, working on Frugalware. It can detect wireless networks in your vicinity, and assists you in connecting to them. For more information, see <a href="http://www.gnome.org/projects/NetworkManager">the NetworkManager homepage</a>
+		</li>
 	</ul>
 </p>
