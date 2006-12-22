@@ -53,7 +53,6 @@ $cont1 = "<div align=\"left\">Wishes:<ul>
 <li>10-20GB IDE HDD for testing Xen</li>
 <li>10GB IDE HDD for testing the setup</li>
 <li>PegasosPPC or/and other PowerPC computer to use as buildserver</li>
-<li>2 pieces of IDE harddisks as big as can be - into x86_64 buildserver</li>
 <li>a powerful i686 buildserver</li>
 </ul>Received:<ul>
 <li>Socket939 Motherboard + AMD Athlon64 3000+ CPU Socket939 version + 512MB DDR400 RAM (this will be our x86_64 buildserver)</li>
@@ -71,6 +70,7 @@ $cont1 = "<div align=\"left\">Wishes:<ul>
 <li>2x160GB IDE HDD for the i686 server (Miklos Vajna)</li>
 <li>40GB IDE HDD (Kovacs, Janos)</li>
 <li>Dell Optiplex P4 1.6GHz machine for main server</li>
+<li>Mylex DAC960 SCSI card with 2x18GB HDD (will be the base system of our x86_64 buildserver) (from Locsei, Gabor)</li>
 </ul></div>";
 fwmiddlebox(gettext("The Frugalware Team"), $cont1);
 
