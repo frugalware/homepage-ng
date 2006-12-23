@@ -13,7 +13,7 @@ $data = genHeader();
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $lang; ?>" lang="<?php echo $lang; ?>">
 <head>
   <title>Frugalware Linux - Let's make things Frugal!</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15" />
   <link rel="stylesheet" type="text/css" href="<?php echo $fwng_root; ?>static/fwng.css" />
   <link rel="stylesheet" type="text/css" href="<?php echo $fwng_root; ?>static/_proform.css" />
   <link rel="stylesheet" type="text/css" href="<?php echo $fwng_root; ?>static/common.css" />
