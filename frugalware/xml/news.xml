@@ -14,6 +14,20 @@
 ]>
 <news>
 	<post>
+		<id>51</id>
+		<title>Big Fat Warning: nVidia package upgrade</title>
+		<date>Tue Dec 26 20:26:13 CEST 2006</date>
+		<author>AlexExtreme</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			If you are using current and you have a GeForce 4 graphics card (this is a lot of laptops), please do not do a system upgrade until the nvidia-96xx package is available tomorrow. Once it is available, install it. The latest version of nvidia removes support for GeForce 4 cards.<br />
+			<br />
+			As a side note, the Frugalware developer team would like to wish all our users a very Merry Christmas, and a Happy New Year!
+			]]>
+		</content>
+		<icon>/images/icons/bug.png</icon>
+	</post>		
+	<post>
 		<id>50</id>
 		<title>Frugalware 0.6pre1 (Terminus) released</title>
 		<date>Thu Nov  9 01:02:04 CET 2006</date>
