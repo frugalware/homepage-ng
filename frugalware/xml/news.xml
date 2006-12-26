@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE news [
 <!ELEMENT news (post)*>
-<!ELEMENT post (id , title , date , author , editedby* , icon* , content)>
+<!ELEMENT post (id , title , date , author , editedby* , icon , content, hidden)>
 <!ELEMENT id (#PCDATA)>
 <!ELEMENT date (#PCDATA)>
 <!ELEMENT title (#PCDATA)>
 <!ELEMENT author (#PCDATA)>
 <!ELEMENT content (#PCDATA)>
+<!ELEMENT hidden (#PCDATA)>
 <!ELEMENT editedby (name , date)>
 <!ELEMENT icon (#PCDATA)>
 <!ELEMENT name (#PCDATA)>
@@ -17,6 +18,7 @@
 		<title>Frugalware 0.6pre1 (Terminus) released</title>
 		<date>Thu Nov  9 01:02:04 CET 2006</date>
 		<author>VMiklos</author>
+		<hidden>0</hidden>
 		<content><![CDATA[
 			The Frugalware Developer Team is pleased to <a href="/news/50">announce</a> the immediate availability of Frugalware 0.6pre1, the first technical preview release of the upcoming 0.6 stable release.<br />
 			A short and incomplete list of changes since 0.5:<br />
@@ -94,6 +96,7 @@ eeaa4b9bafab9b1c3c5454c1599687fd600b3525  frugalware-0.6pre1-i686-net.iso
 		<title>Yet another homepage redesign!</title>
 		<date>Sun Oct 24 20:37:14 CEST 2006</date>
 		<author>AlexExtreme</author>
+		<hidden>0</hidden>
 		<content><![CDATA[
 			I'm one of the fussy web-designers. I create a design, a few months later I think it's rubbish. So I created a new design :) Feel free to drop your comments to the Frugalware-devel list.<br /><br />
 			
@@ -107,6 +110,7 @@ eeaa4b9bafab9b1c3c5454c1599687fd600b3525  frugalware-0.6pre1-i686-net.iso
 		<title>ftp5.frugalware.org is currently out of sync</title>
 		<date>Sun Oct 12 17:41:12 CEST 2006</date>
 		<author>AlexExtreme</author>
+		<hidden>0</hidden>
 		<content><![CDATA[
 			ftp5.frugalware.org is currently out of sync for -current users. Please temporarily switch to a different mirror in /etc/pacman.d/frugalware-current!
 			]]>
@@ -118,6 +122,7 @@ eeaa4b9bafab9b1c3c5454c1599687fd600b3525  frugalware-0.6pre1-i686-net.iso
 		<title>We want your DBUS bug reports!</title>
 		<date>Sun Sep 30 12:01:44 CEST 2006</date>
 		<author>AlexExtreme</author>
+		<hidden>0</hidden>
 		<content><![CDATA[
 			If you find any apps that don't start with a message about libdbus-1.so.2 not found, we want to know about it now! Just submit a report with the package's name to the <a href="http://bugs.frugalware.org">Bug Tracker</a>. Thanks!
 			]]>
@@ -129,6 +134,7 @@ eeaa4b9bafab9b1c3c5454c1599687fd600b3525  frugalware-0.6pre1-i686-net.iso
 		<title>Please, don't file bug reports about DBUS in current (yet!)</title>
 		<date>Sun Sep 24 17:02:53 CEST 2006</date>
 		<author>AlexExtreme</author>
+		<hidden>0</hidden>
 		<content><![CDATA[
 			We've upgraded to DBUS 0.9x in -current, meaning that some apps will be broken. We currently don't want any reports on any broken apps so that we don't get flooded by bug reports!
 			We have a very big list of things that need rebuilding, so we'll probably cover most apps over this week. We'll post a note when we want your bug reports again!<br /><br />
@@ -142,6 +148,7 @@ eeaa4b9bafab9b1c3c5454c1599687fd600b3525  frugalware-0.6pre1-i686-net.iso
 		<title>Frugalware 0.5 (Siwenna) for i686 and x86_64 released</title>
 		<date>Wed Sep 14 00:08:25 CEST 2006</date>
 		<author>VMiklos</author>
+		<hidden>0</hidden>
 		<content><![CDATA[
 			The Frugalware Developer Team is pleased to <a href="/news/45">announce</a> the immediate availability of Frugalware 0.5, our fifth stable release.<br />
 			A short and incomplete list of changes since 0.5rc2:<br />
@@ -230,6 +237,7 @@ ed78594a70af0dded0483914437566702b05b576  frugalware-0.5-x86_64-cd5.iso
 		<title>Upgrade to the new type of nvidia package</title>
 		<date>Sat Sep  9 00:35:47 CEST 2006</date>
 		<author>Boobaa</author>
+		<hidden>0</hidden>
 		<content><![CDATA[
       It was a trouble for several users to upgrade the old nvidia package (locally-compiled at install) to the new, binary one. Here is the solution (provided that the database and the other packages are up-to-date):<br />
 			<pre>pacman -Sfd nvidia --noconfirm</pre>
@@ -243,6 +251,7 @@ ed78594a70af0dded0483914437566702b05b576  frugalware-0.5-x86_64-cd5.iso
 		<title>Frugalware 0.5rc2 (Siwenna) released</title>
 		<date>Fri Sep  1 11:26:39 CEST 2006</date>
 		<author>VMiklos</author>
+		<hidden>0</hidden>
 		<content><![CDATA[
 			The Frugalware Developer Team is pleased to <a href="/news/43">announce</a> the immediate availability of Frugalware 0.5rc2, the second release candidate of the upcoming 0.5 stable release.<br />
 			A short and incomplete list of changes since 0.5rc1:<br />
@@ -293,6 +302,7 @@ fae88cc8378e2982a87761c0d97fdfbf42eb321c  frugalware-0.5rc2-i686-net.iso
 		<title>Frugalware 0.5rc1 (Siwenna) released</title>
 		<date>Thu Aug 17 01:31:02 CEST 2006</date>
 		<author>VMiklos</author>
+		<hidden>0</hidden>
 		<content><![CDATA[
 			The Frugalware Developer Team is pleased to <a href="http://frugalware.org/news/42">announce</a> the immediate availability of Frugalware 0.5rc1, the fist release candidate of the upcoming 0.5 stable release.<br />
 			A short and incomplete list of changes since 0.5pre2:<br />
@@ -363,6 +373,7 @@ a62f42f3135f1415edced1db5c9f9511de598fd7  frugalware-0.5rc1-i686-net.iso
 		<title>Frugalware 0.5pre2 (Siwenna) released</title>
 		<date>Mon Jul 31 01:17:32 CEST 2006</date>
 		<author>VMiklos</author>
+		<hidden>0</hidden>
 		<content><![CDATA[
 			The Frugalware Developer Team is pleased to <a href="http://frugalware.org/news/41">announce</a> the immediate availability of Frugalware 0.5pre2, the second technical preview of the upcoming 0.5 stable release.<br />
 			A short and incomplete list of changes since 0.5pre1:<br />
@@ -442,6 +453,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
 		<title>Gnome upgrade done (for now)</title>
 		<date>Tue Jul 22 09:09:41 CEST 2006</date>
 		<author>AlexExtreme</author>
+		<hidden>0</hidden>
 		<content><![CDATA[
 			All the GNOME packages have been updated to 2.15, so now would be the time to starting posting reports about any problems that you find. To do this, you can use our <a href="http://bugs.frugalware.org">Bug Tracker</a>. There are currently several known issues that we will try to fix soon. These are as follows<br />
 			<ul>
@@ -458,6 +470,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
 		<title>Gnome and GTK breakage in -current</title>
 		<date>Tue Jul  8 17:03:46 CEST 2006</date>
 		<author>AlexExtreme</author>
+		<hidden>0</hidden>
 		<content><![CDATA[
 			Yes, we know Gnome and GTK stuff is a bit broken in -current :)<br /><br />
 			This is because we have upgraded to GTK 2.10, and also we are upgrading Gnome to the development version (see the mailing list archive for reasons why). So please bear with us while we do this. The result at the end of this should be a faster and nicer Gnome. I will post here once we have finished upgrading, at which point it will be good to start posting bug reports about problems that you find.<br />
@@ -470,6 +483,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
 		<title>Improvements on the homepage</title>
 		<date>Tue Jul  7 21:11:32 CEST 2006</date>
 		<author>AlexExtreme</author>
+		<hidden>0</hidden>
 		<content><![CDATA[
 			Amazingly, in the time since our homepage upgrade, we've only had 1 bug report to do with the packages section. So now we can work on adding a few improvements. I've just written a kind of robot that automatically posts all news posts from the site to the Frugalware-announce mailing list. It works thanks to darcs post-hooks, so that whenever we push a change to the homepage darcs repository, the post-hook is run to check for new news posts. Don't forget, if you do find a bug remember to post it on our Bug Tracker.<br />
 			<br />
@@ -481,6 +495,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
 		<title>New Frugalware homepage!</title>
 		<date>Tue Jun 20 07:59:25 CEST 2006</date>
 		<author>AlexExtreme</author>
+		<hidden>0</hidden>
 		<content><![CDATA[
 			Welcome to the brand new Frugalware homepage! This is a complete rewrite of our homepage, featuring table-less design, XML for data storage, user-friendly URLs with mod_rewrite and easy translations with Gettext. If you would like to help translate the page, please post to the frugalware-devel mailing list. If you find any bugs while using the page, please report them to the <a href="http://bugs.frugalware.org">Bug Tracker</a> under the Homepage category, or visit our IRC channel and report them to AlexExtreme or IroNiQ. Also, feel free to give them your comments on the page too.<br />
 			<br />
@@ -492,6 +507,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
 		<title>ATI and nVidia binary drivers broken in current</title>
 		<date>Sat May 27 20:53:09 CEST 2006</date>
 		<author>AlexExtreme</author>
+		<hidden>0</hidden>
 		<content><![CDATA[
 			For those of you that use the current branch of Frugalware, nVidia and ATI binary drivers are currently broken due to the upgrade to Xorg 7.1. Specifically, fonts do not display at all on screen. There are 2 solutions to this problem - either downgrade all Xorg packages, or switch to using the open source Xorg drivers for your card in /etc/X11/xorg.conf. (ati and nv). Note that Frugalware 0.5pre1 is not affected unless you have run pacman -Syu since installation.<br />
 			<br />
@@ -503,6 +519,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
 		<title>Frugalware 0.5pre1 (Siwenna) for i686 released</title>
 		<date>Thu May 25 01:18:52 CEST 2006</date>
 		<author>VMiklos</author>
+		<hidden>0</hidden>
 		<content><![CDATA[
 			The Frugalware Developer Team is pleased to announce the immediate availability of Frugalware 0.5pre1, the first technical preview of the upcoming 0.5 stable release for the i686 architecture.<br />
 			A short and incomplete list of the more than 3000 changes since 0.4:<br />
@@ -533,6 +550,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
 		<title>Frugalware 0.4 for i686 and x86_64 released</title>
 		<date>Tue Mar 30 07:42:21 CEST 2006</date>
 		<author>VMiklos</author>
+		<hidden>0</hidden>
 		<content><![CDATA[
 			The Frugalware Developer Team is pleased to announce the immediate availability of Frugalware 0.4 for the i686 and x86_64 architectures, our fourth stable release.<br />
 			A short and incomplete list of changes since 0.4rc2-i686:<br />
@@ -579,6 +597,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
 		<title>Frugalware 0.4rc2-i686 released</title>
 		<date>Thu Mar 16 00:08:01 CET 2006</date>
 		<author>VMiklos</author>
+		<hidden>0</hidden>
 		<content><![CDATA[
 			The Frugalware Developer Team is pleased to announce the immediate availability of Frugalware 0.4rc2-i686, the last release candidate of the 0.4-i686 stable release.<br />
 			A short and incomplete list of changes since 0.4rc1-i686:<br />
@@ -609,6 +628,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
 		<title>Frugalware 0.4rc1-i686 released</title>
 		<date>Thu Mar  2 00:26:59 CET 2006</date>
 		<author>VMiklos</author>
+		<hidden>0</hidden>
 		<content><![CDATA[
 			The Frugalware Developer Team is pleased to announce the immediate availability of Frugalware 0.4rc1-i686, the first release candidate of 0.4-i686.<br />
 			A short and incomplete list of changes since 0.4pre2-i686:<br />
@@ -640,6 +660,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
 		<title>Frugalware 0.4pre2-i686 released</title>
 		<date>Thu Feb  2 00:29:05 CET 2006</date>
 		<author>VMiklos</author>
+		<hidden>0</hidden>
 		<content><![CDATA[
 			The Frugalware Developer Team is pleased to announce the immediate availability of Frugalware 0.4pre2-i686, the second technical preview release of 0.4-i686.<br />
 			A short and incomplete list of changes since 0.4pre1-i686:<br />
@@ -674,6 +695,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
 		<title>Frugalware 0.4pre1-i686 released</title>
 		<date>Wed Dec  7 20:23:55 CET 2005</date>
 		<author>VMiklos</author>
+		<hidden>0</hidden>
 		<content><![CDATA[
 			The Frugalware Developer Team is pleased to announce the immediate availability of Frugalware 0.4pre1-i686, the first technical preview release of 0.4-i686.<br />
 			A short and incomplete list of changes since 0.3-i686:<br />
@@ -706,6 +728,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
 		<title>Frugalware 0.3-x86_64 released</title>
 		<date>Wed Oct 19 19:06:30 CEST 2005</date>
 		<author>IroNiQ</author>
+		<hidden>0</hidden>
 		<content><![CDATA[
 			We are pleased to announce the immediate availability of the x86_64 port of Frugalware 0.3.<br />
 			Frugalware 0.3-x86_64 is now a full-featured port of Frugalware, with almost all of the packages that are available on i686.<br />
@@ -730,6 +753,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
 		<title>Frugalware 0.3-i686 released</title>
 		<date>Thu Oct 13 01:09:20 CEST 2005</date>
 		<author>VMiklos</author>
+		<hidden>0</hidden>
 		<content><![CDATA[
 			The Frugalware Developer Team is pleased to announce the immediate availability of Frugalware 0.3-i686, our third stable release.<br />
 			A short list of most important improvements and news since 0.3rc2-i686:<ul><li>Improvements:<br />
@@ -756,6 +780,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
 		<title>Frugalware 0.3rc2-i686 released</title>
 		<date>Mon Oct  3 22:17:09 CEST 2005</date>
 		<author>VMiklos</author>
+		<hidden>0</hidden>
 		<content><![CDATA[
 			The Frugalware Developer Team is pleased to announce the immediate availability of Frugalware 0.3rc2-i686, the second release candidate of the upcoming 0.3-i686 stable release.<br />
 			A short list of most important improvements and news since 0.3rc1-i686:<ul><li>Improvements:<br />
@@ -782,6 +807,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
 		<title>Frugalware 0.3rc1-i686 released</title>
 		<date>Thu Sep 15 22:15:47 CEST 2005</date>
 		<author>VMiklos</author>
+		<hidden>0</hidden>
 		<content><![CDATA[
 			The Frugalware Developer Team is pleased to announce the immediate availability of Frugalware 0.3rc1-i686, the first release candidate of the upcoming 0.3-i686 stable release.<br />
 			A short list of most important improvements and news since 0.3pre2-i686:<ul><li>Improvements:<br />
@@ -810,6 +836,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
 		<title>Frugalware 0.3pre2-i686 released</title>
 		<date>Wed Aug 18 07:13:14 CEST 2005</date>
 		<author>VMiklos</author>
+		<hidden>0</hidden>
 		<content><![CDATA[
 			The Frugalware Developer Team is pleased to announce the immediate availability of Frugalware 0.3pre2-i686, the second preview of the upcoming 0.3-i686 stable release.<br />
 			A short list of most important improvements and news since 0.3pre1-i686:<ul><li>Improvements:<br />
@@ -838,6 +865,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
 		<title>Frugalware 0.3pre1-x86_64 released</title>
 		<date>Sun Jul  3 19:46:19 CEST 2005</date>
 		<author>VMiklos</author>
+		<hidden>0</hidden>
 		<content><![CDATA[
 			We are pleased to announce the immediate availability of the x86_64 port of Frugalware 0.3pre1.<br />
 			Frugalware 0.3pre1-x86_64 is a native 64-bit system, which means we don't use multilib. (For example because of this, you have to use our gplflash package instead of the usual flashplugin.)<br />
@@ -865,6 +893,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
 		<title>0.3pre1 in the news</title>
 		<date>Wed Jun 29 09:57:27 CEST 2005</date>
 		<author>VMiklos</author>
+		<hidden>0</hidden>
 		<content><![CDATA[
 			There's a new <a href="http://www.tuxmachines.org/node/1501">review</a> about Frugalware over at <a href="http://www.tuxmachines.org/">tuxmachines</a>. Also you can find <a href="http://www.tuxmachines.org/gallery/frugal">there</a> 65 screenshots, too.<br />
 			]]>
@@ -875,6 +904,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
 		<title>Frugalware 0.3pre1-i686 released</title>
 		<date>Wed Jun 22 23:34:49 CEST 2005</date>
 		<author>VMiklos</author>
+		<hidden>0</hidden>
 		<content><![CDATA[
 			The Frugalware Developer Team is pleased to announce the immediate availability of Frugalware 0.3pre1-i686, the first preview of the upcoming 0.3-i686 stable release.<br />
 			A short list of most important improvements and news since 0.2:<ul><li>Improvements:<br />
@@ -909,6 +939,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
 		<title>3 more articles in online IT newspages</title>
 		<date>Sun Jun 23 23:21:34 CEST 2005</date>
 		<author>IroNiQ</author>
+		<hidden>0</hidden>
 		<content><![CDATA[
 			</p><div align="justify">Three more articles are published in online IT newspages about Frugalware Linux. The first can be read on th Newsforge site <a href="http://os.newsforge.com/os/05/06/03/2046247.shtml?tid=152&amp;tid=2">here</a> (the article is also available on Linux.com, <a href="http://distrocenter.linux.com/distrocenter/05/06/03/2046259.shtml?tid=127">here</a>), written by Eduardo Romero. The other two articles are reviews from different point of view. The <a href="http://www.linuxquestions.org/reviews/showproduct.php/product/565">first review</a> is readable on <a href="http://www.linuxquestions.org">linuxquestions.org</a>. The other <a href="http://www.distrotalk.net/cms_view_article.php?aid=4">review</a> is avialable on <a href="http://www.distrotalk.net/">distrotalk.net</a>.<br />
 			]]>
@@ -919,6 +950,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
 		<title>Articles about Frugalware Linux</title>
 		<date>Mon May  9 21:42:15 CEST 2005</date>
 		<author>IroNiQ</author>
+		<hidden>0</hidden>
 		<content><![CDATA[
 			</p><div align="justify">Two arcticles are published about Frugalware Linux. The first is an interview on <a href="http://www.jox.hu">jox.hu</a>, a hungarian IT page. The article is available from <a href="http://www.jox.hu/cikk/?id=141&amp;r=12">here</a> (only in Hungarian). The second is on <a href="http://distrowatch.com">Distrowatch.com</a>. The Distrowatch staff chose the Frugalware Linux to the "Featured distribution of the week". They spent some time to install and evaluate other, well-known Linux distributions and decided to give our distro that title. You can read this article <a href="http://distrowatch.com/weekly.php?issue=20050509#fdow">here</a>.<br />
 			]]>
@@ -929,6 +961,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
 		<title>Frugalware 0.2 released</title>
 		<date>Thu Apr 28 09:33:28 CEST 2005</date>
 		<author>VMiklos</author>
+		<hidden>0</hidden>
 		<content><![CDATA[
 			The Frugalware Developer Team is pleased to announce the immediate availability of Frugalware 0.2, our second stable release.<br />
 			A short list of the most important improvements and bugfixes since 0.2rc2:<ul><li>updates:<br />
@@ -956,6 +989,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
 		<title>Frugalware 0.2rc2 released</title>
 		<date>Mon Apr 18 09:22:55 CEST 2005</date>
 		<author>VMiklos</author>
+		<hidden>0</hidden>
 		<content><![CDATA[
 			The Frugalware Developer Team is pleased to announce the immediate availability of Frugalware 0.2rc2, the second (and last) release candidate of the upcoming 0.2 stable release.<br />
 			A short list of the most important improvements and bugfixes since 0.2rc1:<ul><li>updates:<br />
@@ -984,6 +1018,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
 		<title>Frugalware 0.2rc1 released</title>
 		<date>Thu Apr  7 09:17:18 CEST 2005</date>
 		<author>VMiklos</author>
+		<hidden>0</hidden>
 		<content><![CDATA[
 			The Frugalware Developer Team is pleased to announce the immediate availability of Frugalware 0.2rc1, the first release candidate of the upcoming 0.2 stable release.<br />
 			A short list of most important improvements and fixed bugs since 0.2pre2:<ul><li>updates:<br />
@@ -1013,6 +1048,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
 		<title>KDE 3.4.0 packages are on mirrors</title>
 		<date>Sun Mar 20 23:30:16 CET 2005</date>
 		<author>aThom</author>
+		<hidden>0</hidden>
 		<content><![CDATA[
 			KDE 3.4.0 packages are ready!<br />
 			You can read the announcement <a href="http://kde.org/announcements/announce-3.4.php">here</a>.<br />
@@ -1039,6 +1075,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
 		<title>GNOME 2.10.0 is in -current</title>
 		<date>Mon Mar 14 15:20:02 CET 2005</date>
 		<author>laci</author>
+		<hidden>0</hidden>
 		<content><![CDATA[
 			If everything goes fine tomorrow GNOME 2.10.0 will be on mirrors.<br />
 			Official release notes: <a href="http://www.gnome.org/start/2.10/notes/">http://www.gnome.org/start/2.10/notes/</a><br />
@@ -1081,6 +1118,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
 		<title>Frugalware 0.2pre2 released</title>
 		<date>Wed Feb 23 22:59:18 CET 2005</date>
 		<author>VMiklos</author>
+		<hidden>0</hidden>
 		<content><![CDATA[
 			The Frugalware Developer Team is pleased to announce the immediate availability of Frugalware 0.2pre2, the second preview of the upcoming 0.2 stable release.<br />
 			A short list of most important improvements and fixed bugs since 0.2pre1:<ul><li>new packages:<br />
@@ -1116,6 +1154,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
 		<title>OpenOffice.org in Frugalware</title>
 		<date>Mon Feb 21 15:40:32 CET 2005</date>
 		<author>IroNiQ</author>
+		<hidden>0</hidden>
 		<content><![CDATA[
 			We have good news to our users: the openoffice.org package is ready to use. This package was made from the <a href="http://www.novell.com/linux/ximian.html">Ximian</a> <a href="http://www.openoffice.org/">OpenOffice.org</a>. The main package is the "openoffice.org" what contains the user interface and also the dictionary, the hyphenation and the thesaurus in English.<br />
 			The languaga packs are called "openoffice.org-i18n-xx" (where xx is the small country code, eg: hu, de, fr) and contains the dictionaries, the hyphenations and the thesaurus in te given language.<br />
@@ -1128,6 +1167,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
 		<title>Offical Forum</title>
 		<date>Sun Feb  6 19:46:21 CET 2005</date>
 		<author>shrift</author>
+		<hidden>0</hidden>
 		<content><![CDATA[
 			Hi all! So, at last we made it! Our new forum can be reached here: <a href="http://forums.frugalware.org/">forums.frugalware.org</a>!<br />
 			Any problems can be reported at: <a href="mailto:shrift@frugalware.org">shrift@frugalware.org</a> or at the "<a href="http://forums.frugalware.org/index.php?t=thread&amp;frm_id=29">About the forum</a>" topic.<br />
@@ -1140,6 +1180,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
 		<title>Irc web interface and logs</title>
 		<date>Thu Jan 20 00:21:12 CET 2005</date>
 		<author>IroNiQ</author>
+		<hidden>0</hidden>
 		<content><![CDATA[
 			We have good news to that users, who cannot join our irc server: we have a web interface to our irc channel. You can join the channel on <a href="irc.php">this</a> address. You can also find here the channel log.<br />
 			]]>
@@ -1150,6 +1191,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
 		<title>Forum and coming new functions</title>
 		<date>Sun Jan 16 21:58:22 CET 2005</date>
 		<author>IroNiQ</author>
+		<hidden>0</hidden>
 		<content><![CDATA[
 			We are pleased to inform our Hungarian users that the HUP (Hungarian Unix Portal) made a complete forum for us, which is available <a href="http://hup.hu/modules.php?name=Forums&amp;file=viewforum&amp;f=56">here</a>.<br />
 			In the near future two new things will be available in our webpage: the Wiki page and our Forum.<br />
@@ -1162,6 +1204,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
 		<title>Frugalware 0.2pre1 released</title>
 		<date>Mon Jan 10 09:22:50 CET 2005</date>
 		<author>VMiklos</author>
+		<hidden>0</hidden>
 		<content><![CDATA[
 			The Frugalware Developer Team is pleased to announce the immediate availability of Frugalware 0.2pre1, the first preview of the upcoming 0.2 stable release.<br />
 			A short list of most important improvements and fixed bugs since 0.1:<ul><li>new packages:<br />
@@ -1199,6 +1242,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
 		<title>XFce is in -current, Firefox locale packages, too</title>
 		<date>Thu Dec 30 21:15:06 CET 2004</date>
 		<author>IroNiQ</author>
+		<hidden>0</hidden>
 		<content><![CDATA[
 			The Frugalware Developer Team is pleased to announce the immediate availability of the long-time expected Xfce4 window manager and the xfce4-goodies package. Besides new language packages are available to the firefox browser.<br />
 			Install method:<br />
@@ -1214,6 +1258,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
 		<title>Planned downtime</title>
 		<date>Tue Nov 16 09:52:54 CET 2004</date>
 		<author>VMiklos</author>
+		<hidden>0</hidden>
 		<content><![CDATA[
 			Today, approximately between 17-18h (CET), frugalware.org will be unavailable. This affects all (www, ftp, rsync, mailman) services, except dns. Thank for your understanding.<br />
 			]]>
@@ -1224,6 +1269,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
 		<title>New functions on webpage</title>
 		<date>Sun Nov 14 23:23:21 CET 2004</date>
 		<author>IroNiQ</author>
+		<hidden>0</hidden>
 		<content><![CDATA[
 			Two new functions are available on our webpage: the <a href=roadmap.php>roadmap</a>, where you can find our releasing cycle, and the <a href=wishlist.php>wishlist</a>/<a href=todolist.php>todolist</a>, where you can ask for your favourite program or see the list, what do we have to do.<br />
 			]]>
@@ -1234,6 +1280,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
 		<title>Frugalware 0.1 screenshot tour by OSDir</title>
 		<date>Sat Nov  6 22:35:40 CET 2004</date>
 		<author>VMiklos</author>
+		<hidden>0</hidden>
 		<content><![CDATA[
 			OSDir installed a Frugalware 0.1 to a test machine and took 78 pictures during installation, wich can be found <a href="http://osdir.com/shots/slideshows/slideshow.php?release=169&amp;slide=1">here</a>.<br />
 			]]>
@@ -1244,6 +1291,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
 		<title>Frugalware 0.1 released</title>
 		<date>Tue Nov  2 10:27:36 CET 2004</date>
 		<author>VMiklos</author>
+		<hidden>0</hidden>
 		<content><![CDATA[
 			The Frugalware Developer Team is pleased to announce the immediate availability of Frugalware 0.1, our first stable release.<br />
 			A short list of improvements and fixed bugs since rc2:<ul><li>improvements:<br />
@@ -1276,6 +1324,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
 		<title>Frugalware 0.1rc2 released</title>
 		<date>Mon Oct 11 15:40:13 CEST 2004</date>
 		<author>VMiklos</author>
+		<hidden>0</hidden>
 		<content><![CDATA[
 			The Frugalware Developer Team is pleased to announce the immediate availability of Frugalware 0.1rc2, the second release candidate of the 0.1 release.<br />
 			For a list of improvements and fixed bugs since rc1, please refer to the Frugalware <a href=changelog.php>Change Log</a>.<br />
@@ -1288,6 +1337,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
 		<title>Frugalware 0.1rc1 released</title>
 		<date>Wed Sep 29 07:14:26 CEST 2004</date>
 		<author>VMiklos</author>
+		<hidden>0</hidden>
 		<content><![CDATA[
 			The Frugalware Developer Team is pleased to announce the immediate availability of Frugalware 0.1rc1, the first release candidate of the 0.1 release.<br />
 			For a list of improvements since the beginning, please refer to the Frugalware <a href=changelog.php>Change Log</a>.<br />
@@ -1300,6 +1350,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
 		<title>Test message</title>
 		<date>Mon Sep 13 13:53:37 CEST 2004</date>
 		<author>VMiklos</author>
+		<hidden>0</hidden>
 		<content><![CDATA[
 			seems to work... ;-)<br />
 			]]>
