@@ -27,6 +27,25 @@
 
 <fsas>
 	<fsa>
+		<id>76</id>
+		<date>2006-12-28</date>
+		<author>voroskoi</author>
+		<package>kernel</package>
+		<vulnerable>2.6.17-6siwenna3</vulnerable>
+		<unaffected>2.6.17-6siwenna5</unaffected>
+		<bts>http://bugs.frugalware.org/task/1514
+			http://bugs.frugalware.org/task/1562</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4572
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-5173
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-5751
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-5757
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-6333
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-6106
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-3741
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4997</cve>
+		<desc>Various kernel security bugs. We have also released a 2.6.17-6siwenna4, but we have fixed another bug on the same day, that's why there was no FSA.</desc>
+	</fsa>
+	<fsa>
 		<id>75</id>
 		<date>2006-12-28</date>
 		<author>voroskoi</author>
