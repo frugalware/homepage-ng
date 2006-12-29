@@ -379,7 +379,7 @@ function pkg_from_id($id)
 	{
 		$content .= "<tr><td>" . gettext("Reverse depends:") . "</td><td>";
 		foreach($revdeps as $i)
-			$content .= "<a href=\"/packages/" . $i['pkg_id'] . "\">".$i['pkgname'].$i['version']."</a> ";
+			$content .= "<a href=\"/packages/" . $i['pkg_id'] . "\">".$i['pkgname']."</a> ";
 		$content .= "</td></tr>\n";
 	}
 	if (count($conflicts))
