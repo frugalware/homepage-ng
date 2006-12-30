@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mirrors [
+<!ELEMENT mirrors (mirror)*>
+<!ELEMENT mirror (id , type+ , path , host?, country?, supplier?, supplier_url?, bandwidth?)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT type (#PCDATA)>
+<!ELEMENT path (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+]>
+
+<!--
+The goal of this file to be the source of the:
+
+1) bind config file
+2) homepage
+3) pacman mirror list
+4) repoman mirror list
+
+That's why maybe it looks a bit complex first, but it's good since if there is
+a new mirror, we need to modify this file only.
+
+(Problems with the old mirrors.xml:
+1) Duplicate data for http/rsync/ftp mirrors.
+2) The description randomly contained info about the country, the supplier, the
+supplier's url, bandwidth.)
+
+When you choose the id for a new mirror, first search for XXX, then if there is
+none, use the next free integer.
+When you delete a mirror, add an XXX (copy an existing one) so that we'll know
+if we can re-use its number.
+
+NOTES:
+
+1) For pacman, we prefer ftp mirrors so in case both http and ftp is
+available on the same host, we include only the ftp one.
+2) The bandwidth is not always public, we should handle if it's missing.
+
+If you modify this file, be sure it's still valid - xmllint is your friend.
+-->
+
+<mirrors>
+	<mirror>
+		<id>3</name>
+		<type>ftp</type>
+		<path>mirrors/frugalware/pub/frugalware</path>
+		<host>reaktor.linuxforum.hu</host>
+		<country>Hungary</country>
+		<supplier>Schmidt Computer Ltd.</supplier>
+		<supplier_url>http://www.linuxforum.hu/</supplier_url>
+		<bandwidth>100 MBit</bandwidth>
+	</mirror>
+	<mirror>
+		<id>4</id>
+		<type>ftp</type>
+		<type>http</type>
+		<type>rsync</type>
+		<path>pub/linux/distributions/frugalware</path>
+		<host>ftp.freepark.org</host>
+		<country>Hungary</country>
+		<supplier>Free Software Network</supplier>
+		<supplier_url>http://www.fsn.hu</supplier_url>
+		<bandwidth>100 MBit</bandwidth>
+	</mirror>
+	<mirror>
+		<id>5</id>
+		<type>ftp</type>
+		<type>http</type>
+		<type>rsync</type>
+		<path>packages/frugalware/pub/frugalware</path>
+		<country>Belgium</country>
+		<supplier>Belgian national research network</supplier>
+		<supplier_url>http://www.belnet.be/en/</supplier_url>
+		<bandwidth>1 GBit</bandwidth>
+	</mirror>
+	<!-- XXX: #6 was aThom's partial mirror. we can re-use it later, but
+	needs discussing with him first -->
+	<mirror>
+		<id>7</id>
+		<type>http</type>
+		<path>pub/frugalware</path>
+		<country>Germany</country>
+		<supplier>Sebastian Vassiliou</supplier>
+		<supplier_url>http://pimpmylinux.org/</supplier_url>
+		<bandwidth>100 MBit</bandwidth>
+	</mirror>
+	<!-- XXX: #8 was madtux.org's iso only mirror, but they have removed
+	it. we can re-use it later, but needs discussing with them first -->
+	<mirror>
+		<id>9</id>
+		<type>ftp</type>
+		<path>pub/frugalware</path>
+		<country>Taiwan</country>
+		<supplier>National Taiwan University</supplier>
+		<supplier_url>http://cle.linux.org.tw/</supplier_url>
+	</mirror>
+	<mirror>
+		<id>10</id>
+		<type>ftp</type>
+		<type>http</type>
+		<type>rsync</type>
+		<path>pub/linux/frugalware</path>
+		<country>United States</country>
+		<supplier>TDS Telecom</supplier>
+		<supplier_url>http://mirrors.tds.net/</supplier_url>
+		<bandwidth>1 GBit</bandwidth>
+	</mirror>
+	<!-- XXX: #11 will be a webpage mirror, after that is complete, we can
+	re-use it again, but needs discussing with them first -->
+	<mirror>
+		<id>12</id>
+		<type>ftp</type>
+		<type>http</type>
+		<type>rsync</type>
+		<path>mirrors/ftp.frugalware.org/pub/frugalware</path>
+		<country>Ireland</country>
+		<supplier>Ireland's Natianal Education and Research Network</supplier>
+		<supplier_url>http://www.heanet.ie/</supplier_url>
+		<bandwidth>2 GBit</bandwidth>
+	</mirror>
+	<mirror>
+		<name>Lidux.de</name>
+		<type>buycd</type>
+		<path>http://www.lidux.de/index.php/cPath/2_58</path>
+		<description></description>
+	</mirror>
+	<mirror>
+		<name>OSDisc.com</name>
+		<type>buycd</type>
+		<path>http://www.osdisc.com/cgi-bin/view.cgi/products/linux/frugalware</path>
+		<description></description>
+	</mirror>
+	<mirror>
+		<name>CheapISO.com</name>
+		<type>buycd</type>
+		<path>http://cheapiso.com/index.php?manufacturers_id=55</path>
+		<description></description>
+	</mirror>
+	<mirror>
+		<name>BudgetLinuxCDS</name>
+		<type>buycd</type>
+		<path>http://budgetlinuxcds.com/index.php?page=Choose&amp;letter=Frugalware</path>
+		<description></description>
+	</mirror>
+	<mirror>
+		<name>cdiras.projectinfo.hu</name>
+		<type>buycd</type>
+		<path>http://cdiras.projektinfo.hu/index.php?r=1&amp;op=linux</path>
+		<description></description>
+	</mirror>
+	<mirror>
+		<name>LinuxMedia.hu</name>
+		<type>buycd</type>
+		<path>http://www.linuxmedia.hu/?ref=frugalware</path>
+		<description></description>
+	</mirror>
+</mirrors>
