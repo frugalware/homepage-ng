@@ -61,7 +61,7 @@ $url = addslashes(stripslashes($_GET[url]));
 
 foreach($mirrors as $k => $v)
 {
-	$str = null;
+	$str = "<ul>\n";
 	if($k == "")
 		continue;
 	foreach($v as $i)
@@ -69,10 +69,11 @@ foreach($mirrors as $k => $v)
 		foreach($i['types'] as $j)
 		{
 			$j=="http" ? $domain = "www" : $domain = $j;
-			$str .= "<a href=\"".$j."://".$domain.$i['id'].".frugalware.org/".$i['path']."/$url\">".
-				$i['supplier']." (".$j."/".$i['bandwidth'].")</a><br />\n";
+			$str .= "<li><a href=\"".$j."://".$domain.$i['id'].".frugalware.org/".$i['path']."/$url\">".
+				$i['supplier']." (".$j."/".$i['bandwidth'].")</a></li>\n";
 		}
 	}
+	$str .= "</ul>\n";
 	fwmiddlebox($k, $str);
 
 }
