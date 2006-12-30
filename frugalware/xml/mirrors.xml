@@ -43,6 +43,12 @@
 		<description>United States (mirrors.tds.net)</description>
 	</mirror>
 	<mirror>
+		<name>ftp12.frugalware.org</name>
+		<type>ftp</type>
+		<path>mirrors/ftp.frugalware.org/pub/frugalware</path>
+		<description>Ireland (2x2 GBit, ftp.heanet.ie)</description>
+	</mirror>
+	<mirror>
 		<name>www4.frugalware.org</name>
 		<type>http</type>
 		<path>pub/linux/distributions/frugalware</path>
@@ -67,6 +73,12 @@
 		<description>United States (mirrors.tds.net)</description>
 	</mirror>
 	<mirror>
+		<name>www12.frugalware.org</name>
+		<type>http</type>
+		<path>mirrors/ftp.frugalware.org/pub/frugalware</path>
+		<description>Ireland (2x2 GBit, ftp.heanet.ie)</description>
+	</mirror>
+	<mirror>
 		<name>ftp4.frugalware.org</name>
 		<type>rsync</type>
 		<path>ftp/pub/linux/distributions/frugalware</path>
@@ -83,6 +95,12 @@
 		<type>rsync</type>
 		<path>frugalware</path>
 		<description>United States (mirrors.tds.net)</description>
+	</mirror>
+	<mirror>
+		<name>rsync12.frugalware.org</name>
+		<type>rsync</type>
+		<path>mirrors/ftp.frugalware.org/pub/frugalware</path>
+		<description>Ireland (2x2 GBit, ftp.heanet.ie)</description>
 	</mirror>
 	<mirror>
 		<name>Lidux.de</name>
