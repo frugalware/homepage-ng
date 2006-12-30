@@ -37,7 +37,7 @@ If you modify this file, be sure it's still valid - xmllint is your friend.
 
 <mirrors>
 	<mirror>
-		<id>3</name>
+		<id>3</id>
 		<type>ftp</type>
 		<path>mirrors/frugalware/pub/frugalware</path>
 		<host>reaktor.linuxforum.hu</host>
