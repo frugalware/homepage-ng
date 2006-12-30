@@ -29,11 +29,8 @@ none, use the next free integer.
 When you delete a mirror, add an XXX (copy an existing one) so that we'll know
 if we can re-use its number.
 
-NOTES:
-
-1) For pacman, we prefer ftp mirrors so in case both http and ftp is
+NOTES: For pacman, we prefer ftp mirrors so in case both http and ftp is
 available on the same host, we include only the ftp one.
-2) The bandwidth is not always public, we should handle if it's missing.
 
 If you modify this file, be sure it's still valid - xmllint is your friend.
 -->
@@ -92,6 +89,7 @@ If you modify this file, be sure it's still valid - xmllint is your friend.
 		<country>Taiwan</country>
 		<supplier>National Taiwan University</supplier>
 		<supplier_url>http://cle.linux.org.tw/</supplier_url>
+		<bandwidth>Unknown bandwidth</bandwidth>
 	</mirror>
 	<mirror>
 		<id>10</id>
