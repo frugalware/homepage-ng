@@ -65,7 +65,7 @@ If you modify this file, be sure it's still valid - xmllint is your friend.
 		<type>rsync</type>
 		<path>packages/frugalware/pub/frugalware</path>
 		<country>Belgium</country>
-		<supplier>Belgian national research network</supplier>
+		<supplier>Belgian National Research Network</supplier>
 		<supplier_url>http://www.belnet.be/en/</supplier_url>
 		<bandwidth>1 GBit</bandwidth>
 	</mirror>
@@ -97,7 +97,7 @@ If you modify this file, be sure it's still valid - xmllint is your friend.
 		<type>http</type>
 		<type>rsync</type>
 		<path>pub/linux/frugalware</path>
-		<country>United States</country>
+		<country>USA</country>
 		<supplier>TDS Telecom</supplier>
 		<supplier_url>http://mirrors.tds.net/</supplier_url>
 		<bandwidth>1 GBit</bandwidth>
@@ -111,7 +111,7 @@ If you modify this file, be sure it's still valid - xmllint is your friend.
 		<type>rsync</type>
 		<path>mirrors/ftp.frugalware.org/pub/frugalware</path>
 		<country>Ireland</country>
-		<supplier>Ireland's Natianal Education and Research Network</supplier>
+		<supplier>Ireland's National Education and Research Network</supplier>
 		<supplier_url>http://www.heanet.ie/</supplier_url>
 		<bandwidth>2 GBit</bandwidth>
 	</mirror>
