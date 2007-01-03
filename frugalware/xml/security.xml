@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>81</id>
+		<date>2007-01-03</date>
+		<author>voroskoi</author>
+		<package>sugarcrm</package>
+		<vulnerable>4.2.1b-1</vulnerable>
+		<unaffected>4.5.0h-1siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1556</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-6712</cve>
+		<desc>A vulnerability has been reported in Sugar Open Source, which can be exploited by malicious people to conduct cross-site scripting attacks.
+			Input passed to unspecified parameters is not properly sanitised before being returned to the user. This can be exploited to execute arbitrary HTML and script code in a user's browser session in context of an affected site.</desc>
+	</fsa>
+	<fsa>
 		<id>80</id>
 		<date>2007-01-03</date>
 		<author>voroskoi</author>
