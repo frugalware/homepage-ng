@@ -27,6 +27,34 @@
 
 <fsas>
 	<fsa>
+		<id>82</id>
+		<date>2007-01-05</date>
+		<author>voroskoi</author>
+		<package>seamonkey</package>
+		<vulnerable>1.0.6-1siwenna1</vulnerable>
+		<unaffected>1.0.7-1siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1546</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-6497
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-6498
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-6499
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-6500
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-6501
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-6502
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-6503
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-6504
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-6505</cve>
+		<desc>Multiple vulnerabilities have been reported in Mozilla SeaMonkey, which can be exploited by malicious people to conduct cross-site scripting attacks and potentially compromise a user's system.
+			1)Various errors in the layout engine and JavaScript engine can be exploited to cause memory corruption and some may potentially allow execution of arbitrary code.
+			2) An error when reducing the CPU's floating point precision, which may happen on Windows when loading a plugin creating a Direct3D device, may cause the "js_dtoa()" function to not exit and instead cause a memory corruption.
+			3) A boundary error when setting the cursor to a Windows bitmap using the CSS cursor property can be exploited to cause a heap-based buffer overflow.
+			4) An unspecified error in the "watch()" JavaScript function can be exploited to execute arbitrary code.
+			5) An error in LiveConnect causes an already freed object to be used and may potentially allow execution of arbitrary code.
+			6) An error in the handling of the "src" attribute of IMG elements loaded in a frame can be exploited to change the attribute to a "javascript:" URI. This allows execution of arbitrary HTML and script code in a user's browser session.
+			7) An error within the handling of SVG comment objects can be exploited to cause a memory corruption and allows execution of arbitrary code by appending an SVG comment object from one document into another type of document (e.g. HTML).
+			8) A boundary error within the processing of mail headers can be exploited to cause a heap-based buffer overflow via an overly long "Content-Type" header in an external message body.
+			9) A boundary error within the processing of rfc2047-encoded headers can be exploited to cause a heap-based buffer overflow.</desc>
+	</fsa>
+	<fsa>
 		<id>81</id>
 		<date>2007-01-03</date>
 		<author>voroskoi</author>
