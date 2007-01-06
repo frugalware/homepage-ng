@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>84</id>
+		<date>2007-01-07</date>
+		<author>voroskoi</author>
+		<package>mono</package>
+		<vulnerable>1.1.17.2-1siwenna1</vulnerable>
+		<unaffected>1.1.17.2-2siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1557</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-6104</cve>
+		<desc>Jose Ramon Palanco has reported a vulnerability in Mono, which can be exploited by malicious people to disclose potentially sensitive information.
+			The vulnerability is caused due to an error in the System.Web class when handling HTTP requests. This can be exploited to gain remote access to the source code of a web application by e.g. appending "%20" to an URI.
+			Note: Reportedly, this can also be exploited to gain access to the Web.Config file, which may contain sensitive information like credentials.</desc>
+	</fsa>
+	<fsa>
 		<id>83</id>
 		<date>2007-01-06</date>
 		<author>voroskoi</author>
