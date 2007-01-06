@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>83</id>
+		<date>2007-01-06</date>
+		<author>voroskoi</author>
+		<package>gdm</package>
+		<vulnerable>2.16.0-2</vulnerable>
+		<unaffected>2.16.4-1siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1539</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-6105</cve>
+		<desc>A vulnerability has been reported in the gdmchooser application of the GNOME Display Manager, which can be exploited by malicious, local users to gain escalated privileges.
+			The vulnerability is caused due to a format string error within the "gdm_chooser_add_host()" function in gdm2/gui/gdmchooser.c. This can be exploited to execute arbitrary code with the privileges of the gdmchooser application by entering a specially crafted string when providing a remote host.</desc>
+	</fsa>
+	<fsa>
 		<id>82</id>
 		<date>2007-01-05</date>
 		<author>voroskoi</author>
