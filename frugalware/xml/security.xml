@@ -27,6 +27,17 @@
 
 <fsas>
 	<fsa>
+		<id>85</id>
+		<date>2007-01-08</date>
+		<author>voroskoi</author>
+		<package>mplayer</package>
+		<vulnerable>1.0pre8-5</vulnerable>
+		<unaffected>1.0pre8-6siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1573</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-6172</cve>
+		<desc>The code mentioned in DSA 1244-1 is also included in MPlayer. A potential buffer overflow was found in the code used to handle RealMedia RTSP streams. When checking for matching asm rules, the code stores the results in a fixed-size array, but no boundary checks are performed. This may lead to a buffer overflow if the user is tricked into connecting to a malicious server. Since the attacker can not write arbitrary data into the buffer, creating an exploit is very hard; but a DoS attack is easily made.</desc>
+	</fsa>
+	<fsa>
 		<id>84</id>
 		<date>2007-01-07</date>
 		<author>voroskoi</author>
