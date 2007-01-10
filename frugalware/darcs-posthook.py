@@ -91,7 +91,10 @@ if __name__ == "__main__":
 	latest = sock.read().strip()
 	sock.close()
 	xmldoc = minidom.parse('frugalware/xml/news.xml')
-	id = xmldoc.getElementsByTagName('id')[0].firstChild.toxml()
+	for i in xmldoc.getElementsByTagName('post'):
+		if i.getElementsByTagName('hidden')[0].firstChild.toxml() == "0":
+			id = i.getElementsByTagName('id')[0].firstChild.toxml()
+			break
 	if id != latest:
 		title = xmldoc.getElementsByTagName('title')[0].firstChild.toxml()
 		author = xmldoc.getElementsByTagName('author')[0].firstChild.toxml()
