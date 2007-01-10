@@ -14,6 +14,17 @@
 ]>
 <news>
 	<post>
+		<id>53</id>
+		<title>Test hideen post</title>
+		<date>Wed Jan 10 14:49:42 CET 2007</date>
+		<author>VMiklos</author>
+		<hidden>1</hidden>
+		<content><![CDATA[
+			Hopefully this won't hit -announce.
+			]]>
+		</content>
+	</post>
+	<post>
 		<id>52</id>
 		<title>Big Fat Warning: postgresql package upgrade</title>
 		<date>Sat Jan  6 17:27:05 CET 2007</date>
