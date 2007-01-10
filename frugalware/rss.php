@@ -108,6 +108,7 @@ switch($_GET['type'])
 		$handle['link']="http://frugalware.org/";
 		for ( $i=0; $i<$news_limit; $i++)
 		{
+			if ( $news[$i]->hidden[0]->tagData == 0 )
 			$handle['items'][] = array(
 				"title" => $news[$i]->title[0]->tagData,
 				"link" => "http://www.frugalware.org/news/".$news[$i]->id[0]->tagData,
