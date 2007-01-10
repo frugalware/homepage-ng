@@ -39,7 +39,12 @@ $validcontent = '<div align="left">
 	  <a href="http://feedvalidator.org/check.cgi?url=http://' . $_SERVER["SERVER_NAME"] . $fwng_root . 'rss/releases"><img src="' . $fwng_root . 'images/valid-rss.png" border="0" alt="Valid RSS!" title="Valid RSS!" /></a>
 	</div>';
 
-$menucontent = '<a class="menu" href="' . $fwng_root . '">' . gettext('News') . "</a> &middot; \n";
+#$menucontent = '<a class="menu" href="' . $fwng_root . '">' . gettext('News') . "</a> &middot; \n";
+$menucontent = '<a class="menu" href="" onclick="return clickreturnvalue()" onmouseover="dropdownmenu(this, event, \'newsmenu\')">' . gettext('News') . "</a> &middot; \n";
+$menucontent .= '<div id="newsmenu" class="menulinkcss" align="left">' . "\n";
+$menucontent .= '	<a href="' . $fwng_root . '">' . gettext('Announcements') . "</a>\n";
+$menucontent .= '	<a href="' . $fwng_root . 'security">' . gettext('Security announcements') . "</a>\n";
+$menucontent .= "</div>\n";
 $menucontent .= '<a class="menu" href="" onclick="return clickreturnvalue()" onmouseover="dropdownmenu(this, event, \'aboutmenu\')">' . gettext('About') . "</a> &middot; \n";
 $menucontent .= '<div id="aboutmenu" class="menulinkcss" align="left">' . "\n";
 $menucontent .= '	<a href="' . $fwng_root . 'about">' . gettext('Summary') . "</a>\n";
@@ -72,7 +77,6 @@ $menucontent .= '	<a href="http://planet.frugalware.org/">' . gettext('Blogs') .
 $menucontent .= '	<a href="' . $fwng_root . 'donations">' . gettext('Donations') . "</a>\n";
 $menucontent .= '	<a href="' . $fwng_root . 'authors/devel">' . gettext('Developers') . "</a>\n";
 $menucontent .= '	<a href="' . $fwng_root . 'authors/contrib">' . gettext('Contributors') . "</a>\n";
-$menucontent .= '	<a href="' . $fwng_root . 'security">' . gettext('Security announcements') . "</a>\n";
 $menucontent .= "</div>\n";
 
 if($_SERVER["PHP_SELF"]=="/index.php")
