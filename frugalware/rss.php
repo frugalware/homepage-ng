@@ -109,12 +109,14 @@ switch($_GET['type'])
 		for ( $i=0; $i<$news_limit; $i++)
 		{
 			if ( $news[$i]->hidden[0]->tagData == 0 )
-			$handle['items'][] = array(
-				"title" => $news[$i]->title[0]->tagData,
-				"link" => "http://www.frugalware.org/news/".$news[$i]->id[0]->tagData,
-				"pubDate" => date(DATE_RFC2822, strtotime($news[$i]->date[0]->tagData)),
-				"desc" => preg_replace('/(<a href=.*>|<\/a>)/', '', $news[$i]->content[0]->tagData),
-			);
+			{
+				$handle['items'][] = array(
+					"title" => $news[$i]->title[0]->tagData,
+					"link" => "http://www.frugalware.org/news/".$news[$i]->id[0]->tagData,
+					"pubDate" => date(DATE_RFC2822, strtotime($news[$i]->date[0]->tagData)),
+					"desc" => preg_replace('/(<a href=.*>|<\/a>)/', '', $news[$i]->content[0]->tagData),
+				);
+			}
 		}
 		break;
 
