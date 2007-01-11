@@ -27,6 +27,25 @@
 
 <fsas>
 	<fsa>
+		<id>89</id>
+		<date>2007-01-11</date>
+		<author>voroskoi</author>
+		<package>cacti</package>
+		<vulnerable>0.8.6h-1</vulnerable>
+		<unaffected>0.8.6i-1siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1584</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-6799</cve>
+		<desc>rgod has discovered four vulnerabilities in Cacti, which can be exploited by malicious people to bypass certain security restrictions, manipulate data and compromise vulnerable systems.
+			1) The "cmd.php" and "copy_cacti_user.php" scripts do not properly restrict access to command line usage and are installed in a web-accessible location.
+			Successful exploitation requires that "register_argc_argv" is enabled.
+			2) Input passed in the URL to cmd.php is not properly sanitised before being used in SQL queries. This can be exploited to manipulate SQL queries by injecting arbitrary SQL code.
+			Successful exploitation requires that "register_argc_argv" is enabled.
+			3) The results from the SQL queries in 2) in cmd.php are not properly sanitised before being used as shell commands. This can be exploited to inject arbitrary shell commands.
+			4) Input passed in the URL to copy_cacti_user.php is not properly sanitised before being used in SQL queries. This can be exploited to manipulate SQL queries by injecting arbitrary SQL code.
+			Successful exploitation allows adding new administrator users, but requires that "register_argc_argv" is enabled.
+			Furthermore, it has been reported that other scripts may be exploitable under certain conditions. It has also been reported that script_server.php can be exploited to cause a DoS (denial of service).</desc>
+	</fsa>
+	<fsa>
 		<id>88</id>
 		<date>2007-01-11</date>
 		<author>voroskoi</author>
