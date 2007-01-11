@@ -171,4 +171,17 @@ function set_locale($lang, $domain)
 	textdomain($domain);
 }
 
+function is_in_file( $str, $fname )
+{
+	$fl = file_get_contents( $fname );
+	if ( stristr( $fn, $str ) === FALSE )
+	{
+		return false;
+	}
+	else
+	{
+		return true;
+	}
+}
+
 ?>

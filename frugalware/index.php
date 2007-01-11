@@ -54,6 +54,14 @@ if (!file_exists($xmlfile))
 }
 
 $id = ( $_GET['id'] != "" ) ? $_GET['id'] : -1;
+if ( $id != -1 && !is_in_file( "<id>$id</id>", $xmlfile ) )
+{
+	$nolang = 1;
+	if ( file_exists( "xml/news.xml" ) )
+		$xmlfile = "xml/news.xml";
+	else
+		$xmlfile = $docs_path . "/xml/news.xml";
+}
 $xml = file_get_contents($xmlfile);
 $parser = new XMLParser($xml);
 $parser->Parse();
