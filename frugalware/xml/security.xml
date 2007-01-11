@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>86</id>
+		<date>2007-01-11</date>
+		<author>voroskoi</author>
+		<package>drupal</package>
+		<vulnerable>4.7.3-2siwenna1</vulnerable>
+		<unaffected>4.7.5-1siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1589</bts>
+		<cve>There is no CVE for this issue, see: http://secunia.com/advisories/23586</cve>
+		<desc>A weakness has been reported in Drupal, which can be exploited by malicious users to conduct spoofing attacks.
+			The weakness is caused due to an unspecified error and can be exploited to change the page cache so existing pages return "page not found" errors.
+			Successful exploitation requires valid user credentials with the ability to post content. It also requires the page cache to be enabled and that MySQL is used.</desc>
+	</fsa>
+	<fsa>
 		<id>85</id>
 		<date>2007-01-08</date>
 		<author>voroskoi</author>
