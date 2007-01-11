@@ -174,7 +174,7 @@ function set_locale($lang, $domain)
 function is_in_file( $str, $fname )
 {
 	$fl = file_get_contents( $fname );
-	if ( stristr( $fn, $str ) === FALSE )
+	if ( stristr( $fl, $str ) === FALSE )
 	{
 		return false;
 	}
