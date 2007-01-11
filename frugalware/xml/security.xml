@@ -27,6 +27,22 @@
 
 <fsas>
 	<fsa>
+		<id>87</id>
+		<date>2007-01-11</date>
+		<author>voroskoi</author>
+		<package>phpbb</package>
+		<vulnerable>2.0.21-1</vulnerable>
+		<unaffected>2.0.22-1siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1515</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-6421
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-6508
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-6841</cve>
+		<desc>Some vulnerabilities have been discovered in phpBB, which can be exploited by malicious people to conduct cross-site request forgery attacks and cross-site scripting attacks.
+			1) The application allows users to send messages via HTTP requests without performing any validity checks to verify the request. This can be exploited to send messages to arbitrary users by e.g. tricking a target user into visiting a malicious website.
+			2) Input passed to the form field "Message body" in privmsg.php is not properly sanitised before it is returned to the user when sending messages to a non-existent user. This can be exploited to execute arbitrary HTML and script code in a user's browser session in context of an affected site.
+			Successful exploitation of the vulnerabilities requires that the target user is logged in.</desc>
+	</fsa>
+	<fsa>
 		<id>86</id>
 		<date>2007-01-11</date>
 		<author>voroskoi</author>
