@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>88</id>
+		<date>2007-01-11</date>
+		<author>voroskoi</author>
+		<package>vlc</package>
+		<vulnerable>0.8.5-1</vulnerable>
+		<unaffected>0.8.6-1siwenna2</unaffected>
+		<bts>http://bugs.frugalware.org/task/1579</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0017</cve>
+		<desc>Kevin Finisterre and LMH have reported a vulnerability in VLC media player, which can be exploited by malicious people to compromise a user's system.
+			The vulnerability is caused due to a format string error when handling "udp://" URIs and can be exploited via a specially crafted web site or an M3U file with a specially crafted udp:// URI containing format string specifiers as the file name.
+			Successful exploitation allows execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>87</id>
 		<date>2007-01-11</date>
 		<author>voroskoi</author>
