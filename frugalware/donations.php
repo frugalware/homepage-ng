@@ -49,7 +49,6 @@ page and send the developer a mail.</div>");
 fwmiddlebox(gettext("Donations"), $fwdonatewelcome);
 
 $cont1 = "<div align=\"left\">Wishes:<ul>
-<li>American, <i>not</i> ISO-only mirror</li>
 <li>10-20GB IDE HDD for testing Xen</li>
 <li>10GB IDE HDD for testing the setup</li>
 <li>PegasosPPC or/and other PowerPC computer to use as buildserver</li>
