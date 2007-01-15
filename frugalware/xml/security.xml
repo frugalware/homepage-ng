@@ -27,6 +27,21 @@
 
 <fsas>
 	<fsa>
+		<id>90</id>
+		<date>2007-01-15</date>
+		<author>voroskoi</author>
+		<package>xorg-server</package>
+		<vulnerable>1.1.1-5</vulnerable>
+		<unaffected>1.1.1-6siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1610</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-6101
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-6102
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-6103</cve>
+		<desc>Sean Larsson has reported some vulnerabilities in X.Org X11, which can be exploited by malicious, local users to gain escalated privileges.
+			The vulnerabilities are caused due to input validation errors within the "ProcRenderAddGlyphs()" function of the "Render" extension, and the "ProcDbeGetVisualInfo()" and "ProcDbeSwapBuffers()" functions of the "DBE" extension. This can be exploited to cause memory corruption by sending specially crafted X requests to the X server.
+			Successful exploitation may allow the execution of arbitrary code with the privileges of the X server, but requires that the "Render" or "DBE" extensions are loaded.</desc>
+	</fsa>
+	<fsa>
 		<id>89</id>
 		<date>2007-01-11</date>
 		<author>voroskoi</author>
