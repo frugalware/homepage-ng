@@ -27,6 +27,21 @@
 
 <fsas>
 	<fsa>
+		<id>92</id>
+		<date>2007-01-15</date>
+		<author>voroskoi</author>
+		<package>joomla</package>
+		<vulnerable>1.0.11-1</vulnerable>
+		<unaffected>1.0.12-1siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1585</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-6833
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-6834
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-6832</cve>
+		<desc>Some vulnerabilities have been reported in Joomla!, where some have unknown impacts and one can be exploited by malicious people to conduct cross-site scripting attacks.
+			1) Input passed to an unspecified parameter is not properly sanitised before being returned to the user. This can be exploited to execute arbitrary HTML and script code in a user's browser session in context of an affected site.
+			2) The vulnerabilities are caused due to unspecified errors in Joomla!. The vendor describes them as "several low level security issues". No further information is currently available.</desc>
+	</fsa>
+	<fsa>
 		<id>91</id>
 		<date>2007-01-15</date>
 		<author>voroskoi</author>
