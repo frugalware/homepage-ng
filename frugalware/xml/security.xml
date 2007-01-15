@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>91</id>
+		<date>2007-01-15</date>
+		<author>voroskoi</author>
+		<package>avahi avahi-compat avahi-glib avahi-gtk2 avahi-python avahi-qt3 avahi-sharp</package>
+		<vulnerable>0.6.13-2siwenna1</vulnerable>
+		<unaffected>0.6.13-3siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1607</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-6870</cve>
+		<desc>A vulnerability has been reported in Avahi, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			The vulnerability is caused due to an error within the "consume_labels()" function in avahi-core/dns.c when handling compressed packets. This can be exploited to cause an endless loop by sending specially crafted packets with compression labels that refer each other.</desc>
+	</fsa>
+	<fsa>
 		<id>90</id>
 		<date>2007-01-15</date>
 		<author>voroskoi</author>
