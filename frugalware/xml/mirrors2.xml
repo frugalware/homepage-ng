@@ -69,8 +69,15 @@ If you modify this file, be sure it's still valid - xmllint is your friend.
 		<supplier_url>http://www.belnet.be/en/</supplier_url>
 		<bandwidth>1 GBit</bandwidth>
 	</mirror>
-	<!-- XXX: #6 was aThom's partial mirror. we can re-use it later, but
-	needs discussing with him first -->
+	<mirror>
+		<id>6</id>
+		<type>http</type>
+		<path></path>
+		<country>USA</country>
+		<supplier>SourceMirrors</supplier>
+		<supplier_url>http://www.sourcemirrors.org</supplier_url>
+		<bandwidth>100 MBit</bandwidth>
+	</mirror>
 	<mirror>
 		<id>7</id>
 		<type>http</type>
