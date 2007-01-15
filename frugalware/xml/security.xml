@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>94</id>
+		<date>2007-01-15</date>
+		<author>voroskoi</author>
+		<package>w3m</package>
+		<vulnerable>0.5.1-2</vulnerable>
+		<unaffected>0.5.1-3siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1582</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-6772</cve>
+		<desc>A vulnerability has been reported in w3m, which potentially can be exploited by malicious people to compromise a user's system.
+			The vulnerability is caused due to a format string error when handling SSL certificates and can be exploited via a specially crafted SSL certificate containing format specifiers in the "CN" field.
+			Successful exploitation may allow execution of arbitrary code when e.g. visiting a malicious website, but requires that the application is running with either the "-dump" or "-backend" option.</desc>
+	</fsa>
+	<fsa>
 		<id>93</id>
 		<date>2007-01-15</date>
 		<author>voroskoi</author>
