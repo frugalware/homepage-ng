@@ -50,6 +50,9 @@ for ( $i=0; $i<count($parser->document->mirror); $i++)
 	for($j=0; $j<count($parser->document->mirror[$i]->type);$j++)
 		$mirror['types'][] = $parser->document->mirror[$i]->type[$j]->tagData;
 	$mirror['path'] = $parser->document->mirror[$i]->path[0]->tagData;
+	$mirror['ftp_path'] = $parser->document->mirror[$i]->ftp_path[0]->tagData;
+	$mirror['http_path'] = $parser->document->mirror[$i]->http_path[0]->tagData;
+	$mirror['rsync_path'] = $parser->document->mirror[$i]->rsync_path[0]->tagData;
 	$mirror['country'] = $parser->document->mirror[$i]->country[0]->tagData;
 	$mirror['supplier'] = $parser->document->mirror[$i]->supplier[0]->tagData;
 	$mirror['bandwidth'] = $parser->document->mirror[$i]->bandwidth[0]->tagData;
@@ -69,7 +72,9 @@ foreach($mirrors as $k => $v)
 		foreach($i['types'] as $j)
 		{
 			$j=="http" ? $domain = "www" : $domain = $j;
-			$str .= "<li><a href=\"".$j."://".$domain.$i['id'].".frugalware.org/".$i['path']."/$url\">".
+			if($i[$j."_path"] == "")
+				$i[$j.'_path'] = $i['path'];
+			$str .= "<li><a href=\"".$j."://".$domain.$i['id'].".frugalware.org/".$i[$j.'_path']."/$url\">".
 				$i['supplier']." (".$j."/".$i['bandwidth'].")</a></li>\n";
 		}
 	}

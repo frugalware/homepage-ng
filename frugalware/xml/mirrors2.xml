@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mirrors [
 <!ELEMENT mirrors (mirror)*>
-<!ELEMENT mirror (id , type+ , path , host?, country?, supplier?, supplier_url?, bandwidth?)>
+<!ELEMENT mirror (id , type+ , path? , ftp_path?, http_path?, rsync_path?, host?, country?, supplier?, supplier_url?, bandwidth?)>
 <!ELEMENT name (#PCDATA)>
 <!ELEMENT type (#PCDATA)>
 <!ELEMENT path (#PCDATA)>
@@ -71,8 +71,12 @@ If you modify this file, be sure it's still valid - xmllint is your friend.
 	</mirror>
 	<mirror>
 		<id>6</id>
+		<type>ftp</type>
 		<type>http</type>
-		<path></path>
+		<type>rsync</type>
+		<ftp_path>pub/linux/frugalware</ftp_path>
+		<http_path></http_path>
+		<rsync_path>frugalware</rsync_path>
 		<country>USA</country>
 		<supplier>SourceMirrors</supplier>
 		<supplier_url>http://www.sourcemirrors.org</supplier_url>
