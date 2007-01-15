@@ -27,6 +27,21 @@
 
 <fsas>
 	<fsa>
+		<id>93</id>
+		<date>2007-01-15</date>
+		<author>voroskoi</author>
+		<package>kernel</package>
+		<vulnerable>2.6.17-6siwenna5</vulnerable>
+		<unaffected>2.6.17-6siwenna6</unaffected>
+		<bts>http://bugs.frugalware.org/task/1615</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4814
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-5823</cve>
+		<desc>Some vulnerabilities have been reported in the Linux Kernel, which can be exploited by malicious, local users to cause a DoS (Denial of Service).
+			1) An error exists within the handling of locking semaphores in "mincore()". This can be exploited to cause a deadlock by using the function on unmapped pages.
+			2) An error exists within the "zlib_inflate()" function when processing certain data streams. This can be exploited to corrupt memory by e.g. mounting a specially crafted cramfs image and performing a read operation on the mounted file system.
+			3) The Kernel fails to handle corrupted data structures in the Ext2 file system correctly. This can be exploited to crash the system by mounting and reading a specially crafted file system image.</desc>
+	</fsa>
+	<fsa>
 		<id>92</id>
 		<date>2007-01-15</date>
 		<author>voroskoi</author>
