@@ -27,6 +27,20 @@
 
 <fsas>
 	<fsa>
+		<id>100</id>
+		<date>2007-01-16</date>
+		<author>voroskoi</author>
+		<package>tor</package>
+		<vulnerable>0.1.1.23-1</vulnerable>
+		<unaffected>0.1.1.26-1siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1536</bts>
+		<cve>There is no CVE for these issues, see Changelog of tor.</cve>
+		<desc>1) Stop sending the HttpProxyAuthenticator string to directory servers when directory connections are tunnelled through Tor.
+			2) Clients no longer store bandwidth history in the state file.
+			3) Do not log introduction points for hidden services if SafeLogging is set.
+			4) When the user sends a NEWNYM signal, clear the client-side DNS cache too. Otherwise we continue to act on previous information.</desc>
+	</fsa>
+	<fsa>
 		<id>99</id>
 		<date>2007-01-16</date>
 		<author>voroskoi</author>
