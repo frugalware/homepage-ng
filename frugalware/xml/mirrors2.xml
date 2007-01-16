@@ -77,7 +77,8 @@ If you modify this file, be sure it's still valid - xmllint is your friend.
 		<type>rsync</type>
 		<ftp_path>pub/linux/frugalware</ftp_path>
 		<http_path></http_path>
-		<rsync_path>frugalware</rsync_path>
+		<rsync_path>frugalware/frugalware</rsync_path>
+		<host>frugalware.sourcemirrors.org</host>
 		<country>USA</country>
 		<supplier>SourceMirrors</supplier>
 		<supplier_url>http://www.sourcemirrors.org</supplier_url>
