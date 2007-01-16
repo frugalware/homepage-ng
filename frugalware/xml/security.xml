@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>99</id>
+		<date>2007-01-16</date>
+		<author>voroskoi</author>
+		<package>mediawiki</package>
+		<vulnerable>1.7.1-1</vulnerable>
+		<unaffected>1.7.2-1siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1609</bts>
+		<cve>There is no CVE for this issue, see: http://secunia.com/cve_reference/CVE-2006-6563</cve>
+		<desc>A vulnerability has been reported in MediaWiki, which can be exploited by malicious people to conduct cross-site scripting attacks.
+			Input passed to an unspecified parameter is not properly sanitised before being returned to the user. This can be exploited to execute arbitrary HTML and script code in a user's browser session in context of an affected site.
+			Successful exploitation requires that $wgUseAjax is set to true, which is not its default setting.</desc>
+	</fsa>
+	<fsa>
 		<id>98</id>
 		<date>2007-01-16</date>
 		<author>voroskoi</author>
