@@ -27,6 +27,20 @@
 
 <fsas>
 	<fsa>
+		<id>97</id>
+		<date>2007-01-16</date>
+		<author>voroskoi</author>
+		<package>fetchmail</package>
+		<vulnerable>6.3.4-1</vulnerable>
+		<unaffected>6.3.6-1siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1608</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-5867
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-5974</cve>
+		<desc>A vulnerability and a security issue have been reported in Fetchmail, which can be exploited by malicious, local users to cause a DoS (Denial of Service) and by malicious people to gain knowledge of sensitive information.
+			1) A NULL pointer dereference error in Fetchmail, when refusing a message that was bound for delivery by a message delivery agent (MDA) via the "mda" option, can be exploited to crash the service.
+			2) Several errors could lead to the authentication in plain text despite the configured settings, resulting in the possibility of passwords being eavesdropped.</desc>
+	</fsa>
+	<fsa>
 		<id>96</id>
 		<date>2007-01-16</date>
 		<author>voroskoi</author>
