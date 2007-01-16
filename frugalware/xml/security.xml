@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>95</id>
+		<date>2007-01-16</date>
+		<author>voroskoi</author>
+		<package>libgtop</package>
+		<vulnerable>2.14.3-1</vulnerable>
+		<unaffected>2.14.3-2siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1626</bts>
+		<cve>There is no CVE for this issue, see: http://secunia.com/advisories/23736</cve>
+		<desc>Liu Qishuai has reported a vulnerability in libgtop2, which can be exploited by malicious, local users to gain escalated privileges.
+			The vulnerability is caused due to a boundary error within the "glibtop_get_proc_map_s()" function in sysdeps/linux/procmap.c. This can be exploited to cause a stack-based buffer overflow by running a process with a specially crafted long path and tricking a victim into running an application using the library (e.g. gnome-system-monitor).</desc>
+	</fsa>
+	<fsa>
 		<id>94</id>
 		<date>2007-01-15</date>
 		<author>voroskoi</author>
