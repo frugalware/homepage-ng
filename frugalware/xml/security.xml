@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>96</id>
+		<date>2007-01-16</date>
+		<author>voroskoi</author>
+		<package>libsoup</package>
+		<vulnerable>2.2.96-2</vulnerable>
+		<unaffected>2.2.96-3siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1625</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-5876</cve>
+		<desc>Roland Lezuo and Josselin Mouette have reported a vulnerability in libsoup, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			The vulnerability is caused due to an error within the "soup_headers_parse()" function in soup-headers.c. This can be exploited to crash an application using the library by sending specially crafted HTTP requests.</desc>
+	</fsa>
+	<fsa>
 		<id>95</id>
 		<date>2007-01-16</date>
 		<author>voroskoi</author>
