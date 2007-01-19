@@ -27,6 +27,20 @@
 
 <fsas>
 	<fsa>
+		<id>101</id>
+		<date>2007-01-19</date>
+		<author>voroskoi</author>
+		<package>openoffice.org</package>
+		<vulnerable>2.0.3-1</vulnerable>
+		<unaffected>2.0.3-2siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1578</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-5870</cve>
+		<desc>John Heasman has reported some vulnerabilities in OpenOffice, which can be exploited by malicious people to compromise a user's system.
+			1) A truncation error within the handling of the META_ESCAPE record can be exploited to cause a heap-based buffer overflow via a specially crafted WMF/EMF file.
+			2) An integer overflow within the handling of EMR_POLYPOLYGON and EMR_POLYPOLYGON16 records can be exploited to cause a heap-based buffer overflow via a specially crafted WMF/EMF file.
+			Successful exploitation of the vulnerabilities allows execution of arbitrary code and requires that a user is tricked into opening a specially crafted WMF/EMF file or a specially crafted document.</desc>
+	</fsa>
+	<fsa>
 		<id>100</id>
 		<date>2007-01-16</date>
 		<author>voroskoi</author>
