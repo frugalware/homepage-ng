@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>103</id>
+		<date>2007-01-25</date>
+		<author>voroskoi</author>
+		<package>ed</package>
+		<vulnerable>0.2-2</vulnerable>
+		<unaffected>0.4-1siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1638</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-6939</cve>
+		<desc>A vulnerability has been reported in GNU ed, which can be exploited by malicious, local users to perform certain actions with escalated privileges.
+			The vulnerability is caused due to temporary files being created insecurely. This can be exploited via symlink attacks to overwrite arbitrary files with the privileges of the user running ed.</desc>
+	</fsa>
+	<fsa>
 		<id>102</id>
 		<date>2007-01-25</date>
 		<author>voroskoi</author>
