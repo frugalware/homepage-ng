@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>104</id>
+		<date>2007-01-25</date>
+		<author>voroskoi</author>
+		<package>kdegraphics</package>
+		<vulnerable>3.5.4-4siwenna1</vulnerable>
+		<unaffected>3.5.4-5siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1631</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0104</cve>
+		<desc>A weakness has been reported in KDE and KOffice, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			The weakness is caused due to an error within the handling of catalog dictionaries or page attributes that reference an invalid page treenode. This can be exploited to cause an infinite loop by e.g. tricking a user into opening a specially crafted PDF document.</desc>
+	</fsa>
+	<fsa>
 		<id>103</id>
 		<date>2007-01-25</date>
 		<author>voroskoi</author>
