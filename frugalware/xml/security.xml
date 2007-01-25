@@ -27,6 +27,20 @@
 
 <fsas>
 	<fsa>
+		<id>106</id>
+		<date>2007-01-26</date>
+		<author>voroskoi</author>
+		<package>squid</package>
+		<vulnerable>2.6.STABLE3-1</vulnerable>
+		<unaffected>2.6.STABLE7-1siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1634</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0247
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0248</cve>
+		<desc>Two vulnerabilities have been reported in Squid, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			1) An error in the handling of certain FTP URL requests can be exploited to crash Squid by visiting a specially crafted FTP URL via the proxy.
+			2) An error in the external_acl queue can cause Squid to crash when it is under high load conditions.</desc>
+	</fsa>
+	<fsa>
 		<id>105</id>
 		<date>2007-01-25</date>
 		<author>voroskoi</author>
