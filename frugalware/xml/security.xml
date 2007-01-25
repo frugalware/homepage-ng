@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>102</id>
+		<date>2007-01-25</date>
+		<author>voroskoi</author>
+		<package>smb4k</package>
+		<vulnerable>0.7.2-1</vulnerable>
+		<unaffected>0.7.5-1siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1628</bts>
+		<cve>There is no CVE for this issue, see: https://developer.berlios.de/project/shownotes.php?release_id=11706</cve>
+		<desc>1) A grave bug was discovered that could cause a corrupted /etc/sudoers file if debug or error output was received via stderr while reading the file for subsequent processing.
+			2) Kees Cook conducted a security audit of Smb4K 0.7.5. He found several security weaknesses in the utility programs (stack overflows / the use of strcpy instead of strncpy / a design error in smb4k_kill) and in the Smb4KFileIO class (use of mktemp instead of mkstemp for creation of the temporary files which could lead to both a race and an information leak / a race in the code that handles the lock file).</desc>
+	</fsa>
+	<fsa>
 		<id>101</id>
 		<date>2007-01-19</date>
 		<author>voroskoi</author>
