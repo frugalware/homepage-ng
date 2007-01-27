@@ -27,6 +27,20 @@
 
 <fsas>
 	<fsa>
+		<id>109</id>
+		<date>2007-01-27</date>
+		<author>voroskoi</author>
+		<package>bind</package>
+		<vulnerable>9.3.2_P2-1siwenna1</vulnerable>
+		<unaffected>9.3.4-1siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1664</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0493
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0494</cve>
+		<desc>A vulnerability has been reported in ISC BIND, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			The vulnerability is caused due to an unspecified error, which may cause the named daemon to dereference a freed fetch context.
+			Successful exploitation crashes the named daemon.</desc>
+	</fsa>
+	<fsa>
 		<id>108</id>
 		<date>2007-01-27</date>
 		<author>voroskoi</author>
