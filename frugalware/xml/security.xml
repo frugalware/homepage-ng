@@ -27,6 +27,21 @@
 
 <fsas>
 	<fsa>
+		<id>108</id>
+		<date>2007-01-27</date>
+		<author>voroskoi</author>
+		<package>phpmyadmin</package>
+		<vulnerable>2.9.1.1-1siwenna1</vulnerable>
+		<unaffected>2.9.2-1siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1611</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0203
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0204</cve>
+		<desc>Some vulnerabilities have been reported in phpMyAdmin, which can be exploited by malicious people to conduct cross-site scripting attacks and HTTP response splitting attacks.
+			1) Input passed to unspecified parameters is not properly sanitised before being returned to the user. This can be exploited to execute arbitrary HTML and script code in a user's browser session in context of an affected site.
+			2) Input passed in the "phpMyAdmin" cookie is not properly sanitised before being returned to the user. This can be exploited to insert arbitrary HTTP headers, which will be included in a response sent to the user, allowing for execution of arbitrary HTML and script code in a user's browser session in context of an affected site.
+			Successful exploitation of this vulnerability requires a version of PHP 4 before 4.4.2 or a version of PHP 5 before 5.1.2.</desc>
+	</fsa>
+	<fsa>
 		<id>107</id>
 		<date>2007-01-26</date>
 		<author>voroskoi</author>
