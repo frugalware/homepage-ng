@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>110</id>
+		<date>2007-02-05</date>
+		<author>voroskoi</author>
+		<package>gtk+2</package>
+		<vulnerable>2.10.3-1</vulnerable>
+		<unaffected>2.10.3-2siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1663</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0010</cve>
+		<desc>A vulnerability has been reported in GTK+, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			The vulnerability is caused due to an error within the "GdkPixbufLoader()" when handling certain malformed input. This can be exploited to crash an application using the library by tricking it into processing specially crafted image files.</desc>
+	</fsa>
+	<fsa>
 		<id>109</id>
 		<date>2007-01-27</date>
 		<author>voroskoi</author>
