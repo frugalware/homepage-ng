@@ -27,6 +27,20 @@
 
 <fsas>
 	<fsa>
+		<id>111</id>
+		<date>2007-02-06</date>
+		<author>voroskoi</author>
+		<package>postgresql libpq</package>
+		<vulnerable>8.1.5-1siwenna1</vulnerable>
+		<unaffected>8.1.7-1siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1687</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0555
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0556</cve>
+		<desc>Some vulnerabilities have been reported in PostgreSQL, which can be exploited by malicious users to gain knowledge of potentially sensitive information and cause a DoS (Denial of Service).
+			1) An unspecified error can be used to suppress certain checks, which ensure that SQL functions return the correct data type. This can be exploited to crash the database backend or disclose potentially sensitive information.
+			2) An unspecified error when changing the data type of a table column can be exploited to crash the database backend or disclose potentially sensitive information.</desc>
+	</fsa>
+	<fsa>
 		<id>110</id>
 		<date>2007-02-05</date>
 		<author>voroskoi</author>
