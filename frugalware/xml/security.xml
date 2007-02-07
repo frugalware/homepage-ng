@@ -27,6 +27,21 @@
 
 <fsas>
 	<fsa>
+		<id>112</id>
+		<date>2007-02-07</date>
+		<author>voroskoi</author>
+		<package>wireshark</package>
+		<vulnerable>0.99.4-1siwenna1</vulnerable>
+		<unaffected>0.99.5-1siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1684</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0456
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0457
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0458
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0459</cve>
+		<desc>Some vulnerabilities have been reported in Wireshark, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			Errors within the TCP, HTTP, IEEE 802.11, and LLT parsers can be exploited to cause a crash or consume large amounts of memory when parsing a specially crafted packet that is either captured off the wire or loaded via a capture file.</desc>
+	</fsa>
+	<fsa>
 		<id>111</id>
 		<date>2007-02-06</date>
 		<author>voroskoi</author>
