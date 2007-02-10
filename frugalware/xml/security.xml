@@ -27,6 +27,21 @@
 
 <fsas>
 	<fsa>
+		<id>114</id>
+		<date>2007-02-10</date>
+		<author>voroskoi</author>
+		<package>samba libsmbclient</package>
+		<vulnerable>3.0.23-5</vulnerable>
+		<unaffected>3.0.24-1siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1690</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0452
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0454</cve>
+		<desc>Some vulnerabilities have been reported in Samba, which can be exploited by malicious users to cause a DoS (Denial of Service) or potentially compromise a vulnerable system.
+			1) Under certain conditions, smbd fails to remove requests from the deferred file open queue. This can be exploited to cause a DoS due to heavy resource usage by triggering an infinite loop when renaming a file under special circumstances.
+			2) Samba uses filenames as format string parameter in a call to "sprintf()" when setting Windows NT Access Control Lists using the afsacl.so VFS plugin. This can potentially be exploited to execute arbitrary code.
+			Successful exploitation requires that an AFS file system is shared to CIFS clients using the afsacl.so VFS module and that the attacker has write access to the share.</desc>
+	</fsa>
+	<fsa>
 		<id>113</id>
 		<date>2007-02-10</date>
 		<author>voroskoi</author>
