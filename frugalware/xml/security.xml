@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>113</id>
+		<date>2007-02-10</date>
+		<author>voroskoi</author>
+		<package>flashplugin</package>
+		<vulnerable>7.0r68-1siwenna1</vulnerable>
+		<unaffected>9.0.31.0-1siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1337</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-5330</cve>
+		<desc>Rapid7 has reported some vulnerabilities in Adobe Flash Player, which can be exploited by malicious people to bypass certain restrictions.
+			Input passed to the "XML.addRequestHeader()" ActionScript function and the "XML.contentType" attribute is not properly sanitised before being used. This can be exploited to bypass certain restrictions via CRLF character sequences and inject arbitrary HTTP headers in a request.
+			Successful exploitation may e.g. make it easier to perform CSRF (Cross-Site Request Forgery) attacks.</desc>
+	</fsa>
+	<fsa>
 		<id>112</id>
 		<date>2007-02-07</date>
 		<author>voroskoi</author>
