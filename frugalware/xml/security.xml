@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>115</id>
+		<date>2007-02-11</date>
+		<author>voroskoi</author>
+		<package>xine-ui</package>
+		<vulnerable>0.99.4-2</vulnerable>
+		<unaffected>0.99.4-3siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1617</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0254</cve>
+		<desc>A vulnerability has been reported in xine-ui, which potentially can be exploited by malicious people to compromise a user's system.
+			The vulnerability is caused due to a format string error within the "errors_create_window()" function in errors.c. This may be exploited to execute arbitrary code by e.g. tricking a user into opening a specially crafted playlist file.</desc>
+	</fsa>
+	<fsa>
 		<id>114</id>
 		<date>2007-02-10</date>
 		<author>voroskoi</author>
