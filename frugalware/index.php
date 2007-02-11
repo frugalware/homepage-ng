@@ -88,7 +88,7 @@ for ( $i=0; $i<$news_limit; $i++)
 	if (count($news[$i]->icon) > 0)
 		$posts[$i][icon] = $news[$i]->icon[0]->tagData;
 	else
-		$posts[$i][icon] = $fwng_root . "images/frugalware.png";
+		$posts[$i][icon] = $fwng_root . "images/logo-new.png";
 }
 // Let's write out the news in separate boxes.
 if ( $id != -1 )
