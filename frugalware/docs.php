@@ -36,6 +36,8 @@ include("header.php");
 $langs = array();
 $txtdir = $docs_path."/txt";
 $htmldir = $docs_path."/html";
+$txtdir_stable = $docs_path_stable."/txt";
+$htmldir_stable = $docs_path_stable."/html";
 
 if ($dir = @opendir($txtdir))
 {
@@ -97,7 +99,70 @@ if ($content != "")
 else
 	$cont = gettext("Sorry, no documentation available currently");
 
-fwmiddlebox(gettext("View online documentation"), $cont);
+// Stable
+if ($dir = @opendir($txtdir_stable))
+{
+	while($what = readdir($dir))
+	{
+		if ($what != "." && $what != ".." && is_dir($txtdir_stable."/".$what))
+		{
+			if (!in_array($what, $langs))
+				$langs[] = $what;
+			$txtlangs[$what] = 1;
+			$txtnlangs[$what] = getnlang($what);
+		}
+	}
+}
+closedir($dir);
+
+if ($dir = @opendir($htmldir_stable))
+{
+	while($what = readdir($dir))
+	{
+		if ($what != "." && $what != ".." && is_dir($htmldir_stable."/".$what))
+		{
+			if (!in_array($what, $langs))
+				$langs[] = $what;
+			$htmllangs[$what] = 1;
+			$htmlnlangs[$what] = getnlang($what);
+		}
+	}
+}
+closedir($dir);
+
+$content_stable = "";
+for ( $i=0; $i<count($langs); $i++ )
+{
+	$foo = $langs[$i];
+	if ($htmllangs[$foo] == 1)
+	{
+		$content_stable .= "<li>".gettext($htmlnlangs[$foo]).": <a href=\"http://ftp.frugalware.org/pub/frugalware/frugalware-stable/docs/html/".$foo."/\">HTML</a>";
+		if ($txtlangs[$foo] == 1)
+		{
+			$content_stable .= gettext(" or ")."<a href=\"http://ftp.frugalware.org/pub/frugalware/frugalware-stable/docs/txt/".$foo."/frugalware.txt\">".gettext("Plain text")."</a></li>\n";
+		}
+		else
+		{
+			$content_stable .= "</li>\n";
+		}
+	}
+	else
+	{
+		if ($txtlangs[$foo] == 1)
+		{
+			$content_stable .= "<li>".gettext($txtnlangs[$foo]).": <a href=\"http://ftp.frugalware.org/pub/frugalware/frugalware-stable/docs/txt/".$foo."/\">".gettext("Plain text")."</a></li>\n";
+		}
+	}
+}
+
+if ($content_stable != "")
+	$cont_stable = "<ul>\n".$content_stable."</ul>\n";
+else
+	$cont_stable = gettext("Sorry, no documentation available currently");
+
+
+fwmiddlebox(gettext("View online documentation (stable release)"), $cont_stable);
+fwmiddlebox(gettext("View online documentation (development version)"), $cont);
 
 include("footer.php");
 ?>
