@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>116</id>
+		<date>2007-02-13</date>
+		<author>voroskoi</author>
+		<package>kdelibs kde-apidox</package>
+		<vulnerable>3.5.4-3</vulnerable>
+		<unaffected>3.5.4-4siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1665</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0537</cve>
+		<desc>A weakness has been discovered in Konqueror, which can potentially be exploited by malicious people to conduct cross-site scripting attacks.
+			The weakness is caused due to an error in the parsing of comments within title tags of an HTML document. Arbitrary HTML and script code in a comment tag is executed in a user's browser session when preceded by the corresponding closing title tag.
+			Successful exploitation is possible on web sites that allow users to insert unsanitised HTML and script code within a comment into such a tag.</desc>
+	</fsa>
+	<fsa>
 		<id>115</id>
 		<date>2007-02-11</date>
 		<author>voroskoi</author>
