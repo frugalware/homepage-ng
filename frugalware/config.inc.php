@@ -46,6 +46,7 @@ $menucontent = '<a class="menu" href="" onclick="return clickreturnvalue()" onmo
 $menucontent .= '<div id="newsmenu" class="menulinkcss" align="left">' . "\n";
 $menucontent .= '	<a href="' . $fwng_root . '">' . gettext('Announcements') . "</a>\n";
 $menucontent .= '	<a href="' . $fwng_root . 'security">' . gettext('Security announcements') . "</a>\n";
+$menucontent .= '	<a href="' . $fwng_root . 'rss">' . gettext('News feeds') . "</a>\n";
 $menucontent .= "</div>\n";
 $menucontent .= '<a class="menu" href="" onclick="return clickreturnvalue()" onmouseover="dropdownmenu(this, event, \'aboutmenu\')">' . gettext('About') . "</a> &middot; \n";
 $menucontent .= '<div id="aboutmenu" class="menulinkcss" align="left">' . "\n";
