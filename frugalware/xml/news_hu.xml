@@ -42,7 +42,7 @@
 			</ul>
       Bővebb információért tekintse meg a Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Testing változáslistát</a>.<br />
 			Letöltés i686-ra:<br />
-			<b>MEGJEGYZÉS</b>: Ne töltse le a 3-11. CD-ket vagy a második DVD-t, csak ha nincs internet-kapcsolata!<br />
+			<b>MEGJEGYZÉS</b>: A 3-11. CD-t, vagy a második DVD-t csak az töltse le, akiknek nincs internet kapcsolata a telepítés/frissítés helyén!<br />
 				<a href="/download/frugalware-testing-iso/frugalware-0.6rc1-i686-net.iso">netinstall</a> (23M),
 				<a href="/download/frugalware-testing-iso/frugalware-0.6rc1-i686-usb.tar.gz">usb</a> (21M),
 				<a href="/download/frugalware-testing-iso/frugalware-0.6rc1-i686-tftp.img.gz">tftp</a> (114K),
