@@ -16,9 +16,9 @@
 	<post>
 		<id>54</id>
 		<title>Frugalware 0.6rc1 (Terminus) released</title>
-		<date>FIXME</date>
+		<date>Thu Feb 15 07:22:24 CET 2007</date>
 		<author>VMiklos</author>
-		<hidden>1</hidden>
+		<hidden>0</hidden>
 		<content><![CDATA[
 			The Frugalware Developer Team is pleased to <a href="/news/54">announce</a> the immediate availability of Frugalware 0.6rc1, the first release candidate of the upcoming 0.6 stable release.<br />
 			A short and incomplete list of changes since 0.6pre2:<br />
