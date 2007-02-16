@@ -31,6 +31,8 @@ $llang = getllang($lang);
 $domain = "homepage";
 set_locale($llang, $domain);
 
+// FIXME: use docs/about.txt as a source instead of this one
+
 $fwshortabout = gettext("Frugalware is a general purpose linux distribution, designed for intermediate users (who are not afraid of text mode).");
 $fwabout= array (
 	array (gettext("What branches does Frugalware have?"), 
