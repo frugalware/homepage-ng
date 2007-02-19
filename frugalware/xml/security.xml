@@ -27,6 +27,20 @@
 
 <fsas>
 	<fsa>
+		<id>118</id>
+		<date>2007-02-19</date>
+		<author>voroskoi</author>
+		<package>clamav</package>
+		<vulnerable>0.88.7-1siwenna1</vulnerable>
+		<unaffected>0.90-1siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1714</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0897
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0898</cve>
+		<desc>Two vulnerabilities have been reported in ClamAV, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			1) Input passed via the "id" parameter when parsing MIME headers is not properly sanitised before being used to create local files. This can be exploited to e.g. overwrite the anti-virus signature file via directory traversal attacks, preventing malware from being detected.
+			2) An file descriptor leak error in the processing of CAB files can be exploited to e.g. prevent legitimate users from sending out valid archives via a specially crafted CAB file with a cabinet header containing a record length of zero.</desc>
+	</fsa>
+	<fsa>
 		<id>117</id>
 		<date>2007-02-19</date>
 		<author>voroskoi</author>
