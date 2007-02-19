@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>117</id>
+		<date>2007-02-19</date>
+		<author>voroskoi</author>
+		<package>spamassassin</package>
+		<vulnerable>3.1.5-1</vulnerable>
+		<unaffected>3.1.8-1siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1715</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0451</cve>
+		<desc>A vulnerability has been reported in SpamAssassin, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			The vulnerability is caused due to an unspecified error and can be exploited to cause a DoS via overly long URIs in the message content.</desc>
+	</fsa>
+	<fsa>
 		<id>116</id>
 		<date>2007-02-13</date>
 		<author>voroskoi</author>
