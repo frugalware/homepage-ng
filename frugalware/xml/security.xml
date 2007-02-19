@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>119</id>
+		<date>2007-02-19</date>
+		<author>voroskoi</author>
+		<package>unrar</package>
+		<vulnerable>3.6.8-1</vulnerable>
+		<unaffected>3.7.3-1siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1710</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0855</cve>
+		<desc>A vulnerability has been reported in RARLabs UnRAR, which can be exploited by malicious people to compromise a user's system.
+			The vulnerability is caused due to a boundary error when processing password-protected archives using the UnRAR command line utility. This can be exploited to cause a stack-based buffer overflow via a specially crafted password-protected archive.
+			Successful exploitation requires that the user is e.g. tricked into opening a password-protected archive and respond to the password prompt.</desc>
+	</fsa>
+	<fsa>
 		<id>118</id>
 		<date>2007-02-19</date>
 		<author>voroskoi</author>
