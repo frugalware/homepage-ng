@@ -39,36 +39,6 @@ $htmldir = $docs_path."/html";
 $txtdir_stable = $docs_path_stable."/txt";
 $htmldir_stable = $docs_path_stable."/html";
 
-if ($dir = @opendir($txtdir))
-{
-	while($what = readdir($dir))
-	{
-		if ($what != "." && $what != ".." && is_dir($txtdir."/".$what))
-		{
-			if (!in_array($what, $langs))
-				$langs[] = $what;
-			$txtlangs[$what] = 1;
-			$txtnlangs[$what] = getnlang($what);
-		}
-	}
-}
-closedir($dir);
-
-if ($dir = @opendir($htmldir))
-{
-	while($what = readdir($dir))
-	{
-		if ($what != "." && $what != ".." && is_dir($htmldir."/".$what))
-		{
-			if (!in_array($what, $langs))
-				$langs[] = $what;
-			$htmllangs[$what] = 1;
-			$htmlnlangs[$what] = getnlang($what);
-		}
-	}
-}
-closedir($dir);
-
 $content = "";
 for ( $i=0; $i<count($langs); $i++ )
 {
@@ -97,7 +67,13 @@ for ( $i=0; $i<count($langs); $i++ )
 if ($content != "")
 	$cont = "<ul>\n".$content."</ul>\n";
 else
-	$cont = gettext("Sorry, no documentation available currently");
+	$cont = gettext("
+	The following categories are available:<br />
+	<ul>
+	<li><a href=\"http://ftp.frugalware.org/pub/frugalware/frugalware-current/docs/index.html\">Full manual</a></li>
+	<li><a href=\"http://ftp.frugalware.org/pub/frugalware/frugalware-current/docs/index-user.html\">User documentation</a></li>
+	<li><a href=\"http://ftp.frugalware.org/pub/frugalware/frugalware-current/docs/index-devel.html\">Developer documentation</a></li>
+	</ul>");
 
 // Stable
 if ($dir = @opendir($txtdir_stable))
