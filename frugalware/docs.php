@@ -81,9 +81,9 @@ else
 	$cont = gettext("
 	The following categories are available:<br />
 	<ul>
-	<li><a href=\"http://ftp.frugalware.org/pub/frugalware/frugalware-current/docs/index.html\">Full manual</a></li>
-	<li><a href=\"http://ftp.frugalware.org/pub/frugalware/frugalware-current/docs/index-user.html\">User documentation</a></li>
-	<li><a href=\"http://ftp.frugalware.org/pub/frugalware/frugalware-current/docs/index-devel.html\">Developer documentation</a></li>
+	<li><a href=\"/docs/index\">Full manual</a></li>
+	<li><a href=\"/docs/index-user\">User documentation</a></li>
+	<li><a href=\"/docs/index-devel\">Developer documentation</a></li>
 	</ul>");
 
 // Stable
