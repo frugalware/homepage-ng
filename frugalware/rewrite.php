@@ -74,7 +74,7 @@ if(count($params)>0)
 	}
 	else if($page=="docs")
 	{
-		$urlsuffix="?doc=".$params[0];
+		$urlsuffix="?doc=".str_replace(".html", "", $params[0]);
 	}
 	else if($page=="packages" and is_numeric($params[0]))
 	{
