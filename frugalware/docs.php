@@ -32,6 +32,17 @@ set_locale($llang, $domain);
 
 // let's start page
 include("config.inc.php");
+
+if(isset($_GET['doc']))
+{
+	$path = $docs_path."/".$_GET['doc'].".html";
+	if(file_exists($path))
+	{
+		include($path);
+		die();
+	}
+}
+
 include("header.php");
 $langs = array();
 $txtdir = $docs_path."/txt";

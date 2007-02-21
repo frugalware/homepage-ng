@@ -72,6 +72,10 @@ if(count($params)>0)
 	{
 		$urlsuffix="?type=".$params[0];
 	}
+	else if($page=="docs")
+	{
+		$urlsuffix="?doc=".$params[0];
+	}
 	else if($page=="packages" and is_numeric($params[0]))
 	{
 		$urlsuffix="?id=".$params[0];
