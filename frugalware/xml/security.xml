@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>123</id>
+		<date>2007-02-23</date>
+		<author>voroskoi</author>
+		<package>mediawiki</package>
+		<vulnerable>1.7.2-1siwenna1</vulnerable>
+		<unaffected>1.7.3-1siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1739</bts>
+		<cve>There is no CVE for this issue, see: http://secunia.com/advisories/24211</cve>
+		<desc>Moshe BA has reported a vulnerability in MediaWiki, which can be exploited by malicious people to conduct cross-site scripting attacks.
+			Input passed to the "rs" parameter in index.php (when "action" is set to "ajax") is not properly sanitised from UTF-7 data before being returned to the user. This can be exploited to execute arbitrary HTML and script code in a user's browser session in context of an affected site.
+			Successful exploitation requires that $wgUseAjax is set to true (not default setting) and that the target user uses Internet Explorer with encoding auto-detection enabled.</desc>
+	</fsa>
+	<fsa>
 		<id>122</id>
 		<date>2007-02-23</date>
 		<author>voroskoi</author>
