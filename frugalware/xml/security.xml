@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>122</id>
+		<date>2007-02-23</date>
+		<author>voroskoi</author>
+		<package>ekiga</package>
+		<vulnerable>2.0.2-2</vulnerable>
+		<unaffected>2.0.2-3siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1738</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1006
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1007</cve>
+		<desc>A vulnerability has been reported in Ekiga, which potentially can be exploited by malicious people to compromise a user's system.
+			The vulnerability is caused due to format string errors when the "gm_main_window_flash_message()" function is invoked. This can be exploited to crash the application or potentially execute arbitrary code by sending a specially crafted Q.931 SETUP packet.</desc>
+	</fsa>
+	<fsa>
 		<id>121</id>
 		<date>2007-02-23</date>
 		<author>voroskoi</author>
