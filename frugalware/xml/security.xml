@@ -27,6 +27,34 @@
 
 <fsas>
 	<fsa>
+		<id>121</id>
+		<date>2007-02-23</date>
+		<author>voroskoi</author>
+		<package>php</package>
+		<vulnerable>5.1.6-4siwenna1</vulnerable>
+		<unaffected>5.1.6-5siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1695</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0905
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0906
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0907
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0908
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0909
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0910
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0988</cve>
+		<desc>Several vulnerabilities and a weakness have been reported in PHP, where some have unknown impacts and others can be exploited by malicious people to disclose potentially sensitive information, bypass certain security restrictions, cause a DoS (Denial of Service) and potentially compromise a vulnerable system.
+			1) The "safe_mode" and "open_basedir" protection mechanisms can be bypassed via the session extension.
+			2) Unspecified overflows can be exploited to cause a stack corruption in the session extension.
+			3) Stack overflows exist in the "zip", "imap", and "sqlite" (PHP 5) extensions.
+			4) A boundary error within the stream filters can be exploited to cause a buffer overflow.
+			5) An integer overflow exists in the "str_replace()" function. This can be exploited to trigger an error when allocating memory and potentially allows the execution of arbitrary code, if the function is used on long, untrusted strings.
+			6) An unspecified error when importing malicious WDDX data can be exploited to disclose random heap memory.
+			7) A format string error exists in the *print() functions on 64-bit systems.
+			8) Boundary errors exist within the "mail()" and the "ibase_add_user()", "ibase_delete_user()", and "ibase_modify_user()" functions and can be exploited to cause buffer overflows.
+			9) A format string error exists in the "odbc_result_all()" function. Successful exploitation may allow the execution of arbitrary code, but requires that the attacker has control over the table contents of the used database.
+			10) An error within the "imap_mail_compose()" function can be exploited to cause a heap based buffer overflow and may allow the execution of arbitrary code, if the function is used with untrusted input to create a new MIME message.
+			11) A weakness within the "zend_hash_init()" function on 64bit systems can be exploited to cause a DoS via CPU consumption until the script times out by triggering an infinite loop when unserializing untrusted data.</desc>
+	</fsa>
+	<fsa>
 		<id>120</id>
 		<date>2007-02-21</date>
 		<author>voroskoi</author>
