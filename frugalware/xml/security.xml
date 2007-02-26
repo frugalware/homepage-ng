@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>125</id>
+		<date>2007-02-26</date>
+		<author>voroskoi</author>
+		<package>kernel</package>
+		<vulnerable>2.6.17-6siwenna7</vulnerable>
+		<unaffected>2.6.17-6siwenna8</unaffected>
+		<bts>http://bugs.frugalware.org/task/1740</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0772</cve>
+		<desc>A vulnerability has been reported in the Linux Kernel, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			The vulnerability is caused due to an invalid freeing of a pointer when handling NFSACL 2 "ACCESS" requests, which can be exploited to crash the kernel.</desc>
+	</fsa>
+	<fsa>
 		<id>124</id>
 		<date>2007-02-26</date>
 		<author>voroskoi</author>
