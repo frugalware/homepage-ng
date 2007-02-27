@@ -74,7 +74,7 @@ if(count($params)>0)
 	}
 	else if($page=="docs")
 	{
-		$urlsuffix="?doc=".str_replace(".html", "", $params[0]);
+		$urlsuffix="?doc=". $params[0];
 	}
 	else if($page=="packages" and is_numeric($params[0]))
 	{
@@ -109,7 +109,13 @@ else
 		$url.="?lang=$lang";
 	else
 		$url.="&lang=$lang";
-	header("Content-type: text/html; charset=UTF-8");
-	include($url);
+	if(strpos($url, ".text"))
+		header("Content-type: text/plain; charset=UTF-8");
+	else if(strpos($url, ".pdf"))
+		header("Content-type: application/pdf; charset=UTF-8");
+	else
+		header("Content-type: text/html; charset=UTF-8");
+	$fp = fopen($url, "r");
+	fpassthru($fp);
 }
 ?>

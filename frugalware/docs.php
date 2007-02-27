@@ -33,12 +33,19 @@ set_locale($llang, $domain);
 // let's start page
 include("config.inc.php");
 
+$langd = ( $lang == "en" ) ? "" : "/$lang/";
 if(isset($_GET['doc']))
 {
-	$path = $docs_path."/".$_GET['doc'].".html";
+	$doc = $_GET['doc'];
+	if(strpos($doc, ".html") === false and strpos($doc, ".pdf") === false and strpos($doc, ".text") === false)
+		$doc .= ".html";
+	$path = $docs_path."/".$doc;
 	if(file_exists($path))
 	{
-		include($path);
+		if (file_exists($docs_path."/".$langd.$doc))
+			$path=$docs_path."/".$langd.$doc;
+		$fp = fopen($path, "r");
+		fpassthru($fp);
 		die();
 	}
 }
