@@ -1,4 +1,5 @@
 LANGS=hu_HU fr_FR
+top_srcdir=..
 
 mos:
 	for i in $(LANGS); do \
@@ -10,8 +11,11 @@ mos:
 	cd ../.. && python frugalware/darcs-posthook.py
 	cd ../.. && python frugalware/darcs-posthook-security.py
 
-pot:
+pot: intltool-extract
 	intltool-update --pot --gettext-package=homepage
+
+intltool-extract:
+	cp /usr/bin/intltool-extract ./
 
 update-po: pot
 	for lang in $(LANGS); do \
