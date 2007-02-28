@@ -90,7 +90,7 @@ else
 	<li><a href=\"/docs/index\">".gettext("Full manual")."</a></li>
 	<li><a href=\"/docs/index-user\">".gettext("User documentation")."</a></li>
 	<li><a href=\"/docs/index-devel\">".gettext("Developer documentation")."</a></li>
-	</ul>");
+	</ul>";
 
 // Stable
 if ($dir = @opendir($txtdir_stable))
