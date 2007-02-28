@@ -85,12 +85,11 @@ for ( $i=0; $i<count($langs); $i++ )
 if ($content != "")
 	$cont = "<ul>\n".$content."</ul>\n";
 else
-	$cont = gettext("
-	The following categories are available:<br />
+	$cont = gettext("The following categories are available:")."<br />
 	<ul>
-	<li><a href=\"/docs/index\">Full manual</a></li>
-	<li><a href=\"/docs/index-user\">User documentation</a></li>
-	<li><a href=\"/docs/index-devel\">Developer documentation</a></li>
+	<li><a href=\"/docs/index\">".gettext("Full manual")."</a></li>
+	<li><a href=\"/docs/index-user\">".gettext("User documentation")."</a></li>
+	<li><a href=\"/docs/index-devel\">".gettext("Developer documentation")."</a></li>
 	</ul>");
 
 // Stable
