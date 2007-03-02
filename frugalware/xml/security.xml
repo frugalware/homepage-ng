@@ -27,6 +27,37 @@
 
 <fsas>
 	<fsa>
+		<id>127</id>
+		<date>2007-03-02</date>
+		<author>voroskoi</author>
+		<package>seamonkey</package>
+		<vulnerable>1.0.7-1siwenna1</vulnerable>
+		<unaffected>1.0.8-1siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1755</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-6077
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0008
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0775
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0776
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0778
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0779
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0780
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0800
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0981
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0995
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0777</cve>
+		<desc>Multiple vulnerabilities have been reported in Mozilla SeaMonkey, which can be exploited by malicious people to bypass certain security restrictions, conduct cross-site scripting and spoofing attacks, gain knowledge of sensitive information, and potentially compromise a user's system.
+			1) An error in the handling of the "locations.hostname" DOM property can be exploited to bypass certain security restrictions.
+			2) An integer underflow error in the Network Security Services (NSS) code when processing SSLv2 server messages can be exploited to cause a heap-based buffer overflow via a certificate with a public key too small to encrypt the "Master Secret". Successful exploitation may allow execution of arbitrary code.
+			3) It is possible to conduct cross-site scripting attacks against sites containing a frame with a "data:" URI as source. Successful exploitation requires that a user is tricked into visiting a malicious website and opening a blocked popup.
+			4) It is possible to open windows containing local files thereby stealing the contents when the full path of a locally saved file containing malicious script code is known. This can be exploited in combination with a flaw in the seeding of the pseudo-random number generator causing downloaded files to be saved to temporary files with a somewhat predictable name. Successful exploitation requires that a user is tricked into visiting a malicious website and opening a blocked popup.
+			5) Browser UI elements like the host name and security indicators can be spoofed using a specially crafted custom cursor and manipulating the CSS3 hotspot property.
+			6) It may be possible to gain knowledge of sensitive information from a website due to an error resulting in two web pages colliding in the disk cache thereby potentially appending part of one document to the other. Successful exploitation requires that a user is tricked into visiting a malicious website while visiting the target website.
+			7) Various errors in the Mozilla parser when handling invalid trailing characters in HTML tag attribute names and during processing of UTF-7 content when child frames inherit the character set of its parent window can be exploited to conduct cross-site scripting attacks.
+			8) A vulnerability in the Password Manager may be exploited to conduct phishing attacks.
+			9) Multiple memory corruption errors exist in the layout engine, JavaScript engine, and in SVG. Some of these may be exploited to execute arbitrary code on a user's system.
+			10) An error within the handling of the onUnload event handler and self-modifying document.write() calls can be exploited to corrupt memory and potentially execute arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>126</id>
 		<date>2006-03-02</date>
 		<author>voroskoi</author>
