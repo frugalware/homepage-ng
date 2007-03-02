@@ -27,6 +27,21 @@
 
 <fsas>
 	<fsa>
+		<id>126</id>
+		<date>2006-03-02</date>
+		<author>voroskoi</author>
+		<package>nss</package>
+		<vulnerable>3.11.3-2siwenna1</vulnerable>
+		<unaffected>3.11.3-3siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1756</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0008
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0009</cve>
+		<desc>Two vulnerabilities have been reported in Network Security Services (NSS), which potentially can be exploited by malicious people to compromise a vulnerable system.
+			1) An integer underflow error when processing SSLv2 server messages can be exploited to cause a heap-based buffer overflow via a certificate with a public key too small to encrypt the "Master Secret".
+			2) An integer underflow error when processing SSLv2 client master keys can be exploited to cause a stack-based buffer overflow via specially crafted parameters during an SSLv2 handshake.
+			Successful exploitation of the vulnerabilities may allow execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>125</id>
 		<date>2007-02-26</date>
 		<author>voroskoi</author>
