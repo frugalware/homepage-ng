@@ -27,6 +27,17 @@
 
 <fsas>
 	<fsa>
+		<id>130</id>
+		<date>2007-03-07</date>
+		<author>voroskoi</author>
+		<package>phpmyadmin</package>
+		<vulnerable>2.9.2-1siwenna1</vulnerable>
+		<unaffected>2.9.2-2siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1769</bts>
+		<cve>There is no CVE for this issue, see: http://www.phpmyadmin.net/home_page/security.php?issue=PMASA-2007-3</cve>
+		<desc>Stefan Esser from the Hardened-PHP Project is publishing the Month of PHP Bugs. One of these PHP bugs can be triggered by phpMyAdmin which uses a recursive function in its normal operation.</desc>
+	</fsa>
+	<fsa>
 		<id>129</id>
 		<date>2007-03-07</date>
 		<author>voroskoi</author>
