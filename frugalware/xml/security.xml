@@ -27,6 +27,24 @@
 
 <fsas>
 	<fsa>
+		<id>128</id>
+		<date>2007-03-07</date>
+		<author>voroskoi</author>
+		<package>thunderbird</package>
+		<vulnerable>1.5.0.9-1siwenna1</vulnerable>
+		<unaffected>1.5.0.10-1siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1754</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0008
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0775
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0776
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0777
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1282</cve>
+		<desc>Some vulnerabilities have been reported in Mozilla Thunderbird, which potentially can be exploited by malicious people to compromise a user's system.
+			1) An integer overflow within the handling of emails formatted as text/richtext or text/enhanced may be exploited to execute arbitrary code, but requires that a malicious email includes a 400 megabyte long line.
+			2) An integer underflow error in the Network Security Services (NSS) code when processing SSLv2 server messages can be exploited to cause a heap-based buffer overflow via a certificate with a public key too small to encrypt the "Master Secret". Successful exploitation may allow execution of arbitrary code.
+			3) Multiple memory corruption errors exist in the layout engine, JavaScript engine, and in SVG. Some of these may be exploited to execute arbitrary code on a user's system.</desc>
+	</fsa>
+	<fsa>
 		<id>127</id>
 		<date>2007-03-02</date>
 		<author>voroskoi</author>
