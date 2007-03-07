@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>129</id>
+		<date>2007-03-07</date>
+		<author>voroskoi</author>
+		<package>dropbear</package>
+		<vulnerable>0.48.1-2</vulnerable>
+		<unaffected>0.49-1siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1761</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1099</cve>
+		<desc>A weakness has been reported in Dropbear, which can be exploited by malicious people to bypass certain security restrictions.
+			The weakness is caused due to Dropbear not warning users sufficiently if a hostkey changed, which makes it easier for attackers to e.g. conduct man-in-the-middle attacks.</desc>
+	</fsa>
+	<fsa>
 		<id>128</id>
 		<date>2007-03-07</date>
 		<author>voroskoi</author>
