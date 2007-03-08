@@ -32,12 +32,13 @@
 				</li>
 				<li>Package updates:
 					<ul>
-									<li>GCC 4.1.2 with changes to correct regressions from previous releases</li>
-									<li>GNOME 2.18.0 RC1 with cool features, important bug fixes, great translations</li>
-									<li>More than 30 new packages: asciidoc, bzflag, rtl8110, new beryl plugins and much more!</li>
+						<li>GCC 4.1.2 with changes to correct regressions from previous releases</li>
+						<li>GNOME 2.18.0 RC1 with cool features, important bug fixes, great translations</li>
+						<li>More than 30 new packages: asciidoc, bzflag, rtl8110, new beryl plugins and much more!</li>
 					</ul>
 				</li>
 			</ul>
+			<b>WARNING:</b> It has been discovered that the GConf version included in 0.6rc2 is broken and therefore GNOME will not work on a default install. To get around this, you should not install the gnome group when installing, and install it from frugalware-current afterwards, making sure that the gconf version to install is 2.18.0.1. Sorry for the inconvenience<br />
 			Please refer to the Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Testing ChangeLog</a> for more information.<br />
 			Download for i686:<br />
 			<b>NOTE</b>: Don't download CDs 3-11 or the second DVD unless you don't have an internet connection<br />
