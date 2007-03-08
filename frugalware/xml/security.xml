@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>131</id>
+		<date>2007-03-08</date>
+		<author>voroskoi</author>
+		<package>blender</package>
+		<vulnerable>2.42a-2</vulnerable>
+		<unaffected>2.42a-3siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1778</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1253</cve>
+		<desc>Secunia Research has discovered a vulnerability in Blender, which can be exploited by malicious people to compromise a user's system.
+			The vulnerability is caused due to the insecure use of the "eval()" function in kmz_ImportWithMesh.py. This can be exploited to execute arbitrary Python commands by tricking a user into importing a specially crafted "*.kml" or "*.kmz" file.</desc>
+	</fsa>
+	<fsa>
 		<id>130</id>
 		<date>2007-03-07</date>
 		<author>voroskoi</author>
