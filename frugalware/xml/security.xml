@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>132</id>
+		<date>2007-03-09</date>
+		<author>voroskoi</author>
+		<package>tcpdump</package>
+		<vulnerable>3.9.4-1</vulnerable>
+		<unaffected>3.9.4-2siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1779</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1218</cve>
+		<desc>Moritz Jodeit has reported a vulnerability in tcpdump, which potentially can be exploited by malicious people to cause a DoS (Denial of Service).
+			The vulnerability is caused due to an off-by-one error within the "parse_elements()" function in print-802.11.c. This can be exploited to cause a one byte buffer overflow via a specially crafted 802.11 frame.</desc>
+	</fsa>
+	<fsa>
 		<id>131</id>
 		<date>2007-03-08</date>
 		<author>voroskoi</author>
