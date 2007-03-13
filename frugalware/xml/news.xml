@@ -14,6 +14,18 @@
 ]>
 <news>
 	<post>
+		<id>56</id>
+		<title>Frugalware Newsletter Issue 1</title>
+		<date>Thu Mar 13 07:58:20 CET 2007</date>
+		<author>AlexExtreme</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			The Frugalware Newsletter is a new fortnightly (Hopefully... ;-)) newsletter which aims to keep users up to date about what's been going on in Frugalware development.<br />
+			The first issue can be found <a href="/newsletter/1">here</a>. We hope you like it!
+			]]>
+		</content>
+	</post>
+	<post>
 		<id>55</id>
 		<title>Frugalware 0.6rc2 (Terminus) released</title>
 		<date>Thu Mar  8 07:57:25 CET 2007</date>
