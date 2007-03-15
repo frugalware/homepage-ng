@@ -27,6 +27,17 @@
 
 <fsas>
 	<fsa>
+		<id>134</id>
+		<date>2007-03-15</date>
+		<author>voroskoi</author>
+		<package>gpgme</package>
+		<vulnerable>1.0.3-1</vulnerable>
+		<unaffected>1.0.3-2siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1785</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1263</cve>
+		<desc>Many applications are using the library GPGME which implements an easy way to process OpenPGP messages using gpg. We have updated GPGME to make it immune against problem mentioned in FSA-133 even if an old version of gpg is being used.</desc>
+	</fsa>
+	<fsa>
 		<id>133</id>
 		<date>2007-03-15</date>
 		<author>voroskoi</author>
