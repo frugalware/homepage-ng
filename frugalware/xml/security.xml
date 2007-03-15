@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>133</id>
+		<date>2007-03-15</date>
+		<author>voroskoi</author>
+		<package>gnupg</package>
+		<vulnerable>1.4.5-3siwenna1</vulnerable>
+		<unaffected>1.4.5-4siwenna1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1784</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1263</cve>
+		<desc>Gerardo Richarte from Core Security Technologies identified a problem when using GnuPG in streaming mode.
+			The problem is actually a variant of a well known problem in the way signed material is presented in a MUA. It is possible to insert additional text before or after a signed (or signed and encrypted) OpenPGP message and make the user believe that this additional text is	also covered by the signature.</desc>
+	</fsa>
+	<fsa>
 		<id>132</id>
 		<date>2007-03-09</date>
 		<author>voroskoi</author>
