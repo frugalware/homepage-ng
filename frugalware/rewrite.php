@@ -74,7 +74,10 @@ if(count($params)>0)
 	}
 	else if($page=="docs")
 	{
-		$urlsuffix="?doc=". $params[0];
+		if($params[0] != "stable")
+			$urlsuffix="?doc=". $params[0];
+		else
+			$urlsuffix="?doc=". $params[1] . "&stable=1";
 	}
 	else if($page=="packages" and is_numeric($params[0]))
 	{

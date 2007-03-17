@@ -37,13 +37,18 @@ $langd = ( $lang == "en" ) ? "" : "/$lang/";
 if(isset($_GET['doc']))
 {
 	$doc = $_GET['doc'];
+	$stable = $_GET['stable'];
+	if(!$stable)
+		$my_path = $docs_path;
+	else
+		$my_path = $docs_path_stable;
 	if(strpos($doc, ".html") === false and strpos($doc, ".pdf") === false and strpos($doc, ".text") === false)
 		$doc .= ".html";
-	$path = $docs_path."/".$doc;
+	$path = $my_path."/".$doc;
 	if(file_exists($path))
 	{
-		if (file_exists($docs_path."/".$langd.$doc))
-			$path=$docs_path."/".$langd.$doc;
+		if (file_exists($my_path."/".$langd.$doc))
+			$path=$my_path."/".$langd.$doc;
 		$fp = fopen($path, "r");
 		fpassthru($fp);
 		die();
@@ -51,108 +56,20 @@ if(isset($_GET['doc']))
 }
 
 include("header.php");
-$langs = array();
-$txtdir = $docs_path."/txt";
-$htmldir = $docs_path."/html";
-$txtdir_stable = $docs_path_stable."/txt";
-$htmldir_stable = $docs_path_stable."/html";
 
-$content = "";
-for ( $i=0; $i<count($langs); $i++ )
-{
-	$foo = $langs[$i];
-	if ($htmllangs[$foo] == 1)
-	{
-		$content .= "<li>".gettext($htmlnlangs[$foo]).": <a href=\"http://ftp.frugalware.org/pub/frugalware/frugalware-current/docs/html/".$foo."/\">HTML</a>";
-		if ($txtlangs[$foo] == 1)
-		{
-			$content .= gettext(" or ")."<a href=\"http://ftp.frugalware.org/pub/frugalware/frugalware-current/docs/txt/".$foo."/frugalware.txt\">".gettext("Plain text")."</a></li>\n";
-		}
-		else
-		{
-			$content .= "</li>\n";
-		}
-	}
-	else
-	{
-		if ($txtlangs[$foo] == 1)
-		{
-			$content .= "<li>".gettext($txtnlangs[$foo]).": <a href=\"http://ftp.frugalware.org/pub/frugalware/frugalware-current/docs/txt/".$foo."/\">".gettext("Plain text")."</a></li>\n";
-		}
-	}
-}
+$cont = gettext("The following categories are available:")."<br />
+<ul>
+<li><a href=\"/docs/index\">".gettext("Full manual")."</a></li>
+<li><a href=\"/docs/index-user\">".gettext("User documentation")."</a></li>
+<li><a href=\"/docs/index-devel\">".gettext("Developer documentation")."</a></li>
+</ul>";
 
-if ($content != "")
-	$cont = "<ul>\n".$content."</ul>\n";
-else
-	$cont = gettext("The following categories are available:")."<br />
-	<ul>
-	<li><a href=\"/docs/index\">".gettext("Full manual")."</a></li>
-	<li><a href=\"/docs/index-user\">".gettext("User documentation")."</a></li>
-	<li><a href=\"/docs/index-devel\">".gettext("Developer documentation")."</a></li>
-	</ul>";
-
-// Stable
-if ($dir = @opendir($txtdir_stable))
-{
-	while($what = readdir($dir))
-	{
-		if ($what != "." && $what != ".." && is_dir($txtdir_stable."/".$what))
-		{
-			if (!in_array($what, $langs))
-				$langs[] = $what;
-			$txtlangs[$what] = 1;
-			$txtnlangs[$what] = getnlang($what);
-		}
-	}
-}
-closedir($dir);
-
-if ($dir = @opendir($htmldir_stable))
-{
-	while($what = readdir($dir))
-	{
-		if ($what != "." && $what != ".." && is_dir($htmldir_stable."/".$what))
-		{
-			if (!in_array($what, $langs))
-				$langs[] = $what;
-			$htmllangs[$what] = 1;
-			$htmlnlangs[$what] = getnlang($what);
-		}
-	}
-}
-closedir($dir);
-
-$content_stable = "";
-for ( $i=0; $i<count($langs); $i++ )
-{
-	$foo = $langs[$i];
-	if ($htmllangs[$foo] == 1)
-	{
-		$content_stable .= "<li>".gettext($htmlnlangs[$foo]).": <a href=\"http://ftp.frugalware.org/pub/frugalware/frugalware-stable/docs/html/".$foo."/\">HTML</a>";
-		if ($txtlangs[$foo] == 1)
-		{
-			$content_stable .= gettext(" or ")."<a href=\"http://ftp.frugalware.org/pub/frugalware/frugalware-stable/docs/txt/".$foo."/frugalware.txt\">".gettext("Plain text")."</a></li>\n";
-		}
-		else
-		{
-			$content_stable .= "</li>\n";
-		}
-	}
-	else
-	{
-		if ($txtlangs[$foo] == 1)
-		{
-			$content_stable .= "<li>".gettext($txtnlangs[$foo]).": <a href=\"http://ftp.frugalware.org/pub/frugalware/frugalware-stable/docs/txt/".$foo."/\">".gettext("Plain text")."</a></li>\n";
-		}
-	}
-}
-
-if ($content_stable != "")
-	$cont_stable = "<ul>\n".$content_stable."</ul>\n";
-else
-	$cont_stable = gettext("Sorry, no documentation available currently");
-
+$cont_stable = gettext("The following categories are available:")."<br />
+<ul>
+<li><a href=\"/docs/stable/index\">".gettext("Full manual")."</a></li>
+<li><a href=\"/docs/stable/index-user\">".gettext("User documentation")."</a></li>
+<li><a href=\"/docs/stable/index-devel\">".gettext("Developer documentation")."</a></li>
+</ul>";
 
 fwmiddlebox(gettext("View online documentation (stable release)"), $cont_stable);
 fwmiddlebox(gettext("View online documentation (development version)"), $cont);
