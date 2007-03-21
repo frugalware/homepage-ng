@@ -24,17 +24,17 @@
 			A short and incomplete list of changes since 0.6rc2:<br />
 			<ul>
 				<li>Linux 2.6.20.3</li>
-				<li>We are proud to be one of the first distributions that ship the stable GNOME 2.18</li>
+				<li>We are proud to be one of the first distributions to ship the stable GNOME 2.18</li>
 				<li>Fixed a few bugs in XDM</li>
 			</ul>
 			If you didn't follow the changes during the pre/rc releases, here are the most important changes since 0.5:<br />
 			<ul>
-				<li>Up to date base system: Glibc 2.5, Binutils 2.17.50.0.6 with DT_GNU_HASH support, DBUS 1.0, Python 2.5</li>
-				<li>Up to date desktop packages: KDE 3.5.6, XFCE 4.4, Beryl 0.2.0, OpenOffice 2.1, Firefox 2.0.0.2</li>
-				<li>All installed-by-default packages are now built using gcj/ecj, the original binary javac is only provided as an alternate compiler.</li>
+				<li>Up to date base system: Glibc 2.5, Binutils 2.17.50.0.6 with DT_GNU_HASH support, DBUS 1.0 and Python 2.5</li>
+				<li>Up to date desktop packages: KDE 3.5.6, XFCE 4.4, Beryl 0.2.0, OpenOffice 2.1, Firefox 2.0.0.2 and GNOME 2.18</li>
+				<li>All installed-by-default packages using Java are now built using gcj/ecj, the original binary javac is only provided as an alternate compiler.</li>
 				<li>Setup: speed improvements, support for more custom action, tftp installs and usb sticks are now supported.</li>
 				<li>Full support for Xgl/Beryl in KDE</li>
-				<li>Documentation: it is more than two times longer than it was till now.</li>
+				<li>Documentation: it is more than two times longer than it was until now.</li>
 			</ul>
 			Please refer to the Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-0.6/ChangeLog.txt">Terminus ChangeLog</a> for more information.<br />
 			Download for i686:<br />
