@@ -13,12 +13,12 @@
 <news>
   <post>
     <id>57</id>
-    <title>Megjelent a Frugalware 0.6 (Terminus) i686-ra és x86_64-re</title>
+    <title>Megjelent a Frugalware 0.6 (Terminus) i686-ra&nbsp;és x86_64-re</title>
     <date>Thu Mar 22 10:22:14 CET 2007</date>
     <author>IroNiQ</author>
     <hidden>0</hidden>
     <content><![CDATA[
-    A Frugalware Fejlesztői Csapat örömmel <a href="/news/57/hu">jelenti be</a>a Frugalware 0.6 azonnali elérhetőségét, mint hatodik stabil kiadásunkat.<br />
+    A Frugalware Fejlesztői Csapat örömmel <a href="/news/57/hu">jelenti be</a> a Frugalware 0.6 azonnali elérhetőségét, mint hatodik stabil kiadásunkat.<br />
     Egy rövid, nem teljes lista a 0.6rc2 óta történt változásokról:
       <ul>
         <li>Linux 2.6.20.3</li>
