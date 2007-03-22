@@ -13,7 +13,7 @@
 <news>
   <post>
     <id>57</id>
-    <title>Megjelent a Frugalware 0.6 (Terminus) i686-ra  és x86_64-re</title>
+    <title>Megjelent a Frugalware 0.6 (Terminus) i686-ra, valamint x86_64-re</title>
     <date>Thu Mar 22 10:22:14 CET 2007</date>
     <author>IroNiQ</author>
     <hidden>0</hidden>
@@ -25,7 +25,7 @@
         <li>Büszkék vagyunk rá, hogy az egyike vagyunk az első disztribúcióknak, akik a stabil GNOME 2.18-at szállítják</li>
         <li>Néhány hibajavítás az XDM-ben</li>
       </ul>
-      Ha nem követte a változásokat a pre/rc kiadások alatt, íme a legfontosabb változások a 0.5 óta:<br />
+      Ha nem követte a pre/rc kiadásokat, íme a legfontosabb változások a 0.5 óta:<br />
       <ul>
         <li>Naprakész csomagok: Glibc 2.5, Binutils 2.17.50.0.6 DT_GNU_HASH támogatással, DBUS 1.0 és Python 2.5</li>
         <li>Naprakész grafikus csomagok: KDE 3.5.6, XFCE 4.4, Beryl 0.2.0, OpenOffice 2.1, Firefox 2.0.0.2 valamint GNOME 2.18</li>
@@ -36,8 +36,8 @@
       </ul>
       Ismert hibák:<br />
       <ul>
-        <li>Ha a diszk vezérlő JMicron és a gép nem tud boot-olni, meg lehet próbálni a következő opciók valamelyikét a GRUB promptnál: irqpoll, libata.atapi_enabled=0, valamint combined_mode=libata</li>
-        <li>Az első alkalommal, mikor a Főmenüt használja GNOME-ban a menük szerkesztésére, a GNOME Panel hibával leáll. Ezután ez a hiba nem fordul elő többet. Remélhetőleg minél hamarbb javítva lesz és kiadhatunk egy frissítést.</li>
+        <li>Ha a diszk vezérlő JMicron típusú és a gép nem tud bootolni, meg lehet próbálni a következő opciók valamelyikét a GRUB promptnál: irqpoll, libata.atapi_enabled=0, valamint combined_mode=libata.</li>
+        <li>Az első alkalommal, mikor a Főmenüt használja GNOME-ban a menük szerkesztésére, a GNOME Panel hibával leáll. Ezután ez a hiba nem fordul elő többet. Remélhetőleg minél hamarabb javítva lesz és kiadhatunk egy frissítést.</li>
       </ul>
       Bővebb információért tekintse meg a Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-0.6/ChangeLog.txt">0.6 Változások Listáját.</a><br />
       Letöltés i686-ra:<br />
@@ -76,7 +76,7 @@
         <a href="/download/frugalware-0.6-iso/frugalware-0.6-x86_64-usb.tar.gz">usb</a>,
         <a href="/download/frugalware-0.6-iso/fwchroot-0.6-x86_64.tar.bz2">chroot tarball</a>
         <br />
-      <b>MEGJEGYZÉS</b>: a 3-11. CDk vagy a második DVD csak azok számára szükséges, akik nem rendelkeznek internet-kapcsolattal!<br />
+      <b>MEGJEGYZÉS</b>: a 3-11. CD vagy a második DVD csak azok számára szükséges, akik nem rendelkeznek internet-kapcsolattal!<br />
       SHA1SUMok:
       <pre>
 0c14c830b2257e6772dd134d062e3c34faa841c9  frugalware-0.6-i686-cd10.iso
