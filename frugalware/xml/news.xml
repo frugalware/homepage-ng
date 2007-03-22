@@ -16,9 +16,9 @@
 	<post>
 		<id>57</id>
 		<title>Frugalware 0.6 (Terminus) for i686 and x86_64 released</title>
-		<date>FIXME</date>
+		<date>Thu Mar 22 07:04:52 CET 2007</date>
 		<author>VMiklos</author>
-		<hidden>1</hidden>
+		<hidden>0</hidden>
 		<content><![CDATA[
 			The Frugalware Developer Team is pleased to <a href="/news/57">announce</a> the immediate availability of Frugalware 0.6, our sixth stable release.<br />
 			A short and incomplete list of changes since 0.6rc2:<br />
