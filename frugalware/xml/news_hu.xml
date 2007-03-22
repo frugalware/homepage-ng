@@ -11,57 +11,156 @@
 <!ELEMENT name (#PCDATA)>
 ]>
 <news>
-	<post>
-		<id>54</id>
-		<title>Megjelent a Frugalware 0.6rc1 (Terminus)</title>
-		<date>Thu Feb 15 08:50:24 CET 2007</date>
-		<author>IroNiQ</author>
-		<hidden>0</hidden>
-		<content><![CDATA[
+  <post>
+    <id>57</id>
+    <title>Megjelent a Frugalware 0.6 (Terminus) i686-ra és x86_64-re</title>
+    <date>Thu Mar 22 10:22:14 CET 2007</date>
+    <author>IroNiQ</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+    A Frugalware Fejlesztői Csapat örömmel <a href="/news/57/hu">jelenti be</a>a Frugalware 0.6 azonnali elérhetőségét, mint hatodik stabil kiadásunkat.<br />
+    Egy rövid, nem teljes lista a 0.6rc2 óta történt változásokról:
+      <ul>
+        <li>Linux 2.6.20.3</li>
+        <li>Büszkék vagyunk rá, hogy az egyike vagyunk az első disztribúcióknak, akik a stabil GNOME 2.18-at szállítják</li>
+        <li>Néhány hibajavítás az XDM-ben</li>
+      </ul>
+      Ha nem követte a változásokat a pre/rc kiadások alatt, íme a legfontosabb változások a 0.5 óta:<br />
+      <ul>
+        <li>Naprakész csomagok: Glibc 2.5, Binutils 2.17.50.0.6 DT_GNU_HASH támogatással, DBUS 1.0 és Python 2.5</li>
+        <li>Naprakész grafikus csomagok: KDE 3.5.6, XFCE 4.4, Beryl 0.2.0, OpenOffice 2.1, Firefox 2.0.0.2 valamint GNOME 2.18</li>
+        <li>Minden, alapértelmezetten települő, Java-t használó csomag mostantól gcj/ecj-vel lett forgatva, az eredeti, bináris javac csak alternatív fordítóként van jelen.</li>
+        <li>Telepítő: sebességnövekedés, több telepítési lehetőség támogatása, tftp telepítő és usb kulcsok mostantól támogatottak.</li>
+        <li>Teljes Xgl/Beryl támogatás KDE-ben</li>
+        <li>Dokumentáció: jelentős tartalmi és méretbeni növekedés az eddigihez képest.</li>
+      </ul>
+      Ismert hibák:<br />
+      <ul>
+        <li>Ha a diszk vezérlő JMicron és a gép nem tud boot-olni, meg lehet próbálni a következő opciók valamelyikét a GRUB promptnál: irqpoll, libata.atapi_enabled=0, valamint combined_mode=libata</li>
+        <li>Az első alkalommal, mikor a Főmenüt használja GNOME-ban a menük szerkesztésére, a GNOME Panel hibával leáll. Ezután ez a hiba nem fordul elő többet. Remélhetőleg minél hamarbb javítva lesz és kiadhatunk egy frissítést.</li>
+      </ul>
+      Bővebb információért tekintse meg a Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-0.6/ChangeLog.txt">0.6 Változások Listáját.</a><br />
+      Letöltés i686-ra:<br />
+        <a href="/download/frugalware-0.6-iso/frugalware-0.6-i686-net.iso">netinstall</a>,
+        <a href="/download/frugalware-0.6-iso/frugalware-0.6-i686-cd1.iso">cd1</a>,
+        <a href="/download/frugalware-0.6-iso/frugalware-0.6-i686-cd2.iso">cd2</a>,
+        <a href="/download/frugalware-0.6-iso/frugalware-0.6-i686-cd3.iso">cd3</a>,
+        <a href="/download/frugalware-0.6-iso/frugalware-0.6-i686-cd4.iso">cd4</a>,
+        <a href="/download/frugalware-0.6-iso/frugalware-0.6-i686-cd5.iso">cd5</a>,
+        <a href="/download/frugalware-0.6-iso/frugalware-0.6-i686-cd6.iso">cd6</a>,
+        <a href="/download/frugalware-0.6-iso/frugalware-0.6-i686-cd7.iso">cd7</a>,
+        <a href="/download/frugalware-0.6-iso/frugalware-0.6-i686-cd8.iso">cd8</a>,
+        <a href="/download/frugalware-0.6-iso/frugalware-0.6-i686-cd9.iso">cd9</a>,
+        <a href="/download/frugalware-0.6-iso/frugalware-0.6-i686-cd10.iso">cd10</a>,
+        <a href="/download/frugalware-0.6-iso/frugalware-0.6-i686-cd11.iso">cd10</a>,
+        <a href="/download/frugalware-0.6-iso/frugalware-0.6-i686-dvd1.iso">dvd1</a>,
+        <a href="/download/frugalware-0.6-iso/frugalware-0.6-i686-dvd2.iso">dvd2</a>,
+        <a href="/download/frugalware-0.6-iso/frugalware-0.6-i686-tftp.img.gz">tftp</a>,
+        <a href="/download/frugalware-0.6-iso/frugalware-0.6-i686-usb.tar.gz">usb</a>,
+        <a href="/download/frugalware-0.6-iso/fwchroot-0.6-i686.tar.bz2">chroot tarball</a>
+        <br />
+      Letöltés x86_64-ra:<br />
+        <a href="/download/frugalware-0.6-iso/frugalware-0.6-x86_64-net.iso">netinstall</a>,
+        <a href="/download/frugalware-0.6-iso/frugalware-0.6-x86_64-cd1.iso">cd1</a>,
+        <a href="/download/frugalware-0.6-iso/frugalware-0.6-x86_64-cd2.iso">cd2</a>,
+        <a href="/download/frugalware-0.6-iso/frugalware-0.6-x86_64-cd3.iso">cd3</a>,
+        <a href="/download/frugalware-0.6-iso/frugalware-0.6-x86_64-cd4.iso">cd4</a>,
+        <a href="/download/frugalware-0.6-iso/frugalware-0.6-x86_64-cd5.iso">cd5</a>,
+        <a href="/download/frugalware-0.6-iso/frugalware-0.6-x86_64-cd6.iso">cd6</a>,
+        <a href="/download/frugalware-0.6-iso/frugalware-0.6-x86_64-cd7.iso">cd7</a>,
+        <a href="/download/frugalware-0.6-iso/frugalware-0.6-x86_64-cd8.iso">cd8</a>,
+        <a href="/download/frugalware-0.6-iso/frugalware-0.6-x86_64-cd9.iso">cd9</a>,
+        <a href="/download/frugalware-0.6-iso/frugalware-0.6-x86_64-dvd1.iso">dvd1</a>,
+        <a href="/download/frugalware-0.6-iso/frugalware-0.6-x86_64-dvd2.iso">dvd2</a>,
+        <a href="/download/frugalware-0.6-iso/frugalware-0.6-x86_64-tftp.img.gz">tftp</a>,
+        <a href="/download/frugalware-0.6-iso/frugalware-0.6-x86_64-usb.tar.gz">usb</a>,
+        <a href="/download/frugalware-0.6-iso/fwchroot-0.6-x86_64.tar.bz2">chroot tarball</a>
+        <br />
+      <b>MEGJEGYZÉS</b>: a 3-11. CDk vagy a második DVD csak azok számára szükséges, akik nem rendelkeznek internet-kapcsolattal!<br />
+      SHA1SUMok:
+      <pre>
+0c14c830b2257e6772dd134d062e3c34faa841c9  frugalware-0.6-i686-cd10.iso
+909b1a2d0db63685e60a382ec3e04429e9097ed1  frugalware-0.6-i686-cd11.iso
+f38e82d9ed02efe39a06f66128f93fb224509cf0  frugalware-0.6-i686-cd1.iso
+604594990afaf82e8a0565debcaf3eb57692c912  frugalware-0.6-i686-cd2.iso
+c938a4a9030a26a2a26e2f770fff6ca43a2833b3  frugalware-0.6-i686-cd3.iso
+dccb31cd81b8e18aa81c0b4f01278dabcdd59a00  frugalware-0.6-i686-cd4.iso
+a0e5731f835f5c6f2ff39c7b0b06b75a098ba845  frugalware-0.6-i686-cd5.iso
+d46d7ad304ff6cf6ad85afbdc27dc351a9fbc255  frugalware-0.6-i686-cd6.iso
+66418f82dbff85d5b47ec22053511355ab040e06  frugalware-0.6-i686-cd7.iso
+1d229da2c46a5afceb5ec35a4dcafaccd3a4ef09  frugalware-0.6-i686-cd8.iso
+a67324848c276954982c8d3f1c428b294d01f746  frugalware-0.6-i686-cd9.iso
+2d8b63f9bf5ef39215ac6a6fbc15262963f0a521  frugalware-0.6-i686-dvd1.iso
+cd5c19e93c33e46f42e6678e24e15708684c6656  frugalware-0.6-i686-dvd2.iso
+f7a53822e544f74edb2ffb6194d67ffcbf3f51a9  frugalware-0.6-i686-net.iso
+505fceb77f476c48bbb3c5635953c6449e6826fb  frugalware-0.6-x86_64-cd1.iso
+29e35194627771550dfebff03ff74537a3641ee8  frugalware-0.6-x86_64-cd2.iso
+c7615bffb692855c4aa509ca51f3dcedf4086015  frugalware-0.6-x86_64-cd3.iso
+2295fe302c76513b97ece7b613c3f14c51ceb902  frugalware-0.6-x86_64-cd4.iso
+2eb0bd1e8022b289a425c546dfbc484decc1987a  frugalware-0.6-x86_64-cd5.iso
+5dc16e1ef1b0020edecb98e2dc30abb8a9055bf7  frugalware-0.6-x86_64-cd6.iso
+10c06c76c30c42cbbb2313851e914e007e9ce3f3  frugalware-0.6-x86_64-cd7.iso
+a5394def2b7bc5dcfdeb32682f2303bed196faaf  frugalware-0.6-x86_64-cd8.iso
+d2fc7a8385fee28b8a98ae133a9bb6d719bf2b61  frugalware-0.6-x86_64-cd9.iso
+f93c730809525ec3662c375ee061e7f296ef3150  frugalware-0.6-x86_64-dvd1.iso
+ec86c28e314e385dd411535c819c71428f36852f  frugalware-0.6-x86_64-dvd2.iso
+43e75f0dc34aa8a2e61de09f89c8a0db9fbc1d04  frugalware-0.6-x86_64-net.iso
+      </pre>
+      Ha korábbi stabil kiadásunkról frissít, érdemes elolvasni a dokumentációnk <a href="http://frugalware.org/docs/stable/upgrade">frissítésről</a> szóló részét (angol nyelvű).<br />
+      ]]>
+    </content>
+  </post>
+  <post>
+    <id>54</id>
+    <title>Megjelent a Frugalware 0.6rc1 (Terminus)</title>
+    <date>Thu Feb 15 08:50:24 CET 2007</date>
+    <author>IroNiQ</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
       A Frugalware Fejlesztői Csapat örömmel <a href="/news/54/hu">jelenti be</a> a Frugalware 0.6rc1 azonnali elérhetőségét, mint az eljövendő 0.6-os stabil kiadás első, kiadásra jelölt változatát.<br />
-			Egy rövid, nem teljes lista a 0.6pre2 óta történt változásokról:<br />
-			<ul>
-				<li>Újdonságok:
-					<ul>
-						<li>Teljesen új GDM téma, mely sok újdonságot hoz az előző témához képest.</li>
-						<li>Sok program újra lett fordítva, hogy a Glibc 2.5 és a GCC 4.1 újdonságait ki tudják használni.</li>
-					</ul>
-				</li>
-				<li>Csomagfrissítések:
-					<ul>
-									<li>GNOME 2.17.90 számos hibajavítással és sebességnövekedéssel</li>
-									<li>XFCE 4.4 sok újítással és számos hibajavítással</li>
-									<li>Beryl 0.1.99.2 sok, használhatóságot, sebességet és megbízhatóságot növelő javítással</li>
-									<li>A VirtualBox nevű, szabad forráskódú virtualizációs programból csomag készült</li>
-									<li>2.6.20-as kernel KVM virtualizációs támogatással és sok sebességnövekedést segítő fejlesztéssel</li>
-									<li>KDE 3.5.6</li>
-									<li>Wine 0.9.29 stabilizációs javításokkal</li>
-									<li>45 új csomag: mythtv, kvm, xfburn, cdrkit és még sok más!</li>
-					</ul>
-				</li>
-			</ul>
+      Egy rövid, nem teljes lista a 0.6pre2 óta történt változásokról:<br />
+      <ul>
+        <li>Újdonságok:
+          <ul>
+            <li>Teljesen új GDM téma, mely sok újdonságot hoz az előző témához képest.</li>
+            <li>Sok program újra lett fordítva, hogy a Glibc 2.5 és a GCC 4.1 újdonságait ki tudják használni.</li>
+          </ul>
+        </li>
+        <li>Csomagfrissítések:
+          <ul>
+                  <li>GNOME 2.17.90 számos hibajavítással és sebességnövekedéssel</li>
+                  <li>XFCE 4.4 sok újítással és számos hibajavítással</li>
+                  <li>Beryl 0.1.99.2 sok, használhatóságot, sebességet és megbízhatóságot növelő javítással</li>
+                  <li>A VirtualBox nevű, szabad forráskódú virtualizációs programból csomag készült</li>
+                  <li>2.6.20-as kernel KVM virtualizációs támogatással és sok sebességnövekedést segítő fejlesztéssel</li>
+                  <li>KDE 3.5.6</li>
+                  <li>Wine 0.9.29 stabilizációs javításokkal</li>
+                  <li>45 új csomag: mythtv, kvm, xfburn, cdrkit és még sok más!</li>
+          </ul>
+        </li>
+      </ul>
       Bővebb információért tekintse meg a Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Testing változáslistát</a>.<br />
-			Letöltés i686-ra:<br />
-			<b>MEGJEGYZÉS</b>: A 3-11. CD-t, vagy a második DVD-t csak az töltse le, akiknek nincs internet kapcsolata a telepítés/frissítés helyén!<br />
-				<a href="/download/frugalware-testing-iso/frugalware-0.6rc1-i686-net.iso">netinstall</a> (23M),
-				<a href="/download/frugalware-testing-iso/frugalware-0.6rc1-i686-usb.tar.gz">usb</a> (21M),
-				<a href="/download/frugalware-testing-iso/frugalware-0.6rc1-i686-tftp.img.gz">tftp</a> (114K),
-				<a href="/download/frugalware-testing-iso/frugalware-0.6rc1-i686-cd1.iso">cd1</a> (644M),
-				<a href="/download/frugalware-testing-iso/frugalware-0.6rc1-i686-cd2.iso">cd2</a> (638M),
-				<a href="/download/frugalware-testing-iso/frugalware-0.6rc1-i686-cd3.iso">cd3</a> (636M),
-				<a href="/download/frugalware-testing-iso/frugalware-0.6rc1-i686-cd4.iso">cd4</a> (632M),
-				<a href="/download/frugalware-testing-iso/frugalware-0.6rc1-i686-cd5.iso">cd5</a> (626M),
-				<a href="/download/frugalware-testing-iso/frugalware-0.6rc1-i686-cd6.iso">cd6</a> (609M),
-				<a href="/download/frugalware-testing-iso/frugalware-0.6rc1-i686-cd7.iso">cd7</a> (643M),
-				<a href="/download/frugalware-testing-iso/frugalware-0.6rc1-i686-cd8.iso">cd8</a> (546M),
-				<a href="/download/frugalware-testing-iso/frugalware-0.6rc1-i686-cd9.iso">cd9</a> (551M),
-				<a href="/download/frugalware-testing-iso/frugalware-0.6rc1-i686-cd10.iso">cd10</a> (624M),
-				<a href="/download/frugalware-testing-iso/frugalware-0.6rc1-i686-cd11.iso">cd11</a> (261M),
-				<a href="/download/frugalware-testing-iso/frugalware-0.6rc1-i686-dvd1.iso">dvd1</a> (4.2G)
-				<a href="/download/frugalware-testing-iso/frugalware-0.6rc1-i686-dvd2.iso">dvd2</a> (2.0G)
-				<br />
-			SHA1SUMok:
-			<pre>
+      Letöltés i686-ra:<br />
+      <b>MEGJEGYZÉS</b>: A 3-11. CD-t, vagy a második DVD-t csak az töltse le, akiknek nincs internet kapcsolata a telepítés/frissítés helyén!<br />
+        <a href="/download/frugalware-testing-iso/frugalware-0.6rc1-i686-net.iso">netinstall</a> (23M),
+        <a href="/download/frugalware-testing-iso/frugalware-0.6rc1-i686-usb.tar.gz">usb</a> (21M),
+        <a href="/download/frugalware-testing-iso/frugalware-0.6rc1-i686-tftp.img.gz">tftp</a> (114K),
+        <a href="/download/frugalware-testing-iso/frugalware-0.6rc1-i686-cd1.iso">cd1</a> (644M),
+        <a href="/download/frugalware-testing-iso/frugalware-0.6rc1-i686-cd2.iso">cd2</a> (638M),
+        <a href="/download/frugalware-testing-iso/frugalware-0.6rc1-i686-cd3.iso">cd3</a> (636M),
+        <a href="/download/frugalware-testing-iso/frugalware-0.6rc1-i686-cd4.iso">cd4</a> (632M),
+        <a href="/download/frugalware-testing-iso/frugalware-0.6rc1-i686-cd5.iso">cd5</a> (626M),
+        <a href="/download/frugalware-testing-iso/frugalware-0.6rc1-i686-cd6.iso">cd6</a> (609M),
+        <a href="/download/frugalware-testing-iso/frugalware-0.6rc1-i686-cd7.iso">cd7</a> (643M),
+        <a href="/download/frugalware-testing-iso/frugalware-0.6rc1-i686-cd8.iso">cd8</a> (546M),
+        <a href="/download/frugalware-testing-iso/frugalware-0.6rc1-i686-cd9.iso">cd9</a> (551M),
+        <a href="/download/frugalware-testing-iso/frugalware-0.6rc1-i686-cd10.iso">cd10</a> (624M),
+        <a href="/download/frugalware-testing-iso/frugalware-0.6rc1-i686-cd11.iso">cd11</a> (261M),
+        <a href="/download/frugalware-testing-iso/frugalware-0.6rc1-i686-dvd1.iso">dvd1</a> (4.2G)
+        <a href="/download/frugalware-testing-iso/frugalware-0.6rc1-i686-dvd2.iso">dvd2</a> (2.0G)
+        <br />
+      SHA1SUMok:
+      <pre>
 60bcefcaa4c6c1a6a8e0161da9f11734a8b5dfad  frugalware-0.6rc1-i686-cd10.iso
 ad6117e2794f8d27f17b5328e0e047f38d87cfa7  frugalware-0.6rc1-i686-cd11.iso
 13b65b30f0bd4fea35faf93f2fab44a834ac852b  frugalware-0.6rc1-i686-cd1.iso
@@ -77,71 +176,71 @@ a2b747af6515fbbe467c4951acbdeb9b3824509a  frugalware-0.6rc1-i686-dvd1.iso
 c159d032f794393896570c70eca7b12480fb0f7a  frugalware-0.6rc1-i686-dvd2.iso
 52429f74cb961805790e163f2c6a83ded9a4db8c  frugalware-0.6rc1-i686-net.iso
 02e773e302d2bbb0d4ce1b8e3fa00ca934514746  frugalware-0.6rc1-i686-usb.tar.gz
-			</pre>
-			]]>
-		</content>
-	</post>
-	<post>
-		<id>53</id>
-		<title>Megjelent a Frugalware 0.6pre2 (Terminus)</title>
-		<date>Thu Jan 11 13:05:38 CET 2007</date>
-		<author>IroNiQ</author>
-		<hidden>0</hidden>
-		<content><![CDATA[
-						A Frugalware Fejlesztői Csapat örömmel <a href="/news/53/hu">jelenti be</a> a Frugalware 0.6pre2 azonnali elérhetőségét, mint az eljövendő 0.6-os stabil kiadás második előzetes változatát.<br />
-						Egy rövid, nem teljes lista a 0.6pre1 óta történt változásokról:<br />
-						<ul>
-										<li>Újdonságok a telepítőben:
-														<ul>
-																		<li>Sokkal jobb hibakezelés. Egy dialógus ablak jelenik meg szegmentációs hiba esetén. valamint a telepítő kilép az újraindulás helyett.</li>
-																		<li>A csomagadatbázis függvényhívással lesz letöltve, miáltal a könnyebb az esetleges hibákat kezelni. Ha az adatbázis letöltése sikertelen, a felhasználó értesül erről ahelyett, hogy egy üres kategória listát kapna.</li>
-																		<li>Mostantól vissza lehet az előző lépésre térni a telepítőben</li>
-																		<li>A CD/DVD telepítés mostantól gyorsabb: az integritás- és ütközés-ellenőrzés a telepítési média elkészítése előtt történik.</li>
-																		<li>Floppy image is elérhető tftp-ről történő telepítéshez.</li>
-														</ul>
-										</li>
-										<li>Újdonságok:
-														<ul>
-																		<li>KDE támpgatás Beryl-hez és fw-xgl-control -hoz.</li>
-																		<li>Gnome-mount, mely a pmount -ot váltja fel a GNOME-ban, mely sokkal rugalmasabb automatikus eszközcsatolást eredményez.</li>
-														</ul>
-										</li>
-										<li>Frissítések:
-														<ul>
-																		<li>Linux kernel 2.6.19</li>
-																		<li>Új csomagok a Xen grafikus kezeléséhez: virt-manager és gnome-applet-vm</li>
-																		<li>GNOME 2.17.3 újdonságokkal és hibajavításokkal</li>
-																		<li>Xfce 4.4 RC2 rengeteg hibajavítással</li>
-																		<li>Beryl 0.1.3 sok látványos effekttel</li>
-																		<li>dhcpcd 3.0, mely sokkal megbízhatóbb automatikus hálózat-konfigurációt eredményez</li>
-																		<li>Curl 7.16.0</li>
-																		<li>DBUS 1.0 számos újítással és javítással</li>
-																		<li>HAL 0.5.8.1 újdonságokkal és hibajavításokkal</li>
-														</ul>
-										</li>
-						</ul>
-						Bővebb információért tekintse meg a Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Testing változáslistát</a><br />
-						Letöltés i686-ra:<br />
-						<b>MEGJEGYZÉS</b>: Ne töltse le a 3-11. CD-ket vagy a második DVD-t, csak ha nincs internet-kapcsolata<br />
-							<a href="/download/frugalware-testing-iso/frugalware-0.6pre2-i686-net.iso">netinstall</a> (22M),
-							<a href="/download/frugalware-testing-iso/frugalware-0.6pre2-i686-usb.tar.gz">usb</a> (20M),
-							<a href="/download/frugalware-testing-iso/frugalware-0.6pre2-i686-tftp.img.gz">tftp</a> (116K),
-							<a href="/download/frugalware-testing-iso/frugalware-0.6pre2-i686-cd1.iso">cd1</a> (643M),
-							<a href="/download/frugalware-testing-iso/frugalware-0.6pre2-i686-cd2.iso">cd2</a> (638M),
-							<a href="/download/frugalware-testing-iso/frugalware-0.6pre2-i686-cd3.iso">cd3</a> (634M),
-							<a href="/download/frugalware-testing-iso/frugalware-0.6pre2-i686-cd4.iso">cd4</a> (643M),
-							<a href="/download/frugalware-testing-iso/frugalware-0.6pre2-i686-cd5.iso">cd5</a> (633M),
-							<a href="/download/frugalware-testing-iso/frugalware-0.6pre2-i686-cd6.iso">cd6</a> (626M),
-							<a href="/download/frugalware-testing-iso/frugalware-0.6pre2-i686-cd7.iso">cd7</a> (609M),
-							<a href="/download/frugalware-testing-iso/frugalware-0.6pre2-i686-cd8.iso">cd8</a> (556M),
-							<a href="/download/frugalware-testing-iso/frugalware-0.6pre2-i686-cd9.iso">cd9</a> (552M),
-							<a href="/download/frugalware-testing-iso/frugalware-0.6pre2-i686-cd10.iso">cd10</a> (643M),
-							<a href="/download/frugalware-testing-iso/frugalware-0.6pre2-i686-cd11.iso">cd11</a> (229M),
-							<a href="/download/frugalware-testing-iso/frugalware-0.6pre2-i686-dvd1.iso">dvd1</a> (4.2G)
-							<a href="/download/frugalware-testing-iso/frugalware-0.6pre2-i686-dvd2.iso">dvd2</a> (2.0G)
-						<br />
-						SHA1SUMok:
-						<pre>
+      </pre>
+      ]]>
+    </content>
+  </post>
+  <post>
+    <id>53</id>
+    <title>Megjelent a Frugalware 0.6pre2 (Terminus)</title>
+    <date>Thu Jan 11 13:05:38 CET 2007</date>
+    <author>IroNiQ</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+            A Frugalware Fejlesztői Csapat örömmel <a href="/news/53/hu">jelenti be</a> a Frugalware 0.6pre2 azonnali elérhetőségét, mint az eljövendő 0.6-os stabil kiadás második előzetes változatát.<br />
+            Egy rövid, nem teljes lista a 0.6pre1 óta történt változásokról:<br />
+            <ul>
+                    <li>Újdonságok a telepítőben:
+                            <ul>
+                                    <li>Sokkal jobb hibakezelés. Egy dialógus ablak jelenik meg szegmentációs hiba esetén. valamint a telepítő kilép az újraindulás helyett.</li>
+                                    <li>A csomagadatbázis függvényhívással lesz letöltve, miáltal a könnyebb az esetleges hibákat kezelni. Ha az adatbázis letöltése sikertelen, a felhasználó értesül erről ahelyett, hogy egy üres kategória listát kapna.</li>
+                                    <li>Mostantól vissza lehet az előző lépésre térni a telepítőben</li>
+                                    <li>A CD/DVD telepítés mostantól gyorsabb: az integritás- és ütközés-ellenőrzés a telepítési média elkészítése előtt történik.</li>
+                                    <li>Floppy image is elérhető tftp-ről történő telepítéshez.</li>
+                            </ul>
+                    </li>
+                    <li>Újdonságok:
+                            <ul>
+                                    <li>KDE támpgatás Beryl-hez és fw-xgl-control -hoz.</li>
+                                    <li>Gnome-mount, mely a pmount -ot váltja fel a GNOME-ban, mely sokkal rugalmasabb automatikus eszközcsatolást eredményez.</li>
+                            </ul>
+                    </li>
+                    <li>Frissítések:
+                            <ul>
+                                    <li>Linux kernel 2.6.19</li>
+                                    <li>Új csomagok a Xen grafikus kezeléséhez: virt-manager és gnome-applet-vm</li>
+                                    <li>GNOME 2.17.3 újdonságokkal és hibajavításokkal</li>
+                                    <li>Xfce 4.4 RC2 rengeteg hibajavítással</li>
+                                    <li>Beryl 0.1.3 sok látványos effekttel</li>
+                                    <li>dhcpcd 3.0, mely sokkal megbízhatóbb automatikus hálózat-konfigurációt eredményez</li>
+                                    <li>Curl 7.16.0</li>
+                                    <li>DBUS 1.0 számos újítással és javítással</li>
+                                    <li>HAL 0.5.8.1 újdonságokkal és hibajavításokkal</li>
+                            </ul>
+                    </li>
+            </ul>
+            Bővebb információért tekintse meg a Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Testing változáslistát</a><br />
+            Letöltés i686-ra:<br />
+            <b>MEGJEGYZÉS</b>: Ne töltse le a 3-11. CD-ket vagy a második DVD-t, csak ha nincs internet-kapcsolata<br />
+              <a href="/download/frugalware-testing-iso/frugalware-0.6pre2-i686-net.iso">netinstall</a> (22M),
+              <a href="/download/frugalware-testing-iso/frugalware-0.6pre2-i686-usb.tar.gz">usb</a> (20M),
+              <a href="/download/frugalware-testing-iso/frugalware-0.6pre2-i686-tftp.img.gz">tftp</a> (116K),
+              <a href="/download/frugalware-testing-iso/frugalware-0.6pre2-i686-cd1.iso">cd1</a> (643M),
+              <a href="/download/frugalware-testing-iso/frugalware-0.6pre2-i686-cd2.iso">cd2</a> (638M),
+              <a href="/download/frugalware-testing-iso/frugalware-0.6pre2-i686-cd3.iso">cd3</a> (634M),
+              <a href="/download/frugalware-testing-iso/frugalware-0.6pre2-i686-cd4.iso">cd4</a> (643M),
+              <a href="/download/frugalware-testing-iso/frugalware-0.6pre2-i686-cd5.iso">cd5</a> (633M),
+              <a href="/download/frugalware-testing-iso/frugalware-0.6pre2-i686-cd6.iso">cd6</a> (626M),
+              <a href="/download/frugalware-testing-iso/frugalware-0.6pre2-i686-cd7.iso">cd7</a> (609M),
+              <a href="/download/frugalware-testing-iso/frugalware-0.6pre2-i686-cd8.iso">cd8</a> (556M),
+              <a href="/download/frugalware-testing-iso/frugalware-0.6pre2-i686-cd9.iso">cd9</a> (552M),
+              <a href="/download/frugalware-testing-iso/frugalware-0.6pre2-i686-cd10.iso">cd10</a> (643M),
+              <a href="/download/frugalware-testing-iso/frugalware-0.6pre2-i686-cd11.iso">cd11</a> (229M),
+              <a href="/download/frugalware-testing-iso/frugalware-0.6pre2-i686-dvd1.iso">dvd1</a> (4.2G)
+              <a href="/download/frugalware-testing-iso/frugalware-0.6pre2-i686-dvd2.iso">dvd2</a> (2.0G)
+            <br />
+            SHA1SUMok:
+            <pre>
 080e622c798520b422c8c0bb1701b00befd3358a  frugalware-0.6pre2-i686-cd1.iso
 9d04a684e8c16f8bc752b506718566e0f0060876  frugalware-0.6pre2-i686-cd2.iso
 4a4dcabcfe788b94a80cbeff9c0f7098e55d333c  frugalware-0.6pre2-i686-cd3.iso
@@ -158,69 +257,69 @@ b1c7c4ee7641e993dc6668fd3f1cffcb662875f6  frugalware-0.6pre2-i686-dvd1.iso
 ab191be15a05e42c87218048f55900fcde476b10  frugalware-0.6pre2-i686-net.iso
 09397ba7ea37ab2122e0e6222ad8f1aae0310c0e  frugalware-0.6pre2-i686-tftp.img.gz
 450c82a0eae61fd97d2b5c78e1702a57dddb6149  frugalware-0.6pre2-i686-usb.tar.gz
-						</pre>
-			]]>
-		</content>
-	</post>
-	<post>
-		<id>50</id>
-		<title>Megjelent a Frugalware 0.6pre1 (Terminus)</title>
-		<date>Thu Nov  9 09:22:04 CET 2006</date>
-		<author>Boobaa</author>
-		<content><![CDATA[
-			A Frugalware Fejlesztői Csapat örömmel <a href="/news/50">jelenti be</a> a Frugalware 0.6pre1 azonnali elérhetőségét, mint az eljövendő 0.6-os stabil kiadás első előzetes változatát.<br />
-			Egy rövid, nem teljes lista a 0.5 óta történt változásokról:<br />
-			<ul>
-				<li>Újdonságok:
-					<ul>
-						<li>Az összes alapértelmezésben telepített csomagot a gcj-vel/ecj-vel fordítottuk,
-							a javac csak alternatívaként szerepel.</li>
-						<li>Támogatjuk az USB meghajtóról való telepítést.</li>
-						<li>23 nyelven csomagoltunk PHP dokumentációt.</li>
-					</ul>
-				</li>
-				<li>Frissítések:
-					<ul>
-									<li>Linux 2.6.18 erősen továbbfejlesztett SATA réteggel és néhány új driverrel</li>
-									<li>GNU C Library 2.5 az új ELF hashtábla-formátum támogatásával</li>
-									<li>Mozilla Firefox 2.0 továbbfejlesztett füles böngészéssel és beépített helyesírás-ellenőrzővel</li>
-									<li>Xfce 4.4rc1, ami megoldja a pluginek összeomlását okozó hibát a régi Xfce 4.2.x-ből,
-													valamint sokkal stabilabb</li>
-									<li>KDE 3.5.5 KHTML fejlesztésekkel és sudo támogatással a kdesu-ban</li>
-									<li>OpenOffice.org 2.0.4 LaTeX exportszűrővel és titkosítás-támogatással
-													a PDF exportszűrőben</li>
-									<li>D-Bus 0.93 rengeteg memóriaszivárgási és egyéb hiba javításával</li>
-									<li>neon 0.26.1 nemzetközi támogatással</li>
-									<li>Xen 3.0.3 HVM és XenFB támogatással; a Xen kerneleket frissítettük 2.6.18-ra</li>
-									<li>db 4.5.20 Multi-Version Concurrency Control (MVCC) támogatással</li>
-									<li>Python 2.5 érdekes nyelvi és könyvtári fejlesztések keverékével</li>
-									<li>GNOME 2.17.1 különböző hibajavításokkal és újdonságokkal</li>
-									<li>Binutils 2.17.50.0.6, mely lehetővé teszi számunkra az új ELF hashtábla-formátum
-													használatát, amit alapértelmezésben bekapcsoltunk a fordítóinkban. Ez jelentős
-													teljesítménynövekedést jelent az újonnan fordított csomagjainknál.</li>
-					</ul>
-				</li>
-			</ul>
-			Bővebb információért tekintse meg a Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Testing változáslistát</a><br />
-			Letöltés i686-ra:<br />
-			<b>MEGJEGYZÉS</b>: Ne töltse le a 3-10. CD-ket vagy a második DVD-t, csak ha nincs internet-kapcsolata<br />
-				<a href="/download/frugalware-testing-iso/frugalware-0.6pre1-i686-net.iso">netinstall</a> (20M),
-				<a href="/download/frugalware-testing-iso/frugalware-0.6pre1-i686-usb.tar.gz">usb</a> (18M),
-				<a href="/download/frugalware-testing-iso/frugalware-0.6pre1-i686-cd1.iso">cd1</a> (642M),
-				<a href="/download/frugalware-testing-iso/frugalware-0.6pre1-i686-cd2.iso">cd2</a> (643M),
-				<a href="/download/frugalware-testing-iso/frugalware-0.6pre1-i686-cd3.iso">cd3</a> (639M),
-				<a href="/download/frugalware-testing-iso/frugalware-0.6pre1-i686-cd4.iso">cd4</a> (642M),
-				<a href="/download/frugalware-testing-iso/frugalware-0.6pre1-i686-cd5.iso">cd5</a> (636M),
-				<a href="/download/frugalware-testing-iso/frugalware-0.6pre1-i686-cd6.iso">cd6</a> (641M),
-				<a href="/download/frugalware-testing-iso/frugalware-0.6pre1-i686-cd7.iso">cd7</a> (642M),
-				<a href="/download/frugalware-testing-iso/frugalware-0.6pre1-i686-cd8.iso">cd8</a> (641M),
-				<a href="/download/frugalware-testing-iso/frugalware-0.6pre1-i686-cd9.iso">cd9</a> (642M),
-				<a href="/download/frugalware-testing-iso/frugalware-0.6pre1-i686-cd9.iso">cd10</a> (250M),
-				<a href="/download/frugalware-testing-iso/frugalware-0.6pre1-i686-dvd1.iso">dvd1</a> (4.2G)
-				<a href="/download/frugalware-testing-iso/frugalware-0.6pre1-i686-dvd2.iso">dvd2</a> (1.6G)
-				<br />
-			SHA1SUMok:
-			<pre>
+            </pre>
+      ]]>
+    </content>
+  </post>
+  <post>
+    <id>50</id>
+    <title>Megjelent a Frugalware 0.6pre1 (Terminus)</title>
+    <date>Thu Nov  9 09:22:04 CET 2006</date>
+    <author>Boobaa</author>
+    <content><![CDATA[
+      A Frugalware Fejlesztői Csapat örömmel <a href="/news/50">jelenti be</a> a Frugalware 0.6pre1 azonnali elérhetőségét, mint az eljövendő 0.6-os stabil kiadás első előzetes változatát.<br />
+      Egy rövid, nem teljes lista a 0.5 óta történt változásokról:<br />
+      <ul>
+        <li>Újdonságok:
+          <ul>
+            <li>Az összes alapértelmezésben telepített csomagot a gcj-vel/ecj-vel fordítottuk,
+              a javac csak alternatívaként szerepel.</li>
+            <li>Támogatjuk az USB meghajtóról való telepítést.</li>
+            <li>23 nyelven csomagoltunk PHP dokumentációt.</li>
+          </ul>
+        </li>
+        <li>Frissítések:
+          <ul>
+                  <li>Linux 2.6.18 erősen továbbfejlesztett SATA réteggel és néhány új driverrel</li>
+                  <li>GNU C Library 2.5 az új ELF hashtábla-formátum támogatásával</li>
+                  <li>Mozilla Firefox 2.0 továbbfejlesztett füles böngészéssel és beépített helyesírás-ellenőrzővel</li>
+                  <li>Xfce 4.4rc1, ami megoldja a pluginek összeomlását okozó hibát a régi Xfce 4.2.x-ből,
+                          valamint sokkal stabilabb</li>
+                  <li>KDE 3.5.5 KHTML fejlesztésekkel és sudo támogatással a kdesu-ban</li>
+                  <li>OpenOffice.org 2.0.4 LaTeX exportszűrővel és titkosítás-támogatással
+                          a PDF exportszűrőben</li>
+                  <li>D-Bus 0.93 rengeteg memóriaszivárgási és egyéb hiba javításával</li>
+                  <li>neon 0.26.1 nemzetközi támogatással</li>
+                  <li>Xen 3.0.3 HVM és XenFB támogatással; a Xen kerneleket frissítettük 2.6.18-ra</li>
+                  <li>db 4.5.20 Multi-Version Concurrency Control (MVCC) támogatással</li>
+                  <li>Python 2.5 érdekes nyelvi és könyvtári fejlesztések keverékével</li>
+                  <li>GNOME 2.17.1 különböző hibajavításokkal és újdonságokkal</li>
+                  <li>Binutils 2.17.50.0.6, mely lehetővé teszi számunkra az új ELF hashtábla-formátum
+                          használatát, amit alapértelmezésben bekapcsoltunk a fordítóinkban. Ez jelentős
+                          teljesítménynövekedést jelent az újonnan fordított csomagjainknál.</li>
+          </ul>
+        </li>
+      </ul>
+      Bővebb információért tekintse meg a Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Testing változáslistát</a><br />
+      Letöltés i686-ra:<br />
+      <b>MEGJEGYZÉS</b>: Ne töltse le a 3-10. CD-ket vagy a második DVD-t, csak ha nincs internet-kapcsolata<br />
+        <a href="/download/frugalware-testing-iso/frugalware-0.6pre1-i686-net.iso">netinstall</a> (20M),
+        <a href="/download/frugalware-testing-iso/frugalware-0.6pre1-i686-usb.tar.gz">usb</a> (18M),
+        <a href="/download/frugalware-testing-iso/frugalware-0.6pre1-i686-cd1.iso">cd1</a> (642M),
+        <a href="/download/frugalware-testing-iso/frugalware-0.6pre1-i686-cd2.iso">cd2</a> (643M),
+        <a href="/download/frugalware-testing-iso/frugalware-0.6pre1-i686-cd3.iso">cd3</a> (639M),
+        <a href="/download/frugalware-testing-iso/frugalware-0.6pre1-i686-cd4.iso">cd4</a> (642M),
+        <a href="/download/frugalware-testing-iso/frugalware-0.6pre1-i686-cd5.iso">cd5</a> (636M),
+        <a href="/download/frugalware-testing-iso/frugalware-0.6pre1-i686-cd6.iso">cd6</a> (641M),
+        <a href="/download/frugalware-testing-iso/frugalware-0.6pre1-i686-cd7.iso">cd7</a> (642M),
+        <a href="/download/frugalware-testing-iso/frugalware-0.6pre1-i686-cd8.iso">cd8</a> (641M),
+        <a href="/download/frugalware-testing-iso/frugalware-0.6pre1-i686-cd9.iso">cd9</a> (642M),
+        <a href="/download/frugalware-testing-iso/frugalware-0.6pre1-i686-cd9.iso">cd10</a> (250M),
+        <a href="/download/frugalware-testing-iso/frugalware-0.6pre1-i686-dvd1.iso">dvd1</a> (4.2G)
+        <a href="/download/frugalware-testing-iso/frugalware-0.6pre1-i686-dvd2.iso">dvd2</a> (1.6G)
+        <br />
+      SHA1SUMok:
+      <pre>
 9519c08313fd786e3b1f858e8d03fc82cf0298b3  frugalware-0.6pre1-i686-cd1.iso
 e0689fe3716099b2e052779ee41966ba428f0dd9  frugalware-0.6pre1-i686-cd2.iso
 f1bd6cafa9fcb40542a9ccb7413c1a68a503fb7b  frugalware-0.6pre1-i686-cd3.iso
@@ -235,68 +334,68 @@ fc1c0e4f80e290cee0450fa1812e9d549ca75572  frugalware-0.6pre1-i686-cd7.iso
 34c610b521a998d87f1e5fafff4a34e310f61e92  frugalware-0.6pre1-i686-dvd2.iso
 eeaa4b9bafab9b1c3c5454c1599687fd600b3525  frugalware-0.6pre1-i686-net.iso
 6b59b1e750626f907107bcec6ead006d8e6a69a7  frugalware-0.6pre1-i686-usb.tar.gz
-			</pre>
-			]]>
-		</content>
-	</post>
-	<post>
-		<id>45</id>
-		<title><![CDATA[Megjelent a Frugalware 0.5 (Siwenna) i686-ra  és x86_64-re]]></title>
-		<date>Wed Sep 14 09:10:25 CEST 2006</date>
-		<author>Boobaa</author>
-		<content><![CDATA[
-			A Frugalware Fejlesztői Csapat örömmel <a href="/news/45">jelenti be</a> a Frugalware 0.5 azonnali elérhetőségét, mint ötödik stabil kiadásunkat.<br />
-			Egy rövid, nem teljes lista a 0.5rc2 óta történt változásokról:<br />
-			<ul>
-				<li>Linux 2.6.17.11</li>
-				<li>Büszkék vagyunk rá, hogy egyike vagyunk az első disztribúcióknak, akik a stabil GNOME 2.16-ot szállítják</li>
-				<li>20 új csomag</li>
-			</ul>
-			Ha nem követte a változásokat a pre/rc kiadások alatt, íme a legfontosabb változások a 0.4 óta:<br />
-			<ul>
-				<li>Naprakész csomagok: GNU C Library 2.4, GCC 4.1.1, KDE 3.5.4, XOrg 7.1, OpenOffice.org 2.0.3 (natív változat a x86_64 felhasználóknak is)</li>
-				<li>Biztonsági támogatás: a Frugalware-0.5 megjelenésétől a stabil Frugalware-0.6 megjelenéséig biztonságilag támogatott. A -stable frissítések csak biztonsági, illetve hibajavításokat tartalmaznak, újdonságok nélkül.</li>
-				<li>Egy új, 'setup' nevű eszköz az elérhető konfigurációs eszközök összegyűjtésére.</li>
-				<li>Lokalizált csomagkezelő (francia, német és magyar fordítások elérhetők)</li>
-				<li>Váltás bootsplashről splashyre, így az indítási képernyő bármilyen saját vanilla kernellel is használható.</li>
-				<li>Fejlesztések a telepítőben: drótnélküli támogatás, más disztribúciók és operációs rendszerek felismerésének támogatása, utf8-specifikus frissítések, minden csomag elérhető CD-ken.</li>
-				<li>fw-xgl-control: könnyen engedélyezhető/letiltható az Xgl a rendszerén, egyetlen egyszerű paranccsal.</li>
-				<li>fwmirror: egy új eszköz a Frugalware tükrözéséhez.</li>
-			</ul>
-			Bővebb információért tekintse meg a Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-0.5/ChangeLog.txt">0.5 Változások Listáját</a>.<br />
-			Ha nincs helye a Frugalware tükrözéséhez, de szeretné megkönnyíteni más i686 felhasználók gyors hozzáférését a Frugalware-hez, használja a <a href="http://linuxtracker.org/torrents-details.php?id=2863">CD</a> vagy <a href="http://linuxtracker.org/torrents-details.php?id=2864">DVD</a> torrenteket.<br />
-			Ha támogatni szeretne bennünket a hatalmas képfájlok letöltése nélkül, rendelje meg az <a href="http://on-disk.com/product_info.php/products_id/162">i686 CD-ket</a>, <a href="http://on-disk.com/product_info.php/products_id/163">i686 DVD-ket</a>, <a href="http://on-disk.com/product_info.php/products_id/164">x86_64 CD-ket</a> vagy <a href="http://on-disk.com/product_info.php/products_id/165">x86_64 DVD-ket</a>, ugyanis az összeg egy része a Frugalware folyamatos fejlesztésére fordítódik!<br />
-			Letöltés i686-ra:<br />
-				<a href="/download/frugalware-0.5-iso/frugalware-0.5-i686-net.iso">netinstall</a> (21M),
-				<a href="/download/frugalware-0.5-iso/frugalware-0.5-i686-cd1.iso">cd1</a> (644M),
-				<a href="/download/frugalware-0.5-iso/frugalware-0.5-i686-cd2.iso">cd2</a> (644M),
-				<a href="/download/frugalware-0.5-iso/frugalware-0.5-i686-cd3.iso">cd3</a> (638M),
-				<a href="/download/frugalware-0.5-iso/frugalware-0.5-i686-cd4.iso">cd4</a> (639M),
-				<a href="/download/frugalware-0.5-iso/frugalware-0.5-i686-cd5.iso">cd5</a> (590M),
-				<a href="/download/frugalware-0.5-iso/frugalware-0.5-i686-cd6.iso">cd6</a> (627M),
-				<a href="/download/frugalware-0.5-iso/frugalware-0.5-i686-cd7.iso">cd7</a> (632M),
-				<a href="/download/frugalware-0.5-iso/frugalware-0.5-i686-cd8.iso">cd8</a> (427M),
-				<a href="/download/frugalware-0.5-iso/frugalware-0.5-i686-cd9.iso">cd9</a> (640M),
-				<a href="/download/frugalware-0.5-iso/frugalware-0.5-i686-cd10.iso">cd10</a> (129M),
-				<a href="/download/frugalware-0.5-iso/frugalware-0.5-i686-dvd1.iso">dvd1</a> (4.2G)
-				<a href="/download/frugalware-0.5-iso/frugalware-0.5-i686-dvd2.iso">dvd2</a> (1.2G)
-				<br />
-			Letöltés x86_64-re:<br />
-				<a href="/download/frugalware-0.5-iso/frugalware-0.5-x86_64-net.iso">netinstall</a> (21M),
-				<a href="/download/frugalware-0.5-iso/frugalware-0.5-x86_64-cd1.iso">cd1</a> (643M),
-				<a href="/download/frugalware-0.5-iso/frugalware-0.5-x86_64-cd2.iso">cd2</a> (644M),
-				<a href="/download/frugalware-0.5-iso/frugalware-0.5-x86_64-cd3.iso">cd3</a> (642M),
-				<a href="/download/frugalware-0.5-iso/frugalware-0.5-x86_64-cd4.iso">cd4</a> (644M),
-				<a href="/download/frugalware-0.5-iso/frugalware-0.5-x86_64-cd5.iso">cd5</a> (644M),
-				<a href="/download/frugalware-0.5-iso/frugalware-0.5-x86_64-cd6.iso">cd6</a> (642M),
-				<a href="/download/frugalware-0.5-iso/frugalware-0.5-x86_64-cd7.iso">cd7</a> (635M),
-				<a href="/download/frugalware-0.5-iso/frugalware-0.5-x86_64-cd8.iso">cd8</a> (92M),
-				<a href="/download/frugalware-0.5-iso/frugalware-0.5-x86_64-dvd1.iso">dvd1</a> (4.1G)
-				<a href="/download/frugalware-0.5-iso/frugalware-0.5-x86_64-dvd2.iso">dvd2</a> (264M)
-				<br />
-			<b>MEGJEGYZÉS</b>: a 3-10. CD-k vagy a második DVD csak azok számára szükséges, akik nem rendelkeznek internet-kapcsolattal!<br />
-			SHA1SUMok:
-			<pre>
+      </pre>
+      ]]>
+    </content>
+  </post>
+  <post>
+    <id>45</id>
+    <title><![CDATA[Megjelent a Frugalware 0.5 (Siwenna) i686-ra  és x86_64-re]]></title>
+    <date>Wed Sep 14 09:10:25 CEST 2006</date>
+    <author>Boobaa</author>
+    <content><![CDATA[
+      A Frugalware Fejlesztői Csapat örömmel <a href="/news/45">jelenti be</a> a Frugalware 0.5 azonnali elérhetőségét, mint ötödik stabil kiadásunkat.<br />
+      Egy rövid, nem teljes lista a 0.5rc2 óta történt változásokról:<br />
+      <ul>
+        <li>Linux 2.6.17.11</li>
+        <li>Büszkék vagyunk rá, hogy egyike vagyunk az első disztribúcióknak, akik a stabil GNOME 2.16-ot szállítják</li>
+        <li>20 új csomag</li>
+      </ul>
+      Ha nem követte a változásokat a pre/rc kiadások alatt, íme a legfontosabb változások a 0.4 óta:<br />
+      <ul>
+        <li>Naprakész csomagok: GNU C Library 2.4, GCC 4.1.1, KDE 3.5.4, XOrg 7.1, OpenOffice.org 2.0.3 (natív változat a x86_64 felhasználóknak is)</li>
+        <li>Biztonsági támogatás: a Frugalware-0.5 megjelenésétől a stabil Frugalware-0.6 megjelenéséig biztonságilag támogatott. A -stable frissítések csak biztonsági, illetve hibajavításokat tartalmaznak, újdonságok nélkül.</li>
+        <li>Egy új, 'setup' nevű eszköz az elérhető konfigurációs eszközök összegyűjtésére.</li>
+        <li>Lokalizált csomagkezelő (francia, német és magyar fordítások elérhetők)</li>
+        <li>Váltás bootsplashről splashyre, így az indítási képernyő bármilyen saját vanilla kernellel is használható.</li>
+        <li>Fejlesztések a telepítőben: drótnélküli támogatás, más disztribúciók és operációs rendszerek felismerésének támogatása, utf8-specifikus frissítések, minden csomag elérhető CD-ken.</li>
+        <li>fw-xgl-control: könnyen engedélyezhető/letiltható az Xgl a rendszerén, egyetlen egyszerű paranccsal.</li>
+        <li>fwmirror: egy új eszköz a Frugalware tükrözéséhez.</li>
+      </ul>
+      Bővebb információért tekintse meg a Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-0.5/ChangeLog.txt">0.5 Változások Listáját</a>.<br />
+      Ha nincs helye a Frugalware tükrözéséhez, de szeretné megkönnyíteni más i686 felhasználók gyors hozzáférését a Frugalware-hez, használja a <a href="http://linuxtracker.org/torrents-details.php?id=2863">CD</a> vagy <a href="http://linuxtracker.org/torrents-details.php?id=2864">DVD</a> torrenteket.<br />
+      Ha támogatni szeretne bennünket a hatalmas képfájlok letöltése nélkül, rendelje meg az <a href="http://on-disk.com/product_info.php/products_id/162">i686 CD-ket</a>, <a href="http://on-disk.com/product_info.php/products_id/163">i686 DVD-ket</a>, <a href="http://on-disk.com/product_info.php/products_id/164">x86_64 CD-ket</a> vagy <a href="http://on-disk.com/product_info.php/products_id/165">x86_64 DVD-ket</a>, ugyanis az összeg egy része a Frugalware folyamatos fejlesztésére fordítódik!<br />
+      Letöltés i686-ra:<br />
+        <a href="/download/frugalware-0.5-iso/frugalware-0.5-i686-net.iso">netinstall</a> (21M),
+        <a href="/download/frugalware-0.5-iso/frugalware-0.5-i686-cd1.iso">cd1</a> (644M),
+        <a href="/download/frugalware-0.5-iso/frugalware-0.5-i686-cd2.iso">cd2</a> (644M),
+        <a href="/download/frugalware-0.5-iso/frugalware-0.5-i686-cd3.iso">cd3</a> (638M),
+        <a href="/download/frugalware-0.5-iso/frugalware-0.5-i686-cd4.iso">cd4</a> (639M),
+        <a href="/download/frugalware-0.5-iso/frugalware-0.5-i686-cd5.iso">cd5</a> (590M),
+        <a href="/download/frugalware-0.5-iso/frugalware-0.5-i686-cd6.iso">cd6</a> (627M),
+        <a href="/download/frugalware-0.5-iso/frugalware-0.5-i686-cd7.iso">cd7</a> (632M),
+        <a href="/download/frugalware-0.5-iso/frugalware-0.5-i686-cd8.iso">cd8</a> (427M),
+        <a href="/download/frugalware-0.5-iso/frugalware-0.5-i686-cd9.iso">cd9</a> (640M),
+        <a href="/download/frugalware-0.5-iso/frugalware-0.5-i686-cd10.iso">cd10</a> (129M),
+        <a href="/download/frugalware-0.5-iso/frugalware-0.5-i686-dvd1.iso">dvd1</a> (4.2G)
+        <a href="/download/frugalware-0.5-iso/frugalware-0.5-i686-dvd2.iso">dvd2</a> (1.2G)
+        <br />
+      Letöltés x86_64-re:<br />
+        <a href="/download/frugalware-0.5-iso/frugalware-0.5-x86_64-net.iso">netinstall</a> (21M),
+        <a href="/download/frugalware-0.5-iso/frugalware-0.5-x86_64-cd1.iso">cd1</a> (643M),
+        <a href="/download/frugalware-0.5-iso/frugalware-0.5-x86_64-cd2.iso">cd2</a> (644M),
+        <a href="/download/frugalware-0.5-iso/frugalware-0.5-x86_64-cd3.iso">cd3</a> (642M),
+        <a href="/download/frugalware-0.5-iso/frugalware-0.5-x86_64-cd4.iso">cd4</a> (644M),
+        <a href="/download/frugalware-0.5-iso/frugalware-0.5-x86_64-cd5.iso">cd5</a> (644M),
+        <a href="/download/frugalware-0.5-iso/frugalware-0.5-x86_64-cd6.iso">cd6</a> (642M),
+        <a href="/download/frugalware-0.5-iso/frugalware-0.5-x86_64-cd7.iso">cd7</a> (635M),
+        <a href="/download/frugalware-0.5-iso/frugalware-0.5-x86_64-cd8.iso">cd8</a> (92M),
+        <a href="/download/frugalware-0.5-iso/frugalware-0.5-x86_64-dvd1.iso">dvd1</a> (4.1G)
+        <a href="/download/frugalware-0.5-iso/frugalware-0.5-x86_64-dvd2.iso">dvd2</a> (264M)
+        <br />
+      <b>MEGJEGYZÉS</b>: a 3-10. CD-k vagy a második DVD csak azok számára szükséges, akik nem rendelkeznek internet-kapcsolattal!<br />
+      SHA1SUMok:
+      <pre>
 5829cbb49528b60627fa290c2d0f8c66439139ab  frugalware-0.5-i686-cd10.iso
 7972d7ae74da64794d627b5058f4f23ac06fa0b5  frugalware-0.5-i686-cd1.iso
 e0a5e842d84bb4196cf05eb9d9d53bff038faef0  frugalware-0.5-i686-cd2.iso
@@ -321,57 +420,57 @@ ed78594a70af0dded0483914437566702b05b576  frugalware-0.5-x86_64-cd5.iso
 4f1c3871c3b6b03773090c8509b730a8d59fae64  frugalware-0.5-x86_64-dvd1.iso
 1ad4968050816e4854f5fbde8016a4a5c45be947  frugalware-0.5-x86_64-dvd2.iso
 81e26cd95c1ad3502bfee1f125e19f4c81f357a6  frugalware-0.5-x86_64-net.iso
-			</pre>
-			A telepítési képfájlok kiadása óta napvilágra került hibák listája megtekinthető <a href="http://wiki.frugalware.org/KnownBugs-0.5">itt</a>.<br />
-			Ha korábbi stabil kiadásunkról frissít, valószínűleg el szeretné olvasni a <a href="http://wiki.frugalware.org/Upgrade-0.4-0.5">mini-howtot</a> a témáról (angolul).<br />
-			]]>
-		</content>
-	</post>
-	<post>
-		<id>44</id>
-		<title>Frissítés az újabb típusú nvidia csomagra</title>
-		<date>Sat Sep  9 00:20:50 CEST 2006</date>
-		<author>Boobaa</author>
-		<content><![CDATA[
-			Többeknek gondot okozott a régi (telepítéskor helyben fordított) nvidia csomagról az újabb, bináris csomagra való frissítés. Íme a megoldás (feltéve, hogy az adatbázis és a többi csomag naprakész):<br />
-			<pre>pacman -Sfd nvidia --noconfirm</pre>
-			Reméljük, hogy jövő vasárnap az SFD-n már legalább az érintettek fújják, hogyan kell 0.4-ről 0.5-re frissíteni - már ami az nvidiát illeti...
-			]]>
-		</content>
-	</post>
-	<post>
-		<id>43</id>
-		<title>Megjelent a Frugalware 0.5rc2 (Siwenna)</title>
-		<date>Fri Sep  3 22:59:15 CEST 2006</date>
-		<author>Boobaa</author>
-		<content><![CDATA[
-			A Frugalware Fejlesztői Csapat örömmel <a href="/news/43">jelenti be</a> a Frugalware 0.5rc2 azonnali elérhetőségét, mint a 0.5-ös verzió második, kiadásra jelölt változatát.<br />
-			Egy rövid, nem teljes lista a 0.5rc1 óta történt változásokról:<br />
-			<ul>
-				<li>GNOME frissítve 2.16 Release Candidate (2.15.92) verzióra</li>
-				<li>~300 hibajavítás</li>
-				<li>Frissített KDE és GRUB témák</li>
-				<li>Több, mint 30 új csomag: ntfs-3g, avifile, gnome-sharp, és így tovább!</li>
-			</ul>
-			Bővebb információval a <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Testing ChangeLog</a> szolgál.<br />
-			Letöltés i686-ra:<br />
-			<b>MEGJEGYZÉS</b>: A 3-9. CD-re és a 2. DVD-re csak akkor van szükség, ha nincs otthoni internet-kapcsolat<br />
-				<a href="/download/frugalware-current-iso/frugalware-0.5rc2-i686-net.iso">netinstall</a> (21M),
-				<a href="/download/frugalware-current-iso/frugalware-0.5rc2-i686-cd1.iso">cd1</a> (632M),
-				<a href="/download/frugalware-current-iso/frugalware-0.5rc2-i686-cd2.iso">cd2</a> (641M),
-				<a href="/download/frugalware-current-iso/frugalware-0.5rc2-i686-cd3.iso">cd3</a> (643M),
-				<a href="/download/frugalware-current-iso/frugalware-0.5rc2-i686-cd4.iso">cd4</a> (640M),
-				<a href="/download/frugalware-current-iso/frugalware-0.5rc2-i686-cd5.iso">cd5</a> (599M),
-				<a href="/download/frugalware-current-iso/frugalware-0.5rc2-i686-cd6.iso">cd6</a> (630M),
-				<a href="/download/frugalware-current-iso/frugalware-0.5rc2-i686-cd7.iso">cd7</a> (627M),
-				<a href="/download/frugalware-current-iso/frugalware-0.5rc2-i686-cd8.iso">cd8</a> (417M),
-				<a href="/download/frugalware-current-iso/frugalware-0.5rc2-i686-cd9.iso">cd9</a> (638M),
-				<a href="/download/frugalware-current-iso/frugalware-0.5rc2-i686-cd9.iso">cd10</a> (128M),
-				<a href="/download/frugalware-current-iso/frugalware-0.5rc2-i686-dvd1.iso">dvd1</a> (4.2G)
-				<a href="/download/frugalware-current-iso/frugalware-0.5rc2-i686-dvd2.iso">dvd2</a> (1.2G)
-				<br />
-			SHA1SUMS:
-			<pre>
+      </pre>
+      A telepítési képfájlok kiadása óta napvilágra került hibák listája megtekinthető <a href="http://wiki.frugalware.org/KnownBugs-0.5">itt</a>.<br />
+      Ha korábbi stabil kiadásunkról frissít, valószínűleg el szeretné olvasni a <a href="http://wiki.frugalware.org/Upgrade-0.4-0.5">mini-howtot</a> a témáról (angolul).<br />
+      ]]>
+    </content>
+  </post>
+  <post>
+    <id>44</id>
+    <title>Frissítés az újabb típusú nvidia csomagra</title>
+    <date>Sat Sep  9 00:20:50 CEST 2006</date>
+    <author>Boobaa</author>
+    <content><![CDATA[
+      Többeknek gondot okozott a régi (telepítéskor helyben fordított) nvidia csomagról az újabb, bináris csomagra való frissítés. Íme a megoldás (feltéve, hogy az adatbázis és a többi csomag naprakész):<br />
+      <pre>pacman -Sfd nvidia --noconfirm</pre>
+      Reméljük, hogy jövő vasárnap az SFD-n már legalább az érintettek fújják, hogyan kell 0.4-ről 0.5-re frissíteni - már ami az nvidiát illeti...
+      ]]>
+    </content>
+  </post>
+  <post>
+    <id>43</id>
+    <title>Megjelent a Frugalware 0.5rc2 (Siwenna)</title>
+    <date>Fri Sep  3 22:59:15 CEST 2006</date>
+    <author>Boobaa</author>
+    <content><![CDATA[
+      A Frugalware Fejlesztői Csapat örömmel <a href="/news/43">jelenti be</a> a Frugalware 0.5rc2 azonnali elérhetőségét, mint a 0.5-ös verzió második, kiadásra jelölt változatát.<br />
+      Egy rövid, nem teljes lista a 0.5rc1 óta történt változásokról:<br />
+      <ul>
+        <li>GNOME frissítve 2.16 Release Candidate (2.15.92) verzióra</li>
+        <li>~300 hibajavítás</li>
+        <li>Frissített KDE és GRUB témák</li>
+        <li>Több, mint 30 új csomag: ntfs-3g, avifile, gnome-sharp, és így tovább!</li>
+      </ul>
+      Bővebb információval a <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Testing ChangeLog</a> szolgál.<br />
+      Letöltés i686-ra:<br />
+      <b>MEGJEGYZÉS</b>: A 3-9. CD-re és a 2. DVD-re csak akkor van szükség, ha nincs otthoni internet-kapcsolat<br />
+        <a href="/download/frugalware-current-iso/frugalware-0.5rc2-i686-net.iso">netinstall</a> (21M),
+        <a href="/download/frugalware-current-iso/frugalware-0.5rc2-i686-cd1.iso">cd1</a> (632M),
+        <a href="/download/frugalware-current-iso/frugalware-0.5rc2-i686-cd2.iso">cd2</a> (641M),
+        <a href="/download/frugalware-current-iso/frugalware-0.5rc2-i686-cd3.iso">cd3</a> (643M),
+        <a href="/download/frugalware-current-iso/frugalware-0.5rc2-i686-cd4.iso">cd4</a> (640M),
+        <a href="/download/frugalware-current-iso/frugalware-0.5rc2-i686-cd5.iso">cd5</a> (599M),
+        <a href="/download/frugalware-current-iso/frugalware-0.5rc2-i686-cd6.iso">cd6</a> (630M),
+        <a href="/download/frugalware-current-iso/frugalware-0.5rc2-i686-cd7.iso">cd7</a> (627M),
+        <a href="/download/frugalware-current-iso/frugalware-0.5rc2-i686-cd8.iso">cd8</a> (417M),
+        <a href="/download/frugalware-current-iso/frugalware-0.5rc2-i686-cd9.iso">cd9</a> (638M),
+        <a href="/download/frugalware-current-iso/frugalware-0.5rc2-i686-cd9.iso">cd10</a> (128M),
+        <a href="/download/frugalware-current-iso/frugalware-0.5rc2-i686-dvd1.iso">dvd1</a> (4.2G)
+        <a href="/download/frugalware-current-iso/frugalware-0.5rc2-i686-dvd2.iso">dvd2</a> (1.2G)
+        <br />
+      SHA1SUMS:
+      <pre>
 68b77bf880dcb5a05ba66ae9b80a7831d3fcbd8c  frugalware-0.5rc2-i686-cd10.iso
 65d73a3408d3a7e4a6f28b990c60be40706f265d  frugalware-0.5rc2-i686-cd1.iso
 0581700c2139059cee22f10c6b40561af9973d8f  frugalware-0.5rc2-i686-cd2.iso
@@ -385,74 +484,74 @@ ffb7f8186dc804e8484082be72dfd340f83a9d8b  frugalware-0.5rc2-i686-cd6.iso
 94f7a0a0a1d2a9d209a1f85ed251a0e78c128f36  frugalware-0.5rc2-i686-dvd1.iso
 e4397526607832e83684be5c7f88598242d05e75  frugalware-0.5rc2-i686-dvd2.iso
 fae88cc8378e2982a87761c0d97fdfbf42eb321c  frugalware-0.5rc2-i686-net.iso
-			</pre>
-			]]>
-		</content>
-	</post>
-	<post>
-		<id>42</id>
-		<title>Megjelent a Frugalware 0.5rc1 (Siwenna)</title>
-		<date>Thu Aug 17 01:31:02 CEST 2006</date>
-		<author>VMiklos</author>
-		<content><![CDATA[
-						A Frugalware Fejlesztői Csapat örömmel <a
-										href="http://frugalware.org/news/41/hu">jelenti be</a> a
-						Frugalware 0.5rc1-et, mint a 0.5 -ös verzió első, kiadásra jelölt
-						változatát.<br />
-			Egy rövid, nem teljes lista a 0.5pre2 óta történt változásokról:<br />
-			<ul>
-				<li>Frissítések:
-					<ul>
-						<li>Linux 2.6.17.8</li>
-						<li>KDE 3.5.4</li>
-						<li>Firefox 1.5.0.6</li>
-						<li>Thunderbird 1.5.0.5</li>
-						<li>Gnome 2.16 Beta 2 (2.15.91)</li>
-					</ul>
-				</li>
-				<li>Újdonságok:
-					<ul>
-						<li>Feldaraboltuk a MySQL, PostgreSQL, Samba és LDAP csomagokat,
-										így ezeknek a szolgáltatásoknak a telepítése a továbbiakban
-										desktop környezetben már nem kötelező</li>
-						<li>fwmirror: Egy új eszköz a  Frugalware mirrorozásához</li>
-						<li>fw-xgl-control: Az Xgl egyetlen egyszerű paranccsal ki- és bekapcsolható</li>
-						<li>Honlap: a csomagkereső továbbfejlesztése révén már kategóriák
-										szerint is lehet keresni, illetve lehetőség van a fordított
-										függőségek (az adott csomagot függőségként igénylő
-										csomagok) megjelenítésére is</li>
-						<li>Az NVIDIA videokártyák Xorg 7.1 alatti használatát lehetővé tevő workaround beépítése</li>
-						<li>Új 0.5 artwork (a KDE kivételével)</li>
-					</ul>
-				</li>
-				<li>Hibajavítások:
-					<ul>
-						<li>A nyelvi csomagoknál a függőségek kezelésének kijavítása</li>
-						<li>A netinstall telepítő javítása PPPoE (ADSL) kapcsolat használata esetén</li>
-						<li>Az első DVD ISO kiírásához nincs szükség a túlírás engedélyezésére</li>
-					</ul>
-				</li>
-			</ul>
-			Bővebb informácóért a Changelog <a
-							href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">itt</a>
-			érhető el.<br />
-			Letöltés i686-ra:<br />
-			<b>MEGJEGYZÉS</b>: A 3-9. CD-re és a 2. DVD-re csak akkor van szükség, ha nincs otthoni internet-kapcsolat<br />
-				<a href="download/frugalware-current-iso/frugalware-0.5rc1-i686-net.iso">netinstall</a> (20M),
-				<a href="download/frugalware-current-iso/frugalware-0.5rc1-i686-cd1.iso">cd1</a> (635M),
-				<a href="download/frugalware-current-iso/frugalware-0.5rc1-i686-cd2.iso">cd2</a> (638M),
-				<a href="download/frugalware-current-iso/frugalware-0.5rc1-i686-cd3.iso">cd3</a> (635M),
-				<a href="download/frugalware-current-iso/frugalware-0.5rc1-i686-cd4.iso">cd4</a> (639M),
-				<a href="download/frugalware-current-iso/frugalware-0.5rc1-i686-cd5.iso">cd5</a> (580M),
-				<a href="download/frugalware-current-iso/frugalware-0.5rc1-i686-cd6.iso">cd6</a> (642M),
-				<a href="download/frugalware-current-iso/frugalware-0.5rc1-i686-cd7.iso">cd7</a> (638M),
-				<a href="download/frugalware-current-iso/frugalware-0.5rc1-i686-cd8.iso">cd8</a> (642M),
-				<a href="download/frugalware-current-iso/frugalware-0.5rc1-i686-cd9.iso">cd9</a> (394M),
-				<a href="download/frugalware-current-iso/frugalware-0.5rc1-i686-dvd1.iso">dvd1</a> (4.2G)
-				<a href="download/frugalware-current-iso/frugalware-0.5rc1-i686-dvd2.iso">dvd2</a> (1.1G)
-				<br />
-			SHA1SUMS:
-			<pre>
+      </pre>
+      ]]>
+    </content>
+  </post>
+  <post>
+    <id>42</id>
+    <title>Megjelent a Frugalware 0.5rc1 (Siwenna)</title>
+    <date>Thu Aug 17 01:31:02 CEST 2006</date>
+    <author>VMiklos</author>
+    <content><![CDATA[
+            A Frugalware Fejlesztői Csapat örömmel <a
+                    href="http://frugalware.org/news/41/hu">jelenti be</a> a
+            Frugalware 0.5rc1-et, mint a 0.5 -ös verzió első, kiadásra jelölt
+            változatát.<br />
+      Egy rövid, nem teljes lista a 0.5pre2 óta történt változásokról:<br />
+      <ul>
+        <li>Frissítések:
+          <ul>
+            <li>Linux 2.6.17.8</li>
+            <li>KDE 3.5.4</li>
+            <li>Firefox 1.5.0.6</li>
+            <li>Thunderbird 1.5.0.5</li>
+            <li>Gnome 2.16 Beta 2 (2.15.91)</li>
+          </ul>
+        </li>
+        <li>Újdonságok:
+          <ul>
+            <li>Feldaraboltuk a MySQL, PostgreSQL, Samba és LDAP csomagokat,
+                    így ezeknek a szolgáltatásoknak a telepítése a továbbiakban
+                    desktop környezetben már nem kötelező</li>
+            <li>fwmirror: Egy új eszköz a  Frugalware mirrorozásához</li>
+            <li>fw-xgl-control: Az Xgl egyetlen egyszerű paranccsal ki- és bekapcsolható</li>
+            <li>Honlap: a csomagkereső továbbfejlesztése révén már kategóriák
+                    szerint is lehet keresni, illetve lehetőség van a fordított
+                    függőségek (az adott csomagot függőségként igénylő
+                    csomagok) megjelenítésére is</li>
+            <li>Az NVIDIA videokártyák Xorg 7.1 alatti használatát lehetővé tevő workaround beépítése</li>
+            <li>Új 0.5 artwork (a KDE kivételével)</li>
+          </ul>
+        </li>
+        <li>Hibajavítások:
+          <ul>
+            <li>A nyelvi csomagoknál a függőségek kezelésének kijavítása</li>
+            <li>A netinstall telepítő javítása PPPoE (ADSL) kapcsolat használata esetén</li>
+            <li>Az első DVD ISO kiírásához nincs szükség a túlírás engedélyezésére</li>
+          </ul>
+        </li>
+      </ul>
+      Bővebb informácóért a Changelog <a
+              href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">itt</a>
+      érhető el.<br />
+      Letöltés i686-ra:<br />
+      <b>MEGJEGYZÉS</b>: A 3-9. CD-re és a 2. DVD-re csak akkor van szükség, ha nincs otthoni internet-kapcsolat<br />
+        <a href="download/frugalware-current-iso/frugalware-0.5rc1-i686-net.iso">netinstall</a> (20M),
+        <a href="download/frugalware-current-iso/frugalware-0.5rc1-i686-cd1.iso">cd1</a> (635M),
+        <a href="download/frugalware-current-iso/frugalware-0.5rc1-i686-cd2.iso">cd2</a> (638M),
+        <a href="download/frugalware-current-iso/frugalware-0.5rc1-i686-cd3.iso">cd3</a> (635M),
+        <a href="download/frugalware-current-iso/frugalware-0.5rc1-i686-cd4.iso">cd4</a> (639M),
+        <a href="download/frugalware-current-iso/frugalware-0.5rc1-i686-cd5.iso">cd5</a> (580M),
+        <a href="download/frugalware-current-iso/frugalware-0.5rc1-i686-cd6.iso">cd6</a> (642M),
+        <a href="download/frugalware-current-iso/frugalware-0.5rc1-i686-cd7.iso">cd7</a> (638M),
+        <a href="download/frugalware-current-iso/frugalware-0.5rc1-i686-cd8.iso">cd8</a> (642M),
+        <a href="download/frugalware-current-iso/frugalware-0.5rc1-i686-cd9.iso">cd9</a> (394M),
+        <a href="download/frugalware-current-iso/frugalware-0.5rc1-i686-dvd1.iso">dvd1</a> (4.2G)
+        <a href="download/frugalware-current-iso/frugalware-0.5rc1-i686-dvd2.iso">dvd2</a> (1.1G)
+        <br />
+      SHA1SUMS:
+      <pre>
 385719ecc1e68a5e4b2f8c6fb49e79b7333fe820  frugalware-0.5rc1-i686-cd1.iso
 c9324c9a6bcf5024076a5f5f494fecada7d383ac  frugalware-0.5rc1-i686-cd2.iso
 ae5d33bc4c69978cbedcb4bbf3182253cc9eaecd  frugalware-0.5rc1-i686-cd3.iso
@@ -465,23 +564,23 @@ a1a0864648db68b9c01f274ddffc9172b3ae6908  frugalware-0.5rc1-i686-cd9.iso
 0216a7ee71b0dda9d00d64fc093b993f2af47a2b  frugalware-0.5rc1-i686-dvd1.iso
 987d2302a1268a2b1033f8d00e84f8c8ce290ae9  frugalware-0.5rc1-i686-dvd2.iso
 a62f42f3135f1415edced1db5c9f9511de598fd7  frugalware-0.5rc1-i686-net.iso
-			</pre>
-			]]>
-		</content>
-	</post>
+      </pre>
+      ]]>
+    </content>
+  </post>
   <post>
     <id>41</id>
     <title>Megjelent a Frugalware 0.5pre2 (Siwenna)</title>
     <date>Mon Jul 31 01:17:32 CEST 2006</date>
     <author>IroNiQ</author>
     <content><![CDATA[
-			A Frugalware Fejlesztői Csapat örömmel <a href="http://frugalware.org/news/41/hu">jelenti be</a> a Frugalware 0.5pre2, mint a 0.5 -ös verzió második előzetes változatát.<br />
-			Egy rövid, nem teljes lista a 0.5pre1 óta történt változásokról:
-			<ul>
-				<li>Frissítések:
-					<ul>
-						<li>Linux 2.6.17 (+ biztonsági frissítések)</li>
-						<li>GCC 4.1.1</li>
+      A Frugalware Fejlesztői Csapat örömmel <a href="http://frugalware.org/news/41/hu">jelenti be</a> a Frugalware 0.5pre2, mint a 0.5 -ös verzió második előzetes változatát.<br />
+      Egy rövid, nem teljes lista a 0.5pre1 óta történt változásokról:
+      <ul>
+        <li>Frissítések:
+          <ul>
+            <li>Linux 2.6.17 (+ biztonsági frissítések)</li>
+            <li>GCC 4.1.1</li>
             <li>Apache 2.2.3</li>
             <li>XOrg 7.1 (frissített fglrx driver, nVIDIA még nem működik)</li>
             <li>GNOME 2.16 Beta 1 (problémák lehetnek egyes GTK és Gnome programmal, lásd korábbi hír)</li>
@@ -501,7 +600,7 @@ a62f42f3135f1415edced1db5c9f9511de598fd7  frugalware-0.5rc1-i686-net.iso
             <li>Francia nyelvű telepítő</li>
             <li>A DVD iso szét lett darabolva, így megint fel lehet írni egyrétegű DVD lemezre<br />
               <b>Figyelem</b>: A második DVD -re csak akkor van szükség, ha nincs otthoni internet-kapcsolat</li>
-						<li>Minden csomag elérhető CDn is<br />
+            <li>Minden csomag elérhető CDn is<br />
               <b>Figyelem</b>: A 3-9. CD -kre csak akkor van szükség, ha nincs otthoni internet-kapcsolat</li>
             <li>A telepítő mostantól felismeri az operácis rendszer specifikus informácíókat, úgymint a már telepített másik disztribúció vagy egyéb más operációs rendszerek verziói</li>
           </ul>
@@ -511,8 +610,8 @@ a62f42f3135f1415edced1db5c9f9511de598fd7  frugalware-0.5rc1-i686-net.iso
             <li>Több, mint 220 új csomag</li>
           </ul>
         </li>
-			</ul>
-			Bővebb informácóért a changelog <a href="http://darcs.frugalware.org/darcsweb/darcsweb.cgi?r=frugalware-current;a=log">itt</a> érhető el.<br />
+      </ul>
+      Bővebb informácóért a changelog <a href="http://darcs.frugalware.org/darcsweb/darcsweb.cgi?r=frugalware-current;a=log">itt</a> érhető el.<br />
       Letöltés i686 -ra:
         <a href="download/frugalware-current-iso/frugalware-0.5pre2-i686-net.iso">netinstall</a> (20M),
         <a href="download/frugalware-current-iso/frugalware-0.5pre2-i686-cd1.iso">cd1</a> (643M),
@@ -527,7 +626,7 @@ a62f42f3135f1415edced1db5c9f9511de598fd7  frugalware-0.5rc1-i686-net.iso
         <a href="download/frugalware-current-iso/frugalware-0.5pre2-i686-dvd1.iso">dvd1</a> (4.4G)
         <a href="download/frugalware-current-iso/frugalware-0.5pre2-i686-dvd2.iso">dvd2</a> (712M)
         <br />
-			SHA1SUMok:
+      SHA1SUMok:
       <pre>
 07271ddb32e831ebeecdc7c01d1bdb6c429b5ef4  frugalware-0.5pre2-i686-cd1.iso
 07c5b548d8d9e7a011a3ab7a145c48731e5fbee4  frugalware-0.5pre2-i686-cd2.iso
@@ -550,8 +649,8 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
     <title>Gnome frissítés kész</title>
     <date>Tue Jul 22 09:09:41 CEST 2006</date>
     <author>IroNiQ</author>
-		<content><![CDATA[
-			Minden GNOME csomag frissítve lett 2.15 -ös verzióra, így mostantól lehet küldeni a jelentéseket mindenféle fellelt hibáról. Ehhez kérjük használja a <a href="http://bugs.frugalware.org">Hibakövető rendszerünket</a>. Jelenleg is van pár ismert hiba, amit megpróbálunk minél hamarabb javítani. Ezek a következőek:<br />
+    <content><![CDATA[
+      Minden GNOME csomag frissítve lett 2.15 -ös verzióra, így mostantól lehet küldeni a jelentéseket mindenféle fellelt hibáról. Ehhez kérjük használja a <a href="http://bugs.frugalware.org">Hibakövető rendszerünket</a>. Jelenleg is van pár ismert hiba, amit megpróbálunk minél hamarabb javítani. Ezek a következőek:<br />
       <ul>
         <li>Gaim SIGABRT szignált kap, ha új account -ot veszünk fel</li>
         <li>Banshee Segmentation Fault (szegmentációs hiba) induláskor</li>
@@ -566,9 +665,9 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
     <title>Gnome és GTK probémák -current ágban</title>
     <date>Tue Jul  8 17:03:46 CEST 2006</date>
     <author>IroNiQ</author>
-		<content><![CDATA[
-			Igen, tudjuk, hogy a Gnome és a GTK -s programok hibásan működnek a -current ágban.<br /><br />
-			Mindez azért van, mert egyrészt frissítettünk GTK 2.10 -re, másrészt frissítjük a Gnome -ot a fejlesztői változatra (az okok a frugalware-devel levelezőlista archívumában olvashatók). Kérjük, hogy legyen kicsit türelemmel, amíg lezajlik ez a dolog. Az eredmény remélhetőleg egy gyorsabb és szebb Gnome lesz. Mindenképpen jelezni fogjuk, ha a frissítési procedúra lezajlott és lehet küldeni hibajelentéseket a fellelt problémákról.<br /><br />
+    <content><![CDATA[
+      Igen, tudjuk, hogy a Gnome és a GTK -s programok hibásan működnek a -current ágban.<br /><br />
+      Mindez azért van, mert egyrészt frissítettünk GTK 2.10 -re, másrészt frissítjük a Gnome -ot a fejlesztői változatra (az okok a frugalware-devel levelezőlista archívumában olvashatók). Kérjük, hogy legyen kicsit türelemmel, amíg lezajlik ez a dolog. Az eredmény remélhetőleg egy gyorsabb és szebb Gnome lesz. Mindenképpen jelezni fogjuk, ha a frissítési procedúra lezajlott és lehet küldeni hibajelentéseket a fellelt problémákról.<br /><br />
       ]]>
     </content>
   </post>
@@ -577,811 +676,811 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
     <title>Újdonságok a honlapon</title>
     <date>Tue Jul  7 21:11:32 CEST 2006</date>
     <author>IroNiQ</author>
-		<content><![CDATA[
-			Meglepő módon, mióta az új honlap megjelent, csak 1 bugreport volt a csomagok résznél. Így most nekiállhatunk egy pár érdekes dolgot megvalósítani. AlexExtrem írt egyfajta robotot, mely automatikusan postázza az oldalon megjelent új híreket a frugalware-announce listára. Ez a darcs post-hook -nak köszönhető, tehát ha valaki módosítást küld be a honlaphoz, ez a szkript ellenőrzi az új híreket. Kérjük, hogy ha hibát talál, jelezze a felénk ezt.<br />
-			<br />
+    <content><![CDATA[
+      Meglepő módon, mióta az új honlap megjelent, csak 1 bugreport volt a csomagok résznél. Így most nekiállhatunk egy pár érdekes dolgot megvalósítani. AlexExtrem írt egyfajta robotot, mely automatikusan postázza az oldalon megjelent új híreket a frugalware-announce listára. Ez a darcs post-hook -nak köszönhető, tehát ha valaki módosítást küld be a honlaphoz, ez a szkript ellenőrzi az új híreket. Kérjük, hogy ha hibát talál, jelezze a felénk ezt.<br />
+      <br />
       ]]>
     </content>
   </post>
-	<post>
-		<id>37</id>
-		<title>Új Frugalware honlap!</title>
-		<date>Tue Jun 20 09:22:37 CEST 2006</date>
-		<author>IroNiQ</author>
-		<content><![CDATA[
-			Üdvözöljük a megújult Frugalware honlapon. Az oldal teljesen újra lett írva, rengeteg újdonságot felhasználva: táblázatmentes dizájn, XML alapú adattárolás és könnyű fordítási lehetőség a gettext() segítségével. Ha szeretne segíteni az oldal lefordításában, akkor kérem küldjön levelet a frugalware-devel levelezőlistára (angol nyelvű lista). Ha valamilyen hibát talál az oldalon, akkor azt a <a href="http://bugs.frugalware.org">megszokott helyen</a> teheti meg.
-			]]>
-		</content>
-	</post>
-	<post>
-		<id>36</id>
-		<title>Ati és nVidia bináris driver nem működik a -current ágban</title>
-		<date>Tue Jun 20 09:10:57 CEST 2006</date>
-		<author>IroNiQ</author>
-		<content><![CDATA[
-			Akik a bináris Ati vagy nVidia drivert használnak a current ágban, valószínűleg tapasztalták, hogy bizonyos dolgok nem működnek. Ennek oka az, hogy frissítettünk Xorg 7.1 -re. A tünet: nem látszódnak a fontok a képernyőn. Amíg nem adnak ki újabb változatot a bináris driverekből, kettő megoldást tudunk ajánlani: vagy a régebbi, Xorg 7.0 -s csomagok visszarakása, vagy ideiglenesen visszatérni a nyílt forrású driverekhez a /etc/X11/Xorg.conf fájlban (ati vagy nv). Megjegyzés: a Frugalware 0.5pre1 nem érintett mindaddig, amíg nincs frissítés.
-			]]>
-		</content>
-	</post>
-	<post>
-		<id>35</id>
-		<title>Megjelent a Frugalware 0.5pre1-i686</title>
-		<date>Mon May 29 21:39:21 CEST 2006</date>
-		<author>Boobaa</author>
-		<content><![CDATA[
-			</p><div align="left">A Frugalware Fejlesztői Csapat örömmel jelenti be a Frugalware 0.5pre1-i686-ot, mint a 0.5-ös verzió első előzetes változatát.
-			Egy rövid és nem teljes lista az előző (0.4) verzió óta történt változásokról:
-			<ul><li>Frissítve:
-				<ul><li>GNU C Library 2.4
-				</li><li>GCC 4.1.0
-				</li><li>KDE 3.5.2
-				</li><li>több mint 300 új csomag</li></ul>
-			</li><li>Új eszközök:
-				<ul><li><a href="http://darcs.frugalware.org/repos/frugalwareutils/setup.png">új eszköz setup néven</a>, amely összefogja az elérhető beállító eszközöket
-				</li><li>lokalizált csomagkezelő (jelenleg német és magyar)
-				</li><li>a telepítőben új fordítások (brazil, indonéz)</li></ul>
-			</li><li>Ismert problémák:
-				<ul><li>a dvd iso csak dual-layer lemezre fér rá</li></ul>
-			</li><li>A changelog <a href="http://darcs.frugalware.org/darcsweb/darcsweb.cgi?r=frugalware-current;a=log">itt</a></li></ul>
-			<p>
-			Letöltés i686-ra: <a href="download.php?url=frugalware-current-iso/frugalware-0.5pre1-i686-net.iso">netinstall</a> (27M), <a href="download.php?url=frugalware-current-iso/frugalware-0.5pre1-i686-cd1.iso">cd1</a> (471M), <a href="download.php?url=frugalware-current-iso/frugalware-0.5pre1-i686-cd2.iso">cd2</a> (651M), <a href="download.php?url=frugalware-current-iso/frugalware-0.5pre1-i686-dvd.iso">dvd</a> (4.8G)</p><p>
-			SHA1SUMok:<br>
-			<tt>8cc23502d6ed87b1744f31de676d782793449d74  frugalware-0.5pre1-i686-cd1.iso<br>
-			c3f7e39c9f3c3ca09efd7f635f2fa60cce7df337  frugalware-0.5pre1-i686-cd2.iso<br>
-			4ea37741a1d614d627ff28009ee9c44beaca24bf  frugalware-0.5pre1-i686-dvd.iso<br>
-			87fc8dc2102cc365ead513b9a4640c3377170ec9  frugalware-0.5pre1-i686-net.iso</tt>
-			</div><p>
-			]]>
-		</content>
-	</post>
-	<post>
-		<id>34</id>
-		<title>Megjelent a Frugalware 0.4-i686 és -x86_64</title>
-		<date>Tue Mar 30 08:13:21 CEST 2006</date>
-		<author>Boobaa</author>
-		<content><![CDATA[
-			</p><div align="left">A Frugalware Fejlesztői Csapat örömmel jelenti be a Frugalware 0.4-i686-ot és -x86_64-et, negyedik stabil kiadásunkat.
-			Egy rövid és nem teljes lista az előző verzió óta történt változásokról:
-			<ul><li>Frissítések:
-			        <ul><li>Frissítés Linux 2.6.16-ra
-			        </li><li>Frissítés GNOME 2.14-re
-			        </li><li>Frissítés OpenOffice.org 2.0.2.1-re
-			        </li><li>Rengeteg apró hibajavítás
-			        </li><li>Készítettünk egy <a href="http://wiki.frugalware.org/Upgrade-0.3-0.4">howto-t</a> az előző stabil kiadásról történő frissítésről</li></ul>
-			</li><li>Néhány statisztikai adat a 0.3 óta:
-			        <ul><li>4186 változás
-			        </li><li>732 új csomag
-			        </li><li>302 kijavított hiba</li></ul>
-			</li><li>Az előzetes kiadások változásait nem követők számára a legfontosabbak változások a következők:
-			        <ul><li>Készítettünk egy új fwcpan nevű eszközt bármely CPAN modul telepítéséhez, éppen úgy, mintha a pacman használatával tennénk.
-			        </li><li>Szétdaraboltuk az OpenOffice.orgot, így minden nyelvi csomag és szótár önállóan telepíthető/eltávolítható.
-			        </li><li>Saját igényeink szerint libesítettük a pacmant, valamint az új pacman 3 lett az alap csomagkezelőnk.
-			        </li><li>A hálózati beállítót újraterveztük, már több hálózati profilt és még több hálózati paramétert (MAC cím, több IP cím ugyanarra a kártyára, stb.) támogat.
-			        </li><li>Új, bőbeszédűbb dokumentációt készítettünk.
-			        </li><li>Mostantól az udev látja el a hotplug feladatát.
-			        </li><li>Hibajavítás: már automatikusan csatolódnak az USB pendrive-ok is, nem csak a CD-k és a DVD-k.
-			        </li><li>Csomagszétválasztás támogatása: egy forrásból egyszerre több csomag készíthető.
-			        </li><li>Elkezdtük a portolást PPC platformra.
-			        </li><li>A telepítő teljes újraírása C-ben. Az új keretrendszer lehetővé teszi a grafikus telepítő kivitelézését is.
-			        </li><li>Az init script rendszert átterveztük: felhasználóbarátabb hibaüzenetek, a fordításokhoz immár gettextet használatával.
-			        </li><li>Modularizált Xorg 7.0, Apache 2.2.0, KDE 3.5.1, Firefox 1.5.0.1, Thunderbird 1.5</li></ul></li></ul>
-			Bővebb információért tekintse meg a Frugalware Változások listáját (<a href="http://darcs.frugalware.org/darcsweb/darcsweb.cgi?r=frugalware-stable;a=log">Stable ChangeLog</a>).<p>
-			Letöltés i686-ra: <a href="download.php?url=frugalware-0.4-iso/frugalware-0.4-i686-net.iso">netinstall</a> (19M), <a href="download.php?url=frugalware-0.4-iso/frugalware-0.4-i686-cd1.iso">cd1</a> (490M), <a href="download.php?url=frugalware-0.4-iso/frugalware-0.4-i686-cd2.iso">cd2</a> (604M), <a href="download.php?url=frugalware-0.4-iso/frugalware-0.4-i686-dvd.iso">dvd</a> (3.5G)</p><p>
-			Letöltés x86_64-re: <a href="download.php?url=frugalware-0.4-iso/frugalware-0.4-x86_64-net.iso">netinstall</a> (19M), <a href="download.php?url=frugalware-0.4-iso/frugalware-0.4-x86_64-dvd.iso">dvd</a> (2.5G)</p><p>
-			Torrentek is <a href="http://linuxtracker.org/index.php?cat=146">elérhetők</a>.</p><p>
-			SHA1SUMok:
-			<tt>dfec06c393187037a362f4d2e57819c4e97e71dd  frugalware-0.4-i686-cd1.iso<br>
-			09c29ec582eadc02dee2be0fd1230cff8ec40695  frugalware-0.4-i686-cd2.iso<br>
-			872912bc9f1caa46895247364bcf7538074f8238  frugalware-0.4-i686-dvd.iso<br>
-			6a1a49985450d2cad8c8efb7f988c266a454f899  frugalware-0.4-i686-net.iso<br>
-			81e79a3bbb9d327555d272d841e3d0fc0c784de7  frugalware-0.4-x86_64-dvd.iso<br>
-			d4b39dbdc9bfadaf379bf7cc3662ce9d0b20a010  frugalware-0.4-x86_64-net.iso</tt>
-			</div><p>
-			]]>
-		</content>
-	</post>
-	<post>
-		<id>32</id>
-		<title>Megjelent a Frugalware 0.4rc1-i686</title>
-		<date>2006. már.  2., csütörtök, 08.09.49 CET</date>
-		<author>IroNiQ</author>
-		<content><![CDATA[
-			</p><div align="left">A Frugalware Fejlesztői Csapat örömmel jelenti be a Frugalware 0.4rc1-i686-ot, mint a 0.4-es verzió első, kiadásra jelölt változatát.
-			Egy rövid és nem teljes lista az előző verzió óta történt változásokról:
-			<ul><li>Újdonságok:
-				<ul><li>Új szinkronizációs kliens és démon (syncpkg és syncpkgd) készült, hogy az architektúrák (i686, x86_64 és később ppc) között sokkal gyorsabb lehessen a csomagok frissítése.
-				</li><li>fwcpan: új eszköz cpan modulok telepítéséhez, pont úgy, mintha pacman -nel lennének telepítve.
-				</li><li>Az OpenOffice.org szét lett darabolva, mostantól minden nyelvi csomag és szótár külön csomagként telepíthető/eltávolítható.
-				</li><li>Több, mint 80 új csomag: Xgl (egy <a href="http://wiki.frugalware.org/Xgl">lépésről lépésre</a> leírással), beagle, fvwm-crystal, cdcat, klamav, kcheckgmail, xvidcap, synaptics, rt2500, rdiff-backup és még sok egyéb!</li></ul>
-			</li><li>Frissítések: Mint az már megszokott, a Frugalware a legújabb stabil verziókat szállitja, mint például:
-				<ul><li>Linux kernel 2.6.15.4
-				</li><li>Perl 5.8.8
-				</li><li>Firefox 1.5.0.1
-				</li><li>Thunderbird 1.5
-				</li><li>KDE 3.5.1
-				</li><li>GNOME 2.12.3</li></ul></li></ul>
-			Bővebb információért tekintse meg a Frugalware Változások listáját (<a href="http://darcs.frugalware.org/darcsweb/darcsweb.cgi?r=frugalware-current;a=log">ChangeLog</a>).<p>
-			Letöltés: <a href="download.php?url=frugalware-current-iso/frugalware-0.4rc1-i686-net.iso">netinstall</a> (19M), <a href="download.php?url=frugalware-current-iso/frugalware-0.4rc1-i686-cd1.iso">cd1</a> (494M), <a href="download.php?url=frugalware-current-iso/frugalware-0.4rc1-i686-cd2.iso">cd2</a> (605M), <a href="download.php?url=frugalware-current-iso/frugalware-0.4rc1-i686-dvd.iso">dvd</a> (3.2G)</p><p>
-			SHA1SUMok:
-			<tt>d686c6b9c34fc03acab6be99468a4fc3b5e5d294  frugalware-0.4rc1-i686-cd1.iso<br>
-			3f8f703d43a0f42bdb65d567c65840a6c14d4704  frugalware-0.4rc1-i686-cd2.iso<br>
-			96a7e8b3cb88caa552a40e87dd04c7c23667e985  frugalware-0.4rc1-i686-dvd.iso<br>
-			13f84d9fe9eedf197a146612244a8c3077dea5f0  frugalware-0.4rc1-i686-net.iso</tt>
-			</div><p>
-			]]>
-		</content>
-	</post>
-	<post>
-		<id>31</id>
-		<title>Megjelent a Frugalware 0.4pre2-i686</title>
-		<date>2006. feb.  2., csütörtök, 08.18.52 CET</date>
-		<author>IroNiQ</author>
-		<content><![CDATA[
-			</p><div align="left">A Frugalware Fejlesztői Csapat örömmel jelenti be a Frugalware 0.4pre2-i686-ot, mint a 0.4-es verzió második technikai kiadását.
-			Egy rövid és nem teljes lista az előző verzió óta történt változásokról:
-			<ul><li>Újdonságok:
-				<ul><li>Saját igényeink szerint libesített <a href="http://www.archlinux.org/pacman/">pacman</a>, valamint új <a href="http://darcs.frugalware.org/darcsweb/darcsweb.cgi?r=pacman">pacman 3</a>, mely az alap csomagkezelőnk lett.
-				</li><li>A hálózati beállítót újraterveztük, már több hálózati profilt és még több hálózati paramétert (MAC cím, több IP cím ugyanarra a kártyára, stb.) támogat.
-				</li><li>Új, bővebb <a href="http://frugalware.org/docs.php">dokumentáció</a>.
-				</li><li>Mostantól az udev látja el a hotplug feladatát.
-				</li><li>Hibajavítás: már automatikusan csatolódnak az USB pendrive-ok is, nemcsak a CD-k és a DVD-k.
-				</li><li>Több, mint 100 új csomag - kliens oldalon: wepdecrypt, konversation, ltp, gtkpod, firefox kiterjesztések, stb.
-				</li><li>Új, szerver-oldali csomagok: xen (dom0 és domU kernellel), darcsweb, rails, perl modulok és még sok más!</li></ul>
-			</li><li>A színfalak mögött:
-				<ul><li>Csomagszétválasztás támogatása: egy forrásból egyszerre több csomag készíthető.
-				</li><li>Elkezdtük a portolást PPC platformra.</li></ul>
-			</li><li>Frissítések: Mint az már megszokott, a Frugalware a legújabb stabil verziókat szállítja, mint például:
-				<ul><li>Linux kernel 2.6.15
-				</li><li>Modularizált Xorg 7.0
-				</li><li>Apache 2.2.0</li></ul></li></ul>
-			Bővebb információért tekintse meg a Frugalware Változások listáját (<a href="http://darcs.frugalware.org/darcsweb/darcsweb.cgi?r=frugalware-current;a=log">ChangeLog</a>).<p>
-			Letöltés: <a href="download.php?url=frugalware-current-iso/frugalware-0.4pre2-i686-net.iso">netinstall</a> (19M), <a href="download.php?url=frugalware-current-iso/frugalware-0.4pre2-i686-cd1.iso">cd1</a> (491M), <a href="download.php?url=frugalware-current-iso/frugalware-0.4pre2-i686-cd2.iso">cd2</a> (694M), <a href="download.php?url=frugalware-current-iso/frugalware-0.4pre2-i686-dvd.iso">dvd</a> (3.1G)</p><p>
-			SHA1SUMok:
-			<tt>c1f5ab83d14f95247f7e3c6ddfd2f1ffc7125551  frugalware-0.4pre2-i686-cd1.iso<br>
-			def8069198c08cc208c075f3803581ea8b7ef7d1  frugalware-0.4pre2-i686-cd2.iso<br>
-			df8f2ff8f5f6f2b20fa2018bf18a863227769028  frugalware-0.4pre2-i686-dvd.iso<br>
-			8f9ada32b3f37a3a4dd790335df20b347b66df79  frugalware-0.4pre2-i686-net.iso</tt>
-			</div><p>
-			]]>
-		</content>
-	</post>
-	<post>
-		<id>30</id>
-		<title>Megjelent a Frugalware 0.4pre1-i686</title>
-		<date>Wed Dec  9 23:18:30 CET 2005</date>
-		<author>Boobaa</author>
-		<content><![CDATA[
-			</p><div align="left">A Frugalware Fejlesztői Csapat örömmel jelenti be a Frugalware 0.4pre1-i686-ot, mint a 0.4-es verzió első technikai kiadását.
-			Egy rövid és nem teljes lista a változásokról a 0.3-i686 óta:
-			<ul><li>Újdonságok:
-				<ul><li>A telepítő teljes újraírása C-ben. Az új keretrendszer lehetővé teszi a grafikus telepítő kivitelézését is.
-				</li><li>Sok új lehetőség a telepítőben, például szakértő és normál mód, a (nem fatális) hibák kihagyásával.
-				</li><li>Sok új fordítás került be a telepítőbe.
-				</li><li>Az init script rendszert átterveztük: felhasználóbarátabb hibaüzenetek, a fordításokhoz immár gettextet használatával.
-				</li><li>Több, mint 100 új csomag: treewm, octave, toolame, mingw, ddd, tellico és sok más!</li></ul>
-			</li><li>Frissítések: Mint az már megszokott, a Frugalware a legújabb stabil verziókat szállítja, mint például:
-				<ul><li>Linux kernel 2.6.14.3
-				</li><li>KDE 3.5.0
-				</li><li>Firefox 1.5
-				</li><li>GCC 4.0.2
-				</li><li>GNU C Library 2.3.6
-				</li><li>GNOME 2.12.2</li></ul></li></ul>
-			Bővebb információért tekintse meg a Frugalware Változások listáját (<a href="http://darcs.frugalware.org/darcsweb/darcsweb.cgi?r=frugalware-current;a=log">Changelog</a>).<p>
-			Letöltés: <a href="download.php?url=frugalware-current-iso/frugalware-0.4pre1-i686-net.iso">netinstall</a> (20M), <a href="download.php?url=frugalware-current-iso/frugalware-0.4pre1-i686-cd1.iso">cd1</a> (473M), <a href="download.php?url=frugalware-current-iso/frugalware-0.4pre1-i686-cd2.iso">cd2</a> (650M), <a href="download.php?url=frugalware-current-iso/frugalware-0.4pre1-i686-dvd.iso">dvd</a> (2.9G)</p><p>
-			SHA1SUMok:
-			<tt>10cc34847b8a4b9f6b83dad3d437cbed6898e436  frugalware-0.4pre1-i686-cd1.iso<br>
-			32bcca919a1cbdafd673f8f64300a8ad480df12c  frugalware-0.4pre1-i686-cd2.iso<br>
-			8ae11f0cd5a8afd3b505e129788bf7a1943afaaf  frugalware-0.4pre1-i686-dvd.iso<br>
-			4517c1c2bf790cd492e45b04f1c78e986d9719f1  frugalware-0.4pre1-i686-net.iso</tt>
-			</div><p>
-			]]>
-		</content>
-	</post>
-	<post>
-		<id>29</id>
-		<title>Megjelent a Frugalware 0.3-x86_64</title>
-		<date>2005. okt. 19., szerda, 19.04.29 CEST</date>
-		<author>IroNiQ</author>
-		<content><![CDATA[
-			</p><div align="left">Örömmel jelentjük be a Frugalware 0.3 x86_64 portjának azonnali elérhetőségét.
-			A Frugalware 0.3-x86_64 a Frugalware teljes portja, majdnem az összes csomaggal, ami az i686 változatban található.
-			Jelenleg mi nem müködik?
-				<ul><li>OpenOffice.org
-				</li><li>Hivatalos flash plugin (Macromedia-féle)
-				</li><li>Dosemu</li></ul>
-			Ha teheted, kérjük, teszteld. Ha hibát találsz, jelentsd <a href="http://bugs.frugalware.org">nekünk</a>. Kérünk, minél több részletet adj meg a hibabejelentésben! Köszönjük.
-			<b>Fontos:</b> AMD64 processzorra lesz szükséged a 0.3-x86_64 használatához! (Lehetséges, hogy EM64T kiterjesztésű Intel processzorok is működnek, de ezeket nem teszteltük.)<p>
-			Letöltés: <a href="download.php?url=frugalware-0.3-iso/frugalware-0.3-x86_64-net.iso">netinstall</a> (19M), <a href="download.php?url=frugalware-0.3-iso/frugalware-0.3-x86_64-cd1.iso">cd1</a> (492M), <a href="download.php?url=frugalware-0.3-iso/frugalware-0.3-x86_64-cd2.iso">cd2</a> (593M), <a href="download.php?url=frugalware-0.3-iso/frugalware-0.3-x86_64-dvd.iso">dvd</a> (2.0G)<p>
-			SHA1SUMok:
-			<tt>4b3c84723e54e98300b1133413fa2e987c08c2eb  frugalware-0.3-x86_64-cd1.iso<br>
-			e7c28286e9cd819f1eef596000e8902fd10a1932  frugalware-0.3-x86_64-cd2.iso<br>
-			1a78fdfde3dd83b844d44dd5e687e494029b77ec  frugalware-0.3-x86_64-dvd.iso<br>
-			95cf37d80902ad323722b3a0d709fb91de7b11c6  frugalware-0.3-x86_64-net.iso</tt>
-			</div><p>
-			]]>
-		</content>
-	</post>
-	<post>
-		<id>28</id>
-		<title>Megjelent a Frugalware 0.3-i686</title>
-		<date>2005. okt. 13., csütörtök, 09.30.48 CEST</date>
-		<author>IroNiQ</author>
-		<content><![CDATA[
-			</p><div align="left">A Frugalware Fejlesztői Csapat örömmel jelenti be a Frugalware 0.3-i686, a harmadik stabil kiadás azonnali elérhetőségét.
-			Íme egy rövid lista a 0.3rc2 óta történt legfontosabb változásokról:<ul><li>Újdonságok:
-				<ul><li>Spanyol nyelv támogatása telepítőben
-				</li><li>GNOME környezet frissítve 2.12.1 -re</li></ul>
-			</li><li>Frissítések: Mint az már megszokott, a Frugalware a legújabb stabil verziókat szállítja, mint például:
-				<ul><li>Linux kernel 2.6.13.3
-				</li><li>GCC 4.0.2
-				</li><li>Thunderbird 1.0.7</li></ul></li></ul>
-			Bővebb információért tekintse meg a Frugalware <a href="http://darcs.frugalware.org/darcsweb/darcsweb.cgi?r=frugalware-current;a=log">Változások listáját</a> (Changelog).<p>
-			Letöltés: <a href="download.php?url=frugalware-0.3-iso/frugalware-0.3-i686-net.iso">netinstall</a> (18M), <a href="download.php?url=frugalware-0.3-iso/frugalware-0.3-i686-cd1.iso">cd1</a> (488M), <a href="download.php?url=frugalware-0.3-iso/frugalware-0.3-i686-cd2.iso">cd2</a> (649M), <a href="download.php?url=frugalware-0.3-iso/frugalware-0.3-i686-dvd.iso">dvd</a> (2.7G)</p><p><br>
-			SHA1SUMok:
-			<tt>3538fe3f1d5151828cf1c9f7daff0ab8115a3ec7  frugalware-0.3-i686-cd1.iso<br>
-			fe942eecd83774eddb5d045e4d477e83ef485c24  frugalware-0.3-i686-cd2.iso<br>
-			fe2d52e2036bb258f5ec51730a07e49c9666edb0  frugalware-0.3-i686-dvd.iso<br>
-			b11a257a4e9f34fe292abbf7d22402b8b9a24199  frugalware-0.3-i686-net.iso</tt>
-			</div><p>
-			<div align="left"><b>Frissítés</b>: A CDk <a href="http://linuxtracker.org/torrents-details.php?id=681">elérhetőek</a> bittorrenten keresztül is.</div><p>
-			]]>
-		</content>
-	</post>
-	<post>
-		<id>27</id>
-		<title>Megjelent a Frugalware 0.3rc2-i686</title>
-		<date>2005. okt.  4., kedd, 09.20.51 CEST</date>
-		<author>IroNiQ</author>
-		<content><![CDATA[
-			</p><div align="left">A Frugalware Fejlesztői Csapat örömmel jelenti be a Frugalware 0.3rc2-i686 azonnali elérhetőségét, mely a második (és egyben remélhetőleg utolsó) kiadásra jelölt változata.
-			Egy rövid lista a legfontosabb változásokról, melyek a 0.3rc1 óta történtek:<ul><li>Újdonságok:
-				<ul><li>Telepítő: PPPoE támogatás, lengyel nyelv támogatása telepítőben, mostantól a teljes telepítési procedúra logja el van mentve a telepített rendszeren.
-				</li><li>Új wireless csomagok: madwifi, wlan-ng, stb...</li></ul>
-			</li><li>Csomag újdonságok: Több, mint 60 új csomag: gprsec, squid, privoxy, tor, weechat és még sok más!
-			</li><li>Frissítések: Mint az már megszokott, a Frugalware a legújabb stabil verziókat szállítja, mint például:
-				<ul><li>Linux kernel 2.6.13
-				</li><li>OpenOffice.org 1.1.5
-				</li><li>Firefox 1.0.7</li></ul></li></ul>
-			Bővebb információért tekintse meg a Frugalware <a href="http://darcs.frugalware.org/darcsweb/darcsweb.cgi?r=frugalware-current;a=log">Változások listáját</a> (Changelog).<p>
-			Letöltés: <a href="download.php?url=frugalware-current-iso/frugalware-0.3rc2-i686-net.iso">netinstall</a> (18M), <a href="download.php?url=frugalware-current-iso/frugalware-0.3rc2-i686-cd1.iso">cd1</a> (488M), <a href="download.php?url=frugalware-current-iso/frugalware-0.3rc2-i686-cd2.iso">cd2</a> (649M), <a href="download.php?url=frugalware-current-iso/frugalware-0.3rc2-i686-dvd.iso">dvd</a> (2.7G)</p><p><br>
-			SHA1SUMok:
-			<tt>1e647a622223383008b0d119b5ba745d8eba637f  frugalware-0.3rc2-i686-cd1.iso<br>
-			f68794f3c0d9151965ab46f83992c28932129c71  frugalware-0.3rc2-i686-cd2.iso<br>
-			e9ac4a6fb5d4c2ab9cad909b07222528ac972531  frugalware-0.3rc2-i686-dvd.iso<br>
-			7630567a25764113000f744a742e10a93cd2a7b5  frugalware-0.3rc2-i686-net.iso</tt>
-			</div><p>
-			]]>
-		</content>
-	</post>
-	<post>
-		<id>26</id>
-		<title>Megjelent a Frugalware 0.3rc1-i686</title>
-		<date>2005. sze. 15., csütörtök, 22.15.47 CEST</date>
-		<author>VMiklos</author>
-		<content><![CDATA[
-			</p><div align="left">A Frugalware Fejlesztői Csapat örömmel jelenti be a Frugalware 0.3rc1-i686 azonnali elérhetőségét, mely a 0.3-i686 stabil verzió első kiadásra jelölt változata.
-			Egy rövid lista a legfontosabb változásokról, melyek a 0.3pre2-i686 óta történtek:<ul><li>Újdonságok:
-				<ul><li>Telepítő: megjelent az XFS támogatás, valamint beállíthatjuk a telepítés forrását (telepítés saját tükörről vagy HDD-ről)
-				</li><li>Elkészültek a nyelvi csomagok a hunspellhez és az mbrolához.
-				</li><li>Új statisztikai programok: webalizer, munin, etc.
-				</li><li>Számos adesklet applet csomag jelent meg.</li></ul>
-			</li><li>Csomag újdonságok: Több, mint 120 új csomag: kdebluetooth, kismet, lives, fuse, muttng, amavisd-new és még sok más!
-			</li><li>Frissítések: Mint az megszokott, a Frugalware a legújabb stabil verziókat szállítja, mint például:
-				<ul><li>Linux kernel 2.6.13
-				</li><li>GNOME 2.12
-				</li><li>Gtk+ 2.8.3</li></ul></li></ul>
-			Bővebb információért tekinse meg a Frugalware <a href="http://darcs.frugalware.org/darcsweb/darcsweb.cgi?r=frugalware-current;a=log">Változások listáját</a> (Changelog).<p>
-			Letöltés: <a href="download.php?url=frugalware-current-iso/frugalware-0.3rc1-i686-net.iso">netinstall</a> (18M), <a href="download.php?url=frugalware-current-iso/frugalware-0.3rc1-i686-cd1.iso">cd1</a> (523M), <a href="download.php?url=frugalware-current-iso/frugalware-0.3rc1-i686-cd2.iso">cd2</a> (649M), <a href="download.php?url=frugalware-current-iso/frugalware-0.3rc1-i686-dvd.iso">dvd</a> (2.7G)</p><p>
-			SHA1SUMok:
-			<tt>9098d53612de87d7198390f46252db54b1289959  frugalware-0.3rc1-i686-cd1.iso<br>
-			4fbd648f02ca75dc20cbc12f3f7a969b10140b6c  frugalware-0.3rc1-i686-cd2.iso<br>
-			0008ce00fa4a68d53de71f9c19569d4fa664359f  frugalware-0.3rc1-i686-dvd.iso<br>
-			58f392f701560670192695e2add982fd16e08582  frugalware-0.3rc1-i686-net.iso</tt>
-			</div><p>
-			]]>
-		</content>
-	</post>
-	<post>
-		<id>25</id>
-		<title>Megjelent a Frugalware 0.3pre2-i686</title>
-		<date>2005. aug. 18., csütörtök, 07.13.14 CEST</date>
-		<author>VMiklos</author>
-		<content><![CDATA[
-			</p><div align="left">A Frugalware Fejlesztői Csapat örömmel jelenti be a Frugalware 0.3pre2-i686 azonnali elérhetőségét, mely a 0.3-i686 stabil verzió második előzetes változata.
-			Egy rövid lista a legfontosabb változásokról, melyek a 0.3pre1-i686 óta történtek:<ul><li>Újdonságok:
-				<ul><li>Az ivman leváltja a submount-ot, ami többé alapértelmezésben nem kerül telepítésre.
-				</li><li>Telepítő: a Frugalware mostantól szoftveres RAID partícióra is telepíthető.
-				</li><li>A telepítő mostantól franciául is használható.</li></ul>
-			</li><li>Csomag újdonságok: Több, mint 180 új csomag: abiword, nvu, ndiswrapper, kaffeine, chkrootkit és még sok más!
-			</li><li>Frissítés: Mint az megszokott, a Frugalware a legújabb stabil verziókat szállítja, mint például:
-				<ul><li>Linux kernel 2.6.12.4
-				</li><li>GCC 4.0.1
-				</li><li>HAL 0.5.3
-				</li><li>KOffice 1.4.1</li></ul></li></ul>
-			Bővebb információért tekinse meg a Frugalware <a href="changelog.php">Változások listáját</a> (Changelog).<p>
-			Letöltés: <a href="download.php?url=frugalware-current-iso/frugalware-0.3pre2-i686-net.iso">netinstall</a> (18M), <a href="download.php?url=frugalware-current-iso/frugalware-0.3pre2-i686-cd1.iso">cd1</a> (510M), <a href="download.php?url=frugalware-current-iso/frugalware-0.3pre2-i686-cd2.iso">cd2</a> (683M), <a href="download.php?url=frugalware-current-iso/frugalware-0.3pre2-i686-dvd.iso">dvd</a> (2.6G)</p><p>
-			MD5SUMok:
-			<tt>95f1920e936b016c4117908b1afcbc8b  frugalware-0.3pre2-i686-cd1.iso<br>
-			28643f599df88e72cf4830a6f5e533d2  frugalware-0.3pre2-i686-cd2.iso<br>
-			6466754fd31c3454e6f50bb848660828  frugalware-0.3pre2-i686-dvd.iso<br>
-			9f85841e54d326b97215cb164daebf54  frugalware-0.3pre2-i686-net.iso</tt>
-			</div><p>
-			]]>
-		</content>
-	</post>
-	<post>
-		<id>24</id>
-		<title>Megjelent a Frugalware 0.3pre1-x86_64</title>
-		<date>2005. júl. 3., vasárnap, 19.46.19 CEST</date>
-		<author>VMiklos</author>
-		<content><![CDATA[
-			</p><div align="left">Örömmel jelentjük be a Frugalware 0.3pre1 x86_64 portjának azonnali elérhetőségét.
-			A Frugalware 0.3pre1-x86_64 egy natív 64 bites rendszer, ami azt jelenti, hogy nem használunk multilibet. (Emiatt például a mi gplflash csomagunkat kell használnod a szokásos flashplugin helyett.)
-			Mi működik?
-				<ul><li>alaprendszer :-)
-				</li><li>a grafikus rendszer magja
-				</li><li>munkaasztali környezetek: KDE, Xfce és GNOME</li></ul>
-			Jelenleg mi nem működik?
-				<ul><li>OpenOffice.org (dolgozunk rajta és ígéretes eredményeink vannak)
-				</li><li>I18n: Firefox, Thunderbird, KOffice</li></ul>
-			Ha teheted, kérjük, teszteld. Ha hibát találsz, jelentsd <a href="mailto:frugalware-users@frugalware.org">nekünk</a>. Kérünk, minél több részletet adj meg a hibabejelentésben! Köszönjük.
-			<b>Fontos:</b> AMD64 processzorra lesz szükséged a 0.3pre1-x86_64 használatához! (Lehetséges, hogy EM64T kiterjesztésű Intel processzorok is működnek, de ezeket nem teszteltük.)<p>
-			Letöltés: <a href="download.php?url=frugalware-current-iso/frugalware-0.3pre1-x86_64-net.iso">netinstall</a> (17M), <a href="download.php?url=frugalware-current-iso/frugalware-0.3pre1-x86_64-cd1.iso">cd1</a> (495M), <a href="download.php?url=frugalware-current-iso/frugalware-0.3pre1-x86_64-cd2.iso">cd2</a> (578M), <a href="download.php?url=frugalware-current-iso/frugalware-0.3pre1-x86_64-dvd.iso">dvd</a> (1.7G)<p>
-			MD5SUMok:
-			<tt>78f35ff5a9389930781e626f91124637  frugalware-0.3pre1-x86_64-cd1.iso<br>
-			ed6ff1bc5033a715041a1b00b382a113  frugalware-0.3pre1-x86_64-cd2.iso<br>
-			4dd5391696395caa67206dc56cedf3ac  frugalware-0.3pre1-x86_64-dvd.iso<br>
-			3b9a75ec84c21af53e14cd2f500d318c  frugalware-0.3pre1-x86_64-net.iso</tt>
-			</div><p>
-			]]>
-		</content>
-	</post>
-	<post>
-		<id>23</id>
-		<title>Hírek a 0.3pre1-ről</title>
-		<date>2005. jún. 29., szerda, 09.57.27 CEST</date>
-		<author>VMiklos</author>
-		<content><![CDATA[
-			Egy új <a href="http://www.tuxmachines.org/node/1501">értékelés</a> jelent meg a Frugalware-ről a <a href="http://www.tuxmachines.org/">tuxmachines</a> oldalán. Az oldalon emellett 65 képernyőkép is <a href="http://www.tuxmachines.org/gallery/frugal">megtalálható</a>.
-			]]>
-		</content>
-	</post>
-	<post>
-		<id>22</id>
-		<title>Megjelent a Frugalware 0.3pre1-i686</title>
-		<date>2005. jún. 23., csütörtök, 10.22.34 CEST</date>
-		<author>IroNiQ</author>
-		<content><![CDATA[
-			</p><div align="left">A Frugalware Fejlesztői Csapat örömmel jelenti be a Frugalware 0.3pre1-i686 változatot, mely a 0.3-i686 stabil verzió első előzetes változata.
-			Egy rövid lista a legfontosabb változásokról, melyek a 0.2 óta történtek:<ul><li>Újdonságok:
-				<ul><li>Új eszköz: repoman. Segít csomagokat fordítani forrásból, engedélyezve olyan zárt forráskódú programok automatikus csomagolását és telepítését, mint például a realplayer vagy a skype (<tt>repoman merge csomag</tt>). Ezen kívül segít letölteni a programok csomagfordító szkriptjeit (<tt>repoman update</tt>) és újrafordítani "compile flag" -ekkel, mint ahogy az a Gentoo -ban is van.
-				</li><li>A csomagkészítő rendszerünk már nem csak egy architektúrát támogat. Ez azt jelenti, hogy nemsokára várható egy x86_64 (64bites Athlon processzorokra kiélezett) kiadás is.
-				</li><li>Minden csomag csoportokba lett szerverzve, így az alaprendszer telepítése után teljes csoportot is lehet telepíteni a <tt>pacman -S csoport</tt> paraccsal.
-				</li><li>Új konfigurációs eszköz: wificonfig. Vezetéknélküli hálózatot lehet vele beállítani Frugalware alatt.
-				</li><li>A KDE menü kicsit megváltozott: mostantól a legtöbb nem-KDE alkalmazásnak is látszódnia kell a menüben.
-				</li><li>A Thunderbird levelzőhöz elkészültek a nyelvi csomagok és helyesírásellenőrzők.
-				</li><li>A gimp-print nyomtató meghajtóprogramok le lett cserélve a foomatic programra, ami azt jelenti, hogy így több nyomtatót támogatunk mostantól.
-				</li><li>Elkészült a Rox desktop felületből is a csomag.
-				</li><li>Új <a href="http://frugalware.org/packages.php">webes felületet</a> és kibővített funkciókat kapott a csomagkereső (egyelőre a felület csak angol nyelven érhető el, lokalizáció folyamatban van).
-				</li><li>Mostantól minden csomagnak van changelog -ja, amit például a csomagkereső oldalról is el lehet érni.</li></ul>
-			</li><li>Csomag újdonságok: Több, mint 150 új csomag: windowmaker appletek, firestarter, pure-ftpd, subversion és még sok más.
-			</li><li>Frissítések: Mint az megszokott, a Frugalware a legújabb stabil verziókat szállítja, mint például:
-				<ul><li>Linux kernel 2.6.12
-				</li><li>GCC 3.4.4
-				</li><li>KDE 3.4.1</li></ul></li></ul>
-			Bővebb információért tekinse meg a <a href=changelog.php>Változások listáját</a> (Changelog).<p>
-			Letöltés: <a href="download.php?url=frugalware-current-iso/frugalware-0.3pre1-i686-net.iso">netinstall</a> (16M), <a href="download.php?url=frugalware-current-iso/frugalware-0.3pre1-i686-cd1.iso">cd1</a> (506M), <a href="download.php?url=frugalware-current-iso/frugalware-0.3pre1-i686-cd2.iso">cd2</a> (692M), <a href="download.php?url=frugalware-current-iso/frugalware-0.3pre1-i686-dvd.iso">dvd</a> (2.4G)</p><p>
-			MD5SUMok:
-			<tt>7e62e1aeb2a32f29edf26670f268bd63  frugalware-0.3pre1-i686-cd1.iso<br>
-			6ba2f51262fd81850a03c8c9603823af  frugalware-0.3pre1-i686-cd2.iso<br>
-			284386e5fcf062c4b71f9a72cd8f138f  frugalware-0.3pre1-i686-dvd.iso<br>
-			5066616ee44c8489b14a573cbaeba95b  frugalware-0.3pre1-i686-net.iso</tt>
-			</div><p>
-			]]>
-		</content>
-	</post>
-	<post>
-		<id>21</id>
-		<title>Újabb cikkek a nemzetközi online szaksajtóban</title>
-		<date>2005. jún. 12. 23:21:34 CEST</date>
-		<author>IroNiQ</author>
-		<content><![CDATA[
-			</p><div align="justify">Három újabb cikk jelent meg a Frugalware Linuxról az online internetes szakújságokban. Az első cikket Eduardo Romero írta, s a neves Newsforge oldalon jelent meg. A cikk elolvasható <a href="http://os.newsforge.com/os/05/06/03/2046247.shtml?tid=152&amp;tid=2">itt</a> (a cikk megjelent a Linux.com oldalon is, <a href="http://distrocenter.linux.com/distrocenter/05/06/03/2046259.shtml?tid=127">itt</a>). A másik kettő igazából a legutóbbi stabil változat, a 0.2 áttekintése, más-más szemszögből. Az <a href="http://www.linuxquestions.org/reviews/showproduct.php/product/565">egyik áttekintés</a> a <a href="http://www.linuxquestions.org">linuxquestions.org</a> oldalon, a <a href="http://www.distrotalk.net/cms_view_article.php?aid=4">másik</a> a <a href="http://www.distrotalk.net/">distrotalk.net</a> oldalon jelent meg. Köszönet a cikkek íróinak.</div><p>
-			]]>
-		</content>
-	</post>
-	<post>
-		<id>20</id>
-		<title>Cikkek a Frugalware Linuxról</title>
-		<date>2005. máj. 9. 21:39:32 CEST</date>
-		<author>IroNiQ</author>
-		<content><![CDATA[
-			</p><div align="justify">Megjelent 2 cikk a Frugalware Linuxról. Az első a <a href="http://www.jox.hu">jox.hu</a> oldalon, amely egy kis interjú Vajna Miklóssal, a projektvezetőnkkel. A cikk <a href="http://www.jox.hu/cikk/?id=141&amp;r=12">itt</a> olvasható. A másik a <a href="http://distrowatch.com">Distrowatch.com</a>-on jelent meg. Arról szól, hogy ezen a héten a Frugalware Linuxot választották a hét Linux disztribúciójává, bemutatva pár szóval, hogy milyen is. A cikk <a href="http://distrowatch.com/weekly.php?issue=20050509#fdow">itt</a> olvasható.<br>Köszönet a cikkíróknak.</div><p>
-			]]>
-		</content>
-	</post>
-	<post>
-		<id>19</id>
-		<title>Megjelent a Frugalware 0.2</title>
-		<date>2005. ápr. 28., csütörtök, 09.33.28 CEST</date>
-		<author>xbit</author>
-		<content><![CDATA[
-			</p><div align="left">A Frugalware Fejlesztői Csapat örömmel jelenti be a Frugalware Linux 0.2-es legújabb stabil kiadását.
-			A 0.2rc2-es kiadás óta történt fontosabb változások listája:<ul><li>Frissítések:
-				<ul><li>Mozilla Suite 1.7.7-re
-				</li><li>MPlayer 1.0pre7-re</li></ul>
-			</li><li>Új csomagok:
-				<ul><li>irda-utils (Infravörös kommunikációt megvalósító segédprogramok)
-				</li><li>frugalrledit (Futásszint kezelő)</li></ul>
-			</li><li>Hibajavítások:
-				<ul><li>binutils folt ami a szükségtelen as_needed könyvtárat mellőzi</li></ul></li></ul>
-			Bővebb információk a Frugalware <a href=changelog.php>ChangeLog</a>-ban találhatók.<p>
-			Letöltések: <a href="download.php?url=frugalware-0.2-iso/frugalware-0.2-net.iso">netinstall</a> (21M), <a href="download.php?url=frugalware-0.2-iso/frugalware-0.2-cd1.iso">cd1</a> (473M), <a href="download.php?url=frugalware-0.2-iso/frugalware-0.2-cd2.iso">cd2</a> (691M), <a href="download.php?url=frugalware-0.2-iso/frugalware-0.2-cd3.iso">cd3</a> (700M), <a href="download.php?url=frugalware-0.2-iso/frugalware-0.2-dvd.iso">dvd</a> (2.5G)</p><p>
-			MD5SUMS:
-			<tt>252b1b80a7dced637d581215ae8a5c0d  frugalware-0.2-cd1.iso<br>
-			626a429a63e9fa050feac480f03bb2f2  frugalware-0.2-cd2.iso<br>
-			396e4cb0ffe5e66803d609fe675b9615  frugalware-0.2-cd3.iso<br>
-			bb0e6b7ac803ff70553f497c91abd6f0  frugalware-0.2-dvd.iso<br>
-			537648812bed287fb3d23965c5f0a266  frugalware-0.2-net.iso</tt>
-			</div><p>
-			]]>
-		</content>
-	</post>
-	<post>
-		<id>18</id>
-		<title>Megjelent a Frugalware 0.2rc2</title>
-		<date>2005. ápr. 18., hétfő, 09.22.55 CEST</date>
-		<author>IroNiQ</author>
-		<content><![CDATA[
-			</p><div align="left">A Frugalware Fejlesztői Csapat örömmel jelenti, hogy megjelent a Frugalware 0.2rc2, a 0.2 stabil ág második (és egyben utolsó) kiadásra jelölt változata.
-			Íme egy rövid lista a 0.2rc1 óta bekerült legfontosabb javításokról és bugfixekről:<ul><li>Frissítések:
-				<ul><li>GNOME frissítve 2.10.1 verzióra
-				</li><li>Firefox (+ nyelvi csomagok) frissítve 1.0.3 verzióra
-				</li><li>Linux kernel frissítve 2.6.11.7 verzióra
-				</li><li>glibc frissítve 2.3.5 verzióra</li></ul>
-			</li><li>Új csomagok:
-				<ul><li>bk-client (A nyílt forrású BitKeeper kliens)
-				</li><li>xemacs (Egy jól testre szabható nyílt forrású text editor és programfejlesztői rendszer)
-				</li><li>raggle (Ruby nyelven írt konzolos RSS gyűjtő)
-				</li><li>lsof (Információt ad a Unix folyamatok által nyitva tartott fájlokról)</li></ul>
-			</li><li>Javítások:
-				<ul><li>mostantól a loop és az lp modulok automatikusan betöltődnek, tehát a /dev/loop* és a /dev/lp* eszközök a boot folyamat alatt létre lesznek hozva</li></ul>
-			</li><li>Telepítő:
-				<ul><li>folyamatjelző sáv mutatása letöltés közben - netinstall esetén
-				</li><li>ha valami hiba történik telepítés során, ENTER-t kell nyomni a telepítés folytatásához
-				</li><li>kérésre nem indul újra a gép sikeres telepítés után</li></ul></li></ul>
-			Bővebb információért nézze meg a Frugalware <a href=changelog.php>ChangeLog</a>-ot,
-			A Frugalware 0.2rc2 letölthető a <a href=download.php>letöltés</a> oldalról.</div><p>
-			]]>
-		</content>
-	</post>
-	<post>
-		<id>17</id>
-		<title>Megjelent a Frugalware 0.2rc1</title>
-		<date>2005. ápr.  7., csütörtök, 09.17.18 CEST</date>
-		<author>voroskoi</author>
-		<content><![CDATA[
-			</p><div align="left">A Frugalware Fejlesztői Csapat bejelenti a Frugalware Linux 0.2rc1 változatot, amely az első kiadásra jelölt verziója a jövendő 0.2 stabil kiadásnak.
-			Íme egy rövid lista a legfontosabb újdonságokról és hibajavításokról a 0.2pre2 óta:<ul><li>frissítések:
-				<ul><li>GNOME frissítve 2.10.0-ra
-				</li><li>KDE frissítve 3.4.0-ra
-				</li><li>Linux kernel frissítve 2.6.11-re
-				</li><li>Firefox (+nyelvi csomagok) és Thunderbird frissítve 1.0.2-re
-				</li><li>Xfce frissítve 4.2.1-re</li></ul>
-			</li><li>új csomagok:
-				<ul><li>új openoffice.org nyelvi csomagok
-				</li><li>új firefox nyelvi csomagok
-				</li><li>gnome-spell (Egy GNOME/Bonobo komponens helyesírás ellenőrzésre)
-				</li><li>wvdial (WVDial CLI tárcsázó)
-				</li><li>valknut (Direct Connect alapú linuxos fájlmegosztó program.)
-				</li><li>courier-imap (Courier IMAP és POP3 szerver)</li></ul>
-			</li><li>grafika:
-				<ul><li>új alapértelmezett kurzor és GNOME téma</li></ul>
-			</li><li>telepítő:
-				<ul><li>XDM beállítás támogatása (amennyiben nem telepít KDM-et vagy GDM-et)</li></ul></li></ul>
-			Bővebb információért tekintse meg a <a href=changelog.php>ChangeLog</a>-ot .
-			A Frugalware 0.2rc1 letölthető <a href=download.php>az itt található</a> oldalakról.</div><p>
-			]]>
-		</content>
-	</post>
-	<post>
-		<id>16</id>
-		<title>KDE 3.4.0 csomagok már a tükörszervereken</title>
-		<date>2005. már. 20., vasárnap, 23.30.16 CET</date>
-		<author>aThom</author>
-		<content><![CDATA[
-			</p><div align="left">Elkészültek a KDE 3.4.0 csomagok!
-			A bejelentés <a href="http://kde.org/announcements/announce-3.4.php">itt</a> tekinthető meg.
-			Az újdonságokról <a href="http://developer.kde.org/development-versions/kde-3.4-features.html">itt</a> lehet olvasni.
-			Változások a 3.3.2 verzióhoz képest:
-			<ul><li>Csoport válozások: Ha csak az alapvető csomagokat akarjuk telepíteni, használjuk a 'pacman -S kde-core'-t, ha egyéb kde csomagokat is(k3b, krusader, stb) akkor a 'pacman -S kde'-t.
-			</li><li>a kde-i18n csomagok az 'extra/locale' csoportba kerültek.</li></ul>
-			Új nyelvek:<blockquote>kde-i18n-br, kde-i18n-fy, kde-i18n-ga, kde-i18n-lt, kde-i18n-mk, kde-i18n-se</blockquote>
-			Eltávolított nyelvek:<blockquote>kde-i18n-af, kde-i18n-el, kde-i18n-fa, kde-i18n-gl, kde-i18n-hr, kde-i18n-mn, kde-i18n-ms, kde-i18n-uz, kde-i18n-zh_TW</blockquote>
-			Ismert hibák, javítanivalók:
-			<ul><li>Egy komoly hiba került a kontact/kmail-be, amelyet a KDE 3.4.0-es kiadásához képest túl későn találtak meg.
-			Töltsük le ezt: <a href="http://download.kde.org/stable/3.4/src/kdepim-fix-imap-resource-type.diff">kdepim-fix-imap-resource-type.diff</a> és foltozzuk meg a programot mielőtt használni kezdjük azt. Bővebben: <a href="http://kde.org/info/3.4.php">http://kde.org/info/3.4.php</a>
-			</li><li>Indítsuk el az OpenOffice.orgot. Ha a file menü alatt ha meg akarunk nyitni egy file-t, akkor a dialogusablak hamarosan eltűnik. Aztán a KDE Crashmanager a következő üzenetet jeleníti meg:
-			"The Program Openoffice (kdefilepicker) crash and send signal 11"
-			Már javítva van a az OOo2-es KDE buildekben. (bővebben: <a href="http://bugs.kde.org/show_bug.cgi?id=100849">http://bugs.kde.org/show_bug.cgi?id=100849</a>) Egy 'workaround' a KDE-től, hogy adjuk hozzá az alábbi sorokat a ~/.kde/share/config/kdeglobals file-hoz:
-			[Development]
-			AutoCheckAccelerators=false
-			</li><li>Akik frissítenek: a szokásos 'pacman -Syu' után, adjuk ki mégegyszer a 'pacman -S kdelibs kdebase' parancsot, ha nem teszünk így a KDE menüvel gondjaink lehetnek!
-			</ul></div><p>
-			]]>
-		</content>
-	</post>
-	<post>
-		<id>15</id>
-		<title>A GNOME 2.10.0 bekerült a -currentbe</title>
-		<date>2005. már. 14., hétfő, 15.20.02 CET</date>
-		<author>laci</author>
-		<content><![CDATA[
-			</p><div align="left">Ha minden jól megy holnap a tükrökön lesz a GNOME 2.10.0.
-			Hivatalos megjegyzések a kiadáshoz: <a href="http://www.gnome.org/start/2.10/notes/">http://www.gnome.org/start/2.10/notes/</a>
-			Nem tesztelt, átnézésre vagy frissítésre váró csomagok:
-			<ul><li>GNOME hozzárendelések.
-			</li><li>Mono.
-			</li><li>Néhány csomag az extra/gnome csoportban.</li></ul>
-			Változások a csomagolásban a 2.8-hoz képest:
-			<ul><li>/usr prefix.
-			</li><li>groups() direktíva hozzáadása azokhoz a csomagokhoz, ahol hiányzott.</li></ul>
-			Új csomagok:
-			<ul><li>gnome-backgrounds
-			</li><li>gnome-doc-utils
-			</li><li>gnome-menus
-			</li><li>gnome-pilot-conduits
-			</li><li>libcroco</li></ul>
-			Eltávolított csomagok (a pasturebe kerültek):
-			<ul><li>at-spi
-			</li><li>gnome-mag
-			</li><li>gnome-speech
-			</li><li>gnopernicus
-			</li><li>gok
-			</li><li>nautilus-media</li></ul>
-			Nem becsomagolt csomagok:
-			<ul><li>sound-juicer (szerintem a goobox sokkal jobb grabbelő alkalmazás)</li></ul>
-			Ismert "hibák" / javítandó dolgok:
-			<ul><li>Ha a KDE telepítve van, a GNOME menü helytelenül jelenik meg:
-			<a href="http://frugalware.org/~laci/screenshots/menu-bad.png">http://frugalware.org/~laci/screenshots/menu-bad.png</a>
-			Jó menü: <a href="http://frugalware.org/~laci/screenshots/menu-good.png">http://frugalware.org/~laci/screenshots/menu-good.png</a>
-			</li><li>Az OpenOffice.org menübejegyzések nem jelennek meg a GNOME menüben.</li></ul>
-			Képernyőképek:
-			<ul><li><a href="http://frugalware.org/~laci/screenshots/GNOME06.png">http://frugalware.org/~laci/screenshots/GNOME06.png</a>
-			</li><li><a href="http://frugalware.org/~laci/screenshots/GNOME07.png">http://frugalware.org/~laci/screenshots/GNOME07.png</a></li></ul>
-			A problémákat várom e-mailben, ha valami nem úgy működik, ahogy kellene.</div><p>
-			]]>
-		</content>
-	</post>
-	<post>
-		<id>14</id>
-		<title>Megjelent a Frugalware 0.2pre2</title>
-		<date>2005. feb. 23., szerda, 22.59.18 CET</date>
-		<author>IroNiQ</author>
-		<content><![CDATA[
-			</p><div align="left">A Frugalware Fejlesztői Csapat bejelenti a Frugalware Linux 0.2pre2 változatot, amely a második előzetese a jövendő 0.2 stabil verziónak.
-			Íme egy rövid lista a legfontosabb újdonságokról és hibajavításokról 0.2pre1 óta:<ul><li>új csomagok:
-				<ul><li>OpenOffice.org 1.1.4 + nyelvi csomagok
-				</li><li>frugalpkg (Grafikus frontend a pacmanhoz)
-				</li><li>gnomebaker (CD/DVD író GNOMEhoz)
-				</li><li>fglrx (Hardveres gyorsítással rendelkez. ATI driver)
-				</li><li>wireless_tools (beleértve az iwconfigot)
-				</li><li>audacity
-				</li><li>fontforge
-				</li><li>krusader
-				</li><li>qemu (Egy gyors processzor emulátor)
-				</li><li>rpm</li></ul>
-			</li><li>frissítések:
-				<ul><li>a GNOME frissítve 2.8.3-ra
-				</li><li>az Xfce frissítve 4.2.0-re
-				</li><li>az XOrg frissítve 6.8.2-re
-				</li><li>a tetex frissítve 3.0-ra
-				</li><li>a glibc frissítve 2.3.4-re</li></ul>
-			</li><li>javítások:
-				<ul><li>Az ablakkezelőkhöz hozzá lett adva a .desktop file, hogy együtt tudjanak működni a GDM-mel
-				</li><li>Magyar dokumentáció
-				</li><li>Szlovák telepítő és dokumentáció</li></ul>
-			</li><li>telepítő:
-				<ul><li>minimális, netről telepítő rendszer</li></ul></li></ul>
-			Bővebb információért olvassa el a Frugalware <a href=changelog.php>ChangeLog</a>-ot.
-			A Frugalware 0.2pre2 letölthető az <a href=download.php>ezen az oldalon</a> található helyekről.</div><p>
-			]]>
-		</content>
-	</post>
-	<post>
-		<id>13</id>
-		<title>OpenOffice.org a Frugalware-ben</title>
-		<date>2005. feb. 21., hétfő, 15.14.56 CET</date>
-		<author>IroNiQ</author>
-		<content><![CDATA[
-			Elkészült az openoffice.org csomag, mely a <a href="http://www.novell.com/linux/ximian.html">Ximian</a> <a href="http://www.openoffice.org/">OpenOffice.org</a> -ból lett készítve. A telepítendő csomag neve "openoffice.org", mely tartalmazza az angol nyelvű kezelőfelületet, az elválasztást, a szótárat és a thesaurus-t.
-			A nyelvi csomagok "openoffice.org-i18n-xx" néven érhetők el (ahol az xx az adott nyelv rövidítése, pl: hu, de, fr). Ezek tartalmazzák az adott nyelvhez tartozó szótárat, elválasztást és thesaurus-t.
-			IroNiQ
-			]]>
-		</content>
-	</post>
-	<post>
-		<id>12</id>
-		<title>Hivatalos fórum</title>
-		<date>2005. feb.  6., vasárnap, 19.46.21 CET</date>
-		<author>shrift</author>
-		<content><![CDATA[
-			Üdv! Végre van saját fórumunk, ami itt található meg: <a href="http://forums.frugalware.org/">forums.frugalware.org</a>!
-			Problémákat a <a href="mailto:shrift@frugalware.org">shrift@frugalware.org</a> címre, vagy az "<a href="http://forums.frugalware.org/index.php?t=thread&amp;frm_id=29">About The Forum</a>" témába várunk.
-			Shrift
-			]]>
-		</content>
-	</post>
-	<post>
-		<id>11</id>
-		<title>Webes irc hozzáférés és archívum</title>
-		<date>2005. jan. 20., csütörtök, 00.21.12 CET</date>
-		<author>IroNiQ</author>
-		<content><![CDATA[
-			Jó hírünk van azon felhasználóink számára, aki eddig nem tudtak (ilyen vagy olyan) okokból csatlakozni az irc csatornánkhoz: végre elkészült a webes frontend, így <a href="irc.php">ezen</a> a címen elérhetnek minket. Ugyanitt a csatorna logja is megtalálható.
-			]]>
-		</content>
-	</post>
-	<post>
-		<id>10</id>
-		<title>Fórum és jövendő újdonságok</title>
-		<date>2005. jan. 16., vasárnap, 21.58.22 CET</date>
-		<author>IroNiQ</author>
-		<content><![CDATA[
-			Örömmel értesítjük a magyar nyelvű felhasználóinkat, hogy a HUP jóvoltából mostmár fórumunk is van, amelyet <a href="http://hup.hu/modules.php?name=Forums&amp;file=viewforum&amp;f=56">ezen</a> a címen érhetnek el.
-			Továbbá a közeljövőben megjelenik a sajat fórumunk illetve a wiki oldal is.
-			Ezenkívül valószínűleg a jövő hét folyamán újabb nyelvvel bővül a Frugalware támogatása, amely a szlovák. A Frugalware Felhasználói Dokumentáció már elkészült szlovák nyelven (megtekinthető <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-current/docs/html/sk/">itt</a>), jelenleg a telepítő és a rendszerindító fordítása folyik.
-			]]>
-		</content>
-	</post>
-	<post>
-		<id>9</id>
-		<title>Megjelent a Frugalware 0.2pre1</title>
-		<date>2005. jan. 10., hétfő, 09.22.50 CET</date>
-		<author>IroNiQ</author>
-		<content><![CDATA[
-			</p><div align="left">A Frugalware Fejlesztői Csapat bejelenti a Frugalware Linux 0.2pre1 változatot, amely az első előzetese a jövendő 0.2 stabil verziónak.
-			Íme egy rövid lista a legfontosabb újdonságokról és hibajavításokról 0.1 óta:<ul><li>új csomagok:
-			        <ul><li>GNOME 2.8 (beleértve GDM)
-				</li><li>Xfce 4.2rc3
-			        </li><li>Firefox 1.0 nyelvi csomagok
-				</li><li>Thunderbird 1.0
-				</li><li>tetex-bin, tetex-base and kile
-				</li><li>wine
-				</li><li>reiser4progs
-				</li><li>fluxbox</li></ul>
-			</li><li>frissítések:
-			        <ul><li>KDE frissítve 3.3.2 verzióra (+ biztonsági javítások)
-				</li><li>KOffice frissítve 1.3.5 verzióra
-				</li><li>kernel frissítve 2.6.10 verzióra (+ biztonsági javítások)
-				</li><li>blender frissítve 2.36 verzióra
-				</li><li>Firefox frissítve 1.0 verzióra
-				</li><li>új bootsplash téma
-				</li><li>GTK+2 frissítve 2.6.1 verzióra
-				</li><li>GCC frissítve 3.4.3 verzióra</li></ul>
-			</li><li>javítások:
-			        <ul><li>mostantól a grafikus felület (XOrg) működik i810 grafikus vezérlővel
-				</li><li>grubconfig javítva, hogy ne adjon hibaüzenetet installálás előtti kilépéskor</li></ul>
-			</li><li>telepítő:
-			        <ul><li>az első CD kettő részre lett szedve: egyik az alaprendszer, a másik pedig a grafikus alrendszer (és a grafikus programok)
-				</li><li>sok memóriaszivárgás javítva lett, mostmár 64MB memóriával is működnie kell
-				</li><li>sok elírás javítva lett a telepítőben</li></ul></li></ul>
-			Bővebb információért olvassa el a Frugalware <a href="changelog.php">ChangeLog</a>-ot.
-			A Frugalware 0.2pre1 letölthető az <a href="download.php">ezen az oldalon</a> található helyekről.</div><p>
-			]]>
-		</content>
-	</post>
-	<post>
-		<id>8</id>
-		<title>Az XFce és a Firefox lokalizációs csomagok elérhetők a -current ágban</title>
-		<date>2004. dec. 30., csütörtök, 21.15.06 CET</date>
-		<author>IroNiQ</author>
-		<content><![CDATA[
-			</p><div align="left">Örömmel jelentjük be, hogy mától elérhető a régóta várt Xfce4 ablakkezelő, valamint az ehhez kapcsolódó, mindenféle extra szolgáltatást nyújtó bővítménycsomag, az xfce4-goodies. Ezeken kívül a Firefox böngészőhöz elérhetőek a nyelvi csomagok.
-			Telepítésük:
-			<ul><li>pacman -Sy (csomaglista szinkronizálása), majd ez után:
-			</li><li>xfce4: pacman -S xfce4
-			</li><li>xfce4-goodies: pacman -S xfce4-goodies
-			</li><li>Firefox nyelvi csomagok: pacman -S firefox-$lang (ahol $lang a nyelv kétbetűs jelölése, pl. hu, de, fr)</ul></div><p>
-			]]>
-		</content>
-	</post>
-	<post>
-		<id>7</id>
-		<title>Tervezett leállás</title>
-		<date>2004. nov. 16., kedd, 09.52.54 CET</date>
-		<author>VMiklos</author>
-		<content><![CDATA[
-			Ma, körülbelül 17 és 18 óta között (CET), a frugalware.org nem lesz elérhető. Ez minden szolgáltatást érint (www, ftp, rsync, mailman), a dns kivételével. Köszönjük a megértést.
-			]]>
-		</content>
-	</post>
-	<post>
-		<id>6</id>
-		<title>Új funkciók a weblapon</title>
-		<date>2004. nov. 14., vasárnap, 23.23.21 CET</date>
-		<author>IroNiQ</author>
-		<content><![CDATA[
-			Kettő új funkcióval gazdagodott a weboldalunk: az <a href=roadmap.php>útitervvel</a>, amelyből megtudható a kiadási ciklus, valamint a <a href=wishlist.php>kívánságlistával</a>, amelyre Ön is felírhatja a kedvenc programját, vagy <a href=todolist.php>megtekintheti</a>, mit kell még megtennünk.
-			]]>
-		</content>
-	</post>
-	<post>
-		<id>5</id>
-		<title>Frugalware 0.1 képes végigjárás az OSDirtől</title>
-		<date>2004. nov.  6., szombat, 22.35.40 CET</date>
-		<author>zleho</author>
-		<content><![CDATA[
-			Az OSDir egyik teszgépére feltelepítette Frugalware 0.1-et. A telepítés alatt készült 78 kép <a href="http://osdir.com/shots/slideshows/slideshow.php?release=169&amp;slide=1">itt</a> található.
-			]]>
-		</content>
-	</post>
-	<post>
-		<id>4</id>
-		<title>Megjelent a Frugalware 0.1</title>
-		<date>2004. nov.  2., kedd, 10.27.36 CET</date>
-		<author>zleho</author>
-		<content><![CDATA[
-			</p><div align="left">A Frugalware Fejlesztő Csapat bejelenti a Frugalware 0.1 verziót, amely az első stabil kiadásunk.
-			Egy rövid lista a valtozásokról a második kiadásra jelölt verzió (0.1rc2) óta:<ul><li>fejlesztések:
-				<ul><li>támogatás /boot külön partíción való használatának
-				</li><li>minden cserélhető média /mnt-ből /media-ba költözött
-				</li><li>KDE verzió frissítése 3.3.1-re</li></ul>
-			</li><li>új csomagok:
-				<ul><li>strace
-				</li><li>openbox, obconf és függőségeik
-				</li><li>irssi
-				</li><li>lmsensors
-				</li><li>nano
-				</li><li>hunspell
-				</li><li>screen
-				</li><li>centericq</li></ul>
-			</li><li>hibajavítások:
-				<ul><li>xdm működésre bírása</li></ul>
-			</li><li>telepítő:
-				<ul><li>ideiglenes-tárhely felszabadítás hibájának (csak ha első CD-ről települt a rendszer) javítása
-				</li><li>támogatás MS partíciók részletes információinak megjelenítéséhez
-				</li><li>mostantól rövid leírás érhető el a csomagokhoz
-				</li><li>USB billentyűzetek támogatása</li></ul></li></ul>
-			További információk a <a href=changelog.php>ChangeLog</a>-ban.
-			Frugalware 0.1 letölthető <a href=download.php>innen</a>.</div><p>
-			]]>
-		</content>
-	</post>
-	<post>
-		<id>3</id>
-		<title>Megjelent a Frugalware 0.1rc2</title>
-		<date>2004. okt. 11., hétfő, 15.40.13 CEST</date>
-		<author>IroNiQ</author>
-		<content><![CDATA[
-			A Frugalware Fejlesztő Csapat bejelenti a Frugalware 0.1rc2 verziót, amely a második kiadásra jelölt (Release Candidate) változata a 0.1-es kiadásnak.
-			Az újdonságok és javított hibák listáját (ChangeLog) megtekintheti <a href=changelog.php>itt</a>.
-			A Frugalware 0.1rc2 verzió letölthető <a href=download.php>innen</a>.
-			]]>
-		</content>
-	</post>
-	<post>
-		<id>2</id>
-		<title>Megjelent a Frugalware 0.1rc1</title>
-		<date>2004. sze. 29., szerda, 07.14.26 CEST</date>
-		<author>IroNiQ</author>
-		<content><![CDATA[
-			A Frugalware Fejlesztő Csapat bejelenti a Frugalware 0.1rc1 verziót, amely az első kiadásra jelölt (Release Candidate) változata a 0.1-es kiadásnak.
-			Az újdonságok és változások listáját (ChangeLog) megtekintheti <a href=changelog.php>itt</a>.
-			A Frugalware 0.1rc1 verzió letölthető <a href=download.php>innen</a>.
-			]]>
-		</content>
-	</post>
-	<post>
-		<id>1</id>
-		<title>Teszt üzenet</title>
-		<date>2004. sze. 13., hétfő, 13.53.37 CEST</date>
-		<author>VMiklos</author>
-		<content><![CDATA[
-			Úgy néz ki, műxik... ;-)
-			]]>
-		</content>
-	</post>
+  <post>
+    <id>37</id>
+    <title>Új Frugalware honlap!</title>
+    <date>Tue Jun 20 09:22:37 CEST 2006</date>
+    <author>IroNiQ</author>
+    <content><![CDATA[
+      Üdvözöljük a megújult Frugalware honlapon. Az oldal teljesen újra lett írva, rengeteg újdonságot felhasználva: táblázatmentes dizájn, XML alapú adattárolás és könnyű fordítási lehetőség a gettext() segítségével. Ha szeretne segíteni az oldal lefordításában, akkor kérem küldjön levelet a frugalware-devel levelezőlistára (angol nyelvű lista). Ha valamilyen hibát talál az oldalon, akkor azt a <a href="http://bugs.frugalware.org">megszokott helyen</a> teheti meg.
+      ]]>
+    </content>
+  </post>
+  <post>
+    <id>36</id>
+    <title>Ati és nVidia bináris driver nem működik a -current ágban</title>
+    <date>Tue Jun 20 09:10:57 CEST 2006</date>
+    <author>IroNiQ</author>
+    <content><![CDATA[
+      Akik a bináris Ati vagy nVidia drivert használnak a current ágban, valószínűleg tapasztalták, hogy bizonyos dolgok nem működnek. Ennek oka az, hogy frissítettünk Xorg 7.1 -re. A tünet: nem látszódnak a fontok a képernyőn. Amíg nem adnak ki újabb változatot a bináris driverekből, kettő megoldást tudunk ajánlani: vagy a régebbi, Xorg 7.0 -s csomagok visszarakása, vagy ideiglenesen visszatérni a nyílt forrású driverekhez a /etc/X11/Xorg.conf fájlban (ati vagy nv). Megjegyzés: a Frugalware 0.5pre1 nem érintett mindaddig, amíg nincs frissítés.
+      ]]>
+    </content>
+  </post>
+  <post>
+    <id>35</id>
+    <title>Megjelent a Frugalware 0.5pre1-i686</title>
+    <date>Mon May 29 21:39:21 CEST 2006</date>
+    <author>Boobaa</author>
+    <content><![CDATA[
+      </p><div align="left">A Frugalware Fejlesztői Csapat örömmel jelenti be a Frugalware 0.5pre1-i686-ot, mint a 0.5-ös verzió első előzetes változatát.
+      Egy rövid és nem teljes lista az előző (0.4) verzió óta történt változásokról:
+      <ul><li>Frissítve:
+        <ul><li>GNU C Library 2.4
+        </li><li>GCC 4.1.0
+        </li><li>KDE 3.5.2
+        </li><li>több mint 300 új csomag</li></ul>
+      </li><li>Új eszközök:
+        <ul><li><a href="http://darcs.frugalware.org/repos/frugalwareutils/setup.png">új eszköz setup néven</a>, amely összefogja az elérhető beállító eszközöket
+        </li><li>lokalizált csomagkezelő (jelenleg német és magyar)
+        </li><li>a telepítőben új fordítások (brazil, indonéz)</li></ul>
+      </li><li>Ismert problémák:
+        <ul><li>a dvd iso csak dual-layer lemezre fér rá</li></ul>
+      </li><li>A changelog <a href="http://darcs.frugalware.org/darcsweb/darcsweb.cgi?r=frugalware-current;a=log">itt</a></li></ul>
+      <p>
+      Letöltés i686-ra: <a href="download.php?url=frugalware-current-iso/frugalware-0.5pre1-i686-net.iso">netinstall</a> (27M), <a href="download.php?url=frugalware-current-iso/frugalware-0.5pre1-i686-cd1.iso">cd1</a> (471M), <a href="download.php?url=frugalware-current-iso/frugalware-0.5pre1-i686-cd2.iso">cd2</a> (651M), <a href="download.php?url=frugalware-current-iso/frugalware-0.5pre1-i686-dvd.iso">dvd</a> (4.8G)</p><p>
+      SHA1SUMok:<br>
+      <tt>8cc23502d6ed87b1744f31de676d782793449d74  frugalware-0.5pre1-i686-cd1.iso<br>
+      c3f7e39c9f3c3ca09efd7f635f2fa60cce7df337  frugalware-0.5pre1-i686-cd2.iso<br>
+      4ea37741a1d614d627ff28009ee9c44beaca24bf  frugalware-0.5pre1-i686-dvd.iso<br>
+      87fc8dc2102cc365ead513b9a4640c3377170ec9  frugalware-0.5pre1-i686-net.iso</tt>
+      </div><p>
+      ]]>
+    </content>
+  </post>
+  <post>
+    <id>34</id>
+    <title>Megjelent a Frugalware 0.4-i686 és -x86_64</title>
+    <date>Tue Mar 30 08:13:21 CEST 2006</date>
+    <author>Boobaa</author>
+    <content><![CDATA[
+      </p><div align="left">A Frugalware Fejlesztői Csapat örömmel jelenti be a Frugalware 0.4-i686-ot és -x86_64-et, negyedik stabil kiadásunkat.
+      Egy rövid és nem teljes lista az előző verzió óta történt változásokról:
+      <ul><li>Frissítések:
+              <ul><li>Frissítés Linux 2.6.16-ra
+              </li><li>Frissítés GNOME 2.14-re
+              </li><li>Frissítés OpenOffice.org 2.0.2.1-re
+              </li><li>Rengeteg apró hibajavítás
+              </li><li>Készítettünk egy <a href="http://wiki.frugalware.org/Upgrade-0.3-0.4">howto-t</a> az előző stabil kiadásról történő frissítésről</li></ul>
+      </li><li>Néhány statisztikai adat a 0.3 óta:
+              <ul><li>4186 változás
+              </li><li>732 új csomag
+              </li><li>302 kijavított hiba</li></ul>
+      </li><li>Az előzetes kiadások változásait nem követők számára a legfontosabbak változások a következők:
+              <ul><li>Készítettünk egy új fwcpan nevű eszközt bármely CPAN modul telepítéséhez, éppen úgy, mintha a pacman használatával tennénk.
+              </li><li>Szétdaraboltuk az OpenOffice.orgot, így minden nyelvi csomag és szótár önállóan telepíthető/eltávolítható.
+              </li><li>Saját igényeink szerint libesítettük a pacmant, valamint az új pacman 3 lett az alap csomagkezelőnk.
+              </li><li>A hálózati beállítót újraterveztük, már több hálózati profilt és még több hálózati paramétert (MAC cím, több IP cím ugyanarra a kártyára, stb.) támogat.
+              </li><li>Új, bőbeszédűbb dokumentációt készítettünk.
+              </li><li>Mostantól az udev látja el a hotplug feladatát.
+              </li><li>Hibajavítás: már automatikusan csatolódnak az USB pendrive-ok is, nem csak a CD-k és a DVD-k.
+              </li><li>Csomagszétválasztás támogatása: egy forrásból egyszerre több csomag készíthető.
+              </li><li>Elkezdtük a portolást PPC platformra.
+              </li><li>A telepítő teljes újraírása C-ben. Az új keretrendszer lehetővé teszi a grafikus telepítő kivitelézését is.
+              </li><li>Az init script rendszert átterveztük: felhasználóbarátabb hibaüzenetek, a fordításokhoz immár gettextet használatával.
+              </li><li>Modularizált Xorg 7.0, Apache 2.2.0, KDE 3.5.1, Firefox 1.5.0.1, Thunderbird 1.5</li></ul></li></ul>
+      Bővebb információért tekintse meg a Frugalware Változások listáját (<a href="http://darcs.frugalware.org/darcsweb/darcsweb.cgi?r=frugalware-stable;a=log">Stable ChangeLog</a>).<p>
+      Letöltés i686-ra: <a href="download.php?url=frugalware-0.4-iso/frugalware-0.4-i686-net.iso">netinstall</a> (19M), <a href="download.php?url=frugalware-0.4-iso/frugalware-0.4-i686-cd1.iso">cd1</a> (490M), <a href="download.php?url=frugalware-0.4-iso/frugalware-0.4-i686-cd2.iso">cd2</a> (604M), <a href="download.php?url=frugalware-0.4-iso/frugalware-0.4-i686-dvd.iso">dvd</a> (3.5G)</p><p>
+      Letöltés x86_64-re: <a href="download.php?url=frugalware-0.4-iso/frugalware-0.4-x86_64-net.iso">netinstall</a> (19M), <a href="download.php?url=frugalware-0.4-iso/frugalware-0.4-x86_64-dvd.iso">dvd</a> (2.5G)</p><p>
+      Torrentek is <a href="http://linuxtracker.org/index.php?cat=146">elérhetők</a>.</p><p>
+      SHA1SUMok:
+      <tt>dfec06c393187037a362f4d2e57819c4e97e71dd  frugalware-0.4-i686-cd1.iso<br>
+      09c29ec582eadc02dee2be0fd1230cff8ec40695  frugalware-0.4-i686-cd2.iso<br>
+      872912bc9f1caa46895247364bcf7538074f8238  frugalware-0.4-i686-dvd.iso<br>
+      6a1a49985450d2cad8c8efb7f988c266a454f899  frugalware-0.4-i686-net.iso<br>
+      81e79a3bbb9d327555d272d841e3d0fc0c784de7  frugalware-0.4-x86_64-dvd.iso<br>
+      d4b39dbdc9bfadaf379bf7cc3662ce9d0b20a010  frugalware-0.4-x86_64-net.iso</tt>
+      </div><p>
+      ]]>
+    </content>
+  </post>
+  <post>
+    <id>32</id>
+    <title>Megjelent a Frugalware 0.4rc1-i686</title>
+    <date>2006. már.  2., csütörtök, 08.09.49 CET</date>
+    <author>IroNiQ</author>
+    <content><![CDATA[
+      </p><div align="left">A Frugalware Fejlesztői Csapat örömmel jelenti be a Frugalware 0.4rc1-i686-ot, mint a 0.4-es verzió első, kiadásra jelölt változatát.
+      Egy rövid és nem teljes lista az előző verzió óta történt változásokról:
+      <ul><li>Újdonságok:
+        <ul><li>Új szinkronizációs kliens és démon (syncpkg és syncpkgd) készült, hogy az architektúrák (i686, x86_64 és később ppc) között sokkal gyorsabb lehessen a csomagok frissítése.
+        </li><li>fwcpan: új eszköz cpan modulok telepítéséhez, pont úgy, mintha pacman -nel lennének telepítve.
+        </li><li>Az OpenOffice.org szét lett darabolva, mostantól minden nyelvi csomag és szótár külön csomagként telepíthető/eltávolítható.
+        </li><li>Több, mint 80 új csomag: Xgl (egy <a href="http://wiki.frugalware.org/Xgl">lépésről lépésre</a> leírással), beagle, fvwm-crystal, cdcat, klamav, kcheckgmail, xvidcap, synaptics, rt2500, rdiff-backup és még sok egyéb!</li></ul>
+      </li><li>Frissítések: Mint az már megszokott, a Frugalware a legújabb stabil verziókat szállitja, mint például:
+        <ul><li>Linux kernel 2.6.15.4
+        </li><li>Perl 5.8.8
+        </li><li>Firefox 1.5.0.1
+        </li><li>Thunderbird 1.5
+        </li><li>KDE 3.5.1
+        </li><li>GNOME 2.12.3</li></ul></li></ul>
+      Bővebb információért tekintse meg a Frugalware Változások listáját (<a href="http://darcs.frugalware.org/darcsweb/darcsweb.cgi?r=frugalware-current;a=log">ChangeLog</a>).<p>
+      Letöltés: <a href="download.php?url=frugalware-current-iso/frugalware-0.4rc1-i686-net.iso">netinstall</a> (19M), <a href="download.php?url=frugalware-current-iso/frugalware-0.4rc1-i686-cd1.iso">cd1</a> (494M), <a href="download.php?url=frugalware-current-iso/frugalware-0.4rc1-i686-cd2.iso">cd2</a> (605M), <a href="download.php?url=frugalware-current-iso/frugalware-0.4rc1-i686-dvd.iso">dvd</a> (3.2G)</p><p>
+      SHA1SUMok:
+      <tt>d686c6b9c34fc03acab6be99468a4fc3b5e5d294  frugalware-0.4rc1-i686-cd1.iso<br>
+      3f8f703d43a0f42bdb65d567c65840a6c14d4704  frugalware-0.4rc1-i686-cd2.iso<br>
+      96a7e8b3cb88caa552a40e87dd04c7c23667e985  frugalware-0.4rc1-i686-dvd.iso<br>
+      13f84d9fe9eedf197a146612244a8c3077dea5f0  frugalware-0.4rc1-i686-net.iso</tt>
+      </div><p>
+      ]]>
+    </content>
+  </post>
+  <post>
+    <id>31</id>
+    <title>Megjelent a Frugalware 0.4pre2-i686</title>
+    <date>2006. feb.  2., csütörtök, 08.18.52 CET</date>
+    <author>IroNiQ</author>
+    <content><![CDATA[
+      </p><div align="left">A Frugalware Fejlesztői Csapat örömmel jelenti be a Frugalware 0.4pre2-i686-ot, mint a 0.4-es verzió második technikai kiadását.
+      Egy rövid és nem teljes lista az előző verzió óta történt változásokról:
+      <ul><li>Újdonságok:
+        <ul><li>Saját igényeink szerint libesített <a href="http://www.archlinux.org/pacman/">pacman</a>, valamint új <a href="http://darcs.frugalware.org/darcsweb/darcsweb.cgi?r=pacman">pacman 3</a>, mely az alap csomagkezelőnk lett.
+        </li><li>A hálózati beállítót újraterveztük, már több hálózati profilt és még több hálózati paramétert (MAC cím, több IP cím ugyanarra a kártyára, stb.) támogat.
+        </li><li>Új, bővebb <a href="http://frugalware.org/docs.php">dokumentáció</a>.
+        </li><li>Mostantól az udev látja el a hotplug feladatát.
+        </li><li>Hibajavítás: már automatikusan csatolódnak az USB pendrive-ok is, nemcsak a CD-k és a DVD-k.
+        </li><li>Több, mint 100 új csomag - kliens oldalon: wepdecrypt, konversation, ltp, gtkpod, firefox kiterjesztések, stb.
+        </li><li>Új, szerver-oldali csomagok: xen (dom0 és domU kernellel), darcsweb, rails, perl modulok és még sok más!</li></ul>
+      </li><li>A színfalak mögött:
+        <ul><li>Csomagszétválasztás támogatása: egy forrásból egyszerre több csomag készíthető.
+        </li><li>Elkezdtük a portolást PPC platformra.</li></ul>
+      </li><li>Frissítések: Mint az már megszokott, a Frugalware a legújabb stabil verziókat szállítja, mint például:
+        <ul><li>Linux kernel 2.6.15
+        </li><li>Modularizált Xorg 7.0
+        </li><li>Apache 2.2.0</li></ul></li></ul>
+      Bővebb információért tekintse meg a Frugalware Változások listáját (<a href="http://darcs.frugalware.org/darcsweb/darcsweb.cgi?r=frugalware-current;a=log">ChangeLog</a>).<p>
+      Letöltés: <a href="download.php?url=frugalware-current-iso/frugalware-0.4pre2-i686-net.iso">netinstall</a> (19M), <a href="download.php?url=frugalware-current-iso/frugalware-0.4pre2-i686-cd1.iso">cd1</a> (491M), <a href="download.php?url=frugalware-current-iso/frugalware-0.4pre2-i686-cd2.iso">cd2</a> (694M), <a href="download.php?url=frugalware-current-iso/frugalware-0.4pre2-i686-dvd.iso">dvd</a> (3.1G)</p><p>
+      SHA1SUMok:
+      <tt>c1f5ab83d14f95247f7e3c6ddfd2f1ffc7125551  frugalware-0.4pre2-i686-cd1.iso<br>
+      def8069198c08cc208c075f3803581ea8b7ef7d1  frugalware-0.4pre2-i686-cd2.iso<br>
+      df8f2ff8f5f6f2b20fa2018bf18a863227769028  frugalware-0.4pre2-i686-dvd.iso<br>
+      8f9ada32b3f37a3a4dd790335df20b347b66df79  frugalware-0.4pre2-i686-net.iso</tt>
+      </div><p>
+      ]]>
+    </content>
+  </post>
+  <post>
+    <id>30</id>
+    <title>Megjelent a Frugalware 0.4pre1-i686</title>
+    <date>Wed Dec  9 23:18:30 CET 2005</date>
+    <author>Boobaa</author>
+    <content><![CDATA[
+      </p><div align="left">A Frugalware Fejlesztői Csapat örömmel jelenti be a Frugalware 0.4pre1-i686-ot, mint a 0.4-es verzió első technikai kiadását.
+      Egy rövid és nem teljes lista a változásokról a 0.3-i686 óta:
+      <ul><li>Újdonságok:
+        <ul><li>A telepítő teljes újraírása C-ben. Az új keretrendszer lehetővé teszi a grafikus telepítő kivitelézését is.
+        </li><li>Sok új lehetőség a telepítőben, például szakértő és normál mód, a (nem fatális) hibák kihagyásával.
+        </li><li>Sok új fordítás került be a telepítőbe.
+        </li><li>Az init script rendszert átterveztük: felhasználóbarátabb hibaüzenetek, a fordításokhoz immár gettextet használatával.
+        </li><li>Több, mint 100 új csomag: treewm, octave, toolame, mingw, ddd, tellico és sok más!</li></ul>
+      </li><li>Frissítések: Mint az már megszokott, a Frugalware a legújabb stabil verziókat szállítja, mint például:
+        <ul><li>Linux kernel 2.6.14.3
+        </li><li>KDE 3.5.0
+        </li><li>Firefox 1.5
+        </li><li>GCC 4.0.2
+        </li><li>GNU C Library 2.3.6
+        </li><li>GNOME 2.12.2</li></ul></li></ul>
+      Bővebb információért tekintse meg a Frugalware Változások listáját (<a href="http://darcs.frugalware.org/darcsweb/darcsweb.cgi?r=frugalware-current;a=log">Changelog</a>).<p>
+      Letöltés: <a href="download.php?url=frugalware-current-iso/frugalware-0.4pre1-i686-net.iso">netinstall</a> (20M), <a href="download.php?url=frugalware-current-iso/frugalware-0.4pre1-i686-cd1.iso">cd1</a> (473M), <a href="download.php?url=frugalware-current-iso/frugalware-0.4pre1-i686-cd2.iso">cd2</a> (650M), <a href="download.php?url=frugalware-current-iso/frugalware-0.4pre1-i686-dvd.iso">dvd</a> (2.9G)</p><p>
+      SHA1SUMok:
+      <tt>10cc34847b8a4b9f6b83dad3d437cbed6898e436  frugalware-0.4pre1-i686-cd1.iso<br>
+      32bcca919a1cbdafd673f8f64300a8ad480df12c  frugalware-0.4pre1-i686-cd2.iso<br>
+      8ae11f0cd5a8afd3b505e129788bf7a1943afaaf  frugalware-0.4pre1-i686-dvd.iso<br>
+      4517c1c2bf790cd492e45b04f1c78e986d9719f1  frugalware-0.4pre1-i686-net.iso</tt>
+      </div><p>
+      ]]>
+    </content>
+  </post>
+  <post>
+    <id>29</id>
+    <title>Megjelent a Frugalware 0.3-x86_64</title>
+    <date>2005. okt. 19., szerda, 19.04.29 CEST</date>
+    <author>IroNiQ</author>
+    <content><![CDATA[
+      </p><div align="left">Örömmel jelentjük be a Frugalware 0.3 x86_64 portjának azonnali elérhetőségét.
+      A Frugalware 0.3-x86_64 a Frugalware teljes portja, majdnem az összes csomaggal, ami az i686 változatban található.
+      Jelenleg mi nem müködik?
+        <ul><li>OpenOffice.org
+        </li><li>Hivatalos flash plugin (Macromedia-féle)
+        </li><li>Dosemu</li></ul>
+      Ha teheted, kérjük, teszteld. Ha hibát találsz, jelentsd <a href="http://bugs.frugalware.org">nekünk</a>. Kérünk, minél több részletet adj meg a hibabejelentésben! Köszönjük.
+      <b>Fontos:</b> AMD64 processzorra lesz szükséged a 0.3-x86_64 használatához! (Lehetséges, hogy EM64T kiterjesztésű Intel processzorok is működnek, de ezeket nem teszteltük.)<p>
+      Letöltés: <a href="download.php?url=frugalware-0.3-iso/frugalware-0.3-x86_64-net.iso">netinstall</a> (19M), <a href="download.php?url=frugalware-0.3-iso/frugalware-0.3-x86_64-cd1.iso">cd1</a> (492M), <a href="download.php?url=frugalware-0.3-iso/frugalware-0.3-x86_64-cd2.iso">cd2</a> (593M), <a href="download.php?url=frugalware-0.3-iso/frugalware-0.3-x86_64-dvd.iso">dvd</a> (2.0G)<p>
+      SHA1SUMok:
+      <tt>4b3c84723e54e98300b1133413fa2e987c08c2eb  frugalware-0.3-x86_64-cd1.iso<br>
+      e7c28286e9cd819f1eef596000e8902fd10a1932  frugalware-0.3-x86_64-cd2.iso<br>
+      1a78fdfde3dd83b844d44dd5e687e494029b77ec  frugalware-0.3-x86_64-dvd.iso<br>
+      95cf37d80902ad323722b3a0d709fb91de7b11c6  frugalware-0.3-x86_64-net.iso</tt>
+      </div><p>
+      ]]>
+    </content>
+  </post>
+  <post>
+    <id>28</id>
+    <title>Megjelent a Frugalware 0.3-i686</title>
+    <date>2005. okt. 13., csütörtök, 09.30.48 CEST</date>
+    <author>IroNiQ</author>
+    <content><![CDATA[
+      </p><div align="left">A Frugalware Fejlesztői Csapat örömmel jelenti be a Frugalware 0.3-i686, a harmadik stabil kiadás azonnali elérhetőségét.
+      Íme egy rövid lista a 0.3rc2 óta történt legfontosabb változásokról:<ul><li>Újdonságok:
+        <ul><li>Spanyol nyelv támogatása telepítőben
+        </li><li>GNOME környezet frissítve 2.12.1 -re</li></ul>
+      </li><li>Frissítések: Mint az már megszokott, a Frugalware a legújabb stabil verziókat szállítja, mint például:
+        <ul><li>Linux kernel 2.6.13.3
+        </li><li>GCC 4.0.2
+        </li><li>Thunderbird 1.0.7</li></ul></li></ul>
+      Bővebb információért tekintse meg a Frugalware <a href="http://darcs.frugalware.org/darcsweb/darcsweb.cgi?r=frugalware-current;a=log">Változások listáját</a> (Changelog).<p>
+      Letöltés: <a href="download.php?url=frugalware-0.3-iso/frugalware-0.3-i686-net.iso">netinstall</a> (18M), <a href="download.php?url=frugalware-0.3-iso/frugalware-0.3-i686-cd1.iso">cd1</a> (488M), <a href="download.php?url=frugalware-0.3-iso/frugalware-0.3-i686-cd2.iso">cd2</a> (649M), <a href="download.php?url=frugalware-0.3-iso/frugalware-0.3-i686-dvd.iso">dvd</a> (2.7G)</p><p><br>
+      SHA1SUMok:
+      <tt>3538fe3f1d5151828cf1c9f7daff0ab8115a3ec7  frugalware-0.3-i686-cd1.iso<br>
+      fe942eecd83774eddb5d045e4d477e83ef485c24  frugalware-0.3-i686-cd2.iso<br>
+      fe2d52e2036bb258f5ec51730a07e49c9666edb0  frugalware-0.3-i686-dvd.iso<br>
+      b11a257a4e9f34fe292abbf7d22402b8b9a24199  frugalware-0.3-i686-net.iso</tt>
+      </div><p>
+      <div align="left"><b>Frissítés</b>: A CDk <a href="http://linuxtracker.org/torrents-details.php?id=681">elérhetőek</a> bittorrenten keresztül is.</div><p>
+      ]]>
+    </content>
+  </post>
+  <post>
+    <id>27</id>
+    <title>Megjelent a Frugalware 0.3rc2-i686</title>
+    <date>2005. okt.  4., kedd, 09.20.51 CEST</date>
+    <author>IroNiQ</author>
+    <content><![CDATA[
+      </p><div align="left">A Frugalware Fejlesztői Csapat örömmel jelenti be a Frugalware 0.3rc2-i686 azonnali elérhetőségét, mely a második (és egyben remélhetőleg utolsó) kiadásra jelölt változata.
+      Egy rövid lista a legfontosabb változásokról, melyek a 0.3rc1 óta történtek:<ul><li>Újdonságok:
+        <ul><li>Telepítő: PPPoE támogatás, lengyel nyelv támogatása telepítőben, mostantól a teljes telepítési procedúra logja el van mentve a telepített rendszeren.
+        </li><li>Új wireless csomagok: madwifi, wlan-ng, stb...</li></ul>
+      </li><li>Csomag újdonságok: Több, mint 60 új csomag: gprsec, squid, privoxy, tor, weechat és még sok más!
+      </li><li>Frissítések: Mint az már megszokott, a Frugalware a legújabb stabil verziókat szállítja, mint például:
+        <ul><li>Linux kernel 2.6.13
+        </li><li>OpenOffice.org 1.1.5
+        </li><li>Firefox 1.0.7</li></ul></li></ul>
+      Bővebb információért tekintse meg a Frugalware <a href="http://darcs.frugalware.org/darcsweb/darcsweb.cgi?r=frugalware-current;a=log">Változások listáját</a> (Changelog).<p>
+      Letöltés: <a href="download.php?url=frugalware-current-iso/frugalware-0.3rc2-i686-net.iso">netinstall</a> (18M), <a href="download.php?url=frugalware-current-iso/frugalware-0.3rc2-i686-cd1.iso">cd1</a> (488M), <a href="download.php?url=frugalware-current-iso/frugalware-0.3rc2-i686-cd2.iso">cd2</a> (649M), <a href="download.php?url=frugalware-current-iso/frugalware-0.3rc2-i686-dvd.iso">dvd</a> (2.7G)</p><p><br>
+      SHA1SUMok:
+      <tt>1e647a622223383008b0d119b5ba745d8eba637f  frugalware-0.3rc2-i686-cd1.iso<br>
+      f68794f3c0d9151965ab46f83992c28932129c71  frugalware-0.3rc2-i686-cd2.iso<br>
+      e9ac4a6fb5d4c2ab9cad909b07222528ac972531  frugalware-0.3rc2-i686-dvd.iso<br>
+      7630567a25764113000f744a742e10a93cd2a7b5  frugalware-0.3rc2-i686-net.iso</tt>
+      </div><p>
+      ]]>
+    </content>
+  </post>
+  <post>
+    <id>26</id>
+    <title>Megjelent a Frugalware 0.3rc1-i686</title>
+    <date>2005. sze. 15., csütörtök, 22.15.47 CEST</date>
+    <author>VMiklos</author>
+    <content><![CDATA[
+      </p><div align="left">A Frugalware Fejlesztői Csapat örömmel jelenti be a Frugalware 0.3rc1-i686 azonnali elérhetőségét, mely a 0.3-i686 stabil verzió első kiadásra jelölt változata.
+      Egy rövid lista a legfontosabb változásokról, melyek a 0.3pre2-i686 óta történtek:<ul><li>Újdonságok:
+        <ul><li>Telepítő: megjelent az XFS támogatás, valamint beállíthatjuk a telepítés forrását (telepítés saját tükörről vagy HDD-ről)
+        </li><li>Elkészültek a nyelvi csomagok a hunspellhez és az mbrolához.
+        </li><li>Új statisztikai programok: webalizer, munin, etc.
+        </li><li>Számos adesklet applet csomag jelent meg.</li></ul>
+      </li><li>Csomag újdonságok: Több, mint 120 új csomag: kdebluetooth, kismet, lives, fuse, muttng, amavisd-new és még sok más!
+      </li><li>Frissítések: Mint az megszokott, a Frugalware a legújabb stabil verziókat szállítja, mint például:
+        <ul><li>Linux kernel 2.6.13
+        </li><li>GNOME 2.12
+        </li><li>Gtk+ 2.8.3</li></ul></li></ul>
+      Bővebb információért tekinse meg a Frugalware <a href="http://darcs.frugalware.org/darcsweb/darcsweb.cgi?r=frugalware-current;a=log">Változások listáját</a> (Changelog).<p>
+      Letöltés: <a href="download.php?url=frugalware-current-iso/frugalware-0.3rc1-i686-net.iso">netinstall</a> (18M), <a href="download.php?url=frugalware-current-iso/frugalware-0.3rc1-i686-cd1.iso">cd1</a> (523M), <a href="download.php?url=frugalware-current-iso/frugalware-0.3rc1-i686-cd2.iso">cd2</a> (649M), <a href="download.php?url=frugalware-current-iso/frugalware-0.3rc1-i686-dvd.iso">dvd</a> (2.7G)</p><p>
+      SHA1SUMok:
+      <tt>9098d53612de87d7198390f46252db54b1289959  frugalware-0.3rc1-i686-cd1.iso<br>
+      4fbd648f02ca75dc20cbc12f3f7a969b10140b6c  frugalware-0.3rc1-i686-cd2.iso<br>
+      0008ce00fa4a68d53de71f9c19569d4fa664359f  frugalware-0.3rc1-i686-dvd.iso<br>
+      58f392f701560670192695e2add982fd16e08582  frugalware-0.3rc1-i686-net.iso</tt>
+      </div><p>
+      ]]>
+    </content>
+  </post>
+  <post>
+    <id>25</id>
+    <title>Megjelent a Frugalware 0.3pre2-i686</title>
+    <date>2005. aug. 18., csütörtök, 07.13.14 CEST</date>
+    <author>VMiklos</author>
+    <content><![CDATA[
+      </p><div align="left">A Frugalware Fejlesztői Csapat örömmel jelenti be a Frugalware 0.3pre2-i686 azonnali elérhetőségét, mely a 0.3-i686 stabil verzió második előzetes változata.
+      Egy rövid lista a legfontosabb változásokról, melyek a 0.3pre1-i686 óta történtek:<ul><li>Újdonságok:
+        <ul><li>Az ivman leváltja a submount-ot, ami többé alapértelmezésben nem kerül telepítésre.
+        </li><li>Telepítő: a Frugalware mostantól szoftveres RAID partícióra is telepíthető.
+        </li><li>A telepítő mostantól franciául is használható.</li></ul>
+      </li><li>Csomag újdonságok: Több, mint 180 új csomag: abiword, nvu, ndiswrapper, kaffeine, chkrootkit és még sok más!
+      </li><li>Frissítés: Mint az megszokott, a Frugalware a legújabb stabil verziókat szállítja, mint például:
+        <ul><li>Linux kernel 2.6.12.4
+        </li><li>GCC 4.0.1
+        </li><li>HAL 0.5.3
+        </li><li>KOffice 1.4.1</li></ul></li></ul>
+      Bővebb információért tekinse meg a Frugalware <a href="changelog.php">Változások listáját</a> (Changelog).<p>
+      Letöltés: <a href="download.php?url=frugalware-current-iso/frugalware-0.3pre2-i686-net.iso">netinstall</a> (18M), <a href="download.php?url=frugalware-current-iso/frugalware-0.3pre2-i686-cd1.iso">cd1</a> (510M), <a href="download.php?url=frugalware-current-iso/frugalware-0.3pre2-i686-cd2.iso">cd2</a> (683M), <a href="download.php?url=frugalware-current-iso/frugalware-0.3pre2-i686-dvd.iso">dvd</a> (2.6G)</p><p>
+      MD5SUMok:
+      <tt>95f1920e936b016c4117908b1afcbc8b  frugalware-0.3pre2-i686-cd1.iso<br>
+      28643f599df88e72cf4830a6f5e533d2  frugalware-0.3pre2-i686-cd2.iso<br>
+      6466754fd31c3454e6f50bb848660828  frugalware-0.3pre2-i686-dvd.iso<br>
+      9f85841e54d326b97215cb164daebf54  frugalware-0.3pre2-i686-net.iso</tt>
+      </div><p>
+      ]]>
+    </content>
+  </post>
+  <post>
+    <id>24</id>
+    <title>Megjelent a Frugalware 0.3pre1-x86_64</title>
+    <date>2005. júl. 3., vasárnap, 19.46.19 CEST</date>
+    <author>VMiklos</author>
+    <content><![CDATA[
+      </p><div align="left">Örömmel jelentjük be a Frugalware 0.3pre1 x86_64 portjának azonnali elérhetőségét.
+      A Frugalware 0.3pre1-x86_64 egy natív 64 bites rendszer, ami azt jelenti, hogy nem használunk multilibet. (Emiatt például a mi gplflash csomagunkat kell használnod a szokásos flashplugin helyett.)
+      Mi működik?
+        <ul><li>alaprendszer :-)
+        </li><li>a grafikus rendszer magja
+        </li><li>munkaasztali környezetek: KDE, Xfce és GNOME</li></ul>
+      Jelenleg mi nem működik?
+        <ul><li>OpenOffice.org (dolgozunk rajta és ígéretes eredményeink vannak)
+        </li><li>I18n: Firefox, Thunderbird, KOffice</li></ul>
+      Ha teheted, kérjük, teszteld. Ha hibát találsz, jelentsd <a href="mailto:frugalware-users@frugalware.org">nekünk</a>. Kérünk, minél több részletet adj meg a hibabejelentésben! Köszönjük.
+      <b>Fontos:</b> AMD64 processzorra lesz szükséged a 0.3pre1-x86_64 használatához! (Lehetséges, hogy EM64T kiterjesztésű Intel processzorok is működnek, de ezeket nem teszteltük.)<p>
+      Letöltés: <a href="download.php?url=frugalware-current-iso/frugalware-0.3pre1-x86_64-net.iso">netinstall</a> (17M), <a href="download.php?url=frugalware-current-iso/frugalware-0.3pre1-x86_64-cd1.iso">cd1</a> (495M), <a href="download.php?url=frugalware-current-iso/frugalware-0.3pre1-x86_64-cd2.iso">cd2</a> (578M), <a href="download.php?url=frugalware-current-iso/frugalware-0.3pre1-x86_64-dvd.iso">dvd</a> (1.7G)<p>
+      MD5SUMok:
+      <tt>78f35ff5a9389930781e626f91124637  frugalware-0.3pre1-x86_64-cd1.iso<br>
+      ed6ff1bc5033a715041a1b00b382a113  frugalware-0.3pre1-x86_64-cd2.iso<br>
+      4dd5391696395caa67206dc56cedf3ac  frugalware-0.3pre1-x86_64-dvd.iso<br>
+      3b9a75ec84c21af53e14cd2f500d318c  frugalware-0.3pre1-x86_64-net.iso</tt>
+      </div><p>
+      ]]>
+    </content>
+  </post>
+  <post>
+    <id>23</id>
+    <title>Hírek a 0.3pre1-ről</title>
+    <date>2005. jún. 29., szerda, 09.57.27 CEST</date>
+    <author>VMiklos</author>
+    <content><![CDATA[
+      Egy új <a href="http://www.tuxmachines.org/node/1501">értékelés</a> jelent meg a Frugalware-ről a <a href="http://www.tuxmachines.org/">tuxmachines</a> oldalán. Az oldalon emellett 65 képernyőkép is <a href="http://www.tuxmachines.org/gallery/frugal">megtalálható</a>.
+      ]]>
+    </content>
+  </post>
+  <post>
+    <id>22</id>
+    <title>Megjelent a Frugalware 0.3pre1-i686</title>
+    <date>2005. jún. 23., csütörtök, 10.22.34 CEST</date>
+    <author>IroNiQ</author>
+    <content><![CDATA[
+      </p><div align="left">A Frugalware Fejlesztői Csapat örömmel jelenti be a Frugalware 0.3pre1-i686 változatot, mely a 0.3-i686 stabil verzió első előzetes változata.
+      Egy rövid lista a legfontosabb változásokról, melyek a 0.2 óta történtek:<ul><li>Újdonságok:
+        <ul><li>Új eszköz: repoman. Segít csomagokat fordítani forrásból, engedélyezve olyan zárt forráskódú programok automatikus csomagolását és telepítését, mint például a realplayer vagy a skype (<tt>repoman merge csomag</tt>). Ezen kívül segít letölteni a programok csomagfordító szkriptjeit (<tt>repoman update</tt>) és újrafordítani "compile flag" -ekkel, mint ahogy az a Gentoo -ban is van.
+        </li><li>A csomagkészítő rendszerünk már nem csak egy architektúrát támogat. Ez azt jelenti, hogy nemsokára várható egy x86_64 (64bites Athlon processzorokra kiélezett) kiadás is.
+        </li><li>Minden csomag csoportokba lett szerverzve, így az alaprendszer telepítése után teljes csoportot is lehet telepíteni a <tt>pacman -S csoport</tt> paraccsal.
+        </li><li>Új konfigurációs eszköz: wificonfig. Vezetéknélküli hálózatot lehet vele beállítani Frugalware alatt.
+        </li><li>A KDE menü kicsit megváltozott: mostantól a legtöbb nem-KDE alkalmazásnak is látszódnia kell a menüben.
+        </li><li>A Thunderbird levelzőhöz elkészültek a nyelvi csomagok és helyesírásellenőrzők.
+        </li><li>A gimp-print nyomtató meghajtóprogramok le lett cserélve a foomatic programra, ami azt jelenti, hogy így több nyomtatót támogatunk mostantól.
+        </li><li>Elkészült a Rox desktop felületből is a csomag.
+        </li><li>Új <a href="http://frugalware.org/packages.php">webes felületet</a> és kibővített funkciókat kapott a csomagkereső (egyelőre a felület csak angol nyelven érhető el, lokalizáció folyamatban van).
+        </li><li>Mostantól minden csomagnak van changelog -ja, amit például a csomagkereső oldalról is el lehet érni.</li></ul>
+      </li><li>Csomag újdonságok: Több, mint 150 új csomag: windowmaker appletek, firestarter, pure-ftpd, subversion és még sok más.
+      </li><li>Frissítések: Mint az megszokott, a Frugalware a legújabb stabil verziókat szállítja, mint például:
+        <ul><li>Linux kernel 2.6.12
+        </li><li>GCC 3.4.4
+        </li><li>KDE 3.4.1</li></ul></li></ul>
+      Bővebb információért tekinse meg a <a href=changelog.php>Változások listáját</a> (Changelog).<p>
+      Letöltés: <a href="download.php?url=frugalware-current-iso/frugalware-0.3pre1-i686-net.iso">netinstall</a> (16M), <a href="download.php?url=frugalware-current-iso/frugalware-0.3pre1-i686-cd1.iso">cd1</a> (506M), <a href="download.php?url=frugalware-current-iso/frugalware-0.3pre1-i686-cd2.iso">cd2</a> (692M), <a href="download.php?url=frugalware-current-iso/frugalware-0.3pre1-i686-dvd.iso">dvd</a> (2.4G)</p><p>
+      MD5SUMok:
+      <tt>7e62e1aeb2a32f29edf26670f268bd63  frugalware-0.3pre1-i686-cd1.iso<br>
+      6ba2f51262fd81850a03c8c9603823af  frugalware-0.3pre1-i686-cd2.iso<br>
+      284386e5fcf062c4b71f9a72cd8f138f  frugalware-0.3pre1-i686-dvd.iso<br>
+      5066616ee44c8489b14a573cbaeba95b  frugalware-0.3pre1-i686-net.iso</tt>
+      </div><p>
+      ]]>
+    </content>
+  </post>
+  <post>
+    <id>21</id>
+    <title>Újabb cikkek a nemzetközi online szaksajtóban</title>
+    <date>2005. jún. 12. 23:21:34 CEST</date>
+    <author>IroNiQ</author>
+    <content><![CDATA[
+      </p><div align="justify">Három újabb cikk jelent meg a Frugalware Linuxról az online internetes szakújságokban. Az első cikket Eduardo Romero írta, s a neves Newsforge oldalon jelent meg. A cikk elolvasható <a href="http://os.newsforge.com/os/05/06/03/2046247.shtml?tid=152&amp;tid=2">itt</a> (a cikk megjelent a Linux.com oldalon is, <a href="http://distrocenter.linux.com/distrocenter/05/06/03/2046259.shtml?tid=127">itt</a>). A másik kettő igazából a legutóbbi stabil változat, a 0.2 áttekintése, más-más szemszögből. Az <a href="http://www.linuxquestions.org/reviews/showproduct.php/product/565">egyik áttekintés</a> a <a href="http://www.linuxquestions.org">linuxquestions.org</a> oldalon, a <a href="http://www.distrotalk.net/cms_view_article.php?aid=4">másik</a> a <a href="http://www.distrotalk.net/">distrotalk.net</a> oldalon jelent meg. Köszönet a cikkek íróinak.</div><p>
+      ]]>
+    </content>
+  </post>
+  <post>
+    <id>20</id>
+    <title>Cikkek a Frugalware Linuxról</title>
+    <date>2005. máj. 9. 21:39:32 CEST</date>
+    <author>IroNiQ</author>
+    <content><![CDATA[
+      </p><div align="justify">Megjelent 2 cikk a Frugalware Linuxról. Az első a <a href="http://www.jox.hu">jox.hu</a> oldalon, amely egy kis interjú Vajna Miklóssal, a projektvezetőnkkel. A cikk <a href="http://www.jox.hu/cikk/?id=141&amp;r=12">itt</a> olvasható. A másik a <a href="http://distrowatch.com">Distrowatch.com</a>-on jelent meg. Arról szól, hogy ezen a héten a Frugalware Linuxot választották a hét Linux disztribúciójává, bemutatva pár szóval, hogy milyen is. A cikk <a href="http://distrowatch.com/weekly.php?issue=20050509#fdow">itt</a> olvasható.<br>Köszönet a cikkíróknak.</div><p>
+      ]]>
+    </content>
+  </post>
+  <post>
+    <id>19</id>
+    <title>Megjelent a Frugalware 0.2</title>
+    <date>2005. ápr. 28., csütörtök, 09.33.28 CEST</date>
+    <author>xbit</author>
+    <content><![CDATA[
+      </p><div align="left">A Frugalware Fejlesztői Csapat örömmel jelenti be a Frugalware Linux 0.2-es legújabb stabil kiadását.
+      A 0.2rc2-es kiadás óta történt fontosabb változások listája:<ul><li>Frissítések:
+        <ul><li>Mozilla Suite 1.7.7-re
+        </li><li>MPlayer 1.0pre7-re</li></ul>
+      </li><li>Új csomagok:
+        <ul><li>irda-utils (Infravörös kommunikációt megvalósító segédprogramok)
+        </li><li>frugalrledit (Futásszint kezelő)</li></ul>
+      </li><li>Hibajavítások:
+        <ul><li>binutils folt ami a szükségtelen as_needed könyvtárat mellőzi</li></ul></li></ul>
+      Bővebb információk a Frugalware <a href=changelog.php>ChangeLog</a>-ban találhatók.<p>
+      Letöltések: <a href="download.php?url=frugalware-0.2-iso/frugalware-0.2-net.iso">netinstall</a> (21M), <a href="download.php?url=frugalware-0.2-iso/frugalware-0.2-cd1.iso">cd1</a> (473M), <a href="download.php?url=frugalware-0.2-iso/frugalware-0.2-cd2.iso">cd2</a> (691M), <a href="download.php?url=frugalware-0.2-iso/frugalware-0.2-cd3.iso">cd3</a> (700M), <a href="download.php?url=frugalware-0.2-iso/frugalware-0.2-dvd.iso">dvd</a> (2.5G)</p><p>
+      MD5SUMS:
+      <tt>252b1b80a7dced637d581215ae8a5c0d  frugalware-0.2-cd1.iso<br>
+      626a429a63e9fa050feac480f03bb2f2  frugalware-0.2-cd2.iso<br>
+      396e4cb0ffe5e66803d609fe675b9615  frugalware-0.2-cd3.iso<br>
+      bb0e6b7ac803ff70553f497c91abd6f0  frugalware-0.2-dvd.iso<br>
+      537648812bed287fb3d23965c5f0a266  frugalware-0.2-net.iso</tt>
+      </div><p>
+      ]]>
+    </content>
+  </post>
+  <post>
+    <id>18</id>
+    <title>Megjelent a Frugalware 0.2rc2</title>
+    <date>2005. ápr. 18., hétfő, 09.22.55 CEST</date>
+    <author>IroNiQ</author>
+    <content><![CDATA[
+      </p><div align="left">A Frugalware Fejlesztői Csapat örömmel jelenti, hogy megjelent a Frugalware 0.2rc2, a 0.2 stabil ág második (és egyben utolsó) kiadásra jelölt változata.
+      Íme egy rövid lista a 0.2rc1 óta bekerült legfontosabb javításokról és bugfixekről:<ul><li>Frissítések:
+        <ul><li>GNOME frissítve 2.10.1 verzióra
+        </li><li>Firefox (+ nyelvi csomagok) frissítve 1.0.3 verzióra
+        </li><li>Linux kernel frissítve 2.6.11.7 verzióra
+        </li><li>glibc frissítve 2.3.5 verzióra</li></ul>
+      </li><li>Új csomagok:
+        <ul><li>bk-client (A nyílt forrású BitKeeper kliens)
+        </li><li>xemacs (Egy jól testre szabható nyílt forrású text editor és programfejlesztői rendszer)
+        </li><li>raggle (Ruby nyelven írt konzolos RSS gyűjtő)
+        </li><li>lsof (Információt ad a Unix folyamatok által nyitva tartott fájlokról)</li></ul>
+      </li><li>Javítások:
+        <ul><li>mostantól a loop és az lp modulok automatikusan betöltődnek, tehát a /dev/loop* és a /dev/lp* eszközök a boot folyamat alatt létre lesznek hozva</li></ul>
+      </li><li>Telepítő:
+        <ul><li>folyamatjelző sáv mutatása letöltés közben - netinstall esetén
+        </li><li>ha valami hiba történik telepítés során, ENTER-t kell nyomni a telepítés folytatásához
+        </li><li>kérésre nem indul újra a gép sikeres telepítés után</li></ul></li></ul>
+      Bővebb információért nézze meg a Frugalware <a href=changelog.php>ChangeLog</a>-ot,
+      A Frugalware 0.2rc2 letölthető a <a href=download.php>letöltés</a> oldalról.</div><p>
+      ]]>
+    </content>
+  </post>
+  <post>
+    <id>17</id>
+    <title>Megjelent a Frugalware 0.2rc1</title>
+    <date>2005. ápr.  7., csütörtök, 09.17.18 CEST</date>
+    <author>voroskoi</author>
+    <content><![CDATA[
+      </p><div align="left">A Frugalware Fejlesztői Csapat bejelenti a Frugalware Linux 0.2rc1 változatot, amely az első kiadásra jelölt verziója a jövendő 0.2 stabil kiadásnak.
+      Íme egy rövid lista a legfontosabb újdonságokról és hibajavításokról a 0.2pre2 óta:<ul><li>frissítések:
+        <ul><li>GNOME frissítve 2.10.0-ra
+        </li><li>KDE frissítve 3.4.0-ra
+        </li><li>Linux kernel frissítve 2.6.11-re
+        </li><li>Firefox (+nyelvi csomagok) és Thunderbird frissítve 1.0.2-re
+        </li><li>Xfce frissítve 4.2.1-re</li></ul>
+      </li><li>új csomagok:
+        <ul><li>új openoffice.org nyelvi csomagok
+        </li><li>új firefox nyelvi csomagok
+        </li><li>gnome-spell (Egy GNOME/Bonobo komponens helyesírás ellenőrzésre)
+        </li><li>wvdial (WVDial CLI tárcsázó)
+        </li><li>valknut (Direct Connect alapú linuxos fájlmegosztó program.)
+        </li><li>courier-imap (Courier IMAP és POP3 szerver)</li></ul>
+      </li><li>grafika:
+        <ul><li>új alapértelmezett kurzor és GNOME téma</li></ul>
+      </li><li>telepítő:
+        <ul><li>XDM beállítás támogatása (amennyiben nem telepít KDM-et vagy GDM-et)</li></ul></li></ul>
+      Bővebb információért tekintse meg a <a href=changelog.php>ChangeLog</a>-ot .
+      A Frugalware 0.2rc1 letölthető <a href=download.php>az itt található</a> oldalakról.</div><p>
+      ]]>
+    </content>
+  </post>
+  <post>
+    <id>16</id>
+    <title>KDE 3.4.0 csomagok már a tükörszervereken</title>
+    <date>2005. már. 20., vasárnap, 23.30.16 CET</date>
+    <author>aThom</author>
+    <content><![CDATA[
+      </p><div align="left">Elkészültek a KDE 3.4.0 csomagok!
+      A bejelentés <a href="http://kde.org/announcements/announce-3.4.php">itt</a> tekinthető meg.
+      Az újdonságokról <a href="http://developer.kde.org/development-versions/kde-3.4-features.html">itt</a> lehet olvasni.
+      Változások a 3.3.2 verzióhoz képest:
+      <ul><li>Csoport válozások: Ha csak az alapvető csomagokat akarjuk telepíteni, használjuk a 'pacman -S kde-core'-t, ha egyéb kde csomagokat is(k3b, krusader, stb) akkor a 'pacman -S kde'-t.
+      </li><li>a kde-i18n csomagok az 'extra/locale' csoportba kerültek.</li></ul>
+      Új nyelvek:<blockquote>kde-i18n-br, kde-i18n-fy, kde-i18n-ga, kde-i18n-lt, kde-i18n-mk, kde-i18n-se</blockquote>
+      Eltávolított nyelvek:<blockquote>kde-i18n-af, kde-i18n-el, kde-i18n-fa, kde-i18n-gl, kde-i18n-hr, kde-i18n-mn, kde-i18n-ms, kde-i18n-uz, kde-i18n-zh_TW</blockquote>
+      Ismert hibák, javítanivalók:
+      <ul><li>Egy komoly hiba került a kontact/kmail-be, amelyet a KDE 3.4.0-es kiadásához képest túl későn találtak meg.
+      Töltsük le ezt: <a href="http://download.kde.org/stable/3.4/src/kdepim-fix-imap-resource-type.diff">kdepim-fix-imap-resource-type.diff</a> és foltozzuk meg a programot mielőtt használni kezdjük azt. Bővebben: <a href="http://kde.org/info/3.4.php">http://kde.org/info/3.4.php</a>
+      </li><li>Indítsuk el az OpenOffice.orgot. Ha a file menü alatt ha meg akarunk nyitni egy file-t, akkor a dialogusablak hamarosan eltűnik. Aztán a KDE Crashmanager a következő üzenetet jeleníti meg:
+      "The Program Openoffice (kdefilepicker) crash and send signal 11"
+      Már javítva van a az OOo2-es KDE buildekben. (bővebben: <a href="http://bugs.kde.org/show_bug.cgi?id=100849">http://bugs.kde.org/show_bug.cgi?id=100849</a>) Egy 'workaround' a KDE-től, hogy adjuk hozzá az alábbi sorokat a ~/.kde/share/config/kdeglobals file-hoz:
+      [Development]
+      AutoCheckAccelerators=false
+      </li><li>Akik frissítenek: a szokásos 'pacman -Syu' után, adjuk ki mégegyszer a 'pacman -S kdelibs kdebase' parancsot, ha nem teszünk így a KDE menüvel gondjaink lehetnek!
+      </ul></div><p>
+      ]]>
+    </content>
+  </post>
+  <post>
+    <id>15</id>
+    <title>A GNOME 2.10.0 bekerült a -currentbe</title>
+    <date>2005. már. 14., hétfő, 15.20.02 CET</date>
+    <author>laci</author>
+    <content><![CDATA[
+      </p><div align="left">Ha minden jól megy holnap a tükrökön lesz a GNOME 2.10.0.
+      Hivatalos megjegyzések a kiadáshoz: <a href="http://www.gnome.org/start/2.10/notes/">http://www.gnome.org/start/2.10/notes/</a>
+      Nem tesztelt, átnézésre vagy frissítésre váró csomagok:
+      <ul><li>GNOME hozzárendelések.
+      </li><li>Mono.
+      </li><li>Néhány csomag az extra/gnome csoportban.</li></ul>
+      Változások a csomagolásban a 2.8-hoz képest:
+      <ul><li>/usr prefix.
+      </li><li>groups() direktíva hozzáadása azokhoz a csomagokhoz, ahol hiányzott.</li></ul>
+      Új csomagok:
+      <ul><li>gnome-backgrounds
+      </li><li>gnome-doc-utils
+      </li><li>gnome-menus
+      </li><li>gnome-pilot-conduits
+      </li><li>libcroco</li></ul>
+      Eltávolított csomagok (a pasturebe kerültek):
+      <ul><li>at-spi
+      </li><li>gnome-mag
+      </li><li>gnome-speech
+      </li><li>gnopernicus
+      </li><li>gok
+      </li><li>nautilus-media</li></ul>
+      Nem becsomagolt csomagok:
+      <ul><li>sound-juicer (szerintem a goobox sokkal jobb grabbelő alkalmazás)</li></ul>
+      Ismert "hibák" / javítandó dolgok:
+      <ul><li>Ha a KDE telepítve van, a GNOME menü helytelenül jelenik meg:
+      <a href="http://frugalware.org/~laci/screenshots/menu-bad.png">http://frugalware.org/~laci/screenshots/menu-bad.png</a>
+      Jó menü: <a href="http://frugalware.org/~laci/screenshots/menu-good.png">http://frugalware.org/~laci/screenshots/menu-good.png</a>
+      </li><li>Az OpenOffice.org menübejegyzések nem jelennek meg a GNOME menüben.</li></ul>
+      Képernyőképek:
+      <ul><li><a href="http://frugalware.org/~laci/screenshots/GNOME06.png">http://frugalware.org/~laci/screenshots/GNOME06.png</a>
+      </li><li><a href="http://frugalware.org/~laci/screenshots/GNOME07.png">http://frugalware.org/~laci/screenshots/GNOME07.png</a></li></ul>
+      A problémákat várom e-mailben, ha valami nem úgy működik, ahogy kellene.</div><p>
+      ]]>
+    </content>
+  </post>
+  <post>
+    <id>14</id>
+    <title>Megjelent a Frugalware 0.2pre2</title>
+    <date>2005. feb. 23., szerda, 22.59.18 CET</date>
+    <author>IroNiQ</author>
+    <content><![CDATA[
+      </p><div align="left">A Frugalware Fejlesztői Csapat bejelenti a Frugalware Linux 0.2pre2 változatot, amely a második előzetese a jövendő 0.2 stabil verziónak.
+      Íme egy rövid lista a legfontosabb újdonságokról és hibajavításokról 0.2pre1 óta:<ul><li>új csomagok:
+        <ul><li>OpenOffice.org 1.1.4 + nyelvi csomagok
+        </li><li>frugalpkg (Grafikus frontend a pacmanhoz)
+        </li><li>gnomebaker (CD/DVD író GNOMEhoz)
+        </li><li>fglrx (Hardveres gyorsítással rendelkez. ATI driver)
+        </li><li>wireless_tools (beleértve az iwconfigot)
+        </li><li>audacity
+        </li><li>fontforge
+        </li><li>krusader
+        </li><li>qemu (Egy gyors processzor emulátor)
+        </li><li>rpm</li></ul>
+      </li><li>frissítések:
+        <ul><li>a GNOME frissítve 2.8.3-ra
+        </li><li>az Xfce frissítve 4.2.0-re
+        </li><li>az XOrg frissítve 6.8.2-re
+        </li><li>a tetex frissítve 3.0-ra
+        </li><li>a glibc frissítve 2.3.4-re</li></ul>
+      </li><li>javítások:
+        <ul><li>Az ablakkezelőkhöz hozzá lett adva a .desktop file, hogy együtt tudjanak működni a GDM-mel
+        </li><li>Magyar dokumentáció
+        </li><li>Szlovák telepítő és dokumentáció</li></ul>
+      </li><li>telepítő:
+        <ul><li>minimális, netről telepítő rendszer</li></ul></li></ul>
+      Bővebb információért olvassa el a Frugalware <a href=changelog.php>ChangeLog</a>-ot.
+      A Frugalware 0.2pre2 letölthető az <a href=download.php>ezen az oldalon</a> található helyekről.</div><p>
+      ]]>
+    </content>
+  </post>
+  <post>
+    <id>13</id>
+    <title>OpenOffice.org a Frugalware-ben</title>
+    <date>2005. feb. 21., hétfő, 15.14.56 CET</date>
+    <author>IroNiQ</author>
+    <content><![CDATA[
+      Elkészült az openoffice.org csomag, mely a <a href="http://www.novell.com/linux/ximian.html">Ximian</a> <a href="http://www.openoffice.org/">OpenOffice.org</a> -ból lett készítve. A telepítendő csomag neve "openoffice.org", mely tartalmazza az angol nyelvű kezelőfelületet, az elválasztást, a szótárat és a thesaurus-t.
+      A nyelvi csomagok "openoffice.org-i18n-xx" néven érhetők el (ahol az xx az adott nyelv rövidítése, pl: hu, de, fr). Ezek tartalmazzák az adott nyelvhez tartozó szótárat, elválasztást és thesaurus-t.
+      IroNiQ
+      ]]>
+    </content>
+  </post>
+  <post>
+    <id>12</id>
+    <title>Hivatalos fórum</title>
+    <date>2005. feb.  6., vasárnap, 19.46.21 CET</date>
+    <author>shrift</author>
+    <content><![CDATA[
+      Üdv! Végre van saját fórumunk, ami itt található meg: <a href="http://forums.frugalware.org/">forums.frugalware.org</a>!
+      Problémákat a <a href="mailto:shrift@frugalware.org">shrift@frugalware.org</a> címre, vagy az "<a href="http://forums.frugalware.org/index.php?t=thread&amp;frm_id=29">About The Forum</a>" témába várunk.
+      Shrift
+      ]]>
+    </content>
+  </post>
+  <post>
+    <id>11</id>
+    <title>Webes irc hozzáférés és archívum</title>
+    <date>2005. jan. 20., csütörtök, 00.21.12 CET</date>
+    <author>IroNiQ</author>
+    <content><![CDATA[
+      Jó hírünk van azon felhasználóink számára, aki eddig nem tudtak (ilyen vagy olyan) okokból csatlakozni az irc csatornánkhoz: végre elkészült a webes frontend, így <a href="irc.php">ezen</a> a címen elérhetnek minket. Ugyanitt a csatorna logja is megtalálható.
+      ]]>
+    </content>
+  </post>
+  <post>
+    <id>10</id>
+    <title>Fórum és jövendő újdonságok</title>
+    <date>2005. jan. 16., vasárnap, 21.58.22 CET</date>
+    <author>IroNiQ</author>
+    <content><![CDATA[
+      Örömmel értesítjük a magyar nyelvű felhasználóinkat, hogy a HUP jóvoltából mostmár fórumunk is van, amelyet <a href="http://hup.hu/modules.php?name=Forums&amp;file=viewforum&amp;f=56">ezen</a> a címen érhetnek el.
+      Továbbá a közeljövőben megjelenik a sajat fórumunk illetve a wiki oldal is.
+      Ezenkívül valószínűleg a jövő hét folyamán újabb nyelvvel bővül a Frugalware támogatása, amely a szlovák. A Frugalware Felhasználói Dokumentáció már elkészült szlovák nyelven (megtekinthető <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-current/docs/html/sk/">itt</a>), jelenleg a telepítő és a rendszerindító fordítása folyik.
+      ]]>
+    </content>
+  </post>
+  <post>
+    <id>9</id>
+    <title>Megjelent a Frugalware 0.2pre1</title>
+    <date>2005. jan. 10., hétfő, 09.22.50 CET</date>
+    <author>IroNiQ</author>
+    <content><![CDATA[
+      </p><div align="left">A Frugalware Fejlesztői Csapat bejelenti a Frugalware Linux 0.2pre1 változatot, amely az első előzetese a jövendő 0.2 stabil verziónak.
+      Íme egy rövid lista a legfontosabb újdonságokról és hibajavításokról 0.1 óta:<ul><li>új csomagok:
+              <ul><li>GNOME 2.8 (beleértve GDM)
+        </li><li>Xfce 4.2rc3
+              </li><li>Firefox 1.0 nyelvi csomagok
+        </li><li>Thunderbird 1.0
+        </li><li>tetex-bin, tetex-base and kile
+        </li><li>wine
+        </li><li>reiser4progs
+        </li><li>fluxbox</li></ul>
+      </li><li>frissítések:
+              <ul><li>KDE frissítve 3.3.2 verzióra (+ biztonsági javítások)
+        </li><li>KOffice frissítve 1.3.5 verzióra
+        </li><li>kernel frissítve 2.6.10 verzióra (+ biztonsági javítások)
+        </li><li>blender frissítve 2.36 verzióra
+        </li><li>Firefox frissítve 1.0 verzióra
+        </li><li>új bootsplash téma
+        </li><li>GTK+2 frissítve 2.6.1 verzióra
+        </li><li>GCC frissítve 3.4.3 verzióra</li></ul>
+      </li><li>javítások:
+              <ul><li>mostantól a grafikus felület (XOrg) működik i810 grafikus vezérlővel
+        </li><li>grubconfig javítva, hogy ne adjon hibaüzenetet installálás előtti kilépéskor</li></ul>
+      </li><li>telepítő:
+              <ul><li>az első CD kettő részre lett szedve: egyik az alaprendszer, a másik pedig a grafikus alrendszer (és a grafikus programok)
+        </li><li>sok memóriaszivárgás javítva lett, mostmár 64MB memóriával is működnie kell
+        </li><li>sok elírás javítva lett a telepítőben</li></ul></li></ul>
+      Bővebb információért olvassa el a Frugalware <a href="changelog.php">ChangeLog</a>-ot.
+      A Frugalware 0.2pre1 letölthető az <a href="download.php">ezen az oldalon</a> található helyekről.</div><p>
+      ]]>
+    </content>
+  </post>
+  <post>
+    <id>8</id>
+    <title>Az XFce és a Firefox lokalizációs csomagok elérhetők a -current ágban</title>
+    <date>2004. dec. 30., csütörtök, 21.15.06 CET</date>
+    <author>IroNiQ</author>
+    <content><![CDATA[
+      </p><div align="left">Örömmel jelentjük be, hogy mától elérhető a régóta várt Xfce4 ablakkezelő, valamint az ehhez kapcsolódó, mindenféle extra szolgáltatást nyújtó bővítménycsomag, az xfce4-goodies. Ezeken kívül a Firefox böngészőhöz elérhetőek a nyelvi csomagok.
+      Telepítésük:
+      <ul><li>pacman -Sy (csomaglista szinkronizálása), majd ez után:
+      </li><li>xfce4: pacman -S xfce4
+      </li><li>xfce4-goodies: pacman -S xfce4-goodies
+      </li><li>Firefox nyelvi csomagok: pacman -S firefox-$lang (ahol $lang a nyelv kétbetűs jelölése, pl. hu, de, fr)</ul></div><p>
+      ]]>
+    </content>
+  </post>
+  <post>
+    <id>7</id>
+    <title>Tervezett leállás</title>
+    <date>2004. nov. 16., kedd, 09.52.54 CET</date>
+    <author>VMiklos</author>
+    <content><![CDATA[
+      Ma, körülbelül 17 és 18 óta között (CET), a frugalware.org nem lesz elérhető. Ez minden szolgáltatást érint (www, ftp, rsync, mailman), a dns kivételével. Köszönjük a megértést.
+      ]]>
+    </content>
+  </post>
+  <post>
+    <id>6</id>
+    <title>Új funkciók a weblapon</title>
+    <date>2004. nov. 14., vasárnap, 23.23.21 CET</date>
+    <author>IroNiQ</author>
+    <content><![CDATA[
+      Kettő új funkcióval gazdagodott a weboldalunk: az <a href=roadmap.php>útitervvel</a>, amelyből megtudható a kiadási ciklus, valamint a <a href=wishlist.php>kívánságlistával</a>, amelyre Ön is felírhatja a kedvenc programját, vagy <a href=todolist.php>megtekintheti</a>, mit kell még megtennünk.
+      ]]>
+    </content>
+  </post>
+  <post>
+    <id>5</id>
+    <title>Frugalware 0.1 képes végigjárás az OSDirtől</title>
+    <date>2004. nov.  6., szombat, 22.35.40 CET</date>
+    <author>zleho</author>
+    <content><![CDATA[
+      Az OSDir egyik teszgépére feltelepítette Frugalware 0.1-et. A telepítés alatt készült 78 kép <a href="http://osdir.com/shots/slideshows/slideshow.php?release=169&amp;slide=1">itt</a> található.
+      ]]>
+    </content>
+  </post>
+  <post>
+    <id>4</id>
+    <title>Megjelent a Frugalware 0.1</title>
+    <date>2004. nov.  2., kedd, 10.27.36 CET</date>
+    <author>zleho</author>
+    <content><![CDATA[
+      </p><div align="left">A Frugalware Fejlesztő Csapat bejelenti a Frugalware 0.1 verziót, amely az első stabil kiadásunk.
+      Egy rövid lista a valtozásokról a második kiadásra jelölt verzió (0.1rc2) óta:<ul><li>fejlesztések:
+        <ul><li>támogatás /boot külön partíción való használatának
+        </li><li>minden cserélhető média /mnt-ből /media-ba költözött
+        </li><li>KDE verzió frissítése 3.3.1-re</li></ul>
+      </li><li>új csomagok:
+        <ul><li>strace
+        </li><li>openbox, obconf és függőségeik
+        </li><li>irssi
+        </li><li>lmsensors
+        </li><li>nano
+        </li><li>hunspell
+        </li><li>screen
+        </li><li>centericq</li></ul>
+      </li><li>hibajavítások:
+        <ul><li>xdm működésre bírása</li></ul>
+      </li><li>telepítő:
+        <ul><li>ideiglenes-tárhely felszabadítás hibájának (csak ha első CD-ről települt a rendszer) javítása
+        </li><li>támogatás MS partíciók részletes információinak megjelenítéséhez
+        </li><li>mostantól rövid leírás érhető el a csomagokhoz
+        </li><li>USB billentyűzetek támogatása</li></ul></li></ul>
+      További információk a <a href=changelog.php>ChangeLog</a>-ban.
+      Frugalware 0.1 letölthető <a href=download.php>innen</a>.</div><p>
+      ]]>
+    </content>
+  </post>
+  <post>
+    <id>3</id>
+    <title>Megjelent a Frugalware 0.1rc2</title>
+    <date>2004. okt. 11., hétfő, 15.40.13 CEST</date>
+    <author>IroNiQ</author>
+    <content><![CDATA[
+      A Frugalware Fejlesztő Csapat bejelenti a Frugalware 0.1rc2 verziót, amely a második kiadásra jelölt (Release Candidate) változata a 0.1-es kiadásnak.
+      Az újdonságok és javított hibák listáját (ChangeLog) megtekintheti <a href=changelog.php>itt</a>.
+      A Frugalware 0.1rc2 verzió letölthető <a href=download.php>innen</a>.
+      ]]>
+    </content>
+  </post>
+  <post>
+    <id>2</id>
+    <title>Megjelent a Frugalware 0.1rc1</title>
+    <date>2004. sze. 29., szerda, 07.14.26 CEST</date>
+    <author>IroNiQ</author>
+    <content><![CDATA[
+      A Frugalware Fejlesztő Csapat bejelenti a Frugalware 0.1rc1 verziót, amely az első kiadásra jelölt (Release Candidate) változata a 0.1-es kiadásnak.
+      Az újdonságok és változások listáját (ChangeLog) megtekintheti <a href=changelog.php>itt</a>.
+      A Frugalware 0.1rc1 verzió letölthető <a href=download.php>innen</a>.
+      ]]>
+    </content>
+  </post>
+  <post>
+    <id>1</id>
+    <title>Teszt üzenet</title>
+    <date>2004. sze. 13., hétfő, 13.53.37 CEST</date>
+    <author>VMiklos</author>
+    <content><![CDATA[
+      Úgy néz ki, műxik... ;-)
+      ]]>
+    </content>
+  </post>
 </news>
 <!-- vim: ts=2
 -->
