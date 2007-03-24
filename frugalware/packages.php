@@ -337,11 +337,16 @@ function pkg_from_id($id)
 	$res = $db->doQuery($query);
 	while ( $i = $db->doFetchRow($res) )
 		$provides[]=$i;
-	// revdeps
-	$query = "select packages.pkgname, depends.pkg_id, depends.version from packages, depends where depends.depend_id=$id and packages.id = depends.pkg_id";
+	// exact revdeps
+	$query = "select packages.pkgname, depends.pkg_id, depends.version from packages, depends where depends.depend_id=$id and packages.id = depends.pkg_id and depends.version like '=%'";
 	$res = $db->doQuery($query);
 	while ( $i = $db->doFetchRow($res) )
-		$revdeps[]=$i;
+		$exrevdeps[]=$i;
+	// other revdeps
+	$query = "select packages.pkgname, depends.pkg_id, depends.version from packages, depends where depends.depend_id=$id and packages.id = depends.pkg_id and depends.version not like '=%'";
+	$res = $db->doQuery($query);
+	while ( $i = $db->doFetchRow($res) )
+		$orevdeps[]=$i;
 	// groups
 	$query = "select ct_groups.pkg_id, groups.id, groups.name from groups, ct_groups where (ct_groups.pkg_id=$id or ct_groups.pkg_id=".$arr['parent_id'].") and ct_groups.group_id = groups.id order by groups.id";
 	$res = $db->doQuery($query);
@@ -375,10 +380,17 @@ function pkg_from_id($id)
 			$content .= "<a href=\"/packages/" . $i['depend_id'] . "\">".$i['pkgname'].$i['version']."</a> ";
 		$content .= "</td></tr>\n";
 	}
-	if (count($revdeps))
+	if (count($exrevdeps))
 	{
-		$content .= "<tr><td>" . gettext("Reverse depends:") . "</td><td>";
-		foreach($revdeps as $i)
+		$content .= "<tr><td>" . gettext("Exact reverse depends:") . "</td><td>";
+		foreach($exrevdeps as $i)
+			$content .= "<a href=\"/packages/" . $i['pkg_id'] . "\">".$i['pkgname']."</a> ";
+		$content .= "</td></tr>\n";
+	}
+	if (count($orevdeps))
+	{
+		$content .= "<tr><td>" . gettext("Other reverse depends:") . "</td><td>";
+		foreach($orevdeps as $i)
 			$content .= "<a href=\"/packages/" . $i['pkg_id'] . "\">".$i['pkgname']."</a> ";
 		$content .= "</td></tr>\n";
 	}
