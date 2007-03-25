@@ -75,6 +75,7 @@ $menucontent .= '<div id="develmenu" class="menulinkcss" align="left">' . "\n";
 $menucontent .= '	<a href="' . $fwng_root . 'roadmap">' . gettext('Roadmap') . "</a>\n";
 $menucontent .= '	<a href="http://darcs.frugalware.org/">' . gettext('Darcs repository') . "</a>\n";
 $menucontent .= '	<a href="http://bugs.frugalware.org/">' . gettext('Bug Tracker') . "</a>\n";
+$menucontent .= '	<a href="http://pootle.frugalware.org/">' . gettext('Translation portal') . "</a>\n";
 $menucontent .= '	<a href="' . $fwng_root . 'changelog">' . gettext('ChangeLog') . "</a>\n";
 $menucontent .= '	<a href="http://planet.frugalware.org/">' . gettext('Blogs') . "</a>\n";
 $menucontent .= '	<a href="' . $fwng_root . 'donations">' . gettext('Donations') . "</a>\n";
