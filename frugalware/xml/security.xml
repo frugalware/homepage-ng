@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>137</id>
+		<date>2007-03-26</date>
+		<author>voroskoi</author>
+		<package>firefox</package>
+		<vulnerable>2.0.0.2-1</vulnerable>
+		<unaffected>2.0.0.3-1terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1850</bts>
+		<cve>There is no CVE for this issue, see: http://www.mozilla.org/security/announce/2007/mfsa2007-11.html</cve>
+		<desc>The FTP protocol includes the PASV (passive) command which is used by Firefox to request an alternate data port. The specification of the FTP protocol allows the server response to include an alternate server address as well, although this is rarely used in practice.
+			mark@bindshell.net reported that a malicious web page hosted on a specially-coded FTP server could use this feature to perform a rudimentary port-scan of machines inside the firewall of the victim. By itself this causes no harm, but information about an internal network may be useful to an attacker should there be other vulnerabilities present on the network.</desc>
+	</fsa>
+	<fsa>
 		<id>136</id>
 		<date>2007-03-24</date>
 		<author>voroskoi</author>
