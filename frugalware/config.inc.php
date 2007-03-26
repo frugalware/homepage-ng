@@ -17,6 +17,7 @@ $sqldb = "frugalware2";
 #site settings
 $fwng_root = $myurl."/";
 $adodb_path = "/usr/lib/php";
+$trans_path="/home/ftp/pub/other/translations/";
 $top_path = "/home/ftp/pub/frugalware/frugalware-current";
 $docs_path = $top_path."/docs";
 $top_path_stable = "/home/ftp/pub/frugalware/frugalware-0.6";

@@ -21,6 +21,8 @@ if (defined("functions.inc"))
 	return;
 define("functions.inc", 1);
 
+include("config.inc.php");
+
 /**
  * Creates a left/right side box
  *
@@ -84,7 +86,7 @@ function fwmiddlebox($boxhead="", $content)
  */
 function getlang($forcelanguage="")
 {
-	global $fwng_root;
+	global $fwng_root, $trans_path;
 
 	// If the lang comes from cookie, set it...
 	if (isset($_COOKIE["fwcurrlang"]))
@@ -132,6 +134,17 @@ function getlang($forcelanguage="")
 		// if the $lang variable is still empty (could not decide), set it to English
 		$lang="en";
 	}
+
+	// now update the .mo file from the .po one
+	$po = $trans_path."po/homepage/$lang/homepage.po";
+	if(file_exists($po))
+		$poinfo = stat($po);
+	$llang = getllang($lang);
+	$mo = "locale/$llang/LC_MESSAGES/homepage.mo";
+	if(file_exists($mo))
+		$moinfo = stat($mo);
+	if(isset($poinfo) and $poinfo["mtime"] > $moinfo["mtime"])
+		system("msgfmt -o $mo $po &>/dev/null");
 
 	return $lang;
 }
