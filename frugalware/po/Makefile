@@ -7,9 +7,6 @@ mos:
 		mkdir -p ../locale/`basename $$i .po`/LC_MESSAGES/; \
 		msgfmt -c --statistics -o ../locale/`basename $$i .po`/LC_MESSAGES/homepage.mo $$i; \
 	done
-	# ugly hack till we don't know how to handle multiple apply hooks..
-	cd ../.. && python frugalware/darcs-posthook.py
-	cd ../.. && python frugalware/darcs-posthook-security.py
 
 pot: intltool-extract
 	intltool-update --pot --gettext-package=homepage
