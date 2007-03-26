@@ -7,4 +7,4 @@ intltool-extract:
 	cp /usr/bin/intltool-extract ./
 
 clean:
-	rm -f homepage.pot
+	rm -f homepage.pot intltool-extract
