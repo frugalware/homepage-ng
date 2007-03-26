@@ -1,10 +1,6 @@
 <?php
 #config.inc
 
-if (defined("config.inc"))
-	return;
-define("config.inc", 1);
-
 ## Settings ##
 
 #sql settings
