@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>138</id>
+		<date>2007-03-26</date>
+		<author>voroskoi</author>
+		<package>squid</package>
+		<vulnerable>2.6.STABLE10-1</vulnerable>
+		<unaffected>2.6.STABLE12-1terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1855</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1560</cve>
+		<desc>A vulnerability has been reported in Squid, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			The vulnerability is caused due to an error within the processing of TRACE requests in squid/src/client_side.c. This can be exploited to crash the service via a specially crafted TRACE request.</desc>
+	</fsa>
+	<fsa>
 		<id>137</id>
 		<date>2007-03-26</date>
 		<author>voroskoi</author>
