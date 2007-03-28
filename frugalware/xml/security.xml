@@ -27,6 +27,20 @@
 
 <fsas>
 	<fsa>
+		<id>140</id>
+		<date>2007-03-28</date>
+		<author>voroskoi</author>
+		<package>inkscape</package>
+		<vulnerable>0.45-1</vulnerable>
+		<unaffected>0.45.1-1terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1857</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1463
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1464</cve>
+		<desc>Some vulnerabilities have been reported in Inkscape, which potentially can be exploited by malicious people to compromise a user's system.
+			1) A format string error exists in certain dialogs. This can be exploited to execute arbitrary code by tricking the user into opening a specially crafted URI containing format string specifiers.
+			2) A format string error exists in the Whiteboard Jabber client, which potentially can be exploited to execute arbitrary code. Successful exploitation requires that the user is logged in to a Jabber server.</desc>
+	</fsa>
+	<fsa>
 		<id>139</id>
 		<date>2007-03-28</date>
 		<author>voroskoi</author>
