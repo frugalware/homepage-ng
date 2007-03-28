@@ -27,6 +27,20 @@
 
 <fsas>
 	<fsa>
+		<id>139</id>
+		<date>2007-03-28</date>
+		<author>voroskoi</author>
+		<package>kernel</package>
+		<vulnerable>2.6.20-4</vulnerable>
+		<unaffected>2.6.20-5terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1858</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1592</cve>
+		<desc>Some vulnerabilities have been reported in the Linux Kernel, which can be exploited by malicious, local users to cause a DoS (Denial of Service).
+			1) Listening IPv6 TCP sockets are incorrectly sharing the "ipv6_fl_socklist" IPv6 flowlist with child sockets. This can be exploited to e.g. cause a kernel crash by performing certain actions on IPv6 TCP sockets.
+			2) The "hrtimer_forward()" does not correctly check for "timer->expires" overflows on 64bit machines. This can be exploited to cause a DoS by using very large timer values. Successful exploitation may require a 64bit machine and that high resolution timers are enabled.
+			3) A NULL pointer dereference within the "do_ipv6_setsockopt()" function in net/ipv6/ipv6_sockglue.c can be exploited to cause a kernel crash by calling "setsockopt()" with malicious parameters.</desc>
+	</fsa>
+	<fsa>
 		<id>138</id>
 		<date>2007-03-26</date>
 		<author>voroskoi</author>
