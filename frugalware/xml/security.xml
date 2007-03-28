@@ -27,6 +27,27 @@
 
 <fsas>
 	<fsa>
+		<id>141</id>
+		<date>2007-03-28</date>
+		<author>voroskoi</author>
+		<package>nas</package>
+		<vulnerable>1.8-1</vulnerable>
+		<unaffected>1.8-2terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1843</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1543
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1544
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1545
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1546
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1547</cve>
+		<desc>Luigi Auriemma has reported some vulnerabilities in Network Audio System, which potentially can be exploited by malicious, local users to gain escalated privileges or by malicious people to cause a DoS (Denial of Service).
+			1) A boundary error within "accept_att_local()" in server/os/connection.c can be exploited to cause a stack-based buffer overflow via an overly long (greater than 64 bytes) slave name in a USL connection. Successful exploitation may allow malicious, local users to gain root privileges.
+			2) An input validation error within "AddResource()" in server/dia/resource.c can be exploited to cause the service to crash via a specially crafted packet with an invalid client ID.
+			3) An integer-overflow error within "ProcAuWriteElement()" in server/dia/audispatch.c can be exploited to cause the service to crash via a specially crafted packet with an overly large max_samples value.
+			4) A boundary error within "ProcAuSetElements()" in server/dia/audispatch.c can be exploited to cause the service to crash via a specially crafted packet with an overly large num_actions or numElements value.
+			5) An input validation error within "compileInputs()" in server/dia/auutil.c can be exploited to cause the service to crash via a specially crafted packet with an invalid element number.
+			6) A NULL-pointer dereference error when processing simultaneous connections can be exploited to cause the service to crash.</desc>
+	</fsa>
+	<fsa>
 		<id>140</id>
 		<date>2007-03-28</date>
 		<author>voroskoi</author>
