@@ -40,6 +40,16 @@
 		<h3>Minimalistic install with GNOME</h3>
 		If you want to get a minimal install with GNOME, just install only the base group from the netinstall and then install xorg-server, gnome-desktop, gnome-session and gdm using pacman. You might want to also install the xorg-fonts group and any appropriate drivers for X.org. Thanks to detto for this tip!
 	</li>
+	<li>
+		<h3>How to always display a list of windows available in screen</h3>
+		Edit your ~/.screenrc and fill it with the following contents:<br />
+		<br />
+		hardstatus on<br />
+		hardstatus alwayslastline<br />
+		hardstatus string '%{.kw}%-w%{.wk}%n %t%{-}%+w'<br />
+		<br />
+		Thanks to VMiklos for this tip!
+	</li>
 </ul>
 
 <a name="announce"></a>
