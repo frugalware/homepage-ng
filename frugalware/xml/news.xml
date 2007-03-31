@@ -14,6 +14,17 @@
 ]>
 <news>
 	<post>
+		<id>58</id>
+		<title>Frugalware Newsletter Issue 2</title>
+		<date>Thu Mar 31 21:12:35 CET 2007</date>
+		<author>AlexExtreme</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			The second issue of our newsletter has been released! You can read it <a href="/newsletter/2">here</a>. We hope you like it!
+			]]>
+		</content>
+	</post>
+	<post>
 		<id>57</id>
 		<title>Frugalware 0.6 (Terminus) for i686 and x86_64 released</title>
 		<date>Thu Mar 22 07:04:52 CET 2007</date>
