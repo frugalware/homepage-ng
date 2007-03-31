@@ -35,6 +35,27 @@ set_locale($llang, $domain);
 include("config.inc.php");
 include("header.php");
 
+function dcmp($a, $b)
+{
+	$a = preg_replace("/3-0-([0-9]*)-([0-9]*)-([0-9]*)\.html/", "$2", $a);
+	$b = preg_replace("/3-0-([0-9]*)-([0-9]*)-([0-9]*)\.html/", "$2", $b);
+	return ($a < $b) ? -1 : 1;
+}
+
+function mcmp($a, $b)
+{
+	$ayear = preg_replace("/(.*)-.*/", "$1", $a);
+	$byear = preg_replace("/(.*)-.*/", "$1", $b);
+	if($ayear==$byear)
+	{
+		$amonth = preg_replace("/.*-(.*)/", "$1", $a);
+		$bmonth = preg_replace("/.*-(.*)/", "$1", $b);
+		return ($amonth < $bmonth) ? 1 : -1;
+	}
+	else
+		return ($ayear < $byear) ? 1 : -1;
+}
+
 fwmiddlebox(gettext("General information"), gettext("Our irc channel is on the freenode network (server: irc.freenode.net), at #frugalware. This is the official Frugalware Linux irc help station."));
 
 $ircont = "
@@ -135,8 +156,10 @@ if ($dir = @opendir("/home/xbit/public_html/irclog"))
 	closedir($dir);
 	
 	$logcont .= "<div align=\"left\"><table>";
+	uksort($logs, "mcmp");
 	foreach($logs as $key => $value)
 	{
+		usort($value, "dcmp");
 		$logcont .= "<tr><td>$key</td>";
 		foreach($value as $i)
 			$logcont .= "<td><a href=\"/~xbit/irclog/$i\">" . preg_replace("/3-0-([0-9]*)-([0-9]*)-([0-9]*)\.html/", "$2", $i) . "</a></td>";
