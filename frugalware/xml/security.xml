@@ -27,6 +27,22 @@
 
 <fsas>
 	<fsa>
+		<id>142</id>
+		<date>2007-04-02</date>
+		<author>voroskoi</author>
+		<package>openoffice.org</package>
+		<vulnerable>2.1.0-5</vulnerable>
+		<unaffected>2.1.0-6terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1856</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0002
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0238
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0239</cve>
+		<desc>Some vulnerabilities have been reported in OpenOffice.org, which potentially can be exploited by malicious people to compromise a user's system.
+			1) Several vulnerabilities within the libwpd library used by OpenOffice.org can be exploited to cause heap-based buffer overflows and may allow the execution of arbitrary code by e.g. tricking a user into opening a specially crafted WordPerfect document.
+			2) A boundary error within the StarCalc parser can be exploited to cause a stack-based buffer overflow and may allow execution of arbitrary code by e.g. tricking a user into opening a specially crafted document.
+			3) Shell meta characters are not correctly escaped, which can be exploited to inject and execute arbitrary shell commands by e.g. tricking a user into opening a specially crafted document and clicking a malicious link.</desc>
+	</fsa>
+	<fsa>
 		<id>141</id>
 		<date>2007-03-28</date>
 		<author>voroskoi</author>
