@@ -27,6 +27,20 @@
 
 <fsas>
 	<fsa>
+		<id>145</id>
+		<date>2007-04-05</date>
+		<author>voroskoi</author>
+		<package>truecrypt</package>
+		<vulnerable>4.2a-7terminus1</vulnerable>
+		<unaffected>4.3-1terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1879</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1589
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1738</cve>
+		<desc>A security issue has been reported in TrueCrypt, which can be exploited by malicious, local users to cause a DoS (Denial of Service). The problem is that users are able to dismount volumes mounted by other users when the set-euid mode in Linux is used.
+			Tim Rees has discovered a security issue in TrueCrypt, which can be exploited by malicious, local users to cause a DoS (Denial of Service) or gain escalated privileges.
+			The security issue is caused if the "truecrypt" binary is installed setuid root. This can be exploited to cause a DoS or gain escalated privileges by e.g. mounting a malicious TrueCrypt disk into /usr/bin or another user's home directory. Successful exploitation requires that TrueCrypt is installed setuid root (not default setting).</desc>
+	</fsa>
+	<fsa>
 		<id>144</id>
 		<date>2007-04-05</date>
 		<author>voroskoi</author>
