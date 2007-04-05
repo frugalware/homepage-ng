@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>144</id>
+		<date>2007-04-05</date>
+		<author>voroskoi</author>
+		<package>xine-lib</package>
+		<vulnerable>1.1.4-2</vulnerable>
+		<unaffected>1.1.4-3terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1839</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1246
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1387</cve>
+		<desc>Some vulnerabilities have been reported in xine-lib, which can potentially be exploited by malicious people to compromise a vulnerable system.
+			The vulnerabilities are caused due to boundary errors in the "DMO_VideoDecoder_Open()" function in src/libw32dll/dmo/DMO_VideoDecoder.c and in the "DS_VideoDecoder_Open()" function in src/libw32dll/DirectShow/DS_VideoDecoder.c. These can be exploited to cause heap based buffer overflows and may allow execution of arbitrary code via a specially crafted media file.</desc>
+	</fsa>
+	<fsa>
 		<id>143</id>
 		<date>2007-04-05</date>
 		<author>voroskoi</author>
