@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>143</id>
+		<date>2007-04-05</date>
+		<author>voroskoi</author>
+		<package>evolution</package>
+		<vulnerable>2.10.0-1</vulnerable>
+		<unaffected>2.10.0-2terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1852</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1002</cve>
+		<desc>Secunia Research has discovered a vulnerability in Evolution, which potentially can be exploited by malicious people to compromise a vulnerable system.
+			A format string error in the "write_html()" function in calendar/gui/e-cal-component-memo-preview.c when displaying a memo's categories can potentially be exploited to execute arbitrary code via a specially crafted shared memo containing format specifiers.
+			Successful exploitation requires that the user opens a shared memo in their mailbox, clicks on "Accept", and views the memo under the "Memo" tab.</desc>
+	</fsa>
+	<fsa>
 		<id>142</id>
 		<date>2007-04-02</date>
 		<author>voroskoi</author>
