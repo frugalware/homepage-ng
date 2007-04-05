@@ -27,6 +27,24 @@
 
 <fsas>
 	<fsa>
+		<id>148</id>
+		<date>2007-04-05</date>
+		<author>voroskoi</author>
+		<package>xorg-server</package>
+		<vulnerable>1.2.0-1</vulnerable>
+		<unaffected>1.2.0-2terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1910</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1003
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1351
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1352
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1667</cve>
+		<desc>Some vulnerabilities have been reported in X.Org X11, which potentially can be exploited by malicious, local users to disclose sensitive information, cause a DoS (Denial of Service), and gain escalated privileges.
+			1) An integer overflow exists within the parsing of BDF fonts. This can be exploited to cause a heap-based buffer overflow via a specially crafted BDF font. Successful exploitation may allow the execution of arbitrary code with escalated privileges.
+			2) An integer overflow exists within the parsing of the "fonts.dir" fonts information file. This can be exploited to cause a heap-based buffer overflow via a specially crafted fonts information file that specifies an element count of more than 1,073,741,824 in the first line. Successful exploitation may allow the execution of arbitrary code with escalated privileges.
+			3) An input validation error exists within the "ProcXCMiscGetXIDList()" function of the XC-MISC extension. This can be exploited to cause a stack-based (if the "alloca()" function is available) or heap-based memory corruption by passing specially crafted parameters to the function. Successful exploitation may allow the execution of arbitrary code with escalated privileges.
+			4) An integer overflow exists within the "XGetPixel()" function in ImUtil.c. This can be exploited to cause a crash or disclose potentially sensitive information by passing specially crafted parameters to the function.</desc>
+	</fsa>
+	<fsa>
 		<id>147</id>
 		<date>2007-04-05</date>
 		<author>voroskoi</author>
