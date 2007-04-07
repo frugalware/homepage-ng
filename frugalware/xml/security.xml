@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>149</id>
+		<date>2007-04-07</date>
+		<author>voroskoi</author>
+		<package>freetype2</package>
+		<vulnerable>2.3.2-1</vulnerable>
+		<unaffected>2.3.3-1terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1916</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1351</cve>
+		<desc>A vulnerability has been reported in FreeType, which can be exploited by malicious people to cause a DoS (Denial of Service) and potentially compromise an application using the library.
+			The vulnerability is caused due to an integer overflow when parsing BDF fonts. This can be exploited to cause a heap-based buffer overflow via a specially crafted BDF font.</desc>
+	</fsa>
+	<fsa>
 		<id>148</id>
 		<date>2007-04-05</date>
 		<author>voroskoi</author>
