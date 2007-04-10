@@ -27,6 +27,17 @@
 
 <fsas>
 	<fsa>
+		<id>151</id>
+		<date>2007-04-11</date>
+		<author>voroskoi</author>
+		<package>mod_perl</package>
+		<vulnerable>2.0.3-1</vulnerable>
+		<unaffected>2.0.3-2terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1894</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1349</cve>
+		<desc>A vulnerability has been reported in mod_perl, which potentially can be exploited by malicious people to cause a DoS (Denial of Service).	The vulnerability is caused due to a regular expression in "RegistryCooker.pm" (mod_perl 2.x) or "PerlRun.pm" (mod_perl 1.x) that uses the "path_info" variable without properly escaping it. This can be exploited to cause a DoS by sending requests with specially crafted URLs to a vulnerable server.</desc>
+	</fsa>
+	<fsa>
 		<id>150</id>
 		<date>2007-04-11</date>
 		<author>voroskoi</author>
