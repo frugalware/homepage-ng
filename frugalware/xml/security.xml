@@ -27,6 +27,17 @@
 
 <fsas>
 	<fsa>
+		<id>153</id>
+		<date>2007-04-11</date>
+		<author>voroskoi</author>
+		<package>qt4</package>
+		<vulnerable>4.2.3-1</vulnerable>
+		<unaffected>4.2.3-2terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1909</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0242</cve>
+		<desc>Andreas Nolden has reported a vulnerability in Qt, which potentially can be exploited to conduct cross-site scripting attacks in applications using the Qt libraries. The vulnerability is caused due to Qt not properly rejecting overly long UTF-8 character sequences. This can be exploited to bypass certain character sanitation mechanisms and allow e.g. the execution of HTML and script code in applications depending on the correct behavior.</desc>
+	</fsa>
+	<fsa>
 		<id>152</id>
 		<date>2007-04-11</date>
 		<author>voroskoi</author>
