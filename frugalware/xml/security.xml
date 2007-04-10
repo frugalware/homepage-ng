@@ -27,6 +27,21 @@
 
 <fsas>
 	<fsa>
+		<id>150</id>
+		<date>2007-04-11</date>
+		<author>voroskoi</author>
+		<package>asterisk</package>
+		<vulnerable>1.4.1-1</vulnerable>
+		<unaffected>1.4.2-2terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1853</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1561
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1594
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1595</cve>
+		<desc>A vulnerability has been reported in Asterisk, which can be exploited by malicious people to cause a DoS (Denial of Service). The vulnerability is caused due to an error within the handling of certain SIP INVITE messages. This can be exploited to crash the server by sending a SIP INVITE message with 2 SDP headers, where the second header contains an invalid IP address. Successful exploitation requires that the callee is an invalid dailplan or user.
+			qwerty1979 has reported a vulnerability in Asterisk, which can be exploited by malicious people to cause a DoS (Denial of Service). The vulnerability is caused due to an error in the processing of SIP replies from a remote system and can be exploited to crash the service via the remote system sending a SIP reply containing SIP Response code 0.
+			A security issue has been reported in Asterisk, which can be exploited by malicious people to bypass certain security restrictions. The security issue is caused due to a problem within the AEL (Asterisk Extension Language) when generating switch extensions. Depending on the extension, an attacker may be able to guess and dial a special number, which could allow him to e.g. listen to the voicemails of other users.</desc>
+	</fsa>
+	<fsa>
 		<id>149</id>
 		<date>2007-04-07</date>
 		<author>voroskoi</author>
