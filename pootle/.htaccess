@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule (.*) http://helicon.frugalware.org:8080/$1 [P]
