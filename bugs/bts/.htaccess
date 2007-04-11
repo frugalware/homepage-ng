@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule (.*) http://iron.ironiq.hu/bts/$1 [P]
