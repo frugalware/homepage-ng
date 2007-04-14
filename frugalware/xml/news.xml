@@ -14,6 +14,17 @@
 ]>
 <news>
 	<post>
+		<id>59</id>
+		<title>Frugalware Newsletter Issue 3 and Homepage design contest!</title>
+		<date>Thu Apr 14 21:43:31 CET 2007</date>
+		<author>AlexExtreme</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			The third issue of our fortnightly newsletter has been released! You can read it <a href="/newsletter/3">here</a>. In this issue we have announced a contest to create a design for the next version of the Frugalware homepage.
+			]]>
+		</content>
+	</post>
+	<post>
 		<id>58</id>
 		<title>Frugalware Newsletter Issue 2</title>
 		<date>Thu Mar 31 21:12:35 CET 2007</date>
