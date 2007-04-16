@@ -27,6 +27,20 @@
 
 <fsas>
 	<fsa>
+		<id>154</id>
+		<date>2007-04-16</date>
+		<author>voroskoi</author>
+		<package>lighttpd</package>
+		<vulnerable>1.4.13-2</vulnerable>
+		<unaffected>1.4.13-3terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1951</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1869
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1870</cve>
+		<desc>Some vulnerabilities have been reported in lighttpd, which can be exploited by malicious users and malicious people to cause a DoS (Denial of Service).
+			1) An error exists during the parsing of the "\r\n\r\n" sequence. This can be exploited to cause an infinite loop by aborting the connection while the server parses the sequence, which e.g. results in a high CPU load and exhaustion of system resources .
+			2) An NULL pointer dereference exists within the mtime handling of files. This can be exploited to cause a crash by requesting a file with mtime 0. Successful exploitation requires that the attacker can request or upload files with mtime 0, or can otherwise modify the mtime of files.</desc>
+	</fsa>
+	<fsa>
 		<id>153</id>
 		<date>2007-04-11</date>
 		<author>voroskoi</author>
