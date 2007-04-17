@@ -27,6 +27,20 @@
 
 <fsas>
 	<fsa>
+		<id>155</id>
+		<date>2007-04-17</date>
+		<author>voroskoi</author>
+		<package>clamav</package>
+		<vulnerable>0.90.1-1</vulnerable>
+		<unaffected>0.90.2-1terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1946</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1745
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1997</cve>
+		<desc>Two vulnerabilities have been reported in Clam AntiVirus. One has an unknown impact, while the other can be exploited by malicious people to cause a DoS (Denial of Service) or to compromise a vulnerable system.
+			1) An unspecified file descriptor leak error exists within libclamav/chmunpack.c.
+			2) A signedness error exists within the "cab_unstore()" function in libclamav/cab.c. This can be exploited to cause a stack based buffer overflow via a specially crafted ".cab" file, and may allow execution of arbitrary code or crashing of the clamd process.</desc>
+	</fsa>
+	<fsa>
 		<id>154</id>
 		<date>2007-04-16</date>
 		<author>voroskoi</author>
