@@ -88,11 +88,13 @@ else
 	$langpage=$fwng_root . $arr[0] . "/";
 }
 $langcontent = '<div class="imgcontent">
-	  <a href="' . $langpage . 'en"><img alt="' . gettext('Change language') . '" title="' . gettext('Change language') . '" src="' . $fwng_root . 'images/english.gif" border="0" /></a>
+	  <a href="' . $langpage . 'en"><img alt="' . gettext( 'Change language' ) . '" title="' . gettext( 'Change language' ) . '" src="' . $fwng_root . 'images/english.gif" border="0" /></a>
 	  | 
-	  <a href="' . $langpage . 'hu"><img alt="' . gettext('Change language') . '" title="' . gettext('Change language') . '" src="' . $fwng_root . 'images/hungarian.gif" border="0" /></a>
+	  <a href="' . $langpage . 'hu"><img alt="' . gettext( 'Change language' ) . '" title="' . gettext( 'Change language' ) . '" src="' . $fwng_root . 'images/hungarian.gif" border="0" /></a>
 	  | 
-	  <a href="' . $langpage . 'fr"><img alt="' . gettext('Change language') . '" title="' . gettext('Change language') . '" src="' . $fwng_root . 'images/french.gif" border="0" /></a>
+	  <a href="' . $langpage . 'fr"><img alt="' . gettext( 'Change language' ) . '" title="' . gettext( 'Change language' ) . '" src="' . $fwng_root . 'images/french.gif" border="0" /></a>
+	  | 
+	  <a href="' . $langpage . 'sk"><img alt="' . gettext( 'Change language' ) . '" title="' . gettext( 'Change language' ) . '" src="' . $fwng_root . 'images/slovak.gif" border="0" /></a>
 	</div>';
 /*
 | <a href="?lang=es"><img alt="' . gettext('Change language') . '" title="' . gettext('Change language') . '" src="images/spanish.gif" border="0" /></a> | <a href="?lang=fr"><img alt="' . gettext('Change language') . '" title="' . gettext('Change language') . '" src="images/french.gif" border="0" /></a>';
