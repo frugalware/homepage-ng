@@ -133,6 +133,17 @@ If you modify this file, be sure it's still valid - xmllint is your friend.
 		<bandwidth>2 GBit</bandwidth>
 	</mirror>
 	<mirror>
+		<id>13</id>
+		<type>ftp</type>
+		<type>http</type>
+		<path>pub/frugalware</path>
+		<host>ftp.planetmirror.com</host>
+		<country>Australia</country>
+		<supplier>PlanetMirror</supplier>
+		<supplier_url>http://public.planetmirror.com/</supplier_url>
+		<bandwidth>Unknown bandwidth</bandwidth>
+	</mirror>
+	<mirror>
 		<name>Lidux.de</name>
 		<type>buycd</type>
 		<path>http://www.lidux.de/index.php/cPath/2_58</path>
