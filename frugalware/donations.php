@@ -49,12 +49,13 @@ page and send the developer a mail.</div>");
 fwmiddlebox(gettext("Donations"), $fwdonatewelcome);
 
 $cont1 = "<div align=\"left\">Wishes:<ul>
+<li>at least one 10-20GB IDE HDD for i686 buildserver's system and at least one bigger (80-100GB) for i686 buildserver's chroot environments</li>
 <li>10-20GB IDE HDD for testing Xen</li>
 <li>10GB IDE HDD for testing the setup</li>
 <li>PegasosPPC or/and other PowerPC computer to use as buildserver</li>
-<li>a powerful i686 buildserver</li>
 </ul>Received:<ul>
-<li>Socket939 Motherboard + AMD Athlon64 3000+ CPU Socket939 version + 512MB DDR400 RAM (this will be our x86_64 buildserver)</li>
+<li>Socket939 Motherboard + AMD Athlon64 3000+ CPU Socket939 version + 512MB DDR400 RAM (x86_64 buildserver)</li>
+<li>Socket939 Motherboard + AMD Athlon64 3000+ CPU Socket939 version + 1GB DDR400 RAM (main server)</li>
 <li>Codegen case for the new x86_64 buildserver (Krisztian VASAS)</li>
 <li>i586 Server: Pentium MMX 200 Mhz CPU, 64 Mb memory, 2.8Gb + 37Gb HDD (Botond Balazs, Miklos Vajna)</li>
 <li>Main server hosting (Sandor Szentirmay)</li>
@@ -68,7 +69,7 @@ $cont1 = "<div align=\"left\">Wishes:<ul>
 <li>2x40GB IDE HDD (Szalai, Ervin)</li>
 <li>2x160GB IDE HDD for the i686 server (Miklos Vajna)</li>
 <li>40GB IDE HDD (Kovacs, Janos)</li>
-<li>Dell Optiplex P4 1.6GHz machine for main server</li>
+<li>Dell Optiplex P4 1.6GHz machine for main server - changed to i686 buildserver</li>
 <li>Mylex DAC960 SCSI card with 2x18GB HDD (will be the base system of our x86_64 buildserver) (from Locsei, Gabor)</li>
 </ul></div>";
 fwmiddlebox(gettext("The Frugalware Team"), $cont1);
