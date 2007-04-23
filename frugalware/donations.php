@@ -49,7 +49,7 @@ page and send the developer a mail.</div>");
 fwmiddlebox(gettext("Donations"), $fwdonatewelcome);
 
 $cont1 = "<div align=\"left\">Wishes:<ul>
-<li>at least one 10-20GB IDE HDD for i686 buildserver's system and at least one bigger (80-100GB) for i686 buildserver's chroot environments</li>
+<li><b>at least one 10-20GB IDE HDD for i686 buildserver's system and at least one bigger (80-100GB) for i686 buildserver's chroot environments</b></li>
 <li>10-20GB IDE HDD for testing Xen</li>
 <li>10GB IDE HDD for testing the setup</li>
 <li>PegasosPPC or/and other PowerPC computer to use as buildserver</li>
