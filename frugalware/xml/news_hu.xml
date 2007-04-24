@@ -12,6 +12,25 @@
 ]>
 <news>
   <post>
+    <id>58</id>
+    <title>Kérés: IDE HDDk</title>
+    <date>Tue Apr 24 20:35:18 CEST 2007</date>
+    <author>IroNiQ</author>
+    <hidden>1</hidden>
+    <content><![CDATA[
+      Sajnos úgy hozta a sors, hogy búcsút kellett mondanunk az i686-os buildszerverünknek. Azonban, mivel a fő szerverünket cseréltük egy erősebbre, ezért az előző, egyébként jónak mondható konfiguráció megvan, fel tudjuk használni. Egy probléma van csak vele: nincs bele winchester. Éppen ezért szeretnénk kérni a felhasználóinkat, hogy aki tudna adakozni, kérem tegye meg. Amíg nem működik a szerver, az i686-os csomagszinkronizálás sem megy, így sajnos inkonzisztens lesz a current ág.<br />
+      Az igényelt hddk:
+      <ul>
+        <li>legalább egy, kisebb (20-40GB körüli) ide hdd a rendszernek</li>
+        <li>valamint legalább egy, nagyob (min. 80-100GB) ide hdd a build környezetnek</li>
+      </ul>
+      Amennyiben felajánlása lenne, azt VMiklósnak (vmiklos at frugalware dot org) vagy IroNiQnak (iron at frugalware dot org) üzenheti meg. 
+      <!-- esetleg ide lehetne irni a penzadakozast is --><br />
+      A felajánlásokat előre is köszönjük.
+    ]]>
+    </content>
+  </post>
+  <post>
     <id>57</id>
     <title>Megjelent a Frugalware 0.6 (Terminus) i686-ra, valamint x86_64-re</title>
     <date>Thu Mar 22 10:22:14 CET 2007</date>
