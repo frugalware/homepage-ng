@@ -18,7 +18,7 @@
 		<title>Request: IDE HDDs</title>
 		<date>Tue Apr 24 20:35:18 CEST 2007</date>
 		<author>IroNiQ</author>
-		<hidden>1</hidden>
+		<hidden>0</hidden>
 		<content><![CDATA[
 			Unfortunately we lost our i686 buildserver. But we have changed our main server to a stronger one, so now we have a quiet good machine. Without any hard disks. So we'd like to ask our users to donate us. Till the i686 buildserver is not working, the current repo is not in sync with the x86_64 one.<br />
 			The needed HDDs:

@@ -16,7 +16,7 @@
     <title>Kérés: IDE HDDk</title>
     <date>Tue Apr 24 20:35:18 CEST 2007</date>
     <author>IroNiQ</author>
-    <hidden>1</hidden>
+    <hidden>0</hidden>
     <content><![CDATA[
       Sajnos úgy hozta a sors, hogy búcsút kellett mondanunk az i686-os buildszerverünknek. Azonban, mivel a fő szerverünket cseréltük egy erősebbre, ezért az előző, egyébként jónak mondható konfiguráció megvan, fel tudjuk használni. Egy probléma van csak vele: nincs bele winchester. Éppen ezért szeretnénk kérni a felhasználóinkat, hogy aki tudna adakozni, kérem tegye meg. Amíg nem működik a szerver, az i686-os csomagszinkronizálás sem megy, így sajnos inkonzisztens lesz a current ág.<br />
       Az igényelt hddk:
