@@ -27,6 +27,23 @@
 
 <fsas>
 	<fsa>
+		<id>158</id>
+		<date>2007-04-26</date>
+		<author>voroskoi</author>
+		<package>opera</package>
+		<vulnerable>9.10-1</vulnerable>
+		<unaffected>9.20-1terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1757</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0995
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1115
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2022</cve>
+		<desc>Stefan Esser has discovered a vulnerability in Opera, which can be exploited by malicious people to conduct cross-site scripting attacks.
+			The vulnerability exist because pages that do not specify a charset inherit the charset of the parent page. This can be exploited to execute arbitrary HTML and script code in a user's browser session in context of certain sites that are included e.g. via iframes in a malicious page that uses UTF-7 as charset.
+			Successful exploitation requires that the user is tricked into visiting a malicious web site.
+			A vulnerability with an unknown impact has been reported in Opera. The vulnerability is caused due to an unspecified error when using the Adobe Flash Player plug-in.
+			The vulnerability is reported in Opera versions prior to 9.20 running on Linux, Solaris, or FreeBSD and using the Adobe Flash Player version 7 or 9.</desc>
+	</fsa>
+	<fsa>
 		<id>157</id>
 		<date>2007-04-26</date>
 		<author>voroskoi</author>
