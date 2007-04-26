@@ -163,6 +163,9 @@ class Pastebin
 			if (strlen($poster)==0)
 				$poster='Anonymous';
 			
+			if ($poster == 'None')
+				die('Nice try.');
+			
 			$format=$post['format'];
 			if (!array_key_exists($format, $this->conf['all_syntax']))
 				$format='';
