@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>160</id>
+		<date>2007-04-26</date>
+		<author>voroskoi</author>
+		<package>kernel</package>
+		<vulnerable>2.6.20-5terminus1</vulnerable>
+		<unaffected>2.6.20-5terminus2</unaffected>
+		<bts>http://bugs.frugalware.org/task/1934</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1357</cve>
+		<desc>A vulnerability has been reported in the Linux Kernel, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			The vulnerability is caused due to an error within the "atalk_sum_skb()" function when creating the checksum of an AppleTalk frame that is shorter than specified in the header. This can be exploited to trigger a "BUG_ON" condition by sending a specially crafted AppleTalk frame to a vulnerable system.
+			Successful exploitation requires that the AppleTalk kernel module is loaded.</desc>
+	</fsa>
+	<fsa>
 		<id>159</id>
 		<date>2007-04-26</date>
 		<author>voroskoi</author>
