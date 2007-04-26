@@ -27,6 +27,20 @@
 
 <fsas>
 	<fsa>
+		<id>159</id>
+		<date>2007-04-26</date>
+		<author>voroskoi</author>
+		<package>firefox-firebug</package>
+		<vulnerable>1.01-1</vulnerable>
+		<unaffected>1.05-1terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1917</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1878
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1947</cve>
+		<desc>Two vulnerabilities have been reported in the Firebug extension for Mozilla Firefox, which can be exploited by malicious people to compromise a vulnerable system.
+			1) Input passed to the "console.log()" function is not properly sanitised and can be exploited to e.g. execute arbitrary script code within the "chrome:" context by tricking a user into visiting a malicious website.
+			2) Results of the "toString" method when processing function objects are not properly sanitised before being used. This can be exploited to e.g. execute arbitrary script code within the "chrome:" context by overriding the "toString" method with a specially crafted function.</desc>
+	</fsa>
+	<fsa>
 		<id>158</id>
 		<date>2007-04-26</date>
 		<author>voroskoi</author>
