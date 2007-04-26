@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>161</id>
+		<date>2007-04-26</date>
+		<author>voroskoi</author>
+		<package>imagemagick</package>
+		<vulnerable>6.3.2_8-1</vulnerable>
+		<unaffected>6.3.2_8-2terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1913</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1797</cve>
+		<desc>Some vulnerabilities have been reported in ImageMagick, which can be exploited by malicious people to compromise a vulnerable system.
+			1) A integer overflow error within the "ReadDCMImage()" function can be exploited to cause a heap-based buffer overflow when processing specially crafted DCM images.
+			2) Two integer overflows within the "ReadXWDImage()" function when calculating the amount of memory to be allocated for the 'colors' or 'comment' fields can be exploited to cause heap-based buffer overflows when processing specially crafted XWD images.</desc>
+	</fsa>
+	<fsa>
 		<id>160</id>
 		<date>2007-04-26</date>
 		<author>voroskoi</author>
