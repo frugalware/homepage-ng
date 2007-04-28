@@ -210,7 +210,7 @@ $CONF['spam_regex'] = "/s-e-x|zoofilia|sexyongpin|grusskarte|geburtstagskarten|a
                "jinxinghj|telematicsone|telematiksone|a-mortgage|diamondabrasives|".
                "reuterbrook|sex-plugin|sex-zone|lazy-stars|eblja|liuhecai|".
                "buy-viagra|-cialis|-levitra|boy-and-girl-kissing|ses3|". //These match spammy words
-               "hydrocodone|We are delicate. We do not delete your content.|adipex|phentermine|valium|casino-gambling|casino-game|casino-online|party-poker|$
+               "hydrocodone|We are delicate. We do not delete your content.|adipex|phentermine|valium|casino-gambling|casino-game|casino-online|party-poker|play-poker|health-medical|tramadol|tamiflu|viagra|xanax|zoloft|fioricet|cialis|".
                "dirare\.com|".                               //This matches dirare.com a spammer's domain name
                "overflow:\s*auto;\s*height:\s*[0-4]px;|".    //This matches against overflow:auto; hieght:0px; (most CSS hidden spam)
                "style\s*=\s*\"\s*display\s*:\s*none".        //This matches against <style="display:none
