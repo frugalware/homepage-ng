@@ -163,14 +163,17 @@ class Pastebin
 			if (strlen($poster)==0)
 				$poster='Anonymous';
 			
-			if ($poster == 'None')
-				die('Nice try.');
+			if (preg_match($this->config['spam_regex'], $poster)
+				die('Spam detected. Nice try.');
 			
 			$format=$post['format'];
 			if (!array_key_exists($format, $this->conf['all_syntax']))
 				$format='';
 			
 			$code=$post["code2"];
+			
+			if (preg_match($this->config['spam_regex'], $code)
+				die('Spam detected. Nice try.');
 			
 			//now insert..
 			$parent_pid=0;

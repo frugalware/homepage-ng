@@ -200,4 +200,20 @@ $CONF['popular_syntax']=array(
 	'text','bash', 'c', 'cpp', 'html4strict',
 	'java','javascript','php','perl', 'python', 'ruby', 'lua');
 
+$CONF['spam_regex'] = "/s-e-x|zoofilia|sexyongpin|grusskarte|geburtstagskarten|animalsex|".
+               "sex-with|dogsex|adultchat|adultlive|camsex|sexcam|livesex|sexchat|".
+               "chatsex|onlinesex|adultporn|adultvideo|adultweb.|hardcoresex|hardcoreporn|".
+               "teenporn|xxxporn|lesbiansex|livegirl|livenude|livesex|livevideo|camgirl|".
+               "spycam|voyeursex|online-casino|kontaktlinsen|cheapest-phone|".
+               "laser-eye|eye-laser|fuelcellmarket|lasikclinic|cragrats|parishilton|".
+               "paris-hilton|paris-tape|2large|fuel-dispenser|fueling-dispenser|huojia|".
+               "jinxinghj|telematicsone|telematiksone|a-mortgage|diamondabrasives|".
+               "reuterbrook|sex-plugin|sex-zone|lazy-stars|eblja|liuhecai|".
+               "buy-viagra|-cialis|-levitra|boy-and-girl-kissing|ses3|". //These match spammy words
+               "hydrocodone|We are delicate. We do not delete your content.|adipex|phentermine|valium|casino-gambling|casino-game|casino-online|party-poker|$
+               "dirare\.com|".                               //This matches dirare.com a spammer's domain name
+               "overflow:\s*auto;\s*height:\s*[0-4]px;|".    //This matches against overflow:auto; hieght:0px; (most CSS hidden spam)
+               "style\s*=\s*\"\s*display\s*:\s*none".        //This matches against <style="display:none
+               "/i";
+
 ?>
