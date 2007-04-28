@@ -163,6 +163,9 @@ class Pastebin
 			if (strlen($poster)==0)
 				$poster='Anonymous';
 			
+			if ($poster == "None")
+				die('Spam detected. Nice try.');
+			
 			if (preg_match($this->conf['spam_regex'], $poster))
 				die('Spam detected. Nice try.');
 			
