@@ -163,7 +163,7 @@ class Pastebin
 			if (strlen($poster)==0)
 				$poster='Anonymous';
 			
-			if (preg_match($this->config['spam_regex'], $poster)
+			if (preg_match($this->config['spam_regex'], $poster))
 				die('Spam detected. Nice try.');
 			
 			$format=$post['format'];
@@ -172,7 +172,7 @@ class Pastebin
 			
 			$code=$post["code2"];
 			
-			if (preg_match($this->config['spam_regex'], $code)
+			if (preg_match($this->config['spam_regex'], $code))
 				die('Spam detected. Nice try.');
 			
 			//now insert..
