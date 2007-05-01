@@ -14,6 +14,17 @@
 ]>
 <news>
 	<post>
+		<id>61</id>
+		<title>Frugalware Newsletter Issue 4</title>
+		<date>Tue May  1 19:08:24 CET 2007</date>
+		<author>AlexExtreme</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			The fourth issue of our fortnightly newsletter has been released! You can read it <a href="/newsletter/4">here</a>. We hope you like it!
+			]]>
+		</content>
+	</post>
+	<post>
 		<id>60</id>
 		<title>Request: IDE HDDs</title>
 		<date>Tue Apr 24 20:35:18 CEST 2007</date>
