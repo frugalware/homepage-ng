@@ -27,6 +27,17 @@
 
 <fsas>
 	<fsa>
+		<id>163</id>
+		<date>2007-05-05</date>
+		<author>voroskoi</author>
+		<package>lesstif</package>
+		<vulnerable>0.95.0-1</vulnerable>
+		<unaffected>0.95.0-2terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1967</bts>
+		<cve>http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-0605</cve>
+		<desc>The XPM library's scan.c file may allow attackers to execute arbitrary code by crafting a malicious XPM image file containing a negative bitmap_unit value that provokes a buffer overflow.</desc>
+	</fsa>
+	<fsa>
 		<id>162</id>
 		<date>2007-05-05</date>
 		<author>voroskoi</author>
