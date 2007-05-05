@@ -82,8 +82,13 @@ if(count($params)>0)
 	else if($page=="packages" and is_numeric($params[0]))
 	{
 		$urlsuffix="?id=".$params[0];
-		if(count($params)>1 and $params[1]=="files")
-			$urlsuffix.="&s=f";
+		if(count($params)>1)
+		{
+			if($params[1]=="files")
+				$urlsuffix.="&s=f";
+			else if($params[1]=="buildlog")
+				$urlsuffix.="&s=buildlog";
+		}
 	}
 }
 

@@ -43,6 +43,8 @@ function main()
 	{
 		if ($_GET['s'] == "f")
 			file_from_id($_GET['id']);
+		else if ($_GET['s'] == "buildlog")
+			buildlog_from_id($_GET['id']);
 		else
 			pkg_from_id($_GET['id']);
 	}
@@ -310,7 +312,7 @@ function res_show($res_set, $what, $search=null) {
 
 function pkg_from_id($id)
 {
-	global $sqlhost, $sqluser, $sqlpass;
+	global $sqlhost, $sqluser, $sqlpass, $top_path;
 	$db = new FwDB();
 	$db->doConnect($sqlhost, $sqluser, $sqlpass, "frugalware2");
 	$res = $db->doQuery("select uploaders.login, packages.pkgname, packages.pkgver, packages.size, packages.usize, packages.arch, packages.`desc`, packages.maintainer, packages.sha1sum, packages.fwver, packages.builddate, packages.parent_id, packages.url from packages, uploaders where packages.id=$id and packages.uploader_id = uploaders.id group by concat(packages.fwver, packages.pkgname, packages.arch)");
@@ -363,6 +365,8 @@ function pkg_from_id($id)
 	$content .= "<tr><td>" . gettext("Name:") . "</td><td><a href=\"/packages/".$id."/files\">".$arr['pkgname']."</a></td></tr>\n";
 	if ($arr['parent_id'] != 0 and $arr['parent_id'] != $id) $content .= "<tr><td>" . gettext("Parent:") . "</td><td><a href=\"/packages/" . $arr['parent_id']. "\">".$parent['pkgname']."</a></td></tr>\n";
 	$content .= "<tr><td>" . gettext("Version:") . "</td><td>".$arr['pkgver']."</td></tr>\n";
+	if(file_exists($top_path."/source/".$parent['group']."/".$parent['pkgname']."/".$parent['pkgname']."-".$arr['pkgver']."-".$arr['arch'].".log.bz2"))
+		$content .= "<tr><td>" . gettext("Buildlog:") . "</td><td><a href=\"/packages/".$id."/buildlog\">".$arr['pkgname']."-".$arr['pkgver']."-".$arr['arch'].".log.bz2</a></td></tr>\n";
 	$content .= "<tr><td>" . gettext("Changelog:") . "</td><td><a href=\"http://ftp.frugalware.org/pub/frugalware/frugalware-" . $arr['fwver'] . "/source/" . $parent['group']."/".$parent['pkgname']."/Changelog\">Changelog</a></td></tr>\n";
 	$content .= "<tr><td>" . gettext("Darcs:") . "</td><td><a href=\"http://darcs.frugalware.org/darcsweb/darcsweb.cgi?r=frugalware-" . $arr['fwver'] . ";a=tree;f=/source/" . $parent['group']."/".str_replace("+", "%2b", $parent['pkgname']). "\">View entry</a></td></tr>\n";
 	if(count($groups))
@@ -427,6 +431,46 @@ function pkg_from_id($id)
 	fwmiddlebox($title, $content);
 }
 
+function buildlog_from_id($id)
+{
+	global $sqlhost, $sqluser, $sqlpass, $top_path;
+
+	$db = new FwDB();
+	$db->doConnect($sqlhost, $sqluser, $sqlpass, "frugalware2");
+	$res = $db->doQuery("select pkgname, pkgver, arch, parent_id from packages where id=$id");
+	$arr = $db->doFetchRow($res);
+	if($arr['parent_id']!=0)
+	{
+		$res = $db->doQuery("select pkgname from packages where id=" . $arr['parent_id']);
+		$parent = $db->doFetchRow($res);
+	}
+	else
+		$parent['pkgname']=$arr['pkgname'];
+	$query = "select ct_groups.pkg_id, groups.id, groups.name from groups, ct_groups where (ct_groups.pkg_id=$id or ct_groups.pkg_id=".$arr['parent_id'].") and ct_groups.group_id = groups.id order by groups.id";
+	$res = $db->doQuery($query);
+	while($i=$db->doFetchRow($res))
+		if($i['pkg_id']==$id)
+			$groups[]=$i;
+		else if(!isset($parent['group']))
+			$parent['group']=$i['name'];
+	if(!isset($parent['group']))
+		$parent['group']=$groups[0]['name'];
+
+	$slog = $parent['pkgname']."-".$arr['pkgver']."-".$arr['arch'];
+	$log = $top_path."/source/".$parent['group']."/".$parent['pkgname']."/".$slog.".log.bz2";
+	print("<fieldset class=\"pkg\"><legend>".gettext(sprintf("Build log for %s", $slog))."</legend>");
+	if(file_exists($log))
+	{
+		print("<pre class=\"buildlog\">");
+		$fp = bzopen($log, "r");
+		while ($buffer = bzread ($fp, 4096))
+			print($buffer);
+		bzclose ($fp);
+		print("</pre>\n</fieldset>\n");
+	}
+	else
+		print(gettext("Sorry, currently no log available."));
+}
 
 function file_from_id($id)
 {

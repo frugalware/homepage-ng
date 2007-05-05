@@ -31,6 +31,10 @@ FIELDSET.fieldset {
 	text-align: left;
 }
 
+.buildlog {
+	font-size: 1.2em;
+}
+
 .postheader {
 	font-family: "DejaVu Sans", sans-serif;
 	font-weight: normal;
