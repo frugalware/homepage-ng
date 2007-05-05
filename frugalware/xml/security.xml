@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>162</id>
+		<date>2007-05-05</date>
+		<author>voroskoi</author>
+		<package>phpmyadmin</package>
+		<vulnerable>2.10.0.2-1</vulnerable>
+		<unaffected>2.10.1-1terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1984</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2245</cve>
+		<desc>Some vulnerabilities have been reported in phpMyAdmin, which can be exploited by malicious people to conduct cross-site scripting attacks.
+			Input passed to the "fieldkey" parameter in browse_foreigners.php and input passed to the "PMA_sanitize()" function is not properly sanitised before being returned to the user. This can be exploited to execute arbitrary HTML and script code in a user's browser session in context of an affected site.</desc>
+	</fsa>
+	<fsa>
 		<id>161</id>
 		<date>2007-04-26</date>
 		<author>voroskoi</author>
