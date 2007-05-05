@@ -206,7 +206,7 @@ $CONF['spam_regex'] = "/s-e-x|zoofilia|sexyongpin|grusskarte|geburtstagskarten|a
                "teenporn|xxxporn|lesbiansex|livegirl|livenude|livesex|livevideo|camgirl|".
                "spycam|voyeursex|online-casino|kontaktlinsen|cheapest-phone|".
                "laser-eye|eye-laser|fuelcellmarket|lasikclinic|cragrats|parishilton|".
-               "paris-hilton|paris-tape|2large|fuel-dispenser|fueling-dispenser|huojia|".
+               "paris-hilton|paris-tape|2large|fuel-dispenser|fueling-dispenser|huojia|effexor|paxil|lipitor".
                "jinxinghj|telematicsone|telematiksone|a-mortgage|diamondabrasives|".
                "reuterbrook|sex-plugin|sex-zone|lazy-stars|eblja|liuhecai|".
                "buy-viagra|-cialis|-levitra|boy-and-girl-kissing|ses3|". //These match spammy words
