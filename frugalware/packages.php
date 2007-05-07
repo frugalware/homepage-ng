@@ -458,7 +458,7 @@ function buildlog_from_id($id)
 
 	$slog = $parent['pkgname']."-".$arr['pkgver']."-".$arr['arch'];
 	$log = str_replace("current", $arr['fwver'], $top_path)."/source/".$parent['group']."/".$parent['pkgname']."/".$slog.".log.bz2";
-	print("<fieldset class=\"pkg\"><legend>".gettext(sprintf("Build log for %s", $slog))."</legend>");
+	print("<fieldset class=\"pkg\"><legend>".sprintf(gettext("Build log for %s"), $slog)."</legend>");
 	if(file_exists($log))
 	{
 		print("<pre class=\"buildlog\">");
