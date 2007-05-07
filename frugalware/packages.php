@@ -437,7 +437,7 @@ function buildlog_from_id($id)
 
 	$db = new FwDB();
 	$db->doConnect($sqlhost, $sqluser, $sqlpass, "frugalware2");
-	$res = $db->doQuery("select pkgname, pkgver, arch, parent_id from packages where id=$id");
+	$res = $db->doQuery("select pkgname, pkgver, arch, parent_id, fwver from packages where id=$id");
 	$arr = $db->doFetchRow($res);
 	if($arr['parent_id']!=0)
 	{
@@ -457,7 +457,7 @@ function buildlog_from_id($id)
 		$parent['group']=$groups[0]['name'];
 
 	$slog = $parent['pkgname']."-".$arr['pkgver']."-".$arr['arch'];
-	$log = $top_path."/source/".$parent['group']."/".$parent['pkgname']."/".$slog.".log.bz2";
+	$log = str_replace("current", $arr['fwver'], $top_path)."/source/".$parent['group']."/".$parent['pkgname']."/".$slog.".log.bz2";
 	print("<fieldset class=\"pkg\"><legend>".gettext(sprintf("Build log for %s", $slog))."</legend>");
 	if(file_exists($log))
 	{
