@@ -27,6 +27,21 @@
 
 <fsas>
 	<fsa>
+		<id>164</id>
+		<date>2007-05-07</date>
+		<author>voroskoi</author>
+		<package>ktorrent</package>
+		<vulnerable>2.1.2-1</vulnerable>
+		<unaffected>2.1.4-1terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2012</bts>
+		<cve>http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1384
+			http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1385
+			http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1799</cve>
+		<desc>Two vulnerabilities have been reported in KTorrent, which can be exploited by malicious people to overwrite arbitrary files on a user's system or to potentially compromise a user's system.
+			1) An input validation error when processing paths of filenames within torrents can be exploited to e.g. overwrite arbitrary files with the privileges of the user running the application via directory traversal attacks.
+			2) An error in the processing of messages with invalid chunk indexes can be exploited to corrupt memory and may allow execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>163</id>
 		<date>2007-05-05</date>
 		<author>voroskoi</author>
