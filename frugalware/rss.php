@@ -150,7 +150,7 @@ switch($_GET['type'])
 		die();
 	case "bugs":
 		header('Content-Type: application/xml; charset=utf-8');
-		print(str_replace("/task", "", file_get_contents("http://bugs.frugalware.org/feed.php?feed_type=rss2&project=0")));
+		print(str_replace("?do=details&amp;task_id=", "", file_get_contents("http://bugs.frugalware.org/feed.php?feed_type=rss2&project=0")));
 		die();
 	case "blogs":
 		header('Content-Type: application/xml; charset=utf-8');
