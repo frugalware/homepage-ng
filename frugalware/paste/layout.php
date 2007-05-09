@@ -302,7 +302,11 @@ To highlight particular lines, prefix each line with <?php echo $CONF['highlight
 echo htmlentities($page['post']['editcode']) ?></textarea>
 
 <div id="namebox">
-	
+
+<label for="human">I am a:</label><br />
+<input type="radio" name="human" value="yes" />Human
+<input checked="checked" type="radio" name="human" value="no" />Bot<br /><br />
+
 <label for="poster">Your Name</label><br/>
 <input type="text" maxlength="24" size="24" id="poster" name="poster" value="<?php echo $page['poster'] ?>" />
 <input type="submit" name="paste" value="Send"/>
