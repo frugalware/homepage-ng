@@ -1,3 +1,0 @@
-RewriteEngine On
-RewriteCond %{REQUEST_URI} !^/bts
-RewriteRule (.*) http://bugs.ironiq.hu/$1 [P]
