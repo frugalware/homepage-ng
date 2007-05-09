@@ -166,6 +166,9 @@ class Pastebin
 			if ($poster == "None")
 				die('Spam detected. Nice try.');
 			
+			if ($post['human'] != 'yes');
+				die('Sorry, only humans can post here. Please click the back button and select \'Human\' if you want to post.');
+			
 			if (preg_match($this->conf['spam_regex'], $poster))
 				die('Spam detected. Nice try.');
 			
