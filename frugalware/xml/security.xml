@@ -27,6 +27,20 @@
 
 <fsas>
 	<fsa>
+		<id>165</id>
+		<date>2007-05-09</date>
+		<author>voroskoi</author>
+		<package>smb4k</package>
+		<vulnerable>0.8.0-1</vulnerable>
+		<unaffected>0.8.3-1terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1935</bts>
+		<cve>There is no CVE for this issue, see https://developer.berlios.de/project/shownotes.php?release_id=12615</cve>
+		<desc>Ben Hutchings discovered the following security weaknesses in the utility programs:
+			Due to insufficient sanitation, smb4k_mount allowed an user to mount any (local) device if the program was used in combination with sudo or super.
+			The function findprog(), which was in present smb4k_mount, smb4k_umount, and smb4k_kill, returned a pointer to memory that was freed when the function exited.
+			The function replace_special_characters(), that was present in smb4k_mount and smb4k_umount, returned a pointer to memory that was freed after the function exited. Additionally, it didn't replace the hyphen.</desc>
+	</fsa>
+	<fsa>
 		<id>164</id>
 		<date>2007-05-07</date>
 		<author>voroskoi</author>
