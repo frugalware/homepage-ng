@@ -27,6 +27,34 @@
 
 <fsas>
 	<fsa>
+		<id>166</id>
+		<date>2007-05-10</date>
+		<author>voroskoi</author>
+		<package>php</package>
+		<vulnerable>5.2.1-2terminus1</vulnerable>
+		<unaffected>5.2.1-3terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1962
+			http://bugs.frugalware.org/task/1841
+			http://bugs.frugalware.org/task/2014</bts>
+		<cve>http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1001
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1521
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1484
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1649
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1900</cve>
+		<desc>Ivan Fratric has reported a vulnerability in PHP, which potentially can be exploited by malicious people to cause a DoS (Denial of Service). The vulnerability is caused due to an integer overflow within the "readwbmp()" function in ext/gd/libgd/wbmp.c. This can be exploited to e.g. cause a DoS by tricking a PHP script into loading a specially crafted wbmp image.
+			Stefan Esser has reported some vulnerabilities in PHP, which can be exploited by malicious users to compromise a vulnerable system.
+			1) A double free error within the "session_regenerate_id()" function can be exploited to execute arbitrary code with the privileges of the PHP interpreter.
+			2) An error in the "array_user_key_compare()" function where key references are incorrectly destroyed can be exploited to cause memory corruption.
+			3) An error exists within the "unserialize()" function when unserialising specially escaped S: data types. This can be exploited to e.g. disclose certain parts of the heap memory.
+			A vulnerability is caused due to the use of an incorrect regular expression within the "FILTER_VALIDATE_EMAIL" filter of the ext/filter extension. This can be exploited to inject newlines via specially crafted email addresses, which may allow mail header injection.
+			Also fixes the following MOPB vulnerabilities:
+			http://www.php-security.org/MOPB/MOPB-10-2007.html
+			http://www.php-security.org/MOPB/MOPB-14-2007.html
+			http://www.php-security.org/MOPB/MOPB-26-2007.html
+			http://www.php-security.org/MOPB/MOPB-34-2007.html
+			http://www.php-security.org/MOPB/MOPB-41-2007.html</desc>
+	</fsa>
+	<fsa>
 		<id>165</id>
 		<date>2007-05-09</date>
 		<author>voroskoi</author>
