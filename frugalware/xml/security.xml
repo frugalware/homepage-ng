@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>168</id>
+		<date>2007-05-10</date>
+		<author>voroskoi</author>
+		<package>postgresql</package>
+		<vulnerable>8.2.3-1</vulnerable>
+		<unaffected>8.2.4-1terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1983</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2138</cve>
+		<desc>A security issue has been reported in PostgreSQL, which potentially can be exploited by malicious users to gain escalated privileges.
+			The security issue is caused due to an error in SECURITY DEFINER functions and can be exploited to gain escalated privileges by modifying the search_path and using temporary objects.</desc>
+	</fsa>
+	<fsa>
 		<id>167</id>
 		<date>2007-05-10</date>
 		<author>voroskoi</author>
