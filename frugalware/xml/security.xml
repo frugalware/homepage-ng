@@ -27,6 +27,17 @@
 
 <fsas>
 	<fsa>
+		<id>169</id>
+		<date>2007-05-10</date>
+		<author>voroskoi</author>
+		<package>truecrypt</package>
+		<vulnerable>4.3-1terminus1</vulnerable>
+		<unaffected>4.3-2terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2024</bts>
+		<cve>There is no CVE for this issue</cve>
+		<desc>When running without administrator privileges, TrueCrypt automatically attempts to elevate its access rights (if necessary) using the sudo command. The Linux version of TrueCrypt no longer supports the set-euid root mode of execution. These changes also prevent all discovered and undiscovered (if any) security issues related to the set-euid root mode of execution, including an issue affecting all previous Linux versions of TrueCrypt where a local non-administrator user could cause a denial of service or gain administrator privileges.</desc>
+	</fsa>
+	<fsa>
 		<id>168</id>
 		<date>2007-05-10</date>
 		<author>voroskoi</author>
