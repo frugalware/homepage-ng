@@ -71,6 +71,7 @@ $cont1 = "<div align=\"left\">Wishes:<ul>
 <li>40GB IDE HDD (Kovacs, Janos)</li>
 <li>Dell Optiplex P4 1.6GHz machine for main server - changed to i686 buildserver</li>
 <li>Mylex DAC960 SCSI card with 2x18GB HDD (will be the base system of our x86_64 buildserver) (from Locsei, Gabor)</li>
+<li>60GB Western Digital IDE HDD (from Michael Loomis)</li>
 </ul></div>";
 fwmiddlebox(gettext("The Frugalware Team"), $cont1);
 
@@ -78,6 +79,11 @@ $cont2 = "<div align=\"left\">Received:<ul>
 <li>Ati video card for fglrx package testing (David Kimpe)</li>
 </ul></div>";
 fwmiddlebox("Andras Voroskoi", $cont2);
+
+$cont3 = "<div align=\"left\">Received:<ul>
+<li>256MB extra memory to my notebook (Janos Kovacs)</li>
+</ul></div>";
+fwmiddlebox("Miklos Vajna", $cont3);
 
 include("footer.php");
 ?>
