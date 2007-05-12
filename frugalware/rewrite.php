@@ -88,6 +88,8 @@ if(count($params)>0)
 				$urlsuffix.="&s=f";
 			else if($params[1]=="buildlog")
 				$urlsuffix.="&s=buildlog";
+			else if($params[1]=="changelog")
+				$urlsuffix.="&s=changelog";
 		}
 	}
 }

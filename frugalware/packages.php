@@ -45,6 +45,8 @@ function main()
 			file_from_id($_GET['id']);
 		else if ($_GET['s'] == "buildlog")
 			buildlog_from_id($_GET['id']);
+		else if ($_GET['s'] == "changelog")
+			changelog_from_id($_GET['id']);
 		else
 			pkg_from_id($_GET['id']);
 	}
@@ -367,7 +369,7 @@ function pkg_from_id($id)
 	$content .= "<tr><td>" . gettext("Version:") . "</td><td>".$arr['pkgver']."</td></tr>\n";
 	if(file_exists($top_path."/source/".$parent['group']."/".$parent['pkgname']."/".$parent['pkgname']."-".$arr['pkgver']."-".$arr['arch'].".log.bz2"))
 		$content .= "<tr><td>" . gettext("Buildlog:") . "</td><td><a href=\"/packages/".$id."/buildlog\">".$arr['pkgname']."-".$arr['pkgver']."-".$arr['arch'].".log.bz2</a></td></tr>\n";
-	$content .= "<tr><td>" . gettext("Changelog:") . "</td><td><a href=\"http://ftp.frugalware.org/pub/frugalware/frugalware-" . $arr['fwver'] . "/source/" . $parent['group']."/".$parent['pkgname']."/Changelog\">Changelog</a></td></tr>\n";
+	$content .= "<tr><td>" . gettext("Changelog:") . "</td><td><a href=\"/packages/".$id."/changelog\">Changelog</a></td></tr>\n";
 	$content .= "<tr><td>" . gettext("Darcs:") . "</td><td><a href=\"http://darcs.frugalware.org/darcsweb/darcsweb.cgi?r=frugalware-" . $arr['fwver'] . ";a=tree;f=/source/" . $parent['group']."/".str_replace("+", "%2b", $parent['pkgname']). "\">View entry</a></td></tr>\n";
 	if(count($groups))
 	{
@@ -429,6 +431,47 @@ function pkg_from_id($id)
 	$content .= "</table>\n";
 	$db->doClose();
 	fwmiddlebox($title, $content);
+}
+
+function changelog_from_id($id)
+{
+	global $sqlhost, $sqluser, $sqlpass, $top_path;
+
+	$db = new FwDB();
+	$db->doConnect($sqlhost, $sqluser, $sqlpass, "frugalware2");
+	$res = $db->doQuery("select pkgname, pkgver, arch, parent_id, fwver from packages where id=$id");
+	$arr = $db->doFetchRow($res);
+	if($arr['parent_id']!=0)
+	{
+		$res = $db->doQuery("select pkgname from packages where id=" . $arr['parent_id']);
+		$parent = $db->doFetchRow($res);
+	}
+	else
+		$parent['pkgname']=$arr['pkgname'];
+	$query = "select ct_groups.pkg_id, groups.id, groups.name from groups, ct_groups where (ct_groups.pkg_id=$id or ct_groups.pkg_id=".$arr['parent_id'].") and ct_groups.group_id = groups.id order by groups.id";
+	$res = $db->doQuery($query);
+	while($i=$db->doFetchRow($res))
+		if($i['pkg_id']==$id)
+			$groups[]=$i;
+		else if(!isset($parent['group']))
+			$parent['group']=$i['name'];
+	if(!isset($parent['group']))
+		$parent['group']=$groups[0]['name'];
+
+	$slog = $parent['pkgname']."-".$arr['pkgver']."-".$arr['arch'];
+	$log = str_replace("current", $arr['fwver'], $top_path)."/source/".$parent['group']."/".$parent['pkgname']."/Changelog";
+	print("<fieldset class=\"pkg\"><legend>".sprintf(gettext("Changelog for %s"), $slog)."</legend>");
+	if(file_exists($log))
+	{
+		print("<pre class=\"changelog\">");
+		$fp = fopen($log, "r");
+		while ($buffer = fread ($fp, 4096))
+			print($buffer);
+		fclose ($fp);
+		print("</pre>\n</fieldset>\n");
+	}
+	else
+		print(gettext("Sorry, currently no log available."));
 }
 
 function buildlog_from_id($id)
