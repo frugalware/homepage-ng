@@ -27,6 +27,22 @@
 
 <fsas>
 	<fsa>
+		<id>170</id>
+		<date>2007-05-12</date>
+		<author>voroskoi</author>
+		<package>kernel</package>
+		<vulnerable>2.6.20-5terminus2</vulnerable>
+		<unaffected>2.6.20-5terminus3</unaffected>
+		<bts>http://bugs.frugalware.org/task/2006</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2172
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2242
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1861</cve>
+		<desc>Two vulnerabilities and a security issue have been reported in the Linux Kernel, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			1) An error exists within the processing of packets with IPv6 type 0 route headers. This can be exploited to cause a DoS due to high network traffic by sending specially crafted IPv6 packets to vulnerable systems.
+			2) A boundary error due to the use of RTA_MAX instead of RTN_MAX in dn_fib_props[] within dn_fib.c and in fib_props[] within fib_semantics.c can potentially be exploited to cause a DoS.
+			3) The vulnerability is caused due to an error within the handling of NETLINK_FIB_LOOKUP reply messages. This can be exploited to cause an infinite recursion, which could result in a stack overflow.</desc>
+	</fsa>
+	<fsa>
 		<id>169</id>
 		<date>2007-05-10</date>
 		<author>voroskoi</author>
