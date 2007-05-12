@@ -27,6 +27,31 @@
 
 <fsas>
 	<fsa>
+		<id>181</id>
+		<date>2007-05-12</date>
+		<author>voroskoi</author>
+		<package>php</package>
+		<vulnerable>5.2.1-3terminus1</vulnerable>
+		<unaffected>5.2.2-1terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2014</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1864
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2509
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2510
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2511</cve>
+		<desc>Several vulnerabilities and weaknesses have been reported in PHP, where some have unknown impacts and others can be exploited by malicious users to manipulate certain data, disclose potentially sensitive information, bypass certain security restrictions, or to cause a DoS (Denial of Service), and potentially by malicious people to compromise a vulnerable system.
+			1) An input validation error in the "ftp_putcmd()" function can be exploited to inject newline characters.
+			2) An unspecified error in the "import_request_variables()" can be exploited to overwrite global variables.
+			3) An unspecified error can remotely be exploited to cause a buffer overflow within in the "make_http_soap_request()" function (PHP 5).
+			4) An unspecified error can be exploited to cause a buffer overflow within the "user_filter_factory_create()" function (PHP 5).
+			5) An unspecified error in the bundled libxmlrpc library can remotely be exploited to cause a heap-based buffer overflow and may allow execution of arbitrary code.
+			6) An input validation error in the "mail()" function allows injection of headers via the "To" and "Subject" parameters.
+			7) An error in the "mail()" function allows to truncate messages via ASCIIZ bytes.
+			8) The "safe_mode" and "open_basedir" protection mechanisms can be bypassed via the "zip://" and "bzip://" wrappers.
+			9) An integer overflow exists in "substr_compare()", which can be exploited to read memory from memory behind PHP variables. The "substr_count" function is reportedly also affected.
+			10) An error in the "mb_parse_str()" can be exploited to activate "register_globals".
+			11) An error in the Zend engine related to nested array variables that can be exploited to crash a PHP application.</desc>
+	</fsa>
+	<fsa>
 		<id>180</id>
 		<date>2007-05-12</date>
 		<author>voroskoi</author>
