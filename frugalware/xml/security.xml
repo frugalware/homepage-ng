@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>174</id>
+		<date>2007-05-12</date>
+		<author>voroskoi</author>
+		<package>vim</package>
+		<vulnerable>7.0-3</vulnerable>
+		<unaffected>7.0-4terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2010</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2438</cve>
+		<desc>Tomas Golembiovsky has discovered a vulnerability in Vim, which can be exploited by malicious people to compromise a user's system.
+			The vulnerability is caused due to the application allowing e.g. the "feedkeys()" function to be called in the sandbox. This can be exploited to execute arbitrary commands with privileges of the Vim user.
+			Successful exploitation requires that the "modelines" option is enabled and the user is tricked into opening a malicious file.</desc>
+	</fsa>
+	<fsa>
 		<id>173</id>
 		<date>2007-05-12</date>
 		<author>voroskoi</author>
