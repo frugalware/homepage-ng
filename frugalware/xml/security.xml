@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>178</id>
+		<date>2007-05-12</date>
+		<author>voroskoi</author>
+		<package>libexif</package>
+		<vulnerable>0.6.13-1</vulnerable>
+		<unaffected>0.6.13-2terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2043</bts>
+		<cve>There is no CVE for this issue.</cve>
+		<desc>Victor Stinner has reported a vulnerability in libexif, which can be exploited by malicious people to cause a DoS and potentially compromise an application using the library.
+			The vulnerability is caused due to an error within the handling of malformed EXIF information. This can be exploited to crash an application using the library and may allow execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>177</id>
 		<date>2007-05-12</date>
 		<author>voroskoi</author>
