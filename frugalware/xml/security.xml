@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>176</id>
+		<date>2007-05-12</date>
+		<author>voroskoi</author>
+		<package>squirrelmail</package>
+		<vulnerable>1.4.9-1</vulnerable>
+		<unaffected>1.4.10-1terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2034</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1262</cve>
+		<desc>Some vulnerabilities have been reported in SquirrelMail, which can be exploited by malicious people to conduct cross-site scripting and cross-site request forgery attacks.
+			1) SquirrelMail does not sanitise charsets in HTML or JavaScript data before sending it to browsers. This can be exploited to execute arbitrary HTML and script code in a user's browser session in context of an affected site by sending malicious HTML emails. Reportedly, this affects Internet Explorer only.
+			2) The script compose.php allows users to perform certain actions via HTTP requests without performing validity checks to verify the request. This can be exploited to e.g. send emails from another user's account by including malicious links to images in an email.</desc>
+	</fsa>
+	<fsa>
 		<id>175</id>
 		<date>2007-05-12</date>
 		<author>voroskoi</author>
