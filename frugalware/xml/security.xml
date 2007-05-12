@@ -27,6 +27,20 @@
 
 <fsas>
 	<fsa>
+		<id>179</id>
+		<date>2007-05-12</date>
+		<author>voroskoi</author>
+		<package>xmms</package>
+		<vulnerable>1.2.10-11</vulnerable>
+		<unaffected>1.2.10-12terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/1854</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0653
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0654</cve>
+		<desc>Secunia Research has discovered two vulnerabilities in XMMS, which can be exploited by malicious people to compromise a user's system.
+			1) An integer underflow error exists in the processing of skin bitmap images. This can be exploited to cause a stack-based buffer overflow via specially crafted skin images containing manipulated header information.	Successful exploitation allows execution of arbitrary code.
+			2) An integer overflow error exists in the processing of skin bitmap images. This can be exploited to cause memory corruption via specially crafted skin images containing manipulated header information. Successful exploitation may allow the execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>178</id>
 		<date>2007-05-12</date>
 		<author>voroskoi</author>
