@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>171</id>
+		<date>2007-05-12</date>
+		<author>voroskoi</author>
+		<package>unzip</package>
+		<vulnerable>5.52-1</vulnerable>
+		<unaffected>5.52-2terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2026</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-2475
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-4667</cve>
+		<desc>Race condition in Unzip 5.52 allows local users to modify permissions of arbitrary files via a hard link attack on a file while it is being decompressed, whose permissions are changed by Unzip after the decompression is complete.
+			Buffer overflow in UnZip allows user-assisted attackers to execute arbitrary code via a long filename command line argument. NOTE: since the overflow occurs in a non-setuid program, there are not many scenarios under which it poses a vulnerability, unless unzip is passed long arguments when it is invoked from other programs.</desc>
+	</fsa>
+	<fsa>
 		<id>170</id>
 		<date>2007-05-12</date>
 		<author>voroskoi</author>
