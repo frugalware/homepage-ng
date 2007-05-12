@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>172</id>
+		<date>2007-05-12</date>
+		<author>voroskoi</author>
+		<package>elinks</package>
+		<vulnerable>0.11.2-1</vulnerable>
+		<unaffected>0.11.2-2terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2031</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2027</cve>
+		<desc>Arnaud Giersch has reported a weakness in ELinks, which potentially can be exploited by malicious, local users to gain escalated privileges.
+			The weakness is caused due to the "add_filename_to_string()" function in src/intl/gettext/loadmsgcat.c reading gettext catalogs from potentially untrusted paths. This can be exploited to execute arbitrary code with escalated privileges by enticing another user to run ELinks in a specially prepared directory environment.</desc>
+	</fsa>
+	<fsa>
 		<id>171</id>
 		<date>2007-05-12</date>
 		<author>voroskoi</author>
