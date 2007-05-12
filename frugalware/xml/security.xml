@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>175</id>
+		<date>2007-05-12</date>
+		<author>voroskoi</author>
+		<package>python</package>
+		<vulnerable>2.5-2</vulnerable>
+		<unaffected>2.5-3terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2033</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2052</cve>
+		<desc>Piotr Engelking has reported a security issue in Python, which can be exploited by malicious people to disclose potentially sensitive information.
+			The security issue is caused due to an off-by-one error within the "PyLocale_strxfrm()" function in Modules/_localemodule.c, which can be exploited to disclose certain parts of the memory.</desc>
+	</fsa>
+	<fsa>
 		<id>174</id>
 		<date>2007-05-12</date>
 		<author>voroskoi</author>
