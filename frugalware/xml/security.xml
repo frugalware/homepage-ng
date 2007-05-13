@@ -27,6 +27,25 @@
 
 <fsas>
 	<fsa>
+		<id>183</id>
+		<date>2007-05-13</date>
+		<author>voroskoi</author>
+		<package>asterisk</package>
+		<vulnerable>1.4.2-2terminus1</vulnerable>
+		<unaffected>1.4.2-2terminus2</unaffected>
+		<bts>http://bugs.frugalware.org/task/1985
+			http://bugs.frugalware.org/task/2030</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2293
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2294
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2297
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2488</cve>
+		<desc>Some vulnerabilities have been reported in Asterisk, which potentially can be exploited by malicious people to cause a DoS (Denial of Service) or compromise a vulnerable system.
+			1) Two boundary errors exist in the T.38 SDP parser of the SIP channel when processing the "T38FaxRateManagement" or "T38FaxUdpEC" SDP parameters within the "process_sdp()" function in chan_sip.c. This can be exploited to cause stack-based buffer overflows by sending a specially crafted SIP packet with overly long SDP parameters. Successful exploitation requires that the "t38_udptl" configuration option is set to "yes".
+			2) A NULL pointer dereference error exists within the authentication mechanism of the Asterisk Remote Management Interface, which can be exploited to crash the service. Successful exploitation requires that the Management Interface is enabled and a user without a password is configured in the manager.conf file.
+			A vulnerability has been reported in Asterisk, which can be exploited by malicious users to disclose potential sensitive information.
+			The vulnerability is caused due to an error within the IAX2 channel driver (chan_iax2) in the processing of text frames. This can be exploited to disclose potentially sensitive heap memory by sending a text frame with content that is not NULL terminated.</desc>
+	</fsa>
+	<fsa>
 		<id>182</id>
 		<date>2007-05-12</date>
 		<author>voroskoi</author>
