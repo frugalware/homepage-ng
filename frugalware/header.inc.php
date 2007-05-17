@@ -136,8 +136,14 @@ function genHeader($usegettext = true) {
 	else
 		$uptime = sprintf("Uptime:<br /> %d day(s) %d h %d m %d s", $dayuptime/86400, $hour/3600, $min/60, $sec);
 	
-	// Generate the array and give it back.
-	$data = array("releases" => $rels, "packages" => $recupd, "uptime" => $uptime);
+	// PayPal donate
+	if (file_exists('paypal.inc.html'))
+		$paypal = file_get_contents('paypal.inc.html');
+		$data = array("releases" => $rels, "packages" => $recupd, "uptime" => $uptime, "paypal" => $paypal);
+	else
+		$data = array("releases" => $rels, "packages" => $recupd, "uptime" => $uptime, "paypal" => "");
+
+	// Give the array back.
 	return $data;
 }
 ?>

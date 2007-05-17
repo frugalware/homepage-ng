@@ -52,6 +52,8 @@ else if($_SERVER['PHP_SELF']=="/packages.php")
 fwsidebox(gettext("Releases"), $data['releases']);
 fwsidebox(gettext("Recent updates"), $data['packages']);
 fwsidebox(gettext("Languages"), $langcontent);
+if ($data['paypal'] != '')
+	fwsidebox(gettext("Donations"), $data['paypal']
 fwsidebox(gettext("Information"), $validcontent);
 fwsidebox(gettext("Server information"), $data['uptime']);
 ?>
