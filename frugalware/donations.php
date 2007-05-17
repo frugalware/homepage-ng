@@ -44,7 +44,8 @@ If you would like to donate something to the whole project (i.e. a mirror),
 please send a mail to the <a href=\"http://frugalware.org/mailman/listinfo/frugalware-devel\">frugalware-devel</a>
 list, or if you do not wish to subscribe, send a mail directly to vmiklos_at_frugalware_dot_org.
 If you wish to donate something to an individual developer, see the <a href=\"authors.php\">authors</a>
-page and send the developer a mail.</div>");
+page and send the developer a mail. You can also use the PayPal donate link on the side of the page
+if you wish to donate money.</div>");
 
 fwmiddlebox(gettext("Donations"), $fwdonatewelcome);
 
