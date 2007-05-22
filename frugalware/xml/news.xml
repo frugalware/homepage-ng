@@ -26,17 +26,14 @@
 				<li>Improvements:
 					<ul>
 						<li>The package manager (pacman-g2) now supports checking the integrity of your database.</li>
-						<li>A livecd called FwLive is now available for this prerelease.</li>
-						<li>A new web interface has been added to help translating
-										Frugalware. See the <a
-														href="http://frugalware.org/docs/translations">documentation</a>
-										for more information.</li>
+						<li>A LiveCD called FwLive is now available for this prerelease.</li>
+						<li>A new web interface has been added to help translating Frugalware. See the <a href="http://frugalware.org/docs/translations">documentation</a> for more information.</li>
 						<li>Support for XOrg 6.x has been dropped.</li>
 					</ul>
 				</li>
 				<li>Setup:
 					<ul>
-						<li>New Romanian and Sweedish translations.</li>
+						<li>New Romanian and Swedish translations.</li>
 						<li>The keyboard layouts are now sorted.</li>
 					</ul>
 				</li>
@@ -46,9 +43,7 @@
 						<li>GCC 4.2.0</li>
 						<li>GNU C Library 2.6</li>
 						<li>Pidgin replaced Gaim, the external plugin packages have been updated accordingly.</li>
-						<li>A new XULRunner package has been added and all GNOME apps that
-										have depended upon Firefox for HTML rendering have been
-										rebuilt against XULRunner.</li>
+						<li>A new XULRunner package has been added and all GNOME apps that have depended upon Firefox for HTML rendering have been rebuilt against XULRunner.</li>
 						<li>OpenOffice.org 2.2 + updated localizations + updated dictionaries</li>
 						<li>More than 100 new package</li>
 					</ul>
