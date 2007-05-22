@@ -61,18 +61,10 @@ function main()
 		$parser = new XMLParser($xml);
 		$parser->Parse();
 		$releases = $parser->document->release;
-		$first = true;
 		for ( $i=0; $i < count($releases); $i++)
 		{
 			if ($releases[$i]->status[0]->tagData == '1') {
-				if($first)
-				{
-					$selstr = " selected=\"selected\"";
-					$first = false;
-				}
-				else
-					unset($selstr);
-				$arr[] = "\t\t\t<option value=\"".$releases[$i]->version[0]->tagData."\"$selstr>".$releases[$i]->version[0]->tagData."</option>\n";
+				$arr[] = "\t\t\t<option value=\"".$releases[$i]->version[0]->tagData."\">".$releases[$i]->version[0]->tagData."</option>\n";
 			}
 		}
 		$content = "<form name=\"pkgsrch\" action=\"/packages/\" method=\"get\">
@@ -95,7 +87,7 @@ function main()
 		".gettext("Version:")."<br />
 		<select name=\"ver\" id=\"fwver\" class=\"required\">
 			<option value=\"all\">all</option>
-			<option value=\"current\">current</option>\n";
+			<option value=\"current\" selected=\"selected\">current</option>\n";
 		foreach ( $arr as $i )
 		{
 			$content .= $i;
