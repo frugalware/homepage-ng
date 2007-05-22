@@ -11,6 +11,91 @@
 <!ELEMENT name (#PCDATA)>
 ]>
 <news>
+	<post>
+		<id>63</id>
+		<title>Megjelent a Frugalware 0.7pre1 (Sayshell)</title>
+		<date>Tue May 24 07:14:08 CEST 2007</date>
+		<author>Boobaa</author>
+		<hidden>1</hidden>
+		<content><![CDATA[
+			A Frugalware Fejlesztői Csapat örömmel <a href="/news/63">jelenti be</a> a Frugalware 0.7pre1 azonnali elérhetőségét, mint az eljövendő 0.7-es stabil kiadás első előzetes változatát.<br />
+			Egy rövid, nem teljes lista a 0.6 óta történt változásokról:<br />
+			<ul>
+				<li>Fejlesztések:
+					<ul>
+						<li>A csomagkezelő (pacman-g2) már támogatja adatbázisának integritás-ellenőrzését.</li>
+						<li>Az FwLive nevű livecd is elérhető ehhez az előzetes kiadáshoz.</li>
+						<li>Egy új webes felületet állítottunk üzembe a Frugalware fordításának elősegítésére.
+										További információkért lásd a <a
+														href="http://frugalware.org/docs/translations">dokumentációt</a>.</li>
+						<li>Az XOrg 6.x támogatása megszűnt.</li>
+					</ul>
+				</li>
+				<li>Telepítő:
+					<ul>
+						<li>Új román és svéd fordítás.</li>
+						<li>A billentyűzet-kiosztásokat már sorrendben jelenítjük meg.</li>
+					</ul>
+				</li>
+				<li>Csomagfrissítések:
+					<ul>
+						<li>Linux kernel 2.6.21</li>
+						<li>GCC 4.2.0</li>
+						<li>GNU C könyvtár 2.6</li>
+						<li>A Pidgin leváltotta Gaimet, a külső beépülők csomagjait is ennek megfelelően frissítettük.</li>
+						<li>Egy új XULRunner csomagot készítettünk, és minden GNOME programot, melyek eddig a Firefox HTML-megjelenítő
+										motorjára épültek, újrafordítottunk az XULRunnerrel.</li>
+						<li>OpenOffice.org 2.2 + frissített lokalizációk + frissített szótárak</li>
+						<li>Több, mint 100 új csomag</li>
+					</ul>
+				</li>
+			</ul>
+			Bővebb információkért tekintse meg a Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Testing változáslistát</a>.<br />
+			Letöltés i686-ra:<br />
+			<b>MEGJEGYZÉS</b>: Ne töltse le a 3-12. CD-ket vagy a második DVD-t, hacsak nincs internetkapcsolata.<br />
+				<a href="/download/frugalware-testing-iso/fwlive-0.7pre1-i686-full.iso">livecd</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7pre1-i686-net.iso">netinstall</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7pre1-i686-usb.tar.gz">usb</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7pre1-i686-tftp.img.gz">tftp</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7pre1-i686-cd1.iso">cd1</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7pre1-i686-cd2.iso">cd2</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7pre1-i686-cd3.iso">cd3</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7pre1-i686-cd4.iso">cd4</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7pre1-i686-cd5.iso">cd5</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7pre1-i686-cd6.iso">cd6</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7pre1-i686-cd7.iso">cd7</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7pre1-i686-cd8.iso">cd8</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7pre1-i686-cd9.iso">cd9</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7pre1-i686-cd10.iso">cd10</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7pre1-i686-cd11.iso">cd11</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7pre1-i686-cd12.iso">cd12</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7pre1-i686-dvd1.iso">dvd1</a> and
+				<a href="/download/frugalware-testing-iso/frugalware-0.7pre1-i686-dvd2.iso">dvd2</a>
+				<br />
+			SHA1SUMok:
+			<pre>
+2951f4943fbdd46e669925cd2510fe625e4bef91  frugalware-0.7pre1-i686-cd10.iso
+195481436ddbcdb7f189aec8c99813f07da1b600  frugalware-0.7pre1-i686-cd11.iso
+59ae45534fc7a1732439811fd7d1d24066f22890  frugalware-0.7pre1-i686-cd12.iso
+7897353b7aef0d10a61cc646f61e7d92a3ad0d51  frugalware-0.7pre1-i686-cd1.iso
+135acbd57121546144f12d6e0969e632992eadd6  frugalware-0.7pre1-i686-cd2.iso
+0a63f6fb5daf14abfa6bae548accf36cbf843e7a  frugalware-0.7pre1-i686-cd3.iso
+48d7a75f4a375b4738efc5546c9690c003e9a023  frugalware-0.7pre1-i686-cd4.iso
+9e083a479103a9a5efac0afab96b75b5514be8f5  frugalware-0.7pre1-i686-cd5.iso
+f6ecd759a0b0837b2928d3d3659fd92555f06796  frugalware-0.7pre1-i686-cd6.iso
+678a0903d897a06ea449a6cf07f6494105ef7930  frugalware-0.7pre1-i686-cd7.iso
+ae8caff2992fb7069a80e5a350ece8bd90dab467  frugalware-0.7pre1-i686-cd8.iso
+1385ed8f87104b923a57d2f38701489f3dd30f4f  frugalware-0.7pre1-i686-cd9.iso
+6931e71d3ff07340dc380a907b1fb45d67d91b1e  frugalware-0.7pre1-i686-dvd1.iso
+db304778e4d36c549b3a58ace6550d6b85d9acf5  frugalware-0.7pre1-i686-dvd2.iso
+4fc67b372cbb2d6e7d7772b4d35f1246b274538e  frugalware-0.7pre1-i686-net.iso
+0ecd35c293dcbbe5b56bafb4837ab137efb7c35e  fwlive-0.7pre1-i686-full.iso
+29d9969df2c65fc1437d7e9fab8a997c21a6d6a2  frugalware-0.7pre1-i686-tftp.img.gz
+bdef8ebc832707a33ef60b4a257e832df74d3859  frugalware-0.7pre1-i686-usb.tar.gz
+			</pre>
+			]]>
+		</content>
+	</post>
   <post>
     <id>60</id>
     <title>Kérés: IDE HDDk</title>
