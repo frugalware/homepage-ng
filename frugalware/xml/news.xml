@@ -45,7 +45,7 @@
 						<li>Pidgin replaced Gaim, the external plugin packages have been updated accordingly.</li>
 						<li>A new XULRunner package has been added and all GNOME apps that have depended upon Firefox for HTML rendering have been rebuilt against XULRunner.</li>
 						<li>OpenOffice.org 2.2 + updated localizations + updated dictionaries</li>
-						<li>More than 100 new package</li>
+						<li>More than 100 new packages</li>
 					</ul>
 				</li>
 			</ul>
