@@ -505,38 +505,46 @@ function buildlog_from_id($id)
 	$db = new FwDB();
 	$db->doConnect($sqlhost, $sqluser, $sqlpass, "frugalware2");
 	$res = $db->doQuery("select pkgname, pkgver, arch, parent_id, fwver from packages where id=$id");
-	$arr = $db->doFetchRow($res);
-	if($arr['parent_id']!=0)
+	if ( $db->doCountRows( $res ) > 0 )
 	{
-		$res = $db->doQuery("select pkgname from packages where id=" . $arr['parent_id']);
-		$parent = $db->doFetchRow($res);
-	}
-	else
-		$parent['pkgname']=$arr['pkgname'];
-	$query = "select ct_groups.pkg_id, groups.id, groups.name from groups, ct_groups where (ct_groups.pkg_id=$id or ct_groups.pkg_id=".$arr['parent_id'].") and ct_groups.group_id = groups.id order by groups.id";
-	$res = $db->doQuery($query);
-	while($i=$db->doFetchRow($res))
-		if($i['pkg_id']==$id)
-			$groups[]=$i;
-		else if(!isset($parent['group']))
-			$parent['group']=$i['name'];
-	if(!isset($parent['group']))
-		$parent['group']=$groups[0]['name'];
+		$arr = $db->doFetchRow($res);
+		if($arr['parent_id']!=0)
+		{
+			$res = $db->doQuery("select pkgname from packages where id=" . $arr['parent_id']);
+			$parent = $db->doFetchRow($res);
+		}
+		else
+			$parent['pkgname']=$arr['pkgname'];
+		$query = "select ct_groups.pkg_id, groups.id, groups.name from groups, ct_groups where (ct_groups.pkg_id=$id or ct_groups.pkg_id=".$arr['parent_id'].") and ct_groups.group_id = groups.id order by groups.id";
+		$res = $db->doQuery($query);
+		while($i=$db->doFetchRow($res))
+			if($i['pkg_id']==$id)
+				$groups[]=$i;
+			else if(!isset($parent['group']))
+				$parent['group']=$i['name'];
+		if(!isset($parent['group']))
+			$parent['group']=$groups[0]['name'];
 
-	$slog = $parent['pkgname']."-".$arr['pkgver']."-".$arr['arch'];
-	$log = str_replace("current", $arr['fwver'], $top_path)."/source/".$parent['group']."/".$parent['pkgname']."/".$slog.".log.bz2";
-	print("<fieldset class=\"pkg\"><legend>".sprintf(gettext("Build log for %s"), $slog)."</legend>");
-	if(file_exists($log))
-	{
-		print("<pre class=\"buildlog\">");
-		$fp = bzopen($log, "r");
-		while ($buffer = bzread ($fp, 4096))
-			print($buffer);
-		bzclose ($fp);
-		print("</pre>\n</fieldset>\n");
+		$slog = $parent['pkgname']."-".$arr['pkgver']."-".$arr['arch'];
+		$log = str_replace("current", $arr['fwver'], $top_path)."/source/".$parent['group']."/".$parent['pkgname']."/".$slog.".log.bz2";
+		print("<fieldset class=\"pkg\"><legend>".sprintf(gettext("Build log for %s"), $slog)."</legend>");
+		if(file_exists($log))
+		{
+			print("<pre class=\"buildlog\">");
+			$fp = bzopen($log, "r");
+			while ($buffer = bzread ($fp, 4096))
+				print($buffer);
+			bzclose ($fp);
+			print("</pre>\n</fieldset>\n");
+		}
+		else
+			print(gettext("Sorry, currently no log available."));
 	}
 	else
-		print(gettext("Sorry, currently no log available."));
+	{
+		fwmiddlebox( '', gettext("No such package!") );
+	}
+	$db->doClose();
 }
 
 function file_from_id($id)
@@ -545,20 +553,28 @@ function file_from_id($id)
 	$db = new FwDB();
 	$db->doConnect($sqlhost, $sqluser, $sqlpass, "frugalware2");
 	$res = $db->doQuery("select pkgname, pkgver from packages where id=$id");
-	$arr = $db->doFetchRow($res);
-	$res = $db->doQuery("select file from files where pkg_id=$id");
-	$title = gettext("File list for")." ".$arr['pkgname'];
-	$content .= "<table border=0 width=100%>\n";
-	$content .= "<tr><td>Name:</td><td><a href=\"/packages/".$id."\">".$arr['pkgname']."</a></td></tr>\n";
-	$content .= "<tr><td>Version:</td><td>".$arr['pkgver']."</td></tr>\n";
-	$content .= "<tr><td colspan=2>Files:</td></tr>\n";
-	$files = explode("\n", substr($arr['files'], 0, -1));
-	while($i = $db->doFetchRow($res))
+	if ( $db->doCountRows( $res ) > 0 )
 	{
-		$content .= "<tr><td colspan=2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/".$i['file']."</td></tr>\n";
+		$arr = $db->doFetchRow($res);
+		$res = $db->doQuery("select file from files where pkg_id=$id");
+		$title = gettext("File list for")." ".$arr['pkgname'];
+		$content .= "<table border=0 width=100%>\n";
+		$content .= "<tr><td>Name:</td><td><a href=\"/packages/".$id."\">".$arr['pkgname']."</a></td></tr>\n";
+		$content .= "<tr><td>Version:</td><td>".$arr['pkgver']."</td></tr>\n";
+		$content .= "<tr><td colspan=2>Files:</td></tr>\n";
+		$files = explode("\n", substr($arr['files'], 0, -1));
+		while($i = $db->doFetchRow($res))
+		{
+			$content .= "<tr><td colspan=2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/".$i['file']."</td></tr>\n";
+		}
+		$content .= "</table>\n";
+	}
+	else
+	{
+		$title = '';
+		$content = gettext("No such package!");
 	}
 	$db->doClose();
-	$content .= "</table>\n";
 	fwmiddlebox($title, $content);
 }
 
