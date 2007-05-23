@@ -326,117 +326,125 @@ function pkg_from_id($id)
 	$db = new FwDB();
 	$db->doConnect($sqlhost, $sqluser, $sqlpass, "frugalware2");
 	$res = $db->doQuery("select uploaders.login, packages.pkgname, packages.pkgver, packages.size, packages.usize, packages.arch, packages.`desc`, packages.maintainer, packages.sha1sum, packages.fwver, packages.builddate, packages.parent_id, packages.url from packages, uploaders where packages.id=$id and packages.uploader_id = uploaders.id group by concat(packages.fwver, packages.pkgname, packages.arch)");
-	$arr = $db->doFetchRow($res);
-	if($arr['parent_id']!=0)
+	if ( $db->doCountRows( $res ) > 0 )
 	{
-		$res = $db->doQuery("select pkgname from packages where id=" . $arr['parent_id']);
-		$parent = $db->doFetchRow($res);
+		$arr = $db->doFetchRow($res);
+		if($arr['parent_id']!=0)
+		{
+			$res = $db->doQuery("select pkgname from packages where id=" . $arr['parent_id']);
+			$parent = $db->doFetchRow($res);
+		}
+		else
+			$parent['pkgname']=$arr['pkgname'];
+		// query dep ids
+		$query = "select packages.pkgname, depends.depend_id, depends.version from packages, depends where depends.pkg_id=$id and packages.id = depends.depend_id";
+		$res = $db->doQuery($query);
+		while ( $i = $db->doFetchRow($res) )
+			$deps[]=$i;
+		// conflicts
+		$query = "select packages.pkgname, conflicts.conflict_id from packages, conflicts where conflicts.pkg_id=$id and packages.id = conflicts.conflict_id";
+		$res = $db->doQuery($query);
+		while ( $i = $db->doFetchRow($res) )
+			$conflicts[]=$i;
+		// provides
+		$query = "select packages.pkgname, provides.provide_id from packages, provides where provides.pkg_id=$id and packages.id = provides.provide_id";
+		$res = $db->doQuery($query);
+		while ( $i = $db->doFetchRow($res) )
+			$provides[]=$i;
+		// exact revdeps
+		$query = "select packages.pkgname, depends.pkg_id, depends.version from packages, depends where depends.depend_id=$id and packages.id = depends.pkg_id and depends.version like '=%'";
+		$res = $db->doQuery($query);
+		while ( $i = $db->doFetchRow($res) )
+			$exrevdeps[]=$i;
+		// other revdeps
+		$query = "select packages.pkgname, depends.pkg_id, depends.version from packages, depends where depends.depend_id=$id and packages.id = depends.pkg_id and depends.version not like '=%'";
+		$res = $db->doQuery($query);
+		while ( $i = $db->doFetchRow($res) )
+			$orevdeps[]=$i;
+		// groups
+		$query = "select ct_groups.pkg_id, groups.id, groups.name from groups, ct_groups where (ct_groups.pkg_id=$id or ct_groups.pkg_id=".$arr['parent_id'].") and ct_groups.group_id = groups.id order by groups.id";
+		$res = $db->doQuery($query);
+		while($i=$db->doFetchRow($res))
+			if($i['pkg_id']==$id)
+				$groups[]=$i;
+			else if(!isset($parent['group']))
+				$parent['group']=$i['name'];
+		if(!isset($parent['group']))
+			$parent['group']=$groups[0]['name'];
+
+		$title = gettext("Package information:")." ".$arr['pkgname'];
+		$content = "<table border=\"0\" width=\"100%\">\n";
+		$content .= "<tr><td>" . gettext("Name:") . "</td><td><a href=\"/packages/".$id."/files\">".$arr['pkgname']."</a></td></tr>\n";
+		if ($arr['parent_id'] != 0 and $arr['parent_id'] != $id) $content .= "<tr><td>" . gettext("Parent:") . "</td><td><a href=\"/packages/" . $arr['parent_id']. "\">".$parent['pkgname']."</a></td></tr>\n";
+		$content .= "<tr><td>" . gettext("Version:") . "</td><td>".$arr['pkgver']."</td></tr>\n";
+		if(file_exists($top_path."/source/".$parent['group']."/".$parent['pkgname']."/".$parent['pkgname']."-".$arr['pkgver']."-".$arr['arch'].".log.bz2"))
+			$content .= "<tr><td>" . gettext("Buildlog:") . "</td><td><a href=\"/packages/".$id."/buildlog\">".$arr['pkgname']."-".$arr['pkgver']."-".$arr['arch'].".log.bz2</a></td></tr>\n";
+		$content .= "<tr><td>" . gettext("Changelog:") . "</td><td><a href=\"/packages/".$id."/changelog\">Changelog</a></td></tr>\n";
+		$content .= "<tr><td>" . gettext("Darcs:") . "</td><td><a href=\"http://darcs.frugalware.org/darcsweb/darcsweb.cgi?r=frugalware-" . ($arr['fwver'] == "current" ? $arr['fwver'] : "stable") . ";a=tree;f=/source/" . $parent['group']."/".str_replace("+", "%2b", $parent['pkgname']). "\">View entry</a></td></tr>\n";
+		if(count($groups))
+		{
+			$content .= "<tr><td>" . gettext("Groups:") . "</td><td>";
+			foreach($groups as $i)
+				$content .= "<a href=\"/packages/?op=groups&amp;id=" . $i['id'] . "&amp;arch=".$arr['arch']."&amp;ver=".$arr['fwver']."\">".$i['name']."</a> ";
+			$content .= "</td></tr>\n";
+		}
+		if ($arr['url'] != "") $content .= "<tr><td>" . gettext("URL:") . "</td><td><a href=\"" . $arr['url']. "\">".$arr['url']."</a></td></tr>\n";
+		if (count($deps))
+		{
+			$content .= "<tr><td>" . gettext("Depends:") . "</td><td>";
+			foreach($deps as $i)
+				$content .= "<a href=\"/packages/" . $i['depend_id'] . "\">".$i['pkgname'].$i['version']."</a> ";
+			$content .= "</td></tr>\n";
+		}
+		if (count($exrevdeps))
+		{
+			$content .= "<tr><td>" . gettext("Exact reverse depends:") . "</td><td>";
+			foreach($exrevdeps as $i)
+				$content .= "<a href=\"/packages/" . $i['pkg_id'] . "\">".$i['pkgname']."</a> ";
+			$content .= "</td></tr>\n";
+		}
+		if (count($orevdeps))
+		{
+			$content .= "<tr><td>" . gettext("Other reverse depends:") . "</td><td>";
+			foreach($orevdeps as $i)
+				$content .= "<a href=\"/packages/" . $i['pkg_id'] . "\">".$i['pkgname']."</a> ";
+			$content .= "</td></tr>\n";
+		}
+		if (count($conflicts))
+		{
+			$content .= "<tr><td>" . gettext("Conflicts:") . "</td><td>";
+			foreach($conflicts as $i)
+				$content .= "<a href=\"/packages/" . $i['conflict_id'] . "\">".$i['pkgname']."</a> ";
+			$content .= "</td></tr>\n";
+		}
+		if (count($provides))
+		{
+			$content .= "<tr><td>" . gettext("Provides:") . "</td><td>";
+			foreach($provides as $i)
+				$content .= "<a href=\"/packages/" . $i['provide_id'] . "\">".$i['pkgname']."</a> ";
+			$content .= "</td></tr>\n";
+		}
+		if ($arr['size'] > 0) $content .= sprintf("%s%.2f%s", "<tr><td>" . gettext("Compressed size:") . "</td><td>", $arr['size']/1048576, "MiB</td></tr>\n");
+		if ($arr['usize'] > 0) $content .= sprintf("%s%.2f%s", "<tr><td>" . gettext("Uncompressed size:") . "</td><td>", $arr['usize']/1048576, "MiB</td></tr>\n");
+		if ($arr['arch'] != 'NULL') $content .= "<tr><td>" . gettext("Arch:") . "</td><td>".$arr['arch']."</td></tr>\n";
+		if ($arr['desc'] != 'NULL') $content .= "<tr><td>" . gettext("Description:") . "</td><td>".$arr['desc']."</td></tr>\n";
+		// FIXME: latin -> utf8 conversion hardwired
+		if ($arr['maintainer'] != 'NULL') $content .= "<tr><td>" . gettext("Maintainer:") . "</td><td>".iconv("ISO-8859-1", "UTF-8",str_replace("@", " at ", htmlspecialchars($arr['maintainer'])))."</td></tr>\n";
+		$content .= "<tr><td>" . gettext("Uploaded by:") . "</td><td>".$arr['login']."</td></tr>\n";
+		$content .= "<tr><td>" . gettext("Download:") . " </td><td><a href=\"/download/frugalware-" . $arr['fwver'] . "/frugalware-" . $arr['arch'] . "/" . $arr['pkgname'] . "-" . $arr['pkgver'] . "-" . $arr['arch'] . ".fpm\">" . $arr['pkgname'] . "-" . $arr['pkgver'] . "-" . $arr['arch'] . ".fpm</a></td></tr>";
+		$content .= "<tr><td>" . gettext("Forums:") . "</td><td><a href=\"http://forums.frugalware.org/index.php?t=search&amp;srch=".$arr['pkgname']."\">forums.frugalware.org</a></td></tr>\n";
+		$content .= "<tr><td>" . gettext("Wiki:") . "</td><td><a href=\"http://wiki.frugalware.org/Special:Search?search=".$arr['pkgname']."\">wiki.frugalware.org</a></td></tr>\n";
+		$content .= "<tr><td>" . gettext("Bug Tracking System:") . "</td><td><a href=\"http://bugs.frugalware.org/index.php?string=".$arr['pkgname']."\">" . gettext("related open bugs") . "</a>; " . gettext("file a feature request, bug report or mark outdated <a href=\"http://bugs.frugalware.org/?do=newtask&amp;project=1\">here</a>") . "</td></tr>\n";
+		if ($arr['sha1sum'] != '') $content .= "<tr><td>" . gettext("SHA1 Sum:") . "</td><td>".$arr['sha1sum']."</td></tr>\n";
+		if ($arr['fwver'] != 'NULL') $content .= "<tr><td>" . gettext("Frugalware version:") . "</td><td>".$arr['fwver']."</td></tr>\n";
+		if ($arr['builddate'] != 'NULL') $content .= "<tr><td>" . gettext("Updated:") . "</td><td>".$arr['builddate']."</td></tr>\n";
+		$content .= "</table>\n";
 	}
 	else
-		$parent['pkgname']=$arr['pkgname'];
-	// query dep ids
-	$query = "select packages.pkgname, depends.depend_id, depends.version from packages, depends where depends.pkg_id=$id and packages.id = depends.depend_id";
-	$res = $db->doQuery($query);
-	while ( $i = $db->doFetchRow($res) )
-		$deps[]=$i;
-	// conflicts
-	$query = "select packages.pkgname, conflicts.conflict_id from packages, conflicts where conflicts.pkg_id=$id and packages.id = conflicts.conflict_id";
-	$res = $db->doQuery($query);
-	while ( $i = $db->doFetchRow($res) )
-		$conflicts[]=$i;
-	// provides
-	$query = "select packages.pkgname, provides.provide_id from packages, provides where provides.pkg_id=$id and packages.id = provides.provide_id";
-	$res = $db->doQuery($query);
-	while ( $i = $db->doFetchRow($res) )
-		$provides[]=$i;
-	// exact revdeps
-	$query = "select packages.pkgname, depends.pkg_id, depends.version from packages, depends where depends.depend_id=$id and packages.id = depends.pkg_id and depends.version like '=%'";
-	$res = $db->doQuery($query);
-	while ( $i = $db->doFetchRow($res) )
-		$exrevdeps[]=$i;
-	// other revdeps
-	$query = "select packages.pkgname, depends.pkg_id, depends.version from packages, depends where depends.depend_id=$id and packages.id = depends.pkg_id and depends.version not like '=%'";
-	$res = $db->doQuery($query);
-	while ( $i = $db->doFetchRow($res) )
-		$orevdeps[]=$i;
-	// groups
-	$query = "select ct_groups.pkg_id, groups.id, groups.name from groups, ct_groups where (ct_groups.pkg_id=$id or ct_groups.pkg_id=".$arr['parent_id'].") and ct_groups.group_id = groups.id order by groups.id";
-	$res = $db->doQuery($query);
-	while($i=$db->doFetchRow($res))
-		if($i['pkg_id']==$id)
-			$groups[]=$i;
-		else if(!isset($parent['group']))
-			$parent['group']=$i['name'];
-	if(!isset($parent['group']))
-	$parent['group']=$groups[0]['name'];
-
-	$title = gettext("Package information:")." ".$arr['pkgname'];
-	$content = "<table border=\"0\" width=\"100%\">\n";
-	$content .= "<tr><td>" . gettext("Name:") . "</td><td><a href=\"/packages/".$id."/files\">".$arr['pkgname']."</a></td></tr>\n";
-	if ($arr['parent_id'] != 0 and $arr['parent_id'] != $id) $content .= "<tr><td>" . gettext("Parent:") . "</td><td><a href=\"/packages/" . $arr['parent_id']. "\">".$parent['pkgname']."</a></td></tr>\n";
-	$content .= "<tr><td>" . gettext("Version:") . "</td><td>".$arr['pkgver']."</td></tr>\n";
-	if(file_exists($top_path."/source/".$parent['group']."/".$parent['pkgname']."/".$parent['pkgname']."-".$arr['pkgver']."-".$arr['arch'].".log.bz2"))
-		$content .= "<tr><td>" . gettext("Buildlog:") . "</td><td><a href=\"/packages/".$id."/buildlog\">".$arr['pkgname']."-".$arr['pkgver']."-".$arr['arch'].".log.bz2</a></td></tr>\n";
-	$content .= "<tr><td>" . gettext("Changelog:") . "</td><td><a href=\"/packages/".$id."/changelog\">Changelog</a></td></tr>\n";
-	$content .= "<tr><td>" . gettext("Darcs:") . "</td><td><a href=\"http://darcs.frugalware.org/darcsweb/darcsweb.cgi?r=frugalware-" . ($arr['fwver'] == "current" ? $arr['fwver'] : "stable") . ";a=tree;f=/source/" . $parent['group']."/".str_replace("+", "%2b", $parent['pkgname']). "\">View entry</a></td></tr>\n";
-	if(count($groups))
 	{
-		$content .= "<tr><td>" . gettext("Groups:") . "</td><td>";
-		foreach($groups as $i)
-			$content .= "<a href=\"/packages/?op=groups&amp;id=" . $i['id'] . "&amp;arch=".$arr['arch']."&amp;ver=".$arr['fwver']."\">".$i['name']."</a> ";
-		$content .= "</td></tr>\n";
+		$content = gettext("No such package!");
+		$title = '';
 	}
-	if ($arr['url'] != "") $content .= "<tr><td>" . gettext("URL:") . "</td><td><a href=\"" . $arr['url']. "\">".$arr['url']."</a></td></tr>\n";
-	if (count($deps))
-	{
-		$content .= "<tr><td>" . gettext("Depends:") . "</td><td>";
-		foreach($deps as $i)
-			$content .= "<a href=\"/packages/" . $i['depend_id'] . "\">".$i['pkgname'].$i['version']."</a> ";
-		$content .= "</td></tr>\n";
-	}
-	if (count($exrevdeps))
-	{
-		$content .= "<tr><td>" . gettext("Exact reverse depends:") . "</td><td>";
-		foreach($exrevdeps as $i)
-			$content .= "<a href=\"/packages/" . $i['pkg_id'] . "\">".$i['pkgname']."</a> ";
-		$content .= "</td></tr>\n";
-	}
-	if (count($orevdeps))
-	{
-		$content .= "<tr><td>" . gettext("Other reverse depends:") . "</td><td>";
-		foreach($orevdeps as $i)
-			$content .= "<a href=\"/packages/" . $i['pkg_id'] . "\">".$i['pkgname']."</a> ";
-		$content .= "</td></tr>\n";
-	}
-	if (count($conflicts))
-	{
-		$content .= "<tr><td>" . gettext("Conflicts:") . "</td><td>";
-		foreach($conflicts as $i)
-			$content .= "<a href=\"/packages/" . $i['conflict_id'] . "\">".$i['pkgname']."</a> ";
-		$content .= "</td></tr>\n";
-	}
-	if (count($provides))
-	{
-		$content .= "<tr><td>" . gettext("Provides:") . "</td><td>";
-		foreach($provides as $i)
-			$content .= "<a href=\"/packages/" . $i['provide_id'] . "\">".$i['pkgname']."</a> ";
-		$content .= "</td></tr>\n";
-	}
-	if ($arr['size'] > 0) $content .= sprintf("%s%.2f%s", "<tr><td>" . gettext("Compressed size:") . "</td><td>", $arr['size']/1048576, "MiB</td></tr>\n");
-	if ($arr['usize'] > 0) $content .= sprintf("%s%.2f%s", "<tr><td>" . gettext("Uncompressed size:") . "</td><td>", $arr['usize']/1048576, "MiB</td></tr>\n");
-	if ($arr['arch'] != 'NULL') $content .= "<tr><td>" . gettext("Arch:") . "</td><td>".$arr['arch']."</td></tr>\n";
-	if ($arr['desc'] != 'NULL') $content .= "<tr><td>" . gettext("Description:") . "</td><td>".$arr['desc']."</td></tr>\n";
-	// FIXME: latin -> utf8 conversion hardwired
-	if ($arr['maintainer'] != 'NULL') $content .= "<tr><td>" . gettext("Maintainer:") . "</td><td>".iconv("ISO-8859-1", "UTF-8",str_replace("@", " at ", htmlspecialchars($arr['maintainer'])))."</td></tr>\n";
-	$content .= "<tr><td>" . gettext("Uploaded by:") . "</td><td>".$arr['login']."</td></tr>\n";
-	$content .= "<tr><td>" . gettext("Download:") . " </td><td><a href=\"/download/frugalware-" . $arr['fwver'] . "/frugalware-" . $arr['arch'] . "/" . $arr['pkgname'] . "-" . $arr['pkgver'] . "-" . $arr['arch'] . ".fpm\">" . $arr['pkgname'] . "-" . $arr['pkgver'] . "-" . $arr['arch'] . ".fpm</a></td></tr>";
-	$content .= "<tr><td>" . gettext("Forums:") . "</td><td><a href=\"http://forums.frugalware.org/index.php?t=search&amp;srch=".$arr['pkgname']."\">forums.frugalware.org</a></td></tr>\n";
-	$content .= "<tr><td>" . gettext("Wiki:") . "</td><td><a href=\"http://wiki.frugalware.org/Special:Search?search=".$arr['pkgname']."\">wiki.frugalware.org</a></td></tr>\n";
-	$content .= "<tr><td>" . gettext("Bug Tracking System:") . "</td><td><a href=\"http://bugs.frugalware.org/index.php?string=".$arr['pkgname']."\">" . gettext("related open bugs") . "</a>; " . gettext("file a feature request, bug report or mark outdated <a href=\"http://bugs.frugalware.org/?do=newtask&amp;project=1\">here</a>") . "</td></tr>\n";
-	if ($arr['sha1sum'] != '') $content .= "<tr><td>" . gettext("SHA1 Sum:") . "</td><td>".$arr['sha1sum']."</td></tr>\n";
-	if ($arr['fwver'] != 'NULL') $content .= "<tr><td>" . gettext("Frugalware version:") . "</td><td>".$arr['fwver']."</td></tr>\n";
-	if ($arr['builddate'] != 'NULL') $content .= "<tr><td>" . gettext("Updated:") . "</td><td>".$arr['builddate']."</td></tr>\n";
-	$content .= "</table>\n";
 	$db->doClose();
 	fwmiddlebox($title, $content);
 }
