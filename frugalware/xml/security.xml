@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>184</id>
+		<date>2007-05-23</date>
+		<author>voroskoi</author>
+		<package>libpng</package>
+		<vulnerable>1.2.16-1</vulnerable>
+		<unaffected>1.2.16-2terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2051</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2445</cve>
+		<desc>A vulnerability has been reported in libpng, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			The vulnerability is caused due to an error in the "png_handle_tRNS" function in pngrutil.c. This can be exploited by tricking an application using the library to process a specially crafted PNG file containing a malformed tRNS chunk.</desc>
+	</fsa>
+	<fsa>
 		<id>183</id>
 		<date>2007-05-13</date>
 		<author>voroskoi</author>
