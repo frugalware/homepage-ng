@@ -27,6 +27,27 @@
 
 <fsas>
 	<fsa>
+		<id>185</id>
+		<date>2007-05-23</date>
+		<author>voroskoi</author>
+		<package>samba samba-client</package>
+		<vulnerable>3.0.24-1</vulnerable>
+		<unaffected>3.0.24-2terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2050</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2444
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2446
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2447</cve>
+		<desc>Some vulnerabilities have been reported in Samba, which can be exploited by malicious users to perform certain actions with escalated privileges and to compromise a vulnerable system, and by malicious people to compromise a vulnerable system.
+			1) An error in smbd when translating SIDs to and from names can be exploited to issue SMB/CIFS protocol operations as the root user. Successful exploitation requires a valid user session.
+			2) An input validation error when updating a user's password can be exploited to inject and execute arbitrary shell commands via a specially crafted MS-RPC call.
+			Successful exploitation of this vulnerability requires that the "username map script" option is set in smb.conf, which is not the default setting. In addition, to successfully exploit this vulnerability via remote printer and file share management, an attacker requires a valid user session.
+			3) Input validation errors exist in the parsing of RPC requests to the LSA RPC interface. This can be exploited to cause heap based buffer overflows via specially crafted requests to "LsarAddPrivilegesToAccount", "LsarLookupSids", or "LsarLookupSids2".
+			4) An input validation error exists in the parsing of RPC requests to the DFS RPC interface. This can be exploited to cause a heap based buffer overflow via a specially crafted request to "DFSEnum".
+			5) An input validation error exists in the parsing of RPC requests to the SPOOLSS RPC interface. This can be exploited to cause a heap based buffer overflow via a specially crafted request to "RFNPCNEX".
+			6) An input validation error exists in the parsing of RPC requests to the SRVSVC RPC interface. This can be exploited to cause a heap based buffer overflow via a specially crafted request to "NetSetFileSecurity".
+			Successful exploitation of vulnerabilities #3 through #6 allows execution of arbitrary code, but requires a valid user session.</desc>
+	</fsa>
+	<fsa>
 		<id>184</id>
 		<date>2007-05-23</date>
 		<author>voroskoi</author>
