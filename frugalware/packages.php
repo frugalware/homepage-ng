@@ -431,7 +431,11 @@ function pkg_from_id($id)
 		// FIXME: latin -> utf8 conversion hardwired
 		if ($arr['maintainer'] != 'NULL') $content .= "<tr><td>" . gettext("Maintainer:") . "</td><td>".iconv("ISO-8859-1", "UTF-8",str_replace("@", " at ", htmlspecialchars($arr['maintainer'])))."</td></tr>\n";
 		$content .= "<tr><td>" . gettext("Uploaded by:") . "</td><td>".$arr['login']."</td></tr>\n";
-		$content .= "<tr><td>" . gettext("Download:") . " </td><td><a href=\"/download/frugalware-" . $arr['fwver'] . "/frugalware-" . $arr['arch'] . "/" . $arr['pkgname'] . "-" . $arr['pkgver'] . "-" . $arr['arch'] . ".fpm\">" . $arr['pkgname'] . "-" . $arr['pkgver'] . "-" . $arr['arch'] . ".fpm</a></td></tr>";
+		$content .= "<tr><td>" . gettext("Download:") . " </td>";
+		if ($arr['size'] > 0)
+			$content .= "<td><a href=\"/download/frugalware-" . $arr['fwver'] . "/frugalware-" . $arr['arch'] . "/" . $arr['pkgname'] . "-" . $arr['pkgver'] . "-" . $arr['arch'] . ".fpm\">" . $arr['pkgname'] . "-" . $arr['pkgver'] . "-" . $arr['arch'] . ".fpm</a></td></tr>";
+		else
+			$content .= "<td><a href=\"/download/frugalware-" . $arr['fwver'] . "/source/" . $parent['group']."/".$parent['pkgname']. "/FrugalBuild\">FrugalBuild</a></td></tr>";
 		$content .= "<tr><td>" . gettext("Forums:") . "</td><td><a href=\"http://forums.frugalware.org/index.php?t=search&amp;srch=".$arr['pkgname']."\">forums.frugalware.org</a></td></tr>\n";
 		$content .= "<tr><td>" . gettext("Wiki:") . "</td><td><a href=\"http://wiki.frugalware.org/Special:Search?search=".$arr['pkgname']."\">wiki.frugalware.org</a></td></tr>\n";
 		$content .= "<tr><td>" . gettext("Bug Tracking System:") . "</td><td><a href=\"http://bugs.frugalware.org/index.php?string=".$arr['pkgname']."\">" . gettext("related open bugs") . "</a>; " . gettext("file a feature request, bug report or mark outdated <a href=\"http://bugs.frugalware.org/?do=newtask&amp;project=1\">here</a>") . "</td></tr>\n";
