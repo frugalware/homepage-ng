@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>186</id>
+		<date>2007-05-26</date>
+		<author>voroskoi</author>
+		<package>jasper</package>
+		<vulnerable>1.900.1-1</vulnerable>
+		<unaffected>1.900.1-2terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2066</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2721</cve>
+		<desc>A vulnerability has been reported in JasPer, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			The vulnerability is caused due to an error in the "jpc_qcx_getcompparms" function when processing JP2 files and can be exploited to crash an application using the library.</desc>
+	</fsa>
+	<fsa>
 		<id>185</id>
 		<date>2007-05-23</date>
 		<author>voroskoi</author>
