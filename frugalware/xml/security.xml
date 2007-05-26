@@ -27,6 +27,20 @@
 
 <fsas>
 	<fsa>
+		<id>188</id>
+		<date>2007-05-26</date>
+		<author>voroskoi</author>
+		<package>madwifi</package>
+		<vulnerable>0.9.3-1terminus1</vulnerable>
+		<unaffected>0.9.3.1-1terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2078</bts>
+		<cve>There is no CVE for these issues</cve>
+		<desc>Some vulnerabilities have been reported in MadWifi, which can be exploited by malicious, local users and malicious people to cause a DoS (Denial of Service).
+			1) A division by zero error exists within the function "ath_beacon_config()". This can be exploited to cause a crash by sending a packet with a zero beacon interval to a vulnerable system.
+			2) An input sanitation error exists within the IO control "ieee80211_ioctl_getwmmparams". This can be exploited to crash the kernel by calling the IO control with a negative index parameter. This may also allow certain parts of the memory to be disclosed.
+			3) An input sanitation error exist within the packet parser when parsing nested 802.3 Ethernet frame lengths. This can be exploited to cause a NULL pointer dereference by sending a specially crafted fast frame packet to a vulnerable system.</desc>
+	</fsa>
+	<fsa>
 		<id>187</id>
 		<date>2007-05-26</date>
 		<author>voroskoi</author>
