@@ -86,5 +86,12 @@ $cont3 = "<div align=\"left\">Received:<ul>
 </ul></div>";
 fwmiddlebox("Miklos Vajna", $cont3);
 
+$cont4 = "<div align=\"left\"><ul>
+	<li>Arpad Bakos</li>
+	<li>Francois Biot</li>
+	<li>Sebastien Mazzucco</li>
+	</ul></div>";
+fwmiddlebox("Monetary donations", $cont4);
+
 include("footer.php");
 ?>
