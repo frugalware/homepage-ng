@@ -12,6 +12,17 @@
 ]>
 <news>
 	<post>
+		<id>65</id>
+		<title>Yugo: új i686 buildszerver</title>
+		<date>Sat May 26 07:56:26 CEST 2007</date>
+		<author>IroNiQ</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			Örömmel jelentem be, hogy elkészült és működésbe állt az új, yugo nevű i686-os buildszerverünk.<br />Az eredményt <a href="http://yugo.frugalware.org/">itt</a> láthatod.<br />Szeretném megköszönni mindenkinek a felajánlást.
+			]]>
+		</content>
+	</post>
+	<post>
 		<id>63</id>
 		<title>Megjelent a Frugalware 0.7pre1 (Sayshell)</title>
 		<date>Tue May 24 07:14:08 CEST 2007</date>

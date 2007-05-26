@@ -14,6 +14,17 @@
 ]>
 <news>
 	<post>
+		<id>65</id>
+		<title>Yugo: new i686 buildserver</title>
+		<date>Sat May 26 07:56:26 CEST 2007</date>
+		<author>IroNiQ</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			I'm please to announce our new i686 buildserver, called yugo.<br />The server is working well, you can see the syncpkgd results <a href="http://yugo.frugalware.org/">here</a>.<br />I'd like to thank the offers to all.
+			]]>
+		</content>
+	</post>
+	<post>
 		<id>64</id>
 		<title>Frugalware 0.6 and 0.7pre1 torrents</title>
 		<date>Thu May 24 23:14:08 CEST 2007</date>
