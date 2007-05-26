@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>187</id>
+		<date>2007-05-26</date>
+		<author>voroskoi</author>
+		<package>php</package>
+		<vulnerable>5.2.2-1terminus1</vulnerable>
+		<unaffected>5.2.2-1terminus2</unaffected>
+		<bts>http://bugs.frugalware.org/task/2075</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2756</cve>
+		<desc>Xavier Roche has reported a vulnerability in PHP, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			The vulnerability is caused due to the incorrect use of libpng within the function "gdPngReadData()" in ext/gd/libgd/gd_png.c of the GD extension when processing truncated data. This can be exploited to cause an infinite loop by e.g. tricking an application to process a specially crafted file.</desc>
+	</fsa>
+	<fsa>
 		<id>186</id>
 		<date>2007-05-26</date>
 		<author>voroskoi</author>
