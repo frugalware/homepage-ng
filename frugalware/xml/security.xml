@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>191</id>
+		<date>2007-05-27</date>
+		<author>voroskoi</author>
+		<package>freetype2</package>
+		<vulnerable>2.3.4-1terminus1</vulnerable>
+		<unaffected>2.3.4-1terminus2</unaffected>
+		<bts>http://bugs.frugalware.org/task/2073</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2754</cve>
+		<desc>Victor Stinner has reported a vulnerability in FreeType, which can be exploited by malicious people to cause a DoS (Denial of Service) or potentially compromise an application using the library.
+			The vulnerability is caused due to an error when parsing malformed TTF fonts in src/truetype/ttgload.c and may be exploited when processing a specially crafted TTF font.</desc>
+	</fsa>
+	<fsa>
 		<id>190</id>
 		<date>2007-05-27</date>
 		<author>voroskoi</author>
