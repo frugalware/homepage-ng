@@ -27,6 +27,17 @@
 
 <fsas>
 	<fsa>
+		<id>190</id>
+		<date>2007-05-27</date>
+		<author>voroskoi</author>
+		<package>zoo</package>
+		<vulnerable>2.10-4</vulnerable>
+		<unaffected>2.10-5terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2065</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1669</cve>
+		<desc>It's possible to make the ZOO implementation to enter in an infinite loop condition.  The vulnerability lies in the algorithm used to locate the files inside the archive.  Each file in a ZOO archive is identified by a direntry structure.  Those structures are linked between themselves with a 'next' pointer.  This pointer is in fact an offset from the beginning of the file, representing the next direntry structure.  By specifying an already processed file, it's possible to process more than one time this same file.  The ZOO parser will then enter an infinite loop condition.</desc>
+	</fsa>
+	<fsa>
 		<id>189</id>
 		<date>2007-05-27</date>
 		<author>voroskoi</author>
