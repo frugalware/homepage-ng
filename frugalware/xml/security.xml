@@ -27,6 +27,27 @@
 
 <fsas>
 	<fsa>
+		<id>189</id>
+		<date>2007-05-27</date>
+		<author>voroskoi</author>
+		<package>vmware</package>
+		<vulnerable>5.5.3_34685-1</vulnerable>
+		<unaffected>5.5.4_44386-1terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2009</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1069
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1337
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1744
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1876
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1877</cve>
+		<desc>Some vulnerabilities have been reported in various VMware products, which can be exploited by malicious users to cause a DoS (Denial of Service) or bypass certain security restrictions.
+			1) An error exists within the ACPI implementation of the virtual machine process (VMX) when collecting information about running states of virtual machines, which can be exploited to cause the process to read from invalid memory locations.
+			2) An error within the saving of configuration data in VMDB files can be exploited to store malformed configuration data and cause a DoS on guest operating systems.
+			3) An error within the handling of general protection faults (GPFs) in Windows guest operating systems can be exploited to crash Windows virtual machines.
+			4) Errors when debugging applications in a 64-bit Windows guest operating system on a 64-bit host system can be exploited to e.g. cause corrupted stack pointers or kernel bugchecks.
+			5) A design error within the "Shared Folders" feature can be exploited in a guest system to read and write arbitrary files on a host system.
+			Successful exploitation requires that at least one folder is shared. In order to write to host files, the "read only" option of the shared folder has to be disabled. ESX server is reportedly not affected as it does not use the "Shared Folders" feature.</desc>
+	</fsa>
+	<fsa>
 		<id>188</id>
 		<date>2007-05-26</date>
 		<author>voroskoi</author>
