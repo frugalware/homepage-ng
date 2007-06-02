@@ -14,6 +14,17 @@
 ]>
 <news>
 	<post>
+		<id>66</id>
+		<title>Frugalware Newsletter Issue 6</title>
+		<date>Tue Jun  2 08:45:13 CET 2007</date>
+		<author>AlexExtreme</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			The sixth issue of our fortnightly newsletter has been released! You can read it <a href="/newsletter/6">here</a>. We hope you like it!
+			]]>
+		</content>
+	</post>
+	<post>
 		<id>65</id>
 		<title>Yugo: new i686 buildserver</title>
 		<date>Sat May 26 07:56:26 CEST 2007</date>
