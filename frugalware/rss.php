@@ -191,7 +191,7 @@ foreach( $handle['items'] as $i )
 	}
 	if(isset($i['encoded']))
 	{
-		print "<content:encoded><![CDATA[".$i['encoded']."]]></description>\n";
+		print "<content:encoded><![CDATA[".$i['encoded']."]]></content:encoded>\n";
 	}
 	if(isset($i['author']))
 	{
