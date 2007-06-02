@@ -117,7 +117,7 @@ switch($_GET['type'])
 					"link"    => "http://www.frugalware.org/news/".$news[$i]->id[0]->tagData,
 					"pubDate" => date(DATE_RFC2822, strtotime($news[$i]->date[0]->tagData)),
 					"desc"    => strip_tags(stripslashes($news[$i]->content[0]->tagData)),
-					"encoded" => preg_replace("href=\"\/", "href=\"http://frugalware.org\/", stripslashes($news[$i]->content[0]->tagData)),
+					"encoded" => str_replace("href=\"\/", "href=\"http://frugalware.org\/", stripslashes($news[$i]->content[0]->tagData)),
 				);
 			}
 		}
