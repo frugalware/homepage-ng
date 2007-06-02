@@ -103,6 +103,7 @@ switch($_GET['type'])
 		$xml = file_get_contents($xmlfile);
 		$parser = new XMLParser($xml);
 		$parser->Parse();
+		$encoded = " xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:admin=\"http://webns.net/mvcb/\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:content=\"http://purl.org/rss/1.0/modules/content/\"";
 		$news = $parser->document->post;
 		$handle['title']="Frugalware Linux News";
 		$handle['desc']="Latest news of Frugalware Linux.";
@@ -129,7 +130,6 @@ switch($_GET['type'])
 		else
 			$xmlfile = $docs_path."/xml/security.xml";
 		$xml = file_get_contents($xmlfile);
-		$encoded = " xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:admin=\"http://webns.net/mvcb/\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:content=\"http://purl.org/rss/1.0/modules/content/\"";
 		$parser = new XMLParser($xml);
 		$parser->Parse();
 		$fsas = $parser->document->fsa;
@@ -174,8 +174,6 @@ switch($_GET['type'])
 		include("footer.php");
 		die();
 }
-
-i
 
 header('Content-Type: application/xml; charset=utf-8');
 print("<?xml version=\"1.0\" encoding=\"utf-8\"?>
