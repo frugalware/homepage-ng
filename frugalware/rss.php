@@ -29,6 +29,7 @@ $llang = getllang($lang);
 $domain = "homepage";
 set_locale($llang, $domain);
 
+$encoded = "";
 include("config.inc.php");
 include("db.inc.php");
 
@@ -44,7 +45,7 @@ switch($_GET['type'])
 		$parser = new XMLParser($xml);
 		$parser->Parse();
 		$releases = $parser->document->release;
-		$handle['title']="Frugalware Linux ";
+		$handle['title']="Frugalware Linux Releases";
 		$handle['desc']="Frugalware Linux is general purpose Linux distribution designed for intermediate users. Some of its elements were borrowed from Slackware Linux and Arch Linux.";
 		$handle['link']="http://frugalware.org/";
 		for ( $i=0; $i < count($releases); $i++)
@@ -111,10 +112,11 @@ switch($_GET['type'])
 			if ( $news[$i]->hidden[0]->tagData == 0 )
 			{
 				$handle['items'][] = array(
-					"title" => $news[$i]->title[0]->tagData,
-					"link" => "http://www.frugalware.org/news/".$news[$i]->id[0]->tagData,
+					"title"   => $news[$i]->title[0]->tagData,
+					"link"    => "http://www.frugalware.org/news/".$news[$i]->id[0]->tagData,
 					"pubDate" => date(DATE_RFC2822, strtotime($news[$i]->date[0]->tagData)),
-					"desc" => preg_replace('/(<a href=.*>|<\/a>)/', '', $news[$i]->content[0]->tagData),
+					"desc"    => strip_tags(stripslashes($news[$i]->content[0]->tagData)),
+					"encoded" => stripslashes($news[$i]->content[0]->tagData),
 				);
 			}
 		}
@@ -127,6 +129,7 @@ switch($_GET['type'])
 		else
 			$xmlfile = $docs_path."/xml/security.xml";
 		$xml = file_get_contents($xmlfile);
+		$encoded = " xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:admin=\"http://webns.net/mvcb/\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:content=\"http://purl.org/rss/1.0/modules/content/\"";
 		$parser = new XMLParser($xml);
 		$parser->Parse();
 		$fsas = $parser->document->fsa;
@@ -172,9 +175,11 @@ switch($_GET['type'])
 		die();
 }
 
+i
+
 header('Content-Type: application/xml; charset=utf-8');
 print("<?xml version=\"1.0\" encoding=\"utf-8\"?>
-<rss version=\"2.0\">
+<rss version=\"2.0\"".$encoded.">
 <channel>
 	<title>".$handle['title']."</title>
 	<description>".$handle['desc']."</description>
@@ -185,6 +190,10 @@ foreach( $handle['items'] as $i )
 	if(isset($i['desc']))
 	{
 		print "<description>".htmlspecialchars($i['desc'])."</description>\n";
+	}
+	if(isset($i['encoded']))
+	{
+		print "<content:encoded><![CDATA[".$i['encoded']."]]></description>\n";
 	}
 	if(isset($i['author']))
 	{
