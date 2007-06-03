@@ -27,7 +27,7 @@
 			
 			Please refer to the Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-stable/ChangeLog.txt">ChangeLog</a> for more information.<br />
 			Download for x86_64:<br />
-			<b>NOTE</b>: Don't download CDs 3-12 or the second DVD unless you don't have an internet connection<br />
+			<b>NOTE</b>: Don't download CDs 3-9 or the second DVD unless you don't have an internet connection<br />
 				<a href="/download/frugalware-0.6-iso/frugalware-0.6a-x86_64-net.iso">netinstall</a>,
 				<a href="/download/frugalware-0.6-iso/frugalware-0.6a-x86_64-usb.tar.gz">usb</a>,
 				<a href="/download/frugalware-0.6-iso/frugalware-0.6a-x86_64-tftp.img.gz">tftp</a>,
