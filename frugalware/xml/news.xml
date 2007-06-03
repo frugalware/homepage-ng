@@ -14,13 +14,13 @@
 ]>
 <news>
 	<post>
-		<id>66</id>
+		<id>67</id>
 		<title>Frugalware 0.6a (Terminus) for x86_64 released</title>
 		<date>Sun Jun 3 07:54:12 CEST 2007</date>
 		<author>AlexExtreme</author>
 		<hidden>1</hidden>
 		<content><![CDATA[
-			The Frugalware Developer Team is pleased to <a href="/news/66">announce</a> the immediate availability of Frugalware 0.6a for x86_64. This is a bug fix release to fix
+			The Frugalware Developer Team is pleased to <a href="/news/67">announce</a> the immediate availability of Frugalware 0.6a for x86_64. This is a bug fix release to fix
 			various issues that users have encountered with the x86_64 0.6 releases. These new ISOs contain all security fixes since the release of 0.6.
 			Please note that if you want to use i686, you should still use the original 0.6 ISOs. This release is for x86_64 only.<br /><br />
 
