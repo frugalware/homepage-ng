@@ -265,6 +265,7 @@ bdef8ebc832707a33ef60b4a257e832df74d3859  frugalware-0.7pre1-i686-usb.tar.gz
 			<ul>
 				<li>If you use a JMicron disk controller and you cannot boot 0.6, try booting with any of these options on the GRUB prompt: irqpoll, libata.atapi_enabled=0 and combined_mode=libata</li>
 				<li>The first time you attempt to use the Main Menu application in GNOME to edit the menus, the GNOME Panel will crash. This will not happen again after that. This will hopefully be fixed sometime and an update will be released.</li>
+				<li>If you want to use x86_64, <b>download <a href="/news/67">0.6a for x86_64</a> instead!</b></li>
 			</ul>
 			Please refer to the Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-0.6/ChangeLog.txt">Terminus ChangeLog</a> for more information.<br />
 			Download for i686:<br />
