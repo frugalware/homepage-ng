@@ -21,9 +21,10 @@
 		<hidden>1</hidden>
 		<content><![CDATA[
 			The Frugalware Developer Team is pleased to <a href="/news/67">announce</a> the immediate availability of Frugalware 0.6a for x86_64. This is a bug fix release to fix
-			various issues that users have encountered with the x86_64 0.6 releases. These new ISOs contain all security fixes since the release of 0.6.
+			various issues that users have encountered with the x86_64 0.6 releases. These new ISOs contain all security fixes since the release of 0.6.<br /><br />
+			
 			Please note that if you want to use i686, you should still use the original 0.6 ISOs. This release is for x86_64 only.<br /><br />
-
+			
 			Please refer to the Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-stable/ChangeLog.txt">ChangeLog</a> for more information.<br />
 			Download for x86_64:<br />
 			<b>NOTE</b>: Don't download CDs 3-12 or the second DVD unless you don't have an internet connection<br />
