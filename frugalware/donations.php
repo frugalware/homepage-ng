@@ -88,6 +88,7 @@ fwmiddlebox("Miklos Vajna", $cont3);
 
 $cont4 = "<div align=\"left\"><ul>
 	<li>Arpad Bakos</li>
+	<li>Balazs Dianiska</li>
 	<li>Francois Biot</li>
 	<li>Sebastien Mazzucco</li>
 	</ul></div>";
