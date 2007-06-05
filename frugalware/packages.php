@@ -67,8 +67,18 @@ function main()
 			if ($releases[$i]->status[0]->tagData == '1') {
 				if($first)
 				{
-					$selstr = " selected=\"selected\"";
 					$first = false;
+					$selstr = " selected=\"selected\"";
+					$db = new FwDB();
+					$db->doConnect($sqlhost, $sqluser, $sqlpass, "frugalware2");
+					$query = "SELECT COUNT(id)  FROM `packages` WHERE `arch` LIKE 'i686' AND `size` != 0 AND `fwver` LIKE '".$releases[$i]->version[0]->tagData."'";
+					$res = $db->doQuery($query);
+					$arr = $db->doFetchRow($res);
+					$binnum = $arr['COUNT(id)'];
+					$query = "SELECT COUNT(id)  FROM `packages` WHERE `arch` LIKE 'i686' AND `size` = 0 AND `fwver` LIKE '".$releases[$i]->version[0]->tagData."'";
+					$res = $db->doQuery($query);
+					$arr = $db->doFetchRow($res);
+					$srcnum = $arr['COUNT(id)'];
 				}
 				else
 					unset($selstr);
@@ -105,6 +115,7 @@ function main()
     <br />
     <br />
 		<input type=\"submit\" value=\"".gettext("Search")."\" /> <input type=\"reset\" value=\"".gettext("Reset")."\" />
+		<p>".sprintf(gettext("Searching in %d binary and %d source-only packages."), $binnum, $srcnum)."</p>
 	</fieldset></form>
 <script type=\"text/javascript\">
 function addEngine()
