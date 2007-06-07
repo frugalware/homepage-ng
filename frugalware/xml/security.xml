@@ -27,6 +27,17 @@
 
 <fsas>
 	<fsa>
+		<id>196</id>
+		<date>2007-06-07</date>
+		<author>voroskoi</author>
+		<package>xfsprogs-xfsdump</package>
+		<vulnerable>2.2.38_1-2</vulnerable>
+		<unaffected>2.2.45_1-1terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2122</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2654</cve>
+		<desc>Paul Martin has reported a security issue in xfsdump, which can be exploited by malicious, local users to disclose potentially sensitive information or manipulate data. The security issue is caused due to xfs_fsr creating a temporary directory with insecure permissions within the function "tmp_init()" in fsr/xfs_fsr.c. This can be exploited to read or overwrite files created in this directory or subdirectories, potentially allowing for the disclosure of sensitive information or data manipulation.</desc>
+	</fsa>
+	<fsa>
 		<id>195</id>
 		<date>2007-06-07</date>
 		<author>voroskoi</author>
