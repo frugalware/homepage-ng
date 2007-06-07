@@ -27,6 +27,20 @@
 
 <fsas>
 	<fsa>
+		<id>192</id>
+		<date>2007-06-07</date>
+		<author>voroskoi</author>
+		<package>kernel</package>
+		<vulnerable>2.6.20-5terminus3</vulnerable>
+		<unaffected>2.6.20-5terminus4</unaffected>
+		<bts>http://bugs.frugalware.org/task/2097</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2480
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2525</cve>
+		<desc>Some vulnerabilities have been reported in the Linux Kernel, which potentially can be exploited by malicious, local users to cause a DoS (Denial of Service) or disclose potentially sensitive information.
+			1) A memory leak exists when releasing PPPoE sockets after they are connected, but before the "PPPIOCGCHAN" ioctl is called. This can be exploited to cause a DoS due to memory exhaustion.
+			2) An error within the "_udp_lib_get_port()" function in net/ipv4/udp.c can be exploited to intercept traffic by binding to a port using a local address if a wildcard bind exists with a local address to that port.</desc>
+	</fsa>
+	<fsa>
 		<id>191</id>
 		<date>2007-05-27</date>
 		<author>voroskoi</author>
