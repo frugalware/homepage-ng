@@ -27,6 +27,23 @@
 
 <fsas>
 	<fsa>
+		<id>197</id>
+		<date>2007-06-07</date>
+		<author>voroskoi</author>
+		<package>firefox</package>
+		<vulnerable>2.0.0.3-1terminus1</vulnerable>
+		<unaffected>2.0.0.4-1terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2125</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2867
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2868
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2870
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2871</cve>
+		<desc>Some vulnerabilities have been reported in Mozilla Firefox, which can be exploited by malicious people to conduct spoofing attacks, bypass certain security restrictions, and potentially compromise a user's system.
+			1) Errors in the JavaScript engine can be exploited to cause memory corruption and potentially to execute arbitrary code.
+			2) An error in the "addEventListener" method can be exploited to inject script into another site, circumventing the browser's same-origin policy. This could be used to access or modify sensitive information from the other site.
+			3) An error in the handling of XUL popups can be exploited to spoof parts of the browser such as the location bar.</desc>
+	</fsa>
+	<fsa>
 		<id>196</id>
 		<date>2007-06-07</date>
 		<author>voroskoi</author>
