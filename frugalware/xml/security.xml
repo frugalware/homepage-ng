@@ -27,6 +27,17 @@
 
 <fsas>
 	<fsa>
+		<id>202</id>
+		<date>2007-06-07</date>
+		<author>voroskoi</author>
+		<package>kernel</package>
+		<vulnerable>2.6.20-5terminus4</vulnerable>
+		<unaffected>2.6.20-5terminus5</unaffected>
+		<bts>http://bugs.frugalware.org/task/2126</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2878</cve>
+		<desc>A security issue has been reported in the Linux Kernel, which can be exploited by malicious, local users to cause a DoS (Denial of Service). The security issue is caused due to an error within the handling of certain VFAT IOCTLs on 64bit systems, which can be exploited to crash the kernel by calling certain IOCTLs with malicious parameters. Successful exploitation requires a 64bit-system and vfat and msdos file systems.</desc>
+	</fsa>
+	<fsa>
 		<id>201</id>
 		<date>2007-06-07</date>
 		<author>voroskoi</author>
