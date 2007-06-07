@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>194</id>
+		<date>2007-06-07</date>
+		<author>voroskoi</author>
+		<package>file</package>
+		<vulnerable>4.20-1</vulnerable>
+		<unaffected>4.21-1terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2119</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1536
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2799</cve>
+		<desc>A vulnerability has been reported in file, which potentially can be exploited by malicious people to compromise a vulnerable system. The vulnerability is caused due to an unspecified integer underflow within the "file_printf" function, which can be exploited to cause a heap-based buffer overflow.</desc>
+	</fsa>
+	<fsa>
 		<id>193</id>
 		<date>2007-06-07</date>
 		<author>voroskoi</author>
