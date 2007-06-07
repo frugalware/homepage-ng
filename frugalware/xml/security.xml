@@ -27,6 +27,17 @@
 
 <fsas>
 	<fsa>
+		<id>193</id>
+		<date>2007-06-07</date>
+		<author>voroskoi</author>
+		<package>tcl</package>
+		<vulnerable>8.4.14-1</vulnerable>
+		<unaffected>8.4.15-1terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2118</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2877</cve>
+		<desc>Martin Lemburg has reported a security issue in Tcl, which potentially can be exploited by malicious, local users to gain escalated privileges. The security issue is caused due to a boundary error within tcl/win/tclWinReg.c when processing overly long registry key names. This can be exploited to cause a buffer overflow by e.g. creating a malicious registry key and enticing another user to query it with an application using Tcl.</desc>
+	</fsa>
+	<fsa>
 		<id>192</id>
 		<date>2007-06-07</date>
 		<author>voroskoi</author>
