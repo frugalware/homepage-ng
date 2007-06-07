@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>201</id>
+		<date>2007-06-07</date>
+		<author>voroskoi</author>
+		<package>thunderbird</package>
+		<vulnerable>1.5.0.10-1</vulnerable>
+		<unaffected>1.5.0.12-1terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2124</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2867
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2868</cve>
+		<desc>A vulnerability has been reported in Mozilla Thunderbird, which can potentially be exploited by malicious people to compromise a user's system. Errors in the JavaScript engine can be exploited to cause memory corruption and potentially to execute arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>200</id>
 		<date>2007-06-07</date>
 		<author>voroskoi</author>
