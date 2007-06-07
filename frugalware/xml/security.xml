@@ -27,6 +27,17 @@
 
 <fsas>
 	<fsa>
+		<id>199</id>
+		<date>2007-06-07</date>
+		<author>voroskoi</author>
+		<package>gd</package>
+		<vulnerable>2.0.34-1</vulnerable>
+		<unaffected>2.0.34-2terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2074</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2756</cve>
+		<desc>Xavier Roche has reported a vulnerability in GD Graphics Library, which can be exploited by malicious people to cause a DoS (Denial of Service). The vulnerability is caused due to the incorrect use of libpng within the function "gdPngReadData()" when processing truncated data. This can be exploited to cause an infinite loop by e.g. tricking an application using the library to process a specially crafted file.</desc>
+	</fsa>
+	<fsa>
 		<id>198</id>
 		<date>2007-06-07</date>
 		<author>voroskoi</author>
