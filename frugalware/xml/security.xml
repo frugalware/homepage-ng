@@ -27,6 +27,17 @@
 
 <fsas>
 	<fsa>
+		<id>195</id>
+		<date>2007-06-07</date>
+		<author>voroskoi</author>
+		<package>tor</package>
+		<vulnerable>0.1.1.26-3terminus1</vulnerable>
+		<unaffected>0.1.2.14-1terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2121</bts>
+		<cve>No CVE for this issue.</cve>
+		<desc>lodger has reported a weakness in Tor, which potentially can be exploited by malicious people to expose sensitive information. When building a circuit, Tor checks if an entry guard is exactly the same as an exit guard, but fails to check if they are also part of the same family. This may weaken the Tor security concept and could make it easier to launch certain attacks.</desc>
+	</fsa>
+	<fsa>
 		<id>194</id>
 		<date>2007-06-07</date>
 		<author>voroskoi</author>
