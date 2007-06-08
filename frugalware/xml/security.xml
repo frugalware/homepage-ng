@@ -27,6 +27,21 @@
 
 <fsas>
 	<fsa>
+		<id>203</id>
+		<date>2007-06-08</date>
+		<author>voroskoi</author>
+		<package>php</package>
+		<vulnerable>5.2.2-1terminus2</vulnerable>
+		<unaffected>5.2.3-1terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2127</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2872
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1900</cve>
+		<desc>A weakness and a vulnerability have been reported in PHP 5, which can be exploited by malicious, local users to bypass certain security restrictions.
+			1) An integer overflow error in the "chunk_split()" function can be exploited to cause a heap based buffer overflow. Successful exploitation of this vulnerability may allow execution of arbitrary code, which can lead to security restrictions, such as the "disable_functions" directive, being bypassed.
+			2) An error in the "realpath()" function allows bypassing of the "open_basedir" restriction and identifying the existence of files.
+			Stefan Esser has reported a vulnerability in PHP, which can be exploited by malicious people to bypass certain security restrictions. The vulnerability is caused due to the use of an incorrect regular expression within the "FILTER_VALIDATE_EMAIL" filter of the ext/filter extension. This can be exploited to inject newlines via specially crafted email addresses, which may allow mail header injection.</desc>
+	</fsa>
+	<fsa>
 		<id>202</id>
 		<date>2007-06-07</date>
 		<author>voroskoi</author>
