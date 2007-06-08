@@ -80,6 +80,8 @@ switch($_GET['type'])
 			($_GET['filter'] == 'stable' ? ' fwver != \'current\' and' : '').
 			($_GET['arch'] == 'i686' ? ' packages.arch = \'i686\' and' : '').
 			($_GET['arch'] == 'x86_64' ? ' packages.arch = \'x86_64\' and' : '').
+			(empty($_GET['pkg']) ? '' : ' packages.pkgname = \'' . $_GET['pkg'] . '\' and').
+				// sql-inj attack is defended by rewrite.php:31
 			' packages.uploader_id = uploaders.id group by
 			concat(packages.pkgname, packages.arch, fwver) order by
 			packages.builddate desc limit
