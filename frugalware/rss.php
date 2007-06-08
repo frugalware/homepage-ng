@@ -78,6 +78,8 @@ switch($_GET['type'])
 			ct_groups.pkg_id and ct_groups.group_id = groups.id and'.
 			($_GET['filter'] == 'current' ? ' fwver = \'current\' and' : '').
 			($_GET['filter'] == 'stable' ? ' fwver != \'current\' and' : '').
+			($_GET['arch'] == 'i686' ? ' packages.arch = \'i686\' and' : '').
+			($_GET['arch'] == 'x86_64' ? ' packages.arch = \'x86_64\' and' : '').
 			' packages.uploader_id = uploaders.id group by
 			concat(packages.pkgname, packages.arch, fwver) order by
 			packages.builddate desc limit

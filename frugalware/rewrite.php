@@ -70,7 +70,7 @@ if(count($params)>0)
 	}
 	else if($page=="rss")
 	{
-		$urlsuffix="?type=".$params[0].(empty($params[1])?'':"&filter=".$params[1]);
+		$urlsuffix="?type=".$params[0].(empty($params[1])?'':"&filter=".$params[1]).(empty($params[2])?'':"&arch=".$params[2]);
 	}
 	else if($page=="docs")
 	{
