@@ -75,8 +75,10 @@ switch($_GET['type'])
 			packages.arch, packages.`desc`,
 			unix_timestamp(packages.builddate) from packages, groups,
 			ct_groups, uploaders where packages.id =
-			ct_groups.pkg_id and ct_groups.group_id = groups.id and
-			packages.uploader_id = uploaders.id group by
+			ct_groups.pkg_id and ct_groups.group_id = groups.id and'.
+			($_GET['filter'] == 'current' ? ' fwver = \'current\' and' : '').
+			($_GET['filter'] == 'stable' ? ' fwver != \'current\' and' : '').
+			' packages.uploader_id = uploaders.id group by
 			concat(packages.pkgname, packages.arch, fwver) order by
 			packages.builddate desc limit
 			10';
