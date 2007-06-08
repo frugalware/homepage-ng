@@ -85,7 +85,7 @@ function genHeader($usegettext = true) {
 			unix_timestamp(packages.builddate) from packages, groups, 
 			ct_groups where packages.id = ct_groups.pkg_id and 
 			ct_groups.group_id = groups.id group by 
-			concat(packages.pkgname, packages.arch) order by 
+			concat(packages.pkgname, packages.arch, fwver) order by
 			packages.builddate desc limit 10";
 		$result = $db->doQuery($query);
 		
