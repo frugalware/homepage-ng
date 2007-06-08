@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>204</id>
+		<date>2007-06-08</date>
+		<author>voroskoi</author>
+		<package>findutils</package>
+		<vulnerable>4.3.2-1</vulnerable>
+		<unaffected>4.3.2-2terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2128</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2452</cve>
+		<desc>A vulnerability has been reported in GNU findutils, which can be exploited by malicious people to compromise a user's system.
+			The vulnerability is caused due to a boundary error when parsing "old" style formatted locate databases. This can be exploited to cause a heap-based buffer overflow by e.g. tricking a user into running locate on a specially crafted "old" style database containing an overly long path (more than 1026 bytes).</desc>
+	</fsa>
+	<fsa>
 		<id>203</id>
 		<date>2007-06-08</date>
 		<author>voroskoi</author>
