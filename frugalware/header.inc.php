@@ -138,7 +138,8 @@ function genHeader($usegettext = true) {
 	
 	// PayPal donate
 	if (file_exists('paypal.inc.html')) {
-		$paypal = file_get_contents('paypal.inc.html');
+		$paypal = "<p>Donate to support our development efforts.</p>";
+		$paypal .= file_get_contents('paypal.inc.html');
 		$data = array("releases" => $rels, "packages" => $recupd, "uptime" => $uptime, "paypal" => $paypal);
 	} else
 		$data = array("releases" => $rels, "packages" => $recupd, "uptime" => $uptime, "paypal" => "");
