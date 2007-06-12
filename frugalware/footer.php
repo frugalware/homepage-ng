@@ -2,7 +2,7 @@
 <!-- main content end -->
 
 <!-- footer start -->
-<div id="footer">
+<div id="fwfooter">
 	&copy; <?php echo $copydate; ?>. <a href="mailto:frugalware-devel@frugalware.org">The Frugalware Developer Team</a>
 </div>
 <!-- footer end -->

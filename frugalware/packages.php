@@ -47,6 +47,8 @@ function main()
 			buildlog_from_id($_GET['id']);
 		else if ($_GET['s'] == "changelog")
 			changelog_from_id($_GET['id']);
+		else if ($_GET['s'] == "documentation")
+			documentation_from_id($_GET['id']);
 		else
 			pkg_from_id($_GET['id']);
 	}
@@ -388,6 +390,8 @@ function pkg_from_id($id)
 		$content .= "<tr><td>" . gettext("Name:") . "</td><td><a href=\"/packages/".$id."/files\">".$arr['pkgname']."</a></td></tr>\n";
 		if ($arr['parent_id'] != 0 and $arr['parent_id'] != $id) $content .= "<tr><td>" . gettext("Parent:") . "</td><td><a href=\"/packages/" . $arr['parent_id']. "\">".$parent['pkgname']."</a></td></tr>\n";
 		$content .= "<tr><td>" . gettext("Version:") . "</td><td>".$arr['pkgver']."</td></tr>\n";
+		if(file_exists($top_path."/source/".$parent['group']."/".$parent['pkgname']."/".$parent['pkgname'].".html"))
+			$content .= "<tr><td>" . gettext("Documentation:") . "</td><td><a href=\"/packages/".$id."/documentation\">".$arr['pkgname'].".html</a></td></tr>\n";
 		if(file_exists($top_path."/source/".$parent['group']."/".$parent['pkgname']."/".$parent['pkgname']."-".$arr['pkgver']."-".$arr['arch'].".log.bz2"))
 			$content .= "<tr><td>" . gettext("Buildlog:") . "</td><td><a href=\"/packages/".$id."/buildlog\">".$arr['pkgname']."-".$arr['pkgver']."-".$arr['arch'].".log.bz2</a></td></tr>\n";
 		$content .= "<tr><td>" . gettext("Changelog:") . "</td><td><a href=\"/packages/".$id."/changelog\">Changelog</a></td></tr>\n";
@@ -555,6 +559,64 @@ function buildlog_from_id($id)
 		}
 		else
 			print(gettext("Sorry, currently no log available."));
+	}
+	else
+	{
+		fwmiddlebox( '', gettext("No such package!") );
+	}
+	$db->doClose();
+}
+
+function documentation_from_id($id)
+{
+	global $sqlhost, $sqluser, $sqlpass, $top_path;
+
+	$db = new FwDB();
+	$db->doConnect($sqlhost, $sqluser, $sqlpass, "frugalware2");
+	$res = $db->doQuery("select pkgname, pkgver, arch, parent_id, fwver from packages where id=$id");
+	if ( $db->doCountRows( $res ) > 0 )
+	{
+		$arr = $db->doFetchRow($res);
+		if($arr['parent_id']!=0)
+		{
+			$res = $db->doQuery("select pkgname from packages where id=" . $arr['parent_id']);
+			$parent = $db->doFetchRow($res);
+		}
+		else
+			$parent['pkgname']=$arr['pkgname'];
+		$query = "select ct_groups.pkg_id, groups.id, groups.name from groups, ct_groups where (ct_groups.pkg_id=$id or ct_groups.pkg_id=".$arr['parent_id'].") and ct_groups.group_id = groups.id order by groups.id";
+		$res = $db->doQuery($query);
+		while($i=$db->doFetchRow($res))
+			if($i['pkg_id']==$id)
+				$groups[]=$i;
+			else if(!isset($parent['group']))
+				$parent['group']=$i['name'];
+		if(!isset($parent['group']))
+			$parent['group']=$groups[0]['name'];
+
+		$slog = $parent['pkgname']."-".$arr['pkgver']."-".$arr['arch'];
+		$doc = str_replace("current", $arr['fwver'], $top_path)."/source/".$parent['group']."/".$parent['pkgname']."/".$parent['pkgname'].".html";
+		print("<fieldset class=\"pkg\"><legend>".sprintf(gettext("Documentation for %s"), $slog)."</legend>");
+		if(file_exists($doc))
+		{
+			print("<div class=\"documentation\">");
+			$lines = explode("\n", file_get_contents($doc));
+			$display = false;
+			foreach($lines as $i)
+			{
+				if(substr(trim($i), -7, 7) == "</body>")
+					$display = false;
+				if($display)
+					print($i);
+				if(substr(trim($i), -5, 5) == "</h2>")
+					$display = true;
+				/*else
+					print("DEBUG: '" . substr($i, -6, 6) . "' != '</h2>\n'\n");*/
+			}
+			print("</div>\n</fieldset>\n");
+		}
+		else
+			print(gettext("Sorry, currently no documentation available."));
 	}
 	else
 	{

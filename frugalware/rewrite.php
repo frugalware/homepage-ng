@@ -93,6 +93,8 @@ if(count($params)>0)
 				$urlsuffix.="&s=buildlog";
 			else if($params[1]=="changelog")
 				$urlsuffix.="&s=changelog";
+			else if($params[1]=="documentation")
+				$urlsuffix.="&s=documentation";
 		}
 	}
 }
