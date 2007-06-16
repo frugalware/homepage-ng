@@ -18,7 +18,7 @@
 		<title>Happy 3rd birthday, Frugalware!</title>
 		<date>Sat Jun 16 13:14:49 CEST 2007</date>
 		<author>vmiklos</author>
-		<hidden>1</hidden>
+		<hidden>0</hidden>
 		<content><![CDATA[
 						<pre>
 $ lynx -dump http://ftp.frugalware.org/pub/archive/frugalware-0.1/ChangeLog.txt|tail -n 7
