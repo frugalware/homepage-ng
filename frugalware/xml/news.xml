@@ -12,12 +12,15 @@
 <!ELEMENT icon (#PCDATA)>
 <!ELEMENT name (#PCDATA)>
 ]>
+
+<!-- if you modify this file, be sure it's still valid - xmllint is your friend -->
+
 <news>
 	<post>
 		<id>68</id>
 		<title>Happy 3rd birthday, Frugalware!</title>
 		<date>Sat Jun 16 13:14:49 CEST 2007</date>
-		<author>vmiklos</author>
+		<author>VMiklos</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
 						<pre>
