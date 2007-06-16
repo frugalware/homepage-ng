@@ -14,6 +14,26 @@
 ]>
 <news>
 	<post>
+	<post>
+		<id>68</id>
+		<title>Happy 3th birthday, Frugalware!</title>
+		<date>Sat Jun 16 13:14:49 CEST 2007</date>
+		<author>vmiklos</author>
+		<hidden>1</hidden>
+		<content><![CDATA[
+						<pre>
+$ lynx -dump http://ftp.frugalware.org/pub/archive/frugalware-0.1/ChangeLog.txt|tail -n 7
+Wed <b>Jun 16</b> 14:42:01 CEST 2004, by VMiklos
+- Changelog: initial release
+...
+
+$ date
+Sat <b>Jun 16</b> 13:14:49 CEST 2007
+						</pre>
+						Cheer, dance, party!
+			]]>
+		</content>
+	</post>
 		<id>67</id>
 		<title>Frugalware 0.6a (Terminus) for x86_64 released</title>
 		<date>Sun Jun 3 07:54:12 CEST 2007</date>
