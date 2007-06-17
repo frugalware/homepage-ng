@@ -17,6 +17,17 @@
 
 <news>
 	<post>
+		<id>69</id>
+		<title>Frugalware Newsletter Issue 7</title>
+		<date>Sat Jun 17 12:17:25 CET 2007</date>
+		<author>AlexExtreme</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			The seventh issue of our fortnightly newsletter has been released! You can read it <a href="/newsletter/7">here</a>. We hope you like it! If you would like to vote on which design you would like to see on the next version of our homepage, read this issue!
+			]]>
+		</content>
+	</post>
+	<post>
 		<id>68</id>
 		<title>Happy 3rd birthday, Frugalware!</title>
 		<date>Sat Jun 16 13:14:49 CEST 2007</date>
