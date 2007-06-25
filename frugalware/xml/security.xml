@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>207</id>
+		<date>2007-06-25</date>
+		<author>voroskoi</author>
+		<package>cacti</package>
+		<vulnerable>0.8.6j-1</vulnerable>
+		<unaffected>0.8.6j-2terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2133</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3112
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3113</cve>
+		<desc>A vulnerability has been discovered in Cacti, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			The vulnerability is caused due to an error in graph_image.php, which can be exploited to use lots of system resources by passing malicious values to the "graph_start", "graph_end", "graph_width", and "graph_height" parameters.</desc>
+	</fsa>
+	<fsa>
 		<id>206</id>
 		<date>2007-06-08</date>
 		<author>voroskoi</author>
