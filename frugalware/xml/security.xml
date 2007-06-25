@@ -27,6 +27,22 @@
 
 <fsas>
 	<fsa>
+		<id>209</id>
+		<date>2007-06-25</date>
+		<author>voroskoi</author>
+		<package>kernel</package>
+		<vulnerable>2.6.20-5terminus5</vulnerable>
+		<unaffected>2.6.20-5terminus6</unaffected>
+		<bts>http://bugs.frugalware.org/task/2160</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2453
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2875
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2876</cve>
+		<desc>Two vulnerabilities and a weakness have been reported in the Linux Kernel, which can be exploited by malicious, local users to disclose potentially sensitive information and malicious people to cause a DoS (Denial of Service).
+			1) A NULL-pointer dereference exists within netfilter when handling new SCTP connections with unknown chunk types. This can be exploited to crash the kernel by sending malicious packets.
+			2) An underflow error within the "cpuset_task_read()" function in /kernel/cpuset.c can be exploited to read kernel memory, which may contain potentially sensitive information. Successful exploitation requires that the attacker has access to open the /dev/cpuset/tasks file (the cpuset file system needs to be mounted).
+			3) The kernel does not handle seeds for the random number generator correctly. This may weaken the security of applications relying on the randomness of the kernel random number generator.</desc>
+	</fsa>
+	<fsa>
 		<id>208</id>
 		<date>2007-06-25</date>
 		<author>voroskoi</author>
