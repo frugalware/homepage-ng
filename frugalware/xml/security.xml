@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>208</id>
+		<date>2007-06-25</date>
+		<author>voroskoi</author>
+		<package>mutt-ng</package>
+		<vulnerable>20070125-1</vulnerable>
+		<unaffected>20070125-2terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2140</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2683</cve>
+		<desc>A vulnerability has been reported in mutt, which potentially can be exploited by malicious, local users to gain escalated privileges. Successful exploitation may allow execution of arbitrary code with another user's privileges, but requires that the malicious user has a specially crafted realname and exists in the target user's alias file.
+			Also fixes http://dev.mutt.org/trac/ticket/2846</desc>
+	</fsa>
+	<fsa>
 		<id>207</id>
 		<date>2007-06-25</date>
 		<author>voroskoi</author>
