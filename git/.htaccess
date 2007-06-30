@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{REQUEST_URI} ^/gitweb
+RewriteRule (.*) http://helicon.frugalware.org/$1 [P]
