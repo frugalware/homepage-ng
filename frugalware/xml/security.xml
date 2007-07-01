@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>210</id>
+		<date>2007-07-01</date>
+		<author>voroskoi</author>
+		<package>vlc</package>
+		<vulnerable>0.8.6-3</vulnerable>
+		<unaffected>0.8.6-4terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2182</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3316</cve>
+		<desc>Some vulnerabilities have been reported in VLC Media Player, which can be exploited by malicious people to compromise a user's system.
+			The vulnerabilities are caused due to format string errors in the Ogg/Vorbis, Ogg/Theora, CDDA (CD Digital Audio), and SAP (Service Announce Protocol) plugins. These can be exploited to execute arbitrary code via a specially crafted .ogg or .ogm file (Vorbis/Theora), CDDB entry, or SAP/SDP message.</desc>
+	</fsa>
+	<fsa>
 		<id>209</id>
 		<date>2007-06-25</date>
 		<author>voroskoi</author>
