@@ -27,6 +27,26 @@
 
 <fsas>
 	<fsa>
+		<id>214</id>
+		<date>2007-07-01</date>
+		<author>voroskoi</author>
+		<package>clamav</package>
+		<vulnerable>0.90.2-1terminus1</vulnerable>
+		<unaffected>0.90.2-1terminus2</unaffected>
+		<bts>http://bugs.frugalware.org/task/2042</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2650
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3023
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3024
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3025
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3122
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3123</cve>
+		<desc>Some vulnerabilities have been reported in ClamAV, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			1) An error exists within the OLE2 parser when handling objects with malformed FAT partitions and large property sizes. This can be exploited to cause a DoS due to storage and CPU resource consumption by scanning a specially crafted OLE2 file.
+			2) An error in the processing of RAR files can be exploited to crash the process via a specially crafted RAR file.
+			3) A boundary error exists within the file /libclamav/unsp.c, which can be exploited to crash the process via a specially crafted NsPacked file.
+			4) An incorrect regular expression in libclamav/phishcheck.c can be exploited to cause a DoS by consuming all available CPU resources via a specially crafted file.</desc>
+	</fsa>
+	<fsa>
 		<id>213</id>
 		<date>2007-07-01</date>
 		<author>voroskoi</author>
