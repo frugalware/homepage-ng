@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>212</id>
+		<date>2007-07-01</date>
+		<author>voroskoi</author>
+		<package>evolution-data-server</package>
+		<vulnerable>1.10.0-1</vulnerable>
+		<unaffected>1.10.0-2terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2207</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3257</cve>
+		<desc>Philip Van Hoof has reported a vulnerability in Evolution, which potentially can be exploited by malicious people to compromise a user's system.
+			The vulnerability is caused due to the "imap_rescan()" function in camel/providers/imap/camel-imap-folder.c not properly sanitising the "SEQUENCE" value before being used to index arrays. This may be exploited to execute arbitrary code by e.g. tricking a user into using a malicious IMAP server.</desc>
+	</fsa>
+	<fsa>
 		<id>211</id>
 		<date>2007-07-01</date>
 		<author>voroskoi</author>
