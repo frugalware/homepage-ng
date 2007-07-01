@@ -51,11 +51,11 @@ Updated Packages
 
 Check if you have %s installed:
 
-	# pacman -Q %s
+	# pacman-g2 -Q %s
 
 If found, then you should upgrade to the latest version:
 
-	# pacman -Sy %s
+	# pacman-g2 -Sy %s
 
 """ % (self.package, self.package, self.package))
 
