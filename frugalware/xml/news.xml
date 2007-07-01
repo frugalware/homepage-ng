@@ -17,6 +17,17 @@
 
 <news>
 	<post>
+		<id>70</id>
+		<title>Frugalware Newsletter Issue 8</title>
+		<date>Sun Jul  1 12:28:27 CET 2007</date>
+		<author>AlexExtreme</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			The eighth issue of our fortnightly newsletter has been released! You can read it <a href="/newsletter/8">here</a>. We hope you like it!
+			]]>
+		</content>
+	</post>
+	<post>
 		<id>69</id>
 		<title>Frugalware Newsletter Issue 7</title>
 		<date>Sun Jun 17 12:17:25 CET 2007</date>
