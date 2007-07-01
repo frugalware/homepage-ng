@@ -27,6 +27,20 @@
 
 <fsas>
 	<fsa>
+		<id>215</id>
+		<date>2007-07-01</date>
+		<author>voroskoi</author>
+		<package>openoffice.org</package>
+		<vulnerable>2.1.0-6terminus1</vulnerable>
+		<unaffected>2.1.0-6terminus2</unaffected>
+		<bts>http://bugs.frugalware.org/task/2196</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0245
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2754</cve>
+		<desc>Some vulnerabilities have been reported in OpenOffice, which can potentially be exploited by malicious people to compromise a user's system.
+			1) An error exists when parsing the "prdata" tag in RTF files where the first token is smaller that the second one. This can be exploited to cause a heap-based buffer overflow by e.g. tricking a user into opening a specially crafted RTF files.
+			2) A vulnerability is caused due to the use of a vulnerable copy of the FreeType library, which can be exploited to cause a heap based buffer overflow by e.g. tricking a user into opening a specially crafted document.</desc>
+	</fsa>
+	<fsa>
 		<id>214</id>
 		<date>2007-07-01</date>
 		<author>voroskoi</author>
