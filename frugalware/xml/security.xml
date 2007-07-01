@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>213</id>
+		<date>2007-07-01</date>
+		<author>voroskoi</author>
+		<package>gd</package>
+		<vulnerable>2.0.34-2terminus1</vulnerable>
+		<unaffected>2.0.34-2terminus2</unaffected>
+		<bts>http://bugs.frugalware.org/task/2219</bts>
+		<cve>No CVE for this issue, see: http://www.libgd.org/ReleaseNote020035</cve>
+		<desc>Some vulnerabilities have been reported in the GD Graphics Library, where some have unknown impact and others can potentially be exploited to cause a DoS.
+			1) An integer overflow exists in the "gdImageCreateTrueColor()" function.
+			2) An error in the "gdImageCreateXbm()" function can potentially be exploited to cause a crash.</desc>
+	</fsa>
+	<fsa>
 		<id>212</id>
 		<date>2007-07-01</date>
 		<author>voroskoi</author>
