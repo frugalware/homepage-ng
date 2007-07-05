@@ -27,6 +27,22 @@
 
 <fsas>
 	<fsa>
+		<id>216</id>
+		<date>2007-07-05</date>
+		<author>voroskoi</author>
+		<package>wordpress</package>
+		<vulnerable>2.1.3-1terminus1</vulnerable>
+		<unaffected>2.2.1-1terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2067
+			http://bugs.frugalware.org/task/2158
+			http://bugs.frugalware.org/task/2213</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2821
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3140</cve>
+		<desc>Janek Vind has discovered a vulnerability in WordPress, which can be exploited by malicious people to conduct SQL injection attacks. Input passed to the "cookie" parameter in wp-admin/admin-ajax.php is not properly sanitised before being used in SQL queries. This can be exploited to manipulate SQL queries by injecting arbitrary SQL code. Successful exploitation allows e.g. retrieving administrator password hashes, but requires knowledge of the database table prefix.
+			A vulnerability has been discovered in WordPress, which can be exploited by malicious users to conduct SQL injection attacks. Input passed to the "wp.suggestCategories" method in xmlrpc.php is not properly sanitised before being used in SQL queries. This can be exploited to manipulate SQL queries by injecting arbitrary SQL code. Successful exploitation allows e.g. retrieving usernames and password hashes, but requires valid user credentials and knowledge of the database table prefix.
+			Alexander Concha has discovered a vulnerability in WordPress and WordPress MU, which can be exploited by malicious users to bypass certain security restrictions and to compromise a vulnerable system. The vulnerability is caused due to improper authentication verification. This can be exploited to add the custom field "_wp_attached_file" to a post, upload a PHP script to an arbitrary path with wp-app.php or app.php, and execute arbitrary PHP code. Successful exploitation requires valid Editor credentials and that the system is configured to allow uploads.</desc>
+	</fsa>
+	<fsa>
 		<id>215</id>
 		<date>2007-07-01</date>
 		<author>voroskoi</author>
