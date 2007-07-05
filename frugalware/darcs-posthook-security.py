@@ -69,7 +69,7 @@ If found, then you should upgrade to the latest version:
 
 
 if __name__ == "__main__":
-	sock = open("_darcs/third_party/latest-security", "r")
+	sock = open(".git/third_party/latest-security", "r")
 	latest = sock.read().strip()
 	sock.close()
 	f = fsa(minidom.parse('frugalware/xml/security.xml'))
@@ -84,6 +84,6 @@ if __name__ == "__main__":
 		server.set_debuglevel(1)
 		server.sendmail(fro, to, msg)
 		server.quit()
-		sock = open("_darcs/third_party/latest-security", "w")
+		sock = open(".git/third_party/latest-security", "w")
 		sock.write(f.id + "\n")
 		sock.close()

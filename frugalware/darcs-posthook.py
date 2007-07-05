@@ -87,7 +87,7 @@ class BaseHTMLProcessor(SGMLParser):
 
 
 if __name__ == "__main__":
-	sock = open("_darcs/third_party/latest", "r")
+	sock = open(".git/third_party/latest", "r")
 	latest = sock.read().strip()
 	sock.close()
 	xmldoc = minidom.parse('frugalware/xml/news.xml')
@@ -113,6 +113,6 @@ if __name__ == "__main__":
 		server.set_debuglevel(1)
 		server.sendmail(fro, to, msg)
 		server.quit()
-		sock = open("_darcs/third_party/latest", "w")
+		sock = open(".git/third_party/latest", "w")
 		sock.write(id + "\n")
 		sock.close()
