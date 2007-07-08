@@ -395,7 +395,10 @@ function pkg_from_id($id)
 		if(file_exists($top_path."/source/".$parent['group']."/".$parent['pkgname']."/".$parent['pkgname']."-".$arr['pkgver']."-".$arr['arch'].".log.bz2"))
 			$content .= "<tr><td>" . gettext("Buildlog:") . "</td><td><a href=\"/packages/".$id."/buildlog\">".$arr['pkgname']."-".$arr['pkgver']."-".$arr['arch'].".log.bz2</a></td></tr>\n";
 		$content .= "<tr><td>" . gettext("Changelog:") . "</td><td><a href=\"/packages/".$id."/changelog\">Changelog</a></td></tr>\n";
-		$content .= "<tr><td>" . gettext("Darcs:") . "</td><td><a href=\"http://darcs.frugalware.org/darcsweb/darcsweb.cgi?r=frugalware-" . ($arr['fwver'] == "current" ? $arr['fwver'] : "stable") . ";a=tree;f=/source/" . $parent['group']."/".str_replace("+", "%2b", $parent['pkgname']). "\">View entry</a></td></tr>\n";
+		if($arr['fwver'] == "current")
+		$content .= "<tr><td>Git:</td><td><a href=\"http://git.frugalware.org/gitweb/gitweb.cgi?p=frugalware-current/.git;a=tree;f=source/" . $parent['group']."/".str_replace("+", "%2b", $parent['pkgname']). "\">View entry</a></td></tr>\n";
+		else
+		$content .= "<tr><td>Darcs</td><td><a href=\"http://darcs.frugalware.org/darcsweb/darcsweb.cgi?r=frugalware-stable;a=tree;f=/source/" . $parent['group']."/".str_replace("+", "%2b", $parent['pkgname']). "\">View entry</a></td></tr>\n";
 		if(count($groups))
 		{
 			$content .= "<tr><td>" . gettext("Groups:") . "</td><td>";
