@@ -10,7 +10,7 @@
 
  Frugalware Linux Homepage - New Generation
  @author Miklos Vajna <vmiklos@frugalware.org>
- @copyright Copyright (C) 2006 Miklos Vajna
+ @copyright Copyright (C) 2006, 2007 Miklos Vajna
 
 """
 from xml.dom import minidom

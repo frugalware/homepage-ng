@@ -71,6 +71,7 @@ $menucontent .= '<a class="menu" href="" onclick="return clickreturnvalue()" onm
 $menucontent .= '<div id="develmenu" class="menulinkcss" align="left">' . "\n";
 $menucontent .= '	<a href="' . $fwng_root . 'roadmap">' . gettext('Roadmap') . "</a>\n";
 $menucontent .= '	<a href="http://darcs.frugalware.org/">' . gettext('Darcs repository') . "</a>\n";
+$menucontent .= '	<a href="http://git.frugalware.org/">' . gettext('Git repository') . "</a>\n";
 $menucontent .= '	<a href="http://bugs.frugalware.org/">' . gettext('Bug Tracker') . "</a>\n";
 $menucontent .= '	<a href="http://pootle.frugalware.org/">' . gettext('Translation portal') . "</a>\n";
 $menucontent .= '	<a href="' . $fwng_root . 'changelog">' . gettext('ChangeLog') . "</a>\n";
@@ -95,6 +96,8 @@ $langcontent = '<div class="imgcontent">
 	  <a href="' . $langpage . 'fr"><img alt="' . gettext( 'Change language' ) . '" title="' . gettext( 'Change language' ) . '" src="' . $fwng_root . 'images/french.gif" border="0" /></a>
 	  | 
 	  <a href="' . $langpage . 'sk"><img alt="' . gettext( 'Change language' ) . '" title="' . gettext( 'Change language' ) . '" src="' . $fwng_root . 'images/slovak.gif" border="0" /></a>
+	  | 
+	  <a href="' . $langpage . 'ru"><img alt="' . gettext( 'Change language' ) . '" title="' . gettext( 'Change language' ) . '" src    ="' . $fwng_root . 'images/russian.gif" border="0" /></a>
 	</div>';
 /*
 | <a href="?lang=es"><img alt="' . gettext('Change language') . '" title="' . gettext('Change language') . '" src="images/spanish.gif" border="0" /></a> | <a href="?lang=fr"><img alt="' . gettext('Change language') . '" title="' . gettext('Change language') . '" src="images/french.gif" border="0" /></a>';
