@@ -161,7 +161,8 @@ function getllang($lang)
 		"fr" => "fr_FR",
 		"hu" => "hu_HU",
 		"pl" => "pl_PL",
-		"sk" => "sk_SK"
+		"sk" => "sk_SK",
+		"ru" => "ru_RU"
 	);
 	return $langs[$lang];
 }
@@ -173,7 +174,8 @@ function getnlang($lang)
 		"fr_FR" => "French",
 		"hu_HU" => "Hungarian",
 		"pl_PL" => "Polish",
-		"sk_SK" => "Slovak"
+		"sk_SK" => "Slovak",
+		"ru_RU" => "Russian"
 	);
 	return $nlangs[$lang];
 }

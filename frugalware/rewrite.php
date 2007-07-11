@@ -24,7 +24,7 @@ include("functions.inc.php");
 include("config.inc.php");
 
 $pages = array('about', 'donations', 'irc', 'screenshots', 'authors',
-	'download', 'media', 'roadmap', 'changelog', 'docs', 'news',
+	'download', 'media', 'roadmap', 'docs', 'news',
 	'packages', 'rss', 'security', 'newsletter');
 
 // anti-slash for kiddies
