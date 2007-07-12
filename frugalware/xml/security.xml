@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>218</id>
+		<date>2007-07-12</date>
+		<author>voroskoi</author>
+		<package>kernel</package>
+		<vulnerable>2.6.20-5terminus6</vulnerable>
+		<unaffected>2.6.20-5terminus7</unaffected>
+		<bts>http://bugs.frugalware.org/task/2211</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3104</cve>
+		<desc>A vulnerability has been reported in the Linux Kernel, which can be exploited by malicious, local users to cause a Denial of Service (DoS).
+			The vulnerability is caused due to a NULL pointer dereference within the function "sysfs_readdir()" when handling pointers to inodes. This can be exploited to crash a vulnerable system.</desc>
+	</fsa>
+	<fsa>
 		<id>217</id>
 		<date>2007-07-09</date>
 		<author>voroskoi</author>
