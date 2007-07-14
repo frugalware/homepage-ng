@@ -54,7 +54,7 @@ switch($_GET['type'])
 				
 				$handle['items'][] = array(
 					"title" => 'frugalware-' . $releases[$i]->version[0]->tagData,
-					"link" => 'http://www2.frugalware.org/news/' . $releases[$i]->newsid[0]->tagData,
+					"link" => 'http://www.frugalware.org/news/' . $releases[$i]->newsid[0]->tagData,
 					"desc" => '',
 					"pubDate" => date(DATE_RFC2822, strtotime($releases[$i]->date[0]->tagData)),
 				);
