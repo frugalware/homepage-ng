@@ -27,6 +27,27 @@
 
 <fsas>
 	<fsa>
+		<id>222</id>
+		<date>2007-07-22</date>
+		<author>vmiklos</author>
+		<package>qemu</package>
+		<vulnerable>0.9.0-1</vulnerable>
+		<unaffected>0.9.0-2terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2011</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1320
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1321
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1322
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1323
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1366</cve>
+		<desc>Tavis Ormandy has reported some vulnerabilities in QEMU, which can be exploited by malicious uses to bypass certain security restrictions or cause a DoS (Denial of Service).
+			1) A boundary error exists within the "cirrus_invalidate_region()" function of the Cirrus video driver, which can be exploited to cause a heap-based buffer overflow.
+			2) The size of ethernet frames is not correctly checked against the "MTU" before being copied into the registers of the NE2000 network driver. This can be exploited to cause a heap-based buffer overflow.
+			3) An integer signedness error when processing data in the NE2000 device registers can be exploited to cause a heap-based buffer overflow.
+			Successful exploitation of 1) through 3) may allow the execution of arbitrary code.
+			4) Errors when handling the "icebp" instruction can be exploited to cause a DoS by terminating the emulation session.
+			5) An error within the handling of the "aam" instruction can result in a division by zero, which can be exploited to cause a DoS.</desc>
+	</fsa>
+	<fsa>
 		<id>221</id>
 		<date>2007-07-22</date>
 		<author>vmiklos</author>
