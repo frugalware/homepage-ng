@@ -27,6 +27,22 @@
 
 <fsas>
 	<fsa>
+		<id>220</id>
+		<date>2007-07-22</date>
+		<author>vmiklos</author>
+		<package>wireshark</package>
+		<vulnerable>0.99.5-1</vulnerable>
+		<unaffected>0.99.6-1terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2218</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3389
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3390
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3391
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3392
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3393</cve>
+		<desc>Some vulnerabilities have been reported in Wireshark, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			Errors exist within the DHCP/BOOTP dissector or when processing HTTP chunked responses, iSeries capture files, or DCP ETSI, SSL, or MMS packets. These can be exploited to cause a crash, excessive loops, or consume large amounts of memory when parsing a specially crafted packet that is either captured off the wire or loaded via a capture file.</desc>
+	</fsa>
+	<fsa>
 		<id>219</id>
 		<date>2007-07-22</date>
 		<author>vmiklos</author>
