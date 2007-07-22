@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>219</id>
+		<date>2007-07-22</date>
+		<author>vmiklos</author>
+		<package>avahi</package>
+		<vulnerable>0.6.17-2</vulnerable>
+		<unaffected>0.6.17-3terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2209</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3372</cve>
+		<desc>Emanuele Aina has reported a security issue in Avahi, which can be exploited by malicious, local users to cause a DoS (Denial of Service).
+			The security issue is caused due to an "assert()" error when receiving empty TXT data over D-Bus for registration. This can be exploited to terminate the Avahi daemon by sending empty TXT data.</desc>
+	</fsa>
+	<fsa>
 		<id>218</id>
 		<date>2007-07-12</date>
 		<author>voroskoi</author>
