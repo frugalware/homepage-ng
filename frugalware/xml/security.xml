@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>221</id>
+		<date>2007-07-22</date>
+		<author>vmiklos</author>
+		<package>flashplugin</package>
+		<vulnerable>9.0.31.0-1</vulnerable>
+		<unaffected>9.0.48.0-1terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2240</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3456
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3457
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2022</cve>
+		<desc>Critical vulnerabilities have been identified in Adobe Flash Player that could allow an attacker who successfully exploits these potential vulnerabilities to take control of the affected system. A malicious SWF must be loaded in Flash Player by the user for an attacker to exploit these potential vulnerabilities.</desc>
+	</fsa>
+	<fsa>
 		<id>220</id>
 		<date>2007-07-22</date>
 		<author>vmiklos</author>
