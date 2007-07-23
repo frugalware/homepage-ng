@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>223</id>
+		<date>2007-07-23</date>
+		<author>vmiklos</author>
+		<package>joomla</package>
+		<vulnerable>1.0.12-1</vulnerable>
+		<unaffected>-1.0.12-2terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2216</bts>
+		<cve>There is no CVE for this issue, see http://joomlacode.org/gf/project/joomla/tracker/?action=TrackerItemEdit&amp;tracker_item_id=5654</cve>
+		<desc>Cindy Chee has discovered a vulnerability in Joomla!, which can be exploited by malicious people to conduct cross-site scripting attacks.
+			Input passed to the "Title" and "Section Name" form fields when creating new sections in Section Manager is not properly sanitised before being stored. This can be exploited to insert arbitrary HTML and script code, which is executed in a user's browser session in context of an affected site when the data is viewed.
+			Successful exploitation requires that the target user has valid administrator credentials.</desc>
+	</fsa>
+	<fsa>
 		<id>222</id>
 		<date>2007-07-22</date>
 		<author>vmiklos</author>
