@@ -27,12 +27,27 @@
 
 <fsas>
 	<fsa>
+		<id>224</id>
+		<date>2007-07-26</date>
+		<author>vmiklos</author>
+		<package>kernel</package>
+		<vulnerable>2.6.20-5terminus7</vulnerable>
+		<unaffected>2.6.20-5terminus8</unaffected>
+		<bts>http://bugs.frugalware.org/task/2235</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3513
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3107</cve>
+		<desc>Security issues have been reported in the Linux Kernel, which can be exploited by malicious, local users to cause a DoS (Denial of Service).
+			1) The USBLCD driver does not limit the memory consumption during writes to the device. This can be exploited to cause an out-of-memory condition by writing a large amount of data to an affected device.
+			Successful exploitation requires write access to a device using the driver.
+			2) A vulnerability is caused due to an error within the "decode_choice()" function in net/netfilter/bf_conntrack_h323_asn1.c when handling choices that are still encoded in the fixed-size bitfield. This can be exploited to cause access to undefined types, resulting in a crash.</desc>
+	</fsa>
+	<fsa>
 		<id>223</id>
 		<date>2007-07-23</date>
 		<author>vmiklos</author>
 		<package>joomla</package>
 		<vulnerable>1.0.12-1</vulnerable>
-		<unaffected>-1.0.12-2terminus1</unaffected>
+		<unaffected>1.0.12-2terminus1</unaffected>
 		<bts>http://bugs.frugalware.org/task/2216</bts>
 		<cve>There is no CVE for this issue, see http://joomlacode.org/gf/project/joomla/tracker/?action=TrackerItemEdit&amp;tracker_item_id=5654</cve>
 		<desc>Cindy Chee has discovered a vulnerability in Joomla!, which can be exploited by malicious people to conduct cross-site scripting attacks.
