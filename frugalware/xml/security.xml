@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>226</id>
+		<date>2007-07-26</date>
+		<author>vmiklos</author>
+		<package>j2sdk</package>
+		<vulnerable>6-1</vulnerable>
+		<unaffected>6-2terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2255</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3716</cve>
+		<desc>Brad Hill has reported a vulnerability in Sun JDK and JRE, which can be exploited by malicious people to compromise a vulnerable system.
+			The vulnerability is caused due to an error when processing XSLT stylesheets contained in XSLT Transforms in XML signatures. This can be exploited to execute arbitrary code when an application processes a specially crafted XML signature.</desc>
+	</fsa>
+	<fsa>
 		<id>225</id>
 		<date>2007-07-26</date>
 		<author>vmiklos</author>
