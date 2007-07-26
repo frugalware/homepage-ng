@@ -27,6 +27,20 @@
 
 <fsas>
 	<fsa>
+		<id>225</id>
+		<date>2007-07-26</date>
+		<author>vmiklos</author>
+		<package>j2re</package>
+		<vulnerable>6-2</vulnerable>
+		<unaffected>6-3terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2254</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3655
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3716</cve>
+		<desc>A vulnerability has been reported in Sun Java Web Start, which can be exploited by malicious people to compromise a user's system.
+			The vulnerability is caused due to a boundary error within the Java Web Start component (javaws.exe) when processing JNLP files. This can be exploited to cause a stack-based buffer overflow via a specially crafted JNLP file with an overly long codebase attribute.
+			Successful exploitation allows execution of arbitrary code e.g. when a user visits a malicious website.</desc>
+	</fsa>
+	<fsa>
 		<id>224</id>
 		<date>2007-07-26</date>
 		<author>vmiklos</author>
