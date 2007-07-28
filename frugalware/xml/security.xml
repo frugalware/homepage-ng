@@ -27,6 +27,30 @@
 
 <fsas>
 	<fsa>
+		<id>227</id>
+		<date>2007-07-28</date>
+		<author>vmiklos</author>
+		<package>lighttpd</package>
+		<vulnerable>1.4.13-3terminus1</vulnerable>
+		<unaffected>1.4.16-1terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2271</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3946
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3947
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3948
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3949
+			ttp://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3950</cve>
+		<desc>Some vulnerabilities have been reported in lighttpd, which can be exploited by malicious people to bypass certain security restrictions, cause a DoS (Denial of Service), or potentially to compromise a vulnerable system.
+			1) An error in the processing of HTTP headers can be exploited to cause a DoS by sending duplicate HTTP headers with a trailing whitespace character.
+			2) An error in mod_auth can be exploited to cause a DoS by sending requests with the algorithm set to "MD5-sess" and without a cnonce.
+			3) An error when parsing Auth-Digest headers in mod_auth can potentially be exploited to cause a DoS by sending multiple whitespace characters.
+			4) An error exists in the mechanism that limits the number of active connections. This can be exploited to cause a DoS.
+			5) An error exists in the processing of HTTP requests. This can be exploited to access restricted files by adding a "/" to an URL.
+			6) An error exists in mod_scgi. This can be exploited to cause a DoS by sending a SCGI request and closing the connection while lighttpd processes the request.
+			7) The return value of "base64_decode" in mod_auth was not checked properly when parsing the credentials for basic authentication, which could lead to accessing uninitialized memory.
+			8) An error in the header parsing code can lead to access of memory outside of the original boundaries and can cause a memory corruption.
+			Successful exploitation of this vulnerability can potentially be exploited to execute arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>226</id>
 		<date>2007-07-26</date>
 		<author>vmiklos</author>
