@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>231</id>
+		<date>2007-07-29</date>
+		<author>vmiklos</author>
+		<package>tcpdump</package>
+		<vulnerable>3.9.5-2</vulnerable>
+		<unaffected>3.9.5-3terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2270</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3798</cve>
+		<desc>mu-b has reported a vulnerability in tcpdump, which potentially can be exploited by malicious people to compromise a user's system.
+			The vulnerability is caused due to the incorrect use of the return value of "snprintf()" in print-bgp.c. This can be exploited to cause a buffer overflow by sending specially crafted BGP packets.
+			Successful exploitation may allow the execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>230</id>
 		<date>2007-07-29</date>
 		<author>vmiklos</author>
