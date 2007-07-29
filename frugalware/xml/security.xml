@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>229</id>
+		<date>2007-07-29</date>
+		<author>vmiklos</author>
+		<package>c-ares</package>
+		<vulnerable>1.3.2-2</vulnerable>
+		<unaffected>1.4.0-1terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2159</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3152
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3153</cve>
+		<desc>A vulnerability has been reported in c-ares, which can be exploited by malicious people to poison the DNS cache.
+			The vulnerability is caused due to predictable DNS "Transaction ID" field in DNS queries and can be exploited to poison the DNS cache of an application using the library if a valid ID is guessed.</desc>
+	</fsa>
+	<fsa>
 		<id>228</id>
 		<date>2007-07-29</date>
 		<author>vmiklos</author>
