@@ -27,6 +27,20 @@
 
 <fsas>
 	<fsa>
+		<id>230</id>
+		<date>2007-07-29</date>
+		<author>vmiklos</author>
+		<package>perl-net-dns</package>
+		<vulnerable>0.59-1</vulnerable>
+		<unaffected>0.60-1terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2217</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3377
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3409</cve>
+		<desc>Two vulnerabilities have been reported in the Net::DNS Perl module, which can be exploited to poison the DNS cache or to cause a DoS (Denial of Service).
+			1) An error exists in the handling of DNS queries where IDs are incremented with a fixed value and are additionally used for child processes in a forking server. This can be exploited to poison the DNS cache of an application using the module if a valid ID is guessed.
+			2) An error in the PP implementation within the "dn_expand()" function can be exploited to cause a stack overflow due to an endless loop via a specially crafted DNS packet.</desc>
+	</fsa>
+	<fsa>
 		<id>229</id>
 		<date>2007-07-29</date>
 		<author>vmiklos</author>
