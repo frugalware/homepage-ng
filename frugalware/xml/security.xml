@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>228</id>
+		<date>2007-07-29</date>
+		<author>vmiklos</author>
+		<package>kvirc</package>
+		<vulnerable>3.2.0-2</vulnerable>
+		<unaffected>3.2.5-1terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2214</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2951</cve>
+		<desc>Secunia Research has discovered a vulnerability in KVIrc, which can be exploited by malicious people to compromise a user's system.
+			The vulnerability is caused due to the "parseIrcUrl()" function in src/kvirc/kernel/kvi_ircurl.cpp not properly sanitising parts of the URI when building the command for KVIrc's internal script system. This can be exploited to inject and execute commands for the KVIrc script system (including the "run" command, which can be leveraged to execute shell commands) by e.g. tricking a user into opening a malicious "irc://" (or similar URI like "irc6://") URI.
+			Successful exploitation requires that KVIrc is the default handler for "irc://" or similar URIs.</desc>
+	</fsa>
+	<fsa>
 		<id>227</id>
 		<date>2007-07-28</date>
 		<author>vmiklos</author>
