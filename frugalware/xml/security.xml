@@ -27,6 +27,20 @@
 
 <fsas>
 	<fsa>
+		<id>232</id>
+		<date>2007-07-29</date>
+		<author>vmiklos</author>
+		<package>libarchive</package>
+		<vulnerable>1.3.1-2</vulnerable>
+		<unaffected>1.3.1-3terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2258</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3641
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3644
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3645</cve>
+		<desc>Some vulnerabilities have been reported in libarchive, which can be exploited by malicious people to cause a DoS (Denial of Service) or potentially compromise an application using the library.
+			The vulnerabilities are caused due to a NULL pointer dereference, an infinite loop, and a buffer overflow when processing certain malformed pax extension headers. These can be exploited to crash an application, cause a high CPU load or potentially execute arbitrary code by tricking a user or automated system to process a specially crafted archive file with an application using the library.</desc>
+	</fsa>
+	<fsa>
 		<id>231</id>
 		<date>2007-07-29</date>
 		<author>vmiklos</author>
