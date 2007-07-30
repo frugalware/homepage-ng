@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>233</id>
+		<date>2007-07-30</date>
+		<author>vmiklos</author>
+		<package>bind</package>
+		<vulnerable>9.4.1-1terminus2</vulnerable>
+		<unaffected>9.4.1-1terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2285</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2926</cve>
+		<desc>Amit Klein has reported a vulnerability in BIND, which can be exploited by malicious people to poison the DNS cache.
+			The vulnerability is caused due to predictable query IDs in outgoing queries (e.g. if BIND works as resolver or when sending NOTIFYs to slaves) and can be exploited to poison the DNS cache when the query ID is guessed.
+			Reportedly, the chance to guess the next query ID for 50% of the queries (if the query ID is even) is 1 to 8.</desc>
+	</fsa>
+	<fsa>
 		<id>232</id>
 		<date>2007-07-29</date>
 		<author>vmiklos</author>
