@@ -45,7 +45,7 @@
 				<li>Honlap:
 					<ul>
 						<li>Mostmár lehetőség van a csomagok HTML dokumentációinak megtekintésére a honlapon keresztül.</li>
-						<li>Lecseréltük a verziókövető rendszerünk webes felületét gitweb-re, egyidőben a darcs-ról git-re való váltással.</li>
+						<li>Lecseréltük a verziókövető rendszerünk webes felületét gitwebre, egyidőben a darcsról gitre való váltással.</li>
 					</ul>
 				</li>
 				<li>A kiadás után beküldött, telepítőhöz kapcsolódó hibák listája <a href="http://wiki.frugalware.org/KnownBugs-0.7pre2">itt</a> megtekinthető.
