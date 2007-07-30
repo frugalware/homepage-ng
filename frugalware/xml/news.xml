@@ -23,13 +23,13 @@
 		<author>VMiklos</author>
 		<hidden>1</hidden>
 		<content><![CDATA[
-			The Frugalware Developer Team is pleased to <a href="/news/72">announce</a> the immediate availability of Frugalware 0.7pre2, the second technical preview release of the upcoming 0.7 stable release.<br />
+			The Frugalware Developer Team is pleased to <a href="/news/72">announce</a> the immediate availability of Frugalware 0.7pre2, the second technical preview of the upcoming 0.7 stable release.<br />
 			A short and incomplete list of changes since 0.7pre1:<br />
 			<ul>
 				<li>New features:
 					<ul>
-						<li>New graphical configuration tool: Gnetconfig to tweak your network settings.</li>
-						<li>The setup now puts the installer log to the target system, so that it is not lost.</li>
+						<li>New graphical configuration tool, Gnetconfig to tweak your network settings.</li>
+						<li>Setup now puts the installer log to the target system, so that it is not lost.</li>
 						<li>The default timezone and keyboard layout is now language-dependent.</li>
 						<li>New Italian translation in the installer.</li>
 					</ul>
