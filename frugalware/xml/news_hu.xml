@@ -23,7 +23,7 @@
 			<ul>
 				<li>Újdonságok:
 					<ul>
-						<li>Új grafikus konfigurációs eszköz - Gnetconfig - a hálózati beállítások tuningolására.</li>
+						<li>Új grafikus konfigurációs eszköz - Gnetconfig - a hálózati beállítások finomhangolására.</li>
 						<li>A telepítő mostantól a telepített rendszeren elhelyezi a telepítési naplót, így az már nem veszik el telepítés után.</li>
 						<li>Az alapértelmezett időzóna és billentyűzet-kiosztás mostmár nyelvfüggő.</li>
 						<li>A telepítő mostmár olasz nyelven is elérhető.</li>
