@@ -27,6 +27,21 @@
 
 <fsas>
 	<fsa>
+		<id>234</id>
+		<date>2007-07-31</date>
+		<author>vmiklos</author>
+		<package>gimp</package>
+		<vulnerable>2.2.13-2terminus1</vulnerable>
+		<unaffected>2.2.13-2terminus2</unaffected>
+		<bts>http://bugs.frugalware.org/task/2237</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4519
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2949</cve>
+		<desc>Some vulnerabilities have been reported in Gimp, which can be exploited by malicious people to compromise a user's system.
+			1) An integer overflow exists within the function "seek_to_and_unpack_pixeldata()" in plug-ins/common/psd.c. This can be exploited to cause a heap-based buffer overflow by tricking a user into opening a specially crafted PSD file with large width or height values.
+			2) Multiple integer overflows exist within the DICOM, PNM, PSD, PSP, Sun RAS, XBM, and XWD loader plugins. These can potentially be exploited to cause a heap-based buffer overflow by tricking a user into opening specially crafted image files.
+			Successful exploitation may allow execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>233</id>
 		<date>2007-07-30</date>
 		<author>vmiklos</author>
