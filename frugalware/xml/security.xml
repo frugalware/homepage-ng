@@ -27,6 +27,37 @@
 
 <fsas>
 	<fsa>
+		<id>235</id>
+		<date>2007-08-02</date>
+		<author>vmiklos</author>
+		<package>firefox</package>
+		<vulnerable>2.0.0.4-1terminus1</vulnerable>
+		<unaffected>2.0.0.6-1terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2252
+			http://bugs.frugalware.org/task/2253
+			http://bugs.frugalware.org/task/2303</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3656
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3670
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3734
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3735
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3736
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3737
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3738
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3089
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3844</cve>
+		<desc>1) Michal Zalewski has discovered a vulnerability in Mozilla Firefox, which can be exploited by malicious people to disclose sensitive information and conduct spoofing attacks.
+			The vulnerability is caused due to an error in the handling of the "wyciwyg://" URI handler. This can be exploited to access or spoof contents from a previously cached web site e.g. via HTTP 302 redirects when a user visits a malicious web page.
+			2) The problem is that Firefox registers the "firefoxurl://" URI handler and allows invoking firefox with arbitrary command line arguments. Using e.g. the "-chrome" parameter it is possible to execute arbitrary Javascript in chrome context. This can be exploited to execute arbitrary commands e.g. when a user visits a malicious web site using other browsers.
+			3) Various errors in the browser engine can be exploited to cause memory corruption and potentially to execute arbitrary code.
+			4) Various errors in the Javascript engine can be exploited to cause memory corruption and potentially to execute arbitrary code.
+			5) An error in the "addEventListener" and "setTimeout" methods can be exploited to inject script into another site's context, circumventing the browser's same-origin policy.
+			6) An error in the cross-domain handling can be exploited to inject arbitrary HTML and script code in a sub-frame of another web site.
+			7) An unspecified error in the handling of elements outside of documents allows an attacker to call an event handler and execute arbitrary code with chrome privileges.
+			8) An unspecified error in the handling of "XPCNativeWrapper" can lead to execution of user-supplied code.
+			9) The vulnerability is caused due to an error within the handling of "about:blank" pages loaded by chrome in an addon. This can be exploited to execute script code under chrome privileges by e.g. clicking on a link opened in an "about:blank" window created and populated in a certain ways by an addon.
+			Successful exploitation requires that certain addons are installed.</desc>
+	</fsa>
+	<fsa>
 		<id>234</id>
 		<date>2007-07-31</date>
 		<author>vmiklos</author>
