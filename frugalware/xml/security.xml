@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>236</id>
+		<date>2007-08-03</date>
+		<author>vmiklos</author>
+		<package>vim</package>
+		<vulnerable>7.0-4terminus1</vulnerable>
+		<unaffected>7.0-4terminus2</unaffected>
+		<bts>http://bugs.frugalware.org/task/2292</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2953</cve>
+		<desc>Secunia Research has discovered a vulnerability in Vim, which can be exploited by malicious people to compromise a vulnerable system.
+			A format string error in the "helptags_one()" function in src/ex_cmds.c when running the "helptags" command can be exploited to execute arbitrary code via specially crafted help files.
+			Successful exploitation requires that the user is tricked into running "helptags" on malicious data.</desc>
+	</fsa>
+	<fsa>
 		<id>235</id>
 		<date>2007-08-02</date>
 		<author>vmiklos</author>
