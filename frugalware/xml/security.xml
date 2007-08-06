@@ -27,6 +27,22 @@
 
 <fsas>
 	<fsa>
+		<id>237</id>
+		<date>2007-08-07</date>
+		<author>vmiklos</author>
+		<package>apache</package>
+		<vulnerable>2.2.4-1</vulnerable>
+		<unaffected>2.2.4-2terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2298</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-5752
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1863
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3304</cve>
+		<desc>Some vulnerabilities have been acknowledged in Apache, which can be exploited by malicious, local users to cause a DoS (Denial of Service) and by malicious people to conduct cross-site scripting attacks.
+			1) An error in the mod_status module can be exploited by malicious people to conduct cross-site scripting attacks.
+			2) An error in the Multi-Processing Module (MPM) can be exploited by malicious, local users to cause a DoS.
+			3) An error in the mod_cache module in the handling of Cache-Control headers can be exploited to crash the child process via specially crafted requests. This could lead to a DoS if using a threaded Multi-Processing Module.</desc>
+	</fsa>
+	<fsa>
 		<id>236</id>
 		<date>2007-08-03</date>
 		<author>vmiklos</author>
