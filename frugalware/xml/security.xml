@@ -27,6 +27,20 @@
 
 <fsas>
 	<fsa>
+		<id>240</id>
+		<date>2007-08-07</date>
+		<author>vmiklos</author>
+		<package>joomla</package>
+		<vulnerable>1.0.12-2terminus1</vulnerable>
+		<unaffected>1.0.13-1terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2290</bts>
+		<cve>No CVE for this issue, see: http://www.joomla.org/content/view/3677/1/</cve>
+		<desc>Some vulnerabilities have been reported in Joomla!, which can be exploited by malicious people to conduct session fixation attacks, cross-site scripting attacks or HTTP response splitting attacks.
+			1) Certain unspecified input passed in com_search, com_content and mod_login is not properly sanitised before being returned to a user. This can be exploited to execute arbitrary HTML and script code in a user's browser session in context of an affected site.
+			2) Input passed to the "url" parameter is not properly sanitised before being returned to the user. This can be exploited to insert arbitrary HTTP headers, which will be included in a response sent to the user, allowing for execution of arbitrary HTML and script code in a user's browser session in context of an affected site.
+			3) An error exists in the handling of sessions and can be exploited to hijack another user's session by tricking the user into logging in after following a specially crafted link.</desc>
+	</fsa>
+	<fsa>
 		<id>239</id>
 		<date>2007-08-07</date>
 		<author>vmiklos</author>
