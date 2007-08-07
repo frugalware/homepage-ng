@@ -27,6 +27,21 @@
 
 <fsas>
 	<fsa>
+		<id>239</id>
+		<date>2007-08-07</date>
+		<author>vmiklos</author>
+		<package>libvorbis</package>
+		<vulnerable>1.1.2-1</vulnerable>
+		<unaffected>1.2.0-1terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2293</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4029
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3106</cve>
+		<desc>David Thiel has reported some vulnerabilities in libvorbis, which can be exploited by malicious people to cause a DoS (Denial of Service) and potentially compromise an application using the library.
+			1) A boundary error exists in the way the "_01inverse()" function in res.c processes "blocksize_0" and "blocksize_1" values, which can be exploited to cause a heap overwrite.
+			2) A boundary error exists in the way the "vorbis_info_clear()" function in info.c processes invalid mapping types, which can be exploited to trigger a call to a value outside the dispatch table.
+			3) Invalid "blocksize" values passed to the "vorbis_dsp_clear()" function in block.c result in an invalid memory access, which can be exploited to cause a DoS.</desc>
+	</fsa>
+	<fsa>
 		<id>238</id>
 		<date>2007-08-07</date>
 		<author>vmiklos</author>
