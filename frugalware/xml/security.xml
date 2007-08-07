@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>241</id>
+		<date>2007-08-07</date>
+		<author>vmiklos</author>
+		<package>xpdf</package>
+		<vulnerable>3.01-4</vulnerable>
+		<unaffected>3.02-1terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2299</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3387</cve>
+		<desc>A vulnerability has been reported in Xpdf, which potentially can be exploited by malicious people to compromise a user's system.
+			The vulnerability is caused due to an integer overflow within "StreamPredictor::StreamPredictor()" in xpdf/Stream.cc and can be exploited to cause a buffer overflow by e.g. tricking a user into opening a specially crafted PDF file in Xpdf.
+			Successful exploitation may allow the execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>240</id>
 		<date>2007-08-07</date>
 		<author>vmiklos</author>
