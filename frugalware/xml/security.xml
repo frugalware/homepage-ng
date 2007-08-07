@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>238</id>
+		<date>2007-08-07</date>
+		<author>vmiklos</author>
+		<package>clamav</package>
+		<vulnerable>0.90.2-1terminus2</vulnerable>
+		<unaffected>0.90.2-1terminus3</unaffected>
+		<bts>http://bugs.frugalware.org/task/2257</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3725</cve>
+		<desc>Metaeye SG has reported a vulnerability in ClamAV, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			The vulnerability is caused due to a NULL-pointer dereference error within libclamav/unrar/unrarvm.c when handling RAR archives and can be exploited to cause a crash via a specially crafted RAR archive.</desc>
+	</fsa>
+	<fsa>
 		<id>237</id>
 		<date>2007-08-07</date>
 		<author>vmiklos</author>
