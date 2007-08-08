@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>242</id>
+		<date>2007-08-08</date>
+		<author>vmiklos</author>
+		<package>drupal</package>
+		<vulnerable>4.7.5-1</vulnerable>
+		<unaffected>4.7.7-1terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2295</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4064</cve>
+		<desc>Multiple cross-site scripting (XSS) vulnerabilities in Drupal 5.x before 5.2, and 4.7.x before 4.7.7,
+			(1) allow remote attackers to inject arbitrary web script or HTML via "some server variables," including PHP_SELF; and
+			(2) allow remote authenticated administrators to inject arbitrary web script or HTML via custom content type names.</desc>
+	</fsa>
+	<fsa>
 		<id>241</id>
 		<date>2007-08-07</date>
 		<author>vmiklos</author>
