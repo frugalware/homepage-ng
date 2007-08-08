@@ -25,7 +25,7 @@ include("config.inc.php");
 
 $pages = array('about', 'donations', 'irc', 'screenshots', 'authors',
 	'download', 'media', 'roadmap', 'docs', 'news',
-	'packages', 'rss', 'security', 'newsletter', 'i18n');
+	'packages', 'rss', 'security', 'newsletter', 'i18n', 'buildlogs');
 
 // anti-slash for kiddies
 $params = explode("/", trim(addslashes(stripslashes($_SERVER["PATH_INFO"])), "/"));
@@ -67,6 +67,11 @@ if(count($params)>0)
 	else if($page=="newsletter")
 	{
 		$urlsuffix="?id=".$params[0];
+	}
+	else if($page=="buildlogs")
+	{
+		$urlsuffix="?client=".$params[0].
+			(empty($params[1])?'':"&log=".$params[1]);
 	}
 	else if($page=="rss")
 	{
