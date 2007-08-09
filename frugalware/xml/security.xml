@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>243</id>
+		<date>2007-08-09</date>
+		<author>vmiklos</author>
+		<package>kdegraphics</package>
+		<vulnerable>3.5.6-1</vulnerable>
+		<unaffected>3.5.6-2terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2302</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3387</cve>
+		<desc>A vulnerability has been reported in KDE, which potentially can be exploited by malicious people to compromise a user's system.
+			The vulnerability is caused due to the use of vulnerable Xpdf code, which may allow the execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>242</id>
 		<date>2007-08-08</date>
 		<author>vmiklos</author>
