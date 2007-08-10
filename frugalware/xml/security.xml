@@ -27,6 +27,33 @@
 
 <fsas>
 	<fsa>
+		<id>244</id>
+		<date>2007-08-10</date>
+		<author>vmiklos</author>
+		<package>asterisk</package>
+		<vulnerable>1.4.2-2terminus2</vulnerable>
+		<unaffected>1.4.8-1terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2269</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3762
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3763
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3764
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3765</cve>
+		<desc>Some vulnerabilities have been reported in Asterisk, which can be exploited by malicious people to cause a DoS (Denial of Service) and potentially compromise a vulnerable system.
+			1) A boundary error exists in the Asterisk STUN implementation, which can be exploited to cause the application to crash via specially crafted RTP packets.
+			Successful exploitation requires that the chan_sip, chan_gtalk, chan_jingle, chan_h323, chan_mgcp, or chan_skinny is enabled.
+			The vulnerability is reported in the following products:
+			Asterisk Open Source 1.4.x prior to version 1.4.8
+			AsteriskNOW pre-release prior to version beta7
+			Asterisk Appliance Developer Kit prior to version 0.5.0
+			s800i 1.0.x prior to version 1.0.2.
+			2) A boundary error exists in the Asterisk Skinny channel driver (chan_skinny), which can be exploited to cause the application to crash via packets that contain a size field smaller than the actual size of the packet.
+			Successful exploitation requires that chan_skinny is enabled.
+			3) A NULL-pointer dereference error exists in the Asterisk IAX2 channel driver (chan_iax2), which can be exploited to cause a DoS via specially crafted LGRQ and LAGRP frames.
+			Successful exploitation requires that chan_iax is enabled.
+			4) A boundary error exists in the Asterisk IAX2 channel driver (chan_iax2) within the handling of RTP frames. This can be exploited to cause a stack-based buffer overflow by sending large data payloads (more than 4096 bytes) in a voice or video frame.
+			Successful exploitation of this vulnerability allows execution of arbitrary code, but requires that the system is configured to connect channels that use RTP and IAX channels.</desc>
+	</fsa>
+	<fsa>
 		<id>243</id>
 		<date>2007-08-09</date>
 		<author>vmiklos</author>
