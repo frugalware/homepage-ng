@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>245</id>
+		<date>2007-08-13</date>
+		<author>vmiklos</author>
+		<package>koffice</package>
+		<vulnerable>1.6.2-1</vulnerable>
+		<unaffected>1.6.2-2terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2301</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3387</cve>
+		<desc>A vulnerability has been reported in KDE and KOffice, which potentially can be exploited by malicious people to compromise a user's system.
+
+			The vulnerability is caused due to the use of vulnerable Xpdf code, which may allow the execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>244</id>
 		<date>2007-08-10</date>
 		<author>vmiklos</author>
