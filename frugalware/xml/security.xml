@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>246</id>
+		<date>2007-08-14</date>
+		<author>vmiklos</author>
+		<package>qt</package>
+		<vulnerable>3.3.7-4</vulnerable>
+		<unaffected>3.3.7-5terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2311</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3388</cve>
+		<desc>A vulnerability has been reported in Qt, which potentially can be exploited by malicious people to compromise a vulnerable system.
+			The vulnerability is caused due to a format string error in QTextEdit when handling error messages. This can can be exploited to execute arbitrary code by e.g. causing an application linked against Qt to parse specially crafted text.</desc>
+	</fsa>
+	<fsa>
 		<id>245</id>
 		<date>2007-08-13</date>
 		<author>vmiklos</author>
