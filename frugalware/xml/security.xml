@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>247</id>
+		<date>2007-08-15</date>
+		<author>vmiklos</author>
+		<package>streamripper</package>
+		<vulnerable>1.61.27-1</vulnerable>
+		<unaffected>1.62.2-1terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2334</bts>
+		<cve>No CVE for this issue, see: http://sourceforge.net/project/shownotes.php?group_id=6172&amp;release_id=531738</cve>
+		<desc>A vulnerability has been reported in Streamripper, which can be exploited by malicious people to compromise a user's system.
+
+			The vulnerability is caused due to a boundary error within the "httplib_parse_sc_header()" function. This can be exploited to cause a buffer overflow by e.g. tricking the user into connecting to a malicious server.</desc>
+	</fsa>
+	<fsa>
 		<id>246</id>
 		<date>2007-08-14</date>
 		<author>vmiklos</author>
