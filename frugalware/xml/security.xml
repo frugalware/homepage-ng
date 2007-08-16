@@ -27,6 +27,25 @@
 
 <fsas>
 	<fsa>
+		<id>249</id>
+		<date>2007-08-16</date>
+		<author>vmiklos</author>
+		<package>seamonkey</package>
+		<vulnerable>1.1.2-1terminus1</vulnerable>
+		<unaffected>1.1.4-1terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2296</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3734
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3735
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3954
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3844</cve>
+		<desc>Some vulnerabilities have been reported in SeaMonkey, which can potentially be exploited by malicious people to compromise a vulnerable system.
+			1) Various errors in the browser engine can be exploited to cause memory corruption and potentially to execute arbitrary code.
+
+			2) Various errors in the Javascript engine can be exploited to cause memory corruption and potentially to execute arbitrary code.
+			3) The vulnerability is caused due to an error within the handling of "about:blank" pages loaded by chrome in an addon. This can be exploited to execute script code under chrome privileges by e.g. clicking on a link opened in an "about:blank" window created and populated in a certain ways by an addon.
+			Successful exploitation requires that certain addons are installed.</desc>
+	</fsa>
+	<fsa>
 		<id>248</id>
 		<date>2007-08-16</date>
 		<author>vmiklos</author>
