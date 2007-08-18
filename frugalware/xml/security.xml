@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>250</id>
+		<date>2007-08-17</date>
+		<author>voroskoi</author>
+		<package>activesupport</package>
+		<vulnerable>1.4.1-1</vulnerable>
+		<unaffected>1.4.1-2terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2200</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3227</cve>
+		<desc>BCC has reported a vulnerability in Ruby on Rails, which can be exploited by malicious people to conduct cross-site scripting attacks.
+			Input passed to the "to_json" function is not properly sanitised before being returned to the user. This can be exploited to execute arbitrary HTML and script code in a user's browser session in context of an affected site.</desc>
+	</fsa>
+	<fsa>
 		<id>249</id>
 		<date>2007-08-16</date>
 		<author>vmiklos</author>
