@@ -27,6 +27,102 @@
 
 <fsas>
 	<fsa>
+		<id>251</id>
+		<date>2007-08-17</date>
+		<author>voroskoi</author>
+		<package>actionpack</package>
+		<vulnerable>1.13.2-1</vulnerable>
+		<unaffected>1.13.2-2terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2200</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3227</cve>
+		<desc>BCC has reported a vulnerability in Ruby on Rails, which can be exploited by malicious people to conduct cross-site scripting attacks.
+			Input passed to the "to_json" function is not properly sanitised before being returned to the user. This can be exploited to execute arbitrary HTML and script code in a user's browser session in context of an affected site.</desc>
+	</fsa>
+	<fsa>
+		<id>250</id>
+		<date>2007-08-17</date>
+		<author>voroskoi</author>
+		<package>activesupport</package>
+		<vulnerable>1.4.1-1</vulnerable>
+		<unaffected>1.4.1-2terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2200</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3227</cve>
+		<desc>BCC has reported a vulnerability in Ruby on Rails, which can be exploited by malicious people to conduct cross-site scripting attacks.
+			Input passed to the "to_json" function is not properly sanitised before being returned to the user. This can be exploited to execute arbitrary HTML and script code in a user's browser session in context of an affected site.</desc>
+	</fsa>
+	<fsa>
+		<id>249</id>
+		<date>2007-08-16</date>
+		<author>vmiklos</author>
+		<package>seamonkey</package>
+		<vulnerable>1.1.2-1terminus1</vulnerable>
+		<unaffected>1.1.4-1terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2296</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3734
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3735
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3954
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3844</cve>
+		<desc>Some vulnerabilities have been reported in SeaMonkey, which can potentially be exploited by malicious people to compromise a vulnerable system.
+			1) Various errors in the browser engine can be exploited to cause memory corruption and potentially to execute arbitrary code.
+
+			2) Various errors in the Javascript engine can be exploited to cause memory corruption and potentially to execute arbitrary code.
+			3) The vulnerability is caused due to an error within the handling of "about:blank" pages loaded by chrome in an addon. This can be exploited to execute script code under chrome privileges by e.g. clicking on a link opened in an "about:blank" window created and populated in a certain ways by an addon.
+			Successful exploitation requires that certain addons are installed.</desc>
+	</fsa>
+	<fsa>
+		<id>248</id>
+		<date>2007-08-16</date>
+		<author>vmiklos</author>
+		<package>opera</package>
+		<vulnerable>9.20-1terminus1</vulnerable>
+		<unaffected>9.22-1terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2266</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3819
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3929</cve>
+		<desc>1) Robert Swiecki has discovered a vulnerability in Opera, which can be exploited by malicious people to conduct spoofing attacks.
+			The vulnerability is caused due to an error in the handling of the "data:" URI scheme. This can be exploited to display arbitrary content while showing the URL of a trusted web site in the address bar when a user follows a specially crafted link.
+			2) A vulnerability has been reported in Opera, which can be exploited by malicious people to compromise a user's system
+			The vulnerability is caused due to Opera using already freed memory when parsing BitTorrent headers and can lead to an invalid object pointer being dereferenced. This can be exploited to execute arbitrary code, when the user is tricked into clicking on a specially crafted BitTorrent file and then removes it via a right-click from the download pane.</desc>
+	</fsa>
+	<fsa>
+		<id>247</id>
+		<date>2007-08-15</date>
+		<author>vmiklos</author>
+		<package>streamripper</package>
+		<vulnerable>1.61.27-1</vulnerable>
+		<unaffected>1.62.2-1terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2334</bts>
+		<cve>No CVE for this issue, see: http://sourceforge.net/project/shownotes.php?group_id=6172&amp;release_id=531738</cve>
+		<desc>A vulnerability has been reported in Streamripper, which can be exploited by malicious people to compromise a user's system.
+
+			The vulnerability is caused due to a boundary error within the "httplib_parse_sc_header()" function. This can be exploited to cause a buffer overflow by e.g. tricking the user into connecting to a malicious server.</desc>
+	</fsa>
+	<fsa>
+		<id>246</id>
+		<date>2007-08-14</date>
+		<author>vmiklos</author>
+		<package>qt</package>
+		<vulnerable>3.3.7-4</vulnerable>
+		<unaffected>3.3.7-5terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2311</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3388</cve>
+		<desc>A vulnerability has been reported in Qt, which potentially can be exploited by malicious people to compromise a vulnerable system.
+			The vulnerability is caused due to a format string error in QTextEdit when handling error messages. This can can be exploited to execute arbitrary code by e.g. causing an application linked against Qt to parse specially crafted text.</desc>
+	</fsa>
+	<fsa>
+		<id>245</id>
+		<date>2007-08-13</date>
+		<author>vmiklos</author>
+		<package>koffice</package>
+		<vulnerable>1.6.2-1</vulnerable>
+		<unaffected>1.6.2-2terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2301</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3387</cve>
+		<desc>A vulnerability has been reported in KDE and KOffice, which potentially can be exploited by malicious people to compromise a user's system.
+
+			The vulnerability is caused due to the use of vulnerable Xpdf code, which may allow the execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>244</id>
 		<date>2007-08-10</date>
 		<author>vmiklos</author>

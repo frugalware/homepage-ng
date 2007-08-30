@@ -153,9 +153,13 @@ switch($_GET['type'])
 		}
 		break;
 
-	case "git":
+	case "current":
 		header('Content-Type: application/xml; charset=utf-8');
-		print(file_get_contents("http://git.frugalware.org/gitweb/gitweb.cgi?p=frugalware-current/.git;a=rss;filter=nomerge"));
+		print(file_get_contents("http://git.frugalware.org/gitweb/gitweb.cgi?p=frugalware-current/.git;a=rss;opt=--no-merges"));
+		die();
+	case "stable":
+		header('Content-Type: application/xml; charset=utf-8');
+		print(file_get_contents("http://darcs.frugalware.org/darcsweb/darcsweb.cgi?r=frugalware-stable;a=rss"));
 		die();
 	case "bugs":
 		header('Content-Type: application/xml; charset=utf-8');
@@ -170,7 +174,8 @@ switch($_GET['type'])
 		fwmiddlebox("RSS",'<ul>
 			<li><a href="/rss/news">' . gettext('News') . '</a></li>
 			<li><a href="/rss/releases">' . gettext('Stable releases') . '</a></li>
-			<li><a href="/rss/git">' . gettext('Git commits') . '</a></li>
+			<li><a href="/rss/current">' . gettext('-current commits') . '</a></li>
+			<li><a href="/rss/stable">' . gettext('-stable patches') . '</a></li>
 			<li><a href="/rss/bugs">' . gettext('BTS entries') . '</a></li>
 			<li><a href="/rss/packages">' . gettext('Package updates') . '</a></li>
 			<li><a href="/rss/blogs">' . gettext('Blog posts') . '</a></li>

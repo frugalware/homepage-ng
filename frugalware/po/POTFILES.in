@@ -8,6 +8,7 @@ download.php
 footer.php
 functions.inc.php
 header.php
+header.inc.php
 index.php
 irc.php
 media.php
