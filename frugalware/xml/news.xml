@@ -38,7 +38,7 @@
 				<li>New features:
 					<ul>
 						<li>Added permalinks to the documentation</li>
-						<li>Rewritten the package builder daemon, which is now supports distributed operation. This results in continuous package updates even if one package builder server is not available.</li>
+						<li>Rewritten the package builder daemon, which now supports distributed operation. This results in continuous package updates even if one package builder server is not available.</li>
 					</ul>
 				</li>
 				<li>Setup:
