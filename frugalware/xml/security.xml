@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>264</id>
+		<date>2007-09-06</date>
+		<author>voroskoi</author>
+		<package>terminal</package>
+		<vulnerable>0.2.6-1</vulnerable>
+		<unaffected>0.2.6-2terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2256</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3770</cve>
+		<desc>Lasse Karkkainen has reported a security issue in Xfce Terminal, which can be exploited by malicious people to inject shell commands.
+			The "terminal_helper_execute()" function in terminal/terminal.c uses "/bin/sh -c" to spawn the browser process. This can be used to disclose sensitive information or execute shell commands by e.g. tricking a user into opening a malicious link using the "Open Link" functionality.</desc>
+	</fsa>
+	<fsa>
 		<id>263</id>
 		<date>2007-09-06</date>
 		<author>voroskoi</author>
