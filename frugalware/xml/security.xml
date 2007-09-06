@@ -27,6 +27,24 @@
 
 <fsas>
 	<fsa>
+		<id>259</id>
+		<date>2007-09-06</date>
+		<author>voroskoi</author>
+		<package>thunderbird</package>
+		<vulnerable>1.5.0.12-1terminus1</vulnerable>
+		<unaffected>1.5.0.13-1terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2264</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3670
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3734
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3735
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3844
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3845</cve>
+		<desc>Some vulnerabilities have been reported in Mozilla Thunderbird, which can potentially be exploited to compromise a user's system.
+			An error when registering a URI handler potentially allows to execute arbitrary code.
+			Various errors in the Javascript engine can be exploited to cause memory corruption and potentially to execute arbitrary code.
+			A vulnerability is caused due to an error within the handling of "about:blank" pages loaded by chrome in an addon. This can be exploited to execute script code under chrome privileges by e.g. clicking on a link opened in an "about:blank" window created and populated in a certain ways by an addon.</desc>
+	</fsa>
+	<fsa>
 		<id>258</id>
 		<date>2007-09-06</date>
 		<author>voroskoi</author>
