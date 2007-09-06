@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>254</id>
+		<date>2007-09-06</date>
+		<author>voroskoi</author>
+		<package>opera</package>
+		<vulnerable>9.22-1terminus1</vulnerable>
+		<unaffected>9.23-1terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2369</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4367</cve>
+		<desc>A vulnerability has been reported in Opera, which potentially can be exploited by malicious people to compromise a user's system.
+			The vulnerability is caused due to an unspecified error when processing JavaScript code and can result in a virtual function call using an invalid pointer. This can be exploited to execute arbitrary code by e.g. tricking a user into visiting a malicious website.</desc>
+	</fsa>
+	<fsa>
 		<id>253</id>
 		<date>2007-09-06</date>
 		<author>voroskoi</author>
