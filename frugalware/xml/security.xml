@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>252</id>
+		<date>2007-09-06</date>
+		<author>voroskoi</author>
+		<package>php</package>
+		<vulnerable>5.2.3-1terminus2</vulnerable>
+		<unaffected>5.2.3-1terminus3</unaffected>
+		<bts>http://bugs.frugalware.org/task/2267</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3806</cve>
+		<desc>shinnai has discovered a vulnerability in PHP, which can be exploited by malicious, local users to bypass certain security restrictions.
+			The vulnerability is caused due to an error in the handling of an uninitialized structure inside the "glob()" function. This can be exploited to execute arbitrary code, which may lead to security restrictions (e.g. the "disable_functions" directive) being bypassed.</desc>
+	</fsa>
+	<fsa>
 		<id>251</id>
 		<date>2007-08-17</date>
 		<author>voroskoi</author>
