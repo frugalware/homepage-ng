@@ -27,6 +27,21 @@
 
 <fsas>
 	<fsa>
+		<id>260</id>
+		<date>2007-09-06</date>
+		<author>voroskoi</author>
+		<package>kdelibs</package>
+		<vulnerable>3.5.6-3</vulnerable>
+		<unaffected>3.5.6-4terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2265</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3820
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4224
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4225</cve>
+		<desc>Robert Swiecki has discovered a vulnerability in Konqueror, which can be exploited by malicious people to conduct spoofing attacks.
+			The vulnerability is caused due to an error when processing the "setInterval()" function and can be exploited to display arbitrary content while showing the URL of a trusted web site in the address bar.
+			The vulnerability is caused due to an error in the handling of the "data:" URI scheme. This can be exploited to display arbitrary content while showing the URL of a trusted web site in the address bar when a user follows a specially crafted link.</desc>
+	</fsa>
+	<fsa>
 		<id>259</id>
 		<date>2007-09-06</date>
 		<author>voroskoi</author>
