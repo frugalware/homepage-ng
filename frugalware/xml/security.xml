@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>256</id>
+		<date>2007-09-06</date>
+		<author>voroskoi</author>
+		<package>tor</package>
+		<vulnerable>0.1.2.14-1terminus1</vulnerable>
+		<unaffected>0.1.2.16-1terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2365</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4174</cve>
+		<desc>A vulnerability has been reported in Tor, which can be exploited by malicious people to bypass certain security restrictions.
+			The vulnerability is caused due to the ControlPort (localhost:9051) handling commands without authentication when the first command was not a successful "authenticate" command. This can be exploited to e.g. modify the "torrc" file, when a user views a malicious web page containing a specially crafted POST request or via a malicious tor exit node.
+			Successful exploitation may compromise a user's anonymity, but requires that the ControlPort is enabled.</desc>
+	</fsa>
+	<fsa>
 		<id>255</id>
 		<date>2007-09-06</date>
 		<author>voroskoi</author>
