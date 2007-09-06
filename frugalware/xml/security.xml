@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>265</id>
+		<date>2007-09-06</date>
+		<author>voroskoi</author>
+		<package>sudo</package>
+		<vulnerable>1.6.8p12-3</vulnerable>
+		<unaffected>1.6.8p12-4terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2373</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3149</cve>
+		<desc>A vulnerability has been reported in Sudo, which can be exploited by malicious, local users to bypass certain security restrictions.
+			The vulnerability is caused due to improper error handling within the Kerberos 5 authentication mechanism. This can be exploited to execute commands allowed by the Sudo configuration without proper authentication.</desc>
+	</fsa>
+	<fsa>
 		<id>264</id>
 		<date>2007-09-06</date>
 		<author>voroskoi</author>
