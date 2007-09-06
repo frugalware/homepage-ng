@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>258</id>
+		<date>2007-09-06</date>
+		<author>voroskoi</author>
+		<package>apache</package>
+		<vulnerable>2.2.4-2terminus1</vulnerable>
+		<unaffected>2.2.4-2terminus2</unaffected>
+		<bts>http://bugs.frugalware.org/task/2381</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3847</cve>
+		<desc>A vulnerability has been reported in the Apache mod_proxy module, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			The vulnerability is caused due to the improper handling of date headers within the "ap_proxy_date_canon()" function in proxy_util.c. This can be exploited to cause a DoS by sending specially crafted requests to the affected server.
+			Successful exploitation results in a crash if a threaded Multi-Processing Module is used on servers where a reverse or forward proxy is configured.</desc>
+	</fsa>
+	<fsa>
 		<id>257</id>
 		<date>2007-09-06</date>
 		<author>voroskoi</author>
