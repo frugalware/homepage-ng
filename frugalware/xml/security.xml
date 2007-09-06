@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>263</id>
+		<date>2007-09-06</date>
+		<author>voroskoi</author>
+		<package>id3lib</package>
+		<vulnerable>3.8.3-3</vulnerable>
+		<unaffected>3.8.3-4terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2372</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4460</cve>
+		<desc>Nikolaus Schulz has reported a security issue in id3lib, which can be exploited by malicious, local users to gain escalated privileges.
+			The security issue is caused due to the "RenderV2ToFile()" function in src/tag_file.cpp handling temporary files in an insecure manner. This can be exploited to execute arbitrary commands with escalated privileges (usually root user).</desc>
+	</fsa>
+	<fsa>
 		<id>262</id>
 		<date>2007-09-06</date>
 		<author>voroskoi</author>
