@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>255</id>
+		<date>2007-09-06</date>
+		<author>voroskoi</author>
+		<package>tar</package>
+		<vulnerable>1.16.1-1</vulnerable>
+		<unaffected>1.16.1-2terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2376</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4131</cve>
+		<desc>A vulnerability has been reported in GNU tar, which can be exploited by malicious people to compromise a user's system.
+			The vulnerability is caused due to an input validation error when extracting tar archives. This can be exploited to extract files to arbitrary locations outside the specified directory with the permissions of the user running GNU tar by using the "//.." directory traversal sequence in a specially crafted tar archive.</desc>
+	</fsa>
+	<fsa>
 		<id>254</id>
 		<date>2007-09-06</date>
 		<author>voroskoi</author>
