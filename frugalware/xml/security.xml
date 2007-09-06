@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>257</id>
+		<date>2007-09-06</date>
+		<author>voroskoi</author>
+		<package>po4a</package>
+		<vulnerable>0.30-1</vulnerable>
+		<unaffected>0.30-2terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2374</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4462</cve>
+		<desc>A security issue has been reported in po4a, which can be exploited by malicious, local users to perform certain actions with escalated privileges.
+			The security issue is caused due to the "gettextize()" function in lib/Locale/Po4a/Po.pm creating the file "/tmp/gettextization.failed.po" in an insecure manner. This can be exploited via symlink attacks to e.g. overwrite arbitrary files with the permissions of the user running the po4a-gettextize tool.</desc>
+	</fsa>
+	<fsa>
 		<id>256</id>
 		<date>2007-09-06</date>
 		<author>voroskoi</author>
