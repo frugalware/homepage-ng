@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>267</id>
+		<date>2007-09-07</date>
+		<author>voroskoi</author>
+		<package>gdm</package>
+		<vulnerable>2.18.0-1</vulnerable>
+		<unaffected>2.18.0-2terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2329</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3381</cve>
+		<desc>A vulnerability has been discovered in GNOME Display Manager, which can be exploited by malicious, local users to cause a DoS (Denial of Service).
+			The vulnerability is caused due to the GDM daemon improperly handling NULL values returned by the "g_strsplit" function. This can be exploited to crash the GNOME Display Manager by sending specially crafted requests to the local GDM socket.</desc>
+	</fsa>
+	<fsa>
 		<id>266</id>
 		<date>2007-09-07</date>
 		<author>voroskoi</author>
