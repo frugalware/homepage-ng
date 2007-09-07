@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>266</id>
+		<date>2007-09-07</date>
+		<author>voroskoi</author>
+		<package>tetex</package>
+		<vulnerable>3.0-10</vulnerable>
+		<unaffected>3.0-11terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2310</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-3193
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0650
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3387</cve>
+		<desc>A vulnerability has been reported in teTeX, which potentially can be exploited by malicious people to compromise a user's system. The vulnerability is caused due to the use of vulnerable Xpdf code.</desc>
+	</fsa>
+	<fsa>
 		<id>265</id>
 		<date>2007-09-06</date>
 		<author>voroskoi</author>
