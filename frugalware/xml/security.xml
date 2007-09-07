@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>268</id>
+		<date>2007-09-07</date>
+		<author>voroskoi</author>
+		<package>python</package>
+		<vulnerable>2.5-3terminus1</vulnerable>
+		<unaffected>2.5-3terminus2</unaffected>
+		<bts>http://bugs.frugalware.org/task/2382</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4559</cve>
+		<desc>Some vulnerabilities have been reported in the Python tarfile module, which can be exploited by malicious people to compromise a vulnerable system.
+			The vulnerabilities are caused due to input validation errors when extracting tar archives. This can be exploited to extract files to arbitrary locations outside the specified directory with the permissions of the application using the tarfile module by using the "../" directory traversal sequence or malicious symlinks in a specially crafted tar archive.</desc>
+	</fsa>
+	<fsa>
 		<id>267</id>
 		<date>2007-09-07</date>
 		<author>voroskoi</author>
