@@ -27,6 +27,23 @@
 
 <fsas>
 	<fsa>
+		<id>269</id>
+		<date>2007-09-13</date>
+		<author>vmiklos</author>
+		<package>kernel</package>
+		<vulnerable>2.6.20-5terminus8</vulnerable>
+		<unaffected>2.6.20-5terminus9</unaffected>
+		<bts>http://bugs.frugalware.org/task/2366</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4308
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3843
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3851</cve>
+		<desc>Security issues has been reported in the Linux Kernel, which can be exploited by malicious, local users to bypass certain security restrictions.
+			1) The security issue is caused due to the AACRAID driver not correctly checking the privileges for IOCTLs. This can be exploited to perform potentially dangerous operations by sending certain IOCTLs to the driver.
+			2) The weakness is caused due to the Linux Kernel not correctly enforcing the defined signing options when mounting a CIFS file system. This may weaken the security and can be leveraged to perform further attacks.
+			3) The vulnerability is caused due to an error within the driver for i965G chipsets and above, which can be exploited to e.g. gain escalated privileges by modifying physical memory.</desc>
+
+	</fsa>
+	<fsa>
 		<id>268</id>
 		<date>2007-09-07</date>
 		<author>voroskoi</author>
