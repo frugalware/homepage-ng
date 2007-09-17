@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>270</id>
+		<date>2007-09-18</date>
+		<author>vmiklos</author>
+		<package>asterisk</package>
+		<vulnerable>1.4.11-1terminus1</vulnerable>
+		<unaffected>1.4.11-1terminus2</unaffected>
+		<bts>http://bugs.frugalware.org/task/2377</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4521</cve>
+		<desc>A vulnerability has been reported in Asterisk, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			The vulnerability is caused due to an error when handling emails with a malformed MIME body. This can be exploited to crash the service by sending a specially crafted email to a user and tricking him into listening to the voicemail.
+			Successful exploitation requires that the IMAP backend for the voicemail feature is used. Reportedly, other backends are not affected.</desc>
+	</fsa>
+	<fsa>
 		<id>269</id>
 		<date>2007-09-13</date>
 		<author>vmiklos</author>
