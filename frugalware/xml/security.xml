@@ -27,6 +27,22 @@
 
 <fsas>
 	<fsa>
+		<id>274</id>
+		<date>2007-09-18</date>
+		<author>voroskoi</author>
+		<package>clamav</package>
+		<vulnerable>0.91.1-1terminus1</vulnerable>
+		<unaffected>0.91.2-1terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2375</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4510
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4560</cve>
+		<desc>Some vulnerabilities have been reported in ClamAV, which can potentially be exploited by malicious people to cause a DoS (Denial of Service) or to compromise a vulnerable system.
+			1) A NULL-pointer dereference error exists within the "cli_scanrtf()" function in libclamav/rtf.c. This can potentially be exploited to crash ClamAV via a specially crafted RTF file.
+			2) A NULL-pointer dereference error exists within the "cli_html_normalise()" function in libclamav/htmlnorm.c. This can potentially be exploited to crash ClamAV via a specially crafted HTML file containing a "data" URL scheme.
+			3) The recipient address extracted from email messages is not properly sanitised before being used in a call to "popen()" when executing sendmail. This can be exploited to execute arbitrary code with the privileges of the clamav-milter process by sending an email with a specially crafted recipient address to the affected system.
+			Successful exploitation requires that clamav-milter is started with the "black hole" mode activated.</desc>
+	</fsa>
+	<fsa>
 		<id>273</id>
 		<date>2007-09-18</date>
 		<author>voroskoi</author>
