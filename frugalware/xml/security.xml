@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>272</id>
+		<date>2007-09-18</date>
+		<author>voroskoi</author>
+		<package>wordpress</package>
+		<vulnerable>2.2.1-1terminus1</vulnerable>
+		<unaffected>2.2.2-1terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2363</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4139</cve>
+		<desc>Benjamin Flesch has discovered a vulnerability in WordPress, which can be exploited by malicious people to conduct cross-site scripting attacks.
+			Input passed to the "style" parameter in wp-admin/upload.php (when "post_id" is set to a negative integer value) is not properly sanitised before being returned to the user. This can be exploited to execute arbitrary HTML and script code in a user's browser session in context of an affected site.
+			Successful exploitation requires that the target user has valid author or higher credentials.</desc>
+	</fsa>
+	<fsa>
 		<id>271</id>
 		<date>2007-09-18</date>
 		<author>voroskoi</author>
