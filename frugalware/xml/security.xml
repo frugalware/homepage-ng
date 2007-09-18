@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>273</id>
+		<date>2007-09-18</date>
+		<author>voroskoi</author>
+		<package>gftp</package>
+		<vulnerable>2.0.18-2</vulnerable>
+		<unaffected>2.0.18-3terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2368</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3961
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3962</cve>
+		<desc>Some vulnerabilities have been reported in gFTP, which potentially can be exploited by malicious people to compromise a user's system.
+			The vulnerabilities are caused due to the use of vulnerable fsplib code, which may allow the execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>272</id>
 		<date>2007-09-18</date>
 		<author>voroskoi</author>
