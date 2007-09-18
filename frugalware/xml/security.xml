@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>271</id>
+		<date>2007-09-18</date>
+		<author>voroskoi</author>
+		<package>realplayer</package>
+		<vulnerable>10.0.8.805_20060718-1</vulnerable>
+		<unaffected>10.0.9.809_20070726-1terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2220</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3410</cve>
+		<desc>A vulnerability has been reported in RealPlayer and Helix Player, which can be exploited by malicious people to compromise a user's system.
+			The vulnerability is caused due to a boundary error in the wallclock functionality in "SmilTimeValue::parseWallClockValue()" when handling time formats. This can be exploited to cause a stack-based buffer overflow via an SMIL file with an overly long, specially-crafted time string.
+			Successful exploitation allows execution of arbitrary code when a user e.g. visits a malicious website.</desc>
+	</fsa>
+	<fsa>
 		<id>270</id>
 		<date>2007-09-18</date>
 		<author>vmiklos</author>
