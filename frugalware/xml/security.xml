@@ -27,6 +27,34 @@
 
 <fsas>
 	<fsa>
+		<id>275</id>
+		<date>2007-09-18</date>
+		<author>voroskoi</author>
+		<package>php</package>
+		<vulnerable>5.2.3-1terminus3</vulnerable>
+		<unaffected>5.2.4-1terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2383</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3996
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3378
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3997
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4652
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4658
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4659
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4670
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4657
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4662
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3998</cve>
+		<desc>Some vulnerabilities have been reported in PHP, where some have unknown impacts and others can be exploited by malicious users to bypass certain security restrictions.
+			1) An error with unknown impact exists within the "money_format()" function when processing "%i" and "%n" tokens.
+			2) An unspecified error exists within the "zend_alter_ini_entry()" function. This can be exploited to trigger a memory_limit interruption.
+			3) Two integer overflow errors exist within the "gdImageCreate()" and "gdImageCreateTrueColor()" functions in ext/gd/libgd/gd.c. These can be exploited to cause a heap-based buffer overflow via overly large integer values passed as parameters to e.g. the "imagecreatetruecolor()" PHP function.
+			4) Two integer overflow errors exist within the "gdImageCopyResized()" function in ext/gd/libgd/gd.c. These can be exploited to cause a heap-based buffer overflow via overly large integer values passed as parameters to the "imagecopyresized()" or "imagecopyresampled()" PHP functions. Successful exploitation of vulnerabilities #3 and #4 may allow execution of arbitrary code, which may lead to security restrictions (e.g. the "disable_functions" directive) being bypassed, but requires that PHP is configured to use gd.
+			5) An error exists within the handling of SQL queries containing "LOCAL INFILE" inside the MySQL and MySQLi extensions. This can be exploited to bypass the "open_basedir" and "safe_mode" directives.
+			6) An error exists when processing "session_save_path()" and "ini_set()" functions called from a ".htaccess" file. This can be exploited to bypass the "open_basedir" and "safe_mode" directives.
+			7) An unspecified error exists within the "glob()" function. This can be exploited to bypass the "open_basedir" directive.
+			8) An unspecified error exists within the session extension. This can potentially be exploited to bypass the "open_basedir" directive when the session file is a symlink.</desc>
+	</fsa>
+	<fsa>
 		<id>274</id>
 		<date>2007-09-18</date>
 		<author>voroskoi</author>
