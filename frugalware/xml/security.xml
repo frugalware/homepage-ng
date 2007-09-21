@@ -27,6 +27,102 @@
 
 <fsas>
 	<fsa>
+		<id>275</id>
+		<date>2007-09-18</date>
+		<author>voroskoi</author>
+		<package>php</package>
+		<vulnerable>5.2.3-1terminus3</vulnerable>
+		<unaffected>5.2.4-1terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2383</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3996
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3378
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3997
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4652
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4658
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4659
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4670
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4657
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4662
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3998</cve>
+		<desc>Some vulnerabilities have been reported in PHP, where some have unknown impacts and others can be exploited by malicious users to bypass certain security restrictions.
+			1) An error with unknown impact exists within the "money_format()" function when processing "%i" and "%n" tokens.
+			2) An unspecified error exists within the "zend_alter_ini_entry()" function. This can be exploited to trigger a memory_limit interruption.
+			3) Two integer overflow errors exist within the "gdImageCreate()" and "gdImageCreateTrueColor()" functions in ext/gd/libgd/gd.c. These can be exploited to cause a heap-based buffer overflow via overly large integer values passed as parameters to e.g. the "imagecreatetruecolor()" PHP function.
+			4) Two integer overflow errors exist within the "gdImageCopyResized()" function in ext/gd/libgd/gd.c. These can be exploited to cause a heap-based buffer overflow via overly large integer values passed as parameters to the "imagecopyresized()" or "imagecopyresampled()" PHP functions. Successful exploitation of vulnerabilities #3 and #4 may allow execution of arbitrary code, which may lead to security restrictions (e.g. the "disable_functions" directive) being bypassed, but requires that PHP is configured to use gd.
+			5) An error exists within the handling of SQL queries containing "LOCAL INFILE" inside the MySQL and MySQLi extensions. This can be exploited to bypass the "open_basedir" and "safe_mode" directives.
+			6) An error exists when processing "session_save_path()" and "ini_set()" functions called from a ".htaccess" file. This can be exploited to bypass the "open_basedir" and "safe_mode" directives.
+			7) An unspecified error exists within the "glob()" function. This can be exploited to bypass the "open_basedir" directive.
+			8) An unspecified error exists within the session extension. This can potentially be exploited to bypass the "open_basedir" directive when the session file is a symlink.</desc>
+	</fsa>
+	<fsa>
+		<id>274</id>
+		<date>2007-09-18</date>
+		<author>voroskoi</author>
+		<package>clamav</package>
+		<vulnerable>0.91.1-1terminus1</vulnerable>
+		<unaffected>0.91.2-1terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2375</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4510
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4560</cve>
+		<desc>Some vulnerabilities have been reported in ClamAV, which can potentially be exploited by malicious people to cause a DoS (Denial of Service) or to compromise a vulnerable system.
+			1) A NULL-pointer dereference error exists within the "cli_scanrtf()" function in libclamav/rtf.c. This can potentially be exploited to crash ClamAV via a specially crafted RTF file.
+			2) A NULL-pointer dereference error exists within the "cli_html_normalise()" function in libclamav/htmlnorm.c. This can potentially be exploited to crash ClamAV via a specially crafted HTML file containing a "data" URL scheme.
+			3) The recipient address extracted from email messages is not properly sanitised before being used in a call to "popen()" when executing sendmail. This can be exploited to execute arbitrary code with the privileges of the clamav-milter process by sending an email with a specially crafted recipient address to the affected system.
+			Successful exploitation requires that clamav-milter is started with the "black hole" mode activated.</desc>
+	</fsa>
+	<fsa>
+		<id>273</id>
+		<date>2007-09-18</date>
+		<author>voroskoi</author>
+		<package>gftp</package>
+		<vulnerable>2.0.18-2</vulnerable>
+		<unaffected>2.0.18-3terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2368</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3961
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3962</cve>
+		<desc>Some vulnerabilities have been reported in gFTP, which potentially can be exploited by malicious people to compromise a user's system.
+			The vulnerabilities are caused due to the use of vulnerable fsplib code, which may allow the execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
+		<id>272</id>
+		<date>2007-09-18</date>
+		<author>voroskoi</author>
+		<package>wordpress</package>
+		<vulnerable>2.2.1-1terminus1</vulnerable>
+		<unaffected>2.2.2-1terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2363</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4139</cve>
+		<desc>Benjamin Flesch has discovered a vulnerability in WordPress, which can be exploited by malicious people to conduct cross-site scripting attacks.
+			Input passed to the "style" parameter in wp-admin/upload.php (when "post_id" is set to a negative integer value) is not properly sanitised before being returned to the user. This can be exploited to execute arbitrary HTML and script code in a user's browser session in context of an affected site.
+			Successful exploitation requires that the target user has valid author or higher credentials.</desc>
+	</fsa>
+	<fsa>
+		<id>271</id>
+		<date>2007-09-18</date>
+		<author>voroskoi</author>
+		<package>realplayer</package>
+		<vulnerable>10.0.8.805_20060718-1</vulnerable>
+		<unaffected>10.0.9.809_20070726-1terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2220</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3410</cve>
+		<desc>A vulnerability has been reported in RealPlayer and Helix Player, which can be exploited by malicious people to compromise a user's system.
+			The vulnerability is caused due to a boundary error in the wallclock functionality in "SmilTimeValue::parseWallClockValue()" when handling time formats. This can be exploited to cause a stack-based buffer overflow via an SMIL file with an overly long, specially-crafted time string.
+			Successful exploitation allows execution of arbitrary code when a user e.g. visits a malicious website.</desc>
+	</fsa>
+	<fsa>
+		<id>270</id>
+		<date>2007-09-18</date>
+		<author>vmiklos</author>
+		<package>asterisk</package>
+		<vulnerable>1.4.11-1terminus1</vulnerable>
+		<unaffected>1.4.11-1terminus2</unaffected>
+		<bts>http://bugs.frugalware.org/task/2377</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4521</cve>
+		<desc>A vulnerability has been reported in Asterisk, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			The vulnerability is caused due to an error when handling emails with a malformed MIME body. This can be exploited to crash the service by sending a specially crafted email to a user and tricking him into listening to the voicemail.
+			Successful exploitation requires that the IMAP backend for the voicemail feature is used. Reportedly, other backends are not affected.</desc>
+	</fsa>
+	<fsa>
 		<id>269</id>
 		<date>2007-09-13</date>
 		<author>vmiklos</author>
