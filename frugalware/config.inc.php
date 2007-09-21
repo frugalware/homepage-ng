@@ -97,7 +97,9 @@ $langcontent = '<div class="imgcontent">
 	  | 
 	  <a href="' . $langpage . 'sk"><img alt="' . gettext( 'Change language' ) . '" title="' . gettext( 'Change language' ) . '" src="' . $fwng_root . 'images/slovak.gif" border="0" /></a>
 	  | 
-	  <a href="' . $langpage . 'ru"><img alt="' . gettext( 'Change language' ) . '" title="' . gettext( 'Change language' ) . '" src    ="' . $fwng_root . 'images/russian.gif" border="0" /></a>
+	  <a href="' . $langpage . 'ru"><img alt="' . gettext( 'Change language' ) . '" title="' . gettext( 'Change language' ) . '" src="' . $fwng_root . 'images/russian.gif" border="0" /></a>
+	  | 
+	  <a href="' . $langpage . 'da"><img alt="' . gettext( 'Change language' ) . '" title="' . gettext( 'Change language' ) . '" src="' . $fwng_root . 'images/danish.gif" border="0" /></a>
 	</div>';
 /*
 | <a href="?lang=es"><img alt="' . gettext('Change language') . '" title="' . gettext('Change language') . '" src="images/spanish.gif" border="0" /></a> | <a href="?lang=fr"><img alt="' . gettext('Change language') . '" title="' . gettext('Change language') . '" src="images/french.gif" border="0" /></a>';
