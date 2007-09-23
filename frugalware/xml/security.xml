@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>277</id>
+		<date>2007-09-23</date>
+		<author>vmiklos</author>
+		<package>xorg-server</package>
+		<vulnerable>1.2.0-2terminus1</vulnerable>
+		<unaffected>1.2.0-2terminus2</unaffected>
+		<bts>http://bugs.frugalware.org/task/2411</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4730</cve>
+		<desc>A vulnerability has been reported in X.org X11, which potentially can be exploited by malicious, local users to gain escalated privileges.
+			The vulnerability is caused due to a boundary error within the composite extension when copying data from pixmaps with different bit depths. This can be exploited to cause a buffer overflow by copying data between specially crafted pixmaps.</desc>
+	</fsa>
+	<fsa>
 		<id>276</id>
 		<date>2007-09-23</date>
 		<author>vmiklos</author>
