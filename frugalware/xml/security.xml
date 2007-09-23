@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>279</id>
+		<date>2007-09-23</date>
+		<author>vmiklos</author>
+		<package>rsync</package>
+		<vulnerable>2.6.9-1</vulnerable>
+		<unaffected>2.6.9-2terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2371</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4091</cve>
+		<desc>Sebastian Krahmer has reported a vulnerability in rsync, which can potentially be exploited by malicious people to compromise a vulnerable system.
+			The vulnerability is caused due to an off-by-one error within the "f_name()" function in flist.c and can be exploited to cause a one-byte stack-based buffer overflow via an overly long directory name.</desc>
+	</fsa>
+	<fsa>
 		<id>278</id>
 		<date>2007-09-23</date>
 		<author>vmiklos</author>
