@@ -58,12 +58,15 @@ else if(isset($_GET['client']) and !isset($_GET['log']))
 	{
 		while ($file = readdir($dir))
 			if ($file != "." and $file != ".." and is_file("$logdir/$client/$file"))
-				$logs[] = $file;
+			{
+				$buf = stat("$logdir/$client/$file");
+				$logs[] = array($file, date("r",$buf["mtime"]));
+			}
 		sort($logs);
 	}
 	$lstr = "";
 	foreach($logs as $i)
-		$lstr .= "<li><a href=\"/buildlogs/$client/$i\">$i</a></li>";
+		$lstr .= "<li><a href=\"/buildlogs/$client/$i\">".$i[0]."</a> (".$i[1].")</li>";
 	fwmiddlebox("Syncpkg daemon failed build logs","<ul>$lstr</ul>");
 }
 else if(isset($_GET['client']) and isset($_GET['log']))
