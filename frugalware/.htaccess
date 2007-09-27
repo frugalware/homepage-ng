@@ -14,6 +14,7 @@ RewriteCond %{REQUEST_URI} !^/doc/mailman/images
 RewriteCond %{REQUEST_URI} !^/cgiirc
 RewriteCond %{REQUEST_URI} !^/irc_images
 RewriteCond %{REQUEST_URI} !^/pipermail
+RewriteCond %{REQUEST_URI} !^/syncpkgd
 RewriteCond %{REQUEST_URI} !^/server-status
 RewriteCond %{REQUEST_URI} !^/robots.txt
 RewriteRule (.*) /rewrite.php/$1
