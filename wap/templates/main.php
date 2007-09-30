@@ -10,7 +10,7 @@ print('<?xml version="1.0" encoding="utf8"?>');
 <card id="XML" title="Frugalware Linux">
 <p>
 The following feeds are available:<br />
-<a href="/cia">Darcs commits</a><br />
+<a href="/cia">Git commits</a><br />
 <a href="/packages">Package updates</a><br />
 <a href="/bts">BTS entries</a><br />
 <a href="/blog">Blog posts</a><br />
