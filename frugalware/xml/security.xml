@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>282</id>
+		<date>2007-10-01</date>
+		<author>voroskoi</author>
+		<package>claws-mail</package>
+		<vulnerable>2.8.1-1</vulnerable>
+		<unaffected>2.8.1-2terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2378</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2958</cve>
+		<desc>Secunia Research has discovered a vulnerability in Sylpheed-Claws (Claws Mail), which can be exploited by malicious people to compromise a vulnerable system.
+			A format string error in the "inc_put_error()" function in src/inc.c when displaying a POP3 server's error response can be exploited via specially crafted POP3 server replies containing format specifiers.
+			Successful exploitation may allow execution of arbitrary code, but requires that the user is tricked into connecting to a malicious POP3 server.</desc>
+	</fsa>
+	<fsa>
 		<id>281</id>
 		<date>2007-10-01</date>
 		<author>voroskoi</author>
