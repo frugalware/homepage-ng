@@ -12,6 +12,85 @@
 ]>
 <news>
 	<post>
+		<id>74</id>
+		<title>Megjelent a Frugalware 0.7rc2 (Sayshell)</title>
+		<date>Tue Oct  2 12:28:34 CEST 2007</date>
+		<author>IroNiQ</title>
+		<hidden>0</title>
+		<content><![CDATA[
+			A Frugalware Fejlesztői Csapat örömmel <a href="/news/74/hu">jelenti be</a> a Frugalware 0.7rc2 azonnali elérhetőségét, mint az eljövendő 0.7-es stabil kiadás utolsót, kiadásra jelölt változatát.<br />
+			Egy rövid, nem teljes lista a 0.7rc1 óta történt változásokról:<br />
+			<ul>
+				<li>Csomagfrissítések:
+					<ul>
+						<li>GNOME 2.20.0</li>
+						<li>OpenOffice.org 2.3 OOXML támogatással és Mozilla plugin-nal</li>
+						<li>Több, mint 1000 változás, többnyire hibajavítások</li>
+					</ul>
+				</li>
+				<li>Újdonságok:
+					<ul>
+						<li>Új, grafikus csomagkezelő: Gfpm</li>
+						<li>Új Gfpm és Gnetconfig plugin Xfce4 Beállításkezelőhöz</li>
+					</ul>
+				</li>
+				<li>Telepítő:
+					<ul>
+						<li>Javított PPPoE támogatás</li>
+						<li>A lassú formázás (hibás blokkok keresésének engedélyezésekor) ismét működik swap partíció esetén</li>
+						<li>Javított svéd nyelvi támogatás</li>
+					</ul>
+				</li>
+			</ul>
+			Bővebb információkért tekintse meg a Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Testing változáslistát</a>.<br />
+			Letöltés i686-ra:<br />
+			<b>MEGJEGYZÉS</b>: A 3-13. CD-ket valamint a 2. DVD-t csak akkor töltse le, ha a telepítés helyén nincs internetkapcsolata.<br />
+				<a href="/download/frugalware-testing-iso/fwlive-0.7rc2-i686-full.iso">livecd</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7rc2-i686-net.iso">netinstall</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7rc2-i686-usb.tar.gz">usb</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7rc2-i686-tftp.img.gz">tftp</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7rc2-i686-cd1.iso">cd1</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7rc2-i686-cd2.iso">cd2</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7rc2-i686-cd3.iso">cd3</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7rc2-i686-cd4.iso">cd4</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7rc2-i686-cd5.iso">cd5</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7rc2-i686-cd6.iso">cd6</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7rc2-i686-cd7.iso">cd7</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7rc2-i686-cd8.iso">cd8</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7rc2-i686-cd9.iso">cd9</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7rc2-i686-cd10.iso">cd10</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7rc2-i686-cd11.iso">cd11</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7rc2-i686-cd12.iso">cd12</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7rc2-i686-cd13.iso">cd13</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7rc2-i686-dvd1.iso">dvd1</a> and
+				<a href="/download/frugalware-testing-iso/frugalware-0.7rc2-i686-dvd2.iso">dvd2</a>
+			<br />
+			SHA1SUMok:
+			<pre>
+de6daa9f334d72718c789fd76351e02116ea7b24  fwlive-0.7rc2-i686-full.iso
+9cddd7752c80b891713e13b5cda3147babcd5fe4  frugalware-0.7rc2-i686-net.iso
+e5171b988e894674def71156f71accc6cdc81312  frugalware-0.7rc2-i686-usb.tar.gz
+ca1ece2660098ea631381bb9e5ee7ab3a63e82c6  frugalware-0.7rc2-i686-tftp.img.gz
+00f9519569b0ab82933a6f7ad72b88f416c0ff29  frugalware-0.7rc2-i686-cd1.iso
+3cb912374d3e2dd6146875b841409b8bf837fd77  frugalware-0.7rc2-i686-cd2.iso
+34d7f5629e81649985fdc51cdb393f8f58265601  frugalware-0.7rc2-i686-cd3.iso
+dab534a873c0d467189f15b939725ec13c951dd5  frugalware-0.7rc2-i686-cd4.iso
+1595df5afb10bce2c15beed340a743c1c5a7a830  frugalware-0.7rc2-i686-cd5.iso
+9d1adf02056ab5c956c58d3b1fa3fee34deb3643  frugalware-0.7rc2-i686-cd6.iso
+ae039f89f48c5ea9d9f2210818e3ad293a549c64  frugalware-0.7rc2-i686-cd7.iso
+141732044d0326a43d4fedfc625e14b78227fe11  frugalware-0.7rc2-i686-cd8.iso
+126a5e21d68e338b63d995962ffed74ee0b10f4f  frugalware-0.7rc2-i686-cd9.iso
+817395071b963878b186cb6de3cc625c054a2fdc  frugalware-0.7rc2-i686-cd10.iso
+08aaacc8b0a49cedbdfbf0cc250c381865e35e12  frugalware-0.7rc2-i686-cd11.iso
+26090540104483c2e0ea5cb04cef94bead0126b2  frugalware-0.7rc2-i686-cd12.iso
+57f6a6b306666bdd4e273e6b1bf860f5c2553172  frugalware-0.7rc2-i686-cd13.iso
+b07a0279cda34d253accd8cb1d20bbbec8323a22  frugalware-0.7rc2-i686-dvd1.iso
+703de06fbe5bf8a921dd359a3a645fc852f2b800  frugalware-0.7rc2-i686-dvd2.iso
+			</pre>
+			]]>
+		</content>
+	</post>
+	<post>
 		<id>73</id>
 		<title>Megjelent a Frugalware 0.7rc1 (Sayshell)</title>
 		<date>Thu Sep  6 11:55:14 CEST 2007</date>
