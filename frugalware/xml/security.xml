@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>288</id>
+		<date>2007-10-04</date>
+		<author>voroskoi</author>
+		<package>libsndfile</package>
+		<vulnerable>1.0.17-2</vulnerable>
+		<unaffected>1.0.17-3terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2431</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4974</cve>
+		<desc>Robert Buchholz has reported a vulnerability in libsndfile, which potentially can be exploited by malicious people to compromise an application using the library.
+			The vulnerability is caused due to a boundary error within the "flac_buffer_copy()" function in src/flac.c when handling FLAC files with variable bitrates. This can be exploited to cause a heap-based buffer overflow by e.g. tricking a user into playing a specially crafted FLAC file with an application using the library.
+			Successful exploitation may allow the execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>287</id>
 		<date>2007-10-04</date>
 		<author>voroskoi</author>
