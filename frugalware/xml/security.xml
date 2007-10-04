@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>287</id>
+		<date>2007-10-04</date>
+		<author>voroskoi</author>
+		<package>inotify-tools</package>
+		<vulnerable>3.8-1</vulnerable>
+		<unaffected>3.8-2terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2425</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5037</cve>
+		<desc>A vulnerability has been reported in inotify-tools, which can potentially be exploited by malicious users to compromise an application using the library.
+			The vulnerability is caused due to a boundary error within the "inotifytools_snprintf()" function in src/inotifytools.c. This can be exploited to cause a buffer overflow by e.g. creating a file with an overly long filename in a specific directory.
+			Successful exploitation may allow the execution of arbitrary code with privileges of the application using the affected library.</desc>
+	</fsa>
+	<fsa>
 		<id>286</id>
 		<date>2007-10-04</date>
 		<author>voroskoi</author>
