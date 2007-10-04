@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>289</id>
+		<date>2007-10-04</date>
+		<author>voroskoi</author>
+		<package>elinks</package>
+		<vulnerable>0.11.2-2terminus1</vulnerable>
+		<unaffected>0.11.2-2terminus2</unaffected>
+		<bts>http://bugs.frugalware.org/task/2457</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5034</cve>
+		<desc>A weakness has been reported in ELinks, which can be exploited by malicious people to disclose sensitive information.
+			The content of POST requests sent to HTTPS webservers via a proxy is sent unencrypted via the CONNECT command to the configured proxy. This can be exploited to disclose the content of POST requests by e.g. sniffing network traffic.</desc>
+	</fsa>
+	<fsa>
 		<id>288</id>
 		<date>2007-10-04</date>
 		<author>voroskoi</author>
