@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>286</id>
+		<date>2007-10-04</date>
+		<author>voroskoi</author>
+		<package>firefox</package>
+		<vulnerable>2.0.0.6-1terminus1</vulnerable>
+		<unaffected>2.0.0.7-1terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2423</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2006-4965</cve>
+		<desc>Mozilla has acknowledged a security issue in Firefox, which potentially can be exploited by malicious people to compromise a user's system.
+			The security issue is caused due to the "-chrome" parameter allowing execution of arbitrary Javascript script code in chrome context. This can be exploited to execute arbitrary commands on a user's system e.g. via applications invoking Firefox with unfiltered command line arguments.</desc>
+	</fsa>
+	<fsa>
 		<id>285</id>
 		<date>2007-10-04</date>
 		<author>voroskoi</author>
