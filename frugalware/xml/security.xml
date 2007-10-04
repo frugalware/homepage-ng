@@ -27,6 +27,20 @@
 
 <fsas>
 	<fsa>
+		<id>285</id>
+		<date>2007-10-04</date>
+		<author>voroskoi</author>
+		<package>mediawiki</package>
+		<vulnerable>1.9.3-1</vulnerable>
+		<unaffected>1.9.4-1terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2412</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4828
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4883</cve>
+		<desc>A vulnerability has been reported in MediaWiki, which can be exploited by malicious people to conduct cross-site scripting attacks.
+			Input passed to unspecified parameters in the API pretty-printing mode is not properly sanitised before being returned to the user. This can be exploited to execute arbitrary HTML and script code in a user's browser session in context of an affected site.
+			Successful exploitation requires that the API interface is enabled.</desc>
+	</fsa>
+	<fsa>
 		<id>284</id>
 		<date>2007-10-04</date>
 		<author>voroskoi</author>
