@@ -12,6 +12,24 @@
 ]>
 <news>
 	<post>
+		<id>75</id>
+		<title>Kernel frissítés a -currentben: FIGYELMEZTETÉS az Intel IDE verérlőt használóknak</title>
+		<date>Thu Oct  4 15:08:53 UTC 2007</date>
+		<author>VMiklos</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+						A kernel-2.6.22-5 csomagra frissítve a Frugalware-currentben az Intel felhasználóknak /dev/sd* eszközei lesznek a régi /dev/hd* helyett. Ennek a változtatásnak az oka, hogy néhány gépen a régi kernel nem tudott betöltődni. <a href="http://bugs.frugalware.org/2243">Ez a hibajegy</a> ad további információt a problémával kapcsolatban. Tehát miután frissített a pacman -Syu használatával:
+						<ol>
+										<li>Vizsgálja me, hogy használ-e Intel IDE vezérlőt a sudo lspci |grep -i intel.*ide parancs használatával. Ha a parancs nem ad kimenetet, akkor valószínűleg a számítógép nem érintett.</li>
+										<li>Szerkessze a /etc/fstab-ot: cserélje az összes /dev/hd-t /dev/sd-re.</li>
+										<li>Szerkessze a /boot/grub/menu.lst-t: cserélje az összes /dev/hd-t /dev/sd-re a Frugalware bejegyzésben.</li>
+										<li>Indítsa újra a számítógépet.</li>
+						</ol>
+						Köszönjük megértését!
+			]]>
+		</content>
+	</post>
+	<post>
 		<id>74</id>
 		<title>Megjelent a Frugalware 0.7rc2 (Sayshell)</title>
 		<date>Tue Oct  2 12:28:34 CEST 2007</date>
