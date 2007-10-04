@@ -18,7 +18,7 @@
 <news>
 	<post>
 		<id>75</id>
-		<title>Kernel update in -current: WARNING for Intel users</title>
+		<title>Kernel update in -current: WARNING for Intel users with IDE controllers</title>
 		<date>Thu Oct  4 15:08:53 UTC 2007</date>
 		<author>VMiklos</author>
 		<hidden>0</hidden>
