@@ -27,6 +27,20 @@
 
 <fsas>
 	<fsa>
+		<id>284</id>
+		<date>2007-10-04</date>
+		<author>voroskoi</author>
+		<package>wordpress</package>
+		<vulnerable>2.2.2-1terminus1</vulnerable>
+		<unaffected>2.2.3-1terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2398</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4893
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4894</cve>
+		<desc>Some vulnerabilities have been reported in Wordpress, which can be exploited by malicious users to conduct script insertion attacks and by malicious people to conduct SQL injection attacks.
+			1) The "unfiltered_html" privilege feature can be bypassed by adding a field named "no_filter". This can be exploited by malicious users without the "unfiltered_html" privilege to e.g. post blog entries with arbitrary HTML and script code via specially crafted POST requests.
+			2) Input passed to certain parameters (e.g. the "post_type" parameter of the URL passed to the "pingback.extensions.getPingbacks()" XMLRPC method) is not properly sanitised before being used in SQL queries. This can be exploited to manipulate SQL queries by injecting arbitrary SQL code.</desc>
+	</fsa>
+	<fsa>
 		<id>283</id>
 		<date>2007-10-01</date>
 		<author>voroskoi</author>
