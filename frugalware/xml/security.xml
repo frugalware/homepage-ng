@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>290</id>
+		<date>2007-10-06</date>
+		<author>voroskoi</author>
+		<package>t1lib</package>
+		<vulnerable>5.1.1-1</vulnerable>
+		<unaffected>5.1.1-2terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2297</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4033</cve>
+		<desc>Hamid Ebadi has reported a vulnerability in t1lib, which can be exploited by malicious users to potentially compromise a vulnerable system.
+			The vulnerability is caused due to a boundary error within the "intT1_EnvGetCompletePath()" function in lib/t1lib/t1env.c. This can be exploited to cause a buffer overflow when an application processes an overly long string in the "FileName" parameter.</desc>
+	</fsa>
+	<fsa>
 		<id>289</id>
 		<date>2007-10-04</date>
 		<author>voroskoi</author>
