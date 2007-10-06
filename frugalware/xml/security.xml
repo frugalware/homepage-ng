@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>291</id>
+		<date>2007-10-06</date>
+		<author>voroskoi</author>
+		<package>ruby</package>
+		<vulnerable>1.8.5-4terminus1</vulnerable>
+		<unaffected>1.8.5-4terminus2</unaffected>
+		<bts>http://bugs.frugalware.org/task/2459</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5162</cve>
+		<desc>Chris Clark has reported a security issue in Ruby, which can be exploited by malicious people to conduct spoofing attacks.
+			The security issue is caused due to the "Net::HTTPS" library not properly checking if the Common Name field provided inside SSL server certificates matches the requested hostname of a server. This can be exploited to conduct spoofing attacks.
+			Successful exploitation requires a MitM (Man-in-the-Middle) attack and possession of a valid certificate, which is signed by the CA specified in the client.</desc>
+	</fsa>
+	<fsa>
 		<id>290</id>
 		<date>2007-10-06</date>
 		<author>voroskoi</author>
