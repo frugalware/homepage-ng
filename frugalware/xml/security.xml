@@ -27,6 +27,20 @@
 
 <fsas>
 	<fsa>
+		<id>292</id>
+		<date>2007-10-07</date>
+		<author>voroskoi</author>
+		<package>openssl</package>
+		<vulnerable>0.9.8-6</vulnerable>
+		<unaffected>0.9.8-7terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2466</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3108
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5135</cve>
+		<desc>Some vulnerabilities have been reported in OpenSSL, which can be exploited by malicious people to cause a DoS (Denial of Service) and compromise a vulnerable system.
+			1) This fixes a weakness, which can be exploited by malicious, local users to disclose sensitive information. The problem is caused due to an error in the RSA implementation and can be exploited to disclose private keys via side-channel attacks.
+			2) Off-by-one error in the SSL_get_shared_ciphers function in OpenSSL 0.9.7l and 0.9.8d might allow remote attackers to execute arbitrary code via a crafted packet that triggers a one-byte buffer underflow. NOTE: this issue was introduced as a result of a fix for CVE-2006-3738.</desc>
+	</fsa>
+	<fsa>
 		<id>291</id>
 		<date>2007-10-06</date>
 		<author>voroskoi</author>
