@@ -27,6 +27,21 @@
 
 <fsas>
 	<fsa>
+		<id>293</id>
+		<date>2007-10-07</date>
+		<author>voroskoi</author>
+		<package>xfs</package>
+		<vulnerable>1.0.4-1</vulnerable>
+		<unaffected>1.0.4-2terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2458</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4568
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4989
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4990</cve>
+		<desc>Some vulnerabilities have been reported in the X.Org X11 X Font Server (XFS), which can be exploited by malicious, local users to gain escalated privileges.
+			1) An integer overflow exists within the handlers for the X protocol requests "QueryXBitmaps" and "QueryXExtents", which do not correctly check the "length" parameters before passing them to the "build_range()" function. This can be exploited to cause a heap-based buffer overflow by sending specially crafted "QueryXBitmaps" and "QueryXExtents" requests to a vulnerable service.
+			2) An error exists within the handler for the X protocol requests "QueryXBitmaps" and "QueryXExtents" when calling the "swap_char2b()" function, which can be exploited to swap an arbitrary number of bytes on the heap, resulting in a heap corruption.</desc>
+	</fsa>
+	<fsa>
 		<id>292</id>
 		<date>2007-10-07</date>
 		<author>voroskoi</author>
