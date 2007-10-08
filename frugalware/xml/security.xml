@@ -27,6 +27,60 @@
 
 <fsas>
 	<fsa>
+		<id>293</id>
+		<date>2007-10-07</date>
+		<author>voroskoi</author>
+		<package>xfs</package>
+		<vulnerable>1.0.4-1</vulnerable>
+		<unaffected>1.0.4-2terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2458</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4568
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4989
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4990</cve>
+		<desc>Some vulnerabilities have been reported in the X.Org X11 X Font Server (XFS), which can be exploited by malicious, local users to gain escalated privileges.
+			1) An integer overflow exists within the handlers for the X protocol requests "QueryXBitmaps" and "QueryXExtents", which do not correctly check the "length" parameters before passing them to the "build_range()" function. This can be exploited to cause a heap-based buffer overflow by sending specially crafted "QueryXBitmaps" and "QueryXExtents" requests to a vulnerable service.
+			2) An error exists within the handler for the X protocol requests "QueryXBitmaps" and "QueryXExtents" when calling the "swap_char2b()" function, which can be exploited to swap an arbitrary number of bytes on the heap, resulting in a heap corruption.</desc>
+	</fsa>
+	<fsa>
+		<id>292</id>
+		<date>2007-10-07</date>
+		<author>voroskoi</author>
+		<package>openssl</package>
+		<vulnerable>0.9.8-6</vulnerable>
+		<unaffected>0.9.8-7terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2466</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3108
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5135</cve>
+		<desc>Some vulnerabilities have been reported in OpenSSL, which can be exploited by malicious people to cause a DoS (Denial of Service) and compromise a vulnerable system.
+			1) This fixes a weakness, which can be exploited by malicious, local users to disclose sensitive information. The problem is caused due to an error in the RSA implementation and can be exploited to disclose private keys via side-channel attacks.
+			2) Off-by-one error in the SSL_get_shared_ciphers function in OpenSSL 0.9.7l and 0.9.8d might allow remote attackers to execute arbitrary code via a crafted packet that triggers a one-byte buffer underflow. NOTE: this issue was introduced as a result of a fix for CVE-2006-3738.</desc>
+	</fsa>
+	<fsa>
+		<id>291</id>
+		<date>2007-10-06</date>
+		<author>voroskoi</author>
+		<package>ruby</package>
+		<vulnerable>1.8.5-4terminus1</vulnerable>
+		<unaffected>1.8.5-4terminus2</unaffected>
+		<bts>http://bugs.frugalware.org/task/2459</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5162</cve>
+		<desc>Chris Clark has reported a security issue in Ruby, which can be exploited by malicious people to conduct spoofing attacks.
+			The security issue is caused due to the "Net::HTTPS" library not properly checking if the Common Name field provided inside SSL server certificates matches the requested hostname of a server. This can be exploited to conduct spoofing attacks.
+			Successful exploitation requires a MitM (Man-in-the-Middle) attack and possession of a valid certificate, which is signed by the CA specified in the client.</desc>
+	</fsa>
+	<fsa>
+		<id>290</id>
+		<date>2007-10-06</date>
+		<author>voroskoi</author>
+		<package>t1lib</package>
+		<vulnerable>5.1.1-1</vulnerable>
+		<unaffected>5.1.1-2terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2297</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4033</cve>
+		<desc>Hamid Ebadi has reported a vulnerability in t1lib, which can be exploited by malicious users to potentially compromise a vulnerable system.
+			The vulnerability is caused due to a boundary error within the "intT1_EnvGetCompletePath()" function in lib/t1lib/t1env.c. This can be exploited to cause a buffer overflow when an application processes an overly long string in the "FileName" parameter.</desc>
+	</fsa>
+	<fsa>
 		<id>289</id>
 		<date>2007-10-04</date>
 		<author>voroskoi</author>
