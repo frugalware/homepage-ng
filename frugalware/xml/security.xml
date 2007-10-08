@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>295</id>
+		<date>2007-10-08</date>
+		<author>voroskoi</author>
+		<package>python</package>
+		<vulnerable>2.5-3terminus2</vulnerable>
+		<unaffected>2.5-3terminus3</unaffected>
+		<bts>http://bugs.frugalware.org/task/2428</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4965</cve>
+		<desc>Slythers Bro has discovered a security issue in the imageop module for Python, which can be exploited by malicious people to cause a DoS (Denial of Service) and potentially compromise a vulnerable system.
+			The security issue is caused due to an integer overflow error within the "tovideo()" function and can be exploited to cause a heap-based buffer overflow when specially crafted parameters are passed to the function.
+			Successful exploitation may allow execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>294</id>
 		<date>2007-10-08</date>
 		<author>voroskoi</author>
