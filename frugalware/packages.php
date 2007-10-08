@@ -169,6 +169,7 @@ function search_pkg()
 	}
 	$query .= " order by fwver desc";
 	$db = new FwDB();
+	$db->doQuoteString( &$query );
 	$db->doConnect($sqlhost, $sqluser, $sqlpass, "frugalware2");
 	$res = $db->doQuery($query);
 	if ($db->doCountRows($res) > 0)
