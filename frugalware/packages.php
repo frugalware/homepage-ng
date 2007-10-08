@@ -181,7 +181,7 @@ function search_pkg()
 		$db->doClose();
 		res_show($res_set, 'p', $search);
 	}
-	elseif
+	elseif ( $res == -1 ) 
 	{
 		print '<h3>' . gettext( 'Error in the query, please change the searching conditions' ) . '</h3>';
 		$db->doClose();
