@@ -139,11 +139,6 @@ class FwDB
 	{
 		return $res->RecordCount();
 	}
-
-	function doQuoteString( &$query )
-	{
-		$query = $this->db->qstr( $query );
-	}
 }
 
 ?>

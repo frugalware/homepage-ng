@@ -150,7 +150,8 @@ function search_pkg()
 		main();
 		return;
 	}
-	$search = $_GET['srch'];
+	$search = addcslashes( $_GET['srch'], '+' );
+	$search = str_replace( '+', '\+', $search );
 	$arch = $_GET['arch'];
 	$fwver = $_GET['ver'];
 	$sub = ($_GET['sub'] == "on") ? 1 : 0; # whether the search is for a substring or exact match
@@ -169,7 +170,6 @@ function search_pkg()
 	}
 	$query .= " order by fwver desc";
 	$db = new FwDB();
-	$db->doQuoteString( &$query );
 	$db->doConnect($sqlhost, $sqluser, $sqlpass, "frugalware2");
 	$res = $db->doQuery($query);
 	if ($db->doCountRows($res) > 0)
