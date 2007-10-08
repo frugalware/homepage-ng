@@ -151,7 +151,7 @@ function search_pkg()
 		return;
 	}
 	$search = $_GET['srch'];
-	$srch = str_replace( '+', '\+', addcslashes( $search, '+' ) );
+	//$srch = str_replace( '+', '\+', addcslashes( $search, '+' ) );
 	$arch = $_GET['arch'];
 	$fwver = $_GET['ver'];
 	$sub = ($_GET['sub'] == "on") ? 1 : 0; # whether the search is for a substring or exact match
@@ -159,7 +159,7 @@ function search_pkg()
 	$query = "select id, pkgname, pkgver, fwver, arch from packages where ";
 	# if the 'desc' is set (searching in description, too) I have to put
 	# the restrictions between brackets, because of the 'arch' below...
-	($_GET['desc'] == "on" || $_GET['desc'] == 1) ? $query .= "(pkgname rlike '$srch' or `desc` rlike '$srch')" : $query .= "(pkgname rlike '$srch')";
+	($_GET['desc'] == "on" || $_GET['desc'] == 1) ? $query .= "(pkgname rlike '$search' or `desc` rlike '$search')" : $query .= "(pkgname rlike '$search')";
 	if ($arch != "" and $arch != "all")
 	{
 		$query .= " and arch='$arch'";
@@ -172,7 +172,7 @@ function search_pkg()
 	$db = new FwDB();
 	$db->doConnect($sqlhost, $sqluser, $sqlpass, "frugalware2");
 	$res = $db->doQuery($query);
-	if ($db->doCountRows($res) > 0)
+	if ($res != -1 && $db->doCountRows($res) > 0)
 	{
 		while ($i = $db->doFetchRow($res))
 		{
@@ -180,6 +180,12 @@ function search_pkg()
 		}
 		$db->doClose();
 		res_show($res_set, 'p', $search);
+	}
+	elseif
+	{
+		print '<h3>' . gettext( 'Error in the query, please change the searching conditions' ) . '</h3>';
+		$db->doClose();
+		main();
 	}
 	else
 	{

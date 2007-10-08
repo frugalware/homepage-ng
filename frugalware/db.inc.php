@@ -94,7 +94,7 @@ class FwDB
 		}
 		if (!$result)
 		{
-			die("Query ".$query." failed with the following error: ".$this->db->ErrorMsg());
+			$result = -1;
 		}
 		return $result;
 	}
