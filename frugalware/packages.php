@@ -150,8 +150,8 @@ function search_pkg()
 		main();
 		return;
 	}
-	$search = addcslashes( $_GET['srch'], '+' );
-	$search = str_replace( '+', '\+', $search );
+	$search = $_GET['srch'];
+	$srch = str_replace( '+', '\+', addcslashes( $search, '+' ) );
 	$arch = $_GET['arch'];
 	$fwver = $_GET['ver'];
 	$sub = ($_GET['sub'] == "on") ? 1 : 0; # whether the search is for a substring or exact match
@@ -159,7 +159,7 @@ function search_pkg()
 	$query = "select id, pkgname, pkgver, fwver, arch from packages where ";
 	# if the 'desc' is set (searching in description, too) I have to put
 	# the restrictions between brackets, because of the 'arch' below...
-	($_GET['desc'] == "on" || $_GET['desc'] == 1) ? $query .= "(pkgname rlike '$search' or `desc` rlike '$search')" : $query .= "(pkgname rlike '$search')";
+	($_GET['desc'] == "on" || $_GET['desc'] == 1) ? $query .= "(pkgname rlike '$srch' or `desc` rlike '$srch')" : $query .= "(pkgname rlike '$srch')";
 	if ($arch != "" and $arch != "all")
 	{
 		$query .= " and arch='$arch'";
