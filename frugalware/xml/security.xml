@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>294</id>
+		<date>2007-10-08</date>
+		<author>voroskoi</author>
+		<package>kdebase</package>
+		<vulnerable>3.5.6-3terminus2</vulnerable>
+		<unaffected>3.5.6-3terminus3</unaffected>
+		<bts>http://bugs.frugalware.org/task/2198</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2022</cve>
+		<desc>A vulnerability has been reported in Konqueror, which can be exploited by malicious people to disclose potentially sensitive information.
+			The vulnerability is caused due to an unspecified error within the interaction between Konqueror and the Adobe Flash Player plug-in, which may result in key presses being leaked to a Flash applet. This can be exploited to disclose potentially sensitive information.</desc>
+	</fsa>
+	<fsa>
 		<id>293</id>
 		<date>2007-10-07</date>
 		<author>voroskoi</author>
