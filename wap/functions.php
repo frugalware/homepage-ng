@@ -37,7 +37,7 @@ function display_feed($feed, $param)
 					'@&#(\d+);@e'); // evaluate as php
 
 				$replace = array ('',
-					'',
+					' ',
 					'\1',
 					'"',
 					'&',
