@@ -172,6 +172,11 @@ function search_pkg()
 	$db = new FwDB();
 	$db->doConnect($sqlhost, $sqluser, $sqlpass, "frugalware2");
 	$res = $db->doQuery($query);
+	// users usually can't read
+	if($res == -1 and strpos($query, '+') !== false)
+	{
+		$res = $db->doQuery(str_replace('+', '\\\\+', $query));
+	}
 	if ($res != -1 && $db->doCountRows($res) > 0)
 	{
 		while ($i = $db->doFetchRow($res))
