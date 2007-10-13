@@ -159,7 +159,7 @@ switch($_GET['type'])
 		die();
 	case "stable":
 		header('Content-Type: application/xml; charset=utf-8');
-		print(file_get_contents("http://darcs.frugalware.org/darcsweb/darcsweb.cgi?r=frugalware-stable;a=rss"));
+		print(file_get_contents("http://git.frugalware.org/gitweb/gitweb.cgi?p=frugalware-stable.git;a=rss;opt=--no-merges"));
 		die();
 	case "bugs":
 		header('Content-Type: application/xml; charset=utf-8');
