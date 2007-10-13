@@ -1,0 +1,2366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE news [
+<!ELEMENT news (post)*>
+<!ELEMENT post (id , title , date , author , editedby* , icon* , content, hidden)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT content (#PCDATA)>
+<!ELEMENT hidden (#PCDATA)>
+<!ELEMENT editedby (name , date)>
+<!ELEMENT icon (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+]>
+
+<!-- if you modify this file, be sure it's still valid - xmllint is your friend -->
+
+<news>
+	<post>
+		<id>76</id>
+		<title>Frugalware 0.7 (Sayshell) for i686 and x86_64 released</title>
+		<date>Sat Oct 13 02:58:26 CEST 2007</date>
+		<author>hermier</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			Les développeurs de Frugalware ont le plaisir de vous <a href="/news/76">annoncer</a> la sortie de Frugalware 0.7, notre septième version stable.<br />
+			Aucune nouvelles fonctionalités n'a été ajoutées depuis la 0.7rc2, mais plus de 150 modifications ont été effectuées pour corriger des bugs mineurs.
+			Si vous n'avez pas suivi les changements avec les pre-release et les release candidate, voici les plus importants changements depuis la version 0.6:<br />
+			<ul>
+				<li>Mise à jour du système de base: Linux kernel 2.6.22.9, Glibc 2.6.1 et GCC 4.2.1.</li>
+				<li>Mise à jour des environnements graphiques: KDE 3.5.7, GNOME 2.20, XFCE 4.4.1, OpenOffice 2.3.0 et Firefox 2.0.0.7.</li>
+				<li>Un LiveCD appellé FwLive est maintenant disponible pour cette release.</li>
+				<li>Installateur: langue spécifique par défaut (clavier, zone horaire, mirroir par défaut), l'installation est maintenant enregistrée dans un log.</li>
+				<li>Ajout du support pour les langues suivantes: Roumain, Suédois, Italien et Danois.</li>
+				<li>Nouveaux outils graphiques: Gfpm (gestionnaire de paquet) et Gnetconfig (configurateur de réseau).</li>
+				<li>Documentation: le manuel d'utilisateur Frugalware compte maintenant plus de 100 pages: tutoriels, trucs et astuces.</li>
+			</ul>
+			Pour plus d'informations consultez le <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-0.7/ChangeLog.txt">Changelog</a> de Frugalware Sayshell.<br />
+			Téléchargements pour i686:<br />
+				<a href="/download/frugalware-0.7-iso/fwlive-0.7-i686-full.iso">livecd</a>,
+				<a href="/download/frugalware-0.7-iso/frugalware-0.7-i686-net.iso">netinstall</a>,
+				<a href="/download/frugalware-0.7-iso/frugalware-0.7-i686-cd1.iso">cd1</a>,
+				<a href="/download/frugalware-0.7-iso/frugalware-0.7-i686-cd2.iso">cd2</a>,
+				<a href="/download/frugalware-0.7-iso/frugalware-0.7-i686-cd3.iso">cd3</a>,
+				<a href="/download/frugalware-0.7-iso/frugalware-0.7-i686-cd4.iso">cd4</a>,
+				<a href="/download/frugalware-0.7-iso/frugalware-0.7-i686-cd5.iso">cd5</a>,
+				<a href="/download/frugalware-0.7-iso/frugalware-0.7-i686-cd6.iso">cd6</a>,
+				<a href="/download/frugalware-0.7-iso/frugalware-0.7-i686-cd7.iso">cd7</a>,
+				<a href="/download/frugalware-0.7-iso/frugalware-0.7-i686-cd8.iso">cd8</a>,
+				<a href="/download/frugalware-0.7-iso/frugalware-0.7-i686-cd9.iso">cd9</a>,
+				<a href="/download/frugalware-0.7-iso/frugalware-0.7-i686-cd10.iso">cd10</a>,
+				<a href="/download/frugalware-0.7-iso/frugalware-0.7-i686-cd11.iso">cd11</a>,
+				<a href="/download/frugalware-0.7-iso/frugalware-0.7-i686-cd12.iso">cd12</a>,
+				<a href="/download/frugalware-0.7-iso/frugalware-0.7-i686-cd13.iso">cd13</a>,
+				<a href="/download/frugalware-0.7-iso/frugalware-0.7-i686-dvd1.iso">dvd1</a>,
+				<a href="/download/frugalware-0.7-iso/frugalware-0.7-i686-dvd2.iso">dvd2</a>,
+				<a href="/download/frugalware-0.7-iso/frugalware-0.7-i686-tftp.img.gz">tftp</a>,
+				<a href="/download/frugalware-0.7-iso/frugalware-0.7-i686-usb.tar.gz">usb</a>,
+				<a href="/download/frugalware-0.7-iso/fwchroot-0.7-i686.tar.bz2">chroot tarball</a>
+				<br />
+			Téléchargements pour x86_64:<br />
+				<a href="/download/frugalware-0.7-iso/frugalware-0.7-x86_64-net.iso">netinstall</a>,
+				<a href="/download/frugalware-0.7-iso/frugalware-0.7-x86_64-cd1.iso">cd1</a>,
+				<a href="/download/frugalware-0.7-iso/frugalware-0.7-x86_64-cd2.iso">cd2</a>,
+				<a href="/download/frugalware-0.7-iso/frugalware-0.7-x86_64-cd3.iso">cd3</a>,
+				<a href="/download/frugalware-0.7-iso/frugalware-0.7-x86_64-cd4.iso">cd4</a>,
+				<a href="/download/frugalware-0.7-iso/frugalware-0.7-x86_64-cd5.iso">cd5</a>,
+				<a href="/download/frugalware-0.7-iso/frugalware-0.7-x86_64-cd6.iso">cd6</a>,
+				<a href="/download/frugalware-0.7-iso/frugalware-0.7-x86_64-cd7.iso">cd7</a>,
+				<a href="/download/frugalware-0.7-iso/frugalware-0.7-x86_64-cd8.iso">cd8</a>,
+				<a href="/download/frugalware-0.7-iso/frugalware-0.7-x86_64-cd9.iso">cd9</a>,
+				<a href="/download/frugalware-0.7-iso/frugalware-0.7-x86_64-cd10.iso">cd10</a>,
+				<a href="/download/frugalware-0.7-iso/frugalware-0.7-x86_64-cd11.iso">cd11</a>,
+				<a href="/download/frugalware-0.7-iso/frugalware-0.7-x86_64-dvd1.iso">dvd1</a>,
+				<a href="/download/frugalware-0.7-iso/frugalware-0.7-x86_64-dvd2.iso">dvd2</a>,
+				<a href="/download/frugalware-0.7-iso/frugalware-0.7-x86_64-tftp.img.gz">tftp</a>,
+				<a href="/download/frugalware-0.7-iso/frugalware-0.7-x86_64-usb.tar.gz">usb</a>,
+				<a href="/download/frugalware-0.7-iso/fwchroot-0.7-x86_64.tar.bz2">chroot tarball</a>
+				<br />
+			<b>NOTE</b>: Ne téléchargez pas les CD 3 à 12, ou le deuxième DVD à moins que vous n'ayez pas de connexion internet !!!<br />
+			SHA1SUMs:
+			<pre>
+11d369eef484e64f1583364456491530d24701b7  frugalware-0.7-i686-cd10.iso
+c3d1630241a99f6f4936079b40c5fd93a417a9dc  frugalware-0.7-i686-cd11.iso
+0b3c25ac25d711fed156ce93d30b78c918c0defa  frugalware-0.7-i686-cd12.iso
+c91e25732f12519877a04e1f1c40078014890902  frugalware-0.7-i686-cd13.iso
+6d91662500224636efb58ecc9a19630fdb2d0755  frugalware-0.7-i686-cd1.iso
+3d0e566b39b09c7b348296711fa3c2b8cb7ea0f6  frugalware-0.7-i686-cd2.iso
+c1c06e429e4fd9df66d4de4c77a94ecb26fed5c8  frugalware-0.7-i686-cd3.iso
+3499cf0871539e855c2482fc6a7fb186db9052ce  frugalware-0.7-i686-cd4.iso
+621dc063927d3cb8a5c8aa4871d16d0dea2f93e3  frugalware-0.7-i686-cd5.iso
+b41da52c3b508f6a93d2d091617469ac758aeeab  frugalware-0.7-i686-cd6.iso
+af5c63ad65bd427b4655824dcac7155e5fb19166  frugalware-0.7-i686-cd7.iso
+00ef74ff9e853dc73b81d7405edb2e2ed36016a2  frugalware-0.7-i686-cd8.iso
+a89f34f212322e5c14ad288003536fb84e62106b  frugalware-0.7-i686-cd9.iso
+f6f731a45467274bcc1f7d987f3ccef6697dec03  frugalware-0.7-i686-dvd1.iso
+0443681c558f231b408e4add725635afe1b48af6  frugalware-0.7-i686-dvd2.iso
+b586b9aac75adea46f016572feb555b165b4de7b  frugalware-0.7-i686-net.iso
+a34ac62fa9c246d173a05f6fb4225745552ca0f2  frugalware-0.7-x86_64-cd10.iso
+dcbdff4b359a6ab1defe4aad59dce894a5cd658c  frugalware-0.7-x86_64-cd11.iso
+95a3d041031f4882883ff3d6fac351679dd2639e  frugalware-0.7-x86_64-cd1.iso
+89e82b51651843b666bff27d628e6ff16dc25594  frugalware-0.7-x86_64-cd2.iso
+0b7c8132f06501ba1749421183fbff509be2a80d  frugalware-0.7-x86_64-cd3.iso
+7b4451c9e6bab916ef8c0c33877526efb6785560  frugalware-0.7-x86_64-cd4.iso
+93fcdbeb35ee53179c32e882554980653b741b28  frugalware-0.7-x86_64-cd5.iso
+9887a9c6aea1ea9280b24f727287647d6be67434  frugalware-0.7-x86_64-cd6.iso
+82be4a85f8a3e80a357a62fa68aa4716fe6ff5b9  frugalware-0.7-x86_64-cd7.iso
+339d026a332e48a08cf735e123f6d71ec38e56e6  frugalware-0.7-x86_64-cd8.iso
+4d7846c6eef3308853acdeead0c2b253c3356a45  frugalware-0.7-x86_64-cd9.iso
+f636f27e02b98d270cb1947c187c27315c5b6e2b  frugalware-0.7-x86_64-dvd1.iso
+9b3646267dd40c38267566d5e1cdd096f79ddf24  frugalware-0.7-x86_64-dvd2.iso
+00d94d04c1bf3b7fc6030b7e7aac1e27e85fed82  frugalware-0.7-x86_64-net.iso
+eb039c92347aa3c13b14b51ed93031853de9cc5d  fwlive-0.7-i686-full.iso
+fa447a8cbd60d554905c48d379fb5d08b80e89b8  frugalware-0.7-i686-tftp.img.gz
+26d0be146804b652f0359dd0824012aaf3f3f716  frugalware-0.7-i686-usb.tar.gz
+31bd8243520f767c44ada50da287b4fe1d72a0ac  frugalware-0.7-x86_64-tftp.img.gz
+88c0be39dd0630c34e31e8482ead29f6097ee0a7  frugalware-0.7-x86_64-usb.tar.gz
+			</pre>
+			Si vous mettez votre système à jour vers Sayshell depuis une précédente version (Terminus), veuillez lire la partie <a href="http://frugalware.org/docs/stable/upgrade">mise à jour</a> de notre documentation.<br />
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>75</id>
+		<title>Mise à jour du noyau dans -current: AVERTISSEMENT pour les utilisateurs Intel avec des controlleurs IDE</title>
+		<date>Thu Oct  4 15:08:53 UTC 2007</date>
+		<author>hermier</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+						Depuis le kernel-2.6.22-6 dans Frugalware-current, les utilisateurs Intel aurons des périphériques /dev/sd* à la place des /dev/hd*. La raison est la suivante: il a été impossible de démarrer le noyau sur certaines machine sans ce changement. Voir <a href="http://bugs.frugalware.org/2243">ce rapport d'erreur</a> pour plus de détails. En conséquence, après avoir mis à jour en utilisant pacman -Syu, vous devrez:
+						<ol>
+										<li>Vérifiez si vous possédez un controlleur IDE Intel en faisant un: sudo lspci |grep -i intel.*ide. Si vous n'avez aucun résultat sous n'êtes probablement pas affecté.</li>
+										<li>Edit /etc/fstab: changez toutes les occurrences de /dev/hd en /dev/sd.</li>
+										<li>Edit /boot/grub/menu.lst: changez toutes les occurrences de /dev/hd en /dev/sd dans les entrées Frugalware.</li>
+										<li>Reboot.</li>
+						</ol>
+						En vous remerciant de votre compréhension!
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>74</id>
+		<title>Frugalware 0.7rc2 (Sayshell) released</title>
+		<date>Tue Oct  2 11:08:42 CEST 2007</date>
+		<author>VMiklos</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			The Frugalware Developer Team is pleased to <a href="/news/74">announce</a> the immediate availability of Frugalware 0.7rc2, the last candidate of the upcoming 0.7 stable release.<br />
+			A short and incomplete list of changes since 0.7rc1:<br />
+			<ul>
+				<li>Package updates:
+					<ul>
+						<li>GNOME 2.20.0</li>
+						<li>OpenOffice.org 2.3 with OOXML support and Mozilla plugin</li>
+						<li>More than 1000 changes, mostly bugfixes</li>
+					</ul>
+				</li>
+				<li>New features:
+					<ul>
+						<li>Added Gfpm, a graphical package manager</li>
+						<li>New Gfpm and Gnetconfig plugins for Xfce4 settings manager</li>
+					</ul>
+				</li>
+				<li>Setup:
+					<ul>
+						<li>Fixed PPPoE support</li>
+						<li>Slow format (when checking for bad blocks is enabled) works again for swap partitions</li>
+						<li>Fixed Swedish language support</li>
+					</ul>
+				</li>
+			</ul>
+			Please refer to the Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Testing ChangeLog</a> for more information.<br />
+			Download for i686:<br />
+			<b>NOTE</b>: Don't download CDs 3-12 or the second DVD unless you don't have an internet connection<br />
+				<a href="/download/frugalware-testing-iso/fwlive-0.7rc2-i686-full.iso">livecd</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7rc2-i686-net.iso">netinstall</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7rc2-i686-usb.tar.gz">usb</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7rc2-i686-tftp.img.gz">tftp</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7rc2-i686-cd1.iso">cd1</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7rc2-i686-cd2.iso">cd2</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7rc2-i686-cd3.iso">cd3</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7rc2-i686-cd4.iso">cd4</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7rc2-i686-cd5.iso">cd5</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7rc2-i686-cd6.iso">cd6</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7rc2-i686-cd7.iso">cd7</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7rc2-i686-cd8.iso">cd8</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7rc2-i686-cd9.iso">cd9</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7rc2-i686-cd10.iso">cd10</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7rc2-i686-cd11.iso">cd11</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7rc2-i686-cd12.iso">cd12</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7rc2-i686-cd13.iso">cd13</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7rc2-i686-dvd1.iso">dvd1</a> and
+				<a href="/download/frugalware-testing-iso/frugalware-0.7rc2-i686-dvd2.iso">dvd2</a>
+				<br />
+			SHA1SUMS:
+			<pre>
+817395071b963878b186cb6de3cc625c054a2fdc  frugalware-0.7rc2-i686-cd10.iso
+08aaacc8b0a49cedbdfbf0cc250c381865e35e12  frugalware-0.7rc2-i686-cd11.iso
+26090540104483c2e0ea5cb04cef94bead0126b2  frugalware-0.7rc2-i686-cd12.iso
+57f6a6b306666bdd4e273e6b1bf860f5c2553172  frugalware-0.7rc2-i686-cd13.iso
+00f9519569b0ab82933a6f7ad72b88f416c0ff29  frugalware-0.7rc2-i686-cd1.iso
+3cb912374d3e2dd6146875b841409b8bf837fd77  frugalware-0.7rc2-i686-cd2.iso
+34d7f5629e81649985fdc51cdb393f8f58265601  frugalware-0.7rc2-i686-cd3.iso
+dab534a873c0d467189f15b939725ec13c951dd5  frugalware-0.7rc2-i686-cd4.iso
+1595df5afb10bce2c15beed340a743c1c5a7a830  frugalware-0.7rc2-i686-cd5.iso
+9d1adf02056ab5c956c58d3b1fa3fee34deb3643  frugalware-0.7rc2-i686-cd6.iso
+ae039f89f48c5ea9d9f2210818e3ad293a549c64  frugalware-0.7rc2-i686-cd7.iso
+141732044d0326a43d4fedfc625e14b78227fe11  frugalware-0.7rc2-i686-cd8.iso
+126a5e21d68e338b63d995962ffed74ee0b10f4f  frugalware-0.7rc2-i686-cd9.iso
+b07a0279cda34d253accd8cb1d20bbbec8323a22  frugalware-0.7rc2-i686-dvd1.iso
+703de06fbe5bf8a921dd359a3a645fc852f2b800  frugalware-0.7rc2-i686-dvd2.iso
+9cddd7752c80b891713e13b5cda3147babcd5fe4  frugalware-0.7rc2-i686-net.iso
+de6daa9f334d72718c789fd76351e02116ea7b24  fwlive-0.7rc2-i686-full.iso
+ca1ece2660098ea631381bb9e5ee7ab3a63e82c6  frugalware-0.7rc2-i686-tftp.img.gz
+e5171b988e894674def71156f71accc6cdc81312  frugalware-0.7rc2-i686-usb.tar.gz
+			</pre>
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>73</id>
+		<title>Frugalware 0.7rc1 (Sayshell) released</title>
+		<date>Tue Sep  4 02:40:14 CEST 2007</date>
+		<author>VMiklos</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			The Frugalware Developer Team is pleased to <a href="/news/73">announce</a> the immediate availability of Frugalware 0.7rc1, the first candidate of the upcoming 0.7 stable release.<br />
+			A short and incomplete list of changes since 0.7pre2:<br />
+			<ul>
+				<li>Package updates:
+					<ul>
+						<li>GNU C Library 2.6.1</li>
+						<li>Replaced util-linux with util-linux-ng</li>
+						<li>More than 30 new packages</li>
+						<li>Added detailed documentation for the util-linux-ng, amavisd-new and ejabberd packages</li>
+						<li>More than 900 changes: package updates, bug- and security fixes.</li>
+					</ul>
+				</li>
+				<li>New features:
+					<ul>
+						<li>Added permalinks to the documentation</li>
+						<li>Rewritten the package builder daemon, which now supports distributed operation. This results in continuous package updates even if one package builder server is not available.</li>
+					</ul>
+				</li>
+				<li>Setup:
+					<ul>
+						<li>new Danish translation</li>
+					</ul>
+				</li>
+			</ul>
+			Please refer to the Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Testing ChangeLog</a> for more information.<br />
+			Download for i686:<br />
+			<b>NOTE</b>: Don't download CDs 3-12 or the second DVD unless you don't have an internet connection<br />
+				<a href="/download/frugalware-testing-iso/fwlive-0.7rc1-i686-full.iso">livecd</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7rc1-i686-net.iso">netinstall</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7rc1-i686-usb.tar.gz">usb</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7rc1-i686-tftp.img.gz">tftp</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7rc1-i686-cd1.iso">cd1</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7rc1-i686-cd2.iso">cd2</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7rc1-i686-cd3.iso">cd3</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7rc1-i686-cd4.iso">cd4</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7rc1-i686-cd5.iso">cd5</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7rc1-i686-cd6.iso">cd6</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7rc1-i686-cd7.iso">cd7</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7rc1-i686-cd8.iso">cd8</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7rc1-i686-cd9.iso">cd9</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7rc1-i686-cd10.iso">cd10</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7rc1-i686-cd11.iso">cd11</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7rc1-i686-cd12.iso">cd12</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7rc1-i686-cd13.iso">cd13</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7rc1-i686-dvd1.iso">dvd1</a> and
+				<a href="/download/frugalware-testing-iso/frugalware-0.7rc1-i686-dvd2.iso">dvd2</a>
+				<br />
+			SHA1SUMS:
+			<pre>
+4bb7b25e1a0e10e3074e8536043b2560e7d1482b  frugalware-0.7rc1-i686-cd10.iso
+930bffed77bc653acb36def009e3cd60967888c2  frugalware-0.7rc1-i686-cd11.iso
+99dec9ae6fa90e65a55ada6066006fe7077c2674  frugalware-0.7rc1-i686-cd12.iso
+c99cb96116a19a5d08520855eda42410fb879e2c  frugalware-0.7rc1-i686-cd13.iso
+cc5917a64ae70ca5b1abacf77b91a456e22a10a3  frugalware-0.7rc1-i686-cd1.iso
+12c6510a6b82fb59993776b6f70bb3f00484f219  frugalware-0.7rc1-i686-cd2.iso
+16d444b76438c322af803677566af1f6a4061055  frugalware-0.7rc1-i686-cd3.iso
+aa96e6d0e10707219967fa350e7db4548df69e5d  frugalware-0.7rc1-i686-cd4.iso
+7adc55e038707e989062b93a633cdbb622481cbd  frugalware-0.7rc1-i686-cd5.iso
+7e6985290a71b5e60605829894d12bb12f0b7385  frugalware-0.7rc1-i686-cd6.iso
+155f8d14301c8ac4bc40f2fc94f97051be376ce0  frugalware-0.7rc1-i686-cd7.iso
+0f02412084c7ec1b5a9a00f27cce755663286cf7  frugalware-0.7rc1-i686-cd8.iso
+e5cdb93601e2d56da31efd207fb45160ac67e096  frugalware-0.7rc1-i686-cd9.iso
+8e7d7936a578a6fef9065bbb80c7cd4b02ee3e45  frugalware-0.7rc1-i686-dvd1.iso
+eb2ad29098cc9fcab5b715abda398f559ed4080e  frugalware-0.7rc1-i686-dvd2.iso
+86818f76c430a9a941d7c292ca9e17dc90f686d7  frugalware-0.7rc1-i686-net.iso
+50d45d74cf8d019df9ab1b1cbd988902b74a7536  fwlive-0.7rc1-i686-full.iso
+819e936e9b4ce96f92279958ecb869e744d07874  frugalware-0.7rc1-i686-tftp.img.gz
+a1a22df8d4ea671fb88c0fac30510af19bd578e3  frugalware-0.7rc1-i686-usb.tar.gz
+			</pre>
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>72</id>
+		<title>Frugalware 0.7pre2 (Sayshell) released</title>
+		<date>Mon Jul 30 09:25:25 CEST 2007</date>
+		<author>VMiklos</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			The Frugalware Developer Team is pleased to <a href="/news/72">announce</a> the immediate availability of Frugalware 0.7pre2, the second technical preview of the upcoming 0.7 stable release.<br />
+			A short and incomplete list of changes since 0.7pre1:<br />
+			<ul>
+				<li>New features:
+					<ul>
+						<li>New graphical configuration tool, Gnetconfig to tweak your network settings.</li>
+						<li>Setup now puts the installer log to the target system, so that the log is not lost.</li>
+						<li>The default timezone and keyboard layout is now language-dependent.</li>
+						<li>New Italian translation in the installer.</li>
+					</ul>
+				</li>
+				<li>Package updates:
+					<ul>
+						<li>Linux kernel 2.6.22 (+ fixes)</li>
+						<li>GCC-4.2.1, with several bugfixes and a usable java browser plug-in for systems where the binary is not available, like x86_64.</li>
+						<li>OpenOffice.org 2.2.1</li>
+					</ul>
+				</li>
+				<li>New packages:
+					<ul>
+						<li>VIM spell-check dictionaries for various languages</li>
+						<li>More than 100 new packages: qmpdclient, gpsdrive, emovix, gpodder, horde-webmail and many more!</li>
+					</ul>
+				</li>
+				<li>Homepage:
+					<ul>
+						<li>It is now possible to browse HTML documentation for a package on the homepage.</li>
+						<li>Replaced darcsweb with gitweb in accordance with the darcs to git change.</li>
+					</ul>
+				</li>
+				<li>A list of bugs reported after the release of the installer images can be viewed <a href="http://wiki.frugalware.org/KnownBugs-0.7pre2">here</a>.
+				</li>
+			</ul>
+			Please refer to the Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Testing ChangeLog</a> for more information.<br />
+			Download for i686:<br />
+			<b>NOTE</b>: Don't download CDs 3-12 or the second DVD unless you don't have an internet connection<br />
+				<a href="/download/frugalware-testing-iso/fwlive-0.7pre2-i686-full.iso">livecd</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7pre2-i686-net.iso">netinstall</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7pre2-i686-usb.tar.gz">usb</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7pre2-i686-tftp.img.gz">tftp</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7pre2-i686-cd1.iso">cd1</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7pre2-i686-cd2.iso">cd2</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7pre2-i686-cd3.iso">cd3</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7pre2-i686-cd4.iso">cd4</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7pre2-i686-cd5.iso">cd5</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7pre2-i686-cd6.iso">cd6</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7pre2-i686-cd7.iso">cd7</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7pre2-i686-cd8.iso">cd8</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7pre2-i686-cd9.iso">cd9</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7pre2-i686-cd10.iso">cd10</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7pre2-i686-cd11.iso">cd11</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7pre2-i686-cd12.iso">cd12</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7pre2-i686-cd13.iso">cd13</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7pre2-i686-dvd1.iso">dvd1</a> and
+				<a href="/download/frugalware-testing-iso/frugalware-0.7pre2-i686-dvd2.iso">dvd2</a>
+				<br />
+			SHA1SUMS:
+			<pre>
+f0a2f5c804d94105d670b2d0b53eee677fb7131c  frugalware-0.7pre2-i686-cd10.iso
+58d87ad2c982bc199cee0133c8a9430e7f67e9d4  frugalware-0.7pre2-i686-cd11.iso
+bdee557bd72c8d63a25218cf8f1fceb8157d44bd  frugalware-0.7pre2-i686-cd12.iso
+4ea19e4128b19e6c1aa47627003f31eb09478ecb  frugalware-0.7pre2-i686-cd13.iso
+b16584609343dcf61ec837fa7e037cc07b60a517  frugalware-0.7pre2-i686-cd1.iso
+0575d77c27bedc2c963745690496c4bdbe5d9937  frugalware-0.7pre2-i686-cd2.iso
+c00ca8074ab6c8db80e3fad5fd2ada0e7cc137e9  frugalware-0.7pre2-i686-cd3.iso
+21df7dc6a7005b29ed25e35ef0b7b7e2e5d2345d  frugalware-0.7pre2-i686-cd4.iso
+cb421cf75ad1f2b82d0188334044a4d07154ac3d  frugalware-0.7pre2-i686-cd5.iso
+aee3e763c91c5b980db61018fa228e6142cb131e  frugalware-0.7pre2-i686-cd6.iso
+e95951f7c88030622f21797ea4f2930d10c5bcdf  frugalware-0.7pre2-i686-cd7.iso
+7d9b1ffcc055513890c2a27300967dc2cb1c454b  frugalware-0.7pre2-i686-cd8.iso
+2c364a96517e248a17a9d92bf20c0a4ff9b2f09c  frugalware-0.7pre2-i686-cd9.iso
+a678d9fbb675b9208a1827e8bb04738114497ca0  frugalware-0.7pre2-i686-dvd1.iso
+a45cadb05177d45e953f39006424a2eaf975d0b0  frugalware-0.7pre2-i686-dvd2.iso
+379dc4155b4de15fe1aa0c50bc2ccecf216da1eb  frugalware-0.7pre2-i686-net.iso
+a53b074f258a63ed004fab1853f31ab5f2259dad  fwlive-0.7pre2-i686-full.iso
+f4945dd97d922cc668bc26c78cde2ba8638753de  frugalware-0.7pre2-i686-tftp.img.gz
+2618cf5e815f9af6be792b0376217dc3091f333e  frugalware-0.7pre2-i686-usb.tar.gz
+			</pre>
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>71</id>
+		<title>Frugalware Newsletter Issue 9</title>
+		<date>Wed Jul 25 14:06:29 CET 2007</date>
+		<author>AlexExtreme</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			The ninth issue of our fortnightly newsletter has been released! You can read it <a href="/newsletter/9">here</a>. We hope you like it!
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>70</id>
+		<title>Frugalware Newsletter Issue 8</title>
+		<date>Sun Jul  1 12:28:27 CET 2007</date>
+		<author>AlexExtreme</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			The eighth issue of our fortnightly newsletter has been released! You can read it <a href="/newsletter/8">here</a>. We hope you like it!
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>69</id>
+		<title>Frugalware Newsletter Issue 7</title>
+		<date>Sun Jun 17 12:17:25 CET 2007</date>
+		<author>AlexExtreme</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			The seventh issue of our fortnightly newsletter has been released! You can read it <a href="/newsletter/7">here</a>. We hope you like it! If you would like to vote on which design you would like to see on the next version of our homepage, read this issue!
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>68</id>
+		<title>Happy 3rd birthday, Frugalware!</title>
+		<date>Sat Jun 16 13:14:49 CEST 2007</date>
+		<author>VMiklos</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+						<pre>
+$ lynx -dump http://ftp.frugalware.org/pub/archive/frugalware-0.1/ChangeLog.txt|tail -n 7
+Wed <b>Jun 16</b> 14:42:01 CEST 2004, by VMiklos
+- Changelog: initial release
+...
+
+$ date
+Sat <b>Jun 16</b> 13:14:49 CEST 2007
+						</pre>
+						Cheer, dance, party!
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>67</id>
+		<title>Frugalware 0.6a (Terminus) for x86_64 released</title>
+		<date>Sun Jun 3 07:54:12 CEST 2007</date>
+		<author>AlexExtreme</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			The Frugalware Developer Team is pleased to <a href="/news/67">announce</a> the immediate availability of Frugalware 0.6a for x86_64. This is a bug fix release to fix
+			various issues that users have encountered with the x86_64 0.6 releases. These new ISOs contain all security fixes since the release of 0.6.<br /><br />
+			
+			Please note that if you want to use i686, you should still use the original 0.6 ISOs. This release is for x86_64 only.<br /><br />
+			
+			Please refer to the Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-stable/ChangeLog.txt">ChangeLog</a> for more information.<br />
+			Download for x86_64:<br />
+			<b>NOTE</b>: Don't download CDs 3-9 or the second DVD unless you don't have an internet connection<br />
+				<a href="/download/frugalware-0.6-iso/frugalware-0.6a-x86_64-net.iso">netinstall</a>,
+				<a href="/download/frugalware-0.6-iso/frugalware-0.6a-x86_64-usb.tar.gz">usb</a>,
+				<a href="/download/frugalware-0.6-iso/frugalware-0.6a-x86_64-tftp.img.gz">tftp</a>,
+				<a href="/download/frugalware-0.6-iso/frugalware-0.6a-x86_64-cd1.iso">cd1</a>,
+				<a href="/download/frugalware-0.6-iso/frugalware-0.6a-x86_64-cd2.iso">cd2</a>,
+				<a href="/download/frugalware-0.6-iso/frugalware-0.6a-x86_64-cd3.iso">cd3</a>,
+				<a href="/download/frugalware-0.6-iso/frugalware-0.6a-x86_64-cd4.iso">cd4</a>,
+				<a href="/download/frugalware-0.6-iso/frugalware-0.6a-x86_64-cd5.iso">cd5</a>,
+				<a href="/download/frugalware-0.6-iso/frugalware-0.6a-x86_64-cd6.iso">cd6</a>,
+				<a href="/download/frugalware-0.6-iso/frugalware-0.6a-x86_64-cd7.iso">cd7</a>,
+				<a href="/download/frugalware-0.6-iso/frugalware-0.6a-x86_64-cd8.iso">cd8</a>,
+				<a href="/download/frugalware-0.6-iso/frugalware-0.6a-x86_64-cd9.iso">cd9</a>,
+				<a href="/download/frugalware-0.6-iso/frugalware-0.6a-x86_64-dvd1.iso">dvd1</a> and
+				<a href="/download/frugalware-0.6-iso/frugalware-0.6a-x86_64-dvd2.iso">dvd2</a>
+				<br />
+			SHA1SUMS:
+			<pre>
+1d6f6a8a2b816090e3ba5399f5b4caeea9a588b7  frugalware-0.6a-x86_64-cd1.iso
+25fe5dab4f02d1c0ecc812e47cd139e1edc71a23  frugalware-0.6a-x86_64-cd2.iso
+a47d2b65f10fdf3d2a16621e8fe307f653dd251a  frugalware-0.6a-x86_64-cd3.iso
+a90f2faca524c97502f53557348a84fcb4465e87  frugalware-0.6a-x86_64-cd4.iso
+424c4b8351196ce10384dbb6a1fb72f35569198a  frugalware-0.6a-x86_64-cd5.iso
+cf5fa95b4afd4ee0cf07b59305b5ae821aa7f52c  frugalware-0.6a-x86_64-cd6.iso
+b613c3b5cd9d7f4b7950eb9bdfed683bb1761a84  frugalware-0.6a-x86_64-cd7.iso
+11c82a8b4d60fe3c17e5a16ab9540d4544d76cfa  frugalware-0.6a-x86_64-cd8.iso
+6ab188efb1e806f60b2b07591c7c488687f2c4de  frugalware-0.6a-x86_64-cd9.iso
+975254550d328b9a6f0a173c4affbba4bf197258  frugalware-0.6a-x86_64-dvd1.iso
+193e15d1c9e762db73cf1344336355c89a5739dd  frugalware-0.6a-x86_64-dvd2.iso
+93f4b96bb0aa3cbafeb3a6bac12deee80e5e84bb  frugalware-0.6a-x86_64-net.iso
+			</pre>
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>66</id>
+		<title>Frugalware Newsletter Issue 6</title>
+		<date>Sat Jun 2 08:45:13 CET 2007</date>
+		<author>AlexExtreme</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			The sixth issue of our fortnightly newsletter has been released! You can read it <a href="/newsletter/6">here</a>. We hope you like it!
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>65</id>
+		<title>Yugo: new i686 buildserver</title>
+		<date>Sat May 26 07:56:26 CEST 2007</date>
+		<author>IroNiQ</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			I'm pleased to announce our new i686 buildserver, called yugo.<br />The server is working well, you can see the syncpkgd results <a href="http://yugo.frugalware.org/">here</a>.<br />I'd like to thank everyone who offered to donate!
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>64</id>
+		<title>Frugalware 0.6 and 0.7pre1 torrents</title>
+		<date>Thu May 24 23:14:08 CEST 2007</date>
+		<author>Hermier</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			Trackerless torrents for Frugalware's ISO can be found <a href="http://blogs.frugalware.org/index.php?cat=51">here</a>.
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>63</id>
+		<title>Frugalware 0.7pre1 (Sayshell) released</title>
+		<date>Tue May 24 07:14:08 CEST 2007</date>
+		<author>VMiklos</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			The Frugalware Developer Team is pleased to <a href="/news/63">announce</a> the immediate availability of Frugalware 0.7pre1, the first technical preview release of the upcoming 0.7 stable release.<br />
+			A short and incomplete list of changes since 0.6:<br />
+			<ul>
+				<li>Improvements:
+					<ul>
+						<li>The package manager (pacman-g2) now supports checking the integrity of your database.</li>
+						<li>A LiveCD called FwLive is now available for this prerelease.</li>
+						<li>A new web interface has been added to help translating Frugalware. See the <a href="http://frugalware.org/docs/translations">documentation</a> for more information.</li>
+						<li>Support for XOrg 6.x has been dropped.</li>
+					</ul>
+				</li>
+				<li>Setup:
+					<ul>
+						<li>New Romanian and Swedish translations.</li>
+						<li>The keyboard layouts are now sorted.</li>
+					</ul>
+				</li>
+				<li>Package updates:
+					<ul>
+						<li>Linux kernel 2.6.21</li>
+						<li>GCC 4.2.0</li>
+						<li>GNU C Library 2.6</li>
+						<li>Pidgin replaced Gaim, the external plugin packages have been updated accordingly.</li>
+						<li>A new XULRunner package has been added and all GNOME apps that have depended upon Firefox for HTML rendering have been rebuilt against XULRunner.</li>
+						<li>OpenOffice.org 2.2 + updated localizations + updated dictionaries</li>
+						<li>More than 100 new packages</li>
+					</ul>
+				</li>
+			</ul>
+			Please refer to the Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Testing ChangeLog</a> for more information.<br />
+			Download for i686:<br />
+			<b>NOTE</b>: Don't download CDs 3-12 or the second DVD unless you don't have an internet connection<br />
+				<a href="/download/frugalware-testing-iso/fwlive-0.7pre1-i686-full.iso">livecd</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7pre1-i686-net.iso">netinstall</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7pre1-i686-usb.tar.gz">usb</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7pre1-i686-tftp.img.gz">tftp</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7pre1-i686-cd1.iso">cd1</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7pre1-i686-cd2.iso">cd2</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7pre1-i686-cd3.iso">cd3</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7pre1-i686-cd4.iso">cd4</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7pre1-i686-cd5.iso">cd5</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7pre1-i686-cd6.iso">cd6</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7pre1-i686-cd7.iso">cd7</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7pre1-i686-cd8.iso">cd8</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7pre1-i686-cd9.iso">cd9</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7pre1-i686-cd10.iso">cd10</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7pre1-i686-cd11.iso">cd11</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7pre1-i686-cd12.iso">cd12</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.7pre1-i686-dvd1.iso">dvd1</a> and
+				<a href="/download/frugalware-testing-iso/frugalware-0.7pre1-i686-dvd2.iso">dvd2</a>
+				<br />
+			SHA1SUMS:
+			<pre>
+2951f4943fbdd46e669925cd2510fe625e4bef91  frugalware-0.7pre1-i686-cd10.iso
+195481436ddbcdb7f189aec8c99813f07da1b600  frugalware-0.7pre1-i686-cd11.iso
+59ae45534fc7a1732439811fd7d1d24066f22890  frugalware-0.7pre1-i686-cd12.iso
+7897353b7aef0d10a61cc646f61e7d92a3ad0d51  frugalware-0.7pre1-i686-cd1.iso
+135acbd57121546144f12d6e0969e632992eadd6  frugalware-0.7pre1-i686-cd2.iso
+0a63f6fb5daf14abfa6bae548accf36cbf843e7a  frugalware-0.7pre1-i686-cd3.iso
+48d7a75f4a375b4738efc5546c9690c003e9a023  frugalware-0.7pre1-i686-cd4.iso
+9e083a479103a9a5efac0afab96b75b5514be8f5  frugalware-0.7pre1-i686-cd5.iso
+f6ecd759a0b0837b2928d3d3659fd92555f06796  frugalware-0.7pre1-i686-cd6.iso
+678a0903d897a06ea449a6cf07f6494105ef7930  frugalware-0.7pre1-i686-cd7.iso
+ae8caff2992fb7069a80e5a350ece8bd90dab467  frugalware-0.7pre1-i686-cd8.iso
+1385ed8f87104b923a57d2f38701489f3dd30f4f  frugalware-0.7pre1-i686-cd9.iso
+6931e71d3ff07340dc380a907b1fb45d67d91b1e  frugalware-0.7pre1-i686-dvd1.iso
+db304778e4d36c549b3a58ace6550d6b85d9acf5  frugalware-0.7pre1-i686-dvd2.iso
+4fc67b372cbb2d6e7d7772b4d35f1246b274538e  frugalware-0.7pre1-i686-net.iso
+0ecd35c293dcbbe5b56bafb4837ab137efb7c35e  fwlive-0.7pre1-i686-full.iso
+29d9969df2c65fc1437d7e9fab8a997c21a6d6a2  frugalware-0.7pre1-i686-tftp.img.gz
+bdef8ebc832707a33ef60b4a257e832df74d3859  frugalware-0.7pre1-i686-usb.tar.gz
+			</pre>
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>62</id>
+		<title>Frugalware Newsletter Issue 5</title>
+		<date>Tue May 14 17:37:15 CET 2007</date>
+		<author>AlexExtreme</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			The fifth issue of our fortnightly newsletter has been released! You can read it <a href="/newsletter/5">here</a>. We hope you like it!
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>61</id>
+		<title>Frugalware Newsletter Issue 4</title>
+		<date>Tue May  1 19:08:24 CET 2007</date>
+		<author>AlexExtreme</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			The fourth issue of our fortnightly newsletter has been released! You can read it <a href="/newsletter/4">here</a>. We hope you like it!
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>60</id>
+		<title>Request: IDE HDDs</title>
+		<date>Tue Apr 24 20:35:18 CEST 2007</date>
+		<author>IroNiQ</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			Unfortunately we lost our i686 buildserver. But we have changed our main server to a stronger one, so now we have a quiet good machine. Without any hard disks. So we'd like to ask our users to donate us. Till the i686 buildserver is not working, the current repo is not in sync with the x86_64 one.<br />
+			The needed HDDs:
+			<ul>
+				<li>at least one smaller (20-40GB) IDE HDD for system</li>
+				<li>at least one bigger (min. 80-100GB) IDE HDD for build environment</li>
+			</ul>
+			If you have anything to donate, please send a mail to VMiklos (vmiklos at frugalware dot org) or IroNiQ (iron at frugalware dot org) or search for them on Freenode Network at #frugalware channel.<br />
+			Thank you for your donation.
+		]]>
+		</content>
+	</post>
+	<post>
+		<id>59</id>
+		<title>Frugalware Newsletter Issue 3 and Homepage design contest!</title>
+		<date>Thu Apr 14 21:43:31 CET 2007</date>
+		<author>AlexExtreme</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			The third issue of our fortnightly newsletter has been released! You can read it <a href="/newsletter/3">here</a>. In this issue we have announced a contest to create a design for the next version of the Frugalware homepage.
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>58</id>
+		<title>Frugalware Newsletter Issue 2</title>
+		<date>Thu Mar 31 21:12:35 CET 2007</date>
+		<author>AlexExtreme</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			The second issue of our newsletter has been released! You can read it <a href="/newsletter/2">here</a>. We hope you like it!
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>57</id>
+		<title>Frugalware 0.6 (Terminus) for i686 and x86_64 released</title>
+		<date>Thu Mar 22 07:04:52 CET 2007</date>
+		<author>VMiklos</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			The Frugalware Developer Team is pleased to <a href="/news/57">announce</a> the immediate availability of Frugalware 0.6, our sixth stable release.<br />
+			A short and incomplete list of changes since 0.6rc2:<br />
+			<ul>
+				<li>Linux 2.6.20.3</li>
+				<li>We are proud to be one of the first distributions to ship the stable GNOME 2.18</li>
+				<li>Fixed a few bugs in XDM</li>
+			</ul>
+			If you didn't follow the changes during the pre/rc releases, here are the most important changes since 0.5:<br />
+			<ul>
+				<li>Up to date base system: Glibc 2.5, Binutils 2.17.50.0.6 with DT_GNU_HASH support, DBUS 1.0 and Python 2.5</li>
+				<li>Up to date desktop packages: KDE 3.5.6, XFCE 4.4, Beryl 0.2.0, OpenOffice 2.1, Firefox 2.0.0.2 and GNOME 2.18</li>
+				<li>All installed-by-default packages using Java are now built using gcj/ecj, the original binary javac is only provided as an alternate compiler.</li>
+				<li>Setup: speed improvements, support for more custom action, tftp installs and usb sticks are now supported.</li>
+				<li>Full support for Xgl/Beryl in KDE</li>
+				<li>Documentation: it is more than two times longer than it was until now.</li>
+			</ul>
+			Known Issues:<br />
+			<ul>
+				<li>If you use a JMicron disk controller and you cannot boot 0.6, try booting with any of these options on the GRUB prompt: irqpoll, libata.atapi_enabled=0 and combined_mode=libata</li>
+				<li>The first time you attempt to use the Main Menu application in GNOME to edit the menus, the GNOME Panel will crash. This will not happen again after that. This will hopefully be fixed sometime and an update will be released.</li>
+				<li>If you want to use x86_64, <b>download <a href="/news/67">0.6a for x86_64</a> instead!</b></li>
+			</ul>
+			Please refer to the Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-0.6/ChangeLog.txt">Terminus ChangeLog</a> for more information.<br />
+			Download for i686:<br />
+				<a href="/download/frugalware-0.6-iso/frugalware-0.6-i686-net.iso">netinstall</a>,
+				<a href="/download/frugalware-0.6-iso/frugalware-0.6-i686-cd1.iso">cd1</a>,
+				<a href="/download/frugalware-0.6-iso/frugalware-0.6-i686-cd2.iso">cd2</a>,
+				<a href="/download/frugalware-0.6-iso/frugalware-0.6-i686-cd3.iso">cd3</a>,
+				<a href="/download/frugalware-0.6-iso/frugalware-0.6-i686-cd4.iso">cd4</a>,
+				<a href="/download/frugalware-0.6-iso/frugalware-0.6-i686-cd5.iso">cd5</a>,
+				<a href="/download/frugalware-0.6-iso/frugalware-0.6-i686-cd6.iso">cd6</a>,
+				<a href="/download/frugalware-0.6-iso/frugalware-0.6-i686-cd7.iso">cd7</a>,
+				<a href="/download/frugalware-0.6-iso/frugalware-0.6-i686-cd8.iso">cd8</a>,
+				<a href="/download/frugalware-0.6-iso/frugalware-0.6-i686-cd9.iso">cd9</a>,
+				<a href="/download/frugalware-0.6-iso/frugalware-0.6-i686-cd10.iso">cd10</a>,
+				<a href="/download/frugalware-0.6-iso/frugalware-0.6-i686-cd11.iso">cd11</a>,
+				<a href="/download/frugalware-0.6-iso/frugalware-0.6-i686-dvd1.iso">dvd1</a>,
+				<a href="/download/frugalware-0.6-iso/frugalware-0.6-i686-dvd2.iso">dvd2</a>,
+				<a href="/download/frugalware-0.6-iso/frugalware-0.6-i686-tftp.img.gz">tftp</a>,
+				<a href="/download/frugalware-0.6-iso/frugalware-0.6-i686-usb.tar.gz">usb</a>,
+				<a href="/download/frugalware-0.6-iso/fwchroot-0.6-i686.tar.bz2">chroot tarball</a>
+				<br />
+			Download for x86_64:<br />
+				<a href="/download/frugalware-0.6-iso/frugalware-0.6-x86_64-net.iso">netinstall</a>,
+				<a href="/download/frugalware-0.6-iso/frugalware-0.6-x86_64-cd1.iso">cd1</a>,
+				<a href="/download/frugalware-0.6-iso/frugalware-0.6-x86_64-cd2.iso">cd2</a>,
+				<a href="/download/frugalware-0.6-iso/frugalware-0.6-x86_64-cd3.iso">cd3</a>,
+				<a href="/download/frugalware-0.6-iso/frugalware-0.6-x86_64-cd4.iso">cd4</a>,
+				<a href="/download/frugalware-0.6-iso/frugalware-0.6-x86_64-cd5.iso">cd5</a>,
+				<a href="/download/frugalware-0.6-iso/frugalware-0.6-x86_64-cd6.iso">cd6</a>,
+				<a href="/download/frugalware-0.6-iso/frugalware-0.6-x86_64-cd7.iso">cd7</a>,
+				<a href="/download/frugalware-0.6-iso/frugalware-0.6-x86_64-cd8.iso">cd8</a>,
+				<a href="/download/frugalware-0.6-iso/frugalware-0.6-x86_64-cd9.iso">cd9</a>,
+				<a href="/download/frugalware-0.6-iso/frugalware-0.6-x86_64-dvd1.iso">dvd1</a>,
+				<a href="/download/frugalware-0.6-iso/frugalware-0.6-x86_64-dvd2.iso">dvd2</a>,
+				<a href="/download/frugalware-0.6-iso/frugalware-0.6-x86_64-tftp.img.gz">tftp</a>,
+				<a href="/download/frugalware-0.6-iso/frugalware-0.6-x86_64-usb.tar.gz">usb</a>,
+				<a href="/download/frugalware-0.6-iso/fwchroot-0.6-x86_64.tar.bz2">chroot tarball</a>
+				<br />
+			<b>NOTE</b>: CDs 3+ or the second DVD is needed only if you don't have an internet connection!<br />
+			SHA1SUMs:
+			<pre>
+0c14c830b2257e6772dd134d062e3c34faa841c9  frugalware-0.6-i686-cd10.iso
+909b1a2d0db63685e60a382ec3e04429e9097ed1  frugalware-0.6-i686-cd11.iso
+f38e82d9ed02efe39a06f66128f93fb224509cf0  frugalware-0.6-i686-cd1.iso
+604594990afaf82e8a0565debcaf3eb57692c912  frugalware-0.6-i686-cd2.iso
+c938a4a9030a26a2a26e2f770fff6ca43a2833b3  frugalware-0.6-i686-cd3.iso
+dccb31cd81b8e18aa81c0b4f01278dabcdd59a00  frugalware-0.6-i686-cd4.iso
+a0e5731f835f5c6f2ff39c7b0b06b75a098ba845  frugalware-0.6-i686-cd5.iso
+d46d7ad304ff6cf6ad85afbdc27dc351a9fbc255  frugalware-0.6-i686-cd6.iso
+66418f82dbff85d5b47ec22053511355ab040e06  frugalware-0.6-i686-cd7.iso
+1d229da2c46a5afceb5ec35a4dcafaccd3a4ef09  frugalware-0.6-i686-cd8.iso
+a67324848c276954982c8d3f1c428b294d01f746  frugalware-0.6-i686-cd9.iso
+2d8b63f9bf5ef39215ac6a6fbc15262963f0a521  frugalware-0.6-i686-dvd1.iso
+cd5c19e93c33e46f42e6678e24e15708684c6656  frugalware-0.6-i686-dvd2.iso
+f7a53822e544f74edb2ffb6194d67ffcbf3f51a9  frugalware-0.6-i686-net.iso
+505fceb77f476c48bbb3c5635953c6449e6826fb  frugalware-0.6-x86_64-cd1.iso
+29e35194627771550dfebff03ff74537a3641ee8  frugalware-0.6-x86_64-cd2.iso
+c7615bffb692855c4aa509ca51f3dcedf4086015  frugalware-0.6-x86_64-cd3.iso
+2295fe302c76513b97ece7b613c3f14c51ceb902  frugalware-0.6-x86_64-cd4.iso
+2eb0bd1e8022b289a425c546dfbc484decc1987a  frugalware-0.6-x86_64-cd5.iso
+5dc16e1ef1b0020edecb98e2dc30abb8a9055bf7  frugalware-0.6-x86_64-cd6.iso
+10c06c76c30c42cbbb2313851e914e007e9ce3f3  frugalware-0.6-x86_64-cd7.iso
+a5394def2b7bc5dcfdeb32682f2303bed196faaf  frugalware-0.6-x86_64-cd8.iso
+d2fc7a8385fee28b8a98ae133a9bb6d719bf2b61  frugalware-0.6-x86_64-cd9.iso
+f93c730809525ec3662c375ee061e7f296ef3150  frugalware-0.6-x86_64-dvd1.iso
+ec86c28e314e385dd411535c819c71428f36852f  frugalware-0.6-x86_64-dvd2.iso
+43e75f0dc34aa8a2e61de09f89c8a0db9fbc1d04  frugalware-0.6-x86_64-net.iso
+			</pre>
+			If you are upgrading from our previous stable release, you may want to read the <a href="http://frugalware.org/docs/stable/upgrade">upgrade</a> part of our documentation.<br />
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>56</id>
+		<title>Frugalware Newsletter Issue 1</title>
+		<date>Thu Mar 13 07:58:20 CET 2007</date>
+		<author>AlexExtreme</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			The Frugalware Newsletter is a new fortnightly (Hopefully... ;-)) newsletter which aims to keep users up to date about what's been going on in Frugalware development.<br />
+			The first issue can be found <a href="/newsletter/1">here</a>. We hope you like it!
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>55</id>
+		<title>Frugalware 0.6rc2 (Terminus) released</title>
+		<date>Thu Mar  8 07:57:25 CET 2007</date>
+		<author>VMiklos</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			The Frugalware Developer Team is pleased to <a href="/news/55">announce</a> the immediate availability of Frugalware 0.6rc2, the second release candidate of the upcoming 0.6 stable release.<br />
+			A short and incomplete list of changes since 0.6rc1:<br />
+			<ul>
+				<li>Improvements:
+					<ul>
+						<li>Updated the documentation: obsolete parts are removed, new parts are written, it is more than two times longer than it was till now.</li>
+						<li>Finished the artwork update, it is now homogenous again.</li>
+						<li>Updated the translations of the installer</li>
+					</ul>
+				</li>
+				<li>Package updates:
+					<ul>
+						<li>GCC 4.1.2 with changes to correct regressions from previous releases</li>
+						<li>GNOME 2.18.0 RC1 with cool features, important bug fixes, great translations</li>
+						<li>More than 30 new packages: asciidoc, bzflag, rtl8110, new beryl plugins and much more!</li>
+					</ul>
+				</li>
+			</ul>
+			<b>WARNING:</b> It has been discovered that the GConf version included in 0.6rc2 is broken and therefore GNOME will not work on a default install. To get around this, you should not install the gnome group when installing, and install it from frugalware-current afterwards, making sure that the gconf version to install is 2.18.0.1. Sorry for the inconvenience<br /><br />
+			Please refer to the Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Testing ChangeLog</a> for more information.<br />
+			Download for i686:<br />
+			<b>NOTE</b>: Don't download CDs 3-11 or the second DVD unless you don't have an internet connection<br />
+				<a href="/download/frugalware-testing-iso/frugalware-0.6rc2-i686-net.iso">netinstall</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.6rc2-i686-usb.tar.gz">usb</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.6rc2-i686-tftp.img.gz">tftp</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.6rc2-i686-cd1.iso">cd1</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.6rc2-i686-cd2.iso">cd2</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.6rc2-i686-cd3.iso">cd3</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.6rc2-i686-cd4.iso">cd4</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.6rc2-i686-cd5.iso">cd5</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.6rc2-i686-cd6.iso">cd6</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.6rc2-i686-cd7.iso">cd7</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.6rc2-i686-cd8.iso">cd8</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.6rc2-i686-cd9.iso">cd9</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.6rc2-i686-cd10.iso">cd10</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.6rc2-i686-cd11.iso">cd11</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.6rc2-i686-dvd1.iso">dvd1</a> and
+				<a href="/download/frugalware-testing-iso/frugalware-0.6rc2-i686-dvd2.iso">dvd2</a>
+				<br />
+			SHA1SUMS:
+			<pre>
+66c303c9b17043ecce69abf4f8320f4669044bfe  frugalware-0.6rc2-i686-cd1.iso
+ed3c81f600e9c62e714ea183fa457fdf4028e759  frugalware-0.6rc2-i686-cd2.iso
+2ac932a6757a9eec4648bb39dbcf56844456f856  frugalware-0.6rc2-i686-cd3.iso
+25ce844a8e2ae1754d060b7839373aeedc2d3b61  frugalware-0.6rc2-i686-cd4.iso
+71e628b6de75218b8c564314820591960ca95d89  frugalware-0.6rc2-i686-cd5.iso
+080e946d74f269a5dcbd20c3ec0f7dfe132ccd2e  frugalware-0.6rc2-i686-cd6.iso
+0d29ddff61379825401fffd2a862f0e25ddda32b  frugalware-0.6rc2-i686-cd7.iso
+22c20685309f593a208fe778488c4fe0cf5bd3d1  frugalware-0.6rc2-i686-cd8.iso
+4d0a842692f4a9a846612ab3b35806987f84b948  frugalware-0.6rc2-i686-cd9.iso
+ea0965c3d416b756d02a80aa48fe169285080c18  frugalware-0.6rc2-i686-cd10.iso
+5ce856f979e19f50e46ee29eefc9b5448a47b90e  frugalware-0.6rc2-i686-cd11.iso
+78dde3b0db56db9d03d4238b48289682307c468d  frugalware-0.6rc2-i686-dvd1.iso
+46595eac01beec13e2d94c8e356af98b188665d6  frugalware-0.6rc2-i686-dvd2.iso
+90d7a03bdad19646c4acc6b3a2eb24fa4dd742ed  frugalware-0.6rc2-i686-net.iso
+3b5b9794ac9ee850634c609bf186d558aac00f69  frugalware-0.6rc2-i686-usb.tar.gz
+			</pre>
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>54</id>
+		<title>Frugalware 0.6rc1 (Terminus) released</title>
+		<date>Thu Feb 15 07:22:24 CET 2007</date>
+		<author>VMiklos</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			The Frugalware Developer Team is pleased to <a href="/news/54">announce</a> the immediate availability of Frugalware 0.6rc1, the first release candidate of the upcoming 0.6 stable release.<br />
+			A short and incomplete list of changes since 0.6pre2:<br />
+			<ul>
+				<li>Improvements:
+					<ul>
+						<li>Brand new GDM theme, which has many improvements over previous themes.</li>
+						<li>Many packages recompiled to take advantage of new features in Glibc 2.5 and GCC 4.1.</li>
+					</ul>
+				</li>
+				<li>Package updates:
+					<ul>
+									<li>GNOME 2.17.90 with several bug fixes and speed enhancements</li>
+									<li>XFCE 4.4 with many new features and numerous bug fixes</li>
+									<li>Beryl 0.1.99.2 with many usablity, speed and reliability improvements</li>
+									<li>Added a package for VirtualBox, a free opensource virtualization program</li>
+									<li>Kernel 2.6.20 with KVM virtualization support and many speed enhancements</li>
+									<li>KDE 3.5.6</li>
+									<li>Wine 0.9.29 bringing stability improvements</li>
+									<li>45 new packages: mythtv, kvm, xfburn, cdrkit and much more!</li>
+					</ul>
+				</li>
+			</ul>
+			Please refer to the Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Testing ChangeLog</a> for more information.<br />
+			Download for i686:<br />
+			<b>NOTE</b>: Don't download CDs 3-11 or the second DVD unless you don't have an internet connection<br />
+				<a href="/download/frugalware-testing-iso/frugalware-0.6rc1-i686-net.iso">netinstall</a> (23M),
+				<a href="/download/frugalware-testing-iso/frugalware-0.6rc1-i686-usb.tar.gz">usb</a> (21M),
+				<a href="/download/frugalware-testing-iso/frugalware-0.6rc1-i686-tftp.img.gz">tftp</a> (114K),
+				<a href="/download/frugalware-testing-iso/frugalware-0.6rc1-i686-cd1.iso">cd1</a> (644M),
+				<a href="/download/frugalware-testing-iso/frugalware-0.6rc1-i686-cd2.iso">cd2</a> (638M),
+				<a href="/download/frugalware-testing-iso/frugalware-0.6rc1-i686-cd3.iso">cd3</a> (636M),
+				<a href="/download/frugalware-testing-iso/frugalware-0.6rc1-i686-cd4.iso">cd4</a> (632M),
+				<a href="/download/frugalware-testing-iso/frugalware-0.6rc1-i686-cd5.iso">cd5</a> (626M),
+				<a href="/download/frugalware-testing-iso/frugalware-0.6rc1-i686-cd6.iso">cd6</a> (609M),
+				<a href="/download/frugalware-testing-iso/frugalware-0.6rc1-i686-cd7.iso">cd7</a> (643M),
+				<a href="/download/frugalware-testing-iso/frugalware-0.6rc1-i686-cd8.iso">cd8</a> (546M),
+				<a href="/download/frugalware-testing-iso/frugalware-0.6rc1-i686-cd9.iso">cd9</a> (551M),
+				<a href="/download/frugalware-testing-iso/frugalware-0.6rc1-i686-cd10.iso">cd10</a> (624M),
+				<a href="/download/frugalware-testing-iso/frugalware-0.6rc1-i686-cd11.iso">cd11</a> (261M),
+				<a href="/download/frugalware-testing-iso/frugalware-0.6rc1-i686-dvd1.iso">dvd1</a> (4.2G)
+				<a href="/download/frugalware-testing-iso/frugalware-0.6rc1-i686-dvd2.iso">dvd2</a> (2.0G)
+				<br />
+			SHA1SUMS:
+			<pre>
+60bcefcaa4c6c1a6a8e0161da9f11734a8b5dfad  frugalware-0.6rc1-i686-cd10.iso
+ad6117e2794f8d27f17b5328e0e047f38d87cfa7  frugalware-0.6rc1-i686-cd11.iso
+13b65b30f0bd4fea35faf93f2fab44a834ac852b  frugalware-0.6rc1-i686-cd1.iso
+dfa58ac7634c34081abc071c9f594b06ab94be84  frugalware-0.6rc1-i686-cd2.iso
+fa3d8467d863ae8e07289ff1dd93eef22f284ff0  frugalware-0.6rc1-i686-cd3.iso
+3b8d624f54b3499ac1c4fd39f74b66b7f6018f11  frugalware-0.6rc1-i686-cd4.iso
+d2f463156477b75e834808f01e77ee5d20483a2c  frugalware-0.6rc1-i686-cd5.iso
+734e4837ef97326d239e5512b7ab30820219a2ed  frugalware-0.6rc1-i686-cd6.iso
+b760124be5d1c0cf6680fc4a0bfe53f18d3a10c2  frugalware-0.6rc1-i686-cd7.iso
+6f804b2511531241b6493acc451ac8b1e6318027  frugalware-0.6rc1-i686-cd8.iso
+0faefa6e7f3d8be7226c9c022ff7db75aea16fcf  frugalware-0.6rc1-i686-cd9.iso
+a2b747af6515fbbe467c4951acbdeb9b3824509a  frugalware-0.6rc1-i686-dvd1.iso
+c159d032f794393896570c70eca7b12480fb0f7a  frugalware-0.6rc1-i686-dvd2.iso
+52429f74cb961805790e163f2c6a83ded9a4db8c  frugalware-0.6rc1-i686-net.iso
+02e773e302d2bbb0d4ce1b8e3fa00ca934514746  frugalware-0.6rc1-i686-usb.tar.gz
+			</pre>
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>53</id>
+		<title>Frugalware 0.6pre2 (Terminus) released</title>
+		<date>Thu Jan 11 13:05:38 CET 2007</date>
+		<author>VMiklos</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			The Frugalware Developer Team is pleased to <a href="/news/53">announce</a> the immediate availability of Frugalware 0.6pre2, the second technical preview release of the upcoming 0.6 stable release.<br />
+			A short and incomplete list of changes since 0.6pre1:<br />
+			<ul>
+				<li>New features in the installer:
+					<ul>
+						<li>Much improved error handling. A dialog box will be displayed in the unlikely event of a segmentation fault and the installer will exit, instead of just restarting from the beginning.</li>
+						<li>Use library calls to download the package database, which gives better error handling. If the database update fails, you will be told about it, instead of being given an empty category list.</li>
+						<li>There is now an option to go back to a previous step in the installer (where it makes sense).</li>
+						<li>CD/DVD installation is now faster: integrity and conflict checks are done before creating the installation images.</li>
+						<li>There is floppy image available now for tftp installs.</li>
+					</ul>
+				</li>
+				<li>Improvements:
+					<ul>
+						<li>Added KDE support to fw-xgl-control and Beryl.</li>
+						<li>Gnome-mount, a replacement for pmount in GNOME resulting in more reliable and flexible automounting in GNOME.</li>
+					</ul>
+				</li>
+				<li>Updates:
+					<ul>
+									<li>Linux Kernel 2.6.19</li>
+									<li>Added virt-manager and gnome-applet-vm packages as GUI tools for Xen</li>
+									<li>GNOME 2.17.3, with new features and bug fixes</li>
+									<li>Xfce 4.4 Release Candidate 2, with a lot of bug fixes</li>
+									<li>Beryl 0.1.3 with lots of new eye-candy effects</li>
+									<li>dhcpcd 3.0, resulting in more reliable network autoconfiguration</li>
+									<li>Curl 7.16.0</li>
+									<li>DBUS 1.0 with several improvements and fixes</li>
+									<li>HAL 0.5.8.1 with new features and bug fixes</li>
+					</ul>
+				</li>
+			</ul>
+			Please refer to the Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Testing ChangeLog</a> for more information.<br />
+			Download for i686:<br />
+			<b>NOTE</b>: Don't download CDs 3-11 or the second DVD unless you don't have an internet connection<br />
+				<a href="/download/frugalware-testing-iso/frugalware-0.6pre2-i686-net.iso">netinstall</a> (22M),
+				<a href="/download/frugalware-testing-iso/frugalware-0.6pre2-i686-usb.tar.gz">usb</a> (20M),
+				<a href="/download/frugalware-testing-iso/frugalware-0.6pre2-i686-tftp.img.gz">tftp</a> (116K),
+				<a href="/download/frugalware-testing-iso/frugalware-0.6pre2-i686-cd1.iso">cd1</a> (643M),
+				<a href="/download/frugalware-testing-iso/frugalware-0.6pre2-i686-cd2.iso">cd2</a> (638M),
+				<a href="/download/frugalware-testing-iso/frugalware-0.6pre2-i686-cd3.iso">cd3</a> (634M),
+				<a href="/download/frugalware-testing-iso/frugalware-0.6pre2-i686-cd4.iso">cd4</a> (643M),
+				<a href="/download/frugalware-testing-iso/frugalware-0.6pre2-i686-cd5.iso">cd5</a> (633M),
+				<a href="/download/frugalware-testing-iso/frugalware-0.6pre2-i686-cd6.iso">cd6</a> (626M),
+				<a href="/download/frugalware-testing-iso/frugalware-0.6pre2-i686-cd7.iso">cd7</a> (609M),
+				<a href="/download/frugalware-testing-iso/frugalware-0.6pre2-i686-cd8.iso">cd8</a> (556M),
+				<a href="/download/frugalware-testing-iso/frugalware-0.6pre2-i686-cd9.iso">cd9</a> (552M),
+				<a href="/download/frugalware-testing-iso/frugalware-0.6pre2-i686-cd10.iso">cd10</a> (643M),
+				<a href="/download/frugalware-testing-iso/frugalware-0.6pre2-i686-cd11.iso">cd11</a> (229M),
+				<a href="/download/frugalware-testing-iso/frugalware-0.6pre2-i686-dvd1.iso">dvd1</a> (4.2G)
+				<a href="/download/frugalware-testing-iso/frugalware-0.6pre2-i686-dvd2.iso">dvd2</a> (2.0G)
+				<br />
+			SHA1SUMS:
+			<pre>
+080e622c798520b422c8c0bb1701b00befd3358a  frugalware-0.6pre2-i686-cd1.iso
+9d04a684e8c16f8bc752b506718566e0f0060876  frugalware-0.6pre2-i686-cd2.iso
+4a4dcabcfe788b94a80cbeff9c0f7098e55d333c  frugalware-0.6pre2-i686-cd3.iso
+8ec847d3dae136829334d4d4a2aed1d2a45048c4  frugalware-0.6pre2-i686-cd4.iso
+e7b5fef4f747edc30d1684202b5ce06c4a86acc7  frugalware-0.6pre2-i686-cd5.iso
+0c654cc082b6df9354ff5c24827cca5363d239c1  frugalware-0.6pre2-i686-cd6.iso
+4f7de0abddc31543cc793efcd948b503f02a917a  frugalware-0.6pre2-i686-cd7.iso
+959a01a6e19b3f6edd2c22a26526e6961813a90d  frugalware-0.6pre2-i686-cd8.iso
+8a06f41c40ea632fdb5932067a41cc43bc9ae017  frugalware-0.6pre2-i686-cd9.iso
+5e094695448176111117c6f56c9d1af297da4f05  frugalware-0.6pre2-i686-cd10.iso
+a45e39c99ec9e80a8372858348f039f614cac98f  frugalware-0.6pre2-i686-cd11.iso
+b1c7c4ee7641e993dc6668fd3f1cffcb662875f6  frugalware-0.6pre2-i686-dvd1.iso
+44d4ce0c172d777248925c8bad704eb068e79ac8  frugalware-0.6pre2-i686-dvd2.iso
+ab191be15a05e42c87218048f55900fcde476b10  frugalware-0.6pre2-i686-net.iso
+09397ba7ea37ab2122e0e6222ad8f1aae0310c0e  frugalware-0.6pre2-i686-tftp.img.gz
+450c82a0eae61fd97d2b5c78e1702a57dddb6149  frugalware-0.6pre2-i686-usb.tar.gz
+			</pre>
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>52</id>
+		<title>Big Fat Warning: postgresql package upgrade</title>
+		<date>Sat Jan  6 17:27:05 CET 2007</date>
+		<author>IroNiQ</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			Before upgrading to 8.2 version of postgresql, dump your databases. The new version is incompatible with the older one.
+			]]>
+		</content>
+		<icon>/images/icons/bug.png</icon>
+	</post>
+	<post>
+		<id>51</id>
+		<title>Big Fat Warning: nVidia package upgrade</title>
+		<date>Tue Dec 26 20:26:13 CEST 2006</date>
+		<author>AlexExtreme</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			If you are using current and you have a GeForce 4 graphics card (this is a lot of laptops), please do not do a system upgrade until the nvidia-96xx package is available tomorrow. Once it is available, install it. The latest version of nvidia removes support for GeForce 4 cards.<br />
+			<br />
+			As a side note, the Frugalware developer team would like to wish all our users a very Merry Christmas, and a Happy New Year!
+			]]>
+		</content>
+		<icon>/images/icons/bug.png</icon>
+	</post>		
+	<post>
+		<id>50</id>
+		<title>Frugalware 0.6pre1 (Terminus) released</title>
+		<date>Thu Nov  9 01:02:04 CET 2006</date>
+		<author>VMiklos</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			The Frugalware Developer Team is pleased to <a href="/news/50">announce</a> the immediate availability of Frugalware 0.6pre1, the first technical preview release of the upcoming 0.6 stable release.<br />
+			A short and incomplete list of changes since 0.5:<br />
+			<ul>
+				<li>New features:
+					<ul>
+						<li>All installed-by-default packages are now built using gcj/ecj, javac is
+							only provided as an alternate compiler.</li>
+						<li>Installing from a USB stick is now supported.</li>
+						<li>Added PHP documentation for 23 languages.</li>
+					</ul>
+				</li>
+				<li>Updates:
+					<ul>
+									<li>Linux 2.6.18 with a much improved SATA layer and a few new drivers</li>
+									<li>GNU C Library 2.5 with support for the new ELF hash table format</li>
+									<li>Mozilla Firefox 2.0 with improved tabbed browsing and inline spell checking</li>
+									<li>Xfce 4.4rc1: This fixes all plugin crash problems with the old Xfce 4.2.x
+													and the new version is much more stable.</li>
+									<li>KDE 3.5.5 with KHTML improvements, and support for sudo in kdesu</li>
+									<li>OpenOffice.org 2.0.4 with a latex export filter and encryption support in
+													the pdf export filter</li>
+									<li>D-Bus 0.93 with many memleaks and bugs fixed</li>
+									<li>neon 0.26.1 with internationalization support</li>
+									<li>Xen 3.0.3 with HVM and XenFB support; Xen kernels upgraded to 2.6.18</li>
+									<li>db 4.5.20 with Multi-Version Concurrency Control (MVCC) support</li>
+									<li>Python 2.5 with an interesting mix of language and library improvements</li>
+									<li>GNOME 2.17.1 with various bugfixes and new features</li>
+									<li>Binutils 2.17.50.0.6 - this allows us to use the new ELF hash table
+													format which is now enabled by default in our build system. This will
+													cause a considerable performance increase in newly built packages.</li>
+					</ul>
+				</li>
+			</ul>
+			Please refer to the Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Testing ChangeLog</a> for more information.<br />
+			Download for i686:<br />
+			<b>NOTE</b>: Don't download CDs 3-9 or the second DVD unless you don't have an internet connection<br />
+				<a href="/download/frugalware-testing-iso/frugalware-0.6pre1-i686-net.iso">netinstall</a> (20M),
+				<a href="/download/frugalware-testing-iso/frugalware-0.6pre1-i686-usb.tar.gz">usb</a> (18M),
+				<a href="/download/frugalware-testing-iso/frugalware-0.6pre1-i686-cd1.iso">cd1</a> (642M),
+				<a href="/download/frugalware-testing-iso/frugalware-0.6pre1-i686-cd2.iso">cd2</a> (643M),
+				<a href="/download/frugalware-testing-iso/frugalware-0.6pre1-i686-cd3.iso">cd3</a> (639M),
+				<a href="/download/frugalware-testing-iso/frugalware-0.6pre1-i686-cd4.iso">cd4</a> (642M),
+				<a href="/download/frugalware-testing-iso/frugalware-0.6pre1-i686-cd5.iso">cd5</a> (636M),
+				<a href="/download/frugalware-testing-iso/frugalware-0.6pre1-i686-cd6.iso">cd6</a> (641M),
+				<a href="/download/frugalware-testing-iso/frugalware-0.6pre1-i686-cd7.iso">cd7</a> (642M),
+				<a href="/download/frugalware-testing-iso/frugalware-0.6pre1-i686-cd8.iso">cd8</a> (641M),
+				<a href="/download/frugalware-testing-iso/frugalware-0.6pre1-i686-cd9.iso">cd9</a> (642M),
+				<a href="/download/frugalware-testing-iso/frugalware-0.6pre1-i686-cd9.iso">cd10</a> (250M),
+				<a href="/download/frugalware-testing-iso/frugalware-0.6pre1-i686-dvd1.iso">dvd1</a> (4.2G)
+				<a href="/download/frugalware-testing-iso/frugalware-0.6pre1-i686-dvd2.iso">dvd2</a> (1.6G)
+				<br />
+			SHA1SUMS:
+			<pre>
+9519c08313fd786e3b1f858e8d03fc82cf0298b3  frugalware-0.6pre1-i686-cd1.iso
+e0689fe3716099b2e052779ee41966ba428f0dd9  frugalware-0.6pre1-i686-cd2.iso
+f1bd6cafa9fcb40542a9ccb7413c1a68a503fb7b  frugalware-0.6pre1-i686-cd3.iso
+f09367e36cd1f9b8d9608d23113866a271b800d0  frugalware-0.6pre1-i686-cd4.iso
+5ebc71fa7fd6761a736d3d76970e8e392834cc2f  frugalware-0.6pre1-i686-cd5.iso
+bd4c83b05a8a1a5d59829dcef0654c4d54efb919  frugalware-0.6pre1-i686-cd6.iso
+fc1c0e4f80e290cee0450fa1812e9d549ca75572  frugalware-0.6pre1-i686-cd7.iso
+8166ca475dd2320687d0caaa30bfb5e7eb88344b  frugalware-0.6pre1-i686-cd8.iso
+19bdbe64efdb050ef1c0c551157e86b51fa05e1b  frugalware-0.6pre1-i686-cd9.iso
+08110f0ad259d2f1b2b44048a34af70ab615150b  frugalware-0.6pre1-i686-cd10.iso
+36b3c488cf625b090e399f655a03e55517993623  frugalware-0.6pre1-i686-dvd1.iso
+34c610b521a998d87f1e5fafff4a34e310f61e92  frugalware-0.6pre1-i686-dvd2.iso
+eeaa4b9bafab9b1c3c5454c1599687fd600b3525  frugalware-0.6pre1-i686-net.iso
+6b59b1e750626f907107bcec6ead006d8e6a69a7  frugalware-0.6pre1-i686-usb.tar.gz
+			</pre>
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>49</id>
+		<title>Yet another homepage redesign!</title>
+		<date>Sun Oct 24 20:37:14 CEST 2006</date>
+		<author>AlexExtreme</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			I'm one of the fussy web-designers. I create a design, a few months later I think it's rubbish. So I created a new design :) Feel free to drop your comments to the Frugalware-devel list.<br /><br />
+			
+			In other news, ftp5 should be back in sync. Have a good day! ;)
+			]]>
+		</content>
+		<icon>/images/icons/homepage.png</icon>
+	</post>		
+	<post>
+		<id>48</id>
+		<title>ftp5.frugalware.org is currently out of sync</title>
+		<date>Sun Oct 12 17:41:12 CEST 2006</date>
+		<author>AlexExtreme</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			ftp5.frugalware.org is currently out of sync for -current users. Please temporarily switch to a different mirror in /etc/pacman.d/frugalware-current!
+			]]>
+		</content>
+		<icon>/images/icons/homepage.png</icon>
+	</post>		
+	<post>
+		<id>47</id>
+		<title>We want your DBUS bug reports!</title>
+		<date>Sun Sep 30 12:01:44 CEST 2006</date>
+		<author>AlexExtreme</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			If you find any apps that don't start with a message about libdbus-1.so.2 not found, we want to know about it now! Just submit a report with the package's name to the <a href="http://bugs.frugalware.org">Bug Tracker</a>. Thanks!
+			]]>
+		</content>
+		<icon>/images/icons/bug.png</icon>
+	</post>		
+	<post>
+		<id>46</id>
+		<title>Please, don't file bug reports about DBUS in current (yet!)</title>
+		<date>Sun Sep 24 17:02:53 CEST 2006</date>
+		<author>AlexExtreme</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			We've upgraded to DBUS 0.9x in -current, meaning that some apps will be broken. We currently don't want any reports on any broken apps so that we don't get flooded by bug reports!
+			We have a very big list of things that need rebuilding, so we'll probably cover most apps over this week. We'll post a note when we want your bug reports again!<br /><br />
+			Thanks!
+			]]>
+		</content>
+		<icon>/images/icons/bug.png</icon>
+	</post>		
+	<post>
+		<id>45</id>
+		<title>Frugalware 0.5 (Siwenna) for i686 and x86_64 released</title>
+		<date>Wed Sep 14 00:08:25 CEST 2006</date>
+		<author>VMiklos</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			The Frugalware Developer Team is pleased to <a href="/news/45">announce</a> the immediate availability of Frugalware 0.5, our fifth stable release.<br />
+			A short and incomplete list of changes since 0.5rc2:<br />
+			<ul>
+				<li>Linux 2.6.17.11</li>
+				<li>We are proud to be one of the first distributions that ship the stable GNOME 2.16</li>
+				<li>20 new packages</li>
+			</ul>
+			If you didn't follow the changes during the pre/rc releases, here are the most important changes since 0.4:<br />
+			<ul>
+				<li>Up-to-date packages: GNU C Library 2.4, GCC 4.1.1, KDE 3.5.4, XOrg 7.1, OpenOffice.org 2.0.3 (a native version for x86_64 users, too)</li>
+				<li>Security support: as of Frugalware-0.5, security support is provided until the release of the stable Frugalware-0.6. The -stable updates are only security fixes and bugfixes, no new features are added.</li>
+				<li>Created a new tool called 'setup' to collect the available configuration tools.</li>
+				<li>Localized the package manager (French, German and Hungarian translations are available)</li>
+				<li>Switched from bootsplash to splashy, so that the splash can be used with any custom vanilla kernel, too.</li>
+				<li>Installer improvements: Added wireless support, support for detecting other distributions and other operating systems, utf8-specific updates, all packages are available on CDs.</li>
+				<li>fw-xgl-control: Easily enables/disables Xgl on your system with one simple command.</li>
+				<li>fwmirror: A new tool to help mirroring Frugalware.</li>
+			</ul>
+			Please refer to the Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-0.5/ChangeLog.txt">0.5 ChangeLog</a> for more information.<br />
+			If you don't have space for mirroring Frugalware but you want to help other i686 users to be able to get Frugalware quickly, use the <a href="http://linuxtracker.org/torrents-details.php?id=2863">CD</a> or <a href="http://linuxtracker.org/torrents-details.php?id=2864">DVD</a> torrents.<br />
+			If you want to sponsor us or you don't want to download the huge images, order the <a href="http://on-disk.com/product_info.php/products_id/162">i686 CDs</a>, <a href="http://on-disk.com/product_info.php/products_id/163">i686 DVDs</a>, <a href="http://on-disk.com/product_info.php/products_id/164">x86_64 CDs</a> or <a href="http://on-disk.com/product_info.php/products_id/165">x86_64 DVDs</a>, a part of the sum goes for the support of the continued development of Frugalware!<br />
+			Download for i686:<br />
+				<a href="/download/frugalware-0.5-iso/frugalware-0.5-i686-net.iso">netinstall</a> (21M),
+				<a href="/download/frugalware-0.5-iso/frugalware-0.5-i686-cd1.iso">cd1</a> (644M),
+				<a href="/download/frugalware-0.5-iso/frugalware-0.5-i686-cd2.iso">cd2</a> (644M),
+				<a href="/download/frugalware-0.5-iso/frugalware-0.5-i686-cd3.iso">cd3</a> (638M),
+				<a href="/download/frugalware-0.5-iso/frugalware-0.5-i686-cd4.iso">cd4</a> (639M),
+				<a href="/download/frugalware-0.5-iso/frugalware-0.5-i686-cd5.iso">cd5</a> (590M),
+				<a href="/download/frugalware-0.5-iso/frugalware-0.5-i686-cd6.iso">cd6</a> (627M),
+				<a href="/download/frugalware-0.5-iso/frugalware-0.5-i686-cd7.iso">cd7</a> (632M),
+				<a href="/download/frugalware-0.5-iso/frugalware-0.5-i686-cd8.iso">cd8</a> (427M),
+				<a href="/download/frugalware-0.5-iso/frugalware-0.5-i686-cd9.iso">cd9</a> (640M),
+				<a href="/download/frugalware-0.5-iso/frugalware-0.5-i686-cd10.iso">cd10</a> (129M),
+				<a href="/download/frugalware-0.5-iso/frugalware-0.5-i686-dvd1.iso">dvd1</a> (4.2G)
+				<a href="/download/frugalware-0.5-iso/frugalware-0.5-i686-dvd2.iso">dvd2</a> (1.2G)
+				<br />
+			Download for x86_64:<br />
+				<a href="/download/frugalware-0.5-iso/frugalware-0.5-x86_64-net.iso">netinstall</a> (21M),
+				<a href="/download/frugalware-0.5-iso/frugalware-0.5-x86_64-cd1.iso">cd1</a> (643M),
+				<a href="/download/frugalware-0.5-iso/frugalware-0.5-x86_64-cd2.iso">cd2</a> (644M),
+				<a href="/download/frugalware-0.5-iso/frugalware-0.5-x86_64-cd3.iso">cd3</a> (642M),
+				<a href="/download/frugalware-0.5-iso/frugalware-0.5-x86_64-cd4.iso">cd4</a> (644M),
+				<a href="/download/frugalware-0.5-iso/frugalware-0.5-x86_64-cd5.iso">cd5</a> (644M),
+				<a href="/download/frugalware-0.5-iso/frugalware-0.5-x86_64-cd6.iso">cd6</a> (642M),
+				<a href="/download/frugalware-0.5-iso/frugalware-0.5-x86_64-cd7.iso">cd7</a> (635M),
+				<a href="/download/frugalware-0.5-iso/frugalware-0.5-x86_64-cd8.iso">cd8</a> (92M),
+				<a href="/download/frugalware-0.5-iso/frugalware-0.5-x86_64-dvd1.iso">dvd1</a> (4.1G)
+				<a href="/download/frugalware-0.5-iso/frugalware-0.5-x86_64-dvd2.iso">dvd2</a> (264M)
+				<br />
+			<b>NOTE</b>: CDs 3-10 or the second DVD is needed only if you don't have an internet connection!<br />
+			SHA1SUMs:
+			<pre>
+5829cbb49528b60627fa290c2d0f8c66439139ab  frugalware-0.5-i686-cd10.iso
+7972d7ae74da64794d627b5058f4f23ac06fa0b5  frugalware-0.5-i686-cd1.iso
+e0a5e842d84bb4196cf05eb9d9d53bff038faef0  frugalware-0.5-i686-cd2.iso
+dc0c16158368bf198714ebeff3f6338f96ac5510  frugalware-0.5-i686-cd3.iso
+ade3147023769155cf35ead2738632499607ee44  frugalware-0.5-i686-cd4.iso
+9810ebcd5743461e79aafce74d7abd9981326ce0  frugalware-0.5-i686-cd5.iso
+919ca39d89699a8462f4ee8ac49853baf5af1caa  frugalware-0.5-i686-cd6.iso
+1efdb0b68bbb1a92e86341fbab171a24b661edf5  frugalware-0.5-i686-cd7.iso
+ef572faa5f6a6f103f48a7465d0ec8aeced4791f  frugalware-0.5-i686-cd8.iso
+6563f6b87cecd1c54914fc130798cbc8eb49ea5e  frugalware-0.5-i686-cd9.iso
+913aeea9426a9ec0453d9abd16c9e8e9b9c00cb2  frugalware-0.5-i686-dvd1.iso
+635c5df1312bcf0a7f86f08d3dec77111e7fe348  frugalware-0.5-i686-dvd2.iso
+b22d26e26b1ed07c285cba3c83162173fa2c4ff7  frugalware-0.5-i686-net.iso
+7a7342d42f53a50bb316c596fe4188d9ae72d051  frugalware-0.5-x86_64-cd1.iso
+6f13b4d6cffe3d42510ccb944268e34c2d587d40  frugalware-0.5-x86_64-cd2.iso
+8824fdd05c11473cb2c7bb5a3a2d32c74d999378  frugalware-0.5-x86_64-cd3.iso
+e8d4933ee2d1d45d827b2dd54090d5172bc4cb2c  frugalware-0.5-x86_64-cd4.iso
+ed78594a70af0dded0483914437566702b05b576  frugalware-0.5-x86_64-cd5.iso
+720c0f6bf84ca222a9bf000300d49783efe176fd  frugalware-0.5-x86_64-cd6.iso
+9ec70d74470ceb69e8a4e5eb4ecb1b61b083fc21  frugalware-0.5-x86_64-cd7.iso
+089b510f3bf59b7ea04041f237a4beb26ef50993  frugalware-0.5-x86_64-cd8.iso
+4f1c3871c3b6b03773090c8509b730a8d59fae64  frugalware-0.5-x86_64-dvd1.iso
+1ad4968050816e4854f5fbde8016a4a5c45be947  frugalware-0.5-x86_64-dvd2.iso
+81e26cd95c1ad3502bfee1f125e19f4c81f357a6  frugalware-0.5-x86_64-net.iso
+			</pre>
+			A list of bugs reported after the release of the installer images  can be viewed <a href="http://wiki.frugalware.org/KnownBugs-0.5">here</a>.<br />
+			If you are upgrading from our previous stable release, you may want to read our <a href="http://wiki.frugalware.org/Upgrade-0.4-0.5">mini-howto</a> on this topic.<br />
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>44</id>
+		<title>Upgrade to the new type of nvidia package</title>
+		<date>Sat Sep  9 00:35:47 CEST 2006</date>
+		<author>Boobaa</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+      It was a trouble for several users to upgrade the old nvidia package (locally-compiled at install) to the new, binary one. Here is the solution (provided that the database and the other packages are up-to-date):<br />
+			<pre>pacman -Sfd nvidia --noconfirm</pre>
+			(No, it does not mean that we dislike the Software Freedom Day...)
+			]]>
+		</content>
+		<icon>/images/icons/bug.png</icon>
+	</post>
+	<post>
+		<id>43</id>
+		<title>Frugalware 0.5rc2 (Siwenna) released</title>
+		<date>Fri Sep  1 11:26:39 CEST 2006</date>
+		<author>VMiklos</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			The Frugalware Developer Team is pleased to <a href="/news/43">announce</a> the immediate availability of Frugalware 0.5rc2, the second release candidate of the upcoming 0.5 stable release.<br />
+			A short and incomplete list of changes since 0.5rc1:<br />
+			<ul>
+				<li>Updated GNOME to 2.16 Release Candidate (2.15.92)</li>
+				<li>~300 bugfixes</li>
+				<li>Updated KDE and GRUB artwork</li>
+				<li>More than 30 new packages: ntfs-3g, avifile, gnome-sharp and much more!</li>
+			</ul>
+			Please refer to the Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Testing ChangeLog</a> for more information.<br />
+			Download for i686:<br />
+			<b>NOTE</b>: Don't download CDs 3-9 or the second DVD unless you don't have an internet connection<br />
+				<a href="/download/frugalware-current-iso/frugalware-0.5rc2-i686-net.iso">netinstall</a> (21M),
+				<a href="/download/frugalware-current-iso/frugalware-0.5rc2-i686-cd1.iso">cd1</a> (632M),
+				<a href="/download/frugalware-current-iso/frugalware-0.5rc2-i686-cd2.iso">cd2</a> (641M),
+				<a href="/download/frugalware-current-iso/frugalware-0.5rc2-i686-cd3.iso">cd3</a> (643M),
+				<a href="/download/frugalware-current-iso/frugalware-0.5rc2-i686-cd4.iso">cd4</a> (640M),
+				<a href="/download/frugalware-current-iso/frugalware-0.5rc2-i686-cd5.iso">cd5</a> (599M),
+				<a href="/download/frugalware-current-iso/frugalware-0.5rc2-i686-cd6.iso">cd6</a> (630M),
+				<a href="/download/frugalware-current-iso/frugalware-0.5rc2-i686-cd7.iso">cd7</a> (627M),
+				<a href="/download/frugalware-current-iso/frugalware-0.5rc2-i686-cd8.iso">cd8</a> (417M),
+				<a href="/download/frugalware-current-iso/frugalware-0.5rc2-i686-cd9.iso">cd9</a> (638M),
+				<a href="/download/frugalware-current-iso/frugalware-0.5rc2-i686-cd9.iso">cd10</a> (128M),
+				<a href="/download/frugalware-current-iso/frugalware-0.5rc2-i686-dvd1.iso">dvd1</a> (4.2G)
+				<a href="/download/frugalware-current-iso/frugalware-0.5rc2-i686-dvd2.iso">dvd2</a> (1.2G)
+				<br />
+			SHA1SUMS:
+			<pre>
+68b77bf880dcb5a05ba66ae9b80a7831d3fcbd8c  frugalware-0.5rc2-i686-cd10.iso
+65d73a3408d3a7e4a6f28b990c60be40706f265d  frugalware-0.5rc2-i686-cd1.iso
+0581700c2139059cee22f10c6b40561af9973d8f  frugalware-0.5rc2-i686-cd2.iso
+580bc19fa7bfcc509e075f1f337953a6da60f93a  frugalware-0.5rc2-i686-cd3.iso
+d1d78560f6f4c641621ac41c4f0e5c12d5d58a9d  frugalware-0.5rc2-i686-cd4.iso
+d72bfe2ffcd935b6d02bde576d78a5076651a2b5  frugalware-0.5rc2-i686-cd5.iso
+ffb7f8186dc804e8484082be72dfd340f83a9d8b  frugalware-0.5rc2-i686-cd6.iso
+045ed869c57eadebf172d38d506e5d775b41711c  frugalware-0.5rc2-i686-cd7.iso
+99062bdaed26566b95e78773ed3c045b5fac442a  frugalware-0.5rc2-i686-cd8.iso
+82da06750a859584804191889bd5c23e86f9edc9  frugalware-0.5rc2-i686-cd9.iso
+94f7a0a0a1d2a9d209a1f85ed251a0e78c128f36  frugalware-0.5rc2-i686-dvd1.iso
+e4397526607832e83684be5c7f88598242d05e75  frugalware-0.5rc2-i686-dvd2.iso
+fae88cc8378e2982a87761c0d97fdfbf42eb321c  frugalware-0.5rc2-i686-net.iso
+			</pre>
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>42</id>
+		<title>Frugalware 0.5rc1 (Siwenna) released</title>
+		<date>Thu Aug 17 01:31:02 CEST 2006</date>
+		<author>VMiklos</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			The Frugalware Developer Team is pleased to <a href="http://frugalware.org/news/42">announce</a> the immediate availability of Frugalware 0.5rc1, the fist release candidate of the upcoming 0.5 stable release.<br />
+			A short and incomplete list of changes since 0.5pre2:<br />
+			<ul>
+				<li>Updates:
+					<ul>
+						<li>Linux 2.6.17.8</li>
+						<li>KDE 3.5.4</li>
+						<li>Firefox 1.5.0.6</li>
+						<li>Thunderbird 1.5.0.5</li>
+						<li>Gnome 2.16 Beta 2 (2.15.91)</li>
+					</ul>
+				</li>
+				<li>New features:
+					<ul>
+						<li>Splitted the MySQL, PostgreSQL, Samba and LDAP packages so that having these servers installed is no longer forced on a desktop machine</li>
+						<li>fwmirror: A new tool to help mirroring Frugalware</li>
+						<li>fw-xgl-control: Easily enables/disables Xgl on your system with one simple command</li>
+						<li>Homepage: improved the binary packages page - now you can browse by categories and view reverse dependencies</li>
+						<li>Added a workaround for nVidia cards in Xorg 7.1</li>
+						<li>New 0.5 artwork (except KDE)</li>
+					</ul>
+				</li>
+				<li>Bugfixes:
+					<ul>
+						<li>Fixed handling of the dependencies of the language packs</li>
+						<li>Fixed netinstall when using PPPoE connection</li>
+						<li>Burning the first DVD iso no longer requires any overburn options</li>
+					</ul>
+				</li>
+			</ul>
+			Please refer to the Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Testing ChangeLog</a> for more information.<br />
+			Download for i686:<br />
+			<b>NOTE</b>: Don't download CDs 3-9 or the second DVD unless you don't have an internet connection<br />
+				<a href="download/frugalware-current-iso/frugalware-0.5rc1-i686-net.iso">netinstall</a> (20M),
+				<a href="download/frugalware-current-iso/frugalware-0.5rc1-i686-cd1.iso">cd1</a> (635M),
+				<a href="download/frugalware-current-iso/frugalware-0.5rc1-i686-cd2.iso">cd2</a> (638M),
+				<a href="download/frugalware-current-iso/frugalware-0.5rc1-i686-cd3.iso">cd3</a> (635M),
+				<a href="download/frugalware-current-iso/frugalware-0.5rc1-i686-cd4.iso">cd4</a> (639M),
+				<a href="download/frugalware-current-iso/frugalware-0.5rc1-i686-cd5.iso">cd5</a> (580M),
+				<a href="download/frugalware-current-iso/frugalware-0.5rc1-i686-cd6.iso">cd6</a> (642M),
+				<a href="download/frugalware-current-iso/frugalware-0.5rc1-i686-cd7.iso">cd7</a> (638M),
+				<a href="download/frugalware-current-iso/frugalware-0.5rc1-i686-cd8.iso">cd8</a> (642M),
+				<a href="download/frugalware-current-iso/frugalware-0.5rc1-i686-cd9.iso">cd9</a> (394M),
+				<a href="download/frugalware-current-iso/frugalware-0.5rc1-i686-dvd1.iso">dvd1</a> (4.2G)
+				<a href="download/frugalware-current-iso/frugalware-0.5rc1-i686-dvd2.iso">dvd2</a> (1.1G)
+				<br />
+			SHA1SUMS:
+			<pre>
+385719ecc1e68a5e4b2f8c6fb49e79b7333fe820  frugalware-0.5rc1-i686-cd1.iso
+c9324c9a6bcf5024076a5f5f494fecada7d383ac  frugalware-0.5rc1-i686-cd2.iso
+ae5d33bc4c69978cbedcb4bbf3182253cc9eaecd  frugalware-0.5rc1-i686-cd3.iso
+31d386c3d81a64c3d554b186973df41071741fe9  frugalware-0.5rc1-i686-cd4.iso
+529bfcb37b7feb24e8bf62316371c54e8c4d402d  frugalware-0.5rc1-i686-cd5.iso
+b7278a5147102a1e049cdb7fb81d136893d1c4cf  frugalware-0.5rc1-i686-cd6.iso
+09a5098c561dcf406a83bfb8e5a6eec1e192aa52  frugalware-0.5rc1-i686-cd7.iso
+36e300772e5052aa5b81308af8288374c0a930d4  frugalware-0.5rc1-i686-cd8.iso
+a1a0864648db68b9c01f274ddffc9172b3ae6908  frugalware-0.5rc1-i686-cd9.iso
+0216a7ee71b0dda9d00d64fc093b993f2af47a2b  frugalware-0.5rc1-i686-dvd1.iso
+987d2302a1268a2b1033f8d00e84f8c8ce290ae9  frugalware-0.5rc1-i686-dvd2.iso
+a62f42f3135f1415edced1db5c9f9511de598fd7  frugalware-0.5rc1-i686-net.iso
+			</pre>
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>41</id>
+		<title>Frugalware 0.5pre2 (Siwenna) released</title>
+		<date>Mon Jul 31 01:17:32 CEST 2006</date>
+		<author>VMiklos</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			The Frugalware Developer Team is pleased to <a href="http://frugalware.org/news/41">announce</a> the immediate availability of Frugalware 0.5pre2, the second technical preview of the upcoming 0.5 stable release.<br />
+			A short and incomplete list of changes since 0.5pre1:<br />
+			<ul>
+				<li>Updates:
+					<ul>
+						<li>Linux 2.6.17 (+ security patches)</li>
+						<li>GCC 4.1.1</li>
+						<li>Apache 2.2.3</li>
+						<li>XOrg 7.1 (updated the fglrx driver accordingly, nVIDIA still doesn't work)</li>
+						<li>GNOME 2.16 Beta 1 (there may be some problems with some Gnome and GTK software - see earlier news posts)</li>
+						<li>OpenOffice.org 2.0.3 (this time a native version is available for x86_64 users, too)</li>
+					</ul>
+				</li>
+				<li>New features:
+					<ul>
+						<li>All configuration tools have been updated to the new framework, type "setup" to reach them</li>
+						<li>Switched to splashy from bootsplash, so that the splash can be used with any custom vanilla kernel, too</li>
+						<li>Added French localization for the package manager</li>
+					</ul>
+				</li>
+				<li>Installer:
+					<ul>
+						<li>Added an eyecandy tetris, use it on tty5 while netinstall downloads the selected packages :)</li>
+						<li>Several utf8-specific update for Chinese users</li>
+						<li>Added wireless support to the netinstall</li>
+						<li>Added French translation</li>
+						<li>The DVD iso has been splitted so that it can be burned again to a single-layer DVD.<br />
+							<b>Note</b>: Don't download the second DVD unless you don't have an internet connection</li>
+						<li>All the packages are available on CDs.<br />
+							<b>Note</b>: Don't download CDs 3 - 9 unless you don't have an internet connection</li>
+						<li>The installer now recognizes os-specific informations, like the name of the already installed other distributions or the version of many other operating systems</li>
+					</ul>
+				</li>
+				<li>Packages:
+					<ul>
+						<li>More than 2600 packages have been updated</li>
+						<li>More than 220 new packages</li>
+					</ul>
+				</li>
+			</ul>
+			Please refer to the Frugalware <a href="http://darcs.frugalware.org/darcsweb/darcsweb.cgi?r=frugalware-current;a=log">Development ChangeLog</a> for more information.<br />
+			Download for i686:
+				<a href="download/frugalware-current-iso/frugalware-0.5pre2-i686-net.iso">netinstall</a> (20M),
+				<a href="download/frugalware-current-iso/frugalware-0.5pre2-i686-cd1.iso">cd1</a> (643M),
+				<a href="download/frugalware-current-iso/frugalware-0.5pre2-i686-cd2.iso">cd2</a> (633M),
+				<a href="download/frugalware-current-iso/frugalware-0.5pre2-i686-cd3.iso">cd3</a> (640M),
+				<a href="download/frugalware-current-iso/frugalware-0.5pre2-i686-cd4.iso">cd4</a> (642M),
+				<a href="download/frugalware-current-iso/frugalware-0.5pre2-i686-cd5.iso">cd5</a> (554M),
+				<a href="download/frugalware-current-iso/frugalware-0.5pre2-i686-cd6.iso">cd6</a> (642M),
+				<a href="download/frugalware-current-iso/frugalware-0.5pre2-i686-cd7.iso">cd7</a> (643M),
+				<a href="download/frugalware-current-iso/frugalware-0.5pre2-i686-cd8.iso">cd8</a> (558M),
+				<a href="download/frugalware-current-iso/frugalware-0.5pre2-i686-cd9.iso">cd9</a> (385M),
+				<a href="download/frugalware-current-iso/frugalware-0.5pre2-i686-dvd1.iso">dvd1</a> (4.4G)
+				<a href="download/frugalware-current-iso/frugalware-0.5pre2-i686-dvd2.iso">dvd2</a> (712M)
+				<br />
+			SHA1SUMS:
+			<pre>
+07271ddb32e831ebeecdc7c01d1bdb6c429b5ef4  frugalware-0.5pre2-i686-cd1.iso
+07c5b548d8d9e7a011a3ab7a145c48731e5fbee4  frugalware-0.5pre2-i686-cd2.iso
+7354ff3d44f480dfae8d27fde0c22343f042d349  frugalware-0.5pre2-i686-cd3.iso
+07ff975bf2b554fcf9f4c4bca171613f7456567e  frugalware-0.5pre2-i686-cd4.iso
+fd9a48885cc66d7dfc35ac0060b7804cbb55ef4a  frugalware-0.5pre2-i686-cd5.iso
+0a4acbdb359f0424f6f081b134964d231648fe1c  frugalware-0.5pre2-i686-cd6.iso
+539eb9b343466f7428dbe185aaa9a7b5b6cc94fb  frugalware-0.5pre2-i686-cd7.iso
+a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
+257a426eb08230ae24d7b81af042c30f995b6f0e  frugalware-0.5pre2-i686-cd9.iso
+64c2662ca21407bbe548ce6396aab659376184a0  frugalware-0.5pre2-i686-dvd1.iso
+44dd9bb8c98a1370571ed799e53e8129ad78a3e4  frugalware-0.5pre2-i686-dvd2.iso
+0c0cedda6de27378916f4093ba7c7145f3487455  frugalware-0.5pre2-i686-net.iso
+			</pre>
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>40</id>
+		<title>Gnome upgrade done (for now)</title>
+		<date>Tue Jul 22 09:09:41 CEST 2006</date>
+		<author>AlexExtreme</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			All the GNOME packages have been updated to 2.15, so now would be the time to starting posting reports about any problems that you find. To do this, you can use our <a href="http://bugs.frugalware.org">Bug Tracker</a>. There are currently several known issues that we will try to fix soon. These are as follows<br />
+			<ul>
+				<li>Gaim gets SIGABRT when trying to add an account.</li>
+				<li>Banshee Segmentation Faults at startup</li>
+				<li>File-roller segmentation faults at startup</li>
+			</ul>
+			<br />
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>39</id>
+		<title>Gnome and GTK breakage in -current</title>
+		<date>Tue Jul  8 17:03:46 CEST 2006</date>
+		<author>AlexExtreme</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			Yes, we know Gnome and GTK stuff is a bit broken in -current :)<br /><br />
+			This is because we have upgraded to GTK 2.10, and also we are upgrading Gnome to the development version (see the mailing list archive for reasons why). So please bear with us while we do this. The result at the end of this should be a faster and nicer Gnome. I will post here once we have finished upgrading, at which point it will be good to start posting bug reports about problems that you find.<br />
+			<br />
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>38</id>
+		<title>Improvements on the homepage</title>
+		<date>Tue Jul  7 21:11:32 CEST 2006</date>
+		<author>AlexExtreme</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			Amazingly, in the time since our homepage upgrade, we've only had 1 bug report to do with the packages section. So now we can work on adding a few improvements. I've just written a kind of robot that automatically posts all news posts from the site to the Frugalware-announce mailing list. It works thanks to darcs post-hooks, so that whenever we push a change to the homepage darcs repository, the post-hook is run to check for new news posts. Don't forget, if you do find a bug remember to post it on our Bug Tracker.<br />
+			<br />
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>37</id>
+		<title>New Frugalware homepage!</title>
+		<date>Tue Jun 20 07:59:25 CEST 2006</date>
+		<author>AlexExtreme</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			Welcome to the brand new Frugalware homepage! This is a complete rewrite of our homepage, featuring table-less design, XML for data storage, user-friendly URLs with mod_rewrite and easy translations with Gettext. If you would like to help translate the page, please post to the frugalware-devel mailing list. If you find any bugs while using the page, please report them to the <a href="http://bugs.frugalware.org">Bug Tracker</a> under the Homepage category, or visit our IRC channel and report them to AlexExtreme or IroNiQ. Also, feel free to give them your comments on the page too.<br />
+			<br />
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>36</id>
+		<title>ATI and nVidia binary drivers broken in current</title>
+		<date>Sat May 27 20:53:09 CEST 2006</date>
+		<author>AlexExtreme</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			For those of you that use the current branch of Frugalware, nVidia and ATI binary drivers are currently broken due to the upgrade to Xorg 7.1. Specifically, fonts do not display at all on screen. There are 2 solutions to this problem - either downgrade all Xorg packages, or switch to using the open source Xorg drivers for your card in /etc/X11/xorg.conf. (ati and nv). Note that Frugalware 0.5pre1 is not affected unless you have run pacman -Syu since installation.<br />
+			<br />
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>35</id>
+		<title>Frugalware 0.5pre1 (Siwenna) for i686 released</title>
+		<date>Thu May 25 01:18:52 CEST 2006</date>
+		<author>VMiklos</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			The Frugalware Developer Team is pleased to announce the immediate availability of Frugalware 0.5pre1, the first technical preview of the upcoming 0.5 stable release for the i686 architecture.<br />
+			A short and incomplete list of the more than 3000 changes since 0.4:<br />
+			<ul><li>Updates:<br />
+			        <ul><li>GNU C Library 2.4<br />
+			        </li><li>GCC 4.1.0<br />
+			        </li><li>KDE 3.5.2<br />
+			        </li><li>More than 300 new packages</li></ul><br />
+			</li><li>New features:<br />
+			        <ul><li>Created a new tool, called 'setup', to summarize the available configuration tools. (<a href="http://darcs.frugalware.org/repos/frugalwareutils/setup.png">screenshot</a>)<br />
+			        </li><li>Localized the package manager. (currently German and Hungarian language support available)<br />
+			        </li><li>Added Brazilian and Indonesian translation to the setup.</li></ul><br />
+			</li><li>Known problems:<br />
+			        <ul><li>The dvd image is more than 4.7 GB so it will not fit on a single-layer DVD.</li></ul></li></ul><br />
+			Please refer to the Frugalware <a href="http://darcs.frugalware.org/darcsweb/darcsweb.cgi?r=frugalware-current;a=log">Development ChangeLog</a> for more information.<br />
+			Download for i686: <a href="download.php?url=frugalware-current-iso/frugalware-0.5pre1-i686-net.iso">netinstall</a> (27M), <a href="download.php?url=frugalware-current-iso/frugalware-0.5pre1-i686-cd1.iso">cd1</a> (476M), <a href="download.php?url=frugalware-current-iso/frugalware-0.5pre1-i686-cd2.iso">cd2</a> (651M), <a href="download.php?url=frugalware-current-iso/frugalware-0.5pre1-i686-dvd.iso">dvd</a> (4.8G)<br />
+			SHA1SUMS:<br />
+			<tt>8cc23502d6ed87b1744f31de676d782793449d74  frugalware-0.5pre1-i686-cd1.iso<br />
+			c3f7e39c9f3c3ca09efd7f635f2fa60cce7df337  frugalware-0.5pre1-i686-cd2.iso<br />
+			4ea37741a1d614d627ff28009ee9c44beaca24bf  frugalware-0.5pre1-i686-dvd.iso<br />
+			87fc8dc2102cc365ead513b9a4640c3377170ec9  frugalware-0.5pre1-i686-net.iso</tt><br />
+			<br />
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>34</id>
+		<title>Frugalware 0.4 for i686 and x86_64 released</title>
+		<date>Tue Mar 30 07:42:21 CEST 2006</date>
+		<author>VMiklos</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			The Frugalware Developer Team is pleased to announce the immediate availability of Frugalware 0.4 for the i686 and x86_64 architectures, our fourth stable release.<br />
+			A short and incomplete list of changes since 0.4rc2-i686:<br />
+			<ul><li>Updates:<br />
+			        <ul><li>Update to Linux 2.6.16<br />
+			        </li><li>Update to GNOME 2.14<br />
+			        </li><li>Update to OpenOffice.org 2.0.2.1<br />
+			        </li><li>Lots of minor bugfixes<br />
+			        </li><li>Create a <a href="http://wiki.frugalware.org/Upgrade-0.3-0.4">howto</a> about upgrading from the previous stable release</li></ul><br />
+			</li><li>A few statistics since 0.3:<br />
+			        <ul><li>4186 changes<br />
+			        </li><li>732 new packages<br />
+			        </li><li>302 fixed bugs</li></ul><br />
+			</li><li>For who haven't followed the changes in the pre/rc releases, the most important changes:<br />
+			        <ul><li>Implemented fwcpan, a new tool to install any cpan module, just like it would when you install it with pacman.<br />
+			        </li><li>Split OpenOffice, now all language packs and dictionaries can be installed/removed separately.<br />
+			        </li><li>Libificated pacman to meet our needs, and the newborn pacman 3 has become the default package manager.<br />
+			        </li><li>Network configuration has been redesigned, now we support various network profiles, and many more network parameters (hardware address, multiple ip addresses on a single interface, etc) than before.<br />
+			        </li><li>Created a new, more verbose documentation.<br />
+			        </li><li>Switched to udev as the default hotplug multiplexer.<br />
+			        </li><li>Bugfix: now automounting for usb sticks works fine, not only for CDs or DVDs.<br />
+			        </li><li>Added package splitting support.<br />
+			        </li><li>Started to work on a PPC port.<br />
+			        </li><li>Rewritten setup from scratch in C. The new framework will allow to implement a graphical installer, too.<br />
+			        </li><li>The init script system was redesigned: more user-friendly error messages, now uses gettext for translations.<br />
+			        </li><li>Modularized Xorg 7.0, Apache 2.2.0, KDE 3.5.1, Firefox 1.5.0.1, Thunderbird 1.5</li></ul></li></ul><br />
+			Please refer to the Frugalware <a href="http://darcs.frugalware.org/darcsweb/darcsweb.cgi?r=frugalware-stable;a=log">Stable ChangeLog</a> for more information.<br />
+			Download for i686: <a href="download.php?url=frugalware-0.4-iso/frugalware-0.4-i686-net.iso">netinstall</a> (19M), <a href="download.php?url=frugalware-0.4-iso/frugalware-0.4-i686-cd1.iso">cd1</a> (490M), <a href="download.php?url=frugalware-0.4-iso/frugalware-0.4-i686-cd2.iso">cd2</a> (604M), <a href="download.php?url=frugalware-0.4-iso/frugalware-0.4-i686-dvd.iso">dvd</a> (3.5G)<br />
+			Download for x86_64: <a href="download.php?url=frugalware-0.4-iso/frugalware-0.4-x86_64-net.iso">netinstall</a> (19M), <a href="download.php?url=frugalware-0.4-iso/frugalware-0.4-x86_64-dvd.iso">dvd</a> (2.5G)<br />
+			Torrents also <a href="http://linuxtracker.org/index.php?cat=146">available</a>.<br />
+			SHA1SUMS:<br />
+			<tt>dfec06c393187037a362f4d2e57819c4e97e71dd  frugalware-0.4-i686-cd1.iso<br />
+			09c29ec582eadc02dee2be0fd1230cff8ec40695  frugalware-0.4-i686-cd2.iso<br />
+			872912bc9f1caa46895247364bcf7538074f8238  frugalware-0.4-i686-dvd.iso<br />
+			6a1a49985450d2cad8c8efb7f988c266a454f899  frugalware-0.4-i686-net.iso<br />
+			81e79a3bbb9d327555d272d841e3d0fc0c784de7  frugalware-0.4-x86_64-dvd.iso<br />
+			d4b39dbdc9bfadaf379bf7cc3662ce9d0b20a010  frugalware-0.4-x86_64-net.iso</tt><br />
+			<br />
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>33</id>
+		<title>Frugalware 0.4rc2-i686 released</title>
+		<date>Thu Mar 16 00:08:01 CET 2006</date>
+		<author>VMiklos</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			The Frugalware Developer Team is pleased to announce the immediate availability of Frugalware 0.4rc2-i686, the last release candidate of the 0.4-i686 stable release.<br />
+			A short and incomplete list of changes since 0.4rc1-i686:<br />
+			<ul><li>New features:<br />
+				<ul><li>Better support for changing between opensource and proprietary ATI/NVIDIA drivers.<br />
+				</li><li>All packages have been reviewed to work perfectly with X.Org 7.0.<br />
+				</li><li>Various spelling fixes in the configuration tools.<br />
+				</li><li>Fixed font settings for non-English users.<br />
+				</li><li>Reworked the mirror mechanism to ensure that the iso images are available on all mirrors at release time.<br />
+				</li><li>More than 60 new packages: freenx packages + knx (<a href="http://wiki.frugalware.org/Nx">tutorial</a>), lighttpd, sword, thunderbird-locale-switcher, katapult and much more!</li></ul><br />
+			</li><li>Updates: As usual, Frugalware comes with the latest version of upstream stable releases, including:<br />
+				<ul><li>Gcc 4.0.3 (and <a href="http://wiki.frugalware.org/Gcc_building">optionally</a> 4.1.0)<br />
+				</li><li>UDev 087<br />
+				</li><li>MySQL 5.0.19</li></ul></li></ul><br />
+			Please refer to the Frugalware <a href="http://darcs.frugalware.org/darcsweb/darcsweb.cgi?r=frugalware-current;a=log">ChangeLog</a> for more information.<br />
+			Download: <a href="download.php?url=frugalware-current-iso/frugalware-0.4rc2-i686-net.iso">netinstall</a> (19M), <a href="download.php?url=frugalware-current-iso/frugalware-0.4rc2-i686-cd1.iso">cd1</a> (486M), <a href="download.php?url=frugalware-current-iso/frugalware-0.4rc2-i686-cd2.iso">cd2</a> (576M), <a href="download.php?url=frugalware-current-iso/frugalware-0.4rc2-i686-dvd.iso">dvd</a> (3.4G)<br />
+			SHA1SUMS:<br />
+			<tt>49701b761904ed9504198eba8ab1bacae1368d1f  frugalware-0.4rc2-i686-cd1.iso<br />
+			450038688aaf5d7e225b2777f092f604aeb1dc27  frugalware-0.4rc2-i686-cd2.iso<br />
+			f3d90ac6100acb5a8d0d84d3149d18d3b612b46f  frugalware-0.4rc2-i686-dvd.iso<br />
+			9ba1b1325545fd6fcf8353482fde25d82c1877ce  frugalware-0.4rc2-i686-net.iso</tt><br />
+			<br />
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>32</id>
+		<title>Frugalware 0.4rc1-i686 released</title>
+		<date>Thu Mar  2 00:26:59 CET 2006</date>
+		<author>VMiklos</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			The Frugalware Developer Team is pleased to announce the immediate availability of Frugalware 0.4rc1-i686, the first release candidate of 0.4-i686.<br />
+			A short and incomplete list of changes since 0.4pre2-i686:<br />
+			<ul><li>New features:<br />
+				<ul><li>Created a package synchronization client and daemon (syncpkg and syncpkgd) to update packages faster on arches other than i686 (x86_64 and later ppc).<br />
+				</li><li>Implemented fwcpan, a new tool to install any cpan module, just like it would when you install it with the pacman.<br />
+				</li><li>Split OpenOffice, now all language packs and dictionaries can be installed/removed separately.<br />
+				</li><li>More than 80 new packages: Xgl (with a <a href="http://wiki.frugalware.org/Xgl">step by step howto</a>), beagle, fvwm-crystal, cdcat, klamav, kcheckgmail, xvidcap, synaptics, rt2500, rdiff-backup and much more!</li></ul><br />
+			</li><li>Updates: As usual, Frugalware comes with the latest version of upstream stable releases, including:<br />
+				<ul><li>Linux kernel 2.6.15.4<br />
+				</li><li>Perl 5.8.8<br />
+				</li><li>Firefox 1.5.0.1<br />
+				</li><li>Thunderbird 1.5<br />
+				</li><li>KDE 3.5.1<br />
+				</li><li>GNOME 2.12.3</li></ul></li></ul><br />
+			Please refer to the Frugalware <a href="http://darcs.frugalware.org/darcsweb/darcsweb.cgi?r=frugalware-current;a=log">ChangeLog</a> for more information.<br />
+			Download: <a href="download.php?url=frugalware-current-iso/frugalware-0.4rc1-i686-net.iso">netinstall</a> (19M), <a href="download.php?url=frugalware-current-iso/frugalware-0.4rc1-i686-cd1.iso">cd1</a> (494M), <a href="download.php?url=frugalware-current-iso/frugalware-0.4rc1-i686-cd2.iso">cd2</a> (605M), <a href="download.php?url=frugalware-current-iso/frugalware-0.4rc1-i686-dvd.iso">dvd</a> (3.2G)<br />
+			SHA1SUMS:<br />
+			<tt>d686c6b9c34fc03acab6be99468a4fc3b5e5d294  frugalware-0.4rc1-i686-cd1.iso<br />
+			3f8f703d43a0f42bdb65d567c65840a6c14d4704  frugalware-0.4rc1-i686-cd2.iso<br />
+			96a7e8b3cb88caa552a40e87dd04c7c23667e985  frugalware-0.4rc1-i686-dvd.iso<br />
+			13f84d9fe9eedf197a146612244a8c3077dea5f0  frugalware-0.4rc1-i686-net.iso</tt><br />
+			<br />
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>31</id>
+		<title>Frugalware 0.4pre2-i686 released</title>
+		<date>Thu Feb  2 00:29:05 CET 2006</date>
+		<author>VMiklos</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			The Frugalware Developer Team is pleased to announce the immediate availability of Frugalware 0.4pre2-i686, the second technical preview release of 0.4-i686.<br />
+			A short and incomplete list of changes since 0.4pre1-i686:<br />
+			<ul><li>New features:<br />
+				<ul><li>Libificated <a href="http://www.archlinux.org/pacman/">pacman</a> to meet our needs, and the newborn <a href="http://darcs.frugalware.org/darcsweb/darcsweb.cgi?r=pacman">pacman 3</a> has become the default package manager.<br />
+				</li><li>Network configuration has been redesigned, now we support various network profiles, and much more network parameters (hardware address, multiple ip addresses on a single interface, etc) than before.<br />
+				</li><li>Created a new, more verbose <a href="http://frugalware.org/docs.php">documentation</a>.<br />
+				</li><li>Switched to udev as the default hotplug multiplexer.<br />
+				</li><li>Bugfix: now automounting for usb sticks works fine, not only for CDs or DVDs.<br />
+				</li><li>More than 100 new packages - on client side: wepdecrypt, konversation, ltp, gtkpod, firefox extensions, etc.<br />
+				</li><li>New server side packages: xen (with dom0 and domU kernels), darcsweb, rails, perl modules and much more!</li></ul><br />
+			</li><li>Behind the scenes:<br />
+				<ul><li>Added package splitting support.<br />
+				</li><li>Started to work on a PPC port.</li></ul><br />
+			</li><li>Updates: As usual, Frugalware comes with the latest version of upstream stable releases, including:<br />
+				<ul><li>Linux kernel 2.6.15<br />
+				</li><li>Modularized Xorg 7.0<br />
+				</li><li>Apache 2.2.0</li></ul></li></ul><br />
+			Please refer to the Frugalware <a href="http://darcs.frugalware.org/darcsweb/darcsweb.cgi?r=frugalware-current;a=log">ChangeLog</a> for more information.<br />
+			Download: <a href="download.php?url=frugalware-current-iso/frugalware-0.4pre2-i686-net.iso">netinstall</a> (19M), <a href="download.php?url=frugalware-current-iso/frugalware-0.4pre2-i686-cd1.iso">cd1</a> (491M), <a href="download.php?url=frugalware-current-iso/frugalware-0.4pre2-i686-cd2.iso">cd2</a> (694M), <a href="download.php?url=frugalware-current-iso/frugalware-0.4pre2-i686-dvd.iso">dvd</a> (3.1G)<br />
+			SHA1SUMS:<br />
+			<tt>c1f5ab83d14f95247f7e3c6ddfd2f1ffc7125551  frugalware-0.4pre2-i686-cd1.iso<br />
+			def8069198c08cc208c075f3803581ea8b7ef7d1  frugalware-0.4pre2-i686-cd2.iso<br />
+			df8f2ff8f5f6f2b20fa2018bf18a863227769028  frugalware-0.4pre2-i686-dvd.iso<br />
+			8f9ada32b3f37a3a4dd790335df20b347b66df79  frugalware-0.4pre2-i686-net.iso</tt><br />
+			<br />
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>30</id>
+		<title>Frugalware 0.4pre1-i686 released</title>
+		<date>Wed Dec  7 20:23:55 CET 2005</date>
+		<author>VMiklos</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			The Frugalware Developer Team is pleased to announce the immediate availability of Frugalware 0.4pre1-i686, the first technical preview release of 0.4-i686.<br />
+			A short and incomplete list of changes since 0.3-i686:<br />
+			<ul><li>New features:<br />
+				<ul><li>Rewritten setup from scratch in C. The new framework will allow to implement a graphical installer, too.<br />
+				</li><li>Added lots of new features to the setup, such as expert and normal mode, ignoring (non fatal) errors.<br />
+				</li><li>Added several translations to the setup.<br />
+				</li><li>The init script system was redesigned: more user-friendly error messages, now uses gettext for translations.<br />
+				</li><li>More than 100 new packages: treewm, octave, toolame, mingw, ddd, tellico and much more!</li></ul><br />
+			</li><li>Updates: As usual, Frugalware comes with the latest version of upstream stable releases, including:<br />
+				<ul><li>Linux kernel 2.6.14.3<br />
+				</li><li>KDE 3.5.0<br />
+				</li><li>Firefox 1.5<br />
+				</li><li>GCC 4.0.2<br />
+				</li><li>GNU C Library 2.3.6<br />
+				</li><li>GNOME 2.12.2</li></ul></li></ul><br />
+			Please refer to the Frugalware <a href="http://darcs.frugalware.org/darcsweb/darcsweb.cgi?r=frugalware-current;a=log">ChangeLog</a> for more information.<br />
+			Download: <a href="download.php?url=frugalware-current-iso/frugalware-0.4pre1-i686-net.iso">netinstall</a> (20M), <a href="download.php?url=frugalware-current-iso/frugalware-0.4pre1-i686-cd1.iso">cd1</a> (473M), <a href="download.php?url=frugalware-current-iso/frugalware-0.4pre1-i686-cd2.iso">cd2</a> (650M), <a href="download.php?url=frugalware-current-iso/frugalware-0.4pre1-i686-dvd.iso">dvd</a> (2.9G)<br />
+			SHA1SUMS:<br />
+			<tt>10cc34847b8a4b9f6b83dad3d437cbed6898e436  frugalware-0.4pre1-i686-cd1.iso<br />
+			32bcca919a1cbdafd673f8f64300a8ad480df12c  frugalware-0.4pre1-i686-cd2.iso<br />
+			8ae11f0cd5a8afd3b505e129788bf7a1943afaaf  frugalware-0.4pre1-i686-dvd.iso<br />
+			4517c1c2bf790cd492e45b04f1c78e986d9719f1  frugalware-0.4pre1-i686-net.iso</tt><br />
+			<br />
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>29</id>
+		<title>Frugalware 0.3-x86_64 released</title>
+		<date>Wed Oct 19 19:06:30 CEST 2005</date>
+		<author>IroNiQ</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			We are pleased to announce the immediate availability of the x86_64 port of Frugalware 0.3.<br />
+			Frugalware 0.3-x86_64 is now a full-featured port of Frugalware, with almost all of the packages that are available on i686.<br />
+			What does not work currently?<br />
+				<ul><li>OpenOffice.org<br />
+				</li><li>Official flash plugin (from Macromedia)<br />
+				</li><li>Dosemu</li></ul><br />
+			If you can, please test it. If you find a bug, report to <a href="http://bugs.frugalware.org">us</a>. Please include as many details as possible in the bugreport! Thank you.<br />
+			<b>Important:</b> You will need an AMD64 CPU to use 0.3-x86_64! (Intel processors with EM64T extensions might work as well, but those are untested.)<br />
+			Download: <a href="download.php?url=frugalware-0.3-iso/frugalware-0.3-x86_64-net.iso">netinstall</a> (19M), <a href="download.php?url=frugalware-0.3-iso/frugalware-0.3-x86_64-cd1.iso">cd1</a> (492M), <a href="download.php?url=frugalware-0.3-iso/frugalware-0.3-x86_64-cd2.iso">cd2</a> (593M), <a href="download.php?url=frugalware-0.3-iso/frugalware-0.3-x86_64-dvd.iso">dvd</a> (2.0G)<br />
+			SHA1SUMS:<br />
+			<tt>4b3c84723e54e98300b1133413fa2e987c08c2eb  frugalware-0.3-x86_64-cd1.iso<br />
+			e7c28286e9cd819f1eef596000e8902fd10a1932  frugalware-0.3-x86_64-cd2.iso<br />
+			1a78fdfde3dd83b844d44dd5e687e494029b77ec  frugalware-0.3-x86_64-dvd.iso<br />
+			95cf37d80902ad323722b3a0d709fb91de7b11c6  frugalware-0.3-x86_64-net.iso</tt><br />
+			<br />
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>28</id>
+		<title>Frugalware 0.3-i686 released</title>
+		<date>Thu Oct 13 01:09:20 CEST 2005</date>
+		<author>VMiklos</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			The Frugalware Developer Team is pleased to announce the immediate availability of Frugalware 0.3-i686, our third stable release.<br />
+			A short list of most important improvements and news since 0.3rc2-i686:<ul><li>Improvements:<br />
+				<ul><li>Setup: added spannish translation.<br />
+				</li><li>GNOME updated to 2.12.1</li></ul><br />
+			</li><li>Updates: As usual, Frugalware comes with the latest version of upstream stable releases, including:<br />
+				<ul><li>Linux kernel 2.6.13.3<br />
+				</li><li>GCC 4.0.2<br />
+				</li><li>Thunderbird 1.0.7</li></ul></li></ul><br />
+			Please refer to the Frugalware <a href="http://darcs.frugalware.org/darcsweb/darcsweb.cgi?r=frugalware-stable;a=log">ChangeLog</a> for more information.<br />
+			Download: <a href="download.php?url=frugalware-0.3-iso/frugalware-0.3-i686-net.iso">netinstall</a> (18M), <a href="download.php?url=frugalware-0.3-iso/frugalware-0.3-i686-cd1.iso">cd1</a> (478M), <a href="download.php?url=frugalware-0.3-iso/frugalware-0.3-i686-cd2.iso">cd2</a> (648M), <a href="download.php?url=frugalware-0.3-iso/frugalware-0.3-i686-dvd.iso">dvd</a> (2.8G)<br />
+			SHA1SUMS:<br />
+			<tt>3538fe3f1d5151828cf1c9f7daff0ab8115a3ec7  frugalware-0.3-i686-cd1.iso<br />
+			fe942eecd83774eddb5d045e4d477e83ef485c24  frugalware-0.3-i686-cd2.iso<br />
+			fe2d52e2036bb258f5ec51730a07e49c9666edb0  frugalware-0.3-i686-dvd.iso<br />
+			b11a257a4e9f34fe292abbf7d22402b8b9a24199  frugalware-0.3-i686-net.iso</tt><br />
+			<br />
+			<b>Update</b>: CD images also <a href="http://linuxtracker.org/torrents-details.php?id=681">available</a> via bittorrent.<br />
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>27</id>
+		<title>Frugalware 0.3rc2-i686 released</title>
+		<date>Mon Oct  3 22:17:09 CEST 2005</date>
+		<author>VMiklos</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			The Frugalware Developer Team is pleased to announce the immediate availability of Frugalware 0.3rc2-i686, the second release candidate of the upcoming 0.3-i686 stable release.<br />
+			A short list of most important improvements and news since 0.3rc1-i686:<ul><li>Improvements:<br />
+				<ul><li>Setup: added PPPoE support, added Polish translation, now the whole installation process' log saved to the installed system.<br />
+				</li><li>New wireless packages: madwifi, wlan-ng, etc.</li></ul><br />
+			</li><li>Package highlights: More than 60 new packages: gprsec, squid, privoxy, tor, weechat and more!<br />
+			</li><li>Updates: As usual, Frugalware comes with the latest version of upstream stable releases, including:<br />
+				<ul><li>Linux kernel 2.6.13<br />
+				</li><li>OpenOffice.org 1.1.5<br />
+				</li><li>Firefox 1.0.7</li></ul></li></ul><br />
+			Please refer to the Frugalware <a href="http://darcs.frugalware.org/darcsweb/darcsweb.cgi?r=frugalware-current;a=log">ChangeLog</a> for more information.<br />
+			Download: <a href="download.php?url=frugalware-current-iso/frugalware-0.3rc2-i686-net.iso">netinstall</a> (18M), <a href="download.php?url=frugalware-current-iso/frugalware-0.3rc2-i686-cd1.iso">cd1</a> (488M), <a href="download.php?url=frugalware-current-iso/frugalware-0.3rc2-i686-cd2.iso">cd2</a> (649M), <a href="download.php?url=frugalware-current-iso/frugalware-0.3rc2-i686-dvd.iso">dvd</a> (2.7G)<br />
+			SHA1SUMS:<br />
+			<tt>1e647a622223383008b0d119b5ba745d8eba637f  frugalware-0.3rc2-i686-cd1.iso<br />
+			f68794f3c0d9151965ab46f83992c28932129c71  frugalware-0.3rc2-i686-cd2.iso<br />
+			e9ac4a6fb5d4c2ab9cad909b07222528ac972531  frugalware-0.3rc2-i686-dvd.iso<br />
+			7630567a25764113000f744a742e10a93cd2a7b5  frugalware-0.3rc2-i686-net.iso</tt><br />
+			<br />
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>26</id>
+		<title>Frugalware 0.3rc1-i686 released</title>
+		<date>Thu Sep 15 22:15:47 CEST 2005</date>
+		<author>VMiklos</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			The Frugalware Developer Team is pleased to announce the immediate availability of Frugalware 0.3rc1-i686, the first release candidate of the upcoming 0.3-i686 stable release.<br />
+			A short list of most important improvements and news since 0.3pre2-i686:<ul><li>Improvements:<br />
+				<ul><li>Setup: added XFS support, and now you can configure the source of packages (install from a custom mirror or HDD)<br />
+				</li><li>Added mbrola and hunspell language packs.<br />
+				</li><li>New stats-generator packages: webalizer, munin, etc.<br />
+				</li><li>Added several adesklet applet package.</li></ul><br />
+			</li><li>Package highlights: More than 120 new packages: kdebluetooth, kismet, lives, fuse, muttng amavisd-new and more!<br />
+			</li><li>Updates: As usual, Frugalware comes with the latest version of upstream stable releases, including:<br />
+				<ul><li>Linux kernel 2.6.13<br />
+				</li><li>GNOME 2.12<br />
+				</li><li>Gtk+ 2.8.3</li></ul></li></ul><br />
+			Please refer to the Frugalware <a href="http://darcs.frugalware.org/darcsweb/darcsweb.cgi?r=frugalware-current;a=log">ChangeLog</a> for more information.<br />
+			Download: <a href="download.php?url=frugalware-current-iso/frugalware-0.3rc1-i686-net.iso">netinstall</a> (18M), <a href="download.php?url=frugalware-current-iso/frugalware-0.3rc1-i686-cd1.iso">cd1</a> (523M), <a href="download.php?url=frugalware-current-iso/frugalware-0.3rc1-i686-cd2.iso">cd2</a> (649M), <a href="download.php?url=frugalware-current-iso/frugalware-0.3rc1-i686-dvd.iso">dvd</a> (2.7G)<br />
+			SHA1SUMS:<br />
+			<tt>9098d53612de87d7198390f46252db54b1289959  frugalware-0.3rc1-i686-cd1.iso<br />
+			4fbd648f02ca75dc20cbc12f3f7a969b10140b6c  frugalware-0.3rc1-i686-cd2.iso<br />
+			0008ce00fa4a68d53de71f9c19569d4fa664359f  frugalware-0.3rc1-i686-dvd.iso<br />
+			58f392f701560670192695e2add982fd16e08582  frugalware-0.3rc1-i686-net.iso</tt><br />
+			<br />
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>25</id>
+		<title>Frugalware 0.3pre2-i686 released</title>
+		<date>Wed Aug 18 07:13:14 CEST 2005</date>
+		<author>VMiklos</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			The Frugalware Developer Team is pleased to announce the immediate availability of Frugalware 0.3pre2-i686, the second preview of the upcoming 0.3-i686 stable release.<br />
+			A short list of most important improvements and news since 0.3pre1-i686:<ul><li>Improvements:<br />
+				<ul><li>Ivman replaced submount, which is no longer installed by default.<br />
+				</li><li>Setup: Now Frugalware can be installed to a software RAID partition.<br />
+				</li><li>Added French language support to the installer.</li></ul><br />
+			</li><li>Package highlights: More than 180 new packages: abiword, nvu, ndiswrapper, kaffeine, chkrootkit and more!<br />
+			</li><li>Updates: As usual, Frugalware comes with the latest version of upstream stable releases, including:<br />
+				<ul><li>Linux kernel 2.6.12.4<br />
+				</li><li>GCC 4.0.1<br />
+				</li><li>HAL 0.5.3<br />
+				</li><li>KOffice 1.4.1</li></ul></li></ul><br />
+			Please refer to the Frugalware <a href="changelog.php">ChangeLog</a> for more information.<br />
+			Download: <a href="download.php?url=frugalware-current-iso/frugalware-0.3pre2-i686-net.iso">netinstall</a> (18M), <a href="download.php?url=frugalware-current-iso/frugalware-0.3pre2-i686-cd1.iso">cd1</a> (510M), <a href="download.php?url=frugalware-current-iso/frugalware-0.3pre2-i686-cd2.iso">cd2</a> (683M), <a href="download.php?url=frugalware-current-iso/frugalware-0.3pre2-i686-dvd.iso">dvd</a> (2.6G)<br />
+			MD5SUMS:<br />
+			<tt>95f1920e936b016c4117908b1afcbc8b  frugalware-0.3pre2-i686-cd1.iso<br />
+			28643f599df88e72cf4830a6f5e533d2  frugalware-0.3pre2-i686-cd2.iso<br />
+			6466754fd31c3454e6f50bb848660828  frugalware-0.3pre2-i686-dvd.iso<br />
+			9f85841e54d326b97215cb164daebf54  frugalware-0.3pre2-i686-net.iso</tt><br />
+			<br />
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>24</id>
+		<title>Frugalware 0.3pre1-x86_64 released</title>
+		<date>Sun Jul  3 19:46:19 CEST 2005</date>
+		<author>VMiklos</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			We are pleased to announce the immediate availability of the x86_64 port of Frugalware 0.3pre1.<br />
+			Frugalware 0.3pre1-x86_64 is a native 64-bit system, which means we don't use multilib. (For example because of this, you have to use our gplflash package instead of the usual flashplugin.)<br />
+			What works?<br />
+				<ul><li>base system :-)<br />
+				</li><li>the graphical system's core<br />
+				</li><li>desktop environments: KDE, Xfce and GNOME</li></ul><br />
+			What does not work currently?<br />
+				<ul><li>OpenOffice.org (we are working on it and we have promising results)<br />
+				</li><li>I18n: Firefox, Thunderbird, KOffice</li></ul><br />
+			If you can, please test it. If you find a bug, report to <a href="mailto:frugalware-users@frugalware.org">us</a>. Please include as many details as possible in the bugreport! Thank you.<br />
+			<b>Important:</b> You will need an AMD64 CPU to use 0.3pre1-x86_64! (Intel processors with EM64T extensions might work as well, but those are untested.)<br />
+			Download: <a href="download.php?url=frugalware-current-iso/frugalware-0.3pre1-x86_64-net.iso">netinstall</a> (17M), <a href="download.php?url=frugalware-current-iso/frugalware-0.3pre1-x86_64-cd1.iso">cd1</a> (495M), <a href="download.php?url=frugalware-current-iso/frugalware-0.3pre1-x86_64-cd2.iso">cd2</a> (578M), <a href="download.php?url=frugalware-current-iso/frugalware-0.3pre1-x86_64-dvd.iso">dvd</a> (1.7G)<br />
+			MD5SUMS:<br />
+			<tt>78f35ff5a9389930781e626f91124637  frugalware-0.3pre1-x86_64-cd1.iso<br />
+			ed6ff1bc5033a715041a1b00b382a113  frugalware-0.3pre1-x86_64-cd2.iso<br />
+			4dd5391696395caa67206dc56cedf3ac  frugalware-0.3pre1-x86_64-dvd.iso<br />
+			3b9a75ec84c21af53e14cd2f500d318c  frugalware-0.3pre1-x86_64-net.iso</tt><br />
+			<br />
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>23</id>
+		<title>0.3pre1 in the news</title>
+		<date>Wed Jun 29 09:57:27 CEST 2005</date>
+		<author>VMiklos</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			There's a new <a href="http://www.tuxmachines.org/node/1501">review</a> about Frugalware over at <a href="http://www.tuxmachines.org/">tuxmachines</a>. Also you can find <a href="http://www.tuxmachines.org/gallery/frugal">there</a> 65 screenshots, too.<br />
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>22</id>
+		<title>Frugalware 0.3pre1-i686 released</title>
+		<date>Wed Jun 22 23:34:49 CEST 2005</date>
+		<author>VMiklos</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			The Frugalware Developer Team is pleased to announce the immediate availability of Frugalware 0.3pre1-i686, the first preview of the upcoming 0.3-i686 stable release.<br />
+			A short list of most important improvements and news since 0.2:<ul><li>Improvements:<br />
+				<ul><li>Added a new tool: repoman. It helps you to compile packages from source, allowing to automatically create and install closed-source packages like realplayer or skype (<tt>repoman merge packagename</tt>). Also it allows you to download all package's buildscript (<tt>repoman update</tt>) and recompile them with your compiler flags, "a la Gentoo".<br />
+				</li><li>Our build system now supports more than one architecture which means you can expect an x86_64 preview release soon.<br />
+				</li><li>All packages got their group, so that if you installed only a base system, you can install all network-related packages with <tt>pacman -S network</tt> and so.<br />
+				</li><li>Created a new config tool: wificonfig, to configure your wireless connection.<br />
+				</li><li>The KDE menu changed a bit: now most installed non-kde applications should apper in the menu, too.<br />
+				</li><li>Localized Thunderbird and added localized spellcheck support.<br />
+				</li><li>The gimp-print printer drivers replaced with the foomatic ones, wich means we support much more printers now.<br />
+				</li><li>Packaged the rox desktop environment.<br />
+				</li><li>New web <a href="http://frugalware.org/packages.php">interface</a> for viewing informations about packages.<br />
+				</li><li>Now all package has it's own changelog, which can be viewed from for example the packages page.</li></ul><br />
+			</li><li>Package highlights: More than 150 new packages: windowmaker applets, firestarter, pure-ftpd, subversion and more.<br />
+			</li><li>Updates: As usual, Frugalware cames with the latest version of upstream stable releases, including:<br />
+				<ul><li>Linux kernel 2.6.12<br />
+				</li><li>GCC 3.4.4<br />
+				</li><li>KDE 3.4.1</li></ul></li></ul><br />
+			Please refer to the Frugalware <a href=changelog.php>ChangeLog</a> for more information.<br />
+			Download: <a href="download.php?url=frugalware-current-iso/frugalware-0.3pre1-i686-net.iso">netinstall</a> (16M), <a href="download.php?url=frugalware-current-iso/frugalware-0.3pre1-i686-cd1.iso">cd1</a> (506M), <a href="download.php?url=frugalware-current-iso/frugalware-0.3pre1-i686-cd2.iso">cd2</a> (692M), <a href="download.php?url=frugalware-current-iso/frugalware-0.3pre1-i686-dvd.iso">dvd</a> (2.4G)<br />
+			MD5SUMS:<br />
+			<tt>7e62e1aeb2a32f29edf26670f268bd63  frugalware-0.3pre1-i686-cd1.iso<br />
+			6ba2f51262fd81850a03c8c9603823af  frugalware-0.3pre1-i686-cd2.iso<br />
+			284386e5fcf062c4b71f9a72cd8f138f  frugalware-0.3pre1-i686-dvd.iso<br />
+			5066616ee44c8489b14a573cbaeba95b  frugalware-0.3pre1-i686-net.iso</tt><br />
+			<br />
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>21</id>
+		<title>3 more articles in online IT newspages</title>
+		<date>Sun Jun 23 23:21:34 CEST 2005</date>
+		<author>IroNiQ</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			</p><div align="justify">Three more articles are published in online IT newspages about Frugalware Linux. The first can be read on th Newsforge site <a href="http://os.newsforge.com/os/05/06/03/2046247.shtml?tid=152&amp;tid=2">here</a> (the article is also available on Linux.com, <a href="http://distrocenter.linux.com/distrocenter/05/06/03/2046259.shtml?tid=127">here</a>), written by Eduardo Romero. The other two articles are reviews from different point of view. The <a href="http://www.linuxquestions.org/reviews/showproduct.php/product/565">first review</a> is readable on <a href="http://www.linuxquestions.org">linuxquestions.org</a>. The other <a href="http://www.distrotalk.net/cms_view_article.php?aid=4">review</a> is avialable on <a href="http://www.distrotalk.net/">distrotalk.net</a>.<br />
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>20</id>
+		<title>Articles about Frugalware Linux</title>
+		<date>Mon May  9 21:42:15 CEST 2005</date>
+		<author>IroNiQ</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			</p><div align="justify">Two arcticles are published about Frugalware Linux. The first is an interview on <a href="http://www.jox.hu">jox.hu</a>, a hungarian IT page. The article is available from <a href="http://www.jox.hu/cikk/?id=141&amp;r=12">here</a> (only in Hungarian). The second is on <a href="http://distrowatch.com">Distrowatch.com</a>. The Distrowatch staff chose the Frugalware Linux to the "Featured distribution of the week". They spent some time to install and evaluate other, well-known Linux distributions and decided to give our distro that title. You can read this article <a href="http://distrowatch.com/weekly.php?issue=20050509#fdow">here</a>.<br />
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>19</id>
+		<title>Frugalware 0.2 released</title>
+		<date>Thu Apr 28 09:33:28 CEST 2005</date>
+		<author>VMiklos</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			The Frugalware Developer Team is pleased to announce the immediate availability of Frugalware 0.2, our second stable release.<br />
+			A short list of the most important improvements and bugfixes since 0.2rc2:<ul><li>updates:<br />
+				<ul><li>Mozilla Suite to 1.7.7<br />
+				</li><li>MPlayer 1.0pre7</li></ul><br />
+			</li><li>new packages:<br />
+				<ul><li>irda-utils (Utilities for infrared communication between devices)<br />
+				</li><li>frugalrledit (Runlevel Editor for Frugalware Linux.)</li></ul><br />
+			</li><li>fixes:<br />
+				<ul><li>added patch to binutils to ignore as_needed libs that were not needed</li></ul></li></ul><br />
+			Please refer to the Frugalware <a href=changelog.php>ChangeLog</a> for more information.<br />
+			Download: <a href="download.php?url=frugalware-0.2-iso/frugalware-0.2-net.iso">netinstall</a> (21M), <a href="download.php?url=frugalware-0.2-iso/frugalware-0.2-cd1.iso">cd1</a> (473M), <a href="download.php?url=frugalware-0.2-iso/frugalware-0.2-cd2.iso">cd2</a> (691M), <a href="download.php?url=frugalware-0.2-iso/frugalware-0.2-cd3.iso">cd3</a> (700M), <a href="download.php?url=frugalware-0.2-iso/frugalware-0.2-dvd.iso">dvd</a> (2.5G)<br />
+			MD5SUMS:<br />
+			<tt>252b1b80a7dced637d581215ae8a5c0d  frugalware-0.2-cd1.iso<br />
+			626a429a63e9fa050feac480f03bb2f2  frugalware-0.2-cd2.iso<br />
+			396e4cb0ffe5e66803d609fe675b9615  frugalware-0.2-cd3.iso<br />
+			bb0e6b7ac803ff70553f497c91abd6f0  frugalware-0.2-dvd.iso<br />
+			537648812bed287fb3d23965c5f0a266  frugalware-0.2-net.iso</tt><br />
+			<br />
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>18</id>
+		<title>Frugalware 0.2rc2 released</title>
+		<date>Mon Apr 18 09:22:55 CEST 2005</date>
+		<author>VMiklos</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			The Frugalware Developer Team is pleased to announce the immediate availability of Frugalware 0.2rc2, the second (and last) release candidate of the upcoming 0.2 stable release.<br />
+			A short list of the most important improvements and bugfixes since 0.2rc1:<ul><li>updates:<br />
+				<ul><li>updated GNOME to 2.10.1<br />
+				</li><li>Firefox (+ language packs) updated to 1.0.3<br />
+				</li><li>updated Linux kernel to 2.6.11.7<br />
+				</li><li>updated glibc to 2.3.5</li></ul><br />
+			</li><li>new packages:<br />
+				<ul><li>bk-client (The Open Source BitKeeper Client)<br />
+				</li><li>xemacs (A highly customizable open source text editor and application development system.)<br />
+				</li><li>raggle (A console RSS aggregator, written in Ruby.)<br />
+				</li><li>lsof (Displays information about files open to Unix processes.)</li></ul><br />
+			</li><li>fixes:<br />
+				<ul><li>now loop and lp modules are loaded automatically, so /dev/loop* and /dev/lp* devices will be created during boot</li></ul><br />
+			</li><li>setup:<br />
+				<ul><li>display a progressbar while downloading in netinstall mode<br />
+				</li><li>if an error occured during the installation, you have to press enter before setup continues<br />
+				</li><li>don't restart your computer after a successful setup, if you want</li></ul></li></ul><br />
+			Please refer to the Frugalware <a href=changelog.php>ChangeLog</a> for more information.<br />
+			Frugalware 0.2rc2 can be downloaded by visiting the <a href=download.php>download</a> page.<br />
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>17</id>
+		<title>Frugalware 0.2rc1 released</title>
+		<date>Thu Apr  7 09:17:18 CEST 2005</date>
+		<author>VMiklos</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			The Frugalware Developer Team is pleased to announce the immediate availability of Frugalware 0.2rc1, the first release candidate of the upcoming 0.2 stable release.<br />
+			A short list of most important improvements and fixed bugs since 0.2pre2:<ul><li>updates:<br />
+				<ul><li>updated GNOME to 2.10.0<br />
+				</li><li>updated KDE to 3.4.0<br />
+				</li><li>updated Linux kernel to 2.6.11<br />
+				</li><li>Firefox (+language packs) and Thunderbird updated to 1.0.2<br />
+				</li><li>Xfce updated to 4.2.1</li></ul><br />
+			</li><li>new packages:<br />
+				<ul><li>new openoffice.org language packs<br />
+				</li><li>new firefox language packs<br />
+				</li><li>gnome-spell (A GNOME/Bonobo component for spell checking)<br />
+				</li><li>wvdial (WVDial CLI dialer)<br />
+				</li><li>valknut (Direct Connect 4 Linux File Sharing program.)<br />
+				</li><li>courier-imap (The Courier IMAP and POP3 server)</li></ul><br />
+			</li><li>artwork:<br />
+				<ul><li>new default cursor and GNOME theme</li></ul><br />
+			</li><li>setup:<br />
+				<ul><li>support for XDM configuration (if you do not install KDM or GDM)</li></ul></li></ul><br />
+			Please refer to the Frugalware <a href=changelog.php>ChangeLog</a> for more information.<br />
+			Frugalware 0.2rc1 can be downloaded by visiting the <a href=download.php>download</a> page.<br />
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>16</id>
+		<title>KDE 3.4.0 packages are on mirrors</title>
+		<date>Sun Mar 20 23:30:16 CET 2005</date>
+		<author>aThom</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			KDE 3.4.0 packages are ready!<br />
+			You can read the announcement <a href="http://kde.org/announcements/announce-3.4.php">here</a>.<br />
+			You can read about the new features <a href="http://developer.kde.org/development-versions/kde-3.4-features.html">here</a>.<br />
+			Packaging changes since 3.3.2:<br />
+			<ul><li>Changing groups: If you want to install only the core kde packages, use 'pacman -S kde-core', if you want additional packages (k3b, krusader, etc) use 'pacman -S kde'.<br />
+			</li><li>kde-i18n packages are in the 'extra/locale' group.</li></ul><br />
+			New packages:<blockquote>kde-i18n-br, kde-i18n-fy, kde-i18n-ga, kde-i18n-lt, kde-i18n-mk, kde-i18n-se</blockquote><br />
+			Removed packages:<blockquote>kde-i18n-af, kde-i18n-el, kde-i18n-fa, kde-i18n-gl, kde-i18n-hr, kde-i18n-mn, kde-i18n-ms, kde-i18n-uz, kde-i18n-zh_TW</blockquote><br />
+			Known "bugs" / need to fix:<br />
+			<ul><li>A bug was found in the groupware support of kontact/kmail, which was too late for the KDE 3.4 release. Get <a href="http://download.kde.org/stable/3.4/src/kdepim-fix-imap-resource-type.diff">kdepim-fix-imap-resource-type.diff</a> applied to the sources before you're using the groupware wizard. For more information, see <a href="http://kde.org/info/3.4.php">http://kde.org/info/3.4.php</a><br />
+			</li><li>If you start the OpenOffice.org, and choose File -&gt; Open, then the dialog appears shortly. After that the KDE Crashmanager come up with the following message:<br />
+			The Program Openoffice (kdefilepicker) crash and send signal 11<br />
+			It's fixed in the OOo2 KDE builds. (See <a href="http://bugs.kde.org/show_bug.cgi?id=100849">http://bugs.kde.org/show_bug.cgi?id=100849</a>.) As workaround on KDE side, add the following lines to your ~/.kde/share/config/kdeglobals:<br />
+			[Development]<br />
+			AutoCheckAccelerators=false<br />
+			</li><li>Upgraders: after the usual 'pacman -Syu', use 'pacman -S kdelibs kdebase' again, otherwise you'll have problems with kde menus!<br />
+			</ul><br />
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>15</id>
+		<title>GNOME 2.10.0 is in -current</title>
+		<date>Mon Mar 14 15:20:02 CET 2005</date>
+		<author>laci</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			If everything goes fine tomorrow GNOME 2.10.0 will be on mirrors.<br />
+			Official release notes: <a href="http://www.gnome.org/start/2.10/notes/">http://www.gnome.org/start/2.10/notes/</a><br />
+			These are untested and need to review or update:<br />
+			<ul><li>GNOME bindings.<br />
+			</li><li>Mono.<br />
+			</li><li>Some packages in extra/gnome.</li></ul><br />
+			Packaging changes from 2.8:<br />
+			<ul><li>Prefix is /usr.<br />
+			</li><li>Added groups() directive where it was missed.</li></ul><br />
+			New packages:<br />
+			<ul><li>gnome-backgrounds<br />
+			</li><li>gnome-doc-utils<br />
+			</li><li>gnome-menus<br />
+			</li><li>gnome-pilot-conduits<br />
+			</li><li>libcroco</li></ul><br />
+			Removed packages (go to pasture):<br />
+			<ul><li>at-spi<br />
+			</li><li>gnome-mag<br />
+			</li><li>gnome-speech<br />
+			</li><li>gnopernicus<br />
+			</li><li>gok<br />
+			</li><li>nautilus-media</li></ul><br />
+			Not packaged packages:<br />
+			<ul><li>sound-juicer (I think goobox is better grabber application)</li></ul><br />
+			Known "bugs" / need to fix:<br />
+			<ul><li>If KDE is installed, the GNOME menu aren't displayed correctly:<br />
+			<a href="http://frugalware.org/~laci/screenshots/menu-bad.png">http://frugalware.org/~laci/screenshots/menu-bad.png</a><br />
+			Good menu: <a href="http://frugalware.org/~laci/screenshots/menu-good.png">http://frugalware.org/~laci/screenshots/menu-good.png</a><br />
+			</li><li>OpenOffice.org menu entries isn't in the GNOME menu.</li></ul><br />
+			Screenshots:<br />
+			<ul><li><a href="http://frugalware.org/~laci/screenshots/GNOME06.png">http://frugalware.org/~laci/screenshots/GNOME06.png</a><br />
+			</li><li><a href="http://frugalware.org/~laci/screenshots/GNOME07.png">http://frugalware.org/~laci/screenshots/GNOME07.png</a></li></ul><br />
+			Please test it and report me if something doesn't work as it should.<br />
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>14</id>
+		<title>Frugalware 0.2pre2 released</title>
+		<date>Wed Feb 23 22:59:18 CET 2005</date>
+		<author>VMiklos</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			The Frugalware Developer Team is pleased to announce the immediate availability of Frugalware 0.2pre2, the second preview of the upcoming 0.2 stable release.<br />
+			A short list of most important improvements and fixed bugs since 0.2pre1:<ul><li>new packages:<br />
+				<ul><li>OpenOffice.org 1.1.4 + language packs<br />
+				</li><li>frugalpkg (Graphical frontend to pacman)<br />
+				</li><li>gnomebaker (CD/DVD Burner for GNOME)<br />
+				</li><li>fglrx (Hardware Accelerated ATI driver for xorg)<br />
+				</li><li>wireless_tools (including iwconfig)<br />
+				</li><li>audacity<br />
+				</li><li>fontforge<br />
+				</li><li>krusader<br />
+				</li><li>qemu (A fast processor emulator)<br />
+				</li><li>rpm</li></ul><br />
+			</li><li>updates:<br />
+				<ul><li>updated GNOME to 2.8.3<br />
+				</li><li>Xfce updated to 4.2.0<br />
+				</li><li>updated XOrg to 6.8.2<br />
+				</li><li>updated tetex to 3.0<br />
+				</li><li>updated glibc to 2.3.4</li></ul><br />
+			</li><li>improvements:<br />
+				<ul><li>added .desktop files to window managers to work with GDM<br />
+				</li><li>Hungarian documentation<br />
+				</li><li>Slovak setup and documentation</li></ul><br />
+			</li><li>setup:<br />
+				<ul><li>initial netinstall support</li></ul></li></ul><br />
+			Please refer to the Frugalware <a href=changelog.php>ChangeLog</a> for more information.<br />
+			Frugalware 0.2pre2 can be downloaded by visiting the <a href=download.php>download</a> page.<br />
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>13</id>
+		<title>OpenOffice.org in Frugalware</title>
+		<date>Mon Feb 21 15:40:32 CET 2005</date>
+		<author>IroNiQ</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			We have good news to our users: the openoffice.org package is ready to use. This package was made from the <a href="http://www.novell.com/linux/ximian.html">Ximian</a> <a href="http://www.openoffice.org/">OpenOffice.org</a>. The main package is the "openoffice.org" what contains the user interface and also the dictionary, the hyphenation and the thesaurus in English.<br />
+			The languaga packs are called "openoffice.org-i18n-xx" (where xx is the small country code, eg: hu, de, fr) and contains the dictionaries, the hyphenations and the thesaurus in te given language.<br />
+			IroNiQ<br />
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>12</id>
+		<title>Offical Forum</title>
+		<date>Sun Feb  6 19:46:21 CET 2005</date>
+		<author>shrift</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			Hi all! So, at last we made it! Our new forum can be reached here: <a href="http://forums.frugalware.org/">forums.frugalware.org</a>!<br />
+			Any problems can be reported at: <a href="mailto:shrift@frugalware.org">shrift@frugalware.org</a> or at the "<a href="http://forums.frugalware.org/index.php?t=thread&amp;frm_id=29">About the forum</a>" topic.<br />
+			Shrift<br />
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>11</id>
+		<title>Irc web interface and logs</title>
+		<date>Thu Jan 20 00:21:12 CET 2005</date>
+		<author>IroNiQ</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			We have good news to that users, who cannot join our irc server: we have a web interface to our irc channel. You can join the channel on <a href="irc.php">this</a> address. You can also find here the channel log.<br />
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>10</id>
+		<title>Forum and coming new functions</title>
+		<date>Sun Jan 16 21:58:22 CET 2005</date>
+		<author>IroNiQ</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			We are pleased to inform our Hungarian users that the HUP (Hungarian Unix Portal) made a complete forum for us, which is available <a href="http://hup.hu/modules.php?name=Forums&amp;file=viewforum&amp;f=56">here</a>.<br />
+			In the near future two new things will be available in our webpage: the Wiki page and our Forum.<br />
+			Besides these things, the Frugalware will widen with the slovak language. The Frugalware User Documentation is ready (can be read <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-current/docs/html/sk/">here</a>) in slovak language, the translation of the setup and the init system is going on now.<br />
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>9</id>
+		<title>Frugalware 0.2pre1 released</title>
+		<date>Mon Jan 10 09:22:50 CET 2005</date>
+		<author>VMiklos</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			The Frugalware Developer Team is pleased to announce the immediate availability of Frugalware 0.2pre1, the first preview of the upcoming 0.2 stable release.<br />
+			A short list of most important improvements and fixed bugs since 0.1:<ul><li>new packages:<br />
+				<ul><li>GNOME 2.8 (including GDM)<br />
+				</li><li>Xfce 4.2rc3<br />
+				</li><li>Firefox 1.0 language packs<br />
+				</li><li>Thunderbird 1.0<br />
+				</li><li>tetex-bin, tetex-base and kile<br />
+				</li><li>wine<br />
+				</li><li>reiser4progs<br />
+				</li><li>fluxbox</li></ul><br />
+			</li><li>updates:<br />
+				<ul><li>updated KDE to 3.3.2 (+ security fixes)<br />
+				</li><li>KOffice updated to 1.3.5<br />
+				</li><li>kernel updated to 2.6.10 (+ security fixes)<br />
+				</li><li>blender updated to 2.36<br />
+				</li><li>Firefox updated to 1.0<br />
+				</li><li>new bootsplash theme<br />
+				</li><li>GTK+2 updated to 2.6.1<br />
+				</li><li>GCC updated to 3.4.3</li></ul><br />
+			</li><li>fixes:<br />
+				<ul><li>XOrg now should work with i810 cards<br />
+				</li><li>fixed grubconfig to report no error when hitting cancel before installation</li></ul><br />
+			</li><li>setup:<br />
+				<ul><li>the first CD splitted up: one for the base system, one for the graphical (x11) system<br />
+				</li><li>prevented several memory leaks in setup, now should work with 64MB of memory<br />
+				</li><li>fixed several typos in setup texts</li></ul></li></ul><br />
+			Please refer to the Frugalware <a href=changelog.php>ChangeLog</a> for more information.<br />
+			Frugalware 0.2pre1 can be downloaded by visiting the <a href=download.php>download</a> page.<br />
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>8</id>
+		<title>XFce is in -current, Firefox locale packages, too</title>
+		<date>Thu Dec 30 21:15:06 CET 2004</date>
+		<author>IroNiQ</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			The Frugalware Developer Team is pleased to announce the immediate availability of the long-time expected Xfce4 window manager and the xfce4-goodies package. Besides new language packages are available to the firefox browser.<br />
+			Install method:<br />
+			<ul><li>Syncronizing package database: pacman -Sy<br />
+			</li><li>installing Xfce4: pacman -S xfce4<br />
+			</li><li>installing xfce4-goodies: pacman -S xfce4-goodies<br />
+			</li><li>installing firefox language packages: pacman -S firefox-$lang (where $lang is the two-letter language code, like: hu, de, fr)</ul><br />
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>7</id>
+		<title>Planned downtime</title>
+		<date>Tue Nov 16 09:52:54 CET 2004</date>
+		<author>VMiklos</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			Today, approximately between 17-18h (CET), frugalware.org will be unavailable. This affects all (www, ftp, rsync, mailman) services, except dns. Thank for your understanding.<br />
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>6</id>
+		<title>New functions on webpage</title>
+		<date>Sun Nov 14 23:23:21 CET 2004</date>
+		<author>IroNiQ</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			Two new functions are available on our webpage: the <a href=roadmap.php>roadmap</a>, where you can find our releasing cycle, and the <a href=wishlist.php>wishlist</a>/<a href=todolist.php>todolist</a>, where you can ask for your favourite program or see the list, what do we have to do.<br />
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>5</id>
+		<title>Frugalware 0.1 screenshot tour by OSDir</title>
+		<date>Sat Nov  6 22:35:40 CET 2004</date>
+		<author>VMiklos</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			OSDir installed a Frugalware 0.1 to a test machine and took 78 pictures during installation, wich can be found <a href="http://osdir.com/shots/slideshows/slideshow.php?release=169&amp;slide=1">here</a>.<br />
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>4</id>
+		<title>Frugalware 0.1 released</title>
+		<date>Tue Nov  2 10:27:36 CET 2004</date>
+		<author>VMiklos</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			The Frugalware Developer Team is pleased to announce the immediate availability of Frugalware 0.1, our first stable release.<br />
+			A short list of improvements and fixed bugs since rc2:<ul><li>improvements:<br />
+				<ul><li>added support for using a separate /boot partition<br />
+				</li><li>moved all removable media entries from /mnt to /media<br />
+				</li><li>updated kde to 3.3.1</li></ul><br />
+			</li><li>new packages:<br />
+				<ul><li>strace<br />
+				</li><li>openbox, obconf, and their dependencies<br />
+				</li><li>irssi<br />
+				</li><li>lmsensors<br />
+				</li><li>nano<br />
+				</li><li>hunspell<br />
+				</li><li>screen<br />
+				</li><li>centericq</li></ul><br />
+			</li><li>fixes:<br />
+				<ul><li>got xdm to work</li></ul><br />
+			</li><li>setup:<br />
+				<ul><li>fixed cleaning up cache when only the first cd used<br />
+				</li><li>added support for displaying detailed information about MS partitions<br />
+				</li><li>now short descriptions are available for packages<br />
+				</li><li>support for usb keyboards</li></ul></li></ul><br />
+			Please refer to the Frugalware <a href=changelog.php>Change Log</a> for more information.<br />
+			Frugalware 0.1 can be downloaded by visiting the <a href=download.php>download</a> page.<br />
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>3</id>
+		<title>Frugalware 0.1rc2 released</title>
+		<date>Mon Oct 11 15:40:13 CEST 2004</date>
+		<author>VMiklos</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			The Frugalware Developer Team is pleased to announce the immediate availability of Frugalware 0.1rc2, the second release candidate of the 0.1 release.<br />
+			For a list of improvements and fixed bugs since rc1, please refer to the Frugalware <a href=changelog.php>Change Log</a>.<br />
+			Frugalware 0.1rc2 can be downloaded by visiting the <a href=download.php>download</a> page.<br />
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>2</id>
+		<title>Frugalware 0.1rc1 released</title>
+		<date>Wed Sep 29 07:14:26 CEST 2004</date>
+		<author>VMiklos</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			The Frugalware Developer Team is pleased to announce the immediate availability of Frugalware 0.1rc1, the first release candidate of the 0.1 release.<br />
+			For a list of improvements since the beginning, please refer to the Frugalware <a href=changelog.php>Change Log</a>.<br />
+			Frugalware 0.1rc1 can be downloaded by visiting the <a href=download.php>download</a> page.<br />
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>1</id>
+		<title>Test message</title>
+		<date>Mon Sep 13 13:53:37 CEST 2004</date>
+		<author>VMiklos</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			seems to work... ;-)<br />
+			]]>
+		</content>
+	</post>
+</news>
+<!-- vim: ts=2
+-->
