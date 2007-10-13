@@ -19,7 +19,7 @@
 		<hidden>1</hidden>
 		<content><![CDATA[
 			A Frugalware Fejelsztői Csapat örömmel <a href="/new/76/hu">jelenti be</a> a Frugalware 0.7 azonnali elérhetőségét, mint hetedik stabil kiadásunkat.<br />
-			Igaz, hogy újdonság nem került bele 0.7rc2 óta, de több, mint 150 apróbb hibák javítás történt.
+			Igaz, hogy újdonság nem került bele 0.7rc2 óta, de több, mint 150 apróbb hibajavítás történt.
 			Ha nem követte folyamatosan a változásokat, íme a legfontosabbak 0.6 óta:<br />
 			<ul>
 				<li>Naprakész alaprendszer: 2.6.22.9-es Linux kernel, 2.6.1-es Glibc és 4.2.1-es GCC</li>
