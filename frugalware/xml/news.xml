@@ -21,7 +21,7 @@
 		<title>Frugalware 0.7 (Sayshell) for i686 and x86_64 released</title>
 		<date>Sat Oct 13 02:58:26 CEST 2007</date>
 		<author>VMiklos</author>
-		<hidden>1</hidden>
+		<hidden>0</hidden>
 		<content><![CDATA[
 			The Frugalware Developer Team is pleased to <a href="/news/76">announce</a> the immediate availability of Frugalware 0.7, our seventh stable release.<br />
 			No new features has been added since 0.7rc2, but more than 150 changes has been made to fix minor bugs.
