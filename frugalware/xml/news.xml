@@ -24,7 +24,7 @@
 		<hidden>0</hidden>
 		<content><![CDATA[
 			The Frugalware Developer Team is pleased to <a href="/news/76">announce</a> the immediate availability of Frugalware 0.7, our seventh stable release.<br />
-			No new features has been added since 0.7rc2, but more than 150 changes has been made to fix minor bugs.
+			No new features have been added since 0.7rc2, but more than 150 changes have been made to fix minor bugs.
 			If you didn't follow the changes during the pre/rc releases, here are the most important changes since 0.6:<br />
 			<ul>
 				<li>Up to date base system: Linux kernel 2.6.22.9, Glibc 2.6.1 and GCC 4.2.1</li>
