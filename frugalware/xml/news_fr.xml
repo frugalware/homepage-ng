@@ -27,7 +27,7 @@
 			Aucune nouvelles fonctionalités n'a été ajoutées depuis la 0.7rc2, mais plus de 150 modifications ont été effectuées pour corriger des bugs mineurs.
 			Si vous n'avez pas suivi les changements avec les pre-release et les release candidate, voici les plus importants changements depuis la version 0.6:<br />
 			<ul>
-				<li>Mise à jour du système de bas: Linux kernel 2.6.22.9, Glibc 2.6.1 et GCC 4.2.1.</li>
+				<li>Mise à jour du système de base: Linux kernel 2.6.22.9, Glibc 2.6.1 et GCC 4.2.1.</li>
 				<li>Mise à jour des environnements graphiques: KDE 3.5.7, GNOME 2.20, XFCE 4.4.1, OpenOffice 2.3.0 et Firefox 2.0.0.7.</li>
 				<li>Un LiveCD appellé FwLive est maintenant disponible pour cette release.</li>
 				<li>Installateur: langue spécifique par défaut (clavier, zone horaire, mirroir par défaut), l'installation est maintenant enregistrée dans un log.</li>
@@ -122,14 +122,14 @@ fa447a8cbd60d554905c48d379fb5d08b80e89b8  frugalware-0.7-i686-tftp.img.gz
 	</post>
 	<post>
 		<id>75</id>
-		<title>Mise à jour du noeau dans -current: AVERTISSEMENT pour les utilisateurs Intel avec des controlleurs IDE</title>
+		<title>Mise à jour du noyau dans -current: AVERTISSEMENT pour les utilisateurs Intel avec des controlleurs IDE</title>
 		<date>Thu Oct  4 15:08:53 UTC 2007</date>
 		<author>hermier</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-						Depuis le kernel-2.6.22-6 dans Frugalware-current, les utilisateurs Intel aurons des périphériques /dev/sd* à la place des /dev/hd*. La raison est la suivante: Il à été impossible de démarrer le noyeau sur certaines machine sans ce changement. Voir <a href="http://bugs.frugalware.org/2243">ce rapport d'erreur</a> pour plus de détails. En conséquence, apès avoir mis à jour en utilisant pacman -Syu, vous devrez:
+						Depuis le kernel-2.6.22-6 dans Frugalware-current, les utilisateurs Intel aurons des périphériques /dev/sd* à la place des /dev/hd*. La raison est la suivante: il a été impossible de démarrer le noyau sur certaines machine sans ce changement. Voir <a href="http://bugs.frugalware.org/2243">ce rapport d'erreur</a> pour plus de détails. En conséquence, après avoir mis à jour en utilisant pacman -Syu, vous devrez:
 						<ol>
-										<li>Verrifiez si vous possédez un controlleur IDE Intel en faisant un: sudo lspci |grep -i intel.*ide. Si vous n'avez aucun résultat sous n'êtes probablement pas affecté.</li>
+										<li>Vérifiez si vous possédez un controlleur IDE Intel en faisant un: sudo lspci |grep -i intel.*ide. Si vous n'avez aucun résultat sous n'êtes probablement pas affecté.</li>
 										<li>Edit /etc/fstab: changez toutes les occurrences de /dev/hd en /dev/sd.</li>
 										<li>Edit /boot/grub/menu.lst: changez toutes les occurrences de /dev/hd en /dev/sd dans les entrées Frugalware.</li>
 										<li>Reboot.</li>
