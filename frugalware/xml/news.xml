@@ -77,7 +77,7 @@
 				<a href="/download/frugalware-0.7-iso/frugalware-0.7-x86_64-usb.tar.gz">usb</a>,
 				<a href="/download/frugalware-0.7-iso/fwchroot-0.7-x86_64.tar.bz2">chroot tarball</a>
 				<br />
-			<b>NOTE</b>: Don't download CDs 3-12 or the second DVD unless you don't have an internet connection.<br />
+			<b>NOTE</b>: Don't download CDs 3-13 or the second DVD unless you don't have an internet connection.<br />
 			SHA1SUMs:
 			<pre>
 11d369eef484e64f1583364456491530d24701b7  frugalware-0.7-i686-cd10.iso
