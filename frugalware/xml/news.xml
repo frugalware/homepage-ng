@@ -21,11 +21,11 @@
 		<title>Terminus: End of life</title>
 		<date>Tue Oct 16 10:59:34 CEST 2007</date>
 		<author>voroskoi</author>
-		<hidden>1</hidden>
+		<hidden>0</hidden>
 		<content><![CDATA[
-			With Sayshell release Terminus support is over. It's highly recommended to upgrade to our new stable release as there will be no more security- and bugfixes for Terminus.<br /><br />
-			We have released FSA135-FSA295 for this release. That means 161 security fix during a half year.<br />
-			When you update to Sayshell that will also fix the following vulnerabilities:<br />
+			With the release of Sayshell, the support for Terminus is discontinued. It is highly recommended to upgrade to our new stable release, as there will be no more security and bug fixes for Terminus.<br /><br />
+			We have released FSA135 to FSA295 for Terminus. That means 161 security problems were issued in half a year.<br />
+			If you update to Sayshell, it will also fix the following vulnerabilities:<br />
 			<ul>
 				<li><a href="http://bugs.frugalware.org/task/2055">#2055 - MySQL</a></li>
 				<li><a href="http://bugs.frugalware.org/task/2291">#2291 - mldonkey</a></li>
