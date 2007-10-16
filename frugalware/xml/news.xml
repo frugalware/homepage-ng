@@ -17,6 +17,27 @@
 
 <news>
 	<post>
+		<id>77</id>
+		<title>Terminus: End of life</title>
+		<date>Tue Oct 16 10:59:34 CEST 2007</date>
+		<author>voroskoi</author>
+		<hidden>1</hidden>
+		<content><![CDATA[
+			With Sayshell release Terminus support is over. It's highly recommended to upgrade to our new stable release as there will be no more security- and bugfixes for Terminus.<br /><br />
+			We have released FSA135-FSA295 for this release. That means 161 security fix during a half year.<br />
+			When you update to Sayshell that will also fix the following vulnerabilities:<br />
+			<ul>
+				<li><a href="http://bugs.frugalware.org/task/2055">#2055 - MySQL</a></li>
+				<li><a href="http://bugs.frugalware.org/task/2291">#2291 - mldonkey</a></li>
+				<li><a href="http://bugs.frugalware.org/task/2409">#2409 - QGit</a></li>
+				<li><a href="http://bugs.frugalware.org/task/2424">#2424 - OpenOffice</a></li>
+				<li><a href="http://bugs.frugalware.org/task/2429">#2429 - VMware</a></li>
+				<li><a href="http://bugs.frugalware.org/task/2456">#2456 - ImageMagick</a></li>
+			</ul>
+			]]>
+		</content>
+	</post>
+	<post>
 		<id>76</id>
 		<title>Frugalware 0.7 (Sayshell) for i686 and x86_64 released</title>
 		<date>Sat Oct 13 02:58:26 CEST 2007</date>
