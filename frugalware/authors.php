@@ -33,57 +33,34 @@ include("config.inc.php");
 include("header.php");
 
 include("xml.inc.php");
-$who = ($_GET['who'] != "") ? $_GET['who'] : "devel";
-
-switch($who)
+$who = ($_GET['who'] != "") ? $_GET['who'] : "";
+$xmlfile = $docs_path."/xml/authors.xml";
+$xml = file_get_contents($xmlfile);
+$parser = new XMLParser($xml);
+$parser->Parse();
+$authors = "";
+for ( $i=0; $i<count($parser->document->author); $i++)
 {
-	case "devel":
-		if (file_exists("xml/authors.xml"))
-			$xmlfile = "xml/authors.xml";
-		else
-			$xmlfile = $docs_path."/xml/authors.xml";
-		$xml = file_get_contents($xmlfile);
-		$parser = new XMLParser($xml);
-		$parser->Parse();
-		$authors = "";
-		for ( $i=0; $i<count($parser->document->author); $i++)
+	if($parser->document->author[$i]->status[0]->tagData === $who or !strlen($who))
+	{
+		$email = str_replace("@", " at ", $parser->document->author[$i]->email[0]->tagData);
+		$email = str_replace(".", " dot ", $email);
+		$authors .= $parser->document->author[$i]->name[0]->tagData." (".$parser->document->author[$i]->nick[0]->tagData.") &lt;".$email."&gt;<br />\n<ul>\n";
+		for ( $j=0; $j<count($parser->document->author[$i]->role); $j++ )
 		{
-			$email = str_replace("@", " at ", $parser->document->author[$i]->email[0]->tagData);
-			$email = str_replace(".", " dot ", $email);
-			$authors .= $parser->document->author[$i]->name[0]->tagData." (".$parser->document->author[$i]->nick[0]->tagData.") &lt;".$email."&gt;<br />\n<ul>\n";
-			for ( $j=0; $j<count($parser->document->author[$i]->role); $j++ )
-			{
-				$authors.= "<li>".$parser->document->author[$i]->role[$j]->tagData."</li>\n";
-			}
-			$authors .= "</ul>\n";
+			$authors.= "<li>".$parser->document->author[$i]->role[$j]->tagData."</li>\n";
 		}
-		$authors .= "<br />\n";
-		$title = gettext("Developers");
-		break;
-
-	case "contrib";
-		if(file_exists("xml/contributors.xml"))
-			$xmlfile = "xml/contributors.xml";
-		else
-			$xmlfile = $docs_path."/xml/contributors.xml";
-		$xml = file_get_contents($xmlfile);
-		$parser = new XMLParser($xml);
-		$parser->Parse();
-		$authors = "";
-		for ( $i=0; $i<count($parser->document->author); $i++)
-		{
-			$email = str_replace("@", " at ", $parser->document->author[$i]->email[0]->tagData);
-			$email = str_replace(".", " dot ", $email);
-			$authors .= $parser->document->author[$i]->name[0]->tagData." (".$parser->document->author[$i]->nick[0]->tagData.") &lt;".$email."&gt;<br />\n<ul>\n";
-			for ( $j=0; $j<count($parser->document->author[$i]->role); $j++ )
-			{
-				$authors.= "<li>".$parser->document->author[$i]->role[$j]->tagData."</li>\n";
-			}
-			$authors .= "</ul>\n";
-		}
-		$title = gettext("Contributors");
-		break;
+		$authors .= "</ul>\n";
+	}
 }
+$authors .= "<br />\n";
+$title = gettext("Authors");
+$desc = gettext("This page should list all people who contributed to Frugalware Linux in some way. However, we are aware that the contributor list is incomplete. Please contact us if you name is missing from here!<br />");
+$desc .= sprintf(gettext("Available filters: <a href=\"%s\">No filter</a> &middot; "), $fwng_root . "authors");
+$desc .= sprintf(gettext("<a href=\"%s\">Active developers</a> &middot; "), $fwng_root . "authors/active");
+$desc .= sprintf(gettext("<a href=\"%s\">Former developers</a> &middot; "), $fwng_root . "authors/former");
+$desc .= sprintf(gettext("<a href=\"%s\">Contributors</a><br />"), $fwng_root . "authors/contributor");
+fwmiddlebox(gettext("Frugalware Linux Author list"), $desc);
 fwmiddlebox($title, $authors);
 
 include("footer.php");

@@ -54,7 +54,7 @@ if(count($params)>0)
 {
 	if($page=="authors")
 	{
-		if(($params[0]=="devel") or ($params[0]=="contrib"))
+		if(strlen($params[0]))
 			$urlsuffix="?who=".$params[0];
 	}
 	else if($page=="download")

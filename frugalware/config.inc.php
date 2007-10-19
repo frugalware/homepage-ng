@@ -77,8 +77,7 @@ $menucontent .= '	<a href="http://bugs.frugalware.org/">' . gettext('Bug Tracker
 $menucontent .= '	<a href="http://pootle.frugalware.org/">' . gettext('Translation portal') . "</a>\n";
 $menucontent .= '	<a href="http://planet.frugalware.org/">' . gettext('Blogs') . "</a>\n";
 $menucontent .= '	<a href="' . $fwng_root . 'donations">' . gettext('Donations') . "</a>\n";
-$menucontent .= '	<a href="' . $fwng_root . 'authors/devel">' . gettext('Developers') . "</a>\n";
-$menucontent .= '	<a href="' . $fwng_root . 'authors/contrib">' . gettext('Contributors') . "</a>\n";
+$menucontent .= '	<a href="' . $fwng_root . 'authors">' . gettext('Authors') . "</a>\n";
 $menucontent .= "</div>\n";
 
 if($_SERVER["PHP_SELF"]=="/index.php")
