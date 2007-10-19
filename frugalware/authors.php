@@ -33,6 +33,12 @@ include("config.inc.php");
 include("header.php");
 
 include("xml.inc.php");
+
+function sort_people($a, $b)
+{
+	return(strcmp($a->name[0]->tagData, $b->name[0]->tagData));
+}
+
 $who = ($_GET['who'] != "") ? $_GET['who'] : "";
 $xmlfile = $docs_path."/xml/authors.xml";
 $xml = file_get_contents($xmlfile);
@@ -41,14 +47,19 @@ $parser->Parse();
 $authors = "";
 for ( $i=0; $i<count($parser->document->author); $i++)
 {
-	if($parser->document->author[$i]->status[0]->tagData === $who or !strlen($who))
+	$people[] = $parser->document->author[$i];
+}
+usort($people, "sort_people");
+for($i=0;$i<count($people);$i++)
+{
+	if($people[$i]->status[0]->tagData === $who or !strlen($who))
 	{
-		$email = str_replace("@", " at ", $parser->document->author[$i]->email[0]->tagData);
+		$email = str_replace("@", " at ", $people[$i]->email[0]->tagData);
 		$email = str_replace(".", " dot ", $email);
-		$authors .= $parser->document->author[$i]->name[0]->tagData." (".$parser->document->author[$i]->nick[0]->tagData.") &lt;".$email."&gt;<br />\n<ul>\n";
-		for ( $j=0; $j<count($parser->document->author[$i]->role); $j++ )
+		$authors .= $people[$i]->name[0]->tagData." (".$people[$i]->nick[0]->tagData.") &lt;".$email."&gt;<br />\n<ul>\n";
+		for ( $j=0; $j<count($people[$i]->role); $j++ )
 		{
-			$authors.= "<li>".$parser->document->author[$i]->role[$j]->tagData."</li>\n";
+			$authors.= "<li>".$people[$i]->role[$j]->tagData."</li>\n";
 		}
 		$authors .= "</ul>\n";
 	}
