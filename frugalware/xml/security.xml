@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fsas [
+<!ELEMENT fsas (fsa)*>
+<!ELEMENT fsa (id , date , author, package, vulnerable , unaffected , bts , cve , desc)>
+<!-- must be an integer -->
+<!ELEMENT id (#PCDATA)>
+<!-- in YYYY-MM-DD format -->
+<!ELEMENT date (#PCDATA)>
+<!-- your nick, then the From header will be something like "nick <noreply@frugalware.org>" -->
+<!ELEMENT author (#PCDATA)>
+<!-- package name, without group, version, etc -->
+<!ELEMENT package (#PCDATA)>
+<!-- the old version -->
+<!ELEMENT vulnerable (#PCDATA)>
+<!-- the new (backported) version -->
+<!ELEMENT unaffected (#PCDATA)>
+<!-- bts url -->
+<!ELEMENT bts (#PCDATA)>
+<!-- cve url -->
+<!ELEMENT cve (#PCDATA)>
+<!-- description, can be more than one line -->
+<!ELEMENT desc (#PCDATA)>
+]>
+
+<!-- if you modify this file, be sure it's still valid - xmllint is your friend
+-->
+
+<fsas>
+	<fsa>
+		<id>296</id>
+		<date>2007-11-19</date>
+		<author>voroskoi</author>
+		<package>libpng</package>
+		<vulnerable>1.2.20-1</vulnerable>
+		<unaffected>1.2.22-1sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2475</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5267
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5266
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5268
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5269</cve>
+		<desc>Some vulnerabilities have been reported in libpng, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			1) Certain errors within libpng, including a logical NOT instead of a bitwise NOT in pngtrtran.c, an error in the 16bit cheap transparency extension, and an incorrect use of sizeof() may be exploited to crash an application using the library.
+			2) Various out-of-bounds read errors exist within the functions "png_handle_pCAL()", "png_handle_sCAL()", "png_push_read_tEXt()", "png_handle_iTXt()", and "png_handle_ztXt()", which may be exploited by exploited to crash an application using the library.
+			3) The vulnerability is caused due to an off-by-one error within the ICC profile chunk handling, which potentially can be exploited to crash an application using the library.</desc>
+	</fsa>
+</fsas>
