@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>297</id>
+		<date>2007-11-19</date>
+		<author>voroskoi</author>
+		<package>wesnoth</package>
+		<vulnerable>1.2.6-1</vulnerable>
+		<unaffected>1.2.6-2terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2486</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3917</cve>
+		<desc>A vulnerability has been reported in Wesnoth, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			The vulnerability is caused due to an unspecified error in the processing of UTF-8 strings within the multiplayer engine . This can be exploited by malicious clients to crash a vulnerable Wesnoth client.</desc>
+	</fsa>
+	<fsa>
 		<id>296</id>
 		<date>2007-11-19</date>
 		<author>voroskoi</author>
