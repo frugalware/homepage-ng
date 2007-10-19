@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>298</id>
+		<date>2007-10-19</date>
+		<author>voroskoi</author>
+		<package>pwlib</package>
+		<vulnerable>1.10.10-1</vulnerable>
+		<unaffected>1.10.10-2sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2491</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4897</cve>
+		<desc>A vulnerability has been discovered in PWLib, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			The vulnerability is caused due to an error within the "PString::vsprintf()" method in src/ptlib/common/contain.cxx. This can be exploited to cause a memory corruption by e.g. tricking an application using the library to use this function with a string longer than 1000 bytes.</desc>
+	</fsa>
+	<fsa>
 		<id>297</id>
 		<date>2007-11-19</date>
 		<author>voroskoi</author>
