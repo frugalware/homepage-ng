@@ -66,7 +66,7 @@ for($i=0;$i<count($people);$i++)
 }
 $authors .= "<br />\n";
 $title = gettext("Authors");
-$desc = gettext("This page should list all people who contributed to Frugalware Linux in some way. However, we are aware that the contributor list is incomplete. Please contact us if you name is missing from here!<br />");
+$desc = gettext("This page should list all people who contributed to Frugalware Linux in some way. However, we are aware that the contributor list is incomplete. Please contact us if your name is missing from here!<br />");
 $desc .= sprintf(gettext("Available filters: <a href=\"%s\">No filter</a> &middot; "), $fwng_root . "authors");
 $desc .= sprintf(gettext("<a href=\"%s\">Active developers</a> &middot; "), $fwng_root . "authors/active");
 $desc .= sprintf(gettext("<a href=\"%s\">Former developers</a> &middot; "), $fwng_root . "authors/former");
