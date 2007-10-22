@@ -155,7 +155,7 @@ switch($_GET['type'])
 
 	case "current":
 		header('Content-Type: application/xml; charset=utf-8');
-		print(file_get_contents("http://git.frugalware.org/gitweb/gitweb.cgi?p=frugalware-current/.git;a=rss;opt=--no-merges"));
+		print(file_get_contents("http://git.frugalware.org/gitweb/gitweb.cgi?p=frugalware-current.git;a=rss;opt=--no-merges"));
 		die();
 	case "stable":
 		header('Content-Type: application/xml; charset=utf-8');
