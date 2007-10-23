@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>301</id>
+		<date>2007-10-23</date>
+		<author>voroskoi</author>
+		<package>madwifi</package>
+		<vulnerable>0.9.3.2-4</vulnerable>
+		<unaffected>0.9.3.3-1sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2495</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5448</cve>
+		<desc>Clemens Kolbitsch and Sylvester Keil have reported a vulnerability in MadWifi, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			The vulnerability is caused due to an error in the processing of beacon frames. This can be exploited via a specially crafted beacon frame with an overly large "length" value (greater than 15) in the extended supported rates element ("xrates").
+			Successful exploitation causes the driver to exit and results in a kernel panic.</desc>
+	</fsa>
+	<fsa>
 		<id>300</id>
 		<date>2007-10-23</date>
 		<author>voroskoi</author>
