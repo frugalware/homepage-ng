@@ -27,6 +27,31 @@
 
 <fsas>
 	<fsa>
+		<id>306</id>
+		<date>2007-10-23</date>
+		<author>voroskoi</author>
+		<package>seamonkey</package>
+		<vulnerable>1.1.4-1</vulnerable>
+		<unaffected>1.1.5-1sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2514</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-1095
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-2292
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4841
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5334
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5337
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5338
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5339
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5340</cve>
+		<desc>Some vulnerabilities and a weakness have been reported in Mozilla SeaMonkey, which can be exploited by malicious people to disclose sensitive information, conduct phishing attacks, manipulate certain data, and potentially compromise a user's system.
+			1) Various errors in the browser engine can be exploited to cause a memory corruption.
+			2) Various errors in the Javascript engine can be exploited to cause a memory corruption. Successful exploitation of these vulnerabilities may allow execution of arbitrary code.
+			3) An error in the handling of onUnload events can be exploited to read and manipulate the document's location of new pages.
+			4) Input passed to the user ID when making an HTTP request using Digest Authentication is not properly sanitised before being used in a request. This can be exploited to insert arbitrary HTTP headers into a user's request when a proxy is used.
+			5) An error when displaying web pages written in the XUL markup language can be exploited to hide the window's title bar and facilitate phishing attacks.
+			6) An error exists in the handling of "smb:" and "sftp:" URI schemes on Linux systems with gnome-vfs support. This can be exploited to read any file owned by the target user via a specially crafted page on the same server. Successful exploitation requires that the attacker has write access to a mutually accessible location on the target server and the user is tricked into loading the malicious page.
+			7) An unspecified error in the handling of "XPCNativeWrappers" can lead to execution of arbitrary Javascript code with the user's privileges via subsequent access by the browser chrome (e.g. when a user right-clicks to open a context menu).</desc>
+	</fsa>
+	<fsa>
 		<id>305</id>
 		<date>2007-10-23</date>
 		<author>voroskoi</author>
