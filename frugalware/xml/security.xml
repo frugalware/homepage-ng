@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>302</id>
+		<date>2007-10-23</date>
+		<author>voroskoi</author>
+		<package>hplip</package>
+		<vulnerable>2.7.7-1</vulnerable>
+		<unaffected>2.7.7-2sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2496</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5208</cve>
+		<desc>Kees Cook has reported a vulnerability in HPLIP, which can be exploited by malicious, local users to gain escalated privileges.
+			The vulnerability is caused due to the hpssd daemon not properly sanitising certain input before using it to invoke sendmail using the "popen3()" method. This can be exploited to execute arbitrary commands with escalated privileges (e.g. "root") by sending specially crafted requests to the hpssd daemon.
+			NOTE: Depending upon the configuration of hpssd, this may also be remotely exploitable.</desc>
+	</fsa>
+	<fsa>
 		<id>301</id>
 		<date>2007-10-23</date>
 		<author>voroskoi</author>
