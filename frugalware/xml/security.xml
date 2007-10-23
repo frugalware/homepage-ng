@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>299</id>
+		<date>2007-10-23</date>
+		<author>voroskoi</author>
+		<package>openssl</package>
+		<vulnerable>0.9.8-9</vulnerable>
+		<unaffected>0.9.8-10sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2488</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4995</cve>
+		<desc>Andy Polyakov has reported a vulnerability in OpenSSL, which can be exploited by malicious people to cause a DoS (Denial of Service) and potentially compromise a vulnerable system.
+			The vulnerability is caused due to an unspecified error within the DTLS implementation. Successful exploitation may allow the execution of arbitrary code.
+			Note: Reportedly, this vulnerability affects only clients and servers explicitly using DTLS.</desc>
+	</fsa>
+	<fsa>
 		<id>298</id>
 		<date>2007-10-19</date>
 		<author>voroskoi</author>
