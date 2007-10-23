@@ -27,6 +27,20 @@
 
 <fsas>
 	<fsa>
+		<id>300</id>
+		<date>2007-10-23</date>
+		<author>voroskoi</author>
+		<package>phpmyadmin</package>
+		<vulnerable>2.11.1-1</vulnerable>
+		<unaffected>2.11.1.2-1sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2489
+			http://bugs.frugalware.org/task/2503</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5386</cve>
+		<desc>Omer Singer has reported two vulnerabilities in phpMyAdmin, which can be exploited by malicious people to conduct cross-site scripting attacks.
+			1) Input passed via the URL is not properly sanitised before being returned to the user. This can be exploited to execute arbitrary HTML and script code in a user's browser session in context of an affected site. Successful exploitation requires that the user is running a browser that has not URL-encoded the request (e.g. Internet Explorer 6).
+			2) Input passed in the URL to server_status.php is not properly sanitised before being returned to the user. This can be exploited to execute arbitrary HTML and script code in a user's browser session in context of an affected site. Successful exploitation requires that the target user has valid user credentials. NOTE: Some other potential cross-site scripting problems have also been fixed by the vendor.</desc>
+	</fsa>
+	<fsa>
 		<id>299</id>
 		<date>2007-10-23</date>
 		<author>voroskoi</author>
