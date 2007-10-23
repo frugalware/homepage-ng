@@ -27,6 +27,27 @@
 
 <fsas>
 	<fsa>
+		<id>304</id>
+		<date>2007-10-23</date>
+		<author>voroskoi</author>
+		<package>drupal</package>
+		<vulnerable>5.2-1</vulnerable>
+		<unaffected>5.2-2sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2507</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5595
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5596
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5597
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5593
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5594</cve>
+		<desc>Some vulnerabilities have been reported in Drupal, which can be exploited by malicious people to conduct cross-site scripting attacks and bypass certain security restrictions, and by malicious users to conduct HTTP response splitting attacks.
+			1) Input passed to unspecified parameters is not properly sanitised before being returned to the user. This can be exploited to insert arbitrary HTTP headers, which is included in a response sent to the user. This allows arbitrary HTML and script code to be executed in a user's browser session in context of an affected site. Successful exploitation of this vulnerability requires valid user credentials.
+			2) The Upload module includes the ".html" file extension in its default whitelist for file uploads. This can be exploited to upload arbitrary HTML files and enticing users to visit them, thereby executing arbitrary HTML and script code in a user's browser session in context of an affected site.
+			3) The hook_components API operation does not pass the publication status. This makes it possible for modules including Organic groups and Subscriptions to send e-mail messages containing unpublished comments.
+			Furthermore vulnerabilities have been reported in Drupal, which can be exploited by malicious people to conduct cross-site request forgery attacks and to compromise a vulnerable system.
+			1) Input passed to unspecified parameters in install.php is not properly sanitised. This can be exploited to execute arbitrary code. Successful exploitation of this vulnerability requires that the configured SQL server is not reachable.
+			2) A vulnerability is caused due to the application allowing users to perform certain actions via HTTP requests without performing any validity checks to verify the request. This can be exploited to delete users by enticing a logged-in administrator to visit a malicious site.</desc>
+	</fsa>
+	<fsa>
 		<id>303</id>
 		<date>2007-10-23</date>
 		<author>voroskoi</author>
