@@ -54,8 +54,8 @@ for($i=0;$i<count($people);$i++)
 {
 	if($people[$i]->status[0]->tagData === $who or !strlen($who))
 	{
-		$email = str_replace("@", " at ", $people[$i]->email[0]->tagData);
-		$email = str_replace(".", " dot ", $email);
+		$email = str_replace("@", " " . gettext("at") . " ", $people[$i]->email[0]->tagData);
+		$email = str_replace(".", " " . gettext("dot") . " ", $email);
 		$authors .= $people[$i]->name[0]->tagData." (".$people[$i]->nick[0]->tagData.") &lt;".$email."&gt;<br />\n<ul>\n";
 		for ( $j=0; $j<count($people[$i]->role); $j++ )
 		{
