@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>307</id>
+		<date>2007-10-25</date>
+		<author>voroskoi</author>
+		<package>tomboy</package>
+		<vulnerable>0.8.0-1</vulnerable>
+		<unaffected>0.8.0-2sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2370</bts>
+		<cve>There is no CVE for this issue.</cve>
+		<desc>Jab Oravec has reported a security issue in Tomboy, which can be exploited by malicious, local users to gain escalated privileges.
+			The security issue is caused due to the "/usr/bin/tomboy" script incorrectly setting the environment variable LD_LIBRARY_PATH. This can be exploited to gain escalated privileges by e.g. tricking a user into running Tomboy in a directory containing a malicious library.</desc>
+	</fsa>
+	<fsa>
 		<id>306</id>
 		<date>2007-10-23</date>
 		<author>voroskoi</author>
