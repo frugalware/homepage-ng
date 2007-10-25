@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>308</id>
+		<date>2007-10-25</date>
+		<author>voroskoi</author>
+		<package>asterisk</package>
+		<vulnerable>1.4.11-2</vulnerable>
+		<unaffected>1.4.13-1sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2494</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5358</cve>
+		<desc>A vulnerability has been reported in Asterisk, which can be exploited by malicious people to cause a DoS (Denial of Service) or potentially to compromise a vulnerable system.
+			The vulnerability is caused due to a boundary error within the IMAP-specific code for processing voicemail messages. This can be exploited to cause a buffer overflow via a specially crafted voicemail message sent as email containing an overly long (more than 1024 characters) combination of Content-Type or Content-Description headers.
+			Successful exploitation requires that a user listens to the voicemail message via a phone.</desc>
+	</fsa>
+	<fsa>
 		<id>307</id>
 		<date>2007-10-25</date>
 		<author>voroskoi</author>
