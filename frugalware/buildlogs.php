@@ -66,7 +66,7 @@ else if(isset($_GET['client']) and !isset($_GET['log']))
 	}
 	$lstr = "";
 	foreach($logs as $i)
-		$lstr .= "<li><a href=\"/buildlogs/$client/$i\">".$i[0]."</a> (".$i[1].")</li>";
+		$lstr .= "<li><a href=\"/buildlogs/$client/".$i[0]."\">".$i[0]."</a> (".$i[1].")</li>";
 	fwmiddlebox("Syncpkg daemon failed build logs","<ul>$lstr</ul>");
 }
 else if(isset($_GET['client']) and isset($_GET['log']))
