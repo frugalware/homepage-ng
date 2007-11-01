@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>310</id>
+		<date>2007-11-01</date>
+		<author>vmiklos</author>
+		<package>kernel</package>
+		<vulnerable>2.6.22-6</vulnerable>
+		<unaffected>2.6.22-7sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2455</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3731</cve>
+		<desc>Evan Teran has reported a security issue in the Linux kernel, which potentially can be exploited by malicious, local users to cause a DoS (Denial of Service).
+			The vulnerability is caused due to an error in ptrace when single-stepping a debugged child process with invalid values in the "CS" register, which can be exploited to cause a kernel oops.</desc>
+	</fsa>
+	<fsa>
 		<id>309</id>
 		<date>2007-10-25</date>
 		<author>voroskoi</author>
