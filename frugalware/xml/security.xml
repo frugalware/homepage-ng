@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>311</id>
+		<date>2007-11-02</date>
+		<author>voroskoi</author>
+		<package>wordpress</package>
+		<vulnerable>2.2.3-1</vulnerable>
+		<unaffected>2.3.1-1sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2535</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5710</cve>
+		<desc>Janek Vind has discovered a vulnerability in WordPress, which can be exploited by malicious people to conduct cross-site scripting attacks.
+			Input passed to the "posts_columns" parameter in wp-admin/edit-post-rows.php is not properly sanitised before being returned to the user. This can be exploited to execute arbitrary HTML and script code in a user's browser session in context of an affected site. Successful exploitation requires that "register_globals" is enabled.</desc>
+	</fsa>
+	<fsa>
 		<id>310</id>
 		<date>2007-11-01</date>
 		<author>vmiklos</author>
