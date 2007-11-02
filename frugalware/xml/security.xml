@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>314</id>
+		<date>2007-11-02</date>
+		<author>voroskoi</author>
+		<package>liferea</package>
+		<vulnerable>1.2.23-1</vulnerable>
+		<unaffected>1.2.23-2sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2544</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5751</cve>
+		<desc>A security issue has been reported in Liferea, which can be exploited by malicious, local users to disclose sensitive information.
+			The security issue is caused due to incorrect file permissions being set for the "feedlist.opml" backup file. This can be exploited to retrieve feed or proxy authentication usernames and passwords.</desc>
+	</fsa>
+	<fsa>
 		<id>313</id>
 		<date>2007-11-02</date>
 		<author>voroskoi</author>
