@@ -256,7 +256,7 @@
 	</fsa>
 	<fsa>
 		<id>297</id>
-		<date>2007-11-19</date>
+		<date>2007-10-19</date>
 		<author>voroskoi</author>
 		<package>wesnoth</package>
 		<vulnerable>1.2.6-1</vulnerable>
@@ -268,7 +268,7 @@
 	</fsa>
 	<fsa>
 		<id>296</id>
-		<date>2007-11-19</date>
+		<date>2007-10-19</date>
 		<author>voroskoi</author>
 		<package>libpng</package>
 		<vulnerable>1.2.20-1</vulnerable>
