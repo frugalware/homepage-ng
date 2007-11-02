@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>313</id>
+		<date>2007-11-02</date>
+		<author>voroskoi</author>
+		<package>django</package>
+		<vulnerable>0.96-1</vulnerable>
+		<unaffected>0.96-2sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2543</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5712</cve>
+		<desc>A vulnerability has been reported in Django, which potentially can be exploited by malicious people to cause a DoS (Denial of Service).
+			The vulnerability is caused due to the Django internationalization system ("i18n") incorrectly processing HTTP headers. This can be exploited to allocate large amounts of memory by sending specially crafted HTTP "Accept-Language" requests.	Successful exploitation requires that the "USE_I18N" option and the "i18n" middleware component are enabled.</desc>
+	</fsa>
+	<fsa>
 		<id>312</id>
 		<date>2007-11-02</date>
 		<author>voroskoi</author>
