@@ -186,7 +186,7 @@ class Pastebin
 			if (isset($post["parent_pid"]))
 				$parent_pid=intval($post["parent_pid"]);
 				
-			$id=$this->db->addPost($poster,$this->conf['subdomain'],$format,$code,
+			$id=$this->db->addPost($poster,$this->conf['subdomain'],$format,str_replace("\r\n", "\n", $code),
 				$parent_pid,$post["expiry"]);
 			
 			
