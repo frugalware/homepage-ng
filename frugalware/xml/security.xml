@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>315</id>
+		<date>2007-11-12</date>
+		<author>vmiklos</author>
+		<package>kernel</package>
+		<vulnerable>2.6.22-7sayshell1</vulnerable>
+		<unaffected>2.6.22-7sayshell2</unaffected>
+		<bts>http://bugs.frugalware.org/task/2562</bts>
+		<cve>CVE-2007-4997</cve>
+		<desc>A vulnerability has been reported in the Linux Kernel, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			The vulnerability is caused due to an off-by-two error within the function "ieee80211_rx()" in net/ieee80211/ieee80211_rx.c. This can be exploited to cause a kernel panic by sending a specially crafted ieee80211 frame with the IEEE80211_STYPE_QOS_DATA flag set to an affected system.</desc>
+	</fsa>
+	<fsa>
 		<id>314</id>
 		<date>2007-11-02</date>
 		<author>voroskoi</author>
