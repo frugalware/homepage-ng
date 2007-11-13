@@ -56,7 +56,7 @@ function mcmp($a, $b)
 		return ($ayear < $byear) ? 1 : -1;
 }
 
-fwmiddlebox(gettext("General information"), gettext("Our irc channel is on the freenode network (server: irc.freenode.net), at #frugalware. This is the official Frugalware Linux irc help station."));
+fwmiddlebox(gettext("General information"), gettext("Our irc channel is on the freenode network (server: irc.freenode.net), at #frugalware. This is the official Frugalware Linux irc help station. See the <a href=\"/docs/irc-rules#_irc_channels\">documentation</a> about non-English channels."));
 
 $ircont = "
 <!-- This is part of CGI:IRC 0.5
