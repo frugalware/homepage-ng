@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>318</id>
+		<date>2007-11-17</date>
+		<author>voroskoi</author>
+		<package>kdegraphics</package>
+		<vulnerable>3.5.7-2</vulnerable>
+		<unaffected>3.5.7-3sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2560</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4352
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5392
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5393</cve>
+		<desc>Some vulnerabilities have been reported in KOffice, which can be exploited by malicious people to compromise a user's system. The vulnerabilities are caused due to the use of vulnerable Xpdf code. For more information: FSA-316</desc>
+	</fsa>
+	<fsa>
 		<id>317</id>
 		<date>2007-11-17</date>
 		<author>voroskoi</author>
