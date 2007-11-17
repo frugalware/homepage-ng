@@ -27,6 +27,23 @@
 
 <fsas>
 	<fsa>
+		<id>316</id>
+		<date>2007-11-17</date>
+		<author>voroskoi</author>
+		<package>xpdf</package>
+		<vulnerable>3.02-3</vulnerable>
+		<unaffected>3.02-4sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2558</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4352
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5392
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5393</cve>
+		<desc>Secunia Research has discovered some vulnerabilities in Xpdf, which can be exploited by malicious people to compromise a user's system.
+			1) An array indexing error within the "DCTStream::readProgressiveDataUnit()" method in xpdf/Stream.cc can be exploited to corrupt memory via a specially crafted PDF file.
+			2) An integer overflow error within the "DCTStream::reset()" method in xpdf/Stream.cc can be exploited to cause a heap-based buffer overflow via a specially crafted PDF file.
+			3) A boundary error within the "CCITTFaxStream::lookChar()" method in xpdf/Stream.cc can be exploited to cause a heap-based buffer overflow by tricking a user into opening a PDF file containing a specially crafted "CCITTFaxDecode" filter.
+			Successful exploitation allows execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>315</id>
 		<date>2007-11-12</date>
 		<author>vmiklos</author>
