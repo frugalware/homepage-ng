@@ -33,6 +33,15 @@ $encoded = "";
 include("config.inc.php");
 include("db.inc.php");
 
+$path = $cache_path . "/" . sha1(str_replace('&cache=no', '', $_SERVER['REQUEST_URI']));
+
+if(file_exists($path))
+	$info = stat($path);
+
+if(($_GET['cache'] != "no") and isset($info) and ((time() - $info["mtime"])<$rsscachetimeout))
+	print(file_get_contents($path));
+else
+{
 switch($_GET['type'])
 {
 	case "releases":
@@ -187,32 +196,37 @@ switch($_GET['type'])
 }
 
 header('Content-Type: application/xml; charset=utf-8');
-print("<?xml version=\"1.0\" encoding=\"utf-8\"?>
+$buf = "";
+$buf .= "<?xml version=\"1.0\" encoding=\"utf-8\"?>
 <rss version=\"2.0\"".$encoded.">
 <channel>
 	<title>".$handle['title']."</title>
 	<description>".$handle['desc']."</description>
-	<link>".$handle['link']."</link>\n");
+	<link>".$handle['link']."</link>\n";
 foreach( $handle['items'] as $i )
 {
-	print("<item>\n<title>".$i['title']."</title>\n<link>".$i['link']."</link>\n<guid>".$i['link']."#top</guid>\n");
+	$buf .= "<item>\n<title>".$i['title']."</title>\n<link>".$i['link']."</link>\n<guid>".$i['link']."#top</guid>\n";
 	if(isset($i['desc']))
 	{
-		print "<description>".htmlspecialchars($i['desc'])."</description>\n";
+		$buf .= "<description>".htmlspecialchars($i['desc'])."</description>\n";
 	}
 	if(isset($i['encoded']))
 	{
-		print "<content:encoded><![CDATA[".$i['encoded']."]]></content:encoded>\n";
+		$buf .= "<content:encoded><![CDATA[".$i['encoded']."]]></content:encoded>\n";
 	}
 	if(isset($i['author']))
 	{
-		print("<author>".$i['author']."</author>\n");
+		$buf .= "<author>".$i['author']."</author>\n";
 	}
 	if(isset($i['pubDate']))
 	{
-		print("<pubDate>".$i['pubDate']."</pubDate>\n");
+		$buf .= "<pubDate>".$i['pubDate']."</pubDate>\n";
 	}
-	print("</item>\n");
+	$buf .= "</item>\n";
 }
-print("</channel>\n</rss>");
+$buf .= "</channel>\n</rss>";
+file_put_contents($path, $buf);
+print($buf);
+}
+
 ?>

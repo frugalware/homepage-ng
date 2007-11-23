@@ -15,12 +15,14 @@ $fwng_root = $myurl."/";
 $adodb_path = "/usr/lib/php";
 $trans_path="/home/ftp/pub/other/translations/";
 $top_path = "/home/ftp/pub/frugalware/frugalware-current";
+$cache_path = "/var/cache/homepage";
 $docs_path = $top_path."/docs";
 $top_path_stable = "/home/ftp/pub/frugalware/frugalware-stable";
 $docs_path_stable = $top_path_stable."/docs";
 $news_limit = 10;
 $pkgcache = "/tmp/pkgcache.info";
 $pkgcachetimeout = 180;
+$rsscachetimeout = 900;
 $upfile = "/proc/uptime";
 
 #not translated changing vars

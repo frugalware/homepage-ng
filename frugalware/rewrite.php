@@ -79,6 +79,9 @@ if(count($params)>0)
 			(empty($params[1])?'':"&filter=".$params[1]).
 			(empty($params[2])?'':"&arch=".$params[2]).
 			(empty($params[3])?'':"&pkg=".$params[3]);
+		// no cache for localhost
+		if($_SERVER['REMOTE_ADDR'] == '157.181.177.34')
+			$urlsuffix .= "&cache=no";
 	}
 	else if($page=="docs")
 	{
