@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>319</id>
+		<date>2007-11-23</date>
+		<author>voroskoi</author>
+		<package>poppler</package>
+		<vulnerable>0.6-1</vulnerable>
+		<unaffected>0.6-2sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2561</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4352
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5392
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5393</cve>
+		<desc>Some vulnerabilities have been reported in Poppler, which can be exploited by malicious people to compromise an application using the library. The vulnerabilities are caused due to the use of vulnerable Xpdf code. For more information: FSA-316</desc>
+	</fsa>
+	<fsa>
 		<id>318</id>
 		<date>2007-11-17</date>
 		<author>voroskoi</author>
