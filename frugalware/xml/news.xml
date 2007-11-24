@@ -17,6 +17,17 @@
 
 <news>
 	<post>
+		<id>78</id>
+		<title>Frugalware Newsletter Issue 10</title>
+		<date>Sat Nov 24 17:54:01 CET 2007</date>
+		<author>VMiklos</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			The tenth issue of our newsletter has been released! You can read it <a href="/newsletter/10">here</a>. We hope you like it!
+			]]>
+		</content>
+	</post>
+	<post>
 		<id>77</id>
 		<title>Terminus: End of life</title>
 		<date>Tue Oct 16 10:59:34 CEST 2007</date>
