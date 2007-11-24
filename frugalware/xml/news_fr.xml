@@ -16,26 +16,37 @@
 <!-- if you modify this file, be sure it's still valid - xmllint is your friend -->
 
 <news>
+  <post>
+		<id>78</id>
+		<title>Lettre d'information Frugalware numéro 10</title>
+		<date>Sat Nov 24 17:54:01 CET 2007</date>
+		<author>Hermier</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+						Le dixième numéro de notre lettre d'information est disponible! Vous pouez la lire <a href="/newsletter/10">ici (en anglais)</a> ou <a href="http://frugalware-fr.tuxfamily.org/forums/viewtopic.php?id=615">ici (en français)</a>. Nous esperons que vous l'apprécierez!
+			]]>
+		</content>
+	</post>
 	<post>
 		<id>77</id>
 		<title>Terminus: Fin de vie</title>
 		<date>Tue Oct 16 10:59:34 CEST 2007</date>
-		<author>hermier</author>
+		<author>Hermier</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-				Avec la sortie de Sayshell, le support de Terminus est arrété. Il est grandement recommandé de se mettre à jour vers notre nouvelle version stable, comme il n'y aura plus de changement de sécurité et de bugs pour Terminus.<br /><br />
-				Nous avons publié les FSA135 à FSA295 pour Terminus. Cela signifie que 161 problèmes de sécurité on été découvert en la moitié d'une année.<br />
-				  Si vous mettez à jour vers Sayshell, cela résoudra aussi les vulnérabilités suivante:<br />
-				  <ul>
-					  <li><a href="http://bugs.frugalware.org/task/2055">#2055 - MySQL</a></li>
-					  <li><a href="http://bugs.frugalware.org/task/2291">#2291 - mldonkey</a></li>
-					  <li><a href="http://bugs.frugalware.org/task/2409">#2409 - QGit</a></li>
-					  <li><a href="http://bugs.frugalware.org/task/2424">#2424 - OpenOffice</a></li>
-					  <li><a href="http://bugs.frugalware.org/task/2429">#2429 - VMware</a></li>
-					  <li><a href="http://bugs.frugalware.org/task/2456">#2456 - ImageMagick</a></li>
-				</ul>
-				]]>
-			</content>
+			Avec la sortie de Sayshell, le support de Terminus est arrété. Il est grandement recommandé de se mettre à jour vers notre nouvelle version stable, comme il n'y aura plus de changement de sécurité et de bugs pour Terminus.<br /><br />
+			Nous avons publié les FSA135 à FSA295 pour Terminus. Cela signifie que 161 problèmes de sécurité on été découvert en la moitié d'une année.<br />
+			  Si vous mettez à jour vers Sayshell, cela résoudra aussi les vulnérabilités suivante:<br />
+			  <ul>
+				  <li><a href="http://bugs.frugalware.org/task/2055">#2055 - MySQL</a></li>
+				  <li><a href="http://bugs.frugalware.org/task/2291">#2291 - mldonkey</a></li>
+				  <li><a href="http://bugs.frugalware.org/task/2409">#2409 - QGit</a></li>
+				  <li><a href="http://bugs.frugalware.org/task/2424">#2424 - OpenOffice</a></li>
+				  <li><a href="http://bugs.frugalware.org/task/2429">#2429 - VMware</a></li>
+				  <li><a href="http://bugs.frugalware.org/task/2456">#2456 - ImageMagick</a></li>
+			</ul>
+			]]>
+		</content>
 	</post>
 	<post>
 		<id>76</id>
