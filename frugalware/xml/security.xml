@@ -27,6 +27,20 @@
 
 <fsas>
 	<fsa>
+		<id>320</id>
+		<date>2007-11-25</date>
+		<author>vmiklos</author>
+		<package>kernel</package>
+		<vulnerable>2.6.22-7sayshell2</vulnerable>
+		<unaffected>2.6.22-7sayshell3</unaffected>
+		<bts>http://bugs.frugalware.org/task/2599</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5500
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5501</cve>
+		<desc>Some vulnerabilities have been reported in the Linux Kernel, which can be exploited by malicious, local users and by malicious people to cause a DoS (Denial of Service).
+			1) An error within the "wait_task_stopped()" function can be exploited to cause a DoS by manipulating the state of a child process while the parent is waiting for the state to change (e.g. the parent is inside "wait()" or "waitpid()").
+			2) An NULL-pointer dereference error exists within the "tcp_sacktag_write_queue()" function when processing ACK packets. This can be exploited to crash an affected system via specially crafted ACK packets.</desc>
+	</fsa>
+	<fsa>
 		<id>319</id>
 		<date>2007-11-23</date>
 		<author>voroskoi</author>
