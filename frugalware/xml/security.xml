@@ -27,6 +27,20 @@
 
 <fsas>
 	<fsa>
+		<id>326</id>
+		<date>2007-11-27</date>
+		<author>voroskoi</author>
+		<package>samba</package>
+		<vulnerable>3.0.26-1</vulnerable>
+		<unaffected>3.0.26-2sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2589</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5398
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4572</cve>
+		<desc>Some vulnerabilities have been reported in Samba, which can be exploited by malicious people to compromise a vulnerable system.
+			1) A boundary error exists within the "reply_netbios_packet()" function in nmbd/nmbd_packets.c when sending NetBIOS replies. This can be exploited to cause a stack-based buffer overflow by sending multiple specially crafted WINS "Name Registration" requests followed by a WINS "Name Query" request. Successful exploitation allows execution of arbitrary code, but requires that Samba is configured to run as a WINS server (the "wins support" option is enabled).
+			2) A boundary error exists within the processing of GETDC logon requests. This can be exploited to cause a buffer overflow by sending specially crafted GETDC mailslot requests. Successful exploitation of the vulnerability requires that Samba is configured as a Primary or Backup Domain Controller.</desc>
+	</fsa>
+	<fsa>
 		<id>325</id>
 		<date>2007-11-27</date>
 		<author>voroskoi</author>
