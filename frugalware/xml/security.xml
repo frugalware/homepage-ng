@@ -27,6 +27,20 @@
 
 <fsas>
 	<fsa>
+		<id>321</id>
+		<date>2007-11-27</date>
+		<author>voroskoi</author>
+		<package>openldap</package>
+		<vulnerable>2.3.38-1</vulnerable>
+		<unaffected>2.3.39-1sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2542</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5707
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5708</cve>
+		<desc>Some vulnerabilities have been reported in OpenLDAP, which can be exploited by malicious users to cause a DoS (Denial of Service).
+			1) A vulnerability is caused due to the "add_filter_attrs()" function in servers/slapd/overlay/pcache.c not correctly NULL terminating "new_attrs", which can be exploited to crash slapd due to an out of bounds memory access. Successful exploitation may require that slapd runs as proxy-caching server.
+			2) An error within the normalisation of "objectClasses" can be exploited to crash a vulnerable server by sending a malformed "objectClasses" attribute.</desc>
+	</fsa>
+	<fsa>
 		<id>320</id>
 		<date>2007-11-25</date>
 		<author>vmiklos</author>
