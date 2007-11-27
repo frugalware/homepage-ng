@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>323</id>
+		<date>2007-11-27</date>
+		<author>voroskoi</author>
+		<package>cpio</package>
+		<vulnerable>2.9-1</vulnerable>
+		<unaffected>2.9-2sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2570</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4476</cve>
+		<desc>There is a vulnerability in cpio, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			The vulnerability is caused due to an error when processing specially crafted tar archives and can be exploited to cause a stack-based buffer overflow and crash the vulnerable application.</desc>
+	</fsa>
+	<fsa>
 		<id>322</id>
 		<date>2007-11-27</date>
 		<author>voroskoi</author>
