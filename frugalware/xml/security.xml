@@ -27,6 +27,21 @@
 
 <fsas>
 	<fsa>
+		<id>324</id>
+		<date>2007-11-27</date>
+		<author>voroskoi</author>
+		<package>php</package>
+		<vulnerable>5.2.4-1</vulnerable>
+		<unaffected>5.2.5-1sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2576</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4887</cve>
+		<desc>Some vulnerabilities and weaknesses have been reported in PHP, where some have unknown impacts and others can be exploited to bypass certain security restrictions.
+			1) Various errors exist in the "htmlentities" and "htmlspecialchars" functions where partial multibyte sequences are not accepted.
+			2) Various boundary errors exist in the "fnmatch()", "setlocale()", and "glob()" functions and can be exploited to cause buffer overflows.
+			3) An error in the processing of the "mail.force_extra_parameters" directive within an ".htaccess" file can be exploited to bypass the "safe_mode" directive.
+			4) An error in the handling of variables can be exploited to overwrite values set in httpd.conf via the "ini_set()" function.</desc>
+	</fsa>
+	<fsa>
 		<id>323</id>
 		<date>2007-11-27</date>
 		<author>voroskoi</author>
