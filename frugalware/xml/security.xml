@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>322</id>
+		<date>2007-11-27</date>
+		<author>voroskoi</author>
+		<package>perl</package>
+		<vulnerable>5.8.8-4</vulnerable>
+		<unaffected>5.8.8-5sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2568</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5116</cve>
+		<desc>Tavis Ormandy and Will Drewry have reported a vulnerability in Perl, which potentially can be exploited by malicious people to compromise a vulnerable system.
+			The vulnerability is caused due to a boundary error within the processing of regular expressions containing Unicode data. This can be exploited to cause a buffer overflow via a specially crafted regular expression causing a runtime switch to the Unicode character scheme.</desc>
+	</fsa>
+	<fsa>
 		<id>321</id>
 		<date>2007-11-27</date>
 		<author>voroskoi</author>
