@@ -27,6 +27,22 @@
 
 <fsas>
 	<fsa>
+		<id>325</id>
+		<date>2007-11-27</date>
+		<author>voroskoi</author>
+		<package>phpmyadmin</package>
+		<vulnerable>2.11.1.2-1sayshell1</vulnerable>
+		<unaffected>2.11.2.2-1sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2578
+			http://bugs.frugalware.org/task/2588</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5976
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5977</cve>
+		<desc>Three vulnerabilities have been reported in phpMyAdmin, which can be exploited by malicious users to conduct script insertion, SQL injection and cross-site scripting attacks.
+			1) Input passed to the "db" parameter in db_create.php is not properly sanitised before being stored. This can be exploited to insert arbitrary HTML and script code, which is executed in a user's browser session in context of an affected site when the malicious data is viewed. Successful exploitation requires that the attacker has CREATE DATABASE credentials, that the target user has valid user credentials, and that the target user uses a web browser that executes JavaScript code in img HTML elements (e.g. Opera).
+			2) Input passed to the "db" parameter in db_create.php is not properly sanitised before being used in SQL queries. This can be exploited to manipulate SQL queries by injecting arbitrary SQL code.	Successful exploitation requires that the attacker has CREATE DATABASE credentials.
+			3) Tim Brown has discovered a vulnerability in phpMyAdmin, which can be exploited by malicious people to conduct cross-site scripting attacks. Input passed to the "convcharset" parameter in index.php (when "auth_type" in the configuration is set to "cookie") is not properly sanitised before being returned to the user. This can be exploited to execute arbitrary HTML and script code in a user's browser session in context of an affected site.</desc>
+	</fsa>
+	<fsa>
 		<id>324</id>
 		<date>2007-11-27</date>
 		<author>voroskoi</author>
