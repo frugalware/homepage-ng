@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>328</id>
+		<date>2007-12-02</date>
+		<author>voroskoi</author>
+		<package>php-pear-mdb2</package>
+		<vulnerable>2.4.1-1</vulnerable>
+		<unaffected>2.4.1-2sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2573</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5934</cve>
+		<desc>A security issue has been reported in PEAR MDB2, which can be exploited by malicious people to disclose sensitive information.
+			The security issue is caused due to MDB2 potentially making use of PHP's protocol wrappers when storing certain input as LOB. This can be exploited to e.g. disclose sensitive information by storing a specially crafted URI (e.g. "file:///etc/passwd") as LOB.</desc>
+	</fsa>
+	<fsa>
 		<id>327</id>
 		<date>2007-12-02</date>
 		<author>voroskoi</author>
