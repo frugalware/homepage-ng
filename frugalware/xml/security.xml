@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>330</id>
+		<date>2007-12-02</date>
+		<author>voroskoi</author>
+		<package>cups</package>
+		<vulnerable>1.3.2-2sayshell1</vulnerable>
+		<unaffected>1.3.2-2sayshell2</unaffected>
+		<bts>http://bugs.frugalware.org/task/2596</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4352
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5392
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5393</cve>
+		<desc>Some vulnerabilities have been reported in CUPS, which can be exploited by malicious people to cause a DoS (Denial of Service) and potentially to compromise a user's system.	The vulnerabilities are caused due to the use of a vulnerable version of Xpdf.</desc>
+	</fsa>
+	<fsa>
 		<id>329</id>
 		<date>2007-12-02</date>
 		<author>voroskoi</author>
