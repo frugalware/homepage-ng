@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>327</id>
+		<date>2007-12-02</date>
+		<author>voroskoi</author>
+		<package>emacs</package>
+		<vulnerable>22.1-1</vulnerable>
+		<unaffected>22.1-2sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2566</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5795</cve>
+		<desc>Drake Wilson has reported a vulnerability in GNU Emacs, which can be exploited by malicious people to compromise a user's system.
+			The vulnerability is caused due to an error in the "hack-local-variables" function where local variables within a file are processed in an insecure manner. This can be exploited to e.g. modify a user's user-init-file and execute arbitrary Emacs Lisp code when a specially crafted file is opened.
+			Successful exploitation requires that "enable-local-variables" is set to ":safe".</desc>
+	</fsa>
+	<fsa>
 		<id>326</id>
 		<date>2007-11-27</date>
 		<author>voroskoi</author>
