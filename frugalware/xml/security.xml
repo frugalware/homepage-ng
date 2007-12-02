@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>329</id>
+		<date>2007-12-02</date>
+		<author>voroskoi</author>
+		<package>mysql</package>
+		<vulnerable>5.0.45-1</vulnerable>
+		<unaffected>5.0.45-2sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2577</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5925</cve>
+		<desc>A vulnerability has been reported in MySQL, which can be exploited by malicious users to cause a DoS (Denial of Service).
+			The vulnerability is caused due to an assertion error within the InnoDB engine and can be exploited to crash the database server via certain "CONTAINS" statements.
+			Successful exploitation requires "ALTER" privileges.</desc>
+	</fsa>
+	<fsa>
 		<id>328</id>
 		<date>2007-12-02</date>
 		<author>voroskoi</author>
