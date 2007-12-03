@@ -69,10 +69,6 @@
 				<br />
 			SHA1SUMS:
 			<pre>
-02e578aa85d125284556988cdb25360ff9111960  frugalware-0.8pre1-i686-cd10.iso
-28ccb3da4098608beb6a8f00af9ea5fd9ca8c1c2  frugalware-0.8pre1-i686-cd11.iso
-ed06c325ecfa07e52fdc063c7ff097134575e6e9  frugalware-0.8pre1-i686-cd12.iso
-f32a6279c7158f2cdc61edb911e4b77f410d0b03  frugalware-0.8pre1-i686-cd13.iso
 f6f4a62003c2f350aa11d270bc4b38b31f5cc96e  frugalware-0.8pre1-i686-cd1.iso
 54c33672abce250d97a38d8fd126933203a6b181  frugalware-0.8pre1-i686-cd2.iso
 a743bacd345804d78fc11aa37a7e613c9c448029  frugalware-0.8pre1-i686-cd3.iso
@@ -82,6 +78,10 @@ a743bacd345804d78fc11aa37a7e613c9c448029  frugalware-0.8pre1-i686-cd3.iso
 4e82c7a6968b523898d0fbd1ce1089d6496823f4  frugalware-0.8pre1-i686-cd7.iso
 59e9e891a2227b521d84abf9efd87b1298eed235  frugalware-0.8pre1-i686-cd8.iso
 cc66aa7f5fe3dd2bdbe3f868228b9cf9e7551a70  frugalware-0.8pre1-i686-cd9.iso
+02e578aa85d125284556988cdb25360ff9111960  frugalware-0.8pre1-i686-cd10.iso
+28ccb3da4098608beb6a8f00af9ea5fd9ca8c1c2  frugalware-0.8pre1-i686-cd11.iso
+ed06c325ecfa07e52fdc063c7ff097134575e6e9  frugalware-0.8pre1-i686-cd12.iso
+f32a6279c7158f2cdc61edb911e4b77f410d0b03  frugalware-0.8pre1-i686-cd13.iso
 a1321a1f978bfedf8cf7fdd33c90e858bd881e10  frugalware-0.8pre1-i686-dvd1.iso
 8b4199630cda32bd91b3cea94c461e7f86c875c7  frugalware-0.8pre1-i686-dvd2.iso
 3667e2f2a710a87f266a465500393a0cb2c341dc  frugalware-0.8pre1-i686-net.iso
