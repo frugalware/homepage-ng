@@ -16,14 +16,90 @@
 <!-- if you modify this file, be sure it's still valid - xmllint is your friend -->
 
 <news>
-  <post>
+	<post>
+		<id>79</id>
+		<title>Frugalware 0.8pre1 (Kalgan) est disponible</title>
+		<date>Tue Dec  4 09:33:56 CET 2007</date>
+		<author>VMiklos</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			Les développeurs de Frugalware ont le plaisir de vous <a href="/news/79">announcer</a> la disponibilité disponibilité de Frugalware 0.8pre1, le premier aperçu technique de la prochaine version stable 0.8.<br />
+			Une liste courte et incomplète des changements depuis 0.7:<br />
+			<ul>
+				<li>Paquets mis à jour:
+					<ul>
+						<li>Corrections Linux 2.6.23 +</li>
+						<li>Librarie GNU C 2.7</li>
+						<li>GCC 4.2.2</li>
+						<li>espgs est désormais remplacé par la version stable de ghostscript</li>
+						<li>compiz-fusion remplace beryl, la plupart des utilisateurs peuvent désormais éviter XGL</li>
+						<li>plus de 600 autres mise à jour</li>
+						<li>plus de 100 nouveau paquets, dont 20 nouveau jeux</li>
+					</ul>
+				</li>
+				<li>Nouvelles fonctionnalités:
+					<ul>
+						<li>Ajout de FUN (Frugalware Update Notifier), qui notifie quand une mise à jour est disponible depuis le system tray utilisateur.</li>
+						<li>Ajout du support de WPA lors de l'installation.</li>
+					</ul>
+				</li>
+			</ul>
+			Veuillez vous référer à la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Testing ChangeLog</a> pour plus d'informations.<br />
+			Téléchargements pour i686:<br />
+			<b>NOTE</b>: Cliquer <a href="/docs/install#_choosing_installation_flavor">ici</a> pour avoir plus d'information pour choisir le media don't vous avez besoin pour l'installation.<br />
+				<a href="/download/frugalware-testing-iso/fwlive-0.8pre1-i686-full.iso">livecd</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.8pre1-i686-net.iso">netinstall</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.8pre1-i686-usb.tar.gz">usb</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.8pre1-i686-tftp.img.gz">tftp</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.8pre1-i686-cd1.iso">cd1</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.8pre1-i686-cd2.iso">cd2</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.8pre1-i686-cd3.iso">cd3</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.8pre1-i686-cd4.iso">cd4</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.8pre1-i686-cd5.iso">cd5</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.8pre1-i686-cd6.iso">cd6</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.8pre1-i686-cd7.iso">cd7</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.8pre1-i686-cd8.iso">cd8</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.8pre1-i686-cd9.iso">cd9</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.8pre1-i686-cd10.iso">cd10</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.8pre1-i686-cd11.iso">cd11</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.8pre1-i686-cd12.iso">cd12</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.8pre1-i686-cd13.iso">cd13</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.8pre1-i686-dvd1.iso">dvd1</a> and
+				<a href="/download/frugalware-testing-iso/frugalware-0.8pre1-i686-dvd2.iso">dvd2</a>
+			<br />
+			SHA1SUMS:
+			<pre>
+				f6f4a62003c2f350aa11d270bc4b38b31f5cc96e  frugalware-0.8pre1-i686-cd1.iso
+				54c33672abce250d97a38d8fd126933203a6b181  frugalware-0.8pre1-i686-cd2.iso
+				a743bacd345804d78fc11aa37a7e613c9c448029  frugalware-0.8pre1-i686-cd3.iso
+				446cdc74b5636ee17440b5f52662b3f3f1096512  frugalware-0.8pre1-i686-cd4.iso
+				7b6ec80b5c423b1a7eedf0eaa4eb6ddf3bfa04b1  frugalware-0.8pre1-i686-cd5.iso
+				125eb72cc1ee89eeb1b9c0de79128a4664d8b997  frugalware-0.8pre1-i686-cd6.iso
+				4e82c7a6968b523898d0fbd1ce1089d6496823f4  frugalware-0.8pre1-i686-cd7.iso
+				59e9e891a2227b521d84abf9efd87b1298eed235  frugalware-0.8pre1-i686-cd8.iso
+				cc66aa7f5fe3dd2bdbe3f868228b9cf9e7551a70  frugalware-0.8pre1-i686-cd9.iso
+				02e578aa85d125284556988cdb25360ff9111960  frugalware-0.8pre1-i686-cd10.iso
+				28ccb3da4098608beb6a8f00af9ea5fd9ca8c1c2  frugalware-0.8pre1-i686-cd11.iso
+				ed06c325ecfa07e52fdc063c7ff097134575e6e9  frugalware-0.8pre1-i686-cd12.iso
+				f32a6279c7158f2cdc61edb911e4b77f410d0b03  frugalware-0.8pre1-i686-cd13.iso
+				a1321a1f978bfedf8cf7fdd33c90e858bd881e10  frugalware-0.8pre1-i686-dvd1.iso
+				8b4199630cda32bd91b3cea94c461e7f86c875c7  frugalware-0.8pre1-i686-dvd2.iso
+				3667e2f2a710a87f266a465500393a0cb2c341dc  frugalware-0.8pre1-i686-net.iso
+				64e0e9c40772e573824a950437490a5165edba15  fwlive-0.8pre1-i686-full.iso
+				1c103ed0f0a5f86df03350efbddba696ee7203f4  frugalware-0.8pre1-i686-tftp.img.gz
+				2fb3b8863079fb17ed6971226f5d996bd149e07d  frugalware-0.8pre1-i686-usb.tar.gz
+			</pre>
+			]]>
+		  </content>
+	</post>
+	<post>
 		<id>78</id>
 		<title>Lettre d'information Frugalware numéro 10</title>
 		<date>Sat Nov 24 17:54:01 CET 2007</date>
 		<author>Hermier</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-						Le dixième numéro de notre lettre d'information est disponible! Vous pouez la lire <a href="/newsletter/10">ici (en anglais)</a> ou <a href="http://frugalware-fr.tuxfamily.org/forums/viewtopic.php?id=615">ici (en français)</a>. Nous esperons que vous l'apprécierez!
+			Le dixième numéro de notre lettre d'information est disponible! Vous pouez la lire <a href="/newsletter/10">ici (en anglais)</a> ou <a href="http://frugalware-fr.tuxfamily.org/forums/viewtopic.php?id=615">ici (en français)</a>. Nous esperons que vous l'apprécierez!
 			]]>
 		</content>
 	</post>
@@ -50,7 +126,7 @@
 	</post>
 	<post>
 		<id>76</id>
-		<title>Frugalware 0.7 (Sayshell) for i686 and x86_64 released</title>
+		<title>Frugalware 0.7 (Sayshell) pour i686 et x86_64 est disponible</title>
 		<date>Sat Oct 13 02:58:26 CEST 2007</date>
 		<author>hermier</author>
 		<hidden>0</hidden>
@@ -112,41 +188,41 @@
 			<b>NOTE</b>: Ne téléchargez pas les CD 3 à 13, ou le deuxième DVD à moins que vous n'ayez pas de connexion internet.<br />
 			SHA1SUMs:
 			<pre>
-11d369eef484e64f1583364456491530d24701b7  frugalware-0.7-i686-cd10.iso
-c3d1630241a99f6f4936079b40c5fd93a417a9dc  frugalware-0.7-i686-cd11.iso
-0b3c25ac25d711fed156ce93d30b78c918c0defa  frugalware-0.7-i686-cd12.iso
-c91e25732f12519877a04e1f1c40078014890902  frugalware-0.7-i686-cd13.iso
-6d91662500224636efb58ecc9a19630fdb2d0755  frugalware-0.7-i686-cd1.iso
-3d0e566b39b09c7b348296711fa3c2b8cb7ea0f6  frugalware-0.7-i686-cd2.iso
-c1c06e429e4fd9df66d4de4c77a94ecb26fed5c8  frugalware-0.7-i686-cd3.iso
-3499cf0871539e855c2482fc6a7fb186db9052ce  frugalware-0.7-i686-cd4.iso
-621dc063927d3cb8a5c8aa4871d16d0dea2f93e3  frugalware-0.7-i686-cd5.iso
-b41da52c3b508f6a93d2d091617469ac758aeeab  frugalware-0.7-i686-cd6.iso
-af5c63ad65bd427b4655824dcac7155e5fb19166  frugalware-0.7-i686-cd7.iso
-00ef74ff9e853dc73b81d7405edb2e2ed36016a2  frugalware-0.7-i686-cd8.iso
-a89f34f212322e5c14ad288003536fb84e62106b  frugalware-0.7-i686-cd9.iso
-f6f731a45467274bcc1f7d987f3ccef6697dec03  frugalware-0.7-i686-dvd1.iso
-0443681c558f231b408e4add725635afe1b48af6  frugalware-0.7-i686-dvd2.iso
-b586b9aac75adea46f016572feb555b165b4de7b  frugalware-0.7-i686-net.iso
-a34ac62fa9c246d173a05f6fb4225745552ca0f2  frugalware-0.7-x86_64-cd10.iso
-dcbdff4b359a6ab1defe4aad59dce894a5cd658c  frugalware-0.7-x86_64-cd11.iso
-95a3d041031f4882883ff3d6fac351679dd2639e  frugalware-0.7-x86_64-cd1.iso
-89e82b51651843b666bff27d628e6ff16dc25594  frugalware-0.7-x86_64-cd2.iso
-0b7c8132f06501ba1749421183fbff509be2a80d  frugalware-0.7-x86_64-cd3.iso
-7b4451c9e6bab916ef8c0c33877526efb6785560  frugalware-0.7-x86_64-cd4.iso
-93fcdbeb35ee53179c32e882554980653b741b28  frugalware-0.7-x86_64-cd5.iso
-9887a9c6aea1ea9280b24f727287647d6be67434  frugalware-0.7-x86_64-cd6.iso
-82be4a85f8a3e80a357a62fa68aa4716fe6ff5b9  frugalware-0.7-x86_64-cd7.iso
-339d026a332e48a08cf735e123f6d71ec38e56e6  frugalware-0.7-x86_64-cd8.iso
-4d7846c6eef3308853acdeead0c2b253c3356a45  frugalware-0.7-x86_64-cd9.iso
-f636f27e02b98d270cb1947c187c27315c5b6e2b  frugalware-0.7-x86_64-dvd1.iso
-9b3646267dd40c38267566d5e1cdd096f79ddf24  frugalware-0.7-x86_64-dvd2.iso
-00d94d04c1bf3b7fc6030b7e7aac1e27e85fed82  frugalware-0.7-x86_64-net.iso
-eb039c92347aa3c13b14b51ed93031853de9cc5d  fwlive-0.7-i686-full.iso
-fa447a8cbd60d554905c48d379fb5d08b80e89b8  frugalware-0.7-i686-tftp.img.gz
-26d0be146804b652f0359dd0824012aaf3f3f716  frugalware-0.7-i686-usb.tar.gz
-31bd8243520f767c44ada50da287b4fe1d72a0ac  frugalware-0.7-x86_64-tftp.img.gz
-88c0be39dd0630c34e31e8482ead29f6097ee0a7  frugalware-0.7-x86_64-usb.tar.gz
+				11d369eef484e64f1583364456491530d24701b7  frugalware-0.7-i686-cd10.iso
+				c3d1630241a99f6f4936079b40c5fd93a417a9dc  frugalware-0.7-i686-cd11.iso
+				0b3c25ac25d711fed156ce93d30b78c918c0defa  frugalware-0.7-i686-cd12.iso
+				c91e25732f12519877a04e1f1c40078014890902  frugalware-0.7-i686-cd13.iso
+				6d91662500224636efb58ecc9a19630fdb2d0755  frugalware-0.7-i686-cd1.iso
+				3d0e566b39b09c7b348296711fa3c2b8cb7ea0f6  frugalware-0.7-i686-cd2.iso
+				c1c06e429e4fd9df66d4de4c77a94ecb26fed5c8  frugalware-0.7-i686-cd3.iso
+				3499cf0871539e855c2482fc6a7fb186db9052ce  frugalware-0.7-i686-cd4.iso
+				621dc063927d3cb8a5c8aa4871d16d0dea2f93e3  frugalware-0.7-i686-cd5.iso
+				b41da52c3b508f6a93d2d091617469ac758aeeab  frugalware-0.7-i686-cd6.iso
+				af5c63ad65bd427b4655824dcac7155e5fb19166  frugalware-0.7-i686-cd7.iso
+				00ef74ff9e853dc73b81d7405edb2e2ed36016a2  frugalware-0.7-i686-cd8.iso
+				a89f34f212322e5c14ad288003536fb84e62106b  frugalware-0.7-i686-cd9.iso
+				f6f731a45467274bcc1f7d987f3ccef6697dec03  frugalware-0.7-i686-dvd1.iso
+				0443681c558f231b408e4add725635afe1b48af6  frugalware-0.7-i686-dvd2.iso
+				b586b9aac75adea46f016572feb555b165b4de7b  frugalware-0.7-i686-net.iso
+				a34ac62fa9c246d173a05f6fb4225745552ca0f2  frugalware-0.7-x86_64-cd10.iso
+				dcbdff4b359a6ab1defe4aad59dce894a5cd658c  frugalware-0.7-x86_64-cd11.iso
+				95a3d041031f4882883ff3d6fac351679dd2639e  frugalware-0.7-x86_64-cd1.iso
+				89e82b51651843b666bff27d628e6ff16dc25594  frugalware-0.7-x86_64-cd2.iso
+				0b7c8132f06501ba1749421183fbff509be2a80d  frugalware-0.7-x86_64-cd3.iso
+				7b4451c9e6bab916ef8c0c33877526efb6785560  frugalware-0.7-x86_64-cd4.iso
+				93fcdbeb35ee53179c32e882554980653b741b28  frugalware-0.7-x86_64-cd5.iso
+				9887a9c6aea1ea9280b24f727287647d6be67434  frugalware-0.7-x86_64-cd6.iso
+				82be4a85f8a3e80a357a62fa68aa4716fe6ff5b9  frugalware-0.7-x86_64-cd7.iso
+				339d026a332e48a08cf735e123f6d71ec38e56e6  frugalware-0.7-x86_64-cd8.iso
+				4d7846c6eef3308853acdeead0c2b253c3356a45  frugalware-0.7-x86_64-cd9.iso
+				f636f27e02b98d270cb1947c187c27315c5b6e2b  frugalware-0.7-x86_64-dvd1.iso
+				9b3646267dd40c38267566d5e1cdd096f79ddf24  frugalware-0.7-x86_64-dvd2.iso
+				00d94d04c1bf3b7fc6030b7e7aac1e27e85fed82  frugalware-0.7-x86_64-net.iso
+				eb039c92347aa3c13b14b51ed93031853de9cc5d  fwlive-0.7-i686-full.iso
+				fa447a8cbd60d554905c48d379fb5d08b80e89b8  frugalware-0.7-i686-tftp.img.gz
+				26d0be146804b652f0359dd0824012aaf3f3f716  frugalware-0.7-i686-usb.tar.gz
+				31bd8243520f767c44ada50da287b4fe1d72a0ac  frugalware-0.7-x86_64-tftp.img.gz
+				88c0be39dd0630c34e31e8482ead29f6097ee0a7  frugalware-0.7-x86_64-usb.tar.gz
 			</pre>
 			Si vous mettez votre système à jour vers Sayshell depuis une précédente version (Terminus), veuillez lire la partie <a href="http://frugalware.org/docs/stable/upgrade">mise à jour</a> de notre documentation.<br />
 			]]>
