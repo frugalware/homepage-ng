@@ -31,7 +31,7 @@
 						<li>Linux 2.6.23 + fixes</li>
 						<li>GNU C Library 2.7</li>
 						<li>GCC 4.2.2</li>
-						<li>espgs is now relplaced with the stock ghostscript</li>
+						<li>espgs is now replaced with the stock ghostscript</li>
 						<li>compiz-fusion replaced beryl, most users now can avoid XGL</li>
 						<li>more than 600 other upstream updates</li>
 						<li>more than 100 new packages, including 20 new games</li>
