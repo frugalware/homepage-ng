@@ -17,6 +17,19 @@
 
 <news>
 	<post>
+		<id>80</id>
+		<title>Frugalware Newsletter Issue 11</title>
+		<date>Sun Dec  9 22:51:50 CET 2007</date>
+		<author>VMiklos</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
+			In this issue we welcome a new release of Frugalware, put the 'Windows' key to good use in Gnome, reveal a bug in previous newsletters and more.<br />
+			You can read it <a href="/newsletter/11">here</a>. We hope you like it!
+			]]>
+		</content>
+	</post>
+	<post>
 		<id>79</id>
 		<title>Frugalware 0.8pre1 (Kalgan) released</title>
 		<date>Tue Dec  4 09:33:56 CET 2007</date>
