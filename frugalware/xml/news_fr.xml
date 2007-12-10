@@ -17,10 +17,23 @@
 
 <news>
 	<post>
+		<id>80</id>
+		<title>Lettre d'information Frugalware numéro 11</title>
+		<date>Sun Dec  9 22:51:50 CET 2007</date>
+		<author>hermier</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			Cette lettre d'information à pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Dans ce numéro nous acceuillons une nouvelle version de Frugalware, la touche 'Windows' est maintenant active avec Gnome, révéllation d'un bug dans les lettres d'information précédante.<br />
+			Vous pouvez la lire <a href="/newsletter/11">ici (anglais)</a> ou <a href="http://frugalware-fr.tuxfamily.org/forums/index.php?topic=29.0">ici (français)</a>. Nous espérons que vous l'apprécierez!
+			]]>
+		</content>
+	</post>
+	<post>
 		<id>79</id>
 		<title>Frugalware 0.8pre1 (Kalgan) est disponible</title>
 		<date>Tue Dec  4 09:33:56 CET 2007</date>
-		<author>VMiklos</author>
+		<author>hermier</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
 			Les développeurs de Frugalware ont le plaisir de vous <a href="/news/79">announcer</a> la disponibilité disponibilité de Frugalware 0.8pre1, le premier aperçu technique de la prochaine version stable 0.8.<br />
@@ -90,7 +103,7 @@ a1321a1f978bfedf8cf7fdd33c90e858bd881e10  frugalware-0.8pre1-i686-dvd1.iso
 2fb3b8863079fb17ed6971226f5d996bd149e07d  frugalware-0.8pre1-i686-usb.tar.gz
 			</pre>
 			]]>
-		  </content>
+	  </content>
 	</post>
 	<post>
 		<id>78</id>
