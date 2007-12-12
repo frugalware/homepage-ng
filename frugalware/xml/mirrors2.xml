@@ -84,16 +84,7 @@ If you modify this file, be sure it's still valid - xmllint is your friend.
 		<supplier_url>http://www.sourcemirrors.org</supplier_url>
 		<bandwidth>100 MBit</bandwidth>
 	</mirror>
-	<mirror>
-		<id>7</id>
-		<type>http</type>
-		<path>pub/frugalware</path>
-		<host>frugalware.pimpmylinux.org</host>
-		<country>Germany</country>
-		<supplier>Sebastian Vassiliou</supplier>
-		<supplier_url>http://pimpmylinux.org/</supplier_url>
-		<bandwidth>100 MBit</bandwidth>
-	</mirror>
+	<!-- XXX: #7 can be re-used, it was a German mirror -->
 	<!-- XXX: #8 was madtux.org's iso only mirror, but they have removed
 	it. we can re-use it later, but needs discussing with them first -->
 	<mirror>
