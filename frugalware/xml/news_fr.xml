@@ -17,6 +17,19 @@
 
 <news>
 	<post>
+		<id>81</id>
+		<title>Lettre d'information Frugalware numéro 12</title>
+		<date>Sat Dec 22 14:53:45 CET 2007</date>
+		<author>hermier</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			Cette lettre d'information à pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Dans ce numéro Dex77 aide avec Splashy, Frugalware est contient un peu plus de Danois, nous vous souhaitons un Joyeux Noël et meme plus.<br />
+			Vous pouvez la lire <a href="/newsletter/12">ici</a>. Nous espérons que vous l'apprécierez!
+			]]>
+		</content>
+	</post>
+	<post>
 		<id>80</id>
 		<title>Lettre d'information Frugalware numéro 11</title>
 		<date>Sun Dec  9 22:51:50 CET 2007</date>
