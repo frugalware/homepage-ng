@@ -27,6 +27,23 @@
 
 <fsas>
 	<fsa>
+		<id>332</id>
+		<date>2008-01-02</date>
+		<author>voroskoi</author>
+		<package>firefox</package>
+		<vulnerable>2.0.0.8-1sayshell1</vulnerable>
+		<unaffected>2.0.0.11-1sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2572</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5947
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5959
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5960</cve>
+		<desc>A security issue has been reported in Mozilla Firefox, which can be exploited by malicious people to conduct cross-site scripting attacks.
+			The problem is that the "jar:" protocol handler does not validate the MIME type of the contents of an archive, which are then executed in the context of the site hosting the archive. This can be exploited to conduct cross-site scripting attacks on sites that allow a user to upload certain files (e.g. .zip, .png, .doc, .odt, .txt).
+			Some vulnerabilities have been reported in Mozilla Firefox, which can be exploited by malicious people to conduct cross-site request forgery attacks and potentially compromise a user's system.
+			1) A race condition when setting the "window.location" property can be exploited to generate a fake HTTP Referer header, which can be used to conduct cross-site request forgery attacks.
+			2) Some errors within the XBL component, the "drawImage()" function, and the "nsCSSFrameConstructor" can be exploited to cause memory corruption and potentially allow execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>331</id>
 		<date>2008-01-02</date>
 		<author>voroskoi</author>
