@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>331</id>
+		<date>2008-01-02</date>
+		<author>voroskoi</author>
+		<package>pidgin</package>
+		<vulnerable>2.2.1-1</vulnerable>
+		<unaffected>2.2.1-2sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2539</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4999</cve>
+		<desc>A weakness has been reported in Pidgin, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			The weakness is caused due to a NULL-pointer dereference error when processing messages with invalid HTML code and can be exploited to cause libpurple to crash. Successful exploitation may require that HTML logging is used.</desc>
+	</fsa>
+	<fsa>
 		<id>330</id>
 		<date>2007-12-02</date>
 		<author>voroskoi</author>
