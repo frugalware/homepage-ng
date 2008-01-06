@@ -17,6 +17,24 @@
 
 <news>
 	<post>
+		<id>82</id>
+		<title>Frugalware Newsletter Issue 13</title>
+		<date>Sun Jan  6 23:37:54 CET 2008</date>
+		<author>VMiklos</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
+			In this issue:
+			<ul>
+			<li>Package updates</li>
+			<li>Hint - Changing rights of files and libraries</li>
+			<li>Happy New Year</li>
+			</ul>
+			You can read it <a href="/newsletter/13">here</a>. We hope you like it!
+			]]>
+		</content>
+	</post>
+	<post>
 		<id>81</id>
 		<title>Frugalware Newsletter Issue 12</title>
 		<date>Sat Dec 22 14:53:45 CET 2007</date>
