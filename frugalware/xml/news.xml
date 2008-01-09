@@ -17,6 +17,62 @@
 
 <news>
 	<post>
+		<id>83</id>
+		<title>Frugalware 0.8pre2 (Kalgan) released</title>
+		<date>Thu Jan 10 09:44:00 CET 2008</date>
+		<author>VMiklos</author>
+		<hidden>1</hidden>
+		<content><![CDATA[
+			The Frugalware Developer Team is pleased to <a href="/news/83">announce</a> the immediate availability of Frugalware 0.8pre2, the second technical preview of the upcoming 0.8 stable release.<br />
+			A short and incomplete list of changes since 0.8pre1:<br />
+			<ul>
+				<li>New features:
+					<ul>
+						<li>Support for executing hooks inside the package manager - e.g. after a successful system upgrade.</li>
+						<li>Improved blacklisting support for kernel modules.</li>
+					</ul>
+				</li>
+				<li>Package updates:
+					<ul>
+						<li>Xfce 4.4.2 - with bugfixes and translations</li>
+						<li>OpenOffice.org 2.3.1 - with security and bugfixes</li>
+						<li>Tcl and Tk 8.5 - with support for anti-aliased fonts</li>
+						<li>Octave 3.0.0: compatibility with Matlab graphics is much better now</li>
+						<li>Updated encryption libs: gnutls-2.2 and libgcrypt-1.4</li>
+					</ul>
+				</li>
+			</ul>
+			Please refer to the Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Testing ChangeLog</a> for more information.<br />
+			Download for i686:<br />
+			<b>NOTE</b>: Click <a href="/docs/install#_choosing_installation_flavor">here</a> to read more about what media do you need for the installation.<br />
+				<a href="/download/frugalware-testing-iso/fwlive-0.8pre2-i686-full.iso">livecd</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.8pre2-i686-net.iso">netinstall</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.8pre2-i686-usb.tar.gz">usb</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.8pre2-i686-tftp.img.gz">tftp</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.8pre2-i686-cd1.iso">cd1</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.8pre2-i686-cd2.iso">cd2</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.8pre2-i686-cd3.iso">cd3</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.8pre2-i686-cd4.iso">cd4</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.8pre2-i686-cd5.iso">cd5</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.8pre2-i686-cd6.iso">cd6</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.8pre2-i686-cd7.iso">cd7</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.8pre2-i686-cd8.iso">cd8</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.8pre2-i686-cd9.iso">cd9</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.8pre2-i686-cd10.iso">cd10</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.8pre2-i686-cd11.iso">cd11</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.8pre2-i686-cd12.iso">cd12</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.8pre2-i686-cd13.iso">cd13</a>,
+				<a href="/download/frugalware-testing-iso/frugalware-0.8pre2-i686-dvd1.iso">dvd1</a> and
+				<a href="/download/frugalware-testing-iso/frugalware-0.8pre2-i686-dvd2.iso">dvd2</a>
+				<br />
+			SHA1SUMS:
+			<pre>
+FIXME
+			</pre>
+			]]>
+		</content>
+	</post>
+	<post>
 		<id>82</id>
 		<title>Frugalware Newsletter Issue 13</title>
 		<date>Sun Jan  6 23:37:54 CET 2008</date>
