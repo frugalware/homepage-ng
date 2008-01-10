@@ -16,7 +16,7 @@
 		<title>Megjelent a Frugalware 0.8pre2 (Kalgan)</title>
 		<date>Thu Jan 10 11:42:39 CET 2008</date>
 		<author>IroNiQ</author>
-		<hidden>1</hidden>
+		<hidden>0</hidden>
 		<content><![CDATA[
 			A Frugalware Fejlesztői Csapat örömmel <a href="/news/83/hu">jelenti be</a> a Frugalware 0.8pre2 azonnali elérhetőségét, mint az eljövendő 0.8-as stabil kiadás második előzetes változatát.<br />
 			Egy rövid, nem teljes lista a 0.8pre1 óta történt változásokról:<br />
@@ -24,20 +24,20 @@
 				<li>Újdonságok:
 					<ul>
 						<li>Lehetőség egyedi szkriptek futtatására csomagkezelőből - pl. sikeres rendszerfrissítés után.</li>
-						<li>Javított feketelista kernel modulok kezelésénél.</li>
+						<li>Javított feketelista a kernelmodulok kezelésénél.</li>
 					</ul>
 				</li>
 				<li>Csomagfrissítések:
 					<ul>
 						<li>Xfce 4.4.2 - számos hibajavítással és fordítással</li>
 						<li>OpenOffice.org 2.3.1 - biztonsági és hibajavításokkal</li>
-						<li>Tcl and Tk 8.5 - élsimított betűkészlet támogatással</li>
+						<li>Tcl and Tk 8.5 - élsimított betűkészlet-támogatással</li>
 						<li>Octave 3.0.0 - javított Matlab grafika kompatibilitás</li>
-						<li>Frissített titkosító libek - gnutls-2.2 és libgcrypt-1.4</li>
+						<li>Frissített titkosító függvénykönyvtárak - gnutls-2.2 és libgcrypt-1.4</li>
 					</ul>
 				</li>
 			</ul>
-			Bővebb információért tekintse meg a Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Testing Változáslistát</a>.<br />
+			Bővebb információért tekintse meg a Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Testing Változások Listáját</a>.<br />
 			Letöltés i686-ra:<br />
 			<b>Megjegyzés</b>: Kattintson <a href="/docs/install#_choosing_installation_flavor">ide</a>, hogy eldönthesse, melyik telepítő médiára van szüksége.<br />
 				<a href="/download/frugalware-testing-iso/fwlive-0.8pre2-i686-full.iso">livecd</a>,
