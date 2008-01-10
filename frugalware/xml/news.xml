@@ -37,8 +37,8 @@
 						<li>Xfce 4.4.2 - with bugfixes and translations</li>
 						<li>OpenOffice.org 2.3.1 - with security and bugfixes</li>
 						<li>Tcl and Tk 8.5 - with support for anti-aliased fonts</li>
-						<li>Octave 3.0.0: compatibility with Matlab graphics is much better now</li>
-						<li>Updated encryption libs: gnutls-2.2 and libgcrypt-1.4</li>
+						<li>Octave 3.0.0 - compatibility with Matlab graphics is much better now</li>
+						<li>Updated encryption libs - gnutls-2.2 and libgcrypt-1.4</li>
 					</ul>
 				</li>
 			</ul>
