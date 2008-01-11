@@ -37,7 +37,7 @@
 		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4575</cve>
 		<desc>A vulnerability has been reported in OpenOffice, which can be exploited by malicious people to compromise a user's system.
 			The vulnerability is caused due to the improper enforcing of security restrictions when passing SQL queries to the HSQLDB database engine. This can be exploited to call arbitrary static Java methods by tricking the user into executing a specially crafted SQL query contained within a database document.
-			Successful exploitation allows execution of arbitrary code.</cve>
+			Successful exploitation allows execution of arbitrary code.</desc>
 	</fsa>
 	<fsa>
 		<id>332</id>
