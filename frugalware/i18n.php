@@ -31,6 +31,7 @@ include("header.php");
 fwmiddlebox("Internationalized Frugalware sites",'<ul>
 	<li><a href="http://frugalware.dk/">' . gettext('Danish') . '</a></li>
 	<li><a href="http://frugalware-fr.tuxfamily.org/">' . gettext('French') . '</a></li>
+	<li><a href="http://frugalware-es.tuxfamily.org/">' . gettext('Spanish') . '</a></li>
 	</ul>'
 );
 include("footer.php");
