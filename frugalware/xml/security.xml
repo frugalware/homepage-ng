@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>333</id>
+		<date>2008-01-11</date>
+		<author>vmiklos</author>
+		<package>openoffice.org</package>
+		<vulnerable>2.3.0-1</vulnerable>
+		<unaffected>2.3.0-2sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2663</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4575</cve>
+		<desc>A vulnerability has been reported in OpenOffice, which can be exploited by malicious people to compromise a user's system.
+			The vulnerability is caused due to the improper enforcing of security restrictions when passing SQL queries to the HSQLDB database engine. This can be exploited to call arbitrary static Java methods by tricking the user into executing a specially crafted SQL query contained within a database document.
+			Successful exploitation allows execution of arbitrary code.</cve>
+	</fsa>
+	<fsa>
 		<id>332</id>
 		<date>2008-01-02</date>
 		<author>voroskoi</author>
