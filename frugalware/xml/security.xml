@@ -27,6 +27,22 @@
 
 <fsas>
 	<fsa>
+		<id>334</id>
+		<date>2008-01-12</date>
+		<author>vmiklos</author>
+		<package>mysql</package>
+		<vulnerable>5.0.45-2sayshell1</vulnerable>
+		<unaffected>5.0.45-2sayshell2</unaffected>
+		<bts>http://bugs.frugalware.org/task/2669</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5969
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6303
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6304</cve>
+		<desc>A security issue and two vulnerabilities have been reported in MySQL, which can be exploited by malicious users to gain escalated privileges, manipulate certain data, or to cause a DoS (Denial of Service).
+		1) A security issue exists due to the command "ALTER VIEW" retaining the original "DEFINER" value, which may allow another user to gain the access rights of the view.
+		2) An error in the FEDERATED engine when handling responses of remote servers can be exploited to crash the local server when the response contains fewer columns than expected.
+		3) An error when renaming a table can be exploited by malicious users to manipulate certain data.</desc>
+	</fsa>
+	<fsa>
 		<id>333</id>
 		<date>2008-01-11</date>
 		<author>vmiklos</author>
