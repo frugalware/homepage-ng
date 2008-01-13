@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>335</id>
+		<date>2008-01-13</date>
+		<author>vmiklos</author>
+		<package>samba</package>
+		<vulnerable>3.0.26-2sayshell1</vulnerable>
+		<unaffected>3.0.26-2sayshell2</unaffected>
+		<bts>http://bugs.frugalware.org/task/2666</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6015</cve>
+		<desc>Secunia Research has discovered a vulnerability in Samba, which can be exploited by malicious people to compromise a vulnerable system.
+			The vulnerability is caused due to a boundary error within the "send_mailslot()" function. This can be exploited to cause a stack-based buffer overflow with zero bytes via a specially crafted "SAMLOGON" domain logon packet containing a username string placed at an odd offset followed by an overly long GETDC string.
+			Successful exploitation allows execution of arbitrary code, but requires that the "domain logons" option is enabled.</desc>
+	</fsa>
+	<fsa>
 		<id>334</id>
 		<date>2008-01-12</date>
 		<author>vmiklos</author>
