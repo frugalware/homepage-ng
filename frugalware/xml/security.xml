@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>336</id>
+		<date>2008-01-15</date>
+		<author>vmiklos</author>
+		<package>seamonkey</package>
+		<vulnerable>1.1.5-1sayshell1</vulnerable>
+		<unaffected>1.1.7-1sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2608</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5947
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5959
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5960</cve>
+		<desc>Some vulnerabilities have been reported in Mozilla SeaMonkey, which can be exploited by malicious people to conduct cross-site scripting and cross-site request forgery attacks and potentially to compromise a user's system.</desc>
+	</fsa>
+	<fsa>
 		<id>335</id>
 		<date>2008-01-13</date>
 		<author>vmiklos</author>
