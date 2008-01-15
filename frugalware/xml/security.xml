@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>345</id>
+		<date>2008-01-15</date>
+		<author>voroskoi</author>
+		<package>claws-mail</package>
+		<vulnerable>3.0.1-1</vulnerable>
+		<unaffected>3.0.1-2sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2655</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6208</cve>
+		<desc>A security issue has been reported in Claws Mail, which can be exploited by malicious, local users to perform certain actions with escalated privileges.
+			The security issue is caused due to the sylprint.pl script using temporary files in an insecure manner. This can be exploited to overwrite or delete arbitrary files via symlink attacks.</desc>
+	</fsa>
+	<fsa>
 		<id>344</id>
 		<date>2008-01-15</date>
 		<author>voroskoi</author>
