@@ -27,6 +27,37 @@
 
 <fsas>
 	<fsa>
+		<id>337</id>
+		<date>2008-01-15</date>
+		<author>vmiklos</author>
+		<package>wireshark</package>
+		<vulnerable>0.99.6-4</vulnerable>
+		<unaffected>0.99.7-1terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2605</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6114
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6117
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6118
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6120
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6121
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6111
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6112
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6113
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6115
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6116
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6119
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6438
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6439
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6441
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6450
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6451</cve>
+		<desc>Some vulnerabilities have been reported in Wireshark, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			The vulnerabilities are caused due to various errors (e.g. large loops with extreme memory consumption, endless loops, crashes, and buffer overflows) within the following:
+			* SSL, ANSI MAP, Firebird/Interbase, NCP, HTTP, MEGACO, DCP ETSI, PPP, Bluetooth SDP, SMB, USB, WiMAX, RPL, and CIP dissectors
+			* when processing a malformed MP3 or iSeries (OS/400) Communication trace file
+			* when processing a malformed DNP or RPC Portmap packet
+			These can be exploited to crash Wireshark or consume large amounts of system resources by e.g. parsing a specially crafted packet that is either captured off the wire or loaded via a capture file.</desc>
+	</fsa>
+	<fsa>
 		<id>336</id>
 		<date>2008-01-15</date>
 		<author>vmiklos</author>
