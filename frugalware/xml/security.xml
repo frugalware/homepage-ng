@@ -27,6 +27,20 @@
 
 <fsas>
 	<fsa>
+		<id>343</id>
+		<date>2008-01-15</date>
+		<author>voroskoi</author>
+		<package>wesnoth</package>
+		<vulnerable>1.2.6-2terminus1</vulnerable>
+		<unaffected>1.2.8-1terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2648</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5742
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6201</cve>
+		<desc>Some vulnerabilities have been reported in Wesnoth, which can be exploited by malicious people to cause a DoS (Denial of Service), disclose potentially sensitive information, or potentially compromise a vulnerable system.
+			1) An error within the WML preprocessor can be exploited via a malicious add-on to disclose the content of arbitrary files on an affected system when processing pathnames that contain directory traversal sequences.
+			2) An error within the handling of the "turn_cmd" option can be exploited to cause a DoS or potentially execute arbitrary commands via a malicious add-on.</desc>
+	</fsa>
+	<fsa>
 		<id>342</id>
 		<date>2008-01-15</date>
 		<author>voroskoi</author>
