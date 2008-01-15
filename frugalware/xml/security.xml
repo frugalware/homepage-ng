@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>344</id>
+		<date>2008-01-15</date>
+		<author>voroskoi</author>
+		<package>cairo</package>
+		<vulnerable>1.4.10-1</vulnerable>
+		<unaffected>1.4.10-2sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2654</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5503</cve>
+		<desc>A vulnerability has been reported in Cairo, which potentially can be exploited by malicious people to compromise an application using the library.
+			The vulnerability is caused due to an integer overflow error within the "read_png()" function in cairo-png.c. This can be exploited to cause a heap-based buffer overflow via a specially crafted PNG file.
+			Successful exploitation may allow execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>343</id>
 		<date>2008-01-15</date>
 		<author>voroskoi</author>
