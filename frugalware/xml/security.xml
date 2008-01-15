@@ -27,6 +27,20 @@
 
 <fsas>
 	<fsa>
+		<id>338</id>
+		<date>2008-01-15</date>
+		<author>voroskoi</author>
+		<package>thunderbird</package>
+		<vulnerable>2.0.0.6-2</vulnerable>
+		<unaffected>2.0.0.9-1terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2515</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5339
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5340</cve>
+		<desc>Some vulnerabilities have been reported in Mozilla Thunderbird, which potentially can be exploited by malicious people to compromise a user's system.
+			1) Various errors in the browser engine can be exploited to cause a memory corruption.
+			2) Various errors in the Javascript engine can be exploited to cause a memory corruption.</desc>
+	</fsa>
+	<fsa>
 		<id>337</id>
 		<date>2008-01-15</date>
 		<author>vmiklos</author>
