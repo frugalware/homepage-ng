@@ -27,6 +27,20 @@
 
 <fsas>
 	<fsa>
+		<id>342</id>
+		<date>2008-01-15</date>
+		<author>voroskoi</author>
+		<package>wordpress</package>
+		<vulnerable>2.3.1-1sayshell1</vulnerable>
+		<unaffected>2.3.2-1terminus1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2646</bts>
+		<cve>There is no CVE entry for this issue.</cve>
+		<desc>Some vulnerabilities and a security issue have been reported in WordPress, which can be exploited by malicious users to disclose potentially sensitive information and by malicious people to bypass certain security restrictions and to disclose sensitive or system information.
+			1) The application does not properly restrict access to posted drafts to users with valid administrator credentials. This can be exploited to read drafts by accessing the index.php script with data in the "PATH_INFO" URL part ending with "wp-admin/".
+			2) The XMLRPC function "metaWeblog.getRecentPosts" does not correctly verify that users have edit rights for a post before disclosing the "post_password".
+			3) A security issue is caused due to certain database error messages containing system information (e.g. table names).</desc>
+	</fsa>
+	<fsa>
 		<id>341</id>
 		<date>2008-01-15</date>
 		<author>voroskoi</author>
