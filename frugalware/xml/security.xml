@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>346</id>
+		<date>2008-01-17</date>
+		<author>vmiklos</author>
+		<package>e2fsprogs</package>
+		<vulnerable>1.40.2-1</vulnerable>
+		<unaffected>1.40.2-2sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2661</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5497</cve>
+		<desc>Some vulnerabilities have been reported in the libext2fs library of e2fsprogs, which potentially can be exploited by malicious people to compromise an application using the library.
+			The vulnerabilities are caused due to integer overflows, which potentially can be exploited to execute arbitrary code by e.g. tricking a user into processing a specially crafted file system with an application using libext2fs.</desc>
+	</fsa>
+	<fsa>
 		<id>345</id>
 		<date>2008-01-15</date>
 		<author>voroskoi</author>
