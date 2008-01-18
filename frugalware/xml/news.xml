@@ -21,7 +21,7 @@
 		<title>X.Org 7.3 testers wanted!</title>
 		<date>Fri Jan 18 01:47:41 CET 2008</date>
 		<author>VMiklos</author>
-		<hidden>1</hidden>
+		<hidden>0</hidden>
 		<content><![CDATA[
 						Dear Frugalware-current users out there,<br />
 						You probably noticed that we did not update X.Org for a while. This happened as in our opinion the version we already have packaged was still more stable then any of the newer versions, so we sticked to X.Org 7.2 and decided to maintain it, instead of upgrading to a newer version for some time. Now it's time to upgrade!<br />
