@@ -31,7 +31,7 @@
 						2) Create a file named <tt>/etc/pacman-g2/repos/xorg73</tt> with the following contents:
 						<pre>[xorg73]
 Server = http://ftp.frugalware.org/pub/other/people/krix/xorg73/frugalware-i686</pre>
-						3) Issue the usual <pre># pacman -Syu</pre> to update your system.<br />
+						3) Issue the usual <pre># pacman-g2 -Syu</pre> to update your system.<br />
 						4) You can restart X by rebooting, or running <pre># init 3 && init 4</pre>
 						If no major problem occurs, we plan to merge the <tt>xorg73</tt> branch at the end of the weekend.<br />
 						Thanks for your help!
