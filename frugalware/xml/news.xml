@@ -17,6 +17,24 @@
 
 <news>
 	<post>
+		<id>85</id>
+		<title>Frugalware Newsletter Issue 14</title>
+		<date>Sat Jan 19 16:30:13 CET 2008</date>
+		<author>VMiklos</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
+			In this issue:
+			<ul>
+			<li>Frugalware 0.8 ("Kalgan") pre-release 2</li>
+			<li>Two bug fixes for the price of one!</li>
+			<li>Newsletter now in French and Danish</li>
+			</ul>
+			You can read it <a href="/newsletter/14">here</a>. We hope you like it!
+			]]>
+		</content>
+	</post>
+	<post>
 		<id>84</id>
 		<title>X.Org 7.3 testers wanted!</title>
 		<date>Fri Jan 18 01:47:41 CET 2008</date>
