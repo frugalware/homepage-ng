@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>358</id>
+		<date>2008-01-21</date>
+		<author>voroskoi</author>
+		<package>horde-webmail</package>
+		<vulnerable>1.0.1-3</vulnerable>
+		<unaffected>1.0.1-4sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2693</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6018</cve>
+		<desc>Secunia Research has discovered a vulnerability in IMP Webmail Client and Horde Groupware Webmail Edition, which can be exploited by malicious people to bypass certain security restrictions and manipulate data.
+			The HTML filter does not filter out frame and frameset HTML elements. Additionally, the application allows users to perform certain actions via HTTP requests without performing any validity checks to verify the request. This can be exploited to (a) delete an arbitrary number of e-mail messages by referencing their numeric IDs and (b) purge deleted mails, when the victim opens a malicious HTML mail.
+					Successful exploitation requires that the victim opens the HTML part of a malicious message.</desc>
+	</fsa>
+	<fsa>
 		<id>357</id>
 		<date>2008-01-21</date>
 		<author>voroskoi</author>
