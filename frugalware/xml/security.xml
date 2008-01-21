@@ -27,6 +27,22 @@
 
 <fsas>
 	<fsa>
+		<id>353</id>
+		<date>2008-01-21</date>
+		<author>voroskoi</author>
+		<package>clamav</package>
+		<vulnerable>0.91.2-1</vulnerable>
+		<unaffected>0.91.2-2sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2679</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6335
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6336
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6337</cve>
+		<desc>Some vulnerabilities have been reported in ClamAV, where one vulnerability has an unknown impact and others can be exploited by malicious people to cause a DoS (Denial of Service) or compromise a vulnerable system.
+			1) An integer overflow error exists within the "cli_scanpe()" function when handling MEW packed executables. This can be exploited to cause a heap-based buffer overflow via specially crafted "ssize" and "dsize" values. Successful exploitation allows execution of arbitrary code.
+			2) An off-by-one error exists within libclamav/mspack.c when handling MSZIP compressed files. This can be exploited to e.g. crash the scanner or potentially execute arbitrary code via a specially crafted MSZIP compressed file.
+			3) An boundary error exists within the bzip2 "BZ_GET_FAST()" and "BZ_GET_FAST_C()" decompression macros in libclamav/nsis/bzlib_private.h.</desc>
+	</fsa>
+	<fsa>
 		<id>352</id>
 		<date>2008-01-21</date>
 		<author>voroskoi</author>
