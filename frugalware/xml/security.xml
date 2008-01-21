@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>356</id>
+		<date>2008-01-21</date>
+		<author>voroskoi</author>
+		<package>mantis</package>
+		<vulnerable>1.0.8-1</vulnerable>
+		<unaffected>1.0.8-2sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2683</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6611</cve>
+		<desc>seiji has discovered a vulnerability in Mantis, which can be exploited by malicious users to conduct script insertion attacks.
+			Input passed as the filename for the uploaded file in bug_report.php is not properly sanitised before being stored. This can be exploited to insert arbitrary HTML and script code, which is executed in a user's browser session in context of an affected site when the malicious filename is viewed in view.php.
+			Successful exploitation requires valid user credentials.</desc>
+	</fsa>
+	<fsa>
 		<id>355</id>
 		<date>2008-01-21</date>
 		<author>voroskoi</author>
