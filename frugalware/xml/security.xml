@@ -45,7 +45,7 @@
 		<package>apache</package>
 		<vulnerable>2.2.6-1</vulnerable>
 		<unaffected>2.2.6-2sayshell1</unaffected>
-		<bts></bts>
+		<bts>http://bugs.frugalware.org/task/2671</bts>
 		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5000</cve>
 		<desc>A vulnerability have been reported in Apache mod_imagemap module, which can be exploited by malicious people to conduct cross-site scripting attacks.
 			Certain unspecified input passed to "mod_imagemap" is not properly sanitised before being returned to the user. This can be exploited to execute arbitrary HTML and script code in a user's browser session in context of an affected site.
