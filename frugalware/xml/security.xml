@@ -27,6 +27,24 @@
 
 <fsas>
 	<fsa>
+		<id>352</id>
+		<date>2008-01-21</date>
+		<author>voroskoi</author>
+		<package>opera</package>
+		<vulnerable>9.24-1sayshell1</vulnerable>
+		<unaffected>9.25-1sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2677</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6520
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6521
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6522
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6524</cve>
+		<desc>Some vulnerabilities have been reported in Opera, which can be exploited by malicious people to bypass certain security restrictions, disclose sensitive information, and compromise a user's system.
+			1) An unspecified error can be exploited via certain plugins to conduct cross-domain scripting attacks.
+			2) An unspecified error within the processing of TLS certificates can be exploited to execute arbitrary code.
+			3) An unspecified error within Rich text editing when using designMode can be exploited to conduct cross-domain scripting attacks.
+			4) An unspecified error within the processing of bitmaps can be exploited to disclose the contents of random memory areas.</desc>
+	</fsa>
+	<fsa>
 		<id>351</id>
 		<date>2008-01-21</date>
 		<author>voroskoi</author>
