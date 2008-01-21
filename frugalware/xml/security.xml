@@ -27,6 +27,45 @@
 
 <fsas>
 	<fsa>
+		<id>359</id>
+		<date>2008-01-21</date>
+		<author>voroskoi</author>
+		<package>libxml2</package>
+		<vulnerable>2.6.30-1</vulnerable>
+		<unaffected>2.6.30-2sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2700</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6284</cve>
+		<desc>A vulnerability has been reported in Libxml2, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			The vulnerability is caused due to an unspecified error within the "xmlCurrentChar()" function. This can be exploited to trigger the execution of an infinite loop via specially crafted UTF-8 sequences.</desc>
+	</fsa>
+	<fsa>
+		<id>358</id>
+		<date>2008-01-21</date>
+		<author>voroskoi</author>
+		<package>horde-webmail</package>
+		<vulnerable>1.0.1-3</vulnerable>
+		<unaffected>1.0.1-4sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2693</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6018</cve>
+		<desc>Secunia Research has discovered a vulnerability in IMP Webmail Client and Horde Groupware Webmail Edition, which can be exploited by malicious people to bypass certain security restrictions and manipulate data.
+			The HTML filter does not filter out frame and frameset HTML elements. Additionally, the application allows users to perform certain actions via HTTP requests without performing any validity checks to verify the request. This can be exploited to (a) delete an arbitrary number of e-mail messages by referencing their numeric IDs and (b) purge deleted mails, when the victim opens a malicious HTML mail.
+					Successful exploitation requires that the victim opens the HTML part of a malicious message.</desc>
+	</fsa>
+	<fsa>
+		<id>357</id>
+		<date>2008-01-21</date>
+		<author>voroskoi</author>
+		<package>drupal</package>
+		<vulnerable>5.2-2sayshell2</vulnerable>
+		<unaffected>5.2-2sayshell3</unaffected>
+		<bts>http://bugs.frugalware.org/task/2692</bts>
+		<cve>There is no CVE entry for this issue.</cve>
+		<desc>Some vulnerabilities have been reported in Drupal, which can be exploited by malicious people to conduct cross-site scripting, script insertion, and cross-site request forgery attacks.
+			1) Input passed via unspecified parameters to theme .tpl.php files is not properly sanitised before being returned to the user. This can be exploited to execute arbitrary HTML and script code in a user's browser session in context of an affected site. Successful exploitation requires that "register_globals" is enabled, and the .htaccess file fails to prevent access to .tpl.php files and to disable "register_globals".
+			2) An error in the text filtering functionality can be exploited to bypass the filter via invalid UTF-8 sequences. This can be exploited to insert arbitrary HTML and script code, which will be executed in a user's browser session in context of an affected site when the malicious data is viewed with e.g. Internet Explorer 6.
+			3) The aggregator module allows users to perform certain actions via HTTP GET requests without performing any validity checks to verify the request. This can be exploited to e.g. remove items from a particular feed when a user visits a specially crafted page.</desc>
+	</fsa>
+	<fsa>
 		<id>356</id>
 		<date>2008-01-21</date>
 		<author>voroskoi</author>
