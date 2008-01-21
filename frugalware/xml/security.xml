@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>350</id>
+		<date>2008-01-21</date>
+		<author>voroskoi</author>
+		<package>syslog-ng</package>
+		<vulnerable>2.0.5-1</vulnerable>
+		<unaffected>2.0.5-2sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2675</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6437</cve>
+		<desc>A vulnerability has been reported in syslog-ng, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			The vulnerability is caused due to the improper processing of incoming timestamps. This can be exploited to trigger a NULL pointer dereference via a specially crafted message containing a timestamp without a terminating space character.</desc>
+	</fsa>
+	<fsa>
 		<id>349</id>
 		<date>2008-01-21</date>
 		<author>voroskoi</author>
