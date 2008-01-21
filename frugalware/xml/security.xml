@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>355</id>
+		<date>2008-01-21</date>
+		<author>voroskoi</author>
+		<package>vlc</package>
+		<vulnerable>0.8.6-7</vulnerable>
+		<unaffected>0.8.6-8sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2682</bts>
+		<cve>There is no CVE entry for these issues.</cve>
+		<desc>Some vulnerabilities have been discovered in VLC Media Player, which can be exploited by malicious people to compromise a user's system.
+			1) Boundary errors in the "ParseMicroDvd()", "ParseSSA()", and "ParseVplayer()" functions when handling subtitles can be exploited to cause stack-based buffer overflows.
+			2) A format string error in the web interface listening on port 8080/tcp (disabled by default) can be exploited via a specially crafted HTTP request with a "Connection" header value containing format specifiers. Successful exploitation of the vulnerabilities allows execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>354</id>
 		<date>2008-01-21</date>
 		<author>voroskoi</author>
