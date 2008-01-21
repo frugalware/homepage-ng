@@ -27,6 +27,20 @@
 
 <fsas>
 	<fsa>
+		<id>354</id>
+		<date>2008-01-21</date>
+		<author>voroskoi</author>
+		<package>libexif</package>
+		<vulnerable>0.6.16-1</vulnerable>
+		<unaffected>0.6.16-2sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2680</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6351
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6352</cve>
+		<desc>Two vulnerabilities have been reported in libexif, which can be exploited by malicious people to cause a DoS (Denial of Service) or to compromise an application using the library.
+			1) An integer overflow error in the "exif_data_load_data_thumbnail()" function in exif-data.c when processing exif image tags can be exploited to cause a memory corruption and may allow execution of arbitrary code via a specially crafted exif file.
+			2) An infinite recursion error in the "exif_loader_write()" function in exif-loader.c when handling exif image tags can be exploited to cause an application to crash via a specially crafted exif file.</desc>
+	</fsa>
+	<fsa>
 		<id>353</id>
 		<date>2008-01-21</date>
 		<author>voroskoi</author>
