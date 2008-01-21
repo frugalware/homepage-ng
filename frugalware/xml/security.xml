@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>349</id>
+		<date>2008-01-21</date>
+		<author>voroskoi</author>
+		<package>apache</package>
+		<vulnerable>2.2.6-1</vulnerable>
+		<unaffected>2.2.6-2sayshell1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5000</cve>
+		<desc>A vulnerability have been reported in Apache mod_imagemap module, which can be exploited by malicious people to conduct cross-site scripting attacks.
+			Certain unspecified input passed to "mod_imagemap" is not properly sanitised before being returned to the user. This can be exploited to execute arbitrary HTML and script code in a user's browser session in context of an affected site.
+			Successful exploitation requires that "mod_imagemap" is enabled and a mapfile is publicly accessible.</desc>
+	</fsa>
+	<fsa>
 		<id>348</id>
 		<date>2008-01-21</date>
 		<author>voroskoi</author>
