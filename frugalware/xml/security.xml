@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>359</id>
+		<date>2008-01-21</date>
+		<author>voroskoi</author>
+		<package>libxml2</package>
+		<vulnerable>2.6.30-1</vulnerable>
+		<unaffected>2.6.30-2sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2700</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6284</cve>
+		<desc>A vulnerability has been reported in Libxml2, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			The vulnerability is caused due to an unspecified error within the "xmlCurrentChar()" function. This can be exploited to trigger the execution of an infinite loop via specially crafted UTF-8 sequences.</desc>
+	</fsa>
+	<fsa>
 		<id>358</id>
 		<date>2008-01-21</date>
 		<author>voroskoi</author>
