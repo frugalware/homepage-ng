@@ -27,6 +27,20 @@
 
 <fsas>
 	<fsa>
+		<id>362</id>
+		<date>2008-01-23</date>
+		<author>voroskoi</author>
+		<package>rsync</package>
+		<vulnerable>2.6.9-2</vulnerable>
+		<unaffected>2.6.9-3sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2653</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6199
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6200</cve>
+		<desc>Two vulnerabilities have been reported in rsync, which can be exploited by malicious users to bypass certain security restrictions.
+			1) An error in the rsync daemon when the "use chroot" option is disabled can be exploited to gain access to files outside of the module's hierarchy via symlink attacks.
+			2) An error exists within the enforcing of the "exclude", "exclude from", and "filter" options. This can be exploited to bypass access restrictions and gain access to hidden files via e.g. symlink attacks, if the filename is known.</desc>
+	</fsa>
+	<fsa>
 		<id>361</id>
 		<date>2008-01-23</date>
 		<author>voroskoi</author>
