@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>365</id>
+		<date>2008-01-23</date>
+		<author>voroskoi</author>
+		<package>joomla</package>
+		<vulnerable>1.0.13-1</vulnerable>
+		<unaffected>1.0.13-2sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2487</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5427</cve>
+		<desc>MustLive has discovered a vulnerability in Joomla!, which can be exploited by malicious people to conduct cross-site scripting attacks.
+			Input passed to the "searchword" parameter in index.php (when "option" is set to "com_search") is not properly sanitised before being returned to the user. This can be exploited to execute arbitrary HTML and script code in a user's browser session in context of an affected site.
+			Successful exploitation requires that the victim changes the number of search results in a drop-down box, after having clicked on the malicious link.</desc>
+	</fsa>
+	<fsa>
 		<id>364</id>
 		<date>2008-01-23</date>
 		<author>voroskoi</author>
