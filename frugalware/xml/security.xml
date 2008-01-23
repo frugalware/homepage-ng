@@ -27,6 +27,25 @@
 
 <fsas>
 	<fsa>
+		<id>364</id>
+		<date>2008-01-23</date>
+		<author>voroskoi</author>
+		<package>postgresql</package>
+		<vulnerable>8.2.5-1</vulnerable>
+		<unaffected>8.2.6-1sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2714</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4769
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4772
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6600
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6601
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6067</cve>
+		<desc>Some vulnerabilities have been reported in PostgreSQL, which can be exploited by malicious users to gain escalated privileges or to cause a DoS (Denial of Service).
+			1) Index functions are executed as superuser during "VACUUM" and "ANALYZE", which can be exploited to gain escalated privileges.
+			2) "SET ROLE" and "SET SESSION AUTHORIZATION" are permitted within index functions, which can be exploited to gain escalated privileges.
+			3) Various errors in the processing of regular expressions within SQL queries can be exploited to cause infinite loops, consume large amounts of memory, or to crash the backend, resulting in a DoS.
+			4) Errors in the DBLink module can be exploited to gain superuser privileges when being used in combination with local trust or ident authentication.</desc>
+	</fsa>
+	<fsa>
 		<id>363</id>
 		<date>2008-01-23</date>
 		<author>voroskoi</author>
