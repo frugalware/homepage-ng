@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>363</id>
+		<date>2008-01-23</date>
+		<author>voroskoi</author>
+		<package>libcdio</package>
+		<vulnerable>0.78.2-1</vulnerable>
+		<unaffected>0.78.2-2sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2713</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6613</cve>
+		<desc>Some vulnerabilities have been reported in the cd-info and iso-info applications of libcdio, which potentially can be exploited by malicious people to compromise a user's system.
+			The vulnerabilities are caused due to boundary errors within the function "print_iso9660_recurse()" in cd-info.c and iso-info.c. This be exploited to cause a buffer overflow by e.g. tricking a user into using the iso-info application on a specially crafted ISO image.</desc>
+	</fsa>
+	<fsa>
 		<id>362</id>
 		<date>2008-01-23</date>
 		<author>voroskoi</author>
