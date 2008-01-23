@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>360</id>
+		<date>2008-01-23</date>
+		<author>voroskoi</author>
+		<package>ruby-gnome2</package>
+		<vulnerable>0.16.0-3</vulnerable>
+		<unaffected>0.16.0-4sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2650</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6183</cve>
+		<desc>Chris Rohlf has reported a vulnerability in Ruby-GNOME2, which can potentially be exploited by malicious people to compromise an application using the library.
+			The vulnerability is caused due to a format string error within the "Gtk::MessageDialog.new()" method in gtk/src/rbgtkmessagedialog.c and can potentially be exploited to execute arbitrary code when a specially crafted string is passed to the affected function.
+			NOTE: Exploitation and impact of this vulnerability depend on how an application uses the affected function of the vulnerable library.</desc>
+	</fsa>
+	<fsa>
 		<id>359</id>
 		<date>2008-01-21</date>
 		<author>voroskoi</author>
