@@ -27,6 +27,23 @@
 
 <fsas>
 	<fsa>
+		<id>361</id>
+		<date>2008-01-23</date>
+		<author>voroskoi</author>
+		<package>asterisk</package>
+		<vulnerable>1.4.13-1sayshell1</vulnerable>
+		<unaffected>1.4.13-1sayshell2</unaffected>
+		<bts>http://bugs.frugalware.org/task/2652</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6171
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6170
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6430</cve>
+		<desc>Multiple vulnerabilities has been reported in Asterisk, which can be exploited by malicious people to conduct SQL injection attacks, bypass certain security restrictions and cause a DoS (Denial of Service).
+			1) Input passed as lookup data to the Postgres Realtime Engine is not properly sanitised before being used in SQL queries. This can be exploited to manipulate SQL queries by injecting arbitrary SQL code. Successful exploitation requires that the module is configured and used.
+			2) Input passed as ANI and DNIS strings to the Call Detail Record Postgres logging engine is not properly sanitised before being used in SQL queries. This can be exploited to manipulate SQL queries by injecting arbitrary SQL code. Successful exploitation requires valid user credentials and that the module is configured and used.
+			3) The security issue is caused due to missing checks of IP addresses when processing database-based registrations ("realtime"). This can be exploited to authenticate as a legitimate user without a password. Successful exploitation requires that host-based authentication is used and that the attacker has knowledge of a valid username.
+			4) The vulnerability is caused due to a null-pointer dereference error within the handling of the "BYE/Also" transfer method and can be exploited to crash the application. Successful exploitation requires that a dialog has already been established.</desc>
+	</fsa>
+	<fsa>
 		<id>360</id>
 		<date>2008-01-23</date>
 		<author>voroskoi</author>
