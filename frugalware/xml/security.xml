@@ -27,6 +27,35 @@
 
 <fsas>
 	<fsa>
+		<id>366</id>
+		<date>2008-01-24</date>
+		<author>vmiklos</author>
+		<package>kernel</package>
+		<vulnerable>2.6.22-7sayshell3</vulnerable>
+		<unaffected>2.6.22-7sayshell4</unaffected>
+		<bts>http://bugs.frugalware.org/task/2651
+			http://bugs.frugalware.org/task/2664
+			http://bugs.frugalware.org/task/2673
+			http://bugs.frugalware.org/task/2719</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6063
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6206
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5966
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0001</cve>
+		<desc>A vulnerability with unknown impact has been reported in the Linux Kernel.
+			The vulnerability is caused due to a boundary error within the "isdn_net_setcfg()" function in drivers/isdn/i4l/isdn_net.c when processing IOCTL configuration requests sent to the ISDN pseudo device (/dev/isdnctrl). This can be exploited to cause a buffer overflow via a specially crafted IIOCNETSCF IOCTL request.
+			Successful exploitation requires write access to /dev/isdnctrl.
+
+			A security issue has been reported in the Linux Kernel, which can be exploited by malicious, local users to disclose potentially sensitive information.
+			The security issue is caused due to the "do_coredump()" function in fs/exec.c not correctly verifying the user ID of a core dump file when dumping the core into an existing file. This can be exploited to e.g. gain access to sensitive information by tricking an application with another user ID into dumping the core into a preexisting file.
+
+			A vulnerability with an unknown impact has been reported in the Linux Kernel.
+			The vulnerability is caused due to an integer overflow error within the "hrtimer_start()" function when processing large relative timeout values.
+
+			A vulnerability has been reported in the Linux Kernel, which can be exploited by malicious, local users to bypass certain security restrictions and corrupt a file system.
+			The vulnerability is caused due to an error when checking the open flags and access modes when opening a directory. This can be exploited to truncate directories by calling the "open()" system call with certain flags.
+			Successful exploitation requires write privileges for the directory to be truncated.</desc>
+	</fsa>
+	<fsa>
 		<id>365</id>
 		<date>2008-01-23</date>
 		<author>voroskoi</author>
