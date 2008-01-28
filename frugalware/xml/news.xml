@@ -26,9 +26,11 @@
 			The Frugalware Developer Team is pleased to <a href="/news/86">announce</a> the immediate availability of Frugalware 0.8rc1, the first release candidate of the upcoming 0.8 stable release.<br />
 			A short and incomplete list of changes since 0.8pre2:<br />
 			<ul>
-				<li>New features:
+				<li>Bugfixes:
 					<ul>
-						<li>Improved Splash: .</li>
+						<li>Improved Splash: it now presents till the very end of the shutdown process.</li>
+						<li>Fixed the "packages one by one" select method in the installer.</li>
+						<li>The LiveCD now supports copy the disc to RAM if enough memory is available to free up your CD/DVD drive.</li>
 					</ul>
 				</li>
 				<li>Package updates:
