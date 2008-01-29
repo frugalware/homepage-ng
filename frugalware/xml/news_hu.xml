@@ -16,16 +16,16 @@
 		<title>Megjelent a Frugalware 0.8rc1 (Kalgan)</title>
 		<date>Tue Jan 29 08:57:59 CET 2008</date>
 		<author>IroNiQ</author>
-		<hidden>1</hidden>
+		<hidden>0</hidden>
 		<content><![CDATA[
 			A Frugalware Fejlesztői Csapat örömmel <a href="/news/86/hu">jelenti be</a> a Frugalware 0.8rc1 azonnali elérhetőségét, mint az eljövendő 0.8-as stabil kiadás első, kiadásra jelölt változatát.<br />
 			Egy rövid, nem teljes lista a 0.8pre2 óta történt változásokról:<br />
 			<ul>
 				<li>Hibajavítások:
 					<ul>
-						<li>Továbbfejlesztett Splash: mostmár a leállítási procedúra legvégéig fut.</li>
-						<li>A csomagok egyenkénti kiválasztása metódus a telepítőben javítva.</li>
-						<li>A LiveCD mostantól támogatja teljes cd memóriába másolását a CD/DVD meghajtó felszabadításához, ha van elég memória.</li>
+						<li>Továbbfejlesztett Splash: most már a leállítási procedúra legvégéig fut.</li>
+						<li>A "csomagok egyenkénti kiválasztása" metódus a telepítőben javítva.</li>
+						<li>A LiveCD mostantól támogatja teljes lemez memóriába másolását a CD/DVD meghajtó felszabadításához, ha van elég memória.</li>
 					</ul>
 				</li>
 				<li>Csomagfrissítések:
@@ -39,7 +39,7 @@
 				<li>Újdonságok:
 					<ul>
 						<li>etckeeper - /etc könyvtár verziókövetéssel</li>
-						<li>linuxwacom - támogatás Wacom grafikai tablet-ekhez</li>
+						<li>linuxwacom - támogatás Wacom grafikai tabletekhez</li>
 						<li>Új Xorg driverek</li>
 						<li>Több, mint 20 új csomag</li>
 					</ul>
