@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE news [
 <!ELEMENT news (post)*>
-<!ELEMENT post (id , title , date , author , editedby* , content)>
+<!ELEMENT post (id , title , date , author , editedby* , icon* , hidden? , content)>
 <!ELEMENT id (#PCDATA)>
 <!ELEMENT date (#PCDATA)>
 <!ELEMENT title (#PCDATA)>
 <!ELEMENT author (#PCDATA)>
 <!ELEMENT content (#PCDATA)>
+<!ELEMENT hidden (#PCDATA)>
 <!ELEMENT editedby (name , date)>
+<!ELEMENT icon (#PCDATA)>
 <!ELEMENT name (#PCDATA)>
 ]>
+
+<!-- if you modify this file, be sure it's still valid - xmllint is your friend -->
+
 <news>
 	<post>
 		<id>86</id>

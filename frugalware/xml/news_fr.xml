@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE news [
 <!ELEMENT news (post)*>
-<!ELEMENT post (id , title , date , author , editedby* , icon* , content, hidden)>
+<!ELEMENT post (id , title , date , author , editedby* , icon* , hidden? , content)>
 <!ELEMENT id (#PCDATA)>
 <!ELEMENT date (#PCDATA)>
 <!ELEMENT title (#PCDATA)>
