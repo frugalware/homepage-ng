@@ -17,6 +17,25 @@
 
 <news>
 	<post>
+		<id>87</id>
+		<title>Lettre d'information Frugalware numéro 15</title>
+		<date>Sat Feb 02 16:30:13 CET 2008</date>
+		<author>hermier</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			Cette lettre d'information à pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Dans ce numéro:
+			<ul>
+				<li>Kalgan - nous nous en rapprochons :)</li>
+				<li>Vous voulez des mises à jours de sécurité? Nous les avons!</li>
+				<li>Astuce - Problème vidéo avec X au démarrage? - <b>Ne paniquez pas!</b> (encore)</li>
+				<li>Stellarium - Regardez les étoiles depuis votre PC</li>
+			</ul>
+			Vous pouvez la lire <a href="/newsletter/15">ici (anglais)</a>. Nous espérons que vous l'apprécierez!
+			]]>
+		</content>
+	</post>
+	<post>
 		<id>86</id>
 		<title>Frugalware 0.8rc1 (Kalgan) est disponible</title>
 		<date>Tue Jan 29 06:19:47 CET 2008</date>
