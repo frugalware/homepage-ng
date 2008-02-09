@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>367</id>
+		<date>2008-02-08</date>
+		<author>vmiklos</author>
+		<package>qt4</package>
+		<vulnerable>4.3.1-3</vulnerable>
+		<unaffected>4.3.1-4sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2716</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5965</cve>
+		<desc>A vulnerability has been reported in Qt, which can be exploited by malicious people to bypass certain security restrictions.
+			The vulnerability is caused due to an error within the certificate validation in QSslSocket, which can be exploited to e.g. trick an application using QSslSocket into accepting spoofed certificates.</desc>
+	</fsa>
+	<fsa>
 		<id>366</id>
 		<date>2008-01-24</date>
 		<author>vmiklos</author>
