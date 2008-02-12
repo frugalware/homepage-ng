@@ -27,7 +27,7 @@ class fsa:
 		self.unaffected = xmldoc.getElementsByTagName('unaffected')[0].firstChild.toxml()
 		self.bts = xmldoc.getElementsByTagName('bts')[0].firstChild.toxml()
 		self.cve = xmldoc.getElementsByTagName('cve')[0].firstChild.toxml()
-		self.desc = re.sub(r'\n\t+', r'\n', xmldoc.getElementsByTagName('desc')[0].firstChild.toxml())
+		self.desc = re.sub(r'\n\t+', r'\n', xmldoc.getElementsByTagName('desc')[0].firstChild.toxml()).replace('&quot;', '"')
 		self.subject = "[ FSA-%s ] %s" % (self.id, self.package)
 		self.comment = "See http://ftp.frugalware.org/pub/README.GPG for info"
 
