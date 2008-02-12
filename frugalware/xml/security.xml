@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>369</id>
+		<date>2008-02-08</date>
+		<author>vmiklos</author>
+		<package>kernel</package>
+		<vulnerable>2.6.22-7sayshell4</vulnerable>
+		<unaffected>2.6.22-7sayshell5</unaffected>
+		<bts>http://bugs.frugalware.org/task/2759</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0600</cve>
+		<desc>A vulnerability has been reported in the Linux Kernel, which can be exploited by malicious, local users to cause a DoS (Denial of Service), disclose potentially sensitive information, and gain escalated privileges.
+			The vulnerability is caused due to the missing verification of parameters within the "vmsplice_to_user()", "copy_from_user_mmap_sem()", and "get_iovec_page_array()" functions in fs/splice.c before using them to perform certain memory operations. This can be exploited to e.g. read or write to arbitrary kernel memory via a specially crafted "vmsplice()" system call.
+			Successful exploitation allows attackers to e.g. gain "root" privileges.</desc>
+	</fsa>
+	<fsa>
 		<id>368</id>
 		<date>2008-02-12</date>
 		<author>vmiklos</author>
