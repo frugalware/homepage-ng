@@ -27,6 +27,33 @@
 
 <fsas>
 	<fsa>
+		<id>368</id>
+		<date>2008-02-12</date>
+		<author>vmiklos</author>
+		<package>flashplugin</package>
+		<vulnerable>9.0.48.0-1</vulnerable>
+		<unaffected>9.0.115.0-1sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2712</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4324
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4768
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5275
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5476
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6242
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6244
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6245
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6246</cve>
+		<desc>Some vulnerabilities have been reported in Adobe Flash Player, where one vulnerability has an unknown impact and others can be exploited by malicious, local users to gain escalated privileges and by malicious people to bypass certain security restrictions, conduct cross-site scripting and HTTP request splitting attacks, disclose sensitive information, cause a Denial of Service (DoS), or to potentially compromise a user's system.
+			1) An error when parsing specially crafted regular expressions can be exploited to cause a heap-based buffer overflow.
+			2) An error exists in the processing of SWF embedded JPG images. This can be exploited to corrupt the heap via specially crafted X and Y densities specified in the JPG header.
+			3) An error exists when pinning a hostname to an IP address. This can be exploited to conduct DNS rebinding attacks via allow-access-from elements in cross-domain-policy XML documents.
+			4) An error exists in the enforcing of cross-domain policy files. This can be exploited to bypass certain security restrictions on web servers hosting cross-domain policy files.
+			5) Input passed to unspecified parameters when handling the "asfunction:" protocol is not properly sanitised before being returned to the user. This can be exploited to inject arbitrary HTML and script code in a user's browser session in context of an affected site.
+
+			6) An unspecified error can be exploited to modify HTTP headers and conduct HTTP request splitting attacks.
+			7) An error within the implementation of the Socket or XMLSocket ActionScript classes can be exploited to determine if a port on a remote host is opened or closed.
+			8) An error within the setting of memory permissions in Adobe Flash Player for Linux can be exploited by malicious, local users to gain escalated privileges.</desc>
+	</fsa>
+	<fsa>
 		<id>367</id>
 		<date>2008-02-08</date>
 		<author>vmiklos</author>
