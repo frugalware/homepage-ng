@@ -30,8 +30,8 @@
 		<newsid></newsid>
 		<prerelease>
 			<preversion>rc2</preversion>
-			<predate>Feb 19, 2008</predate>
-			<prestatus>0</prestatus>
+			<predate>Feb 17, 2008</predate>
+			<prestatus>1</prestatus>
 		</prerelease>
 		<prerelease>
 			<preversion>rc1</preversion>
