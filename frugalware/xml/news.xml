@@ -17,6 +17,24 @@
 
 <news>
     <post>
+        <id>89</id>
+        <title>Frugalware Newsletter Issue 16</title>
+        <date>Sun Feb 17 16:30:13 CET 2008</date>
+        <author>phayz</author>
+        <hidden>0</hidden>
+        <content><![CDATA[
+            The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
+            Features of this issue include:
+            <ul>
+                <li>Kalgan - "be still my beating heart"</li>
+                <li>Tip - Redirect your terminal's output</li>
+                <li>Geany - Want a simple but powerful GUI text editor?  Your wish is granted!</li>
+            </ul>
+            You can read it <a href="/newsletter/16">here</a>. We hope you like it!
+            ]]>
+        </content>
+    </post>
+    <post>
         <id>88</id>
         <title>Frugalware 0.8rc2 (Kalgan) released</title>
         <date>Sun Feb 17 11:23:04 CET 2008</date>
