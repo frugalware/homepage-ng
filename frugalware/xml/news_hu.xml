@@ -2374,7 +2374,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
 		<date>2004. nov. 14., vasárnap, 23.23.21 CET</date>
 		<author>IroNiQ</author>
 		<content><![CDATA[
-			Kettő új funkcióval gazdagodott a weboldalunk: az <a href="roadmap.php">útitervvel</a>, amelyből megtudható a kiadási ciklus, valamint a <a href=wishlist.php>kívánságlistával</a>, amelyre Ön is felírhatja a kedvenc programját, vagy <a href=todolist.php>megtekintheti</a>, mit kell még megtennünk.
+			Kettő új funkcióval gazdagodott a weboldalunk: az <a href="/roadmap">útitervvel</a>, amelyből megtudható a kiadási ciklus, valamint a <a href="/wishlist">kívánságlistával</a>, amelyre Ön is felírhatja a kedvenc programját, vagy <a href="/todolist">megtekintheti</a>, mit kell még megtennünk.
 			]]>
 		</content>
 	</post>
@@ -2430,8 +2430,8 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
 					</ul>
 				</li>
 			</ul>
-			További információk a <a href=changelog.php>ChangeLog</a>-ban.
-			Frugalware 0.1 letölthető <a href=download.php>innen</a>.
+			További információk a <a href="changelog.php">ChangeLog</a>-ban.<br />
+			Frugalware 0.1 letölthető <a href="/download">innen</a>.
 			]]>
 		</content>
 	</post>
@@ -2441,9 +2441,9 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
 		<date>2004. okt. 11., hétfő, 15.40.13 CEST</date>
 		<author>IroNiQ</author>
 		<content><![CDATA[
-			A Frugalware Fejlesztő Csapat bejelenti a Frugalware 0.1rc2 verziót, amely a második kiadásra jelölt (Release Candidate) változata a 0.1-es kiadásnak.
-			Az újdonságok és javított hibák listáját (ChangeLog) megtekintheti <a href=changelog.php>itt</a>.
-			A Frugalware 0.1rc2 verzió letölthető <a href=download.php>innen</a>.
+			A Frugalware Fejlesztő Csapat bejelenti a Frugalware 0.1rc2 verziót, amely a második kiadásra jelölt (Release Candidate) változata a 0.1-es kiadásnak.<br />
+			Az újdonságok és javított hibák listáját (ChangeLog) megtekintheti <a href="changelog.php">itt</a>.<br />
+			A Frugalware 0.1rc2 verzió letölthető <a href="/download">innen</a>.
 			]]>
 		</content>
 	</post>
@@ -2453,9 +2453,9 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
 		<date>2004. sze. 29., szerda, 07.14.26 CEST</date>
 		<author>IroNiQ</author>
 		<content><![CDATA[
-			A Frugalware Fejlesztő Csapat bejelenti a Frugalware 0.1rc1 verziót, amely az első kiadásra jelölt (Release Candidate) változata a 0.1-es kiadásnak.
-			Az újdonságok és változások listáját (ChangeLog) megtekintheti <a href=changelog.php>itt</a>.
-			A Frugalware 0.1rc1 verzió letölthető <a href=download.php>innen</a>.
+			A Frugalware Fejlesztő Csapat bejelenti a Frugalware 0.1rc1 verziót, amely az első kiadásra jelölt (Release Candidate) változata a 0.1-es kiadásnak.<br />
+			Az újdonságok és változások listáját (ChangeLog) megtekintheti <a href="changelog.php">itt</a>.<br />
+			A Frugalware 0.1rc1 verzió letölthető <a href="/download">innen</a>.
 			]]>
 		</content>
 	</post>

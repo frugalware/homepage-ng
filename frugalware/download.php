@@ -83,5 +83,7 @@ foreach($mirrors as $k => $v)
 
 }
 
+fwmiddlebox( gettext( 'Archive' ), gettext( 'Unfortunately due our limited resources we cannot store our old stable versions, they are being removed shortly after a new official stable release. But if you are interested in our old stable versions, ask IroNiQ on #frugalware @freenode or ask in email on one of our lists.' ) );
+
 include("footer.php");
 ?>
