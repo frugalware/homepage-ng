@@ -30,7 +30,7 @@
                     <ul>
                         <li>Installer optimizations: a general install should be now about 30% faster.</li>
                         <li>Improved documentation: added details about our mailing lists.</li>
-                        <li>foo</li>
+                        <li>Minor bugfixes to help the upgrade from 0.7.</li>
                     </ul>
                 </li>
                 <li>Package updates:
