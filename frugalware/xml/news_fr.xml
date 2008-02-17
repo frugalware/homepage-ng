@@ -391,7 +391,7 @@ eb7fbc5158e452f5217e87a2be51e600b05024b8  frugalware-0.8pre2-i686-tftp.img.gz
 			</ul>
 			Veuillez vous référer à la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Testing ChangeLog</a> pour plus d'informations.<br />
 			Téléchargements pour i686:<br />
-			<b>NOTE</b>: Cliquer <a href="/docs/install#_choosing_installation_flavor">ici</a> pour avoir plus d'information pour choisir le media dont vous avez besoin pour l'installation.<br />
+			<b>NOTE</b>: Cliquez <a href="/docs/install#_choosing_installation_flavor">ici</a> pour avoir plus d'information pour choisir le media dont vous avez besoin pour l'installation.<br />
 				<a href="/download/frugalware-testing-iso/fwlive-0.8pre1-i686-full.iso">livecd</a>,
 				<a href="/download/frugalware-testing-iso/frugalware-0.8pre1-i686-net.iso">netinstall</a>,
 				<a href="/download/frugalware-testing-iso/frugalware-0.8pre1-i686-usb.tar.gz">usb</a>,
