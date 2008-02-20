@@ -17,6 +17,24 @@
 
 <news>
 	<post>
+		<id>89</id>
+		<title>Lettre d'information Frugalware numéro 16</title>
+		<date>Sun Feb 17 16:30:13 CET 2008</date>
+		<author>phayz</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			Cette lettre d'information à pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Dans ce numéro:
+			<ul>
+				<li>Kalgan - "be still my beating heart"</li>
+				<li>Tip - Redirection de la sortie du terminal</li>
+				<li>Geany - Vous voulez un éditeur de texte graphique simpe mais puissant? Votre voeux est exaucé!</li>
+			</ul>
+			Vous pouvez la lire <a href="/newsletter/16">ici (anglais)</a>. Nous espérons que vous l'apprécierez!
+			]]>
+		</content>
+	</post>
+	<post>
 		<id>88</id>
 		<title>Frugalware 0.8rc2 (Kalgan) est disponible</title>
 		<date>Sun Feb 17 11:23:04 CET 2008</date>
