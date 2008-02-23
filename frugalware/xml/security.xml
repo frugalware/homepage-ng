@@ -27,6 +27,25 @@
 
 <fsas>
 	<fsa>
+		<id>370</id>
+		<date>2008-02-23</date>
+		<author>vmiklos</author>
+		<package>mplayer</package>
+		<vulnerable>1.0rc1-8</vulnerable>
+		<unaffected>1.0rc1-9sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2774</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0485
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0486
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0629
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0630</cve>
+		<desc>Some vulnerabilities have been reported in MPlayer, which can be exploited by malicious people to compromise a user's system.
+			1) A boundary error exists within the libmpdemux/demux_audio.c file when parsing FLAC comments. This can be exploited to corrupt memory via a specially crafted FLAC file.
+			2) An array indexing error exists within the libmpdemux/demux_mov.c file when parsing MOV file headers. This can be exploited to corrupt heap memory via a specially crafted MOV file.
+			3) A boundary error exists within the "url_scape_string()" function in stream/url.c. This can be exploited to cause a buffer overflow via a specially crafted URL.
+			4) A boundary error exists within the "cddb_parse_matches_list()" and "cddb_query_parse()" functions in stream/stream_cddb.c. This can be exploited to cause a stack-based buffer overflow via an overly long album title received from a CDDB server.
+		Successful exploitation allows execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>369</id>
 		<date>2008-02-08</date>
 		<author>vmiklos</author>
