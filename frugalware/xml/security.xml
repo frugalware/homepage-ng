@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>371</id>
+		<date>2008-02-26</date>
+		<author>vmiklos</author>
+		<package>openldap</package>
+		<vulnerable>2.3.39-1sayshell1</vulnerable>
+		<unaffected>2.3.39-1sayshell2</unaffected>
+		<bts>http://bugs.frugalware.org/task/2786</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0658</cve>
+		<desc>A vulnerability has been reported in OpenLDAP, which can be exploited by malicious users to cause a DoS (Denial of Service).
+		The vulnerability is caused due to an error within the implementation of modrdn operations. This can be exploited to crash the slapd daemon via a modrdn operation with a NOOP control.</desc>
+	</fsa>
+	<fsa>
 		<id>370</id>
 		<date>2008-02-23</date>
 		<author>vmiklos</author>
