@@ -17,6 +17,25 @@
 
 <news>
     <post>
+        <id>90</id>
+        <title>Frugalware Newsletter Issue 17</title>
+        <date>Sat Mar 1 16:30:13 CET 2008</date>
+        <author>phayz</author>
+        <hidden>0</hidden>
+        <content><![CDATA[
+            The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
+            Features of this issue include:
+            <ul>
+                <li>Kalgan is nearly here!</li>
+                <li>Memory donation - if I recall correctly :)</li>
+                <li>Frugalware's developers are people too!</li>
+                <li>Tip - Free some space on your hard drive</li>
+            </ul>
+            You can read it <a href="/newsletter/17">here</a>. We hope you like it!
+            ]]>
+        </content>
+    </post>
+    <post>
         <id>89</id>
         <title>Frugalware Newsletter Issue 16</title>
         <date>Sun Feb 17 16:30:13 CET 2008</date>
