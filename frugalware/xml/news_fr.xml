@@ -17,6 +17,25 @@
 
 <news>
 	<post>
+		<id>90</id>
+		<title>Lettre d'information Frugalware numéro 17</title>
+		<date>Sat Mar 1 16:30:13 CET 2008</date>
+		<author>phayz</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			Cette lettre d'information à pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Dans ce numéro:
+			<ul>
+				<li>Kalgan est presque là!</li>
+				<li>Don de mémoire - si je me rapelle bien :)</li>
+				<li>Les dévellopeurs de Frugalware sont des êtres humain aussi!</li>
+				<li>Astuce - Libérez un peut d'espace sur vos disques dur</li>
+			</ul>
+			Vous pouvez la lire <a href="/newsletter/17">ici (anglais)</a>. Nous espérons que vous l'apprécierez!
+			]]>
+		</content>
+	</post>
+	<post>
 		<id>89</id>
 		<title>Lettre d'information Frugalware numéro 16</title>
 		<date>Sun Feb 17 16:30:13 CET 2008</date>
