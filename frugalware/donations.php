@@ -49,12 +49,7 @@ if you wish to donate money.</div>");
 
 fwmiddlebox(gettext("Donations"), $fwdonatewelcome);
 
-$cont1 = "<div align=\"left\">Wishes:<ul>
-<li><b>at least one 10-20GB IDE HDD for i686 buildserver's system and at least one bigger (80-100GB) for i686 buildserver's chroot environments</b></li>
-<li>10-20GB IDE HDD for testing Xen</li>
-<li>10GB IDE HDD for testing the setup</li>
-<li>PegasosPPC or/and other PowerPC computer to use as buildserver</li>
-</ul>Received:<ul>
+$cont1 = "<div align=\"left\">Received:<ul>
 <li>Socket939 Motherboard + AMD Athlon64 3000+ CPU Socket939 version + 512MB DDR400 RAM (x86_64 buildserver)</li>
 <li>Socket939 Motherboard + AMD Athlon64 3000+ CPU Socket939 version + 1GB DDR400 RAM (main server)</li>
 <li>Codegen case for the new x86_64 buildserver (Krisztian VASAS)</li>
