@@ -27,6 +27,20 @@
 
 <fsas>
 	<fsa>
+		<id>372</id>
+		<date>2008-03-04</date>
+		<author>vmiklos</author>
+		<package>kernel</package>
+		<vulnerable>2.6.22-7sayshell5</vulnerable>
+		<unaffected>2.6.22-7sayshell6</unaffected>
+		<bts>http://bugs.frugalware.org/task/2834</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0007</cve>
+		<desc>A vulnerability have been reported in the Linux Kernel, which can be exploited by malicious, local users to disclose potentially sensitive information or gain escalated privileges.
+			The vulnerability is caused due to certain drivers with registered page fault handlers not correctly preventing size expansions of mapped memory regions beyond the originally allocated size. This can be exploited to gain access to other memory areas via e.g. the "mremap()" system call.
+			Successful exploitation may allow local attackers to disclose and manipulate kernel memory, which potentially can be leveraged to gain escalated privileges.
+		</desc>
+	</fsa>
+	<fsa>
 		<id>371</id>
 		<date>2008-02-26</date>
 		<author>vmiklos</author>
