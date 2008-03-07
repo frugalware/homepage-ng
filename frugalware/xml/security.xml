@@ -27,6 +27,35 @@
 
 <fsas>
 	<fsa>
+		<id>373</id>
+		<date>2008-03-07</date>
+		<author>vmiklos</author>
+		<package>firefox</package>
+		<vulnerable>2.0.0.11-1sayshell1</vulnerable>
+		<unaffected>2.0.0.12-1sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2776</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0412
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0413
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0414
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0415
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0419
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0420
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0591
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0593</cve>
+		<desc>Some vulnerabilities and weaknesses have been reported Mozilla Firefox, which can be exploited by malicious people to disclose sensitive information, bypass certain security restrictions, conduct spoofing attacks, or to compromise a user's system.
+			1) Various errors in the browser engine can be exploited to cause a memory corruption.
+			2) Various errors in the Javascript engine can be exploited to cause a memory corruption.
+			Successful exploitation of these vulnerabilities may allow execution of arbitrary code.
+			3) A security issue is caused due to a design error within the focus handling and can potentially be exploited to trick a user into uploading arbitrary files.
+			4) An error in the Javascript engine can be exploited to run Javascript code with "chrome" privileges.
+			5) An error in the Javascript engine can be exploited to bypass the same-origin policy via the "XMLDocument.load()" function.
+			6) An error exists in the handling of images when a user leaves a page, which uses "designMode" frames. This can be exploited to disclose the user's navigation history, forward navigation information, and to cause a memory corruption.
+			Successful exploitation of this vulnerability may allow execution of arbitrary code.
+			7) A design error related to timer-enabled dialogs can be exploited to trick a user into unintentionally confirming a security dialog.
+			8) The problem is that Firefox follows "302" redirects for stylesheets and allows reading the target URL via "element.sheet.href". This can potentially be exploited to disclose sensitive URL parameters.
+			9) An error within the processing of color palettes within bitmaps can be exploited to disclose the contents of memory areas.</desc>
+	</fsa>
+	<fsa>
 		<id>372</id>
 		<date>2008-03-04</date>
 		<author>vmiklos</author>
