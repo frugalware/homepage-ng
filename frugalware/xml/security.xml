@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>381</id>
+		<date>2008-03-09</date>
+		<author>vmiklos</author>
+		<package>lighttpd</package>
+		<vulnerable>1.4.18-1</vulnerable>
+		<unaffected>1.4.18-2sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2804</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0983</cve>
+		<desc>A vulnerability has been reported in lighttpd, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			The vulnerability is caused due to a calculation error when allocating the global file descriptor array and can be exploited to crash an affected server.</desc>
+	</fsa>
+	<fsa>
 		<id>380</id>
 		<date>2008-03-09</date>
 		<author>vmiklos</author>
