@@ -27,6 +27,20 @@
 
 <fsas>
 	<fsa>
+		<id>388</id>
+		<date>2008-03-09</date>
+		<author>vmiklos</author>
+		<package>wireshark</package>
+		<vulnerable>0.99.7-1terminus1</vulnerable>
+		<unaffected>0.99.8-1sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2821</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1070
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1071
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1072</cve>
+		<desc>Some vulnerabilities have been reported in Wireshark, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			The vulnerabilities are caused due to errors in the SCTP, SNMP, and TFTP dissectors. These can be exploited to cause the application to crash or consume large amounts of memory when processing specially crafted packets that are either captured off the wire or loaded via a capture file.</desc>
+	</fsa>
+	<fsa>
 		<id>387</id>
 		<date>2008-03-09</date>
 		<author>vmiklos</author>
