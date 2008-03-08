@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>377</id>
+		<date>2008-03-09</date>
+		<author>vmiklos</author>
+		<package>dbus</package>
+		<vulnerable>1.0.2-3sayshell1</vulnerable>
+		<unaffected>1.0.3-1sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2822</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0595</cve>
+		<desc>A security issue has been reported in D-Bus, which can be exploited by malicious, local users to bypass certain security restrictions.
+			The security issue is caused due to an error in the processing of messages with a NULL interface, which can be exploited to bypass security policy directives of the form "allow send_interface= [interface]".</desc>
+	</fsa>
+	<fsa>
 		<id>376</id>
 		<date>2008-03-09</date>
 		<author>vmiklos</author>
