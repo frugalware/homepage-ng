@@ -27,6 +27,22 @@
 
 <fsas>
 	<fsa>
+		<id>383</id>
+		<date>2008-03-09</date>
+		<author>vmiklos</author>
+		<package>thunderbird</package>
+		<vulnerable>2.0.0.9-1terminus1</vulnerable>
+		<unaffected>2.0.0.12-1sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2775</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0304
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0412
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0413
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0415
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0418
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0419</cve>
+		<desc>Some vulnerabilities have been reported in Mozilla Thunderbird, which can be exploited by malicious people to disclose sensitive information, bypass certain security restrictions, or potentially to compromise a user's system. For more information, see FSA374.</desc>
+	</fsa>
+	<fsa>
 		<id>382</id>
 		<date>2008-03-09</date>
 		<author>vmiklos</author>
