@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>375</id>
+		<date>2008-03-09</date>
+		<author>vmiklos</author>
+		<package>vlc</package>
+		<vulnerable>0.8.6-8sayshell1</vulnerable>
+		<unaffected>0.8.6-8sayshell2</unaffected>
+		<bts>http://bugs.frugalware.org/task/2819</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0984</cve>
+		<desc>A vulnerability has been reported in VLC Media Player, which can potentially be exploited by malicious people to compromise a user's system.
+			The vulnerability is caused due to a boundary error within the MP4 demuxer (modules/demux/mp4/mp4.c). This can be exploited to overwrite an almost arbitrary memory address via a specially crafted MPEG-4 file.
+			Successful exploitation may allow execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>374</id>
 		<date>2008-03-07</date>
 		<author>vmiklos</author>
