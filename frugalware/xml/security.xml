@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>386</id>
+		<date>2008-03-09</date>
+		<author>vmiklos</author>
+		<package>rblibtorrent</package>
+		<vulnerable>0.12-5</vulnerable>
+		<unaffected>0.12-6sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2770</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0646</cve>
+		<desc>A vulnerability has been reported in Rasterbar Software libtorrent, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			The vulnerability is caused due to an error within the "bdecode_recursive()" function in include/libtorrent/bencode.hpp when processing certain bencoded data. This can be exploited to cause a stack overflow and crash an application using the library by sending specially crafted bencoded messages.</desc>
+	</fsa>
+	<fsa>
 		<id>385</id>
 		<date>2008-03-09</date>
 		<author>vmiklos</author>
