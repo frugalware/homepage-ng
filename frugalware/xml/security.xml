@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>380</id>
+		<date>2008-03-09</date>
+		<author>vmiklos</author>
+		<package>cups</package>
+		<vulnerable>1.3.2-2sayshell3</vulnerable>
+		<unaffected>1.3.6-1sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2806</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0882</cve>
+		<desc>A vulnerability has been discovered in CUPS, which can be exploited by malicious people to cause a DoS (Denial of Service) or to potentially compromise a vulnerable system.
+			The vulnerability is caused due to an error within the "process_browse_data()" function when adding printers and classes. This can be exploited to free the same buffer twice by sending specially crafted browser packets to the UDP port on which cupsd is listening (by default port 631/UDP).
+			Successful exploitation may allow execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>379</id>
 		<date>2008-03-09</date>
 		<author>vmiklos</author>
