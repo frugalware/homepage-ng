@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>387</id>
+		<date>2008-03-09</date>
+		<author>vmiklos</author>
+		<package>phpmyadmin</package>
+		<vulnerable>2.11.2.2-1sayshell1</vulnerable>
+		<unaffected>2.11.5-1sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2835</bts>
+		<cve>There is no CVE entry for this issue.</cve>
+		<desc>A vulnerability has been reported in phpMyAdmin, which can be exploited by malicious people to conduct SQL injection attacks.
+			The vulnerability is caused due to the application obtaining parameters via the "$_REQUEST" variable, and using them without proper sanitation in SQL queries. This can be exploited to manipulate SQL queries by injecting arbitrary SQL code via a malicious cookie.
+			Successful exploitation requires that a phpMyAdmin user is tricked into visiting a malicious website.</desc>
+	</fsa>
+	<fsa>
 		<id>386</id>
 		<date>2008-03-09</date>
 		<author>vmiklos</author>
