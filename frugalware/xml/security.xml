@@ -27,6 +27,21 @@
 
 <fsas>
 	<fsa>
+		<id>376</id>
+		<date>2008-03-09</date>
+		<author>vmiklos</author>
+		<package>clamav</package>
+		<vulnerable>0.91.2-2sayshell1</vulnerable>
+		<unaffected>0.92.1-1sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2771</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0318
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0728</cve>
+		<desc>Some vulnerabilities have been reported in ClamAV, which can be exploited by malicious people to cause a DoS (Denial of Service) or to potentially compromise a vulnerable system.
+			1) An integer overflow error within the "cli_scanpe()" function in libclamav/pe.c can be exploited to cause a heap-based buffer overflow via a specially crafted PE file.
+			2) An error within the "unmew11()" function in libclamav/mew.c can be exploited to corrupt heap memory.
+			Successful exploitation may allow execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>375</id>
 		<date>2008-03-09</date>
 		<author>vmiklos</author>
