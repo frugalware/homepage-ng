@@ -27,6 +27,23 @@
 
 <fsas>
 	<fsa>
+		<id>385</id>
+		<date>2008-03-09</date>
+		<author>vmiklos</author>
+		<package>cacti</package>
+		<vulnerable>0.8.6j-3terminus1</vulnerable>
+		<unaffected>0.8.6j-4sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2772</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0783
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0784
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0785
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0786</cve>
+		<desc>Some vulnerabilities have been reported in Cacti, which can be exploited by malicious people to conduct HTTP response splitting, cross-site scripting, and SQL injection attacks.
+			1) Input passed to unspecified parameters is not properly sanitised before being used in SQL queries. This can be exploited to manipulate SQL queries by injecting arbitrary SQL code.
+			2) Input passed to unspecified parameters is not properly sanitised before being returned to the user. This can be exploited to execute arbitrary HTML and script code in a user's browser session in context of an affected site.
+			3) Input passed to unspecified parameters is not properly sanitised before being returned to the user. This can be exploited to insert arbitrary HTTP headers, which will be included in a response sent to the user, allowing for execution of arbitrary HTML and script code in a user's browser session in context of an affected site.</desc>
+	</fsa>
+	<fsa>
 		<id>384</id>
 		<date>2008-03-09</date>
 		<author>vmiklos</author>
