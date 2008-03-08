@@ -27,6 +27,20 @@
 
 <fsas>
 	<fsa>
+		<id>378</id>
+		<date>2008-03-09</date>
+		<author>vmiklos</author>
+		<package>joomla</package>
+		<vulnerable>1.0.13-2sayshell1</vulnerable>
+		<unaffected>1.0.15-1sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2808</bts>
+		<cve>There is no CVE entry for this issue.</cve>
+		<desc>Hendrik-Jan Verheij has discovered a vulnerability in Joomla!, which can be exploited by malicious people to compromise a vulnerable system.
+			Input passed to the "mosConfig_absolute_path" parameter in index.php is not properly verified before being used to include files. This can be exploited to include arbitrary files from external resources.
+			Successful exploitation requires that RG_EMULATION is either switched on or undefined.
+			NOTE: Both situations cause security warnings to be displayed in Joomla!'s administration section.</desc>
+	</fsa>
+	<fsa>
 		<id>377</id>
 		<date>2008-03-09</date>
 		<author>vmiklos</author>
