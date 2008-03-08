@@ -27,6 +27,21 @@
 
 <fsas>
 	<fsa>
+		<id>379</id>
+		<date>2008-03-09</date>
+		<author>vmiklos</author>
+		<package>graphicsmagick</package>
+		<vulnerable>1.1.8-1</vulnerable>
+		<unaffected>1.1.11-1sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2807</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4985
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4986
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4987
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4988</cve>
+		<desc>Some vulnerabilities have been reported in GraphicsMagick, which can be exploited by malicious people to conduct DoS (Denial of Service) attacks or compromise a user's system.
+			The vulnerabilities are caused due to the use of vulnerable ImageMagick code.</desc>
+	</fsa>
+	<fsa>
 		<id>378</id>
 		<date>2008-03-09</date>
 		<author>vmiklos</author>
