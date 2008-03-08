@@ -163,7 +163,8 @@ function getllang($lang)
 		"pl" => "pl_PL",
 		"sk" => "sk_SK",
 		"ru" => "ru_RU",
-		"da" => "da_DK"
+		"da" => "da_DK",
+		"cs" => "cs_CZ"
 	);
 	return $langs[$lang];
 }
@@ -177,7 +178,8 @@ function getnlang($lang)
 		"pl_PL" => "Polish",
 		"sk_SK" => "Slovak",
 		"ru_RU" => "Russian",
-		"da_DK" => "Danish"
+		"da_DK" => "Danish",
+		"cs_CZ" => "Czech"
 	);
 	return $nlangs[$lang];
 }
