@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>384</id>
+		<date>2008-03-09</date>
+		<author>vmiklos</author>
+		<package>xine-lib</package>
+		<vulnerable>1.1.8-1</vulnerable>
+		<unaffected>1.1.10.1-1sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2773</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0486</cve>
+		<desc>A vulnerability has been discovered in xine-lib, which can potentially be exploited by malicious people to compromise a user's system.
+			The vulnerability is caused due to a boundary error within the "open_flac_file()" function in src/demuxers/demux_flac.c. This can be exploited to corrupt memory via a specially crafted FLAC file.</desc>
+	</fsa>
+	<fsa>
 		<id>383</id>
 		<date>2008-03-09</date>
 		<author>vmiklos</author>
