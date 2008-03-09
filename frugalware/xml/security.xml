@@ -27,6 +27,17 @@
 
 <fsas>
 	<fsa>
+		<id>392</id>
+		<date>2008-03-09</date>
+		<author>vmiklos</author>
+		<package>bind</package>
+		<vulnerable>9.4.1-2</vulnerable>
+		<unaffected>9.4.1-3sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2721</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0122</cve>
+		<desc>A vulnerability has been reported in ISC BIND, which can be exploited by malicious people to cause a DoS (Denial of Service) or to potentially compromise a vulnerable system.</desc>
+	</fsa>
+	<fsa>
 		<id>391</id>
 		<date>2008-03-09</date>
 		<author>vmiklos</author>
