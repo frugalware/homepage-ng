@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>393</id>
+		<date>2008-03-09</date>
+		<author>vmiklos</author>
+		<package>boost</package>
+		<vulnerable>1.34.0-5</vulnerable>
+		<unaffected>1.34.0-6sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2720</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0171
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0172</cve>
+		<desc>Some vulnerabilities have been reported in Boost, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			The vulnerabilities are caused due to errors within the parsing of regular expressions in boost/regex/v4/basic_regex_parser.hpp. These can be exploited to crash an application linked against the Boost library via specially crafted regular expressions.</desc>
+	</fsa>
+	<fsa>
 		<id>392</id>
 		<date>2008-03-09</date>
 		<author>vmiklos</author>
