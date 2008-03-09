@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>389</id>
+		<date>2008-03-09</date>
+		<author>vmiklos</author>
+		<package>kdebase</package>
+		<vulnerable>3.5.7-3</vulnerable>
+		<unaffected>3.5.7-4sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2681</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5963</cve>
+		<desc>A weakness has been reported in KDE, which can be exploited by malicious, local users to cause a DoS (Denial of Service).
+			The weakness is caused due to an error in KDM when processing certain files, which can be exploited to cause KDM to e.g. consume large amounts of memory or prevent users from logging in.</desc>
+	</fsa>
+	<fsa>
 		<id>388</id>
 		<date>2008-03-09</date>
 		<author>vmiklos</author>
