@@ -27,6 +27,22 @@
 
 <fsas>
 	<fsa>
+		<id>390</id>
+		<date>2008-03-09</date>
+		<author>vmiklos</author>
+		<package>opera</package>
+		<vulnerable>9.25-1sayshell1</vulnerable>
+		<unaffected>9.26-1sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2805</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1080
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1081
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1082</cve>
+		<desc>Some vulnerabilities have been reported in Opera, which can be exploited by malicious people to conduct cross-site scripting attacks, disclose sensitive information, or to bypass certain security restrictions.
+			1) A security issue is caused due to a design error when handling input to file form fields, which can potentially be exploited to trick a user into uploading arbitrary files.
+			2) An error within the handling of custom comments in image properties can be exploited to execute arbitrary script code in the wrong security context when comments of a malicious image are displayed.
+			3) An error in the handling of attribute values when importing XML into a document can be exploited to bypass filters and conduct cross-site scripting attacks if these values are used as document content.</desc>
+	</fsa>
+	<fsa>
 		<id>389</id>
 		<date>2008-03-09</date>
 		<author>vmiklos</author>
