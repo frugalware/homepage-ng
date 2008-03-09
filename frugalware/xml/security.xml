@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>391</id>
+		<date>2008-03-09</date>
+		<author>vmiklos</author>
+		<package>wordpress</package>
+		<vulnerable>2.3.2-1terminus1</vulnerable>
+		<unaffected>2.3.3-1sayshell1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2739</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0664</cve>
+		<desc>A vulnerability has been reported in WordPress, which can be exploited by malicious users to bypass certain security restrictions and to manipulate data.
+			The xmlrpc.php script does not properly restrict access to the edit functionality. This can be exploited to edit other users' posts.
+			Successful exploitation requires valid user credentials.</desc>
+	</fsa>
+	<fsa>
 		<id>390</id>
 		<date>2008-03-09</date>
 		<author>vmiklos</author>
