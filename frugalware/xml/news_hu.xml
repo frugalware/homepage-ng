@@ -18,7 +18,7 @@
 <news>
 	<post>
 		<id>91</id>
-		<title>Megjelent a Frugalware 0.8 (Kalgan) i686-ra, valamint x86_64-re</title>
+		<title>Megjelent a Frugalware 0.8 (Kalgan) i686-ra</title>
 		<date>Mon Mar 11 07:26:44 CET 2008</date>
 		<author>IroNiQ</author>
 		<hidden>1</hidden>
@@ -57,26 +57,6 @@
 				<a href="/download/frugalware-0.8-iso/frugalware-0.8-i686-usb.tar.gz">usb</a>,
 				<a href="/download/frugalware-0.8-iso/fwchroot-0.8-i686.tar.bz2">chroot tarball</a>
 				<br />
-			Letöltés x86_64-re:<br />
-				<a href="/download/frugalware-0.8-iso/frugalware-0.8-x86_64-net.iso">netinstall</a>,
-				<a href="/download/frugalware-0.8-iso/frugalware-0.8-x86_64-cd1.iso">cd1</a>,
-				<a href="/download/frugalware-0.8-iso/frugalware-0.8-x86_64-cd2.iso">cd2</a>,
-				<a href="/download/frugalware-0.8-iso/frugalware-0.8-x86_64-cd3.iso">cd3</a>,
-				<a href="/download/frugalware-0.8-iso/frugalware-0.8-x86_64-cd4.iso">cd4</a>,
-				<a href="/download/frugalware-0.8-iso/frugalware-0.8-x86_64-cd5.iso">cd5</a>,
-				<a href="/download/frugalware-0.8-iso/frugalware-0.8-x86_64-cd6.iso">cd6</a>,
-				<a href="/download/frugalware-0.8-iso/frugalware-0.8-x86_64-cd7.iso">cd7</a>,
-				<a href="/download/frugalware-0.8-iso/frugalware-0.8-x86_64-cd8.iso">cd8</a>,
-				<a href="/download/frugalware-0.8-iso/frugalware-0.8-x86_64-cd9.iso">cd9</a>,
-				<a href="/download/frugalware-0.8-iso/frugalware-0.8-x86_64-cd10.iso">cd10</a>,
-				<a href="/download/frugalware-0.8-iso/frugalware-0.8-x86_64-cd11.iso">cd11</a>,
-				<a href="/download/frugalware-0.8-iso/frugalware-0.8-x86_64-cd12.iso">cd12</a>,
-				<a href="/download/frugalware-0.8-iso/frugalware-0.8-x86_64-dvd1.iso">dvd1</a>,
-				<a href="/download/frugalware-0.8-iso/frugalware-0.8-x86_64-dvd2.iso">dvd2</a>,
-				<a href="/download/frugalware-0.8-iso/frugalware-0.8-x86_64-tftp.img.gz">tftp</a>,
-				<a href="/download/frugalware-0.8-iso/frugalware-0.8-x86_64-usb.tar.gz">usb</a>,
-				<a href="/download/frugalware-0.8-iso/fwchroot-0.8-x86_64.tar.bz2">chroot tarball</a>
-			<br />
 			<strong>Megjegyzés</strong>: Kattintson <a href="/docs/install#_choosing_installation_flavor">ide</a>, hogy eldönthesse, melyik telepítő médiára van szüksége.<br />
 			SHA1SUMok:
 			<pre>
@@ -97,26 +77,9 @@ a8dec5db845ddeb195009d5b64c24dcfe42497b2  frugalware-0.8-i686-cd14.iso
 2925f86d9c1c6e6e63e6533f0673de4fea09d437  frugalware-0.8-i686-dvd1.iso
 9e09729d9a4c93c09cece38e2679163c11c57a45  frugalware-0.8-i686-dvd2.iso
 b1c645170fdbf6e57b746f4b6185687a84784a0f  frugalware-0.8-i686-net.iso
-c08a269260babaf993bb2e3a5c06f3bd6de6ed5a  frugalware-0.8-x86_64-cd1.iso
-9a24c1e82782cd8e7190d86faba78bf9a0c2ad07  frugalware-0.8-x86_64-cd2.iso
-5fe53403702bb672898bb495629751d7d9714301  frugalware-0.8-x86_64-cd3.iso
-bda7d57f4d2bef9601a4705ec2cc55f0101d451b  frugalware-0.8-x86_64-cd4.iso
-de1e545c56a7982827a950d8a14a9825467cf4ea  frugalware-0.8-x86_64-cd5.iso
-bf075fe9c826062091190e6e98cc1be531906db3  frugalware-0.8-x86_64-cd6.iso
-b1e36d88804acb7a0f8b76f8f2d040bf7b950eaf  frugalware-0.8-x86_64-cd7.iso
-c9de8aec4bc1e266ebdc9d12cc4c7c943ee3c754  frugalware-0.8-x86_64-cd8.iso
-d9977d7358ec0f9a3021541453d0afaa16b031e2  frugalware-0.8-x86_64-cd9.iso
-987f5281eca7c1b2418a300378506b364e986b3f  frugalware-0.8-x86_64-cd10.iso
-ca99396c8a720f9537c55169716382a38a39d4ef  frugalware-0.8-x86_64-cd11.iso
-63033736c6886eff1240fe5efc5813a133133c6c  frugalware-0.8-x86_64-cd12.iso
-f9be2f77dbaeb1edf28cb4f951b5a2306b5a9e9f  frugalware-0.8-x86_64-dvd1.iso
-c5d4c23bc4c5ececa2157e41a855abd375819bdf  frugalware-0.8-x86_64-dvd2.iso
-6c2aee54190fea645dde4f2be1e0d04dc81aff74  frugalware-0.8-x86_64-net.iso
 ef68c4d3353ff104ad59725743e9f11b63703323  fwlive-0.8-i686-full.iso
 34dd50fc34315d73f7289ab887b23328d5950f04  frugalware-0.8-i686-tftp.img.gz
 fb2079de1627ca0e65a323005e0644b88fed6d03  frugalware-0.8-i686-usb.tar.gz
-8d82cdc2f15bf3f6c6c7b3bb89b5ca284754bee6  frugalware-0.8-x86_64-tftp.img.gz
-299d3473073399c3237ab87cad0ef1fa433e4717  frugalware-0.8-x86_64-usb.tar.gz
 			</pre>
 			Ha a korábbi stabil kiadásunkról (Sayshell) frissít, kérjük olvassa el a dokumentáció <a href="http://frugalware.org/docs/stable/upgrade">frissítés</a>ről szóló részét.<br />
 			]]>
