@@ -68,6 +68,10 @@ if(count($params)>0)
 	{
 		$urlsuffix="?id=".$params[0];
 	}
+	else if($page=="security")
+	{
+		$urlsuffix="?id=".$params[0];
+	}
 	else if($page=="buildlogs")
 	{
 		$urlsuffix="?client=".$params[0].

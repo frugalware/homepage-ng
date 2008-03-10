@@ -40,7 +40,7 @@ $flang = ( $lang == 'en' ) ? "" : "_$lang";
 if (file_exists('xml/security.xml'))
 	$xmlfile = 'xml/security.xml';
 else
-	$xmlfile = $docs_path.'xml/media.xml';
+	$xmlfile = $docs_path.'xml/security.xml';
 if (!file_exists($xmlfile)) {
 	
 	echo(gettext('Sorry, a security file has not been written yet.'));
@@ -49,6 +49,12 @@ if (!file_exists($xmlfile)) {
 	
 }
 
+if ( $_GET['id'] != "" )
+	$id = $_GET['id'];
+else
+	$id = false;
+
+if ( !$id )
 fwmiddlebox(gettext('Frugalware Security Announcements (FSAs)'),
 	gettext('This is a list of security announcments that have been released for the current stable version of Frugalware'));
 
@@ -74,8 +80,9 @@ for ( $i = 0; $i < count($security); $i++) {
 
 // Let's write out details of each FSA in a separate box
 for( $i = 0; $i < count($fsas); $i++ ) {
-	
-	fwmiddlebox('FSA' . $fsas[$i][id] . ' - ' . $fsas[$i][package],
+	if(!$id or $fsas[$i][id]==$id)
+	{
+	fwmiddlebox("<a class=\"boxheader\" href=\"".$fwng_root."security/".$fsas[$i][id]."\">FSA" . $fsas[$i][id] . ' - ' . $fsas[$i][package]."</a>",
 		'<table width="100%">
 		<tr><td width="30%">' . gettext('Package') . ':</td><td width="70%">' . $fsas[$i][package] . '</td></tr>
 		<tr><td>' . gettext('Date') . ':</td><td>' . $fsas[$i][date] . '</td></tr>
@@ -85,6 +92,7 @@ for( $i = 0; $i < count($fsas); $i++ ) {
 		<tr><td>' . gettext('Bug tracker entry') . ':</td><td><a href="' . $fsas[$i][bts] . '">' . $fsas[$i][bts] . '</a></td></tr>
 		<tr><td>' . gettext('CVEs') . ':</td><td>' . $fsas[$i][cve] . '</td></tr>
 		<tr><td>' . gettext('Description') . ':</td><td>' . $fsas[$i][desc] . '</td></tr></table>');
+	}
 	
 }
 
