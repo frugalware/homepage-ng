@@ -80,11 +80,6 @@
             <b>NOTE</b>: Click <a href="/docs/install#_choosing_installation_flavor">here</a> to read more about what media you need for the installation.<br />
             SHA1SUMs:
 						<pre>
-716af41f46cc0d4ffc05c00e206a265438bddab3  frugalware-0.8-i686-cd10.iso
-dc9721be7a6dcca936d65c2bda749684fd6d3d4b  frugalware-0.8-i686-cd11.iso
-d7ef389858311e4cbb5db07236e4663f4e77bf07  frugalware-0.8-i686-cd12.iso
-da90575c20185d608ab051e6c6b9fb583f8ff303  frugalware-0.8-i686-cd13.iso
-a8dec5db845ddeb195009d5b64c24dcfe42497b2  frugalware-0.8-i686-cd14.iso
 86a7629a794fbb799b412f1da6f43b119c79138a  frugalware-0.8-i686-cd1.iso
 5de9f070fd8e940853e58063112bb9576322a3e2  frugalware-0.8-i686-cd2.iso
 1409dcf8f7e81664f4a3a84d607898c06bcbfb1c  frugalware-0.8-i686-cd3.iso
@@ -94,12 +89,14 @@ a473a3338220d22d65249c391ba30161d4e2c50a  frugalware-0.8-i686-cd6.iso
 588349db788e39541c663d5332626118fd3232ea  frugalware-0.8-i686-cd7.iso
 84a6526bebb5de2729897fcc2823386ca6f3673e  frugalware-0.8-i686-cd8.iso
 c7d66707fcbef326193a6e427862961b3bb8ec56  frugalware-0.8-i686-cd9.iso
+716af41f46cc0d4ffc05c00e206a265438bddab3  frugalware-0.8-i686-cd10.iso
+dc9721be7a6dcca936d65c2bda749684fd6d3d4b  frugalware-0.8-i686-cd11.iso
+d7ef389858311e4cbb5db07236e4663f4e77bf07  frugalware-0.8-i686-cd12.iso
+da90575c20185d608ab051e6c6b9fb583f8ff303  frugalware-0.8-i686-cd13.iso
+a8dec5db845ddeb195009d5b64c24dcfe42497b2  frugalware-0.8-i686-cd14.iso
 2925f86d9c1c6e6e63e6533f0673de4fea09d437  frugalware-0.8-i686-dvd1.iso
 9e09729d9a4c93c09cece38e2679163c11c57a45  frugalware-0.8-i686-dvd2.iso
 b1c645170fdbf6e57b746f4b6185687a84784a0f  frugalware-0.8-i686-net.iso
-987f5281eca7c1b2418a300378506b364e986b3f  frugalware-0.8-x86_64-cd10.iso
-ca99396c8a720f9537c55169716382a38a39d4ef  frugalware-0.8-x86_64-cd11.iso
-63033736c6886eff1240fe5efc5813a133133c6c  frugalware-0.8-x86_64-cd12.iso
 c08a269260babaf993bb2e3a5c06f3bd6de6ed5a  frugalware-0.8-x86_64-cd1.iso
 9a24c1e82782cd8e7190d86faba78bf9a0c2ad07  frugalware-0.8-x86_64-cd2.iso
 5fe53403702bb672898bb495629751d7d9714301  frugalware-0.8-x86_64-cd3.iso
@@ -109,6 +106,9 @@ bf075fe9c826062091190e6e98cc1be531906db3  frugalware-0.8-x86_64-cd6.iso
 b1e36d88804acb7a0f8b76f8f2d040bf7b950eaf  frugalware-0.8-x86_64-cd7.iso
 c9de8aec4bc1e266ebdc9d12cc4c7c943ee3c754  frugalware-0.8-x86_64-cd8.iso
 d9977d7358ec0f9a3021541453d0afaa16b031e2  frugalware-0.8-x86_64-cd9.iso
+987f5281eca7c1b2418a300378506b364e986b3f  frugalware-0.8-x86_64-cd10.iso
+ca99396c8a720f9537c55169716382a38a39d4ef  frugalware-0.8-x86_64-cd11.iso
+63033736c6886eff1240fe5efc5813a133133c6c  frugalware-0.8-x86_64-cd12.iso
 f9be2f77dbaeb1edf28cb4f951b5a2306b5a9e9f  frugalware-0.8-x86_64-dvd1.iso
 c5d4c23bc4c5ececa2157e41a855abd375819bdf  frugalware-0.8-x86_64-dvd2.iso
 6c2aee54190fea645dde4f2be1e0d04dc81aff74  frugalware-0.8-x86_64-net.iso
