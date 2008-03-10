@@ -17,6 +17,112 @@
 
 <news>
 	<post>
+		<id>91</id>
+		<title>Megjelent a Frugalware 0.8 (Kalgan) i686-ra �s x86_64-re</title>
+		<date>Mon Mar 11 07:26:44 CET 2008</date>
+		<author>IroNiQ</author>
+		<hidden>1</hidden>
+		<content><![CDATA[
+			A Frugalware Fejlesztői Csapat örömmel <a href="/news/91/hu">jelenti be</a> a Frugalware 0.8 azonnali elérhetőségét, mint nyolcadik stabil kiadásunkat.<br />
+			Igaz, hogy újdonság nem került bele 0.8rc2 óta, de több, mint 300 apróbb hibajavítás történt.
+			Ha nem követte folyamatosan a változásokat, íme a legfontosabbak 0.7 óta:<br />
+			<ul>
+				<li>Naprakész alaprendszer: Linux kernel 2.6.24.3, Glibc 2.7 és GCC 4.2.3</li>
+				<li>Naprakész grafikus csomagok: KDE 3.5.9, GNOME 2.20, XFCE 4.4.2, OpenOffice.org 2.4rc2 (ooo-build 2.4.0) és Firefox 2.0.0.12</li>
+				<li>Telepítő: WPA támogatás, cseh nyelvű telepítő.</li>
+				<li>Új grafikus eszköz: FUN (update notifier - frissítés jelző).</li>
+				<li>4068 változtatás, többek között 251 új és 1729 frissített csomag, 416 lezárt hibajegy.</li>
+			</ul>
+			Bővebb információért tekintse meg a Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-0.8/ChangeLog.txt">0.8 (Kalgan) Változások Listáját</a>.<br />
+			Letöltés i686-ra:<br />
+				<a href="/download/frugalware-0.8-iso/fwlive-0.8-i686-full.iso">livecd</a>,
+				<a href="/download/frugalware-0.8-iso/frugalware-0.8-i686-net.iso">netinstall</a>,
+				<a href="/download/frugalware-0.8-iso/frugalware-0.8-i686-cd1.iso">cd1</a>,
+				<a href="/download/frugalware-0.8-iso/frugalware-0.8-i686-cd2.iso">cd2</a>,
+				<a href="/download/frugalware-0.8-iso/frugalware-0.8-i686-cd3.iso">cd3</a>,
+				<a href="/download/frugalware-0.8-iso/frugalware-0.8-i686-cd4.iso">cd4</a>,
+				<a href="/download/frugalware-0.8-iso/frugalware-0.8-i686-cd5.iso">cd5</a>,
+				<a href="/download/frugalware-0.8-iso/frugalware-0.8-i686-cd6.iso">cd6</a>,
+				<a href="/download/frugalware-0.8-iso/frugalware-0.8-i686-cd7.iso">cd7</a>,
+				<a href="/download/frugalware-0.8-iso/frugalware-0.8-i686-cd8.iso">cd8</a>,
+				<a href="/download/frugalware-0.8-iso/frugalware-0.8-i686-cd9.iso">cd9</a>,
+				<a href="/download/frugalware-0.8-iso/frugalware-0.8-i686-cd10.iso">cd10</a>,
+				<a href="/download/frugalware-0.8-iso/frugalware-0.8-i686-cd11.iso">cd11</a>,
+				<a href="/download/frugalware-0.8-iso/frugalware-0.8-i686-cd12.iso">cd12</a>,
+				<a href="/download/frugalware-0.8-iso/frugalware-0.8-i686-cd13.iso">cd13</a>,
+				<a href="/download/frugalware-0.8-iso/frugalware-0.8-i686-cd14.iso">cd14</a>,
+				<a href="/download/frugalware-0.8-iso/frugalware-0.8-i686-dvd1.iso">dvd1</a>,
+				<a href="/download/frugalware-0.8-iso/frugalware-0.8-i686-dvd2.iso">dvd2</a>,
+				<a href="/download/frugalware-0.8-iso/frugalware-0.8-i686-tftp.img.gz">tftp</a>,
+				<a href="/download/frugalware-0.8-iso/frugalware-0.8-i686-usb.tar.gz">usb</a>,
+				<a href="/download/frugalware-0.8-iso/fwchroot-0.8-i686.tar.bz2">chroot tarball</a>
+				<br />
+			Letöltés x86_64-re:<br />
+				<a href="/download/frugalware-0.8-iso/frugalware-0.8-x86_64-net.iso">netinstall</a>,
+				<a href="/download/frugalware-0.8-iso/frugalware-0.8-x86_64-cd1.iso">cd1</a>,
+				<a href="/download/frugalware-0.8-iso/frugalware-0.8-x86_64-cd2.iso">cd2</a>,
+				<a href="/download/frugalware-0.8-iso/frugalware-0.8-x86_64-cd3.iso">cd3</a>,
+				<a href="/download/frugalware-0.8-iso/frugalware-0.8-x86_64-cd4.iso">cd4</a>,
+				<a href="/download/frugalware-0.8-iso/frugalware-0.8-x86_64-cd5.iso">cd5</a>,
+				<a href="/download/frugalware-0.8-iso/frugalware-0.8-x86_64-cd6.iso">cd6</a>,
+				<a href="/download/frugalware-0.8-iso/frugalware-0.8-x86_64-cd7.iso">cd7</a>,
+				<a href="/download/frugalware-0.8-iso/frugalware-0.8-x86_64-cd8.iso">cd8</a>,
+				<a href="/download/frugalware-0.8-iso/frugalware-0.8-x86_64-cd9.iso">cd9</a>,
+				<a href="/download/frugalware-0.8-iso/frugalware-0.8-x86_64-cd10.iso">cd10</a>,
+				<a href="/download/frugalware-0.8-iso/frugalware-0.8-x86_64-cd11.iso">cd11</a>,
+				<a href="/download/frugalware-0.8-iso/frugalware-0.8-x86_64-cd12.iso">cd12</a>,
+				<a href="/download/frugalware-0.8-iso/frugalware-0.8-x86_64-dvd1.iso">dvd1</a>,
+				<a href="/download/frugalware-0.8-iso/frugalware-0.8-x86_64-dvd2.iso">dvd2</a>,
+				<a href="/download/frugalware-0.8-iso/frugalware-0.8-x86_64-tftp.img.gz">tftp</a>,
+				<a href="/download/frugalware-0.8-iso/frugalware-0.8-x86_64-usb.tar.gz">usb</a>,
+				<a href="/download/frugalware-0.8-iso/fwchroot-0.8-x86_64.tar.bz2">chroot tarball</a>
+			<br />
+			<strong>Megjegyzés</strong>: Kattintson <a href="/docs/install#_choosing_installation_flavor">ide</a>, hogy eldönthesse, melyik telepítő médiára van szüksége.<br />
+			SHA1SUMok:
+			<pre>
+86a7629a794fbb799b412f1da6f43b119c79138a  frugalware-0.8-i686-cd1.iso
+5de9f070fd8e940853e58063112bb9576322a3e2  frugalware-0.8-i686-cd2.iso
+1409dcf8f7e81664f4a3a84d607898c06bcbfb1c  frugalware-0.8-i686-cd3.iso
+a705f4662f3d7931e47dcb88f8af6574fa39ae3e  frugalware-0.8-i686-cd4.iso
+d612aa3851b5c4f382e0a0dfb5cbbc0d27230ce3  frugalware-0.8-i686-cd5.iso
+a473a3338220d22d65249c391ba30161d4e2c50a  frugalware-0.8-i686-cd6.iso
+588349db788e39541c663d5332626118fd3232ea  frugalware-0.8-i686-cd7.iso
+84a6526bebb5de2729897fcc2823386ca6f3673e  frugalware-0.8-i686-cd8.iso
+c7d66707fcbef326193a6e427862961b3bb8ec56  frugalware-0.8-i686-cd9.iso
+716af41f46cc0d4ffc05c00e206a265438bddab3  frugalware-0.8-i686-cd10.iso
+dc9721be7a6dcca936d65c2bda749684fd6d3d4b  frugalware-0.8-i686-cd11.iso
+d7ef389858311e4cbb5db07236e4663f4e77bf07  frugalware-0.8-i686-cd12.iso
+da90575c20185d608ab051e6c6b9fb583f8ff303  frugalware-0.8-i686-cd13.iso
+a8dec5db845ddeb195009d5b64c24dcfe42497b2  frugalware-0.8-i686-cd14.iso
+2925f86d9c1c6e6e63e6533f0673de4fea09d437  frugalware-0.8-i686-dvd1.iso
+9e09729d9a4c93c09cece38e2679163c11c57a45  frugalware-0.8-i686-dvd2.iso
+b1c645170fdbf6e57b746f4b6185687a84784a0f  frugalware-0.8-i686-net.iso
+c08a269260babaf993bb2e3a5c06f3bd6de6ed5a  frugalware-0.8-x86_64-cd1.iso
+9a24c1e82782cd8e7190d86faba78bf9a0c2ad07  frugalware-0.8-x86_64-cd2.iso
+5fe53403702bb672898bb495629751d7d9714301  frugalware-0.8-x86_64-cd3.iso
+bda7d57f4d2bef9601a4705ec2cc55f0101d451b  frugalware-0.8-x86_64-cd4.iso
+de1e545c56a7982827a950d8a14a9825467cf4ea  frugalware-0.8-x86_64-cd5.iso
+bf075fe9c826062091190e6e98cc1be531906db3  frugalware-0.8-x86_64-cd6.iso
+b1e36d88804acb7a0f8b76f8f2d040bf7b950eaf  frugalware-0.8-x86_64-cd7.iso
+c9de8aec4bc1e266ebdc9d12cc4c7c943ee3c754  frugalware-0.8-x86_64-cd8.iso
+d9977d7358ec0f9a3021541453d0afaa16b031e2  frugalware-0.8-x86_64-cd9.iso
+987f5281eca7c1b2418a300378506b364e986b3f  frugalware-0.8-x86_64-cd10.iso
+ca99396c8a720f9537c55169716382a38a39d4ef  frugalware-0.8-x86_64-cd11.iso
+63033736c6886eff1240fe5efc5813a133133c6c  frugalware-0.8-x86_64-cd12.iso
+f9be2f77dbaeb1edf28cb4f951b5a2306b5a9e9f  frugalware-0.8-x86_64-dvd1.iso
+c5d4c23bc4c5ececa2157e41a855abd375819bdf  frugalware-0.8-x86_64-dvd2.iso
+6c2aee54190fea645dde4f2be1e0d04dc81aff74  frugalware-0.8-x86_64-net.iso
+ef68c4d3353ff104ad59725743e9f11b63703323  fwlive-0.8-i686-full.iso
+34dd50fc34315d73f7289ab887b23328d5950f04  frugalware-0.8-i686-tftp.img.gz
+fb2079de1627ca0e65a323005e0644b88fed6d03  frugalware-0.8-i686-usb.tar.gz
+8d82cdc2f15bf3f6c6c7b3bb89b5ca284754bee6  frugalware-0.8-x86_64-tftp.img.gz
+299d3473073399c3237ab87cad0ef1fa433e4717  frugalware-0.8-x86_64-usb.tar.gz
+			</pre>
+			Ha a korábbi stabil kiadásunkról (Sayshell) frissít, kérjük olvassa el a dokumentáció <a href="http://frugalware.org/docs/stable/upgrade">frissítés</a>ről szóló részét.<br />
+			]]>
+		</content>
+	</post>
+	<post>
 	<id>88</id>
 		<title>Megjelent a Frugalware 0.8rc2 (Kalgan)</title>
 		<date>Sun Feb 17 12:04:23 CET 2008</date>
