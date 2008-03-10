@@ -57,7 +57,13 @@ If found, then you should upgrade to the latest version:
 
 	# pacman-g2 -Sy %s
 
-""" % (self.package, self.package, self.package))
+Availability
+============
+
+The latest revision of this advisory is available at
+http://frugalware.org/security/%s
+
+""" % (self.package, self.package, self.package, self.id))
 
 	def output(self):
 		pout, pin = popen2.popen2('gpg --comment "%s" --clearsign --homedir /home/%s/.gnupg -u 20F55619' % (self.comment, pwd.getpwuid(os.getuid())[0]))
