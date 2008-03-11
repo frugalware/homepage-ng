@@ -21,7 +21,7 @@
         <title>Frugalware 0.8 (Kalgan) for i686 released</title>
         <date>Mon Mar 11 07:16:05 CET 2008</date>
         <author>VMiklos</author>
-        <hidden>1</hidden>
+        <hidden>0</hidden>
         <content><![CDATA[
             The Frugalware Developer Team is pleased to <a href="/news/91">announce</a> the immediate availability of Frugalware 0.8, our eighth stable release.<br />
             No new features have been added since 0.8rc2, but more than 300 changes have been made to fix minor bugs.
