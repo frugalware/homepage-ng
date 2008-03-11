@@ -81,7 +81,8 @@ ef68c4d3353ff104ad59725743e9f11b63703323  fwlive-0.8-i686-full.iso
 34dd50fc34315d73f7289ab887b23328d5950f04  frugalware-0.8-i686-tftp.img.gz
 fb2079de1627ca0e65a323005e0644b88fed6d03  frugalware-0.8-i686-usb.tar.gz
             </pre>
-            If you are upgrading to Kalgan from our previous stable release (Sayshell), please read the <a href="http://frugalware.org/docs/stable/upgrade">upgrade</a> part of our documentation.<br />
+						If you are upgrading to Kalgan from our previous stable release (Sayshell), please read the <a href="http://frugalware.org/docs/stable/upgrade">upgrade</a> part of our documentation.<br />
+						As a special present for this release, you can try out Kalgan in <a href="/download/frugalware-0.8-iso/frugalware-0.8-i686-qemu.img.lzma">qemu</a> or <a href="/download/frugalware-0.8-iso/frugalware-0.8-i686-virtualbox.vdi.lzma">virtualbox</a> without installing it!<br />
             ]]>
         </content>
     </post>
