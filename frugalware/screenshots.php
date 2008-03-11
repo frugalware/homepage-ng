@@ -98,38 +98,64 @@ $shots[inst][33][name]="34_mouse.png";
 $shots[inst][33][title]=gettext("34_mouse.png");
 $shots[inst][34][name]="35_success.png";
 $shots[inst][34][title]=gettext("35_success.png");
-$shots[defdesk][0][name]="01_grub.png";
-$shots[defdesk][0][title]=gettext("01_grub.png");
-$shots[defdesk][1][name]="02_boot.png";
-$shots[defdesk][1][title]=gettext("02_boot.png");
-$shots[defdesk][2][name]="03_boot.png";
-$shots[defdesk][2][title]=gettext("03_boot.png");
-$shots[defdesk][3][name]="04_boot.png";
-$shots[defdesk][3][title]=gettext("04_boot.png");
-$shots[defdesk][4][name]="05_console.png";
-$shots[defdesk][4][title]=gettext("05_console.png");
-$shots[defdesk][5][name]="06_console.png";
-$shots[defdesk][5][title]=gettext("06_console.png");
-$shots[defdesk][6][name]="08_kde_login.png";
-$shots[defdesk][6][title]=gettext("08_kde_login.png");
-$shots[defdesk][7][name]="09_kde.png";
-$shots[defdesk][7][title]=gettext("09_kde.png");
-$shots[defdesk][8][name]="10_kde_menu.png";
-$shots[defdesk][8][title]=gettext("10_kde_menu.png");
-$shots[defdesk][9][name]="11_gdm.png";
-$shots[defdesk][9][title]=gettext("11_gdm.png");
-$shots[defdesk][10][name]="13_gnome.png";
-$shots[defdesk][10][title]=gettext("13_gnome.png");
-$shots[defdesk][11][name]="14_gnome_menu.png";
-$shots[defdesk][11][title]=gettext("14_gnome_menu.png");
-$shots[defdesk][12][name]="15_gnome_menu.png";
-$shots[defdesk][12][title]=gettext("15_gnome_menu.png");
-$shots[defdesk][13][name]="16_gnome_menu.png";
-$shots[defdesk][13][title]=gettext("16_gnome_menu.png");
-$shots[defdesk][14][name]="17_package_manager.png";
-$shots[defdesk][14][title]=gettext("17_package_manager.png");
-$shots[defdesk][15][name]="18_runlevel_editor.png";
-$shots[defdesk][15][title]=gettext("18_runlevel_editor.png");
+
+$shots[startup][0][name]="01_grub.png";
+$shots[startup][0][title]=gettext("01_grub.png");
+$shots[startup][1][name]="02_boot.png";
+$shots[startup][1][title]=gettext("02_boot.png");
+$shots[startup][2][name]="03_boot.png";
+$shots[startup][2][title]=gettext("03_boot.png");
+$shots[startup][3][name]="04_boot.png";
+$shots[startup][3][title]=gettext("04_boot.png");
+$shots[startup][4][name]="05_console.png";
+$shots[startup][4][title]=gettext("05_console.png");
+$shots[startup][5][name]="06_console.png";
+$shots[startup][5][title]=gettext("06_console.png");
+
+$shots[kde][0][name]="08_kde_login.png";
+$shots[kde][0][title]=gettext("08_kde_login.png");
+$shots[kde][1][name]="09_kde.png";
+$shots[kde][1][title]=gettext("09_kde.png");
+$shots[kde][2][name]="10_kde_menu.png";
+$shots[kde][2][title]=gettext("10_kde_menu.png");
+
+$shots[gnome][0][name]="01_gnome_gdm.png";
+$shots[gnome][0][title]=gettext("GDM Login Screen");
+$shots[gnome][1][name]="02_gnome_desktop.png";
+$shots[gnome][1][title]=gettext("Gnome Desktop 1");
+$shots[gnome][2][name]="03_gnome_desktop.png";
+$shots[gnome][2][title]=gettext("Gnome Desktop 2");
+$shots[gnome][3][name]="04_gnome_desktop.png";
+$shots[gnome][3][title]=gettext("Gnome Desktop 3");
+$shots[gnome][4][name]="05_gnome_desktop.png";
+$shots[gnome][4][title]=gettext("Gnome Desktop 4");
+
+$shots[xfce][0][name]="01_xfce_desktop.png";
+$shots[xfce][0][title]=gettext("XFCE Desktop 1");
+$shots[xfce][1][name]="02_xfce_desktop.png";
+$shots[xfce][1][title]=gettext("XFCE Desktop 2");
+$shots[xfce][2][name]="03_xfce_desktop.png";
+$shots[xfce][2][title]=gettext("XFCE Desktop 3");
+$shots[xfce][3][name]="04_xfce_desktop.png";
+$shots[xfce][3][title]=gettext("XFCE Desktop 4");
+$shots[xfce][4][name]="05_xfce_desktop.png";
+$shots[xfce][4][title]=gettext("XFCE Desktop 5");
+
+$shots[gfpm][0][name]="01_gfpm.png";
+$shots[gfpm][0][title]=gettext("01_gfpm.png");
+$shots[gfpm][1][name]="02_gfpm.png";
+$shots[gfpm][1][title]=gettext("02_gfpm.png");
+$shots[gfpm][2][name]="03_gfpm.png";
+$shots[gfpm][2][title]=gettext("03_gfpm.png");
+$shots[gfpm][3][name]="04_gfpm.png";
+$shots[gfpm][3][title]=gettext("04_gfpm.png");
+$shots[gfpm][4][name]="05_gfpm.png";
+$shots[gfpm][4][title]=gettext("05_gfpm.png");
+$shots[gfpm][5][name]="06_gfpm.png";
+$shots[gfpm][5][title]=gettext("06_gfpm.png");
+
+$shots[runleveled][15][name]="18_runlevel_editor.png";
+$shots[runleveled][15][title]=gettext("18_runlevel_editor.png");
 
 // include the config and let's start page
 include("config.inc.php");
@@ -144,12 +170,52 @@ for ($i=0; $i<count($shots[inst]); $i++)
 	"<br />".$shots[inst][$i][title]."</div>\n";
 }
 $maincont .= "</fieldset>\n<fieldset class=\"fieldset\" id=\"default\">\n";
-$maincont .= "<legend>".gettext("Default Desktop")."</legend>\n";
-for ($i=0; $i<count($shots[defdesk]); $i++)
+$maincont .= "<legend>".gettext("Startup")."</legend>\n";
+for ($i=0; $i<count($shots[startup]); $i++)
 {
-	$maincont .= "<div><a href=\"".$fwng_root."images/screenshots/default/".$shots[defdesk][$i][name]."\">".
-	"<img src=\"".$fwng_root."images/screenshots/default/thumbnails/".$shots[defdesk][$i][name]."\" alt=\"screenshot\" /></a>".
-	"<br />".$shots[defdesk][$i][title]."</div>\n";
+	$maincont .= "<div><a href=\"".$fwng_root."images/screenshots/default/".$shots[startup][$i][name]."\">".
+	"<img src=\"".$fwng_root."images/screenshots/default/thumbnails/".$shots[startup][$i][name]."\" alt=\"screenshot\" /></a>".
+	"<br />".$shots[startup][$i][title]."</div>\n";
+}
+$maincont .= "</fieldset>\n<fieldset class=\"fieldset\" id=\"default\">\n";
+$maincont .= "<legend>".gettext("KDE Desktop")."</legend>\n";
+for ($i=0; $i<count($shots[kde]); $i++)
+{
+	$maincont .= "<div><a href=\"".$fwng_root."images/screenshots/default/".$shots[kde][$i][name]."\">".
+	"<img src=\"".$fwng_root."images/screenshots/default/thumbnails/".$shots[kde][$i][name]."\" alt=\"screenshot\" /></a>".
+	"<br />".$shots[kde][$i][title]."</div>\n";
+}
+$maincont .= "</fieldset>\n<fieldset class=\"fieldset\" id=\"default\">\n";
+$maincont .= "<legend>".gettext("GNOME Desktop")."</legend>\n";
+for ($i=0; $i<count($shots[gnome]); $i++)
+{
+	$maincont .= "<div><a href=\"".$fwng_root."images/screenshots/0.8/".$shots[gnome][$i][name]."\">".
+	"<img src=\"".$fwng_root."images/screenshots/0.8/thumbnails/".$shots[gnome][$i][name]."\" alt=\"screenshot\" /></a>".
+	"<br />".$shots[gnome][$i][title]."</div>\n";
+}
+$maincont .= "</fieldset>\n<fieldset class=\"fieldset\" id=\"default\">\n";
+$maincont .= "<legend>".gettext("XFCE Desktop")."</legend>\n";
+for ($i=0; $i<count($shots[xfce]); $i++)
+{
+	$maincont .= "<div><a href=\"".$fwng_root."images/screenshots/0.8/".$shots[xfce][$i][name]."\">".
+	"<img src=\"".$fwng_root."images/screenshots/0.8/thumbnails/".$shots[xfce][$i][name]."\" alt=\"screenshot\" /></a>".
+	"<br />".$shots[xfce][$i][title]."</div>\n";
+}
+$maincont .= "</fieldset>\n<fieldset class=\"fieldset\" id=\"default\">\n";
+$maincont .= "<legend>".gettext("GFpm (Package Manager)")."</legend>\n";
+for ($i=0; $i<count($shots[gfpm]); $i++)
+{
+	$maincont .= "<div><a href=\"".$fwng_root."images/screenshots/0.8/".$shots[gfpm][$i][name]."\">".
+	"<img src=\"".$fwng_root."images/screenshots/0.8/thumbnails/".$shots[gfpm][$i][name]."\" alt=\"screenshot\" /></a>".
+	"<br />".$shots[gfpm][$i][title]."</div>\n";
+}
+$maincont .= "</fieldset>\n<fieldset class=\"fieldset\" id=\"default\">\n";
+$maincont .= "<legend>".gettext("FUN (Update Notifier)")."</legend>\n";
+for ($i=0; $i<count($shots[fun]); $i++)
+{
+	$maincont .= "<div><a href=\"".$fwng_root."images/screenshots/0.8/".$shots[fun][$i][name]."\">".
+	"<img src=\"".$fwng_root."images/screenshots/0.8/thumbnails/".$shots[fun][$i][name]."\" alt=\"screenshot\" /></a>".
+	"<br />".$shots[fun][$i][title]."</div>\n";
 }
 $maincont .= "</fieldset></form>\n</div>\n";
 
