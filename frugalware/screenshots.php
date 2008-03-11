@@ -119,7 +119,7 @@ $shots[kde][1][title]=gettext("09_kde.png");
 $shots[kde][2][name]="10_kde_menu.png";
 $shots[kde][2][title]=gettext("10_kde_menu.png");
 
-$shots[gnome][0][name]="01_gnome_gdm.png";
+$shots[gnome][0][name]="01_gdm.png";
 $shots[gnome][0][title]=gettext("GDM Login Screen");
 $shots[gnome][1][name]="02_gnome_desktop.png";
 $shots[gnome][1][title]=gettext("Default Gnome Desktop");
