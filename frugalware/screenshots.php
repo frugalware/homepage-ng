@@ -173,48 +173,48 @@ $maincont .= "</fieldset>\n<fieldset class=\"fieldset\" id=\"default\">\n";
 $maincont .= "<legend>".gettext("Startup")."</legend>\n";
 for ($i=0; $i<count($shots[startup]); $i++)
 {
-	$maincont .= "<div><a href=\"".$fwng_root."images/screenshots/default/".$shots[startup][$i][name]."\">".
-	"<img src=\"".$fwng_root."images/screenshots/default/thumbnails/".$shots[startup][$i][name]."\" alt=\"screenshot\" /></a>".
+	$maincont .= "<div><a href=\"".$fwng_root."images/screenshots/default-old/".$shots[startup][$i][name]."\">".
+	"<img src=\"".$fwng_root."images/screenshots/default-old/thumbnails/".$shots[startup][$i][name]."\" alt=\"screenshot\" /></a>".
 	"<br />".$shots[startup][$i][title]."</div>\n";
 }
 $maincont .= "</fieldset>\n<fieldset class=\"fieldset\" id=\"default\">\n";
 $maincont .= "<legend>".gettext("KDE Desktop")."</legend>\n";
 for ($i=0; $i<count($shots[kde]); $i++)
 {
-	$maincont .= "<div><a href=\"".$fwng_root."images/screenshots/default/".$shots[kde][$i][name]."\">".
-	"<img src=\"".$fwng_root."images/screenshots/default/thumbnails/".$shots[kde][$i][name]."\" alt=\"screenshot\" /></a>".
+	$maincont .= "<div><a href=\"".$fwng_root."images/screenshots/default-old/".$shots[kde][$i][name]."\">".
+	"<img src=\"".$fwng_root."images/screenshots/default-old/thumbnails/".$shots[kde][$i][name]."\" alt=\"screenshot\" /></a>".
 	"<br />".$shots[kde][$i][title]."</div>\n";
 }
 $maincont .= "</fieldset>\n<fieldset class=\"fieldset\" id=\"default\">\n";
 $maincont .= "<legend>".gettext("GNOME Desktop")."</legend>\n";
 for ($i=0; $i<count($shots[gnome]); $i++)
 {
-	$maincont .= "<div><a href=\"".$fwng_root."images/screenshots/0.8/".$shots[gnome][$i][name]."\">".
-	"<img src=\"".$fwng_root."images/screenshots/0.8/thumbnails/".$shots[gnome][$i][name]."\" alt=\"screenshot\" /></a>".
+	$maincont .= "<div><a href=\"".$fwng_root."images/screenshots/default/".$shots[gnome][$i][name]."\">".
+	"<img src=\"".$fwng_root."images/screenshots/default/thumbnails/".$shots[gnome][$i][name]."\" alt=\"screenshot\" /></a>".
 	"<br />".$shots[gnome][$i][title]."</div>\n";
 }
 $maincont .= "</fieldset>\n<fieldset class=\"fieldset\" id=\"default\">\n";
 $maincont .= "<legend>".gettext("XFCE Desktop")."</legend>\n";
 for ($i=0; $i<count($shots[xfce]); $i++)
 {
-	$maincont .= "<div><a href=\"".$fwng_root."images/screenshots/0.8/".$shots[xfce][$i][name]."\">".
-	"<img src=\"".$fwng_root."images/screenshots/0.8/thumbnails/".$shots[xfce][$i][name]."\" alt=\"screenshot\" /></a>".
+	$maincont .= "<div><a href=\"".$fwng_root."images/screenshots/default/".$shots[xfce][$i][name]."\">".
+	"<img src=\"".$fwng_root."images/screenshots/default/thumbnails/".$shots[xfce][$i][name]."\" alt=\"screenshot\" /></a>".
 	"<br />".$shots[xfce][$i][title]."</div>\n";
 }
 $maincont .= "</fieldset>\n<fieldset class=\"fieldset\" id=\"default\">\n";
 $maincont .= "<legend>".gettext("GFpm (Package Manager)")."</legend>\n";
 for ($i=0; $i<count($shots[gfpm]); $i++)
 {
-	$maincont .= "<div><a href=\"".$fwng_root."images/screenshots/0.8/".$shots[gfpm][$i][name]."\">".
-	"<img src=\"".$fwng_root."images/screenshots/0.8/thumbnails/".$shots[gfpm][$i][name]."\" alt=\"screenshot\" /></a>".
+	$maincont .= "<div><a href=\"".$fwng_root."images/screenshots/default/".$shots[gfpm][$i][name]."\">".
+	"<img src=\"".$fwng_root."images/screenshots/default/thumbnails/".$shots[gfpm][$i][name]."\" alt=\"screenshot\" /></a>".
 	"<br />".$shots[gfpm][$i][title]."</div>\n";
 }
 $maincont .= "</fieldset>\n<fieldset class=\"fieldset\" id=\"default\">\n";
 $maincont .= "<legend>".gettext("FUN (Update Notifier)")."</legend>\n";
 for ($i=0; $i<count($shots[fun]); $i++)
 {
-	$maincont .= "<div><a href=\"".$fwng_root."images/screenshots/0.8/".$shots[fun][$i][name]."\">".
-	"<img src=\"".$fwng_root."images/screenshots/0.8/thumbnails/".$shots[fun][$i][name]."\" alt=\"screenshot\" /></a>".
+	$maincont .= "<div><a href=\"".$fwng_root."images/screenshots/default/".$shots[fun][$i][name]."\">".
+	"<img src=\"".$fwng_root."images/screenshots/default/thumbnails/".$shots[fun][$i][name]."\" alt=\"screenshot\" /></a>".
 	"<br />".$shots[fun][$i][title]."</div>\n";
 }
 $maincont .= "</fieldset></form>\n</div>\n";
