@@ -17,6 +17,26 @@
 
 <news>
     <post>
+        <id>92</id>
+        <title>Frugalware Newsletter Issue 18</title>
+        <date>Thu Mar 13 21:42:43 AEST 2008</date>
+        <author>phayz</author>
+        <hidden>0</hidden>
+        <content><![CDATA[
+            The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
+            Features of this issue include:
+            <ul>
+                <li>Party time! Kalgan is released.</li>
+                <li>(Another) memory donation - I'm sure about this one :)</li>
+                <li>Money, money, money!</li>
+                <li>Tip - Troubleshooting the launch of GUI appplications</li>
+                <li>(Lots of) security announcements</li>
+            </ul>
+            You can read it <a href="/newsletter/18">here</a>. We hope you like it!
+            ]]>
+        </content>
+    </post>
+    <post>
         <id>91</id>
         <title>Frugalware 0.8 (Kalgan) for i686 released</title>
         <date>Mon Mar 11 07:16:05 CET 2008</date>
