@@ -17,6 +17,45 @@
 
 <news>
 	<post>
+		<id>93</id>
+		<title>Sayshell: Fin de vie</title>
+		<date>Fri Mar 14 22:46:09 CET 2008</date>
+		<author>vmiklos</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			Avec la sortie de Kalgan, le support de Sayshell est arrété. Il est grandement recommandé de se mettre à jour vers notre nouvelle version stable, comme il n'y aura plus de changement de sécurité et de bugs pour Sayshell.<br /><br />
+			Nous avons publié les FSA296 à FSA393 pour Sayshell. Cela signifie que 98 problèmes de sécurité on été découvert en la moitié d'une année.<br />
+			Si vous mettez à jour vers Kalgan, cela résoudra aussi les vulnérabilités suivante:<br />
+			<ul>
+				<li><a href="http://bugs.frugalware.org/task/2709">#2709 - xorg-server + libxfont</a></li>
+				<li><a href="http://bugs.frugalware.org/task/2780">#2780 - horde-webmail</a></li>
+				<li><a href="http://bugs.frugalware.org/task/2670">#2670 - kernel</a></li>
+				<li><a href="http://bugs.frugalware.org/task/2595">#2595 - kernel</a></li>
+			</ul>
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>92</id>
+		<title>Lettre d'information Frugalware numéro 18</title>
+		<date>Thu Mar 13 21:42:43 AEST 2008</date>
+		<author>phayz</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			Cette lettre d'information à pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Dans ce numéro:
+			<ul>
+				<li>C'est la fête! Kalgan est disponible.</li>
+				<li>(Encore un) don de mémoire - Je suis certains de celui là :)</li>
+				<li>L'argent, toujours l'argent!</li>
+				<li>Astuce - Résoudre les problêmes de lancement des applications graphiques</li>
+				<li>(De nombreuses) annonces de sécurités</li>
+			</ul>
+			You can read it <a href="/newsletter/18">here</a>. We hope you like it!
+			]]>
+		</content>
+	</post>
+	<post>
 		<id>91</id>
 		<title>Frugalware 0.8rc2 (Kalgan) pour i686 est disponible</title>
 		<date>Mon Mar 11 07:16:05 CET 2008</date>
@@ -564,14 +603,14 @@ a1321a1f978bfedf8cf7fdd33c90e858bd881e10  frugalware-0.8pre1-i686-dvd1.iso
 		<content><![CDATA[
 			Avec la sortie de Sayshell, le support de Terminus est arrété. Il est grandement recommandé de se mettre à jour vers notre nouvelle version stable, comme il n'y aura plus de changement de sécurité et de bugs pour Terminus.<br /><br />
 			Nous avons publié les FSA135 à FSA295 pour Terminus. Cela signifie que 161 problèmes de sécurité on été découvert en la moitié d'une année.<br />
-			  Si vous mettez à jour vers Sayshell, cela résoudra aussi les vulnérabilités suivante:<br />
-			  <ul>
-				  <li><a href="http://bugs.frugalware.org/task/2055">#2055 - MySQL</a></li>
-				  <li><a href="http://bugs.frugalware.org/task/2291">#2291 - mldonkey</a></li>
-				  <li><a href="http://bugs.frugalware.org/task/2409">#2409 - QGit</a></li>
-				  <li><a href="http://bugs.frugalware.org/task/2424">#2424 - OpenOffice</a></li>
-				  <li><a href="http://bugs.frugalware.org/task/2429">#2429 - VMware</a></li>
-				  <li><a href="http://bugs.frugalware.org/task/2456">#2456 - ImageMagick</a></li>
+			Si vous mettez à jour vers Sayshell, cela résoudra aussi les vulnérabilités suivante:<br />
+			<ul>
+				<li><a href="http://bugs.frugalware.org/task/2055">#2055 - MySQL</a></li>
+				<li><a href="http://bugs.frugalware.org/task/2291">#2291 - mldonkey</a></li>
+				<li><a href="http://bugs.frugalware.org/task/2409">#2409 - QGit</a></li>
+				<li><a href="http://bugs.frugalware.org/task/2424">#2424 - OpenOffice</a></li>
+				<li><a href="http://bugs.frugalware.org/task/2429">#2429 - VMware</a></li>
+				<li><a href="http://bugs.frugalware.org/task/2456">#2456 - ImageMagick</a></li>
 			</ul>
 			]]>
 		</content>
