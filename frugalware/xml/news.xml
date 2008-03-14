@@ -17,6 +17,25 @@
 
 <news>
     <post>
+        <id>93</id>
+        <title>Sayshell: End of life</title>
+        <date>Fri Mar 14 22:46:09 CET 2008</date>
+        <author>vmiklos</author>
+        <hidden>0</hidden>
+        <content><![CDATA[
+            With the release of Kalgan, the support for Sayshell is discontinued. It is highly recommended to upgrade to our new stable release, as there will be no more security and bug fixes for Sayshell.<br /><br />
+            We have released FSA296 to FSA393 for Sayshell. That means 98 security problems were issued in half a year.<br />
+            If you update to Kalgan, it will also fix the following vulnerabilities:<br />
+            <ul>
+                <li><a href="http://bugs.frugalware.org/task/2709">#2709 - xorg-server + libxfont</a></li>
+                <li><a href="http://bugs.frugalware.org/task/2780">#2780 - horde-webmail</a></li>
+                <li><a href="http://bugs.frugalware.org/task/2670">#2670 - kernel</a></li>
+                <li><a href="http://bugs.frugalware.org/task/2595">#2595 - kernel</a></li>
+            </ul>
+            ]]>
+        </content>
+    </post>
+    <post>
         <id>92</id>
         <title>Frugalware Newsletter Issue 18</title>
         <date>Thu Mar 13 21:42:43 AEST 2008</date>
