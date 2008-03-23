@@ -87,9 +87,9 @@ If you modify this file, be sure it's still valid - xmllint is your friend.
 	<mirror>
 		<id>7</id>
 		<type>ftp</type>
-		<ftp_path>pub/linux/frugalware</ftp_path>
+		<ftp_path>pub/frugalware</ftp_path>
 		<http_path></http_path>
-		<rsync_path>frugalware/frugalware</rsync_path>
+		<rsync_path></rsync_path>
 		<host>ftp.botux.net</host>
 		<country>French</country>
 		<supplier>botux.net</supplier>
