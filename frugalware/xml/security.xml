@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>397</id>
+		<date>2008-03-24</date>
+		<author>vmiklos</author>
+		<package>unzip</package>
+		<vulnerable>5.52-4</vulnerable>
+		<unaffected>5.52-5kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2886</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0888</cve>
+		<desc>A vulnerability has been reported in UnZip, which potentially can be exploited by malicious people to compromise a user's system.
+			The vulnerability is caused due to the use of uninitialized pointers in the "inflate_dynamic()" function in inflate.c. This can potentially be exploited to free an attacker-controlled memory region and execute arbitrary code via a specially crafted ZIP compressed file.
+			Successful exploitation may allow execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>396</id>
 		<date>2008-03-24</date>
 		<author>vmiklos</author>
