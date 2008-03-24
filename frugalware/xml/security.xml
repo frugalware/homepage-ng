@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>399</id>
+		<date>2008-03-24</date>
+		<author>vmiklos</author>
+		<package>xine-lib</package>
+		<vulnerable>1.1.10.1-1</vulnerable>
+		<unaffected>1.1.11-1kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2887</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0073</cve>
+		<desc>Secunia Research has discovered a vulnerability in xine-lib, which can be exploited by malicious people to compromise a user's system.
+			The vulnerability is caused due to a boundary error within the "sdpplin_parse()" function in input/libreal/sdpplin.c. This can be exploited to overwrite arbitrary memory regions via an overly large "streamid" SDP parameter included in a malicious RTSP stream.
+			Successful exploitation allows execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>398</id>
 		<date>2008-03-24</date>
 		<author>vmiklos</author>
