@@ -81,7 +81,9 @@ if __name__ == "__main__":
 	f = fsa(minidom.parse('frugalware/xml/security.xml'))
 	if f.id != latest:
 		import smtplib
-		fro = f.author + " <noreply@frugalware.org>"
+		sock = os.popen('git log -1 --pretty=format:"%cn <%ce>"')
+		fro = sock.read().strip()
+		sock.close()
 		to = "frugalware-security@frugalware.org"
 		msg = "From: %s \r\nTo: %s\r\nSubject: %s\r\n\r\n" \
 			% (fro, to, f.subject)
