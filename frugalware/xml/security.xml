@@ -27,6 +27,23 @@
 
 <fsas>
 	<fsa>
+		<id>396</id>
+		<date>2008-03-24</date>
+		<author>vmiklos</author>
+		<package>rails</package>
+		<vulnerable>1.1.6-1</vulnerable>
+		<unaffected>1.2.6-1kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2591</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-3227
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5379
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5380
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6077</cve>
+		<desc>Some vulnerabilities have been reported in Ruby on Rails, which can be exploited by malicious people to disclose sensitive information and conduct cross-site scripting attacks.
+			1) Input passed to the "to_json" function is not properly sanitised before being returned to the user. This can be exploited to execute arbitrary HTML and script code in a user's browser session in context of an affected site.
+			2) An error in ActiveResource when processing responses using the "Hash.from_xml" function can be exploited to determine the existence of files and to read the contents of arbitrary XML files.
+			3) A security issue is caused due to lib/action_controller/cgi_process.rb removing the ":cookie_only" attribute from "DEFAULT_SESSION_OPTIONS" and can be exploited to conduct session fixation attacks against applications using the affected component.</desc>
+	</fsa>
+	<fsa>
 		<id>395</id>
 		<date>2008-03-24</date>
 		<author>vmiklos</author>
