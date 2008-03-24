@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>395</id>
+		<date>2008-03-24</date>
+		<author>vmiklos</author>
+		<package>ghostscript</package>
+		<vulnerable>8.61-1</vulnerable>
+		<unaffected>8.62-1kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2823</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0411</cve>
+		<desc>Chris Evans has reported a vulnerability in Ghostscript, which can be exploited by malicious people to compromise a user's system.
+			The vulnerability is caused due to a boundary error within the "zseticcspace()" function in zicc.c. This can be exploited to cause a stack-based buffer overflow via an overly large "Range" array.
+			Successful exploitation allows execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>394</id>
 		<date>2008-03-18</date>
 		<author>vmiklos</author>
