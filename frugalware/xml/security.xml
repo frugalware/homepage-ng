@@ -27,6 +27,24 @@
 
 <fsas>
 	<fsa>
+		<id>398</id>
+		<date>2008-03-24</date>
+		<author>vmiklos</author>
+		<package>tetex</package>
+		<vulnerable>3.0-12</vulnerable>
+		<unaffected>3.0-13kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2592</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5935
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5936
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5937</cve>
+		<desc>Some vulnerabilities have been reported in teTeX, which can be exploited by malicious, local users to disclose and manipulate sensitive information and by malicious people to potentially compromise a vulnerable system.
+			1) A boundary error in dvips can be exploited to cause a stack-based buffer overflow when a user is tricked into opening a specially crafted DVI file containing an overly long hypertext reference.
+			Successful exploitation requires that dvips is invoked with the "-z" option.
+			2) Some boundary errors in dviljk can be exploited to cause buffer overflows when a user is enticed to print a specially crafted DVI file.
+			Successful exploitation of vulnerabilities #1 and #2 may allow execution of arbitrary code.
+			3) An error due to dvips using the insecure "tmpnam()" function when converting DVI files can potentially be exploited to disclose and modify sensitive information.</desc>
+	</fsa>
+	<fsa>
 		<id>397</id>
 		<date>2008-03-24</date>
 		<author>vmiklos</author>
