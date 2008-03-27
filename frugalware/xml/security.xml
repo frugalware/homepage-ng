@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>400</id>
+		<date>2008-03-27</date>
+		<author>voroskoi</author>
+		<package>bzip2</package>
+		<vulnerable>1.0.4-1</vulnerable>
+		<unaffected>1.0.5-1kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2903</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1372</cve>
+		<desc>A vulnerability has been reported in bzip2, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			The vulnerability is caused due to an error in the handling of malformed archives and can potentially be exploited to cause a DoS.</desc>
+	</fsa>
+	<fsa>
 		<id>399</id>
 		<date>2008-03-24</date>
 		<author>vmiklos</author>
