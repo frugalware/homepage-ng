@@ -17,6 +17,25 @@
 
 <news>
 	<post>
+		<id>94</id>
+		<title>Lettre d'information Frugalware numéro 19</title>
+		<date>Thu Mar 27 21:22:43 AEST 2008</date>
+		<author>phayz</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			Cette lettre d'information à pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Dans ce numéro:
+			<ul>
+				<li>Nous sommes célèbre! Enfin presque :)</li>
+				<li>Solaria, nous y voilà!</li>
+				<li>Bouleetbil à de l'occupation</li>
+				<li>Astuce - Pacman - qu'est ce que je vient juste d'installer?</li>
+			</ul>
+			Vous pouvez la lire <a href="/newsletter/19">ici (anglais)</a>. Nous espérons que vous l'apprécierez!
+			]]>
+		</content>
+	</post>
+	<post>
 		<id>93</id>
 		<title>Sayshell: Fin de vie</title>
 		<date>Fri Mar 14 22:46:09 CET 2008</date>
@@ -51,7 +70,7 @@
 				<li>Astuce - Résoudre les problêmes de lancement des applications graphiques</li>
 				<li>(De nombreuses) annonces de sécurités</li>
 			</ul>
-			You can read it <a href="/newsletter/18">here</a>. We hope you like it!
+			Vous pouvez la lire <a href="/newsletter/18">ici (anglais)</a>. Nous espérons que vous l'apprécierez!
 			]]>
 		</content>
 	</post>
@@ -62,7 +81,7 @@
 		<author>VMiklos</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			L'équipe des développeurs de Frugalware est fière de vous <a href="/news/91">announcer</a> la sortie de Frugalware 0.8, notre huitième version stable.<br />
+			L'équipe des développeurs de Frugalware est fière de vous <a href="/news/91">annoncer</a> la sortie de Frugalware 0.8, notre huitième version stable.<br />
 			Aucune nouveauté n'a été ajoutée depuis 0.8rc2, mais plus de 300 changements ont étés éffectués pour corriger des problèmes mineurs.
 			Si vous n'avez pas suivis les changement pendant les versions pre/rc, voici les changements les plus important depuis la version 0.7:<br />
 			<ul>
@@ -129,7 +148,7 @@ fb2079de1627ca0e65a323005e0644b88fed6d03  frugalware-0.8-i686-usb.tar.gz
 		<id>90</id>
 		<title>Lettre d'information Frugalware numéro 17</title>
 		<date>Sat Mar 1 16:30:13 CET 2008</date>
-		<author>phayz</author>
+<!-- 		<author>phayz</author> -->
 		<hidden>0</hidden>
 		<content><![CDATA[
 			Cette lettre d'information à pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
@@ -169,7 +188,7 @@ fb2079de1627ca0e65a323005e0644b88fed6d03  frugalware-0.8-i686-usb.tar.gz
 		<author>VMiklos</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			L'équipe des développeurs de Frugalware est fière de vous <a href="/news/88">announcer</a> la sortie de la seconde (et dernière) Release Candidate de la prochaine version stable 0.8 "Kalgan".
+			L'équipe des développeurs de Frugalware est fière de vous <a href="/news/88">annoncer</a> la sortie de la seconde (et dernière) Release Candidate de la prochaine version stable 0.8 "Kalgan".
 			Une courte et incomplète liste des changement depuis la version 0.8rc1:<br />
 			<ul>
 				<li>Correction de bugs:
@@ -272,7 +291,7 @@ c8f5addddf9d4bb949876f075cff629e5a66fac8  frugalware-0.8rc2-i686-dvd2.iso
 		<author>hermier</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Les développeurs de Frugalware ont le plaisir de vous <a href="/news/86">announcer</a> la disponibilité disponibilité de Frugalware 0.8rc1, la première pré-version de la prochaine version stable 0.8.<br />
+			Les développeurs de Frugalware ont le plaisir de vous <a href="/news/86">annoncer</a> la disponibilité disponibilité de Frugalware 0.8rc1, la première pré-version de la prochaine version stable 0.8.<br />
 			Une courte et incomplète liste des changement depuis la version 0.8pre2:<br />
 			<ul>
 				<li>Correction de bugs:
@@ -396,7 +415,7 @@ Server = http://ftp.frugalware.org/pub/other/people/krix/xorg73/frugalware-i686<
 		<author>VMiklos</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Les développeurs de Frugalware ont le plaisir de vous <a href="/news/83">announcer</a> la disponibilité disponibilité de Frugalware 0.8pre2, le deuxième aperçu technique de la prochaine version stable 0.8.<br />
+			Les développeurs de Frugalware ont le plaisir de vous <a href="/news/83">annoncer</a> la disponibilité disponibilité de Frugalware 0.8pre2, le deuxième aperçu technique de la prochaine version stable 0.8.<br />
 			Une liste courte et incomplète des changements depuis 0.8pre1:<br />
 			<ul>
 				<li>Nouvelles fonctionnalités:
@@ -514,7 +533,7 @@ eb7fbc5158e452f5217e87a2be51e600b05024b8  frugalware-0.8pre2-i686-tftp.img.gz
 		<author>hermier</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Les développeurs de Frugalware ont le plaisir de vous <a href="/news/79">announcer</a> la disponibilité disponibilité de Frugalware 0.8pre1, le premier aperçu technique de la prochaine version stable 0.8.<br />
+			Les développeurs de Frugalware ont le plaisir de vous <a href="/news/79">annoncer</a> la disponibilité disponibilité de Frugalware 0.8pre1, le premier aperçu technique de la prochaine version stable 0.8.<br />
 			Une liste courte et incomplète des changements depuis 0.7:<br />
 			<ul>
 				<li>Paquets mis à jour:
@@ -726,14 +745,14 @@ fa447a8cbd60d554905c48d379fb5d08b80e89b8  frugalware-0.7-i686-tftp.img.gz
 		<author>hermier</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-						Depuis le kernel-2.6.22-6 dans Frugalware-current, les utilisateurs Intel aurons des périphériques /dev/sd* à la place des /dev/hd*. La raison est la suivante: il a été impossible de démarrer le noyau sur certaines machine sans ce changement. Voir <a href="http://bugs.frugalware.org/2243">ce rapport d'erreur</a> pour plus de détails. En conséquence, après avoir mis à jour en utilisant pacman -Syu, vous devrez:
-						<ol>
-										<li>Vérifiez si vous possédez un controlleur IDE Intel en faisant un: sudo lspci |grep -i intel.*ide. Si vous n'avez aucun résultat sous n'êtes probablement pas affecté.</li>
-										<li>Edit /etc/fstab: changez toutes les occurrences de /dev/hd en /dev/sd.</li>
-										<li>Edit /boot/grub/menu.lst: changez toutes les occurrences de /dev/hd en /dev/sd dans les entrées Frugalware.</li>
-										<li>Reboot.</li>
-						</ol>
-						En vous remerciant de votre compréhension!
+			Depuis le kernel-2.6.22-6 dans Frugalware-current, les utilisateurs Intel aurons des périphériques /dev/sd* à la place des /dev/hd*. La raison est la suivante: il a été impossible de démarrer le noyau sur certaines machine sans ce changement. Voir <a href="http://bugs.frugalware.org/2243">ce rapport d'erreur</a> pour plus de détails. En conséquence, après avoir mis à jour en utilisant pacman -Syu, vous devrez:
+			<ol>
+				<li>Vérifiez si vous possédez un controlleur IDE Intel en faisant un: sudo lspci |grep -i intel.*ide. Si vous n'avez aucun résultat sous n'êtes probablement pas affecté.</li>
+				<li>Edit /etc/fstab: changez toutes les occurrences de /dev/hd en /dev/sd.</li>
+				<li>Edit /boot/grub/menu.lst: changez toutes les occurrences de /dev/hd en /dev/sd dans les entrées Frugalware.</li>
+				<li>Reboot.</li>
+			</ol>
+			En vous remerciant de votre compréhension!
 			]]>
 		</content>
 	</post>
