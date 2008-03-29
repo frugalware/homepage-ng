@@ -93,7 +93,7 @@ function main()
 		<input type=\"radio\" name=\"op\" value=\"pkg\" checked=\"checked\"/>".gettext("packages")."<br />
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class=\"required\" type=\"checkbox\" name=\"desc\" id=\"descr\" /><label for=\"descr\" class=\"pkg-phrasing\">".gettext("Search in description")."</label><br />
 		<input type=\"radio\" name=\"op\" value=\"file\" />".gettext("files")."<br />
-		<input type=\"radio\" name=\"op\" value=\"groups\" />".gettext("groups").<br />
+		<input type=\"radio\" name=\"op\" value=\"groups\" />".gettext("groups")."<br />
 		<input class=\"required\" type=\"text\" id=\"pkgsrc\" name=\"srch\" size=\"40\" title=\"".gettext("Regular expression")."\"/> " . gettext( '(regular expression)' ) . "
 		<br />
 		<br />
