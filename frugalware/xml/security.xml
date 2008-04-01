@@ -27,6 +27,39 @@
 
 <fsas>
 	<fsa>
+		<id>401</id>
+		<date>2008-04-01</date>
+		<author>vmiklos</author>
+		<package>j2sdk</package>
+		<vulnerable>6-7</vulnerable>
+		<unaffected>6-8kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2845</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1185
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1186
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1187
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1188
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1189
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1190
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1191
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1192
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1193
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1194
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1195
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1196</cve>
+		<desc>Some vulnerabilities have been reported in Sun Java, which can be exploited by malicious people to cause a DoS (Denial of Service), to bypass certain security restrictions, or to compromise a vulnerable system.
+			1) Two unspecified errors in the Java Runtime Environment Virtual Machine can be exploited by a malicious, untrusted applet to read and write local files and execute local applications.
+			2) An unspecified error in the Java Runtime Environment (JRE) when processing XSLT transformations can be exploited by untrusted applets or applications to e.g. read certain URL resources or potentially execute arbitrary code.
+			3) A boundary error exists in the "useEncodingDecl()" function when parsing the xml header character encoding attribute. This can be exploited to cause a stack-based buffer overflow and execute arbitrary code via a specially crafted JNLP file containing an overly long charset name in the xml header.
+			4) A boundary error exists in the "useEncodingDecl()" function when processing xml-based JNLP files for UTF8 characters. This can be exploited to cause a stack-based buffer overflow and execute arbitrary code via a specially crafted JNLP file containing overly long key name in the xml header.
+			5) A boundary error exist in Java Web Start, which can be exploited e.g. by an untrusted Java Web Start application to read and write local files and execute local applications.
+			6) An unspecified error in Java Web Start can be exploited by a malicious, untrusted applet to read and write local files or execute local applications.
+			7) An unspecified error in Java Web Start can be exploited by an untrusted Java Web Start application to create files on the system and run local applications with the privileges of the user running the untrusted Java Web Start application.
+			8) An unspecified error in the Java Plug-in can be exploited by an applet to bypass the same origin policy and to execute local applications.
+			9) Some errors in the Java Runtime Environment image parsing library within the processing of ICC profiles can be exploited to crash the JVM or to write local files and execute local applications.
+			10) An error in the Java Runtime Environment may allow java script code within a browser to make connections through Java APIs to network services on the local system.
+			11) A boundary error exists in Java Web Start in the processing of JNLP files, which can be exploited to cause a stack-based buffer overflow when a user visits a malicious web site.</desc>
+	</fsa>
+	<fsa>
 		<id>400</id>
 		<date>2008-03-27</date>
 		<author>voroskoi</author>
