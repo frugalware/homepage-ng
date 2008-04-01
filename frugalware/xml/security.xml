@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>404</id>
+		<date>2008-04-01</date>
+		<author>vmiklos</author>
+		<package>phpmyadmin</package>
+		<vulnerable>2.11.5-1</vulnerable>
+		<unaffected>2.11.5.1-1kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2917</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1567</cve>
+		<desc>im Hermann has discovered a vulnerability in phpMyAdmin, which can potentially be exploited by malicious users to disclose sensitive information.
+			The MySQL username, password, and the Blowfish secret key are stored as plain text in session files. This can potentially be exploited e.g. by users on shared hosts to access that information.</desc>
+	</fsa>
+	<fsa>
 		<id>403</id>
 		<date>2008-04-01</date>
 		<author>vmiklos</author>
