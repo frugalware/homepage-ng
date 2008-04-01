@@ -27,6 +27,20 @@
 
 <fsas>
 	<fsa>
+		<id>403</id>
+		<date>2008-04-01</date>
+		<author>vmiklos</author>
+		<package>horde-webmail</package>
+		<vulnerable>1.0.5-1</vulnerable>
+		<unaffected>1.0.6-1kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2910</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1284</cve>
+		<desc>A vulnerability has been reported in various Horde products, which can be exploited by malicious users to disclose sensitive information and potentially compromise a vulnerable system.
+			Input passed to the "theme" parameter is not properly sanitised before being used. This can be exploited to include arbitrary files from local resources, using directory traversal attacks and URL-encoded NULL bytes ("%00").
+			NOTE: Other attack vectors are also reported to exist.
+			Successful exploitation may allow execution of arbitrary code, but requires valid user credentials.</desc>
+	</fsa>
+	<fsa>
 		<id>402</id>
 		<date>2008-04-01</date>
 		<author>vmiklos</author>
