@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>402</id>
+		<date>2008-04-01</date>
+		<author>vmiklos</author>
+		<package>mplayer</package>
+		<vulnerable>1.0rc2-3</vulnerable>
+		<unaffected>1.0rc2-4kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2913</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1558</cve>
+		<desc>k`sOSe has discovered a vulnerability in MPlayer, which potentially can be exploited by malicious people to compromise a user's system.
+			The vulnerability is caused due to an integer overflow error in the "sdpplin_parse()" function in stream/realrtsp/sdpplin.c. This can be exploited to overwrite arbitrary memory regions via an overly large "StreamCount" SDP parameter.
+			Successful exploitation may allow execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>401</id>
 		<date>2008-04-01</date>
 		<author>vmiklos</author>
