@@ -59,6 +59,7 @@ If you modify this file, be sure it's still valid - xmllint is your friend.
 		<bandwidth>100 MBit</bandwidth>
 	</mirror>
 	<mirror>
+		<!-- XXX seem to be outdated, no response from m8rs -->
 		<id>5</id>
 		<type>ftp</type>
 		<type>http</type>
@@ -135,6 +136,7 @@ If you modify this file, be sure it's still valid - xmllint is your friend.
 		<bandwidth>2 GBit</bandwidth>
 	</mirror>
 	<mirror>
+		<!-- seem to be removed, no response from the m8rs -->
 		<id>13</id>
 		<type>ftp</type>
 		<type>http</type>
