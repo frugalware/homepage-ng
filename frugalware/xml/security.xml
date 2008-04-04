@@ -27,6 +27,20 @@
 
 <fsas>
 	<fsa>
+		<id>408</id>
+		<date>2008-04-04</date>
+		<author>vmiklos</author>
+		<package>wireshark</package>
+		<vulnerable>0.99.8-1</vulnerable>
+		<unaffected>1.0.0-1kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2915</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1561
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1562
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1563</cve>
+		<desc>Some vulnerabilities have been reported in Wireshark, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			The vulnerabilities are caused due to errors in the X.509sat, Roofnet, LDAP, and SCCP dissectors. These can be exploited to cause the application to crash when processing specially crafted packets that are either captured off the wire or loaded via a capture file.</desc>
+	</fsa>
+	<fsa>
 		<id>407</id>
 		<date>2008-04-04</date>
 		<author>vmiklos</author>
