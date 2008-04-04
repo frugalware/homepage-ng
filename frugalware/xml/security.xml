@@ -27,6 +27,35 @@
 
 <fsas>
 	<fsa>
+		<id>406</id>
+		<date>2008-04-04</date>
+		<author>vmiklos</author>
+		<package>firefox</package>
+		<vulnerable>2.0.0.12-1</vulnerable>
+		<unaffected>2.0.0.13-1kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2907</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4879
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1195
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1233
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1234
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1235
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1236
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1237
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1238
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1240
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1241</cve>
+		<desc>Some vulnerabilities and weaknesses have been reported in Mozilla Firefox, which can be exploited by malicious people to bypass certain security restrictions, disclose potentially sensitive information, conduct cross-site scripting and phishing attacks, and potentially compromise a user's system.
+			1) An unspecified error in the handling of "XPCNativeWrappers" can lead to the execution of arbitrary Javascript code with the user's privileges via "setTimeout()" calls.
+			2) Various errors in the handling of Javascript code can be exploited to conduct cross-site scripting attacks or execute arbitrary code.
+			3) Various errors in the layout engine can be exploited to cause a memory corruption.
+			4) Various errors in the Javascript engine can be exploited to cause a memory corruption.
+			Successful exploitation of these vulnerabilities may allow execution of arbitrary code.
+			5) An error within the handling of HTTP "Referer:" headers sent with requests to URLs containing "Basic Authentication" credentials having an empty username can be exploited to bypass cross-site request forgery protections.
+			6) The problem is that Firefox offers a previously configured private SSL certificate when establishing connections to webservers requesting SSL Client Authentication. This can potentially be exploited to disclose sensitive information via a malicious webserver.
+			7) An error in the handling of the "jar:" protocol can be exploited to establish connections to arbitrary ports on the local machine.
+			8) An error when displaying XUL pop-up windows can be exploited to hide the window's borders and facilitate phishing attacks.</desc>
+	</fsa>
+	<fsa>
 		<id>405</id>
 		<date>2008-04-01</date>
 		<author>vmiklos</author>
