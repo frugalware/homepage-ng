@@ -27,6 +27,27 @@
 
 <fsas>
 	<fsa>
+		<id>407</id>
+		<date>2008-04-04</date>
+		<author>vmiklos</author>
+		<package>seamonkey</package>
+		<vulnerable>1.1.8-1</vulnerable>
+		<unaffected>1.1.9-1kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2908</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4879
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1195
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1233
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1234
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1235
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1236
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1237
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1238
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1240
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1241</cve>
+		<desc>Some vulnerabilities and weaknesses have been reported in Mozilla SeaMonkey, which can be exploited by malicious people to bypass certain security restrictions, disclose potentially sensitive information, conduct cross-site scripting and phishing attacks, and potentially compromise a user's system.
+			For more information, please see FSA406.</desc>
+	</fsa>
+	<fsa>
 		<id>406</id>
 		<date>2008-04-04</date>
 		<author>vmiklos</author>
