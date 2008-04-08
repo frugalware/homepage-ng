@@ -97,8 +97,16 @@ If you modify this file, be sure it's still valid - xmllint is your friend.
 		<supplier_url>http://botux.net</supplier_url>
 		<bandwidth>100 MBit</bandwidth>
 	</mirror>
-	<!-- XXX: #8 was madtux.org's iso only mirror, but they have removed
-	it. we can re-use it later, but needs discussing with them first -->
+	<mirror>
+		<id>8</id>
+		<type>ftp</type>
+		<path>distro/frugalware</path>
+		<host>mirror.linux-de.org</host>
+		<country>Germany</country>
+		<supplier>Schlund + Partner AG</supplier>
+		<supplier_url>http://mirror.linux-de.org/</supplier_url>
+		<bandwidth>10 MBit</bandwidth>
+	</mirror>
 	<mirror>
 		<id>9</id>
 		<type>ftp</type>
