@@ -100,8 +100,10 @@ If you modify this file, be sure it's still valid - xmllint is your friend.
 	<mirror>
 		<id>8</id>
 		<type>ftp</type>
+		<type>http</type>
 		<type>rsync</type>
 		<ftp_path>distro/frugalware</ftp_path>
+		<http_path>distro/frugalware</http_path>
 		<rsync_path>frugalware</rsync_path>
 		<host>linux-de.org</host>
 		<country>Germany</country>
