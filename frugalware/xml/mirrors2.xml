@@ -100,12 +100,14 @@ If you modify this file, be sure it's still valid - xmllint is your friend.
 	<mirror>
 		<id>8</id>
 		<type>ftp</type>
-		<path>distro/frugalware</path>
-		<host>mirror.linux-de.org</host>
+		<type>rsync</type>
+		<ftp_path>distro/frugalware</ftp_path>
+		<rsync_path>frugalware</rsync_path>
+		<host>linux-de.org</host>
 		<country>Germany</country>
-		<supplier>Schlund + Partner AG</supplier>
+		<supplier>linux-de.org</supplier>
 		<supplier_url>http://mirror.linux-de.org/</supplier_url>
-		<bandwidth>10 MBit</bandwidth>
+		<bandwidth>100 MBit</bandwidth>
 	</mirror>
 	<mirror>
 		<id>9</id>
