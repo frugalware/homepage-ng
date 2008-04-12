@@ -27,6 +27,22 @@
 
 <fsas>
 	<fsa>
+		<id>411</id>
+		<date>2008-04-12</date>
+		<author>vmiklos</author>
+		<package>opera</package>
+		<vulnerable>9.26-1</vulnerable>
+		<unaffected>9.27-1kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2930</bts>
+		<cve>There is no CVE for this issue, see:
+			http://www.opera.com/support/search/view/881/
+			http://www.opera.com/support/search/view/882/</cve>
+		<desc>Some vulnerabilities have been reported in Opera, which potentially can be exploited by malicious people to compromise a user's system.
+			1) An error when prompting the user to add a newsfeed can be exploited to cause an invalid memory access via a specially crafted newsfeed source.
+			2) An error exists in the processing of HTML CANVAS elements. This can be exploited to cause a memory corruption via specially crafted scaled pattern images.
+			Successful exploitation of the vulnerabilities may allow execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>410</id>
 		<date>2008-04-10</date>
 		<author>voroskoi</author>
