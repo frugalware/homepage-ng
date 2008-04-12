@@ -27,6 +27,23 @@
 
 <fsas>
 	<fsa>
+		<id>412</id>
+		<date>2008-04-12</date>
+		<author>vmiklos</author>
+		<package>cups</package>
+		<vulnerable>1.3.6-1</vulnerable>
+		<unaffected>1.3.6-2kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2962</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0047
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1373</cve>
+		<desc>Some vulnerabilities have been reported in CUPS, which can be exploited by malicious people to cause a DoS (Denial of Service) or to potentially compromise a vulnerable system.
+			1) A boundary error exists within the "cgiCompileSearch()" function in cgi-bin/search.c. This can be exploited to cause a heap-based buffer overflow via a specially crafted IPP request.
+			Successful exploitation may allow execution of arbitrary code, but requires that the vulnerable system is sharing printers on the network.
+			NOTE: If printer sharing is disabled, the vulnerability can only be exploited by malicious, local users.
+			2) A boundary error exists within the "gif_read_image()" function in filter/image-gif.c. This can be exploited to cause a buffer overflow via overly large "code_size" values in GIF image files.
+			Successful exploitation may allow execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>411</id>
 		<date>2008-04-12</date>
 		<author>vmiklos</author>
