@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>413</id>
+		<date>2008-04-12</date>
+		<author>vmiklos</author>
+		<package>python</package>
+		<vulnerable>2.5.2-1</vulnerable>
+		<unaffected>2.5.2-2kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2954</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1679</cve>
+		<desc>David Remahl has discovered a security issue in the imageop module for Python, which can be exploited by malicious people to cause a DoS (Denial of Service) and potentially compromise a vulnerable system.
+			The security issue is caused due to an incomplete fix (see FSA295) and can be exploited to cause a heap-based buffer overflow when specially crafted parameters are passed to the function.
+			Successful exploitation may allow execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>412</id>
 		<date>2008-04-12</date>
 		<author>vmiklos</author>
