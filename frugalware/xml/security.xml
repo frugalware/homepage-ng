@@ -27,6 +27,21 @@
 
 <fsas>
 	<fsa>
+		<id>422</id>
+		<date>2008-04-14</date>
+		<package>vlc</package>
+		<vulnerable>0.8.6-11</vulnerable>
+		<unaffected>0.8.6-12kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2904</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0073
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1489</cve>
+		<desc>Some vulnerabilities have been reported in VLC Media Player, which potentially can be exploited by malicious people to compromise a user's system.
+			1) An integer overflow error within the "MP4_ReadBox_rdrf()" function in modules/demux/mp4/libmp4.c can be exploited to cause a heap-based buffer overflow via e.g. a MP4 file with a specially crafted RDRF atom.
+			2) A boundary error within the "sdpplin_parse()" function in modules/access/rtsp/real_sdpplin.c can be exploited to overwrite arbitrary memory regions.
+			3) Two integer overflow errors within the "cinepak_decode_frame()" function in modules/codec/cinepak.c can be exploited to cause a heap-based buffer overflow.
+			Successful exploitation of the vulnerabilities may allow execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>421</id>
 		<date>2008-04-14</date>
 		<package>sdlimage</package>
