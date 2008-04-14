@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>416</id>
+		<date>2008-04-14</date>
+		<author>vmiklos</author>
+		<package>pdns-recursor</package>
+		<vulnerable>3.1.4-3</vulnerable>
+		<unaffected>3.1.5-1kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2924</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1637</cve>
+		<desc>Amit Klein has reported a vulnerability in PowerDNS Recursor, which can be exploited by malicious people to poison the DNS cache.
+			The vulnerability is caused due to the application using predictable standard C library functions to generate random numbers (e.g. "rand()" and "srand()"), which are then used to create the transaction ID (TRXID) and UDP source port. This can be exploited to poison the DNS cache by guessing the transaction TRXID and the UDP source port.</desc>
+	</fsa>
+	<fsa>
 		<id>415</id>
 		<date>2008-04-14</date>
 		<author>vmiklos</author>
