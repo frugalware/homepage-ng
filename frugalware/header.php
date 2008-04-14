@@ -14,6 +14,7 @@ $data = genHeader();
 <head>
   <title>Frugalware Linux - Let's make things Frugal!</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="description" content="Frugalware Linux, a general purpose linux distribution, designed for intermediate users."/>
   <link rel="stylesheet" type="text/css" href="<?php echo $fwng_root; ?>static/fwng.css" />
   <link rel="stylesheet" type="text/css" href="<?php echo $fwng_root; ?>static/_proform.css" />
   <link rel="stylesheet" type="text/css" href="<?php echo $fwng_root; ?>static/common.css" />
