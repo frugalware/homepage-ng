@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>421</id>
+		<date>2008-04-14</date>
+		<package>sdlimage</package>
+		<vulnerable>1.2.6-1</vulnerable>
+		<unaffected>1.2.6-2kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2916</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6697
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0544</cve>
+		<desc>Two vulnerabilities have been reported in SDL_image, which can be exploited by malicious people to cause a DoS (Denial of Service) or potentially compromise an application using the library.
+			1) A boundary error within the "LWZReadByte()" function in IMG_gif.c can be exploited to trigger the overflow of a static buffer via a specially crafted GIF file.
+			2) A boundary error within the "IMG_LoadLBM_RW()" function in IMG_lbm.c can be exploited to cause a heap-based buffer overflow via a specially crafted IFF ILBM file.</desc>
+	</fsa>
+	<fsa>
 		<id>420</id>
 		<date>2008-04-14</date>
 		<package>flashplugin</package>
