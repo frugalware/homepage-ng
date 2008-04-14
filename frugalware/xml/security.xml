@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>417</id>
+		<date>2008-04-14</date>
+		<author>vmiklos</author>
+		<package>xine-lib</package>
+		<vulnerable>1.1.11-1kalgan1</vulnerable>
+		<unaffected>1.1.11-1kalgan2</unaffected>
+		<bts>http://bugs.frugalware.org/task/2892</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1482</cve>
+		<desc>Luigi Auriemma has reported some vulnerabilities in xine-lib, which potentially can be exploited by malicious people to compromise a user's system.
+			The vulnerabilities are caused due to integer overflow errors when allocating memory in src/demuxers/demux_flv.c, src/demuxers/demux_qt.c, src/demuxers/demux_real.c, src/demuxers/demux_wc3movie.c, src/demuxers/ebml.c, and src/demuxers/demux_film.c. These can be exploited to cause heap-based buffer overflows via overly large fields included in e.g. FLV, MOV, RM, MVE, MKV, and CAK files.</desc>
+	</fsa>
+	<fsa>
 		<id>416</id>
 		<date>2008-04-14</date>
 		<author>vmiklos</author>
