@@ -27,6 +27,19 @@
 
 <fsas>
 	<fsa>
+		<id>419</id>
+		<date>2008-04-14</date>
+		<package>gnome-screensaver</package>
+		<vulnerable>2.20.0-1</vulnerable>
+		<unaffected>2.20.0-2kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2931</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6389
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0887</cve>
+		<desc>A weakness and a security issue have been reported in gnome-screensaver, which can be exploited by malicious people with physical access to disclose potentially sensitive information or bypass certain security restrictions.
+			1) A weakness is caused due to the "Leave message" feature allowing attackers to e.g. paste the contents of the clipboard of the user who's screen is currently locked, which can be exploited to disclose potentially sensitive information.
+			2) A security issue is caused due to an error if the NIS authentication method is used. This can be exploited to bypass the authentication check and unlock the screen if the NIS server is not reachable.</desc>
+	</fsa>
+	<fsa>
 		<id>418</id>
 		<date>2008-04-14</date>
 		<package>mtr</package>
