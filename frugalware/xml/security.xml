@@ -27,6 +27,29 @@
 
 <fsas>
 	<fsa>
+		<id>420</id>
+		<date>2008-04-14</date>
+		<package>flashplugin</package>
+		<vulnerable>9.0.115.0-1</vulnerable>
+		<unaffected>9.0.124.0-1kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2959</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-0071
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-5275
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6019
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6243
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6637
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1654
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1655</cve>
+		<desc>Some vulnerabilities have been reported in Adobe Flash Player, which can be exploited by malicious people to bypass certain security restrictions, conduct cross-site scripting attacks, or to potentially compromise a user's system.
+			1) A boundary error exists in the processing of "Declare Function (V7)" tags. This can be exploited to cause a heap-based buffer overflow via specially crafted flags.
+			2) An integer overflow in the processing of multimedia files can be exploited to cause a buffer overflow.
+			Successful exploitation of the vulnerabilities may allow execution of arbitrary code.
+			3) Errors when pinning a hostname to an IP address can be exploited to conduct DNS rebinding attacks.
+			4) An error when sending HTTP headers can be exploited to bypass cross-domain policy files.
+			5) An error exists in the enforcing of cross-domain policy files. This can be exploited to bypass certain security restrictions on web servers hosting cross-domain policy files.
+			6) Input passed to unspecified parameters when handling e.g. the "asfunction:" protocol is not properly sanitised before being returned to the user. This can be exploited to inject arbitrary HTML and script code in a user's browser session in context of an affected site.</desc>
+	</fsa>
+	<fsa>
 		<id>419</id>
 		<date>2008-04-14</date>
 		<package>gnome-screensaver</package>
