@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>414</id>
+		<date>2008-04-14</date>
+		<author>vmiklos</author>
+		<package>lighttpd</package>
+		<vulnerable>1.4.19-1kalgan1</vulnerable>
+		<unaffected>1.4.19-1kalgan2</unaffected>
+		<bts>http://bugs.frugalware.org/task/2922</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1531</cve>
+		<desc>A vulnerability has been reported in lighttpd, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			The vulnerability is caused due to lighttpd not properly clearing the OpenSSL error queue. This can be exploited to close concurrent SSL connections of lighttpd by terminating one SSL connection.</desc>
+	</fsa>
+	<fsa>
 		<id>413</id>
 		<date>2008-04-12</date>
 		<author>vmiklos</author>
