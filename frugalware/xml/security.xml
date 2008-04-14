@@ -27,6 +27,21 @@
 
 <fsas>
 	<fsa>
+		<id>415</id>
+		<date>2008-04-14</date>
+		<author>vmiklos</author>
+		<package>m4</package>
+		<vulnerable>1.4.10-1</vulnerable>
+		<unaffected>1.4.10-2kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2963</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1687
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1688</cve>
+		<desc>A vulnerability and a security issue have been reported in GNU M4, which can be exploited by malicious people to manipulate certain data or to potentially compromise a user's system.
+			1) A format string error exists within the "produce_frozen_state()" function in src/freeze.c. This can be exploited via a specially crafted filename passed as a parameter to "m4 -F".
+			Successful exploitation may allow execution of arbitrary code, but requires that the user is tricked into processing a filename containing malicious format specifiers.
+			2) An error within the implementation of the "maketemp" and "mkstemp" macros can potentially be exploited to trigger the processing of improper files via special characters contained in the output string.</desc>
+	</fsa>
+	<fsa>
 		<id>414</id>
 		<date>2008-04-14</date>
 		<author>vmiklos</author>
