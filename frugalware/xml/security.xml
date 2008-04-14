@@ -27,6 +27,17 @@
 
 <fsas>
 	<fsa>
+		<id>424</id>
+		<date>2008-04-14</date>
+		<package>comix</package>
+		<vulnerable>3.6.4-1</vulnerable>
+		<unaffected>3.6.4-2kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2923</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1568</cve>
+		<desc>A vulnerability has been reported in Comix, which can be exploited by malicious people to compromise a user's sytem.
+			The vulnerability is caused due to the improper verification of received filenames when executing the rar, unrar, or jpegtran programs. This can be exploited to execute arbitrary commands via a file containing shell metacharacters within the filename.</desc>
+	</fsa>
+	<fsa>
 		<id>423</id>
 		<date>2008-04-14</date>
 		<package>emacs</package>
