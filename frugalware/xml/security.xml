@@ -27,6 +27,17 @@
 
 <fsas>
 	<fsa>
+		<id>418</id>
+		<date>2008-04-14</date>
+		<package>mtr</package>
+		<vulnerable>0.72-1</vulnerable>
+		<unaffected>0.73-1kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2956</bts>
+		<cve>There is no CVE for this issue.</cve>
+		<desc>David Leadbeater has reported a vulnerability in mtr, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			The vulnerability is caused due to mtr not properly limiting the length of some buffers.</desc>
+	</fsa>
+	<fsa>
 		<id>417</id>
 		<date>2008-04-14</date>
 		<author>vmiklos</author>
