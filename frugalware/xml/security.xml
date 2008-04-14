@@ -27,6 +27,16 @@
 
 <fsas>
 	<fsa>
+		<id>423</id>
+		<date>2008-04-14</date>
+		<package>emacs</package>
+		<vulnerable>22.1-2</vulnerable>
+		<unaffected>22.1-3kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3006</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1694</cve>
+		<desc>Steve Grubb discovered that vcdiff script as shipped with Emacs uses temporary files insecurely, which makes it possible for local attacker to conduct a symlink attack and make the victim overwrite arbitrary file.</desc>
+	</fsa>
+	<fsa>
 		<id>422</id>
 		<date>2008-04-14</date>
 		<package>vlc</package>
