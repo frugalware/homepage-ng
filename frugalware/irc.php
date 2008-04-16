@@ -138,41 +138,8 @@ setcharset();
 </form>\n";
 
 fwmiddlebox(gettext("Login via web"), $ircont);
-fwmiddlebox(gettext("Social diagram"), "<img alt=\"Social network diagram\" src=\"http://frugalware.org/~vmiklos/pics/piespy/frugalware-current.png\" />");
 
-$logcont = "";
-if ($dir = @opendir("/home/xbit/public_html/irclog"))
-{
-	while ($file = readdir($dir))
-	{
-		if ($file != "." and $file != ".." and $file != "log.html")
-		{
-			$month = preg_replace("/3-0-([0-9]*)-([0-9]*)-([0-9]*)\.html/", "$3-$1", $file);
-			if (!isset($logs[$month]))
-				$logs[$month]=array();
-			$logs[$month][]=$file;
-		}
-	}
-	closedir($dir);
-	
-	$logcont .= "<div align=\"left\"><table>";
-	uksort($logs, "mcmp");
-	foreach($logs as $key => $value)
-	{
-		usort($value, "dcmp");
-		$logcont .= "<tr><td>$key</td>";
-		foreach($value as $i)
-			$logcont .= "<td><a href=\"/~xbit/irclog/$i\">" . preg_replace("/3-0-([0-9]*)-([0-9]*)-([0-9]*)\.html/", "$2", $i) . "</a></td>";
-		$logcont .= "</tr>";
-	}
-	$logcont .= "</table></div>";
-	$logcont .= sprintf($fwstrirclogd, "/~xbit/irclog/log.html");
-}
-
-if ($logcont == "" )
-	fwmiddlebox(gettext("Log of the channel: #frugalware"), gettext("Sorry, currently no log available"));
-else
-	fwmiddlebox(gettext("Log of the channel: #frugalware"), $logcont);
+fwmiddlebox(gettext("Support channel logs"), sprintf(gettext("Our support channels are logged and the logs are available <a href=\"%s\">here</a>."), "http://ftp.frugalware.org/pub/other/irclogs"));
 
 include("footer.php");
 ?>
