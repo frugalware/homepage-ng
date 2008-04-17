@@ -59,7 +59,6 @@ If you modify this file, be sure it's still valid - xmllint is your friend.
 		<bandwidth>100 MBit</bandwidth>
 	</mirror>
 	<mirror>
-		<!-- XXX seem to be outdated, no response from m8rs -->
 		<id>5</id>
 		<type>ftp</type>
 		<type>http</type>
@@ -148,7 +147,6 @@ If you modify this file, be sure it's still valid - xmllint is your friend.
 		<bandwidth>2 GBit</bandwidth>
 	</mirror>
 	<mirror>
-		<!-- seem to be removed, no response from the m8rs -->
 		<id>13</id>
 		<type>ftp</type>
 		<type>http</type>
@@ -158,41 +156,5 @@ If you modify this file, be sure it's still valid - xmllint is your friend.
 		<supplier>PlanetMirror</supplier>
 		<supplier_url>http://public.planetmirror.com/</supplier_url>
 		<bandwidth>Unknown bandwidth</bandwidth>
-	</mirror>
-	<mirror>
-		<name>Lidux.de</name>
-		<type>buycd</type>
-		<path>http://www.lidux.de/index.php/cPath/2_58</path>
-		<description></description>
-	</mirror>
-	<mirror>
-		<name>OSDisc.com</name>
-		<type>buycd</type>
-		<path>http://www.osdisc.com/cgi-bin/view.cgi/products/linux/frugalware</path>
-		<description></description>
-	</mirror>
-	<mirror>
-		<name>CheapISO.com</name>
-		<type>buycd</type>
-		<path>http://cheapiso.com/index.php?manufacturers_id=55</path>
-		<description></description>
-	</mirror>
-	<mirror>
-		<name>BudgetLinuxCDS</name>
-		<type>buycd</type>
-		<path>http://budgetlinuxcds.com/index.php?page=Choose&amp;letter=Frugalware</path>
-		<description></description>
-	</mirror>
-	<mirror>
-		<name>cdiras.projectinfo.hu</name>
-		<type>buycd</type>
-		<path>http://cdiras.projektinfo.hu/index.php?r=1&amp;op=linux</path>
-		<description></description>
-	</mirror>
-	<mirror>
-		<name>LinuxMedia.hu</name>
-		<type>buycd</type>
-		<path>http://www.linuxmedia.hu/?ref=frugalware</path>
-		<description></description>
 	</mirror>
 </mirrors>
