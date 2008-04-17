@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mirrors [
 <!ELEMENT mirrors (mirror)*>
-<!ELEMENT mirror (id , type+ , path? , ftp_path?, http_path?, rsync_path?, host?, country?, supplier?, supplier_url?, bandwidth?)>
+<!ELEMENT mirror (id , type+ , path? , ftp_path?, http_path?, rsync_path?, host?, country?, country_code?, supplier?, supplier_url?, bandwidth?)>
 <!ELEMENT name (#PCDATA)>
 <!ELEMENT type (#PCDATA)>
 <!ELEMENT path (#PCDATA)>
@@ -15,6 +15,7 @@ The goal of this file to be the source of the:
 2) homepage
 3) pacman mirror list
 4) repoman mirror list
+5) mirmon list
 
 That's why maybe it looks a bit complex first, but it's good since if there is
 a new mirror, we need to modify this file only.
@@ -42,6 +43,7 @@ If you modify this file, be sure it's still valid - xmllint is your friend.
 		<path>mirrors/frugalware/pub/frugalware</path>
 		<host>reaktor.linuxforum.hu</host>
 		<country>Hungary</country>
+		<country_code>hu</country_code>
 		<supplier>Schmidt Computer Ltd.</supplier>
 		<supplier_url>http://www.linuxforum.hu/</supplier_url>
 		<bandwidth>100 MBit</bandwidth>
@@ -54,6 +56,7 @@ If you modify this file, be sure it's still valid - xmllint is your friend.
 		<path>pub/linux/distributions/frugalware</path>
 		<host>ftp.freepark.org</host>
 		<country>Hungary</country>
+		<country_code>hu</country_code>
 		<supplier>Free Software Network</supplier>
 		<supplier_url>http://www.fsn.hu</supplier_url>
 		<bandwidth>100 MBit</bandwidth>
@@ -66,6 +69,7 @@ If you modify this file, be sure it's still valid - xmllint is your friend.
 		<path>packages/frugalware/pub/frugalware</path>
 		<host>niue.belnet.be</host>
 		<country>Belgium</country>
+		<country_code>be</country_code>
 		<supplier>Belgian National Research Network</supplier>
 		<supplier_url>http://www.belnet.be/en/</supplier_url>
 		<bandwidth>1 GBit</bandwidth>
@@ -80,6 +84,7 @@ If you modify this file, be sure it's still valid - xmllint is your friend.
 		<rsync_path>frugalware/frugalware</rsync_path>
 		<host>frugalware.sourcemirrors.org</host>
 		<country>USA</country>
+		<country_code>us</country_code>
 		<supplier>SourceMirrors</supplier>
 		<supplier_url>http://www.sourcemirrors.org</supplier_url>
 		<bandwidth>100 MBit</bandwidth>
@@ -92,6 +97,7 @@ If you modify this file, be sure it's still valid - xmllint is your friend.
 		<rsync_path></rsync_path>
 		<host>ftp.botux.net</host>
 		<country>French</country>
+		<country_code>fr</country_code>
 		<supplier>botux.net</supplier>
 		<supplier_url>http://botux.net</supplier_url>
 		<bandwidth>100 MBit</bandwidth>
@@ -106,6 +112,7 @@ If you modify this file, be sure it's still valid - xmllint is your friend.
 		<rsync_path>frugalware</rsync_path>
 		<host>linux-de.org</host>
 		<country>Germany</country>
+		<country_code>de</country_code>
 		<supplier>linux-de.org</supplier>
 		<supplier_url>http://mirror.linux-de.org/</supplier_url>
 		<bandwidth>100 MBit</bandwidth>
@@ -116,6 +123,7 @@ If you modify this file, be sure it's still valid - xmllint is your friend.
 		<path>pub/frugalware</path>
 		<host>cle.linux.org.tw</host>
 		<country>Taiwan</country>
+		<country_code>tw</country_code>
 		<supplier>National Taiwan University</supplier>
 		<supplier_url>http://cle.linux.org.tw/</supplier_url>
 		<bandwidth>Unknown bandwidth</bandwidth>
@@ -128,6 +136,7 @@ If you modify this file, be sure it's still valid - xmllint is your friend.
 		<path>pub/linux/frugalware</path>
 		<host>frugalware.mirrors.tds.net</host>
 		<country>USA</country>
+		<country_code>us</country_code>
 		<supplier>TDS Telecom</supplier>
 		<supplier_url>http://mirrors.tds.net/</supplier_url>
 		<bandwidth>1 GBit</bandwidth>
@@ -142,6 +151,7 @@ If you modify this file, be sure it's still valid - xmllint is your friend.
 		<path>mirrors/ftp.frugalware.org/pub/frugalware</path>
 		<host>ftp.heanet.ie</host>
 		<country>Ireland</country>
+		<country_code>ie</country_code>
 		<supplier>Ireland's National Education and Research Network</supplier>
 		<supplier_url>http://www.heanet.ie/</supplier_url>
 		<bandwidth>2 GBit</bandwidth>
@@ -153,6 +163,7 @@ If you modify this file, be sure it's still valid - xmllint is your friend.
 		<path>pub/frugalware</path>
 		<host>ftp.planetmirror.com</host>
 		<country>Australia</country>
+		<country_code>au</country_code>
 		<supplier>PlanetMirror</supplier>
 		<supplier_url>http://public.planetmirror.com/</supplier_url>
 		<bandwidth>Unknown bandwidth</bandwidth>
