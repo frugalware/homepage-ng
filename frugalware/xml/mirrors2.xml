@@ -38,6 +38,17 @@ If you modify this file, be sure it's still valid - xmllint is your friend.
 
 <mirrors>
 	<mirror>
+		<id>2</id>
+		<type>ftp</type>
+		<path>frugalware/pub/frugalware</path>
+		<host>tardis.crime.hu</host>
+		<country>Hungary</country>
+		<country_code>hu</country_code>
+		<supplier>Christian Hamar</supplier>
+		<supplier_url>http://tardis.crime.hu/</supplier_url>
+		<bandwidth>100 MBit</bandwidth>
+	</mirror>
+	<mirror>
 		<id>3</id>
 		<type>ftp</type>
 		<path>mirrors/frugalware/pub/frugalware</path>
