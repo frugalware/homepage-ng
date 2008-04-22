@@ -106,7 +106,7 @@ If you modify this file, be sure it's still valid - xmllint is your friend.
 		<ftp_path>pub/frugalware</ftp_path>
 		<http_path></http_path>
 		<rsync_path></rsync_path>
-		<host>ftp.botux.net</host>
+		<host>mirror.botux.net</host>
 		<country>French</country>
 		<country_code>fr</country_code>
 		<supplier>botux.net</supplier>
