@@ -27,6 +27,17 @@
 
 <fsas>
 	<fsa>
+		<id>435</id>
+		<date>2008-04-25</date>
+		<package>openssh</package>
+		<vulnerable>4.7p1-4kalgan1</vulnerable>
+		<unaffected>4.7p1-4kalgan2</unaffected>
+		<bts>http://bugs.frugalware.org/task/2961</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1657</cve>
+		<desc>A weakness has been reported in OpenSSH, which can be exploited by malicious, local users to bypass certain security restrictions.
+			The weakness is caused due to the improper implementation of the "ForceCommand" directive. This can be exploited to execute arbitrary commands via the ~/.ssh/rc file even if a "ForceCommand" directive is in effect.</desc>
+	</fsa>
+	<fsa>
 		<id>434</id>
 		<date>2008-04-25</date>
 		<package>libpng</package>
