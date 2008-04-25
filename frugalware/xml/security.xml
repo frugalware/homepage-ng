@@ -27,6 +27,16 @@
 
 <fsas>
 	<fsa>
+		<id>427</id>
+		<date>2008-04-25</date>
+		<package>gst-plugins-good</package>
+		<vulnerable>0.10.7-1</vulnerable>
+		<unaffected>0.10.7-2kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3031</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1686</cve>
+		<desc>A vulnerability has been reported in gst-plugins-good, which can potentially be exploited by malicious people to compromise a vulnerable system. For more information, see FSA426.</desc>
+	</fsa>
+	<fsa>
 		<id>426</id>
 		<date>2008-04-25</date>
 		<package>speex</package>
