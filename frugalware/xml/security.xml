@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>431</id>
+		<date>2008-04-25</date>
+		<package>firefox</package>
+		<vulnerable>2.0.0.13-1kalgan1</vulnerable>
+		<unaffected>2.0.0.14-1kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3022</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1380</cve>
+		<desc>A vulnerability has been reported in Mozilla Firefox, which can potentially be exploited by malicious people to compromise a user's system.
+			The vulnerability is caused due to an error in the Javascript Garbage Collector and can be exploited to cause a memory corruption via specially crafted Javascript code.
+			Successful exploitation may allow execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>430</id>
 		<date>2008-04-25</date>
 		<package>sweep</package>
