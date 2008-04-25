@@ -86,7 +86,7 @@ for( $i = 0; $i < count($fsas); $i++ ) {
 		'<table width="100%">
 		<tr><td width="30%">' . gettext('Package') . ':</td><td width="70%">' . $fsas[$i][package] . '</td></tr>
 		<tr><td>' . gettext('Date') . ':</td><td>' . $fsas[$i][date] . '</td></tr>
-		<tr><td>' . gettext('Posted by') . ':</td><td>' . $fsas[$i][author] . '</td></tr>
+		'.(strlen($fsas[$i][author]) ? '<tr><td>' . gettext('Posted by') . ':</td><td>' . $fsas[$i][author] . '</td></tr>':'').'
 		<tr><td>' . gettext('Vulnerable version') . ':</td><td>' . $fsas[$i][vulnerable] . '</td></tr>
 		<tr><td>' . gettext('Unaffected version') . ':</td><td>' . $fsas[$i][unaffected] . '</td></tr>
 		<tr><td>' . gettext('Bug tracker entry') . ':</td><td><a href="' . $fsas[$i][bts] . '">' . $fsas[$i][bts] . '</a></td></tr>
