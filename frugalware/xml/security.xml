@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>425</id>
+		<date>2008-04-25</date>
+		<package>mailman</package>
+		<vulnerable>2.1.9-2</vulnerable>
+		<unaffected>2.1.9-3kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3020</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0564</cve>
+		<desc>A vulnerability has been reported in Mailman, which can be exploited by malicious users to conduct script insertion attacks.
+			Certain input when editing the list templates and the list info attribute is not properly sanitised before being stored. This can be exploited to insert arbitrary HTML and script code, which is executed in a user's browser session in context of an affected site when the malicious website is accessed.
+			Successful exploitation requires list administrator privileges.</desc>
+	</fsa>
+	<fsa>
 		<id>424</id>
 		<date>2008-04-14</date>
 		<package>comix</package>
