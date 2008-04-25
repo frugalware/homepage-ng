@@ -27,6 +27,17 @@
 
 <fsas>
 	<fsa>
+		<id>426</id>
+		<date>2008-04-25</date>
+		<package>speex</package>
+		<vulnerable>1.2beta3-1</vulnerable>
+		<unaffected>1.2beta3-2kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3023</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1686</cve>
+		<desc>The reference speex decoder from the Speex library is performing insufficient boundary checks on a header structure read from user input.
+			A user controlled field in the header structure is used to build a function pointer. The reference speex decoder does not check for negative values for the field, allowing the function pointer to be pointed at an arbitary position in memory. This allows remote code execution.</desc>
+	</fsa>
+	<fsa>
 		<id>425</id>
 		<date>2008-04-25</date>
 		<package>mailman</package>
