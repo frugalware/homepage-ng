@@ -1,0 +1,30 @@
+#!/bin/sh
+
+if ! which xmllint >/dev/null 2>&1
+then
+        echo "please install libxml2 first";
+        exit 1;
+fi
+
+for i in $(git-diff --cached | grep '^+++.*\.xml$' | sed -e 's/^+++ b\///')
+do
+        filename="$(git rev-parse --show-cdup)$i"
+
+	if ! echo $filename |grep -q '\.xml$'
+        then
+                continue;
+        fi
+
+        echo -n "validating $i       ..."
+
+        if ! xmllint -valid -noout $filename >/dev/null 2>&1
+        then
+                echo "  failed"
+                echo "please run this:"
+                echo "  xmllint -valid -noout $filename"
+                exit 1;
+        fi
+        echo -e "  done"
+done
+
+exit 0;
