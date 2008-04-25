@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE fsas [
 <!ELEMENT fsas (fsa)*>
-<!ELEMENT fsa (id , date , author, package, vulnerable , unaffected , bts , cve , desc)>
+<!ELEMENT fsa (id , date , author?, package, vulnerable , unaffected , bts , cve , desc)>
 <!-- must be an integer -->
 <!ELEMENT id (#PCDATA)>
 <!-- in YYYY-MM-DD format -->
