@@ -1,0 +1,8 @@
+This hook runs xmllint automatically before a commit. If it fails, it prevents
+you from creating a bad commit.
+
+To enable it, run (from the repo root):
+
+----
+$ ln -sf ../../hooks/pre-commit .git/hooks/pre-commit
+----
