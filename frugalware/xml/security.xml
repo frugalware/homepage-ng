@@ -27,6 +27,16 @@
 
 <fsas>
 	<fsa>
+		<id>429</id>
+		<date>2008-04-25</date>
+		<package>vlc</package>
+		<vulnerable>0.8.6-12kalgan1</vulnerable>
+		<unaffected>0.8.6-12kalgan2</unaffected>
+		<bts>http://bugs.frugalware.org/task/3024</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1686</cve>
+		<desc>A vulnerability has been reported in vlc, which can potentially be exploited by malicious people to compromise a vulnerable system. For more information, see FSA426.</desc>
+	</fsa>
+	<fsa>
 		<id>428</id>
 		<date>2008-04-25</date>
 		<package>sdl_sound</package>
