@@ -27,6 +27,32 @@
 
 <fsas>
 	<fsa>
+		<id>432</id>
+		<date>2008-04-25</date>
+		<package>clamav</package>
+		<vulnerable>0.92.1-1</vulnerable>
+		<unaffected>0.93-1kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3014</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1100
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0314
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1387
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1833
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1835
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1836
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1837</cve>
+		<desc>Some vulnerabilities have been reported in ClamAV, which can be exploited by malicious people to bypass certain security restrictions, to cause a DoS (Denial of Service), or to compromise a vulnerable system.
+			1) A boundary error exists within the "cli_scanpe()" function in libclamav/pe.c. This can be exploited to cause a heap-based buffer overflow via a specially crafted "Upack" executable.
+			Successful exploitation allows execution of arbitrary code.
+			2) A boundary error within the processing of PeSpin packed executables in libclamav/spin.c can be exploited to cause a heap-based buffer overflow.
+			Successful exploitation may allow execution of arbitrary code.
+			3) An unspecified error in the processing of ARJ files can be exploited to hang ClamAV.
+			4) A boundary error within the processing of WWPack packed PE files in libclamav/pe.c can be exploited to cause a heap corruption.
+			Successful exploitation may allow execution of arbitrary code.
+			5) An error in the processing of RAR files can be exploited to bypass the scanning mechanism via a RAR file containing an invalid version number.
+			6) An error exists within the "rfc2231()" function in message.c. This can be exploited to trigger the return of strings that are not NULL terminated and cause a crash.
+			7) An error in libclamunrar can be exploited to crash the application via specially crafted RAR files.</desc>
+	</fsa>
+	<fsa>
 		<id>431</id>
 		<date>2008-04-25</date>
 		<package>firefox</package>
