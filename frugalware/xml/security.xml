@@ -27,6 +27,16 @@
 
 <fsas>
 	<fsa>
+		<id>428</id>
+		<date>2008-04-25</date>
+		<package>sdl_sound</package>
+		<vulnerable>1.0.1-4</vulnerable>
+		<unaffected>1.0.1-5kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3026</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1686</cve>
+		<desc>A vulnerability has been reported in sdl_sound, which can potentially be exploited by malicious people to compromise a vulnerable system. For more information, see FSA426.</desc>
+	</fsa>
+	<fsa>
 		<id>427</id>
 		<date>2008-04-25</date>
 		<package>gst-plugins-good</package>
