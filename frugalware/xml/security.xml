@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>439</id>
+		<date>2008-05-05</date>
+		<package>vorbis-tools</package>
+		<vulnerable>1.1.1-3</vulnerable>
+		<unaffected>1.1.1-4kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3032</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1686</cve>
+		<desc>A vulnerability has been reported in vorbis-tools, which can potentially be exploited by malicious people to compromise a vulnerable system.
+			The vulnerability is caused due to the use of vulnerable libfishsound; an input validation error when processing Speex headers, which can be exploited via a specially crafted Speex stream containing a negative "modeID" field in the header.
+			Successful exploitation may allow execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>438</id>
 		<date>2008-05-05</date>
 		<package>xine-lib</package>
