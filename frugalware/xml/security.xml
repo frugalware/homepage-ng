@@ -27,6 +27,18 @@
 
 <fsas>
 	<fsa>
+		<id>440</id>
+		<date>2008-05-05</date>
+		<package>frugalwareutils</package>
+		<vulnerable>0.7.9-1</vulnerable>
+		<unaffected>0.7.9-2kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3052</bts>
+		<cve>There is no CVE for this issue.</cve>
+		<desc>A vulnerability has been reported in frugalwareutils, which can potentially be exploited by malicious people to cause a DoS on a vulnerable system.
+			The vulnerability is caused due to creating new files as root without checking the current value of umask.
+			Successful exploitation may allow execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>439</id>
 		<date>2008-05-05</date>
 		<package>vorbis-tools</package>
