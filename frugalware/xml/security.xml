@@ -27,6 +27,17 @@
 
 <fsas>
 	<fsa>
+		<id>438</id>
+		<date>2008-05-05</date>
+		<package>xine-lib</package>
+		<vulnerable>1.1.11-1kalgan2</vulnerable>
+		<unaffected>1.1.11-1kalgan3</unaffected>
+		<bts>http://bugs.frugalware.org/task/3027</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1878</cve>
+		<desc>Guido Landi has discovered a vulnerability in xine-lib, which can be exploited by malicious people to compromise a user's system.
+			The vulnerability is caused due to a boundary error within the "demux_nsf_send_chunk()" function in src/demuxers/demux_nsf.c. This can be exploited to cause a stack-based buffer overflow via an overly long NSF title.</desc>
+	</fsa>
+	<fsa>
 		<id>437</id>
 		<date>2008-05-05</date>
 		<package>xine-lib</package>
