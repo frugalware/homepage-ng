@@ -27,6 +27,17 @@
 
 <fsas>
 	<fsa>
+		<id>441</id>
+		<date>2008-05-05</date>
+		<package>kernel</package>
+		<vulnerable>2.6.24-3</vulnerable>
+		<unaffected>2.6.24-4kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3050</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1375</cve>
+		<desc>A vulnerability has been reported in the Linux kernel, which can be exploited by malicious, local users to cause a DoS (Denial of Service) or to potentially gain escalated privileges.
+			A race condition error exists in the dnotify subsystem between calls to "fcntl()" and "close()". This can be exploited to cause a system crash or potentially gain root privileges.</desc>
+	</fsa>
+	<fsa>
 		<id>440</id>
 		<date>2008-05-05</date>
 		<package>frugalwareutils</package>
