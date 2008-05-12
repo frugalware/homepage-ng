@@ -14,8 +14,7 @@
 <!ELEMENT prestatus (#PCDATA)>
 ]>
 
-<!-- if you modify this file, be sure it's still valid - xmllint is your friend
--->
+<!-- If you modify this file, be sure it's still valid - read /hooks/README! -->
 
 <!-- <pre/status> - 0 == pending, 1 == done -->
 <!-- <pre/date> - In the format Mmm DD, YYYY i.e. Sep 30, 2006 -->

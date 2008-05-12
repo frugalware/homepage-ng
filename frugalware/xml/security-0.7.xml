@@ -22,8 +22,7 @@
 <!ELEMENT desc (#PCDATA)>
 ]>
 
-<!-- if you modify this file, be sure it's still valid - xmllint is your friend
--->
+<!-- If you modify this file, be sure it's still valid - read /hooks/README! -->
 
 <fsas>
 	<fsa>

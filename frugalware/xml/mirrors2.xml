@@ -43,7 +43,7 @@ if we can re-use its number.
 NOTES: For pacman, we prefer ftp mirrors so in case both http and ftp is
 available on the same host, we include only the ftp one.
 
-If you modify this file, be sure it's still valid - xmllint is your friend.
+If you modify this file, be sure it's still valid - read /hooks/README!
 -->
 
 <mirrors>
