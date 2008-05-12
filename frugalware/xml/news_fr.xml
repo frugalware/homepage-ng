@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE news [
 <!ELEMENT news (post)*>
-<!ELEMENT post (id , title , date , author , editedby* , icon* , hidden? , content)>
+<!ELEMENT post (id , title , date , author , editedby* , hidden? , content, icon*)>
 <!ELEMENT id (#PCDATA)>
 <!ELEMENT date (#PCDATA)>
 <!ELEMENT title (#PCDATA)>
@@ -168,7 +168,7 @@ fb2079de1627ca0e65a323005e0644b88fed6d03  frugalware-0.8-i686-usb.tar.gz
 		<id>90</id>
 		<title>Lettre d'information Frugalware numéro 17</title>
 		<date>Sat, 1 Mar 2008 16:30:13 +0100</date>
-<!-- 		<author>phayz</author> -->
+		<author>phayz</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
 			Cette lettre d'information à pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
