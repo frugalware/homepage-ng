@@ -2,6 +2,16 @@
 <!DOCTYPE mirrors [
 <!ELEMENT mirrors (mirror)*>
 <!ELEMENT mirror (id , type+ , path? , ftp_path?, http_path?, rsync_path?, host?, country?, country_code?, supplier?, supplier_url?, bandwidth?)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT host (#PCDATA)>
+<!ELEMENT country (#PCDATA)>
+<!ELEMENT country_code (#PCDATA)>
+<!ELEMENT supplier (#PCDATA)>
+<!ELEMENT supplier_url (#PCDATA)>
+<!ELEMENT bandwidth (#PCDATA)>
+<!ELEMENT ftp_path (#PCDATA)>
+<!ELEMENT http_path (#PCDATA)>
+<!ELEMENT rsync_path (#PCDATA)>
 <!ELEMENT name (#PCDATA)>
 <!ELEMENT type (#PCDATA)>
 <!ELEMENT path (#PCDATA)>
