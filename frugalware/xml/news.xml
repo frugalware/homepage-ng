@@ -26,7 +26,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         <title>Frugalware 0.9pre1 (Solaria) released</title>
         <date>Tue, 13 May 2008 00:05:24 +0200</date>
         <author>VMiklos</author>
-        <hidden>1</hidden>
+        <hidden>0</hidden>
         <content><![CDATA[
             The Frugalware Developer Team is pleased to <a href="/news/98">announce</a> the immediate availability of Frugalware 0.9pre1, the first technical preview of the upcoming 0.9 stable release.<br />
             A short and incomplete list of changes since 0.8:<br />
