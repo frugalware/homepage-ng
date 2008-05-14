@@ -103,6 +103,7 @@ switch($_GET['type'])
 				"desc" => $i['desc'],
 				"author" => $i['login']."@nospam.frugalware.org",
 				"pubDate" => date(DATE_RFC2822, $i['unix_timestamp(packages.builddate)']),
+				"guid" => $i['id'] . date(DATE_RFC2822, $i['unix_timestamp(packages.builddate)']),
 				"link" => "http://frugalware.org/packages/${i['id']}"
 			);
 		}
@@ -205,7 +206,13 @@ $buf .= "<?xml version=\"1.0\" encoding=\"utf-8\"?>
 	<link>".$handle['link']."</link>\n";
 foreach( $handle['items'] as $i )
 {
-	$buf .= "<item>\n<title>".$i['title']."</title>\n<link>".$i['link']."</link>\n<guid>".$i['link']."#top</guid>\n";
+	$buf .= "<item>\n<title>".$i['title']."</title>\n<link>".$i['link']."</link>\n";
+	if(!empty($i['guid'])) {
+		$buf .= "<guid>".$i['guid']."#top</guid>\n";
+	}
+	else {
+		$buf .= "<guid>".$i['link']."#top</guid>\n";
+	}
 	if(isset($i['desc']))
 	{
 		$buf .= "<description>".htmlspecialchars($i['desc'])."</description>\n";
