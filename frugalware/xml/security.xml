@@ -26,6 +26,17 @@
 
 <fsas>
 	<fsa>
+		<id>446</id>
+		<date>2008-05-15</date>
+		<package>kdelibs</package>
+		<vulnerable>3.5.9-1</vulnerable>
+		<unaffected>3.5.9-2kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3047</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1671</cve>
+		<desc>A vulnerability has been reported in KDE, which can be exploited by malicious, local users to cause a DoS (Denial of Service) or to potentially gain escalated privileges.
+			The vulnerability is caused due to an error in the start_kdeinit script (installed setuid root by default). This can be exploited to send signals to privileged processes, cause a DoS, or potentially execute arbitrary code in the context of the target process.</desc>
+	</fsa>
+	<fsa>
 		<id>445</id>
 		<date>2008-05-15</date>
 		<package>kernel</package>
