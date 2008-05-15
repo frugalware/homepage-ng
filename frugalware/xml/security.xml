@@ -26,6 +26,21 @@
 
 <fsas>
 	<fsa>
+		<id>442</id>
+		<date>2008-05-15</date>
+		<package>wordpress</package>
+		<vulnerable>2.3.3-2kalgan1</vulnerable>
+		<unaffected>2.5.1-1kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3048</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1930
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2068</cve>
+		<desc>Two vulnerabilities have been reported in WordPress, which can be exploited by malicious people to conduct cross-site scripting attacks, bypass certain security restrictions, and to compromise a vulnerable system.
+			1) A vulnerability is caused due to improper access restriction of the administration section. This can be exploited to bypass the authentication mechanism and gain administrative access by setting a specially crafted cookie. This can further be exploited to execute arbitrary PHP code.
+			Successful exploitation of this vulnerability requires that registering new accounts is enabled.
+			The vulnerability is reported in version 2.5.
+			2) Input passed to an unspecified parameter is not properly sanitised before being returned to the user. This can be exploited to execute arbitrary HTML and script code in a user's browser session in context of an affected site.</desc>
+	</fsa>
+	<fsa>
 		<id>441</id>
 		<date>2008-05-05</date>
 		<package>kernel</package>
