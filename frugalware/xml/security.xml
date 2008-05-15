@@ -26,6 +26,17 @@
 
 <fsas>
 	<fsa>
+		<id>445</id>
+		<date>2008-05-15</date>
+		<package>kernel</package>
+		<vulnerable>2.6.24-4kalgan1</vulnerable>
+		<unaffected>2.6.24-4kalgan2</unaffected>
+		<bts>http://bugs.frugalware.org/task/3060</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1669</cve>
+		<desc>A vulnerability has been reported in the Linux kernel, which can be exploited by malicious, local users to cause a DoS (Denial of Service).
+			The vulnerability is caused due to an error when preventing race conditions between "fcntl_setlk()" and "close()" calls on SMP systems. This can be exploited to trigger the improper, reordered access to the file descriptor table and the "file_lock" structure of an inode, between threads running on different CPUs.</desc>
+	</fsa>
+	<fsa>
 		<id>444</id>
 		<date>2008-05-15</date>
 		<package>thunderbird</package>
