@@ -26,6 +26,16 @@
 
 <fsas>
 	<fsa>
+		<id>447</id>
+		<date>2008-05-15</date>
+		<package>eterm</package>
+		<vulnerable>0.9.4-2</vulnerable>
+		<unaffected>0.9.4-3kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2918</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1692</cve>
+		<desc>A security issue has been reported in Eterm, which can be exploited by malicious, local users to gain escalated privileges. Eterm 0.9.4 opens a terminal window on :0 if -display is not specified and the DISPLAY environment variable is not set, which might allow local users to hijack X11 connections. NOTE: realistic attack scenarios require that the victim enters a command on the wrong machine.</desc>
+	</fsa>
+	<fsa>
 		<id>446</id>
 		<date>2008-05-15</date>
 		<package>kdelibs</package>
