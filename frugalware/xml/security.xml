@@ -26,6 +26,17 @@
 
 <fsas>
 	<fsa>
+		<id>443</id>
+		<date>2008-05-15</date>
+		<package>util-linux-ng</package>
+		<vulnerable>2.13.1-1</vulnerable>
+		<unaffected>2.13.1-2kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3046</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1926</cve>
+		<desc>A weakness has been reported in util-linux-ng, which can be exploited by malicious people to manipulate certain data.
+			The security issue is caused due to an error in login.c while logging login attempts. This can be exploited to inject e.g. an arbitrary address in the audit logs via a specially crafted username.</desc>
+	</fsa>
+	<fsa>
 		<id>442</id>
 		<date>2008-05-15</date>
 		<package>wordpress</package>
