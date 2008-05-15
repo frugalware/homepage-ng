@@ -26,6 +26,20 @@
 
 <fsas>
 	<fsa>
+		<id>444</id>
+		<date>2008-05-15</date>
+		<package>thunderbird</package>
+		<vulnerable>2.0.0.12-1</vulnerable>
+		<unaffected>2.0.0.14-1kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2906</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1233
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1234
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1235
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1236
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1237</cve>
+		<desc>Some vulnerabilities have been reported in Mozilla Thunderbird, which can be exploited by malicious people to bypass certain security restrictions, conduct cross-site scripting attacks, or potentially compromise a user's system. For more information, see FSA407.</desc>
+	</fsa>
+	<fsa>
 		<id>443</id>
 		<date>2008-05-15</date>
 		<package>util-linux-ng</package>
