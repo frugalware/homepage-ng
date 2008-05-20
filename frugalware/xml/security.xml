@@ -26,6 +26,18 @@
 
 <fsas>
 	<fsa>
+		<id>452</id>
+		<date>2008-05-20</date>
+		<package>graphicsmagick</package>
+		<vulnerable>1.1.11-1</vulnerable>
+		<unaffected>1.1.12-1kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3076</bts>
+		<cve>There is no CVE for this issue, see http://sourceforge.net/project/shownotes.php?release_id=595544</cve>
+		<desc>A security issue has been reported in GraphicsMagick, which can be exploited by malicious people to bypass certain security restrictions.
+			The security issue is caused due to the improper processing of file extensions and can be exploited to e.g. access X11 or to invoke certain delegate programs.
+			Successful exploitation requires that a user is tricked into processing a malicious file with a specific file extension.</desc>
+	</fsa>
+	<fsa>
 		<id>451</id>
 		<date>2008-05-20</date>
 		<package>audacity</package>
