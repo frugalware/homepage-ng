@@ -26,6 +26,17 @@
 
 <fsas>
 	<fsa>
+		<id>450</id>
+		<date>2008-05-20</date>
+		<package>pngcrush</package>
+		<vulnerable>1.6.4-1</vulnerable>
+		<unaffected>1.6.5-1kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3079</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1382</cve>
+		<desc>A vulnerability has been reported in Pngcrush, which can be exploited by malicious people to disclose potentially sensitive information or potentially compromise a user's system.
+			The vulnerability is caused due to the use of vulnerable libpng code. For more information, see FSA434.</desc>
+	</fsa>
+	<fsa>
 		<id>449</id>
 		<date>2008-05-20</date>
 		<package>rdesktop</package>
