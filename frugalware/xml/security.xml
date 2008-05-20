@@ -26,6 +26,26 @@
 
 <fsas>
 	<fsa>
+		<id>448</id>
+		<date>2008-05-20</date>
+		<package>php</package>
+		<vulnerable>5.2.5-2</vulnerable>
+		<unaffected>5.2.6-1kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3074</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0599
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2050
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2051
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2107
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2108</cve>
+		<desc>Some vulnerabilities have been reported in PHP, where some have unknown impacts and others can be exploited by malicious users to bypass certain security restrictions, and potentially by malicious people to cause a DoS (Denial of Service) or to compromise a vulnerable system.
+			1) An unspecified error in the FastCGI SAPI can be exploited to cause a stack-based buffer overflow.
+			2) An error in the processing of multibyte characters within the "escapeshellcmd()" and "escapeshellarg()" functions can be exploited to escape the inserted backslash or quote characters via certain multibyte characters.
+			Successful exploitation allows to bypass the "safe_mode_exec_dir" and "disable_functions" directives, and potentially to inject arbitrary shell commands via user controlled input, but requires that the shell uses a locale with a variable width character (e.g. GBK, EUC-KR, SJIS).
+			3) A vulnerability is caused due to an error during path translation in cgi_main.c. This can potentially be exploited to execute arbitrary code, but depends on how a targeted application is using PHP.
+			4) An error in cURL can be exploited to bypass the "safe_mode" directive.
+			5) A boundary error in PCRE can potentially be exploited by malicious people to cause a DoS or compromise a vulnerable system.</desc>
+	</fsa>
+	<fsa>
 		<id>447</id>
 		<date>2008-05-15</date>
 		<package>eterm</package>
