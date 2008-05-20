@@ -26,6 +26,22 @@
 
 <fsas>
 	<fsa>
+		<id>449</id>
+		<date>2008-05-20</date>
+		<package>rdesktop</package>
+		<vulnerable>1.5.0-2</vulnerable>
+		<unaffected>1.6.0-1kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3078</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1801
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1802
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1803</cve>
+		<desc>Some vulnerabilities have been reported in rdesktop, which can be exploited by malicious people to compromise a user's system.
+			1) An integer underflow error in iso.c when processing RDP requests can be exploited to cause a heap-based buffer overflow.
+			2) An input validation error in rdp.c when processing RDP redirect requests can be exploited to cause a BSS-based buffer overflow.
+			3) A signedness error within "xrealloc()" in rdesktop.c can be exploited to cause a heap-based buffer overflow.
+			Successful exploitation allows execution of arbitrary code but requires that a user is tricked into connecting to a malicious RDP server.</desc>
+	</fsa>
+	<fsa>
 		<id>448</id>
 		<date>2008-05-20</date>
 		<package>php</package>
