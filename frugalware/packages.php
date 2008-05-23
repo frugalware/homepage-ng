@@ -243,67 +243,72 @@ function search_groups()
 	$res_set = array();
 	$arch = $_GET['arch'];
 	$fwver = $_GET['ver'];
-	$search = $_GET['srch'];
-	if(is_numeric($_GET['id']))
-		$group=$_GET['id'];
+	$search = ( $_GET['srch'] != '' ) ? $_GET['srch'] : '.*';
+	if( is_numeric( $_GET['id'] ) )
+		$group = $_GET['id'];
 	else
 	{
-		$query = "select count(packages.pkgname), groups.id, 
-			groups.name from packages, ct_groups, groups where 
-			ct_groups.group_id = groups.id and packages.id = 
-			ct_groups.pkg_id and groups.name rlike '$search'";
+		$query = "SELECT Count(packages.pkgname), groups.id, groups.name
+			    FROM packages, ct_groups, groups
+			   WHERE ct_groups.group_id = groups.id
+			     AND packages.id = ct_groups.pkg_id
+			     AND groups.name RLIKE '$search'";
 		if ($arch != "" && $arch != "all")
 		{
-			$query .= " and packages.arch='$arch'";
+			$query .= " AND packages.arch='$arch'";
 		}
 		if ($fwver != "" && $fwver != "all")
 		{
-			$query .= " and packages.fwver='$fwver'";
+			$query .= " AND packages.fwver='$fwver'";
 		}
-		$query .= " group by groups.name";
+		$query .= ' GROUP BY groups.name';
 		$db = new FwDB();
-		$db->doConnect($sqlhost, $sqluser, $sqlpass, $sqldb);
-		$res = $db->doQuery($query);
-		if ($db->doCountRows($res) > 0) {
-			while ($i = $db->doFetchRow($res))
+		$db->doConnect( $sqlhost, $sqluser, $sqlpass, $sqldb );
+		$res = $db->doQuery( $query );
+		if ( $db->doCountRows( $res ) > 0 )
+		{
+			while ( $i = $db->doFetchRow( $res ) )
 				$res_set[] = $i;
 		}
 		else
 		{
-			print "<h3>".gettext("No such group")."</h3>";
+			print '<h3>' . gettext( 'No such group' ) . '</h3>';
 			$db->doClose();
 			main();
 		}
 		$db->doClose();
-		res_show($res_set, 'l');
+		res_show( $res_set, 'l' );
 		return;
 	}
-	$query = "select packages.id, packages.pkgname, packages.pkgver, 
-		packages.fwver, packages.arch, groups.name from packages, 
-		ct_groups, groups where groups.id = $group and 
-		ct_groups.group_id = groups.id and packages.id = 
-		ct_groups.pkg_id";
+	$query = "SELECT packages.id, packages.pkgname, packages.pkgver, packages.fwver, packages.arch, groups.name
+		    FROM packages, ct_groups, groups
+		   WHERE groups.id = $group
+		     AND ct_groups.group_id = groups.id
+		     AND packages.id = ct_groups.pkg_id";
 	if ($arch != "" && $arch != "all")
 	{
-		$query .= " and packages.arch='$arch'";
+		$query .= " AND packages.arch='$arch'";
 	}
-	if ($fwver != "" && $fwver != "all")
+	if ($fwver != '' && $fwver != 'all')
 	{
-		$query .= " and packages.fwver='$fwver'";
+		$query .= " AND packages.fwver='$fwver'";
 	}
-	$query .= " order by packages.fwver desc";
+	$query .= ' ORDER BY packages.fwver DESC';
 	$db = new FwDB();
-	$db->doConnect($sqlhost, $sqluser, $sqlpass, $sqldb);
-	$res = $db->doQuery($query);
-	if ($db->doCountRows($res) > 0) {
-		while ($i = $db->doFetchRow($res)) {
+	$db->doConnect( $sqlhost, $sqluser, $sqlpass, $sqldb );
+	$res = $db->doQuery( $query );
+	if ( $db->doCountRows( $res ) > 0)
+	{
+		while ( $i = $db->doFetchRow( $res ) )
+		{
 			$res_set[] = $i;
 		}
 		$db->doClose();
-		res_show($res_set, 'g', $res_set[0]['name']);
+		res_show( $res_set, 'g', $res_set[0]['name'] );
 	}
-	else {
-		print "<h3>".gettext("No such group")."</h3>";
+	else
+	{
+		print '<h3>' . gettext('No such group' ) . '</h3>';
 		$db->doClose();
 		main();
 	}
