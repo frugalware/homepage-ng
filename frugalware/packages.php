@@ -248,7 +248,7 @@ function search_groups()
 		$group = $_GET['id'];
 	else
 	{
-		$query = "SELECT Count(packages.pkgname), groups.id, groups.name
+		$query = "SELECT Count(packages.pkgname) as numpkgs, groups.id, groups.name
 			    FROM packages, ct_groups, groups
 			   WHERE ct_groups.group_id = groups.id
 			     AND packages.id = ct_groups.pkg_id
@@ -314,21 +314,24 @@ function search_groups()
 	}
 }
 
-function res_show($res_set, $what, $search=null) {
-	switch ($what) {
+function res_show( $res_set, $what, $search=null )
+{
+	switch ($what)
+	{
 		case 'l':
-			$title = gettext("Listing groups");
+			$title = gettext( 'Listing groups' );
 			$total = 0;
 			$content = "<div align=\"left\">\n";
-			for ($i=0,$j=1;$i<count($res_set);$i++,$j++) {
-				$content .= "<p>".$j.". <a href=\"/packages/?op=groups&id=".$res_set[$i]['id']."&arch=".$_GET['arch']."&ver=".$_GET['ver']."\">".$res_set[$i]['name']."</a> (".$res_set[$i]['count(packages.pkgname)'].")</p>\n";
-				$total += $res_set[$i]['count(packages.pkgname)'];
+			for ( $i = 0, $j = 1; $i < count( $res_set ); $i++, $j++ )
+			{
+				$content .= '<p>' . $j . '. <a href="/packages/?op=groups&id=' . $res_set[$i]['id'] . '&arch=' . $_GET['arch'] . '&ver=' . $_GET['ver'] .'">' . $res_set[$i]['name'] . '</a> (' . $res_set[$i]['numpkgs'] . ")</p>\n";
+				$total += $res_set[$i]['numpkgs'];
 			}
 			$content .= "</div>\n";
 			fwmiddlebox($title, $content);
 			break;
 		case 'g':
-			$title = gettext("Listing contents of group:"). " ".$search;
+			$title = gettext( 'Listing contents of group:' ). " " . $search;
 		case 'p':
 			if(!isset($title)) $title = gettext("Search result for:")." ".$search;
 			$content = "<div align=\"left\">\n";
