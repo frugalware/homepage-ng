@@ -26,6 +26,17 @@
 
 <fsas>
 	<fsa>
+		<id>457</id>
+		<date>2008-05-25</date>
+		<package>kvm</package>
+		<vulnerable>61-2</vulnerable>
+		<unaffected>61-3kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3044</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2004</cve>
+		<desc>A vulnerability has been reported in KVM, which can be exploited by malicious, local users to bypass certain security restrictions or cause a DoS (Denial of Service).
+			The error can be exploited by a guest to read arbitrary files on the host via a specially crafted disk header. For more information, see FSA455.</desc>
+	</fsa>
+	<fsa>
 		<id>456</id>
 		<date>2008-05-25</date>
 		<package>xemacs</package>
