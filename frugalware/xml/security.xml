@@ -32,7 +32,7 @@
 		<vulnerable>2.732-1</vulnerable>
 		<unaffected>3.1.10-1kalgan1</unaffected>
 		<bts>http://bugs.frugalware.org/task/3091</bts>
-		<cve>CVE-2008-0674</cve>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0674</cve>
 		<desc>A vulnerability been reported in Chicken, which can be exploited by malicious people to cause a DoS (Denial of Service) or potentially compromise a vulnerable system.
 			The vulnerabilities are caused due to the use of a vulnerable version of the PCRE library.</desc>
 	</fsa>
