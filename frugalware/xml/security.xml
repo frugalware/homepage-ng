@@ -26,6 +26,17 @@
 
 <fsas>
 	<fsa>
+		<id>456</id>
+		<date>2008-05-25</date>
+		<package>xemacs</package>
+		<vulnerable>21.4.21-1</vulnerable>
+		<unaffected>21.4.21-2kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3041</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1694</cve>
+		<desc>Some security issues have been reported in XEmacs, which can be exploited by malicious, local users to perform certain actions with escalated privileges.
+			The security issues are caused due to the use of vulnerable GNU Emacs code. For more information, see FSA423.</desc>
+	</fsa>
+	<fsa>
 		<id>455</id>
 		<date>2008-05-25</date>
 		<package>qemu</package>
