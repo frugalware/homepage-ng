@@ -26,6 +26,17 @@
 
 <fsas>
 	<fsa>
+		<id>455</id>
+		<date>2008-05-25</date>
+		<package>qemu</package>
+		<vulnerable>0.9.1-2</vulnerable>
+		<unaffected>0.9.1-3kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3043</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2004</cve>
+		<desc>A vulnerability has been reported in QEMU, which can be exploited by malicious, local users to bypass certain security restrictions.
+			The vulnerability is caused due to the "drive_init()" function in vl.c determining the format of a disk from data contained in the disk's header. This can be exploited by a malicious user in a guest system to e.g. read arbitrary files on the host by writing a fake header to a raw formatted disk image.</desc>
+	</fsa>
+	<fsa>
 		<id>454</id>
 		<date>2008-05-25</date>
 		<package>chicken</package>
