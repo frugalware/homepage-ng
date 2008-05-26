@@ -26,6 +26,17 @@
 
 <fsas>
 	<fsa>
+		<id>451</id>
+		<date>2008-05-26</date>
+		<package>mysql</package>
+		<vulnerable>5.0.51-2</vulnerable>
+		<unaffected>5.0.51-3kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3075</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2079</cve>
+		<desc>A security issue has been reported in MySQL, which can be exploited by malicious, local users to bypass certain security restrictions.
+			The problem is that it is possible to bypass certain privilege checks by creating a MyISAM table with certain DATA DIRECTORY and INDEX DIRECTORY options to overwrite existing table files in the MySQL data directory.</desc>
+	</fsa>
+	<fsa>
 		<id>450</id>
 		<date>2008-05-26</date>
 		<package>seamonkey</package>
