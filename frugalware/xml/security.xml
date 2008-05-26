@@ -26,6 +26,18 @@
 
 <fsas>
 	<fsa>
+		<id>458</id>
+		<date>2008-05-26</date>
+		<package>asterisk</package>
+		<vulnerable>1.4.17-1</vulnerable>
+		<unaffected>1.4.19.2-1kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3077</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1897
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1923</cve>
+		<desc>A vulnerability has been reported in Asterisk, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			The vulnerability is caused due to improper verification of ACK responses during IAX2 handshakes, which can be exploited to spoof an IAX2 handshake and cause a DoS via high bandwidth usage.</desc>
+	</fsa>
+	<fsa>
 		<id>457</id>
 		<date>2008-05-25</date>
 		<package>kvm</package>
