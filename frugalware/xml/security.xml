@@ -26,6 +26,17 @@
 
 <fsas>
 	<fsa>
+		<id>459</id>
+		<date>2008-05-26</date>
+		<package>django</package>
+		<vulnerable>0.96.1-1</vulnerable>
+		<unaffected>0.96.2-1kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3084</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2302</cve>
+		<desc>A vulnerability has been reported in Django, which can be exploited by malicious people to conduct cross-site scripting attacks.
+			Input passed via the URL is not properly sanitised before being returned to the user through the login form. This can be exploited to execute arbitrary HTML and script code in a user's browser session in context of an affected site.</desc>
+	</fsa>
+	<fsa>
 		<id>458</id>
 		<date>2008-05-26</date>
 		<package>asterisk</package>
