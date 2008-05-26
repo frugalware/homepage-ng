@@ -26,6 +26,16 @@
 
 <fsas>
 	<fsa>
+		<id>450</id>
+		<date>2008-05-26</date>
+		<package>seamonkey</package>
+		<vulnerable>1.1.9-1kalgan1</vulnerable>
+		<unaffected>1.1.9-1kalgan2</unaffected>
+		<bts>http://bugs.frugalware.org/task/3021</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1380</cve>
+		<desc>A vulnerability has been reported in Mozilla SeaMonkey, which can potentially be exploited by malicious people to compromise a user's system. For more information, see FSA431.</desc>
+	</fsa>
+	<fsa>
 		<id>459</id>
 		<date>2008-05-26</date>
 		<package>django</package>
