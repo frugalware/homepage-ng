@@ -26,6 +26,18 @@
 
 <fsas>
 	<fsa>
+		<id>452</id>
+		<date>2008-05-26</date>
+		<package>libxslt</package>
+		<vulnerable>1.1.22-2kalgan1</vulnerable>
+		<unaffected>1.1.22-2kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3104</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1767</cve>
+		<desc>A vulnerability has been reported in libxslt, which can be exploited by malicious people to cause a DoS (Denial of Service) and potentially to compromise a vulnerable system.
+			The vulnerability is caused due to an error in the handling of XSL style-sheet files. This can potentially be exploited to trigger the use of uninitialized memory in e.g. a call to "free()" when a specially crafted XSL file is being processed by an application using the library.
+			Successful exploitation may allow execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>451</id>
 		<date>2008-05-26</date>
 		<package>mysql</package>
