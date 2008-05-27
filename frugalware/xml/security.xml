@@ -26,7 +26,7 @@
 
 <fsas>
 	<fsa>
-		<id>452</id>
+		<id>462</id>
 		<date>2008-05-26</date>
 		<package>libxslt</package>
 		<vulnerable>1.1.22-2kalgan1</vulnerable>
@@ -38,7 +38,7 @@
 			Successful exploitation may allow execution of arbitrary code.</desc>
 	</fsa>
 	<fsa>
-		<id>451</id>
+		<id>461</id>
 		<date>2008-05-26</date>
 		<package>mysql</package>
 		<vulnerable>5.0.51-2</vulnerable>
@@ -49,7 +49,7 @@
 			The problem is that it is possible to bypass certain privilege checks by creating a MyISAM table with certain DATA DIRECTORY and INDEX DIRECTORY options to overwrite existing table files in the MySQL data directory.</desc>
 	</fsa>
 	<fsa>
-		<id>450</id>
+		<id>460</id>
 		<date>2008-05-26</date>
 		<package>seamonkey</package>
 		<vulnerable>1.1.9-1kalgan1</vulnerable>
