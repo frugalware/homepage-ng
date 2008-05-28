@@ -22,6 +22,25 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
 	<post>
+		<id>99</id>
+		<title>Lettre d'information Frugalware numéro 24</title>
+		<date>Tue, 27 May 2008 22:57:50 +1000</date>
+		<author>phayz</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			Cette lettre d'information à pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Dans ce numéro:
+			<ul>
+				<li>Frugalware 0.9 "Solaria" pre1 est disponible</li>
+				<li>Les développeurs de Frugalware sont des personnes également! - krix</li>
+				<li>Économisez quelques deniers avec pacman-g2, cron et wget</li>
+				<li>Détails sur un(des) paquet(s) - rxvt-unicode</li>
+			</ul>
+			Vous pouvez la lire <a href="/newsletter/24">ici (anglais)</a>. Nous espérons que vous l'apprécierez!
+			]]>
+		</content>
+	</post>
+	<post>
 		<id>98</id>
 		<title>Frugalware 0.9pre1 (Solaria) est disponible</title>
 		<date>Tue, 13 May 2008 00:05:24 +0200</date>
