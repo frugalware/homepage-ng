@@ -26,6 +26,20 @@
 
 <fsas>
 	<fsa>
+		<id>463</id>
+		<date>2008-06-06</date>
+		<package>openssl</package>
+		<vulnerable>0.9.8-11</vulnerable>
+		<unaffected>0.9.8-12kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3114</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0891
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1672</cve>
+		<desc>Two vulnerabilities have been reported in OpenSSL, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			1) A double-free error in the handling of server name extension data if "server_name" set to 0x00 can be exploited to crash a server application using OpenSSL by sending a specially crafted TLS 1.0 Client Hello packet.
+			Successful exploitation requires that OpenSSL is compiled using the TLS server name extensions.
+			2) A NULL pointer dereference error can be exploited by a malicious server to crash a client application when the "Server Key exchange message" is omitted from a TLS handshake and anonymous Diffie-Hellman key exchange is used.</desc>
+	</fsa>
+	<fsa>
 		<id>462</id>
 		<date>2008-05-26</date>
 		<package>libxslt</package>
