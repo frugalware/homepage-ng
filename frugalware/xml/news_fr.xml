@@ -22,6 +22,25 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
 	<post>
+		<id>100</id>
+		<title>Lettre d'information Frugalware numéro 25</title>
+		<date>Thu, 05 Jun 2008 21:46:39 +1000</date>
+		<author>phayz</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			Cette lettre d'information à pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Dans ce numéro:
+			<ul>
+				<li>Les développeurs de Frugalware sont des personnes également! - IroniQ</li>
+				<li>Astuce - man - des symboles étranges apparaissent</li>
+				<li>ryuo est maintenant un développeur!</li>
+				<li>Les utilisateurs se battent sur irc</li>
+			</ul>
+			Vous pouvez la lire <a href="/newsletter/25">ici (anglais)</a>. Nous espérons que vous l'apprécierez!
+			]]>
+		</content>
+	</post>
+	<post>
 		<id>99</id>
 		<title>Lettre d'information Frugalware numéro 24</title>
 		<date>Tue, 27 May 2008 22:57:50 +1000</date>
