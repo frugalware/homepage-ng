@@ -26,6 +26,20 @@
 
 <fsas>
 	<fsa>
+		<id>450</id>
+		<date>2008-06-13</date>
+		<package>imlib2</package>
+		<vulnerable>1.4.0-1</vulnerable>
+		<unaffected>1.4.0-2kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3124</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2426</cve>
+		<desc>Secunia Research has discovered two vulnerabilities in imlib2, which can be exploited by malicious people to cause a DoS (Denial of Service) or compromise an application using the library.
+			1) A boundary error exists within the "load()" function in src/modules/loaders/loader_pnm.c when processing the header of a PNM image file. This can be exploited to cause a stack-based buffer overflow by e.g. tricking a user into opening a specially crafted PNM image in an application using the imlib2 library.
+			Successful exploitation allows execution of arbitrary code.
+			2) A boundary error exists within the "load()" function in src/modules/loader_xpm.c when processing an XPM image file. This can be exploited to cause a stack-based buffer overflow by e.g. tricking a user into opening a specially crafted XPM image in an application using the imlib2 library.
+			Successful exploitation may allow execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>469</id>
 		<date>2008-06-13</date>
 		<package>mrxvt</package>
