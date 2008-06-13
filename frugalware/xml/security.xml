@@ -26,6 +26,18 @@
 
 <fsas>
 	<fsa>
+		<id>455</id>
+		<date>2008-06-13</date>
+		<package>samba</package>
+		<vulnerable>3.0.28-1</vulnerable>
+		<unaffected>3.0.30-1kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3115</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1105</cve>
+		<desc>Secunia Research has discovered a vulnerability in Samba, which can be exploited by malicious people to compromise a vulnerable system.
+			The vulnerability is caused due to a boundary error within the "receive_smb_raw()" function in lib/util_sock.c when parsing SMB packets. This can be exploited to cause a heap-based buffer overflow via an overly large SMB packet received in a client context.
+			Successful exploitation allows execution of arbitrary code by tricking a user into connecting to a malicious server (e.g. by clicking an "smb://" link) or by sending specially crafted packets to an "nmbd" server configured as a local or domain master browser.</desc>
+	</fsa>
+	<fsa>
 		<id>454</id>
 		<date>2008-06-13</date>
 		<package>blender</package>
