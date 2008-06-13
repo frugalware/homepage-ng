@@ -26,6 +26,17 @@
 
 <fsas>
 	<fsa>
+		<id>456</id>
+		<date>2008-06-13</date>
+		<package>asterisk-addons</package>
+		<vulnerable>1.4.4-1</vulnerable>
+		<unaffected>1.4.7-1kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3136</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2543</cve>
+		<desc>A vulnerability has been reported in Asterisk Addons, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			The problem is that the "ooh323" channel driver extracts memory addresses from incoming TCP packets and uses them in memory operations. This can be exploited to crash an affected application by sending a TCP packet containing invalid memory references.</desc>
+	</fsa>
+	<fsa>
 		<id>455</id>
 		<date>2008-06-13</date>
 		<package>samba</package>
