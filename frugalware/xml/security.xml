@@ -26,6 +26,17 @@
 
 <fsas>
 	<fsa>
+		<id>458</id>
+		<date>2008-06-13</date>
+		<package>xdvik</package>
+		<vulnerable>22.84.12-1</vulnerable>
+		<unaffected>22.84.14-1kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3127</bts>
+		<cve>There is no CVE for this issue, see http://xdvi.sourceforge.net/releases.html#22.84.14</cve>
+		<desc>A security issue has been reported in xdvik, which can be exploited by malicious, local users.
+			The vulnerability is caused by creating predictably named temporary files by using mktemp.</desc>
+	</fsa>
+	<fsa>
 		<id>457</id>
 		<date>2008-06-13</date>
 		<package>graphicsmagick</package>
