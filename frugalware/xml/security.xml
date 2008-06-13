@@ -26,6 +26,17 @@
 
 <fsas>
 	<fsa>
+		<id>466</id>
+		<date>2008-06-13</date>
+		<package>rxvt</package>
+		<vulnerable>2.6.4-2</vulnerable>
+		<unaffected>2.7.10-1kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/2925</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1142</cve>
+		<desc>Bernhard R. Link has reported a security issue in rxvt, which can be exploited by malicious, local users to gain escalated privileges.
+			The security issue is caused due to the program using ":0" as it's X11 display if the DISPLAY environment variable is missing. This can be exploited to execute arbitrary commands with the privileges of the user running rxvt via a malicious X server.</desc>
+	</fsa>
+	<fsa>
 		<id>465</id>
 		<date>2008-06-10</date>
 		<package>net-snmp</package>
