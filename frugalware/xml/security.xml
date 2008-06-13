@@ -26,6 +26,18 @@
 
 <fsas>
 	<fsa>
+		<id>452</id>
+		<date>2008-06-13</date>
+		<package>emacs</package>
+		<vulnerable>22.1-3kalgan1</vulnerable>
+		<unaffected>22.1-3kalgan2</unaffected>
+		<bts>http://bugs.frugalware.org/task/3086</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2142</cve>
+		<desc>Morten Welinder has reported a vulnerability in GNU Emacs, which can be exploited by malicious people to compromise a user's system.
+			The vulnerability is caused due to an error in the processing of fast-lock files (.flc) for corresponding source files. This can be exploited to execute arbitrary Emacs Lisp code when e.g. a source file is opened and a specially crafted fast-lock file exists in the same directory.
+			Successful exploitation requires that "font-lock-support-mode" is set to "fast-lock-mode".</desc>
+	</fsa>
+	<fsa>
 		<id>451</id>
 		<date>2008-06-13</date>
 		<package>stunnel</package>
