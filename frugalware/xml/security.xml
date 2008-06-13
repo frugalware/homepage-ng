@@ -26,6 +26,22 @@
 
 <fsas>
 	<fsa>
+		<id>457</id>
+		<date>2008-06-13</date>
+		<package>graphicsmagick</package>
+		<vulnerable>1.1.12-1kalgan1</vulnerable>
+		<unaffected>1.1.14-1kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3137</bts>
+		<cve>There is no CVE for this issue, see:
+			http://sourceforge.net/project/shownotes.php?release_id=604785
+			http://sourceforge.net/project/shownotes.php?release_id=604837</cve>
+		<desc>Some vulnerabilities have been reported in GraphicsMagick, which can be exploited by malicious people to cause a DoS (Denial of Service) or potentially compromise a vulnerable system.
+			1) Two boundary errors exist within the "ReadPALMImage()" function in coders/palm.c. These can be exploited to cause a heap-based buffer underflow via a specially crafted PALM image.
+			2) A boundary error exists within the "DecodeImage()" function in coders/pict.c. This can be exploited to cause a heap-based buffer overflow via a specially crafted PICT image.
+			3) Multiple unspecified errors within the processing of XCF, DPX, and CINEON images can be exploited to crash the application.
+			Successful exploitation may allow execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>456</id>
 		<date>2008-06-13</date>
 		<package>asterisk-addons</package>
