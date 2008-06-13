@@ -26,6 +26,17 @@
 
 <fsas>
 	<fsa>
+		<id>451</id>
+		<date>2008-06-13</date>
+		<package>stunnel</package>
+		<vulnerable>4.21-1</vulnerable>
+		<unaffected>4.24-1kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3122</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2420</cve>
+		<desc>A security issue has been reported in Stunnel, which can be exploited by malicious people to bypass certain security restrictions.
+			The security issue is caused due to an unspecified error in the OCSP functionality and can lead to a revoked certificate being successfully authenticated.</desc>
+	</fsa>
+	<fsa>
 		<id>450</id>
 		<date>2008-06-13</date>
 		<package>imlib2</package>
