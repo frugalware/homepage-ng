@@ -26,6 +26,22 @@
 
 <fsas>
 	<fsa>
+		<id>453</id>
+		<date>2008-06-13</date>
+		<package>libvorbis</package>
+		<vulnerable>1.2.0-1</vulnerable>
+		<unaffected>1.2.0-2kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3093</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1419
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1420
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1423</cve>
+		<desc>Some vulnerabilities have been reported in libvorbis, which can be exploited by malicious people to cause a DoS (Denial of Service) and potentially to compromise an application using the library.
+			1) An input validation error can be exploited to crash an application, cause an infinite loop, or to cause a heap overflow via a specially crafted OGG file containing a codebook dimension of "0".
+			2) An integer overflow error in the processing of residue partition values can be exploited to cause a heap-based buffer overflow via a specially crafted OGG file.
+			3) An integer overflow error exists in the computation of "quantvals" and of required space for "quantlist". This can be exploited to cause a heap-based buffer overflow via a specially crafted OGG file.
+			Successful exploitation may allow execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>452</id>
 		<date>2008-06-13</date>
 		<package>emacs</package>
