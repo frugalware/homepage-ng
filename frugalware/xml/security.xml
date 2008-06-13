@@ -26,6 +26,17 @@
 
 <fsas>
 	<fsa>
+		<id>467</id>
+		<date>2008-06-13</date>
+		<package>aterm</package>
+		<vulnerable>1.0.1-1</vulnerable>
+		<unaffected>1.0.1-2kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3088</bts>
+		<cve>There is no CVE for this issue.</cve>
+		<desc>A security issue has been reported in aterm, which can be exploited by malicious, local users to gain escalated privileges.
+			For more information, see FSA466.</desc>
+	</fsa>
+	<fsa>
 		<id>466</id>
 		<date>2008-06-13</date>
 		<package>rxvt</package>
