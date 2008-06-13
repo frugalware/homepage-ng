@@ -26,6 +26,17 @@
 
 <fsas>
 	<fsa>
+		<id>469</id>
+		<date>2008-06-13</date>
+		<package>mrxvt</package>
+		<vulnerable>0.5.3-1</vulnerable>
+		<unaffected>0.5.3-2kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3090</bts>
+		<cve>There is no CVE for this issue.</cve>
+		<desc>A security issue has been reported in mrxvt, which can be exploited by malicious, local users to gain escalated privileges.
+			For more information, see FSA466.</desc>
+	</fsa>
+	<fsa>
 		<id>468</id>
 		<date>2008-06-13</date>
 		<package>rxvt-unicode</package>
