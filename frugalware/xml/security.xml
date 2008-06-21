@@ -26,7 +26,7 @@
 
 <fsas>
 	<fsa>
-		<id>458</id>
+		<id>478</id>
 		<date>2008-06-13</date>
 		<package>xdvik</package>
 		<vulnerable>22.84.12-1</vulnerable>
@@ -37,7 +37,7 @@
 			The vulnerability is caused by creating predictably named temporary files by using mktemp.</desc>
 	</fsa>
 	<fsa>
-		<id>457</id>
+		<id>477</id>
 		<date>2008-06-13</date>
 		<package>graphicsmagick</package>
 		<vulnerable>1.1.12-1kalgan1</vulnerable>
@@ -53,7 +53,7 @@
 			Successful exploitation may allow execution of arbitrary code.</desc>
 	</fsa>
 	<fsa>
-		<id>456</id>
+		<id>476</id>
 		<date>2008-06-13</date>
 		<package>asterisk-addons</package>
 		<vulnerable>1.4.4-1</vulnerable>
@@ -64,7 +64,7 @@
 			The problem is that the "ooh323" channel driver extracts memory addresses from incoming TCP packets and uses them in memory operations. This can be exploited to crash an affected application by sending a TCP packet containing invalid memory references.</desc>
 	</fsa>
 	<fsa>
-		<id>455</id>
+		<id>475</id>
 		<date>2008-06-13</date>
 		<package>samba</package>
 		<vulnerable>3.0.28-1</vulnerable>
@@ -76,7 +76,7 @@
 			Successful exploitation allows execution of arbitrary code by tricking a user into connecting to a malicious server (e.g. by clicking an "smb://" link) or by sending specially crafted packets to an "nmbd" server configured as a local or domain master browser.</desc>
 	</fsa>
 	<fsa>
-		<id>454</id>
+		<id>474</id>
 		<date>2008-06-13</date>
 		<package>blender</package>
 		<vulnerable>2.45-1</vulnerable>
@@ -88,7 +88,7 @@
 			Successful exploitation allows execution of arbitrary code.</desc>
 	</fsa>
 	<fsa>
-		<id>453</id>
+		<id>473</id>
 		<date>2008-06-13</date>
 		<package>libvorbis</package>
 		<vulnerable>1.2.0-1</vulnerable>
@@ -104,7 +104,7 @@
 			Successful exploitation may allow execution of arbitrary code.</desc>
 	</fsa>
 	<fsa>
-		<id>452</id>
+		<id>472</id>
 		<date>2008-06-13</date>
 		<package>emacs</package>
 		<vulnerable>22.1-3kalgan1</vulnerable>
@@ -116,7 +116,7 @@
 			Successful exploitation requires that "font-lock-support-mode" is set to "fast-lock-mode".</desc>
 	</fsa>
 	<fsa>
-		<id>451</id>
+		<id>471</id>
 		<date>2008-06-13</date>
 		<package>stunnel</package>
 		<vulnerable>4.21-1</vulnerable>
@@ -127,7 +127,7 @@
 			The security issue is caused due to an unspecified error in the OCSP functionality and can lead to a revoked certificate being successfully authenticated.</desc>
 	</fsa>
 	<fsa>
-		<id>450</id>
+		<id>470</id>
 		<date>2008-06-13</date>
 		<package>imlib2</package>
 		<vulnerable>1.4.0-1</vulnerable>
