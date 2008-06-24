@@ -156,7 +156,7 @@ switch($_GET['type'])
 		{
 			$handle['items'][] = array(
 				"title" => 'FSA' . $fsas[$i]->id[0]->tagData . ' - ' . $fsas[$i]->package[0]->tagData,
-				"link" => $fsas[$i]->bts[0]->tagData,
+				"link" => $handle['link']."/".$fsas[$i]->id[0]->tagData,
 				"pubDate" => date(DATE_RFC2822, strtotime($fsas[$i]->date[0]->tagData)),
 				"desc" => preg_replace('/(<a href=.*>|<\/a>)/', '', $fsas[$i]->desc[0]->tagData) . 'Vulnerable version: ' . $fsas[$i]->vulnerable[0]->tagData . ', Unaffected version: ' . $fsas[$i]->unaffected[0]->tagData . ', CVEs: ' . $fsas[$i]->cve[0]->tagData,
 			);
