@@ -26,6 +26,17 @@
 
 <fsas>
 	<fsa>
+		<id>479</id>
+		<date>2008-06-24</date>
+		<package>kernel</package>
+		<vulnerable>2.6.24-4kalgan2</vulnerable>
+		<unaffected>2.6.24-4kalgan3</unaffected>
+		<bts>http://bugs.frugalware.org/task/3140</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1673</cve>
+		<desc>A vulnerability has been reported in the Linux Kernel, which can be exploited by malicious people to cause a DoS (Denial of Service) and potentially compromise a vulnerable system.
+			The vulnerability is caused due to an error within the ASN.1 BER decoder of the cifs and ip_nat_snmp_basic modules when calculating the buffer size. This can be exploited to cause a crash or potentially execute arbitrary code by sending specially crafted BER encoded data to a vulnerable system.</desc>
+	</fsa>
+	<fsa>
 		<id>478</id>
 		<date>2008-06-13</date>
 		<package>xdvik</package>
