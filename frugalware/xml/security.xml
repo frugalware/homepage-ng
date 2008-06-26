@@ -26,6 +26,21 @@
 
 <fsas>
 	<fsa>
+		<id>481</id>
+		<date>2008-06-26</date>
+		<package>horde-webmail</package>
+		<vulnerable>1.1-1kalgan1</vulnerable>
+		<unaffected>1.1.1-1kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3167</bts>
+		<cve>There is no CVE for this issue, see http://lists.horde.org/archives/announce/2008/000420.html.</cve>
+		<desc>Some vulnerabilities have been reported in various Horde products, which can be exploited by malicious users to conduct script insertion attacks and by malicious people to conduct cross-site scripting attacks.
+			1) Input passed to item names is not properly sanitised before being used. This can be exploited to insert arbitrary HTML and script code, which will be executed in a user's browser session in context of an affected site when the malicious data is viewed.
+			Successful exploitation requires valid user credentials.
+			2) Input passed to contact views is not properly sanitised before being used. This can be exploited to insert arbitrary HTML and script code, which will be executed in a user's browser session in context of an affected site when the malicious data is viewed.
+			Successful exploitation requires valid user credentials.
+			3) Input passed to unspecified input is not properly sanitised before being returned to the user in the add event screen. This can be exploited to execute arbitrary HTML and script code in a user's browser session in contact of an affected site.</desc>
+	</fsa>
+	<fsa>
 		<id>480</id>
 		<date>2008-06-26</date>
 		<package>exiv2</package>
