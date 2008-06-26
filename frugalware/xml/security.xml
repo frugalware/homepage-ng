@@ -26,6 +26,18 @@
 
 <fsas>
 	<fsa>
+		<id>482</id>
+		<date>2008-06-26</date>
+		<package>net-snmp</package>
+		<vulnerable>5.4.1-4kalgan1</vulnerable>
+		<unaffected>5.4.1-4kalgan2</unaffected>
+		<bts>http://bugs.frugalware.org/task/3142</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0960</cve>
+		<desc>A vulnerability has been reported in Net-SNMP, which can be exploited by malicious people to spoof authenticated SNMPv3 packets.
+			The vulnerability is caused due to an error within the verification of the HMAC digest. This can be exploited to increase the chance of successfully spoofing a packet to 1 in 256 by sending a specially crafted SNMPv3 packet with an incomplete 1 byte HMAC digest.
+			Successful exploitation requires a valid username.</desc>
+	</fsa>
+	<fsa>
 		<id>481</id>
 		<date>2008-06-26</date>
 		<package>horde-webmail</package>
