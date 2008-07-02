@@ -26,6 +26,26 @@
 
 <fsas>
 	<fsa>
+		<id>484</id>
+		<date>2008-07-02</date>
+		<package>xorg-server</package>
+		<vulnerable>1.4.0.90-5</vulnerable>
+		<unaffected>1.4.0.90-6kalgan2</unaffected>
+		<bts>http://bugs.frugalware.org/task/3175</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1377
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1379
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2360
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2361
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2362</cve>
+		<desc>Some vulnerabilities have been reported in X.org X11, which can be exploited by malicious, local users to cause a DoS (Denial of Service), disclose potentially sensitive information, or to gain escalated privileges.
+			1) An integer overflow error when calculating the size of the glyph exists in the "AllocateGlyph()" function within the Render extension. This can be exploited to cause a heap-based buffer overflow via a specially crafted request.
+			2) An integer overflow error when calculating the size of the glyph in the "ProcRenderCreateCursor()" function within the Render extension can be exploited to crash the X server via a specially crafted request.
+			3) An integer overflow error exists in the Render extension when parsing client requests for the "SProcRenderCreateLinearGradient", "SProcRenderCreateRadialGradient", or "SProcRenderCreateConicalGradient" functions and can be exploited to corrupt heap memory.
+			4) Multiple input validation errors in the "SProcSecurityGenerateAuthorization()", "SProcRecordCreateContext()", and "SProcRecordRegisterClients()" functions within the Record and Security extensions can be exploited to corrupt heap memory via specially crafted requests.
+			Successful exploitation of vulnerabilities #1, #3, and #4 may allow execution of arbitrary code with privileges of the X server (typically root).
+			5) An integer overflow error when processing parameters to the "ShmPutImage()" request can be exploited to disclose arbitrary memory of the X server process.</desc>
+	</fsa>
+	<fsa>
 		<id>483</id>
 		<date>2008-07-02</date>
 		<package>apache</package>
