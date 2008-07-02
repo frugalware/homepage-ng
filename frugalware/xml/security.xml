@@ -26,6 +26,17 @@
 
 <fsas>
 	<fsa>
+		<id>483</id>
+		<date>2008-07-02</date>
+		<package>apache</package>
+		<vulnerable>2.2.8-1</vulnerable>
+		<unaffected>2.2.8-2kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3177</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2364</cve>
+		<desc>A vulnerability has been reported in the Apache mod_proxy module, which potentially can be exploited by malicious people to cause a DoS (Denial of Service).
+			The vulnerability is caused due to an error in the "ap_proxy_http_process_response()" function when forwarding interim responses. This can be exploited to consume large amounts of memory by tricking mod_proxy into sending an overly large number of interim responses to the client.</desc>
+	</fsa>
+	<fsa>
 		<id>482</id>
 		<date>2008-06-26</date>
 		<package>net-snmp</package>
