@@ -26,6 +26,18 @@
 
 <fsas>
 	<fsa>
+		<id>485</id>
+		<date>2008-07-02</date>
+		<package>courier-authlib</package>
+		<vulnerable>0.60.2-1</vulnerable>
+		<unaffected>0.60.6-1kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3180</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2667</cve>
+		<desc>A vulnerability has been reported in the Courier Authentication Library, which can be exploited by malicious people to conduct SQL injection attacks.
+			Input passed via e.g. the username to the library is not properly sanitised before being used in SQL queries. This can be exploited to manipulate SQL queries by injecting arbitrary SQL code and e.g. potentially bypass authentication.
+			Successful exploitation requires that a MySQL database is used for authentication and that a Non-Latin character set is selected.</desc>
+	</fsa>
+	<fsa>
 		<id>484</id>
 		<date>2008-07-02</date>
 		<package>xorg-server</package>
