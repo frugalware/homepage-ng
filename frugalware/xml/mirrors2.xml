@@ -117,7 +117,7 @@ If you modify this file, be sure it's still valid - read /hooks/README!
 		<http_path>pub/frugalware</http_path>
 		<rsync_path></rsync_path>
 		<host>mirror.botux.net</host>
-		<country>French</country>
+		<country>France</country>
 		<country_code>fr</country_code>
 		<supplier>botux.net</supplier>
 		<supplier_url>http://botux.net</supplier_url>
