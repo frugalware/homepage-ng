@@ -1,0 +1,9 @@
+= Default vhost page
+
+This vhost has not been configured. You probably want to go to the
+link:http://frugalware.org/[main page].
+
+If you have too much time, you can also mail the
+link:mailto:vmiklos()frugalware!org[admin] to fix the issue.
+
+Thanks.
