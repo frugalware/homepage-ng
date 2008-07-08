@@ -1,2 +1,2 @@
 RewriteEngine On
-RewriteRule (.*) http://home.ironiq.hu:8181/$1 [P]
+RewriteRule (.*) http://dream.frugalware.org:8080/$1 [P]
