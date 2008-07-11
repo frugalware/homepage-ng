@@ -26,6 +26,30 @@
 
 <fsas>
 	<fsa>
+		<id>488</id>
+		<date>2008-07-11</date>
+		<package>wireshark</package>
+		<vulnerable>1.0.0-1kalgan1</vulnerable>
+		<unaffected>1.0.1-1kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3203</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3137
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3138
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3139
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3140
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3141</cve>
+		<desc>Some vulnerabilities have been reported in Wireshark, which can be exploited by malicious people to disclose potentially sensitive information or cause a DoS (Denial of Service).
+
+			1) An error in the GSM SMS dissector can be exploited to crash the application.
+
+			2) An error in the PANA and KISMET dissectors can be exploited to trigger an application exit.
+
+			3) An use-after-free error in the RTMPT dissector can be exploited to crash the application.
+
+			4) An unspecified error in the RMI dissector can be exploited to disclose system memory.
+
+			5) An error in the syslog dissector can be exploited to crash the application via an incomplete SS7 MSU syslog encapsulated packet.</desc>
+	</fsa>
+	<fsa>
 		<id>487</id>
 		<date>2008-07-11</date>
 		<package>phpmyadmin</package>
