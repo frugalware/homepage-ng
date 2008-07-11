@@ -26,6 +26,21 @@
 
 <fsas>
 	<fsa>
+		<id>486</id>
+		<date>2008-07-11</date>
+		<package>opera</package>
+		<vulnerable>9.27-1kalgan1</vulnerable>
+		<unaffected>9.50-1kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3176</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2714
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2715
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2716</cve>
+		<desc>Some vulnerabilities have been reported in Opera, which can be exploited by malicious people to disclose potentially sensitive information or to conduct spoofing attacks.
+			1) An error in the handling of certain characters in a page address can be exploited to e.g. make a site's address look like another site's address.
+			2) An error in the checking of the source of images when used by HTML CANVAS elements can be exploited to retrieve the image data.
+			3) Pages in frames are able to change the location of pages in other frames on the parent page.</desc>
+	</fsa>
+	<fsa>
 		<id>485</id>
 		<date>2008-07-02</date>
 		<package>courier-authlib</package>
