@@ -21,7 +21,7 @@
 		<title>Megjelent a Frugalware 0.9pre2 (Solaria)</title>
 		<date>Sat, 12 Jul 2008 14:17:53 +0200</date>
 		<author>IroNiQ</author>
-		<hidden>1</hidden>
+		<hidden>0</hidden>
 		<content><![CDATA[
 			A Frugalware Fejlesztői Csapat örömmel <a href="/news/103">jelenti be</a> a Frugalware 0.9pre2 kiadást, mint az eljövendő 0.9-es stabil kiadás második előzetes változatát.<br />
 			Egy rövid, nem teljes lista a 0.9pre1 óta történt változásokról:<br />
@@ -29,7 +29,7 @@
 				<li>Újdonságok:
 					<ul>
 						<li>FUN-0.3.0, mely mostantól az új híreket is megjeleníti. ( hírújságok, kiadások, stb.)</li>
-						<li>Több, kevésbé népszerű csomag mostantól nem települ alapbó, csökkentve ezzel az alaptelepítés méretét.</li>
+						<li>Több, kevésbé népszerű csomag mostantól nem települ alapértelmezetten, csökkentve ezzel az alaptelepítés méretét.</li>
 						<li>Az ipw vezetéknélküli eszközmeghajtó le lett cserélve az új iwl-re.</li>
 						<li>Újra működik a ROX környezet, a bináris csomgaok ismét elérhetőek.</li>
 						<li>Több, mint 2700 apróbb módosítás.</li>
@@ -47,7 +47,7 @@
 					<ul>
 						<li>icecc - beállítási eszközök IceWM felülethez</li>
 						<li>libotr és irssi-otr</li>
-						<li>Több, mint 10 új fortune modul/li>
+						<li>Több, mint 10 új fortune modul</li>
 						<li>Több, mint 20 új játék</li>
 						<li>Több, mint 200 egyéb új csomag</li>
 					</ul>
@@ -77,17 +77,11 @@
 			<a href="/download/frugalware-testing-iso/frugalware-0.9pre2-i686-cd14.iso">cd14</a>,
 			<a href="/download/frugalware-testing-iso/frugalware-0.9pre2-i686-cd15.iso">cd15</a>,
 			<a href="/download/frugalware-testing-iso/frugalware-0.9pre2-i686-dvd1.iso">dvd1</a>,
-			<a href="/download/frugalware-testing-iso/frugalware-0.9pre2-i686-dvd2.iso">dvd2</a> and
+			<a href="/download/frugalware-testing-iso/frugalware-0.9pre2-i686-dvd2.iso">dvd2</a> és
 			<a href="/download/frugalware-testing-iso/frugalware-0.9pre2-i686-dvd3.iso">dvd3</a>
 			<br />
 			SHA1SUMok:
 			<pre>
-2c4f25d75e0ef47ee7a98a1b726196421bd0c070  frugalware-0.9pre2-i686-cd10.iso
-555425d2146770f8da8e030a831fac9c8db97741  frugalware-0.9pre2-i686-cd11.iso
-f585152ac3ec3fd3b86884f346cc1fdf7669cadd  frugalware-0.9pre2-i686-cd12.iso
-6386b0a4e5348fb64f343d2a62ca2efc6beacdb0  frugalware-0.9pre2-i686-cd13.iso
-938d9d99781d772b3a8498f1b1fa79455fb874c5  frugalware-0.9pre2-i686-cd14.iso
-5870c93c147d62decc603d60bb2984d5af82de27  frugalware-0.9pre2-i686-cd15.iso
 22ca5dc203103ed041a731ce48422f18f2150ebe  frugalware-0.9pre2-i686-cd1.iso
 bc8f65d3cb11a437b94217191ec3fc06f2beecc7  frugalware-0.9pre2-i686-cd2.iso
 be20eb8c850e63cc31035fe355ea9609ef33ad5f  frugalware-0.9pre2-i686-cd3.iso
@@ -97,6 +91,12 @@ b09f406648c2c06f56d7c198060ef75d5107640f  frugalware-0.9pre2-i686-cd5.iso
 7d001a7f1c0022380c7ccbbd38f6431abb0ed5af  frugalware-0.9pre2-i686-cd7.iso
 5ef6d19891522a5e36a8c4461cfffacde1fdabfb  frugalware-0.9pre2-i686-cd8.iso
 17308c7cf6539d16b60d3eda4855df709c7c1bed  frugalware-0.9pre2-i686-cd9.iso
+2c4f25d75e0ef47ee7a98a1b726196421bd0c070  frugalware-0.9pre2-i686-cd10.iso
+555425d2146770f8da8e030a831fac9c8db97741  frugalware-0.9pre2-i686-cd11.iso
+f585152ac3ec3fd3b86884f346cc1fdf7669cadd  frugalware-0.9pre2-i686-cd12.iso
+6386b0a4e5348fb64f343d2a62ca2efc6beacdb0  frugalware-0.9pre2-i686-cd13.iso
+938d9d99781d772b3a8498f1b1fa79455fb874c5  frugalware-0.9pre2-i686-cd14.iso
+5870c93c147d62decc603d60bb2984d5af82de27  frugalware-0.9pre2-i686-cd15.iso
 441e4f4fcbe85396ed3ffa73c60d626f4a7f1e34  frugalware-0.9pre2-i686-dvd1.iso
 3b3bf0cfd775cc6e4e7fff1963ddbc2a42ff839e  frugalware-0.9pre2-i686-dvd2.iso
 b17784c8d9e64265f0d27a9b30c14ce0665c538f  frugalware-0.9pre2-i686-dvd3.iso
