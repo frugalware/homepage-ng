@@ -16,69 +16,161 @@
 <!-- If you modify this file, be sure it's still valid - read /hooks/README! -->
 
 <news>
-				<post>
-								<id>98</id>
-								<title>Megjelent a Frugalware 0.9pre1 (Solaria)</title>
-								<date>Tue, 13 May 2008 00:05:24 +0200</date>
-								<author>Boobaa</author>
-								<hidden>0</hidden>
-								<content><![CDATA[
-												A Frugalware Fejlesztői Csapat örömmel <a href="/news/98/hu">jelenti be</a> a Frugalware 0.9pre1 azonnali elérhetőségét, mint az eljövendő 0.9-es stabil kiadás első előzetes változatát.<br />
-												Egy rövid, nem teljes lista a 0.8 óta történt változásokról:<br />
-												<ul>
-																<li>Fejlesztések:
-																				<ul>
-																								<li>A hálózati beállító program mostantól a kártyák részleteit is megjeleníti az interfésznevek mellett, ha ez utóbbit nem ismerné.</li>
-																								<li>Az USB-s telepítő mostantól egy egyszerű képfájl, melyet bármely operációs rendszer segítségével pendrive-jára írhat (az előző változatig egy futó Linux rendszer kellett ehhez).</li>
-																								<li>A CHOST változó $arch-frugalware-linux lett a korábbi kevert $arch-pc-linux-gnu / $arch-unknown-linux helyett, ami általánosságban nagyobb konzisztenciát jelent, és segíti az eredeti fejlesztők felé történő hibabejelentést.</li>
-																								<li>Továbbfejlesztett biztonsági és általános felhasználói támogatás. Együtt dolgozunk más Linux terjesztőkkel, hogy jobb biztonsági támogatást nyújthassunk, valamint a fórumunkat egy levelezőlistán is <a href="http://frugalware.org/mailman/listinfo/frugalware-forums/">tükrözzük</a>, így több fejlesztő segíthet.</li>
-																								<li>Több, mint 150 apróbb fejlesztést/hibajavítást hajtottunk végre a legutóbbi kiadás óta történt 2400 változtatás során.</li>
-																				</ul>
-																</li>
-																<li>Csomagfrissítések:
-																				<ul>
-																								<li>Linux 2.6.25 + biztonsági javítások</li>
-																								<li>GCC 4.3.0</li>
-																								<li>GNOME 2.22</li>
-																								<li>Több, mint 900 csomagfrissítés</li>
-																				</ul>
-																</li>
-																<li>Új csomag:
-																				<ul>
-																								<li>Körülbelül 40 új Java könyvtár</li>
-																								<li>Néhány új Drupal modul</li>
-																								<li>Sok új octave modul</li>
-																								<li>Több, mint 150 új csomag</li>
-																				</ul>
-																</li>
-												</ul>
-												Bővebb információért tekintse meg a Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Testing Változások Listáját</a>.<br />
-												Elérhető egy azon új funkciókat tartalmazó <a href="http://bugs.frugalware.org/?do=roadmap">ütemterv</a>, melyeket a Solaria stabil megjelenéséig szeretnénk megvalósítani.<br />
-												Letöltés i686-ra:<br />
-												<b>Megjegyzés</b>: Kattintson <a href="/docs/install#_choosing_installation_flavor">ide</a>, hogy eldönthesse, melyik telepítő médiára van szüksége.<br />
-												<a href="/download/frugalware-testing-iso/fwlive-0.9pre1-i686-full.iso">livecd</a>,
-												<a href="/download/frugalware-testing-iso/frugalware-0.9pre1-i686-net.iso">netinstall</a>,
-												<a href="/download/frugalware-testing-iso/frugalware-0.9pre1-i686-usb.img">usb</a>,
-												<a href="/download/frugalware-testing-iso/frugalware-0.9pre1-i686-tftp.img">tftp</a>,
-												<a href="/download/frugalware-testing-iso/frugalware-0.9pre1-i686-cd1.iso">cd1</a>,
-												<a href="/download/frugalware-testing-iso/frugalware-0.9pre1-i686-cd2.iso">cd2</a>,
-												<a href="/download/frugalware-testing-iso/frugalware-0.9pre1-i686-cd3.iso">cd3</a>,
-												<a href="/download/frugalware-testing-iso/frugalware-0.9pre1-i686-cd4.iso">cd4</a>,
-												<a href="/download/frugalware-testing-iso/frugalware-0.9pre1-i686-cd5.iso">cd5</a>,
-												<a href="/download/frugalware-testing-iso/frugalware-0.9pre1-i686-cd6.iso">cd6</a>,
-												<a href="/download/frugalware-testing-iso/frugalware-0.9pre1-i686-cd7.iso">cd7</a>,
-												<a href="/download/frugalware-testing-iso/frugalware-0.9pre1-i686-cd8.iso">cd8</a>,
-												<a href="/download/frugalware-testing-iso/frugalware-0.9pre1-i686-cd9.iso">cd9</a>,
-												<a href="/download/frugalware-testing-iso/frugalware-0.9pre1-i686-cd10.iso">cd10</a>,
-												<a href="/download/frugalware-testing-iso/frugalware-0.9pre1-i686-cd11.iso">cd11</a>,
-												<a href="/download/frugalware-testing-iso/frugalware-0.9pre1-i686-cd12.iso">cd12</a>,
-												<a href="/download/frugalware-testing-iso/frugalware-0.9pre1-i686-cd13.iso">cd13</a>,
-												<a href="/download/frugalware-testing-iso/frugalware-0.9pre1-i686-cd14.iso">cd14</a>,
-												<a href="/download/frugalware-testing-iso/frugalware-0.9pre1-i686-dvd1.iso">dvd1</a> és
-												<a href="/download/frugalware-testing-iso/frugalware-0.9pre1-i686-dvd2.iso">dvd2</a>
-												<br />
-												SHA1SUMok:
-												<pre>
+	<post>
+		<id>103</id>
+		<title>Megjelent a Frugalware 0.9pre2 (Solaria)</title>
+		<date>Sat, 12 Jul 2008 14:17:53 +0200</date>
+		<author>IroNiQ</author>
+		<hidden>1</hidden>
+		<content><![CDATA[
+			A Frugalware Fejlesztői Csapat örömmel <a href="/news/103">jelenti be</a> a Frugalware 0.9pre2 kiadást, mint az eljövendő 0.9-es stabil kiadás második előzetes változatát.<br />
+			Egy rövid, nem teljes lista a 0.9pre1 óta történt változásokról:<br />
+			<ul>
+				<li>Újdonságok:
+					<ul>
+						<li>FUN-0.3.0, mely mostantól az új híreket is megjeleníti. ( hírújságok, kiadások, stb.)</li>
+						<li>Több, kevésbé népszerű csomag mostantól nem települ alapbó, csökkentve ezzel az alaptelepítés méretét.</li>
+						<li>Az ipw vezetéknélküli eszközmeghajtó le lett cserélve az új iwl-re.</li>
+						<li>Újra működik a ROX környezet, a bináris csomgaok ismét elérhetőek.</li>
+						<li>Több, mint 2700 apróbb módosítás.</li>
+					</ul>
+				</li>
+				<li>Csomagfrissítések:
+					<ul>
+						<li>GCC 4.3.1</li>
+						<li>Firefox 3.0</li>
+						<li>OpenOffice.org 2.4.1</li>
+						<li>Több, mint 760 egyéb csomagfrissítés</li>
+					</ul>
+				</li>
+				<li>Új csomagok:
+					<ul>
+						<li>icecc - beállítási eszközök IceWM felülethez</li>
+						<li>libotr és irssi-otr</li>
+						<li>Több, mint 10 új fortune modul/li>
+						<li>Több, mint 20 új játék</li>
+						<li>Több, mint 200 egyéb új csomag</li>
+					</ul>
+				</li>
+			</ul>
+			Bővebb információért tekintse meg a Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Testing Változások Listáját</a>.<br />
+			Mostantól van egy <a href="http://bugs.frugalware.org/?do=roadmap">kibővített útitervünk</a> is, ahol a stabil kiadásra tervezett újdonságokat rögzítjük.<br />
+			Letöltés i686-ra:<br />
+			<b>Megjegyzés</b>: Kattintson <a href="/docs/install#_choosing_installation_flavor">ide</a>, hogy eldönthesse, melyik telepítő médiára van szüksége.<br />
+			<a href="/download/frugalware-testing-iso/fwlive-0.9pre2-i686-full.iso">livecd</a>,
+			<a href="/download/frugalware-testing-iso/frugalware-0.9pre2-i686-net.iso">netinstall</a>,
+			<a href="/download/frugalware-testing-iso/frugalware-0.9pre2-i686-usb.img">usb</a>,
+			<a href="/download/frugalware-testing-iso/frugalware-0.9pre2-i686-tftp.img">tftp</a>,
+			<a href="/download/frugalware-testing-iso/frugalware-0.9pre2-i686-cd1.iso">cd1</a>,
+			<a href="/download/frugalware-testing-iso/frugalware-0.9pre2-i686-cd2.iso">cd2</a>,
+			<a href="/download/frugalware-testing-iso/frugalware-0.9pre2-i686-cd3.iso">cd3</a>,
+			<a href="/download/frugalware-testing-iso/frugalware-0.9pre2-i686-cd4.iso">cd4</a>,
+			<a href="/download/frugalware-testing-iso/frugalware-0.9pre2-i686-cd5.iso">cd5</a>,
+			<a href="/download/frugalware-testing-iso/frugalware-0.9pre2-i686-cd6.iso">cd6</a>,
+			<a href="/download/frugalware-testing-iso/frugalware-0.9pre2-i686-cd7.iso">cd7</a>,
+			<a href="/download/frugalware-testing-iso/frugalware-0.9pre2-i686-cd8.iso">cd8</a>,
+			<a href="/download/frugalware-testing-iso/frugalware-0.9pre2-i686-cd9.iso">cd9</a>,
+			<a href="/download/frugalware-testing-iso/frugalware-0.9pre2-i686-cd10.iso">cd10</a>,
+			<a href="/download/frugalware-testing-iso/frugalware-0.9pre2-i686-cd11.iso">cd11</a>,
+			<a href="/download/frugalware-testing-iso/frugalware-0.9pre2-i686-cd12.iso">cd12</a>,
+			<a href="/download/frugalware-testing-iso/frugalware-0.9pre2-i686-cd13.iso">cd13</a>,
+			<a href="/download/frugalware-testing-iso/frugalware-0.9pre2-i686-cd14.iso">cd14</a>,
+			<a href="/download/frugalware-testing-iso/frugalware-0.9pre2-i686-cd15.iso">cd15</a>,
+			<a href="/download/frugalware-testing-iso/frugalware-0.9pre2-i686-dvd1.iso">dvd1</a>,
+			<a href="/download/frugalware-testing-iso/frugalware-0.9pre2-i686-dvd2.iso">dvd2</a> and
+			<a href="/download/frugalware-testing-iso/frugalware-0.9pre2-i686-dvd3.iso">dvd3</a>
+			<br />
+			SHA1SUMok:
+			<pre>
+2c4f25d75e0ef47ee7a98a1b726196421bd0c070  frugalware-0.9pre2-i686-cd10.iso
+555425d2146770f8da8e030a831fac9c8db97741  frugalware-0.9pre2-i686-cd11.iso
+f585152ac3ec3fd3b86884f346cc1fdf7669cadd  frugalware-0.9pre2-i686-cd12.iso
+6386b0a4e5348fb64f343d2a62ca2efc6beacdb0  frugalware-0.9pre2-i686-cd13.iso
+938d9d99781d772b3a8498f1b1fa79455fb874c5  frugalware-0.9pre2-i686-cd14.iso
+5870c93c147d62decc603d60bb2984d5af82de27  frugalware-0.9pre2-i686-cd15.iso
+22ca5dc203103ed041a731ce48422f18f2150ebe  frugalware-0.9pre2-i686-cd1.iso
+bc8f65d3cb11a437b94217191ec3fc06f2beecc7  frugalware-0.9pre2-i686-cd2.iso
+be20eb8c850e63cc31035fe355ea9609ef33ad5f  frugalware-0.9pre2-i686-cd3.iso
+0873ef9cbc8e9d9ebebdf40e124c62fa3e05f72a  frugalware-0.9pre2-i686-cd4.iso
+b09f406648c2c06f56d7c198060ef75d5107640f  frugalware-0.9pre2-i686-cd5.iso
+4eeea3fd0041be167029c9a5c144c71498f85053  frugalware-0.9pre2-i686-cd6.iso
+7d001a7f1c0022380c7ccbbd38f6431abb0ed5af  frugalware-0.9pre2-i686-cd7.iso
+5ef6d19891522a5e36a8c4461cfffacde1fdabfb  frugalware-0.9pre2-i686-cd8.iso
+17308c7cf6539d16b60d3eda4855df709c7c1bed  frugalware-0.9pre2-i686-cd9.iso
+441e4f4fcbe85396ed3ffa73c60d626f4a7f1e34  frugalware-0.9pre2-i686-dvd1.iso
+3b3bf0cfd775cc6e4e7fff1963ddbc2a42ff839e  frugalware-0.9pre2-i686-dvd2.iso
+b17784c8d9e64265f0d27a9b30c14ce0665c538f  frugalware-0.9pre2-i686-dvd3.iso
+544c3c68de5f0ca1ea591782c03f7cb0b8579cd1  frugalware-0.9pre2-i686-net.iso
+f02ff5391ab4b549ed8c17752c7cb94b15c2f458  fwlive-0.9pre2-i686-full.iso
+1bf5c092ca1fb612f6090bea87df6f87850cbf62  frugalware-0.9pre2-i686-tftp.img
+e8cd5527083653155a8fcf16e2ac58f16b1d3495  frugalware-0.9pre2-i686-usb.img
+			</pre>
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>98</id>
+		<title>Megjelent a Frugalware 0.9pre1 (Solaria)</title>
+		<date>Tue, 13 May 2008 00:05:24 +0200</date>
+		<author>Boobaa</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			A Frugalware Fejlesztői Csapat örömmel <a href="/news/98/hu">jelenti be</a> a Frugalware 0.9pre1 azonnali elérhetőségét, mint az eljövendő 0.9-es stabil kiadás első előzetes változatát.<br />
+			Egy rövid, nem teljes lista a 0.8 óta történt változásokról:<br />
+			<ul>
+				<li>Fejlesztések:
+					<ul>
+						<li>A hálózati beállító program mostantól a kártyák részleteit is megjeleníti az interfésznevek mellett, ha ez utóbbit nem ismerné.</li>
+						<li>Az USB-s telepítő mostantól egy egyszerű képfájl, melyet bármely operációs rendszer segítségével pendrive-jára írhat (az előző változatig egy futó Linux rendszer kellett ehhez).</li>
+						<li>A CHOST változó $arch-frugalware-linux lett a korábbi kevert $arch-pc-linux-gnu / $arch-unknown-linux helyett, ami általánosságban nagyobb konzisztenciát jelent, és segíti az eredeti fejlesztők felé történő hibabejelentést.</li>
+						<li>Továbbfejlesztett biztonsági és általános felhasználói támogatás. Együtt dolgozunk más Linux terjesztőkkel, hogy jobb biztonsági támogatást nyújthassunk, valamint a fórumunkat egy levelezőlistán is <a href="http://frugalware.org/mailman/listinfo/frugalware-forums/">tükrözzük</a>, így több fejlesztő segíthet.</li>
+						<li>Több, mint 150 apróbb fejlesztést/hibajavítást hajtottunk végre a legutóbbi kiadás óta történt 2400 változtatás során.</li>
+					</ul>
+				</li>
+				<li>Csomagfrissítések:
+					<ul>
+						<li>Linux 2.6.25 + biztonsági javítások</li>
+						<li>GCC 4.3.0</li>
+						<li>GNOME 2.22</li>
+						<li>Több, mint 900 csomagfrissítés</li>
+					</ul>
+				</li>
+				<li>Új csomag:
+					<ul>
+						<li>Körülbelül 40 új Java könyvtár</li>
+						<li>Néhány új Drupal modul</li>
+						<li>Sok új octave modul</li>
+						<li>Több, mint 150 új csomag</li>
+					</ul>
+				</li>
+			</ul>
+			Bővebb információért tekintse meg a Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Testing Változások Listáját</a>.<br />
+			Elérhető egy azon új funkciókat tartalmazó <a href="http://bugs.frugalware.org/?do=roadmap">ütemterv</a>, melyeket a Solaria stabil megjelenéséig szeretnénk megvalósítani.<br />
+			Letöltés i686-ra:<br />
+			<b>Megjegyzés</b>: Kattintson <a href="/docs/install#_choosing_installation_flavor">ide</a>, hogy eldönthesse, melyik telepítő médiára van szüksége.<br />
+			<a href="/download/frugalware-testing-iso/fwlive-0.9pre1-i686-full.iso">livecd</a>,
+			<a href="/download/frugalware-testing-iso/frugalware-0.9pre1-i686-net.iso">netinstall</a>,
+			<a href="/download/frugalware-testing-iso/frugalware-0.9pre1-i686-usb.img">usb</a>,
+			<a href="/download/frugalware-testing-iso/frugalware-0.9pre1-i686-tftp.img">tftp</a>,
+			<a href="/download/frugalware-testing-iso/frugalware-0.9pre1-i686-cd1.iso">cd1</a>,
+			<a href="/download/frugalware-testing-iso/frugalware-0.9pre1-i686-cd2.iso">cd2</a>,
+			<a href="/download/frugalware-testing-iso/frugalware-0.9pre1-i686-cd3.iso">cd3</a>,
+			<a href="/download/frugalware-testing-iso/frugalware-0.9pre1-i686-cd4.iso">cd4</a>,
+			<a href="/download/frugalware-testing-iso/frugalware-0.9pre1-i686-cd5.iso">cd5</a>,
+			<a href="/download/frugalware-testing-iso/frugalware-0.9pre1-i686-cd6.iso">cd6</a>,
+			<a href="/download/frugalware-testing-iso/frugalware-0.9pre1-i686-cd7.iso">cd7</a>,
+			<a href="/download/frugalware-testing-iso/frugalware-0.9pre1-i686-cd8.iso">cd8</a>,
+			<a href="/download/frugalware-testing-iso/frugalware-0.9pre1-i686-cd9.iso">cd9</a>,
+			<a href="/download/frugalware-testing-iso/frugalware-0.9pre1-i686-cd10.iso">cd10</a>,
+			<a href="/download/frugalware-testing-iso/frugalware-0.9pre1-i686-cd11.iso">cd11</a>,
+			<a href="/download/frugalware-testing-iso/frugalware-0.9pre1-i686-cd12.iso">cd12</a>,
+			<a href="/download/frugalware-testing-iso/frugalware-0.9pre1-i686-cd13.iso">cd13</a>,
+			<a href="/download/frugalware-testing-iso/frugalware-0.9pre1-i686-cd14.iso">cd14</a>,
+			<a href="/download/frugalware-testing-iso/frugalware-0.9pre1-i686-dvd1.iso">dvd1</a> és
+			<a href="/download/frugalware-testing-iso/frugalware-0.9pre1-i686-dvd2.iso">dvd2</a>
+			<br />
+			SHA1SUMok:
+			<pre>
 ab6a264297f1a3686804f81e779b8e20ade6efb4  frugalware-0.9pre1-i686-cd1.iso
 14f3f4afc2661c87a7cc36ece684b069c283d12e  frugalware-0.9pre1-i686-cd2.iso
 f5f0b234cd15a5708c34b6810d5c9a7960b50230  frugalware-0.9pre1-i686-cd3.iso
@@ -99,10 +191,10 @@ bfdce2433553de2142bf7a17f9ed89f3fa77ef9c  frugalware-0.9pre1-i686-dvd1.iso
 57259add044fcdef89ae5a21e0365d3dfff47e23  fwlive-0.9pre1-i686-full.iso
 8914d8986865877e6dbebf1c992ba6be01075550  frugalware-0.9pre1-i686-tftp.img
 f443ddfb61652ccde5f87135965e467e3bc660f7  frugalware-0.9pre1-i686-usb.img
-												</pre>
-												]]>
-								</content>
-				</post>
+			</pre>
+			]]>
+		</content>
+	</post>
 	<post>
 		<id>91</id>
 		<title>Megjelent a Frugalware 0.8 (Kalgan) i686-ra</title>
