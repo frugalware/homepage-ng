@@ -26,6 +26,22 @@
 
 <fsas>
 	<fsa>
+		<id>492</id>
+		<date>2008-07-26</date>
+		<package>drupal</package>
+		<vulnerable>5.7-1</vulnerable>
+		<unaffected>5.9-1kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3222</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3219
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3220
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3221
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3222
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3223</cve>
+		<desc>Some vulnerabilities have been reported in Drupal, which can be exploited by malicious people to conduct SQL injection and script insertion attacks.
+			1) The application allows users to perform certain actions via HTTP requests without performing any validity checks to verify the request. This can be exploited to e.g. delete OpenID identities or translation strings by enticing a logged-in user to visit a malicious site.
+			2) Certain input passed to numeric fields in the Schema API is not properly sanitised before being used in an SQL query. This can be exploited to manipulate SQL queries by injecting arbitrary SQL code.</desc>
+	</fsa>
+	<fsa>
 		<id>491</id>
 		<date>2008-07-26</date>
 		<package>phpmyadmin</package>
