@@ -26,6 +26,17 @@
 
 <fsas>
 	<fsa>
+		<id>490</id>
+		<date>2008-07-26</date>
+		<package>clamav</package>
+		<vulnerable>0.93.1-1kalgan1</vulnerable>
+		<unaffected>0.93.3-1kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3250</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2713</cve>
+		<desc>A vulnerability has been reported in ClamAV, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			The vulnerability is caused due to a boundary error in libclamav/petite.c. This can be exploited to trigger an out-of-bounds read via a specially crafted Petite packed executable.</desc>
+	</fsa>
+	<fsa>
 		<id>489</id>
 		<date>2008-07-11</date>
 		<package>kernel</package>
