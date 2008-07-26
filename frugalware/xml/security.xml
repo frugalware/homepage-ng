@@ -26,6 +26,17 @@
 
 <fsas>
 	<fsa>
+		<id>495</id>
+		<date>2008-07-26</date>
+		<package>bind</package>
+		<vulnerable>9.4.2-2</vulnerable>
+		<unaffected>9.4.2-3kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3219</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1447</cve>
+		<desc>A vulnerability has been reported in ISC BIND, which can be exploited by malicious people to poison the DNS cache.
+			The vulnerability is caused due to the DNS servers not sufficiently randomising the DNS query port number, which can be exploited to poison the DNS cache.</desc>
+	</fsa>
+	<fsa>
 		<id>494</id>
 		<date>2008-07-26</date>
 		<package>wireshark</package>
