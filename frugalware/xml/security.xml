@@ -26,6 +26,17 @@
 
 <fsas>
 	<fsa>
+		<id>491</id>
+		<date>2008-07-26</date>
+		<package>phpmyadmin</package>
+		<vulnerable>2.11.7-1kalgan1</vulnerable>
+		<unaffected>2.11.7.1-1kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3247</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3197</cve>
+		<desc>Aung Khant has discovered some vulnerabilities in phpMyAdmin, which can be exploited by malicious people to conduct cross-site request forgery attacks.
+			The application allows users to perform certain actions via HTTP requests without performing any validity checks to verify the request. This can be exploited to create databases and change the connection character set for an authenticated user, who is tricked into visiting a malicious website.</desc>
+	</fsa>
+	<fsa>
 		<id>490</id>
 		<date>2008-07-26</date>
 		<package>clamav</package>
