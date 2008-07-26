@@ -26,6 +26,17 @@
 
 <fsas>
 	<fsa>
+		<id>494</id>
+		<date>2008-07-26</date>
+		<package>wireshark</package>
+		<vulnerable>1.0.1-1kalgan1</vulnerable>
+		<unaffected>1.0.2-1kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3224</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3145</cve>
+		<desc>A vulnerability has been reported in Wireshark, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			The vulnerability is caused due to an error when reassembling packets and can be exploited to cause the application to crash when processing a series of malformed packets that are either captured off the wire or loaded via a capture file.</desc>
+	</fsa>
+	<fsa>
 		<id>493</id>
 		<date>2008-07-26</date>
 		<package>drupal</package>
