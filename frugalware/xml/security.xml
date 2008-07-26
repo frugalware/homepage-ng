@@ -26,6 +26,17 @@
 
 <fsas>
 	<fsa>
+		<id>493</id>
+		<date>2008-07-26</date>
+		<package>drupal</package>
+		<vulnerable>5.7-1</vulnerable>
+		<unaffected>5.9-1kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3256</bts>
+		<cve>There is no CVE for this issue, see http://drupal.org/node/286417</cve>
+		<desc>A vulnerability has been reported in Drupal, which can be exploited by malicious people to conduct session fixation attacks.
+			An error in the handling of certain sessions can be exploited to hijack another user's session by tricking the user into logging in after following a specially crafted link.</desc>
+	</fsa>
+	<fsa>
 		<id>492</id>
 		<date>2008-07-26</date>
 		<package>drupal</package>
