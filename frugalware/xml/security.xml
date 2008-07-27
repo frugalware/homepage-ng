@@ -26,6 +26,16 @@
 
 <fsas>
 	<fsa>
+		<id>502</id>
+		<date>2008-07-27</date>
+		<package>afuse</package>
+		<vulnerable>0.2-1</vulnerable>
+		<unaffected>0.2-2kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3243</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2232</cve>
+		<desc>Anders Kaseorg discovered that afuse, an automounting file system in user-space, did not properly escape meta characters in paths. This allowed a local attacker with read access to the filesystem to execute commands as the owner of the filesystem.</desc>
+	</fsa>
+	<fsa>
 		<id>501</id>
 		<date>2008-07-27</date>
 		<package>phpbb</package>
