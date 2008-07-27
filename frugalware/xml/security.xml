@@ -26,9 +26,26 @@
 
 <fsas>
 	<fsa>
+		<id>497</id>
+		<date>2008-07-27</date>
+		<package>byacc</package>
+		<vulnerable>1.9-1</vulnerable>
+		<unaffected>1.9-2kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3251</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3196</cve>
+		<desc>Otto Moerbeck has reported the following potential
+			out of bounds of the allocated stack access in
+			the yacc binary:
+
+			Fix an venerable bug: if we're reducing a rule that has an empty
+			right hand side and the yacc stackpointer is pointing at the very
+			end of the allocated stack, we end up accessing the stack out of
+			bounds by the implicit $$ = $1 action.  Detected by my new malloc.</desc>
+	</fsa>
+	<fsa>
 		<id>496</id>
 		<date>2008-07-27</date>
-		<package>bind</package>
+		<package>perl</package>
 		<vulnerable>5.10.0-3</vulnerable>
 		<unaffected>5.10.0-4kalgan1</unaffected>
 		<bts>http://bugs.frugalware.org/task/3210</bts>
