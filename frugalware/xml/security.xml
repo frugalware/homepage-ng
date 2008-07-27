@@ -26,6 +26,17 @@
 
 <fsas>
 	<fsa>
+		<id>498</id>
+		<date>2008-07-27</date>
+		<package>checkinstall</package>
+		<vulnerable>1.6.1-1</vulnerable>
+		<unaffected>1.6.1-2kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3209</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2958</cve>
+		<desc>Two security issues have been reported in CheckInstall, which can be exploited by malicious, local users to perform certain actions with escalated privileges.
+			The security issues are caused due to the "checkinstall" and "installwatch" scripts creating directories in an insecure manner. This can potentially be exploited via symlink attacks to delete or modify arbitrary files with the privileges of the user running the affected scripts.</desc>
+	</fsa>
+	<fsa>
 		<id>497</id>
 		<date>2008-07-27</date>
 		<package>byacc</package>
