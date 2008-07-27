@@ -26,6 +26,18 @@
 
 <fsas>
 	<fsa>
+		<id>496</id>
+		<date>2008-07-27</date>
+		<package>bind</package>
+		<vulnerable>5.10.0-3</vulnerable>
+		<unaffected>5.10.0-4kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3210</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2827</cve>
+		<desc>Description:
+			A vulnerability has been reported in Perl, which can be exploited by malicious, local user to perform actions with escalated privileges.
+			The vulnerability is caused due to the insecure use of chmod on symbolic links and can be exploited to change permissions of arbitrary files to 0777 via symlink attacks.</desc>
+	</fsa>
+	<fsa>
 		<id>495</id>
 		<date>2008-07-26</date>
 		<package>bind</package>
