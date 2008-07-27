@@ -26,6 +26,18 @@
 
 <fsas>
 	<fsa>
+		<id>500</id>
+		<date>2008-07-27</date>
+		<package>pidgin</package>
+		<vulnerable>2.3.1-2</vulnerable>
+		<unaffected>2.4.3-1kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3217</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2927</cve>
+		<desc>Some vulnerabilities have been reported in Pidgin, which potentially can be exploited by malicious people to compromise a user's system.
+			The vulnerabilities are caused due to integer overflow errors in the "msn_slplink_process_msg" function in libpurple/protocols/msnp9/slplink.c and libpurple/protocols/msn/slplink.c, and can potentially be exploited to execute arbitrary code via a specially crafted SLP message.
+			Successful exploitation requires that the attacker is allowed to send messages to a victim (by default only users in the buddy list).</desc>
+	</fsa>
+	<fsa>
 		<id>499</id>
 		<date>2008-07-27</date>
 		<package>ffmpeg</package>
