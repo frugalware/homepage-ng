@@ -26,6 +26,17 @@
 
 <fsas>
 	<fsa>
+		<id>499</id>
+		<date>2008-07-27</date>
+		<package>ffmpeg</package>
+		<vulnerable>20070422-3</vulnerable>
+		<unaffected>20070422-4kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3252</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3162</cve>
+		<desc>A vulnerability has been reported in FFmpeg, which potentially can be exploited by malicious people to compromise a user's system.
+			The vulnerability is caused due to a boundary error within the "str_read_packet()" function in libavformat/psxstr.c. This can be exploited to cause a heap-based buffer overflow via a specially crafted STR file.</desc>
+	</fsa>
+	<fsa>
 		<id>498</id>
 		<date>2008-07-27</date>
 		<package>checkinstall</package>
