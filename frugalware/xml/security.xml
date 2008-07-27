@@ -26,6 +26,16 @@
 
 <fsas>
 	<fsa>
+		<id>501</id>
+		<date>2008-07-27</date>
+		<package>phpbb</package>
+		<vulnerable>2.0.22-1</vulnerable>
+		<unaffected>3.0.2-1kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3244</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3224</cve>
+		<desc>Unspecified vulnerability in phpBB before 3.0.1 has unknown impact and attack vectors related to "urls gone through redirect() being used within login_box()."</desc>
+	</fsa>
+	<fsa>
 		<id>500</id>
 		<date>2008-07-27</date>
 		<package>pidgin</package>
