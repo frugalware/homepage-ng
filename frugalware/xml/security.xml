@@ -26,6 +26,17 @@
 
 <fsas>
 	<fsa>
+		<id>503</id>
+		<date>2008-07-27</date>
+		<package>openldap</package>
+		<vulnerable>2.3.41-1</vulnerable>
+		<unaffected>2.3.43-1kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3207</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2952</cve>
+		<desc>A vulnerability has been reported in OpenLDAP, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			The vulnerability is caused due to an error within the "ber_get_next()" function in libraries/liblber/io.c. This can be exploited to trigger an "assert()" and terminate the "slapd" process via a specially crafted ASN.1 BER encoded packet.</desc>
+	</fsa>
+	<fsa>
 		<id>502</id>
 		<date>2008-07-27</date>
 		<package>afuse</package>
