@@ -22,6 +22,26 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
 	<post>
+	<id>106</id>
+	<title>Lettre d'information Frugalware numéro 29</title>
+	<date>Tue, 05 Aug 2008 21:28:06 +1000</date>
+	<author>phayz</author>
+	<hidden>0</hidden>
+	<content><![CDATA[
+			Cette lettre d'information à pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Dans ce numéro:
+			<ul>
+				<li>Annonce du wallpaper Frugalware</li>
+				<li>Elentir commence a travailler sur un installateur graphique</li>
+				<li>Nouvelle donation</li>
+				<li>Astuce - Police monospace pour Envy Code R</li>
+				<li>Détails sur un(des) paquet(s) - rxvt-unicode (à nouveau) :)</li>
+			</ul>
+			Vous pouvez la lire <a href="/newsletter/29">ici (anglais)</a>. Nous espérons que vous l'apprécierez!
+			]]>
+		</content>
+	</post>
+	<post>
 		<id>105</id>
 		<title>Compétition pour le wallpaper de Frugalware</title>
 		<date>Thu, 24 Jul 2008 21:28:52 +1000</date>
