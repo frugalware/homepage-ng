@@ -26,6 +26,21 @@
 
 <fsas>
 	<fsa>
+		<id>507</id>
+		<date>2008-08-16</date>
+		<package>postfix</package>
+		<vulnerable>2.4.6-1</vulnerable>
+		<unaffected>2.4.7-1kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3296</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2936
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2937</cve>
+		<desc>Sebastian Krahmer has reported some security issues in Postfix, which can be exploited by malicious, local users to disclose potentially sensitive information and perform certain actions with escalated privileges.
+			1) A security issue is caused due to Postfix incorrectly handling symlink files. This can be exploited to e.g. append mail messages to arbitrary files by creating a hardlink to a symlink owned by the root user.
+			Successful exploitation requires write permission to the mail spool directory, that there is no "root" mailbox, and users can create a hardlink to a symlink (e.g. Linux 2.x, Solaris, Irix 6.5).
+			2) A security issue is caused due to Postfix not correctly checking the ownership of the destination when delivering email. This can be exploited to e.g. disclose emails by creating an insecure mailbox file for other users.
+			Successful exploitation requires permission to create files within the mail spool directory.</desc>
+	</fsa>
+	<fsa>
 		<id>506</id>
 		<date>2008-08-16</date>
 		<package>drupal</package>
