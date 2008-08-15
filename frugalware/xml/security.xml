@@ -26,6 +26,22 @@
 
 <fsas>
 	<fsa>
+		<id>506</id>
+		<date>2008-08-16</date>
+		<package>drupal</package>
+		<vulnerable>5.9-1kalgan1</vulnerable>
+		<unaffected>5.10-1kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3299</bts>
+		<cve>There is no CVE for this issue yet, see http://drupal.org/node/295053</cve>
+		<desc>Some vulnerabilities have been reported in Drupal, which can be exploited by malicious users to conduct script insertion attacks and compromise a vulnerable system, and by malicious people to conduct cross-site scripting and cross-site request forgery attacks.
+			1) Input passed to an unspecified parameter is not properly sanitised before being returned to the user. This can be exploited to execute arbitrary HTML and script code in a user's browser session in context of an affected site.
+			2) A vulnerability is caused by the fact that the private filesystem uses the MIME media type it receives from the web browser when handling uploads. This can be exploited for script insertion attacks.
+			Successful exploitation of this vulnerability requires valid user credentials with the right to upload files.
+			3) A vulnerability is caused due to missing restrictions on what file types that users are allowed to upload in the BlogAPI module. This can be exploited to e.g. execute arbitrary PHP code.
+			Successful exploitation of this vulnerability requires valid user credentials with the "administer content with blog api" permission.
+			4) A vulnerability is caused due to the application allowing users to perform certain actions via HTTP requests without performing any validity checks to verify the request. This can be exploited to add or delete user access rules, by enticing a logged-in user to visit a malicious web page.</desc>
+	</fsa>
+	<fsa>
 		<id>505</id>
 		<date>2008-08-16</date>
 		<package>phpmyadmin</package>
