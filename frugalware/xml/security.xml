@@ -26,6 +26,21 @@
 
 <fsas>
 	<fsa>
+		<id>505</id>
+		<date>2008-08-16</date>
+		<package>phpmyadmin</package>
+		<vulnerable>2.11.7.1-1kalgan1</vulnerable>
+		<unaffected>2.11.8.1-1kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3271</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3456
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3457</cve>
+		<desc>Aung Khant has reported two vulnerabilities in phpMyAdmin, which can be exploited by malicious local users to conduct cross-site scripting attacks, and by malicious people to conduct spoofing attacks.
+
+			1) Many scripts except for index.php do not check if they are linked into another site's frames. This can potentially be used for spoofing and phishing attacks.
+
+			2) Input from the config/config.inc.php configuration file to scripts/setup.php is not properly sanitised before being returned to the user. This can be exploited to execute arbitrary HTML and script code in a user's browser session in context of an affected site.</desc>
+	</fsa>
+	<fsa>
 		<id>504</id>
 		<date>2008-08-15</date>
 		<package>mantis</package>
