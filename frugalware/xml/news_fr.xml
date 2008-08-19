@@ -101,7 +101,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 				<a href="/download/frugalware-testing-iso/frugalware-0.9rc1-i686-cd14.iso">cd14</a>,
 				<a href="/download/frugalware-testing-iso/frugalware-0.9rc1-i686-cd15.iso">cd15</a>,
 				<a href="/download/frugalware-testing-iso/frugalware-0.9rc1-i686-dvd1.iso">dvd1</a>,
-				<a href="/download/frugalware-testing-iso/frugalware-0.9rc1-i686-dvd2.iso">dvd2</a> and
+				<a href="/download/frugalware-testing-iso/frugalware-0.9rc1-i686-dvd2.iso">dvd2</a> et
 				<a href="/download/frugalware-testing-iso/frugalware-0.9rc1-i686-dvd3.iso">dvd3</a>
 			<br />
 			SHA1SUMS:
@@ -270,7 +270,7 @@ a79a0377d35d80fe82a74f73d134103b6a0ed39c  frugalware-0.9rc1-i686-usb.img
 				<a href="/download/frugalware-testing-iso/frugalware-0.9pre2-i686-cd14.iso">cd14</a>,
 				<a href="/download/frugalware-testing-iso/frugalware-0.9pre2-i686-cd15.iso">cd15</a>,
 				<a href="/download/frugalware-testing-iso/frugalware-0.9pre2-i686-dvd1.iso">dvd1</a>,
-				<a href="/download/frugalware-testing-iso/frugalware-0.9pre2-i686-dvd2.iso">dvd2</a> and
+				<a href="/download/frugalware-testing-iso/frugalware-0.9pre2-i686-dvd2.iso">dvd2</a> et
 				<a href="/download/frugalware-testing-iso/frugalware-0.9pre2-i686-dvd3.iso">dvd3</a>
 			<br />
 			SHA1SUMS:
@@ -435,7 +435,7 @@ e8cd5527083653155a8fcf16e2ac58f16b1d3495  frugalware-0.9pre2-i686-usb.img
 				<a href="/download/frugalware-testing-iso/frugalware-0.9pre1-i686-cd12.iso">cd12</a>,
 				<a href="/download/frugalware-testing-iso/frugalware-0.9pre1-i686-cd13.iso">cd13</a>,
 				<a href="/download/frugalware-testing-iso/frugalware-0.9pre1-i686-cd14.iso">cd14</a>,
-				<a href="/download/frugalware-testing-iso/frugalware-0.9pre1-i686-dvd1.iso">dvd1</a> and
+				<a href="/download/frugalware-testing-iso/frugalware-0.9pre1-i686-dvd1.iso">dvd1</a> et
 				<a href="/download/frugalware-testing-iso/frugalware-0.9pre1-i686-dvd2.iso">dvd2</a>
 			<br />
 			SHA1SUMS:
@@ -933,7 +933,7 @@ Server = http://ftp.frugalware.org/pub/other/people/krix/xorg73/frugalware-i686<
 					<ul>
 						<li>Xfce 4.4.2 - avec des corrections de bugs et des traductions</li>
 						<li>OpenOffice.org 2.3.1 - avec des corrections de sécurités et de bugs</li>
-						<li>Tcl and Tk 8.5 - avec le support de polices de caractères anti-aliasés</li>
+						<li>Tcl et Tk 8.5 - avec le support de polices de caractères anti-aliasés</li>
 						<li>Octave 3.0.0 - compatibilité avec Matlab est améliorée</li>
 						<li>Mise à jour des librairies de cryptage - gnutls-2.2 et libgcrypt-1.4</li>
 					</ul>
@@ -959,7 +959,7 @@ Server = http://ftp.frugalware.org/pub/other/people/krix/xorg73/frugalware-i686<
 				<a href="/download/frugalware-testing-iso/frugalware-0.8pre2-i686-cd11.iso">cd11</a>,
 				<a href="/download/frugalware-testing-iso/frugalware-0.8pre2-i686-cd12.iso">cd12</a>,
 				<a href="/download/frugalware-testing-iso/frugalware-0.8pre2-i686-cd13.iso">cd13</a>,
-				<a href="/download/frugalware-testing-iso/frugalware-0.8pre2-i686-dvd1.iso">dvd1</a> and
+				<a href="/download/frugalware-testing-iso/frugalware-0.8pre2-i686-dvd1.iso">dvd1</a> et
 				<a href="/download/frugalware-testing-iso/frugalware-0.8pre2-i686-dvd2.iso">dvd2</a>
 				<br />
 			SHA1SUMS:
@@ -1079,7 +1079,7 @@ eb7fbc5158e452f5217e87a2be51e600b05024b8  frugalware-0.8pre2-i686-tftp.img.gz
 				<a href="/download/frugalware-testing-iso/frugalware-0.8pre1-i686-cd11.iso">cd11</a>,
 				<a href="/download/frugalware-testing-iso/frugalware-0.8pre1-i686-cd12.iso">cd12</a>,
 				<a href="/download/frugalware-testing-iso/frugalware-0.8pre1-i686-cd13.iso">cd13</a>,
-				<a href="/download/frugalware-testing-iso/frugalware-0.8pre1-i686-dvd1.iso">dvd1</a> and
+				<a href="/download/frugalware-testing-iso/frugalware-0.8pre1-i686-dvd1.iso">dvd1</a> et
 				<a href="/download/frugalware-testing-iso/frugalware-0.8pre1-i686-dvd2.iso">dvd2</a>
 			<br />
 			SHA1SUMS:
