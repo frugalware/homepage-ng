@@ -26,6 +26,17 @@
 
 <fsas>
 	<fsa>
+		<id>511</id>
+		<date>2008-08-26</date>
+		<package>pdns</package>
+		<vulnerable>2.9.21-3</vulnerable>
+		<unaffected>2.9.21.1-1kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3309</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3337</cve>
+		<desc>A weakness has been reported in PowerDNS, which can be exploited by malicious people to conduct spoofing attacks.
+			The weakness is caused due to the server dropping DNS queries for invalid DNS records within a valid domain. This can be exploited to facilitate the spoofing of the valid domain on third-party DNS servers.</desc>
+	</fsa>
+	<fsa>
 		<id>510</id>
 		<date>2008-08-26</date>
 		<package>thunderbird</package>
