@@ -26,6 +26,17 @@
 
 <fsas>
 	<fsa>
+		<id>512</id>
+		<date>2008-08-26</date>
+		<package>amarok</package>
+		<vulnerable>1.4.8-2</vulnerable>
+		<unaffected>1.4.10-1kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3312</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3699</cve>
+		<desc>A security issue has been reported in Amarok, which can be exploited by malicious, local users to perform certain actions with escalated privileges.
+			The security issue is caused due to the "MagnatuneBrowser::listDownloadComplete()" function handling temporary files in an insecure manner. This can be exploited via symlink attacks in combination with a race condition to overwrite arbitrary files with the privileges of the user running the application.</desc>
+	</fsa>
+	<fsa>
 		<id>511</id>
 		<date>2008-08-26</date>
 		<package>pdns</package>
