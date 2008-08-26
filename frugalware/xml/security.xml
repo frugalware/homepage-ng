@@ -26,6 +26,56 @@
 
 <fsas>
 	<fsa>
+		<id>509</id>
+		<date>2008-08-26</date>
+		<package>firefox</package>
+		<vulnerable>2.0.0.14-1kalgan1</vulnerable>
+		<unaffected>2.0.0.15-1kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3202</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2798
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2799
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2800
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2801
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2802
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2803
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2805
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2806
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2807
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2808
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2809
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2810
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2811</cve>
+		<desc>Some vulnerabilities have been reported in Mozilla Firefox, which can be exploited by malicious people to conduct cross-site scripting and spoofing attacks, bypass certain security restrictions, disclose sensitive information, or potentially compromise a user's system.
+			1) Multiple errors in the layout and JavaScript engines can be exploited to corrupt memory.
+			2) An error in the handling of unprivileged XUL documents can be exploited to load Chrome scripts from a "fastload" file via "script" elements.
+			3) An error in the "mozIJSSubScriptLoader.LoadScript()" function can be exploited to bypass XPCNativeWrappers and run arbitrary code with Chrome privileges.
+			Successful exploitation requires that an add-on using the affected function is installed.
+			4) An error in the block reflow process can be exploited to cause a crash or potentially execute arbitrary code.
+			5) An error in the processing of file URLs contained within local directory listings can potentially be exploited to execute malicious JavaScript content.
+			6) Multiple errors in the implementation of the JavaScript same origin policy can be exploited to execute arbitrary script code in the context of a different domain.
+			7) Multiple errors in the verification of signed JAR files can be exploited to execute arbitrary JavaScript code with the privileges of the JAR's signer.
+			8) An error in the implementation of file upload forms can be exploited to upload arbitrary local files to a remote webserver via specially crafted "DOM Range" and "originalTarget" elements.
+			9) An error in the Java LiveConnect implementation on Mac OS X can be exploited to establish arbitrary socket connections.
+			10) An uninitialized memory access in the processing of improperly encoded ".properties" files can potentially be exploited to disclose sensitive memory via an add-on using the malformed file.
+			11) An error in the processing of "Alt Names" provided by "peer" trusted certificates can be exploited to conduct spoofing attacks.
+			12) An error in the processing of Windows URL shortcuts can be exploited to run a remote site as a local file.</desc>
+	</fsa>
+	<fsa>
+		<id>508</id>
+		<date>2008-08-16</date>
+		<package>postfix</package>
+		<vulnerable>2.4.6-1</vulnerable>
+		<unaffected>2.4.7-1kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3296</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2936
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2937</cve>
+		<desc>Sebastian Krahmer has reported some security issues in Postfix, which can be exploited by malicious, local users to disclose potentially sensitive information and perform certain actions with escalated privileges.
+			1) A security issue is caused due to Postfix incorrectly handling symlink files. This can be exploited to e.g. append mail messages to arbitrary files by creating a hardlink to a symlink owned by the root user.
+			Successful exploitation requires write permission to the mail spool directory, that there is no "root" mailbox, and users can create a hardlink to a symlink (e.g. Linux 2.x, Solaris, Irix 6.5).
+			2) A security issue is caused due to Postfix not correctly checking the ownership of the destination when delivering email. This can be exploited to e.g. disclose emails by creating an insecure mailbox file for other users.
+			Successful exploitation requires permission to create files within the mail spool directory.</desc>
+	</fsa>
+	<fsa>
 		<id>507</id>
 		<date>2008-08-16</date>
 		<package>postfix</package>
