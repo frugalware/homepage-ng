@@ -26,6 +26,21 @@
 
 <fsas>
 	<fsa>
+		<id>510</id>
+		<date>2008-08-26</date>
+		<package>thunderbird</package>
+		<vulnerable>2.0.0.14-1kalgan1</vulnerable>
+		<unaffected>2.0.0.16-1kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3206</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2798
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2799
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2802
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2803
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2811</cve>
+		<desc>Some vulnerabilities have been reported in Mozilla Thunderbird, which potentially can be exploited by malicious people to compromise a user's system.
+			For more information, see FSA509</desc>
+	</fsa>
+	<fsa>
 		<id>509</id>
 		<date>2008-08-26</date>
 		<package>firefox</package>
