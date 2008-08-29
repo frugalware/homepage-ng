@@ -26,6 +26,17 @@
 
 <fsas>
 	<fsa>
+		<id>514</id>
+		<date>2008-08-29</date>
+		<package>libxslt</package>
+		<vulnerable>1.1.22-2kalgan1</vulnerable>
+		<unaffected>1.1.22-2kalgan2</unaffected>
+		<bts>http://bugs.frugalware.org/task/3285</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2935</cve>
+		<desc>Chris Evans has reported some vulnerabilities in libxslt, which can be exploited by malicious people to cause a DoS (Denial of Service) and potentially compromise an application using the library.
+			The vulnerabilities are caused due to boundary errors within crypto.c when handling the XSLT "crypto:rc4_encrypt" and "crypto:rc4_decrypt" functions. This can be exploited to cause a heap-based buffer overflow via a specially crafted stylesheet.</desc>
+	</fsa>
+	<fsa>
 		<id>513</id>
 		<date>2008-08-26</date>
 		<package>git</package>
