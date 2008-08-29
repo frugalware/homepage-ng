@@ -26,6 +26,25 @@
 
 <fsas>
 	<fsa>
+		<id>518</id>
+		<date>2008-08-29</date>
+		<package>python</package>
+		<vulnerable>2.5.2-2kalgan1</vulnerable>
+		<unaffected>2.5.2-2kalgan2</unaffected>
+		<bts>http://bugs.frugalware.org/task/3286</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2315
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2316
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3142
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3142</cve>
+		<desc>Some vulnerabilities have been reported in Python, where some have unknown impact and others can potentially be exploited by malicious people to cause a DoS (Denial of Service) or to compromise a vulnerable system.
+			1) Various integer overflow errors exist in core modules e.g. stringobject, unicodeobject, bufferobject, longobject, tupleobject, stropmodule, gcmodule, mmapmodule.
+			2) An integer overflow in the hashlib module can lead to an unreliable cryptographic digest results.
+			3) Integer overflow errors in the processing of unicode strings can be exploited to cause buffer overflows on 32-bit systems.
+			4) An integer overflow exists in the PyOS_vsnprintf() function on architectures that do not have a "vsnprintf()" function.
+			5) An integer underflow error in the PyOS_vsnprintf() function when passing zero-length strings can lead to memory corruption.
+			Successful exploitation of some of these vulnerabilities may allow to crash an application or to execute arbitrary code, but depends on the implementation of an Python application.</desc>
+	</fsa>
+	<fsa>
 		<id>517</id>
 		<date>2008-08-29</date>
 		<package>apache</package>
