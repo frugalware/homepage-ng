@@ -26,6 +26,24 @@
 
 <fsas>
 	<fsa>
+		<id>515</id>
+		<date>2008-08-29</date>
+		<package>ruby</package>
+		<vulnerable>1.8.6-4</vulnerable>
+		<unaffected>1.8.6-5kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3300</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1447
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3655
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3656
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3657
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3443</cve>
+		<desc>Some vulnerabilities have been reported in Ruby, which can be exploited by malicious people to bypass certain security restrictions, cause a DoS (Denial of Service), and conduct spoofing attacks.
+			1) Multiple errors in the implementation of safe level restrictions can be exploited to call "untrace_var()", perform syslog operations, and modify "$PROGRAM_NAME" at safe level 4, or call insecure methods at safe levels 1 through 3.
+			2) An error exists in the usage of regular expressions in "WEBrick::HTTPUtils.split_header_value()". This can be exploited to consume large amounts of CPU via a specially crafted HTTP request.
+			3) An error in "DL" can be exploited to bypass security restrictions and call potentially dangerous functions.
+			4) The vulnerability is caused due to resolv.rb not sufficiently randomising the DNS query port number, which can be exploited to poison the DNS cache.</desc>
+	</fsa>
+	<fsa>
 		<id>514</id>
 		<date>2008-08-29</date>
 		<package>libxslt</package>
