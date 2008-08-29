@@ -26,6 +26,17 @@
 
 <fsas>
 	<fsa>
+		<id>517</id>
+		<date>2008-08-29</date>
+		<package>apache</package>
+		<vulnerable>2.2.8-2kalgan1</vulnerable>
+		<unaffected>2.2.8-2kalgan2</unaffected>
+		<bts>http://bugs.frugalware.org/task/3307</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2939</cve>
+		<desc>A vulnerability has been reported in Apache, which can be exploited by malicious people to conduct cross-site scripting attacks.
+			Input passed to mod_proxy_ftp via an URL containing a FTP wildcard character (e.g. "*"), is not properly sanitised before being returned to the user. This can be exploited to execute arbitrary HTML and script code in a user's browser session in context of an affected site.</desc>
+	</fsa>
+	<fsa>
 		<id>516</id>
 		<date>2008-08-29</date>
 		<package>links</package>
