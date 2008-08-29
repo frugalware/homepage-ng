@@ -26,6 +26,16 @@
 
 <fsas>
 	<fsa>
+		<id>516</id>
+		<date>2008-08-29</date>
+		<package>links</package>
+		<vulnerable>2.1pre33-1</vulnerable>
+		<unaffected>2.1-1kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3272</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3329</cve>
+		<desc>Unspecified vulnerability in Links before 2.1, when "only proxies" is enabled, has unknown impact and attack vectors related to providing "URLs to external programs."</desc>
+	</fsa>
+	<fsa>
 		<id>515</id>
 		<date>2008-08-29</date>
 		<package>ruby</package>
