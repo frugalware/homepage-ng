@@ -26,6 +26,18 @@
 
 <fsas>
 	<fsa>
+		<id>523</id>
+		<date>2008-08-31</date>
+		<package>poppler</package>
+		<vulnerable>0.6.4-1</vulnerable>
+		<unaffected>0.6.4-2kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3311</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2950</cve>
+		<desc>A vulnerability has been reported in Poppler, which potentially can be exploited by malicious people to compromise an application using the library.
+			The vulnerability is caused due to the "Page" constructor leaving the "pageWidgets" object uninitialized under specific circumstances. This can be exploited to potentially trigger the "free()" of an arbitrary address when the object is deleted.
+			Successful exploitation may allow execution of arbitrary code via a specially crafted PDF file.</desc>
+	</fsa>
+	<fsa>
 		<id>522</id>
 		<date>2008-08-31</date>
 		<package>mono</package>
