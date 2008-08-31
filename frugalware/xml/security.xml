@@ -26,6 +26,19 @@
 
 <fsas>
 	<fsa>
+		<id>521</id>
+		<date>2008-08-31</date>
+		<package>openttd</package>
+		<vulnerable>0.5.3-1</vulnerable>
+		<unaffected>0.6.2-1kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3303</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3576
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3577</cve>
+		<desc>A vulnerability has been reported in OpenTTD, which potentially can be exploited by malicious people to cause a DoS (Denial of Service) or to compromise a vulnerable system.
+			The vulnerability is caused due to a boundary error within the "TruncateString()" function in src/gfx.cpp. This can be exploited to potentially cause a buffer overflow via a specially crafted string.
+			Successful exploitation may allow execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>520</id>
 		<date>2008-08-31</date>
 		<package>freetype2</package>
