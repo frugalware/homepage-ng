@@ -26,6 +26,23 @@
 
 <fsas>
 	<fsa>
+		<id>520</id>
+		<date>2008-08-31</date>
+		<package>freetype2</package>
+		<vulnerable>2.3.5-2</vulnerable>
+		<unaffected>2.3.7-1kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3178</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1806
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1807
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-1808</cve>
+		<desc>Some vulnerabilities have been reported in FreeType, which potentially can be exploited by malicious people to compromise an application using the library.
+			1) An integer overflow error exists in the processing of PFB font files. This can be exploited to cause a heap-based buffer overflow via a PFB file containing a specially crafted "Private" dictionary table.
+			2) An error in the processing of PFB font files can be exploited to trigger the "free()" of memory areas that are not allocated on the heap.
+			3) An off-by-one error exists in the processing of PFB font files. This can be exploited to cause a one-byte heap-based buffer overflow via a specially crafted PFB file.
+			4) An off-by-one error exists in the implementation of the "SHC" instruction while processing TTF files. This can be exploited to cause a one-byte heap-based buffer overflow via a specially crafted TTF file.
+			Successful exploitation of the vulnerabilities may allow execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>519</id>
 		<date>2008-08-31</date>
 		<package>httrack</package>
