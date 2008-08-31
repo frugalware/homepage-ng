@@ -26,6 +26,18 @@
 
 <fsas>
 	<fsa>
+		<id>524</id>
+		<date>2008-08-31</date>
+		<package>graphicsmagick</package>
+		<vulnerable>1.1.14-1kalgan1</vulnerable>
+		<unaffected>1.2.4-1kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3204</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3134</cve>
+		<desc>Some vulnerabilities have been reported in GraphicsMagick, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			1) Multiple errors exist in the AVI, AVS, DCM, EPT, FITS, MTV, PALM, RLA, and TGA decoders. These can be exploited to trigger crashes, overly large memory allocations, or the execution of infinite loops.
+			2) An error within the "GetImageCharacteristics()" function in magick/image.c can be exploited to crash an affected application via specially crafted e.g. PNG, JPEG, BMP, or TIFF files.</desc>
+	</fsa>
+	<fsa>
 		<id>523</id>
 		<date>2008-08-31</date>
 		<package>poppler</package>
