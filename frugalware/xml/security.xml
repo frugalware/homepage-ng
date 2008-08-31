@@ -26,6 +26,18 @@
 
 <fsas>
 	<fsa>
+		<id>525</id>
+		<date>2008-08-31</date>
+		<package>pidgin</package>
+		<vulnerable>2.4.3-1kalgan1</vulnerable>
+		<unaffected>2.4.3-1kalgan2</unaffected>
+		<bts>http://bugs.frugalware.org/task/3308</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3532</cve>
+		<desc>A security issue has been reported in Pidgin, which can be exploited by malicious people to conduct spoofing attacks.
+			The problem is that the certificate presented by e.g. a Jabber server at the beginning of an SSL session is not verified. This can be exploited to spoof valid servers via a man-in-the-middle attack.
+			Successful exploitation requires that Pidgin is configured to use the NSS plugin.</desc>
+	</fsa>
+	<fsa>
 		<id>524</id>
 		<date>2008-08-31</date>
 		<package>graphicsmagick</package>
