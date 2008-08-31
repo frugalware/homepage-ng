@@ -26,6 +26,17 @@
 
 <fsas>
 	<fsa>
+		<id>519</id>
+		<date>2008-08-31</date>
+		<package>httrack</package>
+		<vulnerable>3.42-1</vulnerable>
+		<unaffected>3.42_3-1kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3304</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3429</cve>
+		<desc>A security issue has been reported in HTTrack, which potentially can be exploited by malicious people to compromise a vulnerable system.
+			The security issue is caused due to a boundary error when processing command line arguments. This can be exploited to cause a buffer overflow by passing overly long URLs to the application.</desc>
+	</fsa>
+	<fsa>
 		<id>518</id>
 		<date>2008-08-29</date>
 		<package>python</package>
