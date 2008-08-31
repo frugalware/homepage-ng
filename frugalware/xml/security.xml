@@ -26,6 +26,17 @@
 
 <fsas>
 	<fsa>
+		<id>522</id>
+		<date>2008-08-31</date>
+		<package>mono</package>
+		<vulnerable>1.2.6-3</vulnerable>
+		<unaffected>1.2.6-4kalgan1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3306</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3422</cve>
+		<desc>Dean Brettle has reported some security issues in Mono, which can be exploited by malicious people to conduct cross-site scripting attacks.
+			The security issues are caused due to Mono's ASP.net implementation not properly sanitising certain attributes (e.g. "HtmlSelect.Value", "HtmlSelect.Text", and the "action" attribute of the "form" element). This can be exploited to execute arbitrary HTML and script code in a user's browser session in context of an affected site.</desc>
+	</fsa>
+	<fsa>
 		<id>521</id>
 		<date>2008-08-31</date>
 		<package>openttd</package>
