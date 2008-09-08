@@ -33,7 +33,7 @@
 				<li>Továbbfejlesztett grafikus eszközök: FUN (frissítés jelző) mostmár a híreket is jelzi.</li>
 				<li>6400 változás, ebben 568 új csomag, 2279 frissített csomag és 926 lezárt hibajegy.</li>
 			</ul>
-			Bővebb információért tekintse meg a Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-0.9/ChangeLog.txt">0.9 (Kalgan) Változások Listáját</a>.<br />
+			Bővebb információért tekintse meg a Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-0.9/ChangeLog.txt">0.9 (Solaria) Változások Listáját</a>.<br />
 			Letöltés i686-ra:<br />
 				<a href="/download/frugalware-0.9-iso/fwlive-0.9-i686-full.iso">livecd</a>,
 				<a href="/download/frugalware-0.9-iso/frugalware-0.9-i686-net.iso">netinstall</a>,
@@ -126,7 +126,7 @@ b62bce2cb1cc74d774731ebc3a30b5fbffe61a07  frugalware-0.9-x86_64-dvd2.iso
 f2a29df040f4b5ac40a52fa7e90447e81ea1a240  frugalware-0.9-x86_64-net.iso
 10cb93ab72fe961386fdcc67881f7f2afde11741  fwlive-0.9-i686-full.iso
 			</pre>
-			Ha a korábbi stabil kiadásunkról (Solaria) frissít, kérjük olvassa el a dokumentáció <a href="http://frugalware.org/docs/stable/upgrade">frissítésről</a> szóló részét.<br />
+			Ha a korábbi stabil kiadásunkról (Kalgan) frissít, kérjük olvassa el a dokumentáció <a href="http://frugalware.org/docs/stable/upgrade">frissítésről</a> szóló részét.<br />
 			]]>
 		</content>
 	</post>
