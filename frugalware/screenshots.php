@@ -238,6 +238,7 @@ for ($i=0; $i<count($shots[gnetconfig]); $i++)
 	$maincont .= "<div><a href=\"".$fwng_root."images/screenshots/default/".$shots[gnetconfig][$i][name]."\">".
 	"<img src=\"".$fwng_root."images/screenshots/default/thumbnails/".$shots[gnetconfig][$i][name]."\" alt=\"screenshot\" /></a>".
 	"<br />".$shots[gnetconfig][$i][title]."</div>\n";
+}
 $maincont .= "</fieldset></form>\n</div>\n";
 
 print $maincont;
