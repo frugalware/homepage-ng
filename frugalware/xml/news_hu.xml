@@ -18,19 +18,19 @@
 <news>
 	<post>
 		<id>110</id>
-		<title>Megjelent a Frugalware 0.9 (Solaria) i686 és x86_64 architektúrákra</title>
+		<title>Megjelent a Frugalware 0.9 (Solaria) i686 és&amp;nbsp;x86_64 architektúrákra</title>
 		<date>FIXME</date>
 		<author>Krisztian VASAS</author>
 		<hidden>1</hidden>
 		<content><![CDATA[
 			A Frugalware Fejlesztői Csapat örömmel <a href="/news/110/hu">jelenti be</a> a Frugalware 0.9 azonnali elérhetőségét, mint kilencedik stabil kiadásunkat.<br />
-			Igaz, hogy újdonság nem került bele 0.9rc2 óta, de több, mint 40 apróbb hibajavítás történt.<br />
+			Igaz, hogy újdonság nem került bele a 0.9rc2 óta, de több, mint 40 apróbb hibajavítás történt.<br />
 			Ha nem követte folyamatosan a változásokat, íme a legfontosabbak 0.8 óta:<br />
 			<ul>
 				<li>Naprakész alaprendszer: Linux kernel 2.6.26, Glibc 2.8 és GCC 4.3.1</li>
 				<li>Naprakész grafikus csomagok: GNOME 2.22, OpenOffice.org 2.4.1 és Firefox 3.0.1</li>
 				<li>Telepítő: több hálózati kártya támogatás továbbfejlesztve, az usb telepítőt könnyebb használni, javított/dokumentált telepítés virtualbox/vmware környezeteken.</li>
-				<li>Továbbfejlesztett grafikus eszközök: FUN (frissítés jelző) mostmár a híreket is jelzi.</li>
+				<li>Továbbfejlesztett grafikus eszközök: FUN (frissítés jelző) most már a híreket is jelzi.</li>
 				<li>6400 változás, ebben 568 új csomag, 2279 frissített csomag és 926 lezárt hibajegy.</li>
 			</ul>
 			Bővebb információért tekintse meg a Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-0.9/ChangeLog.txt">0.9 (Solaria) Változások Listáját</a>.<br />
