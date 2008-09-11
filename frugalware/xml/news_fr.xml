@@ -22,6 +22,27 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
 	<post>
+		<id>111</id>
+		<title>Lettre d'information Frugalware numéro 31</title>
+		<date>Wed, 10 Sep 2008 22:44:11 +1000</date>
+		<author>phayz</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			Cette lettre d'information à pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Dans ce numéro:
+			<ul>
+				<li>Solaria est disponible</li>
+				<li>Concour de Wallpaper - nous avons un gagnant!</li>
+				<li>Récent changement à la lettre d'information</li>
+				<li>Apprendre à Vous Connaître - Les traducteurs de Frugalware</li>
+				<li>Astuces - Comment déterminer la date d'une installation d'un système Frugalware?</li>
+				<li>Détails sur un(des) paquet(s) - xmllint</li>
+			</ul>
+			Vous pouvez la lire <a href="/newsletter/31">ici (anglais)</a>. Nous espérons que vous l'apprécierez!
+			]]>
+		</content>
+	</post>
+	<post>
 		<id>110</id>
 		<title>Frugalware 0.9rc2 (Solaria) pour i686 et x86_64 est disponible</title>
 		<date>Tue, 09 Sep 2008 01:53:58 +0200</date>
@@ -242,7 +263,7 @@ b023faab7154bd80e4718fa4ecf9c946a9414ad0  frugalware-0.9rc2-i686-dvd3.iso
 				<li>La compétition de wallpaper est maintenant fermée</li>
 				<li>Astuces - "Où diable est ce fichier?"</li>
 				<li>Détails sur un(des) paquet(s) - LinkChecker</li>
-				<li><em>NEW</em> - Getting To Know You</li>
+				<li><em>NOUVEAU</em> - Apprendre à vous connaître</li>
 			</ul>
 			Vous pouvez la lire <a href="/newsletter/30">ici (anglais)</a>. Nous espérons que vous l'apprécierez!
 			]]>
