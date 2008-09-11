@@ -64,6 +64,7 @@ $menucontent .= '	<a href="' . $fwng_root . 'screenshots">' . gettext('Screensho
 $menucontent .= '	<a href="http://www.frappr.com/frugalware">' . gettext('Map') . "</a>\n";
 $menucontent .= '	<a href="http://www.last.fm/group/Frugalware">' . gettext('Last.fm group') . "</a>\n";
 $menucontent .= '	<a href="' . $fwng_root . 'i18n">' . gettext('National sites') . "</a>\n";
+$menucontent .= '	<a href="http://www.frugalware-art.org/">' . gettext('Artwork') . "</a>\n";
 $menucontent .= "</div>\n";
 $menucontent .= '<a class="menu" href="" onclick="return clickreturnvalue()" onmouseover="dropdownmenu(this, event, \'dlmenu\')">' . gettext('Download') . "</a> &middot; \n";
 $menucontent .= '<div id="dlmenu" class="menulinkcss" align="left">' . "\n";
