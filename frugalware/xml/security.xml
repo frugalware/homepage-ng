@@ -26,6 +26,17 @@
 
 <fsas>
 	<fsa>
+		<id>527</id>
+		<date>2008-09-24</date>
+		<package>bitlbee</package>
+		<vulnerable>1.2.2-1</vulnerable>
+		<unaffected>1.2.3-1solaria1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3344</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3969</cve>
+		<desc>A security issue has been reported in BitlBee, which can be exploited by malicious people to bypass certain security restrictions and hijack accounts.
+		The security issue is caused due to an unspecified error, which can be exploited to overwrite existing accounts.</desc>
+	</fsa>
+	<fsa>
 		<id>526</id>
 		<date>2008-09-21</date>
 		<package>phpmyadmin</package>
