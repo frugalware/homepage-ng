@@ -28,6 +28,7 @@
 	<fsa>
 		<id>527</id>
 		<date>2008-09-24</date>
+		<author>Miklos Vajna</author>
 		<package>bitlbee</package>
 		<vulnerable>1.2.2-1</vulnerable>
 		<unaffected>1.2.3-1solaria1</unaffected>
