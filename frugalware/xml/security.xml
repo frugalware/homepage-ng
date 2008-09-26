@@ -26,6 +26,18 @@
 
 <fsas>
 	<fsa>
+		<id>528</id>
+		<date>2008-09-26</date>
+		<author>Miklos Vajna</author>
+		<package>phpmyadmin</package>
+		<vulnerable>2.11.9.1-1solaria1</vulnerable>
+		<unaffected>2.11.9.2-1solaria1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3361</bts>
+		<cve>There is no CVE for this issue yet, see http://www.phpmyadmin.net/home_page/security.php?issue=PMASA-2008-8.</cve>
+		<desc>A vulnerability has been reported in phpMyAdmin, which can be exploited by malicious people to conduct cross-site scripting attacks.
+			An error exists in the "PMA_escapeJsString()" function in libraries/js_escape.lib.php, which can be exploited to bypass certain filters and execute arbitrary HTML and script code in a user's browser session in context of an affected site when e.g. Microsoft Internet Explorer is used.</desc>
+	</fsa>
+	<fsa>
 		<id>527</id>
 		<date>2008-09-24</date>
 		<author>Miklos Vajna</author>
