@@ -26,6 +26,19 @@
 
 <fsas>
 	<fsa>
+		<id>529</id>
+		<date>2008-09-26</date>
+		<author>Miklos Vajna</author>
+		<package>drupal-simplenews</package>
+		<vulnerable>5.x_1.4-1</vulnerable>
+		<unaffected>5.x_1.5-1solaria1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3362</bts>
+		<cve>There is no CVE for this issue yet, see http://drupal.org/node/312944.</cve>
+		<desc>A vulnerability has been reported in the Simplenews module for Drupal, which can be exploited by malicious users to conduct script insertion attacks.
+			Input passed as Newsletter categories is not properly sanitised before being stored. This can be exploited to insert arbitrary HTML and script code, which is executed in a user's browser session in context of an affected site when the malicious data is viewed.
+			Successful exploitation requires valid user credentials with the "administer taxonomy" permission.</desc>
+	</fsa>
+	<fsa>
 		<id>528</id>
 		<date>2008-09-26</date>
 		<author>Miklos Vajna</author>
