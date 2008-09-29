@@ -89,6 +89,7 @@ $cont4 = "<div align=\"left\"><ul>
 	<li>Distrowatch.com</li>
 	<li>Marius Cirsta</li>
 	<li>Jean-Pierre Le Leyzour</li>
+	<li>Mario Bonasoro</li>
 	</ul></div>";
 fwmiddlebox("Monetary donations", $cont4);
 
