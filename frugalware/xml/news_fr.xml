@@ -22,6 +22,43 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
 	<post>
+		<id>113</id>
+		<title>Lettre d'information Frugalware numéro Issue 32</title>
+		<date>Sun, 05 Oct 2008 17:13:54 +1000</date>
+		<author>phayz</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			Cette lettre d'information à pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Dans ce numéro:
+			<ul>
+				<li>Article vedette - Donnez un air somatique à votre Frugalware</li>
+				<li>Joyeux anniversaire à Gimmix</li>
+				<li>Frugalware rejoint le monde artistique</li>
+				<li>Astuces - Filtre de timezone pour mutt</li>
+			</ul>
+			Vous pouvez la lire <a href="/newsletter/32">ici (anglais)</a>. Nous espérons que vous l'apprécierez!
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>112</id>
+		<title>Kalgan: Fin de vie</title>
+		<date>Fri, 12 Sep 2008 16:41:33 +0200</date>
+		<author>Miklos Vajna</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			Avec la sortie de Solaria, le support de Kalgan est arrété. Il est grandement recommandé de se mettre à jour vers notre nouvelle version stable, comme il n'y aura plus de changement de sécurité et de bugs pour Kalgan.<br /><br />
+			Nous avons publié les FSA394 à FSA525 pour Kalgan. Cela signifie que 131 problèmes de sécurité on été découvert en la moitié d'une année. (Nous avions fourni 98 miseà jour de sécurité pour Sayshell, la version stable précédent Kalgan).<br />
+			Si vous mettez à jour vers Solaria, cela résoudra aussi les vulnérabilités suivante:<br />
+			<ul>
+				<li><a href="http://bugs.frugalware.org/task/2210">#2210 - bitchx</a></li>
+				<li><a href="http://bugs.frugalware.org/task/3037">#3037 - gnumeric</a></li>
+				<li><a href="http://bugs.frugalware.org/task/3174">#3174 - vim</a></li>
+			</ul>
+			]]>
+		</content>
+	</post>
+	<post>
 		<id>111</id>
 		<title>Lettre d'information Frugalware numéro 31</title>
 		<date>Wed, 10 Sep 2008 22:44:11 +1000</date>
