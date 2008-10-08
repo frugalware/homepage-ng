@@ -26,6 +26,21 @@
 
 <fsas>
 	<fsa>
+		<id>530</id>
+		<date>2008-10-08</date>
+		<author>Miklos Vajna</author>
+		<package>wireshark </package>
+		<vulnerable>1.0.2-2</vulnerable>
+		<unaffected>1.0.3-1solaria1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3345</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3146
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3932
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3933</cve>
+		<desc>Some vulnerabilities have been reported in Wireshark, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			1) Various errors within epan/dissectors/packet-ncp2222.inc can be exploited to cause e.g. a crash or an infinite loop via specially crafted NCP packets.
+			2) An error while uncompressing zlib-compressed packet data can be exploited to cause a crash via specially crafted packets.</desc>
+	</fsa>
+	<fsa>
 		<id>529</id>
 		<date>2008-09-26</date>
 		<author>Miklos Vajna</author>
