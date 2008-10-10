@@ -26,6 +26,19 @@
 
 <fsas>
 	<fsa>
+		<id>532</id>
+		<date>2008-10-10</date>
+		<author>Miklos Vajna</author>
+		<package>drupal6</package>
+		<vulnerable>6.4-1</vulnerable>
+		<unaffected>6.5-1solaria1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3393</bts>
+		<cve>No CVE, see http://drupal.org/node/318706</cve>
+		<desc>A vulnerability has been reported in Drupal, which can be exploited by malicious people to bypass certain security restrictions.
+The vulnerability is caused due to improper access restriction in the core upload module. This can be exploited to attach arbitrary files to content, without valid credentials.
+Successful exploitation requires that the core upload module is enabled.</desc>
+	</fsa>
+	<fsa>
 		<id>531</id>
 		<date>2008-10-10</date>
 		<author>Miklos Vajna</author>
