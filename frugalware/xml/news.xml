@@ -22,6 +22,20 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
     <post>
+        <id>114</id>
+        <title>nVidia Package Notice</title>
+        <date>Thu, 16 Oct 2008 23:06:50 +1000</date>
+        <author>hermier</author>
+        <hidden>0</hidden>
+        <content><![CDATA[
+            If you follow the nVidia news, you probably now there is a new legacy driver. Basically all the support for the FX cards is dropped in the mainline package and is left in a new legacy package.<br />
+            The new legacy driver is now available as nvidia-173xx, and the latest nvidia package is also available. So please check your card status and update to the nvidia-173xx package if needed before reporting that X don't start anymore.<br />
+            Also note that the nVidia packages use a new general build script, so report any breakage not related to the previous issue.<br />
+            And to conclude, for those who have some old nVidia hardware, should now be happy to know that the nvidia-71xx legacy package is now available.<br />
+            ]]>
+        </content>
+    </post>
+    <post>
         <id>113</id>
         <title>Frugalware Newsletter Issue 32</title>
         <date>Sun, 05 Oct 2008 17:13:54 +1000</date>
