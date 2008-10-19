@@ -26,6 +26,18 @@
 
 <fsas>
 	<fsa>
+		<id>537</id>
+		<date>2008-10-19</date>
+		<author>Miklos Vajna</author>
+		<package>libpng</package>
+		<vulnerable>1.2.29-1</vulnerable>
+		<unaffected>1.2.32-1solaria1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3367</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3964</cve>
+		<desc>A vulnerability has been reported in libpng, which can be exploited by malicious people to cause a DoS (Denial of Service).
+		The vulnerability is caused due to an off-by-one error within the "png_push_read_zTXt()" function in pngread.c when processing malicious PNG images with specially crafted zTXt chunks, which can be exploited to crash an application using the library.</desc>
+	</fsa>
+	<fsa>
 		<id>536</id>
 		<date>2008-10-19</date>
 		<author>Miklos Vajna</author>
