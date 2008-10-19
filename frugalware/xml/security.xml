@@ -26,6 +26,19 @@
 
 <fsas>
 	<fsa>
+		<id>542</id>
+		<date>2008-10-19</date>
+		<author>Miklos Vajna</author>
+		<package>mantis</package>
+		<vulnerable>1.1.2-1</vulnerable>
+		<unaffected>1.1.4-1solaria1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3411</bts>
+		<cve>No CVE, see http://milw0rm.com/exploits/6768</cve>
+		<desc>EgiX has discovered a vulnerability in Mantis, which can be exploited by malicious users to compromise a vulnerable system.
+		Input passed to the "sort" parameter in manage_proj_page.php is not properly sanitised before being used in a "create_function()" call. This can be exploited to execute arbitrary PHP code.
+		Successful exploitation requires valid user credentials.</desc>
+	</fsa>
+	<fsa>
 		<id>541</id>
 		<date>2008-10-19</date>
 		<author>Miklos Vajna</author>
