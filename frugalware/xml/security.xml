@@ -26,6 +26,22 @@
 
 <fsas>
 	<fsa>
+		<id>535</id>
+		<date>2008-10-19</date>
+		<author>Miklos Vajna</author>
+		<package>lighttpd</package>
+		<vulnerable>1.4.19-2</vulnerable>
+		<unaffected>1.4.20-1solaria1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3375</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4298
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4359
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4360</cve>
+		<desc>A weakness and two vulnerabilities have been reported in lighttpd, which can be exploited by malicious people to disclose potentially sensitive information, bypass certain security restrictions, and cause a DoS (Denial of Service).
+		1) A vulnerability is caused due to a memory leak within the "http_request_parse()" function when processing duplicate request headers and can be exploited to exhaust all available memory.
+		2) A vulnerability is caused due to the "mod_userdir" module not correctly handling filenames on case insensitive file systems. This can be exploited to e.g. disclose potentially sensitive information by sending requests with mixed upper and lowercase characters.
+		3) A weakness is caused due to lighttpd not decoding requests before matching them with rewrite and redirect rules. This can be exploited to e.g. bypass the rewrite and redirect rules.</desc>
+	</fsa>
+	<fsa>
 		<id>534</id>
 		<date>2008-10-19</date>
 		<author>Miklos Vajna</author>
