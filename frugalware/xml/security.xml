@@ -26,6 +26,20 @@
 
 <fsas>
 	<fsa>
+		<id>541</id>
+		<date>2008-10-19</date>
+		<author>Miklos Vajna</author>
+		<package>dovecot</package>
+		<vulnerable>1.1.2-1</vulnerable>
+		<unaffected>1.1.4-1solaria1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3387</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4577
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4578</cve>
+		<desc>Two security issues have been reported in Dovecot, which can be exploited by malicious users to bypass certain security restrictions.
+			1) The problem is that the ACL plugin interprets negative access rights as positive access rights, potentially giving an unprivileged user access to restricted resources.
+			2) An error in the ACL plugin when imposing mailbox creation restrictions can be exploited to create "parent/child/child" mailboxes.</desc>
+	</fsa>
+	<fsa>
 		<id>540</id>
 		<date>2008-10-19</date>
 		<author>Miklos Vajna</author>
