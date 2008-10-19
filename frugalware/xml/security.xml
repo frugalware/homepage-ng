@@ -26,6 +26,19 @@
 
 <fsas>
 	<fsa>
+		<id>539</id>
+		<date>2008-10-19</date>
+		<author>Miklos Vajna</author>
+		<package>mediawiki</package>
+		<vulnerable>1.12.0-1</vulnerable>
+		<unaffected>1.13.2-1solaria1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3382</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4408</cve>
+		<desc>A vulnerability has been reported in MediaWiki, which can be exploited by malicious people to conduct cross-site scripting attacks.
+		Input passed to the "useskin" parameter is not properly sanitised before being returned to the user. This can be exploited to execute arbitrary HTML and script code in a user's browser session in context of an affected site.
+		Successful exploitation requires that $wgUseSiteCss is enabled, which is the default.</desc>
+	</fsa>
+	<fsa>
 		<id>538</id>
 		<date>2008-10-19</date>
 		<author>Miklos Vajna</author>
