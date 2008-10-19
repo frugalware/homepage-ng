@@ -26,6 +26,17 @@
 
 <fsas>
 	<fsa>
+		<id>536</id>
+		<date>2008-10-19</date>
+		<author>Miklos Vajna</author>
+		<package>jasper</package>
+		<vulnerable>1.900.1-2</vulnerable>
+		<unaffected>1.900.1-3solaria1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3396</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3520</cve>
+		<desc>Multiple integer overflows in JasPer might allow context-dependent attackers to have an unknown impact via a crafted image file, related to integer multiplication for memory allocation.</desc>
+	</fsa>
+	<fsa>
 		<id>535</id>
 		<date>2008-10-19</date>
 		<author>Miklos Vajna</author>
