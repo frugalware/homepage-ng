@@ -26,6 +26,19 @@
 
 <fsas>
 	<fsa>
+		<id>540</id>
+		<date>2008-10-19</date>
+		<author>Miklos Vajna</author>
+		<package>mplayer</package>
+		<vulnerable>1.0rc2-6</vulnerable>
+		<unaffected>1.0rc2-7solaria1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3371</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3827</cve>
+		<desc>Some vulnerabilities have been reported in MPlayer, which potentially can be exploited by malicious people to compromise a user's system.
+		The vulnerabilities are caused due to multiple boundary errors within the "demux_real_fill_buffer()" function in libmpdemux/demux_real.c. These can be exploited to cause heap-based buffer overflows via specially crafted Real Media files.
+		Successful exploitation may allow execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>539</id>
 		<date>2008-10-19</date>
 		<author>Miklos Vajna</author>
