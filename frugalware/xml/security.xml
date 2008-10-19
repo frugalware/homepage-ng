@@ -26,6 +26,19 @@
 
 <fsas>
 	<fsa>
+		<id>533</id>
+		<date>2008-10-19</date>
+		<author>Miklos Vajna</author>
+		<package>wordpress</package>
+		<vulnerable>2.6.1-1</vulnerable>
+		<unaffected>2.6.2-1solaria1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3346</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4106
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4107</cve>
+		<desc>Stefan Esser has reported a vulnerability in WordPress, which can be exploited by malicious people to guess automatically generated passwords.
+		The vulnerability is caused due to WordPress using a weak pseudo random number generator to generate passwords while leaking it's state information to an attacker. In combination with other attacks this can e.g. be exploited to recover the administrator's automatically generated password.</desc>
+	</fsa>
+	<fsa>
 		<id>532</id>
 		<date>2008-10-10</date>
 		<author>Miklos Vajna</author>
