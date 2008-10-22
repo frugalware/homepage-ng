@@ -26,6 +26,23 @@
 
 <fsas>
 	<fsa>
+		<id>544</id>
+		<date>2008-10-22</date>
+		<author>Miklos Vajna</author>
+		<package>libxml2</package>
+		<vulnerable>2.6.32-2</vulnerable>
+		<unaffected>2.7.2-1solaria1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3402</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3281
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3529
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4422</cve>
+		<desc>Two vulnerabilities have been reported in Libxml2, which can be exploited by malicious people to cause a DoS (Denial of Service) or potentially compromise an application using the library.
+		1) A recursion error exists when processing certain XML content. This can be exploited to e.g. exhaust all available memory and CPU resources by tricking an application using Libxml2 into processing specially crafted XML documents.
+		2) A boundary error in the processing of long XML entity names in parser.c can be exploited to cause a heap-based buffer overflow when specially crafted XML content is parsed.
+		3) A vulnerability is caused due to an error in the processing of XML files and can be exploited to exhaust all available memory via a specially crafted XML file containing a predefined entity inside an entity definition.
+		Successful exploitation may allow execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>543</id>
 		<date>2008-10-22</date>
 		<author>Miklos Vajna</author>
