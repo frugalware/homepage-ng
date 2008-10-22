@@ -26,6 +26,19 @@
 
 <fsas>
 	<fsa>
+		<id>546</id>
+		<date>2008-10-22</date>
+		<author>Miklos Vajna</author>
+		<package>vlc</package>
+		<vulnerable>0.9.1-1</vulnerable>
+		<unaffected>0.9.4-1solaria1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3408</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4558</cve>
+		<desc>A vulnerability has been reported by VLC Media Player, which potentially can be exploited by malicious people to compromise a user's system.
+		The vulnerability is caused due to a signedness error within the "parse_track_node()" function in modules/demux/playlist/xspf.c. This can be exploited to corrupt memory via a specially crafted XSPF file containing a negative "identifier" attribute.
+		Successful exploitation may allow execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>545</id>
 		<date>2008-10-22</date>
 		<author>Miklos Vajna</author>
