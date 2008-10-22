@@ -26,6 +26,20 @@
 
 <fsas>
 	<fsa>
+		<id>543</id>
+		<date>2008-10-22</date>
+		<author>Miklos Vajna</author>
+		<package>wireshark</package>
+		<vulnerable>1.0.3-1solaria1</vulnerable>
+		<unaffected>1.0.4-1solaria1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3417</bts>
+		<cve>No CVE, see http://www.wireshark.org/security/wnpa-sec-2008-06.html</cve>
+		<desc>Some vulnerabilities and a weakness have been reported in Wireshark, which can be exploited by malicious people to cause a DoS (Denial of Service).
+		1) An error within the Bluetooth ACL dissector can be exploited to cause a crash via specially crafted packets.
+		2) An error within the Q.931 dissector can be exploited to cause a crash via specially crafted packets.
+		3) Uninitialised data structures within the Bluetooth RFCOMM and USB dissector can be exploited to cause a crash via specially crafted packets.</desc>
+	</fsa>
+	<fsa>
 		<id>542</id>
 		<date>2008-10-19</date>
 		<author>Miklos Vajna</author>
