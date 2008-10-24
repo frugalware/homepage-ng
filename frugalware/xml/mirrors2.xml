@@ -110,6 +110,7 @@ If you modify this file, be sure it's still valid - read /hooks/README!
 		<supplier_url>http://www.sourcemirrors.org</supplier_url>
 		<bandwidth>100 MBit</bandwidth>
 	</mirror>
+	<!-- XXX died
 	<mirror>
 		<id>7</id>
 		<type>http</type>
@@ -122,7 +123,7 @@ If you modify this file, be sure it's still valid - read /hooks/README!
 		<supplier>botux.net</supplier>
 		<supplier_url>http://botux.net</supplier_url>
 		<bandwidth>100 MBit</bandwidth>
-	</mirror>
+	</mirror> -->
 	<mirror>
 		<id>8</id>
 		<type>ftp</type>
