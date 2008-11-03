@@ -26,6 +26,21 @@
 
 <fsas>
 	<fsa>
+		<id>547</id>
+		<date>2008-11-03</date>
+		<author>Miklos Vajna</author>
+		<package>openoffice.org</package>
+		<vulnerable>2.4.1-1</vulnerable>
+		<unaffected>2.4.1-2solaria1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3429</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2237
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2238</cve>
+		<desc>Some vulnerabilities have been reported in OpenOffice, which potentially can be exploited by malicious people to compromise a user's system.
+			1) An error in the processing of WMF files can be exploited to cause a heap-based buffer overflow via a specially crafted StarOffice/StarSuite document.
+			2) Multiple integer overflows when parsing certain EMR records of EMF files can be exploited to cause heap-based buffer overflows via a specially crafted StarOffice/StarSuite document.
+			Successful exploitation of the vulnerabilities may allow execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>546</id>
 		<date>2008-10-22</date>
 		<author>Miklos Vajna</author>
