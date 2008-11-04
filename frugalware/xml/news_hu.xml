@@ -45,7 +45,7 @@
 				</li>
 			</ul>
 			Bővebb információért tekintse meg a Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Anacreon Változások Listáját</a>.<br />
-			Letöltés i686-ra és x86_64-re: kérjük tekintse meg <a href="http://frugalware.org/download/frugalware-testing-iso">tükörszervereink listáját</a>, valamint ne felejtse el ellenőrizni a letöltött fájlok <a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">integritását</a> sem, mielőtt kiírná őket.
+			Letöltés i686-ra és x86_64-re: kérjük tekintse meg <a href="http://frugalware.org/download/frugalware-testing-iso">tükörszervereink listáját</a>, valamint ne felejtse el ellenőrizni a letöltött fájlok <a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">integritását</a> sem, mielőtt kiírná őket.<br />
 			<b>Megjegyzés:</b> Kattintson <a href="/docs/install#_choosing_installation_flavor">ide</a>, hogy eldönthesse, melyik telepítő médiára van szüksége.<br />
 			]]>
 		</content>
