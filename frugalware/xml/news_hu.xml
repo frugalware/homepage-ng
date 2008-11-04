@@ -23,14 +23,14 @@
 		<author>Krisztian VASAS</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			A Frugalware Fejleszői Csapat örömmel <a href="/news/116/hu">jelenti be</a> a Frugalware 1.0pre1 verzióját, mint az eljövendő 1.0 stabil kiadás első előzetes változatát.<br />
+			A Frugalware Fejlesztői Csapat örömmel <a href="/news/116/hu">jelenti be</a> a Frugalware 1.0pre1 verzióját, mint az eljövendő 1.0 stabil kiadás első előzetes változatát.<br />
 			Egy rövid, nem teljes lista a változásokról:<br />
 			<ul>
 				<li>Fejlesztések:
 					<ul>
 						<li>A grafikus <b>F</b>rugal<b>w</b>are <b>I</b>nstaller <b>F</b>ront-<b>E</b>nd megérkezett a csomagok közé. Jelenleg még csak egy meglevő Frugalware rendszerből tud rendszerbetöltőként működni, de reméljük, tovább tudunk fejlődni ezen a téren.</li>
 						<li>Induló 'ppc' port. Már aktív tesztelés alatt áll Apple gépeken (iBook/Power Macintosh), de az IBM vasak jelenleg nem támogatottak még (esetleg működhet, de nem tudjuk garantálni). Különös figyelmet fordítottunk a jellemző nem-x86 problémákra, mint például <a href="http://frugalware.org/~vmiklos/pics/shots/youtube-ppc.png">youtube</a> videók megtekintése vagy <a href="http://frugalware.org/~vmiklos/pics/shots/javaplugin-ppc.png">Java appletek</a> használata.</li>
-						<li>Mostantól az x86_64 architektúrájú gépeken lehetőség van 32 bites chroot használatára. Ennek kulcsa az emul32-tools csomag. Ha ilyen rendszert futtat, kérjük olvassa el a <a href="http://ftp.frugalware.org/pub/other/emul32-tools/emul32-tools/emul32-tools.html">dokumentációt</a>.</li>
+						<li>Mostantól az x86_64 architektúrájú gépeken lehetőség van 32 bites chroot használatára. Ennek kulcsa az emul32-tools csomag. Ha ilyen rendszert futtat, kérjük, olvassa el a <a href="http://ftp.frugalware.org/pub/other/emul32-tools/emul32-tools/emul32-tools.html">dokumentációt</a>.</li>
 					</ul>
 				</li>
 				<li>Csomagfrissítések:
@@ -45,7 +45,7 @@
 				</li>
 			</ul>
 			Bővebb információért tekintse meg a Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Anacreon Változások Listáját</a>.<br />
-			Letöltés i686-ra és x86_64-re: kérjük tekintse meg <a href="http://frugalware.org/download/frugalware-testing-iso">tükörszervereink listáját</a>, valamint ne felejtse el ellenőrizni a letöltött fájlok <a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">integritását</a> sem, mielőtt kiírná őket.<br />
+			Letöltés i686-ra és x86_64-re: kérjük, tekintse meg <a href="http://frugalware.org/download/frugalware-testing-iso">tükörszervereink listáját</a>, valamint ne felejtse el ellenőrizni a letöltött fájlok <a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">integritását</a> sem, mielőtt kiírná őket.<br />
 			<b>Megjegyzés:</b> Kattintson <a href="/docs/install#_choosing_installation_flavor">ide</a>, hogy eldönthesse, melyik telepítő médiára van szüksége.<br />
 			]]>
 		</content>
