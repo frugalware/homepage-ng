@@ -17,6 +17,40 @@
 
 <news>
 	<post>
+		<id>116</id>
+		<title>Megjelent a Frugalware 1.0pre1 (Anacreon)</title>
+		<date>Tue, 04 Nov 2008 08:47:36 +0100</date>
+		<author>Krisztian VASAS</author>
+		<hidden>1</hidden>
+		<content><![CDATA[
+			A Frugalware Fejleszői Csapat örömmel <a href="/news/116/hu">jelenti be</a> a Frugalware 1.0pre1 verzóját, mint az ejövendő 1.0 stabil kiadás első előzetes változatát.<br />
+			Egy rövid, nem teljes lista a változásokról:<br />
+			<ul>
+				<li>Fejlesztések:
+					<ul>
+						<li>A grafikus <b>F</b>rugal<b>w</b>are <b>I</b>staller <b>F</b>ront-<b>E</b>nd megérkezett a csomagok közé. Jelenleg még csak egy meglevő Frugalware rendszerből tud rendszerbetöltőként működni, de reméljük, tovább tudunk fejlődni ezen a téren.</li>
+						<li>Induló 'ppc' port. Már aktív tesztelés alatt áll Apple gépeken (iBook/Power Macintosh), de az IBM vasak jelenleg nem támogatottak még (esetleg működhet, de nem tudjuk garantálni). Különös figyelmet fordítottunk a jellemző nem-x86 problémákra, mint például <a href="http://frugalware.org/~vmiklos/pics/shots/youtube-ppc.png">youtube</a> videók megtekintése vagy <a href="http://frugalware.org/~vmiklos/pics/shots/javaplugin-ppc.png">Java appletek</a> használata.</li>
+						<li>Mostantól az x86_64 architektúrájú gépeken lehetőség van 32 bites chroot használatára. Ennek kulcsa az emul32-tools csomag. Ha ilyen rendszert futtat, kérjük olvassa el a <a href="http://ftp.frugalware.org/pub/other/emul32-tools/emul32-tools/emul32-tools.html">dokumentációt</a>.</li>
+					</ul>
+				</li>
+				<li>Csomagfrissítések:
+					<ul>
+						<li>Linux kernel 2.6.27 + biztonsági javítások</li>
+						<li>GCC 4.3.2</li>
+						<li>GNOME 2.24.1</li>
+						<li>OpenOffice.org 3.0</li>
+						<li>Több, mint 800 csomagfrissítés</li>
+						<li>Több, mint 80 új csomag</li>
+					</ul>
+				</li>
+			</ul>
+			Bővebb információért tekintse meg a Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Anacreon Változások Listáját</a>.<br />
+			Letöltés i686-ra és x86_64-re: kérjük tekintse meg <a href="http://frugalware.org/download/frugalware-testing-iso">tükörszervereink listáját</a>, valamint ne felejtse el ellenőrizni a letöltött fájlok <a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">integritását</a> sem, mielőtt kiírná őket.
+			<b>Megjegyzés:</b> Kattintson <a href="/docs/install#_choosing_installation_flavor">ide</a>, hogy eldönthesse, melyik telepítő médiára van szüksége.<br />
+			]]>
+		</content>
+	</post>
+	<post>
 		<id>110</id>
 		<title>Megjelent a Frugalware 0.9 (Solaria) i686&amp;nbsp;és&amp;nbsp;x86_64 architektúrákra</title>
 		<date>Tue, 09 Sep 2008 14:15:24 +0200</date>
