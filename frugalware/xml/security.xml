@@ -26,6 +26,19 @@
 
 <fsas>
 	<fsa>
+		<id>551</id>
+		<date>2008-11-16</date>
+		<author>Miklos Vajna</author>
+		<package>phpmyadmin</package>
+		<vulnerable>2.11.9.2-1solaria1</vulnerable>
+		<unaffected>2.11.9.3-1solaria1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3436</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4775</cve>
+		<desc>Hadi Kiamarsi has discovered a vulnerability in phpMyAdmin, which can be exploited by malicious people to conduct cross-site scripting attacks.
+			Input passed to the "db" parameter in pmd_pdf.php is not properly sanitised before being returned to the user. This can be exploited to execute arbitrary HTML and script code in a user's browser session in context of an affected site.
+			Successful exploitation may require that the victim has valid user credentials.</desc>
+	</fsa>
+	<fsa>
 		<id>550</id>
 		<date>2008-11-16</date>
 		<author>Miklos Vajna</author>
