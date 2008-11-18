@@ -26,6 +26,19 @@
 
 <fsas>
 	<fsa>
+		<id>548</id>
+		<date>2008-11-16</date>
+		<author>Miklos Vajna</author>
+		<package>drupal</package>
+		<vulnerable>5.11-1solaria1</vulnerable>
+		<unaffected>5.12-1solaria1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3419</bts>
+		<cve>No CVE for this issue, see http://drupal.org/node/324833</cve>
+		<desc>A vulnerability has been reported in Drupal, which can potentially be exploited by malicious, local users to gain escalated privileges.
+			Input passed to unspecified parameters is not properly verified before being used to include files. This can be exploited to include specially named files from local resources and potentially escalate privileges.
+			Successful exploitation requires that the web server is configured to use virtual hosts.</desc>
+	</fsa>
+	<fsa>
 		<id>547</id>
 		<date>2008-11-03</date>
 		<author>Miklos Vajna</author>
