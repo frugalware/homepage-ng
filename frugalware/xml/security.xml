@@ -26,6 +26,19 @@
 
 <fsas>
 	<fsa>
+		<id>552</id>
+		<date>2008-11-16</date>
+		<author>Miklos Vajna</author>
+		<package>drupal-cck</package>
+		<vulnerable>5.x_1.10-1solaria1</vulnerable>
+		<unaffected>5.x_1.9-1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3444</bts>
+		<cve>No CVE for this issue, see http://drupal.org/node/330546.</cve>
+		<desc>Some vulnerabilities have been reported in the Drupal Content Construction Kit (CCK), which can be exploited by malicious users to conduct script insertion attacks.
+			Input passed to unspecified field labels and "content-type" names is not properly sanitised before being stored. This can be exploited to insert arbitrary HTML and script code, which is executed in a user's browser session in context of an affected site when the malicious data is viewed.
+			Successful exploitation requires "administer content" privileges.</desc>
+	</fsa>
+	<fsa>
 		<id>551</id>
 		<date>2008-11-16</date>
 		<author>Miklos Vajna</author>
