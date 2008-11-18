@@ -26,6 +26,17 @@
 
 <fsas>
 	<fsa>
+		<id>550</id>
+		<date>2008-11-16</date>
+		<author>Miklos Vajna</author>
+		<package>wordpress</package>
+		<vulnerable>2.6.2-1solaria1</vulnerable>
+		<unaffected>2.6.3-1solaria1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3424</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4796</cve>
+		<desc>A vulnerability in the Snoopy library was announced. WordPress uses Snoopy to fetch the feeds shown in the Dashboard. Although this seems to be a low risk vulnerability for WordPress users, they wanted to get an update out.</desc>
+	</fsa>
+	<fsa>
 		<id>549</id>
 		<date>2008-11-16</date>
 		<author>Miklos Vajna</author>
