@@ -22,6 +22,27 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
 	<post>
+		<id>117</id>
+		<title>Lettre d'information Frugalware numéro 34</title>
+		<date>Tue, 18 Nov 2008 21:23:27 +1000</date>
+		<author>phayz</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			Cette lettre d'information à pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Dans ce numéro:
+			<ul>
+				<li>Frugalware 1.0 pre1 ("Anaecron") est disponible</li>
+				<li>Czech it out - Frugalware a un nouveau site web</li>
+				<li>Le support des cartes nVidia FX passe en legacy</li>
+				<li>"Mon ami - tu deviens plus joli chaque jour" - par Devil505</li>
+				<li>Les développeurs de Frugalware sont des personnes également! - Martin Burda</li>
+				<li>Détails sur un(des) paquet(s) - Menumaker &amp Conky</li>
+			</ul>
+			Vous pouvez la lire <a href="/newsletter/34">ici (anglais)</a>. Nous espérons que vous l'apprécierez!
+			]]>
+		</content>
+	</post>
+	<post>
 		<id>116</id>
 		<title>Frugalware 1.0pre1 (Anacreon) est disponible</title>
 		<date>Tue, 04 Nov 2008 01:22:24 +0100</date>
