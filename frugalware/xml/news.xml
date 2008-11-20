@@ -22,6 +22,27 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
     <post>
+        <id>117</id>
+        <title>Frugalware Newsletter Issue 34</title>
+        <date>Tue, 18 Nov 2008 21:23:27 +1000</date>
+        <author>phayz</author>
+        <hidden>0</hidden>
+        <content><![CDATA[
+            The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
+            Features of this issue include:
+            <ul>
+				<li>Frugalware 1.0 pre1 ("Anaecron") released</li>
+		        <li>Czech it out - Frugalware has a new web site</li>
+		        <li>nVidia FX card support becomes a legacy</li>
+		        <li>"Mon ami - you grow more beautiful by the day" - by Devil505</li>
+		        <li>Frugalware's contributors are people too! - Martin Burda</li>
+		        <li>Focus On Package(s) - Menumaker &amp Conky</li>
+		    </ul>
+            You can read it <a href="/newsletter/34">here</a>. We hope you like it!
+            ]]>
+        </content>
+    </post>
+    <post>
         <id>116</id>
         <title>Frugalware 1.0pre1 (Anacreon) released</title>
         <date>Tue, 04 Nov 2008 01:22:24 +0100</date>
