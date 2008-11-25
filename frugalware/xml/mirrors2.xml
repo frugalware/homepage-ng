@@ -114,7 +114,7 @@ If you modify this file, be sure it's still valid - read /hooks/README!
 		<id>7</id>
 		<type>http</type>
 		<ftp_path></ftp_path>
-		<http_path>frugalware</http_path>
+		<http_path></http_path>
 		<rsync_path></rsync_path>
 		<host>mirror.frugalware-fr.org</host>
 		<country>France</country>
