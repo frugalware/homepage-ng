@@ -110,20 +110,19 @@ If you modify this file, be sure it's still valid - read /hooks/README!
 		<supplier_url>http://www.sourcemirrors.org</supplier_url>
 		<bandwidth>100 MBit</bandwidth>
 	</mirror>
-	<!-- XXX died
 	<mirror>
 		<id>7</id>
 		<type>http</type>
 		<ftp_path></ftp_path>
-		<http_path>pub/frugalware</http_path>
+		<http_path>frugalware</http_path>
 		<rsync_path></rsync_path>
-		<host>mirror.botux.net</host>
+		<host>mirror.frugalware-fr.org</host>
 		<country>France</country>
 		<country_code>fr</country_code>
-		<supplier>botux.net</supplier>
-		<supplier_url>http://botux.net</supplier_url>
+		<supplier>frugalware-fr.org</supplier>
+		<supplier_url>http://frugalware-fr.org</supplier_url>
 		<bandwidth>100 MBit</bandwidth>
-	</mirror> -->
+	</mirror>
 	<mirror>
 		<id>8</id>
 		<type>ftp</type>
