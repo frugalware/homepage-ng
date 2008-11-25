@@ -26,6 +26,33 @@
 
 <fsas>
 	<fsa>
+		<id>553</id>
+		<date>2008-11-26</date>
+		<author>Miklos Vajna</author>
+		<package>acroread</package>
+		<vulnerable>8.1.2-1</vulnerable>
+		<unaffected>8.1.3-1solaria1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3440</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2549
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2992
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4812
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4813
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4814
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4815
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4816
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4817</cve>
+		<desc>Multiple vulnerabilities have been reported in Adobe Reader/Acrobat, which can be exploited by malicious, local users to gain escalated privileges or by malicious people to compromise a user's system.
+		1) A boundary error exists when parsing format strings containing a floating point specifier in the "util.printf()" Javascript function. This can be exploited to cause a stack-based buffer overflow via a specially crafted PDF and allows execution of arbitrary code.
+		2) An out-of-bounds array indexing error when parsing embedded Type 1 fonts can be exploited to corrupt memory and may allow execution of arbitrary code.
+		3) An error in an AcroJS function used to perform HTTP authentication can be exploited to corrupt memory via an overly long string passed to the function. This may allow execution of arbitrary code.
+		4) An error when creating a Collab object and performing a specific sequence of actions on it can be exploited to corrupt memory. This may allow execution of arbitrary code.
+		5) An unspecified error when parsing malformed PDF objects can be exploited to corrupt memory, which may allow execution of arbitrary code.
+		6) An input validation error in the Download Manager used by Adobe Reader may allow code execution during the download process.
+		7) An error in the Download Manager used by Adobe Reader may result in a user's Internet Security options being changed during the download process.
+		8) An input validation error in a JavaScript method may allow code execution.
+		9) An unspecified privilege escalation vulnerability exists in the version for UNIX/Linux.</desc>
+	</fsa>
+	<fsa>
 		<id>552</id>
 		<date>2008-11-16</date>
 		<author>Miklos Vajna</author>
