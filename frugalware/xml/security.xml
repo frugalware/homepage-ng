@@ -26,6 +26,18 @@
 
 <fsas>
 	<fsa>
+		<id>554</id>
+		<date>2008-11-26</date>
+		<author>Miklos Vajna</author>
+		<package>net-snmp</package>
+		<vulnerable>5.4.1.2-1</vulnerable>
+		<unaffected>5.4.2.1solaria1-1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3438</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4309</cve>
+		<desc>A vulnerability has been reported in Net-snmp, which can be exploited by malicious people to cause a DoS (Denial of Service).
+		The vulnerability is caused due to an integer overflow error within the "netsnmp_create_subtree_cache()" function in agent/snmp_agent.c. This can be exploited to cause a crash via a specially crafted SNMP GETBULK request.</desc>
+	</fsa>
+	<fsa>
 		<id>553</id>
 		<date>2008-11-26</date>
 		<author>Miklos Vajna</author>
