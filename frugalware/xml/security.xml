@@ -26,6 +26,17 @@
 
 <fsas>
 	<fsa>
+		<id>557</id>
+		<date>2008-11-26</date>
+		<author>Miklos Vajna</author>
+		<package>emacs</package>
+		<vulnerable>22.2-4solaria1</vulnerable>
+		<unaffected>22.3-1solaria1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3397</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3949</cve>
+		<desc>Emacs 22.1 and 22.2 imports Python script from the current working directory during editing of a Python file, which allows local users to execute arbitrary code via a Trojan horse Python file.</desc>
+	</fsa>
+	<fsa>
 		<id>556</id>
 		<date>2008-11-26</date>
 		<author>Miklos Vajna</author>
