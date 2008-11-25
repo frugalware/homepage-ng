@@ -26,6 +26,23 @@
 
 <fsas>
 	<fsa>
+		<id>556</id>
+		<date>2008-11-26</date>
+		<author>Miklos Vajna</author>
+		<package>cups</package>
+		<vulnerable>1.3.8-1</vulnerable>
+		<unaffected>1.3.9-1solaria1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3400</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3639
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3640
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3641</cve>
+		<desc>Some vulnerabilities have been reported in CUPS, which potentially can be exploited by malicious people to compromise a vulnerable system.
+		1) Two boundary errors exist in the implementation of the HP-GL/2 filter. These can be exploited to cause buffer overflows via HP-GL/2 files containing overly large pen numbers.
+		2) A boundary error exists within the "read_rle16()" function when processing SGI (Silicon Graphics Image) files. This can be exploited to cause a heap-based buffer overflow via a specially crafted SGI file.
+		3) An integer overflow error exists within the "WriteProlog()" function included in the "texttops" utility. This can be exploited to cause a heap-based buffer overflow via a specially crafted file.
+		Successful exploitation of the vulnerabilities may allow execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>555</id>
 		<date>2008-11-26</date>
 		<author>Miklos Vajna</author>
