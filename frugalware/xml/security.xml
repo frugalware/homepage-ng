@@ -26,6 +26,19 @@
 
 <fsas>
 	<fsa>
+		<id>555</id>
+		<date>2008-11-26</date>
+		<author>Miklos Vajna</author>
+		<package>opensc</package>
+		<vulnerable>0.11.5-1</vulnerable>
+		<unaffected>0.11.6-1solaria1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3415</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2235
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3972</cve>
+		<desc>A security issue has been reported in OpenSC, which can be exploited by malicious people to bypass certain security restrictions.
+		The security issue is caused due to the application improperly setting the ADMIN file control information to "00" while initializing smart cards having a Siemens CardOS M4 operating system. This can be exploited to change a user PIN code without having the PIN or PUK if the smart card was initialized with OpenSC.</desc>
+	</fsa>
+	<fsa>
 		<id>554</id>
 		<date>2008-11-26</date>
 		<author>Miklos Vajna</author>
