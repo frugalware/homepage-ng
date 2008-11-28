@@ -120,7 +120,7 @@ If you modify this file, be sure it's still valid - read /hooks/README!
 		<host>mirror.frugalware-fr.org</host>
 		<country>France</country>
 		<country_code>fr</country_code>
-		<supplier>frugalware-fr.org</supplier>
+		<supplier>frugalware-fr.org by botux.net</supplier>
 		<supplier_url>http://frugalware-fr.org</supplier_url>
 		<bandwidth>1 GBit</bandwidth>
 	</mirror>
