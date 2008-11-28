@@ -74,7 +74,9 @@ foreach($mirrors as $k => $v)
 			$j=="http" ? $domain = "www" : $domain = $j;
 			if($i[$j."_path"] == "")
 				$i[$j.'_path'] = $i['path'];
-			$str .= "<li><a href=\"".$j."://".$domain.$i['id'].".frugalware.org/".$i[$j.'_path']."/$url\">".
+			if (strlen($i[$j.'_path']))
+				$i[$j.'_path'] .= "/";
+			$str .= "<li><a href=\"".$j."://".$domain.$i['id'].".frugalware.org/".$i[$j.'_path']."$url\">".
 				$i['supplier']." (".$j."/".$i['bandwidth'].")</a></li>\n";
 		}
 	}
