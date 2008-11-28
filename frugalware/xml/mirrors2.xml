@@ -113,6 +113,7 @@ If you modify this file, be sure it's still valid - read /hooks/README!
 	<mirror>
 		<id>7</id>
 		<type>http</type>
+		<type>ftp</type>
 		<ftp_path></ftp_path>
 		<http_path></http_path>
 		<rsync_path></rsync_path>
@@ -121,7 +122,7 @@ If you modify this file, be sure it's still valid - read /hooks/README!
 		<country_code>fr</country_code>
 		<supplier>frugalware-fr.org</supplier>
 		<supplier_url>http://frugalware-fr.org</supplier_url>
-		<bandwidth>100 MBit</bandwidth>
+		<bandwidth>1 GBit</bandwidth>
 	</mirror>
 	<mirror>
 		<id>8</id>
