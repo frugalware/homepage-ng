@@ -47,7 +47,7 @@
     </li>
     <li>
         <h3>HEY!  Look at me!</h3>
-        <p>Devil505 recently established a new web site devoted to eye candy for Frugalware - <a href="http://www.frugalware-look.org">www.frugalware-look.org</a>.  One section which needs more entries is the screenshots section.  <em>Please</em> submit a screenshot of your desktop.  Someone else might appreciate your desktop and want to know how to create a similar desktop.  Let the world see what you see every time you're at your PC.  There are just two things to note: (1) you might like to include a screenshot with <em>and </em> without applications running, (2) please make sure the screenshot is safe for work/home.  </p>
+        <p>Devil505 recently established a new web site devoted to eye candy for Frugalware - <a href="http://www.frugalware-art.org">www.frugalware-art.org</a>.  One section which needs more entries is the screenshots section.  <em>Please</em> submit a screenshot of your desktop.  Someone else might appreciate your desktop and want to know how to create a similar desktop.  Let the world see what you see every time you're at your PC.  There are just two things to note: (1) you might like to include a screenshot with <em>and</em> without applications running, (2) please make sure the screenshot is safe for work/home.  </p>
     </li>
 </ul>
 
@@ -125,15 +125,15 @@ There is a meeting every Monday, but I only have time to go to the meetings from
         <h3>Setting the default editor - submitted by Carl Anderson</h3>
         <p>There are many editors to Frugalware e.g Vi, Nano, Joe, Emacs. It is  possible to select a  default editor for the system, which will always be used when you open a configuration file, added a cronjob, etc. This will be the editor that all users will be using as the default editor.</p>
         <p>Here is an example where Nano will be used. Open the file /etc/profiles as root and, under these three lines:</p>
-        <p><code>
-        # Default umask. A umask of 022 prevents new files from being created group</br>
-        # and world writable.</br>
-        umask 022</br>
-        </code></p>
+        <p><pre>
+        # Default umask. A umask of 022 prevents new files from being created group
+        # and world writable.
+        umask 022
+        </pre></p>
         <p>Add the following:</p>
-        <p><code>EDITOR=/usr/bin/nano
+        <p><pre>EDITOR=/usr/bin/nano
         export EDITOR
-        </code></p>
+        </pre></p>
         <p>If you want to use Nano as the editor in MC (Midnight Commander) then Choose F9> Options> Configuration> in MC, remove mark for use internal editor> then save.  Do this to MC when logged in to your normal account, also as root, then the editor in MC will also be Nano when you're  editing files as root.</p>
     </li>
     <li>
@@ -195,9 +195,10 @@ There is a meeting every Monday, but I only have time to go to the meetings from
 
 <a name="security"><h2>Security announcements</h2></a>
 
-    <p><b>Remember</b> - According to the normal support arrangements for Frugalware, the release of 0.8 ("Kalgan") means that support for the previous release has ended.  This means that no further security or bug fixes will be released for Frugalware 0.7 ("Sayshell").</p>
+    <p><b>Remember</b> - According to the normal support arrangements for Frugalware, the release of 0.9 ("Solaria") means that no further security or bug fixes will be released for Frugalware 0.8 ("Kalgan"), nor earlier releases.</p>
 
-    <p>Here is a list of <a href="/security">security issues</a> which have been discovered and fixed in the 0.8 release since the previous newsletter.</p>
+    <p>Here is a list of <a href="/security">security issues</a> which have been discovered and fixed in the 0.9 release since the previous newsletter.</p>
+
 <table border=1 cellpadding=5 cellspacing=0><tr></tr><th>FSA</th><th>Package</th><th>FSA Description</th><th>Upgrade To</th></tr><tr><td>FSA557</td><td>emacs</td><td>Emacs 22.1 and 22.2 imports Python script from the current working directory during editing of a Python file, which allows local users to execute arbitrary code via a Trojan horse Python file.</td><td>emacs-22.3-1solaria1</td></tr>
 <tr><td>FSA556</td><td>cups</td><td>Some vulnerabilities have been reported in CUPS, which potentially can be exploited by malicious people to compromise a vulnerable system</td><td>cups-1.3.9-1solaria1</td></tr>
 <tr><td>FSA555</td><td>opensc</td><td>A security issue has been reported in OpenSC, which can be exploited by malicious people to bypass certain security restrictions</td><td>opensc-0.11.6-1solaria1</td></tr>
