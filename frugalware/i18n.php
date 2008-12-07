@@ -32,8 +32,7 @@ fwmiddlebox("Internationalized Frugalware sites",'<ul>
 	<li><a href="http://frugalware-br.org//">' . gettext('Brazilian') . '</a></li>
 	<li><a href="http://www.frugalware.hostend.eu/">' . gettext('Czech') . '</a></li>
 	<li><a href="http://frugalware.dk/">' . gettext('Danish') . '</a></li>
-	<li><a href="http://frugalware-fr.tuxfamily.org/">' . gettext('French') . '</a></li>
-	<li><a href="http://frugalware-es.tuxfamily.org/">' . gettext('Spanish') . '</a></li>
+	<li><a href="http://www.frugalware-fr.org/">' . gettext('French') . '</a></li>
 	</ul>'
 );
 include("footer.php");
