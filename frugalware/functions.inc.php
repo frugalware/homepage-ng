@@ -164,7 +164,8 @@ function getllang($lang)
 		"sk" => "sk_SK",
 		"ru" => "ru_RU",
 		"da" => "da_DK",
-		"cs" => "cs_CZ"
+		"cs" => "cs_CZ",
+		"tr" => "tr_TR"
 	);
 	return $langs[$lang];
 }
@@ -179,7 +180,8 @@ function getnlang($lang)
 		"sk_SK" => "Slovak",
 		"ru_RU" => "Russian",
 		"da_DK" => "Danish",
-		"cs_CZ" => "Czech"
+		"cs_CZ" => "Czech",
+		"tr_TR" => "Turkish"
 	);
 	return $nlangs[$lang];
 }
