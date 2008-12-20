@@ -26,6 +26,23 @@
 
 <fsas>
 	<fsa>
+		<id>558</id>
+		<date>2008-12-20</date>
+		<author>Miklos Vajna</author>
+		<package>kernel</package>
+		<vulnerable>2.6.26-1</vulnerable>
+		<unaffected>2.6.26-2solaria1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3520</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3528
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3831
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-5300</cve>
+		<desc>Some vulnerabilities have been reported in the Linux kernel, which potentially can be exploited by malicious people to compromise a vulnerable system.
+		1) The error-reporting functionality in (1) fs/ext2/dir.c, (2) fs/ext3/dir.c, and possibly (3) fs/ext4/dir.c in the Linux kernel 2.6.26.5 does not limit the number of printk console messages that report directory corruption, which allows physically proximate attackers to cause a denial of service (temporary system hang) by mounting a filesystem that has corrupted dir->i_size and dir->i_blocks values and performing (a) read or (b) write operations. NOTE: there are limited scenarios in which this crosses privilege boundaries.
+                2) The i915 driver in (1) drivers/char/drm/i915_dma.c in the Linux kernel 2.6.24 on Debian GNU/Linux and (2) sys/dev/pci/drm/i915_drv.c in OpenBSD does not restrict the DRM_I915_HWS_ADDR ioctl to the Direct Rendering Manager (DRM) master, which allows local users to cause a denial of service (memory corruption) via a crafted ioctl call, related to absence of the DRM_MASTER and DRM_ROOT_ONLY flags in the ioctl's configuration.
+		3) Linux kernel 2.6.28 allows local users to cause a denial of service ("soft lockup" and process loss) via a large number of sendmsg function calls, which does not block during AF_UNIX garbage collection and triggers an OOM condition, a different vulnerability than CVE-2008-5029.
+		Successful exploitation of the vulnerabilities may allow execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>557</id>
 		<date>2008-11-26</date>
 		<author>Miklos Vajna</author>
