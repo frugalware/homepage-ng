@@ -26,6 +26,17 @@
 
 <fsas>
 	<fsa>
+		<id>563</id>
+		<date>2008-12-20</date>
+		<author>Miklos Vajna</author>
+		<package>horde-webmail</package>
+		<vulnerable>1.1.2-1</vulnerable>
+		<unaffected>1.2.1-1solaria1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3518</bts>
+		<cve>No CVE, see http://lists.horde.org/archives/announce/2008/000472.html.</cve>
+		<desc>This is a minor security release that adds another check to the XSS filter for an Internet Explorer exploit and fixes unescaped output in the test.php scripts. All users are encouraged to upgrade to this version. In addition all users are encouraged to disable test.php in production, per the install documentation.</desc>
+	</fsa>
+	<fsa>
 		<id>562</id>
 		<date>2008-12-20</date>
 		<author>Miklos Vajna</author>
