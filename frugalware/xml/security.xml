@@ -26,6 +26,18 @@
 
 <fsas>
 	<fsa>
+		<id>561</id>
+		<date>2008-12-20</date>
+		<author>Miklos Vajna</author>
+		<package>drupal6</package>
+		<vulnerable>6.6-1solaria1</vulnerable>
+		<unaffected>6.7-1solaria1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3513</bts>
+		<cve>No CVE, see http://drupal.org/node/345441.</cve>
+		<desc>Some vulnerabilities have been reported in Drupal 6, which can be exploited by malicious people to conduct cross-site request forgery and cross-site scripting attacks.
+		For more info, see FSA560.</desc>
+	</fsa>
+	<fsa>
 		<id>560</id>
 		<date>2008-12-20</date>
 		<author>Miklos Vajna</author>
