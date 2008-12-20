@@ -26,6 +26,21 @@
 
 <fsas>
 	<fsa>
+		<id>560</id>
+		<date>2008-12-20</date>
+		<author>Miklos Vajna</author>
+		<package>drupal</package>
+		<vulnerable>5.12-1solaria1</vulnerable>
+		<unaffected>5.13-1solaria1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3512</bts>
+		<cve>No CVE, see http://drupal.org/node/345441.</cve>
+		<desc>Some vulnerabilities have been reported in Drupal, which can be exploited by malicious people to conduct cross-site request forgery and cross-site scripting attacks.
+
+1) The application allows users to perform certain actions via HTTP requests without performing any validity checks to verify the requests. This can be exploited to perform certain operations (e.g. execute old updates) when a logged-in superuser visits a malicious web site.
+
+2) The application does not completely remove deleted input formats. This can be exploited to execute arbitrary HTML and script code in a user's browser session in the context of an affected site.</desc>
+	</fsa>
+	<fsa>
 		<id>559</id>
 		<date>2008-12-20</date>
 		<author>Miklos Vajna</author>
