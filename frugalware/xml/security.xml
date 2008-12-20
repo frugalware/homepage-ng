@@ -26,6 +26,19 @@
 
 <fsas>
 	<fsa>
+		<id>562</id>
+		<date>2008-12-20</date>
+		<author>Miklos Vajna</author>
+		<package>wireshark</package>
+		<vulnerable>1.0.4-1solaria1</vulnerable>
+		<unaffected>1.0.5-1solaria1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3514</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-5285</cve>
+		<desc>Two vulnerabilities have been reported in Wireshark, which can be exploited by malicious people to cause a DoS (Denial of Service).
+		1) An error in the SMTP dissector can be exploited to trigger the execution of an infinite loop via a large SMTP packet.
+		2) An error in the WLCCP dissector can be exploited to trigger the execution of an infinite loop via a specially crafted packet.</desc>
+	</fsa>
+	<fsa>
 		<id>561</id>
 		<date>2008-12-20</date>
 		<author>Miklos Vajna</author>
