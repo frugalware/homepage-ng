@@ -26,6 +26,19 @@
 
 <fsas>
 	<fsa>
+		<id>559</id>
+		<date>2008-12-20</date>
+		<author>Miklos Vajna</author>
+		<package>wordpress</package>
+		<vulnerable>2.6.3-1solaria1</vulnerable>
+		<unaffected>2.6.5-1solaria1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3493</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-5278</cve>
+		<desc>Jeremias Reith has reported a vulnerability in WordPress, which can be exploited by malicious people to conduct script insertion attacks.
+		Input passed via the HTTP "Host" header is not properly sanitised before being used. This can be exploited to execute arbitrary HTML and script code in a user's browser session in context of an affected site if malicious data is viewed.
+		Note: Reportedly, this only affects IP-based virtual servers running on Apache 2.x.</desc>
+	</fsa>
+	<fsa>
 		<id>558</id>
 		<date>2008-12-20</date>
 		<author>Miklos Vajna</author>
