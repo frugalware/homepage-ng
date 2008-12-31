@@ -29,7 +29,19 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         <hidden>0</hidden>
         <content><![CDATA[
             <center><img src="http://frugalware.org/images/logo-newyear.png" alt="Frugalware New Year logo"></center></br>
-            L'équipe de Frugalware souhaites à tous une bonne année.  2008 fut une année avec nombre de grandes réalisations, incluant de nouveaux développeurs, de nouveaux contributeurs, un installateur GUI (fwife), plusieurs traductions, et beacoup de nouveaux paquets.  Nous attendons également à un même succès pour 2009.
+            L'équipe de Frugalware souhaites à tous une bonne année.  2008 fut une année avec nombre de grandes réalisations, incluant de nouveaux développeurs, de nouveaux contributeurs, un installateur GUI (fwife), plusieurs traductions, et beaucoup de nouveaux paquets.  Nous attendons également un même succès pour 2009.
+            ]]>
+        </content>
+    </post>
+    <post>
+        <id>120</id>
+        <title>Joyeux Noël</title>
+        <date>Wed, 24 Dec 2008 21:49:31 +1000</date>
+        <author>phayz</author>
+        <hidden>0</hidden>
+        <content><![CDATA[
+            <center><img src="http://frugalware.org/images/logo-christmas.png" alt="Frugalware Christmas logo"></center></br>
+            L'équipe de Frugalware aimerais vous souhaiter un joyeux noël à chacun.  Si vous ne célébrer pas Noël, nous espérons que vous pourrez appreciez le meilleur de cette periode de l'année, en évitant le pire...  :)
             ]]>
         </content>
     </post>
