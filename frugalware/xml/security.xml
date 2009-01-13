@@ -26,6 +26,17 @@
 
 <fsas>
 	<fsa>
+		<id>564</id>
+		<date>2009-01-13</date>
+		<author>Miklos Vajna</author>
+		<package>phpmyadmin</package>
+		<vulnerable>2.11.9.3-1solaria1</vulnerable>
+		<unaffected>2.11.9.4-1solaria1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3548</bts>
+		<cve>No CVE, see http://sourceforge.net/forum/forum.php?forum_id=896047.</cve>
+		<desc>This fixes an SQL injection, see http://www.milw0rm.com/exploits/7382 for more info.</desc>
+	</fsa>
+	<fsa>
 		<id>563</id>
 		<date>2008-12-20</date>
 		<author>Miklos Vajna</author>
