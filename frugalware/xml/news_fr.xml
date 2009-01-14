@@ -51,7 +51,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 			Veuillez vous référer à la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Anacreon ChangeLog</a> pour plus d'information.<br />
 			Téléchargement pour i686, x86_64 et ppc: Regardez notre <a href="http://frugalware.org/download/frugalware-testing-iso">liste de mirrors</a>. N'oubliez pas de vérifier l'<a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">integritée</a> des images d'installation avant de les graver!<br />
             <b>NOTE</b>: Cliquez <a href="/docs/install#_choosing_installation_flavor">ici</a> pour savoir quel média vous avez besoin pour l'installation.<br />
-						<b>IMPORTANT</b>: Après avoir plublié les images d'installation, il fut reporté que le service 'syslog' ne démarre pas. La prochaine mise à jour avec 'pacman-g2 -Syu' corrigera cela, ou vous pouvez aussi manuellement éxécuterla commande ,,sed -i 's/"]/" ]/g' rc.syslog'' pour résoudre ce problème.<br />
+						<b>IMPORTANT</b>: Après avoir plublié les images d'installation, il fut reporté que le service 'syslog' ne démarre pas. La prochaine mise à jour avec 'pacman-g2 -Syu' corrigera cela, ou vous pouvez aussi manuellement éxécuter la commande ,,sed -i 's/"]/" ]/g' rc.syslog'' pour résoudre ce problème.<br />
             ]]>
         </content>
     </post>
