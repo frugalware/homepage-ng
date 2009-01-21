@@ -26,6 +26,19 @@
 
 <fsas>
 	<fsa>
+		<id>566</id>
+		<date>2009-01-21</date>
+		<author>Miklos Vajna</author>
+		<package>drupal</package>
+		<vulnerable>5.13-1solaria1</vulnerable>
+		<unaffected>5.15-1solaria1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3571</bts>
+		<cve>No CVE, see http://drupal.org/node/358957.</cve>
+		<desc>A security issue has been reported in Drupal, which can potentially be exploited by malicious people to conduct SQL injection attacks.
+			Unspecified Input passed to the Node Access API is not properly sanitised before being used in an SQL query. This can potentially be exploited to manipulate SQL queries by injecting arbitrary SQL code.
+			NOTE: This is only a risk in combination with a contributed module.</desc>
+	</fsa>
+	<fsa>
 		<id>565</id>
 		<date>2009-01-21</date>
 		<author>Miklos Vajna</author>
