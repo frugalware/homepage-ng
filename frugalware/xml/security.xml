@@ -26,6 +26,17 @@
 
 <fsas>
 	<fsa>
+		<id>569</id>
+		<date>2009-01-21</date>
+		<author>Miklos Vajna</author>
+		<package>ndiswrapper</package>
+		<vulnerable>1.53-6solaria1</vulnerable>
+		<unaffected>1.53-6solaria2</unaffected>
+		<bts>http://bugs.frugalware.org/task/3383</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4395</cve>
+		<desc>Multiple buffer overflows in the ndiswrapper module 1.53 for the Linux kernel 2.6 allow remote attackers to execute arbitrary code by sending packets over a local wireless network that specify long ESSIDs.</desc>
+	</fsa>
+	<fsa>
 		<id>568</id>
 		<date>2009-01-21</date>
 		<author>Miklos Vajna</author>
