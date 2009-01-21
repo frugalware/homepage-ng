@@ -26,6 +26,19 @@
 
 <fsas>
 	<fsa>
+		<id>573</id>
+		<date>2009-01-21</date>
+		<author>Miklos Vajna</author>
+		<package>mplayer</package>
+		<vulnerable>1.0rc2-7solaria1</vulnerable>
+		<unaffected>1.0rc2-7solaria2</unaffected>
+		<bts>http://bugs.frugalware.org/task/3524</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-5616</cve>
+		<desc>Tobias Klein has reported a vulnerability in MPlayer, which potentially can be exploited by malicious people to compromise a user's system.
+		The vulnerability is caused due to a boundary error within the "demux_open_vqf()" function in libmpdemux/demux_vqf.c. This can be exploited to cause a stack-based buffer overflow via a specially crafted TwinVQ file.
+		Successful exploitation may allow execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>572</id>
 		<date>2009-01-21</date>
 		<author>Miklos Vajna</author>
