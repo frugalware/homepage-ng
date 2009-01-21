@@ -26,6 +26,19 @@
 
 <fsas>
 	<fsa>
+		<id>567</id>
+		<date>2009-01-21</date>
+		<author>Miklos Vajna</author>
+		<package>drupal6</package>
+		<vulnerable>6.7-1solaria1</vulnerable>
+		<unaffected>6.9-1solaria1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3572</bts>
+		<cve>No CVE, see http://drupal.org/node/358957.</cve>
+		<desc>A vulnerability has been reported in the Content Translation module for Drupal, which can be exploited by malicious users to bypass certain security restrictions.
+			The vulnerability is caused due to an unspecified error, which can be exploited to bypass normal viewing access restrictions and e.g. view the content of unpublished nodes without requiring any additional permissions to do so.
+			Successful exploitation of this vulnerability requires the "translate content" permission.</desc>
+	</fsa>
+	<fsa>
 		<id>566</id>
 		<date>2009-01-21</date>
 		<author>Miklos Vajna</author>
