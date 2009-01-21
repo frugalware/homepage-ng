@@ -26,6 +26,25 @@
 
 <fsas>
 	<fsa>
+		<id>571</id>
+		<date>2009-01-21</date>
+		<author>Miklos Vajna</author>
+		<package>thunderbird</package>
+		<vulnerable>2.0.0.17-1</vulnerable>
+		<unaffected>2.0.0.18-1solaria1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3465</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-5012
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-5014
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-5017
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-5018
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-5021
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-5022
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-5024</cve>
+		<desc>Some vulnerabilities have been reported in Mozilla Thunderbird, which can be exploited by malicious people to disclose sensitive information, bypass certain security restrictions, or compromise a user's system.
+			1) Several vulnerabilities can be exploited to disclose sensitive information, bypass certain security restrictions, or compromise a user's system.
+			2) An error exists while processing JavaScript code embedded in email messages. This can be exploited to disclose the mailbox URI of the recipient via the ".documentURI" DOM property, or to potentially disclose comments placed in a forwarded email via the ".textContent" DOM property.</desc>
+	</fsa>
+	<fsa>
 		<id>570</id>
 		<date>2009-01-21</date>
 		<author>Miklos Vajna</author>
