@@ -26,6 +26,19 @@
 
 <fsas>
 	<fsa>
+		<id>574</id>
+		<date>2009-01-21</date>
+		<author>Miklos Vajna</author>
+		<package>kernel</package>
+		<vulnerable>2.6.26-2solaria1</vulnerable>
+		<unaffected>2.6.26-2solaria2</unaffected>
+		<bts>http://bugs.frugalware.org/task/3527</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-5079</cve>
+		<desc>A vulnerability has been reported in the Linux Kernel, which can be exploited by malicious, local users to cause a DoS (Denial of Service).
+	The vulnerability is caused due to the "svc_listen()" function in net/atm/svc.c allowing users to create unassigned PVC/SVC entries by calling the function multiple times on a socket. This can be exploited to trigger an infinite loop within the "__vcc_walk()" function in net/atm/proc.c by creating unassigned entries and then e.g. reading from /proc/net/atm/vc.
+</desc>
+	</fsa>
+	<fsa>
 		<id>573</id>
 		<date>2009-01-21</date>
 		<author>Miklos Vajna</author>
