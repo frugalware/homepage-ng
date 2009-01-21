@@ -26,6 +26,18 @@
 
 <fsas>
 	<fsa>
+		<id>570</id>
+		<date>2009-01-21</date>
+		<author>Miklos Vajna</author>
+		<package>graphviz</package>
+		<vulnerable>2.20.2-1</vulnerable>
+		<unaffected>2.20.3-1solaria1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3413</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4555</cve>
+		<desc>Roee Hay has discovered a vulnerability in Graphviz, which can be exploited by malicious people to compromise a user's system.
+			The vulnerability is caused due to a boundary error within the "push_subg()" function in lib/graph/parser.c, which can be exploited to cause a memory corruption and potentially execute arbitrary code by e.g. tricking a user into processing a specially crafted dot file.</desc>
+	</fsa>
+	<fsa>
 		<id>569</id>
 		<date>2009-01-21</date>
 		<author>Miklos Vajna</author>
