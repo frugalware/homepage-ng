@@ -26,6 +26,18 @@
 
 <fsas>
 	<fsa>
+		<id>568</id>
+		<date>2009-01-21</date>
+		<author>Miklos Vajna</author>
+		<package>rails</package>
+		<vulnerable>2.1.0-1</vulnerable>
+		<unaffected>2.1.1-1solaria1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3368</bts>
+		<cve>No CVE, see http://blog.innerewut.de/2008/6/16/why-you-should-upgrade-to-rails-2-1.</cve>
+		<desc>Some vulnerabilities have been reported in Ruby on Rails, which can be exploited by malicious people to conduct SQL injection attacks.
+			The vulnerabilities are caused due to Active Record not properly sanitising the ":offset" and ":limit" parameters before using them in SQL queries. This can be exploited to manipulate SQL queries by injecting SQL code.</desc>
+	</fsa>
+	<fsa>
 		<id>567</id>
 		<date>2009-01-21</date>
 		<author>Miklos Vajna</author>
