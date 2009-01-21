@@ -26,6 +26,19 @@
 
 <fsas>
 	<fsa>
+		<id>565</id>
+		<date>2009-01-21</date>
+		<author>Miklos Vajna</author>
+		<package>drupal-i18n</package>
+		<vulnerable>5.x_2.4-1</vulnerable>
+		<unaffected>5.x_2.5-1solaria1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3573</bts>
+		<cve>No CVE, see http://drupal.org/node/358958.</cve>
+		<desc>A vulnerability has been reported in the Internationalization (i18n) Translation module for Drupal, which can be exploited by malicious users to bypass certain security restrictions.
+			The vulnerability is caused due to an unspecified error, which can be exploited to view the content of unpublished nodes without requiring any additional permissions to do so.
+			Successful exploitation of this vulnerability requires the "translate node" permission.</desc>
+	</fsa>
+	<fsa>
 		<id>564</id>
 		<date>2009-01-13</date>
 		<author>Miklos Vajna</author>
