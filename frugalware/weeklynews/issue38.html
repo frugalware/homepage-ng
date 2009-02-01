@@ -29,7 +29,20 @@
     </li>
     <li>
         <h3>Xfce 4.6 work continues</h3>
-        <p>Work on Xfce 4.6 continues, with the development team continuing to release beta versions.  This is great news for Xfce users, but it means more work for Priyank.  :(  He's been kept busy packaging the latest beta version - 4.5.93.  These packages are maintained in a separate repository which must be added manually to pacman's repository list.  If you want to test these packages, follow the instructions in newsletter issue FIXME on how to get these packages with pacman-g2.  Since the release and the repository are beta, be prepared for bugs.</p>
+        <p>Work on Xfce 4.6 continues, with the development team continuing to release beta versions.  This is great news for Xfce users, but it means more work for Priyank.  :(  He's been kept busy packaging the latest beta version - 4.5.93.  These packages are maintained in a separate repository which must be added manually to pacman's repository list.  If you want to test these packages, follow the instructions below to get these packages with pacman-g2.  Since the release and the repository are beta, be prepared for bugs.</p>
+        <p>
+            <ol>
+                <li>Add the line "Include = /etc/pacman-g2/repos/xfce46" to /etc/pacman-g2.conf, before the line for the "current" repo</li>
+                <li>Create the file /etc/pacman-g2/repos/xfce46 and add the following lines:<br />
+                    <code>
+                    # xfce46 repository<br />
+                    [xfce46]<br />
+                    Server = http://ftp.frugalware.org/pub/other/people/priyank/xfce46/frugalware-i686/<br />
+                    </code>
+                </li>
+                <li>Do a pacman-g2 synchronisation and upgrade ("pacman-g2 -Syu" in a terminal emulator)</li>
+            </ol>
+        </p>
     </li>
     <li>
         <h3>It seemed like a good idea at the time :)</h3>
