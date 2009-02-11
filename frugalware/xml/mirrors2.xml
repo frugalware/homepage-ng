@@ -55,9 +55,9 @@ If you modify this file, be sure it's still valid - read /hooks/README!
 		<host>ftp.hosteurope.de</host>
 		<country>Germany</country>
 		<country_code>de</country_code>
-		<supplier>Tobias Offermann</supplier>
+		<supplier>Host Europe</supplier>
 		<supplier_url>http://www.hosteurope.de/</supplier_url>
-		<bandwidth>Unknown</bandwidth>
+		<bandwidth>1 GBit</bandwidth>
 	</mirror>
 	<mirror>
 		<id>3</id>
