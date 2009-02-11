@@ -50,13 +50,13 @@ If you modify this file, be sure it's still valid - read /hooks/README!
 	<mirror>
 		<id>2</id>
 		<type>ftp</type>
-		<path>frugalware/pub/frugalware</path>
-		<host>tardis.crime.hu</host>
-		<country>Hungary</country>
-		<country_code>hu</country_code>
-		<supplier>Christian Hamar</supplier>
-		<supplier_url>http://tardis.crime.hu/</supplier_url>
-		<bandwidth>100 MBit</bandwidth>
+		<path>mirror/ftp.frugalware.org/pub/frugalware/</path>
+		<host>ftp.hosteurope.de</host>
+		<country>Germany</country>
+		<country_code>de</country_code>
+		<supplier>Tobias Offermann</supplier>
+		<supplier_url>http://www.hosteurope.de/</supplier_url>
+		<bandwidth>Unknown</bandwidth>
 	</mirror>
 	<mirror>
 		<id>3</id>
