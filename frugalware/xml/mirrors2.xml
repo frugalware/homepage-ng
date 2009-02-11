@@ -50,6 +50,7 @@ If you modify this file, be sure it's still valid - read /hooks/README!
 	<mirror>
 		<id>2</id>
 		<type>ftp</type>
+		<type>http</type>
 		<path>mirror/ftp.frugalware.org/pub/frugalware/</path>
 		<host>ftp.hosteurope.de</host>
 		<country>Germany</country>
