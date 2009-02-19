@@ -64,7 +64,7 @@ $fwabout= array (
 	array (gettext("Does Frugalware support languages other than English?"),
 		gettext("Yes, it supports all languages supported by the packages. If the init scripts or the setup is not available in your language, then it simply means it haven't yet translated.")),
 	array (gettext("What about Asian languages?"),
-		gettext("Frugalware does not support Asian languages currently.")),
+		gettext("Frugalware does not currently support languages written in ideographs.")),
 	array (gettext("What architectures does Frugalware support?"),
 		gettext("Currently we support x86 and x86_64 platforms, and inside x86, only i686 (Pentium Pro or higher instruction set) and inside x86_64 only k8 (amd64). If there are any claims, an i386 port will be created, but currently we don't have resources to build and maintain those packages. Outside x86, currently we don't have any non-x86 hardware, but happily accept such patches or any effort to create non-x86 optimized packages. We are also working on a PowerPC port"))
 	);
