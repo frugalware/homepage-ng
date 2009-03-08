@@ -17,6 +17,45 @@
 
 <news>
 	<post>
+	<id>128</id>
+	<title>Megjelent a Frugalware 1.0rc2 (Anacreon)</title>
+	<date>Sun, 08 Mar 2009 23:11:54 +0100</date>
+	<author>IroNiQ</author>
+	<hidden>1</hidden>
+	<content><![CDATA[
+		A Frugalware Fejleszői Csapat örömmel <a href="/news/128/hu">jelenti be</a> a Frugalware 1.0rc2 verzióját, mint az eljövendő 1.0 stabil kiadás második (és egyben utolsó) kiadásra jelölt változatát.<br />
+		Egy rövid, nem teljes lista az 1.0rc1 óta trörtént változásokról:<br />
+		<ul>
+			<li>Fejlesztések:
+				<ul>
+					<li>Frissített grafikus telepítő (több információ <a href="http://git.frugalware.org/gitweb/gitweb.cgi?p=frugalware-current.git;a=commitdiff;h=c7d667f1188f99da2ae3fd811d74483425ef9299">itt</a> és <a href="http://ftp.frugalware.org/pub/other/fwife/fwife/ChangeLog">itt</a> olvasható).</li>
+					<li>Frissített artwork.</li>
+				</ul>
+			</li>
+			<li>Javítások a telepítőben:
+				<ul>
+					<li>Javított vezetéknélküli hálózati kártya detektálás (vezetékes hálózati kártyák esetén is kért ESSID-t).</li>
+					<li>Javított GRUB telepítés azon esetben, ha a /boot külön RAID1 partíción van.</li>
+					<li>Új felhasználó létrehozása esetén kezelni tudja a meglevő HOME könyvtárat.</li>
+				</ul>
+			</li>
+			<li>Csomagfrissítések:
+				<ul>
+					<li>Linux kernel 2.6.28.7 + javítások</li>
+					<li>KDE 3.5.10</li>
+					<li>PHP 5.2.9</li>
+					<li>Több, mint 150 egyéb csomagfrissítés</li>
+					<li>Több, mint 20 új csomag</li>
+				</ul>
+			</li>
+		</ul>
+		Bővebb információért tekintse meg a Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Anacreon Változások Listáját</a>.<br />
+		Letöltés i686-ra: kérjük, tekintse meg <a href="http://frugalware.org/download/frugalware-testing-iso">tükörszervereink listáját</a>, valamint ne felejtse el ellenőrizni a letöltött fájlok <a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">integritását</a> sem, mielőtt kiírná őket!<br />
+		<b>Megjegyzés</b>: Kattintson <a href="/docs/install#_choosing_installation_flavor">ide</a>, hogy eldönthesse, melyik telepítő médiára van szüksége.<br />
+		]]>
+		</content>
+	</post>
+	<post>
 		<id>116</id>
 		<title>Megjelent a Frugalware 1.0pre1 (Anacreon)</title>
 		<date>Tue, 04 Nov 2008 08:47:36 +0100</date>
