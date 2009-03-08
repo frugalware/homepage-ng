@@ -26,6 +26,20 @@
 
 <fsas>
 	<fsa>
+		<id>576</id>
+		<date>2009-03-08</date>
+		<author>Miklos Vajna</author>
+		<package>wireshark</package>
+		<vulnerable>1.0.5-1solaria1</vulnerable>
+		<unaffected>1.0.6-1solaria1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3613</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0599
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0600</cve>
+		<desc>A vulnerability has been reported in Wireshark, which can be exploited by malicious people to potentially compromise a user's system.
+			The vulnerability is caused due to a boundary error in the processing of NetScreen Snoop capture files and can be exploited to cause a stack-based buffer overflow.
+			Successful exploitation may allow execution of arbitrary code depending on the allocation of stack variables.</desc>
+	</fsa>
+	<fsa>
 		<id>575</id>
 		<date>2009-01-21</date>
 		<author>Miklos Vajna</author>
