@@ -41,7 +41,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
                 <li>Fixes in the setup:
 									<ul>
 										<li>Fixed the detection of wireless cards (it asked
-										ESSID for wired interfaces as well).</li>
+										for ESSID for wired interfaces as well).</li>
 										<li>Fixed GRUB installation when /boot is on RAID1.</li>
 										<li>Handle existing home directories for new users.</li>
 									</ul>
