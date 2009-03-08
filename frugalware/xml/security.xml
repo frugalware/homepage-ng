@@ -26,6 +26,30 @@
 
 <fsas>
 	<fsa>
+		<id>577</id>
+		<date>2009-03-08</date>
+		<author>Miklos Vajna</author>
+		<package>firefox</package>
+		<vulnerable>3.0.4-1solaria1</vulnerable>
+		<unaffected>3.0.6-1solaria1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3614</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0352
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0353
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0354
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0355
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0356
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0357
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0358</cve>
+		<desc>Some vulnerabilities have been reported in Mozilla Firefox, which can be exploited by malicious, local users to potentially disclose sensitive information, and by malicious people to conduct cross-site scripting attacks, bypass certain security restrictions, disclose sensitive information, or potentially to compromise a user's system.
+			1) Multiple errors in the layout engine can be exploited to cause memory corruptions and potentially execute arbitrary code.
+			2) Multiple errors in the Javascript engine can be exploited to cause memory corruptions and potentially execute arbitrary code.
+			3) A chrome XBL method can be used in combination with "window.eval" to execute arbitrary Javascript code in the context of another web site
+			4) An error when restoring a closed tab can be exploited to modify an input control's text value, which allows e.g. to disclose the content of a local file when a user re-opens a tab.
+			5) An error in the processing of shortcut files can be exploited to execute arbitrary script code with chrome privileges e.g. via an HTML file that loads a privileged chrome document via a .desktop shortcut file.
+			6) A security issue is caused due to cookies marked "HTTPOnly" being readable by Javascript via the "XMLHttpRequest.getResponseHeader" and "XMLHttpRequest.getAllResponseHeaders" APIs.
+			7) A security issue is caused due to Firefox ignoring certain HTTP directives to not cache web pages ("Cache-Control: no-store" and "Cache-Control: no-cache" for HTTPS pages), which can be exploited to disclose potentially sensitive information via cached pages.</desc>
+	</fsa>
+	<fsa>
 		<id>576</id>
 		<date>2009-03-08</date>
 		<author>Miklos Vajna</author>
