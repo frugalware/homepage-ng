@@ -26,6 +26,19 @@
 
 <fsas>
 	<fsa>
+		<id>580</id>
+		<date>2009-03-09</date>
+		<author>Miklos Vajna</author>
+		<package>imlib2</package>
+		<vulnerable>1.4.1-1</vulnerable>
+		<unaffected>1.4.1-2solaria1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3484</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-5187</cve>
+		<desc>A vulnerability has been discovered in imlib2, which can be exploited by malicious people to potentially compromise an application using the library.
+			The vulnerability is caused due to a pointer arithmetic error within the "load()" function provided by the XPM loader. This can be exploited to cause a heap-based buffer overflow via a specially crafted XPM file.
+			Successful exploitation may allow execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>579</id>
 		<date>2009-03-09</date>
 		<author>Miklos Vajna</author>
