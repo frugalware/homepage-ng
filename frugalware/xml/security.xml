@@ -26,6 +26,29 @@
 
 <fsas>
 	<fsa>
+		<id>583</id>
+		<date>2009-03-09</date>
+		<author>Miklos Vajna</author>
+		<package>firefox</package>
+		<vulnerable>3.0.6-1solaria1</vulnerable>
+		<unaffected>3.0.7-1solaria1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3667</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0040
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0771
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0772
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0773
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0774
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0775
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0776
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0777</cve>
+		<desc>Some vulnerabilities have been reported in Mozilla Firefox, which can be exploited by malicious people to conduct spoofing attacks, bypass certain security restrictions, disclose sensitive information, or compromise a user's system.
+			1) Multiple errors in the layout and JavaScript engines can be exploited to corrupt memory and potentially execute arbitrary code.
+			2) An error in the garbage collection process when handling a set of cloned XUL DOM elements linked as a parent and child can be exploited to access freed memory and execute arbitrary code.
+			3) An error can be exploited via the "nsIRDFService" interface and a cross-domain redirect to bypass the same-origin policy and read XML data from another domain.
+			4) An error in libpng when handling out-of-memory conditions can be exploited to potentially execute arbitrary code.
+			5) An error when handling invisible control characters included in the location bar can be exploited to spoof a trusted URL.</desc>
+	</fsa>
+	<fsa>
 		<id>582</id>
 		<date>2009-03-09</date>
 		<author>Miklos Vajna</author>
