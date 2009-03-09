@@ -26,6 +26,18 @@
 
 <fsas>
 	<fsa>
+		<id>579</id>
+		<date>2009-03-09</date>
+		<author>Miklos Vajna</author>
+		<package>mplayer</package>
+		<vulnerable>1.0rc2-7solaria2</vulnerable>
+		<unaffected>1.0rc2-7solaria3</unaffected>
+		<bts>http://bugs.frugalware.org/task/3600</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0385</cve>
+		<desc>Tobias Klein has reported a vulnerability in FFmpeg, which potentially can be exploited by malicious people to compromise an application using the library.
+			For more info, see FSA578.</desc>
+	</fsa>
+	<fsa>
 		<id>578</id>
 		<date>2009-03-09</date>
 		<author>Miklos Vajna</author>
