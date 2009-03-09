@@ -26,6 +26,19 @@
 
 <fsas>
 	<fsa>
+		<id>578</id>
+		<date>2009-03-09</date>
+		<author>Miklos Vajna</author>
+		<package>ffmpeg</package>
+		<vulnerable>ffmpeg-20080427-7</vulnerable>
+		<unaffected>ffmpeg-20080427-8solaria1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3599</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0385</cve>
+		<desc>Tobias Klein has reported a vulnerability in FFmpeg, which potentially can be exploited by malicious people to compromise an application using the library.
+			The vulnerability is caused due to a signedness error within the "fourxm_read_header()" function in libavformat/4xm.c. This can be exploited to corrupt arbitrary memory via a specially crafted 4xm file.
+			Successful exploitation may allow execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>577</id>
 		<date>2009-03-08</date>
 		<author>Miklos Vajna</author>
