@@ -26,6 +26,29 @@
 
 <fsas>
 	<fsa>
+		<id>582</id>
+		<date>2009-03-09</date>
+		<author>Miklos Vajna</author>
+		<package>seamonkey</package>
+		<vulnerable>1.1.11-1</vulnerable>
+		<unaffected>1.1.13-1solaria1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3466</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0017
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4582
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-5012
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-5013
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-5014
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-5017
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-5018
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-5021
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-5022
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-5023
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-5024</cve>
+		<desc>Some vulnerabilities have been reported in Mozilla SeaMonkey, which can be exploited by malicious people to disclose sensitive information, bypass certain security restrictions, or compromise a user's system.
+			1) Several vulnerabilities can be exploited to disclose sensitive information, bypass certain security restrictions, or compromise a user's system.
+			2) An error exists while processing JavaScript code embedded in email messages. This can be exploited to disclose the mailbox URI of the recipient via the ".documentURI" DOM property, or to potentially disclose comments placed in a forwarded email via the ".textContent" DOM property.</desc>
+	</fsa>
+	<fsa>
 		<id>581</id>
 		<date>2009-03-09</date>
 		<author>Miklos Vajna</author>
