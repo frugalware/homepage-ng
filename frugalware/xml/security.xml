@@ -26,6 +26,26 @@
 
 <fsas>
 	<fsa>
+		<id>581</id>
+		<date>2009-03-09</date>
+		<author>Miklos Vajna</author>
+		<package>vlc</package>
+		<vulnerable>0.9.4-1solaria1</vulnerable>
+		<unaffected>0.9.6-1solaria1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3416</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3964
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4654
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4686
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-5032
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-5036</cve>
+		<desc>Four vulnerabilities have been reported in VLC Media Player, which potentially can be exploited by malicious people to compromise a user's system.
+			1) A boundary error in the processing of TY files can be exploited to cause a stack-based buffer overflow.
+			2) An integer overflow error in the processing of TY files can be exploited to cause a heap-based buffer overflow.
+			3) An error in the CUE demuxer can be exploited to cause a stack-based buffer overflow via a specially crafted CUE image file.
+			4) An error in the RealText demuxer can be exploited to cause a stack-based buffer overflow via a specially crafted RealText subtitle file.
+			Successful exploitation of the vulnerabilities may allow execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>580</id>
 		<date>2009-03-09</date>
 		<author>Miklos Vajna</author>
