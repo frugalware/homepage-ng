@@ -26,6 +26,17 @@
 
 <fsas>
 	<fsa>
+		<id>587</id>
+		<date>2009-03-17</date>
+		<author>Miklos Vajna</author>
+		<package>xemacs-sumo</package>
+		<vulnerable>20070427-1</vulnerable>
+		<unaffected>20090217-1solaria1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3087</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-2142</cve>
+		<desc>A vulnerability has been reported in XEmacs, which can be exploited by malicious people to compromise a user's system. For more information, see FSA472.</desc>
+	</fsa>
+	<fsa>
 		<id>586</id>
 		<date>2009-03-17</date>
 		<author>Miklos Vajna</author>
