@@ -26,6 +26,17 @@
 
 <fsas>
 	<fsa>
+		<id>584</id>
+		<date>2009-03-17</date>
+		<author>Miklos Vajna</author>
+		<package>qemu</package>
+		<vulnerable>0.9.1-4</vulnerable>
+		<unaffected>0.9.1-5solaria1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3414</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4539</cve>
+		<desc>The code in hw/cirrus_vga.c has changed a lot between CVE-2007-1320 has been announced and the patch has been applied. As a consequence it has wrongly applied and QEMU is still vulnerable to this bug if using VNC.</desc>
+	</fsa>
+	<fsa>
 		<id>583</id>
 		<date>2009-03-09</date>
 		<author>Miklos Vajna</author>
