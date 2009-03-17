@@ -26,6 +26,20 @@
 
 <fsas>
 	<fsa>
+		<id>586</id>
+		<date>2009-03-17</date>
+		<author>Miklos Vajna</author>
+		<package>trac</package>
+		<vulnerable>0.10.5-1</vulnerable>
+		<unaffected>0.11.2-1solaria1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3448</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-5646
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-5647</cve>
+		<desc>Some vulnerabilities have been reported in Trac, which can be exploited by malicious people to cause a DoS (Denial of Service) or to conduct phishing attacks.
+			1) An unspecified error in the HTML sanitiser filter can be exploited to conduct phishing attacks.
+			2) An unspecified error when processing wiki markup can be exploited to cause a DoS.</desc>
+	</fsa>
+	<fsa>
 		<id>585</id>
 		<date>2009-03-17</date>
 		<author>Miklos Vajna</author>
