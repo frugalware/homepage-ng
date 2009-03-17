@@ -26,6 +26,22 @@
 
 <fsas>
 	<fsa>
+		<id>585</id>
+		<date>2009-03-17</date>
+		<author>Miklos Vajna</author>
+		<package>enscript</package>
+		<vulnerable>1.6.4-4</vulnerable>
+		<unaffected>1.6.4-5solaria1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3404</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-3863
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4306</cve>
+		<desc>Some vulnerabilities have been discovered in GNU Enscript, which can be exploited by malicious people to compromise a vulnerable system.
+			1) A vulnerability is caused due to a boundary error within the "read_special_escape()" function in src/psgen.c when processing the "setfilename" escape sequence. This can be exploited to cause a stack-based buffer overflow by tricking the user into converting a malicious file.
+			2) A vulnerability is caused due to a boundary error within the "read_special_escape()" function in src/psgen.c when processing the "font" escape sequence. This can be exploited to cause a stack-based buffer overflow by tricking the user into converting a malicious file.
+			Successful exploitation allows execution of arbitrary code, but requires that special escapes processing is enabled with the "-e" option.
+</desc>
+	</fsa>
+	<fsa>
 		<id>584</id>
 		<date>2009-03-17</date>
 		<author>Miklos Vajna</author>
