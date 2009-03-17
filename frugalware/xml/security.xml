@@ -26,6 +26,18 @@
 
 <fsas>
 	<fsa>
+		<id>588</id>
+		<date>2009-03-17</date>
+		<author>Miklos Vajna</author>
+		<package>gnutls</package>
+		<vulnerable>2.2.5-2</vulnerable>
+		<unaffected>2.2.5-3solaria1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3449</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?nameCVE-2008-4989</cve>
+		<desc>A vulnerability has been reported in GnuTLS, which can be exploited by malicious people to bypass certain security restrictions.
+			The vulnerability is caused due to an error when validating the X.509 certificate chain and can be exploited to spoof arbitrary names e.g. during a Man-in-the-Middle (MitM) attack.</desc>
+	</fsa>
+	<fsa>
 		<id>587</id>
 		<date>2009-03-17</date>
 		<author>Miklos Vajna</author>
