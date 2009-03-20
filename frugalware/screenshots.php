@@ -166,6 +166,13 @@ $shots[gnetconfig][1][title]=gettext("GNetconfig - Interface Management");
 $shots[gnetconfig][2][name]="03_gnetconfig.png";
 $shots[gnetconfig][2][title]=gettext("GNetconfig - DNS Settings");
 
+$shots[gservice][0][name]="01_gservice.png";
+$shots[gservice][0][title]=gettext("gService - Main Window");
+$shots[gservice][1][name]="02_gservice.png";
+$shots[gservice][1][title]=gettext("gService - Editing Runlevel Information");
+$shots[gservice][2][name]="03_gservice.png";
+$shots[gservice][2][title]=gettext("gService - Minimal Interface");
+
 $shots[runleveled][15][name]="18_runlevel_editor.png";
 $shots[runleveled][15][title]=gettext("18_runlevel_editor.png");
 
@@ -237,6 +244,15 @@ for ($i=0; $i<count($shots[gnetconfig]); $i++)
 	"<img src=\"".$fwng_root."images/screenshots/default/thumbnails/".$shots[gnetconfig][$i][name]."\" alt=\"screenshot\" /></a>".
 	"<br />".$shots[gnetconfig][$i][title]."</div>\n";
 }
+$maincont .= "</fieldset>\n<fieldset class=\"fieldset\" id=\"default\">\n";
+$maincont .= "<legend>".gettext("gService (GUI Runlevel Editor)")."</legend>\n";
+for ($i=0; $i<count($shots[gservice]); $i++)
+{
+	$maincont .= "<div><a href=\"".$fwng_root."images/screenshots/default/".$shots[gservice][$i][name]."\">".
+	"<img src=\"".$fwng_root."images/screenshots/default/thumbnails/".$shots[gservice][$i][name]."\" alt=\"screenshot\" /></a>".
+	"<br />".$shots[gservice][$i][title]."</div>\n";
+}
+
 $maincont .= "</fieldset></form>\n</div>\n";
 
 print $maincont;
