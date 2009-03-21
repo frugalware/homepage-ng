@@ -130,14 +130,16 @@ $shots[gnome][3][title]=gettext("Web Browser");
 $shots[gnome][4][name]="05_gnome_desktop.png";
 $shots[gnome][4][title]=gettext("File Manager");
 
-$shots[xfce][0][name]="01_xfce_desktop.png";
-$shots[xfce][0][title]=gettext("Default XFCE Desktop");
+$shots[xfce][0][name]="01_slim.png";
+$shots[xfce][0][title]=gettext("Login Screen (SliM)");
 $shots[xfce][1][name]="02_xfce_desktop.png";
-$shots[xfce][1][title]=gettext("XFCE in Action");
+$shots[xfce][1][title]=gettext("Default XFCE Desktop");
 $shots[xfce][2][name]="03_xfce_desktop.png";
-$shots[xfce][2][title]=gettext("XFCE Menu");
+$shots[xfce][2][title]=gettext("XFCE in Action");
 $shots[xfce][3][name]="04_xfce_desktop.png";
-$shots[xfce][3][title]=gettext("XFCE Terminal");
+$shots[xfce][3][title]=gettext("XFCE Menu");
+$shots[xfce][4][name]="05_xfce_desktop.png";
+$shots[xfce][4][title]=gettext("XFCE Terminal");
 
 $shots[gfpm][0][name]="01_gfpm.png";
 $shots[gfpm][0][title]=gettext("Gfpm");
