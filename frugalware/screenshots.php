@@ -175,9 +175,6 @@ $shots[gservice][1][title]=gettext("gService - Editing Runlevel Information");
 $shots[gservice][2][name]="03_gservice.png";
 $shots[gservice][2][title]=gettext("gService - Minimal Interface");
 
-$shots[runleveled][15][name]="18_runlevel_editor.png";
-$shots[runleveled][15][title]=gettext("18_runlevel_editor.png");
-
 // include the config and let's start page
 include("config.inc.php");
 include("header.php");
