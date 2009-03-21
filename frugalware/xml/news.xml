@@ -28,7 +28,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         <author>Miklos Vajna</author>
         <hidden>1</hidden>
         <content><![CDATA[
-            The Frugalware Developer Team is pleased to <a href="/news/129">announce</a> the immediate availability of Frugalware 1.0, our tenth stable release. The version number 1.0 does not indicate anything really special, the new release will bring you as many new features and bufixes as usual, but it's still a milestone in the development of the last five years.<br />
+            The Frugalware Developer Team is pleased to <a href="/news/129">announce</a> the immediate availability of Frugalware 1.0, our tenth stable release. The version number 1.0 does not indicate anything really special, the new release will bring you as many new features and bugfixes as usual, but it's still a milestone in the development of the last five years.<br />
             No new features have been added since 1.0rc2, but 81 changes have been made to fix minor bugs. If you didn't follow the changes during the pre/rc releases, here are the most important changes since 0.9 in no particular order:<br />
             <ul>
                 <li>Support for ASUS Eee PC models.</li>
