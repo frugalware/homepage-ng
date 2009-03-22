@@ -30,7 +30,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 		<content><![CDATA[
 			<center><img src="http://frugalware.org/images/anacreon_cover.png" alt="Frugalware 1.0 Anacreon Cd cover" /></center><br />
 			L'équipe des développeurs de Frugalware est fière de vous <a href="/news/129">annoncer</a> la disponibilité immédiate de Frugalware 1.0, notre dixième version stable. Le numéro de version 1.0 n'indique pas réellement quelque chose de spécial, la nouvelle version vous apportera de nouvelles fonctionnalités ainsi que les corrections de bugs habituelles, mais cela reste malgrès tout une étape importante dans le dévelopement de ces cinq dernières années.<br />
-			Aucune nouvelles fonctionnalitées n'ont été ajouté depuis 1.0rc2, mais 81 changements ont été fais pour corrigé des bugs mineurs. Si vous ne suivez pas les changements pendants les versions pre/rc, voici une liste des changements les plus important depuis la version 0.9 sans ordre particulier:<br />
+			Aucune nouvelles fonctionnalitées n'ont été ajoutées depuis 1.0rc2, mais 81 changements ont été faits pour corrigé des bugs mineurs. Si vous ne suivez pas les changements pendants les versions pre/rc, voici une liste des changements les plus important depuis la version 0.9 sans ordre particulier:<br />
 			<ul>
 				<li>Support des modèles ASUS Eee PC.</li>
 				<li>Nouveau port pour 'ppc' (néanmoins les support de sécurités ne seront pas disponible pour cette architecture pour cette version par manque de moyen).</li>
