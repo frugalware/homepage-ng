@@ -24,9 +24,9 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
     <post>
         <id>129</id>
         <title>Frugalware 1.0 (Anacreon) released</title>
-        <date>FIXME</date>
+        <date>Sun, 22 Mar 2009 11:09:51 +0100</date>
         <author>Miklos Vajna</author>
-        <hidden>1</hidden>
+        <hidden>0</hidden>
         <content><![CDATA[
             <center><img src="http://frugalware.org/images/anacreon_cover.png" alt="Frugalware 1.0 Anacreon Cd cover" /></center><br />
             The Frugalware Developer Team is pleased to <a href="/news/129">announce</a> the immediate availability of Frugalware 1.0, our tenth stable release. The version number 1.0 does not indicate anything really special, the new release will bring you as many new features and bugfixes as usual, but it's still a milestone in the development of the last five years.<br />

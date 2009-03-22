@@ -19,10 +19,11 @@
     <post>
         <id>129</id>
         <title>Megjelent a Frugalware 1.0 (Anacreon)</title>
-        <date>FIXME</date>
+        <date>Sun, 22 Mar 2009 11:09:51 +0100</date>
         <author>CSÉCSY László</author>
-        <hidden>1</hidden>
-        <content><![CDATA[
+        <hidden>0</hidden>
+				<content><![CDATA[
+						<center><img src="http://frugalware.org/images/anacreon_cover.png" alt="Frugalware 1.0 Anacreon Cd cover" /></center><br />
 						A Frugalware Fejlesztői Csapat örömmel <a href="/news/129/hu">jelenti be</a> a Frugalware 1.0 változat azonnali elérhetőségét, mint tizedik stabil kiadásunkat. Az 1.0 verziószám nem jelent semmi igazán különlegeset, az új kiadás éppen a szokásos mennyiségű újdonságot és hibajavítást vonultatja fel, mindazáltal ez akkor is az utóbbi öt év fejlesztéseinek egy mérföldköve.<br />
 						Az 1.0rc2 óta semmilyen újdonságot nem adtunk a rendszerhez, ugyanakkor 81 változtatást eszközöltünk, hogy az apróbb hibákat javítsuk. Ha a pre/rc kiadások alatt nem követte a változtatásokat, íme a legfontosabbak listája a 0.9 óta (különösebb sorrend nélkül):<br />
             <ul>
