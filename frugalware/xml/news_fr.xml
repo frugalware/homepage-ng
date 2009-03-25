@@ -22,6 +22,26 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
 	<post>
+		<id>130</id>
+		<title>Lettre d'information Frugalware numéro 41</title>
+		<date>Mon, 23 Mar 2009 21:15:05 +1000</date>
+		<author>phayz</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Dans ce numéro:
+			<ul>
+				<li>Frugalware 1.0 est disponible!</li>
+				<li>La récompanse Frugalware!</li>
+				<li>Les utilisateurs de Frugalware sont des personnes également - LGee</li>
+				<li>Apprendre à se connaître - Frugalware est magnifique</li>
+				<li>Détails sur un(des) paquet(s) - Gigolo et medit</li>
+			</ul>
+			Vous pouvez la lire <a href="/newsletter/41">ici (anglais)</a>. Nous espérons que vous l'apprécierez!
+			]]>
+		</content>
+	</post>
+	<post>
 		<id>129</id>
 		<title>Frugalware 1.0 (Anacreon) est disponible</title>
 		<date>Sun, 22 Mar 2009 11:09:51 +0100</date>
@@ -94,7 +114,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 		<author>phayz</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information à pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
 				<li>Frugalware 1.0 RC1 est disponible</li>
@@ -148,7 +168,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 		<author>phayz</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information à pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
 				<li>Microblog moi!</li>
@@ -167,7 +187,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 		<author>phayz</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information à pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
 				<li>Frugalware 1.0 pre2 est disponible</li>
@@ -220,7 +240,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 		<author>phayz</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information à pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
 				<li>Bonne Année!</li>
@@ -264,7 +284,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 		<author>phayz</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information à pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
 				<li>Les fonds d'écran d'Anacreon sont prêts</li>
@@ -284,7 +304,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 		<author>phayz</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information à pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
 				<li>On parle de Frugalware sur le podcast Linux Void</li>
@@ -304,7 +324,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 		<author>phayz</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information à pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
 				<li>Frugalware 1.0 pre1 ("Anaecron") est disponible</li>
@@ -361,7 +381,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 		<author>phayz</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information à pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
 				<li>Gnome 2.24 est arrivé dans les dépot près de chez vous</li>
@@ -394,7 +414,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 		<author>phayz</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information à pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
 				<li>Article vedette - Donnez un air somatique à votre Frugalware</li>
@@ -431,7 +451,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 		<author>phayz</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information à pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
 				<li>Solaria est disponible</li>
@@ -659,7 +679,7 @@ b023faab7154bd80e4718fa4ecf9c946a9414ad0  frugalware-0.9rc2-i686-dvd3.iso
 		<author>phayz</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information à pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
 				<li>Frugalware 0.9 (Solaria) Release Candidate 1 est disponible</li>
@@ -770,7 +790,7 @@ a79a0377d35d80fe82a74f73d134103b6a0ed39c  frugalware-0.9rc1-i686-usb.img
 		<author>phayz</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information à pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
 				<li>Annonce du wallpaper Frugalware</li>
@@ -829,7 +849,7 @@ a79a0377d35d80fe82a74f73d134103b6a0ed39c  frugalware-0.9rc1-i686-usb.img
 		<author>phayz</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information à pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
 				<li>Frugalware 0.9 pre2 est disponible</li>
@@ -939,7 +959,7 @@ e8cd5527083653155a8fcf16e2ac58f16b1d3495  frugalware-0.9pre2-i686-usb.img
 		<author>phayz</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information à pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
 				<li>Les développeurs de Frugalware sont des personnes également! - phayz</li>
@@ -959,7 +979,7 @@ e8cd5527083653155a8fcf16e2ac58f16b1d3495  frugalware-0.9pre2-i686-usb.img
 		<author>phayz</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information à pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
 				<li>Les développeurs de Frugalware sont des personnes également! - Devil505</li>
@@ -977,7 +997,7 @@ e8cd5527083653155a8fcf16e2ac58f16b1d3495  frugalware-0.9pre2-i686-usb.img
 		<author>phayz</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information à pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
 				<li>Les développeurs de Frugalware sont des personnes également! - IroniQ</li>
@@ -996,7 +1016,7 @@ e8cd5527083653155a8fcf16e2ac58f16b1d3495  frugalware-0.9pre2-i686-usb.img
 		<author>phayz</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information à pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
 				<li>Frugalware 0.9 "Solaria" pre1 est disponible</li>
@@ -1102,7 +1122,7 @@ f443ddfb61652ccde5f87135965e467e3bc660f7  frugalware-0.9pre1-i686-usb.img
 		<author>phayz</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information à pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
 				<li>Lettre d'information Frugalware numéro 21, ou es-tu?</li>
@@ -1122,7 +1142,7 @@ f443ddfb61652ccde5f87135965e467e3bc660f7  frugalware-0.9pre1-i686-usb.img
 		<author>phayz</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information à pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
 				<li>Des nouveaux mirroir Frugalware</li>
@@ -1141,7 +1161,7 @@ f443ddfb61652ccde5f87135965e467e3bc660f7  frugalware-0.9pre1-i686-usb.img
 		<author>phayz</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information à pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
 				<li>Vous pouvez m'appeller <b>*Monsieur*</b> Bouleetbil!</li>
@@ -1159,7 +1179,7 @@ f443ddfb61652ccde5f87135965e467e3bc660f7  frugalware-0.9pre1-i686-usb.img
 		<author>phayz</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information à pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
 				<li>Nous sommes célèbre! Enfin presque :)</li>
@@ -1197,7 +1217,7 @@ f443ddfb61652ccde5f87135965e467e3bc660f7  frugalware-0.9pre1-i686-usb.img
 		<author>phayz</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information à pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
 				<li>C'est la fête! Kalgan est disponible.</li>
@@ -1287,7 +1307,7 @@ fb2079de1627ca0e65a323005e0644b88fed6d03  frugalware-0.8-i686-usb.tar.gz
 		<author>phayz</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information à pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
 				<li>Kalgan est presque là!</li>
@@ -1306,7 +1326,7 @@ fb2079de1627ca0e65a323005e0644b88fed6d03  frugalware-0.8-i686-usb.tar.gz
 		<author>phayz</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information à pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
 				<li>Kalgan - "be still my beating heart"</li>
@@ -1408,7 +1428,7 @@ c8f5addddf9d4bb949876f075cff629e5a66fac8  frugalware-0.8rc2-i686-dvd2.iso
 		<author>hermier</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information à pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
 				<li>Kalgan - nous nous en rapprochons :)</li>
@@ -1509,7 +1529,7 @@ bb6b5cd1e157d972913ae0830075b55c7f6a1913  frugalware-0.8rc1-i686-dvd2.iso
 		<author>hermier</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information à pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
 			<li>Frugalware 0.8 ("Kalgan") pre-release 2</li>
@@ -1625,7 +1645,7 @@ eb7fbc5158e452f5217e87a2be51e600b05024b8  frugalware-0.8pre2-i686-tftp.img.gz
 		<author>hermier</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information à pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
 			<li>Mise à jours de paquets</li>
@@ -1643,7 +1663,7 @@ eb7fbc5158e452f5217e87a2be51e600b05024b8  frugalware-0.8pre2-i686-tftp.img.gz
 		<author>hermier</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information à pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro Dex77 aide avec Splashy, Frugalware est contient un peu plus de Danois, nous vous souhaitons un Joyeux Noël et meme plus.<br />
 			Vous pouvez la lire <a href="/newsletter/12">ici (anglais)</a>. Nous espérons que vous l'apprécierez!
 			]]>
@@ -1656,7 +1676,7 @@ eb7fbc5158e452f5217e87a2be51e600b05024b8  frugalware-0.8pre2-i686-tftp.img.gz
 		<author>hermier</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information à pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro nous acceuillons une nouvelle version de Frugalware, la touche 'Windows' est maintenant active avec Gnome, révéllation d'un bug dans les lettres d'information précédante.<br />
 			Vous pouvez la lire <a href="/newsletter/11">ici (anglais)</a> ou <a href="http://frugalware-fr.tuxfamily.org/forums/index.php?topic=29.0">ici (français)</a>. Nous espérons que vous l'apprécierez!
 			]]>
