@@ -22,6 +22,22 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
 	<post>
+		<id>131</id>
+		<title>Solaria: Fin de vie</title>
+		<date>Wed, 25 Mar 2009 23:36:55 +0100</date>
+		<author>Miklos Vajna</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			Avec la sortie de Anacreon, le support de Solaria est arrété. Il est grandement recommandé de se mettre à jour vers notre nouvelle version stable, comme il n'y aura plus de changement de sécurité et de bugs pour Solaria.<br /><br />
+			Nous avons publié les FSA526 à FSA588 pour Solaria. Cela signifie que 63 problèmes de sécurité ont étés découverts en la moitié d'une année.<br />
+			Si vous mettez à jour vers Anacreon, cela résoudra aussi les vulnérabilités suivante:<br />
+			<ul>
+				<li><a href="http://bugs.frugalware.org/task/3179">#3179 - nasm</a></li>
+			</ul>
+			]]>
+		</content>
+	</post>
+	<post>
 		<id>130</id>
 		<title>Lettre d'information Frugalware numéro 41</title>
 		<date>Mon, 23 Mar 2009 21:15:05 +1000</date>
@@ -434,7 +450,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 		<hidden>0</hidden>
 		<content><![CDATA[
 			Avec la sortie de Solaria, le support de Kalgan est arrété. Il est grandement recommandé de se mettre à jour vers notre nouvelle version stable, comme il n'y aura plus de changement de sécurité et de bugs pour Kalgan.<br /><br />
-			Nous avons publié les FSA394 à FSA525 pour Kalgan. Cela signifie que 131 problèmes de sécurité on été découvert en la moitié d'une année. (Nous avions fourni 98 miseà jour de sécurité pour Sayshell, la version stable précédent Kalgan).<br />
+			Nous avons publié les FSA394 à FSA525 pour Kalgan. Cela signifie que 131 problèmes de sécurité ont étés découverts en la moitié d'une année. (Nous avions fourni 98 mise à jour de sécurité pour Sayshell, la version stable précédent Kalgan).<br />
 			Si vous mettez à jour vers Solaria, cela résoudra aussi les vulnérabilités suivante:<br />
 			<ul>
 				<li><a href="http://bugs.frugalware.org/task/2210">#2210 - bitchx</a></li>
@@ -1199,7 +1215,7 @@ f443ddfb61652ccde5f87135965e467e3bc660f7  frugalware-0.9pre1-i686-usb.img
 		<hidden>0</hidden>
 		<content><![CDATA[
 			Avec la sortie de Kalgan, le support de Sayshell est arrété. Il est grandement recommandé de se mettre à jour vers notre nouvelle version stable, comme il n'y aura plus de changement de sécurité et de bugs pour Sayshell.<br /><br />
-			Nous avons publié les FSA296 à FSA393 pour Sayshell. Cela signifie que 98 problèmes de sécurité on été découvert en la moitié d'une année.<br />
+			Nous avons publié les FSA296 à FSA393 pour Sayshell. Cela signifie que 98 problèmes de sécurité ont étés découverts en la moitié d'une année.<br />
 			Si vous mettez à jour vers Kalgan, cela résoudra aussi les vulnérabilités suivante:<br />
 			<ul>
 				<li><a href="http://bugs.frugalware.org/task/2709">#2709 - xorg-server + libxfont</a></li>
@@ -1777,7 +1793,7 @@ a1321a1f978bfedf8cf7fdd33c90e858bd881e10  frugalware-0.8pre1-i686-dvd1.iso
 		<hidden>0</hidden>
 		<content><![CDATA[
 			Avec la sortie de Sayshell, le support de Terminus est arrété. Il est grandement recommandé de se mettre à jour vers notre nouvelle version stable, comme il n'y aura plus de changement de sécurité et de bugs pour Terminus.<br /><br />
-			Nous avons publié les FSA135 à FSA295 pour Terminus. Cela signifie que 161 problèmes de sécurité on été découvert en la moitié d'une année.<br />
+			Nous avons publié les FSA135 à FSA295 pour Terminus. Cela signifie que 161 problèmes de sécurité ont étés découverts en la moitié d'une année.<br />
 			Si vous mettez à jour vers Sayshell, cela résoudra aussi les vulnérabilités suivante:<br />
 			<ul>
 				<li><a href="http://bugs.frugalware.org/task/2055">#2055 - MySQL</a></li>
