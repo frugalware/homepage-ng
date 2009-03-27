@@ -191,7 +191,7 @@ $maincont .= "</fieldset>\n<fieldset class=\"fieldset\" id=\"default\">\n";
 $maincont .= "<legend>".gettext("Startup")."</legend>\n";
 for ($i=0; $i<count($shots[startup]); $i++)
 {
-	$maincont .= "<div><a href=\"".$fwng_root."images/screenshots/default-old/".$shots[startup][$i][name]."\">".
+	$maincont .= "<div><a href=\"".$fwng_root."images/screenshots/default/".$shots[startup][$i][name]."\">".
 	"<img src=\"".$fwng_root."images/screenshots/default-old/thumbnails/".$shots[startup][$i][name]."\" alt=\"screenshot\" /></a>".
 	"<br />".$shots[startup][$i][title]."</div>\n";
 }
