@@ -21,6 +21,34 @@
 
 <roadmap>
 	<release>
+		<name>Getorin</name>
+		<definition>A resort planet near Trantor, part of the pre-Imperial Kingdom of it.</definition>
+		<version>1.1</version>
+		<date>Sep 1, 2009</date>
+		<status>0</status>
+		<newsid></newsid>
+		<prerelease>
+			<preversion>rc2</preversion>
+			<predate>Aug 18, 2009</predate>
+			<prestatus>0</prestatus>
+		</prerelease>
+		<prerelease>
+			<preversion>rc1</preversion>
+			<predate>Aug 4, 2009</predate>
+			<prestatus>0</prestatus>
+		</prerelease>
+		<prerelease>
+			<preversion>pre2</preversion>
+			<predate>July 7, 2009</predate>
+			<prestatus>0</prestatus>
+		</prerelease>
+		<prerelease>
+			<preversion>pre1</preversion>
+			<predate>May 12, 2008</predate>
+			<prestatus>0</prestatus>
+		</prerelease>
+	</release>
+	<release>
 		<name>Anacreon</name>
 		<definition>Anacreon is one of the most important worlds in the galactic periphery prior to the fall of the Galactic Empire.</definition>
 		<version>1.0</version>
