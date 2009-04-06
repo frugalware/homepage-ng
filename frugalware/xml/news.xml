@@ -22,6 +22,26 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
     <post>
+        <id>132</id>
+        <title>Frugalware Newsletter Issue 42</title>
+        <date>Mon, 06 Apr 2009 22:12:36 +1000</date>
+        <author>phayz</author>
+        <hidden>0</hidden>
+        <content><![CDATA[
+            The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
+            Features of this issue include:
+            <ul>
+                <li>To infinity...and beyond</li>
+                <li>Will the <em>real</em> Cedric(k) please stand up?</li>
+                <li>Frugalware's developers are people too - VMiklos</li>
+                <li>Tips and tricks - Unlucky in love?</li>
+                <li>Focus On Package(s) - lsof</li>
+            </ul>
+            You can read it <a href="/newsletter/42">here</a>. We hope you like it!
+            ]]>
+        </content>
+    </post>
+    <post>
         <id>131</id>
         <title>Solaria: End of life</title>
         <date>Wed, 25 Mar 2009 23:36:55 +0100</date>
