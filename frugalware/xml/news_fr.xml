@@ -21,6 +21,26 @@
 Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
+    <post>
+        <id>133</id>
+        <title>Lettre d'information Frugalware numéro 43</title>
+        <date>Sat, 25 Apr 2009 23:08:43 +1000</date>
+        <author>phayz</author>
+        <hidden>0</hidden>
+        <content><![CDATA[
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Dans ce numéro:
+			<ul>
+				<li>Faîtes attention!  C'est un maniac!</li>
+				<li>Exceed (AKA Cédric)</li>
+				<li>Les artistes de Frugalware sont des personnes également - Centuri0</li>
+				<li>Apprendre à se connaître - la lettre d'information</li>
+				<li>Détails sur un(des) paquet(s) - Smokin' Guns</li>
+			</ul>
+			Vous pouvez la lire <a href="/newsletter/43">ici (anglais)</a>. Nous espérons que vous l'apprécierez!
+			]]>
+		</content>
+	</post>
 	<post>
 		<id>132</id>
 		<title>Lettre d'information Frugalware numéro 42</title>
