@@ -26,6 +26,20 @@
 
 <fsas>
 	<fsa>
+		<id>592</id>
+		<date>2009-05-03</date>
+		<author>Miklos Vajna</author>
+		<package>phpmyadmin</package>
+		<vulnerable>3.1.3.1-1anacreon1</vulnerable>
+		<unaffected>3.1.3.2-1anacreon1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3742</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1285</cve>
+		<desc>A vulnerability has been reported in phpMyAdmin, which can be exploited by malicious people to compromise a vulnerable system.
+			The vulnerability is caused due to the setup script not properly sanitising configuration parameters. This can be exploited to inject arbitrary PHP code into the phpMyAdmin configuration file.
+			This is related to vulnerability #2 in: FSA591
+			NOTE: Successful exploitation requires that installation best-practices have not been followed and the setup scripts have not been deleted after a successful installation.</desc>
+	</fsa>
+	<fsa>
 		<id>591</id>
 		<date>2009-05-03</date>
 		<author>Miklos Vajna</author>
@@ -33,7 +47,7 @@
 		<vulnerable>3.1.3-1</vulnerable>
 		<unaffected>3.1.3.1-1anacreon1</unaffected>
 		<bts>http://bugs.frugalware.org/task/3724</bts>
-		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=1150
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1150
 			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1151</cve>
 		<desc>Some vulnerabilities have been reported in phpMyAdmin, which can be exploited by malicious people to conduct cross-site scripting attacks or compromise a vulnerable system.
 			1) Input passed via export page cookies is not properly sanitised before being returned to the user. This can be exploited to execute arbitrary HTML and script code in a user's browser session in the context of an affected site.
