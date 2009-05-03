@@ -18,6 +18,10 @@ import htmlentitydefs
 import string
 from xml.dom import minidom
 
+import sys
+sys = reload(sys)
+sys.setdefaultencoding("utf-8")
+
 class BaseHTMLProcessor(SGMLParser):
 	def reset(self):
 		self.enum = 0
