@@ -26,6 +26,18 @@
 
 <fsas>
 	<fsa>
+		<id>593</id>
+		<date>2009-05-03</date>
+		<author>Miklos Vajna</author>
+		<package>blender</package>
+		<vulnerable>2.48a-1</vulnerable>
+		<unaffected>2.48a-2anacreon1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3726</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4863</cve>
+		<desc>A vulnerability has been reported in Blender, which can be exploited by malicious, local users to gain escalated privileges.
+			The vulnerability is caused due to Blender using the current working directory as part of the module search path, which can be exploited to e.g. execute arbitrary Python code with the privileges of another user by tricking the user into executing Blender in a directory containing a Python file named like one of the modules Blender uses.</desc>
+	</fsa>
+	<fsa>
 		<id>592</id>
 		<date>2009-05-03</date>
 		<author>Miklos Vajna</author>
