@@ -26,6 +26,38 @@
 
 <fsas>
 	<fsa>
+		<id>597</id>
+		<date>2009-05-03</date>
+		<author>Miklos Vajna</author>
+		<package>firefox</package>
+		<vulnerable>3.0.8-1anacreon1</vulnerable>
+		<unaffected>3.0.10-1anacreon1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3755</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1302
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1303
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1304
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1305
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1306
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1307
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1308
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1309
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1310
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1311
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1312
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1313</cve>
+		<desc>Some vulnerabilities, security issues, and a weakness have been reported in Mozilla Firefox, which can be exploited by malicious people to disclose potentially sensitive information, bypass certain security restrictions, conduct cross-site scripting and cross-site request forgery attacks, and potentially compromise a user's system.
+			1) Multiple errors in the browser engine can be exploited to corrupt memory and potentially execute arbitrary code.
+			2) Multiple errors in the JavaScript engine can be exploited to corrupt memory and potentially execute arbitrary code.
+			3) An error exists when the "jar:" scheme is used to wrap a URI, which serves content with "Content-Disposition: attachment". This can be exploited to e.g. conduct cross-site scripting attacks on sites that allow users to upload arbitrary content, which is served as "application/java-archive" or "application/x-jar", and that rely on the HTTP header "Content-Disposition: attachment" to prevent potentially untrusted content.
+			4) An error when loading a Adobe Flash file via the "view-source:" scheme can be exploited to conduct cross-site request forgery attacks or read and write Local Shared Objects on a user's system e.g. for tracking purposes.
+			5) An error in the processing of XBL bindings can be exploited to conduct script insertion attacks on sites that allow user to embed third-party stylesheets.
+			6) Errors in "XMLHttpRequest" and "XPCNativeWrapper.toString" can be exploited to bypass the same-origin policy and potentially execute code with chrome privileges.
+			7) A weakness in the handling of "SearchForm" URIs can be exploited to execute arbitrary script code in the context of an arbitrary site when a user performs an empty search in a specially crafted plugin.
+			8) An error in the handling of POST data may result in unintended information disclosure. When an inner frame of a web page is saved as file POST data of the outer page is sent to the URL of the inner frame.
+			9) An error in the processing of the "Refresh" header can potentially be exploited to conduct cross-site scripting attacks.
+			10) A vulnerability is caused due to an error when calling the "nsTextFrame::ClearTextRun()" function and can be exploited to corrupt memory.</desc>
+	</fsa>
+	<fsa>
 		<id>596</id>
 		<date>2009-05-03</date>
 		<author>Miklos Vajna</author>
