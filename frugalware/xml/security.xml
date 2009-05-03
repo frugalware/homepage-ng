@@ -37,6 +37,20 @@
 		<desc>See FSA594.</desc>
 	</fsa>
 	<fsa>
+		<id>594</id>
+		<date>2009-05-03</date>
+		<author>Miklos Vajna</author>
+		<package>drupal</package>
+		<vulnerable>5.16-1</vulnerable>
+		<unaffected>5.17-1anacreon1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3759</bts>
+		<cve>No CVE, see http://drupal.org/node/449078.</cve>
+		<desc>Some vulnerabilities have been reported in Drupal, which can be exploited by malicious people to conduct script insertion attacks or to disclose potentially sensitive information.
+			1) User provided input is not properly sanitised before being used. This can be exploited to insert arbitrary HTML and script code, which will be executed in a user's browser session in context of an affected site when the malicious data is viewed and interpreted as UTF-7.
+			Successful exploitation requires the ability to post content.
+			2) An unspecified error can be exploited to disclose information about form submissions when a user is tricked into submitting a form after following a specially crafted link to the site. This can further be exploited to conduct e.g. cross-site request forgery attacks.</desc>
+	</fsa>
+	<fsa>
 		<id>593</id>
 		<date>2009-05-03</date>
 		<author>Miklos Vajna</author>
