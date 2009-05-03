@@ -26,6 +26,23 @@
 
 <fsas>
 	<fsa>
+		<id>598</id>
+		<date>2009-05-03</date>
+		<author>Miklos Vajna</author>
+		<package>openssl</package>
+		<vulnerable>0.9.8-16</vulnerable>
+		<unaffected>0.9.8-17anacreon1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3746</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0590
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0591
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0789</cve>
+		<desc>Some vulnerabilities have been reported in OpenSSL, which can be exploited by malicious people to bypass certain security restrictions or cause a DoS (Denial of Service).
+1) An error exists in the "ASN1_STRING_print_ex()" function when printing "BMPString" or "UniversalString" strings. This can be exploited to trigger an access to invalid memory and cause a crash via an illegal encoded string length when e.g. printing the contents of a certificate.
+2) The "CMS_verify()" function incorrectly handles an error condition when processing malformed signed attributes. This can be exploited to trick an application into considering a malformed set of signed attributes valid and skip further checks.
+Successful exploitation requires access to a previously generated invalid signature.
+3) An error when processing malformed ASN1 structures can be exploited to trigger an access to invalid memory and cause a crash via a specially crafted certificate.</desc>
+	</fsa>
+	<fsa>
 		<id>597</id>
 		<date>2009-05-03</date>
 		<author>Miklos Vajna</author>
