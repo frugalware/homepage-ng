@@ -26,6 +26,47 @@
 
 <fsas>
 	<fsa>
+		<id>599</id>
+		<date>2009-05-03</date>
+		<author>Miklos Vajna</author>
+		<package>j2sdk</package>
+		<vulnerable>6-13</vulnerable>
+		<unaffected>6-14anacreon1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3721</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1093
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1094
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1095
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1096
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1097
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1098
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1099
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1100
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1101
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1102
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1103
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1104
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1105
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1106
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1107</cve>
+		<desc>Some vulnerabilities have been reported in Sun Java, which can be exploited by malicious people to bypass certain security restrictions, cause a DoS (Denial of Service), or potentially compromise a user's system.
+			1) An error while initialising LDAP connections can be exploited to render the LDAP service unresponsive.
+			2) An error in the JRE LDAP client implementation can be exploited to load and execute arbitrary code via specially crafted data received from a malicious LDAP server.
+			3) An integer overflow error in JRE when unpacking applets and in Java Web Start applications using the "unpack200" JAR unpacking utility can be exploited to potentially execute arbitrary code.
+			4) An error in JRE when unpacking applets and in Java Web Start applications using the "unpack200" JAR unpacking utility can be exploited to cause a buffer overflow and potentially execute arbitrary code.
+			5) Two errors when storing and processing temporary font files can be exploited by an untrusted applet or a Java Web Start application to consume an overly large amount of disk space.
+			6) An error in the Java Plug-in when deserializing applets can be exploited to e.g. read, write, or execute local files.
+			7) The Java Plug-in allows JavaScript code loaded from the local system to connect to arbitrary local ports. This can be exploited in combination with cross-site scripting attacks to access normally restricted local ports.
+			8) The Java Plug-in allows applets to run in earlier versions of JRE if approved by the user. This can be exploited to trick a user into loading a malicious applet into an old and potentially vulnerable JRE version.
+			9) An error in the Java Plug-in when processing crossdomain.xml files can be exploited by an untrusted applet to connect to arbitrary domains providing a crossdomain.xml file.
+			10) An error in the Java Plug-in can be exploited by a signed applet to alter the contents of the security dialog and trick a user into trusting the applet.
+			11) An error in the JRE virtual machine when generating code can be exploited to e.g. read, write, or execute local files.
+			12) An integer overflow error in JRE when processing PNG splash screen images can be exploited by an untrusted Java Web Start application to cause a buffer overflow and potentially execute arbitrary code.
+			13) An error in JRE when processing GIF splash screen images can be exploited by an untrusted Java Web Start application to cause a buffer overflow and potentially execute arbitrary code.
+			14) An error in JRE when processing GIF images can be exploited by an untrusted applet or an untrusted Java Web Start application to cause a buffer overflow and potentially execute arbitrary code.
+			15) A signedness error in JRE when processing Type1 fonts can be exploited to cause corrupt heap memory and potentially execute arbitrary code.
+			16) An unspecified error in the JRE HTTP server implementation can be exploited to render a JAX-WS service endpoint unresponsive.</desc>
+	</fsa>
+	<fsa>
 		<id>598</id>
 		<date>2009-05-03</date>
 		<author>Miklos Vajna</author>
