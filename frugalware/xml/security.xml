@@ -26,6 +26,20 @@
 
 <fsas>
 	<fsa>
+		<id>590</id>
+		<date>2009-05-03</date>
+		<author>Miklos Vajna</author>
+		<package>wireshark</package>
+		<vulnerable>1.0.6-1</vulnerable>
+		<unaffected>1.0.7-1anacreon1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3737</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1210
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1268</cve>
+		<desc>Some vulnerabilities have been reported in Wireshark, which can potentially be exploited by malicious people to cause a DoS (Denial of Service) and compromise a user's system.
+			1) A vulnerability is caused due to a format string error within the PN-DCP dissector when processing station names containing format string specifiers. This can be exploited to cause a crash and potentially execute arbitrary code via specially crafted packets captured off the wire or loaded via a capture file.
+			2) An error within the Check Point High-Availability Protocol (CPHAP) dissector can be exploited to cause a crash.</desc>
+	</fsa>
+	<fsa>
 		<id>589</id>
 		<date>2009-03-25</date>
 		<author>Miklos Vajna</author>
