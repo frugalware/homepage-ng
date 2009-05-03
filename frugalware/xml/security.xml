@@ -26,6 +26,20 @@
 
 <fsas>
 	<fsa>
+		<id>596</id>
+		<date>2009-05-03</date>
+		<author>Miklos Vajna</author>
+		<package>udev</package>
+		<vulnerable>139-1</vulnerable>
+		<unaffected>141-1anacreon1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3745</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1185
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1186</cve>
+		<desc>Some vulnerabilities have been reported in udev, which can be exploited by malicious, local users to cause a DoS (Denial of Service) or gain escalated privileges.
+			1) A vulnerability is caused due to udev not properly verifying the credentials of received NETLINK messages. This can be exploited to gain escalated privileges by sending multicast NETLINK messages.
+			2) A vulnerability is caused due to a boundary error within the "util_path_encode()" function in udev/lib/libudev-util.c. This can be exploited to cause a crash by providing specially crafted input.</desc>
+	</fsa>
+	<fsa>
 		<id>595</id>
 		<date>2009-05-03</date>
 		<author>Miklos Vajna</author>
