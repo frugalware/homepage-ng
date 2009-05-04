@@ -26,6 +26,19 @@
 
 <fsas>
 	<fsa>
+		<id>600</id>
+		<date>2009-05-04</date>
+		<author>Miklos Vajna</author>
+		<package>horde-webmail</package>
+		<vulnerable>1.2.2-1</vulnerable>
+		<unaffected>1.2.3-1anacreon1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3765</bts>
+		<cve>No CVE for this issue, see http://lists.horde.org/archives/announce/2009/000506.html.</cve>
+		<desc>A vulnerability has been reported in Horde IMP and Horde Groupware Webmail Edition, which can be exploited by malicious users to conduct spoofing attacks.
+			The vulnerability is caused due to the application caching PGP keys from local address books. This can be exploited to insert manipulated public PGP keys to the cache, which can result e.g. in incorrectly signed incoming messages being displayed as valid.
+			Successful exploitation requires a valid user account and that caching and PGP support is enabled.</desc>
+	</fsa>
+	<fsa>
 		<id>599</id>
 		<date>2009-05-03</date>
 		<author>Miklos Vajna</author>
