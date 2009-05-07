@@ -26,6 +26,20 @@
 
 <fsas>
 	<fsa>
+		<id>601</id>
+		<date>2009-05-07</date>
+		<author>Miklos Vajna</author>
+		<package>file</package>
+		<vulnerable>5.00-1</vulnerable>
+		<unaffected>5.02-1anacreon1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3763</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0947
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0948</cve>
+		<desc>A vulnerability has been reported in file, which can be exploited by malicious people to potentially compromise a user's system.
+			The vulnerability is caused due to a boundary error within the "cdf_read_sat()" function in src/cdf.c. This can be exploited to cause a heap-based buffer overflow via a specially crafted compound document file.
+			Successful exploitation may allow execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>600</id>
 		<date>2009-05-04</date>
 		<author>Miklos Vajna</author>
