@@ -34,7 +34,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
                 <li>Improvements:
 									<ul>
 										<li>The installer is built with debug support by default for the prereleases to help bugreporters.</li>
-										<li>Major overview in the documention: numerous grammatical fixes and various extensions.</li>
+										<li>Major review in the documention: numerous grammatical fixes and various extensions.</li>
 									</ul>
                 </li>
                 <li>Package updates:
@@ -47,7 +47,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
                     </ul>
                 </li>
             </ul>
-            Please refer to the Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Anacreon ChangeLog</a> for more information.<br />
+						Please refer to the Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Getorin ChangeLog</a> for more information.<br />
 						Download for i686: See our <a href="http://frugalware.org/download/frugalware-testing-iso">mirror list</a>. Don't forget to check the <a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">integrity</a> of the install images before burning!<br />
             <b>NOTE</b>: Click <a href="/docs/install#_choosing_installation_flavor">here</a> to read more about what media you need for the installation.<br />
             ]]>
