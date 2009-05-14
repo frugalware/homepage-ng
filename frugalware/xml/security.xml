@@ -26,6 +26,17 @@
 
 <fsas>
 	<fsa>
+		<id>604</id>
+		<date>2009-05-14</date>
+		<author>Miklos Vajna</author>
+		<package>drupal6</package>
+		<vulnerable>6.11-1anacreon1</vulnerable>
+		<unaffected>6.12-1anacreon1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3777</bts>
+		<cve>No CVE for this issue, see http://drupal.org/node/461882</cve>
+		<desc>See FSA603.</desc>
+	</fsa>
+	<fsa>
 		<id>603</id>
 		<date>2009-05-14</date>
 		<author>Miklos Vajna</author>
