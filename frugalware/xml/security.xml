@@ -26,6 +26,25 @@
 
 <fsas>
 	<fsa>
+		<id>602</id>
+		<date>2009-05-14</date>
+		<author>Miklos Vajna</author>
+		<package>kernel</package>
+		<vulnerable>2.6.28-5</vulnerable>
+		<unaffected>2.6.28-6anacreon1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3767</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1337
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1192
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1265
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0787
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0676</cve>
+		<desc>1) The exit_notify function in kernel/exit.c does not restrict exit signals when the CAP_KILL capability is held, which allows local users to send an arbitrary signal to a process by running a program that modifies the exit_signal field and then uses an exec system call to launch a setuid application.
+			2) drivers/char/agp/generic.c in the agp subsystem does not zero out pages that may later be available to a user-space process, which allows local users to obtain sensitive information by reading these pages.
+			3) Integer overflow in rose_sendmsg (sys/net/af_rose.c) might allow remote attackers to obtain sensitive information via a large length value, which causes "garbage" memory to be sent (DoS from local network).
+			4) The ecryptfs_write_metadata_to_contents function in the eCryptfs functionality uses an incorrect size when writing kernel memory to an eCryptfs file header, which triggers an out-of-bounds read and allows local users to obtain portions of kernel memory.
+			5) The sock_getsockopt function in net/core/sock.c does not initialize a certain structure member, which allows local users to obtain potentially sensitive information from kernel memory via an SO_BSDCOMPAT getsockopt request (local privilege escalation).</desc>
+	</fsa>
+	<fsa>
 		<id>601</id>
 		<date>2009-05-07</date>
 		<author>Miklos Vajna</author>
