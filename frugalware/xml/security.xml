@@ -26,6 +26,19 @@
 
 <fsas>
 	<fsa>
+		<id>603</id>
+		<date>2009-05-14</date>
+		<author>Miklos Vajna</author>
+		<package>drupal</package>
+		<vulnerable>5.17-1anacreon1</vulnerable>
+		<unaffected>5.18-1anacreon1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3776</bts>
+		<cve>No CVE for this issue, see http://drupal.org/node/461902</cve>
+		<desc>A vulnerability has been reported in Drupal, which can be exploited by malicious users to conduct script insertion attacks.
+			User provided input is not properly sanitised before being used. This can be exploited to insert arbitrary HTML and script code, which will be executed in a user's browser session in context of an affected site when the malicious data is viewed and interpreted as UTF-7.
+			Successful exploitation requires valid user credentials and privileges to edit pages for HTML exports or "administer taxonomy" permissions.</desc>
+	</fsa>
+	<fsa>
 		<id>602</id>
 		<date>2009-05-14</date>
 		<author>Miklos Vajna</author>
