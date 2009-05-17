@@ -28,7 +28,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 		<author>phayz</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il s'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
 				<li>Frugalware 1.1pre1 est disponible</li>
@@ -52,8 +52,8 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 			<ul>
 				<li>Améliorations:
 					<ul>
-						<li>Le programme d'installation est maintenant construit avec le support de débuggage par défaut pour les pré-versions pour aidés les rapporteurs de bugs.</li>
-						<li>Une relecture de la documentation: de nombreuse corrections grammaticale et diverses extensions.</li>
+						<li>Le programme d'installation est maintenant construit avec le support de débugage par défaut pour les pré-versions pour aider les rapporteurs de bugs.</li>
+						<li>Une relecture de la documentation: de nombreuses corrections grammaticales et diverses extensions.</li>
 					</ul>
 				</li>
 				<li>Mise à jour de paquets:
@@ -66,7 +66,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 					</ul>
 				</li>
 			</ul>
-			Veuillez vous référer à la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Getorin ChangeLog</a> pour plus d'information.<br />
+			Veuillez vous référer à la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Getorin ChangeLog</a> pour plus d'informations.<br />
 			Téléchargement pour i686: Regardez notre <a href="http://frugalware.org/download/frugalware-testing-iso">liste de mirrors</a>. N'oubliez pas de vérifier l'<a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">integritée</a> des images d'installation avant de les graver!<br />
 			<b>NOTE</b>: Cliquez <a href="/docs/install#_choosing_installation_flavor">ici</a> pour savoir quel média vous avez besoin pour l'installation.<br />
 			]]>
@@ -79,7 +79,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 		<author>phayz</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il s'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
 				<li>Faîtes attention!  C'est un maniac!</li>
@@ -99,7 +99,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 		<author>phayz</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il s'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
 				<li>Vers l'infini ... et au-delà</li>
@@ -135,7 +135,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 		<author>phayz</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il s'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
 				<li>Frugalware 1.0 est disponible!</li>
@@ -167,7 +167,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 				<li>Extensions Java sur x86_64.</li>
 				<li>Support du système de fichier ext4.</li>
 			</ul>
-			Veuillez vous référer à la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-1.0/ChangeLog.txt">Anacreon ChangeLog</a> pour plus d'information.<br />
+			Veuillez vous référer à la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-1.0/ChangeLog.txt">Anacreon ChangeLog</a> pour plus d'informations.<br />
 			Téléchargement pour i686, x86_64 et ppc: Regardez notre <a href="http://frugalware.org/download/frugalware-1.0-iso">liste de mirrors</a>. N'oubliez pas de vérifier l'<a href="http://frugalware.org/download/frugalware-1.0-iso/SHA1SUMS">integritée</a> des images d'installation avant de les graver!<br />
 			<b>NOTE</b>: Cliquez <a href="/docs/install#_choosing_installation_flavor">ici</a> pour savoir quel média vous avez besoin pour l'installation.<br />
 			Si vous mettez à jour vers Anacreon depuis notre précédente version stable (Solaria), veuillez lire la partie <a href="http://frugalware.org/docs/stable/upgrade">mise à jour</a> de notre documentation.<br />
@@ -208,7 +208,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 					</ul>
 				</li>
 			</ul>
-			Veuillez vous référer à la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Anacreon ChangeLog</a> pour plus d'information.<br />
+			Veuillez vous référer à la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Anacreon ChangeLog</a> pour plus d'informations.<br />
 			Téléchargement pour i686: Regardez notre <a href="http://frugalware.org/download/frugalware-testing-iso">liste de mirrors</a>. N'oubliez pas de vérifier l'<a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">integritée</a> des images d'installation avant de les graver!<br />
 			<b>NOTE</b>: Cliquez <a href="/docs/install#_choosing_installation_flavor">ici</a> pour savoir quel média vous avez besoin pour l'installation.<br />
 			]]>
@@ -221,7 +221,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 		<author>phayz</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il s'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
 				<li>Frugalware 1.0 RC1 est disponible</li>
@@ -262,7 +262,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 					</ul>
 				</li>
 			</ul>
-			Veuillez vous référer à la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Anacreon ChangeLog</a> pour plus d'information.<br />
+			Veuillez vous référer à la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Anacreon ChangeLog</a> pour plus d'informations.<br />
 			Téléchargement pour i686: Regardez notre <a href="http://frugalware.org/download/frugalware-testing-iso">liste de mirrors</a>. N'oubliez pas de vérifier l'<a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">integritée</a> des images d'installation avant de les graver!<br />
 			<b>NOTE</b>: Cliquez <a href="/docs/install#_choosing_installation_flavor">ici</a> pour savoir quel média vous avez besoin pour l'installation.<br />
 			]]>
@@ -275,7 +275,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 		<author>phayz</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il s'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
 				<li>Microblog moi!</li>
@@ -294,7 +294,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 		<author>phayz</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il s'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
 				<li>Frugalware 1.0 pre2 est disponible</li>
@@ -333,7 +333,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 					</ul>
 				</li>
 			</ul>
-			Veuillez vous référer à la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Anacreon ChangeLog</a> pour plus d'information.<br />
+			Veuillez vous référer à la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Anacreon ChangeLog</a> pour plus d'informations.<br />
 			Téléchargement pour i686, x86_64 et ppc: Regardez notre <a href="http://frugalware.org/download/frugalware-testing-iso">liste de mirrors</a>. N'oubliez pas de vérifier l'<a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">integritée</a> des images d'installation avant de les graver!<br />
 			<b>NOTE</b>: Cliquez <a href="/docs/install#_choosing_installation_flavor">ici</a> pour savoir quel média vous avez besoin pour l'installation.<br />
 			<b>IMPORTANT</b>: Après avoir plublié les images d'installation, il fut reporté que le service 'syslog' ne démarre pas. La prochaine mise à jour avec 'pacman-g2 -Syu' corrigera cela, ou vous pouvez aussi manuellement éxécuter la commande ,,sed -i 's/"]/" ]/g' rc.syslog'' pour résoudre ce problème.<br />
@@ -347,7 +347,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 		<author>phayz</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il s'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
 				<li>Bonne Année!</li>
@@ -391,7 +391,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 		<author>phayz</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il s'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
 				<li>Les fonds d'écran d'Anacreon sont prêts</li>
@@ -411,7 +411,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 		<author>phayz</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il s'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
 				<li>On parle de Frugalware sur le podcast Linux Void</li>
@@ -431,7 +431,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 		<author>phayz</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il s'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
 				<li>Frugalware 1.0 pre1 ("Anaecron") est disponible</li>
@@ -474,7 +474,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 				</ul>
 				</li>
 			</ul>
-			Veuillez vous référer à la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Anacreon ChangeLog</a> pour plus d'information.<br />
+			Veuillez vous référer à la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Anacreon ChangeLog</a> pour plus d'informations.<br />
 			Téléchargement pour i686, x86_64 et ppc: Regardez notre <a href="http://frugalware.org/download/frugalware-testing-iso">liste de mirrors</a>. N'oubliez pas de vérifier l'<a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">integritée</a> des images d'installation avant de les graver!<br />
 			Au cas ou votre client ne supporte pas les torrents trackerless, regardez <a href="http://linuxtracker.org/index.php?page=torrent-details&id=0b448325f2e6fb3384b5b5908d2fa044a500b030">ici</a>.<br />
 			<b>NOTE</b>: Cliquez <a href="/docs/install#_choosing_installation_flavor">ici</a> pour avoir plus d'information pour choisir le media dont vous avez besoin pour l'installation.<br />
@@ -488,7 +488,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 		<author>phayz</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il s'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
 				<li>Gnome 2.24 est arrivé dans les dépot près de chez vous</li>
@@ -521,7 +521,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 		<author>phayz</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il s'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
 				<li>Article vedette - Donnez un air somatique à votre Frugalware</li>
@@ -558,7 +558,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 		<author>phayz</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il s'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
 				<li>Solaria est disponible</li>
@@ -589,7 +589,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 				<li>Amélioration des outils graphiques: FUN (notificateurs de mise à jour) supporte maintenant l'affichage des nouvelles.</li>
 				<li>6400 changement, inclue 568 nouveaux paquets, 2279 mise à jour de paquets et 926 taches fermées.</li>
 			</ul>
-			Veuillez vous référer à la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-0.9/ChangeLog.txt">Solaria ChangeLog</a> pour plus d'information.<br />
+			Veuillez vous référer à la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-0.9/ChangeLog.txt">Solaria ChangeLog</a> pour plus d'informations.<br />
 			Téléchargements pour i686:<br />
 				<a href="/download/frugalware-0.9-iso/fwlive-0.9-i686-full.iso">livecd</a>,
 				<a href="/download/frugalware-0.9-iso/frugalware-0.9-i686-net.iso">netinstall</a>,
@@ -720,7 +720,7 @@ f2a29df040f4b5ac40a52fa7e90447e81ea1a240  frugalware-0.9-x86_64-net.iso
 					</ul>
 				</li>
 			</ul>
-			Veuillez vous référer à la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Testing ChangeLog</a> pour plus d'information.<br />
+			Veuillez vous référer à la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Testing ChangeLog</a> pour plus d'informations.<br />
 			Nous avons un <a href="http://bugs.frugalware.org/?do=roadmap">planing</a> pour les nouvelles fonctionnalités nous prévoyons d'ajouté avant que Solaria soit stable.<br />
 			Téléchargements pour i686:<br />
 			<b>NOTE</b>: Cliquez <a href="/docs/install#_choosing_installation_flavor">ici</a> pour avoir plus d'information pour choisir le media dont vous avez besoin pour l'installation.<br />
@@ -786,7 +786,7 @@ b023faab7154bd80e4718fa4ecf9c946a9414ad0  frugalware-0.9rc2-i686-dvd3.iso
 		<author>phayz</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il s'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
 				<li>Frugalware 0.9 (Solaria) Release Candidate 1 est disponible</li>
@@ -835,7 +835,7 @@ b023faab7154bd80e4718fa4ecf9c946a9414ad0  frugalware-0.9rc2-i686-dvd3.iso
 					</ul>
 				</li>
 			</ul>
-			Veuillez vous référer à la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Testing ChangeLog</a> pour plus d'information.<br />
+			Veuillez vous référer à la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Testing ChangeLog</a> pour plus d'informations.<br />
 			Nous avons un <a href="http://bugs.frugalware.org/?do=roadmap">planing</a> pour les nouvelles fonctionnalités nous prévoyons d'ajouté avant que Solaria soit stable.<br />
 			Téléchargements pour i686:<br />
 			<b>NOTE</b>: Cliquez <a href="/docs/install#_choosing_installation_flavor">ici</a> pour avoir plus d'information pour choisir le media dont vous avez besoin pour l'installation.<br />
@@ -897,7 +897,7 @@ a79a0377d35d80fe82a74f73d134103b6a0ed39c  frugalware-0.9rc1-i686-usb.img
 		<author>phayz</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il s'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
 				<li>Annonce du wallpaper Frugalware</li>
@@ -956,7 +956,7 @@ a79a0377d35d80fe82a74f73d134103b6a0ed39c  frugalware-0.9rc1-i686-usb.img
 		<author>phayz</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il s'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
 				<li>Frugalware 0.9 pre2 est disponible</li>
@@ -1004,7 +1004,7 @@ a79a0377d35d80fe82a74f73d134103b6a0ed39c  frugalware-0.9rc1-i686-usb.img
 					</ul>
 				</li>
 			</ul>
-			Veuillez vous référer à la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Testing ChangeLog</a> pour plus d'information.<br />
+			Veuillez vous référer à la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Testing ChangeLog</a> pour plus d'informations.<br />
 			Nous avons un <a href="http://bugs.frugalware.org/?do=roadmap">planing</a> pour les nouvelles fonctionnalités nous prévoyons d'ajouté avant que Solaria soit stable.<br />
 			Téléchargements pour i686:<br />
 			<b>NOTE</b>: Cliquez <a href="/docs/install#_choosing_installation_flavor">ici</a> pour avoir plus d'information pour choisir le media dont vous avez besoin pour l'installation.<br />
@@ -1066,7 +1066,7 @@ e8cd5527083653155a8fcf16e2ac58f16b1d3495  frugalware-0.9pre2-i686-usb.img
 		<author>phayz</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il s'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
 				<li>Les développeurs de Frugalware sont des personnes également! - phayz</li>
@@ -1086,7 +1086,7 @@ e8cd5527083653155a8fcf16e2ac58f16b1d3495  frugalware-0.9pre2-i686-usb.img
 		<author>phayz</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il s'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
 				<li>Les développeurs de Frugalware sont des personnes également! - Devil505</li>
@@ -1104,7 +1104,7 @@ e8cd5527083653155a8fcf16e2ac58f16b1d3495  frugalware-0.9pre2-i686-usb.img
 		<author>phayz</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il s'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
 				<li>Les développeurs de Frugalware sont des personnes également! - IroniQ</li>
@@ -1123,7 +1123,7 @@ e8cd5527083653155a8fcf16e2ac58f16b1d3495  frugalware-0.9pre2-i686-usb.img
 		<author>phayz</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il s'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
 				<li>Frugalware 0.9 "Solaria" pre1 est disponible</li>
@@ -1171,7 +1171,7 @@ e8cd5527083653155a8fcf16e2ac58f16b1d3495  frugalware-0.9pre2-i686-usb.img
 					</ul>
 				</li>
 			</ul>
-			Veuillez vous référer à la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Testing ChangeLog</a> pour plus d'information.<br />
+			Veuillez vous référer à la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Testing ChangeLog</a> pour plus d'informations.<br />
 			Nous avons un <a href="http://bugs.frugalware.org/?do=roadmap">planing</a> pour les nouvelles fonctionnalités nous prévoyons d'ajouté avant que Solaria soit stable.<br />
 			Téléchargements pour i686:<br />
 			<b>NOTE</b>: Cliquez <a href="/docs/install#_choosing_installation_flavor">ici</a> pour avoir plus d'information pour choisir le media dont vous avez besoin pour l'installation.<br />
@@ -1229,7 +1229,7 @@ f443ddfb61652ccde5f87135965e467e3bc660f7  frugalware-0.9pre1-i686-usb.img
 		<author>phayz</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il s'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
 				<li>Lettre d'information Frugalware numéro 21, ou es-tu?</li>
@@ -1249,7 +1249,7 @@ f443ddfb61652ccde5f87135965e467e3bc660f7  frugalware-0.9pre1-i686-usb.img
 		<author>phayz</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il s'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
 				<li>Des nouveaux mirroir Frugalware</li>
@@ -1268,7 +1268,7 @@ f443ddfb61652ccde5f87135965e467e3bc660f7  frugalware-0.9pre1-i686-usb.img
 		<author>phayz</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il s'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
 				<li>Vous pouvez m'appeller <b>*Monsieur*</b> Bouleetbil!</li>
@@ -1286,7 +1286,7 @@ f443ddfb61652ccde5f87135965e467e3bc660f7  frugalware-0.9pre1-i686-usb.img
 		<author>phayz</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il s'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
 				<li>Nous sommes célèbre! Enfin presque :)</li>
@@ -1324,7 +1324,7 @@ f443ddfb61652ccde5f87135965e467e3bc660f7  frugalware-0.9pre1-i686-usb.img
 		<author>phayz</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il s'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
 				<li>C'est la fête! Kalgan est disponible.</li>
@@ -1354,7 +1354,7 @@ f443ddfb61652ccde5f87135965e467e3bc660f7  frugalware-0.9pre1-i686-usb.img
 				<li>Nouvel outil graphique: FUN (notificateur de mise à jour).</li>
 				<li>4068 changements, incluant 251 nouveaux paquets, 1729 paquets mis à jour et 416 tâches fermées.</li>
 			</ul>
-			Veuillez vous référer à la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-0.8/ChangeLog.txt">Kalgan ChangeLog</a> pour plus d'information.<br />
+			Veuillez vous référer à la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-0.8/ChangeLog.txt">Kalgan ChangeLog</a> pour plus d'informations.<br />
 			Téléchargements pour i686:<br />
 				<a href="/download/frugalware-0.8-iso/fwlive-0.8-i686-full.iso">livecd</a>,
 				<a href="/download/frugalware-0.8-iso/frugalware-0.8-i686-net.iso">netinstall</a>,
@@ -1414,7 +1414,7 @@ fb2079de1627ca0e65a323005e0644b88fed6d03  frugalware-0.8-i686-usb.tar.gz
 		<author>phayz</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il s'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
 				<li>Kalgan est presque là!</li>
@@ -1433,7 +1433,7 @@ fb2079de1627ca0e65a323005e0644b88fed6d03  frugalware-0.8-i686-usb.tar.gz
 		<author>phayz</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il s'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
 				<li>Kalgan - "be still my beating heart"</li>
@@ -1535,7 +1535,7 @@ c8f5addddf9d4bb949876f075cff629e5a66fac8  frugalware-0.8rc2-i686-dvd2.iso
 		<author>hermier</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il s'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
 				<li>Kalgan - nous nous en rapprochons :)</li>
@@ -1636,7 +1636,7 @@ bb6b5cd1e157d972913ae0830075b55c7f6a1913  frugalware-0.8rc1-i686-dvd2.iso
 		<author>hermier</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il s'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
 			<li>Frugalware 0.8 ("Kalgan") pre-release 2</li>
@@ -1752,7 +1752,7 @@ eb7fbc5158e452f5217e87a2be51e600b05024b8  frugalware-0.8pre2-i686-tftp.img.gz
 		<author>hermier</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il s'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
 			<li>Mise à jours de paquets</li>
@@ -1770,7 +1770,7 @@ eb7fbc5158e452f5217e87a2be51e600b05024b8  frugalware-0.8pre2-i686-tftp.img.gz
 		<author>hermier</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il s'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro Dex77 aide avec Splashy, Frugalware est contient un peu plus de Danois, nous vous souhaitons un Joyeux Noël et meme plus.<br />
 			Vous pouvez la lire <a href="/newsletter/12">ici (anglais)</a>. Nous espérons que vous l'apprécierez!
 			]]>
@@ -1783,7 +1783,7 @@ eb7fbc5158e452f5217e87a2be51e600b05024b8  frugalware-0.8pre2-i686-tftp.img.gz
 		<author>hermier</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il c'est passé récemment dans le monde Frugalware.<br />
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il s'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro nous acceuillons une nouvelle version de Frugalware, la touche 'Windows' est maintenant active avec Gnome, révéllation d'un bug dans les lettres d'information précédante.<br />
 			Vous pouvez la lire <a href="/newsletter/11">ici (anglais)</a> ou <a href="http://frugalware-fr.tuxfamily.org/forums/index.php?topic=29.0">ici (français)</a>. Nous espérons que vous l'apprécierez!
 			]]>
