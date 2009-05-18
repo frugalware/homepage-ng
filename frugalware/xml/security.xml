@@ -26,6 +26,33 @@
 
 <fsas>
 	<fsa>
+		<id>605</id>
+		<date>2009-05-18</date>
+		<author>Miklos Vajna</author>
+		<package>xpdf</package>
+		<vulnerable>3.02-5</vulnerable>
+		<unaffected>3.02-6anacreon1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3770</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0146
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0147
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0166
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0195
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0799
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0800
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1179
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1180
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1181
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1182
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1183</cve>
+		<desc>Some vulnerabilities have been reported in Xpdf, which can be exploited by malicious people to potentially compromise a user's system.
+			1) A boundary error exists when decoding JBIG2 symbol dictionary segments. This can be exploited to cause a heap-based buffer overflow and potentially execute arbitrary code.
+			2) Multiple integer overflows in the JBIG2 decoder can be exploited to potentially execute arbitrary code.
+			3) Multiple boundary errors in the JBIG2 decoder can be exploited to cause buffer overflows and potentially execute arbitrary code.
+			4) Multiple errors in the JBIG2 decoder can be exploited can be exploited to free arbitrary memory and potentially execute arbitrary code.
+			5) Multiple unspecified input validation errors in the JBIG2 decoder can be exploited to potentially execute arbitrary code.
+			NOTE: Additionally, various other JBIG2 processing errors can be exploited to cause crashes.</desc>
+	</fsa>
+	<fsa>
 		<id>604</id>
 		<date>2009-05-14</date>
 		<author>Miklos Vajna</author>
