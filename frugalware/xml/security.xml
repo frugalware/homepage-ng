@@ -26,6 +26,18 @@
 
 <fsas>
 	<fsa>
+		<id>606</id>
+		<date>2009-05-30</date>
+		<author>Miklos Vajna</author>
+		<package>wireshark</package>
+		<vulnerable>1.0.7-1anacreon1</vulnerable>
+		<unaffected>1.0.8-1anacreon1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3787</bts>
+		<cve>No CVE reference, see http://www.wireshark.org/security/wnpa-sec-2009-03.html.</cve>
+		<desc>A vulnerability has been reported in Wireshark, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			The vulnerability is caused due to an error in the PCNFSD dissector and can be exploited to cause a crash via a specially crafted PCNFSD packet.</desc>
+	</fsa>
+	<fsa>
 		<id>605</id>
 		<date>2009-05-18</date>
 		<author>Miklos Vajna</author>
