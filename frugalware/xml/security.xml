@@ -26,6 +26,18 @@
 
 <fsas>
 	<fsa>
+		<id>609</id>
+		<date>2009-06-06</date>
+		<author>Miklos Vajna</author>
+		<package>drupal-webform</package>
+		<vulnerable>5.x_2.6-1</vulnerable>
+		<unaffected>5.x_2.7-1anacreon1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3802</bts>
+		<cve>No CVE references, see http://drupal.org/node/481268.</cve>
+		<desc>A vulnerability has been reported in the Webform module for Drupal, which can be exploited by malicious people to conduct script insertion attacks.
+			Input passed via unspecified parameters to e.g. questionnaires, contact, request, or registration forms, surveys, or polls is not properly sanitised before being used. This can be exploited to insert arbitrary HTML and script code, which will be executed in a user's browser session in context of an affected site when the malicious data is viewed.</desc>
+	</fsa>
+	<fsa>
 		<id>608</id>
 		<date>2009-06-06</date>
 		<author>Miklos Vajna</author>
