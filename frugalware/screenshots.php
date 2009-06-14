@@ -100,17 +100,17 @@ $shots[inst][34][name]="35_success.png";
 $shots[inst][34][title]=gettext("Installation success");
 
 $shots[startup][0][name]="01_grub.png";
-$shots[startup][0][title]=gettext("01_grub.png");
+$shots[startup][0][title]=gettext("Bootloader (GRUB)");
 $shots[startup][1][name]="02_boot.png";
-$shots[startup][1][title]=gettext("02_boot.png");
+$shots[startup][1][title]=gettext("Startup (Splash)");
 $shots[startup][2][name]="03_boot.png";
-$shots[startup][2][title]=gettext("03_boot.png");
+$shots[startup][2][title]=gettext("Startup (Console)");
 $shots[startup][3][name]="04_boot.png";
-$shots[startup][3][title]=gettext("04_boot.png");
+$shots[startup][3][title]=gettext("Startup (Console)");
 $shots[startup][4][name]="05_console.png";
-$shots[startup][4][title]=gettext("05_console.png");
+$shots[startup][4][title]=gettext("Console Login");
 $shots[startup][5][name]="06_console.png";
-$shots[startup][5][title]=gettext("06_console.png");
+$shots[startup][5][title]=gettext("Console");
 
 $shots[kde][0][name]="08_kde_login.png";
 $shots[kde][0][title]=gettext("08_kde_login.png");
