@@ -26,6 +26,22 @@
 
 <fsas>
 	<fsa>
+		<id>610</id>
+		<date>2009-06-28</date>
+		<author>Miklos Vajna</author>
+		<package>drupal6-views</package>
+		<vulnerable>6.x_2.3-1</vulnerable>
+		<unaffected>6.x_2.6-1anacreon1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3816</bts>
+		<cve>No CVE references, see http://drupal.org/node/488068.</cve>
+		<desc>Some vulnerabilities and security issues have been reported in the Views Module for Drupal, which can be exploited by malicious users to conduct script insertion attacks, and by malicious users and malicious people to bypass certain security restrictions.
+			1) Input passed e.g. when configuring exposed filters is not properly sanitised before being used. This can be exploited to insert arbitrary HTML and script code, which will be executed in a user's browser session in context of an affected site when the malicious data is viewed.
+			2) Input passed in view names when adding views is not properly sanitised before being used. This can be exploited to insert arbitrary HTML and script code, which will be executed in a user's browser session in context of an affected site when the malicious data is viewed.
+			Successful exploitation requires "administer views" permissions.
+			3) A security issue exists due to unpublished content owned by the anonymous user being accessible by anonymous users.
+			4) An error in the generation of queries can result in users being able to access private content.</desc>
+	</fsa>
+	<fsa>
 		<id>609</id>
 		<date>2009-06-06</date>
 		<author>Miklos Vajna</author>
