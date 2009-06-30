@@ -35,6 +35,10 @@ set_locale($llang, $domain);
 include("config.inc.php");
 include("header.php");
 
+$fwadvert = '<div align="left"><a href="http://www.flosszine.org"><img src="images/flosszine_logo.png"/><br/>Hungarian online fanzine</a></div>';
+
+fwmiddlebox( gettext( 'Advertisers' ), $fwadvert );
+
 $fwdonatewelcome = gettext("<div align=\"left\">Donations are a great way to show your appreciation
 and support for Frugalware Linux. On this page we list the donations we have
 received so far and those that would help us in our work on Frugalware Linux.;
@@ -43,7 +47,7 @@ improved, a good way to achieve this is to donate it to a developer.<br /><br />
 If you would like to donate something to the whole project (i.e. a mirror),
 please send a mail to the <a href=\"http://frugalware.org/mailman/listinfo/frugalware-devel\">frugalware-devel</a>
 list, or if you do not wish to subscribe, send a mail directly to vmiklos_at_frugalware_dot_org.
-If you wish to donate something to an individual developer, see the <a href=\"authors.php\">authors</a>
+If you wish to donate something to an individual developer, see the <a href=\"/authors\">authors</a>
 page and send the developer a mail. You can also use the PayPal donate link on the side of the page
 if you wish to donate money.</div>");
 
