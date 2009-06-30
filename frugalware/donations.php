@@ -35,7 +35,7 @@ set_locale($llang, $domain);
 include("config.inc.php");
 include("header.php");
 
-$fwadvert = '<div align="left"><a href="http://www.flosszine.org"><img src="images/flosszine_logo.png"/><br/>Hungarian online fanzine</a></div>';
+$fwadvert = '<div align="left"><a href="http://www.flosszine.org"><img src="images/flosszine_logo.png" border="0"/><br/>Hungarian online fanzine</a></div>';
 
 fwmiddlebox( gettext( 'Advertisers' ), $fwadvert );
 
