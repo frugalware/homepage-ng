@@ -35,10 +35,6 @@ set_locale($llang, $domain);
 include("config.inc.php");
 include("header.php");
 
-$fwadvert = '<div align="left"><a href="http://www.flosszine.org"><img src="images/flosszine_logo.png" border="0"/><br/>Hungarian online fanzine</a></div>';
-
-fwmiddlebox( gettext( 'Advertisers' ), $fwadvert );
-
 $fwdonatewelcome = gettext("<div align=\"left\">Donations are a great way to show your appreciation
 and support for Frugalware Linux. On this page we list the donations we have
 received so far and those that would help us in our work on Frugalware Linux.;
@@ -52,6 +48,10 @@ page and send the developer a mail. You can also use the PayPal donate link on t
 if you wish to donate money.</div>");
 
 fwmiddlebox(gettext("Donations"), $fwdonatewelcome);
+
+$fwadvert = '<div align="left"><a href="http://www.flosszine.org"><img src="images/flosszine_logo.png" border="0"/><br/>Hungarian online fanzine</a></div>';
+
+fwmiddlebox( gettext( 'Advertisers' ), $fwadvert );
 
 $cont1 = "<div align=\"left\">Received:<ul>
 <li>Socket939 Motherboard + AMD Athlon64 3000+ CPU Socket939 version + 512MB DDR400 RAM (x86_64 buildserver)</li>
