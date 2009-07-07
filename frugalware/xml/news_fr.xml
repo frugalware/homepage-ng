@@ -22,6 +22,61 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
 	<post>
+		<id>139</id>
+		<title>Lettre d'information Frugalware numéro 47</title>
+		<date>Tue, 07 Jul 2009 22:35:51 +1000</date>
+		<author>phayz</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il s'est passé récemment dans le monde Frugalware.<br />
+			Dans ce numéro:
+			<ul>
+				<li>Bon retour Crazy!</li>
+				<li>Mise à jour de Gfpm</li>
+				<li>Le fwife de Elentir est maintenant encore plus beau</li>
+				<li>Testez votre connaissance de Frugalware</li>
+				<li>Détails sur un(des) paquet(s) - Fotoxx et Picpuz</li>
+			</ul>
+			Vous pouvez la lire <a href="/newsletter/47">ici (anglais)</a>. Nous espérons que vous l'apprécierez!
+			]]>
+		</content>
+	</post>
+	<post>
+		<id>138</id>
+		<title>Frugalware 1.0pre2 (Getorin) est disponible</title>
+		<date>Tue, 07 Jul 2009 11:13:25 +0200</date>
+		<author>Miklos Vajna</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			L'équipe des développeurs de Frugalware est fière de vous <a href="/news/138">annoncer</a> la sortie de Frugalware 1.1pre2, le deuxième aperçu technique de notre prochaine version stable 1.1.<br />
+			Voici une liste courte et incomplète depuis la version 1.0:<br />
+			<ul>
+				<li>Améliorations:
+					<ul>
+						<li>Une extension x86_64 pour flash fait maintenant parti de l'installation par défaut.</li>
+						<li>Juste pour votre information au cas ou vous utiliseriez le système de fichier ext3, qui est notre notre version par défaut: malgrès que nous fournissons la dernière version du noyau, nous n'avions défini la valeur de l'option 'data' à 'writeback', la fonctionnalité qui fait que ext3 semble plus robuste que ext4 au moment de l'écriture de cet article. Voir <a href="http://lwn.net/Articles/328363/">ici</a> pour plus d'informations.</li>
+					</ul>
+				</li>
+				<li>Mise à jour de paquets:
+					<ul>
+						<li>Librarie GNU C 2.10.1</li>
+						<li>Noyau Linux 2.6.30</li>
+						<li>Xorg 7.4 avec le xorg-server 1.6</li>
+						<li>GNOME 2.26.3</li>
+						<li>Xfce 4.6.1</li>
+						<li>GCC 4.4.0</li>
+						<li>More than 800 package updates</li>
+						<li>More than 70 new packages</li>
+					</ul>
+				</li>
+			</ul>
+			Veuillez vous référer à la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Getorin ChangeLog</a> pour plus d'informations.<br />
+			Téléchargement pour i686: Regardez notre <a href="http://frugalware.org/download/frugalware-testing-iso">liste de mirrors</a>. N'oubliez pas de vérifier l'<a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">integritée</a> des images d'installation avant de les graver!<br />
+			<b>NOTE</b>: Cliquez <a href="/docs/install#_choosing_installation_flavor">ici</a> pour savoir quel média vous avez besoin pour l'installation.<br />
+			]]>
+		</content>
+	</post>
+	<post>
 		<id>137</id>
 		<title>Lettre d'information Frugalware numéro 46</title>
 		<date>Sun, 21 Jun 2009 13:59:25 +1000</date>
