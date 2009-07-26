@@ -26,6 +26,19 @@
 
 <fsas>
 	<fsa>
+		<id>614</id>
+		<date>2009-07-26</date>
+		<author>Miklos Vajna</author>
+		<package>drupal6-img_assist</package>
+		<vulnerable>6.x_1.0-1</vulnerable>
+		<unaffected>6.x_1.1-1anacreon1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3876</bts>
+		<cve>No CVE references, see http://drupal.org/node/520564</cve>
+		<desc>Some vulnerabilities have been reported in the Image Assist module for Drupal, which can be exploited by malicious users to conduct script insertion attacks or to disclose potentially sensitive information.
+			1) Input passed to the node title is not properly sanitised before being used. This can be exploited to insert arbitrary HTML and script code, which will be executed in a user's browser session in context of an affected site when the malicious data is viewed.
+			2) Certain pages do not properly check the required access permissions, which can be exploited to view the title and body of arbitrary nodes.</desc>
+	</fsa>
+	<fsa>
 		<id>613</id>
 		<date>2009-07-26</date>
 		<author>Miklos Vajna</author>
