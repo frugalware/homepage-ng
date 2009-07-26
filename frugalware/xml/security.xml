@@ -26,6 +26,25 @@
 
 <fsas>
 	<fsa>
+		<id>613</id>
+		<date>2009-07-26</date>
+		<author>Miklos Vajna</author>
+		<package>wireshark</package>
+		<vulnerable>1.0.8-1anacreon1</vulnerable>
+		<unaffected>1.2.1-1anacreon1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3872</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-2559
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-2560
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-2561
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-2562
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-2563</cve>
+		<desc>Some vulnerabilities have been reported in Wireshark, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			1) An array indexing error in the IPMI dissector can be exploited to cause a crash via a specially crafted network packet.
+			2) Errors in the Bluetooth L2CAP, RADIUS, MIOP, and sFlow dissectors can be exploited to cause crashes or hangs via specially crafted network packets.
+			3) An error in the AFS dissector can be exploited to cause a crash via a specially crafted network packet.
+			4) An error in the Infiniband dissector can be exploited to cause a crash on certain platforms via a specially crafted network packet.</desc>
+	</fsa>
+	<fsa>
 		<id>612</id>
 		<date>2009-07-26</date>
 		<author>Miklos Vajna</author>
