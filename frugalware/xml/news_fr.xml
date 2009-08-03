@@ -22,6 +22,25 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
 	<post>
+		<id>141</id>
+		<title>Lettre d'information Frugalware numéro 49</title>
+		<date>Tue, 04 Aug 2009 08:54:38 +1000</date>
+		<author>phayz</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il s'est passé récemment dans le monde Frugalware.<br />
+			Dans ce numéro:
+			<ul>
+				<li>Elentir a mis à jour fwife 0.5</li>
+				<li>Les plans de la fête pour Frugalware 1.1 continuent</li>
+				<li>Les développeurs de Frugalware sont des personnes également - Exceed</li>
+				<li>Détails sur un(des) paquet(s) - ufw et gufw</li>
+			</ul>
+			Vous pouvez la lire <a href="/newsletter/49">ici (anglais)</a>. Nous espérons que vous l'apprécierez!
+			]]>
+		</content>
+	</post>
+	<post>
 		<id>140</id>
 		<title>Lettre d'information Frugalware numéro 48</title>
 		<date>Sun, 19 Jul 2009 22:42:38 +1000</date>
