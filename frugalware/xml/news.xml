@@ -26,14 +26,14 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         <title>Frugalware 1.1rc1 (Getorin) released</title>
         <date>Tue, 04 Aug 2009 01:57:08 +0200</date>
         <author>Miklos Vajna</author>
-        <hidden>1</hidden>
+        <hidden>0</hidden>
         <content><![CDATA[
             The Frugalware Developer Team is pleased to <a href="/news/142">announce</a> the immediate availability of Frugalware 1.1rc1, the first release of the upcoming 1.1 stable release.<br />
             A short and incomplete list of changes since 1.1pre2:<br />
             <ul>
                 <li>Improvements:
 									<ul>
-										<li>Etoile is now part of the reposithory, see <a href="http://article.gmane.org/gmane.linux.frugalware.devel/6239">this post</a> for more details.</li>
+										<li>Etoile is now part of the repository, see <a href="http://article.gmane.org/gmane.linux.frugalware.devel/6239">this post</a> for more details.</li>
 										<li>Major update on the graphical installer (fwife), see the changelog <a href="http://git.frugalware.org/gitweb/gitweb.cgi?p=fwife.git;a=commitdiff;h=0.4">here</a> and <a href="http://git.frugalware.org/gitweb/gitweb.cgi?p=fwife.git;a=commitdiff;h=0.5">there</a>.</li>
 									</ul>
                 </li>
