@@ -26,6 +26,18 @@
 
 <fsas>
 	<fsa>
+		<id>616</id>
+		<date>2009-08-14</date>
+		<author>Miklos Vajna</author>
+		<package>kernel</package>
+		<vulnerable>2.6.28-6anacreon2</vulnerable>
+		<unaffected>2.6.28-6anacreon3</unaffected>
+		<bts>http://bugs.frugalware.org/task/3907</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-2692</cve>
+		<desc>A vulnerability has been reported in the Linux Kernel, which can be exploited by malicious, local users to cause a DoS (Denial of Service) and potentially gain escalated privileges.
+			The vulnerability is caused due to the incorrect initialisation of the proto_ops structure for certain protocols (e.g. PF_APPLETALK, PF_IPX, PF_IRDA, PF_X25, PF_AX25 families, PF_BLUETOOTH, PF_IUCV, PF_INET6 (with IPPROTO_SCTP), PF_PPPOX, and PF_ISDN), which can be exploited to cause a NULL pointer dereference when triggering the "sock_sendpage()" function for an incorrectly initialised socket.</desc>
+	</fsa>
+	<fsa>
 		<id>615</id>
 		<date>2009-08-14</date>
 		<author>Miklos Vajna</author>
