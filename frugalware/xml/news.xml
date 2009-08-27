@@ -22,6 +22,25 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
     <post>
+        <id>144</id>
+        <title>Frugalware Newsletter Issue 50</title>
+        <date>Thu, 27 Aug 2009 21:35:52 +1000</date>
+        <author>phayz</author>
+        <hidden>0</hidden>
+        <content><![CDATA[
+            The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
+            Features of this issue include:
+            <ul>
+                <li>KDE 4.3 is coming to a repository near you!</li>
+                <li>Frugalware 1.1 will feature new artwork</li>
+                <li>Frugalware 1.1 release party - update</li>
+                <li>Focus On Package(s) - Kate</li>
+	    </ul>
+            You can read it <a href="/newsletter/50">here</a>. We hope you like it!
+            ]]>
+        </content>
+    </post>
+    <post>
         <id>143</id>
         <title>Frugalware 1.1rc2 (Getorin) released</title>
         <date>Tue, 18 Aug 2009 09:26:16 +0200</date>
