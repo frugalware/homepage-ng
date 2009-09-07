@@ -28,6 +28,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         <author>Miklos Vajna</author>
         <hidden>1</hidden>
         <content><![CDATA[
+            <center><img src="http://frugalware.org/images/promo-getorin.png" alt="Frugalware 1.1 Getorin is released !" /></center><br />
             The Frugalware Developer Team is pleased to <a href="/news/145">announce</a> the immediate availability of Frugalware 1.1, our eleventh stable release.<br />
             No new features have been added since 1.1rc2, but 177 changes have been made to fix minor bugs. If you didn't follow the changes during the pre/rc releases, here are the most important changes since 1.0 in no particular order:<br />
             <ul>
