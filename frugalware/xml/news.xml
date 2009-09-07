@@ -39,7 +39,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 								<li>Major update on the graphical installer (fwife), see the changelog <a href="http://git.frugalware.org/gitweb/gitweb.cgi?p=fwife.git;a=commitdiff;h=0.4">here</a> and <a href="http://git.frugalware.org/gitweb/gitweb.cgi?p=fwife.git;a=commitdiff;h=0.5">there</a>.</li>
 								<li>Packaged android-sdk, for those who want network access from Frugalware through their Android phones.</li>
                 <li>Just a FYI in case you are using the ext3 filesystem, which is our current default: though we ship the latest stable kernel, we did not switch the default value of the 'data' option to 'writeback', the feature which still makes ext3 seem more robust than ext4 at the time of writing. See <a href="http://lwn.net/Articles/328363/">here</a> for more information.</li>
-		<li>New artwork included a new wallpaper and a new Gnome theme.</li>
+		<li>New artwork includes a new wallpaper and a new Gnome theme.</li>
             </ul>
             Please refer to the Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-1.1/ChangeLog.txt">Getorin ChangeLog</a> for more information.<br />
 						Download for i686, x86_64 and ppc: See our <a href="http://frugalware.org/download/frugalware-1.1-iso">mirror list</a>. Don't forget to check the <a href="http://frugalware.org/download/frugalware-1.1-iso/SHA1SUMS">integrity</a> of the install images before burning!<br />
