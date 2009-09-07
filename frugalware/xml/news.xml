@@ -24,9 +24,9 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
     <post>
         <id>145</id>
         <title>Frugalware 1.1 (Getorin) released</title>
-        <date>FIXME</date>
+        <date>Mon, 07 Sep 2009 08:37:34 +0200</date>
         <author>Miklos Vajna</author>
-        <hidden>1</hidden>
+        <hidden>0</hidden>
         <content><![CDATA[
             <center><img src="http://frugalware.org/images/promo-getorin.png" alt="Frugalware 1.1 Getorin is released !" /></center><br />
             The Frugalware Developer Team is pleased to <a href="/news/145">announce</a> the immediate availability of Frugalware 1.1, our eleventh stable release.<br />
