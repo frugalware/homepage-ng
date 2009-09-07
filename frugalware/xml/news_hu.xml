@@ -32,7 +32,7 @@
                 <li>Egy x86_64 flash plugin az alapértelemezett telepítés részévé vált.</li>
                 <li>Etoile bekerült a tárba, további részletekért lásd <a href="http://article.gmane.org/gmane.linux.frugalware.devel/6239">ezt az üzenetet</a>.</li>
 								<li>Jelentős fejlesztés történt a grafikus telepítőben (fwife), lásd a változások listáját <a href="http://git.frugalware.org/gitweb/gitweb.cgi?p=fwife.git;a=commitdiff;h=0.4">itt</a> meg <a href="http://git.frugalware.org/gitweb/gitweb.cgi?p=fwife.git;a=commitdiff;h=0.5">ott</a>.</li>
-								<li>Csomagoltuk az android-sdk-z azok számára, akik Android telefonjukkal szeretnének hálózati hozzáféréssel bírni Frugalware alól.</li>
+								<li>Csomagoltuk az android-sdk-t azok számára, akik Android telefonjukkal szeretnének hálózati hozzáféréssel bírni Frugalware alól.</li>
 								<li>Egy figyelmeztetés, ha az alapértelmezett ext3 fájlrendszert használja: bár a legújabb stabil kernelt szállítjuk, mégsem kapcsoltuk át a 'data' opció alapértelmezett értékét 'writeback'-re, ami az ext3 fájlrendszert még mindig robusztusabbá teszi az ext4-nél jelen sorok írásakor. További információkat keressen <a href="http://lwn.net/Articles/328363/">itt</a>.</li>
 		<li>Új dizájn, mely új háttérképet és egy új Gnome témát tartalmaz.</li>
             </ul>
