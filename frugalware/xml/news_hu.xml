@@ -17,6 +17,33 @@
 
 <news>
     <post>
+        <id>145</id>
+        <title>Megjelent a Frugalware 1.1 (Getorin)</title>
+        <date>Mon, 07 Sep 2009 09:37:34 +0200</date>
+        <author>CSÉCSY László</author>
+        <hidden>0</hidden>
+        <content><![CDATA[
+            <center><img src="http://frugalware.org/images/promo-getorin.png" alt="Megjelent a Frugalware 1.1 Getorin!" /></center><br />
+						A Frugalware Fejlesztői Csapat örömmel <a href="/news/145/hu">jelenti be</a> a Frugalware 1.1 azonnali elérhetőségét, mint tizenegyedik stabil kiadásunkat.<br />
+						Az 1.1rc2 óta semmilyen újdonságot nem adtunk a rendszerhez, ugyanakkor 177 változtatást eszközöltünk, hogy az apróbb hibákat javítsuk. Ha a pre/rc kiadások alatt nem követte a változtatásokat, íme a legfontosabbak listája az 1.0 óta (különösebb sorrend nélkül):<br />
+            <ul>
+                <li>Naprakész csomagok: Linux kernel 2.6.30.5, GNU C könyvtár 2.10.1, Xorg 7.4 xorg-server 1.6-tal, GNOME 2.26.3, XFCE 4.6.1, GCC 4.4.0, néhány nagyobb összetevőt említve.</li>
+                <li>A(z angol nyelvű) dokumentáció alapos felülvizsgálata: számtalan nyelvtani javítással és különböző kiegészítésekkel.</li>
+                <li>Egy x86_64 flash plugin az alapértelemezett telepítés részévé vált.</li>
+                <li>Etoile bekerült a tárba, további részletekért lásd <a href="http://article.gmane.org/gmane.linux.frugalware.devel/6239">ezt az üzenetet</a>.</li>
+								<li>Jelentős fejlesztés történt a grafikus telepítőben (fwife), lásd a változások listáját <a href="http://git.frugalware.org/gitweb/gitweb.cgi?p=fwife.git;a=commitdiff;h=0.4">itt</a> meg <a href="http://git.frugalware.org/gitweb/gitweb.cgi?p=fwife.git;a=commitdiff;h=0.5">ott</a>.</li>
+								<li>Csomagoltuk az android-sdk-z azok számára, akik Android telefonjukkal szeretnének hálózati hozzáféréssel bírni Frugalware alól.</li>
+								<li>Egy figyelmeztetés, ha az alapértelmezett ext3 fájlrendszert használja: bár a legújabb stabil kernelt szállítjuk, mégsem kapcsoltuk át a 'data' opció alapértelmezett értékét 'writeback'-re, ami az ext3 fájlrendszert még mindig robusztusabbá teszi az ext4-nél jelen sorok írásakor. További információkat keressen <a href="http://lwn.net/Articles/328363/">itt</a>.</li>
+		<li>Új dizájn, mely új háttérképet és egy új Gnome témát tartalmaz.</li>
+            </ul>
+            Bővebb információért tekintse meg a Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-1.1/ChangeLog.txt">Getorin Változáslistáját</a>.<br />
+						Letöltés i686-ra, x86_64-re és ppc-re: tekintse meg <a href="http://frugalware.org/download/frugalware-1.1-iso">tükörszervereink listáját</a>. Ne felejtse el ellenőrizni a telepítő képfájlok <a href="http://frugalware.org/download/frugalware-1.1-iso/SHA1SUMS">integritását</a> kiírásuk előtt!<br />
+						<b>MEGJEGYZÉS</b>: Kattintson <a href="/docs/install#_choosing_installation_flavor">ide</a>, hogy eldönthesse, melyik telepítő médiára van szüksége.<br />
+						Ha korábbi stabil kiadásunkról (Anacreonról) frissít Getorinra, kérjük olvassa el a dokumentáció <a href="http://frugalware.org/docs/stable/upgrade">frissítésről</a> szóló részét.<br />
+            ]]>
+        </content>
+    </post>
+    <post>
         <id>129</id>
         <title>Megjelent a Frugalware 1.0 (Anacreon)</title>
         <date>Sun, 22 Mar 2009 11:09:51 +0100</date>
