@@ -115,15 +115,16 @@ If you modify this file, be sure it's still valid - read /hooks/README!
 		<id>7</id>
 		<type>http</type>
 		<type>ftp</type>
-		<ftp_path></ftp_path>
-		<http_path></http_path>
-		<rsync_path></rsync_path>
-		<host>mirror.frugalware-fr.org</host>
+		<type>rsync</type>
+		<ftp_path>pub/frugalware</ftp_path>
+		<http_path>pub/frugalware</http_path>
+		<rsync_path>frugalware</rsync_path>
+		<host>ftp.free.org</host>
 		<country>France</country>
 		<country_code>fr</country_code>
-		<supplier>frugalware-fr.org by botux.net</supplier>
-		<supplier_url>http://frugalware-fr.org</supplier_url>
-		<bandwidth>1 GBit</bandwidth>
+		<supplier>Fondation Free</supplier>
+		<supplier_url>http://free.org/</supplier_url>
+		<bandwidth>2 GBit</bandwidth>
 	</mirror>
 	<mirror>
 		<id>8</id>
