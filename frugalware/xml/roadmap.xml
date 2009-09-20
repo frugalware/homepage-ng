@@ -21,6 +21,36 @@
 
 <roadmap>
 	<release>
+		<name>Locris</name>
+		<definition>Locris was 20 parsecs (65 light years) from
+		Terminus, and 800 parsecs (2600 light years) from
+		Santanni.</definition>
+		<version>1.2</version>
+		<date>Mar 1, 2010</date>
+		<status>0</status>
+		<newsid></newsid>
+		<prerelease>
+			<preversion>rc2</preversion>
+			<predate>Feb 15, 2010</predate>
+			<prestatus>0</prestatus>
+		</prerelease>
+		<prerelease>
+			<preversion>rc1</preversion>
+			<predate>Feb 1, 2010</predate>
+			<prestatus>0</prestatus>
+		</prerelease>
+		<prerelease>
+			<preversion>pre2</preversion>
+			<predate>Jan 4, 2010</predate>
+			<prestatus>0</prestatus>
+		</prerelease>
+		<prerelease>
+			<preversion>pre1</preversion>
+			<predate>Nov 2, 2009</predate>
+			<prestatus>0</prestatus>
+		</prerelease>
+	</release>
+	<release>
 		<name>Getorin</name>
 		<definition>A resort planet near Trantor, part of the pre-Imperial Kingdom of it.</definition>
 		<version>1.1</version>
