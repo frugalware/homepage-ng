@@ -26,6 +26,19 @@
 
 <fsas>
 	<fsa>
+		<id>620</id>
+		<date>2009-09-27</date>
+		<author>Miklos Vajna</author>
+		<package>drupal-date</package>
+		<vulnerable>5.x_2.7-1</vulnerable>
+		<unaffected>5.x_2.8-1getorin1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3951</bts>
+		<cve>No CVE references, see http://drupal.org/node/579144.</cve>
+		<desc>A vulnerability has been reported in the Date module for Drupal, which can be exploited by malicious users to conduct script insertion attacks.
+			Certain unspecified input is not properly sanitised before being displayed in the page title. This can be exploited to insert arbitrary HTML and script code, which will be executed in a user's browser session in context of an affected site when the malicious data is being viewed.
+			Successful exploitation requires privileges to post date content.</desc>
+	</fsa>
+	<fsa>
 		<id>619</id>
 		<date>2009-09-27</date>
 		<author>Miklos Vajna</author>
