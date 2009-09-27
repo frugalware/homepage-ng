@@ -26,6 +26,17 @@
 
 <fsas>
 	<fsa>
+		<id>624</id>
+		<date>2009-09-27</date>
+		<author>Miklos Vajna</author>
+		<package>drupal6-commentrss</package>
+		<vulnerable>6.x_2.1-1</vulnerable>
+		<unaffected>6.x_2.2-1getorin1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3950</bts>
+		<cve>No CVE references, see http://drupal.org/node/579290.</cve>
+		<desc>See FSA623 for more info.</desc>
+	</fsa>
+	<fsa>
 		<id>623</id>
 		<date>2009-09-27</date>
 		<author>Miklos Vajna</author>
