@@ -26,6 +26,18 @@
 
 <fsas>
 	<fsa>
+		<id>623</id>
+		<date>2009-09-27</date>
+		<author>Miklos Vajna</author>
+		<package>drupal-commentrss</package>
+		<vulnerable>5.x_2.1-1</vulnerable>
+		<unaffected>5.x_2.2-1getorin1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3949</bts>
+		<cve>No CVE references, see http://drupal.org/node/579280.</cve>
+		<desc>A vulnerability has been reported in the Comment RSS module for Drupal, which can be exploited to disclose potentially sensitive information.
+			The vulnerability is caused due to the module not properly respecting access restrictions when adding the link to a node, which can be exploited to disclose potentially sensitive information.</desc>
+	</fsa>
+	<fsa>
 		<id>622</id>
 		<date>2009-09-27</date>
 		<author>Miklos Vajna</author>
