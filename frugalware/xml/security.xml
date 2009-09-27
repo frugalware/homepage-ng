@@ -26,6 +26,19 @@
 
 <fsas>
 	<fsa>
+		<id>619</id>
+		<date>2009-09-27</date>
+		<author>Miklos Vajna</author>
+		<package>horde-webmail</package>
+		<vulnerable>1.2.3-1</vulnerable>
+		<unaffected>1.2.4-1getorin1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3958</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3236</cve>
+		<desc>Some vulnerabilities have been reported in Horde Groupware and Horde Groupware Webmail Edition, which can be exploited by malicious people to conduct cross-site scripting and script insertion attacks and by malicious users to compromise a vulnerable system.
+			1) Two vulnerabilities can be exploited to conduct cross-site scripting or script insertion attacks.
+			2) An error within the form library of the Horde Application Framework when handling image form fields can be exploited to overwrite arbitrary local files.</desc>
+	</fsa>
+	<fsa>
 		<id>618</id>
 		<date>2009-09-27</date>
 		<author>Miklos Vajna</author>
