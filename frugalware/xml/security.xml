@@ -26,6 +26,21 @@
 
 <fsas>
 	<fsa>
+		<id>621</id>
+		<date>2009-09-27</date>
+		<author>Miklos Vajna</author>
+		<package>drupal</package>
+		<vulnerable>5.19-1</vulnerable>
+		<unaffected>5.20-1getorin1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3947</bts>
+		<cve>No CVE references, see http://drupal.org/node/579484.</cve>
+		<desc>Some vulnerabilities have been reported in Drupal, which can be exploited by malicious users to hijack accounts and compromise a vulnerable system, and by malicious people to conduct cross-site request forgery attacks.
+			1) The OpenID module allows users to perform certain actions via HTTP requests without performing any validation checks to verify the requests. This can be exploited to e.g. add OpenID identities to existing accounts.
+			2) An unspecified error within the OpenID Authentication 2.0 implementation can be exploited to hijack another user's account if the same OpenID 2.0 provider is used.
+			3) An error within the File API when processing certain file extensions can be exploited to e.g. upload files which can be executed by the web server.
+			Note: Successful exploitation requires that the web server is configured to ignore Drupal's ".htaccess" file.</desc>
+	</fsa>
+	<fsa>
 		<id>620</id>
 		<date>2009-09-27</date>
 		<author>Miklos Vajna</author>
