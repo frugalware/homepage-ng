@@ -26,6 +26,22 @@
 
 <fsas>
 	<fsa>
+		<id>618</id>
+		<date>2009-09-27</date>
+		<author>Miklos Vajna</author>
+		<package>wireshark</package>
+		<vulnerable>1.2.1-1</vulnerable>
+		<unaffected>1.2.2-1getorin1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3957</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3241
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3242
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3243</cve>
+		<desc>Some vulnerabilities have been reported in Wireshark, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			1) An error in the "OpcUa" dissector can be exploited to exhaust CPU and memory resources via a specially crafted "Service CallRequest" packet.
+			2) An assertion error in the "GSM A RR" dissector can be exploited to cause a crash.
+			3) An error in the TLS dissector can be exploited to cause a crash on certain platforms (e.g. Windows) via specially crafted TLS 1.2 network packets.</desc>
+	</fsa>
+	<fsa>
 		<id>617</id>
 		<date>2009-09-27</date>
 		<author>Miklos Vajna</author>
