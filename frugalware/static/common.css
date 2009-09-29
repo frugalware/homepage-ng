@@ -49,6 +49,7 @@ body {
 }
 
 #centercolumn {
+	position:absolute;
 	margin-left: 195px;
 	padding: 10px;
 	background-color: #fff;
