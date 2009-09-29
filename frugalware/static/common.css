@@ -4,7 +4,7 @@
  */
 
 body {
-	background-color: #fff;
+	background-color: transparent;
 	font-family: "DejaVu Sans", "Bitstream Vera Sans", Lucida Grande, Arial, sans-serif;
 	font-size: 0.75em;
 	color: #000;
@@ -49,10 +49,7 @@ body {
 }
 
 #centercolumn {
-	background-color:transparent;
-	margin-left:195px;
-	padding:100px 30px 30px;
-	position:absolute;
+	padding-top:100 px
 	margin-left: 195px;
 	padding: 10px;
 	background-color: #fff;
