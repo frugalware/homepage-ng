@@ -49,7 +49,7 @@ body {
 }
 
 #centercolumn {
-	position:absolute;
+	background-color:transparent;margin-left:195px;padding:100px 30px 30px;position:absolute;
 	margin-left: 195px;
 	padding: 10px;
 	background-color: #fff;
