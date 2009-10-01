@@ -112,10 +112,11 @@ switch($_GET['type'])
 
 	case "news";
 		include("xml.inc.php");
-		if (file_exists("xml/news.xml"))
-			$xmlfile = "xml/news.xml";
+		$flang = ( $lang == "en" ) ? "" : "_$lang";
+		if (file_exists("xml/news".$flang.".xml"))
+			$xmlfile = "xml/news".$flang.".xml";
 		else
-			$xmlfile = $docs_path."/xml/news.xml";
+			$xmlfile = $docs_path."/xml/news".$flang.".xml";
 		$xml = file_get_contents($xmlfile);
 		$parser = new XMLParser($xml);
 		$parser->Parse();

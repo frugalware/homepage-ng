@@ -117,6 +117,14 @@ if($_SERVER["QUERY_STRING"]!="")
 // build the url
 $url="http://" . $_SERVER["SERVER_NAME"] . "$fwng_root$page.php$urlsuffix";
 
+if(isset($lang))
+	$lang = getlang($lang);
+else
+	$lang = getlang();
+if(!isset($urlsuffix))
+	$url.="?lang=$lang";
+else
+	$url.="&lang=$lang";
 if($page=="rss" and isset($urlsuffix))
 {
 	// special header + those page can have <?xml..
@@ -125,14 +133,6 @@ if($page=="rss" and isset($urlsuffix))
 }
 else
 {
-	if(isset($lang))
-		$lang = getlang($lang);
-	else
-		$lang = getlang();
-	if(!isset($urlsuffix))
-		$url.="?lang=$lang";
-	else
-		$url.="&lang=$lang";
 	if(strpos($url, ".text"))
 		header("Content-type: text/plain; charset=UTF-8");
 	else if(strpos($url, ".pdf"))
