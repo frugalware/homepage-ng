@@ -29,7 +29,6 @@ set_locale($llang, $domain);
 
 include("header.php");
 fwmiddlebox("Internationalized Frugalware sites",'<ul>
-	<li><a href="http://frugalware-br.org//">' . gettext('Brazilian') . '</a></li>
 	<li><a href="http://www.frugalware.hostend.eu/">' . gettext('Czech') . '</a></li>
 	<li><a href="http://frugalware.dk/">' . gettext('Danish') . '</a></li>
 	<li><a href="http://www.frugalware.fr/">' . gettext('French') . '</a></li>
