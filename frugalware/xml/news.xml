@@ -34,7 +34,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
                 <li>Improvements:
 									<ul>
 										<li>KMS (Kernel Mode-Setting) is now enabled by default for Intel and Radeon cards.</li>
-										<li>PAM (Pluggable Authentication Modules) is not part of the base system</li>
+										<li>PAM (Pluggable Authentication Modules) is now part of the base system</li>
 									</ul>
                 </li>
                 <li>Package updates:
