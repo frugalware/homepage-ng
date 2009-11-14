@@ -22,6 +22,26 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
     <post>
+        <id>152</id>
+        <title>Frugalware Newsletter Issue 54</title>
+        <date>Sat, 14 Nov 2009 22:56:10 +1000</date>
+        <author>phayz</author>
+        <hidden>0</hidden>
+        <content><![CDATA[
+            The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
+            Features of this issue include:
+            <ul>
+		    <li>New artwork for 'Locris'</li>
+		    <li>"Who turned out the lights?"</li>
+		    <li>ryuo's on a mission!</li>
+		    <li>FLOSS developers are people too - Stuart Rackham</li>
+		    <li>Getting To Know You - What is a FrugalBuild?</li>
+            </ul>
+            You can read it <a href="/newsletter/54">here</a>. We hope you like it!
+            ]]>
+        </content>
+    </post>
+    <post>
         <id>151</id>
         <title>Frugalware 1.2pre1 (Locris) released</title>
         <date>Sat, 07 Nov 2009 02:14:19 +0100</date>
