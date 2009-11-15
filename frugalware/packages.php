@@ -102,6 +102,7 @@ function main()
 			<option value=\"all\">all</option>
 			<option value=\"i686\" selected=\"selected\" class=\"required\">i686</option>
 			<option value=\"x86_64\">x86_64</option>
+			<option value=\"ppc\">ppc</option>
 		</select>
 		<br />
 		".gettext("Version:")."<br />
