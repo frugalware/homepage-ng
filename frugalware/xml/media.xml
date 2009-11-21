@@ -34,11 +34,25 @@
 		<link>http://www.dppresse.com/</link>
 	</article>
 	<article>
+		<date>2008-09-18</date>
+		<language>Spannish</language>
+		<where>Distrotest</where>
+		<title>Frugalware 0.9</title>
+		<link>http://distrotest.es/frugalware-09/</link>
+	</article>
+	<article>
 		<date>2008-08-29</date>
 		<language>French</language>
 		<where>Linux-Pratique</where>
 		<title>Linux-Pratique N°49 (Pages 10 and 11)</title>
 		<link>http://www.ed-diamond.com/feuille_lpra49/index.html</link>
+	</article>
+	<article>
+		<date>2008-03-21</date>
+		<language>Spannish</language>
+		<where>Distrotest</where>
+		<title>Frugalware 0.8 'Kalgan'</title>
+		<link>http://distrotest.es/frugalware-08-kalgan/</link>
 	</article>
 	<article>
 		<date>2008-01-16</date>
