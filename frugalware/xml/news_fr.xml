@@ -21,6 +21,18 @@
 Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
+	<post>
+        <id>155</id>
+        <title>Merry Christmas</title>
+        <date>Wed, 24 Dec 2008 08:25:00 +1000</date>
+        <author>Devil505</author>
+        <hidden>0</hidden>
+		<content><![CDATA[
+			<center><img src="http://frugalware.org/images/FWsnowball.png" alt="Frugalware Christmas 2009 logo"></center></br>
+			L'équipe de Frugalware aimerais vous souhaiter un joyeux noël à chacun.  Si vous ne célébrer pas Noël, nous espérons que vous pourrez appreciez le meilleur de cette periode de l'année, en évitant le pire...  :)
+		]]>
+		</content>
+	</post>
     <post>
         <id>154</id>
         <title>Frugalware Newsletter Issue 55</title>
