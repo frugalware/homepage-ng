@@ -27,7 +27,7 @@ $upfile = "/proc/uptime";
 
 #not translated changing vars
 $title = "Homepage - Reloaded";
-$copydate = "2003-2009";
+$copydate = "2003-2010";
 $domain = 'homepage';
 
 ## Main page ##
