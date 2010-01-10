@@ -33,7 +33,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
             <ul>
                 <li>Improvements:
 									<ul>
-										<li>Introduced devtmpfs: when you are creating backups, you can now just exclude /dev as well, just as how you excluded /proc and /sys.</li>
+										<li>Introduced devtmpfs: you can now exclude /dev from backups, along with /proc and /sys.</li>
 										<li>Removed several large games from the install images (CD/DVD) which means one less DVD or 4 less CDs.</li>
 									</ul>
                 </li>
