@@ -24,9 +24,9 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
     <post>
         <id>157</id>
         <title>Frugalware 1.2pre2 (Locris) released</title>
-        <date>FIXME</date>
+        <date>Mon, 11 Jan 2010 01:02:50 +0100</date>
         <author>Miklos Vajna</author>
-        <hidden>1</hidden>
+        <hidden>0</hidden>
         <content><![CDATA[
             The Frugalware Developer Team is pleased to <a href="/news/157">announce</a> the immediate availability of Frugalware 1.2pre2, the second technical preview of the upcoming 1.2 stable release.<br />
             A short and incomplete list of changes since 1.2pre1:<br />
