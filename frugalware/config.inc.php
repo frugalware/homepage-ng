@@ -62,7 +62,7 @@ $menucontent .= '	<a href="' . $fwng_root . 'irc">' . gettext('IRC') . "</a>\n";
 $menucontent .= '	<a href="' . $fwng_root . 'paste">' . gettext('Pastebin') . "</a>\n";
 $menucontent .= '	<a href="' . $fwng_root . 'screenshots">' . gettext('Screenshots') . "</a>\n";
 $menucontent .= '	<a href="http://www.frappr.com/frugalware">' . gettext('Map') . "</a>\n";
-$menucontent .= '	<a href="http://www.last.fm/group/Frugalware">' . gettext('Last.fm group') . "</a>\n";
+$menucontent .= '	<a href="http://alpha.libre.fm/group/frugalware">' . gettext('Libre.fm group') . "</a>\n";
 $menucontent .= '	<a href="' . $fwng_root . 'i18n">' . gettext('National sites') . "</a>\n";
 $menucontent .= '	<a href="http://www.frugalware-art.org/">' . gettext('Artwork') . "</a>\n";
 $menucontent .= '	<a href="http://identi.ca/group/frugalware">' . gettext('Identi.ca group') . "</a>\n";
