@@ -13,6 +13,27 @@
 
 <articles>
 	<article>
+		<date>2010-01-10</date>
+		<language>French</language>
+		<where>Blog de FredBezies</where>
+		<title>Un aperçu rapide de la Frugalware Linux 1.2pre2</title>	
+		<link>http://frederic.bezies.free.fr/blog/?p=3290</link>
+	</article>
+	<article>
+		<date>2009-11-08</date>
+		<language>French</language>
+		<where>Blog de FredBezies</where>
+		<title>Un aperçu rapide de la Frugalware 1.2pre1 en 64 bits</title>	
+		<link>http://frederic.bezies.free.fr/blog/?p=2954</link>
+	</article>
+	<article>
+		<date>2009-09-09</date>
+		<language>French</language>
+		<where>Blog de FredBezies</where>
+		<title>Test de la Frugalware Linux Getorin, première partie</title>	
+		<link>http://frederic.bezies.free.fr/blog/?p=2677</link>
+	</article>
+	<article>
 		<date>2009-09-07</date>
 		<language>English</language>
 		<where>Softpedia</where>
