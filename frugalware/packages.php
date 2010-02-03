@@ -85,6 +85,7 @@ function main()
 				else
 					unset($selstr);
 				$arr[] = "\t\t\t<option value=\"".$releases[$i]->version[0]->tagData."\"$selstr>".$releases[$i]->version[0]->tagData."</option>\n";
+				break;
 			}
 		}
 		$content = "<form name=\"pkgsrch\" action=\"/packages/\" method=\"get\">
