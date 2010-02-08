@@ -149,7 +149,6 @@ function search_pkg()
 
 	if(strlen($_GET['srch'])==0)
 	{
-		main();
 		return;
 	}
 	$search = $_GET['srch'];
@@ -233,7 +232,6 @@ function search_file()
 	else {
 		print "<h3>".gettext("No such file or directory")."</h3>";
 		$db->doClose();
-		main();
 	}
 }
 
@@ -274,7 +272,7 @@ function search_groups()
 		{
 			print '<h3>' . gettext( 'No such group' ) . '</h3>';
 			$db->doClose();
-			main();
+			return;
 		}
 		$db->doClose();
 		res_show( $res_set, 'l' );
@@ -310,7 +308,6 @@ function search_groups()
 	{
 		print '<h3>' . gettext('No such group' ) . '</h3>';
 		$db->doClose();
-		main();
 	}
 }
 
