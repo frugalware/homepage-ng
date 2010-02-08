@@ -67,7 +67,7 @@ function main()
 		for ( $i=0; $i < count($releases); $i++)
 		{
 			if ($releases[$i]->status[0]->tagData == '1') {
-				if($first)
+				if($first and $_GET['ver'] != "current")
 				{
 					$first = false;
 					$selstr = " selected=\"selected\"";
@@ -95,21 +95,21 @@ function main()
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class=\"required\" type=\"checkbox\" name=\"desc\" id=\"descr\" /><label for=\"descr\" class=\"pkg-phrasing\">".gettext("Search in description")."</label><br />
 		<input type=\"radio\" name=\"op\" value=\"file\" />".gettext("files")."<br />
 		<input type=\"radio\" name=\"op\" value=\"groups\" />".gettext("groups")."<br />
-		<input class=\"required\" type=\"text\" id=\"pkgsrc\" name=\"srch\" size=\"40\" title=\"".gettext("Regular expression")."\"/> " . gettext( '(regular expression)' ) . "
+		<input class=\"required\" type=\"text\" id=\"pkgsrc\" name=\"srch\" size=\"40\" title=\"".gettext("Regular expression")."\" value=\"" . $_GET['srch'] . "\"/> " . gettext( '(regular expression)' ) . "
 		<br />
 		<br />
 		".gettext("Architecture:")."<br />
 		<select name=\"arch\" id=\"archs\" class=\"required\">
 			<option value=\"all\">all</option>
-			<option value=\"i686\" selected=\"selected\" class=\"required\">i686</option>
-			<option value=\"x86_64\">x86_64</option>
-			<option value=\"ppc\">ppc</option>
+			<option value=\"i686\" " . ( $_GET['arch'] == "i686" ? "selected=\"selected\" " : "") . "class=\"required\">i686</option>
+			<option value=\"x86_64\" " . ( $_GET['arch'] == "x86_64" ? "selected=\"selected\" " : "") . ">x86_64</option>
+			<option value=\"ppc\">" . ( $_GET['arch'] == "ppc" ? "selected=\"selected\" " : "") . "</option>
 		</select>
 		<br />
 		".gettext("Version:")."<br />
 		<select name=\"ver\" id=\"fwver\" class=\"required\">
 			<option value=\"all\">all</option>
-			<option value=\"current\">current</option>\n";
+			<option value=\"current\" " . ( $_GET['ver'] == "current" ? "selected=\"selected\" " : "") . ">current</option>\n";
 		foreach ( $arr as $i )
 		{
 			$content .= $i;
