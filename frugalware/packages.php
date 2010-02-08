@@ -67,7 +67,7 @@ function main()
 		for ( $i=0; $i < count($releases); $i++)
 		{
 			if ($releases[$i]->status[0]->tagData == '1') {
-				if($first and $_GET['ver'] != "current")
+				if($first)
 				{
 					$first = false;
 					$selstr = " selected=\"selected\"";
