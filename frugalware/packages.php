@@ -70,7 +70,8 @@ function main()
 				if($first)
 				{
 					$first = false;
-					$selstr = " selected=\"selected\"";
+					if ($_GET['ver'] != "current")
+						$selstr = " selected=\"selected\"";
 					$db = new FwDB();
 					$db->doConnect($sqlhost, $sqluser, $sqlpass, "frugalware2");
 					$query = "SELECT COUNT(id)  FROM `packages` WHERE `arch` LIKE 'i686' AND `size` != 0 AND `fwver` LIKE '".$releases[$i]->version[0]->tagData."'";
@@ -91,7 +92,7 @@ function main()
 		$content = "<form name=\"pkgsrch\" action=\"/packages/\" method=\"get\">
 		<fieldset class=\"pkg\"><legend>".gettext("Package search")."</legend>
 		".gettext("Search for:")."<br />
-		<input type=\"radio\" name=\"op\" value=\"pkg\" " . ($_GET['op'] == "pkg" ? "checked=\"checked\" " : "") . "/>".gettext("packages")."<br />
+		<input type=\"radio\" name=\"op\" value=\"pkg\" " . (!in_array($_GET['op'], array("file", "groups")) ? "checked=\"checked\" " : "") . "/>".gettext("packages")."<br />
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class=\"required\" type=\"checkbox\" name=\"desc\" id=\"descr\" " . ($_GET['desc'] == "on" ? "checked=\"checked\" " : "") . "/><label for=\"descr\" class=\"pkg-phrasing\">".gettext("Search in description")."</label><br />
 		<input type=\"radio\" name=\"op\" value=\"file\" " . ($_GET['op'] == "file" ? "checked=\"checked\" " : "") . "/>".gettext("files")."<br />
 		<input type=\"radio\" name=\"op\" value=\"groups\" " . ($_GET['op'] == "groups" ? "checked=\"checked\" " : "") . "/>".gettext("groups")."<br />
@@ -101,7 +102,7 @@ function main()
 		".gettext("Architecture:")."<br />
 		<select name=\"arch\" id=\"archs\" class=\"required\">
 			<option value=\"all\">all</option>
-			<option value=\"i686\" " . ( $_GET['arch'] == "i686" ? "selected=\"selected\" " : "") . "class=\"required\">i686</option>
+			<option value=\"i686\" " . ( !in_array($_GET['arch'], array("x86_64", "ppc")) ? "selected=\"selected\" " : "") . "class=\"required\">i686</option>
 			<option value=\"x86_64\" " . ( $_GET['arch'] == "x86_64" ? "selected=\"selected\" " : "") . ">x86_64</option>
 			<option value=\"ppc\">" . ( $_GET['arch'] == "ppc" ? "selected=\"selected\" " : "") . "</option>
 		</select>
