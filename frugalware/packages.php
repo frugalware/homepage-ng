@@ -91,10 +91,10 @@ function main()
 		$content = "<form name=\"pkgsrch\" action=\"/packages/\" method=\"get\">
 		<fieldset class=\"pkg\"><legend>".gettext("Package search")."</legend>
 		".gettext("Search for:")."<br />
-		<input type=\"radio\" name=\"op\" value=\"pkg\" checked=\"checked\"/>".gettext("packages")."<br />
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class=\"required\" type=\"checkbox\" name=\"desc\" id=\"descr\" /><label for=\"descr\" class=\"pkg-phrasing\">".gettext("Search in description")."</label><br />
-		<input type=\"radio\" name=\"op\" value=\"file\" />".gettext("files")."<br />
-		<input type=\"radio\" name=\"op\" value=\"groups\" />".gettext("groups")."<br />
+		<input type=\"radio\" name=\"op\" value=\"pkg\" " . ($_GET['op'] == "pkg" ? "checked=\"checked\" " : "") . "/>".gettext("packages")."<br />
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class=\"required\" type=\"checkbox\" name=\"desc\" id=\"descr\" " . ($_GET['desc'] == "on" ? "checked=\"checked\" " : "") . "/><label for=\"descr\" class=\"pkg-phrasing\">".gettext("Search in description")."</label><br />
+		<input type=\"radio\" name=\"op\" value=\"file\" " . ($_GET['op'] == "file" ? "checked=\"checked\" " : "") . "/>".gettext("files")."<br />
+		<input type=\"radio\" name=\"op\" value=\"groups\" " . ($_GET['op'] == "groups" ? "checked=\"checked\" " : "") . "/>".gettext("groups")."<br />
 		<input class=\"required\" type=\"text\" id=\"pkgsrc\" name=\"srch\" size=\"40\" title=\"".gettext("Regular expression")."\" value=\"" . $_GET['srch'] . "\"/> " . gettext( '(regular expression)' ) . "
 		<br />
 		<br />
