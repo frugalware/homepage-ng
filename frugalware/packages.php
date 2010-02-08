@@ -192,13 +192,11 @@ function search_pkg()
 	{
 		print '<h3>' . gettext( 'Error in the query, please change the searching conditions' ) . '</h3>';
 		$db->doClose();
-		main();
 	}
 	else
 	{
 		print "<h3>".gettext("No package found")."</h3>";
 		$db->doClose();
-		main();
 	}
 }
 
