@@ -678,6 +678,7 @@ function file_from_id($id)
 	fwmiddlebox($title, $content);
 }
 
+main();
 switch($_GET['op'])
 {
 	case "pkg":
@@ -693,7 +694,6 @@ switch($_GET['op'])
 		break;
 
 	default:
-		main();
 		break;
 }
 
