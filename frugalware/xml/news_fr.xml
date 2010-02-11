@@ -23,7 +23,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 <news>
     <post>
         <id>160</id>
-        <title>Frugalware 1.2rc1 (Locris) released</title>
+        <title>Frugalware 1.2rc1 (Locris) disponible</title>
         <date>Mon, 08 Feb 2010 08:38:17 +0100</date>
         <author>Miklos Vajna</author>
         <hidden>0</hidden>
@@ -48,7 +48,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
                     </ul>
                 </li>
             </ul>
-						Merci de vous référez au <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Changelog de Frugalware Locris</a> pour davantages d'informations.<br />
+						Merci de vous référer au <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Changelog de Frugalware Locris</a> pour davantages d'informations.<br />
 						Téléchargement pour les architectures i686 : jetez un oeil sur notre <a href="http://frugalware.org/download/frugalware-testing-iso">liste de miroirs</a>. N'oubliez pas de vérifier <a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">l'intégrité</a> des images d'installation avant de les graver !<br />
             <b>NOTE </b>: Cliquez <a href="/docs/install#_choosing_installation_flavor">Ici</a> pour en apprendre davantage à propos des médias nécessaires à l'installation de Frugalware.<br />
             ]]>
@@ -56,7 +56,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
     </post>
     <post>
         <id>159</id>
-        <title>Frugalware Newsletter Issue 57</title>
+        <title>Newsletter Frugalware #57</title>
         <date>Thu, 04 Feb 2010 22:54:40 +1000</date>
         <author>phayz</author>
         <hidden>0</hidden>
@@ -76,7 +76,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
     </post>
     <post>
         <id>158</id>
-        <title>Frugalware Newsletter Issue 56</title>
+        <title>Newsletter Frugalware #56</title>
         <date>Fri, 22 Jan 2010 22:15:17 +1000</date>
         <author>phayz</author>
         <hidden>0</hidden>
