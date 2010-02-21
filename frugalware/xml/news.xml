@@ -28,8 +28,8 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         <author>Miklos Vajna</author>
         <hidden>1</hidden>
         <content><![CDATA[
-            The Frugalware Developer Team is pleased to <a href="/news/161">announce</a> the immediate availability of Frugalware 1.2rc2, the second candidate of the upcoming 1.2 stable release.<br />
-            A short and incomplete list of changes since 1.2rc1:<br />
+								The Frugalware Developer Team is pleased to <a href="/news/161">announce</a> the immediate availability of Frugalware 1.2rc2, the second candidate of the upcoming 1.2 stable release.</p>
+				<p>Here are some of the major improvements and changes since 1.2rc1:<br />
             <ul>
                 <li>Improvements:
 									<ul>
