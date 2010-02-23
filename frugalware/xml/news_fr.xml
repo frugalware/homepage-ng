@@ -21,37 +21,36 @@
 Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
-
-    <post>
+ 				<post>
         <id>161</id>
-        <title>Sortie de Frugalware 1.2rc2 (Locris)</title>
+        <title>Frugalware 1.2rc2 (Locris) released</title>
         <date>Mon, 22 Feb 2010 08:41:28 +0100</date>
         <author>Miklos Vajna</author>
         <hidden>0</hidden>
         <content><![CDATA[
-								L'??quipe de d??veloppement de Frugalware a plaisir de vous <a href="/news/161">annoncer</a> la disponibilit?? imm??diate de Frugalware 1.2rc2, la seconde "Release Candidate" de la version stable 1.2. ?? venir.</p>
-				<p>Vous trouverez ci-apr??s quelques-uns des changements majeurs depuis la 1.2rc1 :<br />
+								L'??quipe de d??veloppement de Frugalware est heurese de vous <a href="/news/161">annoncer</a> la disponibilit?? imm??diate de Frugalware 1.2rc2, la seconde "Release candidate" de la version stable 1.2. ?? venir.</p>
+				<p>Voici quelques uns des changements majeurs depuis la 1.2.rc1 :<br />
             <ul>
                 <li>Am??liorations :
 									<ul>
-													<li>Cette sortie arrive avec l'int??gration de Xorg 7.5. Jetez un oeil <a href="http://www.x.org/releases/X11R7.5/doc/RELNOTES.html#AEN26">?? la liste des nouvelles fonctionnalit??s de Xorg</a>.</li>
-													<li>Nous avons mis ?? jour bluez vers <a href="http://wiki.bluez.org/wiki/Roadmap#BlueZ4.x">la branche 4.x</a>, qui permet d'am??liorer le support du bluetooth ?? la fois pour Gnome et pour KDE.<li>
+													<li>Cette sortie int??gre dor??navant Xorg 7.5. Vous pouvez consulter <a href="http://www.x.org/releases/X11R7.5/doc/RELNOTES.html#AEN26">la liste des nouveaut??s de Xorg</a>.</li>
+													<li>Nous avons mis ?? jour Bluez vers la <a href="http://wiki.bluez.org/wiki/Roadmap#BlueZ4.x">branche 4.x</a>, qui permet d'am??liorer le support du bluetooth dans Gnome et KDE.</li>
 									</ul>
                 </li>
-                <li>Paquets mis ?? jour :
+                <li>Mis ?? jour des paquets :
                     <ul>
                         <li>Linux kernel 2.6.32.8 + fixes</li>
                         <li>OpenOffice.org 3.2.0</li>
-                        <li>libopensync 0.3x (l'ancienne branche 2.0. ne supporte pas KDE4)</li>
+                        <li>libopensync 0.3x (l'ancienne branche 2.0x ne supportait pas KDE4).</li>
                         <li>git 1.7.0</li>
-                        <li>Plus de 500 mises ?? jour de paquets</li>
-                        <li>Plus de 40 nouveaux paquets</li>
+                        <li>Plus de 500 paquets ont ??t?? mis ?? jour.</li>
+                        <li>Plus de 40 paquets ont ??t?? int??gr??s ?? Frugalware.</li>
                     </ul>
                 </li>
             </ul>
-						Veuillez vous r??f??rer au <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">ChangeLog de Frugalware Locris </a> pour plus d'informations.<br />
-						T??l??chargement pour les architectures i686 : rendez-vous sur <a href="http://frugalware.org/download/frugalware-testing-iso"> la liste des mirroirs</a>a>. N'oubliez pas de v??rifier <a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">l'int??grit??</a> des images avant de les graver !<br />
-           <b>NOTE</b>: Cliquez <a href="/docs/install#_choosing_installation_flavor">ici</a> pour en savoir plus sur les m??dias n??cessaires ?? l'installation.<br />
+						R??f??rez-vous au <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Changelog de Frugalware Locris</a> pour davantage d'informations.<br />
+					T??l??chargement pour les architectures i686 : rendez-vous sur notre <a href="http://frugalware.org/download/frugalware-testing-iso">liste de mirroirs</a>. N'oubliez pas de v??rifier l'<a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">int??grit??</a> des images avant de les graver ! <br />
+            <b>NOTE</b> : cliquez <a href="/docs/install#_choosing_installation_flavor">ici</a>pour en savoir plus sur les m??dias n??cessaires ?? l'installation de Frugalware.<br />
             ]]>
         </content>
     </post>
