@@ -28,29 +28,29 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         <author>Miklos Vajna</author>
         <hidden>0</hidden>
         <content><![CDATA[
-								L'??quipe de d??veloppement de Frugalware est heurese de vous <a href="/news/161">annoncer</a> la disponibilit?? imm??diate de Frugalware 1.2rc2, la seconde "Release candidate" de la version stable 1.2. ?? venir.</p>
+								L'équipe de développement de Frugalware est heurese de vous <a href="/news/161">annoncer</a> la disponibilité immédiate de Frugalware 1.2rc2, la seconde "Release candidate" de la version stable 1.2. à venir.</p>
 				<p>Voici quelques uns des changements majeurs depuis la 1.2.rc1 :<br />
             <ul>
-                <li>Am??liorations :
+                <li>Améliorations :
 									<ul>
-													<li>Cette sortie int??gre dor??navant Xorg 7.5. Vous pouvez consulter <a href="http://www.x.org/releases/X11R7.5/doc/RELNOTES.html#AEN26">la liste des nouveaut??s de Xorg</a>.</li>
-													<li>Nous avons mis ?? jour Bluez vers la <a href="http://wiki.bluez.org/wiki/Roadmap#BlueZ4.x">branche 4.x</a>, qui permet d'am??liorer le support du bluetooth dans Gnome et KDE.</li>
+													<li>Cette sortie intègre dorénavant Xorg 7.5. Vous pouvez consulter <a href="http://www.x.org/releases/X11R7.5/doc/RELNOTES.html#AEN26">la liste des nouveautés de Xorg</a>.</li>
+													<li>Nous avons mis à jour Bluez vers la <a href="http://wiki.bluez.org/wiki/Roadmap#BlueZ4.x">branche 4.x</a>, qui permet d'améliorer le support du bluetooth dans Gnome et KDE.</li>
 									</ul>
                 </li>
-                <li>Mis ?? jour des paquets :
+                <li>Mis à jour des paquets :
                     <ul>
                         <li>Linux kernel 2.6.32.8 + fixes</li>
                         <li>OpenOffice.org 3.2.0</li>
                         <li>libopensync 0.3x (l'ancienne branche 2.0x ne supportait pas KDE4).</li>
                         <li>git 1.7.0</li>
-                        <li>Plus de 500 paquets ont ??t?? mis ?? jour.</li>
-                        <li>Plus de 40 paquets ont ??t?? int??gr??s ?? Frugalware.</li>
+                        <li>Plus de 500 paquets ont été mis à jour.</li>
+                        <li>Plus de 40 paquets ont été intégrés à Frugalware.</li>
                     </ul>
                 </li>
             </ul>
-						R??f??rez-vous au <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Changelog de Frugalware Locris</a> pour davantage d'informations.<br />
-					T??l??chargement pour les architectures i686 : rendez-vous sur notre <a href="http://frugalware.org/download/frugalware-testing-iso">liste de mirroirs</a>. N'oubliez pas de v??rifier l'<a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">int??grit??</a> des images avant de les graver ! <br />
-            <b>NOTE</b> : cliquez <a href="/docs/install#_choosing_installation_flavor">ici</a>pour en savoir plus sur les m??dias n??cessaires ?? l'installation de Frugalware.<br />
+						Référez-vous au <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Changelog de Frugalware Locris</a> pour davantage d'informations.<br />
+					Téléchargement pour les architectures i686 : rendez-vous sur notre <a href="http://frugalware.org/download/frugalware-testing-iso">liste de mirroirs</a>. N'oubliez pas de vérifier l'<a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">intégrité</a> des images avant de les graver ! <br />
+            <b>NOTE</b> : cliquez <a href="/docs/install#_choosing_installation_flavor">ici</a>pour en savoir plus sur les médias nécessaires à l'installation de Frugalware.<br />
             ]]>
         </content>
     </post>
