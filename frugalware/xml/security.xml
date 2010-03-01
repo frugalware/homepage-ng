@@ -26,6 +26,25 @@
 
 <fsas>
 	<fsa>
+		<id>632</id>
+		<date>2010-03-01</date>
+		<author>Miklos Vajna</author>
+		<package>wireshark</package>
+		<vulnerable>1.2.2-1getorin1</vulnerable>
+		<unaffected>1.2.3-1getorin1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4026</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-2560
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3549
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3550
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3551</cve>
+		<desc>Some vulnerabilities have been reported in Wireshark, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			1) An alignment error within the "dissect_paltalk()" function in epan/dissectors/packet-paltalk.c of the Paltalk dissector can be exploited to cause a crash.
+			Note: Successful exploitation requires that Wireshark is running on an alignment sensitive architecture.
+			2) A NULL pointer dereference error within the DCERPC/NT dissector when can be exploited to cause a crash.
+			3) An off-by-one error within the "dissect_negprot_response()" function in epan/dissectors/packet-smb.c of the SMB dissector can be exploited to cause a crash.
+			4) An error within the RADIUS dissector can be exploited to cause a crash.</desc>
+	</fsa>
+	<fsa>
 		<id>631</id>
 		<date>2010-03-01</date>
 		<author>Miklos Vajna</author>
