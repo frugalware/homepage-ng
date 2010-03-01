@@ -26,6 +26,18 @@
 
 <fsas>
 	<fsa>
+		<id>628</id>
+		<date>2010-03-01</date>
+		<author>Miklos Vajna</author>
+		<package>drupal6-webform</package>
+		<vulnerable>6.x_2.7-1</vulnerable>
+		<unaffected>6.x_2.8-1getorin1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4001</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=4532
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-4533</cve>
+		<desc>See FSA627 for details.</desc>
+	</fsa>
+	<fsa>
 		<id>627</id>
 		<date>2010-03-01</date>
 		<author>Miklos Vajna</author>
