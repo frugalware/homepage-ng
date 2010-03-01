@@ -26,6 +26,18 @@
 
 <fsas>
 	<fsa>
+		<id>634</id>
+		<date>2010-03-01</date>
+		<author>Miklos Vajna</author>
+		<package>drupal</package>
+		<vulnerable>5.20-1getorin1</vulnerable>
+		<unaffected>5.21-1getorin1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4052</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-4369</cve>
+		<desc>A vulnerability has been reported in Drupal Core, which can be exploited by malicious users to conduct script insertion attacks.
+			Input passed to the "Category" input field of the Contact module's administration form is not properly sanitised before being displayed to the user.</desc>
+	</fsa>
+	<fsa>
 		<id>633</id>
 		<date>2010-03-01</date>
 		<author>Miklos Vajna</author>
