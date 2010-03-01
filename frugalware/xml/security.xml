@@ -26,6 +26,20 @@
 
 <fsas>
 	<fsa>
+		<id>626</id>
+		<date>2010-03-01</date>
+		<author>Miklos Vajna</author>
+		<package>phpmyadmin</package>
+		<vulnerable>3.2.0.1-1</vulnerable>
+		<unaffected>3.2.2.1-1getorin1</unaffected>
+		<bts>http://bugs.frugalware.org/task/3996</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3696
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3697</cve>
+		<desc>Some vulnerabilities have been reported in phpMyAdmin, which can be exploited by malicious users to conduct script insertion and SQL injection attacks.
+			1) Input used as the MySQL table name is not properly sanitised before being used. This can be exploited to insert arbitrary HTML and script code, which will be executed in a user's browser session in context of an affected site when the malicious data is being viewed.
+			2) Input passed to various parameters of the PDF schema generator feature is not properly sanitised before being used. This can be exploited to manipulate SQL queries by injecting arbitrary SQL code.</desc>
+	</fsa>
+	<fsa>
 		<id>625</id>
 		<date>2009-12-09</date>
 		<author>Miklos Vajna</author>
