@@ -26,6 +26,21 @@
 
 <fsas>
 	<fsa>
+		<id>636</id>
+		<date>2010-03-01</date>
+		<author>Miklos Vajna</author>
+		<package>wireshark</package>
+		<vulnerable>1.2.5-1getorin1</vulnerable>
+		<unaffected>1.2.6-1getorin1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4087</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-2563
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-4377
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0304</cve>
+		<desc>Some vulnerabilities have been reported in Wireshark, which can be exploited by malicious people to cause a DoS (Denial of Service) or compromise a user's system.
+The vulnerabilities are caused due to errors within the LWRES dissector, which can be exploited to cause e.g. a stack-based buffer overflow via a specially crafted network packet or by tricking a user into loading a specially crafted capture file.
+Successful exploitation allows execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>635</id>
 		<date>2010-03-01</date>
 		<author>Miklos Vajna</author>
