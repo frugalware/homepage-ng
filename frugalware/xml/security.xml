@@ -26,6 +26,18 @@
 
 <fsas>
 	<fsa>
+		<id>629</id>
+		<date>2010-03-01</date>
+		<author>Miklos Vajna</author>
+		<package>wordpress</package>
+		<vulnerable>2.8.4-1</vulnerable>
+		<unaffected>2.8.5-1getorin1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4007</bts>
+		<cve>No CVE, see http://wordpress.org/development/2009/10/wordpress-2-8-5-hardening-release/.</cve>
+		<desc>A vulnerability has been reported in WordPress, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			The vulnerability is caused due to the wp-trackback.php script letting users pass multiple source character encodings to the "mb_convert_encoding()" function, which can be used to cause a high CPU load, potentially resulting in a DoS.</desc>
+	</fsa>
+	<fsa>
 		<id>628</id>
 		<date>2010-03-01</date>
 		<author>Miklos Vajna</author>
