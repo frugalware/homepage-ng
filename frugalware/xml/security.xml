@@ -26,6 +26,18 @@
 
 <fsas>
 	<fsa>
+		<id>630</id>
+		<date>2010-03-01</date>
+		<author>Miklos Vajna</author>
+		<package>drupal-link</package>
+		<vulnerable>5.x_2.5-1</vulnerable>
+		<unaffected>5.x_2.6-1getorin1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4024</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3915</cve>
+		<desc>A vulnerability has been reported in the Link module for Drupal, which can be exploited by malicious users to conduct script insertion attacks.
+			Input passed via the link title parameter, when using the "Separate title and URL" format, is not properly sanitised before being displayed to the user. This can be exploited to insert arbitrary HTML and script code, which will be executed in a user's browser session in context of an affected site when the malicious data is being viewed.</desc>
+	</fsa>
+	<fsa>
 		<id>629</id>
 		<date>2010-03-01</date>
 		<author>Miklos Vajna</author>
@@ -45,7 +57,7 @@
 		<vulnerable>6.x_2.7-1</vulnerable>
 		<unaffected>6.x_2.8-1getorin1</unaffected>
 		<bts>http://bugs.frugalware.org/task/4001</bts>
-		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=4532
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-4532
 			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-4533</cve>
 		<desc>See FSA627 for details.</desc>
 	</fsa>
