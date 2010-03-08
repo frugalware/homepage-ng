@@ -17,6 +17,34 @@
 
 <news>
     <post>
+        <id>163</id>
+        <title>Megjelent a Frugalware 1.2 (Locris)</title>
+        <date>Mon, 08 Mar 2010 08:51:34 +0100</date>
+        <author>Miklos Vajna</author>
+        <hidden>1</hidden>
+        <content><![CDATA[
+            <center><img src="http://frugalware.org/images/locris.png" alt="Megjelent a Frugalware 1.2 (Locris)!" /></center><br />
+            A Frugalware Fejlesztői Csapat örömmel <a href="/news/163-hu">jelenti be</a> a Frugalware 1.2, tizenkettedik stabil kiadásunk azonnali elérhetőségét.<br />
+            Az 1.2rc2 óta új funkciót nem vezettünk be, ellenben 62 apróbb hibát kijavítottunk. Azok számára, akik nem követték az előzetes kiadásokat, íme a legfontosabb változások az 1.1 óta, véletlenszerű sorrendben:<br />
+            <ul>
+                <li>Naprakész csomagok: Linux kernel 2.6.32.8, GNU C library 2.11.1, Xorg 7.5, GNOME 2.28, KDE 4.3.5 - csak hogy néhány nagyobb összetevőt említsünk.</li>
+                                                                <li>A KMS (Kernel Mode-Setting) alapértelmezetten be van kapcsolva Intel és Radeon videokártyák esetén.</li>
+                <li>A PAM (Pluggable Authentication Modules) bekerült az alaprendszerbe.</li>
+                <li>A devtmpfs használatával a /proc és a /sys mellett a /dev is mellőzhető a rendszermentésekből.</li>
+                                                                <li>Több nagy játék eltávolításra került a telepítőkészletekből (CD/DVD), így eggyel kevesebb DVD-t vagy néggyel kevesebb CD-t kell letölteni.</li>
+                                                                <li>Végre megtörtént a KDE és a kapcsolódó csomagok 4.x verzióra váltása, a még tavaly áprilisban elkezdett tesztelés most jutott olyan szintre, melyet már érdemesnek tartottuk beolvasztani a stabil ágba.</li>
+                                                                <li>
+Nálunk is bemutatkozik az X.Org 7.5, mellyel kapcsolatban <a href="http://www.x.org/releases/X11R7.5/doc/RELNOTES.html#AEN26">az X.Org kiadási megjegyzései</a> szolgáltatnak bővebb információt (angolul).</li>
+                                                                <li>Frissült a BlueZ felhasználói rétege is a 4.x ágra, ezzel a GNOME és a KDE Bluetooth támogatása is javult.</li>
+            </ul>
+            Bővebb információk a Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-1.2/ChangeLog.txt">Locris Változások Listájában</a> olvashatók (angolul).<br />
+                                                Letöltés i686, x86_64 és ppc architektúrára: See our <a href="http://frugalware.org/download/frugalware-1.2-iso">mirror list</a>. Kiírás előtt ellenőrizze a telepítő <a href="http://frugalware.org/download/frugalware-1.2-iso/SHA1SUMS">integritását</a>! <br />
+                                                <b>Megjegyzés</b>: <a href="/docs/install#_choosing_installation_flavor">Itt</a> talál további információkat, ha nem tudja eldönteni, melyik telepítési forma a legmegfelelőbb Önnek.<br />
+                                                Ha a legutóbbi stabil kiadásról (Getorin) frissít a Locrisra, kérjük, olvassa el a <a href="http://frugalware.org/docs/upgrade">frissítésre</a> vonatkozó részt a dokumentációnkban (angolul).<br />
+            ]]>
+        </content>
+    </post>
+    <post>
         <id>145</id>
         <title>Megjelent a Frugalware 1.1 (Getorin)</title>
         <date>Mon, 07 Sep 2009 09:37:34 +0200</date>
