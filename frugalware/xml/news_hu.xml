@@ -38,7 +38,7 @@ Nálunk is bemutatkozik az X.Org 7.5, mellyel kapcsolatban <a href="http://www.x
                                                                 <li>Frissült a BlueZ felhasználói rétege is a 4.x ágra, ezzel a GNOME és a KDE Bluetooth támogatása is javult.</li>
             </ul>
             Bővebb információk a Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-1.2/ChangeLog.txt">Locris Változások Listájában</a> olvashatók (angolul).<br />
-                                                Letöltés i686, x86_64 és ppc architektúrára: See our <a href="http://frugalware.org/download/frugalware-1.2-iso">mirror list</a>. Kiírás előtt ellenőrizze a telepítő <a href="http://frugalware.org/download/frugalware-1.2-iso/SHA1SUMS">integritását</a>! <br />
+                                                Letöltés i686, x86_64 és ppc architektúrára: Tekintse meg <a href="http://frugalware.org/download/frugalware-1.2-iso">tükörszervereink listáját</a>. Kiírás előtt ellenőrizze a telepítő <a href="http://frugalware.org/download/frugalware-1.2-iso/SHA1SUMS">integritását</a>! <br />
                                                 <b>Megjegyzés</b>: <a href="/docs/install#_choosing_installation_flavor">Itt</a> talál további információkat, ha nem tudja eldönteni, melyik telepítési forma a legmegfelelőbb Önnek.<br />
                                                 Ha a legutóbbi stabil kiadásról (Getorin) frissít a Locrisra, kérjük, olvassa el a <a href="http://frugalware.org/docs/upgrade">frissítésre</a> vonatkozó részt a dokumentációnkban (angolul).<br />
             ]]>
