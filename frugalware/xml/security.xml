@@ -26,6 +26,19 @@
 
 <fsas>
 	<fsa>
+		<id>638</id>
+		<date>2010-03-10</date>
+		<author>Miklos Vajna</author>
+		<package>wordpress</package>
+		<vulnerable>2.9.1-1</vulnerable>
+		<unaffected>2.9.2-1locris1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4131</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0682</cve>
+		<desc>A vulnerability has been discovered in WordPress, which can be exploited by malicious users to bypass certain security restrictions.
+			The vulnerability is caused due to WordPress not properly restricting access to trashed posts, which can be exploited to e.g. view a trashed post by accessing it's page directly.
+			Successful exploitation requires a valid user account.</desc>
+	</fsa>
+	<fsa>
 		<id>637</id>
 		<date>2010-03-09</date>
 		<author>Miklos Vajna</author>
