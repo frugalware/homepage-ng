@@ -26,6 +26,21 @@
 
 <fsas>
 	<fsa>
+		<id>639</id>
+		<date>2010-03-11</date>
+		<author>Miklos Vajna</author>
+		<package>drupal</package>
+		<vulnerable>5.21-1</vulnerable>
+		<unaffected>5.22-2locris1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4132</bts>
+		<cve>No CVE references, see http://drupal.org/node/731710.</cve>
+		<desc>Some vulnerabilities have been reported in Drupal, which can be exploited by malicious users to conduct script insertion attacks and bypass certain security restrictions.
+			1) Input passed via the "langcode", "name", and "native" parameters in the languages interface while using the Locale module is not properly sanitised before being displayed to the user. This can be exploited to insert arbitrary HTML and script code, which will be executed in a user's browser session in context of an affected site when the malicious data is being viewed.
+			Successful exploitation requires "administer languages" permissions.
+			2) An error in the handling of certain sessions can be exploited to maintain an open session despite the user being blocked.
+</desc>
+	</fsa>
+	<fsa>
 		<id>638</id>
 		<date>2010-03-10</date>
 		<author>Miklos Vajna</author>
