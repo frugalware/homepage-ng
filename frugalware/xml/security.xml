@@ -26,6 +26,18 @@
 
 <fsas>
 	<fsa>
+		<id>641</id>
+		<date>2010-03-12</date>
+		<author>Miklos Vajna</author>
+		<package>drupal-i18n</package>
+		<vulnerable>5.x_2.5-1</vulnerable>
+		<unaffected>5.x_2.6-1locris1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4134</bts>
+		<cve>No CVE references, see http://drupal.org/node/731632.</cve>
+		<desc>A vulnerability has been reported in the Internationalization module for Drupal, which can be exploited by malicious users to compromise a vulnerable system.
+			Certain unspecified input is not properly sanitised before being used to translate the text. This can be exploited to execute arbitrary PHP code by passing a malicious string to the input filter.</desc>
+	</fsa>
+	<fsa>
 		<id>640</id>
 		<date>2010-03-11</date>
 		<author>Miklos Vajna</author>
