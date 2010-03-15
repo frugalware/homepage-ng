@@ -113,13 +113,13 @@ $shots[startup][5][name]="06_console.png";
 $shots[startup][5][title]=gettext("Console");
 
 $shots[kde][0][name]="07_kdm.png";
-$shots[kde][0][title]=gettext("07_kdm.png");
+$shots[kde][0][title]=gettext("KDM Login Screen");
 $shots[kde][1][name]="08_kde_login.png";
-$shots[kde][1][title]=gettext("08_kde_login.png");
+$shots[kde][1][title]=gettext("Ksplash");
 $shots[kde][2][name]="09_kde.png";
-$shots[kde][2][title]=gettext("09_kde.png");
+$shots[kde][2][title]=gettext("Default KDE Desktop");
 $shots[kde][3][name]="10_kde_menu.png";
-$shots[kde][3][title]=gettext("10_kde_menu.png");
+$shots[kde][3][title]=gettext("KDE Menu");
 
 $shots[gnome][0][name]="01_gdm.png";
 $shots[gnome][0][title]=gettext("GDM Login Screen");
