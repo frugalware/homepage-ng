@@ -22,6 +22,23 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
     <post>
+        <id>165</id>
+        <title>nouveau and nvidia in -current</title>
+        <date>Tue, 16 Mar 2010 19:11:51 2010 Sun +0200</date>
+        <author>Michel Hermier</author>
+        <hidden>0</hidden>
+            <content><![CDATA[
+                With the kernel 2.6.33, we enabled nouveau kernel module. For those who have problem using it or want to use nvidia, you may be unhappy to see that nvidia doesn't work any more.
+                There are 2 ways to make it working again:
+                <ul>
+                    <li>Add nouveau to your /etc/sysconfig/blacklist file (seems to be the simplest and more secure way)</li>
+                    <li>Or happen the following kernel options in your grub configuration: nouveau.modeset=0</li>
+                </ul>
+                Then make a happy reboot.
+            ]]>
+        </content>
+    </post>
+    <post>
         <id>164</id>
         <title>Frugalware Newsletter Issue 59</title>
         <date>Tue, 09 Mar 2010 23:06:27 +1000</date>
