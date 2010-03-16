@@ -26,6 +26,17 @@
 
 <fsas>
 	<fsa>
+		<id>643</id>
+		<date>2010-03-16</date>
+		<author>Miklos Vajna</author>
+		<package>libesmtp</package>
+		<vulnerable>1.0.4-1</vulnerable>
+		<unaffected>1.0.4-2locris1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4141</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-2408</cve>
+		<desc>libesmtp did not properly handle a '\0' character in a domain name in the subject's Common Name (CN) field of an X.509 certificate, which allows man-in-the-middle attackers to spoof arbitrary SSL servers via a crafted certificate issued by a legitimate Certification Authority.</desc>
+	</fsa>
+	<fsa>
 		<id>642</id>
 		<date>2010-03-12</date>
 		<author>Miklos Vajna</author>
