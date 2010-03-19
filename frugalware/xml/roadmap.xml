@@ -21,6 +21,36 @@
 
 <roadmap>
 	<release>
+		<name>Haven</name>
+		<definition>Mentioned in Foundation and Empire. It was
+			one of the Association of Independent Trading
+			Worlds, quasi-independent from the Foundation.</definition>
+		<version>1.3</version>
+		<date>Aug 23, 2010</date>
+		<status>0</status>
+		<newsid></newsid>
+		<prerelease>
+			<preversion>rc2</preversion>
+			<predate>Aug  9, 2010</predate>
+			<prestatus>0</prestatus>
+		</prerelease>
+		<prerelease>
+			<preversion>rc1</preversion>
+			<predate>Jul 26, 2010</predate>
+			<prestatus>0</prestatus>
+		</prerelease>
+		<prerelease>
+			<preversion>pre2</preversion>
+			<predate>Jun 28, 2010</predate>
+			<prestatus>0</prestatus>
+		</prerelease>
+		<prerelease>
+			<preversion>pre1</preversion>
+			<predate>May 3, 2010</predate>
+			<prestatus>0</prestatus>
+		</prerelease>
+	</release>
+	<release>
 		<name>Locris</name>
 		<definition>Locris was 20 parsecs (65 light years) from
 		Terminus, and 800 parsecs (2600 light years) from
@@ -28,7 +58,7 @@
 		<version>1.2</version>
 		<date>Mar 8, 2010</date>
 		<status>1</status>
-		<newsid></newsid>
+		<newsid>163</newsid>
 		<prerelease>
 			<preversion>rc2</preversion>
 			<predate>Feb 22, 2010</predate>
