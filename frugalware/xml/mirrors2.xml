@@ -100,15 +100,13 @@ If you modify this file, be sure it's still valid - read /hooks/README!
 		<id>6</id>
 		<type>ftp</type>
 		<type>http</type>
-		<type>rsync</type>
-		<ftp_path>pub/linux/frugalware</ftp_path>
-		<http_path></http_path>
-		<rsync_path>frugalware/frugalware</rsync_path>
-		<host>frugalware.sourcemirrors.org</host>
-		<country>USA</country>
-		<country_code>us</country_code>
-		<supplier>SourceMirrors</supplier>
-		<supplier_url>http://www.sourcemirrors.org</supplier_url>
+		<ftp_path>mirrors/linux/frugalware</ftp_path>
+		<http_path>mirrors/linux/frugalware</http_path>
+		<host>http://www.cc.uoc.gr</host>
+		<country>Greece</country>
+		<country_code>gr</country_code>
+		<supplier>University of Crete / Computer Center</supplier>
+		<supplier_url>http://www.cc.uoc.gr</supplier_url>
 		<bandwidth>100 MBit</bandwidth>
 	</mirror>
 	<mirror>
