@@ -81,7 +81,8 @@ foreach($mirrors as $k => $v)
 		}
 	}
 	$str .= "</ul>\n";
-	fwmiddlebox($k, $str);
+	print '<a name="'.strtolower($k).'" />';
+	fwmiddlebox('<a href="#'.strtolower($k).'">'.$k.'</a>', $str);
 
 }
 
