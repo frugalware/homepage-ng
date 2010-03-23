@@ -26,6 +26,18 @@
 
 <fsas>
 	<fsa>
+		<id>644</id>
+		<date>2010-03-23</date>
+		<author>Miklos Vajna</author>
+		<package>firefox</package>
+		<vulnerable>3.6-1</vulnerable>
+		<unaffected>3.6.2-1locris1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4158</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-1028</cve>
+		<desc>A vulnerability has been reported in Mozilla Firefox, which can be exploited by malicious people to compromise a user's system.
+			The vulnerability is caused due to an integer overflow error when processing WOFF fonts. This can be exploited to cause a heap-based buffer overflow via a web page embedding a WOFF font with an overly large "origLen" field.</desc>
+	</fsa>
+	<fsa>
 		<id>643</id>
 		<date>2010-03-16</date>
 		<author>Miklos Vajna</author>
