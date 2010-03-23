@@ -107,7 +107,7 @@ If you modify this file, be sure it's still valid - read /hooks/README!
 		<country_code>gr</country_code>
 		<supplier>University of Crete / Computer Center</supplier>
 		<supplier_url>http://www.cc.uoc.gr</supplier_url>
-		<bandwidth>100 MBit</bandwidth>
+		<bandwidth>1 GBit</bandwidth>
 	</mirror>
 	<mirror>
 		<id>7</id>
