@@ -26,6 +26,18 @@
 
 <fsas>
 	<fsa>
+		<id>646</id>
+		<date>2010-03-30</date>
+		<author>Miklos Vajna</author>
+		<package>pulseaudio</package>
+		<vulnerable>0.9.21-2</vulnerable>
+		<unaffected>0.9.21-3locris1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4130</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1299</cve>
+		<desc>This fixes a security issue, which can be exploited by malicious, local users to perform certain actions with escalated privileges.
+			The security issue is caused due to the application performing chown() and chmod() calls without checking for symbolic links in existing directories. This can be exploited to e.g. change permissions and ownership of arbitrary files via symlink attacks.</desc>
+	</fsa>
+	<fsa>
 		<id>645</id>
 		<date>2010-03-28</date>
 		<author>Miklos Vajna</author>
