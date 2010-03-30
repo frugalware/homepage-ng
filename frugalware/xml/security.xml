@@ -26,6 +26,18 @@
 
 <fsas>
 	<fsa>
+		<id>648</id>
+		<date>2010-03-30</date>
+		<author>Miklos Vajna</author>
+		<package>curl</package>
+		<vulnerable>7.19.7-1</vulnerable>
+		<unaffected>7.19.7-2locris1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4162</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0734</cve>
+		<desc>A security issue has been reported in cURL / libcURL, which can potentially be exploited by malicious people to cause a DoS (Denial of Service) or compromise an application using the library.
+			The security issue is caused due to an error when returning data to the registered callback function for downloading compressed content over HTTP. The library may send back up to 64Kb of data to the callback function, exceeding the documented maximum data size of 16Kb (CURL_MAX_WRITE_SIZE). This can potentially lead to buffer overflows in client applications.</desc>
+	</fsa>
+	<fsa>
 		<id>647</id>
 		<date>2010-03-30</date>
 		<author>Miklos Vajna</author>
