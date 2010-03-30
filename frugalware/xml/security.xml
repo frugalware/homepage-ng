@@ -26,6 +26,18 @@
 
 <fsas>
 	<fsa>
+		<id>647</id>
+		<date>2010-03-30</date>
+		<author>Miklos Vajna</author>
+		<package>krb5</package>
+		<vulnerable>1.7-4</vulnerable>
+		<unaffected>1.7-5locris1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4137</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0628</cve>
+		<desc>A vulnerability has been reported in Kerberos, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			The vulnerability is caused due to an assertion error within the "spnego_gss_accept_sec_context()" function in src/lib/gssapi/spnego/spnego_mech.c when receiving an invalid packet, which can be exploited to e.g. crash an application using the library by sending a specially crafted packet.</desc>
+	</fsa>
+	<fsa>
 		<id>646</id>
 		<date>2010-03-30</date>
 		<author>Miklos Vajna</author>
