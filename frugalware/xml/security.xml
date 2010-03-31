@@ -26,6 +26,23 @@
 
 <fsas>
 	<fsa>
+		<id>650</id>
+		<date>2010-04-01</date>
+		<author>Miklos Vajna</author>
+		<package>php</package>
+		<vulnerable>5.3.1-2</vulnerable>
+		<unaffected>5.3.2-1locris1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4165</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-1128
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-1129
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-1130
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0397</cve>
+		<desc>Two vulnerabilities have been reported in PHP, which can be exploited by malicious users to bypass certain security restrictions.
+			1) An error in the session extension can be exploited to bypass the "safe_mode" and "open_basedir" feature.
+			2) A validation error exists within the "tempnam()" function, which can be exploited to bypass the "safe_mode" feature.
+			A NULL pointer dereference has been reported in the xmlrpc extension, in a call to estrdup(). This bug can at least be used to perform DoS attacks.</desc>
+	</fsa>
+	<fsa>
 		<id>649</id>
 		<date>2010-03-31</date>
 		<author>Miklos Vajna</author>
