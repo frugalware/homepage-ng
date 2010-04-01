@@ -50,7 +50,7 @@
 		<vulnerable>0.98.1-1</vulnerable>
 		<unaffected>0.98.1-2locris1</unaffected>
 		<bts>http://bugs.frugalware.org/task/4161</bts>
-		<cve>No CVE, see http://seclists.org/bugtraq/2009/Jun/239.</cve>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0744</cve>
 		<desc>Gabriel Menezes Nunes has discovered a security issue in aMSN, which can be exploited by malicious people to conduct spoofing attacks.
 			The security issue is caused due to the application improperly verifying the validity of the SSL certificate presented when logging in. This can be exploited to spoof a valid server and obtain the user's MSN username and password via e.g. a man-in-the-middle attack. </desc>
 	</fsa>
