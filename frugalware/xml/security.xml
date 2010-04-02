@@ -26,6 +26,52 @@
 
 <fsas>
 	<fsa>
+		<id>651</id>
+		<date>2010-04-02</date>
+		<author>Miklos Vajna</author>
+		<package>j2sdk</package>
+		<vulnerable>6-21</vulnerable>
+		<unaffected>6-22locris1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4167</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3555
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0082
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0084
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0085
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0087
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0088
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0089
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0090
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0091
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0092
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0093
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0094
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0095
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0837
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0838
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0839
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0840
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0841
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0842
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0843
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0844
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0845
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0846
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0847
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0848
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0849
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0850</cve>
+		<desc>Multiple vulnerabilities have been reported in Sun Java, where some have an unknown impact and others can be exploited by malicious people to manipulate certain data, disclose potentially sensitive information, cause a DoS (Denial of Service), or compromise a vulnerable system.
+			1) An error in the implementation of the "HeadspaceSoundbank" class can be exploited to cause a stack-based buffer overflow via a crafted Soundbank file with an overly long name.
+			2) An error in the implementation of the "HeadspaceSoundbank" class can be exploited to cause a heap-based buffer overflow via a crafted Soundbank file with an overly long record.
+			3) An input validation error in the processing of image files can be exploited to cause a heap-based buffer overflow, e.g. if a user visits a web page containing a specially crafted java applet.
+			Successful exploitation of these vulnerabilities allows execution of arbitrary code.
+			4) Unspecified vulnerabilities exist in the ImageIO, Java 2D, Java Runtime Environment, Java Web Start, Java Plug-in, Pack200, Sound, and HotSpot Server components.
+			5) An error in the JSSE component while handling TLS session re-negotiations can be exploited to manipulate certain data.
+			5) An unspecified error in the Java Web Start, Java Plug-in component can be exploited to manipulate certain data or cause a DoS.
+			6) Two unspecified errors in the Java Runtime Environment can be exploited to disclose unspecified information.
+			7) An unspecified error in the Java Web Start, Java Plug-in component can be exploited to cause a DoS.</desc>
+	</fsa>
+	<fsa>
 		<id>650</id>
 		<date>2010-04-01</date>
 		<author>Miklos Vajna</author>
