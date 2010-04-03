@@ -26,6 +26,19 @@
 
 <fsas>
 	<fsa>
+		<id>652</id>
+		<date>2010-04-03</date>
+		<author>Miklos Vajna</author>
+		<package>firefox</package>
+		<vulnerable>3.6.2-1locris1</vulnerable>
+		<unaffected>3.6.3-1locris1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4171</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-1121</cve>
+		<desc>A vulnerability has been reported in Mozilla Firefox, which can be exploited by malicious people to compromise a user's system.
+			The vulnerability is caused due to a use-after-free error when moving DOM nodes between documents and can be exploited via a specially crafted web page.
+			Successful exploitation allows execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>651</id>
 		<date>2010-04-02</date>
 		<author>Miklos Vajna</author>
