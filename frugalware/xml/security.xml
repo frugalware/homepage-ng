@@ -26,6 +26,19 @@
 
 <fsas>
 	<fsa>
+		<id>655</id>
+		<date>2010-04-12</date>
+		<author>Miklos Vajna</author>
+		<package>drupal-views</package>
+		<vulnerable>5.x_1.6-1</vulnerable>
+		<unaffected>5.x_1.7-1locris1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4178</bts>
+		<cve>No CVE reference, see http://drupal.org/node/765022.</cve>
+		<desc>A vulnerability has been reported in the Views module for Drupal, which can be exploited by malicious users to compromise a vulnerable system.
+			Certain unspecified input is not properly sanitised before being used to import views. This can be exploited to execute arbitrary PHP code.
+			Successful exploitation requires "administer views" permissions.</desc>
+	</fsa>
+	<fsa>
 		<id>654</id>
 		<date>2010-04-12</date>
 		<author>Miklos Vajna</author>
