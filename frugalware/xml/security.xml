@@ -26,6 +26,19 @@
 
 <fsas>
 	<fsa>
+		<id>658</id>
+		<date>2010-04-12</date>
+		<author>Miklos Vajna</author>
+		<package>mediawiki</package>
+		<vulnerable>1.15.1-1</vulnerable>
+		<unaffected>1.15.1-2locris1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4184</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-1150</cve>
+		<desc>A vulnerability has been reported in MediaWiki, which can be exploited by malicious users to conduct cross-site request forgery attacks.
+			The application allows users to perform certain actions via HTTP requests without performing any validity checks to verify the requests. This can be exploited to e.g. force a victim into executing malicious javascript.
+			Successful exploitation requires "$wgAllowUserJs" to be set to "true" in LocalSettings.php.</desc>
+	</fsa>
+	<fsa>
 		<id>657</id>
 		<date>2010-04-12</date>
 		<author>Miklos Vajna</author>
