@@ -26,6 +26,19 @@
 
 <fsas>
 	<fsa>
+		<id>653</id>
+		<date>2010-04-12</date>
+		<author>Miklos Vajna</author>
+		<package>kernel</package>
+		<vulnerable>2.6.32-3</vulnerable>
+		<unaffected>2.6.32-4locris1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4175</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-1146</cve>
+		<desc>A vulnerability has been reported in the Linux Kernel, which can be exploited by malicious, local users to bypass certain security restrictions.
+			The vulnerability is caused due to the ReiserFS file system implementation not properly restricting access to the ".reiserfs_priv" directory, which can be exploited to e.g. gain root privileges by modifying ACLs or extended attributes.
+			Successful exploitation requires that the ReiserFS file system is used.</desc>
+	</fsa>
+	<fsa>
 		<id>652</id>
 		<date>2010-04-03</date>
 		<author>Miklos Vajna</author>
