@@ -26,6 +26,23 @@
 
 <fsas>
 	<fsa>
+		<id>657</id>
+		<date>2010-04-12</date>
+		<author>Miklos Vajna</author>
+		<package>tetex</package>
+		<vulnerable>3.0-18</vulnerable>
+		<unaffected>3.0-19locris1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4153</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0739</cve>
+		<desc>Marc Schoenefeld found an integer overflow in the way    
+			TeX text formatting system processed special commands.   
+			If a user was tricked into processing a specially-crafted
+			typesetter-independent .dvi (DeVice Independent) file,
+			it could lead to dvips executable crash or, potentially,   
+			to arbitrary code execution with the privileges of the user
+			running dvips.</desc>
+	</fsa>
+	<fsa>
 		<id>656</id>
 		<date>2010-04-12</date>
 		<author>Miklos Vajna</author>
