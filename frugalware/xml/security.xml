@@ -26,6 +26,18 @@
 
 <fsas>
 	<fsa>
+		<id>659</id>
+		<date>2010-04-14</date>
+		<author>Miklos Vajna</author>
+		<package>kdebase-workspace</package>
+		<vulnerable>4.3.5-7</vulnerable>
+		<unaffected>4.3.5-8locris1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4129</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0436</cve>
+		<desc>A security issue has been reported in KDE, which can be exploited by malicious, local users to gain escalated privileges.
+			The security issue is caused due to a race condition within KDM when creating the control socket during a user login. This can be exploited to change the access permissions of arbitrary files to world-writable, which can be leveraged to e.g. execute arbitrary code with escalated privileges.</desc>
+	</fsa>
+	<fsa>
 		<id>658</id>
 		<date>2010-04-12</date>
 		<author>Miklos Vajna</author>
