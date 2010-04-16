@@ -26,6 +26,19 @@
 
 <fsas>
 	<fsa>
+		<id>660</id>
+		<date>2010-04-16</date>
+		<author>Miklos Vajna</author>
+		<package>sudo</package>
+		<vulnerable>1.7.2-3</vulnerable>
+		<unaffected>1.7.2-4locris1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4188</bts>
+		<cve>No CVE, see http://sudo.ws/sudo/alerts/sudoedit_escalate2.html.</cve>
+		<desc>A security issue has been reported in sudo, which can be exploited by malicious, local users to gain escalated privileges.
+			The security issue is caused due to an error within the command matching functionality, which can be exploited to run a "sudoedit" executable within the current working directory.
+			Successful exploitation may allow the execution of arbitrary code with escalated privileges, but requires that the attacker is allowed to use sudo's "sudoedit" pseudo-command, that the PATH environment variable contains "." while the directories do not contain any other "sudoedit" executable, and that the "ignore_dot" or "secure_path" options are disabled.</desc>
+	</fsa>
+	<fsa>
 		<id>659</id>
 		<date>2010-04-14</date>
 		<author>Miklos Vajna</author>
