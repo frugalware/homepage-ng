@@ -152,10 +152,10 @@ function search_pkg()
 	{
 		return;
 	}
-	$search = $_GET['srch'];
+	$search = addslashes($_GET['srch']);
 	//$srch = str_replace( '+', '\+', addcslashes( $search, '+' ) );
-	$arch = $_GET['arch'];
-	$fwver = $_GET['ver'];
+	$arch = addslashes($_GET['arch']);
+	$fwver = addslashes($_GET['ver']);
 	$sub = ($_GET['sub'] == "on") ? 1 : 0; # whether the search is for a substring or exact match
 
 	$query = "select id, pkgname, pkgver, fwver, arch from packages where ";
