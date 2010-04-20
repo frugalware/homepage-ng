@@ -204,9 +204,9 @@ function search_file()
 {
 	global $sqlhost, $sqluser, $sqlpass;
 	$res_set = array();
-	$search = (substr($_GET['srch'], 0, 1) == '/') ? substr($_GET['srch'], 1) : $_GET['srch'];
-	$arch = $_GET['arch'];
-	$fwver = $_GET['ver'];
+	$search = addslashes((substr($_GET['srch'], 0, 1) == '/') ? substr($_GET['srch'], 1) : $_GET['srch']);
+	$arch = addslashes($_GET['arch']);
+	$fwver = addslashes($_GET['ver']);
 	// XXX: no regexp search here
 	$query = "select packages.id, packages.pkgname, packages.pkgver, 
 		packages.fwver, packages.arch from packages, files where 
@@ -240,9 +240,9 @@ function search_groups()
 {
 	global $sqlhost, $sqluser, $sqlpass, $sqldb;
 	$res_set = array();
-	$arch = $_GET['arch'];
-	$fwver = $_GET['ver'];
-	$search = ( $_GET['srch'] != '' ) ? $_GET['srch'] : '.*';
+	$arch = addslashes($_GET['arch']);
+	$fwver = addslashes($_GET['ver']);
+	$search = addslashes(( $_GET['srch'] != '' ) ? $_GET['srch'] : '.*');
 	if( is_numeric( $_GET['id'] ) )
 		$group = $_GET['id'];
 	else
