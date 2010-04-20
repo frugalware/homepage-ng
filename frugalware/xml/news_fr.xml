@@ -59,6 +59,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         Vous pouvez la consulter <a href="/newsletter/60">ici (en anglais)</a>. En espérant que vous l'apprécierez !
         ]]>
         </content>
+    </post>
     <post>
         <id>166</id>
         <title>Getorin : fin de vie</title>
@@ -73,7 +74,8 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
             <li><a href="http://bugs.frugalware.org/task/4054">#4054 - firefox</a></li>
         </ul>
         ]]>
-        </content>            
+        </content>   
+    </post>         
     <post>
         <id>165</id>
         <title>nouveau et nvidia dans -current</title>
