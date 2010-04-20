@@ -22,6 +22,58 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
     <post>
+        <id>168</id>
+        <title>Frugalware Newsletter #61</title>
+        <date>Wed, 14 Apr 2010 20:00:00 +1000</date>
+        <author>phayz</author>
+        <hidden>0</hidden>
+        <content><![CDATA[
+        La newsletter a pour but de vous tenir informé de ce qu'il s'est passé récemment dans le monde de Frugalware.<br />
+        Au programme :
+        <ul>
+            <li>Gnome 2.30 est disponible dans 'current'</li>
+            <li>Le combat des packageurs de jeux a commencé !</li>
+            <li>Tips et astuces - Dites moi quand vous aurez fini</li>
+            <li>Les utilisateurs de Frugalware sont également des personnes - Fred Bezies</li>
+        </ul>
+        Vous pouvez la consulter <a href="/newsletter/61">ici</a>. Nous espérons que vous l'apprécierez !
+        ]]>
+    </post>
+    <post>
+        <id>167</id>
+        <title>Frugalware Newsletter #60</title>
+        <date>Thu, 25 Mar 2010 21:35:47 +1000</date>
+        <author>phayz</author>
+        <hidden>0</hidden>
+        <content><![CDATA[
+        La newsletter a pour but de vous tenir informé de ce qu'il s'est passé récemment dans le monde de Frugalware.<br />
+        Voici le sommaire de cette nouvelle newsletter :
+        <ul>
+            <li>Le nom de code de la version 1.3 de Frugalware est annoncé.</li>
+            <li>Nouveaux contributeurs</li>
+            <li>Les forums sont de retour !</li>
+            <li>Les utilisateurs de Frugalware sont également des personnes - Mickael Brangeon</li>
+            <li>Les développeurs FLOSS sont également des personnes - Mitchell Foral</li>
+        </ul>
+        Vous pouvez la consulter <a href="/newsletter/60">ici (en anglais)</a>. En espérant que vous l'apprécierez !
+        ]]>
+        </content>
+    <post>
+        <id>166</id>
+        <title>Getorin : fin de vie</title>
+        <date>Wed, 17 Mar 2010 22:25:50 +0100</date>
+        <author>Miklos Vajna</author>
+        <hidden>0</hidden>
+        <content><![CDATA[
+        Avec la sortie de Locris, le support pour Getorin s'achève. Il est chaudement recommandé de procéder à la mise à jour vers la nouvelle version stable car il n'y aura plus de mise à jour (logiciel et de sécurité) pour Getorin.<br />
+        Nous avons corrigé les bugs allant de FSA617 à FSA636 ouverts pour Getorin. Cela représente 20 problèmes de sécurité qui ont été réglés en un semestre.<br />
+        Si vous procédez à la mise à jour vers Locris, la faille de sécurité suivante sera également corrigée : <br />
+        <ul>
+            <li><a href="http://bugs.frugalware.org/task/4054">#4054 - firefox</a></li>
+        </ul>
+        ]]>
+        </content>            
+    <post>
         <id>165</id>
         <title>nouveau et nvidia dans -current</title>
         <date>Tue, 16 Mar 2010 19:11:51 2010 Sun +0200</date>
@@ -69,19 +121,19 @@ Il y a deux façons de le faire fonctionner de nouveau :
             L'Équipe de Développement de Frugalware est ravie de vous <a href="/news/163">annoncer</a> la sortie immédiate de Frugalware 1.2, la douxième mouture stable..<br />
             Aucune nouvelle fonctionnalité n'a été ajoutée depuis la 1.2rc2, mais 62 changements ont été faits pour réparer des bugs mineurs. Si vous n'avez pas suivi les changements depuis les versions pre/rc, voici les plus importants changements depuis Getorin (1.1) :<br />
             <ul>
-                <li>Paquets mis à jour : Linux kernel 2.6.32.8, GNU C library 2.11.1, Xorg 7.5, GNOME 2.28, KDE 4.3.5 pour nommer les paquets les plus importants.</li>
+                <li>Paquets mis �  jour : Linux kernel 2.6.32.8, GNU C library 2.11.1, Xorg 7.5, GNOME 2.28, KDE 4.3.5 pour nommer les paquets les plus importants.</li>
 								<li>KMS (Kernel Mode-Setting) est maintenant activé par défaut pour les cartes Intel et Radeon.</li>
                 <li>PAM (Pluggable Authentication Modules) fait maintenant parti du système de base.</li>
                 <li>Implémentation de devtmpfs : vous pouvez maintenant exclure /dev des sauvegardes avec /proc et /sys.</li>
 								<li>Suppression de plusieurs gros jeux des images d'installation (CD/DVD), ce qui signifie un DVD ou 4 CD en moins.</li>
-								<li>Nous avons finalement mis à jour KDE (et les paquets additionnels) vers la branche 4.x. Le travail a commencé en Avril 2009 et maintenant nous pensons que c'est une bonne chose de fusionner le dépôt de test.</li>
+								<li>Nous avons finalement mis �  jour KDE (et les paquets additionnels) vers la branche 4.x. Le travail a commencé en Avril 2009 et maintenant nous pensons que c'est une bonne chose de fusionner le dépôt de test.</li>
 								<li>Cette version arrive avec Xorg 7.5, regardez <a href="http://www.x.org/releases/X11R7.5/doc/RELNOTES.html#AEN26">la liste des nouvelles fonctionnalités</a>.</li>
-								<li>Nous avons mis à jour notre espace utilisateur bluez vers la branche 4.x, ce qui nous permet d'améliorer le support Bluetooth de GNOME et KDE.</li>
+								<li>Nous avons mis �  jour notre espace utilisateur bluez vers la branche 4.x, ce qui nous permet d'améliorer le support Bluetooth de GNOME et KDE.</li>
             </ul>
 						Référez-vous au <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-1.2/ChangeLog.txt">Changelog de Frugalware Locris</a> pour davantage d'informations.<br />
 					Téléchargement pour les architectures i686 : rendez-vous sur notre <a href="http://frugalware.org/download/frugalware-1.2-iso">liste de mirroirs</a>. N'oubliez pas de vérifier l'<a href="http://frugalware.org/download/frugalware-1.2-iso/SHA1SUMS">intégrité</a> des images avant de les graver ! <br />
-            <b>NOTE</b> : cliquez <a href="/docs/install#_choosing_installation_flavor">ici</a>pour en savoir plus sur les médias nécessaires à l'installation de Frugalware.<br />
-						Si vous mettez à jour Getorin vers Locris, lisez la partie <a href="http://frugalware.org/docs/upgrade">Mise à jour</a> de notre documentation.<br />
+            <b>NOTE</b> : cliquez <a href="/docs/install#_choosing_installation_flavor">ici</a>pour en savoir plus sur les médias nécessaires �  l'installation de Frugalware.<br />
+						Si vous mettez �  jour Getorin vers Locris, lisez la partie <a href="http://frugalware.org/docs/upgrade">Mise �  jour</a> de notre documentation.<br />
             ]]>
         </content>
     </post>
@@ -98,7 +150,7 @@ Il y a deux façons de le faire fonctionner de nouveau :
                 <li>"Frugalware's Gonna Git Ya"</li>
                 <li>Les artistes de Frugalware sont des personnes également - WebEagle</li>
                 <li>Les développeurs du FLOSS sont aussi des gens - Ali Abdallah</li>
-                <li>Vous avez un problême? Demandez à votre ours en peluche!</li>
+                <li>Vous avez un problême? Demandez �  votre ours en peluche!</li>
                 <li>Détails sur un(des) paquet(s) - Droid fonts set</li>
             </ul>
             Vous pouvez la lire <a href="/newsletter/58">ici</a>. Nous espérons que vous l'apprécierez !
@@ -112,29 +164,29 @@ Il y a deux façons de le faire fonctionner de nouveau :
         <author>Miklos Vajna</author>
         <hidden>0</hidden>
         <content><![CDATA[
-								L'équipe de développement de Frugalware est heurese de vous <a href="/news/161">annoncer</a> la disponibilité immédiate de Frugalware 1.2rc2, la seconde "Release candidate" de la version stable 1.2. à venir.</p>
+								L'équipe de développement de Frugalware est heurese de vous <a href="/news/161">annoncer</a> la disponibilité immédiate de Frugalware 1.2rc2, la seconde "Release candidate" de la version stable 1.2. �  venir.</p>
 				<p>Voici quelques uns des changements majeurs depuis la 1.2.rc1 :<br />
             <ul>
                 <li>Améliorations :
 									<ul>
 													<li>Cette sortie intègre dorénavant Xorg 7.5. Vous pouvez consulter <a href="http://www.x.org/releases/X11R7.5/doc/RELNOTES.html#AEN26">la liste des nouveautés de Xorg</a>.</li>
-													<li>Nous avons mis à jour Bluez vers la <a href="http://wiki.bluez.org/wiki/Roadmap#BlueZ4.x">branche 4.x</a>, qui permet d'améliorer le support du bluetooth dans Gnome et KDE.</li>
+													<li>Nous avons mis �  jour Bluez vers la <a href="http://wiki.bluez.org/wiki/Roadmap#BlueZ4.x">branche 4.x</a>, qui permet d'améliorer le support du bluetooth dans Gnome et KDE.</li>
 									</ul>
                 </li>
-                <li>Mis à jour des paquets :
+                <li>Mis �  jour des paquets :
                     <ul>
                         <li>Linux kernel 2.6.32.8 + fixes</li>
                         <li>OpenOffice.org 3.2.0</li>
                         <li>libopensync 0.3x (l'ancienne branche 2.0x ne supportait pas KDE4).</li>
                         <li>git 1.7.0</li>
-                        <li>Plus de 500 paquets ont été mis à jour.</li>
-                        <li>Plus de 40 paquets ont été intégrés à Frugalware.</li>
+                        <li>Plus de 500 paquets ont été mis �  jour.</li>
+                        <li>Plus de 40 paquets ont été intégrés �  Frugalware.</li>
                     </ul>
                 </li>
             </ul>
 						Référez-vous au <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Changelog de Frugalware Locris</a> pour davantage d'informations.<br />
 					Téléchargement pour les architectures i686 : rendez-vous sur notre <a href="http://frugalware.org/download/frugalware-testing-iso">liste de mirroirs</a>. N'oubliez pas de vérifier l'<a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">intégrité</a> des images avant de les graver ! <br />
-            <b>NOTE</b> : cliquez <a href="/docs/install#_choosing_installation_flavor">ici</a>pour en savoir plus sur les médias nécessaires à l'installation de Frugalware.<br />
+            <b>NOTE</b> : cliquez <a href="/docs/install#_choosing_installation_flavor">ici</a>pour en savoir plus sur les médias nécessaires �  l'installation de Frugalware.<br />
             ]]>
         </content>
     </post>
@@ -150,24 +202,24 @@ Il y a deux façons de le faire fonctionner de nouveau :
             <ul>
                 <li>Améliorations :
 									<ul>
-										<li>Nous avons finalement mis à jour notre branche KDE (et paquets liés) à la branche 4.x. Le travail avait commencé en avril 2009 et à présent, nous pensons que c'était une bonne idée d'intégrer ce dépôt de test dans Frugalware.</li>
-										<li>Artwork mis à jour</li>
+										<li>Nous avons finalement mis �  jour notre branche KDE (et paquets liés) �  la branche 4.x. Le travail avait commencé en avril 2009 et �  présent, nous pensons que c'était une bonne idée d'intégrer ce dépôt de test dans Frugalware.</li>
+										<li>Artwork mis �  jour</li>
 									</ul>
                 </li>
-                <li>Mises à jour des paquets :
+                <li>Mises �  jour des paquets :
                     <ul>
                         <li>KDE 4.3.5</li>
                         <li>GNU C Library 2.11.1</li>
                         <li>Mozilla Firefox 3.6</li>
                         <li>Thunderbird 3.0.1</li>
-                        <li>Plus de 400 autres mises à jour de paquets</li>
+                        <li>Plus de 400 autres mises �  jour de paquets</li>
                         <li>Plus de 100 nouveaux paquets</li>
                     </ul>
                 </li>
             </ul>
 						Merci de vous référer au <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Changelog de Frugalware Locris</a> pour davantages d'informations.<br />
 						Téléchargement pour les architectures i686 : jetez un oeil sur notre <a href="http://frugalware.org/download/frugalware-testing-iso">liste de miroirs</a>. N'oubliez pas de vérifier <a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">l'intégrité</a> des images d'installation avant de les graver !<br />
-            <b>NOTE </b>: Cliquez <a href="/docs/install#_choosing_installation_flavor">Ici</a> pour en apprendre davantage à propos des médias nécessaires à l'installation de Frugalware.<br />
+            <b>NOTE </b>: Cliquez <a href="/docs/install#_choosing_installation_flavor">Ici</a> pour en apprendre davantage �  propos des médias nécessaires �  l'installation de Frugalware.<br />
             ]]>
         </content>
     </post>
@@ -181,7 +233,7 @@ Il y a deux façons de le faire fonctionner de nouveau :
             La newsletter a pour objectif de vous garder au courant de ce qu'il s'est passé récemment dans le monde de Frugalware.<br />
             Les points abordés dans cette newsletter :
             <ul>
-		    <li>Au revoir à Jercel</li>
+		    <li>Au revoir �  Jercel</li>
 		    <li>Crazy est de retour</li>
 		    <li>"Tu me manques"...</li>
 		    <li>Mieux vous connaître - patches</li>
@@ -199,7 +251,7 @@ Il y a deux façons de le faire fonctionner de nouveau :
         <hidden>0</hidden>
         <content><![CDATA[
             La newsletter a pour objectif de vous garder au courant de ce qu'il s'est passé récemment dans le monde de Frugalware.<br /><br />
-            C'est une newsletter spéciale, dédiée à un passage en revue des réalisations et des évenements de 2009.<br /><br />
+            C'est une newsletter spéciale, dédiée �  un passage en revue des réalisations et des évenements de 2009.<br /><br />
             Vous pouvez la lire ici <a href="/newsletter/56">here</a>. Nous espérons que vous l'apprécierez !
             ]]>
         </content>
@@ -220,13 +272,13 @@ Il y a deux façons de le faire fonctionner de nouveau :
 										<li>Les jeux prenant trop de place ont été retirés des images d'installation (CD/DVD) permettant ainsi d'avoir 1 DVD et 4 CDs en moins.</li>
 									</ul>
                 </li>
-                <li>Paquets mis à jour:
+                <li>Paquets mis �  jour:
                     <ul>
                         <li>Linux kernel 2.6.32 + correction</li>
                         <li>GNU C Librarie 2.11</li>
                         <li>Mozilla Firefox 3.5.7</li>
                         <li>Thunderbird 3.0</li>
-                        <li>Plus de 800 autres paquets mis à jour</li>
+                        <li>Plus de 800 autres paquets mis �  jour</li>
                         <li>Plus de 100 nouveaux paquets</li>
                     </ul>
                 </li>
@@ -245,7 +297,7 @@ Il y a deux façons de le faire fonctionner de nouveau :
 		<hidden>0</hidden>
 		<content><![CDATA[
 			<center><img src="http://frugalware.org/images/FwNewYear.png" alt="Frugalware New Year logo"></center></br>
-			L'équipe de Frugalware souhaites à tous une bonne année.  2009 fut une année avec nombre de grandes réalisations, incluant de nouveaux développeurs, de nouveaux contributeurs, un installateur GUI (fwife), plusieurs traductions, et beaucoup de nouveaux paquets.  Nous attendons également un même succès pour 2010.
+			L'équipe de Frugalware souhaites �  tous une bonne année.  2009 fut une année avec nombre de grandes réalisations, incluant de nouveaux développeurs, de nouveaux contributeurs, un installateur GUI (fwife), plusieurs traductions, et beaucoup de nouveaux paquets.  Nous attendons également un même succès pour 2010.
 			]]>
 		</content>
 	</post>
@@ -257,7 +309,7 @@ Il y a deux façons de le faire fonctionner de nouveau :
         <hidden>0</hidden>
 		<content><![CDATA[
 			<center><img src="http://frugalware.org/images/FWsnowball.png" alt="Frugalware Christmas 2009 logo"></center></br>
-			L'équipe de Frugalware aimerait vous souhaiter un joyeux noël à chacun.  Si vous ne célébrez pas Noël, nous espérons que vous pourrez apprecier le meilleur de cette periode de l'année, en évitant le pire...  :)
+			L'équipe de Frugalware aimerait vous souhaiter un joyeux noël �  chacun.  Si vous ne célébrez pas Noël, nous espérons que vous pourrez apprecier le meilleur de cette periode de l'année, en évitant le pire...  :)
 		]]>
 		</content>
 	</post>
@@ -274,8 +326,8 @@ Il y a deux façons de le faire fonctionner de nouveau :
                 <li>Le Wiki est de retour!</li>
                 <li>Joyeux Anniversaire Devil505</li>
 		<li>Les Développeurs FLOSS sont des êtres humains aussi</li>
-                <li>Allons tous à Monaco</li>
-                <li>Apprendre à vous connaître - Dependances</li>
+                <li>Allons tous �  Monaco</li>
+                <li>Apprendre �  vous connaître - Dependances</li>
             </ul>
             Vous pouvez la lire <a href="/newsletter/55">ici (en anglais)</a>. Nous espérons que vous l'aimerez.
             ]]>
@@ -288,7 +340,7 @@ Il y a deux façons de le faire fonctionner de nouveau :
         <author>Devil505</author>
         <hidden>0</hidden>
         <content><![CDATA[
-            Le wiki officiel de Frugalware Linux est de retour en ligne <a href="http://wiki.frugalware.org">ici</a>. Nous encourageons les utilisateurs de Frugalwareà contribuer, s'il vous plait n'oubliez pas de lire le <a href="http://wiki.frugalware.org/index.php/FrugalWiki_Tutorial_(English)">FrugalWiki Tutoriel (en anglais)</a>. Les commentaires ey suggestions sont les bienvenues, alertez Devil505 oi Bouleetbil sur #frugalware.fr.
+            Le wiki officiel de Frugalware Linux est de retour en ligne <a href="http://wiki.frugalware.org">ici</a>. Nous encourageons les utilisateurs de Frugalware�  contribuer, s'il vous plait n'oubliez pas de lire le <a href="http://wiki.frugalware.org/index.php/FrugalWiki_Tutorial_(English)">FrugalWiki Tutoriel (en anglais)</a>. Les commentaires ey suggestions sont les bienvenues, alertez Devil505 oi Bouleetbil sur #frugalware.fr.
             ]]>
         </content>
     </post>
@@ -303,7 +355,7 @@ Il y a deux façons de le faire fonctionner de nouveau :
             Dans ce numéro :
             <ul>
 		    <li>Nouvelle Artwork Pour Locris</li>
-		    <li>"Qui à éteint les lumières?!"</li>
+		    <li>"Qui �  éteint les lumières?!"</li>
 		    <li>ryuo en pleine mission !</li>
 		    <li>Les Développeurs FLOSS sont des êtres humains aussi: Interview de : - Stuart Rackham</li>
 		    <li>L'heure d'apprendre ce qu'est un FrugalBuild</li>
@@ -328,13 +380,13 @@ Il y a deux façons de le faire fonctionner de nouveau :
 										<li>PAM (Pluggable Authentication Modules) fait désormais parti du système de base.</li>
 									</ul>
                 </li>
-                <li>Mise à jour de paquets : 
+                <li>Mise �  jour de paquets : 
                     <ul>
                         <li>Kernel Linux 2.6.31 + correctifs</li>
                         <li>GNOME 2.28</li>
                         <li>OpenOffice.org 3.1.1</li>
                         <li>Mozilla Firefox 3.5.4</li>
-                        <li>Plus de 900 autres paquets mise à jour</li>
+                        <li>Plus de 900 autres paquets mise �  jour</li>
                         <li>Plus de 70 nouveaux paquets</li>
                     </ul>
                 </li>
@@ -372,7 +424,7 @@ Il y a deux façons de le faire fonctionner de nouveau :
         <author>Miklos Vajna</author>
         <hidden>0</hidden>
             <content><![CDATA[
-                KMS est maintenant activé par défaut sur Frugalware-current. Il est recommandé de lire la <a href="/docs/upgrade#_kernel_mode_setting">partie concernée</a> sur la documentation avant de mettre à jour afin d'éviter de mauvaises surprises.
+                KMS est maintenant activé par défaut sur Frugalware-current. Il est recommandé de lire la <a href="/docs/upgrade#_kernel_mode_setting">partie concernée</a> sur la documentation avant de mettre �  jour afin d'éviter de mauvaises surprises.
             ]]>
         </content>
     </post>
@@ -432,7 +484,7 @@ Il y a deux façons de le faire fonctionner de nouveau :
             <ul>
                 <li>Frugalware 1.1 (Getorin) est sortie</li>
                 <li>Frugalware 1.1 release party</li>
-                <li>Apprendre à vous connaître - paquet Vanilla</li>
+                <li>Apprendre �  vous connaître - paquet Vanilla</li>
                 <li>Trucs et Astuces - RTFM</li>
 	    </ul>
 			Vous pouvez la lire <a href="/newsletter/51">ici (anglais)</a>. Nous espérons que vous l'apprécierez!
@@ -478,7 +530,7 @@ Il y a deux façons de le faire fonctionner de nouveau :
             <ul>
                 <li>KDE 4.3 débarque dauns un dépôt près de chez vous!</li>
                 <li>Frugalware 1.1 intgrérera un nouvel artwork</li>
-                <li>Frugalware 1.1 release party - mise à jour</li>
+                <li>Frugalware 1.1 release party - mise �  jour</li>
                 <li>Détails sur un(des) paquet(s) - Kate</li>
 	    </ul>
 			Vous pouvez la lire <a href="/newsletter/50">ici (anglais)</a>. Nous espérons que vous l'apprécierez!
@@ -497,20 +549,20 @@ Il y a deux façons de le faire fonctionner de nouveau :
 			<ul>
 				<li>Améliorations:
 					<ul>
-						<li>Mise à jour de l'artwork.</li>
+						<li>Mise �  jour de l'artwork.</li>
 						<li>Création du paquet android-sdk, pour ceux qui veulent accéder avoir un accès réseau depuis Frugalware via leurs téléphones Android.</li>
 					</ul>
 				</li>
-				<li>Mise à jour de paquets:
+				<li>Mise �  jour de paquets:
 					<ul>
 						<li>PHP 5.3</li>
 						<li>Octave 3.2</li>
-						<li>Plus de 250 autres mises à jour de paquets</li>
+						<li>Plus de 250 autres mises �  jour de paquets</li>
 						<li>Plus de 40 nouveaux paquets</li>
 					</ul>
 				</li>
 			</ul>
-			Veuillez vous référer à la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Getorin ChangeLog</a> pour plus d'informations.<br />
+			Veuillez vous référer �  la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Getorin ChangeLog</a> pour plus d'informations.<br />
 			Téléchargement pour i686: Regardez notre <a href="http://frugalware.org/download/frugalware-testing-iso">liste de mirrors</a>. N'oubliez pas de vérifier l'<a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">integritée</a> des images d'installation avant de les graver!<br />
 			<b>NOTE</b>: Cliquez <a href="/docs/install#_choosing_installation_flavor">ici</a> pour savoir quel média vous avez besoin pour l'installation.<br />
 			]]>
@@ -529,19 +581,19 @@ Il y a deux façons de le faire fonctionner de nouveau :
 				<li>Améliorations:
 					<ul>
 						<li>Etoile est maintenant disponible, voir <a href="http://article.gmane.org/gmane.linux.frugalware.devel/6239">cet email</a> pour plus d'informations.</li>
-						<li>Mise à jour majeure de l'installateur graphique (fwife), voir l'historique des changements <a href="http://git.frugalware.org/gitweb/gitweb.cgi?p=fwife.git;a=commitdiff;h=0.4">ici</a> et <a href="http://git.frugalware.org/gitweb/gitweb.cgi?p=fwife.git;a=commitdiff;h=0.5">ici</a>.</li>
+						<li>Mise �  jour majeure de l'installateur graphique (fwife), voir l'historique des changements <a href="http://git.frugalware.org/gitweb/gitweb.cgi?p=fwife.git;a=commitdiff;h=0.4">ici</a> et <a href="http://git.frugalware.org/gitweb/gitweb.cgi?p=fwife.git;a=commitdiff;h=0.5">ici</a>.</li>
 					</ul>
 				</li>
-				<li>Mise à jour de paquets:
+				<li>Mise �  jour de paquets:
 					<ul>
 						<li>Linux kernel 2.6.30.3</li>
 						<li>GnuTLS 2.8</li>
-						<li>Plus de 400 autres mises à jour de paquets</li>
+						<li>Plus de 400 autres mises �  jour de paquets</li>
 						<li>Plus de 100 nouveaux paquets</li>
 					</ul>
 				</li>
 			</ul>
-			Veuillez vous référer à la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Getorin ChangeLog</a> pour plus d'informations.<br />
+			Veuillez vous référer �  la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Getorin ChangeLog</a> pour plus d'informations.<br />
 			Téléchargement pour i686: Regardez notre <a href="http://frugalware.org/download/frugalware-testing-iso">liste de mirrors</a>. N'oubliez pas de vérifier l'<a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">integritée</a> des images d'installation avant de les graver!<br />
 			<b>NOTE</b>: Cliquez <a href="/docs/install#_choosing_installation_flavor">ici</a> pour savoir quel média vous avez besoin pour l'installation.<br />
 			]]>
@@ -557,7 +609,7 @@ Il y a deux façons de le faire fonctionner de nouveau :
 			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il s'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
-				<li>Elentir a mis à jour fwife 0.5</li>
+				<li>Elentir a mis �  jour fwife 0.5</li>
 				<li>Les plans de la fête pour Frugalware 1.1 continuent</li>
 				<li>Les développeurs de Frugalware sont des personnes également - Exceed</li>
 				<li>Détails sur un(des) paquet(s) - ufw et gufw</li>
@@ -579,7 +631,7 @@ Il y a deux façons de le faire fonctionner de nouveau :
 				<li>Un nouveau développeur - Exceed</li>
 				<li>Frugalware Linux 1.1pre2 est disponible</li>
 				<li>Nous avons un participant au GSOC</li>
-				<li>Apprendre à se connaître - Les résultats d'examens</li>
+				<li>Apprendre �  se connaître - Les résultats d'examens</li>
 			</ul>
 			Vous pouvez la lire <a href="/newsletter/48">ici (anglais)</a>. Nous espérons que vous l'apprécierez!
 			]]>
@@ -596,7 +648,7 @@ Il y a deux façons de le faire fonctionner de nouveau :
 			Dans ce numéro:
 			<ul>
 				<li>Bon retour Crazy!</li>
-				<li>Mise à jour de Gfpm</li>
+				<li>Mise �  jour de Gfpm</li>
 				<li>Le fwife de Elentir est maintenant encore plus beau</li>
 				<li>Testez votre connaissance de Frugalware</li>
 				<li>Détails sur un(des) paquet(s) - Fotoxx et Picpuz</li>
@@ -618,10 +670,10 @@ Il y a deux façons de le faire fonctionner de nouveau :
 				<li>Améliorations:
 					<ul>
 						<li>Une extension x86_64 pour flash fait maintenant parti de l'installation par défaut.</li>
-						<li>Juste pour votre information au cas ou vous utiliseriez le système de fichier ext3, qui est notre notre version par défaut: malgrès que nous fournissons la dernière version du noyau, nous n'avions défini la valeur de l'option 'data' à 'writeback', la fonctionnalité qui fait que ext3 semble plus robuste que ext4 au moment de l'écriture de cet article. Voir <a href="http://lwn.net/Articles/328363/">ici</a> pour plus d'informations.</li>
+						<li>Juste pour votre information au cas ou vous utiliseriez le système de fichier ext3, qui est notre notre version par défaut: malgrès que nous fournissons la dernière version du noyau, nous n'avions défini la valeur de l'option 'data' �  'writeback', la fonctionnalité qui fait que ext3 semble plus robuste que ext4 au moment de l'écriture de cet article. Voir <a href="http://lwn.net/Articles/328363/">ici</a> pour plus d'informations.</li>
 					</ul>
 				</li>
-				<li>Mise à jour de paquets:
+				<li>Mise �  jour de paquets:
 					<ul>
 						<li>Librarie GNU C 2.10.1</li>
 						<li>Noyau Linux 2.6.30</li>
@@ -629,12 +681,12 @@ Il y a deux façons de le faire fonctionner de nouveau :
 						<li>GNOME 2.26.3</li>
 						<li>Xfce 4.6.1</li>
 						<li>GCC 4.4.0</li>
-						<li>Plus de 980 autres mises à jour de paquets</li>
+						<li>Plus de 980 autres mises �  jour de paquets</li>
 						<li>Plus de 100 nouveaux paquets</li>
 					</ul>
 				</li>
 			</ul>
-			Veuillez vous référer à la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Getorin ChangeLog</a> pour plus d'informations.<br />
+			Veuillez vous référer �  la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Getorin ChangeLog</a> pour plus d'informations.<br />
 			Téléchargement pour i686: Regardez notre <a href="http://frugalware.org/download/frugalware-testing-iso">liste de mirrors</a>. N'oubliez pas de vérifier l'<a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">integritée</a> des images d'installation avant de les graver!<br />
 			<b>NOTE</b>: Cliquez <a href="/docs/install#_choosing_installation_flavor">ici</a> pour savoir quel média vous avez besoin pour l'installation.<br />
 			]]>
@@ -650,11 +702,11 @@ Il y a deux façons de le faire fonctionner de nouveau :
 			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il s'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
-				<li>Mise à jour de X.org 7.4 et kernel</li>
+				<li>Mise �  jour de X.org 7.4 et kernel</li>
 				<li>Xfce 4.6.1 est disponible dans current</li>
-				<li>Priyank à un nouveau bébé!</li>
+				<li>Priyank �  un nouveau bébé!</li>
 				<li>Les développeurs de Frugalware sont des personnes également - Cedynamix</li>
-				<li>Apprendre à se connaître - Le paramètre "--ask" de pacman-g2</li>
+				<li>Apprendre �  se connaître - Le paramètre "--ask" de pacman-g2</li>
 			</ul>
 			Vous pouvez la lire <a href="/newsletter/46">ici (anglais)</a>. Nous espérons que vous l'apprécierez!
 			]]>
@@ -714,17 +766,17 @@ Il y a deux façons de le faire fonctionner de nouveau :
 						<li>Une relecture de la documentation: de nombreuses corrections grammaticales et diverses extensions.</li>
 					</ul>
 				</li>
-				<li>Mise à jour de paquets:
+				<li>Mise �  jour de paquets:
 					<ul>
 						<li>Noyau Linux 2.6.29.2 + corrections</li>
 						<li>GNOME 2.26</li>
 						<li>Mono 2.4</li>
-						<li>Plus de 800 autres mises à jour de paquets</li>
+						<li>Plus de 800 autres mises �  jour de paquets</li>
 						<li>Plus de 70 nouveaux paquets</li>
 					</ul>
 				</li>
 			</ul>
-			Veuillez vous référer à la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Getorin ChangeLog</a> pour plus d'informations.<br />
+			Veuillez vous référer �  la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Getorin ChangeLog</a> pour plus d'informations.<br />
 			Téléchargement pour i686: Regardez notre <a href="http://frugalware.org/download/frugalware-testing-iso">liste de mirrors</a>. N'oubliez pas de vérifier l'<a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">integritée</a> des images d'installation avant de les graver!<br />
 			<b>NOTE</b>: Cliquez <a href="/docs/install#_choosing_installation_flavor">ici</a> pour savoir quel média vous avez besoin pour l'installation.<br />
 			]]>
@@ -743,7 +795,7 @@ Il y a deux façons de le faire fonctionner de nouveau :
 				<li>Faîtes attention!  C'est un maniac!</li>
 				<li>Exceed (AKA Cédric)</li>
 				<li>Les artistes de Frugalware sont des personnes également - Centuri0</li>
-				<li>Apprendre à se connaître - la lettre d'information</li>
+				<li>Apprendre �  se connaître - la lettre d'information</li>
 				<li>Détails sur un(des) paquet(s) - Smokin' Guns</li>
 			</ul>
 			Vous pouvez la lire <a href="/newsletter/43">ici (anglais)</a>. Nous espérons que vous l'apprécierez!
@@ -760,7 +812,7 @@ Il y a deux façons de le faire fonctionner de nouveau :
 			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il s'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
-				<li>Vers l'infini ... et au-delà</li>
+				<li>Vers l'infini ... et au-del� </li>
 				<li>Est ce que le <em>vrai</em> Cedric(k) pourrait se levé?</li>
 				<li>Les développeurs de Frugalware sont des personnes également - VMiklos</li>
 				<li>Trucs et Astuces - Malheureux en amour?</li>
@@ -777,9 +829,9 @@ Il y a deux façons de le faire fonctionner de nouveau :
 		<author>Miklos Vajna</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Avec la sortie de Anacreon, le support de Solaria est arrété. Il est grandement recommandé de se mettre à jour vers notre nouvelle version stable, comme il n'y aura plus de changement de sécurité et de bugs pour Solaria.<br /><br />
-			Nous avons publié les FSA526 à FSA588 pour Solaria. Cela signifie que 63 problèmes de sécurité ont étés découverts en la moitié d'une année.<br />
-			Si vous mettez à jour vers Anacreon, cela résoudra aussi les vulnérabilités suivante:<br />
+			Avec la sortie de Anacreon, le support de Solaria est arrété. Il est grandement recommandé de se mettre �  jour vers notre nouvelle version stable, comme il n'y aura plus de changement de sécurité et de bugs pour Solaria.<br /><br />
+			Nous avons publié les FSA526 �  FSA588 pour Solaria. Cela signifie que 63 problèmes de sécurité ont étés découverts en la moitié d'une année.<br />
+			Si vous mettez �  jour vers Anacreon, cela résoudra aussi les vulnérabilités suivante:<br />
 			<ul>
 				<li><a href="http://bugs.frugalware.org/task/3179">#3179 - nasm</a></li>
 			</ul>
@@ -799,7 +851,7 @@ Il y a deux façons de le faire fonctionner de nouveau :
 				<li>Frugalware 1.0 est disponible!</li>
 				<li>La récompanse Frugalware!</li>
 				<li>Les utilisateurs de Frugalware sont des personnes également - LGee</li>
-				<li>Apprendre à se connaître - Frugalware est magnifique</li>
+				<li>Apprendre �  se connaître - Frugalware est magnifique</li>
 				<li>Détails sur un(des) paquet(s) - Gigolo et medit</li>
 			</ul>
 			Vous pouvez la lire <a href="/newsletter/41">ici (anglais)</a>. Nous espérons que vous l'apprécierez!
@@ -825,10 +877,10 @@ Il y a deux façons de le faire fonctionner de nouveau :
 				<li>Extensions Java sur x86_64.</li>
 				<li>Support du système de fichier ext4.</li>
 			</ul>
-			Veuillez vous référer à la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-1.0/ChangeLog.txt">Anacreon ChangeLog</a> pour plus d'informations.<br />
+			Veuillez vous référer �  la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-1.0/ChangeLog.txt">Anacreon ChangeLog</a> pour plus d'informations.<br />
 			Téléchargement pour i686, x86_64 et ppc: Regardez notre <a href="http://frugalware.org/download/frugalware-1.0-iso">liste de mirrors</a>. N'oubliez pas de vérifier l'<a href="http://frugalware.org/download/frugalware-1.0-iso/SHA1SUMS">integritée</a> des images d'installation avant de les graver!<br />
 			<b>NOTE</b>: Cliquez <a href="/docs/install#_choosing_installation_flavor">ici</a> pour savoir quel média vous avez besoin pour l'installation.<br />
-			Si vous mettez à jour vers Anacreon depuis notre précédente version stable (Solaria), veuillez lire la partie <a href="http://frugalware.org/docs/stable/upgrade">mise à jour</a> de notre documentation.<br />
+			Si vous mettez �  jour vers Anacreon depuis notre précédente version stable (Solaria), veuillez lire la partie <a href="http://frugalware.org/docs/stable/upgrade">mise �  jour</a> de notre documentation.<br />
 			Une sympatique jaquette de cd est disponible <a href="http://frugalware.org/~devil505/artwork10/cover">ici</a>.<br />
 			]]>
 		</content>
@@ -845,8 +897,8 @@ Il y a deux façons de le faire fonctionner de nouveau :
 			<ul>
 				<li>Améliorations:
 					<ul>
-						<li>Mise à jour de l'installateur graphique (plus d'informations <a href="http://git.frugalware.org/gitweb/gitweb.cgi?p=frugalware-current.git;a=commitdiff;h=c7d667f1188f99da2ae3fd811d74483425ef9299">ici</a> et <a href="http://ftp.frugalware.org/pub/other/fwife/fwife/ChangeLog">ici</a>).</li>
-						<li>Mise à jour de l'artwork.</li>
+						<li>Mise �  jour de l'installateur graphique (plus d'informations <a href="http://git.frugalware.org/gitweb/gitweb.cgi?p=frugalware-current.git;a=commitdiff;h=c7d667f1188f99da2ae3fd811d74483425ef9299">ici</a> et <a href="http://ftp.frugalware.org/pub/other/fwife/fwife/ChangeLog">ici</a>).</li>
+						<li>Mise �  jour de l'artwork.</li>
 					</ul>
 				</li>
 				<li>Correction dans le configurateur:
@@ -856,17 +908,17 @@ Il y a deux façons de le faire fonctionner de nouveau :
 						<li>Gestion d'un répertoire existant home pour les nouveaux utilisateurs.</li>
 					</ul>
 				</li>
-				<li>Mise à jour de paquets:
+				<li>Mise �  jour de paquets:
 					<ul>
 						<li>Noyeau Linux 2.6.28.7 + corrections</li>
 						<li>KDE 3.5.10</li>
 						<li>PHP 5.2.9</li>
-						<li>Plus de 150 autres mises à jour de paquets</li>
+						<li>Plus de 150 autres mises �  jour de paquets</li>
 						<li>Plus de 20 nouveaux paquets</li>
 					</ul>
 				</li>
 			</ul>
-			Veuillez vous référer à la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Anacreon ChangeLog</a> pour plus d'informations.<br />
+			Veuillez vous référer �  la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Anacreon ChangeLog</a> pour plus d'informations.<br />
 			Téléchargement pour i686: Regardez notre <a href="http://frugalware.org/download/frugalware-testing-iso">liste de mirrors</a>. N'oubliez pas de vérifier l'<a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">integritée</a> des images d'installation avant de les graver!<br />
 			<b>NOTE</b>: Cliquez <a href="/docs/install#_choosing_installation_flavor">ici</a> pour savoir quel média vous avez besoin pour l'installation.<br />
 			]]>
@@ -905,22 +957,22 @@ Il y a deux façons de le faire fonctionner de nouveau :
 					<ul>
 						<li>Support experimental pour le système de fichier ext4.</li>
 						<li>Plugin Java pour x86_64.</li>
-						<li>gService: un tout nouvel éditeur de runlevel graphique à été ajouté.</li>
+						<li>gService: un tout nouvel éditeur de runlevel graphique �  été ajouté.</li>
 					</ul>
 				</li>
-				<li>Mise à jour de paquets:
+				<li>Mise �  jour de paquets:
 					<ul>
 						<li>Noyeau Linux 2.6.28 + corrections</li>
 						<li>Python 3.0</li>
 						<li>GNOME 2.24.3</li>
 						<li>OpenOffice.org 3.0.1</li>
 						<li>Mozilla Firefox 3.0.6</li>
-						<li>Plus de 500 autres mise à jour de paquets</li>
+						<li>Plus de 500 autres mise �  jour de paquets</li>
 						<li>Plus de 90 nouveaux paquets</li>
 					</ul>
 				</li>
 			</ul>
-			Veuillez vous référer à la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Anacreon ChangeLog</a> pour plus d'informations.<br />
+			Veuillez vous référer �  la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Anacreon ChangeLog</a> pour plus d'informations.<br />
 			Téléchargement pour i686: Regardez notre <a href="http://frugalware.org/download/frugalware-testing-iso">liste de mirrors</a>. N'oubliez pas de vérifier l'<a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">integritée</a> des images d'installation avant de les graver!<br />
 			<b>NOTE</b>: Cliquez <a href="/docs/install#_choosing_installation_flavor">ici</a> pour savoir quel média vous avez besoin pour l'installation.<br />
 			]]>
@@ -977,24 +1029,24 @@ Il y a deux façons de le faire fonctionner de nouveau :
 				<li>Améliorations:
 					<ul>
 						<li>Installateur : ajout du support pour avoir /boot sur un périphérique RAID1, support amélioré pour détecter les noms de cartes réseau.</li>
-						<li>Les ports séries sont maintenant contrôlés par le groupe “dialout” (en lieu et place de “uucp”), suite à un accord avec les autres distributions.</li>
-						<li>Pour les utilisateurs de Virtualbox qui doivent télécharger le paquet entier (environ 10 Mo) encore et encore après chaque mise à jour du kernel et bien bonne nouvelle, le module kernel est maintenant dans un paquet séparé, ce qui évitera de gaspiller du temps.</li>
+						<li>Les ports séries sont maintenant contrôlés par le groupe “dialout” (en lieu et place de “uucp”), suite �  un accord avec les autres distributions.</li>
+						<li>Pour les utilisateurs de Virtualbox qui doivent télécharger le paquet entier (environ 10 Mo) encore et encore après chaque mise �  jour du kernel et bien bonne nouvelle, le module kernel est maintenant dans un paquet séparé, ce qui évitera de gaspiller du temps.</li>
 					</ul>
 				</li>
-				<li>Mise à jour de paquets:
+				<li>Mise �  jour de paquets:
 					<ul>
 						<li>Mono 2.0.1</li>
 						<li>Python 2.6.1</li>
 						<li>GNOME 2.24.2</li>
-						<li>Plus de 800 paquets mis à jour</li>
+						<li>Plus de 800 paquets mis �  jour</li>
 						<li>Plus de 100 nouveaux paquets</li>
 					</ul>
 				</li>
 			</ul>
-			Veuillez vous référer à la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Anacreon ChangeLog</a> pour plus d'informations.<br />
+			Veuillez vous référer �  la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Anacreon ChangeLog</a> pour plus d'informations.<br />
 			Téléchargement pour i686, x86_64 et ppc: Regardez notre <a href="http://frugalware.org/download/frugalware-testing-iso">liste de mirrors</a>. N'oubliez pas de vérifier l'<a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">integritée</a> des images d'installation avant de les graver!<br />
 			<b>NOTE</b>: Cliquez <a href="/docs/install#_choosing_installation_flavor">ici</a> pour savoir quel média vous avez besoin pour l'installation.<br />
-			<b>IMPORTANT</b>: Après avoir plublié les images d'installation, il fut reporté que le service 'syslog' ne démarre pas. La prochaine mise à jour avec 'pacman-g2 -Syu' corrigera cela, ou vous pouvez aussi manuellement éxécuter la commande ,,sed -i 's/"]/" ]/g' rc.syslog'' pour résoudre ce problème.<br />
+			<b>IMPORTANT</b>: Après avoir plublié les images d'installation, il fut reporté que le service 'syslog' ne démarre pas. La prochaine mise �  jour avec 'pacman-g2 -Syu' corrigera cela, ou vous pouvez aussi manuellement éxécuter la commande ,,sed -i 's/"]/" ]/g' rc.syslog'' pour résoudre ce problème.<br />
 			]]>
 		</content>
 	</post>
@@ -1010,7 +1062,7 @@ Il y a deux façons de le faire fonctionner de nouveau :
 			<ul>
 				<li>Bonne Année!</li>
 				<li>Quand est-ce que Linux est du gâteau?</li>
-				<li>Frugalware 1.0pre2 est bientôt là</li>
+				<li>Frugalware 1.0pre2 est bientôt l� </li>
 				<li>Les utilisateurs de Frugalware sont des personnes également - emilpoe</li>
 				<li>Détails sur un(des) paquet(s) - Frozen Bubble</li>
 			</ul>
@@ -1026,7 +1078,7 @@ Il y a deux façons de le faire fonctionner de nouveau :
 		<hidden>0</hidden>
 		<content><![CDATA[
 			<center><img src="http://frugalware.org/images/logo-newyear.png" alt="Frugalware New Year logo"></center></br>
-			L'équipe de Frugalware souhaites à tous une bonne année.  2008 fut une année avec nombre de grandes réalisations, incluant de nouveaux développeurs, de nouveaux contributeurs, un installateur GUI (fwife), plusieurs traductions, et beaucoup de nouveaux paquets.  Nous attendons également un même succès pour 2009.
+			L'équipe de Frugalware souhaites �  tous une bonne année.  2008 fut une année avec nombre de grandes réalisations, incluant de nouveaux développeurs, de nouveaux contributeurs, un installateur GUI (fwife), plusieurs traductions, et beaucoup de nouveaux paquets.  Nous attendons également un même succès pour 2009.
 			]]>
 		</content>
 	</post>
@@ -1038,7 +1090,7 @@ Il y a deux façons de le faire fonctionner de nouveau :
 		<hidden>0</hidden>
 		<content><![CDATA[
 			<center><img src="http://frugalware.org/images/logo-christmas.png" alt="Frugalware Christmas logo"></center></br>
-			L'équipe de Frugalware aimerais vous souhaiter un joyeux noël à chacun.  Si vous ne célébrer pas Noël, nous espérons que vous pourrez appreciez le meilleur de cette periode de l'année, en évitant le pire...  :)
+			L'équipe de Frugalware aimerais vous souhaiter un joyeux noël �  chacun.  Si vous ne célébrer pas Noël, nous espérons que vous pourrez appreciez le meilleur de cette periode de l'année, en évitant le pire...  :)
 		]]>
 		</content>
 	</post>
@@ -1118,21 +1170,21 @@ Il y a deux façons de le faire fonctionner de nouveau :
 					<li>Installateur graphique pour Frugalware Fwife(<b>F</b>rugal<b>w</b>are <b>I</b>nstaller <b>F</b>ront-<b>E</b>nd) a attéris dans notre dépot de paquets. Oui, un installateur graphique! Cela veut dire que vous pouvez l'utiliser pour faire un bootstrap d'une nouvelle Frugalware depuis une installation existante, mais nous promettons que nous améliorerons ce domaine. :-)</li>
 					<li>Un portage initial pour 'ppc'. Elle a été activement testé sur des boîtes Apple: modèles iBook/Power Macintosh, mais le matériels IBM n'est pas encore supporté (cela pourrait ou non fonctionner). Nous avons aussi fais particuliairement attention que les problèmes commun au système non x86, comme joué <a href="http://frugalware.org/~vmiklos/pics/shots/youtube-ppc.png">youtube</a> ou des <a href="http://frugalware.org/~vmiklos/pics/shots/javaplugin-ppc.png">applets Java</a> fonctionne ou cela est possible.</li>
 					<li>Le support pour avoir un chroot 32-bit sur x86_64 est maintenant disponible. Le paquet clef est appelé emul32-tools. Si vous possédez cette architecture, regardez sa <a href="http://ftp.frugalware.org/pub/other/emul32-tools/emul32-tools/emul32-tools.html">documentation</a>!</li>
-					<li>Cette version devrait s'installer et fonctionner sur plusieurs versions précédement non supporté de PC ASUS Eee, grace à de récents changements de l'installateur et du nouveau pilote ath9k.</li>
+					<li>Cette version devrait s'installer et fonctionner sur plusieurs versions précédement non supporté de PC ASUS Eee, grace �  de récents changements de l'installateur et du nouveau pilote ath9k.</li>
 				</ul>
 				</li>
-				<li>Mises à jour de paquets:
+				<li>Mises �  jour de paquets:
 				<ul>
-					<li>Linux 2.6.27 + des mises à jours de sécurités</li>
+					<li>Linux 2.6.27 + des mises �  jours de sécurités</li>
 					<li>GCC 4.3.2</li>
 					<li>GNOME 2.24.1</li>
 					<li>OpenOffice.org 3.0</li>
-					<li>Plus de 800 autres mises à jour de paquets</li>
+					<li>Plus de 800 autres mises �  jour de paquets</li>
 					<li>Plus de 80 nouveau paquets</li>
 				</ul>
 				</li>
 			</ul>
-			Veuillez vous référer à la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Anacreon ChangeLog</a> pour plus d'informations.<br />
+			Veuillez vous référer �  la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Anacreon ChangeLog</a> pour plus d'informations.<br />
 			Téléchargement pour i686, x86_64 et ppc: Regardez notre <a href="http://frugalware.org/download/frugalware-testing-iso">liste de mirrors</a>. N'oubliez pas de vérifier l'<a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">integritée</a> des images d'installation avant de les graver!<br />
 			Au cas ou votre client ne supporte pas les torrents trackerless, regardez <a href="http://linuxtracker.org/index.php?page=torrent-details&id=0b448325f2e6fb3384b5b5908d2fa044a500b030">ici</a>.<br />
 			<b>NOTE</b>: Cliquez <a href="/docs/install#_choosing_installation_flavor">ici</a> pour avoir plus d'information pour choisir le media dont vous avez besoin pour l'installation.<br />
@@ -1150,7 +1202,7 @@ Il y a deux façons de le faire fonctionner de nouveau :
 			Dans ce numéro:
 			<ul>
 				<li>Gnome 2.24 est arrivé dans les dépot près de chez vous</li>
-				<li>Apprendre à se connaître - pacman-g2 et son cache</li>
+				<li>Apprendre �  se connaître - pacman-g2 et son cache</li>
 				<li>Astuces - Midnight Commander</li>
 				<li>Détails sur un(des) paquet(s) - Secret Maryo Chronicles</li>
 			</ul>
@@ -1166,7 +1218,7 @@ Il y a deux façons de le faire fonctionner de nouveau :
 		<hidden>0</hidden>
 		<content><![CDATA[
 			Si vous suivez les nouveautés nVidia, vous êtes probablement informé qu'un nouveau pilote legacy est disponible. Pour faire simple le support de toutes les cartes FX est retirer du driver pricipal et est conservé dans le nouveau paquet legacy.<br />
-			Le nouveau pilote legacy est disponible dans le paquet nvidia-173xx, et la dernière version du paquet nvidia est maintenant disponible. Veuillez vérifier le status de votre carte et mettre à jour vers le paquet nvidia-173xx si nécessaire avant de rapporté que X ne fonctionne plus.<br />
+			Le nouveau pilote legacy est disponible dans le paquet nvidia-173xx, et la dernière version du paquet nvidia est maintenant disponible. Veuillez vérifier le status de votre carte et mettre �  jour vers le paquet nvidia-173xx si nécessaire avant de rapporté que X ne fonctionne plus.<br />
 			Veuillez aussi noter que les paquets nVidia utilisent un nouveau script de construction général, donc veuillez rapporter tout problème n'ayant aucun rapport avec ce qui précède.<br />
 			Et pour finir, pour ceux qui possèderaient du vieux matériel nVidia, vous serez heureux d'apprendre que le paquet legacy nvidia-71xx est maintenant disponible.<br />
 			]]>
@@ -1182,8 +1234,8 @@ Il y a deux façons de le faire fonctionner de nouveau :
 			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il s'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
-				<li>Article vedette - Donnez un air somatique à votre Frugalware</li>
-				<li>Joyeux anniversaire à Gimmix</li>
+				<li>Article vedette - Donnez un air somatique �  votre Frugalware</li>
+				<li>Joyeux anniversaire �  Gimmix</li>
 				<li>Frugalware rejoint le monde artistique</li>
 				<li>Astuces - Filtre de timezone pour mutt</li>
 			</ul>
@@ -1198,9 +1250,9 @@ Il y a deux façons de le faire fonctionner de nouveau :
 		<author>Miklos Vajna</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Avec la sortie de Solaria, le support de Kalgan est arrété. Il est grandement recommandé de se mettre à jour vers notre nouvelle version stable, comme il n'y aura plus de changement de sécurité et de bugs pour Kalgan.<br /><br />
-			Nous avons publié les FSA394 à FSA525 pour Kalgan. Cela signifie que 131 problèmes de sécurité ont étés découverts en la moitié d'une année. (Nous avions fourni 98 mise à jour de sécurité pour Sayshell, la version stable précédent Kalgan).<br />
-			Si vous mettez à jour vers Solaria, cela résoudra aussi les vulnérabilités suivante:<br />
+			Avec la sortie de Solaria, le support de Kalgan est arrété. Il est grandement recommandé de se mettre �  jour vers notre nouvelle version stable, comme il n'y aura plus de changement de sécurité et de bugs pour Kalgan.<br /><br />
+			Nous avons publié les FSA394 �  FSA525 pour Kalgan. Cela signifie que 131 problèmes de sécurité ont étés découverts en la moitié d'une année. (Nous avions fourni 98 mise �  jour de sécurité pour Sayshell, la version stable précédent Kalgan).<br />
+			Si vous mettez �  jour vers Solaria, cela résoudra aussi les vulnérabilités suivante:<br />
 			<ul>
 				<li><a href="http://bugs.frugalware.org/task/2210">#2210 - bitchx</a></li>
 				<li><a href="http://bugs.frugalware.org/task/3037">#3037 - gnumeric</a></li>
@@ -1221,8 +1273,8 @@ Il y a deux façons de le faire fonctionner de nouveau :
 			<ul>
 				<li>Solaria est disponible</li>
 				<li>Concour de Wallpaper - nous avons un gagnant!</li>
-				<li>Récent changement à la lettre d'information</li>
-				<li>Apprendre à se connaître - Les traducteurs de Frugalware</li>
+				<li>Récent changement �  la lettre d'information</li>
+				<li>Apprendre �  se connaître - Les traducteurs de Frugalware</li>
 				<li>Astuces - Comment déterminer la date d'une installation d'un système Frugalware?</li>
 				<li>Détails sur un(des) paquet(s) - xmllint</li>
 			</ul>
@@ -1241,13 +1293,13 @@ Il y a deux façons de le faire fonctionner de nouveau :
 			Aucune nouveauté n'a été ajoutée depuis 0.9rc2, mais plus de 40 changements ont étés éffectués pour corriger des problèmes mineurs.
 			Si vous n'avez pas suivis les changement pendant les versions pre/rc, voici les changements les plus important depuis la version 0.8:<br />
 			<ul>
-				<li>Mise à jour du système de base: Noyaux Linux 2.6.26, Glibc 2.8 et GCC 4.3.1</li>
-				<li>Mise à jour de paquets de bureau: GNOME 2.22, OpenOffice.org 2.4.1 et Firefox 3.0.1</li>
-				<li>Installateur: amélioration du support pour les machines possédents plusieurs cartes réseaux, l'installateur usb est plus facile à démarrer, l'installation dans virtualbox/vmware est fixée/documentée.</li>
-				<li>Amélioration des outils graphiques: FUN (notificateurs de mise à jour) supporte maintenant l'affichage des nouvelles.</li>
-				<li>6400 changement, inclue 568 nouveaux paquets, 2279 mise à jour de paquets et 926 taches fermées.</li>
+				<li>Mise �  jour du système de base: Noyaux Linux 2.6.26, Glibc 2.8 et GCC 4.3.1</li>
+				<li>Mise �  jour de paquets de bureau: GNOME 2.22, OpenOffice.org 2.4.1 et Firefox 3.0.1</li>
+				<li>Installateur: amélioration du support pour les machines possédents plusieurs cartes réseaux, l'installateur usb est plus facile �  démarrer, l'installation dans virtualbox/vmware est fixée/documentée.</li>
+				<li>Amélioration des outils graphiques: FUN (notificateurs de mise �  jour) supporte maintenant l'affichage des nouvelles.</li>
+				<li>6400 changement, inclue 568 nouveaux paquets, 2279 mise �  jour de paquets et 926 taches fermées.</li>
 			</ul>
-			Veuillez vous référer à la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-0.9/ChangeLog.txt">Solaria ChangeLog</a> pour plus d'informations.<br />
+			Veuillez vous référer �  la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-0.9/ChangeLog.txt">Solaria ChangeLog</a> pour plus d'informations.<br />
 			Téléchargements pour i686:<br />
 				<a href="/download/frugalware-0.9-iso/fwlive-0.9-i686-full.iso">livecd</a>,
 				<a href="/download/frugalware-0.9-iso/frugalware-0.9-i686-net.iso">netinstall</a>,
@@ -1340,7 +1392,7 @@ b62bce2cb1cc74d774731ebc3a30b5fbffe61a07  frugalware-0.9-x86_64-dvd2.iso
 f2a29df040f4b5ac40a52fa7e90447e81ea1a240  frugalware-0.9-x86_64-net.iso
 10cb93ab72fe961386fdcc67881f7f2afde11741  fwlive-0.9-i686-full.iso
 			</pre>
-			Si vous mettez vers Solaria depuis notre version stable précédente (Kalgan), veuillez lire la partie <a href="http://frugalware.org/docs/stable/upgrade">mise à jour</a> de notre documentation.<br />
+			Si vous mettez vers Solaria depuis notre version stable précédente (Kalgan), veuillez lire la partie <a href="http://frugalware.org/docs/stable/upgrade">mise �  jour</a> de notre documentation.<br />
 			]]>
 		</content>
 	</post>
@@ -1356,17 +1408,17 @@ f2a29df040f4b5ac40a52fa7e90447e81ea1a240  frugalware-0.9-x86_64-net.iso
 			<ul>
 				<li>Améliorations:
 					<ul>
-						<li>L'éditeur vi par défaut est maintenant elvis à la place de nvi (comme elvis a moins de dépendences).</li>
-						<li>Ajout du support de la crosscompilation à distcc.</li>
+						<li>L'éditeur vi par défaut est maintenant elvis �  la place de nvi (comme elvis a moins de dépendences).</li>
+						<li>Ajout du support de la crosscompilation �  distcc.</li>
 						<li>Plus de 350 autres petits changements.</li>
 					</ul>
 				</li>
-				<li>Mise à jours de paquets:
+				<li>Mise �  jours de paquets:
 					<ul>
 						<li>Noyau Linux 2.6.26 + corrections</li>
 						<li>GNOME 2.22.3</li>
 						<li>Git 1.6.0</li>
-						<li>Plus de 100 autres mise à jour de paquets</li>
+						<li>Plus de 100 autres mise �  jour de paquets</li>
 					</ul>
 				</li>
 				<li>Nouveaux paquets:
@@ -1378,7 +1430,7 @@ f2a29df040f4b5ac40a52fa7e90447e81ea1a240  frugalware-0.9-x86_64-net.iso
 					</ul>
 				</li>
 			</ul>
-			Veuillez vous référer à la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Testing ChangeLog</a> pour plus d'informations.<br />
+			Veuillez vous référer �  la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Testing ChangeLog</a> pour plus d'informations.<br />
 			Nous avons un <a href="http://bugs.frugalware.org/?do=roadmap">planing</a> pour les nouvelles fonctionnalités nous prévoyons d'ajouté avant que Solaria soit stable.<br />
 			Téléchargements pour i686:<br />
 			<b>NOTE</b>: Cliquez <a href="/docs/install#_choosing_installation_flavor">ici</a> pour avoir plus d'information pour choisir le media dont vous avez besoin pour l'installation.<br />
@@ -1451,7 +1503,7 @@ b023faab7154bd80e4718fa4ecf9c946a9414ad0  frugalware-0.9rc2-i686-dvd3.iso
 				<li>La compétition de wallpaper est maintenant fermée</li>
 				<li>Astuces - "Où diable est ce fichier?"</li>
 				<li>Détails sur un(des) paquet(s) - LinkChecker</li>
-				<li><em>NOUVEAU</em> - Apprendre à vous connaître</li>
+				<li><em>NOUVEAU</em> - Apprendre �  vous connaître</li>
 			</ul>
 			Vous pouvez la lire <a href="/newsletter/30">ici (anglais)</a>. Nous espérons que vous l'apprécierez!
 			]]>
@@ -1476,24 +1528,24 @@ b023faab7154bd80e4718fa4ecf9c946a9414ad0  frugalware-0.9rc2-i686-dvd3.iso
 						<li>Plus de 800 petits changements.</li>
 					</ul>
 				</li>
-				<li>Mise à jours de paquets:
+				<li>Mise �  jours de paquets:
 					<ul>
 						<li>Librairie GNU C 2.8</li>
 						<li>Firefox 3.0.1</li>
 						<li>OpenOffice.org 2.4.1</li>
-						<li>Plus de 400 mise à jour de paquet.</li>
+						<li>Plus de 400 mise �  jour de paquet.</li>
 					</ul>
 				</li>
 				<li>Nouveaux paquets:
 					<ul>
-						<li>dblatex (Produits des documents DVI, PostScript, PDF à partir de sources DocBook).</li>
+						<li>dblatex (Produits des documents DVI, PostScript, PDF �  partir de sources DocBook).</li>
 						<li>wxruby (extensions wxWidgets pour ruby).</li>
 						<li>10 nouveaux jeux.</li>
 						<li>Plus de 70 nouveaux paquets.</li>
 					</ul>
 				</li>
 			</ul>
-			Veuillez vous référer à la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Testing ChangeLog</a> pour plus d'informations.<br />
+			Veuillez vous référer �  la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Testing ChangeLog</a> pour plus d'informations.<br />
 			Nous avons un <a href="http://bugs.frugalware.org/?do=roadmap">planing</a> pour les nouvelles fonctionnalités nous prévoyons d'ajouté avant que Solaria soit stable.<br />
 			Téléchargements pour i686:<br />
 			<b>NOTE</b>: Cliquez <a href="/docs/install#_choosing_installation_flavor">ici</a> pour avoir plus d'information pour choisir le media dont vous avez besoin pour l'installation.<br />
@@ -1562,7 +1614,7 @@ a79a0377d35d80fe82a74f73d134103b6a0ed39c  frugalware-0.9rc1-i686-usb.img
 				<li>Elentir commence a travailler sur un installateur graphique</li>
 				<li>Nouvelle donation</li>
 				<li>Astuce - Police monospace pour Envy Code R</li>
-				<li>Détails sur un(des) paquet(s) - rxvt-unicode (à nouveau) :)</li>
+				<li>Détails sur un(des) paquet(s) - rxvt-unicode (�  nouveau) :)</li>
 			</ul>
 			Vous pouvez la lire <a href="/newsletter/29">ici (anglais)</a>. Nous espérons que vous l'apprécierez!
 			]]>
@@ -1582,11 +1634,11 @@ a79a0377d35d80fe82a74f73d134103b6a0ed39c  frugalware-0.9rc1-i686-usb.img
 			<strong>Critère de jugement</strong><br />
 
 			<ul>
-				<li>Durant la période de jugement, chaque développeur Frugalware ne peut voter qu'une seule fois pour chaque travail.  Le travail avec le plus de vote à la fin de la période de jugementsera déclarer comme gagnant.  Si de multiples vainqueurs ont le même nombres de votes, vmiklos choisira le vainqueur parmis ses entrées;</li>
-				<li>Bien que le contenu du wallpaper soit ouvert à l'imagination du participant, il ne doit pas (a) être choquant pour le public, (b) avoir de connotations négatives - ex. attemper de dénigrer une autre distribution Linux, société, personne etc;</li>
+				<li>Durant la période de jugement, chaque développeur Frugalware ne peut voter qu'une seule fois pour chaque travail.  Le travail avec le plus de vote �  la fin de la période de jugementsera déclarer comme gagnant.  Si de multiples vainqueurs ont le même nombres de votes, vmiklos choisira le vainqueur parmis ses entrées;</li>
+				<li>Bien que le contenu du wallpaper soit ouvert �  l'imagination du participant, il ne doit pas (a) être choquant pour le public, (b) avoir de connotations négatives - ex. attemper de dénigrer une autre distribution Linux, société, personne etc;</li>
 				<li>Le travail vainqueur sera annoncer sur les forums Frugalware, ainsi que par une newssur le site web de Frugalware.  Toutes les entrées seront examinées pour une possible inclusion dans la librairie officielle de Frugalware;</li>
 				<li>Le vainqueur sera notifié par email;</li>
-				<li>La compétition est ouverte à tous, ainsi que les developpeur de Frugalware.</li>
+				<li>La compétition est ouverte �  tous, ainsi que les developpeur de Frugalware.</li>
 			</ul>
 
 			<strong>Prérequis aux travaux artistiques</strong><br />
@@ -1601,7 +1653,7 @@ a79a0377d35d80fe82a74f73d134103b6a0ed39c  frugalware-0.9rc1-i686-usb.img
 			<strong>Calendrier et délais</strong><br>
 
 			<ul>
-				<li>Les entrées doivent être soumises à la mailling lists des développeurs Frugalware - frugalware-devel@frugalware.org - du 27 Juillet 2008 au 9 Août 2008.</li>
+				<li>Les entrées doivent être soumises �  la mailling lists des développeurs Frugalware - frugalware-devel@frugalware.org - du 27 Juillet 2008 au 9 Août 2008.</li>
 				<li>Le jugement adviendra après la cloture de cette période, avec un vainqueur choisi le 16 Août 2008.</li>
 			</ul>
 			]]>
@@ -1618,7 +1670,7 @@ a79a0377d35d80fe82a74f73d134103b6a0ed39c  frugalware-0.9rc1-i686-usb.img
 			Dans ce numéro:
 			<ul>
 				<li>Frugalware 0.9 pre2 est disponible</li>
-				<li>Wine passe à 1(.0) Joyeux anniversaire! :)</li>
+				<li>Wine passe �  1(.0) Joyeux anniversaire! :)</li>
 				<li>Astuce - Quels paquets sont installés?</li>
 			</ul>
 			Vous pouvez la lire <a href="/newsletter/28">ici (anglais)</a>. Nous espérons que vous l'apprécierez!
@@ -1640,16 +1692,16 @@ a79a0377d35d80fe82a74f73d134103b6a0ed39c  frugalware-0.9rc1-i686-usb.img
 						<li>FUN-0.3.0, supporte maintenant les Notifications des News. (Newsletters, releases, etc.)</li>
 						<li>Plusieurs paquets moins populaires ne sont plus installé par défaut, ce qui réduit la taille nécéssaire d'une installation par défaut.</li>
 						<li>Remplacement du pilote wifi ipw aves les nouveaux iwl.</li>
-						<li>Mise à jour de l'environement ROX, les archives binaires sont à nouveau disponible.</li>
+						<li>Mise �  jour de l'environement ROX, les archives binaires sont �  nouveau disponible.</li>
 						<li>Plus de 2700 petits changements.</li>
 					</ul>
 				</li>
-				<li>Mise à jour de paquets:
+				<li>Mise �  jour de paquets:
 					<ul>
 						<li>GCC 4.3.1</li>
 						<li>Firefox 3.0</li>
 						<li>OpenOffice.org 2.4.1</li>
-						<li>Plus de 760 mise à jour de paquets autres</li>
+						<li>Plus de 760 mise �  jour de paquets autres</li>
 					</ul>
 				</li>
 				<li>Nouveaux paquets:
@@ -1662,7 +1714,7 @@ a79a0377d35d80fe82a74f73d134103b6a0ed39c  frugalware-0.9rc1-i686-usb.img
 					</ul>
 				</li>
 			</ul>
-			Veuillez vous référer à la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Testing ChangeLog</a> pour plus d'informations.<br />
+			Veuillez vous référer �  la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Testing ChangeLog</a> pour plus d'informations.<br />
 			Nous avons un <a href="http://bugs.frugalware.org/?do=roadmap">planing</a> pour les nouvelles fonctionnalités nous prévoyons d'ajouté avant que Solaria soit stable.<br />
 			Téléchargements pour i686:<br />
 			<b>NOTE</b>: Cliquez <a href="/docs/install#_choosing_installation_flavor">ici</a> pour avoir plus d'information pour choisir le media dont vous avez besoin pour l'installation.<br />
@@ -1728,9 +1780,9 @@ e8cd5527083653155a8fcf16e2ac58f16b1d3495  frugalware-0.9pre2-i686-usb.img
 			Dans ce numéro:
 			<ul>
 				<li>Les développeurs de Frugalware sont des personnes également! - phayz</li>
-				<li>Le plugins Skype de Bitlbee à été mis à jour à la version 6.0</li>
+				<li>Le plugins Skype de Bitlbee �  été mis �  jour �  la version 6.0</li>
 				<li>ryuo recherche de vieux PC</li>
-				<li><b>Fonctionnalité</b> - À l'aide! Frugalware à besoin de vous!</li>
+				<li><b>Fonctionnalité</b> - À l'aide! Frugalware �  besoin de vous!</li>
 				<li>Détails sur un(des) paquet(s) - Mrxvt</li>
 			</ul>
 			Vous pouvez la lire <a href="/newsletter/27">ici (anglais)</a>. Nous espérons que vous l'apprécierez!
@@ -1805,19 +1857,19 @@ e8cd5527083653155a8fcf16e2ac58f16b1d3495  frugalware-0.9pre2-i686-usb.img
 			<ul>
 				<li>Améliorations:
 					<ul>
-						<li>L'utilitaire de configuration réseau liste maintenant les détails des cartes à coté des noms des interfaces, au cas ou vous voudriez savoir le noms de l'interface pour vos cartes.</li>
-						<li>L'instalateur USB est maintenant une image complète, vous pouvez la copiée sur votre clé USB sous n'importe quel système d'exploitation (un système Linux était nécessaire à l'installation dans les versions précédentes).</li>
-						<li>Changement de la variable CHOST à $arch-frugalware-linux depuis un mix de $arch-pc-linux-gnu / $arch-unknown-linux, qui générallement cause plus de concistance et aide lors du rapport de bugs aux développeurs en amont.</li>
+						<li>L'utilitaire de configuration réseau liste maintenant les détails des cartes �  coté des noms des interfaces, au cas ou vous voudriez savoir le noms de l'interface pour vos cartes.</li>
+						<li>L'instalateur USB est maintenant une image complète, vous pouvez la copiée sur votre clé USB sous n'importe quel système d'exploitation (un système Linux était nécessaire �  l'installation dans les versions précédentes).</li>
+						<li>Changement de la variable CHOST �  $arch-frugalware-linux depuis un mix de $arch-pc-linux-gnu / $arch-unknown-linux, qui générallement cause plus de concistance et aide lors du rapport de bugs aux développeurs en amont.</li>
 						<li>Amélioration de la sécurité et du support utilisateur général. Nous travaillons avec d'autres vendeurs de Linux pour un meilleur support de la sécurité, et maintenant nos forums sont <a href="http://frugalware.org/mailman/listinfo/frugalware-forums/">mirrorés</a> sur une mailing list, de sorte que plus de développeurs puissent vous aider.</li>
-						<li>Plus de 150 autres fonctionalités mineures / bugs ont été implémenté / fixé résultant à plus de 2400 changements depuis la dernière mise à jour.</li>
+						<li>Plus de 150 autres fonctionalités mineures / bugs ont été implémenté / fixé résultant �  plus de 2400 changements depuis la dernière mise �  jour.</li>
 					</ul>
 				</li>
-				<li>Mise à jour de paquets:
+				<li>Mise �  jour de paquets:
 					<ul>
-						<li>Linux 2.6.25 + les mises à jours de sécurités</li>
+						<li>Linux 2.6.25 + les mises �  jours de sécurités</li>
 						<li>GCC 4.3.0</li>
 						<li>GNOME 2.22</li>
-						<li>Plus de 900 autres paquets mis à jour</li>
+						<li>Plus de 900 autres paquets mis �  jour</li>
 					</ul>
 				</li>
 				<li>Nouveaux paquets:
@@ -1829,7 +1881,7 @@ e8cd5527083653155a8fcf16e2ac58f16b1d3495  frugalware-0.9pre2-i686-usb.img
 					</ul>
 				</li>
 			</ul>
-			Veuillez vous référer à la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Testing ChangeLog</a> pour plus d'informations.<br />
+			Veuillez vous référer �  la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Testing ChangeLog</a> pour plus d'informations.<br />
 			Nous avons un <a href="http://bugs.frugalware.org/?do=roadmap">planing</a> pour les nouvelles fonctionnalités nous prévoyons d'ajouté avant que Solaria soit stable.<br />
 			Téléchargements pour i686:<br />
 			<b>NOTE</b>: Cliquez <a href="/docs/install#_choosing_installation_flavor">ici</a> pour avoir plus d'information pour choisir le media dont vous avez besoin pour l'installation.<br />
@@ -1911,7 +1963,7 @@ f443ddfb61652ccde5f87135965e467e3bc660f7  frugalware-0.9pre1-i686-usb.img
 			Dans ce numéro:
 			<ul>
 				<li>Des nouveaux mirroir Frugalware</li>
-				<li><b>BEAUCOUP</b> de mise à jour de sécurité</li>
+				<li><b>BEAUCOUP</b> de mise �  jour de sécurité</li>
 				<li>Les développeurs de Frugalware sont des personnes également! - Boobaa</li>
 				<li>Détails sur un(des) paquet(s) - Openbox</li>
 			</ul>
@@ -1948,8 +2000,8 @@ f443ddfb61652ccde5f87135965e467e3bc660f7  frugalware-0.9pre1-i686-usb.img
 			Dans ce numéro:
 			<ul>
 				<li>Nous sommes célèbre! Enfin presque :)</li>
-				<li>Solaria, nous y voilà!</li>
-				<li>Bouleetbil à de l'occupation</li>
+				<li>Solaria, nous y voil� !</li>
+				<li>Bouleetbil �  de l'occupation</li>
 				<li>Astuce - Pacman - qu'est ce que je vient juste d'installer?</li>
 			</ul>
 			Vous pouvez la lire <a href="/newsletter/19">ici (anglais)</a>. Nous espérons que vous l'apprécierez!
@@ -1963,9 +2015,9 @@ f443ddfb61652ccde5f87135965e467e3bc660f7  frugalware-0.9pre1-i686-usb.img
 		<author>vmiklos</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Avec la sortie de Kalgan, le support de Sayshell est arrété. Il est grandement recommandé de se mettre à jour vers notre nouvelle version stable, comme il n'y aura plus de changement de sécurité et de bugs pour Sayshell.<br /><br />
-			Nous avons publié les FSA296 à FSA393 pour Sayshell. Cela signifie que 98 problèmes de sécurité ont étés découverts en la moitié d'une année.<br />
-			Si vous mettez à jour vers Kalgan, cela résoudra aussi les vulnérabilités suivante:<br />
+			Avec la sortie de Kalgan, le support de Sayshell est arrété. Il est grandement recommandé de se mettre �  jour vers notre nouvelle version stable, comme il n'y aura plus de changement de sécurité et de bugs pour Sayshell.<br /><br />
+			Nous avons publié les FSA296 �  FSA393 pour Sayshell. Cela signifie que 98 problèmes de sécurité ont étés découverts en la moitié d'une année.<br />
+			Si vous mettez �  jour vers Kalgan, cela résoudra aussi les vulnérabilités suivante:<br />
 			<ul>
 				<li><a href="http://bugs.frugalware.org/task/2709">#2709 - xorg-server + libxfont</a></li>
 				<li><a href="http://bugs.frugalware.org/task/2780">#2780 - horde-webmail</a></li>
@@ -1986,7 +2038,7 @@ f443ddfb61652ccde5f87135965e467e3bc660f7  frugalware-0.9pre1-i686-usb.img
 			Dans ce numéro:
 			<ul>
 				<li>C'est la fête! Kalgan est disponible.</li>
-				<li>(Encore un) don de mémoire - Je suis certains de celui là :)</li>
+				<li>(Encore un) don de mémoire - Je suis certains de celui l�  :)</li>
 				<li>L'argent, toujours l'argent!</li>
 				<li>Astuce - Résoudre les problêmes de lancement des applications graphiques</li>
 				<li>(De nombreuses) annonces de sécurités</li>
@@ -2006,13 +2058,13 @@ f443ddfb61652ccde5f87135965e467e3bc660f7  frugalware-0.9pre1-i686-usb.img
 			Aucune nouveauté n'a été ajoutée depuis 0.8rc2, mais plus de 300 changements ont étés éffectués pour corriger des problèmes mineurs.
 			Si vous n'avez pas suivis les changement pendant les versions pre/rc, voici les changements les plus important depuis la version 0.7:<br />
 			<ul>
-				<li>Mise à jour de la base du système: Linux kernel 2.6.24.3, Glibc 2.7 et GCC 4.2.3</li>
-				<li>Mise à jour des paquets de bureaux: KDE 3.5.9, GNOME 2.20, XFCE 4.4.2, OpenOffice.org 2.4rc2 (ooo-build 2.4.0) et Firefox 2.0.0.12</li>
+				<li>Mise �  jour de la base du système: Linux kernel 2.6.24.3, Glibc 2.7 et GCC 4.2.3</li>
+				<li>Mise �  jour des paquets de bureaux: KDE 3.5.9, GNOME 2.20, XFCE 4.4.2, OpenOffice.org 2.4rc2 (ooo-build 2.4.0) et Firefox 2.0.0.12</li>
 				<li>Configuration: Support de WPA, support de neouvelles langues: Tchèque.</li>
-				<li>Nouvel outil graphique: FUN (notificateur de mise à jour).</li>
-				<li>4068 changements, incluant 251 nouveaux paquets, 1729 paquets mis à jour et 416 tâches fermées.</li>
+				<li>Nouvel outil graphique: FUN (notificateur de mise �  jour).</li>
+				<li>4068 changements, incluant 251 nouveaux paquets, 1729 paquets mis �  jour et 416 tâches fermées.</li>
 			</ul>
-			Veuillez vous référer à la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-0.8/ChangeLog.txt">Kalgan ChangeLog</a> pour plus d'informations.<br />
+			Veuillez vous référer �  la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-0.8/ChangeLog.txt">Kalgan ChangeLog</a> pour plus d'informations.<br />
 			Téléchargements pour i686:<br />
 				<a href="/download/frugalware-0.8-iso/fwlive-0.8-i686-full.iso">livecd</a>,
 				<a href="/download/frugalware-0.8-iso/frugalware-0.8-i686-net.iso">netinstall</a>,
@@ -2060,7 +2112,7 @@ ef68c4d3353ff104ad59725743e9f11b63703323  fwlive-0.8-i686-full.iso
 34dd50fc34315d73f7289ab887b23328d5950f04  frugalware-0.8-i686-tftp.img.gz
 fb2079de1627ca0e65a323005e0644b88fed6d03  frugalware-0.8-i686-usb.tar.gz
 			</pre>
-			Si vous mettez vers Kalgan depuis notre version stable précédente (Sayshell), veuillez lire la partie <a href="http://frugalware.org/docs/stable/upgrade">mise à jour</a> de notre documentation.<br />
+			Si vous mettez vers Kalgan depuis notre version stable précédente (Sayshell), veuillez lire la partie <a href="http://frugalware.org/docs/stable/upgrade">mise �  jour</a> de notre documentation.<br />
 			En cadeau spécial pour cette version, vous pouvez essayer Kalgan dans <a href="/download/frugalware-0.8-iso/frugalware-0.8-i686-qemu.img.lzma">qemu</a> ou <a href="/download/frugalware-0.8-iso/frugalware-0.8-i686-virtualbox.vdi.lzma">virtualbox</a> sans l'installer!<br />
 			]]>
 		</content>
@@ -2075,7 +2127,7 @@ fb2079de1627ca0e65a323005e0644b88fed6d03  frugalware-0.8-i686-usb.tar.gz
 			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il s'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
-				<li>Kalgan est presque là!</li>
+				<li>Kalgan est presque l� !</li>
 				<li>Don de mémoire - si je me rapelle bien :)</li>
 				<li>Les dévellopeurs de Frugalware sont des êtres humain aussi!</li>
 				<li>Astuce - Libérez un peut d'espace sur vos disques dur</li>
@@ -2116,15 +2168,15 @@ fb2079de1627ca0e65a323005e0644b88fed6d03  frugalware-0.8-i686-usb.tar.gz
 					<ul>
 						<li>Optimisations de l'installateur: une installation générale devrait être 30% plus rapide.</li>
 						<li>Documentation améliorée: ajout des détails concernant les mailing lists.</li>
-						<li>Correction de bugs mineurs pour aidez la mise à jour depuis 0.7.</li>
+						<li>Correction de bugs mineurs pour aidez la mise �  jour depuis 0.7.</li>
 					</ul>
 				</li>
-				<li>Paquet mis à jour:
+				<li>Paquet mis �  jour:
 					<ul>
 						<li>Kernel Linux 2.6.24 + corrections sécurité</li>
 						<li>Perl 5.10.0</li>
 						<li>GCC 4.2.3</li>
-						<li>Plus de 150 paquets mis à jour</li>
+						<li>Plus de 150 paquets mis �  jour</li>
 					</ul>
 				</li>
 				<li>Nouveaux paquets:
@@ -2136,7 +2188,7 @@ fb2079de1627ca0e65a323005e0644b88fed6d03  frugalware-0.8-i686-usb.tar.gz
 					</ul>
 				</li>
 			</ul>
-			Veuillez vous référer à la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Testing ChangeLog</a> pour plus d'informations.<br />
+			Veuillez vous référer �  la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Testing ChangeLog</a> pour plus d'informations.<br />
 			Téléchargements pour i686:<br />
 			<b>NOTE</b>: Cliquez <a href="/docs/install#_choosing_installation_flavor">ici</a> pour avoir plus d'information pour choisir le media dont vous avez besoin pour l'installation.<br />
 				<a href="/download/frugalware-testing-iso/fwlive-0.8rc2-i686-full.iso">livecd</a>,
@@ -2197,7 +2249,7 @@ c8f5addddf9d4bb949876f075cff629e5a66fac8  frugalware-0.8rc2-i686-dvd2.iso
 			Dans ce numéro:
 			<ul>
 				<li>Kalgan - nous nous en rapprochons :)</li>
-				<li>Vous voulez des mises à jours de sécurité? Nous les avons!</li>
+				<li>Vous voulez des mises �  jours de sécurité? Nous les avons!</li>
 				<li>Astuce - Problème vidéo avec X au démarrage? - <b>Ne paniquez pas!</b> (encore)</li>
 				<li>Stellarium - Regardez les étoiles depuis votre PC</li>
 			</ul>
@@ -2217,17 +2269,17 @@ c8f5addddf9d4bb949876f075cff629e5a66fac8  frugalware-0.8rc2-i686-dvd2.iso
 			<ul>
 				<li>Correction de bugs:
 					<ul>
-						<li>Splash amélioré: il reste maintenant présent jusqu'à la fin du processus d'arrêt de l'ordinateur.</li>
+						<li>Splash amélioré: il reste maintenant présent jusqu'�  la fin du processus d'arrêt de l'ordinateur.</li>
 						<li>Correction de la méthode d'installation de paquet "un par un" dans l'installateur.</li>
 						<li>Le LiveCD supporte désormais la copie vers la RAM si celle-ci est suffisante afin d'avoir le lecteur CD/DVD disponible.</li>
 					</ul>
 				</li>
-				<li>Mise à jour de paquets:
+				<li>Mise �  jour de paquets:
 					<ul>
 						<li>Linux 2.6.23.14 + corrections sécurité</li>
 						<li>Xorg 7.3 + corrections sécurité</li>
 						<li>GNOME 2.20.3</li>
-						<li>Plus de 300 mises à jour de paquets</li>
+						<li>Plus de 300 mises �  jour de paquets</li>
 					</ul>
 				</li>
 				<li>Nouveaux paquets:
@@ -2239,7 +2291,7 @@ c8f5addddf9d4bb949876f075cff629e5a66fac8  frugalware-0.8rc2-i686-dvd2.iso
 					</ul>
 				</li>
 			</ul>
-			Veuillez vous référer à la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Testing ChangeLog</a> pour plus d'informations.<br />
+			Veuillez vous référer �  la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Testing ChangeLog</a> pour plus d'informations.<br />
 			Téléchargements pour i686:<br />
 			<b>NOTE</b>: Cliquez <a href="/docs/install#_choosing_installation_flavor">ici</a> pour avoir plus d'information pour choisir le media dont vous avez besoin pour l'installation.<br />
 				<a href="/download/frugalware-testing-iso/fwlive-0.8rc1-i686-full.iso">livecd</a>,
@@ -2312,19 +2364,19 @@ bb6b5cd1e157d972913ae0830075b55c7f6a1913  frugalware-0.8rc1-i686-dvd2.iso
 		<hidden>0</hidden>
 		<content><![CDATA[
 			Cher utilisateurs de Frugalware-current,<br />
-			Vous aurez probablement noter que nous n'avons pas mis à jour X.Org depuis un moment. Ceci résultait du fait que selon nous la version en paquet que nous avions déjà était bien plus stable que la nouvelle, ainsi nous avons garder X.Org 7.2 et décidé de le maintenir au lieu de le mettre à jour. Maintenant il est temps de mettre à jour !<br />
+			Vous aurez probablement noter que nous n'avons pas mis �  jour X.Org depuis un moment. Ceci résultait du fait que selon nous la version en paquet que nous avions déj�  était bien plus stable que la nouvelle, ainsi nous avons garder X.Org 7.2 et décidé de le maintenir au lieu de le mettre �  jour. Maintenant il est temps de mettre �  jour !<br />
 			Finalement la dernière release du serveur X semble:<br />
 			1) aussi stable que la précédente version,<br />
 			2) avoir moins de problèmes comme ceux dans X.Org 7.3.<br />
 			En résumé: C'est le moment de la tester!<br />
-			Nous avons préparé un dépôt à part pour vous permettre de tester et cette mise à jour apportera 350 petits changements. Si vous voulez aider, svp:<br />
-			1) Ajoutez <pre>Include = /etc/pacman-g2/repos/xorg73</pre> à <tt>/etc/pacman-g2.conf</tt>, avant la ligne <tt>frugalware-current</tt>.<br />
+			Nous avons préparé un dépôt �  part pour vous permettre de tester et cette mise �  jour apportera 350 petits changements. Si vous voulez aider, svp:<br />
+			1) Ajoutez <pre>Include = /etc/pacman-g2/repos/xorg73</pre> �  <tt>/etc/pacman-g2.conf</tt>, avant la ligne <tt>frugalware-current</tt>.<br />
 			2) Créez un fichier nommé <tt>/etc/pacman-g2/repos/xorg73</tt> avec le contenu suivant:
 			<pre>[xorg73]
 Server = http://ftp.frugalware.org/pub/other/people/krix/xorg73/frugalware-i686</pre>
-			3) Comme d'habitude faites: <pre># pacman-g2 -Syu</pre> pour mettre votre systeme à jour.<br />
+			3) Comme d'habitude faites: <pre># pacman-g2 -Syu</pre> pour mettre votre systeme �  jour.<br />
 			4) Vous povez redémarrer X en rebootant, ou en faisant <pre># init 3 && init 4</pre>
-			Si aucun problème majeur ne survient, nous fusionnerons la branche <tt>xorg73</tt> à current à la fin du weekend.<br />
+			Si aucun problème majeur ne survient, nous fusionnerons la branche <tt>xorg73</tt> �  current �  la fin du weekend.<br />
 			Merci de votre aide!
 			]]>
 		</content>
@@ -2341,21 +2393,21 @@ Server = http://ftp.frugalware.org/pub/other/people/krix/xorg73/frugalware-i686<
 			<ul>
 				<li>Nouvelles fonctionnalités:
 					<ul>
-						<li>Support de l'excécution de crochet à l'interieur du gestionnaire de paquet - ex. après une mise à jour du systeme réussie.</li>
+						<li>Support de l'excécution de crochet �  l'interieur du gestionnaire de paquet - ex. après une mise �  jour du systeme réussie.</li>
 						<li>Ammélioration du support de la liste noire des modules du noyau.</li>
 					</ul>
 				</li>
-				<li>Paquets mis à jour:
+				<li>Paquets mis �  jour:
 					<ul>
 						<li>Xfce 4.4.2 - avec des corrections de bugs et des traductions</li>
 						<li>OpenOffice.org 2.3.1 - avec des corrections de sécurités et de bugs</li>
 						<li>Tcl et Tk 8.5 - avec le support de polices de caractères anti-aliasés</li>
 						<li>Octave 3.0.0 - compatibilité avec Matlab est améliorée</li>
-						<li>Mise à jour des librairies de cryptage - gnutls-2.2 et libgcrypt-1.4</li>
+						<li>Mise �  jour des librairies de cryptage - gnutls-2.2 et libgcrypt-1.4</li>
 					</ul>
 				</li>
 			</ul>
-			Veuillez vous référer à la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Testing ChangeLog</a> pour plus d'informations.<br />
+			Veuillez vous référer �  la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Testing ChangeLog</a> pour plus d'informations.<br />
 			Téléchargements pour i686:<br />
 			<b>NOTE</b>: Click <a href="/docs/install#_choosing_installation_flavor">here</a> to read more about what media you need for the installation.<br />
 				<a href="/download/frugalware-testing-iso/fwlive-0.8pre2-i686-full.iso">livecd</a>,
@@ -2413,7 +2465,7 @@ eb7fbc5158e452f5217e87a2be51e600b05024b8  frugalware-0.8pre2-i686-tftp.img.gz
 			Cette lettre d'information a pour but de vous tenir informé avec ce qu'il s'est passé récemment dans le monde Frugalware.<br />
 			Dans ce numéro:
 			<ul>
-			<li>Mise à jours de paquets</li>
+			<li>Mise �  jours de paquets</li>
 			<li>Astuces - Changement des droit de fichiers et de librairies</li>
 			<li>Bonne année</li>
 			</ul>
@@ -2457,25 +2509,25 @@ eb7fbc5158e452f5217e87a2be51e600b05024b8  frugalware-0.8pre2-i686-tftp.img.gz
 			Les développeurs de Frugalware ont le plaisir de vous <a href="/news/79">annoncer</a> la disponibilité disponibilité de Frugalware 0.8pre1, le premier aperçu technique de la prochaine version stable 0.8.<br />
 			Une liste courte et incomplète des changements depuis 0.7:<br />
 			<ul>
-				<li>Paquets mis à jour:
+				<li>Paquets mis �  jour:
 					<ul>
 						<li>Corrections Linux 2.6.23 +</li>
 						<li>Librarie GNU C 2.7</li>
 						<li>GCC 4.2.2</li>
 						<li>espgs est désormais remplacé par la version stable de ghostscript</li>
 						<li>compiz-fusion remplace beryl, la plupart des utilisateurs peuvent désormais éviter XGL</li>
-						<li>plus de 600 autres mise à jour</li>
+						<li>plus de 600 autres mise �  jour</li>
 						<li>plus de 100 nouveau paquets, dont 20 nouveau jeux</li>
 					</ul>
 				</li>
 				<li>Nouvelles fonctionnalités:
 					<ul>
-						<li>Ajout de FUN (Frugalware Update Notifier), qui notifie quand une mise à jour est disponible depuis le system tray utilisateur.</li>
+						<li>Ajout de FUN (Frugalware Update Notifier), qui notifie quand une mise �  jour est disponible depuis le system tray utilisateur.</li>
 						<li>Ajout du support de WPA lors de l'installation.</li>
 					</ul>
 				</li>
 			</ul>
-			Veuillez vous référer à la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Testing ChangeLog</a> pour plus d'informations.<br />
+			Veuillez vous référer �  la Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Testing ChangeLog</a> pour plus d'informations.<br />
 			Téléchargements pour i686:<br />
 			<b>NOTE</b>: Cliquez <a href="/docs/install#_choosing_installation_flavor">ici</a> pour avoir plus d'information pour choisir le media dont vous avez besoin pour l'installation.<br />
 				<a href="/download/frugalware-testing-iso/fwlive-0.8pre1-i686-full.iso">livecd</a>,
@@ -2541,9 +2593,9 @@ a1321a1f978bfedf8cf7fdd33c90e858bd881e10  frugalware-0.8pre1-i686-dvd1.iso
 		<author>Hermier</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Avec la sortie de Sayshell, le support de Terminus est arrété. Il est grandement recommandé de se mettre à jour vers notre nouvelle version stable, comme il n'y aura plus de changement de sécurité et de bugs pour Terminus.<br /><br />
-			Nous avons publié les FSA135 à FSA295 pour Terminus. Cela signifie que 161 problèmes de sécurité ont étés découverts en la moitié d'une année.<br />
-			Si vous mettez à jour vers Sayshell, cela résoudra aussi les vulnérabilités suivante:<br />
+			Avec la sortie de Sayshell, le support de Terminus est arrété. Il est grandement recommandé de se mettre �  jour vers notre nouvelle version stable, comme il n'y aura plus de changement de sécurité et de bugs pour Terminus.<br /><br />
+			Nous avons publié les FSA135 �  FSA295 pour Terminus. Cela signifie que 161 problèmes de sécurité ont étés découverts en la moitié d'une année.<br />
+			Si vous mettez �  jour vers Sayshell, cela résoudra aussi les vulnérabilités suivante:<br />
 			<ul>
 				<li><a href="http://bugs.frugalware.org/task/2055">#2055 - MySQL</a></li>
 				<li><a href="http://bugs.frugalware.org/task/2291">#2291 - mldonkey</a></li>
@@ -2566,8 +2618,8 @@ a1321a1f978bfedf8cf7fdd33c90e858bd881e10  frugalware-0.8pre1-i686-dvd1.iso
 			Aucune nouvelles fonctionalités n'a été ajoutées depuis la 0.7rc2, mais plus de 150 modifications ont été effectuées pour corriger des bugs mineurs.
 			Si vous n'avez pas suivi les changements avec les pre-release et les release candidate, voici les plus importants changements depuis la version 0.6:<br />
 			<ul>
-				<li>Mise à jour du système de base: Linux kernel 2.6.22.9, Glibc 2.6.1 et GCC 4.2.1.</li>
-				<li>Mise à jour des environnements graphiques: KDE 3.5.7, GNOME 2.20, XFCE 4.4.1, OpenOffice 2.3.0 et Firefox 2.0.0.7.</li>
+				<li>Mise �  jour du système de base: Linux kernel 2.6.22.9, Glibc 2.6.1 et GCC 4.2.1.</li>
+				<li>Mise �  jour des environnements graphiques: KDE 3.5.7, GNOME 2.20, XFCE 4.4.1, OpenOffice 2.3.0 et Firefox 2.0.0.7.</li>
 				<li>Un LiveCD appellé FwLive est maintenant disponible pour cette release.</li>
 				<li>Installateur: langue spécifique par défaut (clavier, zone horaire, mirroir par défaut), l'installation est maintenant enregistrée dans un log.</li>
 				<li>Ajout du support pour les langues suivantes: Roumain, Suédois, Italien et Danois.</li>
@@ -2616,7 +2668,7 @@ a1321a1f978bfedf8cf7fdd33c90e858bd881e10  frugalware-0.8pre1-i686-dvd1.iso
 				<a href="/download/frugalware-0.7-iso/frugalware-0.7-x86_64-usb.tar.gz">usb</a>,
 				<a href="/download/frugalware-0.7-iso/fwchroot-0.7-x86_64.tar.bz2">chroot tarball</a>
 				<br />
-			<b>NOTE</b>: Ne téléchargez pas les CD 3 à 13, ou le deuxième DVD à moins que vous n'ayez pas de connexion internet.<br />
+			<b>NOTE</b>: Ne téléchargez pas les CD 3 �  13, ou le deuxième DVD �  moins que vous n'ayez pas de connexion internet.<br />
 			SHA1SUMs:
 			<pre>
 11d369eef484e64f1583364456491530d24701b7  frugalware-0.7-i686-cd10.iso
@@ -2655,18 +2707,18 @@ fa447a8cbd60d554905c48d379fb5d08b80e89b8  frugalware-0.7-i686-tftp.img.gz
 31bd8243520f767c44ada50da287b4fe1d72a0ac  frugalware-0.7-x86_64-tftp.img.gz
 88c0be39dd0630c34e31e8482ead29f6097ee0a7  frugalware-0.7-x86_64-usb.tar.gz
 			</pre>
-			Si vous mettez votre système à jour vers Sayshell depuis une précédente version (Terminus), veuillez lire la partie <a href="http://frugalware.org/docs/stable/upgrade">mise à jour</a> de notre documentation.<br />
+			Si vous mettez votre système �  jour vers Sayshell depuis une précédente version (Terminus), veuillez lire la partie <a href="http://frugalware.org/docs/stable/upgrade">mise �  jour</a> de notre documentation.<br />
 			]]>
 		</content>
 	</post>
 	<post>
 		<id>75</id>
-		<title>Mise à jour du noyau dans -current: AVERTISSEMENT pour les utilisateurs Intel avec des controlleurs IDE</title>
+		<title>Mise �  jour du noyau dans -current: AVERTISSEMENT pour les utilisateurs Intel avec des controlleurs IDE</title>
 		<date>Thu, 4 Oct 2007 15:08:53 +0000</date>
 		<author>hermier</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
-			Depuis le kernel-2.6.22-6 dans Frugalware-current, les utilisateurs Intel aurons des périphériques /dev/sd* à la place des /dev/hd*. La raison est la suivante: il a été impossible de démarrer le noyau sur certaines machine sans ce changement. Voir <a href="http://bugs.frugalware.org/2243">ce rapport d'erreur</a> pour plus de détails. En conséquence, après avoir mis à jour en utilisant pacman -Syu, vous devrez:
+			Depuis le kernel-2.6.22-6 dans Frugalware-current, les utilisateurs Intel aurons des périphériques /dev/sd* �  la place des /dev/hd*. La raison est la suivante: il a été impossible de démarrer le noyau sur certaines machine sans ce changement. Voir <a href="http://bugs.frugalware.org/2243">ce rapport d'erreur</a> pour plus de détails. En conséquence, après avoir mis �  jour en utilisant pacman -Syu, vous devrez:
 			<ol>
 				<li>Vérifiez si vous possédez un controlleur IDE Intel en faisant un: sudo lspci |grep -i intel.*ide. Si vous n'avez aucun résultat sous n'êtes probablement pas affecté.</li>
 				<li>Edit /etc/fstab: changez toutes les occurrences de /dev/hd en /dev/sd.</li>
