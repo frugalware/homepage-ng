@@ -38,6 +38,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         </ul>
         Vous pouvez la consulter <a href="/newsletter/61">ici</a>. Nous espérons que vous l'apprécierez !
         ]]>
+        </content>
     </post>
     <post>
         <id>167</id>
@@ -422,6 +423,7 @@ Il y a deux façons de le faire fonctionner de nouveau :
         <title>KMS activé par défaut sur -current</title>
         <date>Sun, 18 Oct 2009 16:17:16 +0200</date>
         <author>Miklos Vajna</author>
+
         <hidden>0</hidden>
             <content><![CDATA[
                 KMS est maintenant activé par défaut sur Frugalware-current. Il est recommandé de lire la <a href="/docs/upgrade#_kernel_mode_setting">partie concernée</a> sur la documentation avant de mettre �  jour afin d'éviter de mauvaises surprises.
@@ -3085,6 +3087,7 @@ b613c3b5cd9d7f4b7950eb9bdfed683bb1761a84  frugalware-0.6a-x86_64-cd7.iso
 		<content><![CDATA[
 			The sixth issue of our fortnightly newsletter has been released! You can read it <a href="/newsletter/6">here</a>. We hope you like it!
 			]]>
+
 		</content>
 	</post>
 	<post>
