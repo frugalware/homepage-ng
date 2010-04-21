@@ -26,6 +26,21 @@
 
 <fsas>
 	<fsa>
+		<id>661</id>
+		<date>2010-04-21</date>
+		<author>Miklos Vajna</author>
+		<package>j2sdk</package>
+		<vulnerable>6-22locris1</vulnerable>
+		<unaffected>6-23locris1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4189</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0886
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0887
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-1423</cve>
+		<desc>A vulnerability has been discovered in Sun Java, which can be exploited by malicious people to compromise a user's system.
+			The vulnerability is caused due to an input sanitation error in the Java Deployment Toolkit browser plugin. This can be exploited to pass arbitrary arguments to javaw.exe and e.g. execute a JAR file placed on a network share in a privileged context.
+			Successful exploitation allows execution of arbitrary code by tricking a user into visiting a malicious web page.</desc>
+	</fsa>
+	<fsa>
 		<id>660</id>
 		<date>2010-04-16</date>
 		<author>Miklos Vajna</author>
