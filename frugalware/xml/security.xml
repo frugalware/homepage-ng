@@ -26,6 +26,20 @@
 
 <fsas>
 	<fsa>
+		<id>662</id>
+		<date>2010-04-22</date>
+		<author>Miklos Vajna</author>
+		<package>glibc</package>
+		<vulnerable>2.11.1-1</vulnerable>
+		<unaffected>2.11.1-2locris1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4166</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0296
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0830</cve>
+		<desc>Dan Rosenberg reported two security issues in glibc:
+			1) "ncpmount" and "mount.cifs" failed to properly sanitize provided mountpoint directory names (specifically, special characters such as newlines were not stripped). An attacker could create a directory with newline characters in its name and issue an ncpmount / mount.cifs command to mount to that directory, allowing them to corrupt /etc/mtab and potentially add unauthorized mounting options for other devices.
+			2) A memory corruption vulnerability in ld.so: When processing maliciously crafted ELF binaries using ld.so, regardless of whether execution of those binaries is intended (for example, using the "--verify" flag, which should not lead to any code execution), arbitrary code execution can be achieved.</desc>
+	</fsa>
+	<fsa>
 		<id>661</id>
 		<date>2010-04-21</date>
 		<author>Miklos Vajna</author>
