@@ -26,6 +26,18 @@
 
 <fsas>
 	<fsa>
+		<id>663</id>
+		<date>2010-04-23</date>
+		<author>Miklos Vajna</author>
+		<package>memcached</package>
+		<vulnerable>1.4.2-1</vulnerable>
+		<unaffected>1.4.5-1locris1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4182</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-1152</cve>
+		<desc>A weakness has been reported in memcached, which can be exploited by malicious, local users to potentially cause a DoS (Denial of Service).
+			The weakness is caused due to the application improperly handling received TCP data. This can be exploited to consume large amounts of memory and temporarily hang or potentially crash an affected server by sending an overly large number of bytes without a terminating newline ('\n') character to TCP port 11211.</desc>
+	</fsa>
+	<fsa>
 		<id>662</id>
 		<date>2010-04-22</date>
 		<author>Miklos Vajna</author>
