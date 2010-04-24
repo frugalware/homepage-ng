@@ -26,6 +26,18 @@
 
 <fsas>
 	<fsa>
+		<id>664</id>
+		<date>2010-04-24</date>
+		<author>Miklos Vajna</author>
+		<package>polkit</package>
+		<vulnerable>0.96-2</vulnerable>
+		<unaffected>0.96-3locris1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4199</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0750</cve>
+		<desc>A weakness has been reported in PolicyKit, which can be exploited by malicious, local users to disclose certain system information.
+			The weakness is caused due to the "pkexec" utility returning different results depending on the existence of files, which can be exploited to e.g. determine if a file exists in a restricted directory.</desc>
+	</fsa>
+	<fsa>
 		<id>663</id>
 		<date>2010-04-23</date>
 		<author>Miklos Vajna</author>
