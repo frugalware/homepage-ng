@@ -26,6 +26,21 @@
 
 <fsas>
 	<fsa>
+		<id>665</id>
+		<date>2010-04-25</date>
+		<author>Miklos Vajna</author>
+		<package>nano</package>
+		<vulnerable>2.0.9-1</vulnerable>
+		<unaffected>2.0.9-2locris1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4196</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-1160
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-1161</cve>
+		<desc>Some security issues have been reported in GNU nano, which can be exploited by malicious, local users to perform certain actions with escalated privileges.
+			1) The application does not properly verify if the file currently being edited has been changed outside the context of the current editing session before writing to it, which can be exploited to e.g. overwrite arbitrary files via symlink attacks.
+			2) A race condition exists when creating backup files, which can be exploited to take the ownership of arbitrary files via e.g. symlink attacks.
+			Successful exploitation requires that the victim is tricked into editing files owned by the attacker and that the backup functionality is enabled.</desc>
+	</fsa>
+	<fsa>
 		<id>664</id>
 		<date>2010-04-24</date>
 		<author>Miklos Vajna</author>
