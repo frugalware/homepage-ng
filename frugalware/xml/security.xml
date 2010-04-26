@@ -26,6 +26,19 @@
 
 <fsas>
 	<fsa>
+		<id>666</id>
+		<date>2010-04-26</date>
+		<author>Miklos Vajna</author>
+		<package>cacti</package>
+		<vulnerable>0.8.7e-1</vulnerable>
+		<unaffected>0.8.7e-2locris1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4193</bts>
+		<cve>No CVE yet, see http://seclists.org/fulldisclosure/2010/Apr/272.</cve>
+		<desc>A vulnerability has been reported in Cacti, which can be exploited by malicious users to conduct SQL injection attacks.
+			Input passed via the "export_item_id" parameter to templates_export.php is not properly sanitised before being used in SQL queries. This can be exploited to manipulate SQL queries by injecting arbitrary SQL code.
+			Successful exploitation requires that the attacker is allowed to export templates.</desc>
+	</fsa>
+	<fsa>
 		<id>665</id>
 		<date>2010-04-25</date>
 		<author>Miklos Vajna</author>
