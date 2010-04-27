@@ -26,6 +26,17 @@
 
 <fsas>
 	<fsa>
+		<id>667</id>
+		<date>2010-04-27</date>
+		<author>Miklos Vajna</author>
+		<package>fetchmail</package>
+		<vulnerable>6.3.13-1</vulnerable>
+		<unaffected>6.3.16-1locris1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4195</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-1167</cve>
+		<desc>Fetchmail did not properly sanitize external input (mail headers and UID). When a multi-character locale (such as UTF-8) was in use, this could cause memory exhaustion and thus a denial of service, because fetchmail's report.c functions assumed that non-success of [v]snprintf was due to insufficient buffer size allocation. It would then repeatedly reallocate a larger buffer and fail formatting again.</desc>
+	</fsa>
+	<fsa>
 		<id>666</id>
 		<date>2010-04-26</date>
 		<author>Miklos Vajna</author>
