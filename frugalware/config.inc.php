@@ -12,7 +12,7 @@ $sqldb = "frugalware2";
 
 #site settings
 $fwng_root = $myurl."/";
-$adodb_path = "/usr/lib/php";
+$adodb_path = "/usr/share/php";
 $trans_path="/home/ftp/pub/other/translations/";
 $top_path = "/home/ftp/pub/frugalware/frugalware-current";
 $cache_path = "/var/cache/homepage";
