@@ -26,6 +26,22 @@
 
 <fsas>
 	<fsa>
+		<id>668</id>
+		<date>2010-04-27</date>
+		<author>Miklos Vajna</author>
+		<package>kernel</package>
+		<vulnerable>2.6.32-4locris1</vulnerable>
+		<unaffected>2.6.32-4locris2</unaffected>
+		<bts>http://bugs.frugalware.org/task/4183</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-1148
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0727
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-1162</cve>
+		<desc>Three vulnerabilities have been reported in the Linux Kernel, which can be exploited by malicious, local users to cause a DoS (Denial of Service).
+			1) A vulnerability is caused due to a NULL-pointer dereference error within the "cifs_create()" function in fs/cifs/dir.c. This can be exploited to cause a crash when a file without an associated "nameidata" structure is created.
+			2) There was a check for mandatory locking where the GFS/GFS2 locking code skipped the lock in case sgid bits are set for the file. This can be triggered to cause a crash on a system mounting a GFS/GFS2 filesystem.
+			3) The vulnerability is caused due to a memory leak within the "release_one_tty()" function in drivers/char/tty_io.c, which can be exploited to e.g. cause a DoS due to memory exhaustion.</desc>
+	</fsa>
+	<fsa>
 		<id>667</id>
 		<date>2010-04-27</date>
 		<author>Miklos Vajna</author>
