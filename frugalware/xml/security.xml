@@ -26,6 +26,21 @@
 
 <fsas>
 	<fsa>
+		<id>669</id>
+		<date>2010-05-12</date>
+		<author>Miklos Vajna</author>
+		<package>gnustep-base</package>
+		<vulnerable>1.18.0-1</vulnerable>
+		<unaffected>1.18.0-2locris1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4210</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-1457
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-1620</cve>
+		<desc>Two vulnerabilities have been reported in GNUStep Base, which can be exploited by malicious, local users to potentially gain escalated privileges or disclose sensitive information.
+			1) The "gdomap" application includes the content of files in error messages when parsing a configuration file specified via the "-c" command line option. This can be exploited to disclose sensitive information by passing an arbitrary file as configuration file to the application.
+			2) An integer overflow error exists in the "gdomap" application when parsing configuration files. This can be exploited to cause a heap-based buffer overflow when a specially crafted configuration file containing a large number lines is being processed.
+			Successful exploitation of the vulnerabilities requires that the "gdomap" binary has the "setuid" bit set and is owned by e.g. root.</desc>
+	</fsa>
+	<fsa>
 		<id>668</id>
 		<date>2010-04-27</date>
 		<author>Miklos Vajna</author>
