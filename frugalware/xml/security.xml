@@ -26,6 +26,18 @@
 
 <fsas>
 	<fsa>
+		<id>670</id>
+		<date>2010-05-17</date>
+		<author>Miklos Vajna</author>
+		<package>drupal6-imagefield</package>
+		<vulnerable>6.x_3.2-1</vulnerable>
+		<unaffected>6.x_3.3-1locris1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4208</bts>
+		<cve>No CVE references, see http://drupal.org/node/791054</cve>
+		<desc>A security issue has been reported in the ImageField module for Drupal, which can be exploited by malicious people to disclose potentially sensitive information.
+			The security issue exists due to improper access permission checks for thumbnails of restricted images when the Private Downloads setting is used and can be exploited to view the thumbnail.</desc>
+	</fsa>
+	<fsa>
 		<id>669</id>
 		<date>2010-05-12</date>
 		<author>Miklos Vajna</author>
