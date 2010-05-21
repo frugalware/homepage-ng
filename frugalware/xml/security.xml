@@ -26,6 +26,19 @@
 
 <fsas>
 	<fsa>
+		<id>672</id>
+		<date>2010-05-22</date>
+		<author>Miklos Vajna</author>
+		<package>drupal6-captcha</package>
+		<vulnerable>5.x_3.2-1</vulnerable>
+		<unaffected>5.x_3.3-1locris1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4220</bts>
+		<cve>No CVE references, see http://drupal.org/node/803566.</cve>
+		<desc>A vulnerability has been reported in the CAPTCHA module for Drupal, which can be exploited by malicious users to conduct script insertion attacks.
+			Certain input passed via the CAPTCHA description is not properly sanitised before being displayed to the user. This can be exploited to insert arbitrary HTML and script code, which will be executed in a user's browser session in context of an affected site when the malicious data is being viewed.
+			Successful exploitation requires "administer CAPTCHA settings" permissions.</desc>
+	</fsa>
+	<fsa>
 		<id>671</id>
 		<date>2010-05-17</date>
 		<author>Miklos Vajna</author>
