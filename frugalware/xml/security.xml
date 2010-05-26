@@ -26,6 +26,18 @@
 
 <fsas>
 	<fsa>
+		<id>673</id>
+		<date>2010-05-26</date>
+		<author>Miklos Vajna</author>
+		<package>wireshark</package>
+		<vulnerable>1.2.6-2</vulnerable>
+		<unaffected>1.2.8-1locris1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4222</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-1455</cve>
+		<desc>A vulnerability has been reported in Wireshark, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			The vulnerability is caused due to an error within the DOCSIS (Data Over Cable Service Interface Specifications) dissector and can be exploited to e.g. cause a crash via specially crafted DOCSIS traffic.</desc>
+	</fsa>
+	<fsa>
 		<id>672</id>
 		<date>2010-05-22</date>
 		<author>Miklos Vajna</author>
