@@ -49,7 +49,7 @@ function main()
 			changelog_from_id($_GET['id']);
 		else if ($_GET['s'] == "documentation")
 			documentation_from_id($_GET['id']);
-		else
+		else if (!strlen($_GET['op']))
 			pkg_from_id($_GET['id']);
 	}
 	else
