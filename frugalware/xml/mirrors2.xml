@@ -182,7 +182,8 @@ If you modify this file, be sure it's still valid - read /hooks/README!
 		<id>13</id>
 		<type>ftp</type>
 		<type>rsync</type>
-		<path>pub/frugalware</path>
+		<ftp_path>pub/frugalware</ftp_path>
+		<rsync_path>frugalware</rsync_path>
 		<host>mirror.aarnet.edu.au</host>
 		<country>Australia</country>
 		<country_code>au</country_code>
