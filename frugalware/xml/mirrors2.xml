@@ -181,13 +181,13 @@ If you modify this file, be sure it's still valid - read /hooks/README!
 	<mirror>
 		<id>13</id>
 		<type>ftp</type>
-		<type>http</type>
+		<type>rsync</type>
 		<path>pub/frugalware</path>
-		<host>ftp.planetmirror.com</host>
+		<host>mirror.aarnet.edu.au</host>
 		<country>Australia</country>
 		<country_code>au</country_code>
-		<supplier>PlanetMirror</supplier>
-		<supplier_url>http://public.planetmirror.com/</supplier_url>
+		<supplier>AARNet Pty Ltd</supplier>
+		<supplier_url>http://www.aarnet.edu.au/</supplier_url>
 		<bandwidth>Unknown bandwidth</bandwidth>
 	</mirror>
 </mirrors>
