@@ -189,6 +189,6 @@ If you modify this file, be sure it's still valid - read /hooks/README!
 		<country_code>au</country_code>
 		<supplier>AARNet Pty Ltd</supplier>
 		<supplier_url>http://www.aarnet.edu.au/</supplier_url>
-		<bandwidth>Unknown bandwidth</bandwidth>
+		<bandwidth>4 GBit</bandwidth>
 	</mirror>
 </mirrors>
