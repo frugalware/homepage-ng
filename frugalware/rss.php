@@ -188,7 +188,9 @@ switch($_GET['type'])
 			<li><a href="/rss/current">' . gettext('-current commits') . '</a></li>
 			<li><a href="/rss/stable">' . gettext('-stable patches') . '</a></li>
 			<li><a href="/rss/bugs">' . gettext('BTS entries') . '</a></li>
-			<li><a href="/rss/packages">' . gettext('Package updates') . '</a></li>
+			<li><a href="/rss/packages">' . gettext('Package updates') . '</a><br />' .
+			gettext('There is an optional suffix to filter the package parameters: [/&lt;version&gt;[&lt;arch&gt;[&lt;package&gt;]]].') . '<br />' .
+			gettext('Examples: ') . '<a href="/rss/packages/ppc">/ppc</a>, <a href="/rss/packages/x86_64/stable">/x86_64/stable</a>, <a href="/rss/packages/i686/current/cups">/i686/current/cups</a>.' . '</li>
 			<li><a href="/rss/blogs">' . gettext('Blog posts') . '</a></li>
 			<li><a href="/rss/security">' . gettext('Security announcements') . '</a></li>
 			</ul>'
