@@ -94,7 +94,7 @@ switch($_GET['type'])
 			' packages.uploader_id = uploaders.id group by
 			concat(packages.pkgname, packages.arch, fwver) order by
 			packages.builddate desc limit
-			10';
+			15';
 		$result = $db->doQuery($query);
 		while ($i = $db->doFetchRow($result))
 		{
