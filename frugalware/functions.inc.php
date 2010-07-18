@@ -140,6 +140,8 @@ function getlang($forcelanguage="")
 	if(file_exists($po))
 		$poinfo = stat($po);
 	$llang = getllang($lang);
+	if(!file_exists("locale/$llang/LC_MESSAGES"))
+		mkdir("locale/$llang/LC_MESSAGES", 0755, true);
 	$mo = "locale/$llang/LC_MESSAGES/homepage.mo";
 	if(file_exists($mo))
 		$moinfo = stat($mo);
