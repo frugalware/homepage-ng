@@ -14,7 +14,7 @@
     description="Packages for Frugalware Linux"
     method="GET"
     action="http://packages.frugalware.org/"
-    searchform="http://frugalware.org/packages"
+    searchform="http://www.frugalware.org/packages"
 >
 
 <input name="search" user>
@@ -22,7 +22,7 @@
 </SEARCH>
 
 <browser
-    update="http://frugalware.org/static/Frugalware_Packages.src"
-    updateIcon="http://frugalware.org/static/Frugalware_Packages.png"
+    update="http://www.frugalware.org/static/Frugalware_Packages.src"
+    updateIcon="http://www.frugalware.org/static/Frugalware_Packages.png"
     updateCheckDays="3"
 >
