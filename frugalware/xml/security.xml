@@ -26,6 +26,22 @@
 
 <fsas>
 	<fsa>
+		<id>676</id>
+		<date>2010-08-03</date>
+		<author>Miklos Vajna</author>
+		<package>wireshark</package>
+		<vulnerable>1.2.9-1locris1</vulnerable>
+		<unaffected>1.2.10-1locris1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4280</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-2284
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-2287</cve>
+		<desc>Some vulnerabilities have been reported in Wireshark, which can be exploited by malicious people to cause a DoS (Denial of Service) or potentially compromise a vulnerable system.
+			1) An off-by-one error exists within the SigComp Universal Decompressor Virtual Machine.
+			2) An error in within the "ASN.1 BER" dissector can be exploited to cause a stack overflow.
+			3) A NULL pointer dereference error in the "GSM A RR" dissector can be exploited to cause a crash.
+			4) An error in the "IPMI" dissector can be exploited to trigger an infinite loop.</desc>
+	</fsa>
+	<fsa>
 		<id>675</id>
 		<date>2010-08-03</date>
 		<author>Miklos Vajna</author>
