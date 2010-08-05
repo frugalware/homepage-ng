@@ -44,14 +44,14 @@ body {
 	text-shadow: black 10px 10px 10px;
 }
 
-#header#title {
+#title {
 	position: absolute;
 	font-size: 1.5em;
 	top: 20px;
 	left: 90px;
 }
 
-#header#slogan {
+#slogan {
 	position: absolute;
 	font-size: 1.05em;
 	top: 50px;
