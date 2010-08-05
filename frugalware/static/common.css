@@ -49,24 +49,9 @@ body {
 }
 
 #centercolumn {
-	#margin-left: 195px;
-	#padding: 10px;
-	#background-color: #fff;
-
-	position:absolute;
-	float:left;
-	width:80%;
-	background:#fdfdfd;
-	padding:5px 9px 5px 5px;
-	border-right:1px solid #afafaf;
-	border-top:1px solid #afafaf;
-	border-left:1px solid #afafaf;
-	margin-top:17px;
-	margin-left:15%;
-	-moz-box-shadow:0 4px 18px #999;
-	-webkit-box-shadow:0 4px 18px #999;
-	-khtml-box-shadow:0 4px 18px #999;
-	box-shadow:0 4px 18px #999;
+	margin-left: 195px;
+	padding: 10px;
+	background-color: #fff;
 }
 
 #fwfooter {
