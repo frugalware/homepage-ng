@@ -37,7 +37,7 @@ else if($_SERVER['PHP_SELF']=="/packages.php")
 
 <!-- header start -->
 <div id="header">
-	<a href="http://<?php echo $_SERVER["SERVER_NAME"]; ?>"><img src="<?php echo $fwng_root; ?>images/header.png" alt="Frugalware Linux - Let's make things Frugal!" /></a>
+	<a href="http://<?php echo $_SERVER["SERVER_NAME"]; ?>"><object type="image/svg" data="<?php echo $fwng_root; ?>images/header.svg"><img alt="Frugalware Linux - Let's make things Frugal!" src="<?php echo $fwng_root; ?>images/header.png"></object><span id="title">FRUGALWARE LINUX</span><span id="slogan">Let’s make things frugal!</span></a>
 </div>
 <!-- header end -->
 
