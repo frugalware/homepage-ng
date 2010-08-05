@@ -44,6 +44,8 @@ FIELDSET.fieldset {
 	border: 1px solid #5080b0;
 	
 	padding: 4px;
+
+	border-radius:5px;
 }
 
 .postheader a {

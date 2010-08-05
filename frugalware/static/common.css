@@ -132,6 +132,10 @@ a.menu:hover {
 	background-color: #e2e5ff;
 	margin-bottom: 10px;
 	padding: 7px;
+	-moz-box-shadow:0 4px 18px #999;
+	-webkit-box-shadow:0 4px 18px #999;
+	-khtml-box-shadow:0 4px 18px #999;
+	box-shadow:0 4px 18px #999;
 }
 
 .boxheader {
@@ -139,6 +143,7 @@ a.menu:hover {
 	font-size: 1.3em;
 	text-align: left;
 	background-color: transparent;
+	text-shadow:0px 0px 9px #777;
 }
 
 .boxcontent {
