@@ -40,7 +40,8 @@ FIELDSET.fieldset {
 	font-weight: normal;
 	font-size: 1.2em;
 	
-	background-color: #a0c0ff;
+	background-color:#98b7cd;
+	border-bottom-color:#3b76b3;
 	border: 1px solid #5080b0;
 	
 	padding: 4px;
