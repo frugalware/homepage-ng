@@ -26,6 +26,18 @@
 
 <fsas>
 	<fsa>
+		<id>678</id>
+		<date>2010-08-09</date>
+		<author>Miklos Vajna</author>
+		<package>nss</package>
+		<vulnerable>3.12.3-1</vulnerable>
+		<unaffected>3.12.6-1locris1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4258</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3555</cve>
+		<desc>A vulnerability has been reported in Network Security Services (NSS), which can be exploited by malicious people to manipulate certain data.
+			The vulnerability is caused due to an error in the TLS protocol while handling session re-negotiations.</desc>
+	</fsa>
+	<fsa>
 		<id>677</id>
 		<date>2010-08-09</date>
 		<author>Miklos Vajna</author>
