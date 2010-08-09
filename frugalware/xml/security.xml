@@ -26,6 +26,19 @@
 
 <fsas>
 	<fsa>
+		<id>677</id>
+		<date>2010-08-09</date>
+		<author>Miklos Vajna</author>
+		<package>pcre</package>
+		<vulnerable>8.01-1</vulnerable>
+		<unaffected>8.02-1locris1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4261</bts>
+		<cve>No CVE references, see http://bugs.exim.org/show_bug.cgi?id=962</cve>
+		<desc>Michael Santos has discovered a vulnerability in PCRE, which can be exploited by malicious people to cause a DoS (Denial of Service) or potentially compromise an application using the library.
+			The vulnerability is caused due to a boundary error within the "compile_branch()" function pcre_compile.c. This can be exploited to cause a stack-based buffer overflow via a specially crafted regular expression.
+			Successful exploitation may allow execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>676</id>
 		<date>2010-08-03</date>
 		<author>Miklos Vajna</author>
