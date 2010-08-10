@@ -26,6 +26,37 @@
 
 <fsas>
 	<fsa>
+		<id>681</id>
+		<date>2010-08-10</date>
+		<author>Miklos Vajna</author>
+		<package>openssl</package>
+		<vulnerable>0.9.8-18</vulnerable>
+		<unaffected>0.9.8-19locris1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4231</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-4355
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3245
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3555
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1377
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1378
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1379
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1387
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0433
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0740
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0742</cve>
+		<desc>Multiple vulnerabilities have been reported in OpenSSL:
+			1) A vulnerability is caused due to certain applications (e.g. Apache with the PHP module) calling OpenSSL's "CRYPTO_free_all_ex_data()" function prematurely. In certain cases, this can result in memory leaks, which can be exploited to e.g. cause a DoS due to memory exhaustion.
+			2) A vulnerability is caused due to an error in the TLS protocol while handling session re-negotiations. This can be exploited to insert arbitrary plaintext before data sent by a legitimate client in an existing TLS session via Man-in-the-Middle (MitM) attacks.
+			Successful exploitation may allow e.g. sending an arbitrary HTTP request under an authenticated context if certificate-based authentication is used by the server.
+			4) A vulnerability is caused due to the library not properly verifying the return value of the "bn_wexpand()" function.
+			1) The library does not limit the number of buffered DTLS records with a future epoch. This can be exploited to exhaust all available memory via specially crafted DTLS packets.
+			5) An error when processing DTLS messages can be exploited to exhaust all available memory by sending a large number of out of sequence handshake messages.
+			6) A use-after-free error in the "dtls1_retrieve_buffered_fragment()" function can be exploited to cause a crash in a client context.
+			7) An error in the "dtls1_process_out_of_seq_message()" function can be exploited to crash a DTLS server via a specially crafted out of sequence DTLS packet.
+			8) The "kssk_keytab_is_available()" function in ssl/kssl.c does not check the return value of a call to the "krb5_sname_to_principal()" function, which can be exploited to cause a NULL pointer dereference by e.g. sending certain cipher suites within the client hello.
+			9) An error exists within the "ssl3_get_record()" function in openssl/ssl/s3_pkt.c when processing certain records, which can be exploited to cause a crash by sending specially crafted records.
+			10) A vulnerability is caused due to an error when handling CMS (Cryptographic Message Syntax) structures. This can be exploited to trigger a write to an invalid memory address or a double-free via a specially crafted CMS structure containing an "OriginatorInfo" element.</desc>
+	</fsa>
+	<fsa>
 		<id>680</id>
 		<date>2010-08-10</date>
 		<author>Miklos Vajna</author>
