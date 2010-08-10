@@ -23,7 +23,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 <news>
   <post>
     <id>179</id>
-    <title>Frugalware Newsletter Issue 68</title>
+    <title>Frugalware Newsletter 68</title>
     <date>Tue, 10 Aug 2010 20:20:31 +1000</date>
     <author>phayz</author>
     <hidden>0</hidden>
@@ -34,7 +34,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
           <li>Nouveau contributeur de paquet Frugalware</li>
           <li>Kernel 2.6.35</li>
           <li>Trucs et Astuces - Que contient le paquet X?</li>
-          <li>Détails sur un(des) paquet(s) - Googsystray and gst123</li>
+          <li>Détails sur un(des) paquet(s) - Googsystray et gst123</li>
         </ul>
             Vous pouvez la consulter <a href="/newsletter/68">ici</a>. Nous espérons que vous l'apprécierez !
       ]]>
@@ -42,7 +42,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
   </post>
   <post>
     <id>178</id>
-    <title>Frugalware 1.3rc2 (Haven) released</title>
+    <title>Frugalware 1.3rc2 (Haven) disponible</title>
     <date>Mon, 09 Aug 2010 03:24:18 +0200</date>
     <author>Miklos Vajna</author>
     <hidden>0</hidden>
