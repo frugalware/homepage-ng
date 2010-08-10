@@ -26,6 +26,19 @@
 
 <fsas>
 	<fsa>
+		<id>682</id>
+		<date>2010-08-10</date>
+		<author>Miklos Vajna</author>
+		<package>drupal-filefield</package>
+		<vulnerable>5.x_2.4-1</vulnerable>
+		<unaffected>5.x_2.5-1locris1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4244</bts>
+		<cve>No CVE, see http://drupal.org/node/829808.</cve>
+		<desc>A vulnerability has been reported in the FileField module for Drupal, which can be exploited by malicious users to conduct script insertion attacks.
+			Input passed e.g. via the "filepath" parameter is not properly sanitised before being used. This can be exploited to insert arbitrary HTML and script code, which is executed in a user's browser session in context of an affected site when the malicious data is being viewed.
+			Successful exploitation requires permission to create or edit content with a FileField and that the administrator has configured a vulnerable display format or uses a special token.</desc>
+	</fsa>
+	<fsa>
 		<id>681</id>
 		<date>2010-08-10</date>
 		<author>Miklos Vajna</author>
