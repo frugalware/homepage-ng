@@ -26,6 +26,21 @@
 
 <fsas>
 	<fsa>
+		<id>684</id>
+		<date>2010-08-10</date>
+		<author>Miklos Vajna</author>
+		<package>drupal-views</package>
+		<vulnerable>5.x_1.7-1locris1</vulnerable>
+		<unaffected>5.x_1.8-1locris1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4246</bts>
+		<cve>No CVE, see http://drupal.org/node/829840.</cve>
+		<desc>Multiple vulnerabilities have been reported in the Views module for Drupal, which can be exploited by malicious people to conduct cross-site request forgery, and cross-site scripting attacks.
+			1) The Views UI module allows users to perform certain actions via HTTP requests without performing any validity checks to verify the requests. This can be exploited to e.g. enable or disable all Views in a site when a logged-in user visits a malicious site.
+			This vulnerability is reported in versions prior to 5.x-1.8 and 6.x-2.11.
+			Successful exploitation requires that Views UI module is enabled.
+			2) Input passed via URLs or aggregator feed titles are not properly sanitised before being used. This can be exploited to insert arbitrary HTML and script code, which will be executed in a user's browser session in context of an affected site when the malicious data is returned to the user.</desc>
+	</fsa>
+	<fsa>
 		<id>683</id>
 		<date>2010-08-10</date>
 		<author>Miklos Vajna</author>
