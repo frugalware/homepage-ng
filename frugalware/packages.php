@@ -138,9 +138,6 @@ function addEngine()
 	}
 }
 </script>
-
-<div align=\"center\">" . gettext("Click <a href=\"http://frugalware.org/~vmiklos/stats/chkworld.html">here</a> to see the chkworld page.") . "</div>&nbsp;\n";
-
 <div align=\"center\">" . gettext("Click <a href=\"javascript:addEngine()\">here</a> to install the Firefox search plugin.") . "</div>&nbsp;\n";
 		print $content;
 	}
