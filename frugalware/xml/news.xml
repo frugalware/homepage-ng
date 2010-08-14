@@ -22,6 +22,24 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
   <post>
+    <id>180</id>
+    <title>Frugalware has a new planet</title>
+    <date>Sat, 14 Aug 2010 22:32:30 +1000</date>
+    <author>phayz</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+      <a href="http://planet.frugalware.org">Frugalware's planet</a> - the web
+      site which aggregates content from blogs - has moved from planetplanet
+      software to bilboplanet. There were some issues with planetplanet and so
+      the change was done by Frugalware developer Devil505. If you have never
+      visited the planet, <em>please</em> do because there's a lot of useful
+      information there. If you have a blog which mentions topics that may be
+      of interest to other Frugalware users, please subscribe to have your
+      blog included in the planet.
+      ]]>
+    </content>
+  </post>
+  <post>
     <id>179</id>
     <title>Frugalware Newsletter Issue 68</title>
     <date>Tue, 10 Aug 2010 20:20:31 +1000</date>
