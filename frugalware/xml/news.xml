@@ -30,12 +30,15 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
     <content><![CDATA[
       <a href="http://planet.frugalware.org">Frugalware's planet</a> - the web
       site which aggregates content from blogs - has moved from planetplanet
-      software to bilboplanet. There were some issues with planetplanet and so
-      the change was done by Frugalware developer Devil505. If you have never
-      visited the planet, <em>please</em> do because there's a lot of useful
-      information there. If you have a blog which mentions topics that may be
-      of interest to other Frugalware users, please subscribe to have your
-      blog included in the planet.
+      software to bilboplanet. There were some issues with planetplanet and,
+      after discussion amongst the development team, the change was done by
+      Frugalware developer Devil505.<br />
+      The rules state that only posts which are likely to be of interest to
+      Frugalware's users are to be included, so if you subscribe you can enjoy
+      reading about the laughter and tears, hopes and fears, successes and
+      failures which make the Frugalware community so exciting. Of course if
+      have a blog, please consider adding it to the planet. To do this, go to
+      the planet's home page and complete the subscription form.
       ]]>
     </content>
   </post>
