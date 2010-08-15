@@ -22,6 +22,27 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
   <post>
+    <id>180</id>
+    <title>Frugalware a un nouveau planet</title>
+    <date>Sat, 14 Aug 2010 22:32:30 +1000</date>
+    <author>phayz</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+      <a href="http://planet.frugalware.org">Le planet Frugalware</a> - le site web
+      qui agrége le contenu provenant de blogs (anglophones) - a migré de planetplanet
+      vers bilboplanet. Il y avait quelques soucis avec planetplanet et,
+      après discussion au sein de l'équipe de développementy, le changement a été fait par
+      l'un des développeurs de Frugalware, Devil505.<br /><br />
+      Les régles établissent que seuls les billets qui sont supposés avoir un intérêt aus
+      utilisateurs de Frugalware seront inclus, vous pourrez donc profiter pour lire les joies
+      et les peînes, les espoirs et les craintes, les réussites et
+      échecs qui font que la communauté est si excitantes. Bien sûr si vous avez un blog,
+      s'il vous plaît pensez à l'ajouter au planet, rendez-vous sur le planet puis compléter
+      la page d'inscription.
+      ]]>
+    </content>
+  </post>
+  <post>
     <id>179</id>
     <title>Frugalware Newsletter 68</title>
     <date>Tue, 10 Aug 2010 20:20:31 +1000</date>
@@ -1348,6 +1369,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         <hidden>0</hidden>
         <content><![CDATA[
             Cette lettre d'information a pour but de vous tenir informé avec ce qu'il s'est passé récemment dans le monde Frugalware.<br />
+
             Dans ce numéro:
             <ul>
                 <li>Bonne Année!</li>
