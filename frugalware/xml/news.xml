@@ -22,23 +22,34 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
   <post>
+    <id>181</id>
+    <title>Frugalware Newsletter Issue 69</title>
+    <date>Tue, 10 Aug 2010 20:20:31 +1000</date>
+    <author>phayz</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+      The newsletter's aim is to keep you up to date with what's happened
+      recently in the world of Frugalware.<br />
+      Features of this issue include:
+        <ul>
+          <li>New Frugalware package contributor</li>
+          <li>Kernel 2.6.35</li>
+          <li>Tips and tricks - What's contained in package X?</li>
+          <li>Focus on Package(s) - Googsystray and gst123</li>
+        </ul>
+        You can read it <a href="/newsletter/69">here</a>. We hope you enjoy reading it.
+      ]]>
+    </content>
+  </post>
+
+  <post>
     <id>180</id>
     <title>Frugalware has a new planet</title>
     <date>Sat, 14 Aug 2010 22:32:30 +1000</date>
     <author>phayz</author>
     <hidden>0</hidden>
     <content><![CDATA[
-      <a href="http://planet.frugalware.org">Frugalware's planet</a> - the web
-      site which aggregates content from blogs - has moved from planetplanet
-      software to bilboplanet. There were some issues with planetplanet and,
-      after discussion amongst the development team, the change was done by
-      Frugalware developer Devil505.<br /><br />
-      The rules state that only posts which are likely to be of interest to
-      Frugalware's users are to be included, so if you subscribe you can enjoy
-      reading about the laughter and tears, hopes and fears, successes and
-      failures which make the community so exciting. Of course if have a blog,
-      please consider adding it to the planet. To do this, go to the planet's
-      home page and complete the subscription form.
+      <a href=
       ]]>
     </content>
   </post>
