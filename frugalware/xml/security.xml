@@ -26,6 +26,20 @@
 
 <fsas>
 	<fsa>
+		<id>686</id>
+		<date>2010-08-22</date>
+		<author>Miklos Vajna</author>
+		<package>drupal</package>
+		<vulnerable>5.22-2locris1</vulnerable>
+		<unaffected>5.23-1locris1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4285</bts>
+		<cve>No CVE, see http://drupal.org/node/880476.</cve>
+		<desc>A weakness and a vulnerability have been reported in Drupal, which can be exploited by malicious users to conduct script insertion attacks, and by malicious users and malicious people to bypass certain security restrictions.
+			1) The weakness is caused due to an error in the upload module, which does not properly check uploaded file names for case sensitivity and grants access to the earlier uploaded file. This can be exploited to download otherwise restricted files by uploading similarly named file with different letter casing.
+			2) An error in the comment module does not properly check for access permissions before republishing previously unpublished comments.
+			Successful exploitation of this vulnerability requires "post comments without approval" permissions.</desc>
+	</fsa>
+	<fsa>
 		<id>685</id>
 		<date>2010-08-10</date>
 		<author>Miklos Vajna</author>
