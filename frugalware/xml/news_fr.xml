@@ -22,6 +22,24 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
   <post>
+    <id>181</id>
+    <title>Frugalware Newsletter 69</title>
+    <date>Tue, 10 Aug 2010 20:20:31 +1000</date>
+    <author>phayz</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+            La newsletter a pour but de vous tenir informé de ce qu'il s'est passé récemment dans le monde de Frugalware.<br />
+            Au programme :
+        <ul>
+            <li>La Frugalware release party a été annulée</li>
+            <li>Trucs et Astuces - Faites preuve d'audace et essayeé une nouvelle police d'écriture!</li>
+            <li>Détails sur un(des) paquet(s) - NetSurf et gbainy</li>
+        </ul>
+            Vous pouvez la consulter <a href="/newsletter/69">ici</a>. Nous espérons que vous l'apprécierez !
+      ]]>
+    </content>
+  </post>
+  <post>
     <id>180</id>
     <title>Frugalware a un nouveau planet</title>
     <date>Sat, 14 Aug 2010 22:32:30 +1000</date>
