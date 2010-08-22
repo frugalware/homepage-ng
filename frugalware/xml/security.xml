@@ -26,12 +26,25 @@
 
 <fsas>
 	<fsa>
+		<id>688</id>
+		<date>2010-08-22</date>
+		<author>Miklos Vajna</author>
+		<package>drupal-pathauto</package>
+		<vulnerable>5.x_2.3-1</vulnerable>
+		<unaffected>5.x_2.4-1locris1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4287</bts>
+		<cve>No CVE, see http://drupal.org/node/880522.</cve>
+		<desc>Some vulnerabilities have been reported in the Pathauto module for Drupal, which can be exploited by malicious users to conduct script insertion attacks.
+			Input passed via the "[bookpathalias]", "[catalias]", and "[termalias]" tokens is not properly sanitised before being displayed to the user. This can be exploited to insert arbitrary HTML and script code, which will be executed in a user's browser session in context of an affected site when the malicious data is being viewed.
+			Successful exploitation requires "create url aliases" permissions and that the tokens are used in an HTML page e.g. when displaying a message using an action from the token_actions.module.</desc>
+	</fsa>
+	<fsa>
 		<id>687</id>
 		<date>2010-08-22</date>
 		<author>Miklos Vajna</author>
 		<package>drupal6</package>
-		<vulnerable>drupal6-6.16-1locris1</vulnerable>
-		<unaffected>drupal6-6.19-1locris1</unaffected>
+		<vulnerable>6.16-1locris1</vulnerable>
+		<unaffected>6.19-1locris1</unaffected>
 		<bts>http://bugs.frugalware.org/task/4286</bts>
 		<cve>No CVE, see http://drupal.org/node/880476.</cve>
 		<desc>A weakness and some vulnerabilities have been reported in Drupal, which can be exploited by malicious users to conduct script insertion attacks, and by malicious users and malicious people to bypass certain security restrictions.
