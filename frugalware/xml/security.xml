@@ -26,6 +26,18 @@
 
 <fsas>
 	<fsa>
+		<id>690</id>
+		<date>2010-08-22</date>
+		<author>Miklos Vajna</author>
+		<package>drupal6-cck</package>
+		<vulnerable>6.x_2.7-1locris1</vulnerable>
+		<unaffected>6.x_2.8-1locris1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4289</bts>
+		<cve>No CVE, see http://drupal.org/node/880736.</cve>
+		<desc>A vulnerability has been reported in the Drupal Content Construction Kit (CCK), which can be exploited by malicious users to disclose sensitive information.
+			The vulnerability is caused due to the CCK "Node Reference" not properly validating field access levels on the source field of the backend URL, which can be exploited to view node titles and IDs of otherwise restricted nodes.</desc>
+	</fsa>
+	<fsa>
 		<id>689</id>
 		<date>2010-08-22</date>
 		<author>Miklos Vajna</author>
