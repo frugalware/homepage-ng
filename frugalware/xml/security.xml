@@ -26,6 +26,17 @@
 
 <fsas>
 	<fsa>
+		<id>689</id>
+		<date>2010-08-22</date>
+		<author>Miklos Vajna</author>
+		<package>drupal6-pathauto</package>
+		<vulnerable>6.x_1.2-1</vulnerable>
+		<unaffected>6.x_1.4-1locris1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4288</bts>
+		<cve>No CVE, see http://drupal.org/node/880522.</cve>
+		<desc>See FSA688 for more info.</desc>
+	</fsa>
+	<fsa>
 		<id>688</id>
 		<date>2010-08-22</date>
 		<author>Miklos Vajna</author>
