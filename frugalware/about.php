@@ -64,9 +64,12 @@ $fwabout= array (
 	array (gettext("Does Frugalware support languages other than English?"),
 		gettext("Yes, it supports all languages supported by the packages. If the init scripts or the setup is not available in your language, then it simply means it haven't yet translated.")),
 	array (gettext("What about Asian languages?"),
-		gettext("Frugalware does not currently support languages written in ideographs.")),
+		gettext("Yes you just have to switch to UTF-8 encoding.")),
 	array (gettext("What architectures does Frugalware support?"),
-		gettext("Currently we support x86 and x86_64 platforms, and inside x86, only i686 (Pentium Pro or higher instruction set) and inside x86_64 only k8 (amd64). If there are any claims, an i386 port will be created, but currently we don't have resources to build and maintain those packages. Outside x86, currently we don't have any non-x86 hardware, but happily accept such patches or any effort to create non-x86 optimized packages. We are also working on a PowerPC port"))
+		gettext("Currently we support x86, x86_64 and ppc platforms, and inside x86, only i686 (Pentium Pro or higher instruction set), inside x86_64 only k8 (amd64) and inside ppc only PowerPC. If there are any claims, an i386 port will be created, but currently we don't have resources to build and maintain those packages. Outside x86, currently we don't have any non-x86 hardware, but happily accept such patches or any effort to create non-x86 optimized packages."))
+	array (gettext("How are compressed the Frugalware packages?"),
+		gettext("FPM packages were originally .tar.gz packages, then a bit later we migrated to libarchive, which allowed bzip2 compression. Life was good, but then lzma was came, and I added support for libarchive, though others were not really interested in a migration, so we stick to .tar.bz2. A few months ago libarchive got support for the xz format (which is the successor of lzma), so we switched to it. pacman-g2 still
+support .tar.gz and .tar.bz2 as well, and the package extension is .fpm all the time to make it clear that it's a Frugalware package"))
 	);
 
 // include the config and let's start page
