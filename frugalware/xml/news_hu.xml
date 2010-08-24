@@ -17,6 +17,30 @@
 
 <news>
     <post>
+        <id>182</id>
+        <title>Megjelent a Frugalware 1.3 (Haven)</title>
+        <date>Mon, 23 Aug 2010 02:00:14 +0200</date>
+        <author>Vajna Miklós</author>
+        <hidden>0</hidden>
+        <content><![CDATA[
+            <center><img src="http://frugalware.org/images/promo-haven.png" alt="Megjelent a Frugalware 1.3 (Haven)!" /></center><br />
+            A Frugalware fejlesztői csapata örömmel jelenti be, hogy elkészült a Frugalware 1.3, tizenharmadik stabil kiadásunk.<br />
+            Az 1.3rc2 óta nagyobb változás nem történt, de 94 apróbb hibát kijavítottunk. Akik nem követték az előzetes kiadásokat, azok számára itt egy összefoglaló, mik a legjelentősebb változások az 1.2 óta:<br />
+            <ul>
+                <li>Frissített csomagok: Linux kernel 2.6.35, Xorg server 1.8, GNOME 2.30, KDE 4.4.5, csak hogy a legfontosabbakat említsük.</li>
+                <li>A Frugalware történetében először hivatalos grafikus telepítőt is készítettünk (egyelőre csak a hálózatos változathoz), melyet az FTP szerveren -gui utótaggal láttuk el.</li>
+                <li>Utánajártunk, hogy VMWare alatt problémamentesen és trükkök nélkül is működjön a telepítés, ennek eredményeképpen az erről szóló megjegyzést is eltávolítottuk.</li>
+                <li>Az Xorg korábbi, egy fájlban tárolt beállításait szétbontottuk az xorg.conf.d könyvtár alatti állományokba. A régi xorg.conf továbbra is használható, de az új fájloknak elsőbbsége van. Emellett az Xorg az udevet használja az automatikus hardverfelismeréshez, az xorg.conf nem kerül automaitikusan legenerálásra.</li>
+                <li>Frissítettük a libjpeg (8b) és a libpng (1.4) grafikus függvénykönyvtárakat, ennek következményeként több mint 1500 csomag lett újrafordítva, emellett sok kisebb javítás és fejlesztés is bekerült.</li>
+            </ul>
+            Bővebb információkkal <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-1.3/ChangeLog.txt">a változások listája</a> szolgál (csak angol nyelven).<br />
+                                                Letöltés i686, x86_64 és ppc architektúrára:  Tekintse meg <a href="http://frugalware.org/download/frugalware-1.3-iso">tükörszervereink listáját</a>. Javasoljuk, hogy a CD, DVD írása előtt ellenőrizze a letöltött állomány <a href="http://frugalware.org/download/frugalware-1.3-iso/SHA1SUMS">helyességét.</a> <br />
+                                                <b>Megjegyzés</b>: <a href="/docs/install#_choosing_installation_flavor">Itt</a> talál további információkat, ha nem tudja eldönteni, melyik telepítési forma a legmegfelelőbb Önnek.<br />
+                                                Ha a legutóbbi stabil kiadásról (1.2, Locris) frissít a Havenre, kérjük, olvassa el <a href="http://frugalware.org/docs/upgrade">a frissítésre vonatkozó részt</a>  a dokumentációnkban (csak angol nyelven).<br />
+            ]]>
+        </content>
+    </post>
+    <post>
         <id>163</id>
         <title>Megjelent a Frugalware 1.2 (Locris)</title>
         <date>Mon, 08 Mar 2010 08:51:34 +0100</date>
