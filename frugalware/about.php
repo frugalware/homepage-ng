@@ -69,7 +69,9 @@ $fwabout= array (
 		gettext("Currently we support x86, x86_64 and ppc platforms, and inside x86, only i686 (Pentium Pro or higher instruction set), inside x86_64 only k8 (amd64) and inside ppc only PowerPC. If there are any claims, an i386 port will be created, but currently we don't have resources to build and maintain those packages. Outside x86, currently we don't have any non-x86 hardware, but happily accept such patches or any effort to create non-x86 optimized packages.")),
 	array (gettext("How are compressed the Frugalware packages?"),
 		gettext("FPM packages were originally .tar.gz packages, then a bit later we migrated to libarchive, which allowed bzip2 compression. Life was good, but then lzma was came, and I added support for libarchive, though others were not really interested in a migration, so we stick to .tar.bz2. A few months ago libarchive got support for the xz format (which is the successor of lzma), so we switched to it. pacman-g2 still
-support .tar.gz and .tar.bz2 as well, and the package extension is .fpm all the time to make it clear that it's a Frugalware package."))
+support .tar.gz and .tar.bz2 as well, and the package extension is .fpm all the time to make it clear that it's a Frugalware package."));
+	array (gettext("What's the difference between Arch and Frugalware?"),
+		gettext("Many people think that as we use basically the same <tt>pacman</tt> as <a href=\"http://www.archlinux.org\">Arch Linux</a> then the two distribution are the same. Originally the package manager was the same, there is almost nothing other similar. There are also other major differences. We have console (such as <tt>grubconfig</tt> and <tt>netconfig</tt>) and graphical (such as <tt>gService</tt> and <tt>gFPM</tt>) configuration tools. At the end of the installation you will get a working system with x, network, mouse (and much more configured. We have an unique repo (stable or current) and it's easy to contribute with new packages, so we don't need such thing like <a href=\"http://aur.archlinux.org/\">AUR</a>. We officially support PPC arch."))
 	);
 
 // include the config and let's start page
