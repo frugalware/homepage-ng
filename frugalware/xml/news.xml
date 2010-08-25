@@ -22,6 +22,22 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
     <post>
+        <id>183</id>
+        <title>Locris: End of life</title>
+        <date>Wed, 25 Aug 2010 03:04:15 +0200</date>
+        <author>Miklos Vajna</author>
+        <hidden>0</hidden>
+        <content><![CDATA[
+		With the release of Haven, the support for Locris is discontinued. It is highly recommended to upgrade to our new stable release, as there will be no more security and bug fixes for Locris.<br />
+		We have released FSA637 to FSA691 for Getorin. That means 55 security problems were issued in half a year.<br />
+		If you update to Haven, it will also fix the following vulnerability:<br />
+		<ul>
+			<li><a href="http://bugs.frugalware.org/task/4292">#4292 - clamav</a></li>
+		</ul>
+            ]]>
+        </content>
+    </post>
+    <post>
         <id>182</id>
         <title>Frugalware 1.3 (Haven) released</title>
         <date>Mon, 23 Aug 2010 02:00:14 +0200</date>
