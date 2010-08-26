@@ -193,6 +193,7 @@ switch($_GET['type'])
 			gettext('Examples: ') . '<a href="/rss/packages/ppc">/ppc</a>, <a href="/rss/packages/x86_64/stable">/x86_64/stable</a>, <a href="/rss/packages/i686/current/cups">/i686/current/cups</a>.' . '</li>
 			<li><a href="/rss/blogs">' . gettext('Blog posts') . '</a></li>
 			<li><a href="/rss/security">' . gettext('Security announcements') . '</a></li>
+			<li><a href="http://forums.frugalware.org/feed.php?mode=forums">' . gettext('New forums posts') . '</a></li>
 			</ul>'
 		);
 		include("footer.php");
