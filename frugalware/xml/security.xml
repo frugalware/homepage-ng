@@ -26,6 +26,21 @@
 
 <fsas>
 	<fsa>
+		<id>693</id>
+		<date>2010-08-29</date>
+		<author>Miklos Vajna</author>
+		<package>openoffice.org</package>
+		<vulnerable>3.2.1-4</vulnerable>
+		<unaffected>3.2.1-5haven1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4296</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-2935
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-2936</cve>
+		<desc>Charlie Miller has discovered two vulnerabilities in OpenOffice.org Impress, which can be exploited by malicious people to compromise a user's system.
+		1) An integer truncation error when parsing certain content can be exploited to cause a heap-based buffer overflow via a specially crafted file.
+		2) A short integer overflow error when parsing certain content can be exploited to cause a heap-based buffer overflow via a specially crafted file.
+		Successful exploitation of the vulnerabilities may allow execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>692</id>
 		<date>2010-08-29</date>
 		<author>Miklos Vajna</author>
