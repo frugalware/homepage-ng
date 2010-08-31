@@ -42,11 +42,11 @@ if (file_exists('xml/media.xml'))
 else
 	$xmlfile = $docs_path.'xml/media.xml';
 if (!file_exists($xmlfile)) {
-	
+
 	echo(gettext('Sorry, a media file has not been written yet.'));
 	include('footer.php');
 	die();
-	
+
 }
 
 fwmiddlebox(gettext('Frugalware in the press'),
@@ -59,18 +59,18 @@ $media = $parser->document->article;
 
 // The parser creates too long and unuseful object hierarchy, so create a better-readable one.
 for ( $i = 0; $i < count($media); $i++) {
-	
+
 	$articles[$i][date] = $media[$i]->date[0]->tagData;
 	$articles[$i][language] = $media[$i]->language[0]->tagData;
 	$articles[$i][where] = $media[$i]->where[0]->tagData;
 	$articles[$i][title] = $media[$i]->title[0]->tagData;
 	$articles[$i][link] = $media[$i]->link[0]->tagData;
-	
+
 }
 
 // Let's write out details of each article in a separate box
 for( $i = 0; $i < count($articles); $i++ ) {
-	
+
 	fwmiddlebox($articles[$i][where] . ' - ' . $articles[$i][title],
 		'<table width="100%">
 		<tr><td width="30%">' . gettext('Title') . ':</td><td width="70%">' . $articles[$i][title] . '</td></tr>
@@ -78,7 +78,7 @@ for( $i = 0; $i < count($articles); $i++ ) {
 		<tr><td>' . gettext('Date') . ':</td><td>' . $articles[$i][date] . '</td></tr>
 		<tr><td>' . gettext('Language') . ':</td><td>' . $articles[$i][language] . '</td></tr>
 		<tr><td>' . gettext('Link') . ':</td><td><a href="' . htmlentities($articles[$i][link]) . '">' . htmlentities($articles[$i][link]) . '</a></td></tr></table>');
-	
+
 }
 
 include("footer.php");

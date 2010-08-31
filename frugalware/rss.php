@@ -60,14 +60,14 @@ switch($_GET['type'])
 		for ( $i=0; $i < count($releases); $i++)
 		{
 			if ($releases[$i]->status[0]->tagData == '1') {
-				
+
 				$handle['items'][] = array(
 					"title" => 'frugalware-' . $releases[$i]->version[0]->tagData,
 					"link" => 'http://www.frugalware.org/news/' . $releases[$i]->newsid[0]->tagData,
 					"desc" => '',
 					"pubDate" => date(DATE_RFC2822, strtotime($releases[$i]->date[0]->tagData)),
 				);
-				
+
 			}
 		}
 		break;

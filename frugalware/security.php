@@ -42,11 +42,11 @@ if (file_exists('xml/security.xml'))
 else
 	$xmlfile = $docs_path.'xml/security.xml';
 if (!file_exists($xmlfile)) {
-	
+
 	echo(gettext('Sorry, a security file has not been written yet.'));
 	include('footer.php');
 	die();
-	
+
 }
 
 if ( $_GET['id'] != "" )
@@ -65,7 +65,7 @@ $security = $parser->document->fsa;
 
 // The parser creates too long and unuseful object hierarchy, so create a better-readable one.
 for ( $i = 0; $i < count($security); $i++) {
-	
+
 	$fsas[$i][id] = $security[$i]->id[0]->tagData;
 	$fsas[$i][date] = $security[$i]->date[0]->tagData;
 	$fsas[$i][author] = $security[$i]->author[0]->tagData;
@@ -75,7 +75,7 @@ for ( $i = 0; $i < count($security); $i++) {
 	$fsas[$i][bts] = $security[$i]->bts[0]->tagData;
 	$fsas[$i][cve] = $security[$i]->cve[0]->tagData;
 	$fsas[$i][desc] = $security[$i]->desc[0]->tagData;
-	
+
 }
 
 // Let's write out details of each FSA in a separate box
@@ -93,7 +93,7 @@ for( $i = 0; $i < count($fsas); $i++ ) {
 		<tr><td>' . gettext('CVEs') . ':</td><td>' . $fsas[$i][cve] . '</td></tr>
 		<tr><td>' . gettext('Description') . ':</td><td>' . $fsas[$i][desc] . '</td></tr></table>');
 	}
-	
+
 }
 
 include("footer.php");

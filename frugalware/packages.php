@@ -188,7 +188,7 @@ function search_pkg()
 		$db->doClose();
 		res_show($res_set, 'p', $search);
 	}
-	elseif ( $res == -1 ) 
+	elseif ( $res == -1 )
 	{
 		print '<h3>' . gettext( 'Error in the query, please change the searching conditions' ) . '</h3>';
 		$db->doClose();
@@ -208,8 +208,8 @@ function search_file()
 	$arch = addslashes($_GET['arch']);
 	$fwver = addslashes($_GET['ver']);
 	// XXX: no regexp search here
-	$query = "select packages.id, packages.pkgname, packages.pkgver, 
-		packages.fwver, packages.arch from packages, files where 
+	$query = "select packages.id, packages.pkgname, packages.pkgver,
+		packages.fwver, packages.arch from packages, files where
 		packages.id = files.pkg_id and files.file like '%$search%'";
 	if ($arch != "" && $arch != "all")
 	{

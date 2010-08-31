@@ -35,11 +35,11 @@ set_locale($llang, $domain);
 
 $fwshortabout = gettext("Frugalware is a general purpose linux distribution, designed for intermediate users (who are not afraid of text mode).");
 $fwabout= array (
-	array (gettext("What branches does Frugalware have?"), 
-		gettext("We have a <i>current</i> and a <i>stable</i> branch. The <i>current</i> branch is updated daily, and we update our <i>stable</i> branch around every 6 months.")), 
+	array (gettext("What branches does Frugalware have?"),
+		gettext("We have a <i>current</i> and a <i>stable</i> branch. The <i>current</i> branch is updated daily, and we update our <i>stable</i> branch around every 6 months.")),
 	array (gettext("What is &quot;The Frugalware Philosophy&quot; about?"),
 		gettext("Briefly: simplicity, multimedia, design. We try to make Frugalware as simple as possible while not forgetting to keep it comfortable for the user. We try to ship fresh and stable software, as close to the original source as possible, because in our opinion most software is the best as is, and doesn't need patching.")),
-	array (gettext("What is the license of Frugalware?"), 
+	array (gettext("What is the license of Frugalware?"),
 		gettext("That's two questions. Most software included in Frugalware have a GPL or BSD compatible license, for more information about a license of a specific package, refer to the LICENSE or COPYRIGHT file in the source tarball of the package. On the other hand, the part written by our team (FrugalBuild scripts, setup, homepage, etc) is released under GPL license. To make it even more complicated, some parts of the setup and init scripts are written by Patrick J. Volkerding. We GPL our additions, but Patrick J. Volkerding's code is still under the BSD license. For more information, refer to the COPYRIGHT file in the root directory of the FST (Frugalware Source Tree).")),
 	array (gettext("What package manager does Frugalware use?"),
 		gettext("We don't have our own package manager, we use Judd Vinet's great work, the <a href=\"http://www.archlinux.org/pacman\">pacman</a> package manager. It's a tar.bz2 based package manager, similar to Slackware's .tgz. Our packages' extension is .fpm to differentiate them from regular tarballs. Unlike Slackware's scripts, pacman is written in C, so it's much faster.")),
