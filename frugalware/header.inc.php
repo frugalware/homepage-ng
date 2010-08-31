@@ -115,7 +115,7 @@ function genHeader($usegettext = true) {
 	$recupd = file_get_contents($pkgcache);
 	
 	$statf = file($upfile);
-	list($uptime, $junk) = split(" ", $statf[0]);
+	list($uptime, $junk) = explode(" ", $statf[0]);
 	$secuptime=floor($uptime);
 	
 	// Seconds
