@@ -21,6 +21,89 @@
 Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
+  <post>
+    <id>186</id>
+    <title>Frugalware 1.4pre1 (Nexon) released</title>
+    <date>Mon, 18 Oct 2010 00:23:24 +0200</date>
+    <author>Miklos Vajna</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+     L'Équipe de Développement de Frugalware est ravie de vous annoncer la sortie immédiate de Frugalware 1.4pre1, le premier aperçu technique de la prochaine version stable 1.4 Nexon.</p>
+    <p>Une liste des principales améliorations et changements depuis la version 1.3:<br />
+      <ul>
+        <li>teTeX a été remplacée par TeX Live.</li>
+        <li>Le plugin Java par défaut du navigateur est maintenant OpenJRE et non plus le plugin propriétaire de Sun.</li>
+        <li>Cette version comporte maintenant GNOME 2.32.</li>
+        <li>Python a été mis à jour vers la version 2.7.</li>
+        <li>Environ 1000 paquets on été mis à jour.</li>
+        <li>Il y a plus de 100 nouveau paquets.</li>
+      </ul>
+      Référez-vous au <a href="http://frugalware.org/download/frugalware-1.3/ChangeLog.txt">ChangeLog Nexon</a> pour plus d'informations.<br />
+      Téléchargez pour l'architecture i686: regardez notre <a href="http://frugalware.org/download/frugalware-testing-iso">liste de miroirs</a>. N'oubliez pas de vérifier <a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">l'integrité</a> de l'image d'installation avant de graver!<br />
+       <b>NOTE</b>: Clicquez <a href="/docs/install#_choosing_installation_flavor">ici</a> pour savoir quel média vous aurez besoin pour l'installation.<br />
+      ]]>
+    </content>
+  </post>
+  <post>
+    <id>185</id>
+    <title>Frugalware Newsletter 72</title>
+    <date>Thu, 14 Oct 2010 22:10:14 +1000</date>
+    <author>phayz</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+            La newsletter a pour but de vous tenir informé de ce qu'il s'est passé récemment dans le monde de Frugalware.<br />
+            Au programme :
+        <ul>
+            <li>kikadf est officiellement développeur Frugalware</li>
+            <li>Botchchikii soumet plus de FrugalBuilds</li>
+            <li>Trucs et astuces - Ajouter un dépôt perso à la configuration de pacman-g2</li>
+            <li>Détails sur un(des) paquet(s) - QTM et cclive</li>
+        </ul>
+            Vous pouvez la consulter <a href="/newsletter/72">ici</a>. Nous espérons que vous l'apprécierez !
+      ]]>
+    </content>
+  </post>
+  <post>
+    <id>184</id>
+    <title>Frugalware Newsletter 71</title>
+    <date>Thu, 23 Sep 2010 22:38:56 +1000</date>
+    <author>phayz</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+            La newsletter a pour but de vous tenir informé de ce qu'il s'est passé récemment dans le monde de Frugalware.<br />
+            Au programme :
+      Features of this issue include:
+        <ul>
+            <li>Frugalware 1.4 aura la nom de code 'Nexon'</li>
+            <li>Helicon est en vie à nouveau!</li>
+            <li>Botchchikii fait son premier Frugalbuild</li>
+            <li>Pingax délivre en plus de FrugalBuilds</li>
+            <li>Trucs et astuces - tar et xz</li>
+        </ul>
+            Vous pouvez la consulter <a href="/newsletter/71">ici</a>. Nous espérons que vous l'apprécierez !
+      ]]>
+    </content>
+  </post>
+  <post>
+    <id>184</id>
+    <title>Frugalware Newsletter 70</title>
+    <date>Tue, 07 Sep 2010 23:06:37 +1000</date>
+    <author>phayz</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+            La newsletter a pour but de vous tenir informé de ce qu'il s'est passé récemment dans le monde de Frugalware.<br />
+            Au programme :
+        <ul>
+          <li>Frugalware 1.3 est sortie</li>
+          <li>bouleetbil - y'en a t'il qu'un?</li>
+          <li>Nouveau contributeur - Xarkam</li>
+          <li>Comment faire une demande de fonctionnalité</li>
+          <li>Détails sur un(des) paquet(s) - Talika et etckeeper</li>
+        </ul>
+            Vous pouvez la consulter <a href="/newsletter/70">ici</a>. Nous espérons que vous l'apprécierez !
+      ]]>
+    </content>
+  </post>
     <post>
         <id>183</id>
         <title>Locris: Fin de Vie</title>
@@ -4000,6 +4083,7 @@ ab191be15a05e42c87218048f55900fcde476b10  frugalware-0.6pre2-i686-net.iso
                         <li>Added PHP documentation for 23 languages.</li>
                     </ul>
                 </li>
+
                 <li>Updates:
                     <ul>
                                     <li>Linux 2.6.18 with a much improved SATA layer and a few new drivers</li>
