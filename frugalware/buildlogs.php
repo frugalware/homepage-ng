@@ -74,7 +74,8 @@ else if(isset($_GET['client']) and isset($_GET['log']))
 	if(preg_match("/\//", $_GET['log']))
 		die("invalid log name");
 	$client = $_GET['client'];
-	$log = $_GET['log'];
+	// silly automatic urldecode
+	$log = urlencode($_GET['log']);
 	$logfile = "$logdir/$client/$log";
 
 	print("<fieldset class=\"pkg\"><legend>".sprintf(gettext("Build log for %s"), basename($logfile, ".log"))."</legend>");
