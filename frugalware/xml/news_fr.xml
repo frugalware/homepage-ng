@@ -22,8 +22,27 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
   <post>
+    <id>187</id>
+    <title>Frugalware Newsletter 73</title>
+    <date>Thu, 11 Nov 2010 07:15:26 +1000</date>
+    <author>phayz</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+            La newsletter a pour but de vous tenir informé de ce qu'il s'est passé récemment dans le monde de Frugalware.<br />
+            Au programme :
+        <ul>
+          <li>Frugalware 1.4 pre1 est sortie</li>
+          <li>Nous avons besoin de <strong>vous</strong> dans l'équipe artwork</li>
+          <li>WHYANFC! (Woo hoo, yet another new Frugalware contributor!)</li>
+          <li>"Best of "Trucs et Astuces"</li>
+        </ul>
+            Vous pouvez la consulter <a href="/newsletter/73">ici</a>. Nous espérons que vous l'apprécierez !
+      ]]>
+    </content>
+  </post>
+  <post>
     <id>186</id>
-    <title>Frugalware 1.4pre1 (Nexon) released</title>
+    <title>Frugalware 1.4pre1 (Nexon) disponible</title>
     <date>Mon, 18 Oct 2010 00:23:24 +0200</date>
     <author>Miklos Vajna</author>
     <hidden>0</hidden>
@@ -2079,6 +2098,7 @@ a79a0377d35d80fe82a74f73d134103b6a0ed39c  frugalware-0.9rc1-i686-usb.img
         <title>Compétition pour le wallpaper de Frugalware</title>
         <date>Thu, 24 Jul 2008 21:28:52 +1000</date>
         <author>phayz</author>
+
         <hidden>0</hidden>
         <content><![CDATA[
             Pour la première fois dans l'histoire de frugalware, nous organisons une compétition de wallpaper.  L'objectif de cette compétition est d'obtenir un wallpaper original pour la release de Frugalware's 0.9 - "Solaria".  Le vainqueur deviendra le wallpaper par défaut.  Il deviendra aussi la base pour plusieur travaux connexe - ex. des thèmes KDE/GDM/SLiM, écrans splash.<br />
