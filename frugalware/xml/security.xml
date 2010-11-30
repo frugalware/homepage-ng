@@ -26,6 +26,17 @@
 
 <fsas>
 	<fsa>
+		<id>699</id>
+		<date>2010-11-30</date>
+		<author>Miklos Vajna</author>
+		<package>phpmyadmin</package>
+		<vulnerable>3.3.7-1haven1</vulnerable>
+		<unaffected>3.3.8.1-1haven1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4381</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-4329</cve>
+		<desc>A vulnerability has been reported in Phpmyadmin, which can be exploited by malicious people to perform an XSS attack. See http://www.phpmyadmin.net/home_page/security/PMASA-2010-8.php for details.</desc>
+	</fsa>
+	<fsa>
 		<id>698</id>
 		<date>2010-11-30</date>
 		<author>Miklos Vajna</author>
