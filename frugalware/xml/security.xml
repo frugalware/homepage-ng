@@ -26,6 +26,19 @@
 
 <fsas>
 	<fsa>
+		<id>696</id>
+		<date>2010-11-30</date>
+		<author>Miklos Vajna</author>
+		<package>drupal6-lightbox2</package>
+		<vulnerable>6.x_1.9-1</vulnerable>
+		<unaffected>6.x_1.10-1haven1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4326</bts>
+		<cve>No CVE, see http://drupal.org/node/919610.</cve>
+		<desc>Two vulnerabilities have been reported in Lightbox2 module for Drupal, which can be exploited by malicious people to bypass certain security restrictions and conduct cross-site scripting attacks.
+			1) A vulnerability exists in the access control mechanism for video content and can be exploited to get access to restricted video content.
+			2) Input passed via unspecified parameters is not properly sanitised before being returned to the user. This can be exploited to execute arbitrary HTML and script code in a user's browser session in context of an affected site.</desc>
+	</fsa>
+	<fsa>
 		<id>695</id>
 		<date>2010-11-30</date>
 		<author>Miklos Vajna</author>
