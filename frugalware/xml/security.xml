@@ -26,6 +26,20 @@
 
 <fsas>
 	<fsa>
+		<id>698</id>
+		<date>2010-11-30</date>
+		<author>Miklos Vajna</author>
+		<package>wireshark</package>
+		<vulnerable>1.4.1-1haven1</vulnerable>
+		<unaffected>1.4.2-1haven1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4380</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-4300
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-4301</cve>
+		<desc>Two vulnerabilities have been reported in Wireshark, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			1) A boundary error in "dissect_ldss_transfer()" in epan/dissectors/packet-ldss.c can be exploited to cause a heap-based buffer overflow.
+			2) An error in the ZigBee ZCL Discover Attribute Response dissector can be exploited to cause an infinite loop.</desc>
+	</fsa>
+	<fsa>
 		<id>697</id>
 		<date>2010-11-30</date>
 		<author>Miklos Vajna</author>
