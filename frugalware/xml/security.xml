@@ -26,6 +26,26 @@
 
 <fsas>
 	<fsa>
+		<id>695</id>
+		<date>2010-11-30</date>
+		<author>Miklos Vajna</author>
+		<package>mantis</package>
+		<vulnerable>1.2.2-1</vulnerable>
+		<unaffected>1.2.3-1haven1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4318</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3070
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3303
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3763</cve>
+		<desc>Some vulnerabilities have been reported in MantisBT, which can be exploited by malicious users to conduct script insertion attacks and by malicious people to conduct cross-site scripting attacks.
+			1) The application bundles a vulnerable version of NuSOAP.
+			2) Certain Input passed via custom field types is not properly sanitised before being displayed to the user. This can be exploited to insert arbitrary HTML and script code, which will be executed in a user's browser session in context of an affected site when the malicious data is being viewed.
+			Successful exploitation of this vulnerability requires "Manage Custom Fields" permissions.
+			3) Certain input passed via project and category names is not properly sanitised before being displayed to the user in print_all_bug_page_word.php. This can be exploited to insert arbitrary HTML and script code, which will be executed in a user's browser session in context of an affected site when the malicious data is being viewed.
+			Successful exploitation of this vulnerability requires "Project Manager" permissions.
+			4) Input passed via the Summary field when creating an issue is not properly sanitised before being used in core/summary_api.php. This can be exploited to insert arbitrary HTML and script code, which will be executed in a user's browser session in context of an affected site when the malicious data is being viewed.
+			Successful exploitation of this vulnerability requires "Reporter" permissions.</desc>
+	</fsa>
+	<fsa>
 		<id>694</id>
 		<date>2010-11-30</date>
 		<author>Miklos Vajna</author>
