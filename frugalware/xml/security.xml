@@ -26,6 +26,19 @@
 
 <fsas>
 	<fsa>
+		<id>694</id>
+		<date>2010-11-30</date>
+		<author>Miklos Vajna</author>
+		<package>phpmyadmin</package>
+		<vulnerable>3.3.7-1haven1</vulnerable>
+		<unaffected>3.3.8.1-1haven1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4381</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3263</cve>
+		<desc>A vulnerability has been reported in phpMyAdmin, which can be exploited by malicious people to conduct cross-site scripting attacks.
+			Certain unspecified input passed to the setup script is not properly sanitised before being returned to the user. This can be exploited to execute arbitrary HTML and script code in a user's browser session in context of an affected site.
+			NOTE: Successful exploitation requires that installation best-practices have not been followed and the setup scripts have not been deleted after a successful installation.</desc>
+	</fsa>
+	<fsa>
 		<id>693</id>
 		<date>2010-08-29</date>
 		<author>Miklos Vajna</author>
