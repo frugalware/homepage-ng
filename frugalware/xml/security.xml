@@ -26,6 +26,24 @@
 
 <fsas>
 	<fsa>
+		<id>700</id>
+		<date>2010-12-12</date>
+		<author>Miklos Vajna</author>
+		<package>kernel</package>
+		<vulnerable>2.6.35-1</vulnerable>
+		<unaffected>2.6.35-2haven1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4304</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-2240
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-2803
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-2963
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3904</cve>
+		<desc>Multiple vulnerabilities have been reported in the Linux kernel:
+			1) The do_anonymous_page function in mm/memory.c does not properly separate the stack and the heap, which allows context-dependent attackers to execute arbitrary code by writing to the bottom page of a shared memory segment, as demonstrated by a memory-exhaustion attack against the X.Org X server.
+			2) The drm_ioctl function in drivers/gpu/drm/drm_drv.c in the Direct Rendering Manager (DRM) subsystem allows local users to obtain potentially sensitive information from kernel memory by requesting a large memory-allocation amount.
+			3) drivers/media/video/v4l2-compat-ioctl32.c in the Video4Linux (V4L) implementation on 64-bit platforms does not validate the destination of a memory copy operation, which allows local users to write to arbitrary kernel memory locations, and consequently gain privileges, via a VIDIOCSTUNER ioctl call on a /dev/video device, followed by a VIDIOCSMICROCODE ioctl call on this device.
+			4) The rds_page_copy_user function in net/rds/page.c in the Reliable Datagram Sockets (RDS) protocol implementation  does not properly validate addresses obtained from user space, which allows local users to gain privileges via crafted use of the sendmsg and recvmsg system calls.</desc>
+	</fsa>
+	<fsa>
 		<id>699</id>
 		<date>2010-11-30</date>
 		<author>Miklos Vajna</author>
