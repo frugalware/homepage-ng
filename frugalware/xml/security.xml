@@ -26,6 +26,19 @@
 
 <fsas>
 	<fsa>
+		<id>702</id>
+		<date>2010-12-12</date>
+		<author>Miklos Vajna</author>
+		<package>wordpress</package>
+		<vulnerable>3.0.1-1</vulnerable>
+		<unaffected>3.0.2-1haven1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4382</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-4257</cve>
+		<desc>A vulnerability has been reported in WordPress, which can be exploited by malicious users to conduct SQL injection attacks.
+			Input passed via the "Send Trackbacks" field when creating a new post is not properly sanitised in wp-includes/comment.php before being used in SQL queries. This can be exploited to manipulate SQL queries by injecting arbitrary SQL code.
+			Successful exploitation of this vulnerability requires "Author-level" permissions.</desc>
+	</fsa>
+	<fsa>
 		<id>701</id>
 		<date>2010-12-12</date>
 		<author>Miklos Vajna</author>
