@@ -22,6 +22,19 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
   <post>
+    <id>191</id>
+      <title>Happy New Year!</title>
+      <date>Sat, 01 Jan 2011 11:52:48 +1000</date>
+      <author>phayz</author>
+      <hidden>0</hidden>
+      <content><![CDATA[
+          <center><img src="http://frugalware.org/images/FwNewYear.png" alt="Frugalware New Year logo" /></center><br />
+          The Frugalware team would like to wish everyone a Happy New Year.<br />
+          Building on the achievements of 2009, 2010 was a very successful year. Frugalware featured upgrades to the Linux kernel, GNOME desktop, KDE desktop, X.org and other major packages. Current developers and contributors continued their great work and we welcomed several new developers and contributors. 2011 is almost certain to be an exciting year, so let's get started!<br />
+          ]]>
+      </content>
+  </post>
+  <post>
     <id>190</id>
     <title>Merry Christmas</title>
     <date>Wed, 22 Dec 2010 20:14:33 +1000</date>
