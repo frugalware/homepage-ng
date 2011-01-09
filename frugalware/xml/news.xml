@@ -22,6 +22,35 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
   <post>
+    <id>192</id>
+    <title>Frugalware 1.4rc1 (Nexon) released</title>
+    <date>Mon, 10 Jan 2011 07:24:00 +0100</date>
+    <author>Miklos Vajna</author>
+    <hidden>1</hidden>
+    <content><![CDATA[
+      The Frugalware Developer Team is pleased to <a href="/news/192">announce</a> the immediate availability of Frugalware 1.4rc1, the first candidate of the upcoming 1.4 stable release.</p>
+    <p>Here are some of the major improvements, fixes and updates since 1.4pre2:<br />
+      <ul>
+        <li>Package updates:</li>
+        <ul>
+          <li>Linux 2.6.36.2</li>
+          <li>Firefox 3.6.13, Chromium 10.0.616.0</li>
+          <li>Midnight Commander 4.7.5</li>
+        </ul>
+        <li>New Features:</li>
+        <ul>
+          <li>New LCD font rendering available in GNOME. If you use digital video output, this will improve font appearance.</li>
+          <li>OSSv4 has been added. Feel free to try it out if you have issues with ALSA.</li>
+          <li>systemd is now available as an alternative of sysvinit (see <a href="http://wiki.frugalware.org/index.php/Systemd#Installation">its wiki page</a> for more info).</li>
+        </ul>
+      </ul>
+      Please refer to the Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Nexon ChangeLog</a> for more information.<br />
+      Download for i686: See our <a href="http://frugalware.org/download/frugalware-testing-iso">mirror list</a>. Don't forget to check the <a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">integrity</a> of the install images before burning!<br />
+      <b>NOTE</b>: Click <a href="/docs/install#_choosing_installation_flavor">here</a> to read more about what media you need for the installation. <br />
+      ]]>
+    </content>
+  </post>
+  <post>
     <id>191</id>
       <title>Happy New Year!</title>
       <date>Sat, 01 Jan 2011 11:52:48 +1000</date>
