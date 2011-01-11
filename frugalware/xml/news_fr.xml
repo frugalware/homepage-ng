@@ -22,6 +22,35 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
   <post>
+    <post>
+    <id>192</id>
+    <title>Frugalware 1.4rc1 (Nexon) disponible</title>
+    <date>Mon, 10 Jan 2011 07:24:00 +0100</date>
+    <author>Miklos Vajna</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+      L’équipe de développement de Frugalware a plaisir de vous annoncer la disponibilité immédiate de Frugalware 1.4rc1, la première « Release Candidate » de la version stable 1.4 à venir.</p>
+    <p>Vous trouverez ci-après quelques-uns des changements majeurs depuis la 1.4pre2 :<br />
+      <ul>
+        <li>Paquets mis à jour :</li>
+        <ul>
+          <li>Linux 2.6.36.2</li>
+          <li>Firefox 3.6.13, Chromium 10.0.616.0</li>
+          <li>Midnight Commander 4.7.5</li>
+        </ul>
+        <li>Nouvelles fonctionnalités :</li>
+        <ul>
+          <li>Nouveaux rendus de police disponibles sur GNOME. Si vous utilisez une sortie vidéo numérique, cela va améliorer le rendu des polices.</li>
+          <li>OSSv4 a été ajouté. N'hésitez pas à le tester si vous avez des soucis avec ALSA.</li>
+          <li>systemd est maintenant disponible comme alternative à sysvinit (regardez <a href="http://wiki.frugalware.org/index.php/Systemd#Installation">sa page wiki</a> pour plus d'infos).</li>
+        </ul>
+      </ul>
+      Veuillez vous référer au <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">ChangeLog de Frugalware Nexon</a> pour plus d’informations.<br />
+      Téléchargement pour les architectures i686 : rendez-vous sur <a href="http://frugalware.org/download/frugalware-testing-iso">la liste des miroirs</a>. N’oubliez pas de vérifier <a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">l’intégrité des images</a> avant de les graver !<br />
+      <b>NOTE</b>: Cliquez <a href="/docs/install#_choosing_installation_flavor">ici</a> pour en savoir plus sur les médias nécessaires à l’installation. <br />
+      ]]>
+    </content>
+  </post>
     <id>191</id>
       <title>Bonne Année!</title>
       <date>Sat, 01 Jan 2011 11:52:48 +1000</date>
