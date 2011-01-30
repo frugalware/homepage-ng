@@ -183,9 +183,9 @@ $shots[gservice][2][title]=gettext("gService - Minimal Interface");
 
 $shots[users][0][name]="01_users_lenezir.png";
 $shots[users][0][title]=gettext("Openbox - Lenezir");
-$shots[users][1][name]="01_users_pingax.png";
+$shots[users][1][name]="02_users_pingax.png";
 $shots[users][1][title]=gettext("GNOME - Pingax");
-$shots[users][2][name]="01_users_devil505.png";
+$shots[users][2][name]="03_users_devil505.png";
 $shots[users][2][title]=gettext("XFCE - Devil505");
 
 // include the config and let's start page
