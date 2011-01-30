@@ -174,12 +174,19 @@ $shots[gnetconfig][1][title]=gettext("GNetconfig - Interface Management");
 $shots[gnetconfig][2][name]="03_gnetconfig.png";
 $shots[gnetconfig][2][title]=gettext("GNetconfig - DNS Settings");
 
-$shots[gservice][0][name]="01_users_lenezir.png";
-$shots[gservice][0][title]=gettext("Openbox - Lenezir");
-$shots[gservice][1][name]="01_users_pingax.png";
-$shots[gservice][1][title]=gettext("GNOME - Pingax");
-$shots[gservice][2][name]="01_users_devil505.png";
-$shots[gservice][2][title]=gettext("XFCE - Devil505");
+$shots[gservice][0][name]="01_gservice.png";
+$shots[gservice][0][title]=gettext("gService - Main Window");
+$shots[gservice][1][name]="02_gservice.png";
+$shots[gservice][1][title]=gettext("gService - Editing Runlevel Information");
+$shots[gservice][2][name]="03_gservice.png";
+$shots[gservice][2][title]=gettext("gService - Minimal Interface");
+
+$shots[users][0][name]="01_users_lenezir.png";
+$shots[users][0][title]=gettext("Openbox - Lenezir");
+$shots[users][1][name]="01_users_pingax.png";
+$shots[users][1][title]=gettext("GNOME - Pingax");
+$shots[users][2][name]="01_users_devil505.png";
+$shots[users][2][title]=gettext("XFCE - Devil505");
 
 // include the config and let's start page
 include("config.inc.php");
