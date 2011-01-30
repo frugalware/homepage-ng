@@ -270,7 +270,7 @@ for ($i=0; $i<count($shots[gservice]); $i++)
 {
 	$maincont .= "<div><a href=\"".$fwng_root."images/screenshots/users/".$shots[users][$i][name]."\">".
 	"<img src=\"".$fwng_root."images/screenshots/users/thumbnails/".$shots[users][$i][name]."\" alt=\"screenshot\" /></a>".
-	"<br />".$shots[gservice][$i][title]."</div>\n";
+	"<br />".$shots[users][$i][title]."</div>\n";
 }
 
 $maincont .= "</fieldset></form>\n</div>\n";
