@@ -123,7 +123,7 @@ $shots[kde][3][title]=gettext("KDE Menu");
 $shots[kde][4][name]="11_kde_konqueror.png";
 $shots[kde][4][title]=gettext("KDE Desktop with Konqueror");
 $shots[kde][5][name]="12_kde_cube.png";
-$shots[kde][5][title]=gettext("KDE with Compiz Cube");
+$shots[kde][5][title]=gettext("KDE with Cube");
 
 $shots[gnome][0][name]="01_gdm.png";
 $shots[gnome][0][title]=gettext("GDM Login Screen");
