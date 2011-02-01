@@ -134,7 +134,7 @@ $shots[gnome][2][title]=gettext("Gnome Menu");
 $shots[gnome][3][name]="04_gnome_desktop.png";
 $shots[gnome][3][title]=gettext("Web Browser");
 $shots[gnome][4][name]="05_gnome_desktop.png";
-$shots[gnome][4][title]=gettext("File Manager");
+$shots[gnome][4][title]=gettext("Gnome Apps");
 
 $shots[xfce][0][name]="01_slim.png";
 $shots[xfce][0][title]=gettext("Login Screen (SliM)");
