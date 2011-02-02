@@ -119,6 +119,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
           Building on the achievements of 2009, 2010 was a very successful year. Frugalware featured upgrades to the Linux kernel, GNOME desktop, KDE desktop, X.org and other major packages. Current developers and contributors continued their great work and we welcomed several new developers and contributors. 2011 is almost certain to be an exciting year, so let's get started!<br />
           ]]>
       </content>
+      <icon>/images/icons/info.png</icon>
   </post>
   <post>
     <id>190</id>
@@ -144,6 +145,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         year.
         ]]>
         </content>
+        <icon>/images/icons/info.png</icon>
   </post>
   <post>
     <id>189</id>

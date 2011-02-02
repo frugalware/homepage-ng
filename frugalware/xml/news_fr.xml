@@ -113,6 +113,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
           Avec les acquis de 2009, 2010 fut une excellente année. Frugalware a eu droit à des mises à jour du kernel Linux, du bureau GNOME, du bureau KDE, de X.org et d'autres paquets principaux. Les actuels développeurs et contributeurs ont continué leur grand travail et ont accueilli plusieurs nouveaux développeurs et contributeurs. 2011 sera certainement une année aussi excitante, donc allons-y!<br />
           ]]>
       </content>
+      <icon>/images/icons/info.png</icon>
   </post>
   <post>
     <id>190</id>
@@ -137,6 +138,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         de cette saison et nous vous retrouvons l'année prochaine.
         ]]>
         </content>
+        <icon>/images/icons/info.png</icon>
   </post>
     <post>
     <id>189</id>
