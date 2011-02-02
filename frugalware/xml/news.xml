@@ -165,6 +165,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         You can read it <a href="/newsletter/74">here</a>. We hope you enjoy reading it.
       ]]>
     </content>
+    <icon>/images/icons/newsletter.png</icon>
   </post>
   <post>
     <id>188</id>
@@ -220,6 +221,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         You can read it <a href="/newsletter/73">here</a>. We hope you enjoy reading it.
       ]]>
     </content>
+    <icon>/images/icons/newsletter.png</icon>
   </post>
   <post>
     <id>186</id>
@@ -265,6 +267,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         You can read it <a href="/newsletter/72">here</a>. We hope you enjoy reading it.
       ]]>
     </content>
+    <icon>/images/icons/newsletter.png</icon>
   </post>
   <post>
     <id>184</id>
@@ -286,6 +289,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         You can read it <a href="/newsletter/71">here</a>. We hope you enjoy reading it.
       ]]>
     </content>
+    <icon>/images/icons/newsletter.png</icon>
   </post>
   <post>
     <id>184</id>
@@ -307,6 +311,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         You can read it <a href="/newsletter/70">here</a>. We hope you enjoy reading it.
       ]]>
     </content>
+    <icon>/images/icons/newsletter.png</icon>
   </post>
     <post>
         <id>183</id>
@@ -366,6 +371,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         You can read it <a href="/newsletter/69">here</a>. We hope you enjoy reading it.
       ]]>
     </content>
+    <icon>/images/icons/newsletter.png</icon>
   </post>
   <post>
     <id>180</id>
@@ -407,6 +413,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         You can read it <a href="/newsletter/68">here</a>. We hope you enjoy reading it.
       ]]>
     </content>
+    <icon>/images/icons/newsletter.png</icon>
   </post>
   <post>
     <id>178</id>
@@ -495,6 +502,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         You can read it <a href="/newsletter/67">here</a>. We hope you enjoy reading it.
       ]]>
     </content>
+    <icon>/images/icons/newsletter.png</icon>
   </post>
   <post>
     <id>175</id>
@@ -515,6 +523,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         You can read it <a href="/newsletter/66">here</a>. We hope you enjoy reading it.
       ]]>
     </content>
+    <icon>/images/icons/newsletter.png</icon>
   </post>
   <post>
     <id>174</id>
@@ -587,6 +596,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
             You can read it <a href="/newsletter/65">here</a>. We hope you enjoy reading it.
             ]]>
         </content>
+        <icon>/images/icons/newsletter.png</icon>
     </post>
     <post>
         <id>171</id>
@@ -605,6 +615,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
             You can read it <a href="/newsletter/64">here</a>. We hope you enjoy reading it.
             ]]>
         </content>
+        <icon>/images/icons/newsletter.png</icon>
     </post>
     <post>
         <id>170</id>
@@ -624,6 +635,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
             You can read it <a href="/newsletter/63">here</a>. We hope you like it!
             ]]>
         </content>
+        <icon>/images/icons/newsletter.png</icon>
     </post>
     <post>
         <id>170</id>
@@ -676,6 +688,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
             You can read it <a href="/newsletter/62">here</a>. We hope you like it!
             ]]>
         </content>
+        <icon>/images/icons/newsletter.png</icon>
     </post>
     <post>
         <id>168</id>
@@ -695,6 +708,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
             You can read it <a href="/newsletter/61">here</a>. We hope you like it!
             ]]>
         </content>
+        <icon>/images/icons/newsletter.png</icon>
     </post>
     <post>
         <id>167</id>
@@ -715,6 +729,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
             You can read it <a href="/newsletter/60">here</a>. We hope you like it!
             ]]>
         </content>
+        <icon>/images/icons/newsletter.png</icon>
     </post>
     <post>
         <id>166</id>
@@ -767,6 +782,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
             You can read it <a href="/newsletter/59">here</a>. We hope you like it!
             ]]>
         </content>
+        <icon>/images/icons/newsletter.png</icon>
     </post>
     <post>
         <id>163</id>
@@ -814,6 +830,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
             You can read it <a href="/newsletter/58">here</a>. We hope you like it!
             ]]>
         </content>
+        <icon>/images/icons/newsletter.png</icon>
     </post>
     <post>
         <id>161</id>
@@ -900,6 +917,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
             You can read it <a href="/newsletter/57">here</a>. We hope you like it!
             ]]>
         </content>
+        <icon>/images/icons/newsletter.png</icon>
     </post>
     <post>
         <id>158</id>
@@ -913,6 +931,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
             You can read it <a href="/newsletter/56">here</a>. We hope you like it!
             ]]>
         </content>
+        <icon>/images/icons/newsletter.png</icon>
     </post>
     <post>
         <id>157</id>
@@ -990,6 +1009,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
             You can read it <a href="/newsletter/55">here</a>. We hope you like it!
             ]]>
         </content>
+        <icon>/images/icons/newsletter.png</icon>
     </post>
     <post>
         <id>153</id>
@@ -1021,6 +1041,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
             You can read it <a href="/newsletter/54">here</a>. We hope you like it!
             ]]>
         </content>
+        <icon>/images/icons/newsletter.png</icon>
     </post>
     <post>
         <id>151</id>
@@ -1074,6 +1095,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
             You can read it <a href="/newsletter/53">here</a>. We hope you like it!
             ]]>
         </content>
+        <icon>/images/icons/newsletter.png</icon>
     </post>
     <post>
         <id>149</id>
@@ -1085,6 +1107,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
                 KMS is now enabled by default in Frugalware-current. It's recommended to read the <a href="/docs/upgrade#_kernel_mode_setting">relevant part</a> of the upgrade documentation before you upgrade to avoid unexpected results.
             ]]>
         </content>
+        <icon>/images/icons/warning.png</icon>
     </post>
     <post>
         <id>148</id>
@@ -1104,6 +1127,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
             You can read it <a href="/newsletter/52">here</a>. We hope you like it!
             ]]>
         </content>
+        <icon>/images/icons/newsletter.png</icon>
     </post>
     <post>
         <id>147</id>
