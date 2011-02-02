@@ -52,10 +52,10 @@ else if($_SERVER['PHP_SELF']=="/packages.php")
 <div id="rightcolumn">
 <?php
 fwsidebox(gettext("Languages"), $langcontent);
+fwsidebox(gettext("Recent updates"), $data['packages']);
 fwsidebox(gettext("Releases"), $data['releases']);
 if ($data['paypal'] != '')
 	fwsidebox(gettext("Donations"), $data['paypal']);
-fwsidebox(gettext("Recent updates"), $data['packages']);
 fwsidebox(gettext("Information"), $validcontent);
 fwsidebox(gettext("Server information"), $data['uptime']);
 ?>
