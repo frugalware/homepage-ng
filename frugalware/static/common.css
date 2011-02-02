@@ -66,16 +66,16 @@ body {
 	left: 105px;
 }
 
-#leftcolumn {
+#rightcolumn {
 	width: 180px;
-	float: left;
+	float: right;
 	padding: 10px;
 	margin: 0px;
 	height: 100%;
 }
 
 #centercolumn {
-	margin-left: 205px;
+	margin-right: 205px;
 	padding: 10px;
 	background-color: #fff;
 
@@ -83,7 +83,7 @@ body {
 	border-top:1px solid #afafaf;
 	border-left:1px solid #afafaf;
 	margin-top:10px;
-	margin-right:10px;
+	margin-left:10px;
 	-moz-box-shadow:0 4px 10px #999;
 	-webkit-box-shadow:0 4px 10px #999;
 	-khtml-box-shadow:0 4px 10px #999;
@@ -135,26 +135,26 @@ a.menu:hover {
 	text-decoration: underline;
 }
 
-#leftcolumn ul {
+#rightcolumn ul {
 	padding-left: 0em;
 	margin-left: 0px;
 
 	list-style-type: none;
 }
 
-#leftcolumn ul li:hover {
+#rightcolumn ul li:hover {
 	color: #999;
 }
 
-#leftcolumn ul li a {
+#rightcolumn ul li a {
 	text-decoration: none;
 }
 
-#leftcolumn ul li a:hover {
+#rightcolumn ul li a:hover {
 	text-decoration: underline;
 }
 
-#leftcolumn ul li a img {
+#rightcolumn ul li a img {
 	border: 0;
 }
 

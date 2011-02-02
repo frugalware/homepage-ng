@@ -48,7 +48,8 @@ else if($_SERVER['PHP_SELF']=="/packages.php")
 <!-- nav end -->
 <div id='bigwrap'>
 <!-- main content start -->
-<div id="leftcolumn">
+
+<div id="rightcolumn">
 <?php
 fwsidebox(gettext("Languages"), $langcontent);
 fwsidebox(gettext("Releases"), $data['releases']);
