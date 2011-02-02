@@ -4,20 +4,28 @@
  */
 
 body {
-	background-color: #fff;
-	font-family: "DejaVu Sans", "Bitstream Vera Sans", Lucida Grande, Arial, sans-serif;
-	font-size: 0.75em;
-	color: #000;
+	background: #eee url(images/bg.png) repeat-y center;
+	color: #5c5c5c;
+	margin: 0 10px 16px;
+	font: 70%/160% Verdana, Arial, "Bitstream Vera Sans", sans-serif;
+	text-align: justify;
 	padding: 0;
 	margin: 0;
 }
+
+#bigwrap {
+	width: 980px;
+	margin: 0 auto;
+	text-align: left; 
+}
+
 
 /* Main divs */
 
 #nav {
 	width: 100%;
 	height: 18px;
-	padding: 4px 0 0 0;
+	padding: 0px 0 0 0;
 	margin: 0;
 	margin-top: 0px;
 	margin-bottom: 0px;
@@ -27,10 +35,12 @@ body {
 	border: 0;
 }
 
+
 #header {
 	/* Width below the header */
 	margin-bottom: 0px;
 	background-image: url(../images/header_bg.png);
+	font: 1px;
 }
 
 #header img {
@@ -45,14 +55,14 @@ body {
 #title {
 	position: absolute;
 	font-size: 1.5em;
-	top: 20px;
+	top: 10px;
 	left: 90px;
 }
 
 #slogan {
 	position: absolute;
-	font-size: 1.05em;
-	top: 50px;
+	font-size: 0.95em;
+	top: 30px;
 	left: 105px;
 }
 
@@ -62,7 +72,6 @@ body {
 	padding: 10px;
 	margin: 0px;
 	height: 100%;
-	background-color: #fff;
 }
 
 #centercolumn {
@@ -84,10 +93,11 @@ body {
 
 #fwfooter {
 	clear: both;
-	border: 1px solid #98b7cd;
+	border: 0px solid #98b7cd;
 	background-color: #98b7cd;
 	color: #fff;
 	text-align: center;
+	width: 100%; 
 }
 
 
@@ -171,7 +181,7 @@ a.menu:hover {
 	font-size: 1.3em;
 	text-align: left;
 	background-color: transparent;
-	text-shadow:0px 0px 9px #777;
+	text-shadow:0px 0px 9px #FFFFFF;
 }
 
 .boxcontent {
@@ -187,6 +197,10 @@ a.menu:hover {
 
 .sidecontent {
 	padding: 2px;
+}
+
+.sidecontent p {
+    line-height : 10px;
 }
 
 .imgcontent {
