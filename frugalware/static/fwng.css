@@ -39,6 +39,7 @@ FIELDSET.fieldset {
 	font-family: "DejaVu Sans", sans-serif;
 	font-weight: normal;
 	font-size: 1.2em;
+	color: #333333;
 	
 	background-color:#98b7cd;
 	border-bottom-color:#3b76b3;
@@ -53,7 +54,6 @@ FIELDSET.fieldset {
 	text-decoration: none;
 	color: inherit;
 	font-size: 1.0em;
-	color: #333333;
 }
 
 img.face {
