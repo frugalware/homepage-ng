@@ -10,7 +10,8 @@ body {
 	font: 70%/160% Verdana, Arial, "Bitstream Vera Sans", sans-serif;
 	text-align: justify;
 	padding: 0;
-	margin: 0;
+	margin: auto;
+	width: 980px;
 }
 
 #bigwrap {
@@ -38,9 +39,10 @@ body {
 
 #header {
 	/* Width below the header */
-	margin-bottom: 0px;
+	margin-bottom: -4px;
 	background-image: url(../images/header_bg.png);
 	font: 1px;
+	border: 2px solid #3B76B3;
 }
 
 #header img {
@@ -49,21 +51,21 @@ body {
 
 #header a {
 	color: white;
-	text-shadow: black 10px 10px 10px;
+	text-shadow: blue 10px 10px 10px;
 }
 
 #title {
-	position: absolute;
+	position: relative;
 	font-size: 1.5em;
-	top: 10px;
-	left: 90px;
+	top: -32px;
+	left: 15px;
 }
 
 #slogan {
-	position: absolute;
+	position: relative;
 	font-size: 0.95em;
-	top: 30px;
-	left: 105px;
+	top: -13px;
+	left: -147px;
 }
 
 #rightcolumn {
@@ -82,7 +84,6 @@ body {
 	border-top:1px solid #afafaf;
 	border-left:1px solid #afafaf;
 	margin-top:10px;
-	margin-left:10px;
 	-moz-box-shadow:0 4px 10px #999;
 	-webkit-box-shadow:0 4px 10px #999;
 	-khtml-box-shadow:0 4px 10px #999;
@@ -237,3 +238,4 @@ a.menu:hover {
 	padding-left: 5px;
 	padding-right: 5px;
 }
+
