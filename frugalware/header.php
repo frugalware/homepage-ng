@@ -27,6 +27,19 @@ $data = genHeader();
   </script>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
   <script type="text/javascript" src="<?php echo $fwng_root; ?>static//fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+  	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			*   Examples - images
+			*/
+
+			$("a#fancybox").fancybox({
+				'opacity'		: true,
+				'overlayShow'	: false,
+				'transitionIn'	: 'elastic',
+				'transitionOut'	: 'none'
+			});
+  </script>
 
 <?
 if($_SERVER['PHP_SELF']=="/index.php")
