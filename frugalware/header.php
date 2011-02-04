@@ -15,30 +15,28 @@ $data = genHeader();
   <title>Frugalware Linux - Let's make things Frugal!</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="description" content="Frugalware Linux, a general purpose linux distribution, designed for intermediate users."/>
+  <link rel="icon" href="<?php echo $fwng_root; ?>images/favicon.ico" />
+    <!-- CSS -->
+  
   <link rel="stylesheet" type="text/css" href="<?php echo $fwng_root; ?>static/fwng.css" />
   <link rel="stylesheet" type="text/css" href="<?php echo $fwng_root; ?>static/_proform.css" />
   <link rel="stylesheet" type="text/css" href="<?php echo $fwng_root; ?>static/common.css" />
   <link rel="stylesheet" href="<?php echo $fwng_root; ?>static/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
-  <link rel="icon" href="<?php echo $fwng_root; ?>images/favicon.ico" />
+  
+  <!-- JavaScript -->
+
   <script type="text/javascript" src="<?php echo $fwng_root; ?>static/menu.js">
   /* AnyLink CSS Menu script- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
    * This notice MUST stay intact for legal use
    * Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code */
   </script>
+  
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
   <script type="text/javascript" src="<?php echo $fwng_root; ?>static//fancybox/jquery.fancybox-1.3.4.pack.js"></script>
-  	<script type="text/javascript">
+  
+  <script type="text/javascript">
 		$(document).ready(function() {
-			/*
-			*   Examples - images
-			*/
-
-			$("a#fancybox").fancybox({
-				'opacity'		: true,
-				'overlayShow'	: false,
-				'transitionIn'	: 'elastic',
-				'transitionOut'	: 'none'
-			});
+			$("a#imagebox").fancybox();
   </script>
 
 <?
