@@ -26,6 +26,19 @@
 
 <fsas>
 	<fsa>
+		<id>705</id>
+		<date>2011-02-06</date>
+		<author>Miklos Vajna</author>
+		<package>drupal6-views</package>
+		<vulnerable>6.x_2.11-1</vulnerable>
+		<unaffected>6.x_2.12-1haven1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4390</bts>
+		<cve>No CVE references, see
+			http://drupal.org/node/999380.</cve>
+		<desc>Multiple vulnerabilities have been reported in the Views module for Drupal, which can be exploited by malicious people to conduct cross-site scripting attacks.
+			Input passed via the URL is not properly sanitised before being returned to the user. This can be exploited to execute arbitrary HTML and script code in a user's browser session in context of an affected site.</desc>
+	</fsa>
+	<fsa>
 		<id>704</id>
 		<date>2011-02-06</date>
 		<author>Miklos Vajna</author>
