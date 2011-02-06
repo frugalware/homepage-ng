@@ -26,6 +26,18 @@
 
 <fsas>
 	<fsa>
+		<id>708</id>
+		<date>2011-02-06</date>
+		<author>Miklos Vajna</author>
+		<package>wordpress</package>
+		<vulnerable>3.0.3-1haven1</vulnerable>
+		<unaffected>3.0.4-1haven1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4399</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-4536</cve>
+		<desc>A vulnerability has been reported in WordPress, which can be exploited by malicious users to conduct script insertion attacks.
+			Certain input containing protocol strings (e.g. the HREF attribute of the "A" HTML tag) is not properly sanitised in the KSES library before being used. This can be exploited to insert arbitrary HTML and script code, which will be executed in a user's browser session in the context of an affected site when the malicious data is being viewed.</desc>
+	</fsa>
+	<fsa>
 		<id>707</id>
 		<date>2011-02-06</date>
 		<author>Miklos Vajna</author>
