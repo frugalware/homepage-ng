@@ -196,7 +196,6 @@ $maincont = "<div class=\"screenshots\">\n";
 
 $maincont .= "<form action=\"screenshots\" method=\"get\">\n<fieldset class=\"fieldset\" id=\"installer\">\n<legend>".gettext("Screenshots from users")."</legend>\n";
 for ($i=0; $i<count($shots[inst]); $i++)
-$maincont .= "</fieldset>\n<fieldset class=\"fieldset\" id=\"default\">\n";
 
 for ($i=0; $i<count($shots[users]); $i++)
 {
