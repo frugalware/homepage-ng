@@ -26,6 +26,19 @@
 
 <fsas>
 	<fsa>
+		<id>706</id>
+		<date>2011-02-06</date>
+		<author>Miklos Vajna</author>
+		<package>drupal-image</package>
+		<vulnerable>5.x_1.9-1</vulnerable>
+		<unaffected>5.x_2.0-1haven1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4395</bts>
+		<cve>No CVE references, see
+			http://drupal.org/node/1005578</cve>
+		<desc>A vulnerability has been reported in the Image module for Drupal, which can be exploited by malicious users to conduct script insertion attacks.
+			Certain unspecified input is not properly sanitised before being displayed to the user. This can be exploited to insert arbitrary HTML and script code, which will be executed in a user's browser session in the context of an affected site when the malicious data is being viewed.</desc>
+	</fsa>
+	<fsa>
 		<id>705</id>
 		<date>2011-02-06</date>
 		<author>Miklos Vajna</author>
