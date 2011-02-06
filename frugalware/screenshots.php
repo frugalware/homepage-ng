@@ -192,6 +192,15 @@ $shots[users][2][title]=gettext("XFCE - Devil505");
 include("config.inc.php");
 include("header.php");
 
+$maincont .= "</fieldset>\n<fieldset class=\"fieldset\" id=\"default\">\n";
+$maincont .= "<legend>".gettext("Screenshots from users")."</legend>\n";
+for ($i=0; $i<count($shots[gservice]); $i++)
+{
+	$maincont .= "<div><a id=\"imagebox\"  href=\"".$fwng_root."images/screenshots/users/".$shots[users][$i][name]."\">".
+	"<img src=\"".$fwng_root."images/screenshots/users/thumbnails/".$shots[users][$i][name]."\" alt=\"screenshot\" /></a>".
+	"<br />".$shots[users][$i][title]."</div>\n";
+}
+
 $maincont = "<div class=\"screenshots\">\n";
 $maincont .= "<form action=\"screenshots\" method=\"get\">\n<fieldset class=\"fieldset\" id=\"installer\">\n<legend>".gettext("Installer")."</legend>\n";
 for ($i=0; $i<count($shots[inst]); $i++)
@@ -264,14 +273,7 @@ for ($i=0; $i<count($shots[gservice]); $i++)
 	"<img src=\"".$fwng_root."images/screenshots/default/thumbnails/".$shots[gservice][$i][name]."\" alt=\"screenshot\" /></a>".
 	"<br />".$shots[gservice][$i][title]."</div>\n";
 }
-$maincont .= "</fieldset>\n<fieldset class=\"fieldset\" id=\"default\">\n";
-$maincont .= "<legend>".gettext("Screenshots from users")."</legend>\n";
-for ($i=0; $i<count($shots[gservice]); $i++)
-{
-	$maincont .= "<div><a id=\"imagebox\"  href=\"".$fwng_root."images/screenshots/users/".$shots[users][$i][name]."\">".
-	"<img src=\"".$fwng_root."images/screenshots/users/thumbnails/".$shots[users][$i][name]."\" alt=\"screenshot\" /></a>".
-	"<br />".$shots[users][$i][title]."</div>\n";
-}
+
 
 $maincont .= "</fieldset></form>\n</div>\n";
 
