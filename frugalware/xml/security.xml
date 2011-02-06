@@ -26,6 +26,19 @@
 
 <fsas>
 	<fsa>
+		<id>703</id>
+		<date>2011-02-06</date>
+		<author>Miklos Vajna</author>
+		<package>wordpress</package>
+		<vulnerable>3.0.2-1haven1</vulnerable>
+		<unaffected>3.0.3-1haven1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4387</bts>
+		<cve>No CVE references, see http://wordpress.org/news/2010/12/wordpress-3-0-3/</cve>
+		<desc>A security issue has been reported in WordPress, which can be exploited by malicious users to bypass certain security restrictions.
+			The security issue is caused due to the XML-RPC remote publishing interface not properly enforcing access control restrictions for editing, publishing, or deleting posts.
+			Successful exploitation of this security issue requires "Author level" or "Contributor level" permissions and that remote publishing is enabled.</desc>
+	</fsa>
+	<fsa>
 		<id>702</id>
 		<date>2010-12-12</date>
 		<author>Miklos Vajna</author>
