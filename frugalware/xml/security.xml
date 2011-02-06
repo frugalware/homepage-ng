@@ -26,6 +26,22 @@
 
 <fsas>
 	<fsa>
+		<id>704</id>
+		<date>2011-02-06</date>
+		<author>Miklos Vajna</author>
+		<package>mantis</package>
+		<vulnerable>1.2.3-1haven1</vulnerable>
+		<unaffected>1.2.4-1haven1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4389</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-4348
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-4349
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-4350</cve>
+		<desc>Gjoko Krstic has reported some vulnerabilities in MantisBT, which can be exploited by malicious people to conduct cross-site scripting attacks and disclose sensitive information.
+			1) Input passed via the "db_type" parameter to admin/upgrade_unattended.php is not properly sanitised before being returned to the user. This can be exploited to execute arbitrary HTML and script code in a user's browser session in context of an affected site.
+			2) Input passed via the "db_type" parameter to admin/upgrade_unattended.php is not properly verified before being used to include files. This can be exploited to include arbitrary file from local resources via directory traversal sequences and URL-encoded NULL bytes.
+			NOTE: Successful exploitation requires that installation best-practices have not been followed and the "admin" directory has not been deleted after a successful installation.</desc>
+	</fsa>
+	<fsa>
 		<id>703</id>
 		<date>2011-02-06</date>
 		<author>Miklos Vajna</author>
