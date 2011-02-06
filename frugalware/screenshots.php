@@ -220,7 +220,7 @@ $maincont .= "</fieldset>\n<fieldset class=\"fieldset\" id=\"default\">\n";
 $maincont .= "<legend>".gettext("GNOME Desktop")."</legend>\n";
 for ($i=0; $i<count($shots[gnome]); $i++)
 {
-	$maincont .= "<div><a id="imagebox"  href=\"".$fwng_root."images/screenshots/default/".$shots[gnome][$i][name]."\">".
+	$maincont .= "<div><a id=\"imagebox\"  href=\"".$fwng_root."images/screenshots/default/".$shots[gnome][$i][name]."\">".
 	"<img src=\"".$fwng_root."images/screenshots/default/thumbnails/".$shots[gnome][$i][name]."\" alt=\"screenshot\" /></a>".
 	"<br />".$shots[gnome][$i][title]."</div>\n";
 }
