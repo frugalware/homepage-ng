@@ -26,6 +26,24 @@
 
 <fsas>
 	<fsa>
+		<id>710</id>
+		<date>2011-02-06</date>
+		<author>Miklos Vajna</author>
+		<package>wireshark</package>
+		<vulnerable>1.4.2-1haven1</vulnerable>
+		<unaffected>1.4.3-1haven1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4410</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-4538
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-0444
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-0445</cve>
+		<desc>Multiple vulnerabilities have been reported in Wireshark, which can be exploited by malicious people to cause a DoS (Denial of Service) and potentially compromise a vulnerable system.
+			1) A boundary error in the "dissect_enttec_dmx_data()" function (epan/dissectors/packet-enttec.c) when processing RLE Compressed DMX data of the ENTTEC protocol can be exploited to cause a buffer overflow via a specially crafted packet sent to UDP port 3333.
+			2) A boundary error in the MAC-LTE dissector (epan/dissectors/packet-mac-lte.c) can be exploited to cause a stack-based buffer overflow.
+			3) A boundary error in the "snmp_usm_password_to_key_sha1()" function (asn1/snmp/packet-snmp-template.c) can be exploited to cause a stack-based buffer overflow.
+			Successful exploitation of vulnerabilities #1, #2, and #3 may allow execution of arbitrary code.
+			4) An error in the ASN.1 BER dissector can be exploited to corrupt memory and cause the process to terminate.</desc>
+	</fsa>
+	<fsa>
 		<id>709</id>
 		<date>2011-02-06</date>
 		<author>Miklos Vajna</author>
