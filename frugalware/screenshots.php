@@ -196,7 +196,7 @@ $maincont = "<div class=\"screenshots\">\n";
 $maincont .= "<form action=\"screenshots\" method=\"get\">\n<fieldset class=\"fieldset\" id=\"installer\">\n<legend>".gettext("Installer")."</legend>\n";
 for ($i=0; $i<count($shots[inst]); $i++)
 {
-	$maincont .= "<div><a href=\"".$fwng_root."images/screenshots/installer/".$shots[inst][$i][name]."\">".
+	$maincont .= "<div><a id=\"imagebox\"  href=\"".$fwng_root."images/screenshots/installer/".$shots[inst][$i][name]."\">".
 	"<img src=\"".$fwng_root."images/screenshots/installer/thumbnails/".$shots[inst][$i][name]."\" alt=\"screenshot\" /></a>".
 	"<br />".$shots[inst][$i][title]."</div>\n";
 }
@@ -204,7 +204,7 @@ $maincont .= "</fieldset>\n<fieldset class=\"fieldset\" id=\"default\">\n";
 $maincont .= "<legend>".gettext("Startup")."</legend>\n";
 for ($i=0; $i<count($shots[startup]); $i++)
 {
-	$maincont .= "<div><a href=\"".$fwng_root."images/screenshots/default/".$shots[startup][$i][name]."\">".
+	$maincont .= "<div><a id=\"imagebox\"  href=\"".$fwng_root."images/screenshots/default/".$shots[startup][$i][name]."\">".
 	"<img src=\"".$fwng_root."images/screenshots/default/thumbnails/".$shots[startup][$i][name]."\" alt=\"screenshot\" /></a>".
 	"<br />".$shots[startup][$i][title]."</div>\n";
 }
@@ -212,7 +212,7 @@ $maincont .= "</fieldset>\n<fieldset class=\"fieldset\" id=\"default\">\n";
 $maincont .= "<legend>".gettext("KDE Desktop")."</legend>\n";
 for ($i=0; $i<count($shots[kde]); $i++)
 {
-	$maincont .= "<div><a href=\"".$fwng_root."images/screenshots/default-old/".$shots[kde][$i][name]."\">".
+	$maincont .= "<div><a id=\"imagebox\"  href=\"".$fwng_root."images/screenshots/default-old/".$shots[kde][$i][name]."\">".
 	"<img src=\"".$fwng_root."images/screenshots/default-old/thumbnails/".$shots[kde][$i][name]."\" alt=\"screenshot\" /></a>".
 	"<br />".$shots[kde][$i][title]."</div>\n";
 }
@@ -228,7 +228,7 @@ $maincont .= "</fieldset>\n<fieldset class=\"fieldset\" id=\"default\">\n";
 $maincont .= "<legend>".gettext("XFCE Desktop")."</legend>\n";
 for ($i=0; $i<count($shots[xfce]); $i++)
 {
-	$maincont .= "<div><a href=\"".$fwng_root."images/screenshots/default/".$shots[xfce][$i][name]."\">".
+	$maincont .= "<div><a id=\"imagebox\"  href=\"".$fwng_root."images/screenshots/default/".$shots[xfce][$i][name]."\">".
 	"<img src=\"".$fwng_root."images/screenshots/default/thumbnails/".$shots[xfce][$i][name]."\" alt=\"screenshot\" /></a>".
 	"<br />".$shots[xfce][$i][title]."</div>\n";
 }
@@ -236,7 +236,7 @@ $maincont .= "</fieldset>\n<fieldset class=\"fieldset\" id=\"default\">\n";
 $maincont .= "<legend>".gettext("GFpm (Package Manager)")."</legend>\n";
 for ($i=0; $i<count($shots[gfpm]); $i++)
 {
-	$maincont .= "<div><a href=\"".$fwng_root."images/screenshots/default/".$shots[gfpm][$i][name]."\">".
+	$maincont .= "<div><a id=\"imagebox\"  href=\"".$fwng_root."images/screenshots/default/".$shots[gfpm][$i][name]."\">".
 	"<img src=\"".$fwng_root."images/screenshots/default/thumbnails/".$shots[gfpm][$i][name]."\" alt=\"screenshot\" /></a>".
 	"<br />".$shots[gfpm][$i][title]."</div>\n";
 }
@@ -244,7 +244,7 @@ $maincont .= "</fieldset>\n<fieldset class=\"fieldset\" id=\"default\">\n";
 $maincont .= "<legend>".gettext("FUN (Update Notifier)")."</legend>\n";
 for ($i=0; $i<count($shots[fun]); $i++)
 {
-	$maincont .= "<div><a href=\"".$fwng_root."images/screenshots/default/".$shots[fun][$i][name]."\">".
+	$maincont .= "<div><a id=\"imagebox\"  href=\"".$fwng_root."images/screenshots/default/".$shots[fun][$i][name]."\">".
 	"<img src=\"".$fwng_root."images/screenshots/default/thumbnails/".$shots[fun][$i][name]."\" alt=\"screenshot\" /></a>".
 	"<br />".$shots[fun][$i][title]."</div>\n";
 }
@@ -252,7 +252,7 @@ $maincont .= "</fieldset>\n<fieldset class=\"fieldset\" id=\"default\">\n";
 $maincont .= "<legend>".gettext("GNetconfig (Network Configuration Tool)")."</legend>\n";
 for ($i=0; $i<count($shots[gnetconfig]); $i++)
 {
-	$maincont .= "<div><a href=\"".$fwng_root."images/screenshots/default/".$shots[gnetconfig][$i][name]."\">".
+	$maincont .= "<div><a id=\"imagebox\"  href=\"".$fwng_root."images/screenshots/default/".$shots[gnetconfig][$i][name]."\">".
 	"<img src=\"".$fwng_root."images/screenshots/default/thumbnails/".$shots[gnetconfig][$i][name]."\" alt=\"screenshot\" /></a>".
 	"<br />".$shots[gnetconfig][$i][title]."</div>\n";
 }
@@ -260,7 +260,7 @@ $maincont .= "</fieldset>\n<fieldset class=\"fieldset\" id=\"default\">\n";
 $maincont .= "<legend>".gettext("gService (GUI Runlevel Editor)")."</legend>\n";
 for ($i=0; $i<count($shots[gservice]); $i++)
 {
-	$maincont .= "<div><a href=\"".$fwng_root."images/screenshots/default/".$shots[gservice][$i][name]."\">".
+	$maincont .= "<div><a id=\"imagebox\"  href=\"".$fwng_root."images/screenshots/default/".$shots[gservice][$i][name]."\">".
 	"<img src=\"".$fwng_root."images/screenshots/default/thumbnails/".$shots[gservice][$i][name]."\" alt=\"screenshot\" /></a>".
 	"<br />".$shots[gservice][$i][title]."</div>\n";
 }
@@ -268,7 +268,7 @@ $maincont .= "</fieldset>\n<fieldset class=\"fieldset\" id=\"default\">\n";
 $maincont .= "<legend>".gettext("Screenshots from users")."</legend>\n";
 for ($i=0; $i<count($shots[gservice]); $i++)
 {
-	$maincont .= "<div><a href=\"".$fwng_root."images/screenshots/users/".$shots[users][$i][name]."\">".
+	$maincont .= "<div><a id=\"imagebox\"  href=\"".$fwng_root."images/screenshots/users/".$shots[users][$i][name]."\">".
 	"<img src=\"".$fwng_root."images/screenshots/users/thumbnails/".$shots[users][$i][name]."\" alt=\"screenshot\" /></a>".
 	"<br />".$shots[users][$i][title]."</div>\n";
 }
