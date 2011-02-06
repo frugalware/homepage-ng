@@ -26,6 +26,18 @@
 
 <fsas>
 	<fsa>
+		<id>709</id>
+		<date>2011-02-06</date>
+		<author>Miklos Vajna</author>
+		<package>horde-webmail</package>
+		<vulnerable>1.2.4-1</vulnerable>
+		<unaffected>1.2.9-1haven1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4408</bts>
+		<cve>No CVE references, see http://lists.horde.org/archives/announce/2010/000574.html</cve>
+		<desc>A vulnerability has been reported in various Horde products, which can be exploited by malicious people to conduct script insertion attacks.
+			Certain unspecified input is not properly sanitised before being displayed to the user while viewing a vCard. This can be exploited to insert arbitrary HTML and script code, which will be executed in a user's browser session in context of an affected site when the malicious vCard is being viewed.</desc>
+	</fsa>
+	<fsa>
 		<id>708</id>
 		<date>2011-02-06</date>
 		<author>Miklos Vajna</author>
