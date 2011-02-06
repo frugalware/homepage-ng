@@ -193,9 +193,7 @@ include("config.inc.php");
 include("header.php");
 
 $maincont = "<div class=\"screenshots\">\n";
-
 $maincont .= "<form action=\"screenshots\" method=\"get\">\n<fieldset class=\"fieldset\" id=\"installer\">\n<legend>".gettext("Screenshots from users")."</legend>\n";
-for ($i=0; $i<count($shots[inst]); $i++)
 
 for ($i=0; $i<count($shots[users]); $i++)
 {
@@ -206,6 +204,7 @@ for ($i=0; $i<count($shots[users]); $i++)
 
 $maincont .= "</fieldset>\n<fieldset class=\"fieldset\" id=\"default\">\n";
 $maincont .= "<legend>".gettext("Installer")."</legend>\n";
+for ($i=0; $i<count($shots[inst]); $i++)
 {
 	$maincont .= "<div><a id=\"imagebox\"  href=\"".$fwng_root."images/screenshots/installer/".$shots[inst][$i][name]."\">".
 	"<img src=\"".$fwng_root."images/screenshots/installer/thumbnails/".$shots[inst][$i][name]."\" alt=\"screenshot\" /></a>".
