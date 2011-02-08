@@ -89,7 +89,8 @@ function main()
 				break;
 			}
 		}
-		$content = "<form name=\"pkgsrch\" action=\"/packages/\" method=\"get\">
+		$content = "<img class=\"face\" src=\"/images/newsletter/package-new.png\" width=\"85\" height=\"85\" alt=\"\" /><br />
+		<form name=\"pkgsrch\" action=\"/packages/\" method=\"get\">
 		<fieldset class=\"pkg\"><legend>".gettext("Package search")."</legend>
 		".gettext("Search for:")."<br />
 		<input type=\"radio\" name=\"op\" value=\"pkg\" " . (!in_array($_GET['op'], array("file", "groups")) ? "checked=\"checked\" " : "") . "/>".gettext("packages")."<br />
