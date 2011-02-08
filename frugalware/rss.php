@@ -205,7 +205,6 @@ $buf = "";
 $buf .= "<?xml version=\"1.0\" encoding=\"utf-8\"?>
 <rss version=\"2.0\"".$encoded.">
 <channel>
-	<atom:link href=\"http://frugalware/rss.xml\" rel=\"self\" type=\"application/rss+xml\" />
 	<title>".$handle['title']."</title>
 	<description>".$handle['desc']."</description>
 	<link>".$handle['link']."</link>\n";
