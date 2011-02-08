@@ -207,8 +207,8 @@ $buf .= "<?xml version=\"1.0\" encoding=\"utf-8\"?>
 <channel>
 	<title>".$handle['title']."</title>
 	<description>".$handle['desc']."</description>
-	<link>".$handle['link']."</link>\n";
-	<atom:link href=".$handle['link']." rel="self" type="application/rss+xml" />
+	<link>".$handle['link']."</link>
+	<atom:link href=".$handle['link']." rel="self" type="application/rss+xml" />"\n;
 
 foreach( $handle['items'] as $i )
 {
