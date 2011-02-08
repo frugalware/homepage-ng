@@ -208,6 +208,8 @@ $buf .= "<?xml version=\"1.0\" encoding=\"utf-8\"?>
 	<title>".$handle['title']."</title>
 	<description>".$handle['desc']."</description>
 	<link>".$handle['link']."</link>\n";
+	<atom:link href=".$handle['link']." rel="self" type="application/rss+xml" />
+
 foreach( $handle['items'] as $i )
 {
 	$buf .= "<item>\n<title>".$i['title']."</title>\n<link>".$i['link']."</link>\n";
