@@ -30,7 +30,6 @@ set_locale($llang, $domain);
 include("header.php");
 fwmiddlebox("Frugalware Local Community Team Directory",'<ul>
 <img class="face" src="/images/icons/i18n.png" width="85" height="85" alt="" /><br />
-	<li><a href="http://www.frugalware.hostend.eu/">' . gettext('Czech') . '</a></li>
 	<li><a href="http://frugalware.dk/">' . gettext('Danish') . '</a></li>
 	<li><a href="http://www.frugalware.fr/">' . gettext('French') . '</a></li>
 	</ul>'
