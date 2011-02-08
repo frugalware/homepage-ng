@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE news [
+<!ELEMENT news (post)*>
+<!ELEMENT post (id , title , date , author , editedby* , hidden , content, icon*)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT content (#PCDATA)>
+<!ELEMENT hidden (#PCDATA)>
+<!ELEMENT editedby (name , date)>
+<!ELEMENT icon (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+]>
+
+<!-- Before you commit:
+
+1) If you modify this file, be sure it's still valid - read /hooks/README!
+
+2) Please use date and time in RFC 2822 format.
+Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
+
+<news>
+  <post>
+    <id>194</id>
+    <title>Frugalware Newsletter Número 75</title>
+    <date>Mar, 01 Feb 2011 12:56:56 +1000</date>
+    <author>phayz</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+      La newsletter intenta mantenerte al día con lo que ocurre
+      en el mundo Frugalware.<br />
+      Contenidos del número:
+        <ul>
+			<li>Lanzada la Release Candidate 2 de Frugalware 1.4</li>
+			<li>¿¿¿Frugalware tweak! y Frugalware tweak 2! ???</li>
+			<li>¿¡Haz-un-dodeca-qué!?</li>
+			<li>¡Los usuarios de Frugalware son persona!</li>
+			<li>Trucos y Consejos - Encuentra el mirror más rapido.</li>
+        </ul>
+        Podéis leerlo <a href="/newsletter/75">aquí</a> (en inglés). Esperamos que os divirtáis con su lectura.
+      ]]>
+    </content>
+    <icon>/images/icons/newsletter.png</icon>
+  </post>
+  <post>
+    <id>193</id>
+    <title>Lanzada Frugalware 1.4rc2 (Nexon)</title>
+    <date>Vie, 28 Ene 2011 08:21:25 +0100</date>
+    <author>Miklos Vajna</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+      El Equipo de Desarrollo de Frugalware se complace en <a href="/news/193">anunciarles</a> la disponibilidad inmediata de Frugalware 1.4rc2, la segunda candidata del próximo lanzamiento estable 1.4 que está al salir.</p>
+    <p>Aquí tenéis algunas de las mejoras, correcciones y actualizaciones más importantes desde la 1.4rc1:<br />
+      <ul>
+        <li>Paquetes actualizados:</li>
+        <ul>
+          <li>Linux 2.6.37 + correcciones</li>
+          <li>KDE SC 4.5</li>
+          <li>Drupal 7 deja obsoleto a Drupal 5. Si un paquete para drupal-5 tiene su homólogo en drupal-6 (por ej. drupal-cck),
+        entonces será remplazado de forma automática por el paquete de drupal-6 (drupal6-cck). Si un paquete para drupal-5
+        NO tiene su homólogo en drupal6, entonces el paquete para drupal6 lo remplazará - perdonad los inconvenientes,
+        pero drupal-5 no gestiona la compatibilidad ascendente.</li>
+          <li>systemd v16 - otros 5 paquetes ahora soportan systemd</li>
+        </ul>
+        <li>Correcciones:</li>
+        <ul>
+          <li>La versión CD/DVD puede realizar otra vez la instalación sin tener que estar conectado a internet.</li>
+          <li>Corregidos varios problemas en la interfaz del usuario (iconos perdidos en los archivos del escritorio,
+            etc.)</li>
+          <li>Los paquetes de la localizacion de koffice han vuelto (no estaban desde la integración de KDE4).</li>
+        </ul>
+      </ul>
+      Para más información, mirad el <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">ChangeLog de Frugalware Nexon</a>.<br />
+      Para descargar la versión i686: Navegad por la <a href="http://frugalware.org/download/frugalware-testing-iso">lista de espejos</a>. No olvidéis comprobar la <a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">integridad</a> de las imágenes antes de grabarlas!<br />
+      <b>NOTA</b>: Haced click <a href="/docs/install#_choosing_installation_flavor">aquí</a> (en inglés) para leer más sobre que tipo de dispositivo necesitáis. <br />
+      ]]>
+    </content>
+  </post>
+  <post>
+        <id>1</id>
+        <title>¡¡¡Frugalware en Español!!!</title>
+        <date>Mar, 8 Feb 2011 04:20:42 +0200</date>
+        <author>Nekrodes</author>
+        <hidden>0</hidden>
+        <content><![CDATA[
+            <b>¡¡¡Las noticias de Frugalware por fin en español!!!</b><br />
+            ]]>
+        </content>
+  </post>
+</news>
+<!-- vim: shiftwidth=2 expandtab:
+-->
