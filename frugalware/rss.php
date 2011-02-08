@@ -203,7 +203,8 @@ switch($_GET['type'])
 header('Content-Type: application/xml; charset=utf-8');
 $buf = "";
 $buf .= "<?xml version=\"1.0\" encoding=\"utf-8\"?>
-<rss version=\"2.0\"".$encoded.">
+
+<rss version=\"2.0\"".$encoded." xmlns:atom=\"http://www.w3.org/2005/Atom\">
 <channel>
 	<title>".$handle['title']."</title>
 	<description>".$handle['desc']."</description>
