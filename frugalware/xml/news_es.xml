@@ -82,7 +82,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
     <title>Frugalware 1.4rc1 (Nexon) released</title>
     <date>Mon, 10 Jan 2011 07:24:00 +0100</date>
     <author>Miklos Vajna</author>
-    <hidden>0</hidden>
+    <hidden>1</hidden>
     <content><![CDATA[
       The Frugalware Developer Team is pleased to <a href="/news/192">announce</a> the immediate availability of Frugalware 1.4rc1, the first candidate of the upcoming 1.4 stable release.</p>
     <p>Here are some of the major improvements, fixes and updates since 1.4pre2:<br />
@@ -111,7 +111,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
       <title>Happy New Year!</title>
       <date>Sat, 01 Jan 2011 11:52:48 +1000</date>
       <author>phayz</author>
-      <hidden>0</hidden>
+      <hidden>1</hidden>
       <content><![CDATA[
           <center><img src="http://frugalware.org/images/FwNewYear.png" alt="Frugalware New Year logo" /></center><br /><br />
           The Frugalware team would like to wish everyone a Happy New Year.<br />
@@ -125,7 +125,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
     <title>Merry Christmas</title>
     <date>Wed, 22 Dec 2010 20:14:33 +1000</date>
     <author>phayz</author>
-    <hidden>0</hidden>
+    <hidden>1</hidden>
     <content><![CDATA[
         <center><img src="http://frugalware.org/images/FWsnowball.png" alt="Frugalware Christmas logo" /></center><br />
         Merry Christmas to everyone in the Frugalware community. Even if you
@@ -151,7 +151,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
     <title>Frugalware Newsletter Issue 74</title>
     <date>Mon, 20 Dec 2010 23:09:46 +1000</date>
     <author>phayz</author>
-    <hidden>0</hidden>
+    <hidden>1</hidden>
     <content><![CDATA[
       The newsletter's aim is to keep you up to date with what's happened
       recently in the world of Frugalware.<br />
@@ -173,7 +173,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
     <title>Frugalware 1.4pre2 (Nexon) released</title>
     <date>Mon, 13 Dec 2010 04:39:45 +0100</date>
     <author>Miklos Vajna</author>
-    <hidden>0</hidden>
+    <hidden>1</hidden>
     <content><![CDATA[
       The Frugalware Developer Team is pleased to <a href="/news/188">announce</a> the immediate availability of Frugalware 1.4pre2, the second technical preview of the upcoming 1.4 stable release.</p>
     <p>Here are some of the major improvements, fixes and updates since 1.4pre1:<br />
@@ -208,7 +208,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
     <title>Frugalware Newsletter Issue 73</title>
     <date>Thu, 11 Nov 2010 07:15:26 +1000</date>
     <author>phayz</author>
-    <hidden>0</hidden>
+    <hidden>1</hidden>
     <content><![CDATA[
       The newsletter's aim is to keep you up to date with what's happened
       recently in the world of Frugalware.<br />
@@ -229,7 +229,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
     <title>Frugalware 1.4pre1 (Nexon) released</title>
     <date>Mon, 18 Oct 2010 00:23:24 +0200</date>
     <author>Miklos Vajna</author>
-    <hidden>0</hidden>
+    <hidden>1</hidden>
     <content><![CDATA[
       The Frugalware Developer Team is pleased to <a href="/news/186">announce</a> the immediate availability of Frugalware 1.4pre1, the first technical preview of the upcoming 1.4 stable release.</p>
     <p>Here are some of the major improvements, fixes and updates since 1.3:<br />
@@ -253,7 +253,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
     <title>Frugalware Newsletter Issue 72</title>
     <date>Thu, 14 Oct 2010 22:10:14 +1000</date>
     <author>phayz</author>
-    <hidden>0</hidden>
+    <hidden>1</hidden>
     <content><![CDATA[
       The newsletter's aim is to keep you up to date with what's happened
       recently in the world of Frugalware.<br />
@@ -275,7 +275,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
     <title>Frugalware Newsletter Issue 71</title>
     <date>Thu, 23 Sep 2010 22:38:56 +1000</date>
     <author>phayz</author>
-    <hidden>0</hidden>
+    <hidden>1</hidden>
     <content><![CDATA[
       The newsletter's aim is to keep you up to date with what's happened
       recently in the world of Frugalware.<br />
@@ -297,7 +297,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
     <title>Frugalware Newsletter Issue 70</title>
     <date>Tue, 07 Sep 2010 23:06:37 +1000</date>
     <author>phayz</author>
-    <hidden>0</hidden>
+    <hidden>1</hidden>
     <content><![CDATA[
       The newsletter's aim is to keep you up to date with what's happened
       recently in the world of Frugalware.<br />
@@ -319,7 +319,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         <title>Locris: End of life</title>
         <date>Wed, 25 Aug 2010 03:04:15 +0200</date>
         <author>Miklos Vajna</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
 		With the release of Haven, the support for Locris is discontinued. It is highly recommended to upgrade to our new stable release, as there will be no more security and bug fixes for Locris.<br />
 		We have released FSA637 to FSA691 for Getorin. That means 55 security problems were fixed in half a year.<br />
@@ -335,7 +335,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         <title>Frugalware 1.3 (Haven) released</title>
         <date>Mon, 23 Aug 2010 02:00:14 +0200</date>
         <author>Miklos Vajna</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
           <center><img src="http://frugalware.org/images/promo-haven.png" alt="Frugalware 1.3 Haven is released !" /></center><br />
           The Frugalware Developer Team is pleased to <a href="/news/182">announce</a> the immediate availability of Frugalware 1.3, our thirteenth stable release.<br />
@@ -359,7 +359,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
     <title>Frugalware Newsletter Issue 69</title>
     <date>Tue, 10 Aug 2010 20:20:31 +1000</date>
     <author>phayz</author>
-    <hidden>0</hidden>
+    <hidden>1</hidden>
     <content><![CDATA[
       The newsletter's aim is to keep you up to date with what's happened
       recently in the world of Frugalware.<br />
@@ -379,7 +379,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
     <title>Frugalware has a new planet</title>
     <date>Sat, 14 Aug 2010 22:32:30 +1000</date>
     <author>phayz</author>
-    <hidden>0</hidden>
+    <hidden>1</hidden>
     <content><![CDATA[
       <a href="http://planet.frugalware.org">Frugalware's planet</a> - the web
       site which aggregates content from blogs - has moved from planetplanet
@@ -400,7 +400,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
     <title>Frugalware Newsletter Issue 68</title>
     <date>Tue, 10 Aug 2010 20:20:31 +1000</date>
     <author>phayz</author>
-    <hidden>0</hidden>
+    <hidden>1</hidden>
     <content><![CDATA[
       The newsletter's aim is to keep you up to date with what's happened
       recently in the world of Frugalware.<br />
@@ -421,7 +421,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
     <title>Frugalware 1.3rc2 (Haven) released</title>
     <date>Mon, 09 Aug 2010 03:24:18 +0200</date>
     <author>Miklos Vajna</author>
-    <hidden>0</hidden>
+    <hidden>1</hidden>
     <content><![CDATA[
       The Frugalware Developer Team is pleased to <a href="/news/179">announce</a> the immediate availability of Frugalware 1.3rc2, the second candidate of the upcoming 1.3 stable release.</p>
     <p>Here are some of the major improvements, fixes and updates since 1.3rc1:<br />
@@ -455,7 +455,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
     <title>Frugalware 1.3rc1 (Haven) released</title>
     <date>Mon, 26 Jul 2010 11:14:06 +0200</date>
     <author>Miklos Vajna</author>
-    <hidden>0</hidden>
+    <hidden>1</hidden>
     <content><![CDATA[
       The Frugalware Developer Team is pleased to <a href="/news/177">announce</a> the immediate availability of Frugalware 1.3rc1, the first candidate of the upcoming 1.3 stable release.</p>
     <p>Here are some of the major improvements and changes since 1.3pre2:<br />
@@ -489,7 +489,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
     <title>Frugalware Newsletter Issue 67</title>
     <date>Sun, 25 Jul 2010 22:26:34 +1000</date>
     <author>phayz</author>
-    <hidden>0</hidden>
+    <hidden>1</hidden>
     <content><![CDATA[
       The newsletter's aim is to keep you up to date with what's happened
       recently in the world of Frugalware.<br />
@@ -510,7 +510,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
     <title>Frugalware Newsletter Issue 66</title>
     <date>Sat, 10 Jul 2010 00:03:56 +1000</date>
     <author>phayz</author>
-    <hidden>0</hidden>
+    <hidden>1</hidden>
     <content><![CDATA[
       The newsletter's aim is to keep you up to date with what's happened
       recently in the world of Frugalware.<br />
@@ -531,7 +531,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
     <title>Frugalware 1.3 (Haven) default wallpaper voting is open</title>
     <date>Mon, 05 Jul 2010 21:53:56 +1000</date>
     <author>phayz</author>
-    <hidden>0</hidden>
+    <hidden>1</hidden>
     <content><![CDATA[
       Voting is open on Devil505's <a
       href="http://frugalware.org/~devil505/blog">blog</a> for the default
@@ -550,7 +550,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
     <title>Frugalware 1.3pre2 (Haven) released</title>
     <date>Mon, 28 Jun 2010 09:58:32 +0200</date>
     <author>Miklos Vajna</author>
-    <hidden>0</hidden>
+    <hidden>1</hidden>
     <content><![CDATA[
       The Frugalware Developer Team is pleased to <a href="/news/173">announce</a> the immediate availability of Frugalware 1.3pre2, the second technical preview of the upcoming 1.3 stable release.</p>
     <p>Here are some of the major improvements and changes since 1.3pre1:<br />
@@ -582,7 +582,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         <title>Frugalware Newsletter Issue 65</title>
         <date>Sun, 27 Jun 2010 20:51:24 +1000</date>
         <author>phayz</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The newsletter's aim is to keep you up to date with what's happened
             recently in the world of Frugalware.<br />
@@ -604,7 +604,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         <title>Frugalware Newsletter Issue 64</title>
         <date>Sun, 06 Jun 2010 20:40:28 +1000</date>
         <author>phayz</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
             Features of this issue include:
@@ -623,7 +623,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         <title>Frugalware Newsletter Issue 63</title>
         <date>Fri, 21 May 2010 22:01:30 +1000</date>
         <author>phayz</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
             Features of this issue include:
@@ -643,7 +643,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         <title>Frugalware 1.3pre1 (Haven) released</title>
         <date>Sun, 03 May 2010 02:34:38 +0200</date>
         <author>Miklos Vajna</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
 								The Frugalware Developer Team is pleased to <a href="/news/170">announce</a> the immediate availability of Frugalware 1.3pre1, the first technical preview of the upcoming 1.3 stable release.</p>
 				<p>Here are some of the major improvements and changes since 1.2:<br />
@@ -676,7 +676,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         <title>Frugalware Newsletter Issue 62</title>
         <date>Sat, 01 May 2010 23:29:45 +1000</date>
         <author>phayz</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
             Features of this issue include:
@@ -696,7 +696,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         <title>Frugalware Newsletter Issue 61</title>
         <date>Wed, 14 Apr 2010 20:00:00 +1000</date>
         <author>phayz</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
             Features of this issue include:
@@ -716,7 +716,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         <title>Frugalware Newsletter Issue 60</title>
         <date>Thu, 25 Mar 2010 21:35:47 +1000</date>
         <author>phayz</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
             Features of this issue include:
@@ -737,7 +737,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         <title>Getorin: End of life</title>
         <date>Wed, 17 Mar 2010 22:25:50 +0100</date>
         <author>Miklos Vajna</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
 		With the release of Locris, the support for Getorin is discontinued. It is highly recommended to upgrade to our new stable release, as there will be no more security and bug fixes for Getorin.<br />
 		We have released FSA617 to FSA636 for Getorin. That means 20 security problems were issued in half a year.<br />
@@ -753,7 +753,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         <title>nouveau and nvidia in -current</title>
         <date>Tue, 16 Mar 2010 19:11:51 2010 Sun +0200</date>
         <author>Michel Hermier</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
             <content><![CDATA[
                 With the kernel 2.6.33, we enabled nouveau kernel module. For those who have problem using it or want to use nvidia, you may be unhappy to see that nvidia doesn't work any more.
                 There are 2 ways to make it working again:
@@ -770,7 +770,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         <title>Frugalware Newsletter Issue 59</title>
         <date>Tue, 09 Mar 2010 23:06:27 +1000</date>
         <author>phayz</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
             Features of this issue include:
@@ -790,7 +790,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         <title>Frugalware 1.2 (Locris) released</title>
         <date>Mon, 08 Mar 2010 08:51:34 +0100</date>
         <author>Miklos Vajna</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             <center><img src="http://frugalware.org/images/locris.png" alt="Frugalware 1.2 Locris is released !" /></center><br />
             The Frugalware Developer Team is pleased to <a href="/news/163">announce</a> the immediate availability of Frugalware 1.2, our twelfth stable release.<br />
@@ -817,7 +817,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         <title>Frugalware Newsletter Issue 58</title>
         <date>Tue, 23 Feb 2010 22:52:55 +1000</date>
         <author>phayz</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
             Features of this issue include:
@@ -838,7 +838,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         <title>Frugalware 1.2rc2 (Locris) released</title>
         <date>Mon, 22 Feb 2010 08:41:28 +0100</date>
         <author>Miklos Vajna</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
 								The Frugalware Developer Team is pleased to <a href="/news/161">announce</a> the immediate availability of Frugalware 1.2rc2, the second candidate of the upcoming 1.2 stable release.</p>
 				<p>Here are some of the major improvements and changes since 1.2rc1:<br />
@@ -871,7 +871,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         <title>Frugalware 1.2rc1 (Locris) released</title>
         <date>Mon, 08 Feb 2010 08:38:17 +0100</date>
         <author>Miklos Vajna</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The Frugalware Developer Team is pleased to <a href="/news/160">announce</a> the immediate availability of Frugalware 1.2rc1, the first candidate of the upcoming 1.2 stable release.<br />
             A short and incomplete list of changes since 1.2pre2:<br />
@@ -904,7 +904,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         <title>Frugalware Newsletter Issue 57</title>
         <date>Thu, 04 Feb 2010 22:54:40 +1000</date>
         <author>phayz</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
             Features of this issue include:
@@ -925,7 +925,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         <title>Frugalware Newsletter Issue 56</title>
         <date>Fri, 22 Jan 2010 22:15:17 +1000</date>
         <author>phayz</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br /><br />
             This is a special newsletter issue, devoted to a review of Frugalware's achievements and events in 2009.<br /><br />
@@ -939,7 +939,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         <title>Frugalware 1.2pre2 (Locris) released</title>
         <date>Mon, 11 Jan 2010 01:02:50 +0100</date>
         <author>Miklos Vajna</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The Frugalware Developer Team is pleased to <a href="/news/157">announce</a> the immediate availability of Frugalware 1.2pre2, the second technical preview of the upcoming 1.2 stable release.<br />
             A short and incomplete list of changes since 1.2pre1:<br />
@@ -972,7 +972,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         <title>Happy New Year!</title>
         <date>Thu, 31 Dec 2008 15:53:55 +1000</date>
         <author>Devil505</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             <center><img src="http://frugalware.org/images/FwNewYear.png" alt="Frugalware New Year logo" /></center><br />
             The Frugalware team would like to wish everyone a Happy New Year.  2009 was a year of many major achievements, including new developers, new contributors, a GUI installer (fwife), more translations, and many new packages.  We look forward to an equally successful 2010.
@@ -984,7 +984,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         <title>Merry Christmas</title>
         <date>Wed, 24 Dec 2008 08:25:00 +1000</date>
         <author>Devil505</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             <center><img src="http://frugalware.org/images/FWsnowball.png" alt="Frugalware Christmas 2009 logo" /></center><br />
             The Frugalware team would like to wish everyone a Merry Christmas.  If you don't celebrate Christmas, we hope you can enjoy the best of this time of year, while avoiding the worst.  :)
@@ -996,7 +996,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         <title>Frugalware Newsletter Issue 55</title>
         <date>Sat, 05 Dec 2009 10:33:52 +1000</date>
         <author>phayz</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
             Features of this issue include:
@@ -1017,7 +1017,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         <title>Wiki is back !</title>
         <date>Sat, 21 Nov 2009 17:48:10 +1000</date>
         <author>Devil505</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             Frugalware Linux official wiki is back online <a href="http://wiki.frugalware.org">here</a>. We encourage all frugalware users to contribute, please don't forget to read the <a href="http://wiki.frugalware.org/index.php/FrugalWiki_Tutorial_(English)">FrugalWiki Tutorial</a>. Any comments and suggestions are welcome, ping Devil505 or Bouleetbil on #frugalware.
             ]]>
@@ -1028,7 +1028,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         <title>Frugalware Newsletter Issue 54</title>
         <date>Sat, 14 Nov 2009 22:56:10 +1000</date>
         <author>phayz</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
             Features of this issue include:
@@ -1049,7 +1049,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         <title>Frugalware 1.2pre1 (Locris) released</title>
         <date>Sat, 07 Nov 2009 02:14:19 +0100</date>
         <author>Miklos Vajna</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The Frugalware Developer Team is pleased to <a href="/news/151">announce</a> the immediate availability of Frugalware 1.2pre1, the first technical preview of the upcoming 1.2 stable release.<br />
             A short and incomplete list of changes since 1.1:<br />
@@ -1082,7 +1082,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         <title>Frugalware Newsletter Issue 53</title>
         <date>Tue, 27 Oct 2009 23:02:20 +1000</date>
         <author>phayz</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
             Features of this issue include:
@@ -1103,7 +1103,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         <title>KMS enabled by default in -current</title>
         <date>Sun, 18 Oct 2009 16:17:16 +0200</date>
         <author>Miklos Vajna</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
             <content><![CDATA[
                 KMS is now enabled by default in Frugalware-current. It's recommended to read the <a href="/docs/upgrade#_kernel_mode_setting">relevant part</a> of the upgrade documentation before you upgrade to avoid unexpected results.
             ]]>
@@ -1115,7 +1115,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         <title>Frugalware Newsletter Issue 52</title>
         <date>Sun, 11 Oct 2009 01:14:45 +1000</date>
         <author>phayz</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
             Features of this issue include:
@@ -1135,7 +1135,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         <title>Anacreon: End of life</title>
         <date>Sun, 27 Sep 2009 12:00:43 +0200</date>
         <author>Miklos Vajna</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
 		With the release of Getorin, the support for Anacreon is discontinued. It is highly recommended to upgrade to our new stable release, as there will be no more security and bug fixes for Anacreon.<br />
 		We have released FSA589 to FSA616 for Solaria. That means 28 security problems were issued in half a year.<br />
@@ -1160,7 +1160,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         <title>Frugalware Newsletter Issue 51</title>
         <date>Fri, 18 Sep 2009 22:29:41 +1000</date>
         <author>phayz</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
             Features of this issue include:
@@ -1179,7 +1179,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         <title>Frugalware 1.1 (Getorin) released</title>
         <date>Mon, 07 Sep 2009 08:37:34 +0200</date>
         <author>Miklos Vajna</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             <center><img src="http://frugalware.org/images/promo-getorin.png" alt="Frugalware 1.1 Getorin is released !" /></center><br />
             The Frugalware Developer Team is pleased to <a href="/news/145">announce</a> the immediate availability of Frugalware 1.1, our eleventh stable release.<br />
@@ -1206,7 +1206,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         <title>Frugalware Newsletter Issue 50</title>
         <date>Thu, 27 Aug 2009 21:35:52 +1000</date>
         <author>phayz</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
             Features of this issue include:
@@ -1225,7 +1225,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         <title>Frugalware 1.1rc2 (Getorin) released</title>
         <date>Tue, 18 Aug 2009 09:26:16 +0200</date>
         <author>Miklos Vajna</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The Frugalware Developer Team is pleased to <a href="/news/143">announce</a> the immediate availability of Frugalware 1.1rc2, the second candidate of the upcoming 1.1 stable release.<br />
             A short and incomplete list of changes since 1.1rc1:<br />
@@ -1256,7 +1256,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         <title>Frugalware 1.1rc1 (Getorin) released</title>
         <date>Tue, 04 Aug 2009 01:57:08 +0200</date>
         <author>Miklos Vajna</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The Frugalware Developer Team is pleased to <a href="/news/142">announce</a> the immediate availability of Frugalware 1.1rc1, the first release of the upcoming 1.1 stable release.<br />
             A short and incomplete list of changes since 1.1pre2:<br />
@@ -1287,7 +1287,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         <title>Frugalware Newsletter Issue 49</title>
         <date>Tue, 04 Aug 2009 08:54:38 +1000</date>
         <author>phayz</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
             Features of this issue include:
@@ -1306,7 +1306,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         <title>Frugalware Newsletter Issue 48</title>
         <date>Sun, 19 Jul 2009 22:42:38 +1000</date>
         <author>phayz</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
             Features of this issue include:
@@ -1325,7 +1325,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         <title>Frugalware Newsletter Issue 47</title>
         <date>Tue, 07 Jul 2009 22:35:51 +1000</date>
         <author>phayz</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
             Features of this issue include:
@@ -1345,7 +1345,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         <title>Frugalware 1.1pre2 (Getorin) released</title>
         <date>Tue, 07 Jul 2009 11:13:25 +0200</date>
         <author>Miklos Vajna</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The Frugalware Developer Team is pleased to <a href="/news/138">announce</a> the immediate availability of Frugalware 1.1pre2, the second technical preview of the upcoming 1.1 stable release.<br />
             A short and incomplete list of changes since 1.1pre1:<br />
@@ -1380,7 +1380,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         <title>Frugalware Newsletter Issue 46</title>
         <date>Sun, 21 Jun 2009 13:59:25 +1000</date>
         <author>phayz</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
             Features of this issue include:
@@ -1400,7 +1400,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         <title>Frugalware Newsletter Issue 45</title>
         <date>Fri, 05 Jun 2009 21:46:02 +1000</date>
         <author>phayz</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
             Features of this issue include:
@@ -1419,7 +1419,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         <title>Frugalware Newsletter Issue 44</title>
         <date>Sun, 17 May 2009 21:42:15 +1000</date>
         <author>phayz</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
             Features of this issue include:
@@ -1438,7 +1438,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         <title>Frugalware 1.1pre1 (Getorin) released</title>
         <date>Tue, 12 May 2009 09:58:44 +0200</date>
         <author>Miklos Vajna</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The Frugalware Developer Team is pleased to <a href="/news/134">announce</a> the immediate availability of Frugalware 1.1pre1, the first technical preview of the upcoming 1.1 stable release.<br />
             A short and incomplete list of changes since 1.0:<br />
@@ -1470,7 +1470,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         <title>Frugalware Newsletter Issue 43</title>
         <date>Sat, 25 Apr 2009 23:08:43 +1000</date>
         <author>phayz</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
             Features of this issue include:
@@ -1490,7 +1490,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         <title>Frugalware Newsletter Issue 42</title>
         <date>Mon, 06 Apr 2009 22:12:36 +1000</date>
         <author>phayz</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
             Features of this issue include:
@@ -1510,7 +1510,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         <title>Solaria: End of life</title>
         <date>Wed, 25 Mar 2009 23:36:55 +0100</date>
         <author>Miklos Vajna</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
 		With the release of Anacreon, the support for Solaria is discontinued. It is highly recommended to upgrade to our new stable release, as there will be no more security and bug fixes for Solaria.<br />
 		We have released FSA526 to FSA588 for Solaria. That means 63 security problems were issued in half a year.<br />
@@ -1526,7 +1526,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         <title>Frugalware Newsletter Issue 41</title>
         <date>Mon, 23 Mar 2009 21:15:05 +1000</date>
         <author>phayz</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
             Features of this issue include:
@@ -1546,7 +1546,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         <title>Frugalware 1.0 (Anacreon) released</title>
         <date>Sun, 22 Mar 2009 11:09:51 +0100</date>
         <author>Miklos Vajna</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             <center><img src="http://frugalware.org/images/anacreon_cover.png" alt="Frugalware 1.0 Anacreon Cd cover" /></center><br />
             The Frugalware Developer Team is pleased to <a href="/news/129">announce</a> the immediate availability of Frugalware 1.0, our tenth stable release. The version number 1.0 does not indicate anything really special, the new release will bring you as many new features and bugfixes as usual, but it's still a milestone in the development of the last five years.<br />
@@ -1573,7 +1573,7 @@ A nice cd cover is available <a href="http://frugalware.org/~devil505/artwork10/
         <title>Frugalware 1.0rc2 (Anacreon) released</title>
         <date>Sun, 08 Mar 2009 08:00:59 +0100</date>
         <author>Miklos Vajna</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The Frugalware Developer Team is pleased to <a href="/news/128">announce</a> the immediate availability of Frugalware 1.0rc2, the second (and last) release candidate of the upcoming 1.0 stable release.<br />
             A short and incomplete list of changes since 1.0rc1:<br />
@@ -1614,7 +1614,7 @@ A nice cd cover is available <a href="http://frugalware.org/~devil505/artwork10/
         <title>Frugalware Newsletter Issue 40</title>
         <date>Sun, 01 Mar 2009 00:22:00 +1000</date>
         <author>phayz</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
             Features of this issue include:
@@ -1633,7 +1633,7 @@ A nice cd cover is available <a href="http://frugalware.org/~devil505/artwork10/
         <title>Frugalware 1.0rc1 (Anacreon) released</title>
         <date>Sun, 22 Feb 2009 11:06:12 +0100</date>
         <author>Miklos Vajna</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The Frugalware Developer Team is pleased to <a href="/news/126">announce</a> the immediate availability of Frugalware 1.0rc1, the first release candidate of the upcoming 1.0 stable release.<br />
             A short and incomplete list of changes since 1.0pre2:<br />
@@ -1668,7 +1668,7 @@ A nice cd cover is available <a href="http://frugalware.org/~devil505/artwork10/
         <title>Frugalware Newsletter Issue 39</title>
         <date>Thu, 19 Feb 2009 20:44:21 +1000</date>
         <author>phayz</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
             Features of this issue include:
@@ -1687,7 +1687,7 @@ A nice cd cover is available <a href="http://frugalware.org/~devil505/artwork10/
         <title>Frugalware Newsletter Issue 38</title>
         <date>Wed, 28 Jan 2009 12:00:45 +1000</date>
         <author>phayz</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
             Features of this issue include:
@@ -1706,7 +1706,7 @@ A nice cd cover is available <a href="http://frugalware.org/~devil505/artwork10/
         <title>Frugalware 1.0pre2 (Anacreon) released</title>
         <date>Tue, 13 Jan 2009 06:52:36 +0100</date>
         <author>Miklos Vajna</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The Frugalware Developer Team is pleased to <a href="/news/123">announce</a> the immediate availability of Frugalware 1.0pre2, the second technical preview of the upcoming 1.0 stable release.<br />
             A short and incomplete list of changes since 1.0pre1:<br />
@@ -1740,7 +1740,7 @@ A nice cd cover is available <a href="http://frugalware.org/~devil505/artwork10/
         <title>Frugalware Newsletter Issue 37</title>
         <date>Sat, 10 Jan 2009 22:33:48 +1000</date>
         <author>phayz</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
             Features of this issue include:
@@ -1760,7 +1760,7 @@ A nice cd cover is available <a href="http://frugalware.org/~devil505/artwork10/
         <title>Happy New Year!</title>
         <date>Wed, 31 Dec 2008 22:30:41 +1000</date>
         <author>phayz</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             <center><img src="http://frugalware.org/images/logo-newyear.png" alt="Frugalware New Year logo" /></center><br />
             The Frugalware team would like to wish everyone a Happy New Year.  2008 was a year of many major achievements, including new developers, new contributors, a GUI installer (fwife), more translations, and many new packages.  We look forward to an equally successful 2009.
@@ -1772,7 +1772,7 @@ A nice cd cover is available <a href="http://frugalware.org/~devil505/artwork10/
         <title>Merry Christmas</title>
         <date>Wed, 24 Dec 2008 21:49:31 +1000</date>
         <author>phayz</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             <center><img src="http://frugalware.org/images/logo-christmas.png" alt="Frugalware Christmas logo" /></center><br />
             The Frugalware team would like to wish everyone a Merry Christmas.  If you don't celebrate Christmas, we hope you can enjoy the best of this time of year, while avoiding the worst.  :)
@@ -1784,7 +1784,7 @@ A nice cd cover is available <a href="http://frugalware.org/~devil505/artwork10/
         <title>Frugalware Newsletter Issue 36</title>
         <date>Sat, 13 Dec 2008 22:44:10 +1000</date>
         <author>phayz</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
             Features of this issue include:
@@ -1804,7 +1804,7 @@ A nice cd cover is available <a href="http://frugalware.org/~devil505/artwork10/
         <title>Frugalware Newsletter Issue 35</title>
         <date>Thu, 04 Dec 2008 22:20:04 +1000</date>
         <author>phayz</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
             Features of this issue include:
@@ -1824,7 +1824,7 @@ A nice cd cover is available <a href="http://frugalware.org/~devil505/artwork10/
         <title>Frugalware Newsletter Issue 34</title>
         <date>Tue, 18 Nov 2008 21:23:27 +1000</date>
         <author>phayz</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
             Features of this issue include:
@@ -1845,7 +1845,7 @@ A nice cd cover is available <a href="http://frugalware.org/~devil505/artwork10/
         <title>Frugalware 1.0pre1 (Anacreon) released</title>
         <date>Tue, 04 Nov 2008 01:22:24 +0100</date>
         <author>Miklos Vajna</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The Frugalware Developer Team is pleased to <a href="/news/116">announce</a> the immediate availability of Frugalware 1.0pre1, the first technical preview of the upcoming 1.0 stable release.<br />
             A short and incomplete list of changes since 0.9:<br />
@@ -1884,7 +1884,7 @@ A nice cd cover is available <a href="http://frugalware.org/~devil505/artwork10/
         <title>Frugalware Newsletter Issue 33</title>
         <date>Sat, 18 Oct 2008 07:55:56 +100</date>
         <author>phayz</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
             Features of this issue include:
@@ -1903,7 +1903,7 @@ A nice cd cover is available <a href="http://frugalware.org/~devil505/artwork10/
         <title>nVidia Package Notice</title>
         <date>Thu, 16 Oct 2008 23:06:50 +1000</date>
         <author>hermier</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             If you follow the nVidia news, you probably know that there is a new legacy driver. Basically all the support for the FX cards is dropped in the mainline package and is left in a new legacy package.<br />
             The new legacy driver is now available as nvidia-173xx, and the latest nvidia package is also available. So please check your card status and update to the nvidia-173xx package if needed before reporting that X doesn't start anymore.<br />
@@ -1917,7 +1917,7 @@ A nice cd cover is available <a href="http://frugalware.org/~devil505/artwork10/
         <title>Frugalware Newsletter Issue 32</title>
         <date>Sun, 05 Oct 2008 17:13:54 +1000</date>
         <author>phayz</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
             Features of this issue include:
@@ -1936,7 +1936,7 @@ A nice cd cover is available <a href="http://frugalware.org/~devil505/artwork10/
         <title>Kalgan: End of life</title>
         <date>Fri, 12 Sep 2008 16:41:33 +0200</date>
         <author>Miklos Vajna</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             With the release of Solaria, the support for Kalgan is discontinued. It is highly recommended to upgrade to our new stable release, as there will be no more security and bug fixes for Kalgan.<br /><br />
             We have released FSA394 to FSA525 for Kalgan. That means 131 security problems were issued in half a year (we shipped 98 security fixes for Sayshell, the stable release before Kalgan).<br />
@@ -1954,7 +1954,7 @@ A nice cd cover is available <a href="http://frugalware.org/~devil505/artwork10/
         <title>Frugalware Newsletter Issue 31</title>
         <date>Wed, 10 Sep 2008 22:44:11 +1000</date>
         <author>phayz</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
             Features of this issue include:
@@ -1975,7 +1975,7 @@ A nice cd cover is available <a href="http://frugalware.org/~devil505/artwork10/
         <title>Frugalware 0.9 (Solaria) for i686 and x86_64 released</title>
         <date>Tue, 09 Sep 2008 01:53:58 +0200</date>
         <author>Miklos Vajna</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The Frugalware Developer Team is pleased to <a href="/news/110">announce</a> the immediate availability of Frugalware 0.9, our ninth stable release.<br />
             No new features have been added since 0.9rc2, but about 40 changes have been made to fix minor bugs.
@@ -2089,7 +2089,7 @@ f2a29df040f4b5ac40a52fa7e90447e81ea1a240  frugalware-0.9-x86_64-net.iso
 								<title>Frugalware 0.9rc2 (Solaria) released</title>
 								<date>Tue, 26 Aug 2008 01:02:24 +0200</date>
 								<author>Miklos Vajna</author>
-								<hidden>0</hidden>
+								<hidden>1</hidden>
 								<content><![CDATA[
 												The Frugalware Developer Team is pleased to <a href="/news/109">announce</a> the immediate availability of Frugalware 0.9rc2, the second release candidate of the upcoming 0.9 stable release.<br />
 												A short and incomplete list of changes since 0.9rc1:<br />
@@ -2182,7 +2182,7 @@ b023faab7154bd80e4718fa4ecf9c946a9414ad0  frugalware-0.9rc2-i686-dvd3.iso
         <title>Frugalware Newsletter Issue 30</title>
         <date>Thu, 14 Aug 2008 23:04:34 +1000</date>
         <author>phayz</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
             Features of this issue include:
@@ -2202,7 +2202,7 @@ b023faab7154bd80e4718fa4ecf9c946a9414ad0  frugalware-0.9rc2-i686-dvd3.iso
 								<title>Frugalware 0.9rc1 (Solaria) released</title>
 								<date>Tue, 12 Aug 2008 05:14:50 +0200</date>
 								<author>Miklos Vajna</author>
-								<hidden>0</hidden>
+								<hidden>1</hidden>
 								<content><![CDATA[
 												The Frugalware Developer Team is pleased to <a href="/news/107">announce</a> the immediate availability of Frugalware 0.9rc1, the first release candidate of the upcoming 0.9 stable release.<br />
 												A short and incomplete list of changes since 0.9pre2:<br />
@@ -2293,7 +2293,7 @@ a79a0377d35d80fe82a74f73d134103b6a0ed39c  frugalware-0.9rc1-i686-usb.img
         <title>Frugalware Newsletter Issue 29</title>
         <date>Tue, 05 Aug 2008 21:28:06 +1000</date>
         <author>phayz</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
             Features of this issue include:
@@ -2313,7 +2313,7 @@ a79a0377d35d80fe82a74f73d134103b6a0ed39c  frugalware-0.9rc1-i686-usb.img
         <title>Frugalware wallpaper competition</title>
         <date>Thu, 24 Jul 2008 21:28:52 +1000</date>
         <author>phayz</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
 			For the first time in Frugalware's history, we're running a wallpaper competition. The aim of this competition is to get an original wallpaper for Frugalware's 0.9 - "Solaria" - release.  The winning entry will be set as the default wallpaper.  It will also be the basis for various derivative works - e.g. KDE/GDM/SLiM themes, splash screens.<br />
 
@@ -2352,7 +2352,7 @@ a79a0377d35d80fe82a74f73d134103b6a0ed39c  frugalware-0.9rc1-i686-usb.img
         <title>Frugalware Newsletter Issue 28</title>
         <date>Sat, 19 Jul 2008 23:39:08 +1000</date>
         <author>phayz</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
             Features of this issue include:
@@ -2371,7 +2371,7 @@ a79a0377d35d80fe82a74f73d134103b6a0ed39c  frugalware-0.9rc1-i686-usb.img
         <title>Frugalware 0.9pre2 (Solaria) released</title>
         <date>Tue, 08 Jul 2008 05:37:53 +0200</date>
         <author>Miklos</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The Frugalware Developer Team is pleased to <a href="/news/103">announce</a> the immediate availability of Frugalware 0.9pre2, the second technical preview of the upcoming 0.9 stable release.<br />
             A short and incomplete list of changes since 0.9pre1:<br />
@@ -2463,7 +2463,7 @@ e8cd5527083653155a8fcf16e2ac58f16b1d3495  frugalware-0.9pre2-i686-usb.img
         <title>Frugalware Newsletter Issue 27</title>
         <date>Sat, 05 Jul 2008 21:56:52 +1000</date>
         <author>phayz</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
             Features of this issue include:
@@ -2483,7 +2483,7 @@ e8cd5527083653155a8fcf16e2ac58f16b1d3495  frugalware-0.9pre2-i686-usb.img
         <title>Frugalware Newsletter Issue 26</title>
         <date>Sat, 21 Jun 2008 22:51:35 +1000</date>
         <author>phayz</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
             Features of this issue include:
@@ -2501,7 +2501,7 @@ e8cd5527083653155a8fcf16e2ac58f16b1d3495  frugalware-0.9pre2-i686-usb.img
         <title>Frugalware Newsletter Issue 25</title>
         <date>Thu, 05 Jun 2008 21:46:39 +1000</date>
         <author>phayz</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
             Features of this issue include:
@@ -2520,7 +2520,7 @@ e8cd5527083653155a8fcf16e2ac58f16b1d3495  frugalware-0.9pre2-i686-usb.img
         <title>Frugalware Newsletter Issue 24</title>
         <date>Tue, 27 May 2008 22:57:50 +1000</date>
         <author>phayz</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
             Features of this issue include:
@@ -2539,7 +2539,7 @@ e8cd5527083653155a8fcf16e2ac58f16b1d3495  frugalware-0.9pre2-i686-usb.img
         <title>Frugalware 0.9pre1 (Solaria) released</title>
         <date>Tue, 13 May 2008 00:05:24 +0200</date>
         <author>VMiklos</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The Frugalware Developer Team is pleased to <a href="/news/98">announce</a> the immediate availability of Frugalware 0.9pre1, the first technical preview of the upcoming 0.9 stable release.<br />
             A short and incomplete list of changes since 0.8:<br />
@@ -2626,7 +2626,7 @@ f443ddfb61652ccde5f87135965e467e3bc660f7  frugalware-0.9pre1-i686-usb.img
         <title>Frugalware Newsletter Issue 23</title>
         <date>Fri, 09 May 2008 21:53:54 +1000</date>
         <author>phayz</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
             Features of this issue include:
@@ -2646,7 +2646,7 @@ f443ddfb61652ccde5f87135965e467e3bc660f7  frugalware-0.9pre1-i686-usb.img
         <title>Frugalware Newsletter Issue 22</title>
         <date>Wed, 30 Apr 2008 21:08:56 +1000</date>
         <author>phayz</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
             Features of this issue include:
@@ -2665,7 +2665,7 @@ f443ddfb61652ccde5f87135965e467e3bc660f7  frugalware-0.9pre1-i686-usb.img
         <title>Frugalware Newsletter Issue 20</title>
         <date>Tue, 08 Apr 2008 22:10:18 +1000</date>
         <author>phayz</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
             Features of this issue include:
@@ -2683,7 +2683,7 @@ f443ddfb61652ccde5f87135965e467e3bc660f7  frugalware-0.9pre1-i686-usb.img
         <title>Frugalware Newsletter Issue 19</title>
         <date>Thu, 27 Mar 2008 21:22:43 +1000</date>
         <author>phayz</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
             Features of this issue include:
@@ -2702,7 +2702,7 @@ f443ddfb61652ccde5f87135965e467e3bc660f7  frugalware-0.9pre1-i686-usb.img
         <title>Sayshell: End of life</title>
         <date>Fri, 14 Mar 2008 22:46:09 +0100</date>
         <author>vmiklos</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             With the release of Kalgan, the support for Sayshell is discontinued. It is highly recommended to upgrade to our new stable release, as there will be no more security and bug fixes for Sayshell.<br /><br />
             We have released FSA296 to FSA393 for Sayshell. That means 98 security problems were issued in half a year.<br />
@@ -2721,7 +2721,7 @@ f443ddfb61652ccde5f87135965e467e3bc660f7  frugalware-0.9pre1-i686-usb.img
         <title>Frugalware Newsletter Issue 18</title>
         <date>Thu, 13 Mar 2008 21:42:43 +1000</date>
         <author>phayz</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
             Features of this issue include:
@@ -2741,7 +2741,7 @@ f443ddfb61652ccde5f87135965e467e3bc660f7  frugalware-0.9pre1-i686-usb.img
         <title>Frugalware 0.8 (Kalgan) for i686 released</title>
         <date>Mon, 11 Mar 2008 07:16:05 +0100</date>
         <author>VMiklos</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The Frugalware Developer Team is pleased to <a href="/news/91">announce</a> the immediate availability of Frugalware 0.8, our eighth stable release.<br />
             No new features have been added since 0.8rc2, but more than 300 changes have been made to fix minor bugs.
@@ -2811,7 +2811,7 @@ fb2079de1627ca0e65a323005e0644b88fed6d03  frugalware-0.8-i686-usb.tar.gz
         <title>Frugalware Newsletter Issue 17</title>
         <date>Sat, 1 Mar 2008 13:42:43 +0100</date>
         <author>phayz</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
             Features of this issue include:
@@ -2830,7 +2830,7 @@ fb2079de1627ca0e65a323005e0644b88fed6d03  frugalware-0.8-i686-usb.tar.gz
         <title>Frugalware Newsletter Issue 16</title>
         <date>Sun, 17 Feb 2008 16:30:13 +0100</date>
         <author>phayz</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
             Features of this issue include:
@@ -2848,7 +2848,7 @@ fb2079de1627ca0e65a323005e0644b88fed6d03  frugalware-0.8-i686-usb.tar.gz
         <title>Frugalware 0.8rc2 (Kalgan) released</title>
         <date>Sun, 17 Feb 2008 11:23:04 +0100</date>
         <author>VMiklos</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The Frugalware Developer Team is pleased to <a href="/news/88">announce</a> the immediate availability of Frugalware 0.8rc2, the second (and last) release candidate of the upcoming 0.8 stable release.<br />
             A short and incomplete list of changes since 0.8rc1:<br />
@@ -2932,7 +2932,7 @@ c8f5addddf9d4bb949876f075cff629e5a66fac8  frugalware-0.8rc2-i686-dvd2.iso
         <title>Frugalware Newsletter Issue 15</title>
         <date>Sat, 2 Feb 2008 16:30:13 +0100</date>
         <author>VMiklos</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
             Features of this issue include:
@@ -2951,7 +2951,7 @@ c8f5addddf9d4bb949876f075cff629e5a66fac8  frugalware-0.8rc2-i686-dvd2.iso
         <title>Frugalware 0.8rc1 (Kalgan) released</title>
         <date>Tue, 29 Jan 2008 06:19:47 +0100</date>
         <author>VMiklos</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The Frugalware Developer Team is pleased to <a href="/news/86">announce</a> the immediate availability of Frugalware 0.8rc1, the first release candidate of the upcoming 0.8 stable release.<br />
             A short and incomplete list of changes since 0.8pre2:<br />
@@ -3033,7 +3033,7 @@ bb6b5cd1e157d972913ae0830075b55c7f6a1913  frugalware-0.8rc1-i686-dvd2.iso
         <title>Frugalware Newsletter Issue 14</title>
         <date>Sat, 19 Jan 2008 16:30:13 +0100</date>
         <author>VMiklos</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
             In this issue:
@@ -3050,7 +3050,7 @@ bb6b5cd1e157d972913ae0830075b55c7f6a1913  frugalware-0.8rc1-i686-dvd2.iso
         <title>X.Org 7.3 testers wanted!</title>
         <date>Fri, 18 Jan 2008 01:47:41 +0100</date>
         <author>VMiklos</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
                         Dear Frugalware-current users out there,<br />
                         You probably noticed that we did not update X.Org for a while. This happened as in our opinion the version we already have packaged was still more stable then any of the newer versions, so we sticked to X.Org 7.2 and decided to maintain it, instead of upgrading to a newer version for some time. Now it's time to upgrade!<br />
@@ -3072,7 +3072,7 @@ Server = http://ftp.frugalware.org/pub/other/people/krix/xorg73/frugalware-i686<
         <title>Frugalware 0.8pre2 (Kalgan) released</title>
         <date>Thu, 10 Jan 2008 10:28:00 +0100</date>
         <author>VMiklos</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The Frugalware Developer Team is pleased to <a href="/news/83">announce</a> the immediate availability of Frugalware 0.8pre2, the second technical preview of the upcoming 0.8 stable release.<br />
             A short and incomplete list of changes since 0.8pre1:<br />
@@ -3146,7 +3146,7 @@ eb7fbc5158e452f5217e87a2be51e600b05024b8  frugalware-0.8pre2-i686-tftp.img.gz
         <title>Frugalware Newsletter Issue 13</title>
         <date>Sun,  Jan 23:37:54 6 2008 +0100</date>
         <author>VMiklos</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
             In this issue:
@@ -3164,7 +3164,7 @@ eb7fbc5158e452f5217e87a2be51e600b05024b8  frugalware-0.8pre2-i686-tftp.img.gz
         <title>Frugalware Newsletter Issue 12</title>
         <date>Sat, 22 Dec 2007 14:53:45 +0100</date>
         <author>VMiklos</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
             In this issue Dex77 helps out Splashy, Frugalware gets a little more Danish, we wish you Merry Christmas and more.<br />
@@ -3177,7 +3177,7 @@ eb7fbc5158e452f5217e87a2be51e600b05024b8  frugalware-0.8pre2-i686-tftp.img.gz
         <title>Frugalware Newsletter Issue 11</title>
         <date>Sun,  Dec 22:51:50 9 2007 +0100</date>
         <author>VMiklos</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The newsletter's aim is to keep you up to date with what's happened recently in the world of Frugalware.<br />
             In this issue we welcome a new release of Frugalware, put the 'Windows' key to good use in Gnome, reveal a bug in previous newsletters and more.<br />
@@ -3190,7 +3190,7 @@ eb7fbc5158e452f5217e87a2be51e600b05024b8  frugalware-0.8pre2-i686-tftp.img.gz
         <title>Frugalware 0.8pre1 (Kalgan) released</title>
         <date>Tue,  Dec 09:33:56 4 2007 +0100</date>
         <author>VMiklos</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The Frugalware Developer Team is pleased to <a href="/news/79">announce</a> the immediate availability of Frugalware 0.8pre1, the first technical preview of the upcoming 0.8 stable release.<br />
             A short and incomplete list of changes since 0.7:<br />
@@ -3266,7 +3266,7 @@ a1321a1f978bfedf8cf7fdd33c90e858bd881e10  frugalware-0.8pre1-i686-dvd1.iso
         <title>Frugalware Newsletter Issue 10</title>
         <date>Sat, 24 Nov 2007 17:54:01 +0100</date>
         <author>VMiklos</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The tenth issue of our newsletter has been released! You can read it <a href="/newsletter/10">here</a>. We hope you like it!
             ]]>
@@ -3277,7 +3277,7 @@ a1321a1f978bfedf8cf7fdd33c90e858bd881e10  frugalware-0.8pre1-i686-dvd1.iso
         <title>Terminus: End of life</title>
         <date>Tue, 16 Oct 2007 10:59:34 +0200</date>
         <author>voroskoi</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             With the release of Sayshell, the support for Terminus is discontinued. It is highly recommended to upgrade to our new stable release, as there will be no more security and bug fixes for Terminus.<br /><br />
             We have released FSA135 to FSA295 for Terminus. That means 161 security problems were issued in half a year.<br />
@@ -3298,7 +3298,7 @@ a1321a1f978bfedf8cf7fdd33c90e858bd881e10  frugalware-0.8pre1-i686-dvd1.iso
         <title>Frugalware 0.7 (Sayshell) for i686 and x86_64 released</title>
         <date>Sat, 13 Oct 2007 02:58:26 +0200</date>
         <author>VMiklos</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The Frugalware Developer Team is pleased to <a href="/news/76">announce</a> the immediate availability of Frugalware 0.7, our seventh stable release.<br />
             No new features have been added since 0.7rc2, but more than 150 changes have been made to fix minor bugs.
@@ -3402,7 +3402,7 @@ fa447a8cbd60d554905c48d379fb5d08b80e89b8  frugalware-0.7-i686-tftp.img.gz
         <title>Kernel update in -current: WARNING for Intel users with IDE controllers</title>
         <date>Thu,  Oct 15:08:53 4 2007 +0000</date>
         <author>VMiklos</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
                         As of kernel-2.6.22-6 in Frugalware-current, Intel users will have /dev/sd* devices rather than /dev/hd* ones. The reason is the following: It was not possible to boot the kernel on some machines without this change. See <a href="http://bugs.frugalware.org/2243">this bugreport</a> for more details. So after upgrading using pacman -Syu, you need to:
                         <ol>
@@ -3420,7 +3420,7 @@ fa447a8cbd60d554905c48d379fb5d08b80e89b8  frugalware-0.7-i686-tftp.img.gz
         <title>Frugalware 0.7rc2 (Sayshell) released</title>
         <date>Tue,  Oct 11:08:42 2 2007 +0200</date>
         <author>VMiklos</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The Frugalware Developer Team is pleased to <a href="/news/74">announce</a> the immediate availability of Frugalware 0.7rc2, the last candidate of the upcoming 0.7 stable release.<br />
             A short and incomplete list of changes since 0.7rc1:<br />
@@ -3499,7 +3499,7 @@ e5171b988e894674def71156f71accc6cdc81312  frugalware-0.7rc2-i686-usb.tar.gz
         <title>Frugalware 0.7rc1 (Sayshell) released</title>
         <date>Tue,  Sep 02:40:14 4 2007 +0200</date>
         <author>VMiklos</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The Frugalware Developer Team is pleased to <a href="/news/73">announce</a> the immediate availability of Frugalware 0.7rc1, the first candidate of the upcoming 0.7 stable release.<br />
             A short and incomplete list of changes since 0.7pre2:<br />
@@ -3578,7 +3578,7 @@ a1a22df8d4ea671fb88c0fac30510af19bd578e3  frugalware-0.7rc1-i686-usb.tar.gz
         <title>Frugalware 0.7pre2 (Sayshell) released</title>
         <date>Mon, 30 Jul 2007 09:25:25 +0200</date>
         <author>VMiklos</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The Frugalware Developer Team is pleased to <a href="/news/72">announce</a> the immediate availability of Frugalware 0.7pre2, the second technical preview of the upcoming 0.7 stable release.<br />
             A short and incomplete list of changes since 0.7pre1:<br />
@@ -3666,7 +3666,7 @@ f4945dd97d922cc668bc26c78cde2ba8638753de  frugalware-0.7pre2-i686-tftp.img.gz
         <title>Frugalware Newsletter Issue 9</title>
         <date>Wed, 25 Jul 2007 14:06:29 +0100</date>
         <author>AlexExtreme</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The ninth issue of our fortnightly newsletter has been released! You can read it <a href="/newsletter/9">here</a>. We hope you like it!
             ]]>
@@ -3677,7 +3677,7 @@ f4945dd97d922cc668bc26c78cde2ba8638753de  frugalware-0.7pre2-i686-tftp.img.gz
         <title>Frugalware Newsletter Issue 8</title>
         <date>Sun,  Jul 12:28:27 1 2007 +0100</date>
         <author>AlexExtreme</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The eighth issue of our fortnightly newsletter has been released! You can read it <a href="/newsletter/8">here</a>. We hope you like it!
             ]]>
@@ -3688,7 +3688,7 @@ f4945dd97d922cc668bc26c78cde2ba8638753de  frugalware-0.7pre2-i686-tftp.img.gz
         <title>Frugalware Newsletter Issue 7</title>
         <date>Sun, 17 Jun 2007 12:17:25 +0100</date>
         <author>AlexExtreme</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The seventh issue of our fortnightly newsletter has been released! You can read it <a href="/newsletter/7">here</a>. We hope you like it! If you would like to vote on which design you would like to see on the next version of our homepage, read this issue!
             ]]>
@@ -3699,7 +3699,7 @@ f4945dd97d922cc668bc26c78cde2ba8638753de  frugalware-0.7pre2-i686-tftp.img.gz
         <title>Happy 3rd birthday, Frugalware!</title>
         <date>Sat, 16 Jun 2007 13:14:49 +0200</date>
         <author>VMiklos</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
                         <pre>
 $ lynx -dump http://ftp.frugalware.org/pub/archive/frugalware-0.1/ChangeLog.txt|tail -n 7
@@ -3719,7 +3719,7 @@ Sat <b>Jun 16</b> 13:14:49 2007 +0200
         <title>Frugalware 0.6a (Terminus) for x86_64 released</title>
         <date>Sun, 3 Jun 2007 07:54:12 +0200</date>
         <author>AlexExtreme</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The Frugalware Developer Team is pleased to <a href="/news/67">announce</a> the immediate availability of Frugalware 0.6a for x86_64. This is a bug fix release to fix
             various issues that users have encountered with the x86_64 0.6 releases. These new ISOs contain all security fixes since the release of 0.6.<br /><br />
@@ -3767,7 +3767,7 @@ b613c3b5cd9d7f4b7950eb9bdfed683bb1761a84  frugalware-0.6a-x86_64-cd7.iso
         <title>Frugalware Newsletter Issue 6</title>
         <date>Sat, 2 Jun 2007 08:45:13 +0100</date>
         <author>AlexExtreme</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The sixth issue of our fortnightly newsletter has been released! You can read it <a href="/newsletter/6">here</a>. We hope you like it!
             ]]>
@@ -3778,7 +3778,7 @@ b613c3b5cd9d7f4b7950eb9bdfed683bb1761a84  frugalware-0.6a-x86_64-cd7.iso
         <title>Yugo: new i686 buildserver</title>
         <date>Sat, 26 May 2007 07:56:26 +0200</date>
         <author>IroNiQ</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             I'm pleased to announce our new i686 buildserver, called yugo.<br />The server is working well, you can see the syncpkgd results <a href="http://yugo.frugalware.org/">here</a>.<br />I'd like to thank everyone who offered to donate!
             ]]>
@@ -3789,7 +3789,7 @@ b613c3b5cd9d7f4b7950eb9bdfed683bb1761a84  frugalware-0.6a-x86_64-cd7.iso
         <title>Frugalware 0.6 and 0.7pre1 torrents</title>
         <date>Thu, 24 May 2007 23:14:08 +0200</date>
         <author>Hermier</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             Trackerless torrents for Frugalware's ISO can be found <a href="http://blogs.frugalware.org/index.php?cat=51">here</a>.
             ]]>
@@ -3800,7 +3800,7 @@ b613c3b5cd9d7f4b7950eb9bdfed683bb1761a84  frugalware-0.6a-x86_64-cd7.iso
         <title>Frugalware 0.7pre1 (Sayshell) released</title>
         <date>Tue, 24 May 2007 07:14:08 +0200</date>
         <author>VMiklos</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The Frugalware Developer Team is pleased to <a href="/news/63">announce</a> the immediate availability of Frugalware 0.7pre1, the first technical preview release of the upcoming 0.7 stable release.<br />
             A short and incomplete list of changes since 0.6:<br />
@@ -3882,7 +3882,7 @@ bdef8ebc832707a33ef60b4a257e832df74d3859  frugalware-0.7pre1-i686-usb.tar.gz
         <title>Frugalware Newsletter Issue 5</title>
         <date>Tue, 14 May 2007 17:37:15 +0100</date>
         <author>AlexExtreme</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The fifth issue of our fortnightly newsletter has been released! You can read it <a href="/newsletter/5">here</a>. We hope you like it!
             ]]>
@@ -3893,7 +3893,7 @@ bdef8ebc832707a33ef60b4a257e832df74d3859  frugalware-0.7pre1-i686-usb.tar.gz
         <title>Frugalware Newsletter Issue 4</title>
         <date>Tue,  May 19:08:24 1 2007 +0100</date>
         <author>AlexExtreme</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The fourth issue of our fortnightly newsletter has been released! You can read it <a href="/newsletter/4">here</a>. We hope you like it!
             ]]>
@@ -3904,7 +3904,7 @@ bdef8ebc832707a33ef60b4a257e832df74d3859  frugalware-0.7pre1-i686-usb.tar.gz
         <title>Request: IDE HDDs</title>
         <date>Tue, 24 Apr 2007 20:35:18 +0200</date>
         <author>IroNiQ</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             Unfortunately we lost our i686 buildserver. But we have changed our main server to a stronger one, so now we have a quiet good machine. Without any hard disks. So we'd like to ask our users to donate us. Till the i686 buildserver is not working, the current repo is not in sync with the x86_64 one.<br />
             The needed HDDs:
@@ -3922,7 +3922,7 @@ bdef8ebc832707a33ef60b4a257e832df74d3859  frugalware-0.7pre1-i686-usb.tar.gz
         <title>Frugalware Newsletter Issue 3 and Homepage design contest!</title>
         <date>Thu, 14 Apr 2007 21:43:31 +0100</date>
         <author>AlexExtreme</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The third issue of our fortnightly newsletter has been released! You can read it <a href="/newsletter/3">here</a>. In this issue we have announced a contest to create a design for the next version of the Frugalware homepage.
             ]]>
@@ -3933,7 +3933,7 @@ bdef8ebc832707a33ef60b4a257e832df74d3859  frugalware-0.7pre1-i686-usb.tar.gz
         <title>Frugalware Newsletter Issue 2</title>
         <date>Thu, 31 Mar 2007 21:12:35 +0100</date>
         <author>AlexExtreme</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The second issue of our newsletter has been released! You can read it <a href="/newsletter/2">here</a>. We hope you like it!
             ]]>
@@ -3944,7 +3944,7 @@ bdef8ebc832707a33ef60b4a257e832df74d3859  frugalware-0.7pre1-i686-usb.tar.gz
         <title>Frugalware 0.6 (Terminus) for i686 and x86_64 released</title>
         <date>Thu, 22 Mar 2007 07:04:52 +0100</date>
         <author>VMiklos</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The Frugalware Developer Team is pleased to <a href="/news/57">announce</a> the immediate availability of Frugalware 0.6, our sixth stable release.<br />
             A short and incomplete list of changes since 0.6rc2:<br />
@@ -4044,7 +4044,7 @@ ec86c28e314e385dd411535c819c71428f36852f  frugalware-0.6-x86_64-dvd2.iso
         <title>Frugalware Newsletter Issue 1</title>
         <date>Thu, 13 Mar 2007 07:58:20 +0100</date>
         <author>AlexExtreme</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The Frugalware Newsletter is a new fortnightly (Hopefully... ;-)) newsletter which aims to keep users up to date about what's been going on in Frugalware development.<br />
             The first issue can be found <a href="/newsletter/1">here</a>. We hope you like it!
@@ -4056,7 +4056,7 @@ ec86c28e314e385dd411535c819c71428f36852f  frugalware-0.6-x86_64-dvd2.iso
         <title>Frugalware 0.6rc2 (Terminus) released</title>
         <date>Thu,  Mar 07:57:25 8 2007 +0100</date>
         <author>VMiklos</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The Frugalware Developer Team is pleased to <a href="/news/55">announce</a> the immediate availability of Frugalware 0.6rc2, the second release candidate of the upcoming 0.6 stable release.<br />
             A short and incomplete list of changes since 0.6rc1:<br />
@@ -4123,7 +4123,7 @@ ea0965c3d416b756d02a80aa48fe169285080c18  frugalware-0.6rc2-i686-cd10.iso
         <title>Frugalware 0.6rc1 (Terminus) released</title>
         <date>Thu, 15 Feb 2007 07:22:24 +0100</date>
         <author>VMiklos</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The Frugalware Developer Team is pleased to <a href="/news/54">announce</a> the immediate availability of Frugalware 0.6rc1, the first release candidate of the upcoming 0.6 stable release.<br />
             A short and incomplete list of changes since 0.6pre2:<br />
@@ -4193,7 +4193,7 @@ c159d032f794393896570c70eca7b12480fb0f7a  frugalware-0.6rc1-i686-dvd2.iso
         <title>Frugalware 0.6pre2 (Terminus) released</title>
         <date>Thu, 11 Jan 2007 13:05:38 +0100</date>
         <author>VMiklos</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The Frugalware Developer Team is pleased to <a href="/news/53">announce</a> the immediate availability of Frugalware 0.6pre2, the second technical preview release of the upcoming 0.6 stable release.<br />
             A short and incomplete list of changes since 0.6pre1:<br />
@@ -4274,7 +4274,7 @@ ab191be15a05e42c87218048f55900fcde476b10  frugalware-0.6pre2-i686-net.iso
         <title>Big Fat Warning: postgresql package upgrade</title>
         <date>Sat,  Jan 17:27:05 6 2007 +0100</date>
         <author>IroNiQ</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             Before upgrading to 8.2 version of postgresql, dump your databases. The new version is incompatible with the older one.
             ]]>
@@ -4286,7 +4286,7 @@ ab191be15a05e42c87218048f55900fcde476b10  frugalware-0.6pre2-i686-net.iso
         <title>Big Fat Warning: nVidia package upgrade</title>
         <date>Tue, 26 Dec 2006 20:26:13 +0200</date>
         <author>AlexExtreme</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             If you are using current and you have a GeForce 4 graphics card (this is a lot of laptops), please do not do a system upgrade until the nvidia-96xx package is available tomorrow. Once it is available, install it. The latest version of nvidia removes support for GeForce 4 cards.<br />
             <br />
@@ -4300,7 +4300,7 @@ ab191be15a05e42c87218048f55900fcde476b10  frugalware-0.6pre2-i686-net.iso
         <title>Frugalware 0.6pre1 (Terminus) released</title>
         <date>Thu,  Nov 01:02:04 9 2006 +0100</date>
         <author>VMiklos</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The Frugalware Developer Team is pleased to <a href="/news/50">announce</a> the immediate availability of Frugalware 0.6pre1, the first technical preview release of the upcoming 0.6 stable release.<br />
             A short and incomplete list of changes since 0.5:<br />
@@ -4378,7 +4378,7 @@ eeaa4b9bafab9b1c3c5454c1599687fd600b3525  frugalware-0.6pre1-i686-net.iso
         <title>Yet another homepage redesign!</title>
         <date>Sun, 24 Oct 2006 20:37:14 +0200</date>
         <author>AlexExtreme</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             I'm one of the fussy web-designers. I create a design, a few months later I think it's rubbish. So I created a new design :) Feel free to drop your comments to the Frugalware-devel list.<br /><br />
 
@@ -4392,7 +4392,7 @@ eeaa4b9bafab9b1c3c5454c1599687fd600b3525  frugalware-0.6pre1-i686-net.iso
         <title>ftp5.frugalware.org is currently out of sync</title>
         <date>Sun, 12 Oct 2006 17:41:12 +0200</date>
         <author>AlexExtreme</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             ftp5.frugalware.org is currently out of sync for -current users. Please temporarily switch to a different mirror in /etc/pacman.d/frugalware-current!
             ]]>
@@ -4404,7 +4404,7 @@ eeaa4b9bafab9b1c3c5454c1599687fd600b3525  frugalware-0.6pre1-i686-net.iso
         <title>We want your DBUS bug reports!</title>
         <date>Sun, 30 Sep 2006 12:01:44 +0200</date>
         <author>AlexExtreme</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             If you find any apps that don't start with a message about libdbus-1.so.2 not found, we want to know about it now! Just submit a report with the package's name to the <a href="http://bugs.frugalware.org">Bug Tracker</a>. Thanks!
             ]]>
@@ -4416,7 +4416,7 @@ eeaa4b9bafab9b1c3c5454c1599687fd600b3525  frugalware-0.6pre1-i686-net.iso
         <title>Please, don't file bug reports about DBUS in current (yet!)</title>
         <date>Sun, 24 Sep 2006 17:02:53 +0200</date>
         <author>AlexExtreme</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             We've upgraded to DBUS 0.9x in -current, meaning that some apps will be broken. We currently don't want any reports on any broken apps so that we don't get flooded by bug reports!
             We have a very big list of things that need rebuilding, so we'll probably cover most apps over this week. We'll post a note when we want your bug reports again!<br /><br />
@@ -4430,7 +4430,7 @@ eeaa4b9bafab9b1c3c5454c1599687fd600b3525  frugalware-0.6pre1-i686-net.iso
         <title>Frugalware 0.5 (Siwenna) for i686 and x86_64 released</title>
         <date>Wed, 14 Sep 2006 00:08:25 +0200</date>
         <author>VMiklos</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The Frugalware Developer Team is pleased to <a href="/news/45">announce</a> the immediate availability of Frugalware 0.5, our fifth stable release.<br />
             A short and incomplete list of changes since 0.5rc2:<br />
@@ -4519,7 +4519,7 @@ ed78594a70af0dded0483914437566702b05b576  frugalware-0.5-x86_64-cd5.iso
         <title>Upgrade to the new type of nvidia package</title>
         <date>Sat,  Sep 00:35:47 9 2006 +0200</date>
         <author>Boobaa</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
       It was a trouble for several users to upgrade the old nvidia package (locally-compiled at install) to the new, binary one. Here is the solution (provided that the database and the other packages are up-to-date):<br />
             <pre>pacman -Sfd nvidia --noconfirm</pre>
@@ -4533,7 +4533,7 @@ ed78594a70af0dded0483914437566702b05b576  frugalware-0.5-x86_64-cd5.iso
         <title>Frugalware 0.5rc2 (Siwenna) released</title>
         <date>Fri,  Sep 11:26:39 1 2006 +0200</date>
         <author>VMiklos</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The Frugalware Developer Team is pleased to <a href="/news/43">announce</a> the immediate availability of Frugalware 0.5rc2, the second release candidate of the upcoming 0.5 stable release.<br />
             A short and incomplete list of changes since 0.5rc1:<br />
@@ -4584,7 +4584,7 @@ fae88cc8378e2982a87761c0d97fdfbf42eb321c  frugalware-0.5rc2-i686-net.iso
         <title>Frugalware 0.5rc1 (Siwenna) released</title>
         <date>Thu, 17 Aug 2006 01:31:02 +0200</date>
         <author>VMiklos</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The Frugalware Developer Team is pleased to <a href="http://frugalware.org/news/42">announce</a> the immediate availability of Frugalware 0.5rc1, the fist release candidate of the upcoming 0.5 stable release.<br />
             A short and incomplete list of changes since 0.5pre2:<br />
@@ -4655,7 +4655,7 @@ a62f42f3135f1415edced1db5c9f9511de598fd7  frugalware-0.5rc1-i686-net.iso
         <title>Frugalware 0.5pre2 (Siwenna) released</title>
         <date>Mon, 31 Jul 2006 01:17:32 +0200</date>
         <author>VMiklos</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The Frugalware Developer Team is pleased to <a href="http://frugalware.org/news/41">announce</a> the immediate availability of Frugalware 0.5pre2, the second technical preview of the upcoming 0.5 stable release.<br />
             A short and incomplete list of changes since 0.5pre1:<br />
@@ -4735,7 +4735,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
         <title>Gnome upgrade done (for now)</title>
         <date>Tue, 22 Jul 2006 09:09:41 +0200</date>
         <author>AlexExtreme</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             All the GNOME packages have been updated to 2.15, so now would be the time to starting posting reports about any problems that you find. To do this, you can use our <a href="http://bugs.frugalware.org">Bug Tracker</a>. There are currently several known issues that we will try to fix soon. These are as follows<br />
             <ul>
@@ -4752,7 +4752,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
         <title>Gnome and GTK breakage in -current</title>
         <date>Tue,  Jul 17:03:46 8 2006 +0200</date>
         <author>AlexExtreme</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             Yes, we know Gnome and GTK stuff is a bit broken in -current :)<br /><br />
             This is because we have upgraded to GTK 2.10, and also we are upgrading Gnome to the development version (see the mailing list archive for reasons why). So please bear with us while we do this. The result at the end of this should be a faster and nicer Gnome. I will post here once we have finished upgrading, at which point it will be good to start posting bug reports about problems that you find.<br />
@@ -4765,7 +4765,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
         <title>Improvements on the homepage</title>
         <date>Tue,  Jul 21:11:32 7 2006 +0200</date>
         <author>AlexExtreme</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             Amazingly, in the time since our homepage upgrade, we've only had 1 bug report to do with the packages section. So now we can work on adding a few improvements. I've just written a kind of robot that automatically posts all news posts from the site to the Frugalware-announce mailing list. It works thanks to darcs post-hooks, so that whenever we push a change to the homepage darcs repository, the post-hook is run to check for new news posts. Don't forget, if you do find a bug remember to post it on our Bug Tracker.<br />
             <br />
@@ -4777,7 +4777,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
         <title>New Frugalware homepage!</title>
         <date>Tue, 20 Jun 2006 07:59:25 +0200</date>
         <author>AlexExtreme</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             Welcome to the brand new Frugalware homepage! This is a complete rewrite of our homepage, featuring table-less design, XML for data storage, user-friendly URLs with mod_rewrite and easy translations with Gettext. If you would like to help translate the page, please post to the frugalware-devel mailing list. If you find any bugs while using the page, please report them to the <a href="http://bugs.frugalware.org">Bug Tracker</a> under the Homepage category, or visit our IRC channel and report them to AlexExtreme or IroNiQ. Also, feel free to give them your comments on the page too.<br />
             <br />
@@ -4789,7 +4789,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
         <title>ATI and nVidia binary drivers broken in current</title>
         <date>Sat, 27 May 2006 20:53:09 +0200</date>
         <author>AlexExtreme</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             For those of you that use the current branch of Frugalware, nVidia and ATI binary drivers are currently broken due to the upgrade to Xorg 7.1. Specifically, fonts do not display at all on screen. There are 2 solutions to this problem - either downgrade all Xorg packages, or switch to using the open source Xorg drivers for your card in /etc/X11/xorg.conf. (ati and nv). Note that Frugalware 0.5pre1 is not affected unless you have run pacman -Syu since installation.<br />
             <br />
@@ -4801,7 +4801,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
         <title>Frugalware 0.5pre1 (Siwenna) for i686 released</title>
         <date>Thu, 25 May 2006 01:18:52 +0200</date>
         <author>VMiklos</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The Frugalware Developer Team is pleased to announce the immediate availability of Frugalware 0.5pre1, the first technical preview of the upcoming 0.5 stable release for the i686 architecture.<br />
             A short and incomplete list of the more than 3000 changes since 0.4:<br />
@@ -4832,7 +4832,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
         <title>Frugalware 0.4 for i686 and x86_64 released</title>
         <date>Tue, 30 Mar 2006 07:42:21 +0200</date>
         <author>VMiklos</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The Frugalware Developer Team is pleased to announce the immediate availability of Frugalware 0.4 for the i686 and x86_64 architectures, our fourth stable release.<br />
             A short and incomplete list of changes since 0.4rc2-i686:<br />
@@ -4879,7 +4879,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
         <title>Frugalware 0.4rc2-i686 released</title>
         <date>Thu, 16 Mar 2006 00:08:01 +0100</date>
         <author>VMiklos</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The Frugalware Developer Team is pleased to announce the immediate availability of Frugalware 0.4rc2-i686, the last release candidate of the 0.4-i686 stable release.<br />
             A short and incomplete list of changes since 0.4rc1-i686:<br />
@@ -4910,7 +4910,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
         <title>Frugalware 0.4rc1-i686 released</title>
         <date>Thu,  Mar 00:26:59 2 2006 +0100</date>
         <author>VMiklos</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The Frugalware Developer Team is pleased to announce the immediate availability of Frugalware 0.4rc1-i686, the first release candidate of 0.4-i686.<br />
             A short and incomplete list of changes since 0.4pre2-i686:<br />
@@ -4942,7 +4942,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
         <title>Frugalware 0.4pre2-i686 released</title>
         <date>Thu,  Feb 00:29:05 2 2006 +0100</date>
         <author>VMiklos</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The Frugalware Developer Team is pleased to announce the immediate availability of Frugalware 0.4pre2-i686, the second technical preview release of 0.4-i686.<br />
             A short and incomplete list of changes since 0.4pre1-i686:<br />
@@ -4977,7 +4977,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
         <title>Frugalware 0.4pre1-i686 released</title>
         <date>Wed,  Dec 20:23:55 7 2005 +0100</date>
         <author>VMiklos</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The Frugalware Developer Team is pleased to announce the immediate availability of Frugalware 0.4pre1-i686, the first technical preview release of 0.4-i686.<br />
             A short and incomplete list of changes since 0.3-i686:<br />
@@ -5010,7 +5010,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
         <title>Frugalware 0.3-x86_64 released</title>
         <date>Wed, 19 Oct 2005 19:06:30 +0200</date>
         <author>IroNiQ</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             We are pleased to announce the immediate availability of the x86_64 port of Frugalware 0.3.<br />
             Frugalware 0.3-x86_64 is now a full-featured port of Frugalware, with almost all of the packages that are available on i686.<br />
@@ -5035,7 +5035,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
         <title>Frugalware 0.3-i686 released</title>
         <date>Thu, 13 Oct 2005 01:09:20 +0200</date>
         <author>VMiklos</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The Frugalware Developer Team is pleased to announce the immediate availability of Frugalware 0.3-i686, our third stable release.<br />
             A short list of most important improvements and news since 0.3rc2-i686:<ul><li>Improvements:<br />
@@ -5062,7 +5062,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
         <title>Frugalware 0.3rc2-i686 released</title>
         <date>Mon,  Oct 22:17:09 3 2005 +0200</date>
         <author>VMiklos</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The Frugalware Developer Team is pleased to announce the immediate availability of Frugalware 0.3rc2-i686, the second release candidate of the upcoming 0.3-i686 stable release.<br />
             A short list of most important improvements and news since 0.3rc1-i686:<ul><li>Improvements:<br />
@@ -5089,7 +5089,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
         <title>Frugalware 0.3rc1-i686 released</title>
         <date>Thu, 15 Sep 2005 22:15:47 +0200</date>
         <author>VMiklos</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The Frugalware Developer Team is pleased to announce the immediate availability of Frugalware 0.3rc1-i686, the first release candidate of the upcoming 0.3-i686 stable release.<br />
             A short list of most important improvements and news since 0.3pre2-i686:<ul><li>Improvements:<br />
@@ -5118,7 +5118,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
         <title>Frugalware 0.3pre2-i686 released</title>
         <date>Wed, 18 Aug 2005 07:13:14 +0200</date>
         <author>VMiklos</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The Frugalware Developer Team is pleased to announce the immediate availability of Frugalware 0.3pre2-i686, the second preview of the upcoming 0.3-i686 stable release.<br />
             A short list of most important improvements and news since 0.3pre1-i686:<ul><li>Improvements:<br />
@@ -5147,7 +5147,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
         <title>Frugalware 0.3pre1-x86_64 released</title>
         <date>Sun,  Jul 19:46:19 3 2005 +0200</date>
         <author>VMiklos</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             We are pleased to announce the immediate availability of the x86_64 port of Frugalware 0.3pre1.<br />
             Frugalware 0.3pre1-x86_64 is a native 64-bit system, which means we don't use multilib. (For example because of this, you have to use our gplflash package instead of the usual flashplugin.)<br />
@@ -5175,7 +5175,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
         <title>0.3pre1 in the news</title>
         <date>Wed, 29 Jun 2005 09:57:27 +0200</date>
         <author>VMiklos</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             There's a new <a href="http://www.tuxmachines.org/node/1501">review</a> about Frugalware over at <a href="http://www.tuxmachines.org/">tuxmachines</a>. Also you can find <a href="http://www.tuxmachines.org/gallery/frugal">there</a> 65 screenshots, too.<br />
             ]]>
@@ -5186,7 +5186,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
         <title>Frugalware 0.3pre1-i686 released</title>
         <date>Wed, 22 Jun 2005 23:34:49 +0200</date>
         <author>VMiklos</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The Frugalware Developer Team is pleased to announce the immediate availability of Frugalware 0.3pre1-i686, the first preview of the upcoming 0.3-i686 stable release.<br />
             A short list of most important improvements and news since 0.2:<ul><li>Improvements:<br />
@@ -5221,7 +5221,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
         <title>3 more articles in online IT newspages</title>
         <date>Sun, 23 Jun 2005 23:21:34 +0200</date>
         <author>IroNiQ</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             </p><div align="justify">Three more articles are published in online IT newspages about Frugalware Linux. The first can be read on th Newsforge site <a href="http://os.newsforge.com/os/05/06/03/2046247.shtml?tid=152&amp;tid=2">here</a> (the article is also available on Linux.com, <a href="http://distrocenter.linux.com/distrocenter/05/06/03/2046259.shtml?tid=127">here</a>), written by Eduardo Romero. The other two articles are reviews from different point of view. The <a href="http://www.linuxquestions.org/reviews/showproduct.php/product/565">first review</a> is readable on <a href="http://www.linuxquestions.org">linuxquestions.org</a>. The other <a href="http://www.distrotalk.net/cms_view_article.php?aid=4">review</a> is avialable on <a href="http://www.distrotalk.net/">distrotalk.net</a>.<br />
             ]]>
@@ -5232,7 +5232,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
         <title>Articles about Frugalware Linux</title>
         <date>Mon,  May 21:42:15 9 2005 +0200</date>
         <author>IroNiQ</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             </p><div align="justify">Two arcticles are published about Frugalware Linux. The first is an interview on <a href="http://www.jox.hu">jox.hu</a>, a hungarian IT page. The article is available from <a href="http://www.jox.hu/cikk/?id=141&amp;r=12">here</a> (only in Hungarian). The second is on <a href="http://distrowatch.com">Distrowatch.com</a>. The Distrowatch staff chose the Frugalware Linux to the "Featured distribution of the week". They spent some time to install and evaluate other, well-known Linux distributions and decided to give our distro that title. You can read this article <a href="http://distrowatch.com/weekly.php?issue=20050509#fdow">here</a>.<br />
             ]]>
@@ -5243,7 +5243,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
         <title>Frugalware 0.2 released</title>
         <date>Thu, 28 Apr 2005 09:33:28 +0200</date>
         <author>VMiklos</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The Frugalware Developer Team is pleased to announce the immediate availability of Frugalware 0.2, our second stable release.<br />
             A short list of the most important improvements and bugfixes since 0.2rc2:<ul><li>updates:<br />
@@ -5271,7 +5271,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
         <title>Frugalware 0.2rc2 released</title>
         <date>Mon, 18 Apr 2005 09:22:55 +0200</date>
         <author>VMiklos</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The Frugalware Developer Team is pleased to announce the immediate availability of Frugalware 0.2rc2, the second (and last) release candidate of the upcoming 0.2 stable release.<br />
             A short list of the most important improvements and bugfixes since 0.2rc1:<ul><li>updates:<br />
@@ -5300,7 +5300,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
         <title>Frugalware 0.2rc1 released</title>
         <date>Thu,  Apr 09:17:18 7 2005 +0200</date>
         <author>VMiklos</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The Frugalware Developer Team is pleased to announce the immediate availability of Frugalware 0.2rc1, the first release candidate of the upcoming 0.2 stable release.<br />
             A short list of most important improvements and fixed bugs since 0.2pre2:<ul><li>updates:<br />
@@ -5330,7 +5330,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
         <title>KDE 3.4.0 packages are on mirrors</title>
         <date>Sun, 20 Mar 2005 23:30:16 +0100</date>
         <author>aThom</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             KDE 3.4.0 packages are ready!<br />
             You can read the announcement <a href="http://kde.org/announcements/announce-3.4.php">here</a>.<br />
@@ -5357,7 +5357,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
         <title>GNOME 2.10.0 is in -current</title>
         <date>Mon, 14 Mar 2005 15:20:02 +0100</date>
         <author>laci</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             If everything goes fine tomorrow GNOME 2.10.0 will be on mirrors.<br />
             Official release notes: <a href="http://www.gnome.org/start/2.10/notes/">http://www.gnome.org/start/2.10/notes/</a><br />
@@ -5400,7 +5400,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
         <title>Frugalware 0.2pre2 released</title>
         <date>Wed, 23 Feb 2005 22:59:18 +0100</date>
         <author>VMiklos</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The Frugalware Developer Team is pleased to announce the immediate availability of Frugalware 0.2pre2, the second preview of the upcoming 0.2 stable release.<br />
             A short list of most important improvements and fixed bugs since 0.2pre1:<ul><li>new packages:<br />
@@ -5436,7 +5436,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
         <title>OpenOffice.org in Frugalware</title>
         <date>Mon, 21 Feb 2005 15:40:32 +0100</date>
         <author>IroNiQ</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             We have good news to our users: the openoffice.org package is ready to use. This package was made from the <a href="http://www.novell.com/linux/ximian.html">Ximian</a> <a href="http://www.openoffice.org/">OpenOffice.org</a>. The main package is the "openoffice.org" what contains the user interface and also the dictionary, the hyphenation and the thesaurus in English.<br />
             The languaga packs are called "openoffice.org-i18n-xx" (where xx is the small country code, eg: hu, de, fr) and contains the dictionaries, the hyphenations and the thesaurus in te given language.<br />
@@ -5449,7 +5449,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
         <title>Offical Forum</title>
         <date>Sun,  Feb 19:46:21 6 2005 +0100</date>
         <author>shrift</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             Hi all! So, at last we made it! Our new forum can be reached here: <a href="http://forums.frugalware.org/">forums.frugalware.org</a>!<br />
             Any problems can be reported at: <a href="mailto:shrift@frugalware.org">shrift@frugalware.org</a> or at the "<a href="http://forums.frugalware.org/index.php?t=thread&amp;frm_id=29">About the forum</a>" topic.<br />
@@ -5462,7 +5462,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
         <title>Irc web interface and logs</title>
         <date>Thu, 20 Jan 2005 00:21:12 +0100</date>
         <author>IroNiQ</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             We have good news to that users, who cannot join our irc server: we have a web interface to our irc channel. You can join the channel on <a href="irc.php">this</a> address. You can also find here the channel log.<br />
             ]]>
@@ -5473,7 +5473,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
         <title>Forum and coming new functions</title>
         <date>Sun, 16 Jan 2005 21:58:22 +0100</date>
         <author>IroNiQ</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             We are pleased to inform our Hungarian users that the HUP (Hungarian Unix Portal) made a complete forum for us, which is available <a href="http://hup.hu/modules.php?name=Forums&amp;file=viewforum&amp;f=56">here</a>.<br />
             In the near future two new things will be available in our webpage: the Wiki page and our Forum.<br />
@@ -5486,7 +5486,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
         <title>Frugalware 0.2pre1 released</title>
         <date>Mon, 10 Jan 2005 09:22:50 +0100</date>
         <author>VMiklos</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The Frugalware Developer Team is pleased to announce the immediate availability of Frugalware 0.2pre1, the first preview of the upcoming 0.2 stable release.<br />
             A short list of most important improvements and fixed bugs since 0.1:<ul><li>new packages:<br />
@@ -5524,7 +5524,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
         <title>XFce is in -current, Firefox locale packages, too</title>
         <date>Thu, 30 Dec 2004 21:15:06 +0100</date>
         <author>IroNiQ</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The Frugalware Developer Team is pleased to announce the immediate availability of the long-time expected Xfce4 window manager and the xfce4-goodies package. Besides new language packages are available to the firefox browser.<br />
             Install method:<br />
@@ -5540,7 +5540,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
         <title>Planned downtime</title>
         <date>Tue, 16 Nov 2004 09:52:54 +0100</date>
         <author>VMiklos</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             Today, approximately between 17-18h (CET), frugalware.org will be unavailable. This affects all (www, ftp, rsync, mailman) services, except dns. Thank for your understanding.<br />
             ]]>
@@ -5551,7 +5551,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
         <title>New functions on webpage</title>
         <date>Sun, 14 Nov 2004 23:23:21 +0100</date>
         <author>IroNiQ</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             Two new functions are available on our webpage: the <a href=roadmap.php>roadmap</a>, where you can find our releasing cycle, and the <a href=wishlist.php>wishlist</a>/<a href=todolist.php>todolist</a>, where you can ask for your favourite program or see the list, what do we have to do.<br />
             ]]>
@@ -5562,7 +5562,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
         <title>Frugalware 0.1 screenshot tour by OSDir</title>
         <date>Sat,  Nov 22:35:40 6 2004 +0100</date>
         <author>VMiklos</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             OSDir installed a Frugalware 0.1 to a test machine and took 78 pictures during installation, wich can be found <a href="http://osdir.com/shots/slideshows/slideshow.php?release=169&amp;slide=1">here</a>.<br />
             ]]>
@@ -5573,7 +5573,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
         <title>Frugalware 0.1 released</title>
         <date>Tue,  Nov 10:27:36 2 2004 +0100</date>
         <author>VMiklos</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The Frugalware Developer Team is pleased to announce the immediate availability of Frugalware 0.1, our first stable release.<br />
             A short list of improvements and fixed bugs since rc2:<ul><li>improvements:<br />
@@ -5606,7 +5606,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
         <title>Frugalware 0.1rc2 released</title>
         <date>Mon, 11 Oct 2004 15:40:13 +0200</date>
         <author>VMiklos</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The Frugalware Developer Team is pleased to announce the immediate availability of Frugalware 0.1rc2, the second release candidate of the 0.1 release.<br />
             For a list of improvements and fixed bugs since rc1, please refer to the Frugalware <a href=changelog.php>Change Log</a>.<br />
@@ -5619,7 +5619,7 @@ a3596b7f25437447c3c117eb0bb883b040a3024a  frugalware-0.5pre2-i686-cd8.iso
         <title>Frugalware 0.1rc1 released</title>
         <date>Wed, 29 Sep 2004 07:14:26 +0200</date>
         <author>VMiklos</author>
-        <hidden>0</hidden>
+        <hidden>1</hidden>
         <content><![CDATA[
             The Frugalware Developer Team is pleased to announce the immediate availability of Frugalware 0.1rc1, the first release candidate of the 0.1 release.<br />
             For a list of improvements since the beginning, please refer to the Frugalware <a href=changelog.php>Change Log</a>.<br />
