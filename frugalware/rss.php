@@ -207,7 +207,8 @@ $buf .= "<?xml version=\"1.0\" encoding=\"utf-8\"?>
 <channel>
 	<title>".$handle['title']."</title>
 	<description>".$handle['desc']."</description>
-	<atom:link href=\"http://www.frugalware.org\" rel=\"self\" type=\"application/rss+xml\" />\n";
+	<link href=".$handle['link']."></link>
+	<atom:link href=\"".$handle['link']."" rel=\"self\" type=\"application/rss+xml\" />\n";
 
 foreach( $handle['items'] as $i )
 {
