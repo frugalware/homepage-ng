@@ -28,12 +28,12 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
       <author>phayz</author>
       <hidden>0</hidden>
       <content><![CDATA[
-        The Frugalware homepage is now available in Spanish and can be found
-        here - http://http://frugalware.org/es. One of Frugalware's founding
-        principles was that it be accessible to people in their native language.
-        This is one step forward along that path. Many thanks to all who were
-        involved in providing translations and we hope this continues for many
-        years to come.
+		The Frugalware homepage is now available in Spanish and can be found
+		- <a href="http://frugalware.org/es">here</a>. One of
+		Frugalware's founding principles was that it be accessible to
+		people in their native language and this is one step forward along
+		that path. Many thanks to all who were involved in providing
+		translations and we hope this continues for many years to come.
           ]]>
       </content>
       <icon>/images/icons/info.png</icon>
