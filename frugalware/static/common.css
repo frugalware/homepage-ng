@@ -14,7 +14,7 @@ body {
 
 #bigwrap {
   margin: 0em auto;
-  width: 775px;
+  width: 980px;
   padding: 0;
   padding-top: 0px;
   padding-bottom: 15px;
@@ -37,7 +37,7 @@ body {
   padding-bottom: 2px;
   position: relative;
   height: 76px;
-  margin: 0 200px;
+  margin: 0 100px;
   padding: 0;
   clear: both;
 }
