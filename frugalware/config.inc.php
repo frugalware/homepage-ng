@@ -40,45 +40,46 @@ $validcontent = '<div align="left">
 	  <a href="http://feedvalidator.org/check.cgi?url=http://' . $_SERVER["SERVER_NAME"] . $fwng_root . 'rss/releases"><img src="' . $fwng_root . 'images/valid-rss.png" border="0" alt="Valid RSS!" title="Valid RSS!" /></a>
 	</div>';
 
-#$menucontent = '<a class="menu" href="' . $fwng_root . '">' . gettext('News') . "</a> &middot; \n";
-$menucontent = '<a class="menu" href="" onclick="return clickreturnvalue()" onmouseover="dropdownmenu(this, event, \'newsmenu\')">' . gettext('News') . "</a> &middot; \n";
+#$menucontent = '<a class="menu" href="' . $fwng_root . '">' . gettext('News') . "</a> | \n";
+$menucontent = '<a class="menu" href="" onclick="return clickreturnvalue()" onmouseover="dropdownmenu(this, event, \'newsmenu\')">' . gettext('News') . "</a> | \n";
 $menucontent .= '<div id="newsmenu" class="menulinkcss" align="left">' . "\n";
 $menucontent .= '	<a href="' . $fwng_root . '">' . gettext('Announcements') . "</a>\n";
 $menucontent .= '	<a href="' . $fwng_root . 'security">' . gettext('Security announcements') . "</a>\n";
 $menucontent .= '	<a href="' . $fwng_root . 'rss">' . gettext('News feeds') . "</a>\n";
 $menucontent .= "</div>\n";
-$menucontent .= '<a class="menu" href="" onclick="return clickreturnvalue()" onmouseover="dropdownmenu(this, event, \'aboutmenu\')">' . gettext('About') . "</a> &middot; \n";
+$menucontent .= '<a class="menu" href="" onclick="return clickreturnvalue()" onmouseover="dropdownmenu(this, event, \'aboutmenu\')">' . gettext('About') . "</a> | \n";
 $menucontent .= '<div id="aboutmenu" class="menulinkcss" align="left">' . "\n";
 $menucontent .= '	<a href="' . $fwng_root . 'about">' . gettext('Summary') . "</a>\n";
 $menucontent .= '	<a href="' . $fwng_root . 'media">' . gettext('Frugalware in the Press') . "</a>\n";
-$menucontent .= '	<a href="' . $fwng_root . 'docs">' . gettext('Documentation') . "</a>\n";
+$menucontent .= '	<a href="' . $fwng_root . 'screenshots">' . gettext('Screenshots') . "</a>\n";
 $menucontent .= "</div>\n";
-$menucontent .= '<a class="menu" href="" onclick="return clickreturnvalue()" onmouseover="dropdownmenu(this, event, \'commmenu\')">' . gettext('Community') . "</a> &middot; \n";
+
+$menucontent .= '<a class="menu" href="' . $fwng_root . 'download">' . gettext('Get Frugalware') . "</a> | \n";
+$menucontent .= '<a class="menu" href="' . $fwng_root . 'packages">' . gettext('Packages') . "</a> | \n";
+$menucontent .= '<a class="menu" href="' . $fwng_root . 'docs">' . gettext('Documentation') . "</a> | \n";
+$menucontent .= '<a class="menu" href="http://forums.frugalware.org/">' . gettext('Discussion Forums') . "</a> | \n";
+$menucontent .= '<a class="menu" href="http://pootle.frugalware.org/">' . gettext('Bug Tracker') . "</a> | \n";
+
+$menucontent .= '<a class="menu" href="" onclick="return clickreturnvalue()" onmouseover="dropdownmenu(this, event, \'commmenu\')">' . gettext('Community') . "</a> | \n";
 $menucontent .= '<div id="commmenu" class="menulinkcss" align="left">' . "\n";
 $menucontent .= '	<a href="http://frugalware.org/mailman/listinfo">' . gettext('Mailing Lists') . "</a>\n";
-$menucontent .= '	<a href="http://forums.frugalware.org/">' . gettext('Discussion Forums') . "</a>\n";
 $menucontent .= '	<a href="http://wiki.frugalware.org/">' . gettext('Wiki') . "</a>\n";
 $menucontent .= '	<a href="' . $fwng_root . 'irc">' . gettext('IRC') . "</a>\n";
 $menucontent .= '	<a href="' . $fwng_root . 'paste">' . gettext('Pastebin') . "</a>\n";
-$menucontent .= '	<a href="' . $fwng_root . 'screenshots">' . gettext('Screenshots') . "</a>\n";
-$menucontent .= '	<a href="http://twitter.com/frugalware">' . gettext('Twitter') . "</a>\n";
+$menucontent .= '	<a href="http://planet.frugalware.org/">' . gettext('Blogs') . "</a>\n";
 $menucontent .= '	<a href="http://alpha.libre.fm/group/frugalware">' . gettext('Libre.fm group') . "</a>\n";
-$menucontent .= '	<a href="' . $fwng_root . 'i18n">' . gettext('National sites') . "</a>\n";
+$menucontent .= '	<a href="' . $fwng_root . 'i18n">' . gettext('Local Communities') . "</a>\n";
 $menucontent .= '	<a href="http://www.frugalware-art.org/">' . gettext('Artwork') . "</a>\n";
 $menucontent .= '	<a href="http://identi.ca/group/frugalware">' . gettext('Identi.ca group') . "</a>\n";
+$menucontent .= '	<a href="http://twitter.com/frugalware">' . gettext('Twitter') . "</a>\n";
 $menucontent .= "</div>\n";
-$menucontent .= '<a class="menu" href="" onclick="return clickreturnvalue()" onmouseover="dropdownmenu(this, event, \'dlmenu\')">' . gettext('Download') . "</a> &middot; \n";
-$menucontent .= '<div id="dlmenu" class="menulinkcss" align="left">' . "\n";
-$menucontent .= '	<a href="' . $fwng_root . 'download">' . gettext('ISO images') . "</a>\n";
-$menucontent .= '	<a href="' . $fwng_root . 'packages">' . gettext('Packages') . "</a>\n";
-$menucontent .= "</div>\n";
+
 $menucontent .= '<a class="menu" href="" onclick="return clickreturnvalue()" onmouseover="dropdownmenu(this, event, \'develmenu\')">' . gettext('Development') . "</a>\n";
 $menucontent .= '<div id="develmenu" class="menulinkcss" align="left">' . "\n";
 $menucontent .= '	<a href="' . $fwng_root . 'roadmap">' . gettext('Roadmap') . "</a>\n";
 $menucontent .= '	<a href="http://git.frugalware.org/">' . gettext('Git repository') . "</a>\n";
-$menucontent .= '	<a href="http://bugs.frugalware.org/">' . gettext('Bug Tracker') . "</a>\n";
 $menucontent .= '	<a href="http://pootle.frugalware.org/">' . gettext('Translation portal') . "</a>\n";
-$menucontent .= '	<a href="http://planet.frugalware.org/">' . gettext('Blogs') . "</a>\n";
+
 $menucontent .= '	<a href="' . $fwng_root . 'donations">' . gettext('Donations') . "</a>\n";
 $menucontent .= '	<a href="' . $fwng_root . 'authors">' . gettext('Authors') . "</a>\n";
 $menucontent .= "</div>\n";
