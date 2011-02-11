@@ -58,7 +58,7 @@ $menucontent .= '<a class="menu" href="' . $fwng_root . 'download">' . gettext('
 $menucontent .= '<a class="menu" href="' . $fwng_root . 'packages">' . gettext('Packages') . "</a> | \n";
 $menucontent .= '<a class="menu" href="' . $fwng_root . 'docs">' . gettext('Documentation') . "</a> | \n";
 $menucontent .= '<a class="menu" href="http://forums.frugalware.org/">' . gettext('Discussion Forums') . "</a> | \n";
-$menucontent .= '<a class="menu" href="http://pootle.frugalware.org/">' . gettext('Bug Tracker') . "</a> | \n";
+$menucontent .= '<a class="menu" href="http://bugs.frugalware.org/">' . gettext('Bug Tracker') . "</a> | \n";
 
 $menucontent .= '<a class="menu" href="" onclick="return clickreturnvalue()" onmouseover="dropdownmenu(this, event, \'commmenu\')">' . gettext('Community') . "</a> | \n";
 $menucontent .= '<div id="commmenu" class="menulinkcss" align="left">' . "\n";
