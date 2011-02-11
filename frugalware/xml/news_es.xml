@@ -22,6 +22,28 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
   <post>
+    <id>195</id>
+      <title>¡¡¡Frugalware en Español!!!</title>
+      <date>Vie, 11 Feb 2011 11:11:11 +1000</date>
+      <author>Nekrodes</author>
+      <hidden>0</hidden>
+      <content><![CDATA[
+		<b>¡¡¡Las noticias de Frugalware por fin en español!!!</b><br />
+		Como habéis podido ver la traducción de la página web en inglés
+		de Frugalware ha empezado ha estar disponible en español.<br />
+		Espero, como traductor y usuario, que apreciéis el esfuerzo realizado
+		para que la comunidad de habla hispana pueda beneficiarse de este proyecto.
+		<br /> <br />
+		<b>Posted by phayz</b>
+		"Uno de los principios fundamentales de Frugalware es el poder estar
+		disponible en otros idiomas.<br />
+		Muchas gracias a todos los que hacen posible las traducciones y 
+		esperamos que siga adelante durante muchos años más."
+          ]]>
+      </content>
+      <icon>/images/icons/info.png</icon>
+  </post>
+  <post>
     <id>194</id>
     <title>Frugalware Newsletter Número 75</title>
     <date>Mar, 01 Feb 2011 12:56:56 +1000</date>
