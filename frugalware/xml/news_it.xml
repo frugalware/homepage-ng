@@ -22,6 +22,19 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
   <post>
+    <id>196</id>
+    <title>Parli italiano?</title>
+    <date>Sat, 12 Feb 2011 17:53:00 +1000</date>
+    <author>Melko</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+      L'homepage di Frugalware è ora disponibile anche in italiano, speriamo che apprezziate
+      i nostri sforzi e che possiate beneficiare del nostro lavoro.
+      ]]>
+    </content>
+    <icon>/images/icons/info.png</icon>
+  </post>
+  <post>
     <id>195</id>
       <title>¿Habla usted español?</title>
       <date>Thu, 10 Feb 2011 07:21:27 +1000</date>
