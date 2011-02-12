@@ -29,7 +29,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
       <hidden>0</hidden>
       <content><![CDATA[
 		The Frugalware homepage is now available in Italian and can be found
-		here: <a href="http://frugalware.org/es">http://frugalware.org/it</a>.
+		here: <a href="http://frugalware.org/it">http://frugalware.org/it</a>.
           ]]>
       </content>
       <icon>/images/icons/info.png</icon>
