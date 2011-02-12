@@ -168,7 +168,8 @@ function getllang($lang)
 		"da" => "da_DK",
 		"cs" => "cs_CZ",
 		"tr" => "tr_TR",
-		"es" => "es_ES"
+		"es" => "es_ES",
+		"it" => "it_IT"
 	);
 	return $langs[$lang];
 }
@@ -185,7 +186,8 @@ function getnlang($lang)
 		"da_DK" => "Danish",
 		"cs_CZ" => "Czech",
 		"tr_TR" => "Turkish",
-		"es_ES" => "Spanish"
+		"es_ES" => "Spanish",
+		"it_IT" => "Italian"
 	);
 	return $nlangs[$lang];
 }
