@@ -26,6 +26,30 @@
 
 <fsas>
 	<fsa>
+		<id>712</id>
+		<date>2011-02-13</date>
+		<author>Miklos Vajna</author>
+		<package>opera</package>
+		<vulnerable>10.10-1</vulnerable>
+		<unaffected>11.01-1haven1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4417</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-0450
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-0681
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-0682
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-0683
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-0684
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-0685
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-0686
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-0687</cve>
+		<desc>Two weaknesses and some vulnerabilities have been reported in Opera, which can be exploited by malicious people to bypass certain security restrictions, disclose potentially sensitive information, and compromise a user's system.
+			1) An integer truncation error when processing certain specially crafted HTML pages can be exploited by e.g. tricking a user into visiting a malicious website.
+			2) The application allows users to perform certain actions via "opera:" URLs. This can be exploited to e.g. change certain configuration settings by tricking a user into clicking a specially crafted link via clickjacking.
+			3) An error when processing certain HTTP responses or redirects can be exploited to bypass certain security restrictions and e.g. disclose the content of local files by loading them as a web resource.
+			4) An error can cause Opera to launch the wrong executable in order to open a folder containing a downloaded file, which can lead to a malicious executable being launched.
+			Successful exploitation of this weakness requires significant user interaction and only affects the Windows platform.
+			5) The "Clear all email account passwords" option does not clear the email passwords unless the application is restarted, which can be exploited to gain access to the email accounts.</desc>
+	</fsa>
+	<fsa>
 		<id>711</id>
 		<date>2011-02-13</date>
 		<author>Miklos Vajna</author>
