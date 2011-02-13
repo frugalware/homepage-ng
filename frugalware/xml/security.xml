@@ -26,6 +26,19 @@
 
 <fsas>
 	<fsa>
+		<id>711</id>
+		<date>2011-02-13</date>
+		<author>Miklos Vajna</author>
+		<package>drupal6-mollom</package>
+		<vulnerable>6.x_1.13-1</vulnerable>
+		<unaffected>6.x_1.14-1haven1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4321</bts>
+		<cve>No CVE references, see http://drupal.org/node/912412</cve>
+		<desc>A security issue has been reported in the Mollom module for Drupal, which may lead to exposure of sensitive information.
+			The security issue is caused due to an error in the module which can lead to certain sensitive user data e.g. a user's password in clear text being logged via calls to Drupal's watchdog API.
+			Successful exploitation requires that an attacker has "access site reports" permissions or has access to system syslog files.</desc>
+	</fsa>
+	<fsa>
 		<id>710</id>
 		<date>2011-02-06</date>
 		<author>Miklos Vajna</author>
