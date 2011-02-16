@@ -191,8 +191,8 @@ $shots[users][3][name]="04_users_slown.png";
 $shots[users][3][title]=gettext("GNOME - by Slown");
 $shots[users][4][name]="05_users_botchchikii.png";
 $shots[users][4][title]=gettext("Openbox - by Botchchikii");
-$shots[users][4][name]="06_users_centuri0.png";
-$shots[users][4][title]=gettext("KDE - by Centuri0");
+$shots[users][5][name]="06_users_centuri0.png";
+$shots[users][5][title]=gettext("KDE - by Centuri0");
 
 // include the config and let's start page
 include("config.inc.php");
