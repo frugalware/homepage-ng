@@ -22,6 +22,18 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
   <post>
+    <id>198</id>
+    <title>Haven: Ciclo di vita terminato</title>
+    <date>Sat, 19 Feb 2011 12:33:57 +0100</date>
+    <author>Miklos Vajna</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+      Con il rilascio di Nexon il supporto a Haven è terminato. Siccome non ci saranno più aggiornamenti di sicurezza per Haven, è altamente consigliato l'upgrade al nuovo rilascio stabile.<br />
+      Abbiamo rilasciato per Haven da FSA692 a FSA712. Questo significa che sono stati risolti 21 problemi di sicurezza in 6 mesi.<br />
+      ]]>
+    </content>
+  </post>
+  <post>
     <id>197</id>
     <title>Rilasciata Frugalware 1.4 (Nexon)</title>
     <date>Sun, 13 Feb 2011 00:33:09 +0100</date>
