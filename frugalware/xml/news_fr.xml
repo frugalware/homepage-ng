@@ -29,7 +29,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 		<hidden>0</hidden>
 		<content><![CDATA[
 				Avec la sortie de Nexon, le support de Haven n'est plus effectué. Nous vous recommandons vivement de mettre à jour vers la dernière version stable. De plus, il n'y aura plus de mises à jour de sécurité concernant Haven.<br />
-				Nous avons corrigés les mises à jours de FSA692 à FRSA712 pour Haven, ce qui correspond à 21 mises à jours sur une période de six mois.<br />
+				Nous avons corrigé les mises à jour de FSA692 à FRSA712 pour Haven, ce qui correspond à 21 problêmes de sécurité sur une période de six mois.<br />
 				]]>
 		</content>
 	</post>
