@@ -22,6 +22,18 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
     <post>
+        <id>198</id>
+        <title>Haven: End of life</title>
+        <date>Sat, 19 Feb 2011 12:33:57 +0100</date>
+        <author>Miklos Vajna</author>
+        <hidden>0</hidden>
+        <content><![CDATA[
+		With the release of Nexon, the support for Haven is discontinued. It is highly recommended to upgrade to our new stable release, as there will be no more security and bug fixes for Haven.<br />
+		We have released FSA692 to FSA712 for Haven. That means 21 security problems were fixed in half a year.<br />
+            ]]>
+        </content>
+    </post>
+    <post>
         <id>197</id>
         <title>Frugalware 1.4 (Nexon) released</title>
         <date>Sun, 13 Feb 2011 00:33:09 +0100</date>
