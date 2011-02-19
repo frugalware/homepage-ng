@@ -21,6 +21,18 @@
 Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
+    <post>
+        <id>198</id>
+        <title>Haven: Fin de vie</title>
+        <date>Sat, 19 Feb 2011 12:33:57 +0100</date>
+        <author>Miklos Vajna</author>
+        <hidden>0</hidden>
+        <content><![CDATA[
+		Avec la sortie de Nexon, le support pour Haven s'achève. Il est chaudement recommandé de procéder à la mise à jour vers la nouvelle version stable car il n'y aura plus de mise à jour (logiciel et de sécurité) pour Haven.<br />
+		Nous avons corrigés les bugs allant de FSA692 à FSA712 pour Haven. Cela représente 21 problèmes de sécurité qui ont été réglés en un semestre.<br />
+            ]]>
+        </content>
+    </post>
 	<post>
 		<id>198</id>
 		<title>Haven : fin de vie</title>
