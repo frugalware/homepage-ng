@@ -21,10 +21,39 @@
 Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
+     <post>
+        <id>199</id>
+        <title>Systemd por defecto</title>
+        <date>Mié, 23 Feb 2011 15:15:05 +0100</date>
+        <author>Devil505</author>
+        <hidden>0</hidden>
+        <content><![CDATA[
+        Ahora <a href="http://www.freedesktop.org/wiki/Software/systemd">systemd</a> es el sistema init por defecto.
+	Los usuarios de Frugalwre deben hacer un <i>pacman -Sy systemd</i> antes de actualizar su sistema.<br />
+	<hr style="width:25%;" align="left" />
+        Traducido por Nekrodes.
+            ]]>
+        </content>
+        <icon>/images/icons/warning.png</icon>
+    </post>
+    <post>
+        <id>198</id>
+        <title>Haven: Fin de vida</title>
+        <date>Sáb, 19 Feb 2011 12:33:57 +0100</date>
+        <author>Miklos Vajna</author>
+        <hidden>0</hidden>
+        <content><![CDATA[
+		Con el lanzamiento de Nexon, finaliza el soporte para Haven. Se recomienda la actualización inmediata, ya que, no van a haber más correcciones de fallos de seguridad.
+		Hemos solucionado 21 problemas de seguridad para Haven en medio año, esto es, de la FSA692 a la FSA712.
+		<hr style="width:25%;" align="left" />
+		Traducido por Nekrodes.
+            ]]>
+        </content>
+    </post>
   <post>
     <id>197</id>
     <title>Frugalware 1.4 (Nexon) ya disponible</title>
-    <date>Sun, 13 Feb 2011 00:33:09 +0100</date>
+    <date>Dom, 13 Feb 2011 00:33:09 +0100</date>
     <author>Miklos Vajna</author>
     <hidden>0</hidden>
     <content><![CDATA[
