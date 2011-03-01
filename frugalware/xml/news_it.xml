@@ -22,6 +22,28 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
   <post>
+    <id>200</id>
+    <title>Frugalware Newsletter 76</title>
+    <date>Mon, 28 Feb 2011 20:37:11 +1000</date>
+    <author>phayz</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+      Lo scopo della newsletter è di tenervi aggiornati con i fatti recentemente avvenuti
+      nel mondo di Frugalware.<br />
+      Il programma:
+        <ul>
+			<li>Frugalware 1.4 <em>Nexon</em> è arrivata!</li>
+			<li>Il sito di Frugalware ha subito un restyling</li>
+			<li>Ora potete aggiungere i vostri commenti a ogni newsletter</li>
+			<li>Riempitevi con Frugalware</li>
+			<li>Programmi particolari - tig e Shutter</li>
+        </ul>
+        La potete leggere <a href="/newsletter/76">qui</a>. Speriamo vi godiate la lettura.
+      ]]>
+    </content>
+    <icon>/images/icons/newsletter.png</icon>
+  </post>
+  <post>
     <id>199</id>
     <title>Systemd: nuovo sistema di avvio</title>
     <date>Wed, 23 Feb 2011 15:15:05 +0100</date>
