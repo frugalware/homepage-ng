@@ -22,7 +22,6 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
   <post>
-      <post>
         <id>201</id>
         <title>The Wiki needs you!</title>
         <date>Wed, 16 March 2011 11:57:35 +0100</date>
@@ -38,6 +37,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         </content>
         <icon>/images/icons/info.png</icon>
     </post>
+    <post>
     <id>200</id>
     <title>Frugalware Newsletter Issue 76</title>
     <date>Mon, 28 Feb 2011 20:37:11 +1000</date>
