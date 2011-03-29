@@ -22,6 +22,32 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
     <post>
+    <id>202</id>
+    <title>Frugalware Newsletter Número 77</title>
+    <date>Jue, 24 Mar 2011 22:35:54 +1000</date>
+    <author>phayz</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+        La newsletter intenta mantenerte al día con lo que ocurre
+        en el mundo de Frugalware.<br />
+        Contenido del número:
+        <ul>      
+            <li>Disponible el port para ARM</li>
+            <li>Centuri0, nuevo desarrollador oficial</li>
+            <li>Iniciada la truducción al búlgaro</li>
+            <li>Trucos y consejos</li>
+            <li>Paquetes interesantes: minbif y Guake</li>
+        </ul>
+        Podéis leerla <a href="/newsletter/77">aquí</a> (en inglés).
+        Esperamos que os divirtáis con su lectura.<br />
+        <br />
+        <hr style="width:25%;" align="left" />
+        Traducido por Nekrodes.
+        ]]>
+    </content>
+    <icon>/images/icons/newsletter.png</icon>
+    </post>
+     <post>
         <id>201</id>
         <title>¡El Wiki te necesita!</title>
         <date>Mié, 16 Mar 2011 11:57:35 +0100</date>
@@ -53,7 +79,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         <ul>
 			<li>¡Ya esta aquí el lanzamiento de Frugalware 1.4 <em>Nexon</em>!</li>
 			<li>La página web de Frugalware renovada</li>
-			<li>Ahora puedes añadir comentarios en cada numero de la newsletter</li>
+			<li>Ahora puedes añadir comentarios en cada número de la newsletter</li>
 			<li>Mantente en forma con Frugalware</li>
 			<li>Nuevos paquetes - tig y Shutter</li>
         </ul>
