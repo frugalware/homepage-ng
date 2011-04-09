@@ -22,6 +22,19 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
   <post>
+    <id>203</id>
+    <title>GNOME 3 è ora disponibile!</title>
+    <date>Sat, 9 April 2011 11:54:15 +0100</date>
+    <author>Devil505</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+      <center><img src="http://frugalware.org/images/gnome3.png" alt="GNOME 3 now available!" /></center>
+      Il team di Frugalware è lieto di annunciare la disponibilità della nuova versione di <a href="http://gnome3.org/">GNOME Desktop</a> (3.0) nei repository di frugalware current.<br />
+      ]]>
+    </content>
+    <icon>/images/icons/info.png</icon>
+  </post>
+  <post>
     <id>202</id>
     <title>Frugalware Newsletter 77</title>
     <date>Thu, 24 Mar 2011 22:35:54 +1000</date>
