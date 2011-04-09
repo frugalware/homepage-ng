@@ -29,7 +29,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         <hidden>0</hidden>
         <content><![CDATA[
         <center><img src="http://frugalware.org/images/gnome3.png" alt="GNOME 3 now available!" /></center>
-        L'équipe de développement de Frugalware a le plaisir de vous annonçer la disponibilité de la nouvelle version majeure du <a href="http://gnome3.org/">bureau GNOME</a> (3.0) sur le dépôt frugalware current.<br />>
+        L'équipe de développement de Frugalware a le plaisir de vous annonçer la disponibilité de la nouvelle version majeure du <a href="http://gnome3.org/">bureau GNOME</a> (3.0) sur le dépôt frugalware current.<br />
             ]]>
         </content>
         <icon>/images/icons/info.png</icon>
