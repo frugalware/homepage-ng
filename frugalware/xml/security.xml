@@ -26,6 +26,19 @@
 
 <fsas>
 	<fsa>
+		<id>713</id>
+		<date>2011-04-10</date>
+		<author>Miklos Vajna</author>
+		<package>phpmyadmin</package>
+		<vulnerable>3.3.9-1</vulnerable>
+		<unaffected>3.3.9.2-1nexon1<unaffected>
+		<bts>http://bugs.frugalware.org/task/4424</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-0987</cve>
+		<desc>A security issue has been reported in phpMyAdmin, which can be exploited by malicious users to bypass certain security restrictions.
+The security issue is caused due to an error within the handling of bookmarked SQL queries, which can be exploited to e.g. trick other users into executing unintended bookmarked SQL queries.
+Successful exploitation requires that the bookmarks functionality is enabled and the configuration storage is set up and enabled.</desc>
+	</fsa>
+	<fsa>
 		<id>712</id>
 		<date>2011-02-13</date>
 		<author>Miklos Vajna</author>
