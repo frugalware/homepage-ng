@@ -26,6 +26,32 @@
 
 <fsas>
 	<fsa>
+		<id>715</id>
+		<date>2011-04-10</date>
+		<author>Miklos Vajna</author>
+		<package>wireshark</package>
+		<vulnerable>1.4.3-1</vulnerable>
+		<unaffected>1.4.4-1nexon1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4443</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-0538
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-0713
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1138
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1139
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1140
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1141
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1142
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1143</cve>
+		<desc>Multiple vulnerabilities have been reported in Wireshark, which can be exploited by malicious people to cause a DoS (Denial of Service) and potentially compromise a vulnerable system.
+1) An error when processing certain pcap-ng files can be exploited to free an uninitialised pointer.
+2) An error when handling certain packet lengths can be exploited to cause a crash via a specially crafted pcap-ng file.
+3) An error when processing Nokia DCT3 trace files can be exploited to cause a buffer overflow via a specially crafted file.
+Successful exploitation of this vulnerability may allow execution of arbitrary code.
+4) An error in the "dissect_ms_compressed_string()" (SMB dissector) and "dissect_mscldap_string()" (LDAP dissector) functions can be exploited to cause a crash due to an infinite recursive function call.
+5) An error when processing LDAP Filter strings can be exploited to cause a crash by consuming memory resources via large filter strings.
+6) A validation error in the "dissect_6lowpan_iphc()" function (epan/dissectors/packet-6lowpan.c) in the 6LoWPAN dissector when processing certain lengths can be exploited to cause a heap-based buffer overflow of a single byte resulting in a crash.
+7) A NULL pointer dereference error within the "dissect_ntlmssp_string()" function in epan/dissectors/packet-ntlmssp.c when parsing a pcap file can be exploited to cause a crash.</desc>
+	</fsa>
+	<fsa>
 		<id>714</id>
 		<date>2011-04-10</date>
 		<author>Miklos Vajna</author>
