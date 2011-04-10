@@ -26,6 +26,19 @@
 
 <fsas>
 	<fsa>
+		<id>716</id>
+		<date>2011-04-10</date>
+		<author>Miklos Vajna</author>
+		<package>wordpress</package>
+		<vulnerable>3.0.5-1nexon1</vulnerable>
+		<unaffected>3.1.1-1nexon1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4464</bts>
+		<cve>No CVE, see http://wordpress.org/news/2011/04/wordpress-3-1-1/</cve>
+		<desc>Two vulnerabilities have been reported in WordPress, which can be exploited by malicious people to conduct cross-site scripting attacks and cause a DoS (Denial of Service).
+1) Certain unspecified input is not properly sanitised before being returned to the user. This can be exploited to execute arbitrary HTML and script code in a user's browser session in context of an affected site.
+2) The "make_clickable()" function in wp-includes/formatting.php does not properly check the URL length in comments before passing it to the PCRE library, which can be exploited to cause a crash.</desc>
+	</fsa>
+	<fsa>
 		<id>715</id>
 		<date>2011-04-10</date>
 		<author>Miklos Vajna</author>
