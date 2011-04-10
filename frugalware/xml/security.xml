@@ -26,6 +26,23 @@
 
 <fsas>
 	<fsa>
+		<id>714</id>
+		<date>2011-04-10</date>
+		<author>Miklos Vajna</author>
+		<package>wordpress</package>
+		<vulnerable>3.0.4-1</vulnerable>
+		<unaffected>3.0.5-1nexon1<unaffected>
+		<bts>http://bugs.frugalware.org/task/4427</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-0700
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-0701</cve>
+		<desc>Multiple vulnerabilities have been reported in WordPress, which can be exploited by malicious users to conduct script insertion attacks and disclose potentially sensitive information and by malicious people to conduct cross-site scripting attacks.
+1) Input passed via the post title when performing a "Quick Edit" or "Bulk Edit" action and via the "post_status", "comment_status", and "ping_status" parameters is not properly sanitised before being used. This can be exploited to insert arbitrary HTML and script code, which will be executed in a user's browser session in context of an affected site when the malicious data is being viewed.
+2) Certain input passed via tags in the tags meta-box is not properly sanitised before being returned to the user. This can be exploited to execute arbitrary HTML and script code in a user's browser session in context of an affected site.
+Successful exploitation of these vulnerabilities requires the "Author" or "Contributor" role.
+3) The application incorrectly enforces user access restrictions when accessing posts via the media uploader and can be exploited to disclose the contents of e.g. private or draft posts.
+Successful exploitation of this vulnerability requires the "Author" role.</desc>
+	</fsa>
+	<fsa>
 		<id>713</id>
 		<date>2011-04-10</date>
 		<author>Miklos Vajna</author>
