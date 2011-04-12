@@ -204,13 +204,13 @@ function search_file()
 {
 	global $sqlhost, $sqluser, $sqlpass;
 	$res_set = array();
-	$search = addslashes((substr($_GET['srch'], 0, 1) == '/') ? substr($_GET['srch'], 1) : $_GET['srch']);
+	$search = addslashes($_GET['srch']);
 	$arch = addslashes($_GET['arch']);
 	$fwver = addslashes($_GET['ver']);
 	// XXX: exact search here
 	$query = "select packages.id, packages.pkgname, packages.pkgver,
 		packages.fwver, packages.arch from packages, files where
-		packages.id = files.pkg_id and files.file = '/$search'";
+		packages.id = files.pkg_id and files.file = '$search'";
 	if ($arch != "" && $arch != "all")
 	{
 		$query .= " and packages.arch='$arch'";
