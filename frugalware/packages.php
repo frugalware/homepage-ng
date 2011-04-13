@@ -34,6 +34,8 @@ set_locale($llang, $domain);
 // include the config and let's start page
 include("config.inc.php");
 include("db.inc.php");
+ob_start();
+$titleprefix = null;
 include("header.php");
 
 function main()
@@ -314,6 +316,7 @@ function search_groups()
 
 function res_show( $res_set, $what, $search=null )
 {
+	global $titleprefix;
 	switch ($what)
 	{
 		case 'l':
@@ -332,6 +335,7 @@ function res_show( $res_set, $what, $search=null )
 			$title = gettext( 'Listing contents of group:' ). " " . $search;
 		case 'p':
 			if(!isset($title)) $title = gettext("Search result for:")." ".$search;
+			$titleprefix = "Search  results for $search - ";
 			$content = "<div align=\"left\">\n";
 			for ($i=0,$j=1;$i<count($res_set);$i++,$j++) {
 				$content .= "<p>".$j.". <a href=\"/packages/".$res_set[$i]['id']."\">".$res_set[$i]['pkgname']."</a> ".$res_set[$i]['pkgver']."<br />".gettext("Version:")." ".$res_set[$i]['fwver']."; ".gettext("Architecture:")." ".$res_set[$i]['arch']."</p>\n";
@@ -694,4 +698,10 @@ switch($_GET['op'])
 }
 
 include("footer.php");
+
+$buf = ob_get_contents();
+if ($titleprefix)
+	$buf = str_replace('<title>', '<title>' . $titleprefix, $buf);
+ob_end_clean();
+echo $buf;
 ?>
