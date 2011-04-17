@@ -123,6 +123,7 @@ function main()
     <br />
 		<input type=\"submit\" value=\"".gettext("Search")."\" /> <input type=\"reset\" value=\"".gettext("Reset")."\" />
 		<p>".sprintf(gettext("Searching in %d binary and %d source-only packages."), $binnum, $srcnum)."</p>
+		<p>".sprintf(gettext("Check <a href=\"%s\">outdated</a> packages we are aware of."), "http://frugalware.org/~repo/stats/chkworld.html")."</p>
 	</fieldset></form>
 <script type=\"text/javascript\">
 function addEngine()
