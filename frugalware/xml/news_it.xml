@@ -22,6 +22,29 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
   <post>
+    <id>205</id>
+    <title>Frugalware Newsletter 78</title>
+    <date>Tue, 19 Apr 2011 23:50:57 +1000</date>
+    <author>phayz</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+      Lo scopo della newsletter è di tenervi aggiornati con i fatti recentemente avvenuti
+      nel mondo di Frugalware.<br />
+      Argomenti di questa newsletter:
+      <ul>
+        <li>GNOME 3 è ora disponibile</li>
+        <li>Altre proposte per lo sfondo</li>
+        <li>Come fai a sapere se la fine del mondo è arrivata?</li>
+        <li>Consigli e trucchi - "Mi sono dimenticato qualcosa qui?"</li>
+        <li>Programmi particolari - Pogo</li>
+        <li>Il desktop degli utenti - Slown, Pingax e FrugalNL</li>
+      </ul>
+      Potete leggerla <a href="/newsletter/78">qui</a>. Speriamo vi godiate la lettura.
+      ]]>
+    </content>
+    <icon>/images/icons/newsletter.png</icon>
+  </post>
+  <post>
     <id>204</id>
     <title>Rilasciata Frugalware 1.5pre1 (Mores)!</title>
     <date>Mon, 18 Apr 2011 06:57:45 +0200</date>
