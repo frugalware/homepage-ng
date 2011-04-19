@@ -21,6 +21,28 @@
 Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
+    <post>
+    <id>205</id>
+    <title>Frugalware Newsletter Numéro 78</title>
+    <date>Tue, 19 Apr 2011 23:50:57 +1000</date>
+    <author>phayz</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+            La newsletter a pour but de vous tenir informé de ce qu'il s'est passé récemment dans le monde de Frugalware.<br />
+            Au programme :
+        <ul>
+			<li>GNOME 3 est disponible</li>
+			<li>Fond d'écran de Mores</li>
+			<li>Comment savez-vous que la fin du monde arrive?</li>
+			<li>Trucs et Astuces - "Ai je oublié quelque chose là?"</li>
+			<li>Détails sur un paquet - Pogo</li>
+			<li>Captures d'écrans d'utilisateurs - Slown, Pingax et FrugalNL</li>
+        </ul>
+            Vous pouvez la consulter <a href="/newsletter/77">ici</a>. Nous espérons que vous l'apprécierez !
+      ]]>
+    </content>
+    <icon>/images/icons/newsletter.png</icon>
+  </post>
   <post>
     <id>204</id>
     <title>Frugalware 1.5pre1 (Mores) disponible</title>
