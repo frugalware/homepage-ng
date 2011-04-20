@@ -26,6 +26,21 @@
 
 <fsas>
 	<fsa>
+		<id>717</id>
+		<date>2011-04-20</date>
+		<author>Miklos Vajna</author>
+		<package>wireshark</package>
+		<vulnerable>1.4.4-1nexon1</vulnerable>
+		<unaffected>1.4.6-1nexon1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4472</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1590
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1591</cve>
+		<desc>Multiple vulnerabilities have been reported in Wireshark, which can be exploited by malicious people to cause a DoS (Denial of Service) and potentially compromise a vulnerable system.
+1) A use-after-free error within the X.509if dissector can be exploited to cause a crash via specially crafted packets.
+2) An error in the DECT dissector can be exploited to cause a buffer overflow via specially crafted packets.
+Successful exploitation of this vulnerability may allow execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>716</id>
 		<date>2011-04-10</date>
 		<author>Miklos Vajna</author>
