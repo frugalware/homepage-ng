@@ -26,6 +26,19 @@
 
 <fsas>
 	<fsa>
+		<id>718</id>
+		<date>2011-04-29</date>
+		<author>Miklos Vajna</author>
+		<package>wordpress</package>
+		<vulnerable>3.1.1-1nexon1</vulnerable>
+		<unaffected>3.1.2-1nexon1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4478</bts>
+		<cve>No CVE references, see http://codex.wordpress.org/Version_3.1.2</cve>
+		<desc>A security issue has been reported in WordPress, which can be exploited by malicious users to bypass certain security restrictions.
+			The security issue is caused due to wp-admin/press-this.php script not properly checking a user's permissions before publishing posts and can be exploited by users without the "publish_posts" permission.
+			Successful exploitation requires "Contributor-level" privileges.</desc>
+	</fsa>
+	<fsa>
 		<id>717</id>
 		<date>2011-04-20</date>
 		<author>Miklos Vajna</author>
