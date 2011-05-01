@@ -98,7 +98,7 @@ Successful exploitation of this vulnerability may allow execution of arbitrary c
 		<author>Miklos Vajna</author>
 		<package>wordpress</package>
 		<vulnerable>3.0.4-1</vulnerable>
-		<unaffected>3.0.5-1nexon1<unaffected>
+		<unaffected>3.0.5-1nexon1</unaffected>
 		<bts>http://bugs.frugalware.org/task/4427</bts>
 		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-0700
 			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-0701</cve>
@@ -115,7 +115,7 @@ Successful exploitation of this vulnerability requires the "Author" role.</desc>
 		<author>Miklos Vajna</author>
 		<package>phpmyadmin</package>
 		<vulnerable>3.3.9-1</vulnerable>
-		<unaffected>3.3.9.2-1nexon1<unaffected>
+		<unaffected>3.3.9.2-1nexon1</unaffected>
 		<bts>http://bugs.frugalware.org/task/4424</bts>
 		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-0987</cve>
 		<desc>A security issue has been reported in phpMyAdmin, which can be exploited by malicious users to bypass certain security restrictions.
