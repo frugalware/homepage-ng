@@ -22,6 +22,27 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
     <post>
+    <id>206</id>
+    <title>Frugalware Newsletter Numéro 79</title>
+    <date>Sun, 15 May 2011 22:05:15 +1000</date>
+    <author>phayz</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+            La newsletter a pour but de vous tenir informé de ce qu'il s'est passé récemment dans le monde de Frugalware.<br />
+            Au programme :
+        <ul>
+		  <li>Nouveau contributeur - Baste;</li>
+		  <li>Thème Frugalware pour GNOME Shell;</li>
+		  <li>Trucs et Astuces - fichiers squelettes et script d'informations système;</li>
+		  <li>Captures d'écrans d'utilisateurs - Botchchikii, Springbank and Slown;</li>
+		  <li>Détails sur un paquet - Quod Libet.</li>
+        </ul>
+            Vous pouvez la consulter <a href="/newsletter/79">ici</a>. Nous espérons que vous l'apprécierez !
+      ]]>
+    </content>
+    <icon>/images/icons/newsletter.png</icon>
+  </post>
+    <post>
     <id>205</id>
     <title>Frugalware Newsletter Numéro 78</title>
     <date>Tue, 19 Apr 2011 23:50:57 +1000</date>
