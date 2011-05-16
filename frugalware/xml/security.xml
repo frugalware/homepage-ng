@@ -26,6 +26,24 @@
 
 <fsas>
 	<fsa>
+		<id>719</id>
+		<date>2011-05-16</date>
+		<author>Miklos Vajna</author>
+		<package>kernel</package>
+		<vulnerable>2.6.37-2</vulnerable>
+		<unaffected>2.6.37-3nexon1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4489</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-0726
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1013
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1019
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1076</cve>
+		<desc>Secutity issues have been reported in the Linux kernel:
+		1) The start_code and end_code values in "/proc/[pid]/stat" were not protected. In certain scenarios, this flaw could be used to defeat Address Space Layout Randomization (ASLR).
+		2) An integer signedness flaw in drm_modeset_ctl() could allow a local, unprivileged user to cause a denial of service or escalate their privileges.
+		3) A flaw in dev_load() could allow a local user who has the CAP_NET_ADMIN capability to load arbitrary modules from "/lib/modules/", instead of only netdev modules.
+		4) When a DNS resolver key is instantiated with an error indication, attempts to read that key resulted in an oops because user_read() expected there to be a payload - and there wasn't one.</desc>
+	</fsa>
+	<fsa>
 		<id>718</id>
 		<date>2011-04-29</date>
 		<author>Miklos Vajna</author>
