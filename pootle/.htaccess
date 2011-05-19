@@ -1,2 +1,2 @@
 RewriteEngine On
-RewriteRule (.*) http://dream.frugalware.org:8080/$1 [P]
+RewriteRule (.*) http://10.3.177.253:8080/$1 [P]
