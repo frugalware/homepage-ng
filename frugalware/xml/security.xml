@@ -26,6 +26,18 @@
 
 <fsas>
 	<fsa>
+		<id>720</id>
+		<date>2011-05-28</date>
+		<author>Miklos Vajna</author>
+		<package>wordpress</package>
+		<vulnerable>3.1.2-1nexon1</vulnerable>
+		<unaffected>3.1.3-1nexon1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4496</bts>
+		<cve>No CVE yet, see http://wordpress.org/news/2011/05/wordpress-3-1-3/</cve>
+		<desc>neworder has discovered a vulnerability in the is_human() plugin for WordPress, which can be exploited by malicious people to compromise a vulnerable system.
+			Input passed to the "type" parameter in engine.php (when e.g. "action" is set to "log-reset") is not properly verified before being used in an "eval()" function and can be exploited to inject and execute arbitrary PHP code.</desc>
+	</fsa>
+	<fsa>
 		<id>719</id>
 		<date>2011-05-16</date>
 		<author>Miklos Vajna</author>
