@@ -26,6 +26,21 @@
 
 <fsas>
 	<fsa>
+		<id>721</id>
+		<date>2011-05-28</date>
+		<author>Miklos Vajna</author>
+		<package>drupal6</package>
+		<vulnerable>6.20-3</vulnerable>
+		<unaffected>6.22-1nexon1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4497</bts>
+		<cve>No CVE, see http://drupal.org/node/1168756</cve>
+		<desc>Two vulnerabilities have been reported in Drupal, which can be exploited by malicious users to conduct script insertion attacks and by malicious people to conduct cross-site scripting attacks.
+			1) Certain input passed via the URL is not properly sanitised in the Drupal error handler before being returned to the user. This can be exploited to execute arbitrary HTML and script code in a user's browser session in context of an affected site.
+			Successful exploitation of this vulnerability requires that on-screen error display is enabled in admin/settings/error-reporting.
+			2) Input passed via the color scheme values (e.g. "palette[bg]", "palette[text]", "palette[sideborders]", "palette[footer]", and "palette[titleslogan]") to index.php (when "q" is set to "admin/appearance/settings/bartik") when changing the color scheme is not properly sanitised before being used in a style sheet. This can be exploited to insert arbitrary CSS and script code, which will be executed in a user's browser session in context of an affected site when the malicious data is being viewed.
+			Successful exploitation of this vulnerability requires the "Administer themes" privileges and the victim user is running a browser which executes certain JavaScript statements from CSS files (e.g. Internet Explorer 6).</desc>
+	</fsa>
+	<fsa>
 		<id>720</id>
 		<date>2011-05-28</date>
 		<author>Miklos Vajna</author>
