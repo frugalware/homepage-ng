@@ -26,6 +26,20 @@
 
 <fsas>
 	<fsa>
+		<id>722</id>
+		<date>2011-05-28</date>
+		<author>Miklos Vajna</author>
+		<package>drupal7</package>
+		<vulnerable>7.0-1</vulnerable>
+		<unaffected>7.2-1nexon1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4498</bts>
+		<cve>No CVE, see http://drupal.org/node/1168756</cve>
+		<desc>A vulnerability and a security issue have been reported in Drupal, which can be exploited by malicious users to conduct script insertion attacks and by malicious people to bypass certain security restrictions.
+			1) An error in the Color module can be exploited to conduct script insertion attacks.
+			For more information see vulnerability #2 in: FSA721.
+			2) A security issue in the File module (modules/file/file.module) in combination with restrictions via a node access module can be exploited to disclose private files.</desc>
+	</fsa>
+	<fsa>
 		<id>721</id>
 		<date>2011-05-28</date>
 		<author>Miklos Vajna</author>
