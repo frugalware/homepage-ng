@@ -26,6 +26,20 @@
 
 <fsas>
 	<fsa>
+		<id>724</id>
+		<date>2011-05-31</date>
+		<author>Miklos Vajna</author>
+		<package>freetype2</package>
+		<vulnerable>2.4.2-1</vulnerable>
+		<unaffected>2.4.2-2nexon1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4433</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3814
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3855</cve>
+		<desc>Some vulnerabilities have been reported in FreeType, which can be exploited to cause a DoS (Denial of Service) or potentially compromise an application using the library.
+			1) An error exists in the "ft_var_readpackedpoints()" function in src/truetype/ttgxvar.c when processing TrueType GX fonts and can be exploited to cause a heap-based buffer overflow via a specially crafted font.
+			2) An error within the "Ins_SHZ()" function in src/truetype/ttinterp.c when handling the "SHZ" bytecode instruction can be exploited to cause a crash and potentially execute arbitrary code via a specially crafted font.</desc>
+	</fsa>
+	<fsa>
 		<id>723</id>
 		<date>2011-05-28</date>
 		<author>Miklos Vajna</author>
