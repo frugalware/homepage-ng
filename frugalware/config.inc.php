@@ -82,6 +82,7 @@ $menucontent .= '	<a href="http://pootle.frugalware.org/">' . gettext('Translati
 
 $menucontent .= '	<a href="' . $fwng_root . 'donations">' . gettext('Donations') . "</a>\n";
 $menucontent .= '	<a href="' . $fwng_root . 'authors">' . gettext('Authors') . "</a>\n";
+$menucontent .= '<g:plusone size="small"></g:plusone>\n";
 $menucontent .= "</div>\n";
 
 if($_SERVER["PHP_SELF"]=="/index.php")
