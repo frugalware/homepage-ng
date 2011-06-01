@@ -52,8 +52,6 @@ $data = genHeader();
 /* ]]> */
 </script>
 
-<script type="text/javascript" src="http://apis.google.com/js/plusone.js"></script>
-
 <?
 if($_SERVER['PHP_SELF']=="/index.php")
 	print('<link rel="alternate" type="application/rss+xml" title="RSS" href="http://'
