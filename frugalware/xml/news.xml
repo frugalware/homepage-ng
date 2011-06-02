@@ -13,6 +13,14 @@
 <!ELEMENT name (#PCDATA)>
 ]>
 
+<!--
+
+Possible change: to be able to search for a given post, the id should be moved
+to an attribute of <post>
+<!ATTLIST post id CDATA #REQUIRED>
+
+-->
+
 <!-- Before you commit:
 
 1) If you modify this file, be sure it's still valid - read /hooks/README!
