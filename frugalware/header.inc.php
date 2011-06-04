@@ -144,6 +144,14 @@ function genHeader($usegettext = true) {
 		$data["paypal"] = $paypal;
 	} else
 		$data["paypal"] = "";
+		
+	// Social Networks
+	if (file_exists('socialnetworks.inc.html')) {
+		$socialnetworks = "<p>" . gettext("Support us on social networks.") . "</p>";
+		$socialnetworks .= file_get_contents('socialnetworks.inc.html');
+		$data["socialnetworks"] = $socialnetworks;
+	} else
+		$data["socialnetworks"] = "";
 
 	// Give the array back.
 	return $data;

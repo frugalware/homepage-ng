@@ -84,6 +84,7 @@ else if($_SERVER['PHP_SELF']=="/packages.php")
 if ($data['paypal'] != '')
 	fwsidebox(gettext("Donations"), $data['paypal']);
 fwsidebox(gettext("Languages"), $langcontent);
+fwsidebox(gettext("Social Networks"), $data['socialnetworks']);
 fwsidebox(gettext("Recent updates"), $data['packages']);
 fwsidebox(gettext("Releases"), $data['releases']);
 fwsidebox(gettext("Information"), $validcontent);
