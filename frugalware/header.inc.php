@@ -147,7 +147,7 @@ function genHeader($usegettext = true) {
 		
 	// Social Networks
 	if (file_exists('socialnetworks.inc.html')) {
-		$socialnetworks = "<p>" . gettext("Support us on social networks.") . "</p>";
+		$socialnetworks = "<p>" . gettext("Promote Frugalware on social networks.") . "</p>";
 		$socialnetworks .= file_get_contents('socialnetworks.inc.html');
 		$data["socialnetworks"] = $socialnetworks;
 	} else
