@@ -26,6 +26,28 @@
 
 <fsas>
 	<fsa>
+		<id>725</id>
+		<date>2011-06-07</date>
+		<author>Miklos Vajna</author>
+		<package>wireshark</package>
+		<vulnerable>1.4.6-1nexon1</vulnerable>
+		<unaffected>1.4.7-1nexon1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4510</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1956
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1957
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1958
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-1959
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-2174
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-2175</cve>
+		<desc>Multiple vulnerabilities have been reported in Wireshark, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			1) An error in the DICOM dissector can be exploited to cause an infinite loop when processing certain malformed packets.
+			2) An error when processing a Diameter dictionary file can be exploited to cause the process to crash.
+			3) An error when processing a snoop file can be exploited to cause the process to crash.
+			4) An error when processing compressed capture data can be exploited to cause the process to crash.
+			5) An error when processing a Visual Networks file can be exploited to cause the process to crash.
+			6) An error in the "desegment_tcp()" function (epan/dissectors/packet-tcp.c) when handling certain TCP segments can be exploited to dereference a NULL pointer and crash the process.</desc>
+	</fsa>
+	<fsa>
 		<id>724</id>
 		<date>2011-05-31</date>
 		<author>Miklos Vajna</author>
