@@ -22,6 +22,35 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
     <post>
+    <id>207</id>
+    <title>Frugalware 1.5pre2 (Mores) disponible</title>
+    <date>Mon, 20 Jun 2011 00:45:21 +0200</date>
+    <author>Miklos Vajna</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+        L'équipe de développement de Frugalware a le plaisir de vous annoncer la sortie de Frugalware 1.5pre2, la seconde préversion de la version 1.5 stable à venir.</p>Vous trouverez ici quelques uns des changements apportés depuis la version 1.5pre1 :<br />
+    <ul>
+        <li>Paquets mis à jour :
+            <ul>
+                <li>Kernel Linux 2.6.39</li>
+                <li>LibreOffice 3.4</li>
+                <li>KDE 4.6.4</li>
+            </ul>
+        </li>
+        <li>Nouvelles fonctionnalités :
+            <ul>
+                <li>L'écran de démarrage est désormais fourni par <a href="http://www.freedesktop.org/wiki/Software/Plymouth">Plymouth</a>.</li>
+                <li>Les noyaux pour les architectures i686 et x86_64 peuvent maintenant démarrer depui EFI (Cependant, the chargeur de démarrage n'estinstallable, pour le moment, depuis setup).</li>
+                <li>En complément du support EFI, la table de partition GPT est maintenant activée. gptfdisk est l'outil recommandé pour manipuler GPT.</li>
+            </ul>
+        </li>
+    </ul>
+    Veuillez vour référer au <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/Changelog.txt">Changelog</a> pour plus d'informations.<br />
+    Téléchargement pour i686 : regardez <a href="http://frugalware.org/download/frugalware-testing-iso">notre liste de miroirs</a>. N'oubliez pas de vérifier <a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">l'intégrité</a> des images ISO avant de les graver !<br />
+    <b>NOTE</b> : cliquez <a href="/docs/install#_choosing_installation_flavor">ici</a> pour savoir de quel média vous avez besoin pour installer Frugalware.]]>
+    </content>
+    </post>
+    <post>
     <id>206</id>
     <title>Frugalware Newsletter Numéro 79</title>
     <date>Sun, 15 May 2011 22:05:15 +1000</date>
