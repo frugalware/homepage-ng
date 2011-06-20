@@ -109,8 +109,14 @@ $langcontent = '<div class="imgcontent">
 	  <a href="' . $langpage . 'es"><img alt="' . gettext( 'Change language' ) . '" title="' . gettext( 'Change language' ) . '" src="' . $fwng_root . 'images/spanish.gif" border="0" /></a>
 	  |
 	  <a href="' . $langpage . 'it"><img alt="' . gettext( 'Change language' ) . '" title="' . gettext( 'Change language' ) . '" src="' . $fwng_root . 'images/italian.gif" border="0" /></a>
-	<!--  |
-	  <a href="' . $langpage . 'tr"><img alt="' . gettext( 'Change language' ) . '" title="' . gettext( 'Change language' ) . '" src="' . $fwng_root . 'images/turkish.gif" border="0" /></a> -->
+	<!--
+	  |
+	  <a href="' . $langpage . 'nl"><img alt="' . gettext( 'Change language' ) . '" title="' . gettext( 'Change language' ) . '" src="' . $fwng_root . 'images/dutch.gif" border="0" /></a>
+	-->
+	<!--
+	  |
+	  <a href="' . $langpage . 'tr"><img alt="' . gettext( 'Change language' ) . '" title="' . gettext( 'Change language' ) . '" src="' . $fwng_root . 'images/turkish.gif" border="0" /></a>
+	-->
 	</div>';
 /*
 | <a href="?lang=es"><img alt="' . gettext('Change language') . '" title="' . gettext('Change language') . '" src="images/spanish.gif" border="0" /></a> | <a href="?lang=fr"><img alt="' . gettext('Change language') . '" title="' . gettext('Change language') . '" src="images/french.gif" border="0" /></a>';
