@@ -29,6 +29,29 @@ to an attribute of <post>
 Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
+    <post>
+    <id>208</id>
+    <title>Frugalware Newsletter Issue 80</title>
+    <date>Sat, 02 Jul 2011 22:13:21 +1000</date>
+    <author>phayz</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+      The newsletter's aim is to keep you up to date with what's happened
+      recently in the world of Frugalware.<br />
+      Features of this issue include:
+        <ul>
+		  <li>Frugalware 1.5 pre2 - "Mores" released</li>
+		  <li>Baste is officially a developer</li>
+		  <li>Bug in Bug Fixes section of the newsletter :O</li>
+		  <li>Orphaned packages find new "homes"</li>
+		  <li>Tips and Tricks - New features for pacman-g2</li>
+		  <li>Focus on Packages - Minitube and Plank</li>
+        </ul>
+        You can read it <a href="/newsletter/80">here</a>. We hope you enjoy reading it.
+      ]]>
+    </content>
+    <icon>/images/icons/newsletter.png</icon>
+  </post>
   <post>
     <id>207</id>
     <title>Frugalware 1.5pre2 (Mores) released</title>
