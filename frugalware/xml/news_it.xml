@@ -22,6 +22,29 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
   <post>
+    <id>208</id>
+    <title>Frugalware Newsletter Issue 80</title>
+    <date>Sat, 02 Jul 2011 22:13:21 +1000</date>
+    <author>phayz</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+      Lo scopo della newsletter è di tenervi aggiornati con i fatti recentemente avvenuti
+      nel mondo di Frugalware.<br />
+      Argomenti di questa newsletter:
+      <ul>
+        <li>Frugalware 1.5 pre2 - "Mores" rilasciata</li>
+        <li>Baste è ufficialmente uno sviluppatore</li>
+        <li>Bug nella sezione Bug Fixes della newsletter :O</li>
+        <li>Pacchetti orfani trovano nuove "dimore"</li>
+        <li>Consigli e trucchi - Nuove funzionalità per pacman-g2</li>
+        <li>Programmi particolari - Minitube e Plank</li>
+      </ul>
+      Potete leggerla <a href="/newsletter/80">qui</a>. Speriamo vi godiate la lettura.
+      ]]>
+    </content>
+    <icon>/images/icons/newsletter.png</icon>
+  </post>
+  <post>
     <id>207</id>
     <title>Rilasciata Frugalware 1.5pre2 (Mores)!</title>
     <date>Mon, 20 Jun 2011 00:45:21 +0200</date>
