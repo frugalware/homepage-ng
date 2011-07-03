@@ -37,7 +37,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         <hidden>0</hidden>
         <content><![CDATA[
         Pacman-g2 was upgraded to version 3.8.3 bringing <a href="http://git.frugalware.org/gitweb/?p=pacman-g2.git;a=blobdiff;f=NEWS;h=4eb2722a5ada9abb6d6c8bf49aa056a3eed158ed;hp=1991c951e6c568ba6bc397f8408c9ecc6d703aa2;hb=5a09808268317836e3ee1d8dbb0fb37ebca6f3e9;hpb=4de1fecd3c7c49725b522f9a1134450b73069f62">some nice features</a>. <br />
-        Frugalware current users must do <i>pacman -Sy pacman-g2</i> before upgrading their system (pacman -Syu). As you can see, <b>the frugalware-current database must be synchonized again after pacman-g2 upgrade.</b><br />
+        Frugalware current users must do <i>pacman -Sy pacman-g2</i> before upgrading their system (pacman -Syu). As you can see, <b>the frugalware-current database must be synchronized again after pacman-g2 upgrade.</b><br />
             ]]>
         </content>
         <icon>/images/icons/warning.png</icon>
