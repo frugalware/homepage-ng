@@ -22,6 +22,19 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
     <post>
+    <id>209</id>
+        <title>Mise à jour Pacman-g2</title>
+        <date>Wed, 3 July 2011 14:54:05 +0100</date>
+        <author>Devil505</author>
+        <hidden>0</hidden>
+        <content><![CDATA[
+        Pacman-g2 vient dêtre mis à jour vers la version 3.8.3 apportant <a href="http://git.frugalware.org/gitweb/?p=pacman-g2.git;a=blobdiff;f=NEWS;h=4eb2722a5ada9abb6d6c8bf49aa056a3eed158ed;hp=1991c951e6c568ba6bc397f8408c9ecc6d703aa2;hb=5a09808268317836e3ee1d8dbb0fb37ebca6f3e9;hpb=4de1fecd3c7c49725b522f9a1134450b73069f62">quelques nouvelles fonctions géniales</a>. <br />
+        Les utilisateurs de Frugalware current doivent effectuer <i>pacman -Sy pacman-g2</i> avant de mettre à jour leur système (pacman -Syu). Comme vous pouvez le constater, <b>la base de données frugalware-current doit être synchronisée à nouveau après la mise à jour de pacman-g2</b>.<br /><br />
+            ]]>
+        </content>
+        <icon>/images/icons/warning.png</icon>
+    </post>
+    <post>
     <id>208</id>
     <title>Frugalware Newsletter Numéro 80</title>
     <date>Sat, 02 Jul 2011 22:13:21 +1000</date>
