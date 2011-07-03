@@ -26,6 +26,19 @@
 
 <fsas>
 	<fsa>
+		<id>727</id>
+		<date>2011-07-03</date>
+		<author>Miklos Vajna</author>
+		<package>drupal7</package>
+		<vulnerable>7.2-1nexon1</vulnerable>
+		<unaffected>7.4-1nexon1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4521</bts>
+		<cve>No CVE, see http://drupal.org/node/1204582</cve>
+		<desc>A vulnerability has been reported in Drupal, which can be exploited by malicious people to bypass certain security restrictions.
+			The vulnerability is caused due to the node_access system restrictions not being enforced and can be exploited to view otherwise restricted nodes.
+			NOTE: This affects the taxonomy and forum subsystems.</desc>
+	</fsa>
+	<fsa>
 		<id>726</id>
 		<date>2011-06-24</date>
 		<author>Miklos Vajna</author>
