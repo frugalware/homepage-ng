@@ -26,6 +26,24 @@
 
 <fsas>
 	<fsa>
+		<id>729</id>
+		<date>2011-07-07</date>
+		<author>Miklos Vajna</author>
+		<package>phpmyadmin</package>
+		<vulnerable>3.3.9.2-1nexon1</vulnerable>
+		<unaffected>3.4.3.1-1nexon1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4525</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-2505
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-2506
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-2507
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-2508</cve>
+		<desc>Some vulnerabilities have been reported in phpMyAdmin, which can be exploited by malicious users to disclose sensitive information and by malicious users and malicious people to compromise a vulnerable system.
+			1) An error within the "Swekey_login()" function in libraries/auth/swekey/swekey.auth.lib.php can be exploited to overwrite session variables and e.g. inject and execute arbitrary PHP code.
+			2) Input passed to the "PMA_createTargetTables()" function in libraries/server_synchronize.lib.php is not properly sanitised before calling the "preg_replace()" function with the "e" modifier. This can be exploited to execute arbitrary PHP code via URL-encoded NULL bytes.
+			3) Input passed to the "PMA_displayTableBody()" function in libraries/display_tbl.lib.php is not properly sanitised before being used to include files. This can be exploited to include arbitrary files from local resources via directory traversal sequences.
+			NOTE: A weakness in setup scripts, which could lead to arbitrary PHP code injection if session variables are overwritten has also been reported.</desc>
+	</fsa>
+	<fsa>
 		<id>728</id>
 		<date>2011-07-03</date>
 		<author>Miklos Vajna</author>
