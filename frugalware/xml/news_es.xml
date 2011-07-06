@@ -21,7 +21,184 @@
 Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
+    <post>
+    <id>209</id>
+        <title>Pacman-g2 actualizado</title>
+        <date>Mié, 3 July 2011 14:54:05 +0100</date>
+        <author>Devil505</author>
+        <hidden>0</hidden>
+        <content><![CDATA[
+        Pacman-g2 ha sido actualizado a la versión 3.8.3 aportando <a href="http://git.frugalware.org/gitweb/?p=pacman-g2.git;a=blobdiff;f=NEWS;h=4eb2722a5ada9abb6d6c8bf49aa056a3eed158ed;hp=1991c951e6c568ba6bc397f8408c9ecc6d703aa2;hb=5a09808268317836e3ee1d8dbb0fb37ebca6f3e9;hpb=4de1fecd3c7c49725b522f9a1134450b73069f62">algunas mejoras interesantes (en inglés)</a>. <br />
+        Los usuarios de Frugalware current deben de hacer un <i>pacman -Sy pacman-g2</i> antes de actualizar su sistema (pacman -Syu). Como podéis ver, <b>la base de datos de frugalware-current tiene que sincronizarse otra vez después de descargar la nueva versión de pacman-g2.</b><br />
+        <br />
+        <hr style="width:25%;" align="left" />
+        Traducido por Nekrodes.
+            ]]>
+        </content>
+        <icon>/images/icons/warning.png</icon>
+    </post>
+    <post>
+    <id>208</id>
+    <title>Frugalware Newsletter Número 80</title>
+    <date>Sáb, 02 Jul 2011 22:13:21 +1000</date>
+    <author>phayz</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+      La newsletter intenta mantenerte al día con lo que ocurre
+      en el mundo de Frugalware.<br />
+
+      Contenido del número:
+        <ul>
+		  <li>Frugalware 1.5 pre2 - "Mores" disponible</li>
+		  <li>Baste nuevo desarrollador oficial</li>
+		  <li>Bug en la sección Bug Fixes de la newsletter :O</li>
+		  <li>Paquetes huérfanos encuentran nuevos "hogares"</li>
+		  <li>Trucos y consejos - Nuevas características para pacman-g2</li>
+		  <li>Paquetes interesantes - Minitube y Plank</li>
+        </ul>
+
+      Podéis leerla <a href="/newsletter/80">aquí</a> (en inglés).
+      Esperamos que os divirtáis con su lectura.<br />
+      <br />
+      <hr style="width:25%;" align="left" />
+      Traducido por Nekrodes.
+      ]]>
+    </content>
+    <icon>/images/icons/newsletter.png</icon>
+  </post>
   <post>
+    <id>207</id>
+    <title>Frugalware 1.5pre2 (Mores) disponible</title>
+    <date>Lun, 20 Jun 2011 00:45:21 +0200</date>
+    <author>Miklos Vajna</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+      El Equipo de Desarrolladores de Frugalware se complace en <a href="/news/207">anunciarles</a> la disponibilidad inmediata de Frugalware 1.5pre2, la segunda candidata de la futura estable 1.5.</p>
+    <p>Aquí tenéis algunas de las mejoras, correcciones y actualizaciones más importantes de la 1.5pre1:<br />
+      <ul>
+        <li>Paquetes actualizados:
+          <ul>
+            <li>Linux kernel 2.6.39</li>
+            <li>LibreOffice 3.4</li>
+            <li>KDE 4.6.4</li>
+          </ul>
+        </li>
+        <li>Nuevas mejoras:
+          <ul>
+            <li>La nueva pantalla de arranque la provee
+            <a href="http://www.freedesktop.org/wiki/Software/Plymouth">plymouth (en inglés)</a>.</li>
+            <li>Los kernel i686 y x86_64 pueden arrancar desde EFI. (Sin embargo, el bootloader
+            no puede instalarse desde la configuración.)</li>
+            <li>Además del soporte de EFI, las tablas de partición GPT han sido activadas.
+            Para crear las particiones se recomienda usar gptfdisk.</li>
+          </ul>
+        </li>
+      </ul>
+      Por favor, leed el <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Testing ChangeLog</a> (en inglés) de Frugalware para más información.<br />
+      Descargas para i686: Mirad nuestra <a href="http://frugalware.org/download/frugalware-testing-iso">lista de mirror</a>. ¡No olvidéis de comprobar la <a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">integridad</a> de las imágenes de instalación antes de grabarlas!<br />
+      <b>NOTA</b>: Haz click <a href="/docs/install#_choosing_installation_flavor">aquí (en inglés)</a> para saber más sobre que dispositivo necesitas para la instalación. <br />
+      <br />
+      <hr style="width:25%;" align="left" />
+      Traducido por Nekrodes.
+      ]]>
+    </content>
+  </post>
+    <post>
+    <id>206</id>
+    <title>Frugalware Newsletter Número 79</title>
+    <date>Dom, 15 May 2011 22:05:15 +1000</date>
+    <author>phayz</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+      La newsletter intenta mantenerte al día con lo que ocurre
+      en el mundo de Frugalware.<br />
+
+      Contenido del número:
+        <ul>
+		  <li>Nuevo colaborador - Baste;</li>
+		  <li>Frugalware GNOME Shell theme;</li>
+		  <li>Trucos y consejos - archivos skeleton y script de informacion del sistema;</li>
+		  <li>Vuestros fondos de escritorio - Botchchikii, Springbank y Slown;</li>
+		  <li>Paquetes interesantes - Quod Libet.</li>
+        </ul>
+
+      Podéis leerla <a href="/newsletter/79">aquí</a> (en inglés).
+      Esperamos que os divirtáis con su lectura.<br />
+      <br />
+      <hr style="width:25%;" align="left" />
+      Traducido por Nekrodes.
+      ]]>
+    </content>
+    <icon>/images/icons/newsletter.png</icon>
+  </post>
+    <post>
+    <id>205</id>
+    <title>Frugalware Newsletter Número 78</title>
+    <date>Mar, 19 Abr 2011 23:50:57 +1000</date>
+    <author>phayz</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+      La newsletter intenta mantenerte al día con lo que ocurre
+      en el mundo de Frugalware.<br />
+
+      Contenido del número:
+        <ul>
+			<li>GNOME 3 disponible</li>
+			<li>Propuestas de fondos de escritorio para Mores</li>
+			<li>¿Cómo puedes saber si el fin del mundo está aquí?</li>
+			<li>Trucos y consejos - "¿Me he perdido algo?"</li>
+			<li>Paquetes interesantes - Pogo</li>
+			<li>Vuestros fondos de escritorio - Slown, Pingax y FrugalNL</li>
+        </ul>
+
+      Podéis leerla <a href="/newsletter/78">aquí</a> (en inglés).
+      Esperamos que os divirtáis con su lectura.<br />
+      <br />
+      <hr style="width:25%;" align="left" />
+      Traducido por Nekrodes.
+      ]]>
+    </content>
+    <icon>/images/icons/newsletter.png</icon>
+  </post>
+   <post>
+    <id>204</id>
+    <title>Frugalware 1.5pre1 (Mores) disponible</title>
+    <date>Lun, 18 Abr 2011 06:57:45 +0200</date>
+    <author>Miklos Vajna</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+      El Equipo de Desarrolladores de Frugalware se complace en <a href="/news/204">anunciarles</a> la disponibilidad inmediata de Frugalware 1.5pre1, la primera candidata de la futura estable 1.5.</p>
+    <p>Aquí tenéis algunas de las mejoras, correcciones y actualizaciones más importantes de la 1.4:<br />
+      <ul>
+        <li>Paquetes actualizados:
+          <ul>
+            <li>Linux kernel 2.6.38</li>
+            <li>Gnome 3.0</li>
+            <li>KDE 4.6 </li>
+            <li>Firefox 4.0</li>
+            <li>XFCE 4.8 con algunos bugs corregidos (4.8.1), mirad <a href="http://www.xfce.org/about/news/?post=1295136000">aqui</a> (en inglés) para ver los detalles de lo que trae esta nueva versión.</li>
+            <li>Disponible las librerias EFL 1.0 (<a href="http://www.enlightenment.org/p.php?p=news/show&l=en&news_id=28">Más información</a> (en inglés)</li>
+          </ul>
+        </li>
+        <li>Nuevas mejoras:
+          <ul>
+            <li><a href="http://www.freedesktop.org/wiki/Software/systemd">systemd</a> es ahora el sistema init por defecto</li>
+            <li><a href="http://elentir.sleipnir.fr/?p=489&lang=en">Iniciado (en francés)</a> el port para ARM</li>
+            <li>XFCE tiene lcdfilter para fuentes tipográficas tipo GNOME</li>
+            <li>El archivo completo de paquetes sólo esta disponible en DVD, en su lugar, ofrecemos una imagen pequeña de CD (~200MB) para instalar un sistema mínimo.</li>
+          </ul>
+        </li>
+      </ul>
+      Por favor, leed el <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Testing ChangeLog</a> (en inglés) de Frugalware para más información.<br />
+      Descargas para i686: Mirad nuestra <a href="http://frugalware.org/download/frugalware-testing-iso">lista de mirror</a>. ¡No olvidéis de comprobar la <a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">integridad</a> de las imágenes de instalación antes de grabarlas!<br />
+      <b>NOTA</b>: Haz click <a href="/docs/install#_choosing_installation_flavor">aquí (en inglés)</a> para saber más sobre que dispositivo necesitas para la instalación. <br />
+        <br />
+        <hr style="width:25%;" align="left" />
+        Traducido por Nekrodes.
+      ]]>
+    </content>
+  </post>
+   <post>
         <id>203</id>
         <title>¡GNOME 3 disponible!</title>
         <date>Sáb, 9 Abr 2011 11:54:15 +0100</date>
@@ -45,21 +222,23 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
     <author>phayz</author>
     <hidden>0</hidden>
     <content><![CDATA[
-        La newsletter intenta mantenerte al día con lo que ocurre
-        en el mundo de Frugalware.<br />
-        Contenido del número:
-        <ul>      
+      La newsletter intenta mantenerte al día con lo que ocurre
+      en el mundo de Frugalware.<br />
+
+      Contenido del número:
+        <ul>
             <li>Disponible el port para ARM</li>
             <li>Centuri0, nuevo desarrollador oficial</li>
             <li>Iniciada la truducción al búlgaro</li>
             <li>Trucos y consejos</li>
             <li>Paquetes interesantes: minbif y Guake</li>
         </ul>
-        Podéis leerla <a href="/newsletter/77">aquí</a> (en inglés).
-        Esperamos que os divirtáis con su lectura.<br />
-        <br />
-        <hr style="width:25%;" align="left" />
-        Traducido por Nekrodes.
+
+      Podéis leerla <a href="/newsletter/77">aquí</a> (en inglés).
+      Esperamos que os divirtáis con su lectura.<br />
+      <br />
+      <hr style="width:25%;" align="left" />
+      Traducido por Nekrodes.
         ]]>
     </content>
     <icon>/images/icons/newsletter.png</icon>
