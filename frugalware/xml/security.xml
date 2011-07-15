@@ -78,8 +78,7 @@
 		<vulnerable>3.3.0.4-3</vulnerable>
 		<unaffected>3.3.3.1-1nexon1</unaffected>
 		<bts>http://bugs.frugalware.org/task/4518</bts>
-		<cve>No CVE, see
-			http://www.kb.cert.org/vuls/id/953183</cve>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-2685</cve>
 		<desc>Multiple vulnerabilities have been reported in LibreOffice, which can be exploited by malicious people to compromise a user's system.
 			The vulnerabilities are caused due to errors in the import filter when processing Lotus Word Pro (LWP) files and can be exploited to cause a stack-based buffer overflow via a specially crafted file.
 			Successful exploitation may allow execution of arbitrary code, but requires tricking a user into opening a malicious LWP file.</desc>
