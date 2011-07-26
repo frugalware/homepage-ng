@@ -26,6 +26,19 @@
 
 <fsas>
 	<fsa>
+		<id>731</id>
+		<date>2011-07-27</date>
+		<author>Miklos Vajna</author>
+		<package>wireshark</package>
+		<vulnerable>1.4.7-1nexon1</vulnerable>
+		<unaffected>1.6.1-1nexon1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4532</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-2597</cve>
+		<desc>Two vulnerabilities have been reported in Wireshark, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			1) An error in the Lucent/Ascend file parser can be exploited to cause an infinite loop via specially crafted packets.
+			2) An infinite recursion error in the "elem_cell_id_list()" function in epan/dissectors/packet-ansi_a.c can be exploited to cause a stack overflow e.g. via a specially crafted MAP packet.</desc>
+	</fsa>
+	<fsa>
 		<id>730</id>
 		<date>2011-07-27</date>
 		<author>Miklos Vajna</author>
