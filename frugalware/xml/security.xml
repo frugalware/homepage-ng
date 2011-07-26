@@ -26,6 +26,18 @@
 
 <fsas>
 	<fsa>
+		<id>730</id>
+		<date>2011-07-27</date>
+		<author>Miklos Vajna</author>
+		<package>drupal6-devel</package>
+		<vulnerable>6.x_1.23-1</vulnerable>
+		<unaffected>6.x_1.25-1nexon1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4531</bts>
+		<cve>No CVE references, see http://drupal.org/node/1224852</cve>
+		<desc>A vulnerability has been reported in the Devel module for Drupal, which can be exploited by malicious people to conduct cross-site request forgery attacks.
+			The application allows users to perform certain actions in the Switch User block via HTTP requests without performing any validity checks to verify the requests. This can be exploited to perform certain unspecified actions by tricking a logged in user into visiting a malicious web site.</desc>
+	</fsa>
+	<fsa>
 		<id>729</id>
 		<date>2011-07-07</date>
 		<author>Miklos Vajna</author>
