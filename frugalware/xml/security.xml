@@ -26,6 +26,24 @@
 
 <fsas>
 	<fsa>
+		<id>732</id>
+		<date>2011-07-27</date>
+		<author>Miklos Vajna</author>
+		<package>phpmyadmin</package>
+		<vulnerable>3.4.3.1-1nexon1</vulnerable>
+		<unaffected>3.4.3.2-1nexon1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4536</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-2642
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-2643</cve>
+		<desc>Multiple vulnerabilities have been reported in phpMyAdmin, which can be exploited by malicious users to conduct cross-site scripting attacks and potentially compromise a vulnerable system and by malicious people to disclose potentially sensitive information and potentially compromise a vulnerable system.
+1) Certain input passed to the table name in the table print view script is not properly sanitised before being returned to the user. This can be exploited to execute arbitrary HTML and script code in a user's browser session in context of an affected site.
+Successful exploitation of this vulnerability requires that a specially crafted table name exists.
+2) Certain input passed to the MIME-type transformation parameter is not properly verified before being used to include files. This can be exploited to include arbitrary files from local resources.
+Successful exploitation of this vulnerability requires that the configuration storage mechanism is configured.
+3) Certain input passed to an unspecified parameter in the 'relational schema' code is not properly sanitised before being used to concatenate a class name. This can be exploited to include arbitrary files from local resources.
+4) An unspecified error within the Swekey authentication can be exploited to overwrite session variables.</desc>
+	</fsa>
+	<fsa>
 		<id>731</id>
 		<date>2011-07-27</date>
 		<author>Miklos Vajna</author>
