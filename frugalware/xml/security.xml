@@ -26,6 +26,18 @@
 
 <fsas>
 	<fsa>
+		<id>733</id>
+		<date>2011-07-30</date>
+		<author>Miklos Vajna</author>
+		<package>drupal7</package>
+		<vulnerable>7.4-1nexon1</vulnerable>
+		<unaffected>7.7-1nexon1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4538</bts>
+		<cve>No CVE references, see http://drupal.org/node/1231510</cve>
+		<desc>A vulnerability has been reported in Drupal, which can be exploited by malicious users to bypass certain security restrictions.
+			The vulnerability is caused due to the application not properly restricting access to files attached to a comment when access to the comment is restricted, which can be exploited to e.g. download the files.</desc>
+	</fsa>
+	<fsa>
 		<id>732</id>
 		<date>2011-07-27</date>
 		<author>Miklos Vajna</author>
