@@ -22,6 +22,40 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
   <post>
+    <id>211</id>
+    <title>Rilasciata Frugalware 1.5rc2 (Mores)!</title>
+    <date>Mon, 01 Aug 2011 00:15:14 +0200</date>
+    <author>Miklos Vajna</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+      Il team di Frugalware è lieto di <a href="/news/211">annunciare</a> l'immediata disponibilità di Frugalware 1.5rc2, la seconda release candidate dell'imminente rilascio stabile 1.5.</p>
+    <p>Ecco alcuni dei maggiori cambiamenti, correzioni e aggiornamenti dalla versione 1.5rc1:<br />
+      <ul>
+        <li>Pacchetti aggiornati:
+          <ul>
+            <li>Linux Kernel 2.6.39.3</li>
+            <li>XOrg server 1.10.3</li>
+            <li>LXDE
+              (lxsession-lite-0.4.6,lxpanel-0.5.7,lxlauncher-0.2.2,lxterminal-0.1.10...)</li>
+            <li>rilascio 1.0.1 delle librerie EFL</li>
+            <li>Mozilla Firefox 5.0.1</li>
+            <li>245 pacchetti aggiornati</li>
+            <li>20 nuovi pacchetti</li>
+          </ul>
+        </li>
+        <li>Nuove funzionalità:
+          <ul>
+            <li>Vim ha guadagnato il supporto a Python.</li>
+          </ul>
+        </li>
+      </ul>
+      Riferitevi al <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">ChangeLog</a> per maggiori informazioni.<br />
+      Download per i686: guardate la nostra <a href="http://frugalware.org/download/frugalware-testing-iso">lista dei mirror</a>. Non dimenticate di controllare <a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">l'integrità</a> delle immagini prima di masterizzarle!<br />
+      <b>NOTA</b>: Cliccare <a href="/docs/install#_choosing_installation_flavor">qui</a> per saperne di più su quale dispositivo si necessita per l'installazione. <br />
+      ]]>
+    </content>
+  </post>
+  <post>
     <id>210</id>
     <title>Rilasciata Frugalware 1.5rc1 (Mores)!</title>
     <date>Fri, 15 Jul 2011 00:45:42 +0200</date>
