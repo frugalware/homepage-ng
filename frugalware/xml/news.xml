@@ -53,7 +53,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         </li>
         <li>New features:
           <ul>
-            <li>Our Vim package gained Python nsupport.</li>
+            <li>Our Vim package gained Python support.</li>
           </ul>
         </li>
       </ul>
