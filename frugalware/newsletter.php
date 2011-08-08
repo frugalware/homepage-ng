@@ -33,8 +33,13 @@ include("config.inc.php");
 // let's start page
 include("header.php");
 
-$id = ( $_GET['id'] != "" ) ? $_GET['id'] : 1;
-$content = file_get_contents('weeklynews/issue' . $id . '.html');
+$id = ( $_GET['id'] != "" ) ? (int)$_GET['id'] : 1;
+$flang = ( $lang == "en" ) ? "" : "_$lang";
+if (file_exists("weeklynews/issue$id".$flang.".html"))
+	$htmlfile = "weeklynews/issue$id".$flang.".html";
+else
+	$htmlfile = "weeklynews/issue$id.html";
+$content = file_get_contents($htmlfile);
 
 fwmiddlebox(gettext("Frugalware Newsletter Issue $id"), $content);
 
