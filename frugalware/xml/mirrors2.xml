@@ -124,21 +124,7 @@ If you modify this file, be sure it's still valid - read /hooks/README!
 		<supplier_url>http://free.org/</supplier_url>
 		<bandwidth>2 GBit</bandwidth>
 	</mirror>
-	<mirror>
-		<id>8</id>
-		<type>ftp</type>
-		<type>http</type>
-		<type>rsync</type>
-		<ftp_path>distro/frugalware</ftp_path>
-		<http_path>distro/frugalware</http_path>
-		<rsync_path>frugalware</rsync_path>
-		<host>linux-de.org</host>
-		<country>Germany</country>
-		<country_code>de</country_code>
-		<supplier>linux-de.org</supplier>
-		<supplier_url>http://mirror.linux-de.org/</supplier_url>
-		<bandwidth>100 MBit</bandwidth>
-	</mirror>
+	<!-- XXX: #8 was linux-de.org, can be reused -->
 	<mirror>
 		<id>9</id>
 		<type>ftp</type>
