@@ -9,6 +9,7 @@ RewriteCond %{REQUEST_URI} ^/news.php
 RewriteRule .* http://frugalware.org/news
 RewriteCond %{REQUEST_URI} !^/.*\.php
 RewriteCond %{REQUEST_URI} !^/images
+RewriteCond %{REQUEST_URI} !^/start
 RewriteCond %{REQUEST_URI} !^/static
 RewriteCond %{REQUEST_URI} !^/dtd
 RewriteCond %{REQUEST_URI} !^/xml
