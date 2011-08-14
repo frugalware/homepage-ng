@@ -32,9 +32,9 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
     <post>
         <id>213</id>
         <title>Frugalware 1.5 (Mores) released</title>
-        <date>FIXME</date>
+        <date>Mon, 15 Aug 2011 00:39:33 +0200</date>
         <author>Miklos Vajna</author>
-        <hidden>1</hidden>
+        <hidden>0</hidden>
         <content><![CDATA[
           <center><img src="http://frugalware.org/images/promo-mores.png" alt="Frugalware 1.5 Mores is released !" /></center><br />
           The Frugalware Developer Team is pleased to <a href="/news/213">announce</a> the immediate availability of Frugalware 1.5, our fifteenth stable release.<br />
