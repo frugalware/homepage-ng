@@ -42,8 +42,8 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
                 <li>Le paquet setuptools est maintenant remplacé par distribute.</li>
             </ul>
 
-			Veuillez vous référer au <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/Changelog.txt">Changelog</a> pour plus d'informations.<br />
-			Téléchargment pour i686 : regardez notre <a href="http://frugalware.org/download/frugalware-testing-iso">liste de mirroirs</a>. N'oubliez pas de vérifier <a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">l'intégrité</a> des images iso avant de les graver !<br />
+			Veuillez vous référer au <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-1.5-iso/Changelog.txt">Changelog</a> pour plus d'informations.<br />
+			Téléchargment pour i686 : regardez notre <a href="http://frugalware.org/download/frugalware-1.5-iso">liste de mirroirs</a>. N'oubliez pas de vérifier <a href="http://frugalware.org/download/frugalware-stable-iso/SHA1SUMS">l'intégrité</a> des images iso avant de les graver !<br />
 			<b>Note : </b>cliquez <a href="/docs/install#_choosing_installation_flavor">ici</a> pour connaître les pré-requis nécessaires à l'installation.<br />
             Si vous mettez à jour depuis la version stable précédente (Nexon), n'oubliez pas de lire la <a href="http://frugalware.org/docs/stable/upgrade">documentation concernant les mises à jour</a>.<br />
 			]]>
