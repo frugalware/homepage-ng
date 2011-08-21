@@ -26,6 +26,27 @@
 
 <fsas>
 	<fsa>
+		<id>735</id>
+		<date>2011-08-22</date>
+		<author>Miklos Vajna</author>
+		<package>xpdf</package>
+		<vulnerable>3.02-6</vulnerable>
+		<unaffected>3.02-7mores1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4236</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1188
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3603
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3604
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3606
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3608
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3609</cve>
+		<desc>Some vulnerabilities have been reported in Xpdf, which can be exploited by malicious people to potentially compromise a user's system.
+1) Multiple integer overflows in "SplashBitmap::SplashBitmap()" can be exploited to cause heap-based buffer overflows.
+2) An integer overflow error in "ObjectStream::ObjectStream()" can be exploited to cause a heap-based buffer overflow.
+3) Multiple integer overflows in "Splash::drawImage()" can be exploited to cause heap-based buffer overflows.
+4) An integer overflow error in "PSOutputDev::doImageL1Sep()" can be exploited to cause a heap-based buffer overflow when converting a PDF document to a PS file.
+Successful exploitation of the vulnerabilities may allow execution of arbitrary code by tricking a user into opening a specially crafted PDF file.</desc>
+	</fsa>
+	<fsa>
 		<id>734</id>
 		<date>2011-08-17</date>
 		<author>Miklos Vajna</author>
