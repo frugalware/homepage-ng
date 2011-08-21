@@ -21,12 +21,40 @@
 
 <roadmap>
 	<release>
+		<name>Fermus</name>
+		<definition>A fictional planet in Isaac Asimov's Second Foundation.</definition>
+		<version>1.6</version>
+		<date>Feb 13, 2012</date>
+		<status>0</status>
+		<newsid></newsid>
+		<prerelease>
+			<preversion>rc2</preversion>
+			<predate>Jan 30, 2012</predate>
+			<prestatus>0</prestatus>
+		</prerelease>
+		<prerelease>
+			<preversion>rc1</preversion>
+			<predate>Jan 16, 2012</predate>
+			<prestatus>0</prestatus>
+		</prerelease>
+		<prerelease>
+			<preversion>pre2</preversion>
+			<predate>Dec 19, 2011</predate>
+			<prestatus>0</prestatus>
+		</prerelease>
+		<prerelease>
+			<preversion>pre1</preversion>
+			<predate>Oct 10, 2011</predate>
+			<prestatus>0</prestatus>
+		</prerelease>
+	</release>
+	<release>
 		<name>Mores</name>
 		<definition>A fictional planet in Isaac Asimov's Foundation and Empire, it completed a commercial treaty with the Foundation in 300 F.E.</definition>
 		<version>1.5</version>
 		<date>Aug 15, 2011</date>
 		<status>1</status>
-		<newsid></newsid>
+		<newsid>213</newsid>
 		<prerelease>
 			<preversion>rc2</preversion>
 			<predate>Aug 1, 2011</predate>
