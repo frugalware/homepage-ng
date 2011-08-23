@@ -12,3 +12,7 @@ URI: index.hu.html
 Content-type: text/html;charset=utf-8
 Content-language: hu
 
+URI: index.it.html
+Content-type: text/html;charset=utf-8
+Content-language: it
+
