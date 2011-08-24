@@ -26,6 +26,18 @@
 
 <fsas>
 	<fsa>
+		<id>737</id>
+		<date>2011-08-24</date>
+		<author>Miklos Vajna</author>
+		<package>mantis</package>
+		<vulnerable>1.2.5-1</vulnerable>
+		<unaffected>1.2.7-1mores1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4553</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-2938</cve>
+		<desc>A vulnerability has been discovered in MantisBT, which can be exploited by malicious people to conduct cross-site scripting attacks.
+			Input passed via the "project_id" parameter to search.php is not properly sanitised before being returned to the user. This can be exploited to execute arbitrary HTML and script code in a user's browser session in context of an affected site.</desc>
+	</fsa>
+	<fsa>
 		<id>736</id>
 		<date>2011-08-23</date>
 		<author>Miklos Vajna</author>
