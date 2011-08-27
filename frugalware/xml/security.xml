@@ -26,6 +26,25 @@
 
 <fsas>
 	<fsa>
+		<id>738</id>
+		<date>2011-08-27</date>
+		<author>Miklos Vajna</author>
+		<package>krb5</package>
+		<vulnerable>1.7-6</vulnerable>
+		<unaffected>1.7.2-1mores1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4256</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0628
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-1320
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-1321</cve>
+		<desc>1) A vulnerability has been reported in Kerberos, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			The vulnerability is caused due to an assertion error within the "spnego_gss_accept_sec_context()" function in src/lib/gssapi/spnego/spnego_mech.c when receiving an invalid packet, which can be exploited to e.g. crash an application using the library by sending a specially crafted packet.
+			2) Joel Johnson has reported a vulnerability in Kerberos, which can be exploited by malicious users to potentially compromise a vulnerable system.
+			The vulnerability is caused due to an error in KDC within the "process_tgs_req()" function in kdc/do_tgs_req.c when validating or renewing tickets and can be exploited to trigger a double-free condition.
+			Successful exploitation may allow execution of arbitrary code.
+			3) A vulnerability has been reported in Kerberos, which can be exploited by malicious users to cause a DoS (Denial of Service).
+			The vulnerability is caused due to a NULL pointer dereference error when processing certain Kerberos AP-REQ authenticators, which can be exploited to cause a crash in e.g. kadmind or other applications linked against the GSS-API library by sending an AP-REQ authenticator with a missing checksum field.</desc>
+	</fsa>
+	<fsa>
 		<id>737</id>
 		<date>2011-08-24</date>
 		<author>Miklos Vajna</author>
