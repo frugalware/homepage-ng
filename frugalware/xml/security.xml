@@ -26,6 +26,18 @@
 
 <fsas>
 	<fsa>
+		<id>739</id>
+		<date>2011-08-28</date>
+		<author>Miklos Vajna</author>
+		<package>stunnel</package>
+		<vulnerable>4.39-1</vulnerable>
+		<unaffected>4.42-1mores1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4552</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-2940</cve>
+		<desc>A vulnerability has been reported in Stunnel, which can be exploited by malicious people to cause a DoS (Denial of Service) and potentially compromise a vulnerable system.
+			The vulnerability is caused due to an unspecified error and can be exploited to corrupt heap memory.</desc>
+	</fsa>
+	<fsa>
 		<id>738</id>
 		<date>2011-08-27</date>
 		<author>Miklos Vajna</author>
