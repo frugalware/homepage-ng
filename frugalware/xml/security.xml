@@ -26,6 +26,18 @@
 
 <fsas>
 	<fsa>
+		<id>740</id>
+		<date>2011-08-29</date>
+		<author>Miklos Vajna</author>
+		<package>phpmyadmin</package>
+		<vulnerable>3.4.3.2-1</vulnerable>
+		<unaffected>3.4.4-1mores1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4567</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3181</cve>
+		<desc>Some vulnerabilities have been reported in phpMyAdmin, which can be exploited by malicious users to conduct script insertion attacks.
+			Certain input passed to table, column, and index names is not properly sanitised before being used in the Tracking feature. This can be exploited to insert arbitrary HTML and script code, which will be executed in a user's browser session in context of an affected site when the malicious data is being viewed.</desc>
+	</fsa>
+	<fsa>
 		<id>739</id>
 		<date>2011-08-28</date>
 		<author>Miklos Vajna</author>
