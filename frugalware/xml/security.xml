@@ -26,6 +26,22 @@
 
 <fsas>
 	<fsa>
+		<id>741</id>
+		<date>2011-09-03</date>
+		<author>Miklos Vajna</author>
+		<package>foomatic-filters</package>
+		<vulnerable>4.0.1-5</vulnerable>
+		<unaffected>4.0.1-6mores1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4556</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-2924</cve>
+		<desc>It was found that foomatic-rip filter used insecurely created temporary file
+for storage of PostScript data by rendering the data, intended to be sent to
+the PostScript filter, when the debug mode was enabled. A local attacker could
+use this flaw to conduct symlink attacks (overwrite arbitrary file accessible
+with the privileges of the user running the foomatic-rip universal print
+filter).</desc>
+	</fsa>
+	<fsa>
 		<id>740</id>
 		<date>2011-08-29</date>
 		<author>Miklos Vajna</author>
