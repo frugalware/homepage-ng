@@ -26,6 +26,18 @@
 
 <fsas>
 	<fsa>
+		<id>742</id>
+		<date>2011-09-07</date>
+		<author>Miklos Vajna</author>
+		<package>apache</package>
+		<vulnerable>2.2.19-2mores1</vulnerable>
+		<unaffected>2.2.20-1mores1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4571</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3192</cve>
+		<desc>Kingcope has discovered a vulnerability in Apache HTTP Server, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			The vulnerability is caused due to an error within the ByteRange filter when processing requests containing a large amount of ranges, which can be exploited to exhaust memory via specially crafted HTTP requests sent to the server.</desc>
+	</fsa>
+	<fsa>
 		<id>741</id>
 		<date>2011-09-03</date>
 		<author>Miklos Vajna</author>
