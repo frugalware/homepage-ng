@@ -26,6 +26,25 @@
 
 <fsas>
 	<fsa>
+		<id>743</id>
+		<date>2011-09-09</date>
+		<author>Miklos Vajna</author>
+		<package>mantis</package>
+		<vulnerable>1.2.7-1mores1</vulnerable>
+		<unaffected>1.2.8-1mores1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4586</bts>
+		<cve>No CVE, see https://www.htbridge.ch/advisory/multiple_vulnerabilities_in_mantisbt.html</cve>
+		<desc>Some vulnerabilities have been reported in MantisBT, which can be exploited by malicious people to conduct cross-site scripting attacks and disclose potentially sensitive information and by malicious users to compromise a vulnerable system.
+
+1) Certain input passed via the URL is not properly sanitised before being returned to the user. This can be exploited to execute arbitrary HTML and script code in a user's browser session in context of an affected site.
+
+2) Input passed to the "action" parameter in bug_actiongroup_ext_page.php and bug_actiongroup_page.php is not properly verified before being used to include files. This can be exploited to include arbitrary files from local resources via directory traversal attacks and URL-encoded NULL bytes.
+
+Note: In combination with MantisBT's file upload functionality, this can be exploited to execute arbitrary PHP code.
+
+3) Input passed to the "os", "os_build", and "platform" parameters in bug_report_page.php and bug_update_advanced_page.php is not properly sanitised before being returned to the user. This can be exploited to execute arbitrary HTML and script code in a users browser session in context of an affected site.</desc>
+	</fsa>
+	<fsa>
 		<id>742</id>
 		<date>2011-09-07</date>
 		<author>Miklos Vajna</author>
