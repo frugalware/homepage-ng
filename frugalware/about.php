@@ -36,7 +36,7 @@ set_locale($llang, $domain);
 $fwshortabout = gettext("Frugalware is a general purpose linux distribution, designed for intermediate users (who are not afraid of text mode).");
 $fwabout= array (
 	array (gettext("Frequently asked questions"),
-		gettext("Please read the dedicated <a href="http://wiki.frugalware.org/index.php/FAQ">FAQ page on the wiki</a>."))
+		gettext("Please read the dedicated <a href=\"http://wiki.frugalware.org/index.php/FAQ\">FAQ page on the wiki</a>."))
 	);
 
 // include the config and let's start page
