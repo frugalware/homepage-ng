@@ -34,23 +34,14 @@ set_locale($llang, $domain);
 // FIXME: use docs/about.txt as a source instead of this one
 
 $fwshortabout = gettext("Frugalware is a general purpose linux distribution, designed for intermediate users (who are not afraid of text mode).");
-$fwabout= array (
-	array (gettext("Frequently asked questions"),
-		gettext("Please read the dedicated <a href=\"http://wiki.frugalware.org/index.php/FAQ\">FAQ page on the wiki</a>."))
-	);
+$fwlongabout = gettext("Please read the dedicated <a href=\"http://wiki.frugalware.org/index.php/FAQ\">FAQ page on the wiki</a>.");
 
 // include the config and let's start page
 include("config.inc.php");
 include("header.php");
 
 fwmiddlebox(gettext("Short"), $fwshortabout);
-$cont = "";
-for ( $i=0; $i<count($fwabout); $i++ )
-{
-	$cont .= "<p><b><img src=\"images/arrow.gif\" alt=\"\" border=\"0\" /> ".gettext("Question").":&nbsp;&nbsp;".$fwabout[$i][0]."</b></p>\n";
-	$cont .= "<p align=\"justify\">".gettext("Answer").":&nbsp;&nbsp;".$fwabout[$i][1]."</p>\n";
-}
-fwmiddlebox(gettext("Long"), $cont);
+fwmiddlebox(gettext("Long"), $fwlongabout);
 
 include("footer.php");
 ?>
