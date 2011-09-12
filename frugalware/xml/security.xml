@@ -26,6 +26,18 @@
 
 <fsas>
 	<fsa>
+		<id>744</id>
+		<date>2011-09-13</date>
+		<author>Miklos Vajna</author>
+		<package>librsvg</package>
+		<vulnerable>2.34.0-1</vulnerable>
+		<unaffected>2.34.1-1mores1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4582</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3146</cve>
+		<desc>A vulnerability has been reported in librsvg, which can be exploited by malicious people to cause a DoS (Denial of Service) and potentially compromise an application using the library.
+The vulnerability is caused due to an error within the handling of node types, which can be exploited to dereference invalid memory via specially crafted SVG images.</desc>
+	</fsa>
+	<fsa>
 		<id>743</id>
 		<date>2011-09-09</date>
 		<author>Miklos Vajna</author>
