@@ -30,6 +30,36 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
     <post>
+    <id>214</id>
+        <title>Important machine of the Frugalware infrastructure was compromised</title>
+        <date>Wed, 14 Sep 2011 00:57:25 +0200</date>
+        <author>Miklos Vajna</author>
+        <hidden>0</hidden>
+        <content><![CDATA[
+          Dear users,<br />
+
+          I'm sorry to report that one of our important machine from the
+          Frugalware infrastrucere was compromised on August 25. I took
+          a while till we found out the details how that was possible,
+          read <a
+            href="http://article.gmane.org/gmane.linux.frugalware.devel/9899">here</a> if you're interested.<br />
+
+          In short: we found that the attacker installed a backdoor
+          similar to kernel.org one, and we already reinstalled the
+          machine, plus took steps to prevent such a similar attack in
+          the future.<br />
+
+          On the bright side, we verified that none of the Frugalware
+          Git repos nor the binary packages were modified during the
+          attack, so you don't have to fear the Pacman-G2 installed any
+          problematic update to your machines.<br />
+
+          Thanks for your understanding.
+            ]]>
+        </content>
+        <icon>/images/icons/warning.png</icon>
+    </post>
+    <post>
         <id>213</id>
         <title>Frugalware 1.5 (Mores) released</title>
         <date>Mon, 15 Aug 2011 00:39:33 +0200</date>
