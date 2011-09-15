@@ -36,16 +36,16 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         <author>Miklos Vajna</author>
         <hidden>0</hidden>
         <content><![CDATA[
-          Dear users,<br />
+          Dear users,<br /><br />
 
-          I'm sorry to report that one of the important server from the
+          I'm sorry to report that one of the important servers of the
           Frugalware infrastructure was compromised on August 25. It took
-          a while to found out the details how that was possible,
+          a while to find out the details of how that was possible,
           read <a href="http://article.gmane.org/gmane.linux.frugalware.devel/9899">here</a>
           if you're interested.<br /><br />
 
           In short: we found that the attacker installed a backdoor
-          similar to the one installed on kernel.org. We have already
+          similar to the one installed on kernel.org recently. We have already
           reinstalled the operating system, plus taken steps to prevent
           a similar attack in the future.<br /><br />
 
