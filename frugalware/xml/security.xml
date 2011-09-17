@@ -26,6 +26,22 @@
 
 <fsas>
 	<fsa>
+		<id>745</id>
+		<date>2011-09-17</date>
+		<author>Miklos Vajna</author>
+		<package>django</package>
+		<vulnerable>1.3-2</vulnerable>
+		<unaffected>1.3.1-1mores1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4590</bts>
+		<cve>No CVE, see https://www.djangoproject.com/weblog/2011/sep/09/security-releases-issued/</cve>
+		<desc>Some vulnerabilities have been reported in Django, which can be exploited by malicious people to disclose certain system information, manipulate certain data, conduct cache poisoning attacks, and cause a DoS (Denial of Service).
+1) An error within the handling of sessions within django.contrib.sessions when using the caching backend can be exploited to manipulate session information.
+Successful exploitation requires that the session key is known and the application allows attackers to store dictionary-like objects with a valid session key in the cache.
+2) An error when verifying if URLs provided to the "URLField" field type correctly resolve can be exploited to exhaust all of the server's processes and memory by providing an URL to a malicious server.
+3) An error within the handling of redirect responses when verifying URLs provided to the "URLField" field type can be exploited to e.g. determine the existence of local files on the server by returning a redirect response to a "file://" URL.
+4) An error within the handling of the "X-Forwarded-Host" HTTP header when e.g. generating full URLs for redirect responses can be exploited to conduct cache poisoning attacks.</desc>
+	</fsa>
+	<fsa>
 		<id>744</id>
 		<date>2011-09-13</date>
 		<author>Miklos Vajna</author>
