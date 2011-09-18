@@ -43,9 +43,9 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 	  are running a fairly simple grub setup, you only need to run
 	  grubconfig after the complete upgrade. If not, then you need to
 	  add this line to your Frugalware menu entry in menu.lst. Here it
-	  is:
+	  is:<br /><br />
 
-	  initrd (frugalware grub partition)/boot/initrd.img.xz
+	  initrd (frugalware grub partition)/boot/initrd.img.xz<br /><br />
 
 	  If you encounter problems with the new kernel, please file a
 	  bug report.
