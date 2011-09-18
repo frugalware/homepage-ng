@@ -48,7 +48,9 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 	  initrd (frugalware grub partition)/boot/initrd.img.xz<br /><br />
 
 	  If you encounter problems with the new kernel, please file a
-	  bug report.
+	  bug report. But before you do, check if your root partition is
+	  /dev/sd* and not /dev/hd*. Try converting the /dev/hd* to /dev/sd*
+	  if you are having trouble.
             ]]>
         </content>
         <icon>/images/icons/warning.png</icon>
