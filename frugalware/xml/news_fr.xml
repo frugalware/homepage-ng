@@ -22,6 +22,32 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
   <post>
+    <id>216</id>
+    <title>Frugalware newsletter numéro 82</title>
+    <date>Tue, 04 Oct 2011 13:47:43 +1000</date>
+	<author>Phayz</author>
+	<hidden>0</hidden>
+	<content><![CDATA[
+		Le bulletin d'information a pour but de vous tenir informé de
+		ce qui s'est passé récemment dans le monde de Frugalware.<br
+				/><br />
+	    Au sommaire de ce numéro :
+		<ul>
+				<li>La fête pour célébrer la sortie de Frugalware a
+						été "en l'air"</li>
+				<li>Slown est officiellement développeur</li>
+				<li>Cedynamix est de retour !</li>
+				<li>Trucs et astuces - "Les alias pour le shell Bash"
+						- "Dis-moi quand tu as fini"</li>
+				<li>Lumière sur des paquets - Gource et Duplicity</li>
+				<li>Examen Frugalware #3 : les réponses</li>
+		</ul>
+
+		Vous pouvez la lire <a href="http://frugalware.org/newsletter/82">ici</a>. Nous espérons que vous l'apprécierez !
+]]>
+    </content>
+  </post>
+  <post>
     <id>215</id>
 	<title>La mise à jour du kernel et vous</title>
 	<date>Mon, 19 Sep 2011 00:57:25 +0500</date>
