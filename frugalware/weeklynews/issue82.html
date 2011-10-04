@@ -332,20 +332,15 @@
   Here's an example command which will popup a message when a CLI command
   is complete:</p>
 
-  <code>wget &lt;file&gt; &amp; notify-send --urgency=critical File
-  download is complete.</code>
+  <code>wget &lt;file&gt; ; notify-send --urgency=critical &quot;File
+  download is complete.&quot;</code>
 
-  <p>In this case a message with the text "File download is complete." will
-  appear after the command has exited, regardless of the result. If you want
-  the message to appear <strong>only</strong> if it's been successful then
-  use two apersands (&amp;) between the two commands. You could even have
-  two different messages appear, one for successful completion and another
-  if an error occurred but this is out of the scope for this tip. I can't
-  remember what happens under Xfce or KDE but on GNOME 3 a message with an
-  urgency of "critical" stays visible until you click on it. Messages with
-  other urgency ratings will hide again after a brief delay. notify-send
-  doesn't have a man page but you can see all available parameters by
-  entering "notify-send --h".</p>
+  <p>In this case a message with the text "File download is complete." will 
+  appear after the command has exited. I can't remember what happens under 
+  Xfce or KDE but on GNOME 3 a message with an urgency of "critical" stays 
+  visible until you click on it. Messages with other urgency ratings will 
+  hide again after a brief delay. notify-send doesn't have a man page but 
+  you can see all available parameters by entering "notify-send -?".</p>
 
   <p>The next time you're downloading an ISO or perhaps converting video
   files from one format to another, try notify-send and give yourself some
@@ -377,8 +372,8 @@
   a fireworks screensaver but it's much more interesting to watch. Try it 
   for yourself and I'm sure you'll be entertained, possibly for hours. :D</p>
 
-  <img src="issue82_screenshot_gource.png" alt="Gource screenshot" title=
-  "Gource screenshot" />
+  <img src="/images/newsletter/issue82_screenshot_gource.png" alt="Gource 
+  screenshot" title= "Gource screenshot" />
 
   <h4>Duplicity</h4>
 
