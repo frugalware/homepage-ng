@@ -26,6 +26,18 @@
 
 <fsas>
 	<fsa>
+		<id>746</id>
+		<date>2011-10-06</date>
+		<author>Miklos Vajna</author>
+		<package>libreoffice</package>
+		<vulnerable>3.4.2.3-1</vulnerable>
+		<unaffected>3.4.3.2-1mores1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4609</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-2713</cve>
+		<desc>Red Hat, Inc. security researcher Huzaifa Sidhpurwala reported multiple vulnerabilities in the binary Microsoft Word (doc) file format importer where custom crafted documents trigger out of bounds behaviour.
+			Thanks to Huzaifa Sidhpurwala of Red Hat Security Team for reporting this vulnerability.</desc>
+	</fsa>
+	<fsa>
 		<id>745</id>
 		<date>2011-09-17</date>
 		<author>Miklos Vajna</author>
