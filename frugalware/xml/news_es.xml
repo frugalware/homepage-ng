@@ -21,7 +21,97 @@
 Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
-    <post>
+  <post>
+    <id>216</id>
+    <title>Frugalware Newsletter Número 82</title>
+    <date>Mar, 04 Oct 2011 13:47:43 +1000</date>
+    <author>phayz</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+      La newsletter intenta manteneros al día con lo que ocurre
+      en el mundo de Frugalware.<br />
+
+      Contenidos del número:
+      <ul>
+          <li>La Frugalware Release Party estuvo "en el aire"</li>
+          <li>Slown, nuevo desarrollador oficial</li>
+          <li>¡Cedynamix ha vuelto!</li>
+          <li>Trucos y consejos - "Bash shell aliases" y "Dime cuando hayas terminado"</li>
+          <li>Paquetes interesantes - Gource y Duplicity</li>
+          <li>Frugalware Exam #3 - Respuestas</li>
+       </ul>
+ 
+      Podéis leerla <a href="/newsletter/82">aquí</a> (en inglés).
+      Esperamos que os divirtáis con su lectura.<br />
+      <br />
+      <hr style="width:25%;" align="left" />
+      Traducido por Nekrodes.
+      ]]>
+    </content>
+    <icon>/images/icons/newsletter.png</icon>
+  </post>
+  <post>
+    <id>215</id>
+    <title>Las actualizaciones del kernel y vosotros</title>
+    <date>Lun, 19 Sep 2011 00:57:25 +0500</date>
+    <author>James Buren</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+      Si pensáis actualizar o pasar a current, tendréis que tomar medidas
+      especiales. El kernel utiliza ahora initrd por defecto. De momento
+      sólo afecta a las arquitecturas i686 y x86_64, el resto no sufre cambios.
+      Si utilizáis una configuración simple de grub, necesitaréis ejecutar
+      grubconfig después de la actualización, si no lo hacéis, entonces necesitáis
+      añadir la siguiente línea a vuestro menu.lst:<br /><br />
+
+      initrd (frugalware grub partition)/boot/initrd.img.xz<br /><br />
+
+      Si encontráis algún problema con el nuevo kernel, por favor, enviadnos
+      un informe del error a través de nuestro <a href="https://bugs.frugalware.org/">bug tracker</a>,
+      pero antes de hacerlo, mirad si vuestra partición raíz es /dev/sd* y no
+      /dev/hd*. Si no es el caso, tratad de pasar de /dev/hd* a /dev/sd* para
+      ver si se corrige el problema.<br />
+      <br />
+      <hr style="width:25%;" align="left" />
+      Traducido por Nekrodes.
+      ]]>
+    </content>
+    <icon>/images/icons/warning.png</icon>
+  </post>
+  <post>
+    <id>214</id>
+    <title>Comprometido servidor importante en la infraestructura de Frugalware</title>
+    <date>Mié, 14 Sep 2011 00:57:25 +0200</date>
+    <author>Miklos Vajna</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+      Queridos usuarios,<br /><br />
+
+      Siento deciros que el 25 de Agosto uno de los servidores principales
+      de la infraestructura de Frugalware fue comprometido. Nos
+      llevó un rato encontrar las causas de cómo había sido posible,
+      si estàis interesados en los detalles podéis leerlos
+      <a href="http://article.gmane.org/gmane.linux.frugalware.devel/9899">aquí (en inglés)</a>
+
+      En resumen: encontramos que el intruso había instalado un backdoor
+      parecido al que fue instalado hace poco en kernel.org. Ya hemos reinstalado
+      el sistema operativo y tomado medidas para evitar ataques similares
+      en el futuro.<br /><br />
+
+      Por el lado bueno, hemos comprobado que ni el repositorio Git de
+      Frugalware ni los paquetes binarios fueron modificados durante el
+      ataque, así que no tengais miedo a instalar las actualizaciones
+      a través de Pacman-G2.<br /><br />
+
+      Gracias por vuestra comprensión.<br />
+      <br />
+      <hr style="width:25%;" align="left" />
+      Traducido por Nekrodes.
+       ]]>
+    </content>
+    <icon>/images/icons/warning.png</icon>
+  </post>
+     <post>
         <id>213</id>
         <title>Frugalware 1.5 (Mores) disponible</title>
         <date>Lun, 15 Ago 2011 00:39:33 +0200</date>
