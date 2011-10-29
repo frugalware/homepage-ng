@@ -28,7 +28,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
     <author>Devil505</author>
     <hidden>0</hidden>
     <content><![CDATA[
-      Abbiamo un nuovo <a href="http://wiki.frugalware.org">bug tracker</a>. Flyspray è obsoleto da tempo e abbiamo scelto <a href="http://trac.edgewall.org/">trac</a>. Tutti i ticket sono stati importati. Chi aveva un account sul precedente bts deve resettare la password come indicato nella pagina principale.<br /><br />
+      Abbiamo un nuovo <a href="http://bugs.frugalware.org">bug tracker</a>. Flyspray è obsoleto da tempo e abbiamo scelto <a href="http://trac.edgewall.org/">trac</a>. Tutti i ticket sono stati importati. Chi aveva un account sul precedente bts deve resettare la password come indicato nella pagina principale.<br /><br />
       Un ringraziamento speciale al developer Xarkam per l'ottimo lavoro svolto!<br />
       ]]>
     </content>
