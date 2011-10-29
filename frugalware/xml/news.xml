@@ -30,6 +30,19 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
   <post>
+        <id>218</id>
+        <title>New bug tracker system!</title>
+        <date>Sat, 19 Oct 2011 15:17:55 +0100</date>
+        <author>Devil505</author>
+        <hidden>0</hidden>
+        <content><![CDATA[
+        We have a new <a href="http://wiki.frugalware.org">bug tracker system</a>. Flyspray is obsolete since a while and we have chosen <a href="http://trac.edgewall.org/">trac</a>. All reports have been imported. If you has an account with the previous bts, you must reset your password as indicated on the main page.<br /><br />
+        Special thanks from Frugalware developers to Xarkam for his work!<br />
+            ]]>
+        </content>
+        <icon>/images/icons/info.png</icon>
+    </post>
+  <post>
     <id>217</id>
     <title>Frugalware 1.6pre1 (Fermus) released</title>
     <date>Mon, 10 Oct 2011 00:24:03 +0200</date>
