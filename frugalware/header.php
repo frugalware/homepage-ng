@@ -22,7 +22,7 @@ $data = genHeader();
   <link rel="stylesheet" type="text/css" href="<?php echo $fwng_root; ?>static/_proform.css" />
   <link rel="stylesheet" type="text/css" href="<?php echo $fwng_root; ?>static/common.css" />
   <link rel="stylesheet" href="<?php echo $fwng_root; ?>static/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
-  
+  <link href="https://plus.google.com/u/0/b/106911492219034194701/" rel="publisher" />
   <!-- JavaScript -->
 
   <script type="text/javascript" src="<?php echo $fwng_root; ?>static/menu.js">
