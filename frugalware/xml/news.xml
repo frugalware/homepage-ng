@@ -30,6 +30,19 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
   <post>
+        <id>219</id>
+        <title>Live CD need testers!</title>
+        <date>Wed, 7 Dec 2011 16:13:23 +0100</date>
+        <author>Devil505</author>
+        <hidden>0</hidden>
+        <content><![CDATA[
+        Our live-cd will be back soon since Baste take in charge the project. Some iso images are available <a href="http://ftp.frugalware.org/pub/other/people/baste/livecd/">here</a>.
+	We are looking for testers. These iso images are still beta and only in English and French. Thanks to report bugs to Baste on #frugalware irc channel or the <a href="http://bugs.frugalware.org">bug tracker system</a>.
+            ]]>
+        </content>
+        <icon>/images/icons/info.png</icon>
+    </post>
+  <post>
         <id>218</id>
         <title>New bug tracker system!</title>
         <date>Sat, 19 Oct 2011 15:17:55 +0100</date>
