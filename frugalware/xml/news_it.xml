@@ -22,6 +22,19 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
   <post>
+    <id>219</id>
+    <title>Il Live CD ha bisogno di tester!</title>
+    <date>Wed, 7 Dec 2011 16:13:23 +0100</date>
+    <author>Devil505</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+      Il live-cd di Frugalware tornerà in vita presto, il developer Baste si sta dedicando al progetto Fwlive. Alcune immagini iso sono disponibili <a href="http://ftp.frugalware.org/pub/other/people/baste/livecd/">qui</a>.
+      Stiamo cercando dei tester. Queste immagini iso sono ancora in beta e solo in inglese e francese. Potete segnalare i problemi, avvisi e richieste a Baste sul canale irc #frugalware o sul<a href="http://bugs.frugalware.org">bug tracker system</a>.
+      ]]>
+    </content>
+    <icon>/images/icons/info.png</icon>
+  </post>
+  <post>
     <id>218</id>
     <title>Nuovo bug tracker!</title>
     <date>Sat, 19 Oct 2011 15:17:55 +0100</date>
