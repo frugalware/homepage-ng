@@ -30,6 +30,46 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
   <post>
+    <id>220</id>
+    <title>Frugalware 1.6pre2 (Fermus) released</title>
+    <date>Mon, 19 Dec 2011 00:00:00 +0200</date>
+    <author>Devil505</author>
+    <hidden>1</hidden>
+    <content><![CDATA[
+      The Frugalware Developer Team is pleased to <a href="/news/220">announce</a> the immediate availability of Frugalware 1.6pre2, the second technical preview of the upcoming 1.6 stable release.</p>
+    <p>Here are some of the major improvements, fixes and updates since 1.6pre1:<br />
+      <ul>
+        <li>Package updates:
+          <ul>
+            <li>Linux kernel 3.1</li>
+            <li>XOrg server 1.11.2</li>
+            <li>KDE SC 4.7.4</li>
+            <li>Firefox 8.0.1</li>
+            <li>Chromium 16.0.912.63</li>
+            <li>Blender 2.60</li>
+            <li>1.1.0 release of the core EFL component</li>       
+          </ul>
+        </li>
+        <li>New features:
+          <ul>
+            <li>All services used by the default installation now have native systemd units</li>
+            <li>Installer images now use isohybrid on x86, separate USB images no longer provided.</li>
+            <li>Chrony is now the default NTP client.</li>
+            <li>/boot/grub/menu.lst and /etc/fstab now contains UUID's on new installs</li>
+          </ul>
+        </li>
+      </ul>
+      Please refer to the Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Testing ChangeLog</a> for more information.<br />
+      Download for i686: See our <a href="http://frugalware.org/download/frugalware-testing-iso">mirror list</a>. Don't forget to check the <a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">integrity</a> of the install images before burning!<br />
+      <b>NOTE</b>: Click <a href="/docs/install#_choosing_installation_flavor">here</a> to read more about what media you need for the installation. <br />
+      <br />
+      Oh, and by the way, we wish you a Merry Christmas !
+      <br />
+      <center><img src="http://frugalware.org/images/logo-christmas.png" alt="Frugalware Christmas logo" /></center><br />
+      ]]>
+    </content>
+  </post>
+  <post>
         <id>219</id>
         <title>Live CD need testers!</title>
         <date>Wed, 7 Dec 2011 16:13:23 +0100</date>
