@@ -26,6 +26,18 @@
 
 <fsas>
 	<fsa>
+		<id>747</id>
+		<date>2011-12-23</date>
+		<author>Miklos Vajna</author>
+		<package>drupal6-views</package>
+		<vulnerable>6.x_2.12-2</vulnerable>
+		<unaffected>6.x_2.14-1mores1</unaffected>
+		<bts>https://bugs.frugalware.org/ticket/4632</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-4113</cve>
+		<desc>A vulnerability has been reported in the Views module for Drupal, which can be exploited by malicious people to conduct SQL injection attacks.
+			Input passed via certain filters or arguments on certain types of views is not properly sanitised before being used in SQL queries. This can be exploited to manipulate SQL queries by injecting arbitrary SQL code.</desc>
+	</fsa>
+	<fsa>
 		<id>746</id>
 		<date>2011-10-06</date>
 		<author>Miklos Vajna</author>
