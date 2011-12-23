@@ -26,6 +26,17 @@
 
 <fsas>
 	<fsa>
+		<id>749</id>
+		<date>2011-12-23</date>
+		<author>Miklos Vajna</author>
+		<package>roundcube</package>
+		<vulnerable>0.5.4-1mores1</vulnerable>
+		<unaffected>0.7-1mores1</unaffected>
+		<bts>https://bugs.frugalware.org/ticket/4642</bts>
+		<cve>No CVE, see http://sourceforge.net/news/?group_id=139281&amp;id=305129.</cve>
+		<desc>Beside fixing bugs the developers added some security improvements which will protect the Roundcube users from XSS and clickjacking attacks.</desc>
+	</fsa>
+	<fsa>
 		<id>748</id>
 		<date>2011-12-23</date>
 		<author>Miklos Vajna</author>
