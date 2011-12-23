@@ -26,6 +26,17 @@
 
 <fsas>
 	<fsa>
+		<id>750</id>
+		<date>2011-12-23</date>
+		<author>Miklos Vajna</author>
+		<package>phpmyadmin</package>
+		<vulnerable>3.4.7.1-1mores1</vulnerable>
+		<unaffected>3.4.8-1mores1</unaffected>
+		<bts>https://bugs.frugalware.org/ticket/4640</bts>
+		<cve>http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-4634</cve>
+		<desc>Using crafted database names, it was possible to produce XSS in the Database Synchronize and Database rename panels. Using an invalid and crafted SQL query, it was possible to produce XSS when editing a query on a table overview panel or when using the view creation dialog. Using a crafted column type, it was possible to produce XSS in the table search and create index dialogs.</desc>
+	</fsa>
+	<fsa>
 		<id>749</id>
 		<date>2011-12-23</date>
 		<author>Miklos Vajna</author>
