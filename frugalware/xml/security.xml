@@ -26,6 +26,23 @@
 
 <fsas>
 	<fsa>
+		<id>748</id>
+		<date>2011-12-23</date>
+		<author>Miklos Vajna</author>
+		<package>wireshark</package>
+		<vulnerable>1.6.2-1mores1</vulnerable>
+		<unaffected>1.6.3-1mores1</unaffected>
+		<bts>https://bugs.frugalware.org/ticket/4633</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-4100
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-4101
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-4102</cve>
+		<desc>Multiple vulnerabilities have been reported in Wireshark, which can be exploited by malicious people to cause a DoS (Denial of Service) and compromise a vulnerable system.
+1) An error related to an uninitialised variable within the CSN.1 dissector can be exploited to cause a crash.
+2) A NULL pointer dereference error within the Infiniband dissector can be exploited to cause a crash.
+3) An error within the ERF file parser can be exploited to cause a heap-based buffer overflow.
+Successful exploitation of this vulnerability may allow execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>747</id>
 		<date>2011-12-23</date>
 		<author>Miklos Vajna</author>
