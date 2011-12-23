@@ -30,6 +30,43 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
   <post>
+    <id>221</id>
+    <title>Frugalware Christmas gift</title>
+    <date>Sat, 24 Dec 2011 09:00:00 +0200</date>
+    <author>Devil505</author>
+    <hidden>1</hidden>
+    <content><![CDATA[
+<center><img src="http://frugalware.org/images/logo-christmas.png" alt="Frugalware Christmas logo" /></center><br />
+In few hours, it's Christmas, and guess what ? The Frugalware Developer Team is pleased to offer you a gift: the new version of FWLive (Frugalware Live CD/DVD).<br />
+      <ul>
+        <li>FWLive is available in different versions:
+          <ul>
+            <li>GNOME Desktop Live-CD (fwlive-gnome-*.iso)</li>
+            <li>KDE Desktop Live-CD (fwlive-kde-*.iso)</li>
+            <li>XFCE Desktop Live-CD (fwlive-xfce-*.iso)</li>
+            <li>LXDE Desktop Live-CD (fwlive-lxde-*.iso)</li>
+            <li>Educative Edition Live-CD (fwlive-educative-*.iso)</li>
+            <li>Gamer Live-DVD Edition (fwlive-gamer-*.iso)</li>     
+          </ul>
+        </li>
+        <li>To know:
+          <ul>
+            <li>By default, the keyboard is qwerty</li>
+            <li>For now, the only languages available are: en,de,fr,it,hu</li>
+            <li>Default user login and password are: fwlive.</li>
+            <li>Root's password is: fwlive</li>
+            <li>The Frugalware Graphical Installer is added by default</li>
+            <li>The Educative Edition is dedicated for kid's learning</li>
+            <li>The Gamer Edition is a live DVD full of opensource games</li>
+          </ul>
+        </li>
+      </ul>
+NOTE: <b>This version is still beta</b><br />
+Download for i686 and x86_64: Go <a href="ftp://ftp.frugalware.org/pub/frugalware/frugalware-testing-iso/">here</a>. ISO iamges with suffixe -Fr are version with French by default (and a result with azerty keymap).<br />
+      ]]>
+    </content>
+  </post>
+  <post>
     <id>220</id>
     <title>Frugalware 1.6pre2 (Fermus) released</title>
     <date>Mon, 19 Dec 2011 00:00:00 +0200</date>
