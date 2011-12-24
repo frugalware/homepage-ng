@@ -22,6 +22,43 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
   <post>
+    <id>221</id>
+    <title>Frugalware Christmas gift</title>
+    <date>Sat, 24 Dec 2011 09:00:00 +0200</date>
+    <author>Devil505</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+      <center><img src="http://frugalware.org/images/logo-christmas.png" alt="Frugalware Christmas logo" /></center><br />
+      Tra poche ore è Natale! Il team di Frugalware è lieto di potervi offrire un regalo: la nuova versione di FWLive (Frugalware Live CD/DVD).<br />
+      <ul>
+        <li>FWLive è disponibile in diverse versioni:
+          <ul>
+            <li>GNOME Desktop Live-CD (fwlive-gnome-*.iso)</li>
+            <li>KDE Desktop Live-CD (fwlive-kde-*.iso)</li>
+            <li>XFCE Desktop Live-CD (fwlive-xfce-*.iso)</li>
+            <li>LXDE Desktop Live-CD (fwlive-lxde-*.iso)</li>
+            <li>Educative Edition Live-CD (fwlive-education-*.iso)</li>
+            <li>Gamer Live-DVD Edition (fwlive-gamer-*.iso)</li>
+          </ul>
+        </li>
+        <li>Da sapere:
+          <ul>
+            <li>Di default, il layout della tastiera è qwerty</li>
+            <li>Per adesso le uniche lingue disponibili sono: en,de,fr,it,hu</li>
+            <li>Il nome utente e password per accedere sono: fwlive.</li>
+            <li>La password di amministratore è: fwlive</li>
+            <li>E' presente l'installer grafico</li>
+            <li>The Educative Edition è dedicata all'apprendimento dei ragazzi</li>
+            <li>The Gamer Edition è un DVD pieno di giochi opensource</li>
+          </ul>
+        </li>
+      </ul>
+      NOTA: <b>Questa versione è ancora una beta</b><br />
+      Download per i686 e x86_64: Guardate la nostra <a href="http://frugalware.org/download/frugalware-testing-iso">lista dei mirror</a>. Non dimenticate di controllare <a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">l'integrità</a> delle immagini di installazione prima di masterizzarle!. Le immagini ISO con suffisso -Fr sono versioni che hanno di default la lingua francese (e il layout della tastiera azerty).<br />
+      ]]>
+    </content>
+  </post>
+  <post>
     <id>220</id>
     <title>Rilasciata Frugalware 1.6pre2 (Fermus)</title>
     <date>Mon, 19 Dec 2011 00:00:00 +0200</date>
