@@ -34,7 +34,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
     <title>Frugalware Christmas gift</title>
     <date>Sat, 24 Dec 2011 09:00:00 +0200</date>
     <author>Devil505</author>
-    <hidden>1</hidden>
+    <hidden>0</hidden>
     <content><![CDATA[
 <center><img src="http://frugalware.org/images/logo-christmas.png" alt="Frugalware Christmas logo" /></center><br />
 In few hours, it's Christmas, and guess what ? The Frugalware Developer Team is pleased to offer you a gift: the new version of FWLive (Frugalware Live CD/DVD).<br />
@@ -62,7 +62,7 @@ In few hours, it's Christmas, and guess what ? The Frugalware Developer Team is 
         </li>
       </ul>
 NOTE: <b>This version is still beta</b><br />
-Download for i686 and x86_64: Go <a href="ftp://ftp.frugalware.org/pub/frugalware/frugalware-testing-iso/">here</a>. ISO images with suffixe -Fr are version with French by default (and a result with azerty keymap).<br />
+Download for i686 and x86_64: See our <a href="http://frugalware.org/download/frugalware-testing-iso">mirror list</a>. Don't forget to check the <a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">integrity</a> of the install images before burning!. ISO images with suffixe -Fr are version with French by default (and a result with azerty keymap).<br />
       ]]>
     </content>
   </post>

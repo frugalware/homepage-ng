@@ -26,7 +26,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
     <title>Cadeau de Noël de Frugalware</title>
     <date>Sat, 24 Dec 2011 09:00:00 +0200</date>
     <author>Devil505</author>
-    <hidden>1</hidden>
+    <hidden>0</hidden>
     <content><![CDATA[
 <center><img src="http://frugalware.org/images/logo-christmas.png" alt="Frugalware Christmas logo" /></center><br />
 Dans quelques heures, c'est Noël, et devinez quoi ? L'équipe de développement de Frugalware a le plaisir de vous offrir un cadeau: la nouvelle version de FWLive (Frugalware Live CD/DVD).<br />
@@ -54,7 +54,7 @@ Dans quelques heures, c'est Noël, et devinez quoi ? L'équipe de développement
         </li>
       </ul>
 NOTE: <b>Cette version est encore beta</b><br />
-Téléchargement pour i686 et x86_64: Rendez-vous <a href="ftp://ftp.frugalware.org/pub/frugalware/frugalware-testing-iso/">ici</a>. Les images ISO avec le suffixe -Fr sont des versions en français (et donc avec clavier en azerty).<br />
+Téléchargement pour i686 et x86_64:  consultez notre <a href="http://frugalware.org/download/frugalware-testing-iso">Liste de miroirs</a>. N'oubliez pas de vérifier <a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">l'intégrité</a> des fichiers .iso avant de les graver. Les images ISO avec le suffixe -Fr sont des versions en français (et donc avec clavier en azerty).<br />
       ]]>
     </content>
   </post>
