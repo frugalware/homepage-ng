@@ -26,7 +26,10 @@ to an attribute of <post>
 1) If you modify this file, be sure it's still valid - read /hooks/README!
 
 2) Please use date and time in RFC 2822 format.
-Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
+Example: Mon, 07 Aug 2006 12:34:56 -0600
+To get the current time in this format, run in your shell: date -R
+
+-->
 
 <news>
   <post>
