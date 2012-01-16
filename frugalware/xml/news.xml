@@ -72,7 +72,7 @@ Over 20 new puzzles, strategy, board and FPS games were added to the repository,
 
 <strong>New Bug Tracker</strong><br /><br />
 
-With a lot of effort from Xarkam, the old Flyspray bug tracker was replaced with a shiny, new deployment of Trac. Amazingly he exported the existing data from Flyspray into the new BTS. Since requests and bugs are both tracked in the BTS, it's a important part of the Frugalware infrastructure.<br /><br />
+With a lot of effort from Xarkam, the old Flyspray bug tracker was replaced with a shiny, new deployment of Trac. Amazingly he exported the existing data from Flyspray into the new BTS. Since requests and bugs are both tracked in the BTS, it's an important part of the Frugalware infrastructure.<br /><br />
 
 <strong>Farewell to Carl</strong><br /><br />
 
@@ -84,7 +84,7 @@ We said farewell to Carl Andersen, who had been providing Danish translation for
 
 <strong>What's planned for 2012?</strong><br /><br />
 
-Although 2011 was a busy year, 2012 is sure to be exciting too. There are several projects already underway which will probably be completed during the year. FWLive will continue and hopefully become part a new option for each release. Bouleetbil is contnuing to work on pyfpm, a GUI package manager developed in Python. Although we already have a GUI package manager it's no longer being maintained or developed.<br /><br />
+Although 2011 was a busy year, 2012 is sure to be exciting too. There are several projects already underway which will probably be completed during the year. FWLive will continue and hopefully become part a new option for each release. Bouleetbil is continuing to work on pyfpm, a GUI package manager developed in Python. Although we already have a GUI package manager it's no longer being maintained or developed.<br /><br />
 
 Now is a great time to get involved in Frugalware's development, helping package management, translation, documentation, testing or anything else you would like to do. If you're interested, post a message in the forums and one of the development team will help you get started. There's no minimum level of technical knowledge or experience required because there are many non-technical tasks which you can help with. Let's make 2012 a year to remember!
             ]]>
