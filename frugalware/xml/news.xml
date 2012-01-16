@@ -50,7 +50,7 @@ First on the list is the two scheduled releases: 1.4 and 1.5, both of which were
 <li>fwife, the GUI Frugalware installer developed by Elentir, was available as part of the default installation.</li>
 </ul>
 
-1.5<br /><br />
+1.5<br />
 <ul>
 <li>Frugalware was available for the ARM architecture, exciting all those who had one, maybe even two or more ARMs. (Sorry, I couldn't resist such a bad English-language joke).</li>
 <li>systemd was introduced as the new init system, which meant we had a more reliable, faster init system. Although a lot of discussion about systemd has been focused on boot-up time, that was not the only focus of its design.</li>
