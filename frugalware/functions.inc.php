@@ -169,7 +169,8 @@ function getllang($lang)
 		"cs" => "cs_CZ",
 		"tr" => "tr_TR",
 		"es" => "es_ES",
-		"it" => "it_IT"
+		"it" => "it_IT",
+		"de" => "de_DE"
 	);
 	return $langs[$lang];
 }

@@ -109,6 +109,8 @@ $langcontent = '<div class="imgcontent">
 	  <a href="' . $langpage . 'es"><img alt="' . gettext( 'Change language' ) . '" title="' . gettext( 'Change language' ) . '" src="' . $fwng_root . 'images/spanish.gif" border="0" /></a>
 	  |
 	  <a href="' . $langpage . 'it"><img alt="' . gettext( 'Change language' ) . '" title="' . gettext( 'Change language' ) . '" src="' . $fwng_root . 'images/italian.gif" border="0" /></a>
+	  |
+	  <a href="' . $langpage . 'de"><img alt="' . gettext( 'Change language' ) . '" title="' . gettext( 'Change language' ) . '" src="' . $fwng_root . 'images/german.gif" border="0" /></a>
 	<!--
 	  |
 	  <a href="' . $langpage . 'nl"><img alt="' . gettext( 'Change language' ) . '" title="' . gettext( 'Change language' ) . '" src="' . $fwng_root . 'images/dutch.gif" border="0" /></a>
