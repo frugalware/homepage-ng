@@ -33,6 +33,43 @@ To get the current time in this format, run in your shell: date -R
 
 <news>
   <post>
+    <id>224</id>
+    <title>Frugalware 1.6rc2 (Fermus) released</title>
+    <date>Sun, 29 Jan 2012 18:00:57 -0600</date>
+    <author>ryuo</author>
+    <hidden>1</hidden>
+    <content><![CDATA[
+      The Frugalware Developer Team is pleased to <a href="/news/224">announce</a> the immediate availability of Frugalware 1.6rc2, the second technical preview of the upcoming 1.6 stable release.</p>
+    <p>Here are some of the major improvements, fixes and updates since 1.6rc1:<br />
+      <ul>
+        <li>Package updates:
+          <ul>
+            <li>Linux kernel 3.1.10</li>
+            <li>LibreOffice 3.4.5</li>
+            <li>~100 updated packages</li>
+            <li>27 new packages</li>
+          </ul>
+        </li>
+        <li>New features:
+          <ul>
+            <li>New cpupower (<a href="http://lwn.net/Articles/433002/">LWN article</a>) and <a href="https://perf.wiki.kernel.org/">perf</a> packages</li>
+            <li>kmod replaced module-init-tools</li>
+          </ul>
+        </li>
+	<li>Fixes:
+          <ul>
+            <li>The installer now handles network timeout errors</li>
+            <li>Documentation updates</li>
+          </ul>
+	</li>
+      </ul>
+      Please refer to the Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Testing ChangeLog</a> for more information.<br />
+      Download for i686: See our <a href="http://frugalware.org/download/frugalware-testing-iso">mirror list</a>. Don't forget to check the <a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">integrity</a> of the install images before burning!<br />
+      <b>NOTE</b>: Click <a href="/docs/install#_choosing_installation_flavor">here</a> to read more about what media you need for the installation. <br />
+      ]]>
+    </content>
+  </post>
+  <post>
         <id>223</id>
         <title>Review of 2011</title>
         <date>Tue, 17 Jan 2012 09:07:14 +1000</date>
@@ -141,7 +178,7 @@ In few hours, it's Christmas, and guess what ? The Frugalware Developer Team is 
             <li>XFCE Desktop Live-CD (fwlive-xfce-*.iso)</li>
             <li>LXDE Desktop Live-CD (fwlive-lxde-*.iso)</li>
             <li>Educative Edition Live-CD (fwlive-education-*.iso)</li>
-            <li>Gamer Live-DVD Edition (fwlive-gamer-*.iso)</li>     
+            <li>Gamer Live-DVD Edition (fwlive-gamer-*.iso)</li>
           </ul>
         </li>
         <li>To know:
@@ -179,7 +216,7 @@ Download for i686 and x86_64: See our <a href="http://frugalware.org/download/fr
             <li>Firefox 8.0.1</li>
             <li>Chromium 16.0.912.63</li>
             <li>Blender 2.60</li>
-            <li>1.1.0 release of the core EFL component</li>       
+            <li>1.1.0 release of the core EFL component</li>
           </ul>
         </li>
         <li>New features:
@@ -692,7 +729,7 @@ Download for i686 and x86_64: See our <a href="http://frugalware.org/download/fr
         <author>Devil505</author>
         <hidden>0</hidden>
         <content><![CDATA[
-        <a href="http://www.freedesktop.org/wiki/Software/systemd">systemd</a> is now the default init system. 
+        <a href="http://www.freedesktop.org/wiki/Software/systemd">systemd</a> is now the default init system.
         Frugalware current users must do <i>pacman -Sy systemd</i> before upgrading their system.<br />
             ]]>
         </content>
