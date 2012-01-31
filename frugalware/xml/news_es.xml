@@ -22,6 +22,265 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
   <post>
+    <id>224</id>
+    <title>Frugalware 1.6rc2 (Fermus) disponible</title>
+    <date>Dom, 29 Ene 2012 18:00:57 -0600</date>
+    <author>ryuo</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+      El Equipo de Desarrolladores de Frugalware tiene el placer de <a href="/news/224">nunciaros</a> la disponibilidad inmediata de Frugalware 1.6rc2, la segunda candidata de la futura versión estable 1.6.</p>
+    <p>Aquí tenéis algunas de las mejoras, correcciones y actualizaciones más importantes desde la 1.6rc1:<br />
+      <ul>
+        <li>Paquetes actualizados:
+          <ul>
+            <li>Linux kernel 3.1.10</li>
+            <li>LibreOffice 3.4.5</li>
+            <li>~100 paquetes actualizados</li>
+            <li>27 nuevos paquetes</li>
+          </ul>
+        </li>
+        <li>Nuevas mejoras:
+          <ul>
+            <li>Nueva cpupower (<a href="http://lwn.net/Articles/433002/">artículo en LWN</a>) y paquetes <a href="https://perf.wiki.kernel.org/">perf</a></li>
+            <li>kmod reemplaza module-init-tools</li>
+          </ul>
+        </li>
+	<li>Errores corregidos:
+          <ul>
+            <li>El instalador se encarga ahora de los errores de timeout de la red</li>
+            <li>Actualización de la documentación</li>
+          </ul>
+	</li>
+      </ul>
+      Por favor, leed el <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">ChangeLog de Testing</a> (en inglés) de Frugalware para más información.<br />
+
+      Descargar las iso para i686: Mirad nuestra <a href="http://frugalware.org/download/frugalware-testing-iso">lista de servidores</a>. ¡No olvidéis comprobar la <a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">integridad</a> de las imágenes de instalación antes de grabarlas!<br />
+
+      <b>NOTA</b>: Haz click <a href="/docs/install#_choosing_installation_flavor">aquí</a> (en inglés) para saber más sobre qué dispositivo necesitas para la instalación. <br />      
+      <br />
+      <hr style="width:25%;" align="left" />
+      Traducido por Nekrodes.
+       ]]>
+    </content>
+  </post>
+  <post>
+        <id>223</id>
+        <title>Review of 2011</title>
+        <date>Mar, 17 Ene 2012 09:07:14 +1000</date>
+        <author>phayz</author>
+        <hidden>0</hidden>
+        <content><![CDATA[
+Before too much of the new year goes past we wanted to take the opportunity to review the achievements of 2011 and look ahead to what's planned for 2012.  It's an exciting period in Frugalware's development with the development team making progress in many areas. This article highlights some of the major achievements and planned projects but not all of them. If you are interested in following the progress of any particular project, subscribe to the appropriate mailing list: frugalware-devel if you're interested in development discussion of all Frugalware projects, and frugalware-git-commits if you want to track individual commits.<br /><br />
+
+First on the list is the two scheduled releases: 1.4 and 1.5, both of which were released on time. Long-time users of Frugalware have become familiar with the twice-a-year release of stable editions. These don't happen by magic but instead are the result of the development team's hard work. The number of packages available in the repository continues to increase and so does the workload of maintaining them. Many thanks to all the development team, both old and new (in terms of their time on the development team, not their ages. :P ). Each of last years' releases had significant improvements and the highlights were:<br /><br />
+
+1.4<br />
+<ul>
+<li>The Java development kit was changed from the binary Java SDK provided by Oracle to OpenJDK. This was in fact a great change because later in the year, Oracle changed the distribution licence which required all distributions to remove it from their repositories. Oracle's future JDKs will be based on OpenJDK anyway.</li>
+<li>LibreOffice was forked from OpenOffice and available almost immediately after it was publicly released. Of course it helps that Frugalware's leader - VMiklos - is also a LibreOffice developer. :D</li>
+<li>fwife, the GUI Frugalware installer developed by Elentir, was available as part of the default installation.</li>
+</ul>
+
+1.5<br />
+<ul>
+<li>Frugalware was available for the ARM architecture, exciting all those who had one, maybe even two or more ARMs. (Sorry, I couldn't resist such a bad English-language joke).</li>
+<li>systemd was introduced as the new init system, which meant we had a more reliable, faster init system. Although a lot of discussion about systemd has been focused on boot-up time, that was not the only focus of its design.</li>
+</ul>
+
+There were also significant improvements in other areas:<br /><br />
+
+<strong>FWLive</strong><br /><br />
+
+FWlive, the Frugalware live CD was resurrected by Baste after a few years without any development. The project was not entirely abandoned but none of the active developers had enough time to devote to it. Thankfully Baste made great progress and a beta release is already available. Having a live CD available is great because it means that anyone interested in trying Frugalware can do so without changing or possibly harming their PC or laptop.<br /><br />
+
+<strong>Artwork</strong><br /><br />
+
+The default themeing applied to all desktop environments continues to improve, mainly thanks to Devil505. Themeing includes a custom desktop background, icons theme, window manager theme, GUI widgets theme, mouse cursor theme, and login manager theme. Together they give they make the default desktop of all desktop environments look fantastic. The result is so good that it was mentioned by the Linux Outlaws podcast when they mentioned Frugalware 1.4's release.<br /><br />
+
+<strong>Games, games, games</strong><br /><br />
+
+Over 20 new puzzles, strategy, board and FPS games were added to the repository, including: Megaglest, 0 A.D., Bos Wars, Frogatto, Widelands and Red Eclipse. Just when you thought you might get something productive done, a developer packages a new game. :D<br /><br />
+
+<strong>New Bug Tracker</strong><br /><br />
+
+With a lot of effort from Xarkam, the old Flyspray bug tracker was replaced with a shiny, new deployment of Trac. Amazingly he exported the existing data from Flyspray into the new BTS. Since requests and bugs are both tracked in the BTS, it's an important part of the Frugalware infrastructure.<br /><br />
+
+<strong>Farewell to Carl</strong><br /><br />
+
+We said farewell to Carl Andersen, who had been providing Danish translation for all Frugalware projects over several years. He moved on to using another Linux distribution and we wished him well. One of Frugalware's aim is to be accessible to as many people as possible, so translations such as those provided by Carl are vital. It may not be exciting work, nor bring fame, but it without many people simply wouldn't be able to use Frugalware at all.<br /><br />
+
+<strong>New Developers</strong><br /><br />
+
+2011 was a great year for the development team, with several new members and some returning after a break. Priorities and circumstances change over time for everyone so the team will never stay the same all the time. It's important that we have new members joining, with fresh ideas and enthusiasm. I'm not saying that the existing developers are getting old but time marches on for us all. Cedynamix and Jercel returned from a break and we were excited to have them return. New members to the development team included: Melko, Slown, Baste, Centuri0.<br /><br />
+
+<strong>What's planned for 2012?</strong><br /><br />
+
+Although 2011 was a busy year, 2012 is sure to be exciting too. There are several projects already underway which will probably be completed during the year. FWLive will continue and hopefully become part a new option for each release. Bouleetbil is continuing to work on pyfpm, a GUI package manager developed in Python. Although we already have a GUI package manager it's no longer being maintained or developed.<br /><br />
+
+Now is a great time to get involved in Frugalware's development, helping package management, translation, documentation, testing or anything else you would like to do. If you're interested, post a message in the forums and one of the development team will help you get started. There's no minimum level of technical knowledge or experience required because there are many non-technical tasks which you can help with. Let's make 2012 a year to remember!
+      <br />
+      <hr style="width:25%;" align="left" />
+      Traducido por Nekrodes.
+             ]]>
+        </content>
+        <icon>/images/icons/info.png</icon>
+  </post>
+  <post>
+    <id>222</id>
+    <title>Frugalware 1.6rc1 (Fermus) disponible</title>
+    <date>Dom, 15 Ene 2012 18:00:45 -0600</date>
+    <author>ryuo</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+      El Equipo de Desarrolladores de Frugalware tiene el placer de <a href="/news/222">nunciaros</a> la disponibilidad inmediata de Frugalware 1.6rc1, la primera candidata de la futura versión estable 1.6.</p>
+    <p>Aquí tenéis algunas de las mejoras, correcciones y actualizaciones más importantes desde la 1.6pre2:<br />
+      <ul>
+        <li>Paquetes actualizados:
+          <ul>
+            <li>Linux kernel 3.1.8</li>
+            <li>Systemd 38</li>
+            <li>Firefox 9.0.1</li>
+            <li>383 paquetes actualizados</li>
+            <li>121 paquetes nuevos</li>
+            <li>8 paquetes remplazados</li>
+          </ul>
+        </li>
+        <li>Nuevas mejoras:
+          <ul>
+            <li>¡Después de estar fuera durante 6 lanzamientos, Fwlive vuelve al ataque!</li>
+            <li>Disponible el <a href="http://cinnamon.linuxmint.com/">Esritorio Cinnamon</a> como paquete.</li>
+          </ul>
+        </li>
+      </ul>
+      Por favor, leed el <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">ChangeLog de Testing</a> (en inglés) de Frugalware para más información.<br />
+
+      Descargar las iso para i686: Mirad nuestra <a href="http://frugalware.org/download/frugalware-testing-iso">lista de servidores</a>. ¡No olvidéis comprobar la <a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">integridad</a> de las imágenes de instalación antes de grabarlas!<br />
+
+      <b>NOTA</b>: Haz click <a href="/docs/install#_choosing_installation_flavor">aquí</a> (en inglés) para saber más sobre qué dispositivo necesitas para la instalación. <br />
+      <br />
+      <hr style="width:25%;" align="left" />
+      Traducido por Nekrodes.
+       ]]>
+    </content>
+  </post>
+  <post>
+    <id>221</id>
+    <title>Regalo de Navidad de Frugalware</title>
+    <date>Sáb, 24 Dic 2011 09:00:00 +0200</date>
+    <author>Devil505</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+<center><img src="http://frugalware.org/images/logo-christmas.png" alt="Frugalware Christmas logo" /></center><br />
+Dentro de pocas horas es Navidad y ¿sabéis qué? El Equipo de Desarrollo de Frugalware está orgulloso de ofreceros un regalo: la nueva versión de FWLive (Frugalware Live CD/DVD).<br />
+      <ul>
+        <li>FWLive está disponible en diferentes versiones:
+          <ul>
+            <li>GNOME Desktop Live-CD (fwlive-gnome-*.iso)</li>
+            <li>KDE Desktop Live-CD (fwlive-kde-*.iso)</li>
+            <li>XFCE Desktop Live-CD (fwlive-xfce-*.iso)</li>
+            <li>LXDE Desktop Live-CD (fwlive-lxde-*.iso)</li>
+            <li>Educative Edition Live-CD (fwlive-education-*.iso)</li>
+            <li>Gamer Live-DVD Edition (fwlive-gamer-*.iso)</li>
+          </ul>
+        </li>
+        <li>A saber:
+          <ul>
+            <li>El teclado por defecto está en qwerty</li>
+            <li>De momento los únicos idiomas disponibles son: en,de,fr,it,hu</li>
+            <li>El usuario y contraseña del sistema son: fwlive.</li>
+            <li>La contraseña de root es: fwlive</li>
+            <li>Por defecto se utiliza el Instalador Gráfico de Frugalware</li>
+            <li>La Edición Educativa está dedicada al aprendizaje de los niños</li>
+            <li>La Edición Gamer es un live DVD lleno de juegos opensource</li>
+          </ul>
+        </li>
+      </ul>
+NOTA: <b>Esta versión está aún en beta</b><br />
+ Descargar las iso para i686 y x86_64: Mirad nuestra <a href="http://frugalware.org/download/frugalware-testing-iso">lista de servidores</a>. ¡No olvidéis comprobar la <a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">integridad</a> de las imágenes de instalación antes de grabarlas!. Las imágenes con el sufijo -Fr son las versiones en francés con un teclado por defecto en azerty.<br />
+      <br />
+      <hr style="width:25%;" align="left" />
+      Traducido por Nekrodes.
+       ]]>
+    </content>
+  </post>
+  <post>
+    <id>220</id>
+    <title>Frugalware 1.6pre2 (Fermus) disponible</title>
+    <date>Lun, 19 Dic 2011 00:00:00 +0200</date>
+    <author>Devil505</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+      El Equipo de Desarrolladores de Frugalware tiene el placer de <a href="/news/220">nunciaros</a> la disponibilidad inmediata de Frugalware 1.6pre2, la segunda revisión técnica de la futura versión estable 1.6.</p>
+    <p>Aquí tenéis algunas de las mejoras, correcciones y actualizaciones más importantes desde la 1.6pre1:<br />
+      <ul>
+        <li>Paquetes actualizados:
+          <ul>
+            <li>Linux kernel 3.1</li>
+            <li>XOrg server 1.11.2</li>
+            <li>KDE SC 4.7.4</li>
+            <li>Firefox 8.0.1</li>
+            <li>Chromium 16.0.912.63</li>
+            <li>Blender 2.60</li>
+            <li>La versión 1.1.0 del componente central de las EFL</li>
+          </ul>
+        </li>
+        <li>Nuevas mejoras:
+          <ul>
+          <li>Todos los servicios usados por defecto en la instalación tienen unidades nativas de systemd</li>
+            <li>El instalador de las imágenes usa isohybrid en x86, ya no se darán imágenes separadas para las memorias USB.</li>
+            <li>Chrony es el client NTP por defecto.</li>
+            <li>/boot/grub/menu.lst y /etc/fstab contienen las UUID en las nuevas instalaciones.</li>
+          </ul>
+        </li>
+      </ul>
+      Por favor, leed el <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">ChangeLog de Testing</a> (en inglés) de Frugalware para más información.<br />
+
+      Descargar las iso para i686: Mirad nuestra <a href="http://frugalware.org/download/frugalware-testing-iso">lista de servidores</a>. ¡No olvidéis comprobar la <a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">integridad</a> de las imágenes de instalación antes de grabarlas!<br />
+
+      <b>NOTA</b>: Haz click <a href="/docs/install#_choosing_installation_flavor">aquí</a> (en inglés) para saber más sobre qué dispositivo necesitas para la instalación. <br />
+      <br />
+      ¡Ah, y antes de que se nos olvide, os deseamos Feliz Navidad!
+      <br />
+      <center><img src="http://frugalware.org/images/logo-christmas.png" alt="Frugalware Christmas logo" /></center><br />
+      <br />
+      <hr style="width:25%;" align="left" />
+      Traducido por Nekrodes.
+       ]]>
+    </content>
+  </post>
+  <post>
+        <id>219</id>
+        <title>¡Se necesita probar el Live CD!</title>
+        <date>Mié, 7 Dic 2011 16:13:23 +0100</date>
+        <author>Devil505</author>
+        <hidden>0</hidden>
+        <content><![CDATA[
+        Dentro de poco nuestro live-cd volverá ya que Baste se encarga del proyecto Fwlive. Algunas imágenes ISO están disponibles <a href="http://ftp.frugalware.org/pub/other/people/baste/livecd/">aquí</a>.
+        Estamos buscando gente para probarlo. Estas imágenes ISO están todavía en fase beta y sólo en inglés y francés. Para fallos, observaciones y propuestas dirigíos a Baste por el canal IRC en #frugalware o por el <a href="http://bugs.frugalware.org">Sistema de Seguimiento de Fallos</a>.<br />
+      <br />
+      <hr style="width:25%;" align="left" />
+      Traducido por Nekrodes.
+             ]]>
+        </content>
+        <icon>/images/icons/info.png</icon>
+    </post>
+  <post>
+        <id>218</id>
+        <title>¡Nuevo sistema de seguimiento de errores (bts)!</title>
+        <date>Sáb, 19 Oct 2011 15:17:55 +0100</date>
+        <author>Devil505</author>
+        <hidden>0</hidden>
+        <content><![CDATA[
+        Tenemos un nuevo <a href="http://bugs.frugalware.org">sistema de seguimiento de errores (bug tracker system)</a>. Flyspray está obsoleto desde hace tiempo y hemos decidido escoger <a href="http://trac.edgewall.org/">trac</a>. Todos los informes han sido importados. Si tenías una cuenta en el antiguo sistema bts, tienes que resetear la contraseña como se indica en la página principal.<br /><br />
+        ¡Los desarrolladores de Frugalware dan las gracias a Xarkam por su enorme trabajo!<br />
+      <br />
+      <hr style="width:25%;" align="left" />
+      Traducido por Nekrodes.
+             ]]>
+        </content>
+        <icon>/images/icons/info.png</icon>
+    </post>
+   <post>
     <id>217</id>
     <title>Frugalware 1.6pre1 (Fermus) disponible</title>
     <date>Lun, 10 Oct 2011 00:24:03 +0200</date>
@@ -57,15 +316,13 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
           </ul>
         </li>
       </ul>
-      Por favor, leed el <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">ChangeLog de Testing</a> (en inglés)
-      de Frugalware para más información.<br />
+      Por favor, leed el <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">ChangeLog de Testing</a> (en inglés) de Frugalware para más información.<br />
 
       Descargar las iso para i686: Mirad nuestra <a href="http://frugalware.org/download/frugalware-testing-iso">lista de servidores</a>. 
       ¡No olvidéis comprobar la <a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">integridad</a> 
       de las imágenes de instalación antes de grabarlas!<br />
 
-      <b>NOTA</b>: Haz click <a href="/docs/install#_choosing_installation_flavor">aquí</a> (en inglés) para saber más sobre qué dispositivo 
-      necesitas para la instalación. <br />
+      <b>NOTA</b>: Haz click <a href="/docs/install#_choosing_installation_flavor">aquí</a> (en inglés) para saber más sobre qué dispositivo necesitas para la instalación. <br />
       <br />
       <hr style="width:25%;" align="left" />
       Traducido por Nekrodes.
