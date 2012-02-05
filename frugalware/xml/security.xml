@@ -26,6 +26,17 @@
 
 <fsas>
 	<fsa>
+		<id>751</id>
+		<date>2012-02-05</date>
+		<author>Miklos Vajna</author>
+		<package>phpmyadmin</package>
+		<vulnerable>3.4.8-1mores1</vulnerable>
+		<unaffected>3.4.9-1mores1</unaffected>
+		<bts>https://bugs.frugalware.org/ticket/4643</bts>
+		<cve>http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-4780</cve>
+		<desc>Multiple cross-site scripting (XSS) vulnerabilities in libraries/display_export.lib.php in phpMyAdmin allow remote attackers to inject arbitrary web script or HTML via crafted URL parameters, related to the export panels in the (1) server, (2) database, and (3) table sections.</desc>
+	</fsa>
+	<fsa>
 		<id>750</id>
 		<date>2011-12-23</date>
 		<author>Miklos Vajna</author>
