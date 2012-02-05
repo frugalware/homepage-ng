@@ -26,6 +26,28 @@
 
 <fsas>
 	<fsa>
+		<id>753</id>
+		<date>2012-02-05</date>
+		<author>Miklos Vajna</author>
+		<package>wireshark</package>
+		<vulnerable>1.6.3-1mores1</vulnerable>
+		<unaffected>1.6.5-1mores1</unaffected>
+		<bts>https://bugs.frugalware.org/ticket/4650</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0041
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0042
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0043
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0066
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0067
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0068</cve>
+		<desc>Multiple vulnerabilities have been reported in Wireshark, which can be exploited by malicious people to cause a DoS (Denial of Service) and compromise a user's system.
+			1) NULL pointer dereference errors when reading certain packet information can be exploited to cause a crash.
+			2) An error within the RLC dissector can be exploited to cause a buffer overflow via a specially crafted RLC packet capture file.
+			Successful exploitation of this vulnerability may allow execution of arbitrary code.
+			3) An error within the "lanalyzer_read()" function (wiretap/lanalyzer.c) when parsing LANalyzer files can be exploited to cause a heap-based buffer underflow.
+			Successful exploitation of this vulnerability may allow execution of arbitrary code.
+			NOTE: A weakness within the file parser, which can lead to a crash when handling capture files has also been reported.</desc>
+	</fsa>
+	<fsa>
 		<id>752</id>
 		<date>2012-02-05</date>
 		<author>Miklos Vajna</author>
