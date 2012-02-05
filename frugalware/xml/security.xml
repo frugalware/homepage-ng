@@ -26,6 +26,18 @@
 
 <fsas>
 	<fsa>
+		<id>752</id>
+		<date>2012-02-05</date>
+		<author>Miklos Vajna</author>
+		<package>wordpress</package>
+		<vulnerable>3.2.1-1</vulnerable>
+		<unaffected>3.3.1-1mores1</unaffected>
+		<bts>https://bugs.frugalware.org/ticket/4644</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0287</cve>
+		<desc>Aditya Modha and Samir Shah discovered a vulnerability in WordPress, which can be exploited by malicious people to conduct cross-site scripting attacks.
+			Input passed via the URL to e.g. wp-comments-post.php is not properly sanitised within the "wp_guess_url()" function in wp-includes/functions.php before being returned to the user. This can be exploited to execute arbitrary HTML and script code in a user's browser session in context of an affected site.</desc>
+	</fsa>
+	<fsa>
 		<id>751</id>
 		<date>2012-02-05</date>
 		<author>Miklos Vajna</author>
