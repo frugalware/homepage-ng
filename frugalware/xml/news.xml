@@ -41,7 +41,7 @@ To get the current time in this format, run in your shell: date -R
     <content><![CDATA[
       <center><img src="http://frugalware.org/images/promo-fermus.png" alt="Frugalware 1.6 Fermus is released !" /></center><br />
       The Frugalware Developer Team is pleased to <a href="/news/225">announce</a> the immediate availability of Frugalware 1.6, our sixteenth stable release.<br />
-      No new features have been added since 1.6rc2, but 86 changes have been made to fix minor bugs. If you didn't follow the changes during the pre/rc releases, here are the most important changes since 1.5 in no particular order:<br />
+      No new features have been added since 1.6rc2, but 93 changes have been made to fix minor bugs. If you didn't follow the changes during the pre/rc releases, here are the most important changes since 1.5 in no particular order:<br />
       <ul>
         <li>Updated packages: Linux kernel 3.1.10, XOrg server 1.11.2, GNOME 3.2, KDE SC 4.7, LibreOffice 3.4.5.2, Mozilla Firefox 10.0 to name a few major components.</li>
         <li>i686 and x86_64 ISOs are now hybrid. We no longer build separate USB images for these arches.</li>
@@ -51,6 +51,7 @@ To get the current time in this format, run in your shell: date -R
         <li>fw32, which maintains an i686 chroot on x86_64, is now more mature and usable. If you find it lacking, make a request.</li>
         <li>HAL has been deprecated in favor of udisks</li>
         <li>i686 and x86_64 now use an initrd. See installation documentation for instructions on how to properly upgrade this.</li>
+        <li>Cinnamon desktop is included now.</li>
       </ul>
       Please refer to the Frugalware <a href="http://frugalware.org/download/frugalware-1.6/ChangeLog.txt">Fermus ChangeLog</a> for more information.<br />
       Download for i686, x86_64, ppc and arm: See our <a href="http://frugalware.org/download/frugalware-1.6-iso">mirror list</a>. Don't forget to check the <a href="http://frugalware.org/download/frugalware-1.6-iso/SHA1SUMS">integrity</a> of the install images before burning!<br />
