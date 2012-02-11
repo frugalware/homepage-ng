@@ -22,6 +22,135 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
   <post>
+    <id>224</id>
+    <title>Frugalware 1.6rc2 (Fermus) released</title>
+    <date>Sun, 29 Jan 2012 18:00:57 -0600</date>
+    <author>ryuo</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+      The Frugalware Developer Team is pleased to <a href="/news/224">announce</a> the immediate availability of Frugalware 1.6rc2, the second technical preview of the upcoming 1.6 stable release.</p>
+    <p>Here are some of the major improvements, fixes and updates since 1.6rc1:<br />
+      <ul>
+        <li>Package updates:
+          <ul>
+            <li>Linux kernel 3.1.10</li>
+            <li>LibreOffice 3.4.5</li>
+            <li>~100 updated packages</li>
+            <li>27 new packages</li>
+          </ul>
+        </li>
+        <li>New features:
+          <ul>
+            <li>New cpupower (<a href="http://lwn.net/Articles/433002/">LWN article</a>) and <a href="https://perf.wiki.kernel.org/">perf</a> packages</li>
+            <li>kmod replaced module-init-tools</li>
+          </ul>
+        </li>
+	<li>Fixes:
+          <ul>
+            <li>The installer now handles network timeout errors</li>
+            <li>Documentation updates</li>
+          </ul>
+	</li>
+      </ul>
+      Please refer to the Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Testing ChangeLog</a> for more information.<br />
+      Download for i686: See our <a href="http://frugalware.org/download/frugalware-testing-iso">mirror list</a>. Don't forget to check the <a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">integrity</a> of the install images before burning!<br />
+      <b>NOTE</b>: Click <a href="/docs/install#_choosing_installation_flavor">here</a> to read more about what media you need for the installation. <br />
+      ]]>
+    </content>
+  </post>
+  <post>
+        <id>223</id>
+        <title>Review of 2011</title>
+        <date>Tue, 17 Jan 2012 09:07:14 +1000</date>
+        <author>phayz</author>
+        <hidden>0</hidden>
+        <content><![CDATA[
+Before too much of the new year goes past we wanted to take the opportunity to review the achievements of 2011 and look ahead to what's planned for 2012.  It's an exciting period in Frugalware's development with the development team making progress in many areas. This article highlights some of the major achievements and planned projects but not all of them. If you are interested in following the progress of any particular project, subscribe to the appropriate mailing list: frugalware-devel if you're interested in development discussion of all Frugalware projects, and frugalware-git-commits if you want to track individual commits.<br /><br />
+
+First on the list is the two scheduled releases: 1.4 and 1.5, both of which were released on time. Long-time users of Frugalware have become familiar with the twice-a-year release of stable editions. These don't happen by magic but instead are the result of the development team's hard work. The number of packages available in the repository continues to increase and so does the workload of maintaining them. Many thanks to all the development team, both old and new (in terms of their time on the development team, not their ages. :P ). Each of last years' releases had significant improvements and the highlights were:<br /><br />
+
+1.4<br />
+<ul>
+<li>The Java development kit was changed from the binary Java SDK provided by Oracle to OpenJDK. This was in fact a great change because later in the year, Oracle changed the distribution licence which required all distributions to remove it from their repositories. Oracle's future JDKs will be based on OpenJDK anyway.</li>
+<li>LibreOffice was forked from OpenOffice and available almost immediately after it was publicly released. Of course it helps that Frugalware's leader - VMiklos - is also a LibreOffice developer. :D</li>
+<li>fwife, the GUI Frugalware installer developed by Elentir, was available as part of the default installation.</li>
+</ul>
+
+1.5<br />
+<ul>
+<li>Frugalware was available for the ARM architecture, exciting all those who had one, maybe even two or more ARMs. (Sorry, I couldn't resist such a bad English-language joke).</li>
+<li>systemd was introduced as the new init system, which meant we had a more reliable, faster init system. Although a lot of discussion about systemd has been focused on boot-up time, that was not the only focus of its design.</li>
+</ul>
+
+There were also significant improvements in other areas:<br /><br />
+
+<strong>FWLive</strong><br /><br />
+
+FWlive, the Frugalware live CD was resurrected by Baste after a few years without any development. The project was not entirely abandoned but none of the active developers had enough time to devote to it. Thankfully Baste made great progress and a beta release is already available. Having a live CD available is great because it means that anyone interested in trying Frugalware can do so without changing or possibly harming their PC or laptop.<br /><br />
+
+<strong>Artwork</strong><br /><br />
+
+The default themeing applied to all desktop environments continues to improve, mainly thanks to Devil505. Themeing includes a custom desktop background, icons theme, window manager theme, GUI widgets theme, mouse cursor theme, and login manager theme. Together they give they make the default desktop of all desktop environments look fantastic. The result is so good that it was mentioned by the Linux Outlaws podcast when they mentioned Frugalware 1.4's release.<br /><br />
+
+<strong>Games, games, games</strong><br /><br />
+
+Over 20 new puzzles, strategy, board and FPS games were added to the repository, including: Megaglest, 0 A.D., Bos Wars, Frogatto, Widelands and Red Eclipse. Just when you thought you might get something productive done, a developer packages a new game. :D<br /><br />
+
+<strong>New Bug Tracker</strong><br /><br />
+
+With a lot of effort from Xarkam, the old Flyspray bug tracker was replaced with a shiny, new deployment of Trac. Amazingly he exported the existing data from Flyspray into the new BTS. Since requests and bugs are both tracked in the BTS, it's an important part of the Frugalware infrastructure.<br /><br />
+
+<strong>Farewell to Carl</strong><br /><br />
+
+We said farewell to Carl Andersen, who had been providing Danish translation for all Frugalware projects over several years. He moved on to using another Linux distribution and we wished him well. One of Frugalware's aim is to be accessible to as many people as possible, so translations such as those provided by Carl are vital. It may not be exciting work, nor bring fame, but it without many people simply wouldn't be able to use Frugalware at all.<br /><br />
+
+<strong>New Developers</strong><br /><br />
+
+2011 was a great year for the development team, with several new members and some returning after a break. Priorities and circumstances change over time for everyone so the team will never stay the same all the time. It's important that we have new members joining, with fresh ideas and enthusiasm. I'm not saying that the existing developers are getting old but time marches on for us all. Cedynamix and Jercel returned from a break and we were excited to have them return. New members to the development team included: Melko, Slown, Baste, Centuri0.<br /><br />
+
+<strong>What's planned for 2012?</strong><br /><br />
+
+Although 2011 was a busy year, 2012 is sure to be exciting too. There are several projects already underway which will probably be completed during the year. FWLive will continue and hopefully become part a new option for each release. Bouleetbil is continuing to work on pyfpm, a GUI package manager developed in Python. Although we already have a GUI package manager it's no longer being maintained or developed.<br /><br />
+
+Now is a great time to get involved in Frugalware's development, helping package management, translation, documentation, testing or anything else you would like to do. If you're interested, post a message in the forums and one of the development team will help you get started. There's no minimum level of technical knowledge or experience required because there are many non-technical tasks which you can help with. Let's make 2012 a year to remember!
+            ]]>
+        </content>
+        <icon>/images/icons/info.png</icon>
+  </post>
+  <post>
+    <id>222</id>
+    <title>Frugalware 1.6rc1 (Fermus) released</title>
+    <date>Sun, 15 Jan 2012 18:00:45 -0600</date>
+    <author>ryuo</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+      The Frugalware Developer Team is pleased to <a href="/news/222">announce</a> the immediate availability of Frugalware 1.6rc1, the second technical preview of the upcoming 1.6 stable release.</p>
+    <p>Here are some of the major improvements, fixes and updates since 1.6pre2:<br />
+      <ul>
+        <li>Package updates:
+          <ul>
+            <li>Linux kernel 3.1.8</li>
+            <li>Systemd 38</li>
+            <li>Firefox 9.0.1</li>
+            <li>383 updated packages</li>
+            <li>121 new packages</li>
+            <li>8 replaced packages</li>
+          </ul>
+        </li>
+        <li>New features:
+          <ul>
+            <li>After being away for 6 releases, Fwlive is back on the scene!</li>
+            <li><a href="http://cinnamon.linuxmint.com/">Cinnamon Desktop</a> is available as package.</li>
+          </ul>
+        </li>
+      </ul>
+      Please refer to the Frugalware <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Testing ChangeLog</a> for more information.<br />
+      Download for i686: See our <a href="http://frugalware.org/download/frugalware-testing-iso">mirror list</a>. Don't forget to check the <a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">integrity</a> of the install images before burning!<br />
+      <b>NOTE</b>: Click <a href="/docs/install#_choosing_installation_flavor">here</a> to read more about what media you need for the installation. <br />
+      ]]>
+    </content>
+  </post>
+  <post>
     <id>221</id>
     <title>Frugalware Christmas gift</title>
     <date>Sat, 24 Dec 2011 09:00:00 +0200</date>
