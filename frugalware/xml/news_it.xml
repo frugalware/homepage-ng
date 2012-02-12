@@ -32,7 +32,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
       Il team di Frugalware è lieto di <a href="/news/225">annunciare</a> l'immediata disponibilità di Frugalware 1.6, il nostro sedicesimo rilascio stabile.<br />
       Non sono state aggiunte nuove funzionalità dalla 1.6rc2, ma 93 cambiamenti sono stati fatti per correggere bug minori. Se non avete seguito lo sviluppo durante i rilasci pre/rc, ecco quelli più importanti dalla 1.5 in ordine sparso:<br />
       <ul>
-        <li>pacchetti aggiornati: Linux kernel 3.1.10, XOrg server 1.11.2, GNOME 3.2, KDE SC 4.7, LibreOffice 3.4.5.2, Mozilla Firefox 10.0 solo per nominare alcuni maggiori componenti.</li>
+        <li>pacchetti aggiornati: Linux kernel 3.1.10, XOrg server 1.11.2, GNOME 3.2, KDE SC 4.7, LibreOffice 3.4.5.2, Mozilla Firefox 10.0 solo per nominare alcune maggiori componenti.</li>
         <li>le immagini i686 e x86_64 ISOs ora sono ibride. per queste due architetture non sono più necessarie immagini separate per i dispositivi USB.</li>
         <li>cpupower può essere usato per configurare il risparmio energetico della CPU, questo ora è il metodo che raccomandiamo per farlo.</li>
         <li>è stato rimosso il supporto UEFI/EFI dall'architettura i686. Questo perché è molto raro su i686.</li>
