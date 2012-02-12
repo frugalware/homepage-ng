@@ -37,7 +37,7 @@ To get the current time in this format, run in your shell: date -R
     <title>Frugalware 1.6 (Fermus) released</title>
     <date>Sun, 12 Feb 2012 18:01:34 -0600</date>
     <author>ryuo</author>
-    <hidden>1</hidden>
+    <hidden>0</hidden>
     <content><![CDATA[
       <center><img src="http://frugalware.org/images/promo-fermus.png" alt="Frugalware 1.6 Fermus is released !" /></center><br />
       The Frugalware Developer Team is pleased to <a href="/news/225">announce</a> the immediate availability of Frugalware 1.6, our sixteenth stable release.<br />
@@ -52,6 +52,7 @@ To get the current time in this format, run in your shell: date -R
         <li>HAL has been deprecated in favor of udisks</li>
         <li>i686 and x86_64 now use an initrd. See installation documentation for instructions on how to properly upgrade this.</li>
         <li>Cinnamon desktop is included now.</li>
+        <li>fwlive is more mature and usable now.</li>
       </ul>
       Please refer to the Frugalware <a href="http://frugalware.org/download/frugalware-1.6/ChangeLog.txt">Fermus ChangeLog</a> for more information.<br />
       Download for i686, x86_64, ppc and arm: See our <a href="http://frugalware.org/download/frugalware-1.6-iso">mirror list</a>. Don't forget to check the <a href="http://frugalware.org/download/frugalware-1.6-iso/SHA1SUMS">integrity</a> of the install images before burning!<br />
