@@ -86,7 +86,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 						</li>
 						<li>Corrections :
 								<ul>
-										<i>L'installateur prend en charge les erreurs réseau en cas de temps de réponse trop long.</li>
+										<li>L'installateur prend en charge les erreurs réseau en cas de temps de réponse trop long.</li>
 										<li>La documentation a été mise à jour</li>
 								</ul>
 						</li>
