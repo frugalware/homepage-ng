@@ -95,6 +95,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 				Téléchargment pour i686 : consultez notre <a href="http://frugalware.org/download/frugalware-testing-iso">liste de miroirs</a>. N'oubliez pas de vérifier <a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">l'intégrité</a> des images avant de les graver !<br />
 				<b>NOTE :</b> cliquez <a href="/docs/install#_choosing_installation_flavor">ici</a> pour savoir de quel média vous aurez besoin pour l'installation.
 				]]>
+		</content>
 	</post>
     <post>
     <id>222</id>
