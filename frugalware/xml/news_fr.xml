@@ -22,16 +22,17 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
     <post>
-    	<id>223</id>
+    	<id>224</id>
 		<title>Frugalware 1.6 (Fermus) disponible !</title>
 		<date>Sun, 12 Feb 2012 18;01;34 -0600</date>
 		<author>ryuo</author>
 		<hidden>0</hidden>
 		<content><![CDATA[
+				<center><img src="http://frugalware.org/images/promo-fermus.png" alt="Frugalware 1.6 Fermus is released !" /></center><br />
 				L'équipe de développement de Frugalware a le plaisir de vous annoncer la sortie de Frugalware 1.6, notre seizième version stable.<br />
 				Il n'a pas de nouvelles fonctionnalités par rapport à la 1.6rc2, mais il y a eu 93 changements pour corriger des problèmes mineurs. Si vous n'avez pas suivi les changements pendant les sorties des version PRE/RC, voici la liste des changements les plus importants depuis la version 1.5 :<br />
 				<ul>
-						<li>Paquets mis à jour (list non exhaustive) : 
+						<li>Paquets mis à jour (liste non exhaustive) : 
 								<ul>
 										<li>Linux Kernel 3.1.10</li>
 										<li>XOrg server 1.11.2</li>
@@ -59,6 +60,42 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 				]]>
         </content>
     </post>
+    <post>
+		<id>223</id>
+		<title>Frugalware 1.6rc2 (Fermus) disponible !</title>
+		<date>Sun, 29 Jan 2012, 18:00:57 -0600</date>
+		<author>ryuo</author>
+		<hidden>0</hidden>
+		<content><![CDATA[
+				L'équipe de développement de Frugalware a la plaisir de vous annoncer la sortie de Frugalware 1.6rc2, la seconde préversion technique de la version 1.6 stable à venir.<br />
+				Voici quelques-uns des changements survenus depuis la 1.6rc1 :
+				<ul>
+						<li>Paquets mis à jour :
+								<ul>
+										<li>Linux Kernel 3.1.10</li>
+										<li>LibreOffice 3.4.5</li>
+										<li>~100 paquets mis à jour</li>
+										<li>27 nouveaux paquets</li>
+								</ul>
+						</li>
+						<li>Nouvelles fonctionnalités :
+								<ul>
+										<li>cpupower ((<a href="http://lwn.net/Articles/433002/">article paru sur LWN </a>) et <a href="https://perf.wiki.kernel.org/">perf</a> sont désormais disponibles.</li>
+										<li>kmod a remplacé module-init-tools</li>
+								</ul>
+						</li>
+						<li>Corrections :
+								<ul>
+										<i>L'installateur prend en charge les erreurs réseau en cas de temps de réponse trop long.</li>
+										<li>La documentation a été mise à jour</li>
+								</ul>
+						</li>
+				</ul><br />
+				Veuillez vous référer au <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Changelog</a> pour plus d'informations.<br />
+				Téléchargment pour i686 : consultez notre <a href="http://frugalware.org/download/frugalware-testing-iso">liste de miroirs</a>. N'oubliez pas de vérifier <a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">l'intégrité</a> des images avant de les graver !<br />
+				<b>NOTE :</b> cliquez <a href="/docs/install#_choosing_installation_flavor">ici</a> pour savoir de quel média vous aurez besoin pour l'installation.
+				]]>
+	</post>
     <post>
     <id>222</id>
 	<title>Frugalware 1.6rc1 (Fermus) disponible !</title>
