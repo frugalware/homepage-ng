@@ -33,6 +33,21 @@ To get the current time in this format, run in your shell: date -R
 
 <news>
   <post>
+    <id>226</id>
+    <title>systemd in current</title>
+    <date>Sun, 19 Feb 2012 12:01:34 -0600</date>
+    <author>ryuo</author>
+    <hidden>1</hidden>
+    <content><![CDATA[
+      There has been an update to current in regards to systemd. During testing, there was discovered to be some issues with reboots and shutdowns appearing to 'hang'.
+      Further inspection revealed that the behavior was caused by display-manager.service refusing to shutdown in a timely manner, by systemd's definition. The process
+      still works out in the end, provided you wait long enough for the effected service to be forced to terminate by timeout. This is a public announcement, in the
+      event you experience a 'hang' during reboot or shutdown, that you should try waiting it out. The default timeout per service is 90 seconds, so it may take awhile.
+      If you want more details as to what is going on during this 'hang', you should boot without the 'splash' and 'quiet' boot arguments. Thank you.
+        ]]>
+    </content>
+  </post>
+  <post>
     <id>225</id>
     <title>Frugalware 1.6 (Fermus) released</title>
     <date>Sun, 12 Feb 2012 18:01:34 -0600</date>
