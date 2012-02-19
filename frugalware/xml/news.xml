@@ -37,7 +37,7 @@ To get the current time in this format, run in your shell: date -R
     <title>systemd in current</title>
     <date>Sun, 19 Feb 2012 12:01:34 -0600</date>
     <author>ryuo</author>
-    <hidden>1</hidden>
+    <hidden>0</hidden>
     <content><![CDATA[
       There has been an update to current in regards to systemd. During testing, there was discovered to be some issues with reboots and shutdowns appearing to 'hang'.
       Further inspection revealed that the behavior was caused by display-manager.service refusing to shutdown in a timely manner, by systemd's definition. The process
