@@ -41,7 +41,7 @@ To get the current time in this format, run in your shell: date -R
     <content><![CDATA[
 	  The upgrade to GRUB2 has been merged into current recently. This upgrade will not automatically break your system,<br/>
 	  because it must be done manually by the user. GRUB1 will no longer be supported from now on, so you should proceed<br/>
-	  with the upgrade as instructed <a href="/docs/upgrade.html#_grub2_upgrade">here/a>.<br/>
+	  with the upgrade as instructed <a href="/docs/upgrade.html#_grub2_upgrade">here</a>.<br/>
         ]]>
     </content>
   </post>
