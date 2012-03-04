@@ -21,6 +21,36 @@
 Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
+  <post>
+    <id>227</id>
+    <title>Mise à jour de GRUB2 sur current</title>
+    <date>Sat, 03 Mar 2012 05:12:28 -0600</date>
+    <author>ryuo</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+	  La mise à jour de GRUB2 a été effectuée dans current récemment. Cette mise à jour ne vas pas casser votre système,<br/>
+	  car elle doit être effectuée manuellement par l'utilisateur. GRUB1 ne sera plus supporté à partir de maintenant, vous devez donc procéder<br/>
+	  à la mise à jour comme expliquée <a href="/docs/upgrade.html#_grub2_upgrade">ici</a>.<br/>
+        ]]>
+    </content>
+      <icon>/images/icons/warning.png</icon>
+  </post>
+  <post>
+    <id>226</id>
+    <title>systemd sur current</title>
+    <date>Sun, 19 Feb 2012 12:01:34 -0600</date>
+    <author>ryuo</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+      Il y a eu une mise à jour sur current conernant systemd. Durant les tests, il a été découvert que durant les redémarrages et les extinctions, le sytème 'ne répondait pas'.<br/>
+      Après investigations il a été démontré que le problème venait de display-manager.service refusant de s'arrêter, comme prévu, par systemd. Le processus<br/>
+      continue de fonctionner à la fin, vous faisant ainsi attendre l'arrêt forcé après un bon moment. Ceci est une annonce publique, dans le cas où vous<br/>
+      rencontrez ce problème durant le redémarrage et l'extinction, vous devez attendre. l'arrêt forcé du service survient après 90 secondes par service.<br/>
+      Si vous voulez plus de détails sur ce problème, vous devez démarrer sans les arguments 'splash' et 'quiet'. Merci.<br/>
+        ]]>
+    </content>
+      <icon>/images/icons/warning.png</icon>
+  </post>
     <post>
     	<id>224</id>
 		<title>Frugalware 1.6 (Fermus) disponible !</title>
