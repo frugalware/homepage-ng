@@ -44,6 +44,7 @@ To get the current time in this format, run in your shell: date -R
 	  with the upgrade as instructed <a href="/docs/upgrade.html#_grub2_upgrade">here</a>.<br/>
         ]]>
     </content>
+      <icon>/images/icons/warning.png</icon>
   </post>
   <post>
     <id>226</id>
@@ -59,6 +60,7 @@ To get the current time in this format, run in your shell: date -R
       If you want more details as to what is going on during this 'hang', you should boot without the 'splash' and 'quiet' boot arguments. Thank you.<br/>
         ]]>
     </content>
+      <icon>/images/icons/warning.png</icon>
   </post>
   <post>
     <id>225</id>
