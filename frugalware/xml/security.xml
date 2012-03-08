@@ -26,6 +26,20 @@
 
 <fsas>
 	<fsa>
+		<id>756</id>
+		<date>2012-03-08</date>
+		<author>James Buren</author>
+		<package>flashplugin</package>
+		<vulnerable>11.1.102.55-1</vulnerable>
+		<unaffected>11.1.102.63-fermus1</unaffected>
+		<bts>https://bugs.frugalware.org/ticket/4673</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0768
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0769</cve>
+		<desc>A security issue and a vulnerability have been reported in flashplugin, which can be exploited by malicious people to manipulate certain data and bypass certain security restrictions.
+			1) The Matrix3D component in Adobe Flash Player before 10.3.183.16 and 11.x before 11.1.102.63 on Windows, Mac OS X, Linux, and Solaris; before 11.1.111.7 on Android 2.x and 3.x; and before 11.1.115.7 on Android 4.x allows attackers to execute arbitrary code or cause a denial of service (memory corruption) via unspecified vectors.
+			2) Adobe Flash Player before 10.3.183.16 and 11.x before 11.1.102.63 on Windows, Mac OS X, Linux, and Solaris; before 11.1.111.7 on Android 2.x and 3.x; and before 11.1.115.7 on Android 4.x does not properly handle integers, which allows attackers to obtain sensitive information via unspecified vectors. </desc>
+	</fsa>
+	<fsa>
 		<id>755</id>
 		<date>2012-02-05</date>
 		<author>Miklos Vajna</author>
