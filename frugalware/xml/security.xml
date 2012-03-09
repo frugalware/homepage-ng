@@ -26,6 +26,18 @@
 
 <fsas>
 	<fsa>
+		<id>760</id>
+		<date>2012-03-08</date>
+		<author>James Buren</author>
+		<package>phpmyadmin</package>
+		<vulnerable>3.4.9-1</vulnerable>
+		<unaffected>3.4.10.1-fermus1</unaffected>
+		<bts>https://bugs.frugalware.org/ticket/4659</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-1190</cve>
+		<desc>A security issue and a vulnerability have been reported in phpmyadmin, which can be exploited by malicious people to manipulate certain data and bypass certain security restrictions.
+			1) It was possible to conduct XSS using a crafted database name.</desc>
+	</fsa>
+	<fsa>
 		<id>759</id>
 		<date>2012-03-08</date>
 		<author>James Buren</author>
