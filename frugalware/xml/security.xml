@@ -26,6 +26,18 @@
 
 <fsas>
 	<fsa>
+		<id>759</id>
+		<date>2012-03-08</date>
+		<author>James Buren</author>
+		<package>thunderbird</package>
+		<vulnerable>10.0-1</vulnerable>
+		<unaffected>10.0.2-fermus1</unaffected>
+		<bts>https://bugs.frugalware.org/ticket/4663</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3026</cve>
+		<desc>A security issue and a vulnerability have been reported in thunderbird, which can be exploited by malicious people to manipulate certain data and bypass certain security restrictions.
+			1) Integer overflow in libpng, as used in Google Chrome before 17.0.963.56, allows remote attackers to cause a denial of service or possibly have unspecified other impact via unknown vectors that trigger an integer truncation. </desc>
+	</fsa>
+	<fsa>
 		<id>758</id>
 		<date>2012-03-08</date>
 		<author>James Buren</author>
@@ -34,7 +46,7 @@
 		<unaffected>17.0.963.47-fermus1</unaffected>
 		<bts>https://bugs.frugalware.org/ticket/4664</bts>
 		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3026</cve>
-		<desc>A security issue and a vulnerability have been reported in firefox, which can be exploited by malicious people to manipulate certain data and bypass certain security restrictions.
+		<desc>A security issue and a vulnerability have been reported in chromium-browser, which can be exploited by malicious people to manipulate certain data and bypass certain security restrictions.
 			1) Integer overflow in libpng, as used in Google Chrome before 17.0.963.56, allows remote attackers to cause a denial of service or possibly have unspecified other impact via unknown vectors that trigger an integer truncation. </desc>
 	</fsa>
 	<fsa>
