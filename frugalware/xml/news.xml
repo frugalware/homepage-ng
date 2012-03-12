@@ -33,6 +33,32 @@ To get the current time in this format, run in your shell: date -R
 
 <news>
   <post>
+    <id>228</id>
+    <title>The Seldon Plan #1</title>
+    <date>Sun, 11 Mar 2012 15:48:58 -0600</date>
+    <author>Devil505</author>
+    <hidden>1</hidden>
+    <content><![CDATA[
+	 The Seldon Plan is the fresh new magazine of Frugalware community users replacing the legacy newsletter.<br/>
+	<ul>
+		<li>In this issue : 
+			<ul>
+				<li>Frugalware 1.6 Fermus released</li>
+				<li>last Minute news</li>
+				<li>GNOME 3.4 beta tested</li>
+				<li>Crosswords :)</li>
+				<li>Desktop screenshots of users</li>
+			</ul>
+	</ul><br/>
+	<center>
+	<img src="http://ftp.frugalware.org/pub/other/theseldonplan/preview01.png">
+	</center><br/>
+	<a href="http://ftp.frugalware.org/pub/other/theseldonplan/theseldonplan_01.pdf">Download (english version PDF)</a><br/>
+        ]]>
+    </content>
+      <icon>/images/icons/newsletter.png</icon>
+  </post>
+  <post>
     <id>227</id>
     <title>GRUB2 upgrade in current</title>
     <date>Sat, 03 Mar 2012 05:12:28 -0600</date>
