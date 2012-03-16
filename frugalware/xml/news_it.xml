@@ -22,6 +22,32 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
   <post>
+    <id>228</id>
+    <title>The Seldon Plan #1</title>
+    <date>Sun, 11 Mar 2012 15:48:58 -0600</date>
+    <author>Devil505</author>
+    <hidden>O</hidden>
+    <content><![CDATA[
+	 The Seldon Plan è una nuova rivista della comunità di Frugalware che sostituisce le newsletters.<br/>
+	<ul>
+		<li>In questo numero : 
+			<ul>
+				<li>rilasciata Frugalware 1.6 Fermus</li>
+				<li>notizie dell'ultimo minuto</li>
+				<li>testato GNOME 3.4 beta</li>
+				<li>Cruciverba :)</li>
+				<li>screenshots del desktop degli utenti</li>
+			</ul>
+	</ul><br/>
+	<center>
+	<img src="http://ftp.frugalware.org/pub/other/theseldonplan/preview01.png">
+	</center><br/>
+	<a href="http://ftp.frugalware.org/pub/other/theseldonplan/theseldonplan_01.pdf">Download (PDF in inglese)</a><br/>
+        ]]>
+    </content>
+      <icon>/images/icons/newsletter.png</icon>
+  </post>
+  <post>
     <id>227</id>
     <title>GRUB2 upgrade in current</title>
     <date>Sat, 03 Mar 2012 05:12:28 -0600</date>
