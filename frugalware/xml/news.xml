@@ -33,6 +33,19 @@ To get the current time in this format, run in your shell: date -R
 
 <news>
   <post>
+    <id>229</id>
+    <title>powerpc (ppc) arch powering down</title>
+    <date>Sat, 03 Mar 2012 05:12:28 -0600</date>
+    <author>ryuo</author>
+    <hidden>1</hidden>
+    <content><![CDATA[
+	  This architecture has been removed and will no longer be supported. We lost our buildserver for it and no longer<br/>
+	  possess the means to support it, as no developers are left to care for it as well. So, powerpc is being powered down.<br/>
+        ]]>
+    </content>
+      <icon>/images/icons/warning.png</icon>
+  </post>
+  <post>
     <id>228</id>
     <title>The Seldon Plan #1</title>
     <date>Sun, 11 Mar 2012 15:48:58 -0600</date>
@@ -41,7 +54,7 @@ To get the current time in this format, run in your shell: date -R
     <content><![CDATA[
 	 The Seldon Plan is the fresh new magazine of Frugalware community users replacing the legacy newsletter.<br/>
 	<ul>
-		<li>In this issue : 
+		<li>In this issue :
 			<ul>
 				<li>Frugalware 1.6 Fermus released</li>
 				<li>last Minute news</li>
