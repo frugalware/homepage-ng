@@ -28,10 +28,8 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
     <author>ryuo</author>
     <hidden>0</hidden>
     <content><![CDATA[
-	  Cette architecture a été retirée et ne sera plus supportée. Nous avons perdu notre buildserver dédiée qui nous permettait de supporter <br/>
-	  cette architecture, et aucun développeurs ne veut s'en occuper. Donc,fin du powerpc pour Frugalware.<br/>
-	  Si vous possédez du matériel utilisant cette architecture, nous sommes désolé, mais nous n'avons pas d'autre choix. Le support x86/x86_64 continue,<br/>
-	  qui est plus facile à maintenir. Rejoingez-nous quand vous le pourrez.<br/>
+	  Cette architecture a été retirée et ne sera plus supportée. Nous avons perdu notre buildserver dédiée qui nous permettait de supporter cette architecture, et aucun développeurs ne veut s'en occuper. <br/>
+	Donc,fin du powerpc pour Frugalware. Si vous possédez du matériel utilisant cette architecture, nous sommes désolé, mais nous n'avons pas d'autre choix. Le support x86/x86_64 continue et qui est plus facile à maintenir. Rejoingez-nous quand vous le pourrez.<br/>
         ]]>
     </content>
       <icon>/images/icons/warning.png</icon>
