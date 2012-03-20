@@ -22,6 +22,122 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
   <post>
+    <id>229</id>
+    <title>powerpc (ppc) arch powering down</title>
+    <date>Dom, 18 Mar 2012 12:55:57 -0500</date>
+    <author>ryuo</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+      Esta arquitectura ha sido eliminada y no será mantenida por más tiempo. Perdimos nuestro servidor de compilación y no merece<br />
+      la pena seguir ya que no quedan desarrolladores disponibles para ocuparse de ella. Así pues, powerpc ha sido apagada.<br />
+      Si poseéis este tipo de hardware, lo sentimos, pero no tenemos otra opción. El soporte para las arquitecturas x86/x86_64 continuará<br />
+      ya que son más fáciles de mantener. Por favor, apoyadnos con estas si podéis.<br />
+      <br />
+      <hr style="width:25%;" align="left" />
+      Traducido por Nekrodes.
+         ]]>
+    </content>
+      <icon>/images/icons/warning.png</icon>
+  </post>
+  <post>
+    <id>228</id>
+    <title>The Seldon Plan #1</title>
+    <date>Dom, 11 Mar 2012 15:48:58 -0600</date>
+    <author>Devil505</author>
+    <hidden>O</hidden>
+    <content><![CDATA[
+      The Seldon Plan es la nueva revista de la comunidad de usuarios de Frugalware que remplaza la newsletter.<br />
+	<ul>
+		<li>En este número:
+			<ul>
+				<li>Frugalware 1.6 Fermus disponible</li>
+				<li>Noticias de última hora</li>
+				<li>Probando la beta de GNOME 3.4</li>
+				<li>Palabras cruzadas :)</li>
+				<li>Escritorio de los usuarios</li>
+			</ul>
+	</ul><br />
+	<center>
+	<img src="http://ftp.frugalware.org/pub/other/theseldonplan/preview01.png">
+	</center><br />
+	<a href="http://ftp.frugalware.org/pub/other/theseldonplan/theseldonplan_01.pdf">Descargar (versión PDF en inglés)</a><br />
+      <br />
+      <hr style="width:25%;" align="left" />
+      Traducido por Nekrodes.
+         ]]>
+    </content>
+      <icon>/images/icons/newsletter.png</icon>
+  </post>
+  <post>
+    <id>227</id>
+    <title>Actualización a GRUB2 en current</title>
+    <date>Sáb, 03 Mar 2012 05:12:28 -0600</date>
+    <author>ryuo</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+      La actualización a GRUB2 ha sido insertada recientemente en current. Esta actualización no romperá tu sistema, ya que,<br />
+      debe realizarse manualmente por el usuario. GRUB1 no será mantenida desde ahora, así que deberíais actualizaros según<br />
+      se describe <a href="/docs/upgrade.html#_grub2_upgrade">aquí</a> (en inglés).<br />
+      <br />
+      <hr style="width:25%;" align="left" />
+      Traducido por Nekrodes.
+         ]]>
+    </content>
+      <icon>/images/icons/warning.png</icon>
+  </post>
+  <post>
+    <id>226</id>
+    <title>systemd en current</title>
+    <date>Dom, 19 Feb 2012 12:01:34 -0600</date>
+    <author>ryuo</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+      Ha habido una actualización en current con respecto systemd. Durante las pruebas se descubrió que habían algunos problemas al reiniciar y al apagar el equipo dando la sensación de 'cuelgue'.<br />
+      Un examen más a fondo reveló que este comportamiento era causado por display-manager.service que se negaba terminar.<br />
+      Si esperáis el tiempo suficiente, el servicio termina porque llega a su timeout.<br />
+      Si durante el reinicio o el apagado experimentais un 'cuelgue' deberéis esperar a que llegue al timeout. <br />
+      El timeout por defecto es de 90 segundos, así que tardará un rato.<br />
+      Si queréis más detalles sobre lo que ocurre durante este 'cuelgue', deberéis arrancar sin las opciones 'splash' y 'quiet' en el arranque. Gracias.<br />
+      <br />
+      <hr style="width:25%;" align="left" />
+      Traducido por Nekrodes.
+         ]]>
+    </content>
+      <icon>/images/icons/warning.png</icon>
+  </post>
+  <post>
+    <id>225</id>
+    <title>Frugalware 1.6 (Fermus) disponible</title>
+    <date>Dom, 12 Feb 2012 18:01:34 -0600</date>
+    <author>ryuo</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+      <center><img src="http://frugalware.org/images/promo-fermus.png" alt="¡Frugalware 1.6 Fermus disponible!" /></center><br />
+      El Equipo de Desarrolladore de Frugalware tiene el placer de <a href="/news/225">anunciaros</a> la disponiblidad de Frugalware 1.6, nuestra decimosexta versión estable.<br />
+      No se han añadido mejoras desde la 1.6rc2, pero se han corregido 93 problemas menores. Si no seguisteis los cambios durante la salida de la pre/rc, aquí tenéis algunos de los más importantes desde la 1.5:<br />
+      <ul>
+        <li>Paquetes actualizados: Linux kernel 3.1.10, XOrg server 1.11.2, GNOME 3.2, KDE SC 4.7, LibreOffice 3.4.5.2, Mozilla Firefox 10.0 por nombrar algunos de los más importantes.</li>
+        <li>Las ISOs i686 y x86_64 son híbridas. Ya no se harán imágenes USB por separado para cada una de estas arquitecturas.</li>
+        <li>cpupower puede y se recomienda su uso como método para configurar vuestro gestor de energía de la CPU.</li>
+        <li>El soporte para UEFI/EFI ha sido eliminado de la versión i686 por no ser útil.</li>
+        <li>El instalador usa ahora las UUIDs para generar el archivo /etc/fstab.</li>
+        <li>fw32, el cual mantiene un entorno chroot i686 en x86_64, es ahora más estable y fácil de usar. Si véis que necesita mejorarse, haced una petición.</li>
+        <li>udisks remplaza al obsoleto HAL.</li>
+        <li>i686 y x86_64 usan ahora un initrd. Mirad en la documentación las instrucciones para su correcta actualización.</li>
+        <li>Se incluye el escritorio Cinnamon.</li>
+        <li>Mayor estabilidad y uso sencillo de fwlive.</li>
+      </ul>
+       Por favor, leed el <a href="http://frugalware.org/download/frugalware-1.6/ChangeLog.txt">ChangeLog de Fermus</a> (en inglés) de Frugalware para más información.<br />
+       Descargar las iso para i686, x86_64, ppc y arm: Mirad nuestra <a href="http://frugalware.org/download/frugalware-1.6-iso">lista de servidores</a>. ¡No olvidéis comprobar la <a href="http://frugalware.org/download/frugalware-1.6-iso/SHA1SUMS">integridad</a> de las imágenes de instalación antes de grabarlas!<br />
+      <b>NOTA</b>: Haz click <a href="/docs/install#_choosing_installation_flavor">aquí</a> (en inglés) para saber más sobre qué dispositivo necesitas para la instalación.<br />
+      Si actualizas desde la versión estable anterior (Mores) a Fermus, lee la sección <a href="http://frugalware.org/docs/stable/upgrade">upgrade</a> (en inglés) de la documentación.<br />
+      <br />
+      <hr style="width:25%;" align="left" />
+      Traducido por Nekrodes.
+         ]]>
+    </content>
+  </post>
+   <post>
     <id>224</id>
     <title>Frugalware 1.6rc2 (Fermus) disponible</title>
     <date>Dom, 29 Ene 2012 18:00:57 -0600</date>
