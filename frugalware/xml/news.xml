@@ -33,6 +33,32 @@ To get the current time in this format, run in your shell: date -R
 
 <news>
   <post>
+    <id>230</id>
+    <title>The Seldon Plan #2</title>
+    <date>Sun, 1 Apr 2012 18:51:58 -0600</date>
+    <author>Devil505</author>
+    <hidden>O</hidden>
+    <content><![CDATA[
+	 The Seldon Plan issue 2 out now!<br/>
+	<ul>
+		<li>In this issue :
+			<ul>
+				<li>News</li>
+				<li>FlightGear 2.6</li>
+				<li>0.A.D Alpha 9</li>
+				<li>Crosswords :)</li>
+				<li>And more!</li>
+			</ul>
+	</ul><br/>
+	<center>
+	<img src="http://ftp.frugalware.org/pub/other/theseldonplan/preview02.png">
+	</center><br/>
+	<a href="http://ftp.frugalware.org/pub/other/theseldonplan/theseldonplan_02.pdf">Download (english version PDF)</a><br/>
+        ]]>
+    </content>
+      <icon>/images/icons/newsletter.png</icon>
+  </post>
+  <post>
     <id>229</id>
     <title>powerpc (ppc) arch powering down</title>
     <date>Sun, 18 Mar 2012 12:55:57 -0500</date>
