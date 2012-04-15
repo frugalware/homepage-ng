@@ -28,7 +28,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
     <author>Devil505</author>
     <hidden>O</hidden>
     <content><![CDATA[
-      ÂEl numero 2 del Plan Seldon ya estÃ aquÃ!<br>
+      ¡El número 2 del Plan Seldon ya está aquí!<br>
 	<ul>
 		<li>Sumario:
 			<ul>
@@ -36,13 +36,13 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 				<li>FlightGear 2.6</li>
 				<li>0.A.D Alpha 9</li>
 				<li>Crosswords :)</li>
-				<li>Â¡Y much Ãms!</li>
+				<li>¡Y mucho más!</li>
 			</ul>
 	</ul><br/>
 	<center>
 	<img src="http://ftp.frugalware.org/pub/other/theseldonplan/preview02.png">
 	</center><br/>
-        <a href="http://ftp.frugalware.org/pub/other/theseldonplan/theseldonplan_02.pdf">Descarga la versin PDF en inglÃs)</a
+        <a href="http://ftp.frugalware.org/pub/other/theseldonplan/theseldonplan_02.pdf">Descarga la versión PDF en inglés)</a
         ><br/>
         <hr style="width:25%;" align="left" />
         Traducido por Nekrodes.
@@ -57,10 +57,10 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
     <author>ryuo</author>
     <hidden>0</hidden>
     <content><![CDATA[
-      Esta arquitectura ha sido eliminada y no serÃ¡ mantenida por Ã¡s tiempo. Perdimos nuestro servidor de compilaciÃ³n y no merece<br />
-      la pena seguir ya que no quedan desarrolladores disponibles para ocuparse de ella. AsÃ­ pues, powerpc ha sido apagada.<br />
-      Si poseÃ©is este tipo de hardware, lo sentimos, pero no tenemos otra opciÃ³n. El soporte para las arquitecturas x86/x86_64 continuarÃ¡<br />
-      ya que son mÃ¡s fÃ¡ciles de mantener. Por favor, apoyadnos con estas si podÃ©is.<br />
+      Esta arquitectura ha sido eliminada y no será mantenida por más tiempo. Perdimos nuestro servidor de compilación y no merece<br />
+      la pena seguir ya que no quedan desarrolladores disponibles para ocuparse de ella. Así pues, powerpc ha sido apagada.<br />
+      Si poseéis este tipo de hardware, lo sentimos, pero no tenemos otra opción. El soporte para las arquitecturas x86/x86_64 continuará<br />
+      ya que son más fáciles de mantener. Por favor, apoyadnos con estas si podéis.<br />
       <br />
       <hr style="width:25%;" align="left" />
       Traducido por Nekrodes.
@@ -77,10 +77,10 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
     <content><![CDATA[
       The Seldon Plan es la nueva revista de la comunidad de usuarios de Frugalware que remplaza la newsletter.<br />
 	<ul>
-		<li>En este nÃºmero:
+		<li>En este número:
 			<ul>
 				<li>Frugalware 1.6 Fermus disponible</li>
-				<li>Noticias de Ãºltima hora</li>
+				<li>Noticias de última hora</li>
 				<li>Probando la beta de GNOME 3.4</li>
 				<li>Palabras cruzadas :)</li>
 				<li>Escritorio de los usuarios</li>
@@ -89,7 +89,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 	<center>
 	<img src="http://ftp.frugalware.org/pub/other/theseldonplan/preview01.png">
 	</center><br />
-	<a href="http://ftp.frugalware.org/pub/other/theseldonplan/theseldonplan_01.pdf">Descargar (versiÃ³n PDF en inglÃ©s)</a><br />
+	<a href="http://ftp.frugalware.org/pub/other/theseldonplan/theseldonplan_01.pdf">Descargar (versión PDF en inglés)</a><br />
       <br />
       <hr style="width:25%;" align="left" />
       Traducido por Nekrodes.
@@ -99,8 +99,8 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
   </post>
   <post>
     <id>227</id>
-    <title>ActualizaciÃ³n a GRUB2 en current</title>
-    <date>SÃ¡b, 03 Mar 2012 05:12:28 -0600</date>
+    <title>Actualización a GRUB2 en current</title>
+    <date>Sáb, 03 Mar 2012 05:12:28 -0600</date>
     <author>ryuo</author>
     <hidden>0</hidden>
     <content><![CDATA[
