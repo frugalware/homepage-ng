@@ -50,7 +50,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 	  </li>
     </ul>
     Veuillez vous référer au <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Changelog de -Testing</a> pour davantage d'informations.<br />
-    Téléchargement pour x86 : regardez notre <a href="http://frugalware.org/download/frugalware-testing-iso">liste de miroirs</a>. N'oubliez pas de vérifier <a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">l'intégrité</a> des fichiers avant de les graver.<br />
+    Téléchargement pour x86_64 : regardez notre <a href="http://frugalware.org/download/frugalware-testing-iso">liste de miroirs</a>. N'oubliez pas de vérifier <a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">l'intégrité</a> des fichiers avant de les graver.<br />
     <strong>Note : </strong> cliquez <a href="http://frugalware.org/docs/install#_choosing_installation_flavor">ici</a> pour savoir de quel média vous avez besoin pour l'installation.
    ]]>
     </content>
