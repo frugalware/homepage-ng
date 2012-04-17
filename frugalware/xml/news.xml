@@ -61,7 +61,7 @@ To get the current time in this format, run in your shell: date -R
         </li>
       </ul>
       Please refer to the Frugalware <a href=http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt>Testing ChangeLog</a> for more information.<br/>
-      Download for i686: See our <a href=http://frugalware.org/download/frugalware-testing-iso>mirror list</a>. Don't forget to check the <a href=http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS>integrity</a> of the install images before burning!<br/>
+      Download for x86_64: See our <a href=http://frugalware.org/download/frugalware-testing-iso>mirror list</a>. Don't forget to check the <a href=http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS>integrity</a> of the install images before burning!<br/>
       <b>NOTE</b>: Click <a href=/docs/install#_choosing_installation_flavor>here</a> to read more about what media you need for the installation.<br/>
         ]]>
     </content>
