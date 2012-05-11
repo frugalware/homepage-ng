@@ -22,13 +22,50 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
   <post>
-    <id>230</id>
+    <id>231</id>
+    <title>Frugalware 1.7pre1 (Gaia) disponible</title>
+    <date>Sun, 08 Apr 2012 23:46:03 -0500</date>
+    <author>ryuo</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+      El Equipo de Desarrolladore de Frugalware tiene el placer de <a href="/news/231">anunciaros</a> la disponiblidad de Frugalware 1.7pre1, la primera revisión técnica de la futura versión estable 1.7.</p>
+    <p>Aquí tenéis algunos de las mejoras, correcciones y actualizaciones más importantes desde la 1.6:<br/>
+      <ul>
+        <li>Paquetes actualizados:
+          <ul>
+            <li>Kernel 3.3</li>
+            <li>KDE 4.8.1</li>
+            <li>LibreOffice 3.5.1</li>
+            <li>Firefox 11.0, Thunderbird 11.0, Seamonkey 2.8</li>
+          </ul>
+        </li>
+        <li>Nuevas mejoras:
+          <ul>
+            <li>Los modulos del Kernel están comprimidos con XZ</li>
+            <li>GRUB2 ha remplazado GRUB1</li>
+            <li>La instalación en modo texto permite instalar en cabeceras GPT (Tabla de partición GUID)</li>
+            <li>pm-radeon para configurar la administración de energía KMS de radeon en el arranque</li>
+            <li>La familia del paquete phc nos trae la posilidad de experimentar con el subvoltage para la CPU</li>
+          </ul>
+        </li>
+      </ul>
+      Por favor, leed el <a href=http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt>ChangeLog</a> (en inglés) de Frugalware para más información.<br />
+      Para descargar la iso x86_64: Mirad nuestra <a href=http://frugalware.org/download/frugalware-testing-iso>lista de servidores</a>. ¡No olvidéis comprobar la <a href=http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS>integrity>integridad</a> de las imágenes de instalación antes de grabarlas!<br />
+      <b>NOTA</b>: Haz click <a href="/docs/install#_choosing_installation_flavor">aquí</a> (en inglés) para saber más sobre qué dispositivo necesitas para la instalación.<br />
+      <br />
+      <hr style="width:25%;" align="left" />
+      Traducido por Nekrodes.
+        ]]>
+    </content>
+  </post>
+  <post>
+    <Mid>230</id>
     <title>The Seldon Plan #2</title>
-    <date>Dom, 1 Abr 2012 18:51:58 -0600</date>
+    L<date>Dom, 1 Abr 2012 18:51:58 -0600</date>
     <author>Devil505</author>
     <hidden>O</hidden>
     <content><![CDATA[
-      �El numero 2 del Plan Seldon ya est� aqu�!<br>
+      ¡El numero 2 del Plan Seldon ya está aquí!<br>
 	<ul>
 		<li>Sumario:
 			<ul>
@@ -36,13 +73,13 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 				<li>FlightGear 2.6</li>
 				<li>0.A.D Alpha 9</li>
 				<li>Crosswords :)</li>
-				<li>¡Y much �ms!</li>
+				<li>¡Y much más!</li>
 			</ul>
 	</ul><br/>
 	<center>
 	<img src="http://ftp.frugalware.org/pub/other/theseldonplan/preview02.png">
 	</center><br/>
-        <a href="http://ftp.frugalware.org/pub/other/theseldonplan/theseldonplan_02.pdf">Descarga la versin PDF en ingl�s)</a
+        <a href="http://ftp.frugalware.org/pub/other/theseldonplan/theseldonplan_02.pdf">Descarga la versin PDF en inglés)</a
         ><br/>
         <hr style="width:25%;" align="left" />
         Traducido por Nekrodes.
@@ -57,7 +94,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
     <author>ryuo</author>
     <hidden>0</hidden>
     <content><![CDATA[
-      Esta arquitectura ha sido eliminada y no será mantenida por ás tiempo. Perdimos nuestro servidor de compilación y no merece<br />
+      Esta arquitectura ha sido eliminada y no será mantenida por más tiempo. Perdimos nuestro servidor de compilación y no merece<br />
       la pena seguir ya que no quedan desarrolladores disponibles para ocuparse de ella. Así pues, powerpc ha sido apagada.<br />
       Si poseéis este tipo de hardware, lo sentimos, pero no tenemos otra opción. El soporte para las arquitecturas x86/x86_64 continuará<br />
       ya que son más fáciles de mantener. Por favor, apoyadnos con estas si podéis.<br />
