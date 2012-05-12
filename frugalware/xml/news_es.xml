@@ -22,9 +22,39 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
   <post>
+    <id>232</id>
+    <title>The Seldon Plan #3</title>
+    <date>Dom, 29 Abr 2012 08:40:28 -0600</date>
+    <author>Devil505</author>
+    <hidden>O</hidden>
+    <content><![CDATA[
+	 !The Seldon Plan número 3 ya está aqui!<br/>
+	<ul>
+		<li>Sumario:
+			<ul>
+				<li>Noticias</li>
+				<li>Gestión de una acción asociativa con Frugalware</li>
+				<li>Xonotic</li>
+				<li>El secreto de FredBezies :)</li>
+				<li>Palabras cruzadas :)</li>
+				<li>!Y mucho más!</li>
+			</ul>
+	</ul><br/>
+	<center>
+	<img src="http://ftp.frugalware.org/pub/other/theseldonplan/preview03fr.png">
+	</center><br/>
+	<a href="http://ftp.frugalware.org/pub/other/theseldonplan/theseldonplan_03fr.pdf">Descargar (PDF en francés)</a><br/>
+      <br />
+      <hr style="width:25%;" align="left" />
+      Traducido por Nekrodes.
+        ]]>
+    </content>
+      <icon>/images/icons/newsletter.png</icon>
+  </post>
+   <post>
     <id>231</id>
     <title>Frugalware 1.7pre1 (Gaia) disponible</title>
-    <date>Sun, 08 Apr 2012 23:46:03 -0500</date>
+    <date>Dom, 08 Abr 2012 23:46:03 -0500</date>
     <author>ryuo</author>
     <hidden>0</hidden>
     <content><![CDATA[
@@ -61,25 +91,25 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
   <post>
     <Mid>230</id>
     <title>The Seldon Plan #2</title>
-    L<date>Dom, 1 Abr 2012 18:51:58 -0600</date>
+    <date>Dom, 1 Abr 2012 18:51:58 -0600</date>
     <author>Devil505</author>
     <hidden>O</hidden>
     <content><![CDATA[
-      ¡El numero 2 del Plan Seldon ya está aquí!<br>
+      ¡El número 2 del Plan Seldon ya está aquí!<br>
 	<ul>
 		<li>Sumario:
 			<ul>
 				<li>Noticias</li>
 				<li>FlightGear 2.6</li>
 				<li>0.A.D Alpha 9</li>
-				<li>Crosswords :)</li>
+				<li>Palabras cruzadas :)</li>
 				<li>¡Y much más!</li>
 			</ul>
 	</ul><br/>
 	<center>
 	<img src="http://ftp.frugalware.org/pub/other/theseldonplan/preview02.png">
 	</center><br/>
-        <a href="http://ftp.frugalware.org/pub/other/theseldonplan/theseldonplan_02.pdf">Descarga la versin PDF en inglés)</a
+        <a href="http://ftp.frugalware.org/pub/other/theseldonplan/theseldonplan_02.pdf">Descarga la versin PDF (en inglés)</a
         ><br/>
         <hr style="width:25%;" align="left" />
         Traducido por Nekrodes.
