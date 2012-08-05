@@ -33,6 +33,33 @@ To get the current time in this format, run in your shell: date -R
 
 <news>
   <post>
+    <id>234</id>
+    <title>Frugalware 1.7rc2 (Gaia) released</title>
+    <date>Sun, 05 Aug 2012 14:29:03 -0500</date>
+    <author>ryuo</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+      The Frugalware Developer Team is pleased to <a href=/news/234>announce</a> the immediate availability of Frugalware 1.7rc2, the second candidate of the upcoming 1.7 stable release.</p>
+    <p>Here are some of the major improvements, fixes and updates since 1.7rc1:<br/>
+      <ul>
+        <li>Package updates:
+          <ul>
+            <li>Kernel 3.4.6</li>
+          </ul>
+        </li>
+        <li>New features:
+          <ul>
+            <li>fw32 can now build i686 packages on x86_64. see the README for more information.</li>
+          </ul>
+        </li>
+      </ul>
+      Please refer to the Frugalware <a href=http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt>Testing ChangeLog</a> for more information.<br/>
+      Download for x86_64: See our <a href=http://frugalware.org/download/frugalware-testing-iso>mirror list</a>. Don't forget to check the <a href=http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS>integrity</a> of the install images before burning!<br/>
+      <b>NOTE</b>: Click <a href=/docs/install#_choosing_installation_flavor>here</a> to read more about what media you need for the installation.<br/>
+        ]]>
+    </content>
+  </post>
+  <post>
     <id>233</id>
     <title>Frugalware 1.7rc1 (Gaia) released</title>
     <date>Sun, 22 Jul 2012 20:54:35 -0500</date>
