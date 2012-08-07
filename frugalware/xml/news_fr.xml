@@ -45,7 +45,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 			<br />
 			Veuillez vous référer au <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Changelog</a> pour davantage d'informations.<br /><br />
 			Téléchargements pour x86_64 : consultez notre <a href="http://frugalware.org/download/frugalware-testing-iso">liste de miroirs</a>. N'oubliez pas de vérifier <a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">l'intégrité</a> des images d'installation avant de les graver !<br /><br />
-			<strong>Note : </b>cliquez <a href="http://frugalware.org/docs/install#_choosing_installation_flavor">ici</a> pour savoir ce dont vous avez besoin pour installer Frugalware.
+			<strong>Note : </strong>cliquez <a href="http://frugalware.org/docs/install#_choosing_installation_flavor">ici</a> pour savoir ce dont vous avez besoin pour installer Frugalware.
 			]]>
     </content>
   </post>
