@@ -37,7 +37,7 @@ To get the current time in this format, run in your shell: date -R
     <title>Frugalware 1.7 (Gaia) released</title>
     <date>Sun, 19 Aug 2012 19:04:43 -0500</date>
     <author>ryuo</author>
-    <hidden>1</hidden>
+    <hidden>0</hidden>
     <content><![CDATA[
       <center><img src="http://frugalware.org/images/promo-gaia.png" alt="Frugalware 1.7 Gaia is released!" /></center><br />
       The Frugalware Developer Team is pleased to <a href="/news/235">announce</a> the immediate availability of Frugalware 1.7, our seventeenth stable release.<br />
