@@ -25,8 +25,8 @@
 		<definition>Gaia is located in the Sayshell Sector, about ten parsecs (32 light-years) from Sayshell.</definition>
 		<version>1.7</version>
 		<date>Aug 20, 2012</date>
-		<status>0</status>
-		<newsid></newsid>
+		<status>1</status>
+		<newsid>235</newsid>
 		<prerelease>
 			<preversion>rc2</preversion>
 			<predate>Aug 6, 2012</predate>
