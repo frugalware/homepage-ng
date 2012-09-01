@@ -43,7 +43,7 @@ To get the current time in this format, run in your shell: date -R
       a successful system upgrade can be performed. This command should help you if you<br/>
       are encountering this problem in current:<br/>
       <br/>
-      pacman-g2 -R systemd-gtk systemd-plymouth dracut-plymouth plymouth plymouth-theme-frugalware<br/>
+      pacman-g2 -R systemd-gtk systemd-plymouth dracut-plymouth plymouth plymouth-theme-frugalware plymouth-theme-glow plymouth-theme-solar plymouth-theme-spinfinity<br/>
       <br/>
       After this command you can upgrade by proceeding as you would normally. Thank you.<br/>
         ]]>
