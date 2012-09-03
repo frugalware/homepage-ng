@@ -60,7 +60,7 @@ To get the current time in this format, run in your shell: date -R
       The Frugalware Developer Team is pleased to <a href="/news/235">announce</a> the immediate availability of Frugalware 1.7, our seventeenth stable release.<br />
       No new features have been added since 1.7rc2, but 157 changes have been made to fix minor bugs. If you didn't follow the changes during the pre/rc releases, here are the most important changes since 1.6 in no particular order:<br />
       <ul>
-        <li>Updated packages: Linux kernel 3.4.8, XOrg server 1.12.3, GNOME 3.4, KDE SC 4.9, LibreOffice 3.5.4.2, Mozilla Firefox 14.0.1 to name a few major components.</li>
+        <li>Updated packages: Linux kernel 3.4.8, XOrg server 1.12.3, GNOME 3.4, KDE SC 4.8,4, LibreOffice 3.5.4.2, Mozilla Firefox 14.0.1 to name a few major components.</li>
         <li>slocate was removed and replaced by mlocate</li>
 	<li>catalyst has dropped support for all ATI Radeon HD hardware before the 5000 series</li>
 	<li>cpupower package has replaced all CPU scaling daemons</li>
