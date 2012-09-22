@@ -98,7 +98,7 @@ function main()
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class=\"required\" type=\"checkbox\" name=\"desc\" id=\"descr\" " . ($_GET['desc'] == "on" ? "checked=\"checked\" " : "") . "/><label for=\"descr\" class=\"pkg-phrasing\">".gettext("Search in description")."</label><br />
 		<input type=\"radio\" name=\"op\" value=\"file\" " . ($_GET['op'] == "file" ? "checked=\"checked\" " : "") . "/>".gettext("files")."<br />
 		<input type=\"radio\" name=\"op\" value=\"groups\" " . ($_GET['op'] == "groups" ? "checked=\"checked\" " : "") . "/>".gettext("groups")."<br />
-		<input class=\"required\" type=\"text\" id=\"pkgsrc\" name=\"srch\" size=\"40\" title=\"".gettext("Regular expression")."\" value=\"" . $_GET['srch'] . "\"/> " . gettext( '(regular expression)' ) . "
+		<input class=\"required\" type=\"text\" id=\"pkgsrc\" name=\"srch\" size=\"40\" title=\"".gettext("Regular expression")."\" value=\"" . htmlentities($_GET['srch']) . "\"/> " . gettext( '(regular expression)' ) . "
 		<br />
 		<br />
 		".gettext("Architecture:")."<br />
