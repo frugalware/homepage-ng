@@ -38,8 +38,8 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
     <author>ryuo</author>
     <hidden>0</hidden>
     <content><![CDATA[
-        Avec l'arrivée de systemd 188 (dans -current), quelques paquets ont été supprimés, mais que vous devez désinstaller avant de pouvoir faire une mise à jour du système. Cette commande devrait vous aider si vous rencontrez des problèmees : <br />
-    <pre>pacman-g2 -R systemd-gtk systemd-plymouth dracut-plymouth plymouth plymouth-theme-frugalware plymouth-theme-glow plymouth-theme-solar plymouth-theme-spinfinity</pre>
+        Avec l'arrivée de systemd 188 (dans -current), quelques paquets ont été supprimés, mais que vous devez désinstaller avant de pouvoir faire une mise à jour du système. Cette commande devrait vous aider si vous rencontrez des problèmees : <br /><br />
+    pacman-g2 -R systemd-gtk systemd-plymouth dracut-plymouth plymouth plymouth-theme-frugalware plymouth-theme-glow plymouth-theme-solar plymouth-theme-spinfinity<br /><br />
         Après avoir exécuté cette commande, vous pourrez mettre Frugalware à jour normalement.
     ]]></content>
   </post>
