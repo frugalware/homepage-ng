@@ -55,7 +55,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 	Aucune nouvelle fonctionnalité n'a été ajoutée depuis la 1.7rc2, mais 157 changements ont été apportés pour corriger quelques bogues. Si vous n'avez pas suivi les changements durant les sorties des version PRE et RC,
 	voici quelques uns des plus importants depuis la version 1.6 :
 	<ul>
-	  <li>Paquets mis à jour : Noyau Linux 3.4.8, serveur XOrg 1.12.3, GNOME 3.4, KDE SC 4.9, LibreOffice 3.5.4.2, Mozilla Firefox 14.0.1, pour nommer quelques uns des composants majeurs.</li>
+	  <li>Paquets mis à jour : Noyau Linux 3.4.8, serveur XOrg 1.12.3, GNOME 3.4, KDE SC 4.8.4, LibreOffice 3.5.4.2, Mozilla Firefox 14.0.1, pour nommer quelques uns des composants majeurs.</li>
 	  <li>slocate a été supprimé et est remplacé par mlocate.</li>
 	  <li>Catalyst a supprimé le support de toutes les cartes ATI Radeon HD avant les séries 5000.</li>
 	  <li>cpupower a remplacé tous les démons chargés de réguler la vitesse du processeur.</li>

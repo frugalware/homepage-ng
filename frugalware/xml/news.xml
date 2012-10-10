@@ -33,6 +33,37 @@ To get the current time in this format, run in your shell: date -R
 
 <news>
   <post>
+    <id>237</id>
+    <title>grub2 2.00 merge</title>
+    <date>Mon, 10 Sep 2012 10:02:51 -0500</date>
+    <author>ryuo</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+      grub2 2.00 has been merged. It requires some manual intervention to complete<br/>
+      the upgrade, but shouldn't cause any problems if the upgrade is delayed.</br>
+      For detailed instructions on how to upgrade, please read the development</br>
+      upgrade notes. Thank you.</br>
+        ]]>
+    </content>
+  </post>
+  <post>
+    <id>236</id>
+    <title>systemd 188 merge</title>
+    <date>Fri, 31 Aug 2012 19:04:43 -0500</date>
+    <author>ryuo</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+      The systemd 188 merge has left a few packages that must be manually removed before<br/>
+      a successful system upgrade can be performed. This command should help you if you<br/>
+      are encountering this problem in current:<br/>
+      <br/>
+      pacman-g2 -R systemd-gtk systemd-plymouth dracut-plymouth plymouth plymouth-theme-frugalware plymouth-theme-glow plymouth-theme-solar plymouth-theme-spinfinity<br/>
+      <br/>
+      After this command you can upgrade by proceeding as you would normally. Thank you.<br/>
+        ]]>
+    </content>
+  </post>
+  <post>
     <id>235</id>
     <title>Frugalware 1.7 (Gaia) released</title>
     <date>Sun, 19 Aug 2012 19:04:43 -0500</date>
@@ -43,7 +74,7 @@ To get the current time in this format, run in your shell: date -R
       The Frugalware Developer Team is pleased to <a href="/news/235">announce</a> the immediate availability of Frugalware 1.7, our seventeenth stable release.<br />
       No new features have been added since 1.7rc2, but 157 changes have been made to fix minor bugs. If you didn't follow the changes during the pre/rc releases, here are the most important changes since 1.6 in no particular order:<br />
       <ul>
-        <li>Updated packages: Linux kernel 3.4.8, XOrg server 1.12.3, GNOME 3.4, KDE SC 4.9, LibreOffice 3.5.4.2, Mozilla Firefox 14.0.1 to name a few major components.</li>
+        <li>Updated packages: Linux kernel 3.4.8, XOrg server 1.12.3, GNOME 3.4, KDE SC 4.8.4, LibreOffice 3.5.4.2, Mozilla Firefox 14.0.1 to name a few major components.</li>
         <li>slocate was removed and replaced by mlocate</li>
 	<li>catalyst has dropped support for all ATI Radeon HD hardware before the 5000 series</li>
 	<li>cpupower package has replaced all CPU scaling daemons</li>

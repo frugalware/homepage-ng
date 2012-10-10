@@ -57,6 +57,19 @@ CREATE TABLE `files` (
 -- --------------------------------------------------------
 
 -- 
+-- Table structure for table `abis`
+-- 
+
+CREATE TABLE `abis` (
+  `pkg_id` int(11) NOT NULL,
+  `abi` varchar(4096) DEFAULT NULL,
+  KEY `abi` (`abi`(1000)),
+  KEY `pkg_id` (`pkg_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+-- 
 -- Table structure for table `groups`
 -- 
 
