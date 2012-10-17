@@ -27,7 +27,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
     <date>Sun, 14 Oct 2012 19:18:11 -0500</date>
     <author>ryuo</author>
     <hidden>0</hidden>
-    <content><<![CDATA[
+    <content><![CDATA[
         L'équipe de développement a le plaisir de vous annoncer la sortie de Frugalware 1.8pre1, la première préversion technique de la prochaine version stable à venir.<br />
 Voici quelques uns des changements majeurs depuis la version 1.7 :<br />
 <ul>
