@@ -21,12 +21,13 @@
 Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
-  <post>241</post>
-  <title>Noyau 3.6.2 - bogue de corruption de données avec le système de fichiers ext4</title>
-  <date>Wed, 24 Oct 2012 10:46:36 -0500</date>
-  <author>ryuo</author>
-  <hidden>0</hidden>
-  <content><![CDATA[
+  <post>
+	<id>241</id>
+	<title>Noyau 3.6.2 - bogue de corruption de données avec le système de fichiers ext4</title>
+	<date>Wed, 24 Oct 2012 10:46:36 -0500</date>
+	<author>ryuo</author>
+	<hidden>0</hidden>
+	<content><![CDATA[
 	Le noyau 3.6.2, qui est actuellement dans la branche -current de Frugalware, a un problème de corruption de données,
 	sur le système de fichiers ext4. Cette faille a été découverte très récemment, et n'a pas été trouvée par nos tests.
 	Les développeurs travaillent actuellement à la résolution de ce problème. Dès qu'un patch sera trouvé, il sera aussitôt
@@ -38,7 +39,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 	Vous pouvez consulter l'article original à cette adresse : <a href="http://www.phoronix.com/scan.php?page=news_item&px=MTIxNDQ">
 	http://www.phoronix.com/scan.php?page=news_item&px=MTIxNDQ</a>
 	]]>
-  </content>
+	</content>
   </post>
   <post>
     <id>240</id>
