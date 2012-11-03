@@ -33,6 +33,22 @@ To get the current time in this format, run in your shell: date -R
 
 <news>
   <post>
+    <id>240</id>
+    <title>xorg merge</title>
+    <date>Sat, 03 Nov 2012 10:27:34 -0500</date>
+    <author>ryuo</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+      Xorg upgrades have been merged to current. There is some manual intervention<br/>
+      required due to strict version depends. You will need to remove some packages<br/>
+      by force before you can complete your next system upgrade. This command should<br/>
+      assist you in this:</br>
+      </br>
+      pacman-g2 -Rd ffmpeg-compiletime ffmpeg-0.6 ffmpeg-0.6-compiletime</br>
+        ]]>
+    </content>
+  </post>
+  <post>
     <id>239</id>
     <title>kernel 3.6.2 ext4 data corruption bug</title>
     <date>Wed, 24 Oct 2012 10:46:36 -0500</date>
