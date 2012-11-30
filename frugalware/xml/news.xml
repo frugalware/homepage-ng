@@ -33,6 +33,18 @@ To get the current time in this format, run in your shell: date -R
 
 <news>
   <post>
+    <id>241</id>
+    <title>kernel 3.6.x ext4 data corruption bug</title>
+    <date>Fri, 30 Nov 2012 05:50:38 -0600</date>
+    <author>ryuo</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+      It appears that this problem has now been patched in the kernel in current.</br>
+      Thank you for your patience.</br>
+        ]]>
+    </content>
+  </post>
+  <post>
     <id>240</id>
     <title>xorg merge</title>
     <date>Sat, 03 Nov 2012 10:27:34 -0500</date>
