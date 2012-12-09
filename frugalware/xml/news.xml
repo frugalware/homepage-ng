@@ -33,6 +33,39 @@ To get the current time in this format, run in your shell: date -R
 
 <news>
   <post>
+    <id>242</id>
+    <title>Frugalware 1.8pre2 (Cinna) released</title>
+    <date>Sun, 09 Dec 2012 18:17:24 -0600</date>
+    <author>ryuo</author>
+    <hidden>1</hidden>
+    <content><![CDATA[
+      The Frugalware Developer Team is pleased to <a href=/news/242>announce</a> the immediate availability of Frugalware 1.8pre2, the second technical preview of the upcoming 1.8 stable release.</p>
+    <p>Here are some of the major improvements, fixes and updates since 1.8pre1:<br/>
+      <ul>
+        <li>Package updates:
+          <ul>
+            <li>Kernel 3.6.6</li>
+            <li>XOrg Server 1.13.0</li>
+            <li>KDE 4.9.3</li>
+            <li>GNOME 3.6</li>
+          </ul>
+        </li>
+        <li>New features:
+          <ul>
+            <li>cpu scaling on i686 and x86_64 now works out of the box for most hardware</li>
+            <li>cpupower is now only needed if you want to change the default behavior</li>
+            <li>video decoding acceleration libraries have been enabled in most multimedia programs</li>
+          </ul>
+        </li>
+      </ul>
+      <b>Note: The ISOs are called 1.8pre1 but are really 1.8pre2. This is my first cycle doing the releases, so please pardon the mistake.</b><br/>
+      Please refer to the Frugalware <a href=http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt>Testing ChangeLog</a> for more information.<br/>
+      Download for x86_64: See our <a href=http://frugalware.org/download/frugalware-testing-iso>mirror list</a>. Don't forget to check the <a href=http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS>integrity</a> of the install images before burning!<br/>
+      <b>NOTE</b>: Click <a href=/docs/install#_choosing_installation_flavor>here</a> to read more about what media you need for the installation.<br/>
+        ]]>
+    </content>
+  </post>
+  <post>
     <id>241</id>
     <title>kernel 3.6.x ext4 data corruption bug</title>
     <date>Fri, 30 Nov 2012 05:50:38 -0600</date>
