@@ -31,6 +31,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 		La mise à jour de xorg a été fusionnée à la branche -current. Il y a une manipulation manuelle à effectuer par rapport aux versions strictes des dépendances. Vous devrez supprimer certains paquets en force avant de pouvoir faire une mise à jour complète du système. Cette commande devrait vous aider :<br />
 pacman-g2 -Rd ffmpeg-compiletime ffmpeg-0.6 ffmpeg-0.6-compiletime<br />
 	]]>
+	</content>
   </post>
   <post>
 	<id>241</id>
