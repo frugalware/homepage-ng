@@ -22,6 +22,46 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
   <post>
+	<id>244</id>
+	<title>Frugalware 1.8pre2 (Cinna) est disponible</title>
+	<date>Sun, 09 Dec 2012 18:17:24 -0600</date>
+	<author>ryuo</author>
+	<hidden>0</hidden>
+	<content><![CDATA[
+		L'équipe de développement de Frugalware a le plaisir de vous annoncer 
+		la sortie de Frugalware 1.8pre2, la seconde préversion technique de
+		la version stable 1.8 à venir.<br /><br />
+		Voici quelques uns des changements majeurs :
+		<ul>
+			<li>Paquets mis à jour : 
+				<ul>
+					<li>Kernel 3.6.6</li>
+					<li>XOrg Server 1.13.0</li>
+					<li>KDE 4.9.3</li>
+					<li>GNOME 3.6</li>
+				</ul>
+			</li>
+			<li>Nouvelles fonctionnalités :
+				<ul>
+					<li>La régulation de la vitesse du processeur marche maintenant sans
+					aucune modification, pour la majorité des matériels.</li>
+					<li>cpupower est maintenant uniquement indispensable si vous voulez
+					changer le comportement par défaut.</li>
+					<li>Les librairies d'accélération de décodage vidéo ont été activées
+					dans la plupart des applications multimédia.</li>
+				</ul>
+			</li>
+		</ul>
+		<br />
+		<strong>Note : les images ISO seront légèrement en retard sur nos miroirs, quelques
+		changements de dernière minute ont dû être effectués.</strong><br />
+		Veuillez vous référer au <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Changelog</a> pour davantage d'informations.<br /><br />
+		Téléchargement pour x86_64 : rendez-vous sur notre <a href="http://frugalware.org/download/frugalware-testing-iso">liste de miroirs</a>. N'oubliez pas de vérifier <a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">l'intégrité</a> des fichiers ISO avant de les graver.<br /><br />
+		<strong>Note : </strong>cliquez <a href="http://frugalware.org/docs/install#_choosing_installation_flavor">ici</a> pour connaître les prérequis nécessaires à l'installation de Frugalware.
+	]]>
+	</content>
+  </post>
+  <post>
 	<id>243</id>
 	<title>Corruption de données dans le noyau 3.6.x et le système de fichiers ext4</title>
 	<date>Fri, 30 Nov 2012 05:50:38 - 0600</date>
@@ -32,6 +72,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 		Merci de votre patience.
 	]]>
 	</content>
+  </post>
   <post>
     <id>242</id>
 	<title>Arrivée d'une nouvelle version de xorg</title>
