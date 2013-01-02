@@ -33,6 +33,18 @@ To get the current time in this format, run in your shell: date -R
 
 <news>
   <post>
+    <id>243</id>
+    <title>Happy new Year !</title>
+    <date>Wed, 02 Jan 2013 14:49:13 +1000</date>
+    <author>Pingax</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+        <center><img src="http://frugalware.org/images/FwNewYear.png" alt="Frugalware New Year Logo" /></center><br /><br />   
+        The Frugalware development team would like to wish everyone a Happy New Year ! 
+        ]]>
+    </content>
+  </post>
+  <post>
     <id>242</id>
     <title>Frugalware 1.8pre2 (Cinna) released</title>
     <date>Sun, 09 Dec 2012 18:17:24 -0600</date>
