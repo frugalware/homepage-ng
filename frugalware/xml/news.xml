@@ -37,7 +37,7 @@ To get the current time in this format, run in your shell: date -R
     <title>Frugalware 1.8rc1 (Cinna) released</title>
     <date>Sun, 06 Jan 2013 18:25 -0600</date>
     <author>ryuo</author>
-    <hidden>1</hidden>
+    <hidden>0</hidden>
     <content><![CDATA[
       The Frugalware Developer Team is pleased to <a href=/news/244>announce</a> the immediate availability of Frugalware 1.8rc1, the first candidate of the upcoming 1.8 stable release.</p>
     <p>Here are some of the major improvements, fixes and updates since 1.8pre2:<br/>
