@@ -33,6 +33,33 @@ To get the current time in this format, run in your shell: date -R
 
 <news>
   <post>
+    <id>245</id>
+    <title>Frugalware 1.8rc2 (Cinna) released</title>
+    <date>Mon, 21 Jan 2013 03:23:35 -0600</date>
+    <author>ryuo</author>
+    <hidden>1</hidden>
+    <content><![CDATA[
+      The Frugalware Developer Team is pleased to <a href=/news/245>announce</a> the immediate availability of Frugalware 1.8rc2, the second candidate of the upcoming 1.8 stable release.</p>
+    <p>Here are some of the major improvements, fixes and updates since 1.8rc1:<br/>
+      <ul>
+        <li>Package updates:
+          <ul>
+            <li>Kernel 3.7.3</li>
+          </ul>
+        </li>
+        <li>New features:
+          <ul>
+            <li>none</li>
+          </ul>
+        </li>
+      </ul>
+      Please refer to the Frugalware <a href=http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt>Testing ChangeLog</a> for more information.<br/>
+      Download for x86_64: See our <a href=http://frugalware.org/download/frugalware-testing-iso>mirror list</a>. Don't forget to check the <a href=http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS>integrity</a> of the install images before burning!<br/>
+      <b>NOTE</b>: Click <a href=/docs/install#_choosing_installation_flavor>here</a> to read more about what media you need for the installation.<br/>
+        ]]>
+    </content>
+  </post>
+  <post>
     <id>244</id>
     <title>Frugalware 1.8rc1 (Cinna) released</title>
     <date>Sun, 06 Jan 2013 18:25 -0600</date>
