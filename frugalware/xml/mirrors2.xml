@@ -86,15 +86,13 @@ If you modify this file, be sure it's still valid - read /hooks/README!
 	<mirror>
 		<id>5</id>
 		<type>ftp</type>
-		<type>http</type>
-		<type>rsync</type>
-		<path>packages/frugalware/pub/frugalware</path>
+		<path>mirror/ftp.frugalware.org/pub/frugalware</path>
 		<host>niue.belnet.be</host>
 		<country>Belgium</country>
 		<country_code>be</country_code>
 		<supplier>Belgian National Research Network</supplier>
 		<supplier_url>http://www.belnet.be/en/</supplier_url>
-		<bandwidth>1 GBit</bandwidth>
+		<bandwidth>10 GBit</bandwidth>
 	</mirror>
 	<mirror>
 		<id>6</id>
