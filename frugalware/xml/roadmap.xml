@@ -24,9 +24,9 @@
 		<name>Cinna</name>
 		<definition>Cinna is located in the Sayshell Sector, about ten parsecs (32 light-years) from Sayshell.</definition>
 		<version>1.8</version>
-		<date>Feb 4, 2012</date>
-		<status>0</status>
-		<newsid></newsid>
+		<date>Feb 6, 2012</date>
+		<status>1</status>
+		<newsid>246</newsid>
 		<prerelease>
 			<preversion>rc2</preversion>
 			<predate>Jan 21, 2012</predate>
