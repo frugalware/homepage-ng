@@ -50,20 +50,25 @@ for ( $i=0; $i<count($parser->document->author); $i++)
 	$people[] = $parser->document->author[$i];
 }
 usort($people, "sort_people");
+$authors .= '<table>';
 for($i=0;$i<count($people);$i++)
 {
 	if($people[$i]->status[0]->tagData === $who or !strlen($who))
 	{
+		$emailhash = md5($people[$i]->email[0]->tagData);
 		$email = str_replace("@", " " . gettext("at") . " ", $people[$i]->email[0]->tagData);
 		$email = str_replace(".", " " . gettext("dot") . " ", $email);
+		$authors .= '<tr><td><img src="https://gravatar.com/avatar/'.$emailhash.'"/></td><td>';
 		$authors .= $people[$i]->name[0]->tagData." (".$people[$i]->nick[0]->tagData.") &lt;".$email."&gt;<br />\n<ul>\n";
 		for ( $j=0; $j<count($people[$i]->role); $j++ )
 		{
 			$authors.= "<li>".$people[$i]->role[$j]->tagData."</li>\n";
 		}
 		$authors .= "</ul>\n";
+		$authors .= '</td></tr>';
 	}
 }
+$authors .= '</table>';
 $authors .= "<br />\n";
 $title = gettext("Authors");
 $desc = gettext("This page should list all people who contributed to Frugalware Linux in some way. However, we are aware that the contributor list is incomplete. Please contact us if your name is missing from here!<br />");
