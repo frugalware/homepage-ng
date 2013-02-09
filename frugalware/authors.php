@@ -64,6 +64,10 @@ for($i=0;$i<count($people);$i++)
 		{
 			$authors.= "<li>".$people[$i]->role[$j]->tagData."</li>\n";
 		}
+		if (count($people[$i]->yearofbirth))
+			$authors .= "<li>Year of birth: " . $people[$i]->yearofbirth[0]->tagData . "</li>";
+		if (count($people[$i]->dayjob))
+			$authors .= "<li>Day job: " . $people[$i]->dayjob[0]->tagData . "</li>";
 		$authors .= "</ul>\n";
 		$authors .= '</td></tr>';
 	}
