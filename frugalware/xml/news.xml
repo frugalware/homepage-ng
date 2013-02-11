@@ -33,7 +33,7 @@ To get the current time in this format, run in your shell: date -R
 
 <news>
   <post>
-    <id>246</id>
+    <id>245</id>
     <title>Frugalware 1.8 (Cinna) released</title>
     <date>Wed, 06 Feb 2013 09:46:29 -0600</date>
     <author>ryuo</author>
@@ -58,7 +58,7 @@ To get the current time in this format, run in your shell: date -R
     </content>
   </post>
   <post>
-    <id>245</id>
+    <id>244</id>
     <title>Frugalware 1.8rc2 (Cinna) released</title>
     <date>Mon, 21 Jan 2013 03:23:35 -0600</date>
     <author>ryuo</author>
@@ -85,7 +85,7 @@ To get the current time in this format, run in your shell: date -R
     </content>
   </post>
   <post>
-    <id>244</id>
+    <id>243</id>
     <title>Frugalware 1.8rc1 (Cinna) released</title>
     <date>Sun, 06 Jan 2013 18:25 -0600</date>
     <author>ryuo</author>
@@ -114,7 +114,7 @@ To get the current time in this format, run in your shell: date -R
     </content>
   </post>
   <post>
-    <id>243</id>
+    <id>242</id>
     <title>Happy new Year !</title>
     <date>Wed, 02 Jan 2013 14:49:13 +1000</date>
     <author>Pingax</author>
@@ -126,7 +126,7 @@ To get the current time in this format, run in your shell: date -R
     </content>
   </post>
   <post>
-    <id>242</id>
+    <id>241</id>
     <title>Frugalware 1.8pre2 (Cinna) released</title>
     <date>Sun, 09 Dec 2012 18:17:24 -0600</date>
     <author>ryuo</author>
@@ -159,7 +159,7 @@ To get the current time in this format, run in your shell: date -R
     </content>
   </post>
   <post>
-    <id>241</id>
+    <id>240</id>
     <title>kernel 3.6.x ext4 data corruption bug</title>
     <date>Fri, 30 Nov 2012 05:50:38 -0600</date>
     <author>ryuo</author>
@@ -171,7 +171,7 @@ To get the current time in this format, run in your shell: date -R
     </content>
   </post>
   <post>
-    <id>240</id>
+    <id>239</id>
     <title>xorg merge</title>
     <date>Sat, 03 Nov 2012 10:27:34 -0500</date>
     <author>ryuo</author>
@@ -187,7 +187,7 @@ To get the current time in this format, run in your shell: date -R
     </content>
   </post>
   <post>
-    <id>239</id>
+    <id>238</id>
     <title>kernel 3.6.2 ext4 data corruption bug</title>
     <date>Wed, 24 Oct 2012 10:46:36 -0500</date>
     <author>ryuo</author>
@@ -207,7 +207,7 @@ To get the current time in this format, run in your shell: date -R
     </content>
   </post>
   <post>
-    <id>238</id>
+    <id>237</id>
     <title>Frugalware 1.8pre1 (Cinna) released</title>
     <date>Sun, 14 Oct 2012 19:18:11 -0500</date>
     <author>ryuo</author>
@@ -238,7 +238,7 @@ To get the current time in this format, run in your shell: date -R
     </content>
   </post>
   <post>
-    <id>237</id>
+    <id>236</id>
     <title>grub2 2.00 merge</title>
     <date>Mon, 10 Sep 2012 10:02:51 -0500</date>
     <author>ryuo</author>
@@ -252,7 +252,7 @@ To get the current time in this format, run in your shell: date -R
     </content>
   </post>
   <post>
-    <id>236</id>
+    <id>235</id>
     <title>systemd 188 merge</title>
     <date>Fri, 31 Aug 2012 19:04:43 -0500</date>
     <author>ryuo</author>
@@ -269,7 +269,7 @@ To get the current time in this format, run in your shell: date -R
     </content>
   </post>
   <post>
-    <id>235</id>
+    <id>234</id>
     <title>Frugalware 1.7 (Gaia) released</title>
     <date>Sun, 19 Aug 2012 19:04:43 -0500</date>
     <author>ryuo</author>
@@ -295,7 +295,7 @@ To get the current time in this format, run in your shell: date -R
     </content>
   </post>
   <post>
-    <id>234</id>
+    <id>233</id>
     <title>Frugalware 1.7rc2 (Gaia) released</title>
     <date>Sun, 05 Aug 2012 14:29:03 -0500</date>
     <author>ryuo</author>
@@ -322,7 +322,7 @@ To get the current time in this format, run in your shell: date -R
     </content>
   </post>
   <post>
-    <id>233</id>
+    <id>232</id>
     <title>Frugalware 1.7rc1 (Gaia) released</title>
     <date>Sun, 22 Jul 2012 20:54:35 -0500</date>
     <author>ryuo</author>
@@ -353,7 +353,7 @@ To get the current time in this format, run in your shell: date -R
     </content>
   </post>
   <post>
-    <id>232</id>
+    <id>231</id>
     <title>Frugalware 1.7pre2 (Gaia) released</title>
     <date>Sun, 03 Jun 2012 10:42:49 -0500</date>
     <author>ryuo</author>
@@ -386,7 +386,7 @@ To get the current time in this format, run in your shell: date -R
     </content>
   </post>
   <post>
-    <id>231</id>
+    <id>230</id>
     <title>Frugalware 1.7pre1 (Gaia) released</title>
     <date>Sun, 08 Apr 2012 23:46:03 -0500</date>
     <author>ryuo</author>
@@ -419,6 +419,7 @@ To get the current time in this format, run in your shell: date -R
         ]]>
     </content>
   </post>
+  <!--
   <post>
     <id>230</id>
     <title>The Seldon Plan #2</title>
@@ -445,6 +446,7 @@ To get the current time in this format, run in your shell: date -R
     </content>
       <icon>/images/icons/newsletter.png</icon>
   </post>
+  -->
   <post>
     <id>229</id>
     <title>powerpc (ppc) arch powering down</title>
