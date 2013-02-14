@@ -21,8 +21,36 @@
 
 <roadmap>
 	<release>
+		<name>Solaria</name>
+		<definition>Solaria was the last of the fifty worlds to be colonized by the Spacers, settled in approximately 4270 AD by inhabitants of the neighboring world Nexon originally for summer homes.</definition>
+		<version>1.9</version>
+		<date>Aug 5, 2013</date>
+		<status>0</status>
+		<newsid></newsid>
+		<prerelease>
+			<preversion>rc2</preversion>
+			<predate>Jul 22, 2013</predate>
+			<prestatus>0</prestatus>
+		</prerelease>
+		<prerelease>
+			<preversion>rc1</preversion>
+			<predate>Jul 8, 2013</predate>
+			<prestatus>0</prestatus>
+		</prerelease>
+		<prerelease>
+			<preversion>pre2</preversion>
+			<predate>Jun 10, 2013</predate>
+			<prestatus>0</prestatus>
+		</prerelease>
+		<prerelease>
+			<preversion>pre1</preversion>
+			<predate>Apr 8, 2013</predate>
+			<prestatus>0</prestatus>
+		</prerelease>
+	</release>
+	<release>
 		<name>Cinna</name>
-		<definition>Cinna is located in the Sayshell Sector, about ten parsecs (32 light-years) from Sayshell.</definition>
+		<definition>Cinna is a small, unimportant world, where the amount of cloth in beachwear leaves 'very little to the imagination'.</definition>
 		<version>1.8</version>
 		<date>Feb 6, 2013</date>
 		<status>1</status>
