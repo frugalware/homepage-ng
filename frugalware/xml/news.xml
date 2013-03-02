@@ -33,6 +33,20 @@ To get the current time in this format, run in your shell: date -R
 
 <news>
   <post>
+    <id>246</id>
+    <title>Keyboard Layout changes in current</title>
+    <date>Sat, 02 Mar 2013 08:59:59 -0600</date>
+    <author>ryuo</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+      We have removed the 10-evdev.conf file from the xorg-server package.<br/>
+      This means when you upgrade, your XKB keyboard layout will no longer work.</br/>
+      This is necessary to transition us closer to what systemd does for this.<br/>
+      To fix your system, please refer <a href="/docs/upgrade.html">here</a>.<br/>
+        ]]>
+    </content>
+  </post>
+  <post>
     <id>245</id>
     <title>Frugalware 1.8 (Cinna) released</title>
     <date>Wed, 06 Feb 2013 09:46:29 -0600</date>
