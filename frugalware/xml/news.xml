@@ -33,6 +33,60 @@ To get the current time in this format, run in your shell: date -R
 
 <news>
   <post>
+    <id>248</id>
+    <title>Frugalware 1.9pre1 (Arcturus) released</title>
+    <date>Mon, 01 Apr 2013 00:04:06 -0500</date>
+    <author>ryuo</author>
+    <hidden>1</hidden>
+    <content><![CDATA[
+      This is the first preview release of Frugalware 1.9. It also marks the first<br/>
+      public testing for our new live CD environment, FVBE, and our new installer<br/>
+      called fwsetup.<br/>
+      <br/>
+      This has been in development for 8 months already, and is a compilation of 4<br/>
+      older projects. They are fwlive, setup, fwife, and frugalwareutils. In this<br/>
+      new project, they are integrated so they will share a common codebase. This<br/>
+      should help avoid the fragmentation like we had with setup and fwife.<br/>
+      <br/>
+      The new installer should be feature complete in terms of replacing the old<br/>
+      installer. However, some parts were removed because of disuse or just plain<br/>
+      uselessness. And some features are entirely new, such as the keyboard<br/>
+      layout selection that also configures your X11 XKB layout.<br/>
+      <br/>
+      The main feature that is not yet implemented is a replacement for netconfig.<br/>
+      It should be finishd by pre2. There are no other major features planned for<br/>
+      the new installer during this release cycle, as the existing stuff needs to<br/>
+      be tested more.<br/>
+      <br/>
+      There has also been changes to what kinds of ISOs we will build from now on.<br/>
+      Starting with this release, we will only provide ISOs with packages from the<br/>
+      main package groups. Anything from -extra will only be available via net<br/>
+      install or after install is complete. By pre2, net install ISOs should also<br/>
+      be available.<br/>
+      <br/>
+      Also of interest is that our new ISOs are now using GRUB2 to boot and no<br/>
+      longer using isolinux to boot. GRUB2 natively supports BIOS hybrid ISOs<br/>
+      for our i686 branch and BIOS/UEFI hybrid ISOs for our x86_64 branch. UEFI<br/>
+      mode is only supported for booting at this time, and not for installation.<br/>
+      <br/>
+      One final note is that the new installer has been primarily tested on x86_64<br/>
+      using the ISO mode of the hybrid ISO. So, we need the most testing on i686<br/>
+      and USB mode. Any feedback will be examined, to help improve the new<br/>
+      installer.<br/>
+      <br/>
+      Current known issues include network not working after initial install.<br/>
+      For now, run netconfig after logging in as root. This should work as a<br/>
+      temporary fix until we can implement the netconfig replacement.<br/>
+      <br/>
+      To use the new installer, you will need to login as root after the ISO<br/>
+      boots using the password fvbe. To run the installer, use the command<br/>
+      fwsetup.<br/>
+      <br/>
+      Download for i686 or x86_64: See our <a href="http://frugalware.org/download/frugalware-current-iso">mirror list</a>. Don't forget to check the <a href="http://frugalware.org/download/frugalware-current-iso/SHA1SUMS">integrity</a> of the install images before burning!<br/>
+        ]]>
+    </content>
+  </post>
+  <post>
     <id>247</id>
     <title>Big Announcement</title>
     <date>Mon, 01 Apr 2013 00:04:06 -0500</date>
