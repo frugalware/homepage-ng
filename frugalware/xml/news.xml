@@ -35,9 +35,9 @@ To get the current time in this format, run in your shell: date -R
   <post>
     <id>248</id>
     <title>Frugalware 1.9pre1 (Arcturus) released</title>
-    <date>Mon, 01 Apr 2013 00:04:06 -0500</date>
+    <date>Mon, 08 Apr 2013 02:06:16 -0500</date>
     <author>ryuo</author>
-    <hidden>1</hidden>
+    <hidden>0</hidden>
     <content><![CDATA[
       This is the first preview release of Frugalware 1.9. It also marks the first<br/>
       public testing for our new live CD environment, FVBE, and our new installer<br/>
@@ -69,7 +69,7 @@ To get the current time in this format, run in your shell: date -R
       for our i686 branch and BIOS/UEFI hybrid ISOs for our x86_64 branch. UEFI<br/>
       mode is only supported for booting at this time, and not for installation.<br/>
       <br/>
-      One final note is that the new installer has been primarily tested on x86_64<br/>
+      One other thing is that the new installer has been primarily tested on x86_64<br/>
       using the ISO mode of the hybrid ISO. So, we need the most testing on i686<br/>
       and USB mode. Any feedback will be examined, to help improve the new<br/>
       installer.<br/>
@@ -81,6 +81,11 @@ To get the current time in this format, run in your shell: date -R
       To use the new installer, you will need to login as root after the ISO<br/>
       boots using the password fvbe. To run the installer, use the command<br/>
       fwsetup.<br/>
+      <br/>
+      One final note is that we are looking for someone to design a new 16<br/>
+      color palette for the new installer. Currently it uses the color<br/>
+      palette from Mandriva's NEWT patches. If you are interested, then<br/>
+      contact us on IRC or the forums.<br/>
       <br/>
       Download for i686 or x86_64: See our <a href="http://frugalware.org/download/frugalware-current-iso">mirror list</a>. Don't forget to check the <a href="http://frugalware.org/download/frugalware-current-iso/SHA1SUMS">integrity</a> of the install images before burning!<br/>
         ]]>
