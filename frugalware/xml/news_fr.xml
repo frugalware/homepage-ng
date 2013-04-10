@@ -22,6 +22,22 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
   <post>
+	<id>249</id>
+	<title>Changements dans la configuration clavier sur -current</title>
+	<date>Sat, 02 Mar 2013 08:59:59 -0600</date>
+	<author>ryuo</author>
+	<hidden>0</hidden>
+	<content><![CDATA[
+			Nous avons supprimé le fichier 10-evdev.conf du paquet xorg-server.
+			Cela signifie que lorsque vous mettrez à jour, la configuration de
+			votre clavier ne fonctionnera plus. <br />
+			Cette opération est nécessaire, pour se rapprocher de ce que fait
+			systemd pour la gestion du clavier.<br />
+			Pour reconfigurer votre clavier, suivez <a href="http://frugalware.org/docs/upgrade.html">cette procédure</a>.
+			]]>
+	</content>
+  </post>
+  <post>
     <id>248</id>
     <title>Frugalware 1.8 (Cinna) disponible</title>
     <date>Wed, 06 Feb 2013 09:46:29 -0600</date>
