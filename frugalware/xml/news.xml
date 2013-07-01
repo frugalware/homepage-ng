@@ -37,7 +37,7 @@ To get the current time in this format, run in your shell: date -R
     <title>Frugalware 1.9pre2 (Arcturus) released</title>
     <date>Mon, 01 Jul 2013 03:31:47 -0500</date>
     <author>ryuo</author>
-    <hidden>1</hidden>
+    <hidden>0</hidden>
     <content><![CDATA[
       This is the second preview release of Frugalware 1.9.<br/>
       <br/>
@@ -48,7 +48,7 @@ To get the current time in this format, run in your shell: date -R
       <br/>
       Also of note is the fact that the entire collection of tools from frugalwareutils<br/>
       has been replaced by the standalone mode of the new installer. The new tools are<br/>
-      provided by package fvbeutils.<br/>
+      provided by the package fvbeutils.<br/>
       <br/>
       Some other minor improvements exist, such as the installer's partitioner<br/>
       no longer exposing the boot medium as a partitionable device. This only<br/>
