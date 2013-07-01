@@ -33,6 +33,41 @@ To get the current time in this format, run in your shell: date -R
 
 <news>
   <post>
+    <id>249</id>
+    <title>Frugalware 1.9pre2 (Arcturus) released</title>
+    <date>Mon, 01 Jul 2013 03:31:47 -0500</date>
+    <author>ryuo</author>
+    <hidden>1</hidden>
+    <content><![CDATA[
+      This is the second preview release of Frugalware 1.9.<br/>
+      <br/>
+      Starting with this release, netconfig has been replaced by our new nmconfig<br/>
+      tool which uses the NetworkManager framework instead of our original custom<br/>
+      network management code. This reduces the amount of custom code we must<br/>
+      maintain for our distribution.<br/>
+      <br/>
+      Also of note is the fact that the entire collection of tools from frugalwareutils<br/>
+      has been replaced by the standalone mode of the new installer. The new tools are<br/>
+      provided by package fvbeutils.<br/>
+      <br/>
+      Some other minor improvements exist, such as the installer's partitioner<br/>
+      no longer exposing the boot medium as a partitionable device. This only<br/>
+      applies if you are booting from USB.<br/>
+      <br/>
+      Now for the installer instructions. You will need to login as root after<br/>
+      the ISO boots using the password fvbe. To run the installer, use the<br/>
+      command fwsetup.<br/>
+      <br/>
+      One final note is that we are looking for someone to design a new 16<br/>
+      color palette for the new installer. Currently it uses the color<br/>
+      palette from Mandriva's NEWT patches. If you are interested, then<br/>
+      contact us on IRC or the forums.<br/>
+      <br/>
+      Download for i686 or x86_64: See our <a href="http://frugalware.org/download/frugalware-current-iso">mirror list</a>. Don't forget to check the <a href="http://frugalware.org/download/frugalware-current-iso/SHA1SUMS">integrity</a> of the install images before burning!<br/>
+        ]]>
+    </content>
+  </post>
+  <post>
     <id>248</id>
     <title>Frugalware 1.9pre1 (Arcturus) released</title>
     <date>Mon, 08 Apr 2013 02:06:16 -0500</date>
