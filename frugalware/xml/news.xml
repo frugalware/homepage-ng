@@ -33,6 +33,20 @@ To get the current time in this format, run in your shell: date -R
 
 <news>
   <post>
+    <id>250</id>
+    <title>recent changes in current</title>
+    <date>Mon, 26 Aug 2013 04:17:31 -0500</date>
+    <author>ryuo</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+      There has been changes in current recently. You will need to run the commands<br/>
+      viconfig and dmconfig as root in a terminal to adapt to the changes we have<br/>
+      done to the vi symlinks and display manager system. For more information,<br/>
+      please see the upgrade notes <a href="/docs/upgrade.html">here</a>.<br/>
+        ]]>
+    </content>
+  </post>
+  <post>
     <id>249</id>
     <title>Frugalware 1.9pre2 (Arcturus) released</title>
     <date>Mon, 01 Jul 2013 03:31:47 -0500</date>
