@@ -22,6 +22,22 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
   <post>
+    <id>252</id>
+    <title>Changements récents dans -current</title>
+    <date>Mon, 26 Aug 2013 04:17:31 -0500</date>
+    <author>ryuo</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+		  Quelques changements ont eu lieu récemment dans la branche -current.
+		  Vous aurez besoin de lancer les commandes <strong>viconfig</strong>
+		  et <strong>dmconfig</strong> en tant que superutilisateur dans un
+		  terminal pour adapter votre configuration aux changements faits 
+		  pour les liens symboliques de vi et le gestionnaire de connexion.
+		  Pour plus d'informations, merci de lire <a href="http://frugalware.org/docs/upgrade.html">les notes de mise à jour</a>.
+		  ]]>
+    </content>
+  </post>
+  <post>
 	<id>251</id>
 	<title>Sortie de Frugalware 1.9pre2 (Arcturus)</title>
 	<date>Mon, 01 Jul 2013 03:31:47 -0500</date>
@@ -62,7 +78,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 	<author>ryuo</author>
 	<hidden>0</hidden>
 	<content><![CDATA[
-			Ceci est la première pré-version de Frugalqare 1.9. Cette sortie
+			Ceci est la première pré-version de Frugalware 1.9. Cette sortie
 			marque également le premier test public de notre nouvel environnement
 			"Live-CD", FVBE, et de notre nouvel installeur, appelé fwsetup.<br /><br />
 			Celui-ci est en dévellopement depuis déjà 8 mois. Il s'agit d'une 
