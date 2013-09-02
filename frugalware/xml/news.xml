@@ -35,9 +35,9 @@ To get the current time in this format, run in your shell: date -R
   <post>
     <id>251</id>
     <title>Frugalware 1.9rc1 (Arcturus) released</title>
-    <date>Mon, 01 Jul 2013 03:31:47 -0500</date>
+    <date>Mon, 02 Sep 2013 09:01:04 -0500</date>
     <author>ryuo</author>
-    <hidden>1</hidden>
+    <hidden>0</hidden>
     <content><![CDATA[
       This is the first release candidate for Frugalware 1.9.<br/>
       <br/>
