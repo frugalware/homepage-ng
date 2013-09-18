@@ -22,9 +22,50 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
 
 <news>
   <post>
+    <id>254</id>
+    <title>Sortie de Frugalware 1.9rc2 (Arcturus)</title>
+    <date>Mon, 16 Sep 2013 09:58:51 -0500</date>
+    <author>ryuo</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+        Voici la seconde version candidate de la version stable 1.9
+        à venir. <br /><br />
+        Cette nouvelle version résoud quelques problèmes au niveau
+        de l'installateur : 
+        <ul>
+            <li>Il pouvait arriver, lors de l'utilisation de la
+                touche TAB, l'ordre de tabulation soit erroné 
+                dans le module dédié au partionnement du disque. 
+                Cela est désormais résolu.</li>
+            <li>Désormais, l'installateur n'utilise plus HOSTNAME
+                pour déterminer s'il s'exécute ou non dans
+                l'environnement <i>live</i>.</li>
+            <li>Il est maintenant possible de passer la configuration
+                d'une connexion IPV6 ainsi que l'étape de création
+                d'un utilisateur normal.</li>
+            <li>L'installateur plantait si aucun point de montage
+                n'était spécifié pour la partition swap. Ce bogue
+                est désormais réglé.</li>
+            <li>Un fichier de locale manquant dispose désormais
+                d'un lien symbolique dans GRUB. C'était un bogue
+                sans gravité, mais qui nécessitait tout de même 
+                d'être résolu.</li>
+            <li>L'installateur démarre maintenant automatiquement
+                après l'amorçage et les autres consoles affichent
+                les informations de connexion, si vous avez besoin
+                d'avoir accès au shell.</li>
+        </ul><br />
+        Téléchargement pour i686 et x86_64 : consultez notre
+        <a href="http://frugalware.org/download/frugalware-current-iso">
+        liste de miroirs</a>. N'oubliez pas de vérifier 
+        <a href="http://frugalware.org/download/fugalware-current-iso/SHA1SUMS">l'intégrité</a> des images ISO avant de les utiliser !
+        ]]>
+    </content>
+  </post>
+  <post>
     <id>253</id>
     <title>Sortie de Frugalware 1.9rc1 (Arcturus)</title>
-    <date>Mon, 02 SEp 2013 09:01:04 -0500</date>
+    <date>Mon, 02 Sep 2013 09:01:04 -0500</date>
     <author>ryuo</author>
     <hidden>0</hidden>
     <content><![CDATA[
