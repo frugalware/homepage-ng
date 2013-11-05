@@ -41,7 +41,7 @@ To get the current time in this format, run in your shell: date -R
     <content><![CDATA[
       <center><img src="http://frugalware.org/images/promo-arcturus.png" alt="Frugalware 1.9 Arcturus is released!" /></center><br />
       The Frugalware Developer Team is pleased to <a href="/news/253">announce</a> the immediate availability of Frugalware 1.9, our nineteenth stable release.<br />
-      No new features have been added since 1.9rc2. If you didn't follow the changes during the pre/rc releases, here are the most important changes since 1.7 in no particular order:<br />
+      No new features have been added since 1.9rc2. If you didn't follow the changes during the pre/rc releases, here are the most important changes since 1.8 in no particular order:<br />
       <ul>
         <li>Updated packages: Linux kernel 3.10.17, XOrg server 1.14.2, GNOME 3.8, KDE 4.11, LibreOffice 4.1.2.3, Mozilla Firefox 22.0 to name a few major components.</li>
         <li>netconfig has been replaced by NetworkManager</li>
@@ -50,13 +50,13 @@ To get the current time in this format, run in your shell: date -R
         <li>old display-manager-legacy.service has been dropped for the new systemd method of individual service files</li>
 				<li>console keymaps and x11 keymaps are now managed by the systemd method</li>
       </ul>
-      Additionally, this marks the first stable release using the new installer that has been in development for a year already.<br/>
-      It was redesigned from the bottom up to be more resistant to user errors and to be more stable. It should be stable enough<br/>
-      by now for general use. However, at least one major feature of the old installer is absent from the new one. Network install<br/>
-      images will not be generated for this release as this feature has not been reimplemented yet. At present, only 2 image types are<br/>
-      available. Basic, which contains only packages from base group. Full, which contains all the packages from the main package groups<br/>
-      only. From now on, images will not contain packages from the any of the -extra package groups. They will only be available via<br/>
-      download after the installation is complete.<br/>
+      Additionally, this marks the first stable release using the new installer that has been in development for a year already.
+      It was redesigned from the bottom up to be more resistant to user errors and to be more stable. It should be stable enough
+      by now for general use. However, at least one major feature of the old installer is absent from the new one. Network install
+      images will not be generated for this release as this feature has not been reimplemented yet. At present, only 2 image types are
+      available. Basic, which contains only packages from base group. Full, which contains all the packages from the main package groups
+      only. From now on, images will not contain packages from the any of the -extra package groups. They will only be available via
+      download after the installation is complete.
       <br/>
       Please refer to the Frugalware <a href="http://frugalware.org/download/frugalware-1.9/ChangeLog.txt">Arcturus ChangeLog</a> for more information.<br />
       Download for i686, x86_64, and arm: See our <a href="http://frugalware.org/download/frugalware-1.9-iso">mirror list</a>. Don't forget to check the <a href="http://frugalware.org/download/frugalware-1.9-iso/SHA1SUMS">integrity</a> of the install images before burning!<br />
@@ -354,8 +354,8 @@ To get the current time in this format, run in your shell: date -R
     <author>Pingax</author>
     <hidden>0</hidden>
     <content><![CDATA[
-        <center><img src="http://frugalware.org/images/FwNewYear.png" alt="Frugalware New Year Logo" /></center><br /><br />   
-        The Frugalware development team would like to wish everyone a Happy New Year ! 
+        <center><img src="http://frugalware.org/images/FwNewYear.png" alt="Frugalware New Year Logo" /></center><br /><br />
+        The Frugalware development team would like to wish everyone a Happy New Year !
         ]]>
     </content>
   </post>
