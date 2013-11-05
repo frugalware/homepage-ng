@@ -56,7 +56,9 @@ To get the current time in this format, run in your shell: date -R
       images will not be generated for this release as this feature has not been reimplemented yet. At present, only 2 image types are
       available. Basic, which contains only packages from base group. Full, which contains all the packages from the main package groups
       only. From now on, images will not contain packages from any of the -extra package groups. They will only be available via
-      download after the installation is complete.
+      download after the installation is complete. One final note about the x86_64 images. They support experimental booting on EFI
+      systems, but they have no support for installing EFI bootloaders. If you wish to install to EFI, you will have to skip GRUB2 installation
+      and install your own EFI bootloader instead.
       <br/>
 			<br/>
       Please refer to the Frugalware <a href="http://frugalware.org/download/frugalware-1.9/ChangeLog.txt">Arcturus ChangeLog</a> for more information.<br />
