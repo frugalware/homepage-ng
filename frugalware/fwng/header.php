@@ -18,8 +18,8 @@
     <link rel="icon" href="<?php echo $fwng_root; ?>images/favicon.ico" />
 
     <!-- RSS -->
-    <link rel="alternate" type="application/rss+xml" title="Frugalware news" href="http://<?php print $rsspath; ?>rss/news" />
-    <link rel="alternate" type="application/rss+xml" title="Frugalware packages" href="http://<?php print $rsspath; ?>rss/packages" />
+    <link rel="alternate" type="application/rss+xml" title="Frugalware news" href="<?php print $myurl; ?>rss/news" />
+    <link rel="alternate" type="application/rss+xml" title="Frugalware packages" href="<?php print $myurl; ?>rss/packages" />
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" media="screen" href="<?php echo $fwng_root; ?>static/css/common.css" />
