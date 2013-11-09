@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE menus [
+<!ELEMENT menus (menu)*>
+<!ELEMENT menu (_link, submenus)>
+<!ELEMENT link (#PCDATA)>
+<!ATTLIST link url CDATA #IMPLIED>
+<!ELEMENT submenus (_sublink)*>
+<!ELEMENT sublink (#PCDATA)>
+<!ATTLIST sublink url CDATA #REQUIRED>
+]>
+
+<!-- If you modify this file, be sure it's still valid - read /hooks/README!
+
+1) An empty sublink is a separator <hr />
+2) Url in link isn't required but it's required in sublink !
+
+-->
+
+<menus>
+    <menu>
+        <_link>Frugalware</_link>
+        <submenus>
+            <_sublink url="">Index</_sublink>
+            <_sublink url="news.php">News</_sublink>
+            <_sublink url="docs.php">Documentation</_sublink>
+            <_sublink url="screenshots.php">Screenshots</_sublink>
+            <_sublink></_sublink>
+            <_sublink url="authors.php">Authors</_sublink>
+            <_sublink url="media.php">Press</_sublink>
+            <_sublink url="rss.php">News feeds</_sublink>
+        </submenus>
+    </menu>
+    <menu>
+        <_link>Community</_link>
+        <submenus>
+            <_sublink url="https://forums.frugalware.org">Forums</_sublink>
+            <_sublink url="irc.php">IRC</_sublink>
+            <_sublink></_sublink>
+            <_sublink url="http://www.frugalware-art.org/">Artwork</_sublink>
+            <_sublink url="http://planet.frugalware.org">Blogs</_sublink>
+            <_sublink url="paste/">Pastebin</_sublink>
+            <_sublink url="https://frugalware.org/mailman/listinfo">Mailing lists</_sublink>
+        </submenus>
+    </menu>
+    <menu>
+        <_link url="download.php">Download</_link>
+    </menu>
+    <menu>
+        <_link url="packages.php">Packages</_link>
+    </menu>
+    <menu>
+        <_link url="https://wiki.frugalware.org">Wiki</_link>
+    </menu>
+    <menu>
+        <_link>Development</_link>
+        <submenus>
+            <_sublink url="https://bugs.frugalware.org">Bug Tracker</_sublink>
+            <_sublink url="buildlogs.php">Buildlogs</_sublink>
+            <_sublink url="http://git.frugalware.org">Git repository</_sublink>
+            <_sublink url="roadmap.php">Roadmap</_sublink>
+            <_sublink url="security.php">Security announcements</_sublink>
+            <_sublink url="https://pootle.frugalware.org">Translation portal</_sublink>
+            <_sublink></_sublink>
+            <_sublink url="donations.php">Donations</_sublink>
+        </submenus>
+    </menu>
+</menus>

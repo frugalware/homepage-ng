@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mirrors [
+<!ELEMENT mirrors (mirror)*>
+<!ELEMENT mirror (id , type+ , path? , ftp_path?, http_path?, rsync_path?, link?, host?, country?, country_code?, supplier?, supplier_url?, bandwidth?)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT host (#PCDATA)>
+<!ELEMENT country (#PCDATA)>
+<!ELEMENT country_code (#PCDATA)>
+<!ELEMENT supplier (#PCDATA)>
+<!ELEMENT supplier_url (#PCDATA)>
+<!ELEMENT bandwidth (#PCDATA)>
+<!ELEMENT ftp_path (#PCDATA)>
+<!ELEMENT http_path (#PCDATA)>
+<!ELEMENT rsync_path (#PCDATA)>
+<!ELEMENT link (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT type (#PCDATA)>
+<!ELEMENT path (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+]>
+
+<!--
+The goal of this file to be the source of the:
+
+1) bind config file
+2) homepage
+3) pacman mirror list
+4) repoman mirror list
+5) mirmon list
+
+That's why maybe it looks a bit complex first, but it's good since if there is
+a new mirror, we need to modify this file only.
+
+(Problems with the old mirrors.xml:
+1) Duplicate data for http/rsync/ftp mirrors.
+2) The description randomly contained info about the country, the supplier, the
+supplier's url, bandwidth.)
+
+When you choose the id for a new mirror, first search for XXX, then if there is
+none, use the next free integer.
+When you delete a mirror, add an XXX (copy an existing one) so that we'll know
+if we can re-use its number.
+
+NOTES: For pacman, we prefer ftp mirrors so in case both http and ftp is
+available on the same host, we include only the ftp one.
+
+If you modify this file, be sure it's still valid - read /hooks/README!
+-->
+
+<mirrors>
+    <mirror>
+        <id>0</id>
+        <type>ftp</type>
+        <type>rsync</type>
+        <path>pub/frugalware</path>
+        <rsync_path>frugalware</rsync_path>
+        <link>free.org</link>
+        <host>ftp.free.org</host>
+        <country>France</country>
+        <country_code>fr</country_code>
+        <supplier>Fondation Free</supplier>
+        <supplier_url>http://free.org/</supplier_url>
+        <bandwidth>2 GBit</bandwidth>
+    </mirror>
+<!--
+    <mirror>
+        <id>2</id>
+        <type>ftp</type>
+        <type>http</type>
+        <path>mirror/ftp.frugalware.org/pub/frugalware/</path>
+        <host>ftp.hosteurope.de</host>
+        <country>Germany</country>
+        <country_code>de</country_code>
+        <supplier>Host Europe</supplier>
+        <supplier_url>http://www.hosteurope.de/</supplier_url>
+        <bandwidth>1 GBit</bandwidth>
+    </mirror>
+-->
+<!--
+    <mirror>
+        <id>3</id>
+        <type>ftp</type>
+        <path>mirrors/frugalware/pub/frugalware</path>
+        <host>reaktor.linuxforum.hu</host>
+        <country>Hungary</country>
+        <country_code>hu</country_code>
+        <supplier>Schmidt Computer Ltd.</supplier>
+        <supplier_url>http://www.linuxforum.hu/</supplier_url>
+        <bandwidth>100 MBit</bandwidth>
+    </mirror>
+-->
+    <mirror>
+        <id>4</id>
+        <type>ftp</type>
+        <type>http</type>
+        <type>rsync</type>
+        <path>pub/linux/distributions/frugalware</path>
+        <link>frugalware.org</link>
+        <host>ftp.freepark.org</host>
+        <country>Hungary</country>
+        <country_code>hu</country_code>
+        <supplier>Free Software Network</supplier>
+        <supplier_url>http://www.fsn.hu</supplier_url>
+        <bandwidth>100 MBit</bandwidth>
+    </mirror>
+    <mirror>
+        <id>5</id>
+        <type>ftp</type>
+        <path>mirror/ftp.frugalware.org/pub/frugalware</path>
+        <link>frugalware.org</link>
+        <host>niue.belnet.be</host>
+        <country>Belgium</country>
+        <country_code>be</country_code>
+        <supplier>Belgian National Research Network</supplier>
+        <supplier_url>http://www.belnet.be/en/</supplier_url>
+        <bandwidth>10 GBit</bandwidth>
+    </mirror>
+    <mirror>
+        <id>6</id>
+        <type>ftp</type>
+        <type>http</type>
+        <path>mirrors/linux/frugalware</path>
+        <link>frugalware.org</link>
+        <host>http://www.cc.uoc.gr</host>
+        <country>Greece</country>
+        <country_code>gr</country_code>
+        <supplier>University of Crete / Computer Center</supplier>
+        <supplier_url>http://www.cc.uoc.gr</supplier_url>
+        <bandwidth>1 GBit</bandwidth>
+    </mirror>
+    <!-- XXX: #8 was linux-de.org, can be reused -->
+<!--
+    <mirror>
+        <id>9</id>
+        <type>ftp</type>
+        <path>pub/frugalware</path>
+        <link>frugalware.org</link>
+        <host>cle.linux.org.tw</host>
+        <country>Taiwan</country>
+        <country_code>tw</country_code>
+        <supplier>National Taiwan University</supplier>
+        <supplier_url>http://cle.linux.org.tw/</supplier_url>
+        <bandwidth>Unknown bandwidth</bandwidth>
+    </mirror>
+-->
+    <mirror>
+        <id>10</id>
+        <type>ftp</type>
+        <type>http</type>
+        <type>rsync</type>
+        <path>pub/linux/frugalware</path>
+        <link>frugalware.org</link>
+        <host>frugalware.mirrors.tds.net</host>
+        <country>USA</country>
+        <country_code>us</country_code>
+        <supplier>TDS Telecom</supplier>
+        <supplier_url>http://mirrors.tds.net/</supplier_url>
+        <bandwidth>1 GBit</bandwidth>
+    </mirror>
+    <!-- XXX: #11 will be a webpage mirror, after that is complete, we can
+    re-use it again, but needs discussing with them first -->
+    <mirror>
+        <id>12</id>
+        <type>ftp</type>
+        <type>http</type>
+        <type>rsync</type>
+        <path>mirrors/ftp.frugalware.org/pub/frugalware</path>
+        <link>frugalware.org</link>
+        <host>ftp.heanet.ie</host>
+        <country>Ireland</country>
+        <country_code>ie</country_code>
+        <supplier>Ireland's National Education and Research Network</supplier>
+        <supplier_url>http://www.heanet.ie/</supplier_url>
+        <bandwidth>2 GBit</bandwidth>
+    </mirror>
+</mirrors>
