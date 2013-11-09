@@ -1,7 +1,7 @@
 #php_value session.auto_start 1
 
 <Files *.inc.php>
-	deny from all
+    deny from all
 </Files>
 
 RewriteEngine on
@@ -9,6 +9,7 @@ RewriteCond %{REQUEST_URI} ^/news.php
 RewriteRule .* http://frugalware.org/news
 RewriteCond %{REQUEST_URI} !^/.*\.php
 RewriteCond %{REQUEST_URI} !^/images
+RewriteCond %{REQUEST_URI} !^/fwng
 RewriteCond %{REQUEST_URI} !^/start
 RewriteCond %{REQUEST_URI} !^/static
 RewriteCond %{REQUEST_URI} !^/dtd
