@@ -9,7 +9,6 @@ RewriteCond %{REQUEST_URI} ^/news.php
 RewriteRule .* http://frugalware.org/news
 RewriteCond %{REQUEST_URI} !^/.*\.php
 RewriteCond %{REQUEST_URI} !^/images
-RewriteCond %{REQUEST_URI} !^/fwng
 RewriteCond %{REQUEST_URI} !^/start
 RewriteCond %{REQUEST_URI} !^/static
 RewriteCond %{REQUEST_URI} !^/dtd
@@ -22,4 +21,10 @@ RewriteCond %{REQUEST_URI} !^/pipermail
 RewriteCond %{REQUEST_URI} !^/syncpkgd
 RewriteCond %{REQUEST_URI} !^/server-status
 RewriteCond %{REQUEST_URI} !^/robots.txt
+RewriteCond %{REQUEST_URI} !^/fwng
+RewriteCond %{REQUEST_URI} !^/fwng/static
+RewriteCond %{REQUEST_URI} !^/fwng/start
+RewriteCond %{REQUEST_URI} !^/fwng/dtd
+RewriteCond %{REQUEST_URI} !^/fwng/images
+RewriteCond %{REQUEST_URI} !^/fwng/xml
 RewriteRule (.*) /rewrite.php/$1
