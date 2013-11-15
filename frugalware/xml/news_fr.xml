@@ -18,77 +18,84 @@
 1) If you modify this file, be sure it's still valid - read /hooks/README!
 
 2) Please use date and time in RFC 2822 format.
-Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
+Example: Mon, 07 Aug 2006 12:34:56 -0600
+To get the current time in this format, run in your shell: date -R
+
+3) For translators, check if the id of translate new is the same than the
+original new!
+
+-->
 
 <news>
   <post>
-    <id>255</id>
+    <id>258</id>
     <title>Sortie de Frugalware 1.9 (Arcturus)</title>
-    <date>Tue, 05 Nov 09:49:44 -0600</date>
+    <date>Tue, 05 Nov 2013 09:49:44 -0600</date>
     <author>ryuo</author>
     <hidden>0</hidden>
     <content><![CDATA[
-	L'équipe de développement de Frugalware a le plaisir de vous annoncer
-	la sortie de Frugalware 1.9, notre dix-neuvième version stable.<br />
-	Aucune fonctionnalité n'a été ajoutée depuis la version 1.9rc2. Si vous
-	n'avez pas suivi les changements durant les version pre/rc, voici 
-	quelques uns des changements importants, depuis la version 1.8 :<br />
-	<ul>
-	  <li>Paquets mis à jour :
-	    <ul>
-	      <li>Noyau Linux 3.10.17</li>
-	      <li>Serveur XOrg 1.14.2</li>
-	      <li>GNOME 3.8</li>
-	      <li>KDE 4.11</li>
-	      <li>LibreOffice 4.1.2.3</li>
-	      <li>Mozilla Firefox 22.0</li>
-	    </ul>
-	  </li>
-	  <li>Netconfig a été remplacé par NetworkManager.</li>
-	  <li>frugalwareutils a été remplacé par fvbeutils.</li>
-	  <li>Les liens symboliques vi sont maintenant configurables. Ils étaient
-	    auparavant spécifiés directement dans leurs paquets.</li>
-	  <li>L'ancien display-manager-legacy.service a été supprimé pour être 
-	    remplacé par une nouvelle méthode de systemd qui traite individuellement
-	    les paquets.</li>
-	  <li>Les agencements de clavier pour la console et X11 sont maintenant gérés
-	    par systemd.</li>
-	</ul><br />
-	De plus, cette version marque l'utilisation, pour la première fois, du nouvel 
-	installateur dans une version stable. Ce dernier est développé depuis déjà un an.
-	Il a été remodelé de la tête aux pieds afin d'être plus résistant aux erreurs des 
-	utilsateurs et également plus stable. Il devrait l'être assez pour un usage général.
-	Cependant, une des fonctionnalités majeures de l'ancien installateur est absente de 
-	la nouvelle version. Les images d'installation par le réseau ne seront pas générées
-	pour cette version, étant donné que cette fonctionnalité n'est pas encore implémentée.
-	Pour le moment, seules 2 types d'images sont disponibles : 
-	<ul>
-	  <li><b>Basic</b>, qui contient uniquement les paquets du groupe "base".</li>
-	  <li><b>Full</b>, qui contient les paquets des groupes principaux : c'est-à-dire que
-	    les paquets des catégories -extra ne seront disponibles qu'au téléchargement, après
-	    avoir effectué l'installation.</li>
-	</ul><br />
-	Une dernière information concernant les images x86_64 : elles supportent, de manière
-	expérimentale, l'amorçage sur des systèmes EFI, mais elles ne disposent pas de support
-	pour l'installation de gestionnaires d'amorçage EFI. Si vous désirez installer Frugalware
-	sur un système EFI, vous devrez garder GRUB2 et installer votre propre gestionnaire
-	d'amorçage EFI par la suite.<br /><br />
-	Pour toute information complémentaire, vous pouvez vous référer au
-	<a href="http://frugalware.org/download/frugalware-1.9/ChangeLog.txt">ChangeLog d'Arcturus</a>.
-	<br /><br />
-	Téléchargement pour les architectures i686, x86_64 et arm : veuillez vous référer à la 
-	<a href="http://frugalware.org/download/frugalware-1.9-iso">liste des mirroirs</a>. 
-	N'oubliez pas de vérifier <a href="http://frugalware.org/download/frugalware-1.9-iso/SHA1SUMS">
-	  l'intégrité</a> des images ISO avant de les utiliser !<br /><br />
-	<b>NOTE :</b>Cliquez <a href="http://frugalware.org/docs/install#_choosing_installation_flavor">
-	  ici</a> pour connaître les prérequis à l'installation. <br />Si vous mettez à jour votre machine
-	depuis notre version stable précédente (Cinna), veuillez prendre connaissance des
-	<a href="http://frugalware.org/docs/stable/upgrade">instructions de mise à jour</a>.
-	]]>
+    <center><img src="images/promo/arcturus.png" alt="Frugalware 1.9 Arcturus is released!" /></center><br />
+    L'équipe de développement de Frugalware a le plaisir de vous annoncer
+    la sortie de Frugalware 1.9, notre dix-neuvième version stable.<br />
+    Aucune fonctionnalité n'a été ajoutée depuis la version 1.9rc2. Si vous
+    n'avez pas suivi les changements durant les version pre/rc, voici
+    quelques uns des changements importants, depuis la version 1.8 :<br />
+    <ul>
+      <li>Paquets mis à jour :
+        <ul>
+          <li>Noyau Linux 3.10.17</li>
+          <li>Serveur XOrg 1.14.2</li>
+          <li>GNOME 3.8</li>
+          <li>KDE 4.11</li>
+          <li>LibreOffice 4.1.2.3</li>
+          <li>Mozilla Firefox 22.0</li>
+        </ul>
+      </li>
+      <li>Netconfig a été remplacé par NetworkManager.</li>
+      <li>frugalwareutils a été remplacé par fvbeutils.</li>
+      <li>Les liens symboliques vi sont maintenant configurables. Ils étaient
+        auparavant spécifiés directement dans leurs paquets.</li>
+      <li>L'ancien display-manager-legacy.service a été supprimé pour être
+        remplacé par une nouvelle méthode de systemd qui traite individuellement
+        les paquets.</li>
+      <li>Les agencements de clavier pour la console et X11 sont maintenant gérés
+        par systemd.</li>
+    </ul><br />
+    De plus, cette version marque l'utilisation, pour la première fois, du nouvel
+    installateur dans une version stable. Ce dernier est développé depuis déjà un an.
+    Il a été remodelé de la tête aux pieds afin d'être plus résistant aux erreurs des
+    utilsateurs et également plus stable. Il devrait l'être assez pour un usage général.
+    Cependant, une des fonctionnalités majeures de l'ancien installateur est absente de
+    la nouvelle version. Les images d'installation par le réseau ne seront pas générées
+    pour cette version, étant donné que cette fonctionnalité n'est pas encore implémentée.
+    Pour le moment, seules 2 types d'images sont disponibles :
+    <ul>
+      <li><b>Basic</b>, qui contient uniquement les paquets du groupe "base".</li>
+      <li><b>Full</b>, qui contient les paquets des groupes principaux : c'est-à-dire que
+        les paquets des catégories -extra ne seront disponibles qu'au téléchargement, après
+        avoir effectué l'installation.</li>
+    </ul><br />
+    Une dernière information concernant les images x86_64 : elles supportent, de manière
+    expérimentale, l'amorçage sur des systèmes EFI, mais elles ne disposent pas de support
+    pour l'installation de gestionnaires d'amorçage EFI. Si vous désirez installer Frugalware
+    sur un système EFI, vous devrez garder GRUB2 et installer votre propre gestionnaire
+    d'amorçage EFI par la suite.<br /><br />
+    Pour toute information complémentaire, vous pouvez vous référer au
+    <a href="http://frugalware.org/download/frugalware-1.9/ChangeLog.txt">ChangeLog d'Arcturus</a>.
+    <br /><br />
+    Téléchargement pour les architectures i686, x86_64 et arm : veuillez vous référer à la
+    <a href="http://frugalware.org/download/frugalware-1.9-iso">liste des mirroirs</a>.
+    N'oubliez pas de vérifier <a href="http://frugalware.org/download/frugalware-1.9-iso/SHA1SUMS">
+      l'intégrité</a> des images ISO avant de les utiliser !<br /><br />
+    <b>NOTE :</b>Cliquez <a href="http://frugalware.org/docs/install#_choosing_installation_flavor">
+      ici</a> pour connaître les prérequis à l'installation. <br />Si vous mettez à jour votre machine
+    depuis notre version stable précédente (Cinna), veuillez prendre connaissance des
+    <a href="http://frugalware.org/docs/stable/upgrade">instructions de mise à jour</a>.
+    ]]>
       </content>
     </post>
   <post>
-    <id>254</id>
+    <id>257</id>
     <title>Sortie de Frugalware 1.9rc2 (Arcturus)</title>
     <date>Mon, 16 Sep 2013 09:58:51 -0500</date>
     <author>ryuo</author>
@@ -97,11 +104,11 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         Voici la seconde version candidate de la version stable 1.9
         à venir. <br /><br />
         Cette nouvelle version résoud quelques problèmes au niveau
-        de l'installateur : 
+        de l'installateur :
         <ul>
             <li>Il pouvait arriver, lors de l'utilisation de la
-                touche TAB, l'ordre de tabulation soit erroné 
-                dans le module dédié au partionnement du disque. 
+                touche TAB, l'ordre de tabulation soit erroné
+                dans le module dédié au partionnement du disque.
                 Cela est désormais résolu.</li>
             <li>Désormais, l'installateur n'utilise plus HOSTNAME
                 pour déterminer s'il s'exécute ou non dans
@@ -114,7 +121,7 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
                 est désormais réglé.</li>
             <li>Un fichier de locale manquant dispose désormais
                 d'un lien symbolique dans GRUB. C'était un bogue
-                sans gravité, mais qui nécessitait tout de même 
+                sans gravité, mais qui nécessitait tout de même
                 d'être résolu.</li>
             <li>L'installateur démarre maintenant automatiquement
                 après l'amorçage et les autres consoles affichent
@@ -123,149 +130,152 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
         </ul><br />
         Téléchargement pour i686 et x86_64 : consultez notre
         <a href="http://frugalware.org/download/frugalware-current-iso">
-        liste de miroirs</a>. N'oubliez pas de vérifier 
+        liste de miroirs</a>. N'oubliez pas de vérifier
         <a href="http://frugalware.org/download/fugalware-current-iso/SHA1SUMS">l'intégrité</a> des images ISO avant de les utiliser !
         ]]>
     </content>
   </post>
   <post>
-    <id>253</id>
+    <id>256</id>
     <title>Sortie de Frugalware 1.9rc1 (Arcturus)</title>
-    <date>Mon, 02 Sep 2013 09:01:04 -0500</date>
+    <date>Mon, 02 SEp 2013 09:01:04 -0500</date>
     <author>ryuo</author>
     <hidden>0</hidden>
     <content><![CDATA[
-		Voici la première version candidate de la version stable 1.9 à
-		venir. <br /><br />
-		A compter de cette version, nos anciens fichiers
-		<em>display-manager-legacy.device</em> et
-		<em>/etc/sysconfig/desktop</em> ont été remplacés par un système
-		dans lequel chaque <em>desktop manager</em> utilise un fichier
-		<em>.service</em> qui lui est propre. Vous pouvez passer à ce
-		nouveau système en utilisant l'outil <strong>dmconfig</strong>
-		ou en utilisant la commande <strong>systemctl</strong>.<br /><br />
-		De plus, nous avons supprimé les raccourcis vers vi que nous
-		avions l'habitude de fournir. Ils étaient jusque là attachés à
-		un unique éditeur (VIM). Le nouveau système permet de configurer
-		ces raccourcis via l'outli <strong>viconfig</strong> ou en
-		créant vous-même les raccourcis vers votre éditeur préféré.<br /><br />
-		Pour finir, un bogue a été résolu dans cette version. Le système
-		utilisé pour monter les paquets locaux utilisés comme source
-		d'installation a été repensé pour être plus fonctionnel. Certains
-		utilisateurs avaient pu nous faire part de difficultés à cause
-		de l'ancien système. Cela devrait maintenant être réglé. <br /><br />
-		Concernant les instructions relatives à l'installation de Frugalware,
-		vous aurez besoin de vous identifier en root une fois le système
-		démarré, en utilisant le mot de passe <em>fvbe</em>. Pour lancer
-		l'installation, exécutez simplement <strong>fwsetup</strong>.
-		<br /><br />
-		Une dernière chose : nous recherchons quelqu'un pour concevoir
-		une nouvelle palette de 16 couleurs pour l'installateur. Pour
-		le moment, nous utilisons la palette modifiée de Mandriva. Si
-		vous êtes intéressés, contactez-nous sur IRC ou laissez un
-		message sur le forum. <br /><br />
-		Téléchargement pour i686 et x86_64 : rendez-vous sur notre
-		<a href="http://frugalware.org/download/frugalware-current-iso">
-		liste de mirroirs</a>. N'oubliez pas de vérifier
-		<a href="http://frugalware.org/download/frugalware-current-iso/SHA1SUMS">
-		l'intégrité</a> des supports d'installation avant de les graver !
-	]]>
+        Voici la première version candidate de la version stable 1.9 à
+        venir. <br /><br />
+        A compter de cette version, nos anciens fichiers
+        <em>display-manager-legacy.device</em> et
+        <em>/etc/sysconfig/desktop</em> ont été remplacés par un système
+        dans lequel chaque <em>desktop manager</em> utilise un fichier
+        <em>.service</em> qui lui est propre. Vous pouvez passer à ce
+        nouveau système en utilisant l'outil <strong>dmconfig</strong>
+        ou en utilisant la commande <strong>systemctl</strong>.<br /><br />
+        De plus, nous avons supprimé les raccourcis vers vi que nous
+        avions l'habitude de fournir. Ils étaient jusque là attachés à
+        un unique éditeur (VIM). Le nouveau système permet de configurer
+        ces raccourcis via l'outli <strong>viconfig</strong> ou en
+        créant vous-même les raccourcis vers votre éditeur préféré.<br /><br />
+        Pour finir, un bogue a été résolu dans cette version. Le système
+        utilisé pour monter les paquets locaux utilisés comme source
+        d'installation a été repensé pour être plus fonctionnel. Certains
+        utilisateurs avaient pu nous faire part de difficultés à cause
+        de l'ancien système. Cela devrait maintenant être réglé. <br /><br />
+        Concernant les instructions relatives à l'installation de Frugalware,
+        vous aurez besoin de vous identifier en root une fois le système
+        démarré, en utilisant le mot de passe <em>fvbe</em>. Pour lancer
+        l'installation, exécutez simplement <strong>fwsetup</strong>.
+        <br /><br />
+        Une dernière chose : nous recherchons quelqu'un pour concevoir
+        une nouvelle palette de 16 couleurs pour l'installateur. Pour
+        le moment, nous utilisons la palette modifiée de Mandriva. Si
+        vous êtes intéressés, contactez-nous sur IRC ou laissez un
+        message sur le forum. <br /><br />
+        Téléchargement pour i686 et x86_64 : rendez-vous sur notre
+        <a href="http://frugalware.org/download/frugalware-current-iso">
+        liste de mirroirs</a>. N'oubliez pas de vérifier
+        <a href="http://frugalware.org/download/frugalware-current-iso/SHA1SUMS">
+        l'intégrité</a> des supports d'installation avant de les graver !
+    ]]>
     </content>
   </post>
   <post>
-    <id>252</id>
+    <id>255</id>
     <title>Changements récents dans -current</title>
     <date>Mon, 26 Aug 2013 04:17:31 -0500</date>
     <author>ryuo</author>
     <hidden>0</hidden>
     <content><![CDATA[
-		  Quelques changements ont eu lieu récemment dans la branche -current.
-		  Vous aurez besoin de lancer les commandes <strong>viconfig</strong>
-		  et <strong>dmconfig</strong> en tant que superutilisateur dans un
-		  terminal pour adapter votre configuration aux changements faits 
-		  pour les liens symboliques de vi et le gestionnaire de connexion.
-		  Pour plus d'informations, merci de lire <a href="http://frugalware.org/docs/upgrade.html">les notes de mise à jour</a>.
-		  ]]>
+          Quelques changements ont eu lieu récemment dans la branche -current.
+          Vous aurez besoin de lancer les commandes <strong>viconfig</strong>
+          et <strong>dmconfig</strong> en tant que superutilisateur dans un
+          terminal pour adapter votre configuration aux changements faits
+          pour les liens symboliques de vi et le gestionnaire de connexion.
+          Pour plus d'informations, merci de lire <a href="http://frugalware.org/docs/upgrade.html">les notes de mise à jour</a>.
+          ]]>
     </content>
   </post>
   <post>
-	<id>251</id>
-	<title>Sortie de Frugalware 1.9pre2 (Arcturus)</title>
-	<date>Mon, 01 Jul 2013 03:31:47 -0500</date>
-	<author>ryuo</author>
-	<hidden>0</hidden>
-	<content><![CDATA[
-	Ceci est la seconde préversion technique de la version stable 1.9 à venir.<br /><br />
-	A partir de maintenant, netconfig a été remplacé par notre nouvel outil, nmconfig, 
-	qui utilise les libraires de NetworkManager, au lieu de notre code personnalisé
-	dédié à la gestion du réseau. Ce remplacement permet de réduire la quantité de code
-	que nous devons maintenir pour Frugalware.<br /><br />
-	Un autre changement important est le remplacement de la collection entière d'outils 
-	frugalwareutils par les différents modules autonomes du nouvel installateur. Ces
-	nouveaux outils sont fournis par le paquet fvbeutils.<br /><br />
-	Cette nouvelle version apporte également d'autres changements, bien que mineurs
-	(exemple : l'outil de partionnement du nouvel installateur n'affiche désormais
-	plus le média utilisé pour l'installation - cela ne se produit cependant que si
-	vous utilisez une clé USB pour installer la distribution). <br /><br />
-	Passons maintenant aux instructions d'installation : Une fois la distribution
-	amorcée, vous devez vous identifier en tant que <em>root</em>, en utilisant 
-	le mot de passe <em>fvbe</em>. Pour lancer l'installateur, utilisez la commande
-	<em>fwsetup</em><br /><br />
-	Pour terminer, nous vous informons que nous recherchons quelqu'un qui pourrait 
-	définir une nouvelle palette de 16 couleurs pour le nouvel installateur. Pour
-	le moment, la palette de couleur utilisée est celle de Mandriva (avec leurs patches
-	pour la librairie NEWT). Si vous êtes intéressé, n'hésitez pas à vous manifester 
-	sur le forum ou sur un des salons IRC dédiés à Frugalware.<br /><br />
-	Téléchargement pour i686 et x86_64 : consultez notre <a href="http://frugalware.org/download/frugalware-current-iso">
-	liste de mirroirs</a>. N'oubliez pas de vérifier <a href="http://frugalware.org/download/frugalware-current-iso/SHA1SUMS">
-	l'intégrité</a> des images d'installation avant de les graver !
-	]]>
-	</content>
+    <id>254</id>
+    <title>Sortie de Frugalware 1.9pre2 (Arcturus)</title>
+    <date>Mon, 01 Jul 2013 03:31:47 -0500</date>
+    <author>ryuo</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+    Ceci est la seconde préversion technique de la version stable 1.9 à venir.<br /><br />
+    A partir de maintenant, netconfig a été remplacé par notre nouvel outil, nmconfig,
+    qui utilise les libraires de NetworkManager, au lieu de notre code personnalisé
+    dédié à la gestion du réseau. Ce remplacement permet de réduire la quantité de code
+    que nous devons maintenir pour Frugalware.<br /><br />
+    Un autre changement important est le remplacement de la collection entière d'outils
+    frugalwareutils par les différents modules autonomes du nouvel installateur. Ces
+    nouveaux outils sont fournis par le paquet fvbeutils.<br /><br />
+    Cette nouvelle version apporte également d'autres changements, bien que mineurs
+    (exemple : l'outil de partionnement du nouvel installateur n'affiche désormais
+    plus le média utilisé pour l'installation - cela ne se produit cependant que si
+    vous utilisez une clé USB pour installer la distribution). <br /><br />
+    Passons maintenant aux instructions d'installation : Une fois la distribution
+    amorcée, vous devez vous identifier en tant que <em>root</em>, en utilisant
+    le mot de passe <em>fvbe</em>. Pour lancer l'installateur, utilisez la commande
+    <em>fwsetup</em><br /><br />
+    Pour terminer, nous vous informons que nous recherchons quelqu'un qui pourrait
+    définir une nouvelle palette de 16 couleurs pour le nouvel installateur. Pour
+    le moment, la palette de couleur utilisée est celle de Mandriva (avec leurs patches
+    pour la librairie NEWT). Si vous êtes intéressé, n'hésitez pas à vous manifester
+    sur le forum ou sur un des salons IRC dédiés à Frugalware.<br /><br />
+    Téléchargement pour i686 et x86_64 : consultez notre <a href="http://frugalware.org/download/frugalware-current-iso">
+    liste de mirroirs</a>. N'oubliez pas de vérifier <a href="http://frugalware.org/download/frugalware-current-iso/SHA1SUMS">
+    l'intégrité</a> des images d'installation avant de les graver !
+    ]]>
+    </content>
+    <icon>development</icon>
   </post>
   <post>
-	<id>250</id>
-	<title>Sortie de Frugalware 1.9pre1 (Arcturus)</title>
-	<date>Mon, 08 Apr 2013 02:06:16 -0500</date>
-	<author>ryuo</author>
-	<hidden>0</hidden>
-	<content><![CDATA[
-			Ceci est la première pré-version de Frugalware 1.9. Cette sortie
-			marque également le premier test public de notre nouvel environnement
-			"Live-CD", FVBE, et de notre nouvel installeur, appelé fwsetup.<br /><br />
-			Celui-ci est en dévellopement depuis déjà 8 mois. Il s'agit d'une 
-			compilation de 4 anciens projets : fwlive, setup, fwife et frugalwareutils. Ils ont été intégrés dans ce nouveau projet. Ils utilisent dorénavant 
-			un code de base commun. Cela devrait éviter les duplications / fragmentations comme nous avions avec l'utilisation de setup et de fwife.<br /><br />
-			Le nouvel installeur devrait être relativement complet pour remplacer l'ancien installeur. Cependant, certaines parties ont été supprimées car inutilisées. D'autres fonctionnalités sont nouvelles, comme le choix de la disposition du clavier (qui configure également le serveur X11). <br /><br />
-			La principale fonctionnalité qui n'a pas encore été implémentée est le remplacement de netconfig. Elle devrait être intégrée pour Frugalware 1.9pre2. Aucune autre fonctionnalité n'est prévue pour cet installeur d'ici la sortie de Frugalware 1.9 car l'installeur, tel qu'il est aujourd'hui, doit être davantage testé. <br /><br />
-			Il y a également des changements en ce qui concerne les images ISO que nous fournissons. Dorénavant, nous mettons uniquement à dispositions des ISO avec des paquets des principaux groupes. Tous les paquets des groupes -extra seront uniquement disponibles depuis une "netinstall" ou après une nouvelle installation. Avec la pre2, les ISO pour la "netinstall" devraient également être disponibles.<br /><br />
-			Nos nouvelles images ISO utilisent désormais GRUB2 pour l'amorçage et n'utilisent plus isolinux. GRUB2 supporte nativement les ISO hybrides (pour la branche i686) et l'UEFI (pour la branche x86_64). Le mode UEFI est, pour le moment, uniquement supporté pour l'amorçage, pas pour l'installation.<br /><br />
-			D'autre part, le nouvel installeur a été principalement testé sur une architecture x86_64, en utilisant le mode "ISO" des images d'installation. Par conséquent, nous avons besoin de plus de testeurs possibles pour l'architecure i686 et le mode USB. Tout retour d'informations sera pris en compte pour améliorer le nouvel installeur.<br /><br />
-			Parmi les problèmes connus, il y a celui du réseau qui ne marche pas après l'installation initiale. Pour le moment, il vous suffit d'utiliser netconfig (en superutilisateur) après l'identification. Cela devrait fonctionner, le temps que le remplacement de netconfig soit implémenté.<br /><br />
-			Pour utiliser le nouvel installeur, vous devrez vous identifier en ttant que superutilisateur après l'amorçage du système, en utilisant le mot de passe <strong>fbve</strong>. Pour lancer l'installeur, utilisez la commande "fwsetup".<br /><br />
-			Pour finir, nous recherchons quelqu'un pour concevoir une nouvelle
-			palette de 16 couleurs pour le nouvel installeur. Il utilise pour le moment le schéma de couleur de Mandriva. Si vous êtes intéressé, faites-le savoir sur IRC ou sur le forum.<br /><br />
-			Téléchargement pour i686 et x86_64 : consultez notre <a href="http://frugalware.org/download/frugalware-current-iso">liste de mirroirs</a>. N'oubliez pas de vérifier <a href="http://frugalware.org/download/frugalware-current-iso/SHA1SUMS">l'intégrité</a> des images avant de les graver !
-	]]>
-	</content>
+    <id>253</id>
+    <title>Sortie de Frugalware 1.9pre1 (Arcturus)</title>
+    <date>Mon, 08 Apr 2013 02:06:16 -0500</date>
+    <author>ryuo</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+            Ceci est la première pré-version de Frugalware 1.9. Cette sortie
+            marque également le premier test public de notre nouvel environnement
+            "Live-CD", FVBE, et de notre nouvel installeur, appelé fwsetup.<br /><br />
+            Celui-ci est en dévellopement depuis déjà 8 mois. Il s'agit d'une
+            compilation de 4 anciens projets : fwlive, setup, fwife et frugalwareutils. Ils ont été intégrés dans ce nouveau projet. Ils utilisent dorénavant
+            un code de base commun. Cela devrait éviter les duplications / fragmentations comme nous avions avec l'utilisation de setup et de fwife.<br /><br />
+            Le nouvel installeur devrait être relativement complet pour remplacer l'ancien installeur. Cependant, certaines parties ont été supprimées car inutilisées. D'autres fonctionnalités sont nouvelles, comme le choix de la disposition du clavier (qui configure également le serveur X11). <br /><br />
+            La principale fonctionnalité qui n'a pas encore été implémentée est le remplacement de netconfig. Elle devrait être intégrée pour Frugalware 1.9pre2. Aucune autre fonctionnalité n'est prévue pour cet installeur d'ici la sortie de Frugalware 1.9 car l'installeur, tel qu'il est aujourd'hui, doit être davantage testé. <br /><br />
+            Il y a également des changements en ce qui concerne les images ISO que nous fournissons. Dorénavant, nous mettons uniquement à dispositions des ISO avec des paquets des principaux groupes. Tous les paquets des groupes -extra seront uniquement disponibles depuis une "netinstall" ou après une nouvelle installation. Avec la pre2, les ISO pour la "netinstall" devraient également être disponibles.<br /><br />
+            Nos nouvelles images ISO utilisent désormais GRUB2 pour l'amorçage et n'utilisent plus isolinux. GRUB2 supporte nativement les ISO hybrides (pour la branche i686) et l'UEFI (pour la branche x86_64). Le mode UEFI est, pour le moment, uniquement supporté pour l'amorçage, pas pour l'installation.<br /><br />
+            D'autre part, le nouvel installeur a été principalement testé sur une architecture x86_64, en utilisant le mode "ISO" des images d'installation. Par conséquent, nous avons besoin de plus de testeurs possibles pour l'architecure i686 et le mode USB. Tout retour d'informations sera pris en compte pour améliorer le nouvel installeur.<br /><br />
+            Parmi les problèmes connus, il y a celui du réseau qui ne marche pas après l'installation initiale. Pour le moment, il vous suffit d'utiliser netconfig (en superutilisateur) après l'identification. Cela devrait fonctionner, le temps que le remplacement de netconfig soit implémenté.<br /><br />
+            Pour utiliser le nouvel installeur, vous devrez vous identifier en ttant que superutilisateur après l'amorçage du système, en utilisant le mot de passe <strong>fbve</strong>. Pour lancer l'installeur, utilisez la commande "fwsetup".<br /><br />
+            Pour finir, nous recherchons quelqu'un pour concevoir une nouvelle
+            palette de 16 couleurs pour le nouvel installeur. Il utilise pour le moment le schéma de couleur de Mandriva. Si vous êtes intéressé, faites-le savoir sur IRC ou sur le forum.<br /><br />
+            Téléchargement pour i686 et x86_64 : consultez notre <a href="http://frugalware.org/download/frugalware-current-iso">liste de mirroirs</a>. N'oubliez pas de vérifier <a href="http://frugalware.org/download/frugalware-current-iso/SHA1SUMS">l'intégrité</a> des images avant de les graver !
+    ]]>
+    </content>
+    <icon>development</icon>
   </post>
   <post>
-	<id>249</id>
-	<title>Changements dans la configuration clavier sur -current</title>
-	<date>Sat, 02 Mar 2013 08:59:59 -0600</date>
-	<author>ryuo</author>
-	<hidden>0</hidden>
-	<content><![CDATA[
-			Nous avons supprimé le fichier 10-evdev.conf du paquet xorg-server.
-			Cela signifie que lorsque vous mettrez à jour, la configuration de
-			votre clavier ne fonctionnera plus. <br />
-			Cette opération est nécessaire, pour se rapprocher de ce que fait
-			systemd pour la gestion du clavier.<br />
-			Pour reconfigurer votre clavier, suivez <a href="http://frugalware.org/docs/upgrade.html">cette procédure</a>.
-			]]>
-	</content>
+    <id>251</id>
+    <title>Changements dans la configuration clavier sur -current</title>
+    <date>Sat, 02 Mar 2013 08:59:59 -0600</date>
+    <author>ryuo</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+            Nous avons supprimé le fichier 10-evdev.conf du paquet xorg-server.
+            Cela signifie que lorsque vous mettrez à jour, la configuration de
+            votre clavier ne fonctionnera plus. <br />
+            Cette opération est nécessaire, pour se rapprocher de ce que fait
+            systemd pour la gestion du clavier.<br />
+            Pour reconfigurer votre clavier, suivez <a href="http://frugalware.org/docs/upgrade.html">cette procédure</a>.
+            ]]>
+    </content>
+    <icon>development</icon>
   </post>
   <post>
-    <id>248</id>
+    <id>250</id>
     <title>Frugalware 1.8 (Cinna) disponible</title>
     <date>Wed, 06 Feb 2013 09:46:29 -0600</date>
     <author>ryuo</author>
@@ -274,18 +284,18 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
     L'équipe de développement de Frugalware a le plaisir de vous annoncer
     la sortie de Frugalware 1.8 Cinna, notre 18ème version stable.<br />
     Aucune nouvelle fonctionnalité n'a été intégrée depuis la version
-    1.8rc2, mais 157 changements ont été apportés pour résoudre des 
+    1.8rc2, mais 157 changements ont été apportés pour résoudre des
     problèmes mineurs. <br />
-    Si vous n'avez pas suivi les changements depuis les versions pre/rc, 
+    Si vous n'avez pas suivi les changements depuis les versions pre/rc,
     voici les changements les plus importants qui ont été apportés depuis
     la version 1.7 :
     <ul>
-        <li>Paquets mis à jour : Noyau inux 3.7.5, serveur XOrg 1.13.2, 
+        <li>Paquets mis à jour : Noyau inux 3.7.5, serveur XOrg 1.13.2,
         GNOME 3.6, KDE 4.9, LibreOffice 3.6.3.2, Mozilla Firefox 18.0.1</li>
-        <li>L'accélération du décodage vidéo est maintenant activé par 
+        <li>L'accélération du décodage vidéo est maintenant activé par
         défaut pour la plupart des applications multimédia.</li>
         <li>La régulation de la vitesse du processeur devrait dorénavant
-        fonctionner "out-of-box", pour les architectures i686 et x86_64, 
+        fonctionner "out-of-box", pour les architectures i686 et x86_64,
         sans aucune modification à apporter.</li>
         <li>cpupower est maintenant uniquement indispensable si vous
         voulez changer le comportement par défaut.</li>
@@ -297,182 +307,182 @@ Example: Mon, 07 Aug 2006 12:34:56 -0600 -->
     Téléchargement pour i686, x86_64 et arm : rendez-vous sur notre <a href="http://frugalware.org/download/frugalware-1.8-iso">liste de mirroirs</a>.N'oubliez pas de vérifier <a href="http://frugalware.org/download/frugalware-1.8-iso/SHA1SUMS">l'intégrité</a> des images avant de les graver !<br />
     <strong>Note : </strong>cliquez <a href="http://frugalware.org/docs/install#_choosing_installation_flavour">ici</a> pour connaître les prérequis
     matériels à l'installation de Frugalware. <br />
-    Si vous mettez à jour depuis notre ancienne version stable (Gaia), 
+    Si vous mettez à jour depuis notre ancienne version stable (Gaia),
     veuillez lire <a href="http://frugalware.org/docs/stable/upgrade">la document de mise à jour.</a>
     ]]>
     </content>
   </post>
   <post>
-	<id>247</id>
-	<title>Frugalware 1.8rc2 (Cinna) est disponible !</title>
-	<date>Mon, 21 Jan 2013 03:23:35 -0600</date>
-	<author>ryuo</author>
-	<hidden>0</hidden>
-	<content><![CDATA[
-			L'équipe de développement de Frugalware a le plaisir de vous annoncer
-			la sortie de Frugalware 1.8rc2, la seconde version candidate de la 
-			version stable 1.8 à venir.<br />
-			Voici quelques uns des changements depuis la version 1.8rc1 :
-			<ul>
-					<li>Paquets mis à jour :
-							<ul>
-									<li>Kernel 3.7.3</li>
-							</ul>
-					</li>
-					<li>Nouvelles fonctionnalités :
-							<ul>
-									<li>Aucune.</li>
-							</ul>
-					</li>
-			</ul>
-			<br />
-			Veuillez vous référer au <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">
-			Changelog</a> pour plus d'informations.<br />
-			Téléchargement pour X6_64 : consultez notre <a href="http://frugalware.org/download/frugalware-testing-iso">
-			liste de mirroirs</a>. N'oubliez pas de vérifier <a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">l'intégrité</a> des images avant de les graver !<br />
-			<strong>NOTE :</strong> cliquez <a href="http://www.frugalware.org/docs/install#_choosing_installation_flavor">ici</a>
-			pour vérifier les prérequis nécessaires à l'installation de Frugalware.
-			]]>
-	</content>
-  </post>
-  <post>
-	<id>246</id>
-	<title>Frugalware 1.8rc1 (Cinna) est disponible !</title>
-	<date>Sun, 06 Jan 2013 18:25 -0600</date>
-	<author>ryuo</author>
-	<hidden>0</hidden>
-	<content><![CDATA[
-			L'équipe de développement de Frugalware a le plaisir de vous annoncer
-			la sortie de Frugalware 1.8rc1, la première version candidate de la
-			version stable 1.8 à venir.<br />
-			Voici quelques uns des changements majeurs, résolutions de bogues
-			et mises à jour depuis la version 1.8pre2 :<br />
-			<ul>
-					<li>Paquets mis à jour :
-							<ul>
-									<li>Kernel 3.7.1</li>
-									<li>Boost 1.50.0</li>
-									<li>KDE 4.9.5</li>
-							</ul>
-					</li>
-					<li>Nouvelles fonctionnalités :
-							<ul>
-									<li>Les pilotes mesa 7.11 ont été rétablis
-										pour supporter le matériel pour lequel
-										les développeurs ont abandonné le
-										support.
-									</li>
-							</ul>
-					</li>
-			</ul>
-			Veuillez vous référer au <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">
-					Changelog</a> pour plus d'informations.<br />
-			Téléchargement pour x86_64 : regardez notre <a href="http://frugalware.org/download/frugalware-testing-iso">
-					Liste de mirroirs</a>. N'oubliez pas de vérifier <a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">l'intégrité</a> des images d'installation avant de les graver !<br />
-			<strong>NOTE : </strong>cliquez <a href="http://www.frugalware.org/docs/install#_choosing_installation_flavor">ici</a>
-			pour connaître les prérequis à l'installation de Frugalware.
-			]]>
-	</content>
-  </post>
-  <post>
-    <id>245</id>
-    <title>Bonne année 2013 !</title>
-	<date>Wed, 02 Jan 2013 14:49:13 +1000</date>
-	<author>Pingax</author>
-	<hidden>0</hidden>
-	<content><![CDATA[
-		<center><img src="http://frugalware.org/images/FwNewYear.png" alt="Frugalware New Year Logo" /></center><br /><br />
-		L'équipe de développement de Frugalware aimerait vous souhaiter à tous
-		une bonne et heureuse année 2013. 
-		]]>
+    <id>249</id>
+    <title>Frugalware 1.8rc2 (Cinna) est disponible !</title>
+    <date>Mon, 21 Jan 2013 03:23:35 -0600</date>
+    <author>ryuo</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+            L'équipe de développement de Frugalware a le plaisir de vous annoncer
+            la sortie de Frugalware 1.8rc2, la seconde version candidate de la
+            version stable 1.8 à venir.<br />
+            Voici quelques uns des changements depuis la version 1.8rc1 :
+            <ul>
+                    <li>Paquets mis à jour :
+                            <ul>
+                                    <li>Kernel 3.7.3</li>
+                            </ul>
+                    </li>
+                    <li>Nouvelles fonctionnalités :
+                            <ul>
+                                    <li>Aucune.</li>
+                            </ul>
+                    </li>
+            </ul>
+            <br />
+            Veuillez vous référer au <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">
+            Changelog</a> pour plus d'informations.<br />
+            Téléchargement pour X6_64 : consultez notre <a href="http://frugalware.org/download/frugalware-testing-iso">
+            liste de mirroirs</a>. N'oubliez pas de vérifier <a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">l'intégrité</a> des images avant de les graver !<br />
+            <strong>NOTE :</strong> cliquez <a href="http://www.frugalware.org/docs/install#_choosing_installation_flavor">ici</a>
+            pour vérifier les prérequis nécessaires à l'installation de Frugalware.
+            ]]>
     </content>
   </post>
   <post>
-	<id>244</id>
-	<title>Frugalware 1.8pre2 (Cinna) est disponible</title>
-	<date>Sun, 09 Dec 2012 18:17:24 -0600</date>
-	<author>ryuo</author>
-	<hidden>0</hidden>
-	<content><![CDATA[
-		L'équipe de développement de Frugalware a le plaisir de vous annoncer 
-		la sortie de Frugalware 1.8pre2, la seconde préversion technique de
-		la version stable 1.8 à venir.<br /><br />
-		Voici quelques uns des changements majeurs :
-		<ul>
-			<li>Paquets mis à jour : 
-				<ul>
-					<li>Kernel 3.6.6</li>
-					<li>XOrg Server 1.13.0</li>
-					<li>KDE 4.9.3</li>
-					<li>GNOME 3.6</li>
-				</ul>
-			</li>
-			<li>Nouvelles fonctionnalités :
-				<ul>
-					<li>La régulation de la vitesse du processeur marche maintenant sans
-					aucune modification, pour la majorité des matériels.</li>
-					<li>cpupower est maintenant uniquement indispensable si vous voulez
-					changer le comportement par défaut.</li>
-					<li>Les librairies d'accélération de décodage vidéo ont été activées
-					dans la plupart des applications multimédia.</li>
-				</ul>
-			</li>
-		</ul>
-		<br />
-		<strong>Note : les images ISO seront légèrement en retard sur nos miroirs, quelques
-		changements de dernière minute ont dû être effectués.</strong><br />
-		Veuillez vous référer au <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Changelog</a> pour davantage d'informations.<br /><br />
-		Téléchargement pour x86_64 : rendez-vous sur notre <a href="http://frugalware.org/download/frugalware-testing-iso">liste de miroirs</a>. N'oubliez pas de vérifier <a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">l'intégrité</a> des fichiers ISO avant de les graver.<br /><br />
-		<strong>Note : </strong>cliquez <a href="http://frugalware.org/docs/install#_choosing_installation_flavor">ici</a> pour connaître les prérequis nécessaires à l'installation de Frugalware.
-	]]>
-	</content>
+    <id>248</id>
+    <title>Frugalware 1.8rc1 (Cinna) est disponible !</title>
+    <date>Sun, 06 Jan 2013 18:25 -0600</date>
+    <author>ryuo</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+            L'équipe de développement de Frugalware a le plaisir de vous annoncer
+            la sortie de Frugalware 1.8rc1, la première version candidate de la
+            version stable 1.8 à venir.<br />
+            Voici quelques uns des changements majeurs, résolutions de bogues
+            et mises à jour depuis la version 1.8pre2 :<br />
+            <ul>
+                    <li>Paquets mis à jour :
+                            <ul>
+                                    <li>Kernel 3.7.1</li>
+                                    <li>Boost 1.50.0</li>
+                                    <li>KDE 4.9.5</li>
+                            </ul>
+                    </li>
+                    <li>Nouvelles fonctionnalités :
+                            <ul>
+                                    <li>Les pilotes mesa 7.11 ont été rétablis
+                                        pour supporter le matériel pour lequel
+                                        les développeurs ont abandonné le
+                                        support.
+                                    </li>
+                            </ul>
+                    </li>
+            </ul>
+            Veuillez vous référer au <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">
+                    Changelog</a> pour plus d'informations.<br />
+            Téléchargement pour x86_64 : regardez notre <a href="http://frugalware.org/download/frugalware-testing-iso">
+                    Liste de mirroirs</a>. N'oubliez pas de vérifier <a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">l'intégrité</a> des images d'installation avant de les graver !<br />
+            <strong>NOTE : </strong>cliquez <a href="http://www.frugalware.org/docs/install#_choosing_installation_flavor">ici</a>
+            pour connaître les prérequis à l'installation de Frugalware.
+            ]]>
+    </content>
   </post>
   <post>
-	<id>243</id>
-	<title>Corruption de données dans le noyau 3.6.x et le système de fichiers ext4</title>
-	<date>Fri, 30 Nov 2012 05:50:38 - 0600</date>
+    <id>247</id>
+    <title>Bonne année 2013 !</title>
+    <date>Wed, 02 Jan 2013 14:49:13 +1000</date>
+    <author>Pingax</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+        <center><img src="images/data/FwNewYear.png" alt="Frugalware New Year Logo" /></center><br /><br />
+        L'équipe de développement de Frugalware aimerait vous souhaiter à tous
+        une bonne et heureuse année 2013.
+        ]]>
+    </content>
+  </post>
+  <post>
+    <id>246</id>
+    <title>Frugalware 1.8pre2 (Cinna) est disponible</title>
+    <date>Sun, 09 Dec 2012 18:17:24 -0600</date>
     <author>ryuo</author>
-	<hidden>0</hidden>
-	<content><![CDATA[
-		Il apparaît que ce problème a été corrigé dans le noyau disponible dans la branche -current de Fruglware.<br />
-		Merci de votre patience.
-	]]>
-	</content>
+    <hidden>0</hidden>
+    <content><![CDATA[
+        L'équipe de développement de Frugalware a le plaisir de vous annoncer
+        la sortie de Frugalware 1.8pre2, la seconde préversion technique de
+        la version stable 1.8 à venir.<br /><br />
+        Voici quelques uns des changements majeurs :
+        <ul>
+            <li>Paquets mis à jour :
+                <ul>
+                    <li>Kernel 3.6.6</li>
+                    <li>XOrg Server 1.13.0</li>
+                    <li>KDE 4.9.3</li>
+                    <li>GNOME 3.6</li>
+                </ul>
+            </li>
+            <li>Nouvelles fonctionnalités :
+                <ul>
+                    <li>La régulation de la vitesse du processeur marche maintenant sans
+                    aucune modification, pour la majorité des matériels.</li>
+                    <li>cpupower est maintenant uniquement indispensable si vous voulez
+                    changer le comportement par défaut.</li>
+                    <li>Les librairies d'accélération de décodage vidéo ont été activées
+                    dans la plupart des applications multimédia.</li>
+                </ul>
+            </li>
+        </ul>
+        <br />
+        <strong>Note : les images ISO seront légèrement en retard sur nos miroirs, quelques
+        changements de dernière minute ont dû être effectués.</strong><br />
+        Veuillez vous référer au <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Changelog</a> pour davantage d'informations.<br /><br />
+        Téléchargement pour x86_64 : rendez-vous sur notre <a href="http://frugalware.org/download/frugalware-testing-iso">liste de miroirs</a>. N'oubliez pas de vérifier <a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">l'intégrité</a> des fichiers ISO avant de les graver.<br /><br />
+        <strong>Note : </strong>cliquez <a href="http://frugalware.org/docs/install#_choosing_installation_flavor">ici</a> pour connaître les prérequis nécessaires à l'installation de Frugalware.
+    ]]>
+    </content>
+  </post>
+  <post>
+    <id>245</id>
+    <title>Corruption de données dans le noyau 3.6.x et le système de fichiers ext4</title>
+    <date>Fri, 30 Nov 2012 05:50:38 -0600</date>
+    <author>ryuo</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+        Il apparaît que ce problème a été corrigé dans le noyau disponible dans la branche -current de Fruglware.<br />
+        Merci de votre patience.
+    ]]>
+    </content>
+  </post>
+  <post>
+    <id>244</id>
+    <title>Arrivée d'une nouvelle version de xorg</title>
+    <date>Sat, 03 Nov 2012 10:27:34 -0500</date>
+    <author>ryuo</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+        La mise à jour de xorg a été fusionnée à la branche -current. Il y a une manipulation manuelle à effectuer par rapport aux versions strictes des dépendances. Vous devrez supprimer certains paquets en force avant de pouvoir faire une mise à jour complète du système. Cette commande devrait vous aider :<br />
+pacman-g2 -Rd ffmpeg-compiletime ffmpeg-0.6 ffmpeg-0.6-compiletime<br />
+    ]]>
+    </content>
+  </post>
+  <post>
+    <id>243</id>
+    <title>Noyau 3.6.2 - bogue de corruption de données avec le système de fichiers ext4</title>
+    <date>Wed, 24 Oct 2012 10:46:36 -0500</date>
+    <author>ryuo</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+    Le noyau 3.6.2, qui est actuellement dans la branche -current de Frugalware, a un problème de corruption de données,
+    sur le système de fichiers ext4. Cette faille a été découverte très récemment, et n'a pas été trouvée par nos tests.
+    Les développeurs travaillent actuellement à la résolution de ce problème. Dès qu'un patch sera trouvé, il sera aussitôt
+    appliqué sur notre branche de développement.<br /><br />
+    Ce bogue est rare, et ne se manifeste, d'après ce qui a été rapporté, seulement durant deux ou plus redémarrages
+    successifs rapprochés. <br /><br />
+    Si cette information est vérifiée, essayez d'éviter la manipulation ci-dessus. Mais la sauvegarde de vos données
+    les plus importantes reste tout de même la meilleure solution.<br /><br />
+    Vous pouvez consulter l'article original à cette adresse : <a href="http://www.phoronix.com/scan.php?page=news_item&px=MTIxNDQ">
+    http://www.phoronix.com/scan.php?page=news_item&px=MTIxNDQ</a>
+    ]]>
+    </content>
   </post>
   <post>
     <id>242</id>
-	<title>Arrivée d'une nouvelle version de xorg</title>
-	<date>Sat, 03 Nov 2012 10:27:34 -0500</date>
-	<author>ryuo</author>
-	<hidden>0</hidden>
-	<content><![CDATA[
-		La mise à jour de xorg a été fusionnée à la branche -current. Il y a une manipulation manuelle à effectuer par rapport aux versions strictes des dépendances. Vous devrez supprimer certains paquets en force avant de pouvoir faire une mise à jour complète du système. Cette commande devrait vous aider :<br />
-pacman-g2 -Rd ffmpeg-compiletime ffmpeg-0.6 ffmpeg-0.6-compiletime<br />
-	]]>
-	</content>
-  </post>
-  <post>
-	<id>241</id>
-	<title>Noyau 3.6.2 - bogue de corruption de données avec le système de fichiers ext4</title>
-	<date>Wed, 24 Oct 2012 10:46:36 -0500</date>
-	<author>ryuo</author>
-	<hidden>0</hidden>
-	<content><![CDATA[
-	Le noyau 3.6.2, qui est actuellement dans la branche -current de Frugalware, a un problème de corruption de données,
-	sur le système de fichiers ext4. Cette faille a été découverte très récemment, et n'a pas été trouvée par nos tests.
-	Les développeurs travaillent actuellement à la résolution de ce problème. Dès qu'un patch sera trouvé, il sera aussitôt
-	appliqué sur notre branche de développement.<br /><br />
-	Ce bogue est rare, et ne se manifeste, d'après ce qui a été rapporté, seulement durant deux ou plus redémarrages
-	successifs rapprochés. <br /><br />
-	Si cette information est vérifiée, essayez d'éviter la manipulation ci-dessus. Mais la sauvegarde de vos données
-	les plus importantes reste tout de même la meilleure solution.<br /><br />
-	Vous pouvez consulter l'article original à cette adresse : <a href="http://www.phoronix.com/scan.php?page=news_item&px=MTIxNDQ">
-	http://www.phoronix.com/scan.php?page=news_item&px=MTIxNDQ</a>
-	]]>
-	</content>
-  </post>
-  <post>
-    <id>240</id>
     <title>Frugalware 1.8pre1 (Cinna) disponible</title>
     <date>Sun, 14 Oct 2012 19:18:11 -0500</date>
     <author>ryuo</author>
@@ -481,7 +491,7 @@ pacman-g2 -Rd ffmpeg-compiletime ffmpeg-0.6 ffmpeg-0.6-compiletime<br />
         L'équipe de développement a le plaisir de vous annoncer la sortie de Frugalware 1.8pre1, la première préversion technique de la prochaine version stable à venir.<br />
 Voici quelques uns des changements majeurs depuis la version 1.7 :<br />
 <ul>
-    <li>Paquets mis à jour : 
+    <li>Paquets mis à jour :
     <ul>
         <li>Kernel 3.5.4</li>
         <li>GCC 4.7.2</li>
@@ -502,7 +512,7 @@ Téléchargement pour x86_64 : consultez notre <a href="http://frugalware.org/do
 ]]></content>
 </post>
 <post>
-    <id>239</id>
+    <id>241</id>
     <title>Arrivée de grub2 2.00</title>
     <date>Mon, 10 Sep 2012 10:02:51 -0500</date>
     <author>ryuo</author>
@@ -512,7 +522,7 @@ Téléchargement pour x86_64 : consultez notre <a href="http://frugalware.org/do
 ]]></content>
   </post>
   <post>
-    <id>238</id>
+    <id>240</id>
     <title>Arrivée de systemd 188</title>
     <date>Fri, 31 Aug 2012 19:04:43 -0500</date>
     <author>ryuo</author>
@@ -524,181 +534,181 @@ Téléchargement pour x86_64 : consultez notre <a href="http://frugalware.org/do
     ]]></content>
   </post>
   <post>
-    <id>237</id>
+    <id>239</id>
     <title>Frugalware 1.7 (Gaia) disponible </title>
     <date>Sun, 19 Aug 2012 19:04:43 -0500</date>
     <author>ryuo</author>
     <hidden>0</hidden>
     <content><![CDATA[
-	<center><img src="http://frugalware.org/images/promo-gaia.png" alt="Frugalware 1.7 Gaia is released!" /></center><br />
-	L'équipe de développement de Frugalware a le plaisir de vous annoncer la sortie de Frugalware 1.7, notre 17ème version stable.</br />
-	Aucune nouvelle fonctionnalité n'a été ajoutée depuis la 1.7rc2, mais 157 changements ont été apportés pour corriger quelques bogues. Si vous n'avez pas suivi les changements durant les sorties des version PRE et RC,
-	voici quelques uns des plus importants depuis la version 1.6 :
-	<ul>
-	  <li>Paquets mis à jour : Noyau Linux 3.4.8, serveur XOrg 1.12.3, GNOME 3.4, KDE SC 4.8.4, LibreOffice 3.5.4.2, Mozilla Firefox 14.0.1, pour nommer quelques uns des composants majeurs.</li>
-	  <li>slocate a été supprimé et est remplacé par mlocate.</li>
-	  <li>Catalyst a supprimé le support de toutes les cartes ATI Radeon HD avant les séries 5000.</li>
-	  <li>cpupower a remplacé tous les démons chargés de réguler la vitesse du processeur.</li>
-	  <li>Tous les paquets qui dépendaient encore de sysvinit ont été convertis pour utiliser systemd.</li>
-	  <li>grub1 a été remplacé par grub2.</li>
-	  <li>Le temps local devrait de nouveau fonctionner.</li>
-	</ul>
-	Veuillez vous référez au <a href="http://frugalware.org/download/frugalware-1.7/ChangeLog.txt">Changelog de Frugalware Gaia</a> pour davantage d'informations.<br />
-	Téléchargement pour i686, x86_64 et arm : consultez notre <a href="http://frugalware.org/download/frugalware-1.7-iso">liste de miroirs</a>. N'oubliez pas de vérifier <a href="http://frugalware.org/download/frugalware-1.7-iso/SHA1SUMS">l'intégrité</a> des images d'installation avant de les graver !
-	<b>NOTE :</b> cliquez <a href="/docs/install#_choosing_installation_flavor">ici</a> pour savoir ce dont vous aurez besoin pour l'installation de Frugalware.<br />
-	Si vous mettez à jour vers Gaia depuis notre précédente version stable (Fermus), veuillez consulter la partie <a href="http://frugalware.org/docs/stable/upgrade">mise à jour</a> de notre documentation.<br />
+    <center><img src="images/promo/gaia.png" alt="Frugalware 1.7 Gaia is released!" /></center><br />
+    L'équipe de développement de Frugalware a le plaisir de vous annoncer la sortie de Frugalware 1.7, notre 17ème version stable.</br />
+    Aucune nouvelle fonctionnalité n'a été ajoutée depuis la 1.7rc2, mais 157 changements ont été apportés pour corriger quelques bogues. Si vous n'avez pas suivi les changements durant les sorties des version PRE et RC,
+    voici quelques uns des plus importants depuis la version 1.6 :
+    <ul>
+      <li>Paquets mis à jour : Noyau Linux 3.4.8, serveur XOrg 1.12.3, GNOME 3.4, KDE SC 4.8.4, LibreOffice 3.5.4.2, Mozilla Firefox 14.0.1, pour nommer quelques uns des composants majeurs.</li>
+      <li>slocate a été supprimé et est remplacé par mlocate.</li>
+      <li>Catalyst a supprimé le support de toutes les cartes ATI Radeon HD avant les séries 5000.</li>
+      <li>cpupower a remplacé tous les démons chargés de réguler la vitesse du processeur.</li>
+      <li>Tous les paquets qui dépendaient encore de sysvinit ont été convertis pour utiliser systemd.</li>
+      <li>grub1 a été remplacé par grub2.</li>
+      <li>Le temps local devrait de nouveau fonctionner.</li>
+    </ul>
+    Veuillez vous référez au <a href="http://frugalware.org/download/frugalware-1.7/ChangeLog.txt">Changelog de Frugalware Gaia</a> pour davantage d'informations.<br />
+    Téléchargement pour i686, x86_64 et arm : consultez notre <a href="http://frugalware.org/download/frugalware-1.7-iso">liste de miroirs</a>. N'oubliez pas de vérifier <a href="http://frugalware.org/download/frugalware-1.7-iso/SHA1SUMS">l'intégrité</a> des images d'installation avant de les graver !
+    <b>NOTE :</b> cliquez <a href="/docs/install#_choosing_installation_flavor">ici</a> pour savoir ce dont vous aurez besoin pour l'installation de Frugalware.<br />
+    Si vous mettez à jour vers Gaia depuis notre précédente version stable (Fermus), veuillez consulter la partie <a href="http://frugalware.org/docs/stable/upgrade">mise à jour</a> de notre documentation.<br />
     ]]>
-    </content>
-  </post>    
-  <post>
-    <id>236</id>
-	<title>Frugalware 1.7rc2 (Gaia) disponible !</title>
-	<date>Sun, 05 Aug 2012 14:29:03 0500</date>
-	<author>ryuo</author>
-	<hidden>0</hidden>
-	<content><![CDATA[
-			L'équipe de développement a le plaisir de vous annoncer la sortie de Frugalware 1.7rc2, la seconde version candidate de la version stable 1.7 à venir.<br /><br />
-			Voici la liste des principaux changements depuis la 1.7rc1 : 
-			<ul>
-					<li>Paquets mis à jour :
-							<ul>
-									<li>Kernel 3.4.6</li>
-							</ul>
-					</li>
-					<li>Nouvelles fonctionnalités :
-							<ul>
-									<li>fw32 peut maintenant construire des paquets pour architecture i686 depuis une machine x86_64. Consultez le fichier README pour plus d'informations.</li>
-							</ul>
-					</li>
-			</ul>
-			<br />
-			Veuillez vous référer au <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Changelog</a> pour davantage d'informations.<br /><br />
-			Téléchargements pour x86_64 : consultez notre <a href="http://frugalware.org/download/frugalware-testing-iso">liste de miroirs</a>. N'oubliez pas de vérifier <a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">l'intégrité</a> des images d'installation avant de les graver !<br /><br />
-			<strong>Note : </strong>cliquez <a href="http://frugalware.org/docs/install#_choosing_installation_flavor">ici</a> pour savoir ce dont vous avez besoin pour installer Frugalware.
-			]]>
     </content>
   </post>
   <post>
-    <id>235</id>
-    <title>Frugalware 1.7rc1 (Gaia) disponible !</title>
-    <date>Su, 22 Jul 2012 20:54:35 -0500</date>
+    <id>238</id>
+    <title>Frugalware 1.7rc2 (Gaia) disponible !</title>
+    <date>Sun, 05 Aug 2012 14:29:03 0500</date>
     <author>ryuo</author>
     <hidden>0</hidden>
     <content><![CDATA[
-	L'équipe de développement de Frugalware a le plaisir de vous annoncer la sortie de Frugalware 1.7rc1, la première version candidate de la version stable 1.7 à venir. <br />
-	Voici une liste, non exhaustive, des principaux changements apportés depuis la version 1.7pre2 :
-	<ul>
-		<li>Paquets mis à jour :
-		<ul>
-			<li>Kernel 3.4.4</li>
-			<li>GCC 4.7.1</li>
-			<li>KDE 4.8.4</li>
-		</ul>
-		</li>
-		<li>Nouvelles fonctionnalités :
-		<ul>
-			<li>L'installeur supporte désormais le système de fichiers btrfs (encore au stade expérimental !).</li>
-			<li>L'installeur supporte désormais le système de fichiers jfs.</li>
-			<li>grubconfig (notre interface à grub2) peut maintenant installer grub sur un système mdadm RAID1 et sur les disques "bruts" via une seule option.</li>
-		</ul>
-		</li>
-	</ul>
-	Veuillez vous référer au <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Changelog</a> pour davantage d'informations.<br /><br />
-	Téléchargement pour les architectures 64 bits : rendez-vous sur <a href="http://frugalware.org/download/frugalware-testing-iso">notre liste de miroirs</a>. N'oubliez pas de vérifier <a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">l'intégrité</a> des images iso avant des les graver.<br /><br />
-	<bold>NOTE :</bold> cliquez <a href="http://frugalware.org/docs/install#_choosing_installation_flavor">ici</a> pour savoir ce dont vous avez besoin pour installer Frugalware.
-	]]>
+            L'équipe de développement a le plaisir de vous annoncer la sortie de Frugalware 1.7rc2, la seconde version candidate de la version stable 1.7 à venir.<br /><br />
+            Voici la liste des principaux changements depuis la 1.7rc1 :
+            <ul>
+                    <li>Paquets mis à jour :
+                            <ul>
+                                    <li>Kernel 3.4.6</li>
+                            </ul>
+                    </li>
+                    <li>Nouvelles fonctionnalités :
+                            <ul>
+                                    <li>fw32 peut maintenant construire des paquets pour architecture i686 depuis une machine x86_64. Consultez le fichier README pour plus d'informations.</li>
+                            </ul>
+                    </li>
+            </ul>
+            <br />
+            Veuillez vous référer au <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Changelog</a> pour davantage d'informations.<br /><br />
+            Téléchargements pour x86_64 : consultez notre <a href="http://frugalware.org/download/frugalware-testing-iso">liste de miroirs</a>. N'oubliez pas de vérifier <a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">l'intégrité</a> des images d'installation avant de les graver !<br /><br />
+            <strong>Note : </strong>cliquez <a href="http://frugalware.org/docs/install#_choosing_installation_flavor">ici</a> pour savoir ce dont vous avez besoin pour installer Frugalware.
+            ]]>
     </content>
   </post>
   <post>
-    <id>234</id>
+    <id>237</id>
+    <title>Frugalware 1.7rc1 (Gaia) disponible !</title>
+    <date>Sun, 22 Jul 2012 20:54:35 -0500</date>
+    <author>ryuo</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+    L'équipe de développement de Frugalware a le plaisir de vous annoncer la sortie de Frugalware 1.7rc1, la première version candidate de la version stable 1.7 à venir. <br />
+    Voici une liste, non exhaustive, des principaux changements apportés depuis la version 1.7pre2 :
+    <ul>
+        <li>Paquets mis à jour :
+        <ul>
+            <li>Kernel 3.4.4</li>
+            <li>GCC 4.7.1</li>
+            <li>KDE 4.8.4</li>
+        </ul>
+        </li>
+        <li>Nouvelles fonctionnalités :
+        <ul>
+            <li>L'installeur supporte désormais le système de fichiers btrfs (encore au stade expérimental !).</li>
+            <li>L'installeur supporte désormais le système de fichiers jfs.</li>
+            <li>grubconfig (notre interface à grub2) peut maintenant installer grub sur un système mdadm RAID1 et sur les disques "bruts" via une seule option.</li>
+        </ul>
+        </li>
+    </ul>
+    Veuillez vous référer au <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Changelog</a> pour davantage d'informations.<br /><br />
+    Téléchargement pour les architectures 64 bits : rendez-vous sur <a href="http://frugalware.org/download/frugalware-testing-iso">notre liste de miroirs</a>. N'oubliez pas de vérifier <a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">l'intégrité</a> des images iso avant des les graver.<br /><br />
+    <bold>NOTE :</bold> cliquez <a href="http://frugalware.org/docs/install#_choosing_installation_flavor">ici</a> pour savoir ce dont vous avez besoin pour installer Frugalware.
+    ]]>
+    </content>
+  </post>
+  <post>
+    <id>236</id>
     <title>Le Plan Seldon numéro #4</title>
     <date>Sat, 30 Jun 2012 16:40:18 -0600</date>
     <author>Devil505</author>
     <hidden>0</hidden>
     <content><![CDATA[
-	 Le Plan Seldon Plan est le nouveau magazine des utilisateurs de Frugalware qui
-	 remplace l'ancienne newsletter.<br/>
-	<ul>
-		<li>Dans ce numéro : 
-			<ul>
-				<li>E17, Window Manager au pays de Bling Bling</li>
-				<li>IRC avec Xchat et IRSSI</li>
-				<li>Pause musicale libre</li>
-				<li>Mots-croisés :)</li>
-				<li>Captures d'écrans des utilisateurs</li>
-			</ul>
-	</ul><br/>
-	<center>
-	<img src="http://ftp.frugalware.org/pub/other/theseldonplan/preview04fr.png">
-	</center><br/>
-	<a href="http://ftp.frugalware.org/pub/other/theseldonplan/theseldonplan_04fr.pdf">Téléchargement (version francophone PDF)</a><br/>
+     Le Plan Seldon Plan est le nouveau magazine des utilisateurs de Frugalware qui
+     remplace l'ancienne newsletter.<br/>
+    <ul>
+        <li>Dans ce numéro :
+            <ul>
+                <li>E17, Window Manager au pays de Bling Bling</li>
+                <li>IRC avec Xchat et IRSSI</li>
+                <li>Pause musicale libre</li>
+                <li>Mots-croisés :)</li>
+                <li>Captures d'écrans des utilisateurs</li>
+            </ul>
+    </ul><br/>
+    <center>
+    <img src="http://ftp.frugalware.org/pub/other/theseldonplan/preview04fr.png">
+    </center><br/>
+    <a href="http://ftp.frugalware.org/pub/other/theseldonplan/theseldonplan_04fr.pdf">Téléchargement (version francophone PDF)</a><br/>
         ]]>
     </content>
-      <icon>/images/icons/newsletter.png</icon>
+      <icon>newsletter</icon>
   </post>
   <post>
-    <id>233</id>
+    <id>235</id>
     <title>Frugalware 1.7pre2 (Gaia) disponible</title>
     <date>Sun, 03 Jun 2012 10:42:49 -0500</date>
     <author>ryuo</author>
     <hidden>0</hidden>
     <content>
     <![CDATA[
-    	L'équipe de développement a le plaisir de vous annoncer la disponibilité de Frugalware 1.7pre2, la seconde préversion technique de la version stable 1.7 à venir.<br />
-	Voici quelques uns des améliorations, mises à jour et corrections depuis la version 1.7pre1 :
-	<ul>
-		<li>Paquets mis à jour : 
-		<ul>
-			<li>Kernel 3.4.0</li>
-			<li>GCC 4.7.0</li>
-			<li>GNOME 3.4.2</li>
-			<li>KDE 4.8.2</li>
-			<li>XFCE 4.10</li>
-			<li>Firefox 12, Thunderbird 12, Gimp 2.8</li>
-		</ul>
-		</li>
-		<li>Nouvelles fonctionnalités :
-		<ul>
-			<li>LightDM a remplacé SLiM comme gestionnaire de connexion pour XFCE.</li>
-			<li>Nouveau fond d'écran par défaut.</li>
-		</ul>
-		</li>
-	</ul>
-	Veuillez vous référer au <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Changelog</a> pour plus d'informations.<br /><br />
-	Téléchargement pour x86_64 : regardez notre <a href="http://frugalware.org/download/frugalware-testing-iso">liste des miroirs</a>. N'oubliez pas de vérifier <a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">l'intégrité</a> des fichiers avant de les installer !<br />
-	<strong>Note : </strong> cliquez <a href="http://frugalware.org/docs/install#_choosing_installation_flavor">ici</a> pour savoir de quel matériel vous avez besoin pour installer Frugalware.
-	]]>
+        L'équipe de développement a le plaisir de vous annoncer la disponibilité de Frugalware 1.7pre2, la seconde préversion technique de la version stable 1.7 à venir.<br />
+    Voici quelques uns des améliorations, mises à jour et corrections depuis la version 1.7pre1 :
+    <ul>
+        <li>Paquets mis à jour :
+        <ul>
+            <li>Kernel 3.4.0</li>
+            <li>GCC 4.7.0</li>
+            <li>GNOME 3.4.2</li>
+            <li>KDE 4.8.2</li>
+            <li>XFCE 4.10</li>
+            <li>Firefox 12, Thunderbird 12, Gimp 2.8</li>
+        </ul>
+        </li>
+        <li>Nouvelles fonctionnalités :
+        <ul>
+            <li>LightDM a remplacé SLiM comme gestionnaire de connexion pour XFCE.</li>
+            <li>Nouveau fond d'écran par défaut.</li>
+        </ul>
+        </li>
+    </ul>
+    Veuillez vous référer au <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Changelog</a> pour plus d'informations.<br /><br />
+    Téléchargement pour x86_64 : regardez notre <a href="http://frugalware.org/download/frugalware-testing-iso">liste des miroirs</a>. N'oubliez pas de vérifier <a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">l'intégrité</a> des fichiers avant de les installer !<br />
+    <strong>Note : </strong> cliquez <a href="http://frugalware.org/docs/install#_choosing_installation_flavor">ici</a> pour savoir de quel matériel vous avez besoin pour installer Frugalware.
+    ]]>
     </content>
   </post>
   <post>
-    <id>232</id>
+    <id>234</id>
     <title>Le Plan Seldon #3</title>
     <date>Sun, 29 Apr 2012 08:40:28 -0600</date>
     <author>Devil505</author>
     <hidden>O</hidden>
     <content><![CDATA[
-	 Le Plan Seldon numéro 3 est là!<br/>
-	<ul>
-		<li>Dans ce numéro :
-			<ul>
-				<li>News</li>
-				<li>Gestion d'une action associative avec Frugalware</li>
-				<li>Xonotic</li>
-				<li>Le secret de FredBezies :)</li>
-				<li>Mots-croisés :)</li>
-				<li>Et plus encore!</li>
-			</ul>
-	</ul><br/>
-	<center>
-	<img src="http://ftp.frugalware.org/pub/other/theseldonplan/preview03fr.png">
-	</center><br/>
-	<a href="http://ftp.frugalware.org/pub/other/theseldonplan/theseldonplan_03fr.pdf">Télécharger (en français, version PDF)</a><br/>
+     Le Plan Seldon numéro 3 est là!<br/>
+    <ul>
+        <li>Dans ce numéro :
+            <ul>
+                <li>News</li>
+                <li>Gestion d'une action associative avec Frugalware</li>
+                <li>Xonotic</li>
+                <li>Le secret de FredBezies :)</li>
+                <li>Mots-croisés :)</li>
+                <li>Et plus encore!</li>
+            </ul>
+    </ul><br/>
+    <center>
+    <img src="http://ftp.frugalware.org/pub/other/theseldonplan/preview03fr.png">
+    </center><br/>
+    <a href="http://ftp.frugalware.org/pub/other/theseldonplan/theseldonplan_03fr.pdf">Télécharger (en français, version PDF)</a><br/>
         ]]>
     </content>
-      <icon>/images/icons/newsletter.png</icon>
+      <icon>newsletter</icon>
   </post>
   <post>
-    <id>231</id>
+    <id>233</id>
     <title>Frugalware 1.7pre1 (Gaia) disponible !</title>
     <date>Sun, 08 Apr 2012 23:46:03 -0500</date>
     <author>ryuo</author>
@@ -710,20 +720,20 @@ Téléchargement pour x86_64 : consultez notre <a href="http://frugalware.org/do
             <li>Paquets mis à jour :
                 <ul>
                     <li>Kernel 3.3</li>
-		    <li>KDE 4.8.1</li>
-		    <li>LibreOffice 3.5.1</li>
+            <li>KDE 4.8.1</li>
+            <li>LibreOffice 3.5.1</li>
                     <li>Firefox 11.0, Thunderbird 11.0, Seamonkey 2.8</li>
-		</ul>
-	    </li>
-	    <li>Nouvelles fonctionnalités :
-	        <ul>
-		    <li>les modules du Kernel sont maintenant compressés avec XZ.</li>
-		    <li>GRUB2 a remplacé GRUB1.</li>
-		    <li>L'installeur texte prend en charge les partitions GPT.</li>
-		    <li>pm-radeon est disponible, pour configurer la gestion de l'énergie de KMS Radeon lors du démarrage.</li>
-		    <li>Le paquet phc offre la possiblité - expérimentale - de ssous-alimenter en tension le processeur.</li>
-		</ul>
-	  </li>
+        </ul>
+        </li>
+        <li>Nouvelles fonctionnalités :
+            <ul>
+            <li>les modules du Kernel sont maintenant compressés avec XZ.</li>
+            <li>GRUB2 a remplacé GRUB1.</li>
+            <li>L'installeur texte prend en charge les partitions GPT.</li>
+            <li>pm-radeon est disponible, pour configurer la gestion de l'énergie de KMS Radeon lors du démarrage.</li>
+            <li>Le paquet phc offre la possiblité - expérimentale - de ssous-alimenter en tension le processeur.</li>
+        </ul>
+      </li>
     </ul>
     Veuillez vous référer au <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Changelog de -Testing</a> pour davantage d'informations.<br />
     Téléchargement pour x86_64 : regardez notre <a href="http://frugalware.org/download/frugalware-testing-iso">liste de miroirs</a>. N'oubliez pas de vérifier <a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">l'intégrité</a> des fichiers avant de les graver.<br />
@@ -732,87 +742,87 @@ Téléchargement pour x86_64 : consultez notre <a href="http://frugalware.org/do
     </content>
   </post>
   <post>
-    <id>230</id>
+    <id>232</id>
     <title>The Seldon Plan #2</title>
     <date>Sun, 1 Apr 2012 18:51:58 -0600</date>
     <author>Devil505</author>
     <hidden>O</hidden>
     <content><![CDATA[
-	 Le Plan Seldon numéro 2 est là!<br/>
-	<ul>
-		<li>Dans ce numéro :
-			<ul>
-				<li>News</li>
-				<li>FlightGear 2.6</li>
-				<li>0.A.D Alpha 9</li>
-				<li>Mots-croisés :)</li>
-				<li>Et plus encore!</li>
-			</ul>
-	</ul><br/>
-	<center>
-	<img src="http://ftp.frugalware.org/pub/other/theseldonplan/preview02fr.png">
-	</center><br/>
-	<a href="http://ftp.frugalware.org/pub/other/theseldonplan/theseldonplan_02fr.pdf">Download (en français, version PDF)</a><br/>
+     Le Plan Seldon numéro 2 est là!<br/>
+    <ul>
+        <li>Dans ce numéro :
+            <ul>
+                <li>News</li>
+                <li>FlightGear 2.6</li>
+                <li>0.A.D Alpha 9</li>
+                <li>Mots-croisés :)</li>
+                <li>Et plus encore!</li>
+            </ul>
+    </ul><br/>
+    <center>
+    <img src="http://ftp.frugalware.org/pub/other/theseldonplan/preview02fr.png">
+    </center><br/>
+    <a href="http://ftp.frugalware.org/pub/other/theseldonplan/theseldonplan_02fr.pdf">Download (en français, version PDF)</a><br/>
         ]]>
     </content>
-      <icon>/images/icons/newsletter.png</icon>
+      <icon>newsletter</icon>
   </post>
   <post>
-    <id>229</id>
+    <id>231</id>
     <title>Arrêt de l'architecture powerpc (ppc)</title>
     <date>Sun, 18 Mar 2012 12:55:57 -0500</date>
     <author>ryuo</author>
     <hidden>0</hidden>
     <content><![CDATA[
-	  Cette architecture a été retirée et ne sera plus supportée. Nous avons perdu notre buildserver dédié qui nous permettait de supporter cette architecture, et aucun développeurs ne veut s'en occuper. <br/>
-	Donc, fin du powerpc pour Frugalware. Si vous possédez du matériel utilisant cette architecture, nous sommes désolés, mais nous n'avons pas d'autre choix. Le support x86/x86_64 continue et qui est plus facile à maintenir. Rejoingnez-nous quand vous le pourrez.<br/>
+      Cette architecture a été retirée et ne sera plus supportée. Nous avons perdu notre buildserver dédié qui nous permettait de supporter cette architecture, et aucun développeurs ne veut s'en occuper. <br/>
+    Donc, fin du powerpc pour Frugalware. Si vous possédez du matériel utilisant cette architecture, nous sommes désolés, mais nous n'avons pas d'autre choix. Le support x86/x86_64 continue et qui est plus facile à maintenir. Rejoingnez-nous quand vous le pourrez.<br/>
         ]]>
     </content>
-      <icon>/images/icons/warning.png</icon>
+      <icon>warning</icon>
   </post>
   <post>
-    <id>228</id>
+    <id>230</id>
     <title>Le Plan Seldon numéro #1</title>
     <date>Sun, 11 Mar 2012 15:48:58 -0600</date>
     <author>Devil505</author>
     <hidden>0</hidden>
     <content><![CDATA[
-	 Le Plan Seldon Plan est le nouveau magazine des utilisateurs de Frugalware qui
-	 remplace l'ancienne newsletter.<br/>
-	<ul>
-		<li>Dans ce numéro : 
-			<ul>
-				<li>Sortie de Frugalware 1.6 Fermus</li>
-				<li>Nouvelles de dernière minute</li>
-				<li>GNOME 3.4 beta en test</li>
-				<li>Mots-croisés :)</li>
-				<li>Captures d'écrans des utilisateurs</li>
-			</ul>
-	</ul><br/>
-	<center>
-	<img src="http://ftp.frugalware.org/pub/other/theseldonplan/preview01fr.png">
-	</center><br/>
-	<a href="http://ftp.frugalware.org/pub/other/theseldonplan/theseldonplan_01fr.pdf">Téléchargement (version francophone PDF)</a><br/>
+     Le Plan Seldon Plan est le nouveau magazine des utilisateurs de Frugalware qui
+     remplace l'ancienne newsletter.<br/>
+    <ul>
+        <li>Dans ce numéro :
+            <ul>
+                <li>Sortie de Frugalware 1.6 Fermus</li>
+                <li>Nouvelles de dernière minute</li>
+                <li>GNOME 3.4 beta en test</li>
+                <li>Mots-croisés :)</li>
+                <li>Captures d'écrans des utilisateurs</li>
+            </ul>
+    </ul><br/>
+    <center>
+    <img src="http://ftp.frugalware.org/pub/other/theseldonplan/preview01fr.png">
+    </center><br/>
+    <a href="http://ftp.frugalware.org/pub/other/theseldonplan/theseldonplan_01fr.pdf">Téléchargement (version francophone PDF)</a><br/>
         ]]>
     </content>
-      <icon>/images/icons/newsletter.png</icon>
+      <icon>newsletter</icon>
   </post>
   <post>
-    <id>227</id>
+    <id>229</id>
     <title>Mise à jour de GRUB2 sur current</title>
     <date>Sat, 03 Mar 2012 05:12:28 -0600</date>
     <author>ryuo</author>
     <hidden>0</hidden>
     <content><![CDATA[
-	  La mise à jour de GRUB2 a été effectuée dans current récemment. Cette mise à jour ne vas pas casser votre système,<br/>
-	  car elle doit être effectuée manuellement par l'utilisateur. GRUB1 ne sera plus supporté à partir de maintenant, vous devez donc procéder<br/>
-	  à la mise à jour comme expliquée <a href="/docs/upgrade.html#_grub2_upgrade">ici</a>.<br/>
+      La mise à jour de GRUB2 a été effectuée dans current récemment. Cette mise à jour ne vas pas casser votre système,<br/>
+      car elle doit être effectuée manuellement par l'utilisateur. GRUB1 ne sera plus supporté à partir de maintenant, vous devez donc procéder<br/>
+      à la mise à jour comme expliquée <a href="/docs/upgrade.html#_grub2_upgrade">ici</a>.<br/>
         ]]>
     </content>
-      <icon>/images/icons/warning.png</icon>
+      <icon>warning</icon>
   </post>
   <post>
-    <id>226</id>
+    <id>228</id>
     <title>systemd sur current</title>
     <date>Sun, 19 Feb 2012 12:01:34 -0600</date>
     <author>ryuo</author>
@@ -825,128 +835,128 @@ Téléchargement pour x86_64 : consultez notre <a href="http://frugalware.org/do
       Si vous voulez plus de détails sur ce problème, vous devez démarrer sans les arguments 'splash' et 'quiet'. Merci.<br/>
         ]]>
     </content>
-      <icon>/images/icons/warning.png</icon>
+      <icon>warning</icon>
   </post>
     <post>
-    	<id>224</id>
-		<title>Frugalware 1.6 (Fermus) disponible !</title>
-		<date>Sun, 12 Feb 2012 18;01;34 -0600</date>
-		<author>ryuo</author>
-		<hidden>0</hidden>
-		<content><![CDATA[
-				<center><img src="http://frugalware.org/images/promo-fermus.png" alt="Frugalware 1.6 Fermus is released !" /></center><br />
-				L'équipe de développement de Frugalware a le plaisir de vous annoncer la sortie de Frugalware 1.6, notre seizième version stable.<br />
-				Il n'a pas de nouvelles fonctionnalités par rapport à la 1.6rc2, mais il y a eu 93 changements pour corriger des problèmes mineurs. Si vous n'avez pas suivi les changements pendant les sorties des version PRE/RC, voici la liste des changements les plus importants depuis la version 1.5 :<br />
-				<ul>
-						<li>Paquets mis à jour (liste non exhaustive) : 
-								<ul>
-										<li>Linux Kernel 3.1.10</li>
-										<li>XOrg server 1.11.2</li>
-										<li>GNOME 3.2</li>
-										<li>KDE SC 4.7</li>
-										<li>LibreOffice 3.4.5.2</li>
-										<li>Mozilla Firefox 10.0</li>
-								</ul>
-						</li>
-						<li>Les images disques pour les architectures i686 et x86_64 sont maintenant hybrides. Cela signifie que l'on ne construit plus d'image pour périphériques USB pour ces architectures.</li>
-						<li>cpupower peut être utilisé pour configurer la gestion d'énergie de votre processeur, et c'est maintenant notre recommandation pour le faire.</li>
-						<li>Le support UEFI/EFI a été supprimé de l'architecture i686 car il est rare de trouver l'UEFI/EFI sur du 32 bits.</li>
-						<li>Les UUIDs sont maintenant utilisées par l'installateur lors de la génération du /etc/fstab lors d'une nouvelle installation.</li>
-						<li>fw32, qui permet d'avoir un chroot i686 sur une machine x86_64 est maintenant mature et utilisable. S'il vous manque quelque chose, faites-en la demande sur notre <a href="https://bugs.frugalware.org">Bug Tracker</a>.</li>
-						<li>HAL a été remplacé en faveur de udisks.</li>
-						<li>les architectures i686 et x86_64 utilisent maintenant initrd. Référez-vous aux notes d'installation pour mettre à jour votre système.</li>
-						<li>Le bureau Cinnamon est maintenant inclus dans les dépôts.</li>
-						<li>Fwlive, le Live-Cd de Frugalware, est maintenant opérationnel !</li>
-				</ul>
-				<br />
-				Pour toute information complémentaire, référez-vous au <a href="http://frugalware.org/download/frugalware-1.6/ChangeLog.txt">Changelog</a>.<br />
-				Pour obtenir Frugalware, rendez-vous sur notre <a href="http://frugalware.org/download/frugalware-1.6-iso">liste de miroirs</a>. N'oubliez pas de vérifier <a href="http://frugalware.org/download/frugalware-1.6-iso/SHA1SUMS">l'intégrité</a> des images avant de les graver !<br />
-				<b>Note :</b> cliquez <a href="http://frugalware.org/docs/install#_choosing_installation_flavor">ici</a> pour savoir de quel média vous aurez besoin pour l'installation.<br />
-				Si vous mettez à jour votre système de Mores vers Fermus, veuillez lire la partie <a href="http://frugalware.org/docs/stable/upgrade">mise à jour</a> de notre documentation.
-				]]>
+        <id>227</id>
+        <title>Frugalware 1.6 (Fermus) disponible !</title>
+        <date>Sun, 12 Feb 2012 18:01:34 -0600</date>
+        <author>ryuo</author>
+        <hidden>0</hidden>
+        <content><![CDATA[
+                <center><img src="images/promo/fermus.png" alt="Frugalware 1.6 Fermus is released !" /></center><br />
+                L'équipe de développement de Frugalware a le plaisir de vous annoncer la sortie de Frugalware 1.6, notre seizième version stable.<br />
+                Il n'a pas de nouvelles fonctionnalités par rapport à la 1.6rc2, mais il y a eu 93 changements pour corriger des problèmes mineurs. Si vous n'avez pas suivi les changements pendant les sorties des version PRE/RC, voici la liste des changements les plus importants depuis la version 1.5 :<br />
+                <ul>
+                        <li>Paquets mis à jour (liste non exhaustive) :
+                                <ul>
+                                        <li>Linux Kernel 3.1.10</li>
+                                        <li>XOrg server 1.11.2</li>
+                                        <li>GNOME 3.2</li>
+                                        <li>KDE SC 4.7</li>
+                                        <li>LibreOffice 3.4.5.2</li>
+                                        <li>Mozilla Firefox 10.0</li>
+                                </ul>
+                        </li>
+                        <li>Les images disques pour les architectures i686 et x86_64 sont maintenant hybrides. Cela signifie que l'on ne construit plus d'image pour périphériques USB pour ces architectures.</li>
+                        <li>cpupower peut être utilisé pour configurer la gestion d'énergie de votre processeur, et c'est maintenant notre recommandation pour le faire.</li>
+                        <li>Le support UEFI/EFI a été supprimé de l'architecture i686 car il est rare de trouver l'UEFI/EFI sur du 32 bits.</li>
+                        <li>Les UUIDs sont maintenant utilisées par l'installateur lors de la génération du /etc/fstab lors d'une nouvelle installation.</li>
+                        <li>fw32, qui permet d'avoir un chroot i686 sur une machine x86_64 est maintenant mature et utilisable. S'il vous manque quelque chose, faites-en la demande sur notre <a href="https://bugs.frugalware.org">Bug Tracker</a>.</li>
+                        <li>HAL a été remplacé en faveur de udisks.</li>
+                        <li>les architectures i686 et x86_64 utilisent maintenant initrd. Référez-vous aux notes d'installation pour mettre à jour votre système.</li>
+                        <li>Le bureau Cinnamon est maintenant inclus dans les dépôts.</li>
+                        <li>Fwlive, le Live-Cd de Frugalware, est maintenant opérationnel !</li>
+                </ul>
+                <br />
+                Pour toute information complémentaire, référez-vous au <a href="http://frugalware.org/download/frugalware-1.6/ChangeLog.txt">Changelog</a>.<br />
+                Pour obtenir Frugalware, rendez-vous sur notre <a href="http://frugalware.org/download/frugalware-1.6-iso">liste de miroirs</a>. N'oubliez pas de vérifier <a href="http://frugalware.org/download/frugalware-1.6-iso/SHA1SUMS">l'intégrité</a> des images avant de les graver !<br />
+                <b>Note :</b> cliquez <a href="http://frugalware.org/docs/install#_choosing_installation_flavor">ici</a> pour savoir de quel média vous aurez besoin pour l'installation.<br />
+                Si vous mettez à jour votre système de Mores vers Fermus, veuillez lire la partie <a href="http://frugalware.org/docs/stable/upgrade">mise à jour</a> de notre documentation.
+                ]]>
         </content>
     </post>
     <post>
-		<id>223</id>
-		<title>Frugalware 1.6rc2 (Fermus) disponible !</title>
-		<date>Sun, 29 Jan 2012, 18:00:57 -0600</date>
-		<author>ryuo</author>
-		<hidden>0</hidden>
-		<content><![CDATA[
-				L'équipe de développement de Frugalware a la plaisir de vous annoncer la sortie de Frugalware 1.6rc2, la seconde préversion technique de la version 1.6 stable à venir.<br />
-				Voici quelques-uns des changements survenus depuis la 1.6rc1 :
-				<ul>
-						<li>Paquets mis à jour :
-								<ul>
-										<li>Linux Kernel 3.1.10</li>
-										<li>LibreOffice 3.4.5</li>
-										<li>~100 paquets mis à jour</li>
-										<li>27 nouveaux paquets</li>
-								</ul>
-						</li>
-						<li>Nouvelles fonctionnalités :
-								<ul>
-										<li>cpupower ((<a href="http://lwn.net/Articles/433002/">article paru sur LWN </a>) et <a href="https://perf.wiki.kernel.org/">perf</a> sont désormais disponibles.</li>
-										<li>kmod a remplacé module-init-tools</li>
-								</ul>
-						</li>
-						<li>Corrections :
-								<ul>
-										<li>L'installateur prend en charge les erreurs réseau en cas de temps de réponse trop long.</li>
-										<li>La documentation a été mise à jour</li>
-								</ul>
-						</li>
-				</ul><br />
-				Veuillez vous référer au <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Changelog</a> pour plus d'informations.<br />
-				Téléchargment pour i686 : consultez notre <a href="http://frugalware.org/download/frugalware-testing-iso">liste de miroirs</a>. N'oubliez pas de vérifier <a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">l'intégrité</a> des images avant de les graver !<br />
-				<b>NOTE :</b> cliquez <a href="/docs/install#_choosing_installation_flavor">ici</a> pour savoir de quel média vous aurez besoin pour l'installation.
-				]]>
-		</content>
-	</post>
+        <id>226</id>
+        <title>Frugalware 1.6rc2 (Fermus) disponible !</title>
+        <date>Sun, 29 Jan 2012, 18:00:57 -0600</date>
+        <author>ryuo</author>
+        <hidden>0</hidden>
+        <content><![CDATA[
+                L'équipe de développement de Frugalware a la plaisir de vous annoncer la sortie de Frugalware 1.6rc2, la seconde préversion technique de la version 1.6 stable à venir.<br />
+                Voici quelques-uns des changements survenus depuis la 1.6rc1 :
+                <ul>
+                        <li>Paquets mis à jour :
+                                <ul>
+                                        <li>Linux Kernel 3.1.10</li>
+                                        <li>LibreOffice 3.4.5</li>
+                                        <li>~100 paquets mis à jour</li>
+                                        <li>27 nouveaux paquets</li>
+                                </ul>
+                        </li>
+                        <li>Nouvelles fonctionnalités :
+                                <ul>
+                                        <li>cpupower ((<a href="http://lwn.net/Articles/433002/">article paru sur LWN </a>) et <a href="https://perf.wiki.kernel.org/">perf</a> sont désormais disponibles.</li>
+                                        <li>kmod a remplacé module-init-tools</li>
+                                </ul>
+                        </li>
+                        <li>Corrections :
+                                <ul>
+                                        <li>L'installateur prend en charge les erreurs réseau en cas de temps de réponse trop long.</li>
+                                        <li>La documentation a été mise à jour</li>
+                                </ul>
+                        </li>
+                </ul><br />
+                Veuillez vous référer au <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Changelog</a> pour plus d'informations.<br />
+                Téléchargment pour i686 : consultez notre <a href="http://frugalware.org/download/frugalware-testing-iso">liste de miroirs</a>. N'oubliez pas de vérifier <a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">l'intégrité</a> des images avant de les graver !<br />
+                <b>NOTE :</b> cliquez <a href="/docs/install#_choosing_installation_flavor">ici</a> pour savoir de quel média vous aurez besoin pour l'installation.
+                ]]>
+        </content>
+    </post>
     <post>
-    <id>222</id>
-	<title>Frugalware 1.6rc1 (Fermus) disponible !</title>
-	<date>Sun, 15 Jan 2012 18:00:45 -0600</date>
-	<author>ryuo</author>
-	<hidden>0</hidden>
-	<content><![CDATA[
-			L'équipe de développement de Frugalware a le plaisir de vous annoncer la sortie de Frugalware 1.6rc1, la seconde préversion technique de la version 1.6 (stable) à venir.<br />
-			Voici quelques changements, mises à jour et corrections apportés depuis la version 1.6pre2 :
-			<ul>
-					<li>Paquets mis à jour : 
-							<ul>
-									<li>Kernel Linux 3.1.8</li>
-									<li>Systemd 3.8</li>
-									<li>Firefox 9.0.1</li>
-									<li>383 paquets mis à jour</li>
-									<li>121 nouveaux paquets</li>
-									<li>8 paquets remplacés</li>
-							</ul>
-					</li>
-					<li>Nouvelles fonctionnalités :
-							<ul>
-									<li>Après avoir été absent depuis 6 versions, Fwlive est de retour sur scène !</li>
-									<li><a href="http://cinnamon.linuxmint.com/">Le bureau Cinnamon</a> est disponible comme paquet.</li>
-							</ul>
-				    </li>
-			</ul>
+    <id>224</id>
+    <title>Frugalware 1.6rc1 (Fermus) disponible !</title>
+    <date>Sun, 15 Jan 2012 18:00:45 -0600</date>
+    <author>ryuo</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+            L'équipe de développement de Frugalware a le plaisir de vous annoncer la sortie de Frugalware 1.6rc1, la seconde préversion technique de la version 1.6 (stable) à venir.<br />
+            Voici quelques changements, mises à jour et corrections apportés depuis la version 1.6pre2 :
+            <ul>
+                    <li>Paquets mis à jour :
+                            <ul>
+                                    <li>Kernel Linux 3.1.8</li>
+                                    <li>Systemd 3.8</li>
+                                    <li>Firefox 9.0.1</li>
+                                    <li>383 paquets mis à jour</li>
+                                    <li>121 nouveaux paquets</li>
+                                    <li>8 paquets remplacés</li>
+                            </ul>
+                    </li>
+                    <li>Nouvelles fonctionnalités :
+                            <ul>
+                                    <li>Après avoir été absent depuis 6 versions, Fwlive est de retour sur scène !</li>
+                                    <li><a href="http://cinnamon.linuxmint.com/">Le bureau Cinnamon</a> est disponible comme paquet.</li>
+                            </ul>
+                    </li>
+            </ul>
 
-			Veuillez vous référer au <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Changelog</a> pour davantage d'informations.<br /><br />
-			Téléchargement pour architectures i686 : jetez un oeil à notre <a href="http://frugalware.org/download/frugalware-testing-iso">liste de mirroirs</a>. N'oubliez pas de vérifier <a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">l'intégrité</a> des images iso avant de les graver !<br /><br />
-			<strong>Note : </strong> cliquez <a href="http://frugalware.org/docs/install#_choosing_installation_flavor">ici</a> pour savoir de quel média vous avez besoin pour l'installation.
-			]]>
-	</content>
+            Veuillez vous référer au <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Changelog</a> pour davantage d'informations.<br /><br />
+            Téléchargement pour architectures i686 : jetez un oeil à notre <a href="http://frugalware.org/download/frugalware-testing-iso">liste de mirroirs</a>. N'oubliez pas de vérifier <a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">l'intégrité</a> des images iso avant de les graver !<br /><br />
+            <strong>Note : </strong> cliquez <a href="http://frugalware.org/docs/install#_choosing_installation_flavor">ici</a> pour savoir de quel média vous avez besoin pour l'installation.
+            ]]>
+    </content>
   </post>
 
 
   <post>
-    <id>221</id>
+    <id>223</id>
     <title>Cadeau de Noël de Frugalware</title>
     <date>Sat, 24 Dec 2011 09:00:00 +0200</date>
     <author>Devil505</author>
     <hidden>0</hidden>
     <content><![CDATA[
-<center><img src="http://frugalware.org/images/logo-christmas.png" alt="Frugalware Christmas logo" /></center><br />
+<center><img src="images/data/logo-christmas.png" alt="Frugalware Christmas logo" /></center><br />
 Dans quelques heures, c'est Noël, et devinez quoi ? L'équipe de développement de Frugalware a le plaisir de vous offrir un cadeau : la nouvelle version de FWLive (Frugalware Live CD/DVD).<br />
       <ul>
         <li>FWLive est disponible dans diffèrentes versions :
@@ -956,7 +966,7 @@ Dans quelques heures, c'est Noël, et devinez quoi ? L'équipe de développement
             <li>XFCE Desktop Live-CD (fwlive-xfce-*.iso).</li>
             <li>LXDE Desktop Live-CD (fwlive-lxde-*.iso).</li>
             <li>Educative Edition Live-CD (fwlive-education-*.iso).</li>
-            <li>Gamer Live-DVD Edition (fwlive-gamer-*.iso).</li>     
+            <li>Gamer Live-DVD Edition (fwlive-gamer-*.iso).</li>
           </ul>
         </li>
         <li>A savoir :
@@ -977,20 +987,20 @@ Téléchargement pour i686 et x86_64 :  consultez notre <a href="http://frugalwa
     </content>
   </post>
   <post>
-    <id>220</id>
+    <id>222</id>
     <title>Frugalware 1.6pre2 (Fermus) disponible</title>
     <date>Mon, 19 Dec 2011 00:00:00 +0200</date>
     <author>Devil505</author>
     <hidden>0</hidden>
     <content><![CDATA[
-			L'équipe de développement a le plaisir de vous annoncer 
-			la sortie de Frugalware 1.6pre2, la seconde pré-version
-			technique de la version stable 1.6 à venir. <br /><br />
-			Voici quelques unes des nouveautés, mises à jour et
-			corrections depuis la 1.6pre1 :<br />
-			<ul>
-			  <li>Mises à jour de paquets :
-			    <ul>
+            L'équipe de développement a le plaisir de vous annoncer
+            la sortie de Frugalware 1.6pre2, la seconde pré-version
+            technique de la version stable 1.6 à venir. <br /><br />
+            Voici quelques unes des nouveautés, mises à jour et
+            corrections depuis la 1.6pre1 :<br />
+            <ul>
+              <li>Mises à jour de paquets :
+                <ul>
           <ul>
             <li>Linux kernel 3.1</li>
             <li>XOrg server 1.11.2</li>
@@ -998,7 +1008,7 @@ Téléchargement pour i686 et x86_64 :  consultez notre <a href="http://frugalwa
             <li>Firefox 8.0.1</li>
             <li>Chromium 16.0.912.63</li>
             <li>Blender 2.60</li>
-            <li>Composants EFL 1.1.0</li>       
+            <li>Composants EFL 1.1.0</li>
           </ul>
         </li>
         <li>Nouvelles fonctionnalités :
@@ -1010,31 +1020,31 @@ Téléchargement pour i686 et x86_64 :  consultez notre <a href="http://frugalwa
           </ul>
         </li>
       </ul>
- 
-		  Vous pouvez consulter le <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Changelog</a> pour avoir plus d'informations.<br /><br />
-		  Téléchargements pour les architectures 32 bits : consultez notre <a href="http://frugalware.org/download/frugalware-testing-iso">Liste de miroirs</a>. N'oubliez pas de vérifier <a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">l'intégrité</a> des fichiers .iso avant de les graver.<br /><br />
+
+          Vous pouvez consulter le <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Changelog</a> pour avoir plus d'informations.<br /><br />
+          Téléchargements pour les architectures 32 bits : consultez notre <a href="http://frugalware.org/download/frugalware-testing-iso">Liste de miroirs</a>. N'oubliez pas de vérifier <a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">l'intégrité</a> des fichiers .iso avant de les graver.<br /><br />
       <br />
       Oh, et par la même occasion, nous vous souhaitons un Joyeux Noël !
       <br />
-      <center><img src="http://frugalware.org/images/logo-christmas.png" alt="Frugalware Christmas logo" /></center><br />
+      <center><img src="images/data/logo-christmas.png" alt="Frugalware Christmas logo" /></center><br />
       ]]>
     </content>
   </post>
   <post>
-        <id>219</id>
+        <id>221</id>
         <title>Besoin de testeurs pour Live CD!</title>
         <date>Wed, 7 Dec 2011 16:13:23 +0100</date>
         <author>Devil505</author>
         <hidden>0</hidden>
         <content><![CDATA[
         Notre live-cd devrait bientôt être de retour depuis que Baste a pris en charge le project Fwlive. Des images iso sont disponibles <a href="http://ftp.frugalware.org/pub/other/people/baste/livecd/">ici</a>.
-	Nous recherchons des testeurs. Ces images iso sont encore en version beta et sont uniquement disponibles en Anglais et Français. Merci de reporter vos bogues, avis et reqêtes à Baste sur le channel irc #frugalware ou le <a href="http://bugs.frugalware.org">système de suivi de bogues</a>.
+    Nous recherchons des testeurs. Ces images iso sont encore en version beta et sont uniquement disponibles en Anglais et Français. Merci de reporter vos bogues, avis et reqêtes à Baste sur le channel irc #frugalware ou le <a href="http://bugs.frugalware.org">système de suivi de bogues</a>.
             ]]>
         </content>
-        <icon>/images/icons/info.png</icon>
+        <icon>info</icon>
     </post>
   <post>
-        <id>218</id>
+        <id>220</id>
         <title>Nouveau système de suivi de bogues!</title>
         <date>Sat, 19 Oct 2011 15:17:55 +0100</date>
         <author>Devil505</author>
@@ -1044,127 +1054,127 @@ Téléchargement pour i686 et x86_64 :  consultez notre <a href="http://frugalwa
         Les développeurs de Frugalware remercient Xarkam pour son travail !<br />
             ]]>
         </content>
-        <icon>/images/icons/info.png</icon>
+        <icon>info</icon>
     </post>
   <post>
-    <id>217</id>
-	<title>Sortie de Frugalware 1.6pre1 (Fermus)</title>
-	<date>Mon, 19 Oct 2011 00:24:03 +2000</date>
-	<author>Miklos Vajna</author>
-	<hidden>0</hidden>
-	<content><![CDATA[
-			L'équipe de développement a le plaisir de vous annoncer 
-			la sortie de Frugalware 1.6pre1, la première pré-version
-			technique de la version stable 1.6 à venir. <br /><br />
-			Voici quelques unes des nouveautés, mises à jour et
-			corrections :<br />
-			<ul>
-			  <li>Mises à jour de paquets :
-			    <ul>
-				  <li>Kernel Linux 3.0</li>
-				  <li>Librairie C GNU 2.14</li>
-				  <li>GCC 4.6</li>
-				  <li>GNOME 3.2</li>
-				  <li>KDE SC 4.7</li>
-				  <li>Perl 5.14</li>
-			    </ul>
+    <id>219</id>
+    <title>Sortie de Frugalware 1.6pre1 (Fermus)</title>
+    <date>Mon, 19 Oct 2011 00:24:03 +2000</date>
+    <author>Miklos Vajna</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+            L'équipe de développement a le plaisir de vous annoncer
+            la sortie de Frugalware 1.6pre1, la première pré-version
+            technique de la version stable 1.6 à venir. <br /><br />
+            Voici quelques unes des nouveautés, mises à jour et
+            corrections :<br />
+            <ul>
+              <li>Mises à jour de paquets :
+                <ul>
+                  <li>Kernel Linux 3.0</li>
+                  <li>Librairie C GNU 2.14</li>
+                  <li>GCC 4.6</li>
+                  <li>GNOME 3.2</li>
+                  <li>KDE SC 4.7</li>
+                  <li>Perl 5.14</li>
+                </ul>
               </li>
-			  <li>Nouvelles fonctionnalités :
-			    <ul>
-				  <li><a href="http://thread.gmane.org/gmane.linux.frugalware.devel/9778">rsyslog</a> est le nouveau démon pour la journalisation système.</li>
-				  <li>udisks remplace <a href="http://en.wikipedia.org/wiki/HAL_(software)#Deprecated">hal</a> dans l'installation par défaut.</li>
-				  <li>Le paquet fw32 remplace le groupe emul-extra, permettant une intrégration transparente, comme par exemple Skype sur une architecture 64 bits.</li>
-				  <li>Les noyaux sont maintenant construits avec un initrd. Pensez à <a href="http://frugalware.org/docs/upgrade#_updating_grub_configuration">Mettre à jour</a> pour configuration de démarrage pour utiliser l'initrd (/boot/initrd.img.xz).</li>
-		  	  </ul>
+              <li>Nouvelles fonctionnalités :
+                <ul>
+                  <li><a href="http://thread.gmane.org/gmane.linux.frugalware.devel/9778">rsyslog</a> est le nouveau démon pour la journalisation système.</li>
+                  <li>udisks remplace <a href="http://en.wikipedia.org/wiki/HAL_(software)#Deprecated">hal</a> dans l'installation par défaut.</li>
+                  <li>Le paquet fw32 remplace le groupe emul-extra, permettant une intrégration transparente, comme par exemple Skype sur une architecture 64 bits.</li>
+                  <li>Les noyaux sont maintenant construits avec un initrd. Pensez à <a href="http://frugalware.org/docs/upgrade#_updating_grub_configuration">Mettre à jour</a> pour configuration de démarrage pour utiliser l'initrd (/boot/initrd.img.xz).</li>
+              </ul>
             </li>
- 		  </ul>
-		  <br />
-		  Vous pouvez consulter le <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Changelog</a> pour avoir plus d'informations.<br /><br />
-		  Téléchargements pour les architectures 32 bits : consultez notre <a href="http://frugalware.org/download/frugalware-testing-iso">Liste de miroirs</a>. N'oubliez pas de vérifier <a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">l'intégrité</a> des fichiers .iso avant de les graver.<br /><br />
-		  <b>Note : </b>rendez-vous <a href="http://frugalware.org/docs/install#_choosing_installation_flavor">ici</a> pour savoir de quel média vous avez besoin pour l'installation.
-		  ]]>
+          </ul>
+          <br />
+          Vous pouvez consulter le <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/ChangeLog.txt">Changelog</a> pour avoir plus d'informations.<br /><br />
+          Téléchargements pour les architectures 32 bits : consultez notre <a href="http://frugalware.org/download/frugalware-testing-iso">Liste de miroirs</a>. N'oubliez pas de vérifier <a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">l'intégrité</a> des fichiers .iso avant de les graver.<br /><br />
+          <b>Note : </b>rendez-vous <a href="http://frugalware.org/docs/install#_choosing_installation_flavor">ici</a> pour savoir de quel média vous avez besoin pour l'installation.
+          ]]>
     </content>
   </post>
   <post>
-    <id>216</id>
+    <id>218</id>
     <title>Frugalware newsletter numéro 82</title>
     <date>Tue, 04 Oct 2011 13:47:43 +1000</date>
-	<author>Phayz</author>
-	<hidden>0</hidden>
-	<content><![CDATA[
-		Le bulletin d'information a pour but de vous tenir informé de
-		ce qui s'est passé récemment dans le monde de Frugalware.<br
-				/><br />
-	    Au sommaire de ce numéro :
-		<ul>
-				<li>La fête pour célébrer la sortie de Frugalware a
-						été "en l'air"</li>
-				<li>Slown est officiellement développeur</li>
-				<li>Cedynamix est de retour !</li>
-				<li>Trucs et astuces - "Les alias pour le shell Bash"
-						- "Dis-moi quand tu as fini"</li>
-				<li>Lumière sur des paquets - Gource et Duplicity</li>
-				<li>Examen Frugalware #3 : les réponses</li>
-		</ul>
+    <author>Phayz</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+        Le bulletin d'information a pour but de vous tenir informé de
+        ce qui s'est passé récemment dans le monde de Frugalware.<br
+                /><br />
+        Au sommaire de ce numéro :
+        <ul>
+                <li>La fête pour célébrer la sortie de Frugalware a
+                        été "en l'air"</li>
+                <li>Slown est officiellement développeur</li>
+                <li>Cedynamix est de retour !</li>
+                <li>Trucs et astuces - "Les alias pour le shell Bash"
+                        - "Dis-moi quand tu as fini"</li>
+                <li>Lumière sur des paquets - Gource et Duplicity</li>
+                <li>Examen Frugalware #3 : les réponses</li>
+        </ul>
 
-		Vous pouvez la lire <a href="http://frugalware.org/newsletter/82">ici</a>. Nous espérons que vous l'apprécierez !
+        Vous pouvez la lire <a href="http://frugalware.org/newsletter/82">ici</a>. Nous espérons que vous l'apprécierez !
 ]]>
     </content>
   </post>
   <post>
+    <id>217</id>
+    <title>La mise à jour du kernel et vous</title>
+    <date>Mon, 19 Sep 2011 00:57:25 +0500</date>
+    <author>James Buren</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+            Si vous mettez à jour current, ou si vous migrez vers current ces jours-ci, you
+            devrez prendre certaines mesures. <br /><br />
+            Nous avons migré le kernel pour qu'il utilise désormais, par défaut, initrd. Mais
+            cela affecte uniquement les architectures i686 et x86_64. Les autres architectures
+            ne subissent aucun changement.<br /><br />
+            Si vous utilisez la configuration de Grub par défaut, vous devrez juste lancer
+            grubconfig après la mise à jour. Sinon, vous devrez ajouter cette ligne à l'entrée
+            Frugalware dans le fichier /boot/grub/menu.lst : <br /><br />
+            <pre>initrd (frugalware grub partition)/boot/initrd.img.xz</pre><br />
+            Si vous rencontrez des problèmes avec le nouveau kernel, merci d'ouvrir un rapport
+            de bug. Mais avant de le faire, vérifiez si votre partition racine est "/dev/sd*" et
+            non "/dev/hd*". Essayez de transformer "/dev/hd*" en "/dev/sd*" si vous avez un souci.
+            ]]>
+    </content>
+  </post>
+  <post>
+    <id>216</id>
+    <title>Une machine importante de l'infrastructure de Frugalware a été compromise</title>
+    <date>Wed, 14 Sep 2011 00:57:25 +0200</date>
+    <author>Miklos Vajna</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+        Chers utilisateurs,<br /><br />
+        Je suis au regret de vous rapporter qu'une machine importante de
+        l'infrastructure de Frugalware a été compromise le 25 août. Cela a pris
+        du temps pour trouver comment cela a été possible, vous pouvez lire
+        <a href="http://article.gmane.org/gmane.linux.frugalware.devel/9899">ceci</a> si vous êtes intéressé.<br /><br />
+        Pour faire court : nous avons trouvé que l'attaquant a installé
+        un backdoor, similaire à celui utilisé sur kernel.org. Nous avons
+        déjà procédé à la réinstallation de la machine et pris des mesures
+        pour éviter que ce genre d'attaque ne se renouvelle dans le futur.<br /><br />
+        Le bon côté des choses est que nous avons vérifié qu'aucun des
+        dépôts GIT de Frugalware ni les paquets binaires n'avaient été
+        modifiés durant l'attaque. Par conséquent, n'ayez pas peur de mettre
+        à jour votre système.<br /><br />
+        Merci de votre compréhension.
+        ]]>
+    </content>
+  </post>
+  <post>
     <id>215</id>
-	<title>La mise à jour du kernel et vous</title>
-	<date>Mon, 19 Sep 2011 00:57:25 +0500</date>
-	<author>James Buren</author>
-	<hidden>0</hidden>
-	<content><![CDATA[
-			Si vous mettez à jour current, ou si vous migrez vers current ces jours-ci, you
-			devrez prendre certaines mesures. <br /><br />
-			Nous avons migré le kernel pour qu'il utilise désormais, par défaut, initrd. Mais
-			cela affecte uniquement les architectures i686 et x86_64. Les autres architectures
-			ne subissent aucun changement.<br /><br />
-			Si vous utilisez la configuration de Grub par défaut, vous devrez juste lancer
-			grubconfig après la mise à jour. Sinon, vous devrez ajouter cette ligne à l'entrée
-			Frugalware dans le fichier /boot/grub/menu.lst : <br /><br />
-			<pre>initrd (frugalware grub partition)/boot/initrd.img.xz</pre><br />
-			Si vous rencontrez des problèmes avec le nouveau kernel, merci d'ouvrir un rapport
-			de bug. Mais avant de le faire, vérifiez si votre partition racine est "/dev/sd*" et
-			non "/dev/hd*". Essayez de transformer "/dev/hd*" en "/dev/sd*" si vous avez un souci.
-			]]>
-	</content>
-  </post>
-  <post>
-    <id>214</id>
-	<title>Une machine importante de l'infrastructure de Frugalware a été compromise</title>
-	<date>Wed, 14 Sep 2011 00:57:25 +0200</date>
-	<author>Miklos Vajna</author>
-	<hidden>0</hidden>
-	<content><![CDATA[
-		Chers utilisateurs,<br /><br />
-		Je suis au regret de vous rapporter qu'une machine importante de
-		l'infrastructure de Frugalware a été compromise le 25 août. Cela a pris
-		du temps pour trouver comment cela a été possible, vous pouvez lire
-		<a href="http://article.gmane.org/gmane.linux.frugalware.devel/9899">ceci</a> si vous êtes intéressé.<br /><br />
-		Pour faire court : nous avons trouvé que l'attaquant a installé
-		un backdoor, similaire à celui utilisé sur kernel.org. Nous avons
-		déjà procédé à la réinstallation de la machine et pris des mesures
-		pour éviter que ce genre d'attaque ne se renouvelle dans le futur.<br /><br />
-		Le bon côté des choses est que nous avons vérifié qu'aucun des 
-		dépôts GIT de Frugalware ni les paquets binaires n'avaient été 
-		modifiés durant l'attaque. Par conséquent, n'ayez pas peur de mettre
-		à jour votre système.<br /><br />
-		Merci de votre compréhension.
-		]]>
-	</content>
-  </post>
-  <post>
-    <id>213</id>
-	<title>Frugalware 1.5 (Mores) disponible</title>
-	<date>Mon, 15 Aug 2011 00:15:14 +0200</date>
-	<author>Miklos Vajna</author>
-	<hidden>0</hidden>
-	<content><![CDATA[
-        <center><img src="http://frugalware.org/images/promo-mores.png" alt="Frugalware 1.5 Mores is released !" /></center><br />
+    <title>Frugalware 1.5 (Mores) disponible</title>
+    <date>Mon, 15 Aug 2011 00:15:14 +0200</date>
+    <author>Miklos Vajna</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+        <center><img src="images/promo/mores.png" alt="Frugalware 1.5 Mores is released !" /></center><br />
     L'équipe de développement de Frugalware a le plaisir de vous <a href="/news/213">annoncer</a> la sortie de Frugalware 1.5, notre quinzième version stable.<br />
     Il n'y a pas eu de réelles nouveautés depuis la version 1.5rc2 mais 86 bugs mineurs ont été résolus. Si vous n'avez pas suivi l'évolution des versions pre/rc, voici les changements les plus importants depuis Frugalware 1.4 :<br />
             <ul>
@@ -1178,72 +1188,72 @@ Téléchargement pour i686 et x86_64 :  consultez notre <a href="http://frugalwa
                 <li>Le paquet setuptools est maintenant remplacé par distribute.</li>
             </ul>
 
-			Veuillez vous référer au <a href="http://frugalware.org/download/frugalware-1.5/ChangeLog.txt">Changelog</a> pour plus d'informations.<br />
-			Téléchargment pour i686 : regardez notre <a href="http://frugalware.org/download/frugalware-1.5-iso">liste de mirroirs</a>. N'oubliez pas de vérifier <a href="http://frugalware.org/download/frugalware-stable-iso/SHA1SUMS">l'intégrité</a> des images iso avant de les graver !<br />
-			<b>Note : </b>cliquez <a href="/docs/install#_choosing_installation_flavor">ici</a> pour connaître les pré-requis nécessaires à l'installation.<br />
+            Veuillez vous référer au <a href="http://frugalware.org/download/frugalware-1.5/ChangeLog.txt">Changelog</a> pour plus d'informations.<br />
+            Téléchargment pour i686 : regardez notre <a href="http://frugalware.org/download/frugalware-1.5-iso">liste de mirroirs</a>. N'oubliez pas de vérifier <a href="http://frugalware.org/download/frugalware-stable-iso/SHA1SUMS">l'intégrité</a> des images iso avant de les graver !<br />
+            <b>Note : </b>cliquez <a href="/docs/install#_choosing_installation_flavor">ici</a> pour connaître les pré-requis nécessaires à l'installation.<br />
             Si vous mettez à jour depuis la version stable précédente (Nexon), n'oubliez pas de lire la <a href="http://frugalware.org/docs/stable/upgrade">documentation concernant les mises à jour</a>.<br />
-			]]>
-			</content>
-	</post>
+            ]]>
+            </content>
+    </post>
   <post>
-    <id>212</id>
-	<title>Frugalware Newsletter numéro 81</title>
-	<date>Sat, 06 Aug 2011 23:49:23 +1000</date>
-	<author>Phayz</author>
-	<hidden>0</hidden>
-	<content><![CDATA[
-			La newsletter a pour but de vous tenir informé de ce qu'il s'est passé récemment dans le monde de Frugalware. Au sommaire de ce numéro : <br />
-			<ul>
-					<li>Bon voyage, Carl</li>
-					<li>Re-bienvenue Jercel !</li>
-					<li>Pacman-g2 est maintenant plus rapide</li>
-					<li>Examen portant sur Frugalware</li>
-			</ul>
-			Vous pouvez la lire <a href="http://frugalware.org/newsletter/81">ici</a>. Nous espérons que apprécierez de la lire.
-			]]>
-	</content>
+    <id>214</id>
+    <title>Frugalware Newsletter numéro 81</title>
+    <date>Sat, 06 Aug 2011 23:49:23 +1000</date>
+    <author>Phayz</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+            La newsletter a pour but de vous tenir informé de ce qu'il s'est passé récemment dans le monde de Frugalware. Au sommaire de ce numéro : <br />
+            <ul>
+                    <li>Bon voyage, Carl</li>
+                    <li>Re-bienvenue Jercel !</li>
+                    <li>Pacman-g2 est maintenant plus rapide</li>
+                    <li>Examen portant sur Frugalware</li>
+            </ul>
+            Vous pouvez la lire <a href="http://frugalware.org/newsletter/81">ici</a>. Nous espérons que apprécierez de la lire.
+            ]]>
+    </content>
 </post>
   <post>
-    <id>211</id>
-	<title>Frugalware 1.5rc2 (Mores) disponible</title>
-	<date>Mon, 01 Aug 2011 00:15:14 +0200</date>
-	<author>Miklos Vajna</author>
-	<hidden>0</hidden>
-	<content><![CDATA[
-			L'équipe de développement de Frugalware a le plaisir de vous annonce la sortie de Frugalware 1.5rc2, la seconde Release Candidate de la version 1.5 stable à venir.
-			<p>Voici une partie des modifications apportées depuis la 1.5rc1 :</p>
-			<ul>
-					<li>Paquets mis à jour :
-					<ul>
-							<li>Linux Kernel 2.6.39.3</li>
-							<li>XOrg server 1.10.3</li>
-							<li>LXDE mis à jour (lxsession-lite-0.4.6, lxpanel-0.5.7, lxlauncher-0.2.2, lxterminal-0.1.10...)</li>
-							<li>Version 1.0.1 des librairies EFL.</li>
-							<li>Mozilla Firefox 5.0.1</li>
-							<li>245 paquets mis à jour</li>
-							<li>20 nouveaux paquets</li>
-					</ul></li>
-					<li>Nouvelles fonctionnalités :
-					<ul>
-							<li>Notre paquet Vim dispose désormais du support pour Python</li>
-					</ul></li>
-			</ul>
-			Veuillez vous référer au <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/Changelog.txt">Changelog</a> pour plus d'informations.<br />
-			Téléchargment pour i686 : regardez notre <a href="http://frugalware.org/download/frugalware-testing-iso">liste de mirroirs</a>. N'oubliez pas de vérifier <a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">l'intégrité</a> des images iso avant de les graver !<br />
-			<b>Note : </b>cliquez <a href="/docs/install#_choosing_installation_flavor">ici</a> pour connaître les pré-requis nécessaires à l'installation.<br />
-			]]>
-			</content>
-	</post>
+    <id>213</id>
+    <title>Frugalware 1.5rc2 (Mores) disponible</title>
+    <date>Mon, 01 Aug 2011 00:15:14 +0200</date>
+    <author>Miklos Vajna</author>
+    <hidden>0</hidden>
+    <content><![CDATA[
+            L'équipe de développement de Frugalware a le plaisir de vous annonce la sortie de Frugalware 1.5rc2, la seconde Release Candidate de la version 1.5 stable à venir.
+            <p>Voici une partie des modifications apportées depuis la 1.5rc1 :</p>
+            <ul>
+                    <li>Paquets mis à jour :
+                    <ul>
+                            <li>Linux Kernel 2.6.39.3</li>
+                            <li>XOrg server 1.10.3</li>
+                            <li>LXDE mis à jour (lxsession-lite-0.4.6, lxpanel-0.5.7, lxlauncher-0.2.2, lxterminal-0.1.10...)</li>
+                            <li>Version 1.0.1 des librairies EFL.</li>
+                            <li>Mozilla Firefox 5.0.1</li>
+                            <li>245 paquets mis à jour</li>
+                            <li>20 nouveaux paquets</li>
+                    </ul></li>
+                    <li>Nouvelles fonctionnalités :
+                    <ul>
+                            <li>Notre paquet Vim dispose désormais du support pour Python</li>
+                    </ul></li>
+            </ul>
+            Veuillez vous référer au <a href="http://ftp.frugalware.org/pub/frugalware/frugalware-testing/Changelog.txt">Changelog</a> pour plus d'informations.<br />
+            Téléchargment pour i686 : regardez notre <a href="http://frugalware.org/download/frugalware-testing-iso">liste de mirroirs</a>. N'oubliez pas de vérifier <a href="http://frugalware.org/download/frugalware-testing-iso/SHA1SUMS">l'intégrité</a> des images iso avant de les graver !<br />
+            <b>Note : </b>cliquez <a href="/docs/install#_choosing_installation_flavor">ici</a> pour connaître les pré-requis nécessaires à l'installation.<br />
+            ]]>
+            </content>
+    </post>
 
   <post>
-    <id>210</id>
+    <id>212</id>
     <title>Frugalware 1.5rc1 (Mores) disponible</title>
-    <date>Ven, 15 Jui 2011 00:45:42 +0200</date>
+    <date>Fri, 15 Jul 2011 00:45:42 +0200</date>
     <author>Miklos Vajna</author>
     <hidden>0</hidden>
     <content><![CDATA[
       L'équipe de développement de Frugalware a le plaisir de vous <a href="/news/210">annoncer</a> la sortie de Frugalware 1.5rc1, la  première Release Candidate de la version 1.5 stable à venir.
-	<p>Vous trouverez ici quelques uns des changements apportés depuis la version 1.5pre2 :<br />
+    <p>Vous trouverez ici quelques uns des changements apportés depuis la version 1.5pre2 :<br />
       <ul>
         <li>Paquets mis à jour :
           <ul>
@@ -1256,9 +1266,9 @@ Téléchargement pour i686 et x86_64 :  consultez notre <a href="http://frugalwa
         <li>Nouvelles fonctionnalités :
           <ul>
             <li>Le paquet Python <i>setuptools</i> a été remplacé par <i>distribute</i>.</li>
-			<li>Notre paquet gdb a
-			  <a href="http://sourceware.org/gdb/wiki/PythonGdbTutorial"> le support pour Python</a>.
-	        </li>
+            <li>Notre paquet gdb a
+              <a href="http://sourceware.org/gdb/wiki/PythonGdbTutorial"> le support pour Python</a>.
+            </li>
           </ul>
         </li>
       </ul>
@@ -1269,7 +1279,7 @@ Téléchargement pour i686 et x86_64 :  consultez notre <a href="http://frugalwa
     </content>
   </post>
     <post>
-    <id>209</id>
+    <id>211</id>
         <title>Mise à jour Pacman-g2</title>
         <date>Wed, 3 July 2011 14:54:05 +0100</date>
         <author>Devil505</author>
@@ -1279,10 +1289,10 @@ Téléchargement pour i686 et x86_64 :  consultez notre <a href="http://frugalwa
         Les utilisateurs de Frugalware current doivent effectuer <i>pacman -Sy pacman-g2</i> avant de mettre à jour leur système (pacman -Syu). Comme vous pouvez le constater, <b>la base de données frugalware-current doit être synchronisée à nouveau après la mise à jour de pacman-g2</b>.<br /><br />
             ]]>
         </content>
-        <icon>/images/icons/warning.png</icon>
+        <icon>warning</icon>
     </post>
     <post>
-    <id>208</id>
+    <id>210</id>
     <title>Frugalware Newsletter Numéro 80</title>
     <date>Sat, 02 Jul 2011 22:13:21 +1000</date>
     <author>phayz</author>
@@ -1291,20 +1301,20 @@ Téléchargement pour i686 et x86_64 :  consultez notre <a href="http://frugalwa
             La newsletter a pour but de vous tenir informé de ce qu'il s'est passé récemment dans le monde de Frugalware.<br />
             Au programme :
         <ul>
-		  <li>Frugalware 1.5 pre2 - "Mores" disponible</li>
-		  <li>Baste est officiallement développeur</li>
-		  <li>Bug dans la section corrections de bugs de la newsletter :O</li>
-		  <li>Les paquets orphelins trouvent un nouveau "chez-soi"</li>
-		  <li>Trucs et Astuces - Nouvelles fonctiones de pacman-g2</li>
-		  <li>Détails sur un (des) paquet(s) - Minitube et Plank</li>
+          <li>Frugalware 1.5 pre2 - "Mores" disponible</li>
+          <li>Baste est officiallement développeur</li>
+          <li>Bug dans la section corrections de bugs de la newsletter :O</li>
+          <li>Les paquets orphelins trouvent un nouveau "chez-soi"</li>
+          <li>Trucs et Astuces - Nouvelles fonctiones de pacman-g2</li>
+          <li>Détails sur un (des) paquet(s) - Minitube et Plank</li>
         </ul>
             Vous pouvez la consulter <a href="/newsletter/80">ici</a>. Nous espérons que vous l'apprécierez !
       ]]>
     </content>
-    <icon>/images/icons/newsletter.png</icon>
+    <icon>newsletter</icon>
   </post>
     <post>
-    <id>207</id>
+    <id>209</id>
     <title>Frugalware 1.5pre2 (Mores) disponible</title>
     <date>Mon, 20 Jun 2011 00:45:21 +0200</date>
     <author>Miklos Vajna</author>
@@ -1333,7 +1343,7 @@ Téléchargement pour i686 et x86_64 :  consultez notre <a href="http://frugalwa
     </content>
     </post>
     <post>
-    <id>206</id>
+    <id>208</id>
     <title>Frugalware Newsletter Numéro 79</title>
     <date>Sun, 15 May 2011 22:05:15 +1000</date>
     <author>phayz</author>
@@ -1342,19 +1352,19 @@ Téléchargement pour i686 et x86_64 :  consultez notre <a href="http://frugalwa
             La newsletter a pour but de vous tenir informé de ce qu'il s'est passé récemment dans le monde de Frugalware.<br />
             Au programme :
         <ul>
-		  <li>Nouveau contributeur - Baste;</li>
-		  <li>Thème Frugalware pour GNOME Shell;</li>
-		  <li>Trucs et Astuces - fichiers squelettes et script d'informations système;</li>
-		  <li>Captures d'écrans d'utilisateurs - Botchchikii, Springbank and Slown;</li>
-		  <li>Détails sur un paquet - Quod Libet.</li>
+          <li>Nouveau contributeur - Baste;</li>
+          <li>Thème Frugalware pour GNOME Shell;</li>
+          <li>Trucs et Astuces - fichiers squelettes et script d'informations système;</li>
+          <li>Captures d'écrans d'utilisateurs - Botchchikii, Springbank and Slown;</li>
+          <li>Détails sur un paquet - Quod Libet.</li>
         </ul>
             Vous pouvez la consulter <a href="/newsletter/79">ici</a>. Nous espérons que vous l'apprécierez !
       ]]>
     </content>
-    <icon>/images/icons/newsletter.png</icon>
+    <icon>newsletter</icon>
   </post>
     <post>
-    <id>205</id>
+    <id>207</id>
     <title>Frugalware Newsletter Numéro 78</title>
     <date>Tue, 19 Apr 2011 23:50:57 +1000</date>
     <author>phayz</author>
@@ -1363,20 +1373,20 @@ Téléchargement pour i686 et x86_64 :  consultez notre <a href="http://frugalwa
             La newsletter a pour but de vous tenir informé de ce qu'il s'est passé récemment dans le monde de Frugalware.<br />
             Au programme :
         <ul>
-			<li>GNOME 3 est disponible</li>
-			<li>Fond d'écran de Mores</li>
-			<li>Comment savez-vous que la fin du monde arrive?</li>
-			<li>Trucs et Astuces - "Ai je oublié quelque chose là?"</li>
-			<li>Détails sur un paquet - Pogo</li>
-			<li>Captures d'écrans d'utilisateurs - Slown, Pingax et FrugalNL</li>
+            <li>GNOME 3 est disponible</li>
+            <li>Fond d'écran de Mores</li>
+            <li>Comment savez-vous que la fin du monde arrive?</li>
+            <li>Trucs et Astuces - "Ai je oublié quelque chose là?"</li>
+            <li>Détails sur un paquet - Pogo</li>
+            <li>Captures d'écrans d'utilisateurs - Slown, Pingax et FrugalNL</li>
         </ul>
             Vous pouvez la consulter <a href="/newsletter/78">ici</a>. Nous espérons que vous l'apprécierez !
       ]]>
     </content>
-    <icon>/images/icons/newsletter.png</icon>
+    <icon>newsletter</icon>
   </post>
   <post>
-    <id>204</id>
+    <id>206</id>
     <title>Frugalware 1.5pre1 (Mores) disponible</title>
     <date>Mon, 18 Apr 2011 06:57:45 +0200</date>
     <author>Miklos Vajna</author>
@@ -1411,20 +1421,20 @@ Téléchargement pour i686 et x86_64 :  consultez notre <a href="http://frugalwa
     </content>
   </post>
   <post>
-        <id>203</id>
+        <id>205</id>
         <title>GNOME 3 est maintenant disponible!</title>
         <date>Sat, 9 April 2011 11:54:15 +0100</date>
         <author>Devil505</author>
         <hidden>0</hidden>
         <content><![CDATA[
-        <center><img src="http://frugalware.org/images/gnome3.png" alt="GNOME 3 now available!" /></center>
+        <center><img src="images/data/gnome3.png" alt="GNOME 3 now available!" /></center>
         L'équipe de développement de Frugalware a le plaisir de vous annonçer la disponibilité de la nouvelle version majeure du <a href="http://gnome3.org/">bureau GNOME</a> (3.0) sur le dépôt frugalware current.<br />
             ]]>
         </content>
-        <icon>/images/icons/info.png</icon>
+        <icon>info</icon>
     </post>
     <post>
-    <id>202</id>
+    <id>204</id>
     <title>Frugalware Newsletter Numéro 77</title>
     <date>Thu, 24 Mar 2011 22:35:54 +1000</date>
     <author>phayz</author>
@@ -1433,35 +1443,35 @@ Téléchargement pour i686 et x86_64 :  consultez notre <a href="http://frugalwa
             La newsletter a pour but de vous tenir informé de ce qu'il s'est passé récemment dans le monde de Frugalware.<br />
             Au programme :
         <ul>
-			<li>Le Portage ARM est prêt</li>
-			<li>Centuri0 devient officiellement développeur</li>
-			<li>Traductions bulgares en cours</li>
-			<li>Trucs et Astuces</li>
-			<li>Détails sur un(des) paquet(s): minbif et Guake</li>
+            <li>Le Portage ARM est prêt</li>
+            <li>Centuri0 devient officiellement développeur</li>
+            <li>Traductions bulgares en cours</li>
+            <li>Trucs et Astuces</li>
+            <li>Détails sur un(des) paquet(s): minbif et Guake</li>
         </ul>
             Vous pouvez la consulter <a href="/newsletter/77">ici</a>. Nous espérons que vous l'apprécierez !
       ]]>
     </content>
-    <icon>/images/icons/newsletter.png</icon>
+    <icon>newsletter</icon>
   </post>
   <post>
-        <id>201</id>
+        <id>203</id>
         <title>Le Wiki a besoin de vous!</title>
         <date>Wed, 16 March 2011 11:57:35 +0100</date>
         <author>Devil505</author>
         <hidden>0</hidden>
         <content><![CDATA[
-        <center><img src="http://frugalware.org/images/wikifrontpage.png" alt="Wiki needs you !" /></center>
+        <center><img src="images/data/wikifrontpage.png" alt="Wiki needs you !" /></center>
         Le <a href="http://wiki.frugalware.org">wiki</a> de Frugalware a été mis à jour et maintenant colle avec le
         design du site officiel. Le wiki a besoin de vos contributions, donc n'hésitez pas à y mettre vos tutoriels perso,
         traduire les pages actuelles dans votre langue, créer de nouvelles pages (voir le lien TODO dans le menu latéral)...<br />
         La communauté des utilisateurs de Frugalware compte sur vous!<br />
             ]]>
         </content>
-        <icon>/images/icons/info.png</icon>
+        <icon>info</icon>
     </post>
   <post>
-    <id>200</id>
+    <id>202</id>
     <title>Frugalware Newsletter Numéro 76</title>
     <date>Mon, 28 Feb 2011 20:37:11 +1000</date>
     <author>phayz</author>
@@ -1470,51 +1480,51 @@ Téléchargement pour i686 et x86_64 :  consultez notre <a href="http://frugalwa
             La newsletter a pour but de vous tenir informé de ce qu'il s'est passé récemment dans le monde de Frugalware.<br />
             Au programme :
         <ul>
-			<li>Frugalware release 1.4 <em>Nexon</em> est arrivé!</li>
-			<li>Le site officiel Frugalware a eu droit à un lifting</li>
-			<li>Vous pouvez maintenant ajouter vos commentaires à la newsletter</li>
-			<li>Faites de l'exercice avec Frugalware</li>
-			<li>Détails sur un(des) paquet(s) - tig et Shutter</li>
+            <li>Frugalware release 1.4 <em>Nexon</em> est arrivé!</li>
+            <li>Le site officiel Frugalware a eu droit à un lifting</li>
+            <li>Vous pouvez maintenant ajouter vos commentaires à la newsletter</li>
+            <li>Faites de l'exercice avec Frugalware</li>
+            <li>Détails sur un(des) paquet(s) - tig et Shutter</li>
         </ul>
             Vous pouvez la consulter <a href="/newsletter/76">ici</a>. Nous espérons que vous l'apprécierez !
 
       ]]>
     </content>
-    <icon>/images/icons/newsletter.png</icon>
+    <icon>newsletter</icon>
   </post>
     <post>
-        <id>199</id>
+        <id>201</id>
         <title>Systemd désormais utilisé par défaut</title>
         <date>Wed, 23 Feb 2011 15:15:05 +0100</date>
         <author>Devil505</author>
         <hidden>0</hidden>
         <content><![CDATA[
-        <a href="http://www.freedesktop.org/wiki/Software/systemd">systemd</a> est désormais le nouveau système init par défaut. 
+        <a href="http://www.freedesktop.org/wiki/Software/systemd">systemd</a> est désormais le nouveau système init par défaut.
         Les utilisateurs de Frugalware current doivent faire <i>pacman -Sy systemd</i> avant de mettre à jour leur système.<br />
             ]]>
         </content>
-        <icon>/images/icons/warning.png</icon>
+        <icon>warning</icon>
     </post>
     <post>
-        <id>198</id>
+        <id>200</id>
         <title>Haven: Fin de vie</title>
         <date>Sat, 19 Feb 2011 12:33:57 +0100</date>
         <author>Miklos Vajna</author>
         <hidden>0</hidden>
         <content><![CDATA[
-		Avec la sortie de Nexon, le support pour Haven s'achève. Il est chaudement recommandé de procéder à la mise à jour vers la nouvelle version stable car il n'y aura plus de mise à jour (logiciel et de sécurité) pour Haven.<br />
-		Nous avons corrigés les bugs allant de FSA692 à FSA712 pour Haven. Cela représente 21 problèmes de sécurité qui ont été réglés en un semestre.<br />
+        Avec la sortie de Nexon, le support pour Haven s'achève. Il est chaudement recommandé de procéder à la mise à jour vers la nouvelle version stable car il n'y aura plus de mise à jour (logiciel et de sécurité) pour Haven.<br />
+        Nous avons corrigés les bugs allant de FSA692 à FSA712 pour Haven. Cela représente 21 problèmes de sécurité qui ont été réglés en un semestre.<br />
             ]]>
         </content>
     </post>
     <post>
-        <id>197</id>
+        <id>199</id>
         <title>Frugalware 1.4 (Nexon) disponible</title>
         <date>Sun, 13 Feb 2011 00:33:09 +0100</date>
         <author>Miklos Vajna</author>
         <hidden>0</hidden>
         <content><![CDATA[
-          <center><img src="http://frugalware.org/images/promo-nexon.png" alt="Frugalware 1.4 Nexon est disponible !" /></center><br />
+          <center><img src="images/promo/nexon.png" alt="Frugalware 1.4 Nexon est disponible !" /></center><br />
           L’équipe de développement de Frugalware a plaisir de vous <a href="/news/197">annoncer</a> a disponibilité immédiate de Frugalware 1.4, notre quatorzième version stable.<br />
           La seule nouvauté depuis la 1.4rc2 est LibreOffice (qui remplace OpenOffice.org), en plus de 109 modifications qui ont été réalisées pour corriger des bugs mineurs. Si vous n'avez pas suivi les changements depuis les versions pre/rc, voici les plus importants changements depuis la 1.3 dans le désordre:<br />          <ul>
             <li>Paquets mis à jour: Linux kernel 2.6.37, Xorg server 1.9, GNOME 2.32, KDE SC 4.5, Drupal 7, Python 2.7 pour nommer les plus importants.</li>
@@ -1534,37 +1544,37 @@ Téléchargement pour i686 et x86_64 :  consultez notre <a href="http://frugalwa
         </content>
     </post>
   <post>
-    <id>196</id>
+    <id>198</id>
       <title>Parli italiano?</title>
       <date>Sat, 12 Feb 2011 15:20:28 +1000</date>
       <author>Devil505</author>
       <hidden>0</hidden>
       <content><![CDATA[
-		Le site officiel est désormais disponible en Italien et est accessible
-		ici: <a href="http://frugalware.org/it">http://frugalware.org/it</a>.
+        Le site officiel est désormais disponible en Italien et est accessible
+        ici: <a href="http://frugalware.org/it">http://frugalware.org/it</a>.
           ]]>
       </content>
-      <icon>/images/icons/info.png</icon>
+      <icon>info</icon>
   </post>
   <post>
-    <id>195</id>
+    <id>197</id>
       <title>¿Habla usted español?</title>
       <date>Thu, 10 Feb 2011 07:21:27 +1000</date>
       <author>phayz</author>
       <hidden>0</hidden>
       <content><![CDATA[
-		Le site officiel est désormais disponible en Espagnol et est accessible
-		ici: <a href="http://frugalware.org/es">http://frugalware.org/es</a>.
-		L'un des principes fondamentaux de Frugalware est d'être disponible
-		aux gens dans leur langue natale et c'est une étape qui est franchie
-		encore une fois. Merci à ceux qui contribuent à nous fournir des
-		traductions et nous espèrons que cela vas continuer durant les prochaines années.
+        Le site officiel est désormais disponible en Espagnol et est accessible
+        ici: <a href="http://frugalware.org/es">http://frugalware.org/es</a>.
+        L'un des principes fondamentaux de Frugalware est d'être disponible
+        aux gens dans leur langue natale et c'est une étape qui est franchie
+        encore une fois. Merci à ceux qui contribuent à nous fournir des
+        traductions et nous espèrons que cela vas continuer durant les prochaines années.
           ]]>
       </content>
-      <icon>/images/icons/info.png</icon>
+      <icon>info</icon>
   </post>
   <post>
-    <id>194</id>
+    <id>196</id>
     <title>Frugalware Newsletter 75</title>
     <date>Tue, 01 Feb 2011 12:56:56 +1000</date>
     <author>phayz</author>
@@ -1573,19 +1583,19 @@ Téléchargement pour i686 et x86_64 :  consultez notre <a href="http://frugalwa
             La newsletter a pour but de vous tenir informé de ce qu'il s'est passé récemment dans le monde de Frugalware.<br />
             Au programme :
         <ul>
-			<li>Frugalware 1.4 Release Candidate 2 disponible</li>
-			<li>Frugalware tweak! et Frugalware tweak 2! ???</li>
-			<li>Do-dec-a-he-quoi!?</li>
-			<li>Les utilisateurs de Frugalware sont aussi des personnes!</li>
-			<li>Trucs et Astuces - Trouvez votre mirroir le plus rapide.</li>
+            <li>Frugalware 1.4 Release Candidate 2 disponible</li>
+            <li>Frugalware tweak! et Frugalware tweak 2! ???</li>
+            <li>Do-dec-a-he-quoi!?</li>
+            <li>Les utilisateurs de Frugalware sont aussi des personnes!</li>
+            <li>Trucs et Astuces - Trouvez votre mirroir le plus rapide.</li>
         </ul>
             Vous pouvez la consulter <a href="/newsletter/75">ici</a>. Nous espérons que vous l'apprécierez !
       ]]>
     </content>
-    <icon>/images/icons/newsletter.png</icon>
+    <icon>newsletter</icon>
   </post>
   <post>
-    <id>193</id>
+    <id>195</id>
     <title>Frugalware 1.4rc2 (Nexon) disponible</title>
     <date>Fri, 28 Jan 2011 08:21:25 +0100</date>
     <author>Miklos Vajna</author>
@@ -1615,7 +1625,7 @@ Téléchargement pour i686 et x86_64 :  consultez notre <a href="http://frugalwa
     </content>
   </post>
   <post>
-    <id>192</id>
+    <id>194</id>
     <title>Frugalware 1.4rc1 (Nexon) disponible</title>
     <date>Mon, 10 Jan 2011 07:24:00 +0100</date>
     <author>Miklos Vajna</author>
@@ -1644,27 +1654,27 @@ Téléchargement pour i686 et x86_64 :  consultez notre <a href="http://frugalwa
     </content>
       </post>
   <post>
-    <id>191</id>
+    <id>193</id>
       <title>Bonne Année!</title>
       <date>Sat, 01 Jan 2011 11:52:48 +1000</date>
       <author>phayz</author>
       <hidden>0</hidden>
       <content><![CDATA[
-          <center><img src="http://frugalware.org/images/FwNewYear.png" alt="Frugalware New Year logo" /></center><br /><br />
+          <center><img src="images/data/FwNewYear.png" alt="Frugalware New Year logo" /></center><br /><br />
           L'équipe de Frugalware souhaite à tous une Bonne Année.<br />
           Avec les acquis de 2009, 2010 fut une excellente année. Frugalware a eu droit à des mises à jour du kernel Linux, du bureau GNOME, du bureau KDE, de X.org et d'autres paquets principaux. Les actuels développeurs et contributeurs ont continué leur grand travail et ont accueilli plusieurs nouveaux développeurs et contributeurs. 2011 sera certainement une année aussi excitante, donc allons-y!<br />
           ]]>
       </content>
-      <icon>/images/icons/info.png</icon>
+      <icon>info</icon>
   </post>
   <post>
-    <id>190</id>
+    <id>192</id>
     <title>Joyeux Noël</title>
     <date>Wed, 22 Dec 2010 20:14:33 +1000</date>
     <author>phayz</author>
     <hidden>0</hidden>
     <content><![CDATA[
-        <center><img src="http://frugalware.org/images/FWsnowball.png" alt="Frugalware Christmas logo" /></center><br />
+        <center><img src="images/data/FWsnowball.png" alt="Frugalware Christmas logo" /></center><br />
         Joyeux Noël à tous ceux et celles de la communauté Frugalware. Même si vous ne
         célébrez pas Noël comme une fête, c'est le bon moment pour revoir vos acquis
         et planifier vos objectifs pour l'année à venir. 2010 aura été une année
@@ -1680,10 +1690,10 @@ Téléchargement pour i686 et x86_64 :  consultez notre <a href="http://frugalwa
         de cette saison et nous vous retrouvons l'année prochaine.
         ]]>
         </content>
-        <icon>/images/icons/info.png</icon>
+        <icon>info</icon>
   </post>
     <post>
-    <id>189</id>
+    <id>191</id>
     <title>Frugalware Newsletter 74</title>
     <date>Mon, 20 Dec 2010 23:09:46 +1000</date>
     <author>phayz</author>
@@ -1692,19 +1702,19 @@ Téléchargement pour i686 et x86_64 :  consultez notre <a href="http://frugalwa
             La newsletter a pour but de vous tenir informé de ce qu'il s'est passé récemment dans le monde de Frugalware.<br />
             Au programme :
         <ul>
-			<li>Frugalware 1.4 pre-release 2 est disponible</li>
-			<li>systemd en passe de devenir le prochain système init</li>
-			<li>Xfce 4.8 est en chemin</li>
-			<li>Les utilisateurs de Frugalware sont aussi des personnes! - Melko</li>
-			<li>Trucs et Astuces - Colorer vos pages man</li>
+            <li>Frugalware 1.4 pre-release 2 est disponible</li>
+            <li>systemd en passe de devenir le prochain système init</li>
+            <li>Xfce 4.8 est en chemin</li>
+            <li>Les utilisateurs de Frugalware sont aussi des personnes! - Melko</li>
+            <li>Trucs et Astuces - Colorer vos pages man</li>
         </ul>
             Vous pouvez la consulter <a href="/newsletter/74">ici</a>. Nous espérons que vous l'apprécierez !
       ]]>
     </content>
-    <icon>/images/icons/newsletter.png</icon>
+    <icon>newsletter</icon>
   </post>
   <post>
-    <id>188</id>
+    <id>190</id>
     <title>Frugalware 1.4pre2 (Nexon) disponible</title>
     <date>Mon, 13 Dec 2010 04:39:45 +0100</date>
     <author>Miklos Vajna</author>
@@ -1736,7 +1746,7 @@ Téléchargement pour i686 et x86_64 :  consultez notre <a href="http://frugalwa
     </content>
   </post>
   <post>
-    <id>187</id>
+    <id>189</id>
     <title>Frugalware Newsletter 73</title>
     <date>Thu, 11 Nov 2010 07:15:26 +1000</date>
     <author>phayz</author>
@@ -1753,10 +1763,10 @@ Téléchargement pour i686 et x86_64 :  consultez notre <a href="http://frugalwa
             Vous pouvez la consulter <a href="/newsletter/73">ici</a>. Nous espérons que vous l'apprécierez !
       ]]>
     </content>
-    <icon>/images/icons/newsletter.png</icon>
+    <icon>newsletter</icon>
   </post>
   <post>
-    <id>186</id>
+    <id>188</id>
     <title>Frugalware 1.4pre1 (Nexon) disponible</title>
     <date>Mon, 18 Oct 2010 00:23:24 +0200</date>
     <author>Miklos Vajna</author>
@@ -1779,7 +1789,7 @@ Téléchargement pour i686 et x86_64 :  consultez notre <a href="http://frugalwa
     </content>
   </post>
   <post>
-    <id>185</id>
+    <id>187</id>
     <title>Frugalware Newsletter 72</title>
     <date>Thu, 14 Oct 2010 22:10:14 +1000</date>
     <author>phayz</author>
@@ -1796,10 +1806,10 @@ Téléchargement pour i686 et x86_64 :  consultez notre <a href="http://frugalwa
             Vous pouvez la consulter <a href="/newsletter/72">ici</a>. Nous espérons que vous l'apprécierez !
       ]]>
     </content>
-    <icon>/images/icons/newsletter.png</icon>
+    <icon>newsletter</icon>
   </post>
   <post>
-    <id>184</id>
+    <id>186</id>
     <title>Frugalware Newsletter 71</title>
     <date>Thu, 23 Sep 2010 22:38:56 +1000</date>
     <author>phayz</author>
@@ -1818,10 +1828,10 @@ Téléchargement pour i686 et x86_64 :  consultez notre <a href="http://frugalwa
             Vous pouvez la consulter <a href="/newsletter/71">ici</a>. Nous espérons que vous l'apprécierez !
       ]]>
     </content>
-    <icon>/images/icons/newsletter.png</icon>
+    <icon>newsletter</icon>
   </post>
   <post>
-    <id>184</id>
+    <id>185</id>
     <title>Frugalware Newsletter 70</title>
     <date>Tue, 07 Sep 2010 23:06:37 +1000</date>
     <author>phayz</author>
@@ -1839,32 +1849,32 @@ Téléchargement pour i686 et x86_64 :  consultez notre <a href="http://frugalwa
             Vous pouvez la consulter <a href="/newsletter/70">ici</a>. Nous espérons que vous l'apprécierez !
       ]]>
     </content>
-    <icon>/images/icons/newsletter.png</icon>
+    <icon>newsletter</icon>
   </post>
     <post>
-        <id>183</id>
+        <id>184</id>
         <title>Locris: Fin de Vie</title>
         <date>Wed, 25 Aug 2010 03:04:15 +0200</date>
         <author>Miklos Vajna</author>
         <hidden>0</hidden>
         <content><![CDATA[
             Avec la sortie de Haven, le support pour Locris s'achève. Il est chaudement recommandé de procéder à la mise à jour vers la nouvelle version stable car il n'y aura plus de mise à jour (logiciel et de sécurité) pour Locris.<br />
-		Nous avons corrigés les bugs allant de FSA637 à FSA691 ouverts pour Getorin. Cela représente 55 problèmes de sécurité qui ont été réglés en un semestre..<br />
-		Si vous procédez à la mise à jour vers Haven, la faille de sécurité suivante sera également corrigée :<br />
-		<ul>
-			<li><a href="http://bugs.frugalware.org/task/4292">#4292 - clamav</a></li>
-		</ul>
+        Nous avons corrigés les bugs allant de FSA637 à FSA691 ouverts pour Getorin. Cela représente 55 problèmes de sécurité qui ont été réglés en un semestre..<br />
+        Si vous procédez à la mise à jour vers Haven, la faille de sécurité suivante sera également corrigée :<br />
+        <ul>
+            <li><a href="http://bugs.frugalware.org/task/4292">#4292 - clamav</a></li>
+        </ul>
             ]]>
         </content>
     </post>
     <post>
-        <id>182</id>
+        <id>183</id>
         <title>Frugalware 1.3 (Haven) disponible</title>
         <date>Mon, 23 Aug 2010 02:00:14 +0200</date>
         <author>Miklos Vajna</author>
         <hidden>0</hidden>
         <content><![CDATA[
-          <center><img src="http://frugalware.org/images/promo-haven.png" alt="Frugalware 1.3 Haven est disponible !" /></center><br />
+          <center><img src="images/promo/haven.png" alt="Frugalware 1.3 Haven est disponible !" /></center><br />
           L’équipe de développement de Frugalware a plaisir de vous <a href="/news/182">annoncer</a> la disponibilité immédiate de Frugalware 1.3, la treizième mouture stable.<br />
           Aucune nouvelle fonctionnalité n'a été ajoutée depuis la 1.3rc2, mais 94 changements ont été faits pour réparer des bugs mineurs. Si vous n'avez pas suivi les changements depuis les versions pre/rc, voici les plus importants changements depuis Getorin (1.2) dans le désordre:<br />
           <ul>
@@ -1882,7 +1892,7 @@ Téléchargement pour i686 et x86_64 :  consultez notre <a href="http://frugalwa
         </content>
     </post>
   <post>
-    <id>181</id>
+    <id>182</id>
     <title>Frugalware Newsletter 69</title>
     <date>Tue, 10 Aug 2010 20:20:31 +1000</date>
     <author>phayz</author>
@@ -1898,10 +1908,10 @@ Téléchargement pour i686 et x86_64 :  consultez notre <a href="http://frugalwa
             Vous pouvez la consulter <a href="/newsletter/69">ici</a>. Nous espérons que vous l'apprécierez !
       ]]>
     </content>
-    <icon>/images/icons/newsletter.png</icon>
+    <icon>newsletter</icon>
   </post>
   <post>
-    <id>180</id>
+    <id>181</id>
     <title>Frugalware a un nouveau planet</title>
     <date>Sat, 14 Aug 2010 22:32:30 +1000</date>
     <author>phayz</author>
@@ -1922,7 +1932,7 @@ Téléchargement pour i686 et x86_64 :  consultez notre <a href="http://frugalwa
     </content>
   </post>
   <post>
-    <id>179</id>
+    <id>180</id>
     <title>Frugalware Newsletter 68</title>
     <date>Tue, 10 Aug 2010 20:20:31 +1000</date>
     <author>phayz</author>
@@ -1939,10 +1949,10 @@ Téléchargement pour i686 et x86_64 :  consultez notre <a href="http://frugalwa
             Vous pouvez la consulter <a href="/newsletter/68">ici</a>. Nous espérons que vous l'apprécierez !
       ]]>
     </content>
-    <icon>/images/icons/newsletter.png</icon>
+    <icon>newsletter</icon>
   </post>
   <post>
-    <id>178</id>
+    <id>179</id>
     <title>Frugalware 1.3rc2 (Haven) disponible</title>
     <date>Mon, 09 Aug 2010 03:24:18 +0200</date>
     <author>Miklos Vajna</author>
@@ -1976,7 +1986,7 @@ Téléchargement pour i686 et x86_64 :  consultez notre <a href="http://frugalwa
     </content>
   </post>
   <post>
-    <id>177</id>
+    <id>178</id>
     <title>Frugalware 1.3rc1 (Haven) est sortie</title>
     <date>Mon, 26 Jul 2010 11:14:06 +0200</date>
     <author>Miklos Vajna</author>
@@ -2010,7 +2020,7 @@ Téléchargement pour i686 et x86_64 :  consultez notre <a href="http://frugalwa
     </content>
   </post>
   <post>
-    <id>176</id>
+    <id>177</id>
     <title>Frugalware Newsletter 67</title>
     <date>Sun, 25 Jul 2010 22:26:34 +1000</date>
     <author>phayz</author>
@@ -2027,10 +2037,10 @@ Téléchargement pour i686 et x86_64 :  consultez notre <a href="http://frugalwa
             Vous pouvez la consulter <a href="/newsletter/67">ici</a>. Nous espérons que vous l'apprécierez !
       ]]>
     </content>
-    <icon>/images/icons/newsletter.png</icon>
+    <icon>newsletter</icon>
   </post>
   <post>
-    <id>175</id>
+    <id>176</id>
     <title>Frugalware Newsletter 66</title>
     <date>Sat, 10 Jul 2010 00:03:56 +1000</date>
     <author>phayz</author>
@@ -2047,10 +2057,10 @@ Téléchargement pour i686 et x86_64 :  consultez notre <a href="http://frugalwa
             Vous pouvez la consulter <a href="/newsletter/66">ici</a>. Nous espérons que vous l'apprécierez !
       ]]>
     </content>
-    <icon>/images/icons/newsletter.png</icon>
+    <icon>newsletter</icon>
   </post>
   <post>
-    <id>174</id>
+    <id>175</id>
     <title>Le vote pour le fond d'écran par défaut de Frugalware 1.3 (Haven) est ouvert</title>
     <date>Mon, 05 Jul 2010 21:53:56 +1000</date>
     <author>phayz</author>
@@ -2069,7 +2079,7 @@ Téléchargement pour i686 et x86_64 :  consultez notre <a href="http://frugalwa
     </content>
   </post>
   <post>
-    <id>173</id>
+    <id>174</id>
     <title>Frugalware 1.3pre2 (Haven) est sortie</title>
     <date>Mon, 28 Jun 2010 09:58:32 +0200</date>
     <author>Miklos Vajna</author>
@@ -2102,7 +2112,7 @@ Téléchargement pour i686 et x86_64 :  consultez notre <a href="http://frugalwa
 
   </post>
   <post>
-        <id>172</id>
+        <id>173</id>
         <title>Frugalware Newsletter 65</title>
         <date>Sun, 27 Jun 2010 20:51:24 +1000</date>
         <author>phayz</author>
@@ -2120,10 +2130,10 @@ Téléchargement pour i686 et x86_64 :  consultez notre <a href="http://frugalwa
             Vous pouvez la consulter <a href="/newsletter/65">ici</a>. Nous espérons que vous l'apprécierez !
             ]]>
         </content>
-        <icon>/images/icons/newsletter.png</icon>
+        <icon>newsletter</icon>
     </post>
     <post>
-        <id>171</id>
+        <id>172</id>
         <title>Frugalware Newsletter 64</title>
         <date>Sun, 06 Jun 2010 20:40:28 +1000</date>
         <author>phayz</author>
@@ -2139,10 +2149,10 @@ Téléchargement pour i686 et x86_64 :  consultez notre <a href="http://frugalwa
             Vous pouvez la consulter <a href="/newsletter/64">ici</a>. Nous espérons que vous l'apprécierez !
             ]]>
         </content>
-        <icon>/images/icons/newsletter.png</icon>
+        <icon>newsletter</icon>
     </post>
     <post>
-        <id>170</id>
+        <id>171</id>
         <title>Frugalware Newsletter 63</title>
         <date>Fri, 21 May 2010 22:01:30 +1000</date>
         <author>phayz</author>
@@ -2159,7 +2169,7 @@ Téléchargement pour i686 et x86_64 :  consultez notre <a href="http://frugalwa
             Vous pouvez la consulter <a href="/newsletter/63">ici</a>. Nous espérons que vous l'apprécierez !
             ]]>
         </content>
-        <icon>/images/icons/newsletter.png</icon>
+        <icon>newsletter</icon>
     </post>
     <post>
         <id>170</id>
@@ -2212,7 +2222,7 @@ Téléchargement pour i686 et x86_64 :  consultez notre <a href="http://frugalwa
             Vous pouvez la consulter <a href="/newsletter/62">ici</a>. Nous espérons que vous l'apprécierez !
             ]]>
         </content>
-        <icon>/images/icons/newsletter.png</icon>
+        <icon>newsletter</icon>
     </post>
     <post>
         <id>168</id>
@@ -2232,7 +2242,7 @@ Téléchargement pour i686 et x86_64 :  consultez notre <a href="http://frugalwa
             Vous pouvez la consulter <a href="/newsletter/61">ici</a>. Nous espérons que vous l'apprécierez !
             ]]>
         </content>
-        <icon>/images/icons/newsletter.png</icon>
+        <icon>newsletter</icon>
     </post>
     <post>
         <id>167</id>
@@ -2253,7 +2263,7 @@ Téléchargement pour i686 et x86_64 :  consultez notre <a href="http://frugalwa
             Vous pouvez la consulter <a href="/newsletter/60">ici (en anglais)</a>. En espérant que vous l'apprécierez !
             ]]>
         </content>
-        <icon>/images/icons/newsletter.png</icon>
+        <icon>newsletter</icon>
     </post>
     <post>
         <id>166</id>
@@ -2307,7 +2317,7 @@ Téléchargement pour i686 et x86_64 :  consultez notre <a href="http://frugalwa
             Vous pouvez la lire <a href="/newsletter/59">ici</a>. Nous espérons que vous l'apprécierez !
             ]]>
         </content>
-        <icon>/images/icons/newsletter.png</icon>
+        <icon>newsletter</icon>
     </post>
     <post>
         <id>163</id>
@@ -2316,7 +2326,7 @@ Téléchargement pour i686 et x86_64 :  consultez notre <a href="http://frugalwa
         <author>Miklos Vajna</author>
         <hidden>0</hidden>
         <content><![CDATA[
-            <center><img src="http://frugalware.org/images/locris.png" alt="Frugalware 1.2 Locris is released !" /></center><br />
+            <center><img src="images/promo/locris.png" alt="Frugalware 1.2 Locris is released !" /></center><br />
             L'Équipe de Développement de Frugalware est ravie de vous <a href="/news/163">annoncer</a> la sortie immédiate de Frugalware 1.2, la douxième mouture stable..<br />
             Aucune nouvelle fonctionnalité n'a été ajoutée depuis la 1.2rc2, mais 62 changements ont été faits pour réparer des bugs mineurs. Si vous n'avez pas suivi les changements depuis les versions pre/rc, voici les plus importants changements depuis Getorin (1.1) :<br />
             <ul>
@@ -2355,7 +2365,7 @@ Téléchargement pour i686 et x86_64 :  consultez notre <a href="http://frugalwa
             Vous pouvez la lire <a href="/newsletter/58">ici</a>. Nous espérons que vous l'apprécierez !
             ]]>
         </content>
-        <icon>/images/icons/newsletter.png</icon>
+        <icon>newsletter</icon>
     </post>
     <post>
         <id>161</id>
@@ -2442,7 +2452,7 @@ Téléchargement pour i686 et x86_64 :  consultez notre <a href="http://frugalwa
             Vous pouvez la lire <a href="/newsletter/57">ici</a>. Nous espérons que vous l'apprécierez !
             ]]>
         </content>
-        <icon>/images/icons/newsletter.png</icon>
+        <icon>newsletter</icon>
     </post>
     <post>
         <id>158</id>
@@ -2456,7 +2466,7 @@ Téléchargement pour i686 et x86_64 :  consultez notre <a href="http://frugalwa
             Vous pouvez la lire ici <a href="/newsletter/56">here</a>. Nous espérons que vous l'apprécierez !
             ]]>
         </content>
-        <icon>/images/icons/newsletter.png</icon>
+        <icon>newsletter</icon>
     </post>
     <post>
         <id>157</id>
@@ -2498,7 +2508,8 @@ Téléchargement pour i686 et x86_64 :  consultez notre <a href="http://frugalwa
         <author>phayz</author>
         <hidden>0</hidden>
         <content><![CDATA[
-            <center><img src="http://frugalware.org/images/FwNewYear.png" alt="Frugalware New Year logo"></center></br>
+            <center><img src="images/data/FwNewYear.png" alt="Frugalware New Year logo"></center></br>
+            <center><img src="images/data/FwNewYear.png" alt="Frugalware New Year logo"></center></br>
             L'équipe de Frugalware souhaites à tous une bonne année.  2009 fut une année avec nombre de grandes réalisations, incluant de nouveaux développeurs, de nouveaux contributeurs, un installateur GUI (fwife), plusieurs traductions, et beaucoup de nouveaux paquets.  Nous attendons également un même succès pour 2010.
             ]]>
         </content>
@@ -2510,7 +2521,7 @@ Téléchargement pour i686 et x86_64 :  consultez notre <a href="http://frugalwa
         <author>Devil505</author>
         <hidden>0</hidden>
         <content><![CDATA[
-            <center><img src="http://frugalware.org/images/FWsnowball.png" alt="Frugalware Christmas 2009 logo"></center></br>
+            <center><img src="images/data/FWsnowball.png" alt="Frugalware Christmas 2009 logo"></center></br>
             L'équipe de Frugalware aimerait vous souhaiter un joyeux noël à chacun.  Si vous ne célébrez pas Noël, nous espérons que vous pourrez apprecier le meilleur de cette periode de l'année, en évitant le pire...  :)
             ]]>
         </content>
@@ -2534,7 +2545,7 @@ Téléchargement pour i686 et x86_64 :  consultez notre <a href="http://frugalwa
             Vous pouvez la lire <a href="/newsletter/55">ici (en anglais)</a>. Nous espérons que vous l'aimerez.
             ]]>
         </content>
-        <icon>/images/icons/newsletter.png</icon>
+        <icon>newsletter</icon>
     </post>
     <post>
         <id>153</id>
@@ -2550,7 +2561,7 @@ Téléchargement pour i686 et x86_64 :  consultez notre <a href="http://frugalwa
     <post>
         <id>152</id>
         <title>Lettre D'Information De Frugalware #54</title>
-        <date>Sam, 14 Nov 2009 22:56:10 +1000</date>
+        <date>Sat, 14 Nov 2009 22:56:10 +1000</date>
         <author>phayz</author>
         <hidden>0</hidden>
         <content><![CDATA[
@@ -2570,7 +2581,7 @@ Téléchargement pour i686 et x86_64 :  consultez notre <a href="http://frugalwa
     <post>
         <id>151</id>
         <title>Frugalware 1.2pre1 (Locris) enfin disponible !</title>
-        <date>Sam, 07 Nov 2009 02:14:19 +0100</date>
+        <date>Sat, 07 Nov 2009 02:14:19 +0100</date>
         <author>Miklos Vajna</author>
         <hidden>0</hidden>
         <content><![CDATA[
@@ -2631,7 +2642,7 @@ Téléchargement pour i686 et x86_64 :  consultez notre <a href="http://frugalwa
                 KMS est maintenant activé par défaut sur Frugalware-current. Il est recommandé de lire la <a href="/docs/upgrade#_kernel_mode_setting">partie concernée</a> sur la documentation avant de mettre à jour afin d'éviter de mauvaises surprises.
             ]]>
         </content>
-        <icon>/images/icons/warning.png</icon>
+        <icon>warning</icon>
     </post>
     <post>
         <id>148</id>
@@ -2703,7 +2714,7 @@ Téléchargement pour i686 et x86_64 :  consultez notre <a href="http://frugalwa
         <author>Miklos Vajna</author>
         <hidden>0</hidden>
         <content><![CDATA[
-            <center><img src="http://frugalware.org/images/promo-getorin.png" alt="Frugalware 1.1 Getorin is released !" /></center><br />
+            <center><img src="images/promo/getorin.png" alt="Frugalware 1.1 Getorin is released !" /></center><br />
             The Frugalware Developer Team is pleased to <a href="/news/145">announce</a> the immediate availability of Frugalware 1.1, our eleventh stable release.<br />
             No new features have been added since 1.1rc2, but 177 changes have been made to fix minor bugs. If you didn't follow the changes during the pre/rc releases, here are the most important changes since 1.0 in no particular order:<br />
             <ul>
@@ -3071,7 +3082,7 @@ Téléchargement pour i686 et x86_64 :  consultez notre <a href="http://frugalwa
         <author>Miklos Vajna</author>
         <hidden>0</hidden>
         <content><![CDATA[
-            <center><img src="http://frugalware.org/images/anacreon_cover.png" alt="Frugalware 1.0 Anacreon Cd cover" /></center><br />
+            <center><img src="images/data/anacreon_cover.png" alt="Frugalware 1.0 Anacreon Cd cover" /></center><br />
             L'équipe des développeurs de Frugalware est fière de vous <a href="/news/129">annoncer</a> la disponibilité immédiate de Frugalware 1.0, notre dixième version stable. Le numéro de version 1.0 n'indique pas réellement quelque chose de spécial, la nouvelle version vous apportera de nouvelles fonctionnalités ainsi que les corrections de bugs habituelles, mais cela reste malgrès tout une étape importante dans le dévelopement de ces cinq dernières années.<br />
             Aucune nouvelles fonctionnalitées n'ont été ajoutées depuis 1.0rc2, mais 81 changements ont été faits pour corrigé des bugs mineurs. Si vous ne suivez pas les changements pendants les versions pre/rc, voici une liste des changements les plus important depuis la version 0.9 sans ordre particulier:<br />
             <ul>
@@ -3152,7 +3163,7 @@ Téléchargement pour i686 et x86_64 :  consultez notre <a href="http://frugalwa
     <post>
         <id>126</id>
         <title>Frugalware 1.0rc1 (Anacreon) est disponible</title>
-        <date>FIXME</date>
+        <date>Sun, 22 Feb 2009 11:06:12 +0100</date>
         <author>Miklos Vajna</author>
         <hidden>0</hidden>
         <content><![CDATA[
@@ -3285,7 +3296,7 @@ Téléchargement pour i686 et x86_64 :  consultez notre <a href="http://frugalwa
         <author>phayz</author>
         <hidden>0</hidden>
         <content><![CDATA[
-            <center><img src="http://frugalware.org/images/logo-newyear.png" alt="Frugalware New Year logo"></center></br>
+            <center><img src="images/data/logo-newyear.png" alt="Frugalware New Year logo"></center></br>
             L'équipe de Frugalware souhaites à tous une bonne année.  2008 fut une année avec nombre de grandes réalisations, incluant de nouveaux développeurs, de nouveaux contributeurs, un installateur GUI (fwife), plusieurs traductions, et beaucoup de nouveaux paquets.  Nous attendons également un même succès pour 2009.
             ]]>
         </content>
@@ -3297,7 +3308,7 @@ Téléchargement pour i686 et x86_64 :  consultez notre <a href="http://frugalwa
         <author>phayz</author>
         <hidden>0</hidden>
         <content><![CDATA[
-            <center><img src="http://frugalware.org/images/logo-christmas.png" alt="Frugalware Christmas logo"></center></br>
+            <center><img src="images/data/logo-christmas.png" alt="Frugalware Christmas logo"></center></br>
             L'équipe de Frugalware aimerais vous souhaiter un joyeux noël à chacun.  Si vous ne célébrer pas Noël, nous espérons que vous pourrez appreciez le meilleur de cette periode de l'année, en évitant le pire...  :)
         ]]>
         </content>
@@ -5808,7 +5819,7 @@ ab191be15a05e42c87218048f55900fcde476b10  frugalware-0.6pre2-i686-net.iso
             Before upgrading to 8.2 version of postgresql, dump your databases. The new version is incompatible with the older one.
             ]]>
         </content>
-        <icon>/images/icons/bug.png</icon>
+        <icon>bug</icon>
     </post>
     <post>
         <id>51</id>
@@ -5822,7 +5833,7 @@ ab191be15a05e42c87218048f55900fcde476b10  frugalware-0.6pre2-i686-net.iso
             As a side note, the Frugalware developer team would like to wish all our users a very Merry Christmas, and a Happy New Year!
             ]]>
         </content>
-        <icon>/images/icons/bug.png</icon>
+        <icon>bug</icon>
     </post>
     <post>
         <id>50</id>
@@ -5915,7 +5926,7 @@ eeaa4b9bafab9b1c3c5454c1599687fd600b3525  frugalware-0.6pre1-i686-net.iso
             In other news, ftp5 should be back in sync. Have a good day! ;)
             ]]>
         </content>
-        <icon>/images/icons/homepage.png</icon>
+        <icon>homepage</icon>
     </post>
     <post>
         <id>48</id>
@@ -5927,7 +5938,7 @@ eeaa4b9bafab9b1c3c5454c1599687fd600b3525  frugalware-0.6pre1-i686-net.iso
             ftp5.frugalware.org is currently out of sync for -current users. Please temporarily switch to a different mirror in /etc/pacman.d/frugalware-current!
             ]]>
         </content>
-        <icon>/images/icons/homepage.png</icon>
+        <icon>homepage</icon>
     </post>
     <post>
         <id>47</id>
@@ -5939,7 +5950,7 @@ eeaa4b9bafab9b1c3c5454c1599687fd600b3525  frugalware-0.6pre1-i686-net.iso
             If you find any apps that don't start with a message about libdbus-1.so.2 not found, we want to know about it now! Just submit a report with the package's name to the <a href="http://bugs.frugalware.org">Bug Tracker</a>. Thanks!
             ]]>
         </content>
-        <icon>/images/icons/bug.png</icon>
+        <icon>bug</icon>
     </post>
     <post>
         <id>46</id>
@@ -5953,7 +5964,7 @@ eeaa4b9bafab9b1c3c5454c1599687fd600b3525  frugalware-0.6pre1-i686-net.iso
             Thanks!
             ]]>
         </content>
-        <icon>/images/icons/bug.png</icon>
+        <icon>bug</icon>
     </post>
     <post>
         <id>45</id>
@@ -6056,7 +6067,7 @@ ed78594a70af0dded0483914437566702b05b576  frugalware-0.5-x86_64-cd5.iso
             (No, it does not mean that we dislike the Software Freedom Day...)
             ]]>
         </content>
-        <icon>/images/icons/bug.png</icon>
+        <icon>bug</icon>
     </post>
     <post>
         <id>43</id>
