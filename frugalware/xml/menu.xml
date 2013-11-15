@@ -20,32 +20,32 @@
     <menu>
         <_link>Frugalware</_link>
         <submenus>
-            <_sublink url="news">News</_sublink>
-            <_sublink url="docs">Documentation</_sublink>
-            <_sublink url="screenshots">Screenshots</_sublink>
+            <_sublink url="https://frugalware.org/news">News</_sublink>
+            <_sublink url="https://frugalware.org/docs">Documentation</_sublink>
+            <_sublink url="https://frugalware.org/screenshots">Screenshots</_sublink>
             <_sublink></_sublink>
-            <_sublink url="authors">Authors</_sublink>
-            <_sublink url="media">Press</_sublink>
-            <_sublink url="rss">News feeds</_sublink>
+            <_sublink url="https://frugalware.org/authors">Authors</_sublink>
+            <_sublink url="https://frugalware.org/media">Press</_sublink>
+            <_sublink url="https://frugalware.org/rss">News feeds</_sublink>
         </submenus>
     </menu>
     <menu>
         <_link>Community</_link>
         <submenus>
             <_sublink url="https://forums.frugalware.org">Forums</_sublink>
-            <_sublink url="irc">IRC</_sublink>
+            <_sublink url="https://frugalware.org/irc">IRC</_sublink>
             <_sublink></_sublink>
             <_sublink url="http://www.frugalware-art.org/">Artwork</_sublink>
             <_sublink url="http://planet.frugalware.org">Blogs</_sublink>
-            <_sublink url="paste">Pastebin</_sublink>
+            <_sublink url="https://frugalware.org/paste">Pastebin</_sublink>
             <_sublink url="https://frugalware.org/mailman/listinfo">Mailing lists</_sublink>
         </submenus>
     </menu>
     <menu>
-        <_link url="download">Download</_link>
+        <_link url="https://frugalware.org/download">Download</_link>
     </menu>
     <menu>
-        <_link url="packages">Packages</_link>
+        <_link url="https://frugalware.org/packages">Packages</_link>
     </menu>
     <menu>
         <_link url="https://wiki.frugalware.org">Wiki</_link>
@@ -54,13 +54,13 @@
         <_link>Development</_link>
         <submenus>
             <_sublink url="https://bugs.frugalware.org">Bug Tracker</_sublink>
-            <_sublink url="buildlogs">Buildlogs</_sublink>
+            <_sublink url="https://frugalware.org/buildlogs">Buildlogs</_sublink>
             <_sublink url="http://git.frugalware.org">Git repository</_sublink>
-            <_sublink url="roadmap">Roadmap</_sublink>
-            <_sublink url="security">Security announcements</_sublink>
+            <_sublink url="https://frugalware.org/roadmap">Roadmap</_sublink>
+            <_sublink url="https://frugalware.org/security">Security announcements</_sublink>
             <_sublink url="https://pootle.frugalware.org">Translation portal</_sublink>
             <_sublink></_sublink>
-            <_sublink url="donations">Donations</_sublink>
+            <_sublink url="https://frugalware.org/donations">Donations</_sublink>
         </submenus>
     </menu>
 </menus>
