@@ -357,7 +357,7 @@ function res_show( $res_set, $what, $search=null )
             $content = "<div align=\"left\">\n";
             for ( $i = 0, $j = 1; $i < count( $res_set ); $i++, $j++ )
             {
-                $content .= '<p>' . $j . '. <a href="/packages/?op=groups&id=' . $res_set[$i]['id'] . '&arch=' . $_GET['arch'] . '&ver=' . $_GET['ver'] .'">' . $res_set[$i]['name'] . '</a> (' . $res_set[$i]['numpkgs'] . ")</p>\n";
+                $content .= '<p>' . $j . '. <a href="/packages?op=groups&id=' . $res_set[$i]['id'] . '&arch=' . $_GET['arch'] . '&ver=' . $_GET['ver'] .'">' . $res_set[$i]['name'] . '</a> (' . $res_set[$i]['numpkgs'] . ")</p>\n";
                 $total += $res_set[$i]['numpkgs'];
             }
             $content .= "</div>\n";

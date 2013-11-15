@@ -88,14 +88,14 @@ function showAbout ($content, $showScreenshot=true)
             print '
                     <ul>
                         <li>
-                            <a id="imagebox" href="'.$fwng_root.'images/official_background.jpg"><img rel="fancybox" src="'. $fwng_root . 'images/data/official_background.jpg" title="Let\'s make things frugal!" /></a>
+                            <a id="imagebox" href=".'.$fwng_root.'images/official_background.jpg"><img rel="fancybox" src=".'. $fwng_root . 'images/data/official_background.jpg" title="Let\'s make things frugal!" /></a>
                         </li>';
             while (false !== ($file = readdir($screenshot_dir)))
             {
                 if ($file != '.' && $file != '..' && $file != 'thumbnails' && $file != 'README') {
                     print '
                         <li>
-                            <a id="imagebox" href="'.$fwng_root.'images/users_screenshots/'.$file.'"><img rel="fancybox" src="'. $fwng_root . 'images/users_screenshots/thumbnails/'.$file.'" title="'.NiceName($file).'" /></a>
+                            <a id="imagebox" href=".'.$fwng_root.'images/users_screenshots/'.$file.'"><img rel="fancybox" src=".'. $fwng_root . 'images/users_screenshots/thumbnails/'.$file.'" title="'.NiceName($file).'" /></a>
                         </li>';
                 }
             }
