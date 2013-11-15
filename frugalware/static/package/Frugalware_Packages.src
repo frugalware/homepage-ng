@@ -22,7 +22,7 @@
 </SEARCH>
 
 <browser
-    update="http://www.frugalware.org/static/Frugalware_Packages.src"
-    updateIcon="http://www.frugalware.org/static/Frugalware_Packages.png"
+    update="http://www.frugalware.org/static/package/Frugalware_Packages.src"
+    updateIcon="http://www.frugalware.org/static/package/Frugalware_Packages.png"
     updateCheckDays="3"
 >
