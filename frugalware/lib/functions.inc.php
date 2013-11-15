@@ -82,7 +82,7 @@ function showAbout ($content, $showScreenshot=true)
         print "
                 <div id=\"slideshow\" align=\"center\">";
 
-        if ($screenshot_dir = opendir($fwng_root."images/users_screenshots/"))
+        if ($screenshot_dir = opendir(".".$fwng_root."images/users_screenshots/"))
         {
 
             print '
