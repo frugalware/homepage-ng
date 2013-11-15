@@ -42,10 +42,10 @@ if((count($params)==0) or (!in_array($params[0], $pages)))
     $page="index";
 else
 {
-    if($params[0]!="new")
-        $page = $params[0];
-    else
-        $page = "index";
+    //if($params[0]!="news")
+    $page = $params[0];
+    //else
+    //	$page = "index";
     array_shift($params);
 }
 
