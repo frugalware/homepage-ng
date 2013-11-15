@@ -19,7 +19,7 @@
  */
 
 // include some useful functions and the config
-include("functions.inc.php");
+include("lib/functions.inc.php");
 
 $lang = getlang();
 $llang = getllang($lang);
@@ -28,98 +28,118 @@ $llang = getllang($lang);
 $domain = "homepage";
 set_locale($llang, $domain);
 
-include("config.inc.php");
-
-$flang = ( $lang == "en" ) ? "" : "_$lang";
-if (file_exists("xml/news".$flang.".xml"))
-	$xmlfile = "xml/news".$flang.".xml";
-else
-	$xmlfile = $docs_path."/xml/news".$flang.".xml";
+include("lib/config.inc.php");
 
 // let's start page
 include("header.php");
 
 // This includes the news.xml XML parser
-include("xml.inc.php");
+include("lib/xml.inc.php");
 
-// Let's see whether the news file exist or not
-$nolang = 0;
-if (!file_exists($xmlfile))
-{
-	$nolang = 1;
-	if (file_exists("xml/news.xml"))
-		$xmlfile = "xml/news.xml";
-	else
-		$xmlfile = $docs_path."/xml/news.xml";
-}
+// There is some translations
+$flang = ( $lang == "en" ) ? "" : "_$lang";
+if (file_exists("xml/news".$flang.".xml"))
+    $translatefile = "xml/news".$flang.".xml";
+else
+    $translatefile = "xml/news.xml";
 
-$id = ( $_GET['id'] != "" ) ? $_GET['id'] : -1;
-if ( $id != -1 && !is_in_file( "<id>$id</id>", $xmlfile ) )
-{
-	$nolang = 1;
-	if ( file_exists( "xml/news.xml" ) )
-		$xmlfile = "xml/news.xml";
-	else
-		$xmlfile = $docs_path . "/xml/news.xml";
-}
+// Official news in english
+if (file_exists("xml/news.xml"))
+    $xmlfile = "xml/news.xml";
+else
+    $xmlfile = $docs_path."/xml/news.xml";
+
 $xml = file_get_contents($xmlfile);
 $parser = new XMLParser($xml);
 $parser->Parse();
 $news = $parser->document->post;
 
-if ( $id != -1 )
-	$news_limit = count($news);
+if (isset($translatefile) and !empty($translatefile)) {
+    $translatexml = file_get_contents($translatefile);
+    $parser = new XMLParser($translatexml);
+    $parser->Parse();
+    $translatenews = $parser->document->post;
+}
 
 // I hate writing a lot. And also the parser creates too long and unuseful object hierarchy,
 // so create a better-readable one.
 for ( $i=0; $i<$news_limit; $i++)
 {
-	$posts[$i][id] = $news[$i]->id[0]->tagData;
-	$posts[$i][title] = "<a class=\"boxheader\" href=\"".$fwng_root."news/".$posts[$i]['id']."\">".$news[$i]->title[0]->tagData."</a>";
-	$posts[$i][date] = $news[$i]->date[0]->tagData;
-	$posts[$i][author] = $news[$i]->author[0]->tagData;
-	$posts[$i][hidden] = $news[$i]->hidden[0]->tagData;
-	$posts[$i][content] = $news[$i]->content[0]->tagData;
-	for ( $j=0; $j<count($news[$i]->editedby); $j++ )
-	{
-		$posts[$i][editedby][$j][name] = $news[$i]->editedby[$j]->name[0]->tagData;
-		$posts[$i][editedby][$j][date] = $news[$i]->editedby[$j]->date[0]->tagData;
-	}
-	if (count($news[$i]->icon) > 0)
-		$posts[$i][icon] = $news[$i]->icon[0]->tagData;
-	else
-		$posts[$i][icon] = $fwng_root . "images/logo-new.png";
+    $indextrad = 0;
+
+    for ($j=(count($translatenews)-1); $j>-1; $j--)
+    {
+        if ($translatenews[$j]->id[0]->tagData == $news[$i]->id[0]->tagData)
+        {
+            $indextrad = $j;
+            $found = true;
+            break;
+        }
+        else
+            $found = false;
+    }
+
+    if ($found)
+        $newpost = $translatenews[$indextrad];
+    else
+        $newpost = $news[$i];
+
+    // We use icon from icon tag
+    if (isset($news[$i]->icon[0]->tagData) and !empty($news[$i]->icon[0]->tagData))
+        $posts[$i]['icon'] = $fwng_root . "images/categories/" . $news[$i]->icon[0]->tagData . ".png";
+    else
+        $posts[$i]['icon'] = $fwng_root . "images/categories/frugalware.png";
+
+    if ($i > 0)
+        $show = "<a class=\"news\" onclick=\"toggle_div(this,'new" . $i ."', 1);\"><img src=\"".$fwng_root."images/icons/more.png\" class=\"moreandless\" /></a>";
+    else
+        $show = "";
+
+    $posts[$i]['id'] = $newpost->id[0]->tagData;
+    $posts[$i]['title'] = "<a class=\"boxheader\" href=\"" . $fwng_root . "news.php?id=" . $newpost->id[0]->tagData . "\"><img class=\"face\" src=\"" . $posts[$i]['icon'] . "\" width=\"16\" alt=\"\" /> " . $newpost->title[0]->tagData."</a> " . $show;
+
+    date_default_timezone_set('America/New_York');
+    $date = new DateTime($newpost->date[0]->tagData);
+    $posts[$i]['date'] = $date->format('Y-m-d');
+
+    $posts[$i]['author'] = $newpost->author[0]->tagData;
+    $posts[$i]['hidden'] = $newpost->hidden[0]->tagData;
+    $posts[$i]['content'] = $newpost->content[0]->tagData;
 }
-// Let's write out the news in separate boxes.
-if ( $id != -1 )
+
+// About dialog
+$about = "
+                <p>
+                    " . gettext("Frugalware is a general purpose linux distribution, designed for intermediate users (who are not afraid of text mode).") . "<br /><br />
+                    " . gettext("We try to make Frugalware as simple as possible while not forgetting to keep it comfortable for the user. We try to ship fresh and stable software, as close to the original source as possible, because in our opinion most software is the best as is, and doesn't need patching.") . "<br /><br />
+                    " . gettext("More informations in the <a href=\"http://wiki.frugalware.org/index.php/FAQ\">FAQ</a>.") . "
+                </p>";
+
+showAbout ($about);
+
+// Latest new
+print "\n\n<h2><img src=\"" . $fwng_root . "images/icons/lastnew.png\" />".gettext("Latest new")."</h2>\n";
+print "<section id=\"new\">";
+
+showNew ($posts[0], $i);
+
+print "</section>";
+
+// Older news
+print "\n\n<h2><img src=\"" . $fwng_root . "images/icons/news.png\" />".gettext("Other news")."</h2>\n";
+print "<section id=\"new\">";
+
+for( $i=1; $i<count($posts); $i++ )
 {
-	if ( $nolang == 1 )
-		print gettext("Sorry, no news on your language, using English instead.");
-	for( $i=0; $i<count($posts); $i++ )
-	{
-		if ( $id == $posts[$i]['id'] )
-		{
-			$edited = "";
-			for ( $j=0; $j<count($posts[$i][editedby]); $j++ )
-			{
-				$edited .= $posts[$i][editedby][$j][name]." ".gettext(" edited this news on ").$posts[$i][editedby][$j][date]."<br />";
-			}
-			fwmiddlebox($posts[$i][title], "<img class=\"face\" src=\"" . $posts[$i][icon] . "\" width=\"85\" height=\"85\" alt=\"\" /><br />\n<div align=\"justify\">\n".$posts[$i][content]."\n</div><p class=\"date\">".gettext("Posted by")." ".$posts[$i][author]." - ".$posts[$i][date]."</p>");
-			if ( $edited != "" ) fwmiddlebox(gettext("News history"), $edited);
-			print "<hr /><br />";
-		}
-	}
+    showNew ($posts[$i], $i, true);
 }
-else
-{
-	if ( $nolang == 1 )
-		print gettext("Sorry, no news on your language, using English instead.");
-	for( $i=0; $i<count($posts); $i++ )
-	{
-		if ( $posts[$i][hidden] == 0 )
-			fwmiddlebox($posts[$i][title], "<img class=\"face\" src=\"" . $posts[$i][icon] . "\" width=\"85\" height=\"85\" alt=\"\" /><br />\n<div align=\"justify\">\n".$posts[$i][content]."\n</div><p class=\"date\">".gettext("Posted by")." ".$posts[$i][author]." - ".$posts[$i][date]."</p>");
-	}
-}
+
+print "</section>";
+
+// Link to news list
+print "<div class=\"link\">
+    <a href=\"" . $fwng_root . "news.php\">» " .gettext("Read older news") . "</a>
+</div>";
 
 include("footer.php");
 ?>
