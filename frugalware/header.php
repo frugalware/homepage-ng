@@ -1,94 +1,121 @@
+<!DOCTYPE html>
+
 <?php
-header("Content-type: text/html; charset=UTF-8");
+    include("lib/header.inc.php");
+    $data = genHeader();
 
-include("header.inc.php");
-
-$data = genHeader();
-
-
-
+    $rsspath = $_SERVER["SERVER_NAME"] . $fwng_root;
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $lang; ?>" lang="<?php echo $lang; ?>">
+
 <head>
-  <title>Frugalware Linux - Let's make things Frugal!</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <meta name="description" content="Frugalware Linux, a general purpose linux distribution, designed for intermediate users."/>
-  <link rel="icon" href="<?php echo $fwng_root; ?>images/favicon.ico" />
+
+    <title><?php echo $title; ?></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="Frugalware Linux, a general purpose linux distribution, designed for intermediate users."/>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0;">
+    <link rel="icon" href="<?php echo $fwng_root; ?>images/favicon.ico" />
+
+    <!-- RSS -->
+    <link rel="alternate" type="application/rss+xml" title="Frugalware news" href="<?php print $myurl; ?>rss/news" />
+    <link rel="alternate" type="application/rss+xml" title="Frugalware packages" href="<?php print $myurl; ?>rss/packages" />
+
     <!-- CSS -->
-  
-  <link rel="stylesheet" type="text/css" href="<?php echo $fwng_root; ?>static/fwng.css" />
-  <link rel="stylesheet" type="text/css" href="<?php echo $fwng_root; ?>static/_proform.css" />
-  <link rel="stylesheet" type="text/css" href="<?php echo $fwng_root; ?>static/common.css" />
-  <link rel="stylesheet" href="<?php echo $fwng_root; ?>static/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
-  <link href="https://plus.google.com/111814325401516364988" rel="publisher" />
-  <!-- JavaScript -->
+    <link rel="stylesheet" type="text/css" media="screen" href="<?php echo $fwng_root; ?>static/css/common.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="<?php echo $fwng_root; ?>static/css/common_medium.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="<?php echo $fwng_root; ?>static/css/common_mobile.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="<?php echo $fwng_root; ?>static/css/craftyslide.css" />
 
-  <script type="text/javascript" src="<?php echo $fwng_root; ?>static/menu.js">
-  /* AnyLink CSS Menu script- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
-   * This notice MUST stay intact for legal use
-   * Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code */
-  </script>
-  
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-  <script type="text/javascript" src="<?php echo $fwng_root; ?>static/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
-  
-  <script type="text/javascript">
-		$(document).ready(function() {
-			$("a#imagebox").fancybox();
-	    });
-  </script>
+    <link rel="stylesheet" href="<?php echo $fwng_root; ?>static/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
 
-<script type="text/javascript">
-/* <![CDATA[ */
-    (function() {
-        var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
-        s.type = 'text/javascript';
-        s.async = true;
-        s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
-        t.parentNode.insertBefore(s, t);
-    })();
-/* ]]> */
-</script>
+    <!-- JavaScript -->
+    <script type="text/javascript" src="<?php echo $fwng_root; ?>static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="<?php echo $fwng_root; ?>static/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+    <script type="text/javascript" src="<?php echo $fwng_root; ?>static/js/craftyslide.js"></script>
 
-<script type="text/javascript" src="http://apis.google.com/js/plusone.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("a#imagebox").fancybox();
+            $("#slideshow").craftyslide({
+                'pagination': false,
+                'fadetime': 600,
+                'delay': 6000});
+        });
+    </script>
 
-<?
-if($_SERVER['PHP_SELF']=="/index.php")
-	print('<link rel="alternate" type="application/rss+xml" title="RSS" href="http://'
-		. $_SERVER["SERVER_NAME"] . "${fwng_root}rss/news\" />\n");
-else if($_SERVER['PHP_SELF']=="/packages.php")
-	print('<link rel="alternate" type="application/rss+xml" title="RSS" href="http://'
-		. $_SERVER["SERVER_NAME"] . "${fwng_root}rss/packages\" />\n");
-?>
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        (function() {
+            var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
+            s.type = 'text/javascript';
+            s.async = true;
+            s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
+            t.parentNode.insertBefore(s, t);
+        })();
+        /* ]]> */
+
+        function toggle_div(bouton,id,mode) {
+            var div=document.getElementById(id);
+            if(div.style.display=="none") {
+                div.style.display="block";
+                if (mode == 1)
+                    bouton.innerHTML="<img src=\"<?php echo $fwng_root; ?>images/icons/less.png\" class=\"moreandless\" />";
+            } else {
+                div.style.display="none";
+                if (mode == 1)
+                    bouton.innerHTML="<img src=\"<?php echo $fwng_root; ?>images/icons/more.png\" class=\"moreandless\" />";
+            }
+        }
+        function toggle_complete(bouton,id) {
+            var div=document.getElementById(id);
+            if(div.style.display=="none") {
+                div.style.display="block";
+                bouton.innerHTML="";
+            }
+        }
+    </script>
+
 </head>
+
 <body>
 
-<!-- header start -->
-<div id="header">
-	<a href="http://<?php echo $_SERVER["SERVER_NAME"]; ?>"><object width="66" height="66" type="image/svg" data="<?php echo $fwng_root; ?>images/header.svg"><img alt="Frugalware Linux - Let's make things Frugal!" src="<?php echo $fwng_root; ?>images/header.png"></object><span id="title">FRUGALWARE LINUX</span><span id="slogan">Let’s make things frugal!</span></a>
-</div>
-<!-- header end -->
+    <!-- HEADER -->
+    <header>
+        <a href="<?php echo $fwng_root; ?>">
+            <img src="<?php echo $fwng_root; ?>images/frugalware.png" />
+            <span class="title"><?php echo $title; ?></span>
+            <span class="slogan"><?php echo $slogan; ?></span>
+        </a>
+    </header>
 
-<!-- nav start -->
-<div id="nav">
-        &ensp;<?php echo $menucontent; ?>
-</div>
-<!-- nav end -->
-<div id='bigwrap'>
-<!-- main content start -->
+    <!-- MENU -->
+    <nav>
+        <?php echo $menucontent; ?>
+    </nav>
 
-<div id="rightcolumn">
-<?php
-if ($data['paypal'] != '')
-	fwsidebox(gettext("Donations"), $data['paypal']);
-fwsidebox(gettext("Languages"), $langcontent);
-fwsidebox(gettext("Share"), $data['socialnetworks']);
-fwsidebox(gettext("Recent updates"), $data['packages']);
-fwsidebox(gettext("Releases"), $data['releases']);
-fwsidebox(gettext("Information"), $validcontent);
-fwsidebox(gettext("Server information"), $data['uptime']);
-?>
-</div>
-<div id="centercolumn">
+    <!-- MAIN CONTENT -->
+    <div id='wrapper'>
+        <?php fwlangbox($langcontent); ?>
+
+        <aside id="rightcolumn">
+            <?php
+                // Get Frugalware
+                fwsidebox(gettext("Get Frugalware"), $data['download']);
+
+                // Packages
+                fwsidebox("<a href=\"${fwng_root}rss/releases\"><img src=\"images/icons/rss.png\" width=\"16\" alt=\"\" /></a> " . gettext("Recent updates"), $data['packages']);
+
+                // IRC
+                fwsidebox(gettext("IRC"), $data['irc']);
+
+                // Social
+                fwsidebox(gettext("Social"), $data['socialnetworks']);
+
+                // Donations
+                if ($data['paypal'] != '')
+                    fwsidebox(gettext("Donations"), $data['paypal']);
+            ?>
+        </aside>
+
+        <div id="centercolumn">

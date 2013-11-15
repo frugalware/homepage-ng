@@ -21,7 +21,7 @@
  */
 
 // include some useful functions and the config
-include("functions.inc.php");
+include("lib/functions.inc.php");
 
 $lang = getlang();
 $llang = getllang($lang);
@@ -31,48 +31,74 @@ $domain = "homepage";
 set_locale($llang, $domain);
 
 // let's start page
-include("config.inc.php");
+include("lib/config.inc.php");
 
 $langd = ( $lang == "en" ) ? "" : "/$lang/";
 if(isset($_GET['doc']))
 {
-	$doc = $_GET['doc'];
-	$stable = $_GET['stable'];
-	if(!$stable)
-		$my_path = $docs_path;
-	else
-		$my_path = $docs_path_stable;
-	if(strpos($doc, ".html") === false and strpos($doc, ".pdf") === false and strpos($doc, ".text") === false)
-		$doc .= ".html";
-	$path = $my_path."/".$doc;
-	if(file_exists($path))
-	{
-		if (file_exists($my_path."/".$langd.$doc))
-			$path=$my_path."/".$langd.$doc;
-		$fp = fopen($path, "r");
-		fpassthru($fp);
-		die();
-	}
+    $doc = $_GET['doc'];
+    $stable = $_GET['stable'];
+    if(!$stable)
+        $my_path = $docs_path;
+    else
+        $my_path = $docs_path_stable;
+    if(strpos($doc, ".html") === false and strpos($doc, ".pdf") === false and strpos($doc, ".text") === false)
+        $doc .= ".html";
+    $path = $my_path."/".$doc;
+    if(file_exists($path))
+    {
+        if (file_exists($my_path."/".$langd.$doc))
+            $path=$my_path."/".$langd.$doc;
+        $fp = fopen($path, "r");
+        fpassthru($fp);
+        die();
+    }
 }
 
 include("header.php");
 
-$cont = gettext("The following categories are available:")."<br />
-<ul>
-<li><a href=\"/docs/index\">".gettext("Full manual")."</a></li>
-<li><a href=\"/docs/index-user\">".gettext("User documentation")."</a></li>
-<li><a href=\"/docs/index-devel\">".gettext("Developer documentation")."</a></li>
+$cont = "<ul>
+    <li><a href=\"/docs/index\">".gettext("Full manual")."</a></li>
+    <hr />
+    <li><a href=\"/docs/install.html\">".gettext("How to install Frugalware")."</a></li>
+    <li><a href=\"https://wiki.frugalware.org/index.php/Post-Installation\">".gettext("Post-installation tutoriel (Wiki)")."</a></li>
+    <li><a href=\"/docs/upgrade.html\">".gettext("How to upgrade Frugalware")."</a></li>
+    <li><a href=\"/docs/pacman-g2.html\">".gettext("How to use pacman-g2")."</a></li>
+    <hr />
+    <li><a href=\"/docs/mobile.html\">".gettext("Laptop generality")."</a></li>
 </ul>";
 
-$cont_stable = gettext("The following categories are available:")."<br />
-<ul>
-<li><a href=\"/docs/stable/index\">".gettext("Full manual")."</a></li>
-<li><a href=\"/docs/stable/index-user\">".gettext("User documentation")."</a></li>
-<li><a href=\"/docs/stable/index-devel\">".gettext("Developer documentation")."</a></li>
+$cont_dev = "<ul>
+    <li><a href=\"https://wiki.frugalware.org/index.php/Devel_intro\">".gettext("Developper introduction (Wiki)")."</a></li>
+    <hr />
+    <li><a href=\"/docs/getting-involved.html\">".gettext("How to contribute")."</a></li>
+    <li><a href=\"/docs/repos.html\">".gettext("Handling git repositories")."</a></li>
+    <hr />
+    <li><a href=\"https://wiki.frugalware.org/index.php/Category:D%C3%A9velopper\">".gettext("Developper informations (Wiki - French)")."</a></li>
 </ul>";
 
-fwmiddlebox(gettext("View online documentation (stable release)"), $cont_stable);
-fwmiddlebox(gettext("View online documentation (development version)"), $cont);
+$cont = "<ul>
+    <li><a href=\"/docs/stable/index\">".gettext("Full manual")."</a>&nbsp;-&nbsp;(<a href=\"/docs/index\">".gettext("developpement version")."</a>)</li>
+    <hr />
+    <li><a href=\"/docs/stable/install.html\">".gettext("How to install Frugalware")."</a>&nbsp;-&nbsp;(<a href=\"/docs/install.html\">".gettext("developpement version")."</a>)</li>
+    <li><a href=\"/docs/stable/upgrade.html\">".gettext("How to upgrade Frugalware")."</a>&nbsp;-&nbsp;(<a href=\"/docs/upgrade.html\">".gettext("developpement version")."</a>)</li>
+    <li><a href=\"/docs/stable/pacman-g2.html\">".gettext("How to use pacman-g2")."</a>&nbsp;-&nbsp;(<a href=\"/docs/pacman-g2.html\">".gettext("developpement version")."</a>)</li>
+    <hr />
+    <li><a href=\"/docs/stable/mobile.html\">".gettext("Laptop generality")."</a>&nbsp;-&nbsp;(<a href=\"/docs/mobile.html\">".gettext("developpement version")."</a>)</li>
+</ul>";
+
+$cont_dev = "<ul>
+    <li><a href=\"https://wiki.frugalware.org/index.php/Devel_intro\">".gettext("Developper introduction (Wiki)")."</a></li>
+    <hr />
+    <li><a href=\"/docs/stable/getting-involved.html\">".gettext("How to contribute")."</a>&nbsp;-&nbsp;(<a href=\"/docs/getting-involved.html\">".gettext("developpement version")."</a>)</li>
+    <li><a href=\"/docs/stable/repos.html\">".gettext("Handling git repositories")."</a>&nbsp;-&nbsp;(<a href=\"/docs/repos.html\">".gettext("developpement version")."</a>)</li>
+    <hr />
+    <li><a href=\"https://wiki.frugalware.org/index.php/Category:D%C3%A9velopper\">".gettext("Developper informations (Wiki - French)")."</a></li>
+</ul>";
+
+print "<h2><img src=\"" . $fwng_root . "images/icons/docs.png\" />" . gettext("Online documentation") . "</h2>";
+fwmiddlebox(gettext("User documentation"), $cont);
+fwmiddlebox(gettext("Developer documentation"), $cont_dev);
 
 include("footer.php");
 ?>

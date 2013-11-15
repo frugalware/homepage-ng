@@ -21,10 +21,4 @@ RewriteCond %{REQUEST_URI} !^/pipermail
 RewriteCond %{REQUEST_URI} !^/syncpkgd
 RewriteCond %{REQUEST_URI} !^/server-status
 RewriteCond %{REQUEST_URI} !^/robots.txt
-RewriteCond %{REQUEST_URI} !^/fwng
-RewriteCond %{REQUEST_URI} !^/fwng/static
-RewriteCond %{REQUEST_URI} !^/fwng/start
-RewriteCond %{REQUEST_URI} !^/fwng/dtd
-RewriteCond %{REQUEST_URI} !^/fwng/images
-RewriteCond %{REQUEST_URI} !^/fwng/xml
 RewriteRule (.*) /rewrite.php/$1
