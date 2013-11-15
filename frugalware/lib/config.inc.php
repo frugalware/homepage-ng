@@ -11,7 +11,7 @@ $sqlpass = "85Tdjf{Od";
 $sqldb = "frugalware2";
 
 # FWNG SETTINGS
-$myurl = "http://frugalware.org/fwng";
+$myurl = ".";
 $fwng_root = $myurl."/";
 $adodb_path = "/usr/share/php";
 $trans_path="/home/ftp/pub/other/translations/";
