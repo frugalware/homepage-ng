@@ -12,7 +12,8 @@ $sqldb = "frugalware2";
 
 # FWNG SETTINGS
 // $myurl = "https://frugalware.org";
-$myurl = ".";
+$protocol = strpos(strtolower($_SERVER['SERVER_PROTOCOL']),'https') === FALSE ? 'http' : 'https';
+$myurl = $protocol . "://" . $_SERVER['HTTP_HOST'];
 $fwng_root = $myurl."/";
 $adodb_path = "/usr/share/php";
 $trans_path="/home/ftp/pub/other/translations/";

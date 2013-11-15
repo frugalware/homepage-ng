@@ -15,24 +15,24 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="description" content="Frugalware Linux, a general purpose linux distribution, designed for intermediate users."/>
     <meta name="viewport" content="width=device-width; initial-scale=1.0;">
-    <link rel="icon" href="/images/favicon.ico" />
+    <link rel="icon" href="<?php echo $fwng_root; ?>images/favicon.ico" />
 
     <!-- RSS -->
-    <link rel="alternate" type="application/rss+xml" title="Frugalware news" href="/rss/news" />
-    <link rel="alternate" type="application/rss+xml" title="Frugalware packages" href="/rss/packages" />
+    <link rel="alternate" type="application/rss+xml" title="Frugalware news" href="<?php echo $fwng_root; ?>rss/news" />
+    <link rel="alternate" type="application/rss+xml" title="Frugalware packages" href="<?php echo $fwng_root; ?>rss/packages" />
 
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" media="screen" href="/static/css/common.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="/static/css/common_medium.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="/static/css/common_mobile.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="/static/css/craftyslide.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="<?php echo $fwng_root; ?>static/css/common.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="<?php echo $fwng_root; ?>static/css/common_medium.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="<?php echo $fwng_root; ?>static/css/common_mobile.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="<?php echo $fwng_root; ?>static/css/craftyslide.css" />
 
-    <link rel="stylesheet" href="/static/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="<?php echo $fwng_root; ?>static/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
 
     <!-- JavaScript -->
-    <script type="text/javascript" src="/static/js/jquery.min.js"></script>
-    <script type="text/javascript" src="/static/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
-    <script type="text/javascript" src="/static/js/craftyslide.js"></script>
+    <script type="text/javascript" src="<?php echo $fwng_root; ?>static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="<?php echo $fwng_root; ?>static/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+    <script type="text/javascript" src="<?php echo $fwng_root; ?>static/js/craftyslide.js"></script>
 
     <script type="text/javascript">
         $(document).ready(function() {
@@ -60,11 +60,11 @@
             if(div.style.display=="none") {
                 div.style.display="block";
                 if (mode == 1)
-                    bouton.innerHTML="<img src=\"/images/icons/less.png\" class=\"moreandless\" />";
+                    bouton.innerHTML="<img src=\"<?php echo $fwng_root; ?>images/icons/less.png\" class=\"moreandless\" />";
             } else {
                 div.style.display="none";
                 if (mode == 1)
-                    bouton.innerHTML="<img src=\"/images/icons/more.png\" class=\"moreandless\" />";
+                    bouton.innerHTML="<img src=\"<?php echo $fwng_root; ?>images/icons/more.png\" class=\"moreandless\" />";
             }
         }
         function toggle_complete(bouton,id) {
@@ -83,7 +83,7 @@
     <!-- HEADER -->
     <header>
         <a href="<?php echo $fwng_root; ?>">
-            <img src="/images/frugalware.png" />
+            <img src="<?php echo $fwng_root; ?>images/frugalware.png" />
             <span class="title"><?php echo $title; ?></span>
             <span class="slogan"><?php echo $slogan; ?></span>
         </a>
@@ -104,7 +104,7 @@
                 fwsidebox(gettext("Get Frugalware"), $data['download']);
 
                 // Packages
-                fwsidebox("<a href=\"/rss/releases\"><img src=\"/images/icons/rss.png\" width=\"16\" alt=\"\" /></a> " . gettext("Recent updates"), $data['packages']);
+                fwsidebox("<a href=\"${fwng_root}rss/releases\"><img src=\"${fwng_root}images/icons/rss.png\" width=\"16\" alt=\"\" /></a> " . gettext("Recent updates"), $data['packages']);
 
                 // IRC
                 fwsidebox(gettext("IRC"), $data['irc']);
