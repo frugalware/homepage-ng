@@ -40,14 +40,11 @@ if(getllang($params[count($params)-1])!="")
 // see if there is a page or we should default to news
 if((count($params)==0) or (!in_array($params[0], $pages)))
     $page="index";
-// else
-// {
-    // if($params[0]!="news")
-        // $page = $params[0];
-    // else
-        // $page = "news";
+else
+{
+    $page = "news";
     // array_shift($params);
-// }
+}
 
 // do we have any parameter?
 if(count($params)>0)
@@ -120,7 +117,7 @@ if($_SERVER["QUERY_STRING"]!="")
 
 // build the url
 // $url="http://" . $_SERVER["SERVER_NAME"] . "$fwng_root$page.php$urlsuffix";
-$url = $fwng_root . $page . ".php" . $urlsuffix;
+$url = "$fwng_root$page.php$urlsuffix";
 
 if(isset($lang))
     $lang = getlang($lang);
