@@ -20,8 +20,8 @@
  *  USA.
  */
 
-include("functions.inc.php");
-include("config.inc.php");
+include("lib/functions.inc.php");
+include("lib/config.inc.php");
 
 $pages = array('about', 'donations', 'irc', 'screenshots', 'authors',
     'download', 'media', 'roadmap', 'docs', 'news',
