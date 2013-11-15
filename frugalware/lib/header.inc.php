@@ -128,7 +128,7 @@ function genHeader($usegettext = true) {
         if (!empty($pkgs)) {
             foreach($pkgs as $i) {
 
-                fwrite($fp, "<a href=\"${fwng_root}packages/${i['id']}\">${i['pkgname']} <span style=\"float: right;\">${i['pkgver']}-${i['arch']}</span></a><br />\n");
+                fwrite($fp, "<a href=\"${fwng_root}packages/${i['id']}\">${i['pkgname']}<span style=\"float: right;\">${i['pkgver']}-${i['arch']}</span></a><br />\n");
 
             }
         }
