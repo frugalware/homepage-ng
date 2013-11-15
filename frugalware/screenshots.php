@@ -46,9 +46,9 @@ include("lib/config.inc.php");
 include("header.php");
 
 
-$screenTitle = "<img src=\"" . $fwng_root . "images/icons/screenshots.png\" />" . gettext("Screenshots from users");
+$screenTitle = "<img src=\"." . $fwng_root . "images/icons/screenshots.png\" />" . gettext("Screenshots from users");
 $screenContent = "";
-if ($screenshot_dir = opendir($fwng_root."images/users_screenshots/"))
+if ($screenshot_dir = opendir(".".$fwng_root."images/users_screenshots/"))
 {
     $screenContent .= "<ul>";
     while (false !== ($file = readdir($screenshot_dir)))
@@ -56,8 +56,8 @@ if ($screenshot_dir = opendir($fwng_root."images/users_screenshots/"))
         if ($file != '.' && $file != '..' && $file != 'thumbnails' && $file != 'README') {
             $screenContent .= "<li>
                 <h1>".NiceName($file)."</h1>
-                <a id=\"imagebox\"  href=\"".$fwng_root."images/users_screenshots/".$file."\">
-                    <img src=\"".$fwng_root . 'images/users_screenshots/thumbnails/'.$file."\" alt=\"".NiceName($file)."\" title=\"".NiceName($file)."\" />
+                <a id=\"imagebox\"  href=\".".$fwng_root."images/users_screenshots/".$file."\">
+                    <img src=\".".$fwng_root . 'images/users_screenshots/thumbnails/'.$file."\" alt=\"".NiceName($file)."\" title=\"".NiceName($file)."\" />
                 </a>
             </li>\n";
         }
@@ -67,18 +67,16 @@ if ($screenshot_dir = opendir($fwng_root."images/users_screenshots/"))
     fwscreenbox($screenTitle, $screenContent);
 }
 
-// Just here for pingax server
-
-$screenTitle = "<img src=\"" . $fwng_root . "images/icons/screenshots.png\" />" . gettext("Old screenshots");
+$screenTitle = "<img src=\"." . $fwng_root . "images/icons/screenshots.png\" />" . gettext("Old screenshots");
 $screenContent = "<ul>";
 
-$fwng_root = "https://frugalware.org/";
+//$fwng_root = "https://frugalware.org/";
 for ($i=0; $i<count($shots['users']); $i++)
 {
     $screenContent .= "<li>
         <h1>".$shots['users'][$i]['title']."</h1>
-        <a id=\"imagebox\"  href=\"".$fwng_root."images/screenshots/users/".$shots['users'][$i]['name']."\">
-            <img src=\"".$fwng_root."images/screenshots/users/thumbnails/".$shots['users'][$i]['name']."\" alt=\"screenshot\" />
+        <a id=\"imagebox\"  href=\".".$fwng_root."images/screenshots/users/".$shots['users'][$i]['name']."\">
+            <img src=\".".$fwng_root."images/screenshots/users/thumbnails/".$shots['users'][$i]['name']."\" alt=\"screenshot\" />
         </a>
     </li>\n";
 }
