@@ -20,7 +20,6 @@
     <menu>
         <_link>Frugalware</_link>
         <submenus>
-			<_sublink url="https://frugalware.org">Index</_sublink>
             <_sublink url="news">News</_sublink>
             <_sublink url="docs">Documentation</_sublink>
             <_sublink url="screenshots">Screenshots</_sublink>
