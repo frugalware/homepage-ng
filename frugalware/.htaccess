@@ -1,6 +1,6 @@
 #php_value session.auto_start 1
 
-<Files *.inc.php>
+<Files lib/*.inc.php>
     deny from all
 </Files>
 
@@ -11,6 +11,7 @@ RewriteCond %{REQUEST_URI} !^/.*\.php
 RewriteCond %{REQUEST_URI} !^/images
 RewriteCond %{REQUEST_URI} !^/start
 RewriteCond %{REQUEST_URI} !^/static
+RewriteCond %{REQUEST_URI} !^/static/css
 RewriteCond %{REQUEST_URI} !^/dtd
 RewriteCond %{REQUEST_URI} !^/xml
 RewriteCond %{REQUEST_URI} !^/mailman
