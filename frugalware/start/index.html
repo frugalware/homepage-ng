@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+    <head>
+        <title>Frugalware Start Page</title>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+        <link rel="stylesheet" type="text/css" href="common.css" />
+        <link rel="icon" href="../images/favicon.ico" />
+
+        <script type="text/javascript">
+            //<![CDATA[
+            function focus_search() {
+                sbi = document.getElementById('sbi');
+                sbi.focus();
+                search_select(sbi);
+            }
+            function search_select(e) {
+                if(e.value.length > 0) {
+                    e.select();
+                }
+                e.select();
+            }
+            //]]>
+        </script>
+    </head>
+
+    <body>
+
+        <div id="content">
+            <div id="box">
+                <form method="get" action="https://duckduckgo.com">
+                    <div align="center"><a href="https://duckduckgo.com"><img src="./images/duckduckgo.png" /></a></div>
+                    <div id="search"><input class="text" name="q" type="text" id="sbi"><input class="button" value="Search" type="submit"></div>
+                </form>
+            </div>
+
+            <div id="box">
+                <ul>
+                    <li><a href="https://frugalware.org"><img src="./images/frugalware.png" /><br />Frugalware</a></li>
+                    <li><a href="https://frugalware.org/docs"><img src="./images/docs.png" /><br />Documentations</a></li>
+                    <li><a href="http://forums.frugalware.org/"><img src="./images/forum.png" /><br />Forums</a></li>
+                    <li><a href="https://wiki.frugalware.org"><img src="./images/wiki.png" /><br />Wiki</a></li>
+                </ul>
+            </div>
+
+            <hr />
+
+            <div id="box">
+                <div class="footer">Frugalware - Let's make things frugal !</div>
+            </div>
+        </div>
+
+    </body>
+</html>
