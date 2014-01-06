@@ -1,11 +1,10 @@
-<!DOCTYPE html>
-
 <?php
     include("lib/header.inc.php");
     $data = genHeader();
 
     $rsspath = $fwng_root;
 ?>
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $lang; ?>" lang="<?php echo $lang; ?>">
 

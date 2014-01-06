@@ -302,7 +302,13 @@ function getlang($forcelanguage="")
             {
                 // if the previous setting is not the same as the new, we set the new into cookie
                 $lang = $nlang;
-                setcookie("fwcurrlang", $lang, time()+3*365*24*3600, $fwng_root);
+
+                try {
+                    setcookie("fwcurrlang", $lang, time()+3*365*24*3600, $fwng_root);
+                }
+                catch (Exception $e) {
+                    echo $e;
+                }
             }
         }
     }
@@ -315,7 +321,13 @@ function getlang($forcelanguage="")
             $lang=$_GET["lang"];
             if($forcelanguage!="")
                 $lang=$forcelanguage;
-            setcookie("fwcurrlang", $lang, time()+3*365*24*3600, $fwng_root);
+
+            try {
+                setcookie("fwcurrlang", $lang, time()+3*365*24*3600, $fwng_root);
+            }
+            catch (Exception $e) {
+                echo $e;
+            }
         }
         else
         {
