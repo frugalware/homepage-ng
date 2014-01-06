@@ -65,6 +65,9 @@ function main()
                 else if (isset($_GET['op']) and !strlen($_GET['op']))
                     pkg_from_id($_GET['id']);
             }
+            else {
+                pkg_from_id($_GET['id']);
+            }
         }
         else
         {
