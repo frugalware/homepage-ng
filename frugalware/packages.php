@@ -106,7 +106,7 @@ function main()
                     else
                         unset($selstr);
 
-                    $arr[] = "\t\t\t<input type=\"radio\" id=\"fwver\" name=\"ver\" value=\"".$releases[$i]->version[0]->tagData."\" " . $selstr . " />".$releases[$i]->version[0]->tagData."\n";
+                    $arrVer[] = "\t\t\t<input type=\"radio\" id=\"fwver\" name=\"ver\" value=\"".$releases[$i]->version[0]->tagData."\" " . $selstr . " />".$releases[$i]->version[0]->tagData."\n";
                     break;
                 }
             }
@@ -144,7 +144,7 @@ function main()
                     <td>
                         <input type=\"radio\" id=\"fwver\" name=\"ver\" value=\"all\">".gettext("All")."<br />
                         <input type=\"radio\" id=\"fwver\" name=\"ver\" value=\"current\" " . (checkValue('ver') == "current" ? "checked=\"checked\" " : "") . "/>Current<br />";
-                        foreach ( $arr as $i )
+                        foreach ( $arrVer as $i )
                         {
                             $content .= $i;
                         }

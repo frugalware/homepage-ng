@@ -75,6 +75,9 @@
                 bouton.innerHTML="";
             }
         }
+        function toTop() {
+            self.scrollTo(0, 0)
+        }
     </script>
 
 </head>
