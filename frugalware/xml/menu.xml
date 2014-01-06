@@ -58,7 +58,9 @@
             <_sublink url="http://git.frugalware.org">Git repository</_sublink>
             <_sublink url="roadmap">Roadmap</_sublink>
             <_sublink url="security">Security announcements</_sublink>
+<!--
             <_sublink url="https://pootle.frugalware.org">Translation portal</_sublink>
+-->
             <_sublink></_sublink>
             <_sublink url="donations">Donations</_sublink>
         </submenus>

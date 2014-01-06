@@ -97,7 +97,7 @@ if($_SERVER["PHP_SELF"]=="/index.php")
 else
 {
     $arr = explode("/", substr($_SERVER["PHP_SELF"], 1));
-    $arr = explode(".", $arr[1]);
+    $arr = explode(".", $arr[count($arr) - 1]);
     $langpage = $fwng_root . $arr[0] . "/";
 }
 
