@@ -352,7 +352,7 @@ function res_show( $res_set, $what, $search=null )
     switch ($what)
     {
         case 'l':
-            $title = gettext( 'Listing groups' );
+            $title = "<img src=\"" . $fwng_root . "images/icons/magnify.png\" />" . gettext( 'Listing groups' );
             $total = 0;
             $content = "<div align=\"left\">\n";
             for ( $i = 0, $j = 1; $i < count( $res_set ); $i++, $j++ )
@@ -364,9 +364,9 @@ function res_show( $res_set, $what, $search=null )
             fwemptybox($title, $content);
             break;
         case 'g':
-            $title = gettext( 'Listing contents of group:' ). " " . $search;
+            $title = "<img src=\"" . $fwng_root . "images/icons/magnify.png\" />" . gettext( 'Listing contents of group:' ). " " . $search;
         case 'p':
-            if(!isset($title)) $title = gettext("Search result for:")." ".$search;
+            if(!isset($title)) $title = "<img src=\"" . $fwng_root . "images/icons/magnify.png\" />" . gettext("Search result for:")." ".$search;
             $titleprefix = "Search  results for $search - ";
             $content = "<div align=\"left\">\n";
             for ($i=0,$j=1;$i<count($res_set);$i++,$j++) {
@@ -376,7 +376,7 @@ function res_show( $res_set, $what, $search=null )
             fwemptybox($title, $content);
             break;
         case 'f':
-            $title = gettext("Search result for:")." ".$search;
+            $title = "<img src=\"" . $fwng_root . "images/icons/magnify.png\" />" . gettext("Search result for:")." ".$search;
             $content = "<div align=\"left\">\n";
             for ($i=0,$j=1;$i<count($res_set);$i++,$j++) {
                 $content .= "<p>".$j.". <a href=\"/packages/".$res_set[$i]['id']."/files\">".$res_set[$i]['pkgname']."</a> ".$res_set[$i]['pkgver']."<br />".gettext("Version:")." ".$res_set[$i]['fwver']."; ".gettext("Architecture:")." ".$res_set[$i]['arch']."</p>\n";

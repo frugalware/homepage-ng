@@ -16,8 +16,7 @@ $fwng_root = $http_mode . "://" . $_SERVER["SERVER_NAME"] . "/";
 
 $adodb_path = "/usr/share/php";
 $trans_path="/home/ftp/pub/other/translations/";
-//~ $top_path = "/home/ftp/pub/frugalware/frugalware-current";
-$top_path = $fwng_root."static";
+$top_path = "/home/ftp/pub/frugalware/frugalware-current";
 $cache_path = "/var/cache/homepage";
 $docs_path = $top_path."/docs";
 $top_path_stable = "/home/ftp/pub/frugalware/frugalware-stable";
