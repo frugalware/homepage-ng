@@ -38,6 +38,8 @@ $path = $cache_path . "/" . sha1(str_replace('&cache=no', '', $_SERVER['REQUEST_
 if(file_exists($path))
     $info = stat($path);
 
+date_default_timezone_set('America/New_York');
+
 if((isset($_GET['cache']) and $_GET['cache'] != "no") and isset($info) and ((time() - $info["mtime"])<$rsscachetimeout))
     print(file_get_contents($path));
 else
@@ -55,7 +57,7 @@ else
             $parser->Parse();
             $releases = $parser->document->release;
             $handle['title']="Frugalware Linux Releases";
-            $handle['desc']="Frugalware Linux is general purpose Linux distribution designed for intermediate users. Some of its elements were borrowed from Slackware Linux and Arch Linux.";
+            $handle['desc']="Frugalware Linux is general purpose Linux distribution designed for intermediate users.";
             $handle['link']="http://frugalware.org/";
             for ( $i=0; $i < count($releases); $i++)
             {

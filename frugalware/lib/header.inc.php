@@ -128,7 +128,7 @@ function genHeader($usegettext = true) {
         if (!empty($pkgs)) {
             foreach($pkgs as $i) {
 
-                fwrite($fp, "<a href=\"${fwng_root}packages/${i['id']}\">${i['pkgname']}<span style=\"float: right;\">${i['pkgver']}-${i['arch']}</span></a><br />\n");
+                fwrite($fp, "<a href=\"${fwng_root}packages/${i['id']}\">${i['pkgname']} <span style=\"float: right;\">${i['pkgver']}-${i['arch']}</span></a><br />\n");
 
             }
         }
@@ -193,13 +193,13 @@ function genHeader($usegettext = true) {
         $data["download"] .= showGetWidget ("current", $currentversion, $currentnumber, $currentdate, $dlnbr, $mirrorLangs[$dlid]);
 
     $data["download"] .= "
-                    <div align=\"right\"><a href=\"" . $fwng_root . "docs.php\">" . gettext("See documentation") . "</a> - <a href=\"" . $fwng_root . "download.php\">" . gettext("Other mirrors") . "</a></div>";
+                    <div align=\"right\"><a href=\"" . $fwng_root . "docs\">" . gettext("See documentation") . "</a> - <a href=\"" . $fwng_root . "download\">" . gettext("Other mirrors") . "</a></div>";
 
     // IRC
     if (file_exists('./static/irc.inc.html')) {
         $irc = file_get_contents('./static/irc.inc.html');
         $data["irc"] = $irc;
-        $data["irc"] .= "<div align=\"right\"><a href=\"" . $fwng_root . "irc.php\">" . gettext("More informations") . "</a></div>";
+        $data["irc"] .= "<div align=\"right\"><a href=\"" . $fwng_root . "irc\">" . gettext("More informations") . "</a></div>";
     } else
         $data["irc"] = "";
 

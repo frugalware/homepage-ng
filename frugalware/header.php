@@ -4,7 +4,7 @@
     include("lib/header.inc.php");
     $data = genHeader();
 
-    $rsspath = $_SERVER["SERVER_NAME"] . $fwng_root;
+    $rsspath = $fwng_root;
 ?>
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $lang; ?>" lang="<?php echo $lang; ?>">
@@ -16,10 +16,11 @@
     <meta name="description" content="Frugalware Linux, a general purpose linux distribution, designed for intermediate users."/>
     <meta name="viewport" content="width=device-width; initial-scale=1.0;">
     <link rel="icon" href="<?php echo $fwng_root; ?>images/favicon.ico" />
+    <base href="<?php echo $fwng_root; ?>">
 
     <!-- RSS -->
-    <link rel="alternate" type="application/rss+xml" title="Frugalware news" href="<?php echo $fwng_root; ?>rss/news" />
-    <link rel="alternate" type="application/rss+xml" title="Frugalware packages" href="<?php echo $fwng_root; ?>rss/packages" />
+    <link rel="alternate" type="application/rss+xml" title="Frugalware news" href="http://<?php print $rsspath; ?>rss/news" />
+    <link rel="alternate" type="application/rss+xml" title="Frugalware packages" href="http://<?php print $rsspath; ?>rss/packages" />
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" media="screen" href="<?php echo $fwng_root; ?>static/css/common.css" />
@@ -104,7 +105,7 @@
                 fwsidebox(gettext("Get Frugalware"), $data['download']);
 
                 // Packages
-                fwsidebox("<a href=\"${fwng_root}rss/releases\"><img src=\"${fwng_root}images/icons/rss.png\" width=\"16\" alt=\"\" /></a> " . gettext("Recent updates"), $data['packages']);
+                fwsidebox("<a href=\"${fwng_root}rss/releases\"><img src=\"images/icons/rss.png\" width=\"16\" alt=\"\" /></a> " . gettext("Recent updates"), $data['packages']);
 
                 // IRC
                 fwsidebox(gettext("IRC"), $data['irc']);

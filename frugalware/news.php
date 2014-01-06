@@ -152,21 +152,21 @@ if ($id == -1) {
     if ($page > 1)
         print "<a href=\"" . $fwng_root . "news\">« " . gettext("First") . "</a>";
     if ($page > 2)
-        print "<a href=\"" . $fwng_root . "news?page=" . ($page - 1) . "\">" . gettext("Previous") . "</a>";
+        print "<a href=\"" . $fwng_root . "news/page/" . ($page - 1) . "\">" . gettext("Previous") . "</a>";
 
     // Page
     for ($i=1; $i<=$nbrPages; $i++) {
         if ($i == $page)
             print "<b>" . ($i) . "</b>";
         else
-            print "<a href=\"" . $fwng_root . "news?page=" . ($i) . "\">" . ($i) . "</a>";
+            print "<a href=\"" . $fwng_root . "news/page/" . ($i) . "\">" . ($i) . "</a>";
     }
 
     // Next and last
     if ($page < $nbrPages - 1)
-        print "<a href=\"" . $fwng_root . "news?page=" . ($page + 1) . "\">" . gettext("Next") . "</a>";
+        print "<a href=\"" . $fwng_root . "news/page/" . ($page + 1) . "\">" . gettext("Next") . "</a>";
     if ($page < $nbrPages)
-        print "<a href=\"" . $fwng_root . "news?page=" . $nbrPages . "\">" . gettext("Last") . " »</a>";
+        print "<a href=\"" . $fwng_root . "news/page/" . $nbrPages . "\">" . gettext("Last") . " »</a>";
 
     print "</div>";
 }
@@ -180,7 +180,7 @@ else
     if ($page == 0)
         $page = 1;
 
-    print "<div class=\"link\"><a href=\"" . $fwng_root . "news?page=" . $page . "\">&lt; " . gettext("Back to the news list") . "</a></div>";
+    print "<div class=\"link\"><a href=\"" . $fwng_root . "news.php?page=" . $page . "\">&lt; " . gettext("Back to the news list") . "</a></div>";
 
     $indextrad = 0;
 

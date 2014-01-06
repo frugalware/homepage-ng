@@ -11,13 +11,13 @@ $sqlpass = "85Tdjf{Od";
 $sqldb = "frugalware2";
 
 # FWNG SETTINGS
-// $myurl = "https://frugalware.org";
-$protocol = strpos(strtolower($_SERVER['SERVER_PROTOCOL']),'https') === FALSE ? 'http' : 'https';
-$myurl = $protocol . "://" . $_SERVER['HTTP_HOST'];
-$fwng_root = $myurl."/";
+$http_mode = ($_SERVER['HTTPS'] == "on" ? 'https' : 'http');
+$fwng_root = $http_mode . "://" . $_SERVER["SERVER_NAME"] . "/";
+
 $adodb_path = "/usr/share/php";
 $trans_path="/home/ftp/pub/other/translations/";
-$top_path = "/home/ftp/pub/frugalware/frugalware-current";
+//~ $top_path = "/home/ftp/pub/frugalware/frugalware-current";
+$top_path = $fwng_root."static";
 $cache_path = "/var/cache/homepage";
 $docs_path = $top_path."/docs";
 $top_path_stable = "/home/ftp/pub/frugalware/frugalware-stable";
@@ -32,7 +32,7 @@ $upfile = "/proc/uptime";
 # MODIFIABLE VARS
 $title = "Frugalware";
 $slogan = "Let's make things frugal!";
-$copydate = "2003-2013";
+$copydate = "2003-2014";
 $domain = 'homepage';
 $defaultMirror = "ie"; // Ireland
 
@@ -66,17 +66,29 @@ for ( $i = 0; $i < count($menu); $i++) {
         for ($j = 0; $j < count($menu[$i]->submenus[0]->_sublink); $j++) {
 
             // Check if this is an empty sublink
-            if (!empty($menu[$i]->submenus[0]->_sublink[$j]->tagData))
+            if (!empty($menu[$i]->submenus[0]->_sublink[$j]->tagData)) {
                 // It's a submenu
+                $checkUrl = explode("://", $menu[$i]->submenus[0]->_sublink[$j]->tagAttrs['url']);
+                $menuUrl = $fwng_root;
+                if ($checkUrl[0] == "https" || $checkUrl[0] == "ftp" || $checkUrl[0] == "http")
+                    $menuUrl = "";
+
                 $menucontent .= "\t\t\t\t\t<li><a href=\"" . $menu[$i]->submenus[0]->_sublink[$j]->tagAttrs['url'] . "\">" . gettext($menu[$i]->submenus[0]->_sublink[$j]->tagData) . "</a></li>\n";
+            }
             else
                 // It's a <hr />
                 $menucontent .= "\t\t\t\t\t<li><hr /></li>\n";
         }
         $menucontent .= "\t\t\t\t</ul>\n\t\t\t</li>\n";
     }
-    else
+    else {
+        $checkUrl = explode("://", $menu[$i]->submenus[0]->_sublink[$j]->tagAttrs['url']);
+        $menuUrl = $fwng_root;
+        if ($checkUrl[0] == "https" || $checkUrl[0] == "ftp" || $checkUrl[0] == "http")
+            $menuUrl = "";
+
         $menucontent .= "\t\t\t<li><a href=\"" . $menu[$i]->_link[0]->tagAttrs['url'] . "\">" . gettext($menu[$i]->_link[0]->tagData) . "</a></li>\n";
+    }
 }
 $menucontent .= "\t\t</ul>\n";
 

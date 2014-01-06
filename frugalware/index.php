@@ -138,7 +138,7 @@ print "</section>";
 
 // Link to news list
 print "<div class=\"link\">
-    <a href=\"" . $fwng_root . "news\">» " .gettext("Read older news") . "</a>
+    <a href=\"" . $fwng_root . "news.php\">» " .gettext("Read older news") . "</a>
 </div>";
 
 include("footer.php");

@@ -42,8 +42,8 @@ if((count($params)==0) or (!in_array($params[0], $pages)))
     $page="index";
 else
 {
-    $page = "news";
-    // array_shift($params);
+    $page = $params[0];
+    array_shift($params);
 }
 
 // do we have any parameter?
@@ -57,17 +57,18 @@ if(count($params)>0)
     else if($page=="download")
         // don't use $params[0] since the path can contain slashes
         $urlsuffix="?url=".substr(trim(addslashes(stripslashes($_SERVER["PATH_INFO"])), "/"), 9);
-    // else if($page=="index")
-    // {
-        // $urlsuffix="?id=".$params[0];
-    // }
-    else if($page=="news")
+    else if($page=="index")
     {
         $urlsuffix="?id=".$params[0];
     }
-    else if($page=="newsletter")
+    else if($page=="news")
     {
-        $urlsuffix="?id=".$params[0];
+        if (empty($params[1]))
+           $urlsuffix = "?id=".$params[0];
+
+        else
+           $urlsuffix = "?page=".$params[1];
+
     }
     else if($page=="security")
     {
@@ -116,8 +117,7 @@ if($_SERVER["QUERY_STRING"]!="")
 }
 
 // build the url
-// $url="http://" . $_SERVER["SERVER_NAME"] . "$fwng_root$page.php$urlsuffix";
-$url = "$fwng_root$page.php$urlsuffix";
+$url = $fwng_root . $page".php" . $urlsuffix;
 
 if(isset($lang))
     $lang = getlang($lang);

@@ -82,7 +82,7 @@ function showAbout ($content, $showScreenshot=true)
         print "
                 <div id=\"slideshow\" align=\"center\">";
 
-        if ($screenshot_dir = opendir($fwng_root."images/users_screenshots/"))
+        if ($screenshot_dir = opendir("images/users_screenshots/"))
         {
 
             print '
@@ -100,9 +100,10 @@ function showAbout ($content, $showScreenshot=true)
                 }
             }
             print "
-                    </ul>
-                </div>";
+                    </ul>";
         }
+        print "
+                </div>";
     }
     print $content . "
             </div>";
@@ -189,29 +190,10 @@ function showListNews ($post)
     global $fwng_root;
 
     print "<tr>
-        <td><img src=\"" . $post['icon'] . "\" /></td><td><a href=\"" . $fwng_root . "news.php?id=" . $post['id'] . "\">" . $post['title'] . "</a></td><td>" . $post['date'] . "</td><td>" . $post['author'] . "</td>
+        <td><img src=\"" . $post['icon'] . "\" /></td><td><a href=\"" . $fwng_root . "news/" . $post['id'] . "\">" . $post['title'] . "</a></td><td>" . $post['date'] . "</td><td>" . $post['author'] . "</td>
     </tr>";
 }
 
-// $data["download"] = "
-                    // <h3>" . gettext("Stable version") . " - " . $stableversion . "</h3>
-                    // <h4>" . gettext("Released on") . " " . $stabledate . "</h4>
-                    // <div id=\"dllists\">
-                        // <div class=\"dllist\">
-                            // <h6>32bits</h6>
-                            // <ul>
-                                // <li>CD <a href=\"ftp://ftp". $dlpath ."-i686-cd1.iso\">ftp</a>/<a href=\"http://www". $dlpath ."-i686-cd1.iso\">http</a></li>
-                                // <li>DVD <a href=\"ftp://ftp". $dlpath . "-i686-dvd1.iso\">ftp</a>/<a href=\"http://www". $dlpath . "-i686-dvd1.iso\">http</a></li>
-                            // </ul>
-                        // </div>
-                        // <div class=\"dllist\">
-                            // <h6>64bits</h6>
-                            // <ul>
-                                // <li>CD <a href=\"ftp://ftp". $dlpath ."-x86_64-cd1.iso\">ftp</a>/<a href=\"http://www". $dlpath ."-x86_64-cd1.iso\">http</a></li>
-                                // <li>DVD <a href=\"ftp://ftp". $dlpath . "-x86_64-dvd1.iso\">ftp</a>/<a href=\"http://www". $dlpath . "-x86_64-dvd1.iso\">http</a></li>
-                            // </ul>
-                        // </div>
-                    // </div>\n";
 
 function showGetWidget ($mode, $version, $number, $date, $id, $mirror)
 {
