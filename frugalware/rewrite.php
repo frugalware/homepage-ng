@@ -117,7 +117,7 @@ if($_SERVER["QUERY_STRING"]!="")
 }
 
 // build the url
-$url = $fwng_root . $page".php" . $urlsuffix;
+$url = $fwng_root . $page . ".php" . $urlsuffix;
 
 if(isset($lang))
     $lang = getlang($lang);
