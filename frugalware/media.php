@@ -19,7 +19,7 @@
  */
 
 // Include some useful functions and the config
-include('functions.inc.php');
+include('lib/functions.inc.php');
 
 $lang = getlang();
 $llang = getllang($lang);
@@ -29,28 +29,28 @@ $domain = "homepage";
 set_locale($llang, $domain);
 
 // Let's start the page
-include('config.inc.php');
+include('lib/config.inc.php');
 include('header.php');
 
 // This includes the XML parser
-include('xml.inc.php');
+include('lib/xml.inc.php');
 
 // Let's see whether the media file exist or not
 $flang = ( $lang == 'en' ) ? "" : "_$lang";
 if (file_exists('xml/media.xml'))
-	$xmlfile = 'xml/media.xml';
+    $xmlfile = 'xml/media.xml';
 else
-	$xmlfile = $docs_path.'xml/media.xml';
+    $xmlfile = $docs_path.'xml/media.xml';
 if (!file_exists($xmlfile)) {
 
-	echo(gettext('Sorry, a media file has not been written yet.'));
-	include('footer.php');
-	die();
+    echo(gettext('Sorry, a media file has not been written yet.'));
+    include('footer.php');
+    die();
 
 }
 
-fwmiddlebox(gettext('Frugalware in the press'),
-	gettext('This page contains details about some of the articles that have been posted on the Internet about Frugalware. If you find an article not listed here, please tell us about it!'));
+fwemptybox("<img src=\"" . $fwng_root . "images/icons/press.png\" />" . gettext('Frugalware in the press'),
+    gettext('This page contains details about some of the articles that have been posted on the Internet about Frugalware. If you find an article not listed here, please tell us about it!'));
 
 $xml = file_get_contents($xmlfile);
 $parser = new XMLParser($xml);
@@ -60,24 +60,24 @@ $media = $parser->document->article;
 // The parser creates too long and unuseful object hierarchy, so create a better-readable one.
 for ( $i = 0; $i < count($media); $i++) {
 
-	$articles[$i][date] = $media[$i]->date[0]->tagData;
-	$articles[$i][language] = $media[$i]->language[0]->tagData;
-	$articles[$i][where] = $media[$i]->where[0]->tagData;
-	$articles[$i][title] = $media[$i]->title[0]->tagData;
-	$articles[$i][link] = $media[$i]->link[0]->tagData;
+    $articles[$i]['date'] = $media[$i]->date[0]->tagData;
+    $articles[$i]['language'] = $media[$i]->language[0]->tagData;
+    $articles[$i]['where'] = $media[$i]->where[0]->tagData;
+    $articles[$i]['title'] = $media[$i]->title[0]->tagData;
+    $articles[$i]['link'] = $media[$i]->link[0]->tagData;
 
 }
 
 // Let's write out details of each article in a separate box
 for( $i = 0; $i < count($articles); $i++ ) {
 
-	fwmiddlebox($articles[$i][where] . ' - ' . $articles[$i][title],
-		'<table width="100%">
-		<tr><td width="30%">' . gettext('Title') . ':</td><td width="70%">' . $articles[$i][title] . '</td></tr>
-		<tr><td>' . gettext('Where') . ':</td><td>' . $articles[$i][where] . '</td></tr>
-		<tr><td>' . gettext('Date') . ':</td><td>' . $articles[$i][date] . '</td></tr>
-		<tr><td>' . gettext('Language') . ':</td><td>' . $articles[$i][language] . '</td></tr>
-		<tr><td>' . gettext('Link') . ':</td><td><a href="' . htmlentities($articles[$i][link]) . '">' . htmlentities($articles[$i][link]) . '</a></td></tr></table>');
+    fwmiddlebox($articles[$i]['where'] . ' - ' . $articles[$i]['title'],
+        '<table width="100%">
+        <tr><td width="150px"><b>' . gettext('Title') . '</b>:</td><td>' . $articles[$i]['title'] . '</td></tr>
+        <tr><td><b>' . gettext('Where') . '</b>:</td><td>' . $articles[$i]['where'] . '</td></tr>
+        <tr><td><b>' . gettext('Date') . '</b>:</td><td>' . $articles[$i]['date'] . '</td></tr>
+        <tr><td><b>' . gettext('Language') . '</b>:</td><td>' . $articles[$i]['language'] . '</td></tr>
+        <tr><td><b>' . gettext('Link') . '</b>:</td><td><a href="' . htmlentities($articles[$i]['link']) . '">' . htmlentities($articles[$i]['link']) . '</a></td></tr></table>');
 
 }
 

@@ -22,7 +22,7 @@
  */
 
 // include some useful functions
-include("functions.inc.php");
+include("lib/functions.inc.php");
 
 $lang = getlang();
 $llang = getllang($lang);
@@ -32,114 +32,65 @@ $domain = "homepage";
 set_locale($llang, $domain);
 
 // include the config and let's start page
-include("config.inc.php");
+include("lib/config.inc.php");
 include("header.php");
 
 function dcmp($a, $b)
 {
-	$a = preg_replace("/3-0-([0-9]*)-([0-9]*)-([0-9]*)\.html/", "$2", $a);
-	$b = preg_replace("/3-0-([0-9]*)-([0-9]*)-([0-9]*)\.html/", "$2", $b);
-	return ($a < $b) ? -1 : 1;
+    $a = preg_replace("/3-0-([0-9]*)-([0-9]*)-([0-9]*)\.html/", "$2", $a);
+    $b = preg_replace("/3-0-([0-9]*)-([0-9]*)-([0-9]*)\.html/", "$2", $b);
+    return ($a < $b) ? -1 : 1;
 }
 
 function mcmp($a, $b)
 {
-	$ayear = preg_replace("/(.*)-.*/", "$1", $a);
-	$byear = preg_replace("/(.*)-.*/", "$1", $b);
-	if($ayear==$byear)
-	{
-		$amonth = preg_replace("/.*-(.*)/", "$1", $a);
-		$bmonth = preg_replace("/.*-(.*)/", "$1", $b);
-		return ($amonth < $bmonth) ? 1 : -1;
-	}
-	else
-		return ($ayear < $byear) ? 1 : -1;
+    $ayear = preg_replace("/(.*)-.*/", "$1", $a);
+    $byear = preg_replace("/(.*)-.*/", "$1", $b);
+    if($ayear==$byear)
+    {
+        $amonth = preg_replace("/.*-(.*)/", "$1", $a);
+        $bmonth = preg_replace("/.*-(.*)/", "$1", $b);
+        return ($amonth < $bmonth) ? 1 : -1;
+    }
+    else
+        return ($ayear < $byear) ? 1 : -1;
 }
 
-fwmiddlebox(gettext("General information"), gettext("Our irc channel is on the freenode network (server: irc.freenode.net), at #frugalware. This is the official Frugalware Linux irc help station. See the <a href=\"/docs/irc-rules#_irc_channels\">documentation</a> about non-English channels."));
+print "<h2><img src=\"" . $fwng_root . "images/icons/irc.png\" />" . gettext("Join us on IRC") . "</h2>";
 
-$ircont = "
-<!-- This is part of CGI:IRC 0.5
-  == http://cgiirc.sourceforge.net/
-  == Copyright (C) 2000-2005 David Leadbeater <cgiirc@dgl.cx>
-  == Released under the GNU GPL
--->
+$content = gettext("Our irc channel is on the freenode network (server: irc.freenode.net), at #frugalware. This is the official Frugalware Linux irc help station.") . "<br />
+<br/>
+<b>Network server</b>:
+<ul>
+<li>irc.freenode.net</li>
+</ul>
+<b>Channel list</b>:
+<ul>
+<li><span style=\"color: #004D99\">#frugalware</span> (English channel)</li>
+<li><span style=\"color: #004D99\">#frugalware.fr</span> (French channel)</li>
+<li><span style=\"color: #004D99\">#frugalware.hu</span> (Hungarian channel)</li>
+</ul>
+See the <a href=\"/docs/irc-rules#_irc_channels\">documentation</a> for more informations.";
 
-<script language=\"JavaScript\" type=\"text/javascript\">
-<!--
-function setjs() {
-	if (navigator.product == 'Gecko')
-	{
-		document.loginform[\"interface\"].value = 'mozilla';
-	}
-	else
-		if (window.opera && document.childNodes)
-		{
-			document.loginform[\"interface\"].value = 'opera7';
-	 	}
-		else
-			if (navigator.appName == 'Microsoft Internet Explorer' && navigator.userAgent.indexOf(\"Mac_PowerPC\") > 0)
-			{
-				document.loginform[\"interface\"].value = 'konqueror';
- 			}
-			else
-				if (navigator.appName == 'Microsoft Internet Explorer' && document.getElementById && document.getElementById('ietest').innerHTML)
-				{
-					document.loginform[\"interface\"].value = 'ie';
-				}
-				else
-					if (navigator.appName == 'Konqueror')
-					{
-						document.loginform[\"interface\"].value = 'konqueror';
- 					}
-					else
-						if (window.opera)
-						{
-							document.loginform[\"interface\"].value = 'opera';
-						}
-}
-function nickvalid() {
-	var nick = document.loginform.Nickname.value;
-	if (nick.match(/^[A-Za-z0-9\[\]\{\}^\\\|\_\-`]{1,32}$/))
-		return true;
-	alert('".gettext("Please enter a valid nickname")."');
-	document.loginform.Nickname.value = nick.replace(/[^A-Za-z0-9\[\]\{\}^\\\|\_\-`]/g, '');
-	return false;
-}
-function setcharset() {
-	if(document.charset && document.loginform[\"Character set\"])
-		document.loginform['Character set'].value = document.charset
-}
-setcharset();
--->
-</script>
-<form method=\"post\" action=\"http://frugalware.org/cgiirc/irc.cgi\" name=\"loginform\" onsubmit=\"setjs();return nickvalid()\">
-<input type=\"hidden\" name=\"interface\" value=\"nonjs\" />
-<div align=\"center\">
-<table border=\"0\" cellpadding=\"5\" cellspacing=\"0\">
-  <tr>
-    <td align=\"right\">".gettext("Nickname:")."</td>
-    <td align=\"left\"><input type=\"text\" name=\"Nickname\" value=\"\" /></td>
-  </tr>
-  <tr>
-    <td align=\"right\">".gettext("Server:")."</td>
-    <td align=\"left\"><input type=\"text\" name=\"Server\" value=\"irc.freenode.net\" disabled=\"disabled\" /></td>
-  </tr>
-  <tr>
-    <td align=\"right\">".gettext("Channel:")."</td>
-    <td align=\"left\"><input type=\"text\" name=\"Channel\" value=\"#frugalware\" disabled=\"disabled\" /></td>
-  </tr>
-  <tr>
-    <td align=\"left\"><small><a href=\"http://frugalware.org/cgiirc/irc.cgi?adv=1\">".gettext("Advanced...")."</a></small></td>
-    <td align=\"right\"><input type=\"submit\" value=\"".gettext("Login")."\" /></td>
-  </tr>
-</table>
-</div>
-</form>\n";
+fwmiddlebox(gettext("General information"), "<p>" . $content . "</p>");
 
-fwmiddlebox(gettext("Login via web"), $ircont);
+$content = gettext("To join a channel, you must use a client.") . "<br/><br/>
+<b>Web client</b>:
+<ul>
+<li><a href=\"http://webchat.freenode.net\">http://webchat.freenode.net</a></li>
+</ul>
+<b>Desktop client</b>:
+<ul>
+<li>Hexchat (<a href=\"http://hexchat.github.io\">http://hexchat.github.io</a>)</li>
+<li>Irssi (<a href=\"http://www.irssi.org\">http://www.irssi.org</a>)</li>
+<li>Konversation (<a href=\"http://konversation.kde.org\">http://konversation.kde.org</a>)</li>
+<li>Quassel (<a href=\"http://www.quassel-irc.org\">http://www.quassel-irc.org</a>)</li>
+<li>Weechat (<a href=\"http://www.weechat.org\">http://www.weechat.org</a>)</li>
+</ul>";
 
-fwmiddlebox(gettext("Support channel logs"), sprintf(gettext("Our support channels are logged and the logs are available <a href=\"%s\">here</a>."), "http://ftp.frugalware.org/pub/other/irclogs"));
+fwmiddlebox(gettext("Join a channel"), "<p>" . $content . "</p>");
+
+fwemptybox("<img src=\"" . $fwng_root . "images/icons/log.png\" />" . gettext("Support channel logs"), sprintf(gettext("Our support channels are logged and the logs are available <a href=\"%s\">here</a>."), "http://ftp.frugalware.org/pub/other/irclogs"));
 
 include("footer.php");
 ?>

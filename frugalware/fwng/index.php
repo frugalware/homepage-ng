@@ -96,7 +96,7 @@ for ( $i=0; $i<$news_limit; $i++)
         $show = "";
 
     $posts[$i]['id'] = $newpost->id[0]->tagData;
-    $posts[$i]['title'] = "<a class=\"boxheader\" href=\"" . $fwng_root . "news.php?id=" . $newpost->id[0]->tagData . "\"><img class=\"face\" src=\"" . $posts[$i]['icon'] . "\" width=\"16\" alt=\"\" /> " . $newpost->title[0]->tagData."</a> " . $show;
+    $posts[$i]['title'] = "<a class=\"boxheader\" href=\"" . $fwng_root . "news/" . $newpost->id[0]->tagData . "\"><img class=\"face\" src=\"" . $posts[$i]['icon'] . "\" width=\"16\" alt=\"\" /> " . $newpost->title[0]->tagData."</a> " . $show;
 
     date_default_timezone_set('America/New_York');
     $date = new DateTime($newpost->date[0]->tagData);
@@ -138,7 +138,7 @@ print "</section>";
 
 // Link to news list
 print "<div class=\"link\">
-    <a href=\"" . $fwng_root . "news.php\">» " .gettext("Read older news") . "</a>
+    <a href=\"" . $fwng_root . "news\">» " .gettext("Read older news") . "</a>
 </div>";
 
 include("footer.php");

@@ -24,7 +24,7 @@
  */
 
 // Include some useful functions and the config
-include('functions.inc.php');
+include('lib/functions.inc.php');
 
 // Some definitions
 $lang = getlang();
@@ -35,22 +35,22 @@ $domain = "homepage";
 set_locale($llang, $domain);
 
 // Let's start the page
-include('config.inc.php');
+include('lib/config.inc.php');
 include('header.php');
 
 // This includes the XML parser
-include('xml.inc.php');
+include('lib/xml.inc.php');
 
 // Let's see whether the roadmap file exists or not
 if (file_exists('xml/roadmap.xml'))
-	$xmlfile = 'xml/roadmap.xml';
+    $xmlfile = 'xml/roadmap.xml';
 else
-	$xmlfile = $docs_path.'xml/roadmap.xml';
+    $xmlfile = $docs_path.'xml/roadmap.xml';
 if (!file_exists($xmlfile)) {
 
-	echo(gettext('Sorry, a roadmap has not been written yet.'));
-	include('footer.php');
-	die();
+    echo(gettext('Sorry, a roadmap has not been written yet.'));
+    include('footer.php');
+    die();
 
 }
 
@@ -62,42 +62,51 @@ $roadmap = $parser->document->release;
 // The parser creates a too long and unuseful object hierarchy so create a better-readable one.
 for ( $i = 0; $i < count($roadmap); $i++) {
 
-	$releases[$i][name] = $roadmap[$i]->name[0]->tagData;
-	$releases[$i][definition] = $roadmap[$i]->definition[0]->tagData;
-	$releases[$i][version] = $roadmap[$i]->version[0]->tagData;
-	$releases[$i][date] = $roadmap[$i]->date[0]->tagData;
-	if ($roadmap[$i]->status[0]->tagData == 1)
-		$releases[$i][status] = gettext('done');
-	else
-		$releases[$i][status] = gettext('pending');
+    $releases[$i]['name'] = $roadmap[$i]->name[0]->tagData;
+    $releases[$i]['definition'] = $roadmap[$i]->definition[0]->tagData;
+    $releases[$i]['version'] = $roadmap[$i]->version[0]->tagData;
+    $releases[$i]['date'] = $roadmap[$i]->date[0]->tagData;
+    if ($roadmap[$i]->status[0]->tagData == 1)
+        $releases[$i]['status'] = gettext('done');
+    else
+        $releases[$i]['status'] = gettext('pending');
 
-	for ( $j=0; $j < count($roadmap[$i]->prerelease); $j++ ) {
+    for ( $j=0; $j < count($roadmap[$i]->prerelease); $j++ ) {
 
-		$releases[$i][prerelease][$j][preversion] = $roadmap[$i]->prerelease[$j]->preversion[0]->tagData;
-		$releases[$i][prerelease][$j][predate] = $roadmap[$i]->prerelease[$j]->predate[0]->tagData;
-		if ($roadmap[$i]->prerelease[$j]->prestatus[0]->tagData == 1)
-			$releases[$i][prerelease][$j][prestatus] = gettext('done');
-		else
-			$releases[$i][prerelease][$j][prestatus] = gettext('pending');
+        $releases[$i]['prerelease'][$j]['preversion'] = $roadmap[$i]->prerelease[$j]->preversion[0]->tagData;
+        $releases[$i]['prerelease'][$j]['predate'] = $roadmap[$i]->prerelease[$j]->predate[0]->tagData;
+        if ($roadmap[$i]->prerelease[$j]->prestatus[0]->tagData == 1)
+            $releases[$i]['prerelease'][$j]['prestatus'] = gettext('done');
+        else
+            $releases[$i]['prerelease'][$j]['prestatus'] = gettext('pending');
 
-	}
+    }
 
 }
 
 for( $i=0; $i < count($releases); $i++ ) {
 
-	$content = '<table width="100%">
-		<tr><td width="30%">' . $releases[$i][date] . '</td><td width="30%">' . $releases[$i][version] . '</td><td width="30%"><i>' . $releases[$i][status] . '</i></td></tr>';
+    $content = '<table width="100%"><tr><td width="30%">' . $releases[$i]['date'] . '</td><td width="30%">' . $releases[$i]['version'] . '</td><td width="30%"><i>' . $releases[$i]['status'] . '</i></td></tr>';
 
-	for ( $j=0; $j < count($releases[$i][prerelease]); $j++ ) {
+    for ( $j=0; $j < count($releases[$i]['prerelease']); $j++ ) {
 
-		$content .= '<tr><td>' . $releases[$i][prerelease][$j][predate] . '</td><td>' . $releases[$i][version] . $releases[$i][prerelease][$j][preversion] . '</td><td><i>' . $releases[$i][prerelease][$j][prestatus] . '</i></td></tr>';
+        $content .= '<tr><td>' . $releases[$i]['prerelease'][$j]['predate'] . '</td><td>' . $releases[$i]['version'] . $releases[$i]['prerelease'][$j]['preversion'] . '</td><td><i>' . $releases[$i]['prerelease'][$j]['prestatus'] . '</i></td></tr>';
 
-	}
+    }
 
-	$content .= '</table>';
-	fwmiddlebox($releases[$i][version] . ' (<acronym title="' . $releases[$i][definition] . '">' . $releases[$i][name] . '</acronym>)',
-		$content);
+    $content .= '</table>';
+
+    if ($i > 0)
+        $road = "<a class=\"road\" onclick=\"toggle_div(this, 'road" . $i ."', 0);\">" . $releases[$i]['version'] . " (" . $releases[$i]['name'] . ")</a>";
+    else
+        $road = $releases[$i]['version'] . " (" . $releases[$i]['name'] . ")";
+
+    if ($i == 0)
+        print "<h2><img src=\"" . $fwng_root . "images/icons/roadmap.png\" />" . gettext("Actual status") . "</h2>";
+    if ($i == 1)
+        print "<h2><img src=\"" . $fwng_root . "images/icons/news.png\" />" . gettext("Past versions") . "</h2>";
+
+    fwroadbox($road, $releases[$i]['definition'], $content, $i);
 
 }
 

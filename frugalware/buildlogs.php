@@ -18,7 +18,7 @@
  */
 
 // include some useful functions and the config
-include("functions.inc.php");
+include("lib/functions.inc.php");
 
 $lang = getlang();
 $llang = getllang($lang);
@@ -31,65 +31,65 @@ include("header.php");
 $logdir="/var/log/syncpkgd/clientlogs";
 if(!isset($_GET['client']))
 {
-	$clients = array();
-	if ($dir = @opendir($logdir))
-	{
-		while ($file = readdir($dir))
-			if ($file != "." and $file != ".." and is_dir($logdir . "/" . $file))
-				$clients[] = $file;
-		sort($clients);
-	}
-	$cstr = "<ul>";
-	foreach($clients as $i)
-		$cstr .= "<li><a href=\"/buildlogs/$i\">$i</a></li>";
-	$cstr .= "</ul><br />";
-	$cstr .= "<p>NOTE: These are only the failed build logs. Use the <a href=\"/packages\">package search page</a> to see the logs of successful builds.</p>";
-	fwmiddlebox("Syncpkg daemon failed build logs","$cstr");
+    $clients = array();
+    if ($dir = @opendir($logdir))
+    {
+        while ($file = readdir($dir))
+            if ($file != "." and $file != ".." and is_dir($logdir . "/" . $file))
+                $clients[] = $file;
+        sort($clients);
+    }
+    $cstr = "<ul>";
+    foreach($clients as $i)
+        $cstr .= "<li><a href=\"/buildlogs/$i\">$i</a></li>";
+    $cstr .= "</ul><br />";
+    $cstr .= "<p>NOTE: These are only the failed build logs. Use the <a href=\"/packages\">package search page</a> to see the logs of successful builds.</p>";
+    fwemptybox("<img src=\"" . $fwng_root . "images/icons/buildlogs.png\" />Syncpkg daemon failed build logs","$cstr");
 }
 else if(isset($_GET['client']) and !isset($_GET['log']))
 {
-	if(preg_match("/[a-zA-Z0-9]/", $_GET['client']))
-		$client = $_GET['client'];
-	else
-		die("invalid client name");
+    if(preg_match("/[a-zA-Z0-9]/", $_GET['client']))
+        $client = $_GET['client'];
+    else
+        die("invalid client name");
 
-	$logs = array();
-	if ($dir = @opendir("$logdir/$client"))
-	{
-		while ($file = readdir($dir))
-			if ($file != "." and $file != ".." and is_file("$logdir/$client/$file"))
-			{
-				$buf = stat("$logdir/$client/$file");
-				$logs[] = array($file, date("r",$buf["mtime"]));
-			}
-		sort($logs);
-	}
-	$lstr = "";
-	foreach($logs as $i)
-		$lstr .= "<li><a href=\"/buildlogs/$client/".$i[0]."\">".$i[0]."</a> (".$i[1].")</li>";
-	fwmiddlebox("Syncpkg daemon failed build logs","<ul>$lstr</ul>");
+    $logs = array();
+    if ($dir = @opendir("$logdir/$client"))
+    {
+        while ($file = readdir($dir))
+            if ($file != "." and $file != ".." and is_file("$logdir/$client/$file"))
+            {
+                $buf = stat("$logdir/$client/$file");
+                $logs[] = array($file, date("r",$buf["mtime"]));
+            }
+        sort($logs);
+    }
+    $lstr = "";
+    foreach($logs as $i)
+        $lstr .= "<li><a href=\"/buildlogs/$client/".$i[0]."\">".$i[0]."</a> (".$i[1].")</li>";
+    fwmiddlebox("<img src=\"" . $fwng_root . "images/icons/buildlogs.png\" />Syncpkg daemon failed build logs","<ul>$lstr</ul>");
 }
 else if(isset($_GET['client']) and isset($_GET['log']))
 {
-	if(preg_match("/\//", $_GET['log']))
-		die("invalid log name");
-	$client = $_GET['client'];
-	// silly automatic urldecode
-	$log = urlencode($_GET['log']);
-	$logfile = "$logdir/$client/$log";
+    if(preg_match("/\//", $_GET['log']))
+        die("invalid log name");
+    $client = $_GET['client'];
+    // silly automatic urldecode
+    $log = urlencode($_GET['log']);
+    $logfile = "$logdir/$client/$log";
 
-	print("<fieldset class=\"pkg\"><legend>".sprintf(gettext("Build log for %s"), basename($logfile, ".log"))."</legend>");
-	if(file_exists($logfile))
-	{
-		print("<pre class=\"buildlog\">");
-		$fp = fopen($logfile, "r");
-		while ($buffer = fread($fp, 4096))
-			print($buffer);
-		fclose($fp);
-		print("</pre>\n</fieldset>\n");
-	}
-	else
-		print(gettext("Sorry, currently no log available."));
+    print("<fieldset class=\"pkg\"><legend>".sprintf(gettext("Build log for %s"), basename($logfile, ".log"))."</legend>");
+    if(file_exists($logfile))
+    {
+        print("<pre class=\"buildlog\">");
+        $fp = fopen($logfile, "r");
+        while ($buffer = fread($fp, 4096))
+            print($buffer);
+        fclose($fp);
+        print("</pre>\n</fieldset>\n");
+    }
+    else
+        print(gettext("Sorry, currently no log available."));
 }
 include("footer.php");
 ?>

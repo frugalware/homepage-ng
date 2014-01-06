@@ -22,7 +22,7 @@
  */
 
 // include some useful functions
-include("functions.inc.php");
+include("lib/functions.inc.php");
 
 $lang = getlang();
 $llang = getllang($lang);
@@ -32,10 +32,10 @@ $domain = "homepage";
 set_locale($llang, $domain);
 
 // include the config and let's start page
-include("config.inc.php");
+include("lib/config.inc.php");
 include("header.php");
 
-$fwdonatewelcome = gettext("<div align=\"left\">Donations are a great way to show your appreciation
+$fwdonatewelcome = gettext("Donations are a great way to show your appreciation
 and support for Frugalware Linux. On this page we list the donations we have
 received so far and those that would help us in our work on Frugalware Linux.;
 If you have a piece of hardware or something whose Frugalware support could be
@@ -45,15 +45,15 @@ please send a mail to the <a href=\"http://frugalware.org/mailman/listinfo/fruga
 list, or if you do not wish to subscribe, send a mail directly to vmiklos_at_frugalware_dot_org.
 If you wish to donate something to an individual developer, see the <a href=\"/authors\">authors</a>
 page and send the developer a mail. You can also use the PayPal donate link on the side of the page
-if you wish to donate money.</div>");
+if you wish to donate money.");
 
-fwmiddlebox(gettext("Donations"), $fwdonatewelcome);
+fwemptybox("<img src=\"" . $fwng_root . "images/icons/donation.png\" />" . gettext("Donations"), $fwdonatewelcome);
 
-$fwadvert = '<div align="left"><a href="http://www.flosszine.org"><img src="images/flosszine_logo.png" border="0"/><br/>Hungarian online fanzine</a></div>';
+$fwadvert = '<a href="http://www.flosszine.org"><img src="images/data/flosszine_logo.png" border="0"/><br/>Hungarian online fanzine</a>';
 
 fwmiddlebox( gettext( 'Advertisers' ), $fwadvert );
 
-$cont1 = "<div align=\"left\">Received:<ul>
+$cont1 = "Received:<ul>
 <li>Socket939 Motherboard + AMD Athlon64 3000+ CPU Socket939 version + 512MB DDR400 RAM (x86_64 buildserver)</li>
 <li>Socket939 Motherboard + AMD Athlon64 3000+ CPU Socket939 version + 1GB DDR400 RAM (main server)</li>
 <li>Codegen case for the new x86_64 buildserver (Krisztian VASAS)</li>
@@ -72,12 +72,12 @@ $cont1 = "<div align=\"left\">Received:<ul>
 <li>Dell Optiplex P4 1.6GHz machine for main server - changed to i686 buildserver</li>
 <li>Mylex DAC960 SCSI card with 2x18GB HDD (will be the base system of our x86_64 buildserver) (from Locsei, Gabor)</li>
 <li>60GB Western Digital IDE HDD (from Michael Loomis)</li>
-</ul></div>";
+</ul>";
 fwmiddlebox(gettext("The Frugalware Team"), $cont1);
 
-$cont2 = "<div align=\"left\">Received:<ul>
+$cont2 = "Received:<ul>
 <li>Ati video card for fglrx package testing (David Kimpe)</li>
-</ul></div>";
+</ul>";
 fwmiddlebox("Andras Voroskoi", $cont2);
 
 $cont3 = "<div align=\"left\">Received:<ul>
@@ -85,16 +85,16 @@ $cont3 = "<div align=\"left\">Received:<ul>
 </ul></div>";
 fwmiddlebox("Miklos Vajna", $cont3);
 
-$cont4 = "<div align=\"left\"><ul>
-	<li>Arpad Bakos</li>
-	<li>Balazs Dianiska</li>
-	<li>Francois Biot</li>
-	<li>Sebastien Mazzucco</li>
-	<li>Distrowatch.com</li>
-	<li>Marius Cirsta</li>
-	<li>Jean-Pierre Le Leyzour</li>
-	<li>Mario Bonasoro</li>
-	</ul></div>";
+$cont4 = "<ul>
+    <li>Arpad Bakos</li>
+    <li>Balazs Dianiska</li>
+    <li>Francois Biot</li>
+    <li>Sebastien Mazzucco</li>
+    <li>Distrowatch.com</li>
+    <li>Marius Cirsta</li>
+    <li>Jean-Pierre Le Leyzour</li>
+    <li>Mario Bonasoro</li>
+    </ul>";
 fwmiddlebox("Monetary donations", $cont4);
 
 include("footer.php");
