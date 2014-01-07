@@ -44,7 +44,7 @@ if((isset($_GET['cache']) and $_GET['cache'] != "no") and isset($info) and ((tim
     print(file_get_contents($path));
 else
 {
-    switch(isset($_GET['type']))
+    switch($_GET['type'])
     {
         case "releases":
             include("lib/xml.inc.php");

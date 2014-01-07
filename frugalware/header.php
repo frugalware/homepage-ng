@@ -1,9 +1,8 @@
 <?php
     include("lib/header.inc.php");
     $data = genHeader();
-
-    $rsspath = $fwng_root;
 ?>
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $lang; ?>" lang="<?php echo $lang; ?>">
@@ -18,8 +17,8 @@
     <base href="<?php echo $fwng_root; ?>">
 
     <!-- RSS -->
-    <link rel="alternate" type="application/rss+xml" title="Frugalware news" href="http://<?php print $rsspath; ?>rss/news" />
-    <link rel="alternate" type="application/rss+xml" title="Frugalware packages" href="http://<?php print $rsspath; ?>rss/packages" />
+    <link rel="alternate" type="application/rss+xml" title="Frugalware news" href="<?php print $fwng_root; ?>rss/news" />
+    <link rel="alternate" type="application/rss+xml" title="Frugalware packages" href="<?php print $fwng_root; ?>rss/packages" />
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" media="screen" href="<?php echo $fwng_root; ?>static/css/common.css" />

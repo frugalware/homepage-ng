@@ -66,12 +66,7 @@ function main()
                     pkg_from_id($_GET['id']);
             }
             else {
-                if (isset($_GET['op'])) {
-                    if ($_GET['op'] != "groups" || $_GET['op'] != "file")
-                        pkg_from_id($_GET['id']);
-                }
-                else
-                    pkg_from_id($_GET['id']);
+                pkg_from_id($_GET['id']);
             }
         }
         else
@@ -374,7 +369,7 @@ function res_show( $res_set, $what, $search=null )
         case 'g':
             $title = gettext( 'Listing contents of group:' ). " " . $search;
         case 'p':
-            if(!isset($title)) $title = "<img src=\"" . $fwng_root . "images/icons/magnify.png\" />" . gettext("Search result for:")." ".$search;
+            if(!isset($title)) $title = gettext("Search result for:")." ".$search;
             $titleprefix = "Search  results for $search - ";
             $content = "<div align=\"left\">\n";
             for ($i=0,$j=1;$i<count($res_set);$i++,$j++) {
@@ -449,7 +444,7 @@ function pkg_from_id($id)
 
         $title = gettext("Package information:")." ".$arr['pkgname'];
         $content = "<table border=\"0\" width=\"100%\">\n";
-        $content .= "<tr><td>" . gettext("Name:") . "</td><td><a href=\"/packages/".$id."/files\">".$arr['pkgname']."</a></td></tr>\n";
+        $content .= "<tr><td width=220px>" . gettext("Name:") . "</td><td><a href=\"/packages/".$id."/files\">".$arr['pkgname']."</a></td></tr>\n";
         if ($arr['parent_id'] != 0 and $arr['parent_id'] != $id) $content .= "<tr><td>" . gettext("Parent:") . "</td><td><a href=\"/packages/" . $arr['parent_id']. "\">".$parent['pkgname']."</a></td></tr>\n";
         $content .= "<tr><td>" . gettext("Version:") . "</td><td>".$arr['pkgver']."</td></tr>\n";
         if(file_exists($top_path."/source/".$parent['group']."/".$parent['pkgname']."/".$parent['pkgname'].".html"))
@@ -560,18 +555,21 @@ function changelog_from_id($id)
 
         $slog = $parent['pkgname']."-".$arr['pkgver']."-".$arr['arch'];
         $log = str_replace("current", $arr['fwver'], $top_path)."/source/".$parent['group']."/".$parent['pkgname']."/Changelog";
-        print("<fieldset class=\"pkg\"><legend>".sprintf(gettext("Changelog for %s"), $slog)."</legend>");
+
+        $title = sprintf(gettext("Changelog for %s"), $slog);
         if(file_exists($log))
         {
-            print("<pre class=\"changelog\">");
             $fp = fopen($log, "r");
+
             while ($buffer = fread ($fp, 4096))
-                print($buffer);
+                $content .= print($buffer);
+
             fclose ($fp);
-            print("</pre>\n</fieldset>\n");
+
+            fwmiddlebox($title, $content)
         }
         else
-            print(gettext("Sorry, currently no log available."));
+            fwmiddlebox($title, gettext("Sorry, currently no log available."));
     }
     else
     {
@@ -609,18 +607,21 @@ function buildlog_from_id($id)
 
         $slog = $parent['pkgname']."-".$arr['pkgver']."-".$arr['arch'];
         $log = str_replace("current", $arr['fwver'], $top_path)."/source/".$parent['group']."/".$parent['pkgname']."/".$slog.".log.bz2";
-        print("<fieldset class=\"pkg\"><legend>".sprintf(gettext("Build log for %s"), $slog)."</legend>");
+
+        $title = sprintf(gettext("Build log for %s"), $slog);
         if(file_exists($log))
         {
-            print("<pre class=\"buildlog\">");
             $fp = bzopen($log, "r");
+
             while ($buffer = bzread ($fp, 4096))
-                print($buffer);
+                $content .= print($buffer);
+
             bzclose ($fp);
-            print("</pre>\n</fieldset>\n");
-        }
+
+            fwmiddlebox($title, $content)
+
         else
-            print(gettext("Sorry, currently no log available."));
+            fwmiddlebox( '', gettext("Sorry, currently no log available."));
     }
     else
     {
@@ -699,7 +700,7 @@ function file_from_id($id)
         $res = $db->doQuery("select file from files where pkg_id=$id");
         $title = gettext("File list for")." ".$arr['pkgname'];
         $content .= "<table border=0 width=100%>\n";
-        $content .= "<tr><td>Name:</td><td><a href=\"/packages/".$id."\">".$arr['pkgname']."</a></td></tr>\n";
+        $content .= "<tr><td width=120px> Name:</td><td><a href=\"/packages/".$id."\">".$arr['pkgname']."</a></td></tr>\n";
         $content .= "<tr><td>Version:</td><td>".$arr['pkgver']."</td></tr>\n";
         $content .= "<tr><td colspan=2>Files:</td></tr>\n";
         $files = explode("\n", substr($arr['files'], 0, -1));
