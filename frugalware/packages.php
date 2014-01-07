@@ -444,7 +444,7 @@ function pkg_from_id($id)
 
         $title = gettext("Package information:")." ".$arr['pkgname'];
         $content = "<table border=\"0\" width=\"100%\">\n";
-        $content .= "<tr><td width=220px>" . gettext("Name:") . "</td><td><a href=\"/packages/".$id."/files\">".$arr['pkgname']."</a></td></tr>\n";
+        $content .= "<tr><td>" . gettext("Name:") . "</td><td><a href=\"/packages/".$id."/files\">".$arr['pkgname']."</a></td></tr>\n";
         if ($arr['parent_id'] != 0 and $arr['parent_id'] != $id) $content .= "<tr><td>" . gettext("Parent:") . "</td><td><a href=\"/packages/" . $arr['parent_id']. "\">".$parent['pkgname']."</a></td></tr>\n";
         $content .= "<tr><td>" . gettext("Version:") . "</td><td>".$arr['pkgver']."</td></tr>\n";
         if(file_exists($top_path."/source/".$parent['group']."/".$parent['pkgname']."/".$parent['pkgname'].".html"))
@@ -619,6 +619,7 @@ function buildlog_from_id($id)
             bzclose ($fp);
 
             fwmiddlebox($title, $content)
+        }
 
         else
             fwmiddlebox( '', gettext("Sorry, currently no log available."));
@@ -700,7 +701,7 @@ function file_from_id($id)
         $res = $db->doQuery("select file from files where pkg_id=$id");
         $title = gettext("File list for")." ".$arr['pkgname'];
         $content .= "<table border=0 width=100%>\n";
-        $content .= "<tr><td width=120px> Name:</td><td><a href=\"/packages/".$id."\">".$arr['pkgname']."</a></td></tr>\n";
+        $content .= "<tr><td>Name:</td><td><a href=\"/packages/".$id."\">".$arr['pkgname']."</a></td></tr>\n";
         $content .= "<tr><td>Version:</td><td>".$arr['pkgver']."</td></tr>\n";
         $content .= "<tr><td colspan=2>Files:</td></tr>\n";
         $files = explode("\n", substr($arr['files'], 0, -1));
