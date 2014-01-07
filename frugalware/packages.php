@@ -66,7 +66,12 @@ function main()
                     pkg_from_id($_GET['id']);
             }
             else {
-                pkg_from_id($_GET['id']);
+                if (isset($_GET['op'])) {
+                    if ($_GET['op'] != "groups" || $_GET['op'] != "file")
+                        pkg_from_id($_GET['id']);
+                }
+                else
+                    pkg_from_id($_GET['id']);
             }
         }
         else
@@ -227,12 +232,12 @@ function search_pkg()
     }
     elseif ( $res == -1 )
     {
-        fwemptybox(gettext("Error"), gettext( 'Error in the query, please change the searching conditions' ));
+        fwmiddlebox(gettext("Error"), gettext( 'Error in the query, please change the searching conditions' ));
         $db->doClose();
     }
     else
     {
-        fwemptybox(gettext("Error"), gettext("No package found"));
+        fwmiddlebox(gettext("Error"), gettext("No package found"));
         $db->doClose();
     }
 }
@@ -355,7 +360,7 @@ function res_show( $res_set, $what, $search=null )
     switch ($what)
     {
         case 'l':
-            $title = "<img src=\"" . $fwng_root . "images/icons/magnify.png\" />" . gettext( 'Listing groups' );
+            $title = gettext( 'Listing groups' );
             $total = 0;
             $content = "<div align=\"left\">\n";
             for ( $i = 0, $j = 1; $i < count( $res_set ); $i++, $j++ )
@@ -364,10 +369,10 @@ function res_show( $res_set, $what, $search=null )
                 $total += $res_set[$i]['numpkgs'];
             }
             $content .= "</div>\n";
-            fwemptybox($title, $content);
+            fwmiddlebox($title, $content);
             break;
         case 'g':
-            $title = "<img src=\"" . $fwng_root . "images/icons/magnify.png\" />" . gettext( 'Listing contents of group:' ). " " . $search;
+            $title = gettext( 'Listing contents of group:' ). " " . $search;
         case 'p':
             if(!isset($title)) $title = "<img src=\"" . $fwng_root . "images/icons/magnify.png\" />" . gettext("Search result for:")." ".$search;
             $titleprefix = "Search  results for $search - ";
@@ -376,16 +381,16 @@ function res_show( $res_set, $what, $search=null )
                 $content .= "<p>".$j.". <a href=\"/packages/".$res_set[$i]['id']."\">".$res_set[$i]['pkgname']."</a> ".$res_set[$i]['pkgver']."<br />".gettext("Version:")." ".$res_set[$i]['fwver']."; ".gettext("Architecture:")." ".$res_set[$i]['arch']."</p>\n";
             }
             $content .= "</div>\n";
-            fwemptybox($title, $content);
+            fwmiddlebox($title, $content);
             break;
         case 'f':
-            $title = "<img src=\"" . $fwng_root . "images/icons/magnify.png\" />" . gettext("Search result for:")." ".$search;
+            $title = gettext("Search result for:")." ".$search;
             $content = "<div align=\"left\">\n";
             for ($i=0,$j=1;$i<count($res_set);$i++,$j++) {
                 $content .= "<p>".$j.". <a href=\"/packages/".$res_set[$i]['id']."/files\">".$res_set[$i]['pkgname']."</a> ".$res_set[$i]['pkgver']."<br />".gettext("Version:")." ".$res_set[$i]['fwver']."; ".gettext("Architecture:")." ".$res_set[$i]['arch']."</p>\n";
             }
             $content .= "</div>\n";
-            fwemptybox($title, $content);
+            fwmiddlebox($title, $content);
             break;
     }
 }

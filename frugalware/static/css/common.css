@@ -446,6 +446,10 @@ nav {
     width: 20px;
 }
 
+#centercolumn h3 {
+    text-align: center;
+}
+
 #centercolumn hr {
     width: 80%;
 
