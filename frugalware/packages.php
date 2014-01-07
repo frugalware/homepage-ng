@@ -556,20 +556,18 @@ function changelog_from_id($id)
         $slog = $parent['pkgname']."-".$arr['pkgver']."-".$arr['arch'];
         $log = str_replace("current", $arr['fwver'], $top_path)."/source/".$parent['group']."/".$parent['pkgname']."/Changelog";
 
-        $title = sprintf(gettext("Changelog for %s"), $slog);
+        print("<fieldset class=\"pkg\"><legend>".sprintf(gettext("Changelog for %s"), $slog)."</legend>");
         if(file_exists($log))
         {
+            print("<pre class=\"changelog\">");
             $fp = fopen($log, "r");
-
             while ($buffer = fread ($fp, 4096))
-                $content .= print($buffer);
-
+                print($buffer);
             fclose ($fp);
-
-            fwmiddlebox($title, $content)
+            print("</pre>\n</fieldset>\n");
         }
         else
-            fwmiddlebox($title, gettext("Sorry, currently no log available."));
+            print(gettext("Sorry, currently no log available."));
     }
     else
     {
@@ -608,21 +606,18 @@ function buildlog_from_id($id)
         $slog = $parent['pkgname']."-".$arr['pkgver']."-".$arr['arch'];
         $log = str_replace("current", $arr['fwver'], $top_path)."/source/".$parent['group']."/".$parent['pkgname']."/".$slog.".log.bz2";
 
-        $title = sprintf(gettext("Build log for %s"), $slog);
+        print("<fieldset class=\"pkg\"><legend>".sprintf(gettext("Build log for %s"), $slog)."</legend>");
         if(file_exists($log))
         {
+            print("<pre class=\"buildlog\">");
             $fp = bzopen($log, "r");
-
             while ($buffer = bzread ($fp, 4096))
-                $content .= print($buffer);
-
+                print($buffer);
             bzclose ($fp);
-
-            fwmiddlebox($title, $content)
+            print("</pre>\n</fieldset>\n");
         }
-
         else
-            fwmiddlebox( '', gettext("Sorry, currently no log available."));
+            print(gettext("Sorry, currently no log available."));
     }
     else
     {
