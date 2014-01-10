@@ -26,6 +26,17 @@
 
 <fsas>
 	<fsa>
+		<id>762</id>
+		<date>2014-01-10</date>
+		<author>kikadf</author>
+		<package>libxfont</package>
+		<vulnerable>1.4.5-1</vulnerable>
+		<unaffected>1.4.5-2arcturus2</unaffected>
+		<bts>None</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6462</cve>
+		<desc>It was discovered that a buffer overflow in the processing of Glyph Bitmap Distribution fonts (BDF) could result in the execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>761</id>
 		<date>2012-03-08</date>
 		<author>James Buren</author>
