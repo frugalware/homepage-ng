@@ -135,8 +135,7 @@ function main()
                     <td>
                          <input type=\"radio\" id=\"archs\" name=\"arch\" value=\"all\">".gettext("All")."<br />
                          <input type=\"radio\" id=\"archs\" name=\"arch\" value=\"i686\" " . ( !in_array(checkValue('arch'), array("x86_64", "ppc")) ? "checked=\"checked\" " : "") . ">i686<br />
-                         <input type=\"radio\" id=\"archs\" name=\"arch\" value=\"i686\" " . ( checkValue('arch') == "x86_64" ? "checked=\"checked\" " : "") . ">x86_64<br />
-                         <input type=\"radio\" id=\"archs\" name=\"arch\" value=\"i686\" " . ( checkValue('arch') == "ppc" ? "checked=\"checked\" " : "") . ">ppc
+                         <input type=\"radio\" id=\"archs\" name=\"arch\" value=\"x86_64\" " . ( checkValue('arch') == "x86_64" ? "checked=\"checked\" " : "") . ">x86_64<br />
                     </td>
                 </tr>
                 <tr>
