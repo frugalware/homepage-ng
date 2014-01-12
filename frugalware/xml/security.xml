@@ -26,6 +26,21 @@
 
 <fsas>
 	<fsa>
+		<id>764</id>
+		<date>2014-01-12</date>
+		<author>kikadf</author>
+		<package>openssl</package>
+		<vulnerable>1.0.1-4</vulnerable>
+		<unaffected>1.0.1-5arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4353
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6449
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6450</cve>
+		<desc>Anton Johansson discovered that an invalid TLS handshake package could crash OpenSSL with a NULL pointer dereference.
+			Multiple security issues have been fixed in OpenSSL: The TLS 1.2 support was susceptible to denial of service and retransmission of DTLS messages was fixed.
+			In addition this update disables the insecure Dual_EC_DRBG algorithm (which was unused anyway, see http://marc.info/?l=openssl-announce&m=138747119822324&w=2 for further information) and no longer uses the RdRand feature available on some Intel CPUs as a sole source of entropy unless explicitly requested.</desc>
+	</fsa>
+	<fsa>
 		<id>763</id>
 		<date>2014-01-12</date>
 		<author>kikadf</author>
