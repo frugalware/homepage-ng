@@ -26,6 +26,17 @@
 
 <fsas>
 	<fsa>
+		<id>763</id>
+		<date>2014-01-12</date>
+		<author>kikadf</author>
+		<package>spice</package>
+		<vulnerable>0.12.2-1</vulnerable>
+		<unaffected>0.12.2-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4130</cve>
+		<desc>David Gibson of Red Hat discovered that SPICE incorrectly handled certain network errors. A remote user able to initiate a SPICE connection to an application acting as a SPICE server could use this flaw to crash the application.</desc>
+	</fsa>
+	<fsa>
 		<id>762</id>
 		<date>2014-01-10</date>
 		<author>kikadf</author>
