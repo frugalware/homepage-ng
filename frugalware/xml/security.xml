@@ -26,6 +26,17 @@
 
 <fsas>
 	<fsa>
+		<id>765</id>
+		<date>2014-01-13</date>
+		<author>kikadf</author>
+		<package>memcached</package>
+		<vulnerable>1.4.15-1</vulnerable>
+		<unaffected>1.4.15-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-7239</cve>
+		<desc>It was reported that SASL authentication could be bypassed due to a flaw related to the managment of the SASL authentication state. With a specially crafted request, a remote attacker may be able to authenticate with invalid SASL credentials.</desc>
+	</fsa>
+	<fsa>
 		<id>764</id>
 		<date>2014-01-12</date>
 		<author>kikadf</author>
