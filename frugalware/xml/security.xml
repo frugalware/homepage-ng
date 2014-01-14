@@ -26,6 +26,20 @@
 
 <fsas>
 	<fsa>
+		<id>766</id>
+		<date>2014-01-14</date>
+		<author>kikadf</author>
+		<package>bind</package>
+		<vulnerable>9.9.2-2</vulnerable>
+		<unaffected>9.9.4-1arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2266
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4854
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0591</cve>
+		<desc>libdns allows remote attackers to cause a denial of service (memory consumption) via a crafted regular expression, as demonstrated by a memory-exhaustion attack against a machine running a named process.
+			Maxim Shudrak and the HP Zero Day Initiative reported a denial of service vulnerability in BIND, a DNS server. A specially crafted query that includes malformed rdata can cause named daemon to terminate with an assertion failure while rejecting the malformed query.</desc>
+	</fsa>
+	<fsa>
 		<id>765</id>
 		<date>2014-01-13</date>
 		<author>kikadf</author>
