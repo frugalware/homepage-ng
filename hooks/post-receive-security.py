@@ -25,7 +25,9 @@ class fsa:
 		self.package = xmldoc.getElementsByTagName('package')[0].firstChild.toxml()
 		self.vulnerable = xmldoc.getElementsByTagName('vulnerable')[0].firstChild.toxml()
 		self.unaffected = xmldoc.getElementsByTagName('unaffected')[0].firstChild.toxml()
-		self.bts = xmldoc.getElementsByTagName('bts')[0].firstChild.toxml()
+		self.bts = None
+		if xmldoc.getElementsByTagName('bts')[0].firstChild:
+			self.bts = xmldoc.getElementsByTagName('bts')[0].firstChild.toxml()
 		self.cve = xmldoc.getElementsByTagName('cve')[0].firstChild.toxml()
 		self.desc = re.sub(r'\n\t+', r'\n', xmldoc.getElementsByTagName('desc')[0].firstChild.toxml()).replace('&quot;', '"')
 		self.subject = "[ FSA-%s ] %s" % (self.id, self.package)
@@ -37,7 +39,8 @@ class fsa:
 		self.lines.append("Package: %s\n" % self.package)
 		self.lines.append("Vulnerable versions: <= %s\n" % self.vulnerable)
 		self.lines.append("Unaffected versions: >= %s\n" % self.unaffected)
-		self.lines.append("Related bugreport: %s\n" % self.bts)
+		if self.bts:
+			self.lines.append("Related bugreport: %s\n" % self.bts)
 		self.lines.append("CVE: %s\n" % self.cve)
 		self.lines.append("""
 Description
