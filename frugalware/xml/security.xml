@@ -26,6 +26,20 @@
 
 <fsas>
 	<fsa>
+		<id>767</id>
+		<date>2014-01-16</date>
+		<author>kikadf</author>
+		<package>hplip</package>
+		<vulnerable>3.12.11-1</vulnerable>
+		<unaffected>3.12.11-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-4267
+		     http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4325
+		     http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6402
+		     http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6427</cve>
+		<desc>Multiple vulnerabilities have been found in the HP Linux Printing and Imaging System: Insecure temporary files, insufficient permission checks in PackageKit and the insecure hp-upgrade service has been disabled.</desc>
+	</fsa>
+	<fsa>
 		<id>766</id>
 		<date>2014-01-14</date>
 		<author>kikadf</author>
