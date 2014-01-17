@@ -26,6 +26,17 @@
 
 <fsas>
 	<fsa>
+		<id>768</id>
+		<date>2014-01-17</date>
+		<author>kikadf</author>
+		<package>djvulibre</package>
+		<vulnerable>3.5.25.2-1</vulnerable>
+		<unaffected>3.5.25.2-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-6535</cve>
+		<desc>It was discovered that djvulibre, the Open Source DjVu implementation project, can be crashed or possibly make it execute arbitrary code when processing a specially crafted djvu file.</desc>
+	</fsa>
+	<fsa>
 		<id>767</id>
 		<date>2014-01-16</date>
 		<author>kikadf</author>
