@@ -26,6 +26,17 @@
 
 <fsas>
 	<fsa>
+		<id>770</id>
+		<date>2014-01-17</date>
+		<author>kikadf</author>
+		<package>nspr</package>
+		<vulnerable>4.9.2-3</vulnerable>
+		<unaffected>4.9.2-4arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-5607</cve>
+		<desc>It was discovered that NSPR, Netscape Portable Runtime library, could crash an application using the library when parsing a certificate that causes an integer overflow. This flaw only affects 64-bit systems.</desc>
+	</fsa>
+	<fsa>
 		<id>769</id>
 		<date>2014-01-17</date>
 		<author>kikadf</author>
