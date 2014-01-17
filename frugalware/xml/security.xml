@@ -26,6 +26,17 @@
 
 <fsas>
 	<fsa>
+		<id>771</id>
+		<date>2014-01-17</date>
+		<author>kikadf</author>
+		<package>cups</package>
+		<vulnerable>1.6.1-2</vulnerable>
+		<unaffected>1.6.1-3arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6891</cve>
+		<desc>Jann Horn discovered that the CUPS lppasswd tool incorrectly read a user configuration file in certain configurations. A local attacker could use this to read sensitive information from certain files, bypassing access restrictions.</desc>
+	</fsa>
+	<fsa>
 		<id>770</id>
 		<date>2014-01-17</date>
 		<author>kikadf</author>
