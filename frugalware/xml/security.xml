@@ -23,8 +23,40 @@
 ]>
 
 <!-- If you modify this file, be sure it's still valid - read /hooks/README! -->
+<!-- FSA skeleton:
+	<fsa>
+		<id></id>
+		<date></date>
+		<author></author>
+		<package></package>
+		<vulnerable></vulnerable>
+		<unaffected></unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-</cve>
+		<desc></desc>
+	</fsa>
+-->
 
 <fsas>
+	<fsa>
+		<id>772</id>
+		<date>2014-01-18</date>
+		<author>kikadf</author>
+		<package>curl</package>
+		<vulnerable>7.26.0-1</vulnerable>
+		<unaffected>7.26.0-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-0249
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1944
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2174
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4545
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6422</cve>
+		<desc>CVE-2013-0249: It was discovered that curl incorrectly handled SASL authentication when communicating over POP3, SMTP or IMAP.
+			CVE-2013-1944: Yamada Yasuharu discovered that cURL, an URL transfer library, is vulnerable to expose potentially sensitive information when doing requests across domains with matching tails.
+			CVE-2013-2174: Timo Sirainen discovered that cURL, an URL transfer library, is prone to a heap overflow vulnerability due to bad checking of the input data in the curl_easy_unescape function.
+			CVE-2013-4545: Scott Cantor discovered that curl, a file retrieval tool, would disable the CURLOPT_SSLVERIFYHOST check when the CURLOPT_SSL_VERIFYPEER setting was disabled. This would also disable ssl certificate host name checks when it should have only disabled verification of the certificate trust chain.
+			CVE-2013-6422: Marc Deslauriers discovered that curl, a file retrieval tool, would mistakenly skip verifying the CN and SAN name fields when digital signature verification was disabled in the libcurl GnuTLS backend.</desc>
+	</fsa>
 	<fsa>
 		<id>771</id>
 		<date>2014-01-17</date>
