@@ -39,6 +39,21 @@
 
 <fsas>
 	<fsa>
+		<id>773</id>
+		<date>2014-01-18</date>
+		<author>kikadf</author>
+		<package>gnupg</package>
+		<vulnerable>1.4.14-1</vulnerable>
+		<unaffected>1.4.14-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4351
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4402
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4576</cve>
+		<desc>Daniel Kahn Gillmor discovered that GnuPG treated keys with empty usage flags as being valid for all usages. (CVE-2013-4351)
+			Taylor R Campbell discovered that GnuPG incorrectly handled certain OpenPGP messages. (CVE-2013-4402)
+			Daniel Genkin, Adi Shamir, and Eran Tromer discovered that GnuPG was susceptible to an adaptive chosen ciphertext attack via acoustic emanations. (CVE-2013-4576)</desc>
+	</fsa>
+	<fsa>
 		<id>772</id>
 		<date>2014-01-18</date>
 		<author>kikadf</author>
