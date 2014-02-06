@@ -39,6 +39,21 @@
 
 <fsas>
 	<fsa>
+		<id>774</id>
+		<date>2014-02-06</date>
+		<author>kikadf</author>
+		<package>qemu</package>
+		<vulnerable>1.5.2-2</vulnerable>
+		<unaffected>1.5.2-3arcturus2</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4344
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4375
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4377</cve>
+		<desc>Asias He discovered that QEMU incorrectly handled SCSI controllers with more than 256 attached devices. A local user could possibly use this flaw to elevate privileges. (CVE-2013-4344)
+			It was discovered that QEMU incorrectly handled Xen disks. A local guest could possibly use this flaw to consume resources, resulting in a denial of service. (CVE-2013-4375)
+			Sibiao Luo discovered that QEMU incorrectly handled device hot-unplugging. A local user could possibly use this flaw to cause a denial of service. (CVE-2013-4377)</desc>
+	</fsa>
+	<fsa>
 		<id>773</id>
 		<date>2014-01-18</date>
 		<author>kikadf</author>
