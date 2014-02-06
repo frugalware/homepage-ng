@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+		<id>775</id>
+		<date>2014-02-06</date>
+		<author>kikadf</author>
+		<package>libyaml</package>
+		<vulnerable>0.1.4-2</vulnerable>
+		<unaffected>0.1.4-3arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-CVE-2013-6393</cve>
+		<desc>Florian Weimer discovered that LibYAML incorrectly handled certain large yaml documents. An attacker could use this issue to cause LibYAML to crash, resulting in a denial of service, or possibly execute arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>774</id>
 		<date>2014-02-06</date>
 		<author>kikadf</author>
