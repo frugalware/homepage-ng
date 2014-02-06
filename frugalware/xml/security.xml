@@ -43,8 +43,8 @@
 		<date>2014-02-06</date>
 		<author>kikadf</author>
 		<package>curl</package>
-		<vulnerable>2arcturus1</vulnerable>
-		<unaffected>2arcturus2</unaffected>
+		<vulnerable>7.26.0-2arcturus1</vulnerable>
+		<unaffected>7.26.0-2arcturus2</unaffected>
 		<bts></bts>
 		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0015</cve>
 		<desc>Paras Sethia and Yehezkel Horowitz discovered that libcurl incorrectly reused connections when NTLM authentication was being used. This could lead to the use of unintended credentials, possibly exposing sensitive information.</desc>
