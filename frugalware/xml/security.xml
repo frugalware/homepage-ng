@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+		<id>776</id>
+		<date>2013-02-06</date>
+		<author>kikadf</author>
+		<package>libotr</package>
+		<vulnerable>3.2.0-3</vulnerable>
+		<unaffected>3.2.0-4arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-3461</cve>
+		<desc>Just Ferguson discovered that libotr, an off-the-record (OTR) messaging library, can be forced to perform zero-length allocations for heap buffers that are used in base64 decoding routines. An attacker can exploit this flaw by sending crafted messages to an application that is using libotr to perform denial of service attacks or potentially execute arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>775</id>
 		<date>2014-02-06</date>
 		<author>kikadf</author>
