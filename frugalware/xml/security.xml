@@ -39,6 +39,25 @@
 
 <fsas>
 	<fsa>
+		<id>778</id>
+		<date>2014-02-07</date>
+		<author>kikadf</author>
+		<package>drupal7</package>
+		<vulnerable>7.22-1</vulnerable>
+		<unaffected>7.22-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6385
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6386
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6387
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6388
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6389
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1475
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1476</cve>
+		<desc>Multiple vulnerabilities have been discovered in Drupal, a fully-featured content management framework: Cross-site request forgery, insecure pseudo random number generation, code execution, incorrect security token validation and cross-site scripting.
+			Christian Mainka and Vladislav Mladenov reported a vulnerability in the OpenID module that allows a malicious user to log in as other users on the site, including administrators, and hijack their accounts.
+			Matt Vance and Damien Tournoud reported an access bypass vulnerability in the taxonomy module. Under certain circumstances, unpublished content can appear on listing pages provided by the taxonomy module and will be visible to users who should not have permission to see it.</desc>
+	</fsa>
+	<fsa>
 		<id>777</id>
 		<date>2014-02-06</date>
 		<author>kikadf</author>
