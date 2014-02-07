@@ -39,6 +39,20 @@
 
 <fsas>
 	<fsa>
+		<id>779</id>
+		<date>2014-02-07</date>
+		<author>kikadf</author>
+		<package>drupal6</package>
+		<vulnerable>6.28-1</vulnerable>
+		<unaffected>6.30-1arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6385
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6386
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1475</cve>
+		<desc>Multiple vulnerabilities have been discovered in Drupal, a fully-featured content management framework: Cross-site request forgery, insecure pseudo random number generation, code execution, incorrect security token validation and cross-site scripting.
+			Christian Mainka and Vladislav Mladenov reported a vulnerability in the OpenID module that allows a malicious user to log in as other users on the site, including administrators, and hijack their accounts.</desc>
+	</fsa>
+	<fsa>
 		<id>778</id>
 		<date>2014-02-07</date>
 		<author>kikadf</author>
