@@ -39,6 +39,20 @@
 
 <fsas>
 	<fsa>
+		<id>783</id>
+		<date>2014-02-14</date>
+		<author>kikadf</author>
+		<package>perl</package>
+		<vulnerable>5.14.1-5</vulnerable>
+		<unaffected>5.14.1-6arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-5526
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-6329
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1667</cve>
+		<desc>It was discovered that Perl's Locale::Maketext module incorrectly handled backslashes and fully qualified method names. 
+			An attacker could possibly use this flaw to execute arbitrary code when an application used untrusted templates.</desc>
+	</fsa>
+	<fsa>
 		<id>782</id>
 		<date>2014-02-14</date>
 		<author>kikadf</author>
