@@ -39,6 +39,19 @@
 
 <fsas>
 	<fsa>
+		<id>781</id>
+		<date>2014-02-14</date>
+		<author>kikadf</author>
+		<package>mumble</package>
+		<vulnerable>1.2.4-1</vulnerable>
+		<unaffected>1.2.4-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0044
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0045</cve>
+		<desc>It was discovered that a malformed Opus voice packet sent to a Mumble client could trigger a NULL pointer dereference or an out-of-bounds array access. A malicious remote attacker could exploit this flaw to mount a denial of service attack against a mumble client by causing the application to crash.
+			It was discovered that a malformed Opus voice packet sent to a Mumble client could trigger a heap-based buffer overflow. A malicious remote attacker could use this flaw to cause a client crash (denial of service) or potentially use it to execute arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>780</id>
 		<date>2014-02-14</date>
 		<author>kikadf</author>
