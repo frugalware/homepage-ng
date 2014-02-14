@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+		<id>780</id>
+		<date>2014-02-14</date>
+		<author>kikadf</author>
+		<package>libgadu</package>
+		<vulnerable>1.11.2-1</vulnerable>
+		<unaffected>1.11.2-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6487</cve>
+		<desc>Yves Younan and Ryan Pentney discovered that libgadu, a library for accessing the Gadu-Gadu instant messaging service, contained an integer overflow leading to a buffer overflow. Attackers which impersonate the server could crash clients and potentially execute arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>779</id>
 		<date>2014-02-07</date>
 		<author>kikadf</author>
@@ -271,7 +282,7 @@
 		<package>libxfont</package>
 		<vulnerable>1.4.5-1</vulnerable>
 		<unaffected>1.4.5-2arcturus2</unaffected>
-		<bts>None</bts>
+		<bts></bts>
 		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6462</cve>
 		<desc>It was discovered that a buffer overflow in the processing of Glyph Bitmap Distribution fonts (BDF) could result in the execution of arbitrary code.</desc>
 	</fsa>
