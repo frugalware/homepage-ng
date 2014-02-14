@@ -39,6 +39,34 @@
 
 <fsas>
 	<fsa>
+		<id>782</id>
+		<date>2014-02-14</date>
+		<author>kikadf</author>
+		<package>pidgin</package>
+		<vulnerable>2.10.7-1</vulnerable>
+		<unaffected>2.10.7-2arcturus2</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-6152
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6477
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6478
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6479
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6481
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6482
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6483
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6484
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6485
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6487
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6489
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6490
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0020</cve>
+		<desc>Jaime Breva Ribes discovered that a remote XMPP user can trigger a crash by sending a message with a timestamp in the distant future. Pidgin could be crashed through overly wide tooltip windows.
+			Jacob Appelbaum discovered that a malicious server or a "man in the middle" could send a malformed HTTP header resulting in denial of service. Daniel Atallah discovered that Pidgin could be crashed through malformed Yahoo! P2P messages.
+			Fabian Yamaguchi and Christian Wressnegger discovered that Pidgin could be crashed through malformed MSN messages.
+			Fabian Yamaguchi and Christian Wressnegger discovered that Pidgin could be crashed through malformed XMPP messages. 
+			It was discovered that incorrect error handling when reading the response from a STUN server could result in a crash. Matt Jones discovered a buffer overflow in the parsing of malformed HTTP responses. Yves Younan and Ryan Pentney discovered a buffer overflow when parsing Gadu-Gadu messages.
+			Yves Younan and Pawel Janic discovered an integer overflow when parsing MXit emoticons. Yves Younan discovered a buffer overflow when parsing SIMPLE headers. Daniel Atallah discovered that Pidgin could be crashed via malformed IRC arguments.</desc>
+	</fsa>
+	<fsa>
 		<id>781</id>
 		<date>2014-02-14</date>
 		<author>kikadf</author>
