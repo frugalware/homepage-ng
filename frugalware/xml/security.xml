@@ -38,6 +38,21 @@
 -->
 
 <fsas>
+	FSA skeleton:
+	<fsa>
+		<id>784</id>
+		<date>2014-02-27</date>
+		<author>kikadf</author>
+		<package>libtar</package>
+		<vulnerable>1.2.11-5</vulnerable>
+		<unaffected>1.2.20-1arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4397
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4420</cve>
+		<desc>Timo Warns reported multiple integer overflow vulnerabilities in libtar, a library for manipulating tar archives, which can result in the execution of arbitrary code.
+			A directory traversal attack was reported against libtar, a C library for manipulating tar archives. The application does not validate the filenames inside the tar archive, allowing to extract files in arbitrary path. 
+			An attacker can craft a tar file to override files beyond the tar_extract_glob and tar_extract_all prefix parameter.</desc>
+	</fsa>
 	<fsa>
 		<id>783</id>
 		<date>2014-02-14</date>
