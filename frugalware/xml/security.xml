@@ -38,7 +38,17 @@
 -->
 
 <fsas>
-	FSA skeleton:
+	<fsa>
+		<id>785</id>
+		<date>file</date>
+		<author>kikadf</author>
+		<package>2014-02-27</package>
+		<vulnerable>5.14-1</vulnerable>
+		<unaffected>5.14-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1943</cve>
+		<desc>It was discovered that file, a file type classification tool, contains a flaw in the handling of "indirect" magic rules in the libmagic library, which leads to an infinite recursion when trying to determine the file type of certain files.</desc>
+	</fsa>
 	<fsa>
 		<id>784</id>
 		<date>2014-02-27</date>
