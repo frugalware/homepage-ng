@@ -40,9 +40,9 @@
 <fsas>
 	<fsa>
 		<id>785</id>
-		<date>file</date>
+		<date>2014-02-27</date>
 		<author>kikadf</author>
-		<package>2014-02-27</package>
+		<package>file</package>
 		<vulnerable>5.14-1</vulnerable>
 		<unaffected>5.14-2arcturus1</unaffected>
 		<bts></bts>
