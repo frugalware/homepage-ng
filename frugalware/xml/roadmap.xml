@@ -37,16 +37,6 @@
 			<predate>Jul 7, 2014</predate>
 			<prestatus>0</prestatus>
 		</prerelease>
-		<prerelease>
-			<preversion>pre2</preversion>
-			<predate>Jun 2, 2014</predate>
-			<prestatus>0</prestatus>
-		</prerelease>
-		<prerelease>
-			<preversion>pre1</preversion>
-			<predate>Mar 3, 2014</predate>
-			<prestatus>0</prestatus>
-		</prerelease>
 	</release>
 	<release>
 		<name>Arcturus</name>
