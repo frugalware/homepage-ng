@@ -39,6 +39,19 @@
 
 <fsas>
 	<fsa>
+		<id>786</id>
+		<date>2014-03-05</date>
+		<author>kikadf</author>
+		<package>gnutls</package>
+		<vulnerable>2.12.17-1</vulnerable>
+		<unaffected>2.12.17-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0092
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1959</cve>
+		<desc>Nikos Mavrogiannopoulos of Red Hat discovered an X.509 certificate verification issue in GnuTLS, an SSL/TLS library. A certificate validation could be reported sucessfully even in cases were an error would prevent all verification steps to be performed.
+			Suman Jana reported that GnuTLS, deviating from the documented behavior, considers a version 1 intermediate certificate as a CA certificate by default.</desc>
+	</fsa>
+	<fsa>
 		<id>785</id>
 		<date>2014-02-27</date>
 		<author>kikadf</author>
