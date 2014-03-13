@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+		<id>790</id>
+		<date>2014-03-13</date>
+		<author>kikadf</author>
+		<package>udisks</package>
+		<vulnerable>1.0.4-7</vulnerable>
+		<unaffected>1.0.4-8arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0004</cve>
+		<desc>Florian Weimer discovered a buffer overflow in udisks's mount path parsing code which may result in privilege escalation.</desc>
+	</fsa>
+	<fsa>
 		<id>789</id>
 		<date>2014-03-13</date>
 		<author>kikadf</author>
