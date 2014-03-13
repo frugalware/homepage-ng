@@ -39,6 +39,26 @@
 
 <fsas>
 	<fsa>
+		<id>787</id>
+		<date>2014-03-13</date>
+		<author>kikadf</author>
+		<package>postgresql</package>
+		<vulnerable>9.1.9-1</vulnerable>
+		<unaffected>9.1.12-1arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0060
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0061
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0062
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0063
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0064
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0065
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0066
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0067</cve>
+		<desc>Shore up GRANT ... WITH ADMIN OPTION restrictions (Noah Misch). Prevent privilege escalation via manual calls to PL validator functions (Andres Freund). Avoid multiple name lookups during table and index DDL (Robert Haas, Andres Freund).
+			Prevent buffer overrun with long datetime strings (Noah Misch). Prevent buffer overrun due to integer overflow in size calculations (Noah Misch, Heikki Linnakangas). Prevent overruns of fixed-size buffers (Peter Eisentraut, Jozef Mlich).
+			Avoid crashing if crypt() returns NULL (Honza Horak, Bruce Momjian). Document risks of make check in the regression testing instructions (Noah Misch, Tom Lane).</desc>
+	</fsa>
+	<fsa>
 		<id>786</id>
 		<date>2014-03-05</date>
 		<author>kikadf</author>
