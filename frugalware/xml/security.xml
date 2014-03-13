@@ -39,6 +39,20 @@
 
 <fsas>
 	<fsa>
+		<id>788</id>
+		<date>2013-03-13</date>
+		<author>kikadf</author>
+		<package>wireshark</package>
+		<vulnerable>1.8.6-1</vulnerable>
+		<unaffected>1.8.13-1arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2281
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2283
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2299</cve>
+		<desc>Moshe Kaplan discovered that the NFS dissector could be crashed, resulting in denial of service. It was discovered that the RLC dissector could be crashed, resulting in denial of service.
+			Wesley Neelen discovered a buffer overflow in the MPEG file parser, which could lead to the execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>787</id>
 		<date>2014-03-13</date>
 		<author>kikadf</author>
