@@ -39,6 +39,21 @@
 
 <fsas>
 	<fsa>
+		<id>794</id>
+		<date>2014-03-13</date>
+		<author>kikadf</author>
+		<package>php</package>
+		<vulnerable>5.3.26-1</vulnerable>
+		<unaffected>5.3.26-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4413
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4248
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6420
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6712
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1943</cve>
+		<desc>It was discovered that file, a file type classification tool, contains a flaw in the handling of indirect magic rules in the libmagic library, which leads to an infinite recursion when trying to determine the file type of certain files.</desc>
+	</fsa>
+	<fsa>
 		<id>793</id>
 		<date>2014-03-13</date>
 		<author>kikadf</author>
