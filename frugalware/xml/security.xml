@@ -39,8 +39,19 @@
 
 <fsas>
 	<fsa>
+		<id>789</id>
+		<date>2014-03-13</date>
+		<author>kikadf</author>
+		<package>file</package>
+		<vulnerable>5.14-2arcturus1</vulnerable>
+		<unaffected>5.14-2arcturus2</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2270</cve>
+		<desc>Aaron Reffett reported a flaw in the way the file utility determined the type of Portable Executable (PE) format files, the executable format used on Windows. When processing a defective or intentionally prepared PE executable which contains invalid offset information, the file_strncmp routine will access memory that is out of bounds, causing file to crash.</desc>
+	</fsa>
+	<fsa>
 		<id>788</id>
-		<date>2013-03-13</date>
+		<date>2014-03-13</date>
 		<author>kikadf</author>
 		<package>wireshark</package>
 		<vulnerable>1.8.6-1</vulnerable>
