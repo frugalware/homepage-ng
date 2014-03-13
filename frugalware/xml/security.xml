@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+		<id>793</id>
+		<date>2014-03-13</date>
+		<author>kikadf</author>
+		<package>icedtea-web</package>
+		<vulnerable>1.3.1-1</vulnerable>
+		<unaffected>1.3.1-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6493</cve>
+		<desc>Michael Scherer discovered that IcedTea Web created temporary directories in an unsafe fashion.</desc>
+	</fsa>
+	<fsa>
 		<id>792</id>
 		<date>2014-03-13</date>
 		<author>kikadf</author>
