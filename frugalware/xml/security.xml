@@ -39,6 +39,19 @@
 
 <fsas>
 	<fsa>
+		<id>792</id>
+		<date>2014-03-13</date>
+		<author>kikadf</author>
+		<package>cups-filters</package>
+		<vulnerable>1.0.24-1</vulnerable>
+		<unaffected>1.0.24-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6474
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6475
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6476</cve>
+		<desc>Florian Weimer of the Red Hat Product Security Team discovered multiple vulnerabilities in the pdftoopvp CUPS filter, which could result in the execution of aribitrary code if a malformed PDF file is processed.</desc>
+	</fsa>
+	<fsa>
 		<id>791</id>
 		<date>2014-03-13</date>
 		<author>kikadf</author>
