@@ -39,6 +39,18 @@
 
 <fsas>
 	<fsa>
+		<id>791</id>
+		<date>2014-03-13</date>
+		<author>kikadf</author>
+		<package>libssh</package>
+		<vulnerable>0.5.3-1</vulnerable>
+		<unaffected>0.5.3-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-0176
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-0017</cve>
+		<desc>Aris Adamantiadis discovered that libssh allowed the OpenSSL PRNG state to be reused when implementing forking servers.</desc>
+	</fsa>
+	<fsa>
 		<id>790</id>
 		<date>2014-03-13</date>
 		<author>kikadf</author>
