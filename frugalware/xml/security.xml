@@ -39,6 +39,22 @@
 
 <fsas>
 	<fsa>
+		<id>796</id>
+		<date>2014-03-15</date>
+		<author>kikadf</author>
+		<package>lighttpd</package>
+		<vulnerable>1.4.32-2</vulnerable>
+		<unaffected>1.4.35-1arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2323
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2324
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4508
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4559
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4560</cve>
+		<desc>Jann Horn discovered that specially crafted host names can be used to inject arbitrary MySQL queries in lighttpd servers using the MySQL virtual hosting module (mod_mysql_vhost).
+			Jann Horn discovered that specially crafted host names can be used to traverse outside of the document root under certain situations in lighttpd servers using either the mod_mysql_vhost, mod_evhost, or mod_simple_vhost virtual hosting modules.</desc>
+	</fsa>
+	<fsa>
 		<id>795</id>
 		<date>2014-03-14</date>
 		<author>kikadf</author>
