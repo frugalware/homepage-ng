@@ -117,7 +117,7 @@ function main()
             <table class=\"package\">
                 <tr>
                     <td width=\"80px\" style=\"vertical-align: middle;\"><b>".gettext("Keyword")."</b></td>
-                    <td><input class=\"required\" type=\"text\" id=\"pkgsrc\" name=\"srch\" size=\"40\" title=\"".gettext("Regular expression")."\" value=\"" . htmlentities(checkValue('srch')) . "\"/><input type=\"reset\" value=\"\" /><input type=\"submit\" value=\"".gettext("Search")."\" /> " . gettext( '(regular expression)' ) . "</td>
+                    <td><div class=\"searchInput\"><input class=\"required\" type=\"text\" id=\"pkgsrc\" name=\"srch\" size=\"40\" title=\"".gettext("Regular expression")."\" value=\"" . htmlentities(checkValue('srch')) . "\"/><input type=\"reset\" value=\"\" /><input type=\"submit\" value=\"".gettext("Search")."\" /></div>" . gettext( '(regular expression)' ) . "</td>
                 </tr>
                 <tr>
                     <td></td><td style=\"vertical-align: middle;\"><input class=\"required\" type=\"checkbox\" name=\"desc\" id=\"descr\" " . (checkValue('desc') == "on" ? "checked=\"checked\" " : "") . "/><label for=\"descr\" class=\"pkg-phrasing\">".gettext("Search in description too")."</label></td>
@@ -443,7 +443,7 @@ function pkg_from_id($id)
 
         $title = gettext("Package information:")." ".$arr['pkgname'];
         $content = "<table border=\"0\" width=\"100%\">\n";
-        $content .= "<tr><td>" . gettext("Name:") . "</td><td><a href=\"/packages/".$id."/files\">".$arr['pkgname']."</a></td></tr>\n";
+        $content .= "<tr><td style=\"width: 200px;\">" . gettext("Name:") . "</td><td><a href=\"/packages/".$id."/files\">".$arr['pkgname']."</a></td></tr>\n";
         if ($arr['parent_id'] != 0 and $arr['parent_id'] != $id) $content .= "<tr><td>" . gettext("Parent:") . "</td><td><a href=\"/packages/" . $arr['parent_id']. "\">".$parent['pkgname']."</a></td></tr>\n";
         $content .= "<tr><td>" . gettext("Version:") . "</td><td>".$arr['pkgver']."</td></tr>\n";
         if(file_exists($top_path."/source/".$parent['group']."/".$parent['pkgname']."/".$parent['pkgname'].".html"))

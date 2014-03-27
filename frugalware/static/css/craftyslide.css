@@ -7,12 +7,6 @@ Craftyslide CSS Styles
 #slideshow {
     margin: 4px auto;
     padding: 0;
-
-    border: 2px solid #fff;
-
-    -webkit-box-shadow:0 3px 5px rgba(153,153,153,0.5);
-    -moz-box-shadow:0 3px 5px rgba(153,153,153,0.5);
-    box-shadow:0 3px 5px rgba(153,153,153,0.5);
 }
 
 #slideshow ul {
@@ -20,6 +14,8 @@ Craftyslide CSS Styles
     overflow:hidden;
     margin:0;
     padding:0;
+    border: 2px solid white;
+    border-radius: 2px;
 }
 
 #slideshow ul li {
@@ -37,14 +33,14 @@ Craftyslide CSS Styles
 
 #pagination {
     clear:both;
-    width:75px;
-    margin:25px auto 0;
+    margin:2px auto;
     padding:0;
 }
 
 #pagination li {
     list-style:none;
-    float:left;
+    display: table-cell;
+    table-layout: auto;
     margin:0 2px;
 }
 
@@ -53,11 +49,17 @@ Craftyslide CSS Styles
     width:10px;
     height:10px;
     text-indent:-10000px;
-    background:url(../images/pagination.png);
+    background-color: black;
+    border-radius: 5px;
+    margin: 0 2px;
 }
 
 #pagination li a.active {
     background-position:0 10px;
+    background-color: #6390DD;
+    outline: 0;
+    outline-style: none;
+    outline-width: 0;
 }
 
 .caption {

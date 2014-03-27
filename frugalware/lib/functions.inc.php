@@ -105,7 +105,7 @@ function showAbout ($content, $showScreenshot=true)
         print "
                 </div>";
     }
-    print $content . "
+    print "<div>" . $content . "</div>
             </div>";
 }
 

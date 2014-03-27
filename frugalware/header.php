@@ -37,7 +37,9 @@
         $(document).ready(function() {
             $("a#imagebox").fancybox();
             $("#slideshow").craftyslide({
-                'pagination': false,
+                'width': 320,
+                'height': 240,
+                'pagination': true,
                 'fadetime': 600,
                 'delay': 6000});
         });

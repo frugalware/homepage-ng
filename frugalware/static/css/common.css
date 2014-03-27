@@ -602,7 +602,7 @@ nav {
     font-size: 0.8em;
 }
 
-.middlebox {
+.middlebox, fieldset {
     width: 90%;
 
     margin: 3px auto 30px auto;
@@ -668,17 +668,14 @@ nav {
 }
 
 .package input {
-    background-color: #2D2D2D;
+    background-color: transparent;
     color: white;
 
     border: none;
 }
 
 .package input[type="text"]  {
-    height: 18px;
     padding: 1px 4px;
-
-    border-radius: 3px 0 0 3px;
 }
 
 .package input[type="submit"], .package input[type="reset"] {
@@ -691,9 +688,24 @@ nav {
     background: url("../../images/icons/clear.png") no-repeat center center #2D2D2D;
 }
 
-.package input[type="submit"] {
-    border-radius: 0 3px 3px 0;
+.searchInput {
+    background-color: #2d2d2d;
+    border-radius: 3px;
 }
+
+/* Fieldset */
+
+pre {
+    width: 0;
+}
+
+legend {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #204bac;
+    text-shadow: 1px 1px 2px #DDDDDD;
+}
+
 
 .screenbox {
     margin: 0 10px 20px 10px;
@@ -813,6 +825,15 @@ div.screenbox img {
     -webkit-box-shadow: 0 0 5px rgba(153,153,153,0.5);
     -khtml-box-shadow: 0 0 5px rgba(153,153,153,0.5);
     box-shadow: 0 0 5px rgba(153,153,153,0.5);
+}
+
+.about div {
+    display: table-cell;
+    table-layout: auto;
+
+    padding: 8px;
+
+    vertical-align: top;
 }
 
 .freespace {
