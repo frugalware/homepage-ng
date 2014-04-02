@@ -11,8 +11,8 @@ $sqlpass = "85Tdjf{Od";
 $sqldb = "frugalware2";
 
 # FWNG SETTINGS
-$http_mode = ($_SERVER['HTTPS'] == "on" ? 'https' : 'http');
-$fwng_root = $http_mode . "://" . $_SERVER["SERVER_NAME"] . "/";
+// $http_mode = ($_SERVER['HTTPS'] == "on" ? 'https' : 'http');
+$fwng_root = "https://" . $_SERVER["SERVER_NAME"] . "/";
 
 $adodb_path = "/usr/share/php";
 $trans_path="/home/ftp/pub/other/translations/";

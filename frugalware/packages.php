@@ -62,7 +62,7 @@ function main()
                     changelog_from_id($_GET['id']);
                 else if ($_GET['s'] == "documentation")
                     documentation_from_id($_GET['id']);
-                else if (isset($_GET['op']) and !strlen($_GET['op']))
+                else if (isset($_GET['op']) and !strlen($_GET['op'])) and ($_GET['op'] != "groups")
                     pkg_from_id($_GET['id']);
             }
             else {
