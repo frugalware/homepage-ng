@@ -17,15 +17,15 @@ $check_www = explode(".", $serverName);
 // frugalware.org
 if ($check_www[0] != "www")
     // Check if https is available
-    $http_mode = ($_SERVER['HTTPS'] == "on" ? 'https:' : 'http:');
+    $http_mode = ($_SERVER['HTTPS'] == "on" ? 'https' : 'http');
 
 // www.frugalware.org
 else
     // This server name is special because it can cause a mixed content error
     // We can't check if https is available, so we use relative path
-    $http_mode = "";
+    $http_mode = "https";
 
-$fwng_root = $http_mode . "//" . $serverName . "/";
+$fwng_root = $http_mode . "://" . $serverName . "/";
 
 $adodb_path = "/usr/share/php";
 $trans_path="/home/ftp/pub/other/translations/";
