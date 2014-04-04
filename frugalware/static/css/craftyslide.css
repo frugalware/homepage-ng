@@ -28,7 +28,7 @@ Craftyslide CSS Styles
 }
 
 #slideshow ul li img {
-    cursor: url("../images/icons/magnify.png"), -moz-zoom-in;
+    cursor: url("../../images/icons/magnify.png"), -moz-zoom-in;
 }
 
 #pagination {
