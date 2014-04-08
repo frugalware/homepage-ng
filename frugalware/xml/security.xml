@@ -39,6 +39,18 @@
 
 <fsas>
 	<fsa>
+		<id>797</id>
+		<date>2014-04-08</date>
+		<author>James Buren</author>
+		<package>openssl</package>
+		<vulnerable>1.0.1-5arcturus1</vulnerable>
+		<unaffected>1.0.1-5arcturus2</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0160</cve>
+		<desc>A vulnerability has been discovered in OpenSSL's support for the TLS/DTLS Heartbeat extension. 
+			Up to 64KB of memory from either client or server can be recovered by an attacker. This vulnerability might allow an attacker to compromise the private key and other sensitive data in memory.</desc>
+	</fsa>
+	<fsa>
 		<id>796</id>
 		<date>2014-03-15</date>
 		<author>kikadf</author>
