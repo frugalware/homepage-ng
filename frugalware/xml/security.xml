@@ -39,6 +39,20 @@
 
 <fsas>
 	<fsa>
+		<id>798</id>
+		<date>2014-04-12</date>
+		<author>kikadf</author>
+		<package>a2ps</package>
+		<vulnerable>4.14-4</vulnerable>
+		<unaffected>4.14-5arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2001-1953
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0466</cve>
+		<desc>The spy_user function which is called when a2ps is invoked with the --debug flag insecurely used temporary files.
+			Brian M. Carlson reported that a2ps's fixps script does not invoke gs with the -dSAFER option. 
+			Consequently executing fixps on a malicious PostScript file could result in files being deleted or arbitrary commands being executed with the privileges of the user running fixps.</desc>
+	</fsa>
+	<fsa>
 		<id>797</id>
 		<date>2014-04-08</date>
 		<author>James Buren</author>
