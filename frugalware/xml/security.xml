@@ -39,6 +39,27 @@
 
 <fsas>
 	<fsa>
+		<id>799</id>
+		<date>2014-04-14</date>
+		<author>kikadf</author>
+		<package>actionpack</package>
+		<vulnerable>3.2.6-1</vulnerable>
+		<unaffected>3.2.6-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-3424
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-3463
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-3465
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-0155
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1855
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1857
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4389
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4491
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6414
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6415
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6417</cve>
+		<desc>Toby Hsieh, Peter McLarnan, Ankit Gupta, Sudhir Rao and Kevin Reintjes discovered multiple cross-site scripting and denial of service vulnerabilities in Ruby Actionpack.</desc>
+	</fsa>
+	<fsa>
 		<id>798</id>
 		<date>2014-04-12</date>
 		<author>kikadf</author>
