@@ -39,6 +39,25 @@
 
 <fsas>
 	<fsa>
+		<id>801</id>
+		<date>2014-04-14</date>
+		<author>kikadf</author>
+		<package>apache</package>
+		<vulnerable>2.2.23-2</vulnerable>
+		<unaffected>2.2.23-3arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-3499
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-4558
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-4929
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1862
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1896
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6438
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0098</cve>
+		<desc>Ning Zhang and Amin Tora discovered that the mod_dav module incorrectly handled whitespace characters in CDATA sections.
+			Rainer M Canavan discovered that the mod_log_config module incorrectly handled certain cookies.</desc>
+	</fsa>
+
+	<fsa>
 		<id>800</id>
 		<date>2014-04-14</date>
 		<author>kikadf</author>
