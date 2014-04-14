@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+		<id>800</id>
+		<date>2014-04-14</date>
+		<author>kikadf</author>
+		<package>actionmailer</package>
+		<vulnerable>3.2.6-1</vulnerable>
+		<unaffected>3.2.6-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4389</cve>
+		<desc>Aaron Neyer discovered that missing input sanitising in the logging component of Ruby Actionmailer could result in denial of service through a malformed e-mail message.</desc>
+	</fsa>
+	<fsa>
 		<id>799</id>
 		<date>2014-04-14</date>
 		<author>kikadf</author>
