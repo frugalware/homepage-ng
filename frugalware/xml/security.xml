@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+               <id>804</id>
+               <date>2014-04-16</date>
+               <author>kikadf</author>
+               <package>jbigkit</package>
+               <vulnerable>2.0-2</vulnerable>
+               <unaffected>2.0-3arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6369</cve>
+               <desc>Florian Weimer of the Red Hat product security team discovered multiple buffer overflows in jbigkit, which could lead to the execution of arbitrary code when processing malformed images.</desc>
+       </fsa>
+	<fsa>
                <id>803</id>
                <date>2014-04-16</date>
                <author>kikadf</author>
