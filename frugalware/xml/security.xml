@@ -39,6 +39,20 @@
 
 <fsas>
 	<fsa>
+               <id>808</id>
+               <date>2014-04-17</date>
+               <author>kikadf</author>
+               <package>strongswan</package>
+               <vulnerable>5.0.1-1</vulnerable>
+               <unaffected>5.0.1-2arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-5018
+		        http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6075
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2338</cve>
+               <desc>A vulnerability has been found in the ASN.1 parser of strongSwan, an IKE daemon used to establish IPsec protected links.
+			An authentication bypass vulnerability was found in charon, the daemon handling IKEv2 in strongSwan, an IKE/IPsec suite. The state machine handling the security association (IKE_SA) handled some state transitions incorrectly.</desc>
+       </fsa>
+	<fsa>
                <id>807</id>
                <date>2014-04-17</date>
                <author>kikadf</author>
