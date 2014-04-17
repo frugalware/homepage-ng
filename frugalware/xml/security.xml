@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+               <id>806</id>
+               <date>2014-04-17</date>
+               <author>kikadf</author>
+               <package>postfixadmin</package>
+               <vulnerable>2.3.6-1</vulnerable>
+               <unaffected>2.3.6-2arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2655</cve>
+               <desc>An SQL injection vulnerability was discovered in postfixadmin, a web administration interface for the Postfix Mail Transport Agent, which allowed authenticated users to make arbitrary manipulations to the database.</desc>
+       </fsa>
+	<fsa>
                <id>805</id>
                <date>2014-04-16</date>
                <author>kikadf</author>
