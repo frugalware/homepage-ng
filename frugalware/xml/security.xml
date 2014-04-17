@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+               <id>810</id>
+               <date>2014-04-17</date>
+               <author>kikadf</author>
+               <package>xalan-j</package>
+               <vulnerable>2.7.1-2</vulnerable>
+               <unaffected>2.7.1-3arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0107</cve>
+               <desc>Nicolas Gregoire discovered several vulnerabilities in libxalan2-java, a Java library for XSLT processing. Crafted XSLT programs could access system properties or load arbitrary classes, resulting in information disclosure and, potentially, arbitrary code execution.</desc>
+       </fsa>
+	<fsa>
                <id>809</id>
                <date>2014-04-17</date>
                <author>kikadf</author>
