@@ -39,6 +39,19 @@
 
 <fsas>
 	<fsa>
+               <id>809</id>
+               <date>2014-04-17</date>
+               <author>kikadf</author>
+               <package>wordpress</package>
+               <vulnerable>3.5.1-1</vulnerable>
+               <unaffected>3.9-1arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0165
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0166</cve>
+               <desc>A user with a contributor role, using a specially crafted request, can publish posts, which is reserved for users of the next-higher role.
+		       Jon Cave of the WordPress security team discovered that the wp_validate_auth_cookie function in wp-includes/pluggable.php does not properly determine the validity of authentication cookies, allowing a remote attacker to obtain access via a forged cookie.</desc>
+       </fsa>
+	<fsa>
                <id>808</id>
                <date>2014-04-17</date>
                <author>kikadf</author>
