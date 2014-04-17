@@ -39,6 +39,20 @@
 
 <fsas>
 	<fsa>
+               <id>807</id>
+               <date>2014-04-17</date>
+               <author>kikadf</author>
+               <package>samba</package>
+               <vulnerable>3.6.9-4arcturus1</vulnerable>
+               <unaffected>3.6.23-1arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4496
+		       http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6442</cve>
+               <desc>Andrew Bartlett discovered that Samba did not properly enforce the password guessing protection mechanism for all interfaces.
+		       Samba have a flaw in the smbcacls command. If smbcacls is used with the "-C|--chown name" or "-G|--chgrp name"
+		       command options it will remove the existing ACL on the object being modified, leaving the file or directory unprotected.</desc>
+       </fsa>
+	<fsa>
                <id>806</id>
                <date>2014-04-17</date>
                <author>kikadf</author>
