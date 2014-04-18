@@ -39,6 +39,19 @@
 
 <fsas>
 	<fsa>
+		<id>812</id>
+		<date>2014-04-18</date>
+		<author>kikadf</author>
+		<package>python</package>
+		<vulnerable>2.7.5-1</vulnerable>
+		<unaffected>2.7.5-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4238
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1912</cve>
+		<desc>Ryan Sleevi discovered that NULL characters in the subject alternate names of SSL cerficates were parsed incorrectly.
+			Ryan Smith-Roberts discovered a buffer overflow in the socket.recvfrom_into() function.</desc>
+	</fsa>
+	<fsa>
                <id>811</id>
                <date>2014-04-17</date>
                <author>kikadf</author>
