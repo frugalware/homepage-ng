@@ -39,6 +39,20 @@
 
 <fsas>
 	<fsa>
+               <id>813</id>
+               <date>2014-04-18</date>
+               <author>kikadf</author>
+               <package>openssh</package>
+               <vulnerable>6.1p1-1</vulnerable>
+               <unaffected>6.1p1-2arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4548
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2532
+						http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2653</cve>
+               <desc>Jann Horn discovered that OpenSSH incorrectly handled wildcards in AcceptEnv lines. A remote attacker could use this issue to trick OpenSSH into accepting any environment variable that contains the characters before the wildcard character.
+			Matthew Vernon reported that if a SSH server offers a HostCertificate that the ssh client doesn't accept, then the client doesn't check the DNS for SSHFP records. As a consequence a malicious server can disable SSHFP-checking by presenting a certificate.</desc>
+       </fsa>
+	<fsa>
 		<id>812</id>
 		<date>2014-04-18</date>
 		<author>kikadf</author>
