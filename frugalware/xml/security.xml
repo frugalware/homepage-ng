@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+               <id>814</id>
+               <date>2014-04-18</date>
+               <author>kikadf</author>
+               <package>ntp</package>
+               <vulnerable>4.2.6p5-2</vulnerable>
+               <unaffected>4.2.6p5-3arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-5211</cve>
+               <desc>The monlist feature in ntp_request.c in ntpd in NTP before 4.2.7p26 allows remote attackers to cause a denial of service (traffic amplification) via forged (1) REQ_MON_GETLIST or (2) REQ_MON_GETLIST_1 requests, as exploited in the wild in December 2013.</desc>
+       </fsa>
+	<fsa>
                <id>813</id>
                <date>2014-04-18</date>
                <author>kikadf</author>
