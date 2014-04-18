@@ -39,6 +39,18 @@
 
 <fsas>
 	<fsa>
+		<id>815</id>
+		<date>2014-04-18</date>
+		<author>kikadf</author>
+		<package>openssl</package>
+		<vulnerable>1.0.1-5arcturus2</vulnerable>
+		<unaffected>1.0.1-5arcturus3</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-5298</cve>
+		<desc>A read buffer can be freed even when it still contains data that is used later on, leading to a use-after-free.
+			Given a race condition in a multi-threaded application it may permit an attacker to inject data from one connection into another or cause denial of service.</desc>
+	</fsa>
+	<fsa>
                <id>814</id>
                <date>2014-04-18</date>
                <author>kikadf</author>
