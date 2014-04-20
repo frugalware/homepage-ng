@@ -39,6 +39,18 @@
 
 <fsas>
 	<fsa>
+		<id>816</id>
+		<date>2014-04-20</date>
+		<author>kikadf</author>
+		<package>qemu</package>
+		<vulnerable>1.5.2-3arcturus2</vulnerable>
+		<unaffected>1.5.2-3arcturus3</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0150</cve>
+		<desc>Michael S. Tsirkin of Red Hat discovered a buffer overflow flaw in the way qemu processed MAC addresses table update requests from the guest.
+			A privileged guest user could use this flaw to corrupt qemu process memory on the host, which could potentially result in arbitrary code execution on the host with the privileges of the qemu process.</desc>
+	</fsa>
+	<fsa>
 		<id>815</id>
 		<date>2014-04-18</date>
 		<author>kikadf</author>
