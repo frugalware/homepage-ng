@@ -39,6 +39,21 @@
 
 <fsas>
 	<fsa>
+		<id>817</id>
+		<date>2014-04-22</date>
+		<author>kikadf</author>
+		<package>django</package>
+		<vulnerable>1.5.2-1</vulnerable>
+		<unaffected>1.5.2-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0472
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0473
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0474</cve>
+		<desc>Benjamin Bach discovered that Django incorrectly handled dotted Python paths when using the reverse() function.
+			Paul McMillan discovered that Django incorrectly cached certain pages that contained CSRF cookies.
+			Michael Koziarski discovered that Django did not always perform explicit conversion of certain fields when using a MySQL database.</desc>
+	</fsa>
+	<fsa>
 		<id>816</id>
 		<date>2014-04-20</date>
 		<author>kikadf</author>
