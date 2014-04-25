@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+		<id>818</id>
+		<date>2014-04-25</date>
+		<author>kikadf</author>
+		<package>cups</package>
+		<vulnerable>1.6.1-3arcturus1</vulnerable>
+		<unaffected>1.6.1-3arcturus2</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2856</cve>
+		<desc>Alex Korobkin discovered that the CUPS web interface incorrectly protected against cross-site scripting (XSS) attacks.</desc>
+	</fsa>
+	<fsa>
 		<id>817</id>
 		<date>2014-04-22</date>
 		<author>kikadf</author>
