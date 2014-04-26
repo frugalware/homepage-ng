@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+		<id>819</id>
+		<date>2014-04-26</date>
+		<author>kikadf</author>
+		<package>drupal6</package>
+		<vulnerable>6.30-1arcturus1</vulnerable>
+		<unaffected>6.31-1arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2983</cve>
+		<desc>An information disclosure vulnerability was discovered in Drupal, a fully-featured content management framework. When pages are cached for anonymous users, form state may leak between anonymous users. Sensitive or private information recorded for one anonymous user could thus be disclosed to other users interacting with the same form at the same time.</desc>
+	</fsa>
+	<fsa>
 		<id>818</id>
 		<date>2014-04-25</date>
 		<author>kikadf</author>
