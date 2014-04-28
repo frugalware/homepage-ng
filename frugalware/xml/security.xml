@@ -39,6 +39,20 @@
 
 <fsas>
 	<fsa>
+		<id>821</id>
+		<date>2014-04-28</date>
+		<author>kikadf</author>
+		<package>qemu</package>
+		<vulnerable>1.5.2-3arcturus3</vulnerable>
+		<unaffected>1.5.2-3arcturus4</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4544
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2894</cve>
+		<desc>Michael S. Tsirkin discovered that QEMU incorrectly handled vmxnet3 devices.
+			Benoît Canet discovered that QEMU incorrectly handled SMART self-tests. 
+			A local guest could possibly use this issue to cause a denial of service, or possibly execute arbitrary code on the host.</desc>
+	</fsa>
+	<fsa>
 		<id>820</id>
 		<date>2014-04-26</date>
 		<author>kikadf</author>
