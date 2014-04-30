@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+               <id>822</id>
+               <date>2014-04-30</date>
+               <author>kikadf</author>
+               <package>libmms</package>
+               <vulnerable>0.6.2-1</vulnerable>
+               <unaffected>0.6.2-2arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2892</cve>
+               <desc>Alex Chapman discovered that a buffer overflow in processing "MMS over HTTP" messages could result in the execution of arbitrary code.</desc>
+       </fsa>
+	<fsa>
 		<id>821</id>
 		<date>2014-04-28</date>
 		<author>kikadf</author>
