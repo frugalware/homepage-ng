@@ -39,6 +39,18 @@
 
 <fsas>
 	<fsa>
+		<id>823</id>
+		<date>2014-05-07</date>
+		<author>kikadf</author>
+		<package>openssl</package>
+		<vulnerable>1.0.1-5arcturus3</vulnerable>
+		<unaffected>1.0.1-5arcturus4</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0198</cve>
+		<desc>It was discovered that OpenSSL incorrectly handled memory in the do_ssl3_write() function. 
+			A remote attacker could use this issue to possibly cause OpenSSL to crash, resulting in a denial of service.</desc>
+	</fsa>
+	<fsa>
                <id>822</id>
                <date>2014-04-30</date>
                <author>kikadf</author>
