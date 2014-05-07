@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+               <id>824</id>
+               <date>2014-05-07</date>
+               <author>kikadf</author>
+               <package>strongswan</package>
+               <vulnerable>5.0.1-2arcturus1</vulnerable>
+               <unaffected>5.0.1-2arcturus2</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2891</cve>
+               <desc>A vulnerability has been found in the ASN.1 parser of strongSwan, an IKE/IPsec suite used to establish IPsec protected links.</desc>
+       </fsa>
+	<fsa>
 		<id>823</id>
 		<date>2014-05-07</date>
 		<author>kikadf</author>
