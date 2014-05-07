@@ -39,6 +39,30 @@
 
 <fsas>
 	<fsa>
+		<id>825</id>
+		<date>2014-05-07</date>
+		<author>kikadf</author>
+		<package>libtiff</package>
+		<vulnerable>3.9.5-1</vulnerable>
+		<unaffected>3.9.5-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-1173
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-2088
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-2113
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-3401
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-4447
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-4564
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-5581
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1960
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1961
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4231
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4232
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4243
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4244</cve>
+		<desc>It was discovered that LibTIFF incorrectly handled certain malformed images when using the gif2tiff tool.
+			If a user or automated system were tricked into opening a specially crafted GIF image, a remote attacker could crash the application, leading to a denial of service, or possibly execute arbitrary code with user privileges.</desc>
+	</fsa>
+	<fsa>
                <id>824</id>
                <date>2014-05-07</date>
                <author>kikadf</author>
