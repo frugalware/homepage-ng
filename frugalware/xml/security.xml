@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+		<id>826</id>
+		<date>2014-05-09</date>
+		<author>kikadf</author>
+		<package>rxvt-unicode</package>
+		<vulnerable>9.18-1</vulnerable>
+		<unaffected>9.18-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3121</cve>
+		<desc>Phillip Hallam-Baker discovered that window property values could be queried in rxvt-unicode, resulting in the potential execution of arbitrary commands.</desc>
+	</fsa>
+	<fsa>
 		<id>825</id>
 		<date>2014-05-07</date>
 		<author>kikadf</author>
