@@ -39,6 +39,21 @@
 
 <fsas>
 	<fsa>
+		<id>827</id>
+		<date>2014-05-14</date>
+		<author>kikadf</author>
+		<package>libxfont</package>
+		<vulnerable>1.4.5-2arcturus2</vulnerable>
+		<unaffected>1.4.5-2arcturus3</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0209
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0210
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0211</cve>
+		<desc>Integer overflow of allocations in font metadata file parsing could allow a local user who is already authenticated to the X server to overwrite other memory in the heap.
+			Libxfont does not validate length fields when parsing xfs protocol replies allowing to write past the bounds of allocated memory when storing the returned data from the font server.
+			Integer overflows calculating memory needs for xfs replies could result in allocating too little memory and then writing the returned data from the font server past the end of the allocated buffer.</desc>
+	</fsa>
+	<fsa>
 		<id>826</id>
 		<date>2014-05-09</date>
 		<author>kikadf</author>
