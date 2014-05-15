@@ -39,6 +39,18 @@
 
 <fsas>
 	<fsa>
+		<id>829</id>
+		<date>2014-05-15</date>
+		<author>kikadf</author>
+		<package>django</package>
+		<vulnerable>1.5.2-2arcturus1</vulnerable>
+		<unaffected>1.5.2-2arcturus2</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1418</cve>
+		<desc>Stephen Stewart, Michael Nelson, Natalia Bidart and James Westby discovered that Django improperly removed Vary and Cache-Control headers from HTTP responses when replying to a request from an Internet Explorer or Chrome Frame client.
+			Peter Kuma and Gavin Wahl discovered that Django did not correctly validate some malformed URLs, which are accepted by some browsers.</desc>
+	</fsa>
+	<fsa>
 		<id>828</id>
 		<date>2014-05-15</date>
 		<author>James Buren</author>
