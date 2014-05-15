@@ -39,6 +39,23 @@
 
 <fsas>
 	<fsa>
+		<id>828</id>
+		<date>2014-05-15</date>
+		<author>James Buren</author>
+		<package>kernel</package>
+		<vulnerable>3.10-6</vulnerable>
+		<unaffected>3.10-7</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0196
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1737
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1738
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2851
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3122</cve>
+		<desc>Jiri Slaby discovered a race condition in the pty layer, which could lead to denial of service or privilege escalation.
+			Matthew Daley discovered that missing input sanitising in the FDRAWCMD ioctl and an information leak could result in privilege escalation.
+			Incorrect reference counting in the ping_init_sock() function allows denial of service or privilege escalation. Incorrect locking of memory can result in local denial of service.</desc>
+	</fsa>
+	<fsa>
 		<id>827</id>
 		<date>2014-05-14</date>
 		<author>kikadf</author>
