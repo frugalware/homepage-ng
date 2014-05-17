@@ -39,6 +39,21 @@
 
 <fsas>
 	<fsa>
+		<id>831</id>
+		<date>2014-05-16</date>
+		<author>kikadf</author>
+		<package>libxml2</package>
+		<vulnerable>2.8.0-1</vulnerable>
+		<unaffected>2.8.0-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-5134
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-0339
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2877
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0191</cve>
+		<desc>It was discovered that libxml2 had a heap-based buffer underflow when parsing entities. It was discovered that libxml2 would load XML external entities by default.
+			It was discovered that libxml2 incorrectly handled documents that end abruptly. Daniel Berrange discovered that libxml2 would incorrectly perform entity substitution even when requested not to.</desc>
+	</fsa>
+	<fsa>
 		<id>830</id>
 		<date>2014-05-16</date>
 		<author>kikadf</author>
