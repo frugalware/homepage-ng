@@ -39,6 +39,20 @@
 
 <fsas>
 	<fsa>
+               <id>832</id>
+               <date>2014-05-17</date>
+               <author>kikadf</author>
+               <package>actionpack</package>
+               <vulnerable>3.2.6-2arcturus1</vulnerable>
+               <unaffected>3.2.6-2arcturus2</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0081
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0082
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0130</cve>
+               <desc>The actionview/lib/action_view/helpers/number_helper.rb contains multiple cross-site scripting vulnerabilities. The actionpack/lib/action_view/template/text.rb performs symbol interning on MIME type strings, allowing remote denial-of-service attacks via increased memory consumption.
+			A directory traversal vulnerability in actionpack/lib/abstract_controller/base.rb allows remote attackers to read arbitrary files.</desc>
+       </fsa>
+	<fsa>
 		<id>831</id>
 		<date>2014-05-16</date>
 		<author>kikadf</author>
