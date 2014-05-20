@@ -130,8 +130,8 @@ If you modify this file, be sure it's still valid - read /hooks/README!
     </mirror>
     <mirror>
         <id>8</id>
-        <type>ftp</type>
-        <path>frugal</path>
+        <type>http</type>
+	<path>frugal/pub/frugalware</path>
         <link>frugalware.org</link>
         <country>USA</country>
         <country_code>us</country_code>
