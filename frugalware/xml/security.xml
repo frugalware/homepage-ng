@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+		<id>833</id>
+		<date>2014-05-22</date>
+		<author>kikadf</author>
+		<package>libgadu</package>
+		<vulnerable>1.11.2-2arcturus1</vulnerable>
+		<unaffected>1.11.2-2arcturus2</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3775</cve>
+		<desc>It was discovered that libgadu incorrectly handled certain messages from file relay servers.</desc>
+	</fsa>
+	<fsa>
                <id>832</id>
                <date>2014-05-17</date>
                <author>kikadf</author>
