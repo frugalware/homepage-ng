@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+		<id>834</id>
+		<date>2014-05-22</date>
+		<author>kikadf</author>
+		<package>pidgin</package>
+		<vulnerable>2.10.7-2arcturus2</vulnerable>
+		<unaffected>2.10.7-2arcturus3</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3775</cve>
+		<desc>It was discovered that Pidgin incorrectly handled certain messages from Gadu-Gadu file relay servers.</desc>
+	</fsa>
+	<fsa>
 		<id>833</id>
 		<date>2014-05-22</date>
 		<author>kikadf</author>
