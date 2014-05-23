@@ -108,7 +108,7 @@
                 fwsidebox(gettext("Get Frugalware"), $data['download']);
 
                 // Packages
-                fwsidebox("<a href=\"${fwng_root}rss/releases\"><img src=\"images/icons/rss.png\" width=\"16\" alt=\"\" /></a> " . gettext("Recent updates"), $data['packages']);
+                fwsidebox("<a href=\"${fwng_root}rss/packages\"><img src=\"images/icons/rss.png\" width=\"16\" alt=\"\" /></a> " . gettext("Recent updates"), $data['packages']);
 
                 // IRC
                 fwsidebox(gettext("IRC"), $data['irc']);
