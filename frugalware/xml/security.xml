@@ -39,6 +39,18 @@
 
 <fsas>
 	<fsa>
+		<id>835</id>
+		<date>2014-05-24</date>
+		<author>kikadf</author>
+		<package>lxml</package>
+		<vulnerable>2.3-1</vulnerable>
+		<unaffected>2.3.5-1arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3146</cve>
+		<desc>It was discovered that the lxml.html.clean module incorrectly stripped control characters. 
+			An attacked could potentially exploit this to conduct cross-site scripting (XSS) attacks.</desc>
+	</fsa>
+	<fsa>
 		<id>834</id>
 		<date>2014-05-22</date>
 		<author>kikadf</author>
