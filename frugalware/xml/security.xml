@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+		<id>836</id>
+		<date>2014-06-02</date>
+		<author>kikadf</author>
+		<package>mod_wsgi</package>
+		<vulnerable>3.4-1</vulnerable>
+		<unaffected>3.4-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0240</cve>
+		<desc>Robert Kisteleki discovered a potential privilege escalation in daemon mode.</desc>
+	</fsa>
+	<fsa>
 		<id>835</id>
 		<date>2014-05-24</date>
 		<author>kikadf</author>
