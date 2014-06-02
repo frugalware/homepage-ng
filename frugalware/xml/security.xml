@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+		<id>837</id>
+		<date>2014-06-02</date>
+		<author>kikadf</author>
+		<package>gnutls</package>
+		<vulnerable>2.12.17-2arcturus1</vulnerable>
+		<unaffected>2.12.17-2arcturus2</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3466</cve>
+		<desc>Joonas Kuorilehto discovered that GNU TLS performed insufficient validation of session IDs during TLS/SSL handshakes. A malicious server could use this to execute arbitrary code or perform denial of service.</desc>
+	</fsa>
+	<fsa>
 		<id>836</id>
 		<date>2014-06-02</date>
 		<author>kikadf</author>
