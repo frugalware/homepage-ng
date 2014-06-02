@@ -39,6 +39,21 @@
 
 <fsas>
 	<fsa>
+		<id>838</id>
+		<date>2014-06-02</date>
+		<author>kikadf</author>
+		<package>php</package>
+		<vulnerable>5.3.26-2arcturus1</vulnerable>
+		<unaffected>5.3.26-2arcturus2</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0185
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0237
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0238
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2270</cve>
+		<desc>The default PHP FPM socket permission has been changed from 0666 to 0660 to mitigate a security vulnerability (CVE-2014-0185) in PHP FPM that allowed any local user to run a PHP code under the active user of FPM process via crafted FastCGI client.
+			Denial of service in the CDF parser of the fileinfo module. (CVE-2014-0237,0238) Denial of service in the fileinfo module. (CVE-2014-2270)</desc>
+	</fsa>
+	<fsa>
 		<id>837</id>
 		<date>2014-06-02</date>
 		<author>kikadf</author>
