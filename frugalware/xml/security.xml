@@ -39,6 +39,26 @@
 
 <fsas>
 	<fsa>
+               <id>839</id>
+               <date>2014-06-05</date>
+               <author>kikadf</author>
+               <package>chromium-browser</package>
+               <vulnerable>34.0.1847.118-1arcturus1</vulnerable>
+               <unaffected>35.0.1916.114-1arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1743
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1744
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1745
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1746
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1747
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1748
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1749
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3152</cve>
+               <desc>Cloudfuzzer discovered a use-after-free issue in the Blink/Webkit document object model implementation. Aaron Staple discovered an integer overflow issue in audio input handling. Atte Kettunen discovered a use-after-free issue in the Blink/Webkit scalable vector graphics implementation. 
+			Holger Fuhrmannek discovered an out-of-bounds read issue in the URL protocol implementation for handling media. Packagesu discovered a cross-site scripting issue involving malformed MHTML files. Jordan Milne discovered a user interface spoofing issue.
+			The Google Chrome development team discovered and fixed multiple issues with potential security impact. An integer underflow issue was discovered in the v8 javascript library.</desc>
+       </fsa>
+	<fsa>
 		<id>838</id>
 		<date>2014-06-02</date>
 		<author>kikadf</author>
