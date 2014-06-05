@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+               <id>840</id>
+               <date>2014-06-05</date>
+               <author>kikadf</author>
+               <package>chkrootkit</package>
+               <vulnerable>49-1</vulnerable>
+               <unaffected>50-1arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0476</cve>
+               <desc>Thomas Stangner discovered a vulnerability in chkrootkit, a rootkit detector, which may allow local attackers to gain root access when /tmp is mounted without the noexec option.</desc>
+       </fsa>
+	<fsa>
                <id>839</id>
                <date>2014-06-05</date>
                <author>kikadf</author>
