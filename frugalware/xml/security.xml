@@ -39,6 +39,20 @@
 
 <fsas>
 	<fsa>
+               <id>841</id>
+               <date>2014-06-05</date>
+               <author>kikadf</author>
+               <package>python-gnupg</package>
+               <vulnerable>0.3.4-1</vulnerable>
+               <unaffected>0.3.6-1arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-7323
+		       http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1927
+		       http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1928
+		       http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1929</cve>
+               <desc>Multiple vulnerabilities were discovered in the Python wrapper for the Gnu Privacy Guard (GPG). Insufficient sanitising could lead to the execution of arbitrary shell commands.</desc>
+       </fsa>
+	<fsa>
                <id>840</id>
                <date>2014-06-05</date>
                <author>kikadf</author>
