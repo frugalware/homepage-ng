@@ -39,6 +39,23 @@
 
 <fsas>
 	<fsa>
+		<id>842</id>
+		<date>2014-06-05</date>
+		<author>kikadf</author>
+		<package>openssl</package>
+		<vulnerable>1.0.1-5arcturus4</vulnerable>
+		<unaffected>1.0.1-5arcturus5</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0195
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0221
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0224
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3470</cve>
+		<desc>Jüri Aedla discovered that OpenSSL incorrectly handled invalid DTLS fragments.
+			Imre Rad discovered that OpenSSL incorrectly handled DTLS recursions.
+			Kikuchi Masashi discovered that OpenSSL incorrectly handled certain handshakes.
+			Felix Gröbert and Ivan Fratrić discovered that OpenSSL incorrectly handled anonymous ECDH ciphersuites.</desc>
+	</fsa>
+	<fsa>
                <id>841</id>
                <date>2014-06-05</date>
                <author>kikadf</author>
