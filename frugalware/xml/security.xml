@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+		<id>843</id>
+		<date>2014-06-06</date>
+		<author>kikadf</author>
+		<package>mupdf</package>
+		<vulnerable>1.1-1</vulnerable>
+		<unaffected>1.1-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2013</cve>
+		<desc>It was discovered that a buffer overflow in the MuPDF viewer might lead to the execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>842</id>
 		<date>2014-06-05</date>
 		<author>kikadf</author>
