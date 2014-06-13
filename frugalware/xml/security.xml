@@ -39,6 +39,20 @@
 
 <fsas>
 	<fsa>
+               <id>844</id>
+               <date>2014-06-13</date>
+               <author>kikadf</author>
+               <package>chromium-browser</package>
+               <vulnerable>35.0.1916.114-1arcturus1</vulnerable>
+               <unaffected>35.0.1916.153-1arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3154
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3155
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3156
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3157</cve>
+               <desc> Use-after-free in filesystem api. Out-of-bounds read in SPDY. Buffer overflow in clipboard. Heap overflow in media.</desc>
+       </fsa>
+	<fsa>
 		<id>843</id>
 		<date>2014-06-06</date>
 		<author>kikadf</author>
