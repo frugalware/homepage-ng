@@ -39,6 +39,26 @@
 
 <fsas>
 	<fsa>
+               <id>845</id>
+               <date>2014-06-14</date>
+               <author>kikadf</author>
+               <package>firefox</package>
+               <vulnerable>29.0-1arcturus1</vulnerable>
+               <unaffected>30.0-1arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1533
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1534
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1536
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1537
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1538
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1540
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1541
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1542</cve>
+               <desc>Gary Kwong, Christoph Diehl, Christian Holler, Hannes Verschore, Jan de Mooij, Ryan VanderMeulen, Jeff Walden, Kyle Huey, Jesse Ruderman, Gregor Wagner, Benoit Jacob and Karl Tomlinson discovered multiple memory safety issues in Firefox.
+			Abhishek Arya discovered multiple use-after-free and out-of-bounds read issues in Firefox. Tyson Smith and Jesse Schwartzentruber discovered a use-after-free in the event listener manager.
+			A use-after-free was discovered in the SMIL animation controller. Holger Fuhrmannek discovered a buffer overflow in Web Audio.</desc>
+       </fsa>
+	<fsa>
                <id>844</id>
                <date>2014-06-13</date>
                <author>kikadf</author>
