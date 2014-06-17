@@ -1,3 +1,0 @@
-How to create a thumbnail :
-
-mogrify -resize 600x390 -path thumbnails picture.jpg

@@ -99,7 +99,7 @@ class Services_Libravatar
      * @see detectHttps()
      * @see setHttps()
      */
-    protected $https;
+    protected $https = true;
 
     /**
      * Image size in pixels

@@ -1,7 +1,0 @@
-<!ELEMENT authors (author)*>
-<!ELEMENT author (name , nick , email , role+ , status)>
-<!ELEMENT name (#PCDATA)>
-<!ELEMENT nick (#PCDATA)>
-<!ELEMENT email(#PCDATA)>
-<!ELEMENT role (#PCDATA)>
-<!ELEMENT status (#PCDATA)>
