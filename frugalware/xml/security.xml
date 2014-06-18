@@ -39,6 +39,20 @@
 
 <fsas>
 	<fsa>
+               <id>846</id>
+               <date>2014-06-18</date>
+               <author>kikadf</author>
+               <package>kernel</package>
+               <vulnerable>3.10-7</vulnerable>
+               <unaffected>3.10-8arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3153
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1739
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4014</cve>
+               <desc>Pinkie Pie discovered a flaw in the Linux kernel's futex subsystem. Kernel Infoleak vulnerability in media_enum_entities().
+		       Linux kernel user namespace bug. </desc>
+       </fsa>
+	<fsa>
                <id>845</id>
                <date>2014-06-14</date>
                <author>kikadf</author>
