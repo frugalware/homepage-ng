@@ -36,7 +36,9 @@
             <_sublink url="irc">IRC</_sublink>
             <_sublink></_sublink>
             <_sublink url="http://www.frugalware-art.org/">Artwork</_sublink>
+<!--
             <_sublink url="http://planet.frugalware.org">Blogs</_sublink>
+-->
             <_sublink url="paste/">Pastebin</_sublink>
             <_sublink url="https://frugalware.org/mailman/listinfo">Mailing lists</_sublink>
         </submenus>
