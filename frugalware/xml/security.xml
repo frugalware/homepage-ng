@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+		<id>849</id>
+		<date>2014-06-23</date>
+		<author>kikadf</author>
+		<package>php</package>
+		<vulnerable>5.3.26-2arcturus2</vulnerable>
+		<unaffected>5.3.26-2arcturus3</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4049</cve>
+		<desc>Stefan Esser discovered that PHP incorrectly handled DNS TXT records.</desc>
+	</fsa>
+	<fsa>
 		<id>848</id>
 		<date>2014-06-23</date>
 		<author>kikadf</author>
