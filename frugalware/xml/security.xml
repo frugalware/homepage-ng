@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+		<id>848</id>
+		<date>2014-06-23</date>
+		<author>kikadf</author>
+		<package>mediawiki</package>
+		<vulnerable>1.18.1-1</vulnerable>
+		<unaffected>1.19.16-1arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3966</cve>
+		<desc>Omer Iqbal discovered that Mediawiki, a wiki engine, parses invalid usernames on Special:PasswordReset as wikitext when $wgRawHtml is enabled. On such wikis this allows an unauthenticated attacker to insert malicious JavaScript, a cross site scripting attack.</desc>
+	</fsa>
+	<fsa>
 		<id>847</id>
 		<date>2014-06-23</date>
 		<author>kikadf</author>
