@@ -74,15 +74,14 @@
 	</fsa>
 	<fsa>
 		<id>847</id>
-		<date>2014-06-23</date>
+		<date>2014-06-25</date>
 		<author>kikadf</author>
 		<package>json-c</package>
 		<vulnerable>0.9-1</vulnerable>
-		<unaffected>0.9-2arcturus1</unaffected>
+		<unaffected>0.9-2arcturus2</unaffected>
 		<bts></bts>
-		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6370
-			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6371</cve>
-		<desc>Florian Weimer discovered that json-c incorrectly handled buffer lengths. Florian Weimer discovered that json-c incorrectly handled hash arrays.</desc>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6370</cve>
+		<desc>Florian Weimer discovered that json-c incorrectly handled buffer lengths.</desc>
 	</fsa>
 	<fsa>
                <id>846</id>
