@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+		<id>852</id>
+		<date>2014-06-26</date>
+		<author>kikadf</author>
+		<package>gnupg</package>
+		<vulnerable>1.4.14-2arcturus1</vulnerable>
+		<unaffected>1.4.14-2arcturus2</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4617</cve>
+		<desc>Jean-René Reinhard, Olivier Levillain and Florian Maury reported that GnuPG, the GNU Privacy Guard, did not properly parse certain garbled compressed data packets.</desc>
+	</fsa>
+	<fsa>
 		<id>851</id>
 		<date>2014-06-26</date>
 		<author>kikadf</author>
