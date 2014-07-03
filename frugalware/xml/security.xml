@@ -39,6 +39,22 @@
 
 <fsas>
 	<fsa>
+		<id>855</id>
+		<date>2014-07-03</date>
+		<author>kikadf</author>
+		<package>dbus</package>
+		<vulnerable>1.6.8-9</vulnerable>
+		<unaffected>1.6.8-10arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2168
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3477
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3532
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3533</cve>
+		<desc>Alban Crequy at Collabora Ltd. discovered that dbus-daemon sends an AccessDenied error to the service instead of a client when the client is prohibited from accessing the service. 
+			Alban Crequy at Collabora Ltd. discovered a bug in dbus-daemon's support for file descriptor passing. 
+			Alban Crequy at Collabora Ltd. and Alejandro Martínez Suárez discovered that a malicious process could force services to be disconnected from the D-Bus system by causing dbus-daemon to attempt to forward invalid file descriptors to a victim process, leading to a denial of service.</desc>
+	</fsa>
+	<fsa>
 		<id>854</id>
 		<date>2014-07-03</date>
 		<author>kikadf</author>
