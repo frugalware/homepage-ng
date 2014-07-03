@@ -39,6 +39,25 @@
 
 <fsas>
 	<fsa>
+		<id>854</id>
+		<date>2014-07-03</date>
+		<author>kikadf</author>
+		<package>cacti</package>
+		<vulnerable>0.8.8b-1</vulnerable>
+		<unaffected>0.8.8b-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1435
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-5588
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-5589
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2327
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2327
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2328
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2708
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2709
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4002</cve>
+		<desc>Multiple security issues (cross-site scripting, cross-site request forgery, SQL injections, missing input sanitising) have been found in Cacti, a web frontend for RRDTool.</desc>
+	</fsa>
+	<fsa>
 		<id>853</id>
 		<date>2014-06-26</date>
 		<author>kikadf</author>
