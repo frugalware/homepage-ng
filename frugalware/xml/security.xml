@@ -39,6 +39,27 @@
 
 <fsas>
 	<fsa>
+		<id>857</id>
+		<date>2014-07-17</date>
+		<author>kikadf</author>
+		<package>php</package>
+		<vulnerable>5.3.26-2arcturus3</vulnerable>
+		<unaffected>5.3.26-2arcturus4</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0207
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3478
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3479
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3480
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3487
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4721</cve>
+		<desc>Francisco Alonso of the Red Hat Security Response Team reported an incorrect boundary check in the cdf_read_short_sector() function.
+			Francisco Alonso of the Red Hat Security Response Team discovered a flaw in the way the truncated pascal string size in the mconvert() function is computed.
+			Francisco Alonso of the Red Hat Security Response Team reported an incorrect boundary check in the cdf_check_stream_offset() function.
+			rancisco Alonso of the Red Hat Security Response Team reported an insufficient boundary check in the cdf_count_chain() function.
+			Francisco Alonso of the Red Hat Security Response Team discovered an incorrect boundary check in the cdf_read_property_info() funtion.
+			Stefan Esser discovered a type confusion issue affecting phpinfo(), which might allow an attacker to obtain sensitive information from process memory.</desc>
+	</fsa>
+	<fsa>
 		<id>856</id>
 		<date>2014-07-17</date>
 		<author>kikadf</author>
