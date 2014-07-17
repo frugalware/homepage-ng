@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+		<id>856</id>
+		<date>2014-07-17</date>
+		<author>kikadf</author>
+		<package>vlc</package>
+		<vulnerable>2.0.8-2</vulnerable>
+		<unaffected>2.0.8-3arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4388</cve>
+		<desc>Multiple buffer overflows have been found in the VideoLAN media player. Processing malformed subtitles or movie files could lead to denial of service and potentially the execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>855</id>
 		<date>2014-07-03</date>
 		<author>kikadf</author>
