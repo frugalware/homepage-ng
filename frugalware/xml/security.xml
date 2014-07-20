@@ -39,6 +39,18 @@
 
 <fsas>
 	<fsa>
+		<id>863</id>
+		<date>2014-07-20</date>
+		<author>kikadf</author>
+		<package>activerecord</package>
+		<vulnerable>3.2.13-1</vulnerable>
+		<unaffected>3.2.13-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3482
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3483</cve>
+		<desc>Sean Griffin discovered two vulnerabilities in the PostgreSQL adapter for Active Record which could lead to SQL injection.</desc>
+	</fsa>
+	<fsa>
                <id>862</id>
                <date>2014-07-20</date>
                <author>kikadf</author>
