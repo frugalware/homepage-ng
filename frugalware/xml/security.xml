@@ -39,6 +39,19 @@
 
 <fsas>
 	<fsa>
+		<id>859</id>
+		<date>2014-07-20</date>
+		<author>kikadf</author>
+		<package>fail2ban</package>
+		<vulnerable>0.8.4-3</vulnerable>
+		<unaffected>0.8.13-1arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-7176
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-7177</cve>
+		<desc>Two vulnerabilities were discovered in Fail2ban, a solution to ban hosts that cause multiple authentication errors.
+			When using Fail2ban to monitor Postfix or Cyrus IMAP logs, improper input validation in log parsing could enable a remote attacker to trigger an IP ban on arbitrary addresses, resulting in denial of service.</desc>
+	</fsa>
+	<fsa>
                <id>858</id>
                <date>2014-07-20</date>
                <author>kikadf</author>
