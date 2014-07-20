@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+               <id>862</id>
+               <date>2014-07-20</date>
+               <author>kikadf</author>
+               <package>transmission-cli</package>
+               <vulnerable>2.81-1</vulnerable>
+               <unaffected>2.81-2arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4909</cve>
+               <desc>Ben Hawkes discovered that Transmission incorrectly handled certain peer messages.</desc>
+       </fsa>
+	<fsa>
                <id>861</id>
                <date>2014-07-20</date>
                <author>kikadf</author>
