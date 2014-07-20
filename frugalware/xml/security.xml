@@ -39,6 +39,23 @@
 
 <fsas>
 	<fsa>
+               <id>858</id>
+               <date>2014-07-20</date>
+               <author>kikadf</author>
+               <package>mysql</package>
+               <vulnerable>5.5.37-1arcturus1</vulnerable>
+               <unaffected>5.5.38-1arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2494
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4207
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4258
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4260</cve>
+               <desc>Unspecified vulnerability in the MySQL Server component in Oracle MySQL 5.5.37 and earlier allows remote authenticated users to affect availability via vectors related to ENARC.
+			   Unspecified vulnerability in the MySQL Server component in Oracle MySQL 5.5.37 and earlier allows remote authenticated users to affect availability via vectors related to SROPTZR.
+			   Unspecified vulnerability in the MySQL Server component in Oracle MySQL 5.5.37 and earlier allows remote authenticated users to affect confidentiality, integrity, and availability via vectors related to SRINFOSC.
+			   Unspecified vulnerability in the MySQL Server component in Oracle MySQL 5.5.37 and earlier allows remote authenticated users to affect integrity and availability via vectors related to SRCHAR.</desc>
+       </fsa>
+	<fsa>
 		<id>857</id>
 		<date>2014-07-17</date>
 		<author>kikadf</author>
