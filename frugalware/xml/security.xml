@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+               <id>861</id>
+               <date>2014-07-20</date>
+               <author>kikadf</author>
+               <package>miniupnpc</package>
+               <vulnerable>1.7-1</vulnerable>
+               <unaffected>1.7-2arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3985</cve>
+               <desc>It was discovered that MiniUPnPc incorrectly handled certain buffer lengths.</desc>
+       </fsa>
+	<fsa>
                <id>860</id>
                <date>2014-07-20</date>
                <author>kikadf</author>
