@@ -39,6 +39,25 @@
 
 <fsas>
 	<fsa>
+               <id>860</id>
+               <date>2014-07-20</date>
+               <author>kikadf</author>
+               <package>file</package>
+               <vulnerable>5.14-2arcturus2</vulnerable>
+               <unaffected>5.14-2arcturus3</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-7345
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0207
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3478
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3479
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3480
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3487
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3538</cve>
+               <desc>Mike Frysinger discovered that the file awk script detector used multiple wildcard with unlimited repetitions.
+			   Francisco Alonso discovered that file incorrectly handled certain CDF documents.
+			   Jan Kaluža discovered that file did not properly restrict the amount of data read during regex searches.</desc>
+       </fsa>
+	<fsa>
 		<id>859</id>
 		<date>2014-07-20</date>
 		<author>kikadf</author>
