@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+		<id>865</id>
+		<date>2014-07-23</date>
+		<author>kikadf</author>
+		<package>drupal6</package>
+		<vulnerable>6.31-1arcturus1</vulnerable>
+		<unaffected>6.32-1arcturus1</unaffected>
+		<bts></bts>
+		<cve>https://www.drupal.org/SA-CORE-2014-003</cve>
+		<desc>Multiple security issues have been discovered in the Drupal content management system, ranging from denial of service to cross-site scripting.</desc>
+	</fsa>
+	<fsa>
 		<id>864</id>
 		<date>2014-07-23</date>
 		<author>kikadf</author>
