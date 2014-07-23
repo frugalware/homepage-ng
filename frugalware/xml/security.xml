@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+		<id>866</id>
+		<date>2014-07-23</date>
+		<author>kikadf</author>
+		<package>cups</package>
+		<vulnerable>1.6.1-3arcturus2</vulnerable>
+		<unaffected>1.6.1-3arcturus3</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3537</cve>
+		<desc>Francisco Alonso discovered that the CUPS web interface incorrectly validated permissions on rss files.</desc>
+	</fsa>
+	<fsa>
 		<id>865</id>
 		<date>2014-07-23</date>
 		<author>kikadf</author>
