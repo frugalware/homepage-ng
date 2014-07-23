@@ -39,6 +39,19 @@
 
 <fsas>
 	<fsa>
+		<id>867</id>
+		<date>2014-07-23</date>
+		<author>kikadf</author>
+		<package>libtasn1</package>
+		<vulnerable>2.11-1</vulnerable>
+		<unaffected>2.11-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3467
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3468
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3469</cve>
+		<desc>It was discovered that Libtasn1 incorrectly handled certain ASN.1 data structures. It was discovered that Libtasn1 incorrectly handled negative bit lengths.</desc>
+	</fsa>
+	<fsa>
 		<id>866</id>
 		<date>2014-07-23</date>
 		<author>kikadf</author>
