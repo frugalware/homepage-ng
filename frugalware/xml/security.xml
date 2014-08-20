@@ -39,6 +39,19 @@
 
 <fsas>
 	<fsa>
+               <id>869</id>
+               <date>2014-08-20</date>
+               <author>kikadf</author>
+               <package>drupal6</package>
+               <vulnerable>6.32-1arcturus1/vulnerable>
+               <unaffected>6.33-1arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5265
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5266
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5267</cve>
+               <desc>A denial of service vulnerability was discovered in Drupal, a fully-featured content management framework. A remote attacker could exploit this flaw to cause CPU and memory exhaustion and the site's database to reach the maximum number of open connections, leading to the site becoming unavailable or unresponsive.</desc>
+       </fsa>
+	<fsa>
                <id>868</id>
                <date>2014-08-20</date>
                <author>kikadf</author>
