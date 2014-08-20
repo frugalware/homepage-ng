@@ -39,6 +39,25 @@
 
 <fsas>
 	<fsa>
+               <id>873</id>
+               <date>2014-08-20</date>
+               <author>kikadf</author>
+               <package>krb5</package>
+               <vulnerable>1.10.1-1</vulnerable>
+               <unaffected>1.10.1-2arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4341
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4342
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4343
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4344
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4345</cve>
+               <desc>An unauthenticated remote attacker with the ability to inject packets into a legitimately established GSSAPI application session can cause a program crash due to invalid memory references when attempting to read beyond the end of a buffer.
+			   An unauthenticated remote attacker with the ability to inject packets into a legitimately established GSSAPI application session can cause a program crash due to invalid memory references when reading beyond the end of a buffer or by causing a null pointer dereference.
+			   An unauthenticated remote attacker with the ability to spoof packets appearing to be from a GSSAPI acceptor can cause a double-free condition in GSSAPI initiators (clients) which are using the SPNEGO mechanism, by returning a different underlying mechanism than was proposed by the initiator.
+			   An unauthenticated or partially authenticated remote attacker can cause a NULL dereference and application crash during a SPNEGO negotiation by sending an empty token as the second or later context token from initiator to acceptor.
+			   When kadmind is configured to use LDAP for the KDC database, an authenticated remote attacker can cause it to perform an out-of-bounds write (buffer overflow).</desc>
+       </fsa>
+	<fsa>
                <id>872</id>
                <date>2014-08-20</date>
                <author>kikadf</author>
