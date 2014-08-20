@@ -39,6 +39,21 @@
 
 <fsas>
 	<fsa>
+               <id>868</id>
+               <date>2014-08-20</date>
+               <author>kikadf</author>
+               <package>apache</package>
+               <vulnerable>2.2.23-3arcturus1</vulnerable>
+               <unaffected>2.2.23-3arcturus2</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0117
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0118
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0226
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0231</cve>
+               <desc>Marek Kroemeke discovered that the mod_proxy module incorrectly handled certain requests. Giancarlo Pellegrino and Davide Balzarotti discovered that the mod_deflate module incorrectly handled body decompression.
+			   Marek Kroemeke and others discovered that the mod_status module incorrectly handled certain requests. Rainer Jung discovered that the mod_cgid module incorrectly handled certain scripts.</desc>
+       </fsa>
+	<fsa>
 		<id>867</id>
 		<date>2014-07-23</date>
 		<author>kikadf</author>
