@@ -97,7 +97,7 @@
                <date>2014-08-20</date>
                <author>kikadf</author>
                <package>drupal6</package>
-               <vulnerable>6.32-1arcturus1/vulnerable>
+               <vulnerable>6.32-1arcturus1</vulnerable>
                <unaffected>6.33-1arcturus1</unaffected>
                <bts></bts>
                <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5265
