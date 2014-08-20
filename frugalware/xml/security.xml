@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+               <id>872</id>
+               <date>2014-08-20</date>
+               <author>kikadf</author>
+               <package>lzo</package>
+               <vulnerable>2.0.6-1</vulnerable>
+               <unaffected>2.0.6-1arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4607</cve>
+               <desc>Don A. Bailey from Lab Mouse Security discovered an integer overflow flaw in the way the lzo library decompressed certain archives compressed with the LZO algorithm. An attacker could create a specially crafted LZO-compressed input that, when decompressed by an application using the lzo library, would cause that application to crash or, potentially, execute arbitrary code.</desc>
+       </fsa>
+	<fsa>
                <id>871</id>
                <date>2014-08-20</date>
                <author>kikadf</author>
