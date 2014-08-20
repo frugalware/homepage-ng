@@ -39,6 +39,21 @@
 
 <fsas>
 	<fsa>
+               <id>878</id>
+               <date>2014-08-20</date>
+               <author>kikadf</author>
+               <package>wireshark</package>
+               <vulnerable>1.8.13-1arcturus1</vulnerable>
+               <unaffected>1.8.15-1arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5161
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5162
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5163
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5164
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5165</cve>
+               <desc>Multiple vulnerabilities were discovered in the dissectors for Catapult DCT2000, IrDA, GSM Management, RLC ASN.1 BER, which could result in denial of service.</desc>
+       </fsa>
+	<fsa>
                <id>877</id>
                <date>2014-08-20</date>
                <author>kikadf</author>
