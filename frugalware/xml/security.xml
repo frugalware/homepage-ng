@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+               <id>871</id>
+               <date>2014-08-20</date>
+               <author>kikadf</author>
+               <package>gpgme</package>
+               <vulnerable>1.3.1-5</vulnerable>
+               <unaffected>1.3.1-6arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3564</cve>
+               <desc>Tomáš Trnka discovered a heap-based buffer overflow within the gpgsm status handler of GPGME, a library designed to make access to GnuPG easier for applications. An attacker could use this issue to cause an application using GPGME to crash (denial of service) or possibly to execute arbitrary code.</desc>
+       </fsa>
+	<fsa>
                <id>870</id>
                <date>2014-08-20</date>
                <author>kikadf</author>
