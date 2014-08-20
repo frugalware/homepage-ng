@@ -39,6 +39,25 @@
 
 <fsas>
 	<fsa>
+               <id>875</id>
+               <date>2014-08-20</date>
+               <author>kikadf</author>
+               <package>openssl</package>
+               <vulnerable>1.0.1-5arcturus5</vulnerable>
+               <unaffected>1.0.1-5arcturus6</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3505
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3506
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3507
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3508
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3509
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3510
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3511
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3512
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5139</cve>
+               <desc>Multiple vulnerabilities have been identified in OpenSSL, a Secure Sockets Layer toolkit, that may result in denial of service (application crash, large memory consumption), information leak, protocol downgrade. Additionally, a buffer overrun affecting only applications explicitly set up for SRP has been fixed.</desc>
+       </fsa>
+	<fsa>
                <id>874</id>
                <date>2014-08-20</date>
                <author>kikadf</author>
