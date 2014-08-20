@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+               <id>876</id>
+               <date>2014-08-20</date>
+               <author>kikadf</author>
+               <package>serf</package>
+               <vulnerable>1.2.1-1</vulnerable>
+               <unaffected>1.2.1-2arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3504</cve>
+               <desc>Ben Reser discovered that serf did not correctly handle SSL certificates with NUL bytes in the CommonName or SubjectAltNames fields.</desc>
+       </fsa>
+	<fsa>
                <id>875</id>
                <date>2014-08-20</date>
                <author>kikadf</author>
