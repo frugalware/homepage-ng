@@ -39,6 +39,22 @@
 
 <fsas>
 	<fsa>
+               <id>879</id>
+               <date>2014-08-20</date>
+               <author>kikadf</author>
+               <package>wordpress</package>
+               <vulnerable>3.9-1arcturus1</vulnerable>
+               <unaffected>3.9.2-1arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2053
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5204
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5205
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5240
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5265
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5266</cve>
+               <desc>Multiple security issues have been discovered in Wordpress, a web blogging tool, resulting in denial of service or information disclosure.</desc>
+       </fsa>
+	<fsa>
                <id>878</id>
                <date>2014-08-20</date>
                <author>kikadf</author>
