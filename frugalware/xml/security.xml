@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+               <id>874</id>
+               <date>2014-08-20</date>
+               <author>kikadf</author>
+               <package>kdelibs</package>
+               <vulnerable>4.11.1-1</vulnerable>
+               <unaffected>4.11.1-2arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5033</cve>
+               <desc>Sebastian Krahmer discovered that Kauth used Policykit insecurely by relying on the process ID. This could result in privilege escalation.</desc>
+       </fsa>
+	<fsa>
                <id>873</id>
                <date>2014-08-20</date>
                <author>kikadf</author>
