@@ -39,6 +39,20 @@
 
 <fsas>
 	<fsa>
+		<id>881</id>
+		<date>2014-08-21</date>
+		<author>kikadf</author>
+		<package>php</package>
+		<vulnerable>5.3.26-2arcturus4</vulnerable>
+		<unaffected>5.3.26-2arcturus5</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3538
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3587
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4670</cve>
+		<desc>It was discovered that the CDF parser of the fileinfo module does not properly process malformed files in the Composite Document File (CDF) format, leading to crashes.
+			It was discovered that PHP incorrectly handled certain SPL Iterators. A local attacker could use this flaw to cause PHP to crash, resulting in a denial of service.</desc>
+	</fsa>
+	<fsa>
 		<id>880</id>
 		<date>2014-08-21</date>
 		<author>kikadf</author>
