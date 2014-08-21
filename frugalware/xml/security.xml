@@ -39,6 +39,21 @@
 
 <fsas>
 	<fsa>
+		<id>880</id>
+		<date>2014-08-21</date>
+		<author>kikadf</author>
+		<package>cacti</package>
+		<vulnerable>0.8.8b-2arcturus1</vulnerable>
+		<unaffected>0.8.8b-2arcturus2</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5025
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5026
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5043
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5261
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5262</cve>
+		<desc>Multiple security issues (cross-site scripting, missing input sanitising and SQL injection) have been discovered in Cacti, a web interface for graphing of monitoring systems.</desc>
+	</fsa>
+	<fsa>
                <id>879</id>
                <date>2014-08-20</date>
                <author>kikadf</author>
