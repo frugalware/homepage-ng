@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+		<id>885</id>
+		<date>2014-08-26</date>
+		<author>kikadf</author>
+		<package>ppp</package>
+		<vulnerable>2.4.5-3</vulnerable>
+		<unaffected>2.4.5-4arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3158</cve>
+		<desc>Integer overflow in option parsing.</desc>
+	</fsa>
+	<fsa>
 		<id>884</id>
 		<date>2014-08-26</date>
 		<author>kikadf</author>
