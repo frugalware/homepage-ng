@@ -39,6 +39,18 @@
 
 <fsas>
 	<fsa>
+		<id>884</id>
+		<date>2014-08-26</date>
+		<author>kikadf</author>
+		<package>mediawiki</package>
+		<vulnerable>1.19.16-1arcturus1</vulnerable>
+		<unaffected>1.19.18-1arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5241
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5243</cve>
+		<desc>It was discovered that MediaWiki, a website engine for collaborative work, is vulnerable to JSONP injection in Flash (CVE-2014-5241) and clickjacking between OutputPage and ParserOutput (CVE-2014-5243).</desc>
+	</fsa>
+	<fsa>
 		<id>883</id>
 		<date>2014-08-26</date>
 		<author>kikadf</author>
