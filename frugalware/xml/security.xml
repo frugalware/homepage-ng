@@ -39,6 +39,23 @@
 
 <fsas>
 	<fsa>
+		<id>883</id>
+		<date>2014-08-26</date>
+		<author>kikadf</author>
+		<package>django</package>
+		<vulnerable>1.5.2-2arcturus2</vulnerable>
+		<unaffected>1.5.9-1arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0480
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0481
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0482
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0483</cve>
+		<desc>Florian Apolloner discovered that in certain situations, URL reversing could generate scheme-relative URLs which could unexpectedly redirect a user to a different host, leading to phishing attacks.
+			David Wilson reported a file upload denial of service vulnerability. 
+			David Greisen discovered that under some circumstances, the use of the RemoteUserMiddleware middleware and the RemoteUserBackend authentication backend could result in one user receiving another user's session, if a change to the REMOTE_USER header occurred without corresponding logout/login actions.
+			Collin Anderson discovered that it is possible to reveal any field's data by modifying the popup and to_field parameters of the query string on an admin change form page.</desc>
+	</fsa>
+	<fsa>
 		<id>882</id>
 		<date>2014-08-26</date>
 		<author>kikadf</author>
