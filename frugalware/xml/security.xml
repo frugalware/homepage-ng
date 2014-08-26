@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+		<id>882</id>
+		<date>2014-08-26</date>
+		<author>kikadf</author>
+		<package>imaging</package>
+		<vulnerable>1.1.7-5arcturus1</vulnerable>
+		<unaffected>1.1.7-5arcturus2</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3589</cve>
+		<desc>Andrew Drake discovered that missing input sanitising in the icns decoder of the Python Imaging Library could result in denial of service if a malformed image is processed.</desc>
+	</fsa>
+	<fsa>
 		<id>881</id>
 		<date>2014-08-21</date>
 		<author>kikadf</author>
