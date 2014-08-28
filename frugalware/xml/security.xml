@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+		<id>886</id>
+		<date>2014-08-28</date>
+		<author>kikadf</author>
+		<package>ipython</package>
+		<vulnerable>1.0.0-1</vulnerable>
+		<unaffected>1.0.0-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3429</cve>
+		<desc>Cross-domain websocket hijacking vulnerability.</desc>
+	</fsa>
+	<fsa>
 		<id>885</id>
 		<date>2014-08-26</date>
 		<author>kikadf</author>
