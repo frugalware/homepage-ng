@@ -39,6 +39,19 @@
 
 <fsas>
 	<fsa>
+		<id>887</id>
+		<date>2014-08-28</date>
+		<author>kikadf</author>
+		<package>glibc</package>
+		<vulnerable>2.16.0-3</vulnerable>
+		<unaffected>2.16.0-4arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0475
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5119</cve>
+		<desc>A directory traveral flaw was found in the way glibc loaded locale files.
+			Tavis Ormandy reported an off-by-one error leading to a heap-based buffer overflow flaw in glibc's __gconv_translit_find() function.</desc>
+	</fsa>
+	<fsa>
 		<id>886</id>
 		<date>2014-08-28</date>
 		<author>kikadf</author>
