@@ -39,6 +39,19 @@
 
 <fsas>
 	<fsa>
+               <id>889</id>
+               <date>2014-08-29</date>
+               <author>kikadf</author>
+               <package>squid</package>
+               <vulnerable>3.1.19-1</vulnerable>
+               <unaffected>3.1.19-2arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-5643
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-0189
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3609</cve>
+               <desc>Squid3, a fully featured Web proxy cache, is prone to a denial of service attack due to memory consumption caused by memory leaks in cachemgr.cgi. Matthew Daley discovered that Squid 3 did not properly perform input validation in request parsing.</desc>
+        </fsa>
+	<fsa>
 		<id>888</id>
 		<date>2014-08-28</date>
 		<author>kikadf</author>
