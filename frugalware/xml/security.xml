@@ -39,6 +39,18 @@
 
 <fsas>
 	<fsa>
+		<id>890</id>
+		<date>2014-08-30</date>
+		<author>kikadf</author>
+		<package>libmodplug</package>
+		<vulnerable>0.8.8.4-2</vulnerable>
+		<unaffected>0.8.8.5-1arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4233
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4234</cve>
+		<desc>Several vulnerabilities have been discovered in libmodplug, a library for mod music based on ModPlug, that might allow arbitrary code execution when processing specially-crafted ABC files through applications using the library, such as media players.</desc>
+	</fsa>
+	<fsa>
                <id>889</id>
                <date>2014-08-29</date>
                <author>kikadf</author>
