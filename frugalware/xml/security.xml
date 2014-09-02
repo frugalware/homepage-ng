@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+               <id>891</id>
+               <date>2014-09-02</date>
+               <author>kikadf</author>
+               <package>net-snmp</package>
+               <vulnerable>5.7.1-4arcturus1</vulnerable>
+               <unaffected>5.7.1-4arcturus2</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3565/cve>
+               <desc>snmptrapd crash when handling an SNMP trap containing a ifMtu with a NULL type.</desc>
+        </fsa>
+	<fsa>
 		<id>890</id>
 		<date>2014-08-30</date>
 		<author>kikadf</author>
