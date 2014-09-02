@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+		<id>892</id>
+		<date>2014-09-02</date>
+		<author>kikadf</author>
+		<package>lua</package>
+		<vulnerable>5.1.5-2</vulnerable>
+		<unaffected>5.1.5-3arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5461</cve>
+		<desc>A heap-based overflow vulnerability was found in the way Lua, a simple, extensible, embeddable programming language, handles varargs functions with many fixed parameters called with few arguments, leading to application crashes or, potentially, arbitrary code execution.</desc>
+	</fsa>
+	<fsa>
                <id>891</id>
                <date>2014-09-02</date>
                <author>kikadf</author>
@@ -46,7 +57,7 @@
                <vulnerable>5.7.1-4arcturus1</vulnerable>
                <unaffected>5.7.1-4arcturus2</unaffected>
                <bts></bts>
-               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3565/cve>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3565</cve>
                <desc>snmptrapd crash when handling an SNMP trap containing a ifMtu with a NULL type.</desc>
         </fsa>
 	<fsa>
