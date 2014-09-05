@@ -39,6 +39,19 @@
 
 <fsas>
 	<fsa>
+		<id>894</id>
+		<date>2014-09-05</date>
+		<author>kikadf</author>
+		<package>libgcrypt</package>
+		<vulnerable>1.5.0-4</vulnerable>
+		<unaffected>1.5.0-5arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4242
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5270</cve>
+		<desc>Yarom and Falkner discovered that RSA secret keys in applications using the libgcrypt11 library, for example GnuPG 2.x, could be leaked via a side channel attack, where a malicious local user could obtain private key information from another user on the system.
+			Daniel Genkin, Adi Shamir, and Eran Tromer discovered that Libgcrypt was susceptible to an adaptive chosen ciphertext attack via physical side channels.</desc>
+		</fsa>
+	<fsa>
 		<id>893</id>
 		<date>2014-09-05</date>
 		<author>kikadf</author>
