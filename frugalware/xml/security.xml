@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+		<id>895</id>
+		<date>2014-09-05</date>
+		<author>kikadf</author>
+		<package>procmail</package>
+		<vulnerable>3.22-5</vulnerable>
+		<unaffected>3.22-6arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3618</cve>
+		<desc>Boris pi Piwinger and Tavis Ormandy reported a heap overflow vulnerability in procmail's formail utility when processing specially-crafted email headers.</desc>
+	</fsa>
+	<fsa>
 		<id>894</id>
 		<date>2014-09-05</date>
 		<author>kikadf</author>
