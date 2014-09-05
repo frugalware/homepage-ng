@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+		<id>893</id>
+		<date>2014-09-05</date>
+		<author>kikadf</author>
+		<package>gnupg</package>
+		<vulnerable>1.4.14-2arcturus2</vulnerable>
+		<unaffected>1.4.14-2arcturus3</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5270</cve>
+		<desc>Daniel Genkin, Adi Shamir, and Eran Tromer discovered that GnuPG was susceptible to an adaptive chosen ciphertext attack via physical side channels.</desc>
+	</fsa>
+	<fsa>
 		<id>892</id>
 		<date>2014-09-02</date>
 		<author>kikadf</author>
