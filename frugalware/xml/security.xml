@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+		<id>896</id>
+		<date>2014-09-11</date>
+		<author>kikadf</author>
+		<package>php</package>
+		<vulnerable>5.3.26-2arcturus5</vulnerable>
+		<unaffected>5.3.26-2arcturus6</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4698</cve>
+		<desc>Use-after-free vulnerability in ext/spl/spl_array.c in the SPL component in PHP through 5.5.14 allows context-dependent attackers to cause a denial of service or possibly have unspecified other impact via crafted ArrayIterator usage within applications in certain web-hosting environments.</desc>
+	</fsa>
+	<fsa>
 		<id>895</id>
 		<date>2014-09-05</date>
 		<author>kikadf</author>
