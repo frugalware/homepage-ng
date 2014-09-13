@@ -39,6 +39,19 @@
 
 <fsas>
 	<fsa>
+               <id>897</id>
+               <date>2014-09-13</date>
+               <author>kikadf</author>
+               <package>curl</package>
+               <vulnerable>7.26.0-2arcturus3</vulnerable>
+               <unaffected>7.26.0-2arcturus4</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3613
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3620</cve>
+               <desc>By not detecting and rejecting domain names for partial literal IP addresses properly when parsing received HTTP cookies, libcurl can be fooled to both sending cookies to wrong sites and into allowing arbitrary sites to set cookies for others.
+		       libcurl wrongly allows cookies to be set for Top Level Domains (TLDs), thus making them apply broader than cookies are allowed.</desc>
+       </fsa>
+	<fsa>
 		<id>896</id>
 		<date>2014-09-11</date>
 		<author>kikadf</author>
