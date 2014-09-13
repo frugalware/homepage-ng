@@ -39,6 +39,19 @@
 
 <fsas>
 	<fsa>
+		<id>899</id>
+		<date>2014-09-13</date>
+		<author>kikadf</author>
+		<package>python-oauth2</package>
+		<vulnerable>1.5.211-3</vulnerable>
+		<unaffected>1.5.211-4arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4346
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4347</cve>
+		<desc>It was found that _check_signature() in python-oauth2, an application for authorization flows for web application, ignored the nonce values when validating signed urls.
+			It was found that in python-oauth2, an application for authorizing flows for web application,  the nonce value generated isn't random enough, because while doing bulk operations, nonce might get repeated, so there is a chance of predictability.</desc>
+	</fsa>
+	<fsa>
 		<id>898</id>
 		<date>2014-09-13</date>
 		<author>kikadf</author>
