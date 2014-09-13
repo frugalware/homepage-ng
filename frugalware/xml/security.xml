@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+		<id>898</id>
+		<date>2014-09-13</date>
+		<author>kikadf</author>
+		<package>xerces-j</package>
+		<vulnerable>2.11.0-1</vulnerable>
+		<unaffected>2.11.0-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4002</cve>
+		<desc>A resource consumption issue was found in the way Xerces-J handled XML declarations.</desc>
+	</fsa>
+	<fsa>
                <id>897</id>
                <date>2014-09-13</date>
                <author>kikadf</author>
