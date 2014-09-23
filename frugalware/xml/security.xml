@@ -39,6 +39,25 @@
 
 <fsas>
 	<fsa>
+		<id>901</id>
+		<date>2014-09-23</date>
+		<author>kikadf</author>
+		<package>dbus</package>
+		<vulnerable>1.6.8-10arcturus1</vulnerable>
+		<unaffected>1.6.8-10arcturus2</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3635
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3636
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3637
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3638
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3639</cve>
+		<desc>On 64-bit platforms, file descriptor passing could be abused by local users to cause heap corruption in dbus-daemon, leading to a crash, or potentially to arbitrary code execution.
+			A denial-of-service vulnerability in dbus-daemon allowed local attackers to prevent new connections to dbus-daemon, or disconnect existing clients, by exhausting descriptor limits.
+			Malicious local users could create D-Bus connections to dbus-daemon which could not be terminated by killing the participating processes, resulting in a denial-of-service vulnerability.
+			dbus-daemon suffered from a denial-of-service vulnerability in the code which tracks which messages expect a reply, allowing local attackers to reduce the performance of dbus-daemon.
+			dbus-daemon did not properly reject malicious connections from local users, resulting in a denial-of-service vulnerability.</desc>
+	</fsa>
+	<fsa>
                <id>900</id>
                <date>2014-09-13</date>
                <author>kikadf</author>
