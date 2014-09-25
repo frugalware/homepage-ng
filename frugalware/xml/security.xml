@@ -39,6 +39,18 @@
 
 <fsas>
 	<fsa>
+               <id>903</id>
+               <date>2014-09-25</date>
+               <author>kikadf</author>
+               <package>mantis</package>
+               <vulnerable>1.2.8-1</vulnerable>
+               <unaffected>1.2.8-2arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1608
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1609</cve>
+               <desc>Multiple SQL injection vulnerabilities have been discovered in the Mantis bug tracking system.</desc>
+       </fsa>
+	<fsa>
                <id>902</id>
                <date>2014-09-25</date>
                <author>kikadf</author>
