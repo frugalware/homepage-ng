@@ -39,6 +39,19 @@
 
 <fsas>
 	<fsa>
+               <id>902</id>
+               <date>2014-09-25</date>
+               <author>kikadf</author>
+               <package>nginx</package>
+               <vulnerable>1.4.1-1</vulnerable>
+               <unaffected>1.4.1-2arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4547
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3616</cve>
+               <desc>Ivan Fratric of the Google Security Team discovered a bug in nginx, a web server, which might allow an attacker to bypass security restrictions by using a specially crafted request.
+			   Antoine Delignat-Lavaud and Karthikeyan Bhargavan discovered that it was possible to reuse cached SSL sessions in unrelated contexts, allowing virtual host confusion attacks in some configurations by an attacker in a privileged network position.</desc>
+       </fsa>
+	<fsa>
 		<id>901</id>
 		<date>2014-09-23</date>
 		<author>kikadf</author>
