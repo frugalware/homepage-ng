@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+		<id>906</id>
+		<date>2014-09-25</date>
+		<author>kikadf</author>
+		<package>libvncserver</package>
+		<vulnerable>0.9.8.1-1</vulnerable>
+		<unaffected>0.9.8.1-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6055</cve>
+		<desc>Several remotely exploitable security issues have been uncovered in libvncserver, some of which might allow a remote authenticated user code execution or application crashes.</desc>
+	</fsa>
+	<fsa>
 		<id>905</id>
 		<date>2014-09-25</date>
 		<author>kikadf</author>
