@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+               <id>908</id>
+               <date>2014-10-03</date>
+               <author>kikadf</author>
+               <package>ctags</package>
+               <vulnerable>5.8-1</vulnerable>
+               <unaffected>5.8-2arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-7204</cve>
+               <desc>A denial of service issue was discovered in ctags. This could lead to excessive CPU and disk space consumption.</desc>
+	</fsa>
+	<fsa>
                <id>907</id>
                <date>2014-09-26</date>
                <author>kikadf</author>
