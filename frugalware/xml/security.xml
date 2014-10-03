@@ -39,6 +39,22 @@
 
 <fsas>
 	<fsa>
+               <id>910</id>
+               <date>2014-10-03</date>
+               <author>kikadf</author>
+               <package>libvncserver</package>
+               <vulnerable>0.9.8.1-2arcturus1</vulnerable>
+               <unaffected>0.9.8.1-2arcturus2</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6051
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6052
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6053
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6054</cve>
+               <desc>An integer overflow flaw, leading to a heap-based buffer overflow, was found in the way screen sizes were handled by LibVNCServer.
+			   A NULL pointer dereference flaw was reported in LibVNCServer's framebuffer setup. A malicious VNC server could use this flaw to cause a client to crash.
+			   A divide-by-zero flaw was reported in LibVNCServer's scaling factor handling. A VNC client could use this flaw to cause the VNC server to crash.</desc>
+	</fsa>
+	<fsa>
                <id>909</id>
                <date>2014-10-03</date>
                <author>kikadf</author>
