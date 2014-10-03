@@ -39,6 +39,18 @@
 
 <fsas>
 	<fsa>
+               <id>909</id>
+               <date>2014-10-03</date>
+               <author>kikadf</author>
+               <package>krfb</package>
+               <vulnerable>4.11.1-2arcturus1</vulnerable>
+               <unaffected>4.11.1-2arcturus2</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6053
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6054</cve>
+               <desc>A malicious VNC server could use this flaw to cause a client to crash. A divide-by-zero flaw was reported in LibVNCServer's scaling factor handling. A VNC client could use this flaw to cause the VNC server to crash.</desc>
+	</fsa>
+	<fsa>
                <id>908</id>
                <date>2014-10-03</date>
                <author>kikadf</author>
