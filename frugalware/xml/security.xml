@@ -39,6 +39,23 @@
 
 <fsas>
 	<fsa>
+               <id>913</id>
+               <date>2014-10-05</date>
+               <author>kikadf</author>
+               <package>putty</package>
+               <vulnerable>0.62-1</vulnerable>
+               <unaffected>0.62-2arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4206
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4207
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4208
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4852</cve>
+               <desc>Mark Wooding discovered a heap-corrupting buffer underrun bug in the modmul function which performs modular multiplication. 
+			   It was discovered that non-coprime values in DSA signatures can cause a buffer overflow in the calculation code of modular inverses when verifying a DSA signature. Such a signature is invalid.
+			   It was discovered that private keys were left in memory after being used by PuTTY tools.
+			   Gergely Eberhardt from SEARCH-LAB Ltd. discovered that PuTTY is vulnerable to an integer overflow leading to heap overflow during the SSH handshake before authentication due to improper bounds checking of the length parameter received from the SSH server.</desc>
+       </fsa>
+	<fsa>
                <id>912</id>
                <date>2014-10-04</date>
                <author>kikadf</author>
