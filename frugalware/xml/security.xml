@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+               <id>916</id>
+               <date>2014-10-05</date>
+               <author>kikadf</author>
+               <package>openvpn</package>
+               <vulnerable>2.1.3-6</vulnerable>
+               <unaffected>2.1.3-7arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2013-2061</cve>
+               <desc>It was discovered that OpenVPN incorrectly handled HMAC comparisons when running in UDP mode.</desc>
+       </fsa>
+	<fsa>
                <id>915</id>
                <date>2014-10-05</date>
                <author>kikadf</author>
