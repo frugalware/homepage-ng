@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+               <id>915</id>
+               <date>2014-10-05</date>
+               <author>kikadf</author>
+               <package>krb5</package>
+               <vulnerable>1.10.1-2arcturus1</vulnerable>
+               <unaffected>1.10.1-2arcturus2</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5351</cve>
+               <desc>It was reported that if a privileged user randomized the keys for a service principal, the old key would be returned to them. This could lead to ticket forgery attacks on the service in question.</desc>
+       </fsa>
+	<fsa>
                <id>914</id>
                <date>2014-10-05</date>
                <author>kikadf</author>
