@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+               <id>914</id>
+               <date>2014-10-05</date>
+               <author>kikadf</author>
+               <package>file</package>
+               <vulnerable>5.14-2arcturus3</vulnerable>
+               <unaffected>5.14-2arcturus4</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3587</cve>
+               <desc>It was discovered that file incorrectly handled certain CDF documents. A attacker could use this issue to cause file to hang or crash, resulting in a denial of service.</desc>
+       </fsa>
+	<fsa>
                <id>913</id>
                <date>2014-10-05</date>
                <author>kikadf</author>
