@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+               <id>918</id>
+               <date>2014-10-07</date>
+               <author>kikadf</author>
+               <package>mediawiki</package>
+               <vulnerable>1.19.19-1arcturus1</vulnerable>
+               <unaffected>1.19.20-1arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-7295</cve>
+               <desc>It was reported that MediaWiki, a website engine for collaborative work, allowed to load user-created CSS on pages where user-created JavaScript is not allowed.</desc>
+	</fsa>
+	<fsa>
                <id>917</id>
                <date>2014-10-07</date>
                <author>kikadf</author>
