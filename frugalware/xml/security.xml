@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+               <id>917</id>
+               <date>2014-10-07</date>
+               <author>kikadf</author>
+               <package>mantis</package>
+               <vulnerable>1.2.8-2arcturus1</vulnerable>
+               <unaffected>1.2.8-2arcturus2</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6387</cve>
+               <desc>Mantis suffers from a null byte poisoning issue when LDAP authentication is used.</desc>
+       </fsa>
+	<fsa>
                <id>916</id>
                <date>2014-10-05</date>
                <author>kikadf</author>
