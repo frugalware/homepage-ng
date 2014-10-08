@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+               <id>919</id>
+               <date>2014-10-08</date>
+               <author>kikadf</author>
+               <package>qemu</package>
+               <vulnerable>1.5.2-3arcturus5</vulnerable>
+               <unaffected>1.5.2-3arcturus6</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3615</cve>
+               <desc>An information leakage flaw was found in Qemu's VGA emulator. It could lead to leaking host memory bytes to a VNC client. It could occur when a guest GOP driver attempts to set a high display resolution.</desc>
+	</fsa>
+	<fsa>
                <id>918</id>
                <date>2014-10-07</date>
                <author>kikadf</author>
