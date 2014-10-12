@@ -38,6 +38,19 @@
 -->
 
 <fsas>
+	fsa>
+               <id>921</id>
+               <date>2014-10-12</date>
+               <author>kikadf</author>
+               <package>bash</package>
+               <vulnerable>4.2_045-5arcturus2</vulnerable>
+               <unaffected>4.2_053-1arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6277
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6278</cve>
+               <desc>Michal Zalewski discovered that Bash incorrectly handled parsing certain function definitions. If an attacker were able to create an environment variable containing a function definition with a very specific name, these
+			   issues could possibly be used to bypass certain environment restrictions and execute arbitrary code.</desc>
+       </fsa>
 	<fsa>
                <id>920</id>
                <date>2014-10-12</date>
