@@ -56,7 +56,7 @@
                <date>2014-10-12</date>
                <author>kikadf</author>
                <package>rsyslog</package>
-               <vulnerable>5.8.13-rarcturus1</vulnerable>
+               <vulnerable>5.8.13-2arcturus1</vulnerable>
                <unaffected>5.8.13-2arcturus2</unaffected>
                <bts></bts>
                <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3683</cve>
