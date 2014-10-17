@@ -39,6 +39,23 @@
 
 <fsas>
 	<fsa>
+		<id>923</id>
+		<date>2014-10-17</date>
+		<author>kikadf</author>
+		<package>openssl</package>
+		<vulnerable>1.0.1-5arcturus6</vulnerable>
+		<unaffected>1.0.1-5arcturus7</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3513
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3566
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3567
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3568</cve>
+		<desc>A memory leak flaw was found in the way OpenSSL parsed the DTLS Secure Real-time Transport Protocol (SRTP) extension data.
+			A flaw was found in the way SSL 3.0 handled padding bytes when decrypting messages encrypted using block ciphers in cipher block chaining (CBC) mode.
+			A memory leak flaw was found in the way an OpenSSL handled failed session ticket integrity checks.
+			When OpenSSL is configured with "no-ssl3" as a build option, servers could accept and complete a SSL 3.0 handshake, and clients could be configured to send them.</desc>
+	</fsa>
+	<fsa>
                <id>922</id>
                <date>2014-10-17</date>
                <author>kikadf</author>
