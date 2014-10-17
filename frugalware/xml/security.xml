@@ -43,8 +43,8 @@
 		<date>2014-10-17</date>
 		<author>kikadf</author>
 		<package>drupal7</package>
-		<vulnerable></vulnerable>
-		<unaffected></unaffected>
+		<vulnerable>7.22-2arcturus4</vulnerable>
+		<unaffected>7.22-2arcturus5</unaffected>
 		<bts></bts>
 		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3704</cve>
 		<desc>Stefan Horst discovered a vulnerability in the Drupal database abstraction API, which may result in SQL injection.</desc>
