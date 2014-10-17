@@ -39,6 +39,36 @@
 
 <fsas>
 	<fsa>
+		<id>925</id>
+		<date>2014-10-17</date>
+		<author>kikadf</author>
+		<package>mysql</package>
+		<vulnerable>5.5.38-1arcturus1</vulnerable>
+		<unaffected>5.5.40-1arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-5615
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4274
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4287
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6463
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6464
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6469
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6478
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6484
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6491
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6494
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6495
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6496
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6500
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6505
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6507
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6520
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6530
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6551
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6555
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6559</cve>
+		<desc>Multiple security issues were discovered in MySQL and this update includes a new upstream MySQL version to fix these issues.</desc>
+	</fsa>
+	<fsa>
 		<id>924</id>
 		<date>2014-10-17</date>
 		<author>kikadf</author>
