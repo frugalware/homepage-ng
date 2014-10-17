@@ -39,6 +39,21 @@
 
 <fsas>
 	<fsa>
+               <id>922</id>
+               <date>2014-10-17</date>
+               <author>kikadf</author>
+               <package>openjpeg</package>
+               <vulnerable>1.5.1-2</vulnerable>
+               <unaffected>1.5.1-3arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1447
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6045
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6052
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6053
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6887</cve>
+               <desc>Several vulnerabilities have been discovered in OpenJPEG, a JPEG 2000 image library, that may lead to denial of service via application crash or high memory consumption, possible code execution through heap buffer overflows, information disclosure.</desc>
+       </fsa>
+	<fsa>
                <id>921</id>
                <date>2014-10-12</date>
                <author>kikadf</author>
