@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+		<id>927</id>
+		<date>2014-10-19</date>
+		<author>kikadf</author>
+		<package>hostapd</package>
+		<vulnerable>1.1-2</vulnerable>
+		<unaffected>1.1-3arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3686</cve>
+		<desc>Jouni Malinen discovered an input sanitization issue in the wpa_cli and hostapd_cli tools included in the wpa package.</desc>
+	</fsa>
+	<fsa>
 		<id>926</id>
 		<date>2014-10-19</date>
 		<author>kikadf</author>
