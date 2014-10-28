@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+               <id>928</id>
+               <date>2014-10-28</date>
+               <author>kikadf</author>
+               <package>file</package>
+               <vulnerable>5.14-2arcturus4</vulnerable>
+               <unaffected>5.14-2arcturus5</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3710</cve>
+               <desc>An out-of-bounds read flaw was found in file's donote() function in the way the file utility determined the note headers of a elf file.</desc>
+       </fsa>
+	<fsa>
 		<id>927</id>
 		<date>2014-10-19</date>
 		<author>kikadf</author>
