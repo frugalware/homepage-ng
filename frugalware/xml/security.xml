@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+		<id>930</id>
+		<date>2014-10-28</date>
+		<author>kikadf</author>
+		<package>quassel</package>
+		<vulnerable>0.8.0-2</vulnerable>
+		<unaffected>0.8.0-3arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8483</cve>
+		<desc>The ECB Blowfish decryption function assumed that encrypted input would always come in blocks of 12 characters, as specified. However, buggy clients or annoying people may not adhere to that assumption, causing the core to crash while trying to process the invalid base64 input.</desc>
+	</fsa>
+	<fsa>
 		<id>929</id>
 		<date>2014-10-28</date>
 		<author>kikadf</author>
