@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+		<id>932</id>
+		<date>2014-10-31</date>
+		<author>kikadf</author>
+		<package>wget</package>
+		<vulnerable>1.13.4-2</vulnerable>
+		<unaffected>1.13.4-3arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4877</cve>
+		<desc>HD Moore discovered that Wget contained a path traversal vulnerability when downloading symlinks using FTP.</desc>
+	</fsa>
+	<fsa>
 		<id>931</id>
 		<date>2014-10-31</date>
 		<author>kikadf</author>
