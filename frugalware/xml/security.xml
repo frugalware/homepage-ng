@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+		<id>931</id>
+		<date>2014-10-31</date>
+		<author>kikadf</author>
+		<package>libxml2</package>
+		<vulnerable>2.8.0-2arcturus1</vulnerable>
+		<unaffected>2.8.0-2arcturus2</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3660</cve>
+		<desc>Sogeti found a denial of service flaw in libxml2, a library providing support to read, modify and write XML and HTML files.</desc>
+	</fsa>
+	<fsa>
 		<id>930</id>
 		<date>2014-10-28</date>
 		<author>kikadf</author>
