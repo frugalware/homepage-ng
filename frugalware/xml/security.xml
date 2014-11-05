@@ -39,6 +39,21 @@
 
 <fsas>
 	<fsa>
+               <id>934</id>
+               <date>2014-11-05</date>
+               <author>kikadf</author>
+               <package>php</package>
+               <vulnerable>5.3.26-2arcturus6</vulnerable>
+               <unaffected>5.3.26-2arcturus7</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3668
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3669
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3670
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3710</cve>
+               <desc>Symeon Paraschoudis discovered that PHP incorrectly handled the mkgmtime function. Symeon Paraschoudis discovered that PHP incorrectly handled unserializing objects.
+			   Otto Ebeling discovered that PHP incorrectly handled the exif_thumbnail function. Francisco Alonso that PHP incorrectly handled ELF files in the fileinfo extension.</desc>
+       </fsa>
+	<fsa>
                <id>933</id>
                <date>2014-11-05</date>
                <author>kikadf</author>
