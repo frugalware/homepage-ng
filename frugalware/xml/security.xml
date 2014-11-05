@@ -39,6 +39,19 @@
 
 <fsas>
 	<fsa>
+               <id>935</id>
+               <date>2014-11-05</date>
+               <author>kikadf</author>
+               <package>qemu</package>
+               <vulnerable>1.5.2-3arcturus6</vulnerable>
+               <unaffected>1.5.2-3arcturus7</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3689
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-7815</cve>
+               <desc>A flaw was found in the way guest provided parameter validation was performed in vmware-vga driver in rectangle handling functionality.
+			   bits_per_pixel that are less than 8 could result in accessing non-initialized buffers later in the code due to the expectation that bytes_per_pixel value that is used to initialize these buffers is never zero.</desc>
+       </fsa>
+	<fsa>
                <id>934</id>
                <date>2014-11-05</date>
                <author>kikadf</author>
