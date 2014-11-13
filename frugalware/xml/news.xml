@@ -44,9 +44,9 @@ original new!
     <content>
       <![CDATA[
       <center><img src="https://frugalware.org/images/projects/pyfpm_123.png" alt="pyFPM 1.2.3 preview" /></center>
-      pyFPM is the legitimate successor of gFPM, with a new interface, a dedicated daemon for it and more ergnomics. It's written in Python and uses GTK+2 and DBus to run. <br />
-      Version 1.2.3 has been released a few days ago et is now considered as "stable". You can test it without any issues (or only a very little). Packages are not yet available on Frugalware's tree, but you can download them <a href="https://pingax.zapto.org/pyfpm/release/1.2.3/">here</a>. <br />
-      If you encounter an issue, feel free to contact PacMiam on #frugalware or #frugalware.fr.<br />
+      pyFPM is the legitimate successor of gFPM, with a new interface, a dedicated daemon for it and more ergnomics. It's written in Python and uses GTK+2 and DBus to run. <br /><br />
+      Version 1.2.3 has been released a few days ago et is now considered as "stable". You can test it without any issues (or only a very little). Packages are not yet available on Frugalware's tree, but you can download them <a href="https://pingax.zapto.org/pyfpm/release/1.2.3/">here</a>. <br /><br />
+      If you encounter an issue, feel free to contact PacMiam on #frugalware or #frugalware.fr.<br /><br />
       Thanks to Pingax for fixing french translation and Darknekros/Nekrodes for his spanish translation and bouleetbil for his initial work on pyFPM.
       ]]>
     </content>
