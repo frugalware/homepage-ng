@@ -45,7 +45,7 @@ original new!
     <content><![CDATA[
       This is the first release candidate for Frugalware 2.0.<br/>
       <br/>
-      This release fixes a number of minor issues with the installer, and contains many security fixes.<br/>
+      This release contains many package updates and security fixes.<br/>
       <br/>
       Updated packages: Linux kernel 3.14.19, XOrg server 1.15.2, GNOME 3.12.2, KDE 4.14.2, LibreOffice 4.3.3.2, Mozilla Firefox 33.1 to name a few major components.<br/>
       <br/>
