@@ -35,13 +35,12 @@ original new!
 -->
 
 <news>
-<!-- announce skeleton for 2.0rc1
   <post>
     <id>260</id>
     <title>Frugalware 2.0rc1 (Rigel) released</title>
     <date>Thu, 20 Nov 2014 08:53:38 +0100</date>
     <author>ryuo</author>
-    <hidden>0</hidden>
+    <hidden>1</hidden>
     <content><![CDATA[
       This is the first release candidate for Frugalware 2.0.<br/>
       <br/>
@@ -54,7 +53,6 @@ original new!
     </content>
     <icon>development</icon>
   </post>
--->
   <post>
     <id>259</id>
     <title>pyFPM need testers</title>
