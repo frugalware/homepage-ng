@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+               <id>937</id>
+               <date>2014-11-21</date>
+               <author>kikadf</author>
+               <package>python-3.0</package>
+               <vulnerable>3.3.0-2</vulnerable>
+               <unaffected>3.3.0-3arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4650</cve>
+               <desc>The CGIHTTPServer Python module does not properly handle URL-encoded path separators in URLs.</desc>
+       </fsa>
+	<fsa>
                <id>936</id>
                <date>2014-11-21</date>
                <author>kikadf</author>
