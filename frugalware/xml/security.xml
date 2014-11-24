@@ -39,6 +39,20 @@
 
 <fsas>
 	<fsa>
+               <id>941</id>
+               <date>2014-11-24</date>
+               <author>kikadf</author>
+               <package>ruby</package>
+               <vulnerable>1.9.2-2</vulnerable>
+               <unaffected>1.9.2-3arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4975
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8080
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8090</cve>
+               <desc>Off-by-one error in the encodes function in pack.c, when using certain format string specifiers, allows context-dependent attackers to cause a denial of service (segmentation fault) via vectors that trigger a stack-based buffer overflow.
+			   Tomas Hoger discovered that Ruby incorrectly handled XML entity expansion.</desc>
+       </fsa>
+	<fsa>
                <id>940</id>
                <date>2014-11-24</date>
                <author>kikadf</author>
