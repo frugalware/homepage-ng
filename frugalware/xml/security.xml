@@ -39,6 +39,19 @@
 
 <fsas>
 	<fsa>
+               <id>939</id>
+               <date>2014-11-24</date>
+               <author>kikadf</author>
+               <package>drupal7</package>
+               <vulnerable>7.22-2arcturus5</vulnerable>
+               <unaffected>7.22-2arcturus6</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9015
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9016</cve>
+               <desc>Aaron Averill discovered that a specially crafted request can give a user access to another user's session, allowing an attacker to hijack a random session.
+			   Michael Cullum, Javier Nieto and Andres Rojas Guerrero discovered that the password hashing API allows an attacker to send specially crafted requests resulting in CPU and memory exhaustion.</desc>
+       </fsa>
+	<fsa>
                <id>938</id>
                <date>2014-11-21</date>
                <author>kikadf</author>
