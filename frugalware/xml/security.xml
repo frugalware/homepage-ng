@@ -39,6 +39,18 @@
 
 <fsas>
 	<fsa>
+               <id>942</id>
+               <date>2014-11-24</date>
+               <author>kikadf</author>
+               <package>tcpdump</package>
+               <vulnerable>4.4.0-1</vulnerable>
+               <unaffected>4.4.0-2arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8767
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8769</cve>
+               <desc>Tcpdump program crash was reported when processing a malformed OLSR payload. The application decoder for the Ad hoc On-Demand Distance Vector (AODV) protocol fails to perform input validation and performs unsafe out-of-bound accesses.</desc>
+       </fsa>
+	<fsa>
                <id>941</id>
                <date>2014-11-24</date>
                <author>kikadf</author>
