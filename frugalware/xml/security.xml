@@ -39,6 +39,21 @@
 
 <fsas>
 	<fsa>
+               <id>943</id>
+               <date>2014-11-29</date>
+               <author>kikadf</author>
+               <package>wireshark</package>
+               <vulnerable>1.8.15-1arcturus1</vulnerable>
+               <unaffected>1.8.15-1arcturus2</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8710
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8711
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8712
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8713
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8714</cve>
+               <desc>Multiple vulnerabilities were discovered in the dissectors/parsers for SigComp UDVM, AMQP, NCP and TN5250, which could result in denial of service.</desc>
+       </fsa>
+	<fsa>
                <id>942</id>
                <date>2014-11-24</date>
                <author>kikadf</author>
