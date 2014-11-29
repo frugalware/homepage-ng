@@ -39,6 +39,18 @@
 
 <fsas>
 	<fsa>
+               <id>944</id>
+               <date>2014-11-29</date>
+               <author>kikadf</author>
+               <package>clamav</package>
+               <vulnerable>0.98.1-1arcturus1</vulnerable>
+               <unaffected>0.98.5-1arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6497
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9050</cve>
+               <desc>Kurt Seifried discovered that ClamAV incorrectly handled certain JavaScript files. Damien Millescamp discovered that ClamAV incorrectly handled certain PE files.</desc>
+       </fsa>
+	<fsa>
                <id>943</id>
                <date>2014-11-29</date>
                <author>kikadf</author>
