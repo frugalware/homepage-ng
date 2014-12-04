@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+               <id>945</id>
+               <date>2014-12-04</date>
+               <author>kikadf</author>
+               <package>openvpn</package>
+               <vulnerable>2.1.3-7arcturus1</vulnerable>
+               <unaffected>2.1.3-7arcturus2</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8104</cve>
+               <desc>Dragana Damjanovic discovered that an authenticated client could crash an OpenVPN server by sending a control packet containing less than four bytes as payload.</desc>
+       </fsa>
+	<fsa>
                <id>944</id>
                <date>2014-11-29</date>
                <author>kikadf</author>
