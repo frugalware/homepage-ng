@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+               <id>947</id>
+               <date>2014-12-06</date>
+               <author>kikadf</author>
+               <package>tcpdump</package>
+               <vulnerable>4.4.0-2arcturus1</vulnerable>
+               <unaffected>4.4.0-2arcturus2</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9140</cve>
+               <desc>Buffer overflow in the PPP dissector.</desc>
+       </fsa>
+	<fsa>
 		<id>946</id>
 		<date>2014-12-06</date>
 		<author>kikadf</author>
