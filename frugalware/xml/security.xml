@@ -39,6 +39,20 @@
 
 <fsas>
 	<fsa>
+               <id>950</id>
+               <date>2014-12-10</date>
+               <author>kikadf</author>
+               <package>jasper</package>
+               <vulnerable>1.900.1-5</vulnerable>
+               <unaffected>1.900.1-6arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-4516
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-4517
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9029</cve>
+               <desc>Two buffer overflows were discovered in JasPer, a library for handling JPEG-2000 images, which could lead to the execution of arbitrary code.
+			   Josh Duart of the Google Security Team discovered heap-based buffer overflow flaws in JasPer, a library for manipulating JPEG-2000 files, which could lead to denial of service (application crash) or the execution of arbitrary code.</desc>
+       </fsa>
+	<fsa>
                <id>949</id>
                <date>2014-12-10</date>
                <author>kikadf</author>
