@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+               <id>953</id>
+               <date>2014-12-10</date>
+               <author>kikadf</author>
+               <package>pcre</package>
+               <vulnerable>8.32-1</vulnerable>
+               <unaffected>8.32-2arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8964</cve>
+               <desc>Heap overflow while matching against an expression with an assertion with a zero minimum repeat as the condition in a conditional group.</desc>
+       </fsa>
+	<fsa>
                <id>952</id>
                <date>2014-12-10</date>
                <author>kikadf</author>
