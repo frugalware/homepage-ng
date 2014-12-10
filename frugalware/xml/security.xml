@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+               <id>948</id>
+               <date>2014-12-10</date>
+               <author>kikadf</author>
+               <package>dbus</package>
+               <vulnerable>1.6.8-10arcturus2</vulnerable>
+               <unaffected>1.6.8-10arcturus3</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-7824</cve>
+               <desc>It was discovered that DBus incorrectly handled a large number of file descriptor messages.</desc>
+       </fsa>
+	<fsa>
                <id>947</id>
                <date>2014-12-06</date>
                <author>kikadf</author>
