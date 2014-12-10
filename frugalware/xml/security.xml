@@ -39,6 +39,20 @@
 
 <fsas>
 	<fsa>
+               <id>949</id>
+               <date>2014-12-10</date>
+               <author>kikadf</author>
+               <package>glibc</package>
+               <vulnerable>2.16.0-4arcturus1</vulnerable>
+               <unaffected>2.16.0-4arcturus2</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4043
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6040
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-7817</cve>
+               <desc>Adhemerval Zanella Netto discovered that the GNU C Library incorrectly handled certain multibyte characters when using the iconv function.
+			   Tim Waugh discovered that the GNU C Library incorrectly enforced the WRDE_NOCMD flag when handling the wordexp function.</desc>
+       </fsa>
+	<fsa>
                <id>948</id>
                <date>2014-12-10</date>
                <author>kikadf</author>
