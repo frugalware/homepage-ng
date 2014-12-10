@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+               <id>952</id>
+               <date>2014-12-10</date>
+               <author>kikadf</author>
+               <package>mod_wsgi</package>
+               <vulnerable>3.4-2arcturus1</vulnerable>
+               <unaffected>3.4-2arcturus2</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8583</cve>
+               <desc>It was discovered that mod_wsgi incorrectly handled errors when setting up the working directory and group access rights.</desc>
+       </fsa>
+	<fsa>
                <id>951</id>
                <date>2014-12-10</date>
                <author>kikadf</author>
