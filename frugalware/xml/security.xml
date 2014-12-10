@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+               <id>951</id>
+               <date>2014-12-10</date>
+               <author>kikadf</author>
+               <package>libksba</package>
+               <vulnerable>1.2.0-1</vulnerable>
+               <unaffected>1.2.0-2arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9087</cve>
+               <desc>Hanno Böck discovered that Libksba incorrectly handled certain S/MIME messages or ECC based OpenPGP data.</desc>
+       </fsa>
+	<fsa>
                <id>950</id>
                <date>2014-12-10</date>
                <author>kikadf</author>
