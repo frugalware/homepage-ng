@@ -39,6 +39,19 @@
 
 <fsas>
 	<fsa>
+               <id>954</id>
+               <date>2014-12-10</date>
+               <author>kikadf</author>
+               <package>qemu</package>
+               <vulnerable>1.5.2-3arcturus7</vulnerable>
+               <unaffected>1.5.2-3arcturus8</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8106
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-7840</cve>
+               <desc>Paolo Bonzini of Red Hat discovered that the blit region checks were insufficient in the Cirrus VGA emulator in qemu, a fast processor emulator.
+			   Invalid migration stream can cause arbitrary qemu memory overwrite.</desc>
+       </fsa>
+	<fsa>
                <id>953</id>
                <date>2014-12-10</date>
                <author>kikadf</author>
