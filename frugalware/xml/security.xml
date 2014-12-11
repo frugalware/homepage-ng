@@ -39,6 +39,28 @@
 
 <fsas>
 	<fsa>
+		<id>955</id>
+		<date>2014-12-11</date>
+		<author>kikadf</author>
+		<package>xorg-server</package>
+		<vulnerable>1.14.2-2</vulnerable>
+		<unaffected>1.14.2-3arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8091
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8092
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8093
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8094
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8095
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8096
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8097
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8098
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8099
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8100
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8101
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8102</cve>
+		<desc>Ilja van Sprundel discovered a multitude of security issues in the X.Org X server.</desc>
+	</fsa>
+	<fsa>
                <id>954</id>
                <date>2014-12-10</date>
                <author>kikadf</author>
