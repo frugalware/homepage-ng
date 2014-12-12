@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+               <id>956</id>
+               <date>2014-12-12</date>
+               <author>kikadf</author>
+               <package>bind</package>
+               <vulnerable>9.9.4-1arcturus1</vulnerable>
+               <unaffected>9.9.6-1arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8500</cve>
+               <desc>Florian Maury discovered that Bind incorrectly handled delegation.</desc>
+       </fsa>
+	<fsa>
 		<id>955</id>
 		<date>2014-12-11</date>
 		<author>kikadf</author>
