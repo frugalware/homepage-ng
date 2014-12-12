@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fsas [
+<!ELEMENT fsas (fsa)*>
+<!ELEMENT fsa (id , date , author?, package, vulnerable , unaffected , bts , cve , desc)>
+<!-- must be an integer -->
+<!ELEMENT id (#PCDATA)>
+<!-- in YYYY-MM-DD format -->
+<!ELEMENT date (#PCDATA)>
+<!-- your nick, then the From header will be something like "nick <noreply@frugalware.org>" -->
+<!ELEMENT author (#PCDATA)>
+<!-- package name, without group, version, etc -->
+<!ELEMENT package (#PCDATA)>
+<!-- the old version -->
+<!ELEMENT vulnerable (#PCDATA)>
+<!-- the new (backported) version -->
+<!ELEMENT unaffected (#PCDATA)>
+<!-- bts url -->
+<!ELEMENT bts (#PCDATA)>
+<!-- cve url -->
+<!ELEMENT cve (#PCDATA)>
+<!-- description, can be more than one line -->
+<!ELEMENT desc (#PCDATA)>
+]>
+
+<!-- If you modify this file, be sure it's still valid - read /hooks/README! -->
+<!-- FSA skeleton:
+	<fsa>
+		<id></id>
+		<date></date>
+		<author></author>
+		<package></package>
+		<vulnerable></vulnerable>
+		<unaffected></unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-</cve>
+		<desc></desc>
+	</fsa>
+-->
+
+<fsas>
+	<fsa>
+		<id>755</id>
+		<date>2012-02-05</date>
+		<author>Miklos Vajna</author>
+		<package>drupal6</package>
+		<vulnerable>6.22-1</vulnerable>
+		<unaffected>6.24-1mores1</unaffected>
+		<bts>https://bugs.frugalware.org/ticket/4654</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0825
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0826
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0827</cve>
+		<desc>A security issue and a vulnerability have been reported in Drupal, which can be exploited by malicious people to manipulate certain data and bypass certain security restrictions.
+			1) The security issue is caused due to the OpenID module not properly verifying the signature of Attribute Exchange (AX) information, which can be exploited to manipulate AX information.
+			2) An error in the File module when using certain field access modules can be exploited to download private files which would otherwise be restricted.</desc>
+	</fsa>
+	<fsa>
+		<id>754</id>
+		<date>2012-02-05</date>
+		<author>Miklos Vajna</author>
+		<package>drupal7</package>
+		<vulnerable>7.7-1</vulnerable>
+		<unaffected>7.12-1mores1</unaffected>
+		<bts>https://bugs.frugalware.org/ticket/4655</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0825
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0826
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0827</cve>
+		<desc>A security issue and a vulnerability have been reported in Drupal, which can be exploited by malicious people to manipulate certain data and bypass certain security restrictions.
+			1) The security issue is caused due to the OpenID module not properly verifying the signature of Attribute Exchange (AX) information, which can be exploited to manipulate AX information.
+			2) An error in the File module when using certain field access modules can be exploited to download private files which would otherwise be restricted.</desc>
+	</fsa>
+	<fsa>
+		<id>753</id>
+		<date>2012-02-05</date>
+		<author>Miklos Vajna</author>
+		<package>wireshark</package>
+		<vulnerable>1.6.3-1mores1</vulnerable>
+		<unaffected>1.6.5-1mores1</unaffected>
+		<bts>https://bugs.frugalware.org/ticket/4650</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0041
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0042
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0043
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0066
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0067
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0068</cve>
+		<desc>Multiple vulnerabilities have been reported in Wireshark, which can be exploited by malicious people to cause a DoS (Denial of Service) and compromise a user's system.
+			1) NULL pointer dereference errors when reading certain packet information can be exploited to cause a crash.
+			2) An error within the RLC dissector can be exploited to cause a buffer overflow via a specially crafted RLC packet capture file.
+			Successful exploitation of this vulnerability may allow execution of arbitrary code.
+			3) An error within the "lanalyzer_read()" function (wiretap/lanalyzer.c) when parsing LANalyzer files can be exploited to cause a heap-based buffer underflow.
+			Successful exploitation of this vulnerability may allow execution of arbitrary code.
+			NOTE: A weakness within the file parser, which can lead to a crash when handling capture files has also been reported.</desc>
+	</fsa>
+	<fsa>
+		<id>752</id>
+		<date>2012-02-05</date>
+		<author>Miklos Vajna</author>
+		<package>wordpress</package>
+		<vulnerable>3.2.1-1</vulnerable>
+		<unaffected>3.3.1-1mores1</unaffected>
+		<bts>https://bugs.frugalware.org/ticket/4644</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0287</cve>
+		<desc>Aditya Modha and Samir Shah discovered a vulnerability in WordPress, which can be exploited by malicious people to conduct cross-site scripting attacks.
+			Input passed via the URL to e.g. wp-comments-post.php is not properly sanitised within the "wp_guess_url()" function in wp-includes/functions.php before being returned to the user. This can be exploited to execute arbitrary HTML and script code in a user's browser session in context of an affected site.</desc>
+	</fsa>
+	<fsa>
+		<id>751</id>
+		<date>2012-02-05</date>
+		<author>Miklos Vajna</author>
+		<package>phpmyadmin</package>
+		<vulnerable>3.4.8-1mores1</vulnerable>
+		<unaffected>3.4.9-1mores1</unaffected>
+		<bts>https://bugs.frugalware.org/ticket/4643</bts>
+		<cve>http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-4780</cve>
+		<desc>Multiple cross-site scripting (XSS) vulnerabilities in libraries/display_export.lib.php in phpMyAdmin allow remote attackers to inject arbitrary web script or HTML via crafted URL parameters, related to the export panels in the (1) server, (2) database, and (3) table sections.</desc>
+	</fsa>
+	<fsa>
+		<id>750</id>
+		<date>2011-12-23</date>
+		<author>Miklos Vajna</author>
+		<package>phpmyadmin</package>
+		<vulnerable>3.4.7.1-1mores1</vulnerable>
+		<unaffected>3.4.8-1mores1</unaffected>
+		<bts>https://bugs.frugalware.org/ticket/4640</bts>
+		<cve>http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-4634</cve>
+		<desc>Using crafted database names, it was possible to produce XSS in the Database Synchronize and Database rename panels. Using an invalid and crafted SQL query, it was possible to produce XSS when editing a query on a table overview panel or when using the view creation dialog. Using a crafted column type, it was possible to produce XSS in the table search and create index dialogs.</desc>
+	</fsa>
+	<fsa>
+		<id>749</id>
+		<date>2011-12-23</date>
+		<author>Miklos Vajna</author>
+		<package>roundcube</package>
+		<vulnerable>0.5.4-1mores1</vulnerable>
+		<unaffected>0.7-1mores1</unaffected>
+		<bts>https://bugs.frugalware.org/ticket/4642</bts>
+		<cve>No CVE, see http://sourceforge.net/news/?group_id=139281&amp;id=305129.</cve>
+		<desc>Beside fixing bugs the developers added some security improvements which will protect the Roundcube users from XSS and clickjacking attacks.</desc>
+	</fsa>
+	<fsa>
+		<id>748</id>
+		<date>2011-12-23</date>
+		<author>Miklos Vajna</author>
+		<package>wireshark</package>
+		<vulnerable>1.6.2-1mores1</vulnerable>
+		<unaffected>1.6.3-1mores1</unaffected>
+		<bts>https://bugs.frugalware.org/ticket/4633</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-4100
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-4101
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-4102</cve>
+		<desc>Multiple vulnerabilities have been reported in Wireshark, which can be exploited by malicious people to cause a DoS (Denial of Service) and compromise a vulnerable system.
+1) An error related to an uninitialised variable within the CSN.1 dissector can be exploited to cause a crash.
+2) A NULL pointer dereference error within the Infiniband dissector can be exploited to cause a crash.
+3) An error within the ERF file parser can be exploited to cause a heap-based buffer overflow.
+Successful exploitation of this vulnerability may allow execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
+		<id>747</id>
+		<date>2011-12-23</date>
+		<author>Miklos Vajna</author>
+		<package>drupal6-views</package>
+		<vulnerable>6.x_2.12-2</vulnerable>
+		<unaffected>6.x_2.14-1mores1</unaffected>
+		<bts>https://bugs.frugalware.org/ticket/4632</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-4113</cve>
+		<desc>A vulnerability has been reported in the Views module for Drupal, which can be exploited by malicious people to conduct SQL injection attacks.
+			Input passed via certain filters or arguments on certain types of views is not properly sanitised before being used in SQL queries. This can be exploited to manipulate SQL queries by injecting arbitrary SQL code.</desc>
+	</fsa>
+	<fsa>
+		<id>746</id>
+		<date>2011-10-06</date>
+		<author>Miklos Vajna</author>
+		<package>libreoffice</package>
+		<vulnerable>3.4.2.3-1</vulnerable>
+		<unaffected>3.4.3.2-1mores1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4609</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-2713</cve>
+		<desc>Red Hat, Inc. security researcher Huzaifa Sidhpurwala reported multiple vulnerabilities in the binary Microsoft Word (doc) file format importer where custom crafted documents trigger out of bounds behaviour.
+			Thanks to Huzaifa Sidhpurwala of Red Hat Security Team for reporting this vulnerability.</desc>
+	</fsa>
+	<fsa>
+		<id>745</id>
+		<date>2011-09-17</date>
+		<author>Miklos Vajna</author>
+		<package>django</package>
+		<vulnerable>1.3-2</vulnerable>
+		<unaffected>1.3.1-1mores1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4590</bts>
+		<cve>No CVE, see https://www.djangoproject.com/weblog/2011/sep/09/security-releases-issued/</cve>
+		<desc>Some vulnerabilities have been reported in Django, which can be exploited by malicious people to disclose certain system information, manipulate certain data, conduct cache poisoning attacks, and cause a DoS (Denial of Service).
+1) An error within the handling of sessions within django.contrib.sessions when using the caching backend can be exploited to manipulate session information.
+Successful exploitation requires that the session key is known and the application allows attackers to store dictionary-like objects with a valid session key in the cache.
+2) An error when verifying if URLs provided to the "URLField" field type correctly resolve can be exploited to exhaust all of the server's processes and memory by providing an URL to a malicious server.
+3) An error within the handling of redirect responses when verifying URLs provided to the "URLField" field type can be exploited to e.g. determine the existence of local files on the server by returning a redirect response to a "file://" URL.
+4) An error within the handling of the "X-Forwarded-Host" HTTP header when e.g. generating full URLs for redirect responses can be exploited to conduct cache poisoning attacks.</desc>
+	</fsa>
+	<fsa>
+		<id>744</id>
+		<date>2011-09-13</date>
+		<author>Miklos Vajna</author>
+		<package>librsvg</package>
+		<vulnerable>2.34.0-1</vulnerable>
+		<unaffected>2.34.1-1mores1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4582</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3146</cve>
+		<desc>A vulnerability has been reported in librsvg, which can be exploited by malicious people to cause a DoS (Denial of Service) and potentially compromise an application using the library.
+The vulnerability is caused due to an error within the handling of node types, which can be exploited to dereference invalid memory via specially crafted SVG images.</desc>
+	</fsa>
+	<fsa>
+		<id>743</id>
+		<date>2011-09-09</date>
+		<author>Miklos Vajna</author>
+		<package>mantis</package>
+		<vulnerable>1.2.7-1mores1</vulnerable>
+		<unaffected>1.2.8-1mores1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4586</bts>
+		<cve>No CVE, see https://www.htbridge.ch/advisory/multiple_vulnerabilities_in_mantisbt.html</cve>
+		<desc>Some vulnerabilities have been reported in MantisBT, which can be exploited by malicious people to conduct cross-site scripting attacks and disclose potentially sensitive information and by malicious users to compromise a vulnerable system.
+
+1) Certain input passed via the URL is not properly sanitised before being returned to the user. This can be exploited to execute arbitrary HTML and script code in a user's browser session in context of an affected site.
+
+2) Input passed to the "action" parameter in bug_actiongroup_ext_page.php and bug_actiongroup_page.php is not properly verified before being used to include files. This can be exploited to include arbitrary files from local resources via directory traversal attacks and URL-encoded NULL bytes.
+
+Note: In combination with MantisBT's file upload functionality, this can be exploited to execute arbitrary PHP code.
+
+3) Input passed to the "os", "os_build", and "platform" parameters in bug_report_page.php and bug_update_advanced_page.php is not properly sanitised before being returned to the user. This can be exploited to execute arbitrary HTML and script code in a users browser session in context of an affected site.</desc>
+	</fsa>
+	<fsa>
+		<id>742</id>
+		<date>2011-09-07</date>
+		<author>Miklos Vajna</author>
+		<package>apache</package>
+		<vulnerable>2.2.19-2mores1</vulnerable>
+		<unaffected>2.2.20-1mores1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4571</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3192</cve>
+		<desc>Kingcope has discovered a vulnerability in Apache HTTP Server, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			The vulnerability is caused due to an error within the ByteRange filter when processing requests containing a large amount of ranges, which can be exploited to exhaust memory via specially crafted HTTP requests sent to the server.</desc>
+	</fsa>
+	<fsa>
+		<id>741</id>
+		<date>2011-09-03</date>
+		<author>Miklos Vajna</author>
+		<package>foomatic-filters</package>
+		<vulnerable>4.0.1-5</vulnerable>
+		<unaffected>4.0.1-6mores1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4556</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-2924</cve>
+		<desc>It was found that foomatic-rip filter used insecurely created temporary file
+for storage of PostScript data by rendering the data, intended to be sent to
+the PostScript filter, when the debug mode was enabled. A local attacker could
+use this flaw to conduct symlink attacks (overwrite arbitrary file accessible
+with the privileges of the user running the foomatic-rip universal print
+filter).</desc>
+	</fsa>
+	<fsa>
+		<id>740</id>
+		<date>2011-08-29</date>
+		<author>Miklos Vajna</author>
+		<package>phpmyadmin</package>
+		<vulnerable>3.4.3.2-1</vulnerable>
+		<unaffected>3.4.4-1mores1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4567</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3181</cve>
+		<desc>Some vulnerabilities have been reported in phpMyAdmin, which can be exploited by malicious users to conduct script insertion attacks.
+			Certain input passed to table, column, and index names is not properly sanitised before being used in the Tracking feature. This can be exploited to insert arbitrary HTML and script code, which will be executed in a user's browser session in context of an affected site when the malicious data is being viewed.</desc>
+	</fsa>
+	<fsa>
+		<id>739</id>
+		<date>2011-08-28</date>
+		<author>Miklos Vajna</author>
+		<package>stunnel</package>
+		<vulnerable>4.39-1</vulnerable>
+		<unaffected>4.42-1mores1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4552</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-2940</cve>
+		<desc>A vulnerability has been reported in Stunnel, which can be exploited by malicious people to cause a DoS (Denial of Service) and potentially compromise a vulnerable system.
+			The vulnerability is caused due to an unspecified error and can be exploited to corrupt heap memory.</desc>
+	</fsa>
+	<fsa>
+		<id>738</id>
+		<date>2011-08-27</date>
+		<author>Miklos Vajna</author>
+		<package>krb5</package>
+		<vulnerable>1.7-6</vulnerable>
+		<unaffected>1.7.2-1mores1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4256</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0628
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-1320
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-1321</cve>
+		<desc>1) A vulnerability has been reported in Kerberos, which can be exploited by malicious people to cause a DoS (Denial of Service).
+			The vulnerability is caused due to an assertion error within the "spnego_gss_accept_sec_context()" function in src/lib/gssapi/spnego/spnego_mech.c when receiving an invalid packet, which can be exploited to e.g. crash an application using the library by sending a specially crafted packet.
+			2) Joel Johnson has reported a vulnerability in Kerberos, which can be exploited by malicious users to potentially compromise a vulnerable system.
+			The vulnerability is caused due to an error in KDC within the "process_tgs_req()" function in kdc/do_tgs_req.c when validating or renewing tickets and can be exploited to trigger a double-free condition.
+			Successful exploitation may allow execution of arbitrary code.
+			3) A vulnerability has been reported in Kerberos, which can be exploited by malicious users to cause a DoS (Denial of Service).
+			The vulnerability is caused due to a NULL pointer dereference error when processing certain Kerberos AP-REQ authenticators, which can be exploited to cause a crash in e.g. kadmind or other applications linked against the GSS-API library by sending an AP-REQ authenticator with a missing checksum field.</desc>
+	</fsa>
+	<fsa>
+		<id>737</id>
+		<date>2011-08-24</date>
+		<author>Miklos Vajna</author>
+		<package>mantis</package>
+		<vulnerable>1.2.5-1</vulnerable>
+		<unaffected>1.2.7-1mores1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4553</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-2938</cve>
+		<desc>A vulnerability has been discovered in MantisBT, which can be exploited by malicious people to conduct cross-site scripting attacks.
+			Input passed via the "project_id" parameter to search.php is not properly sanitised before being returned to the user. This can be exploited to execute arbitrary HTML and script code in a user's browser session in context of an affected site.</desc>
+	</fsa>
+	<fsa>
+		<id>736</id>
+		<date>2011-08-23</date>
+		<author>Miklos Vajna</author>
+		<package>roundcube</package>
+		<vulnerable>0.3-2</vulnerable>
+		<unaffected>0.5.4-1mores1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4554</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-2937</cve>
+		<desc>A vulnerability has been reported in RoundCube Webmail, which can be exploited by malicious people to conduct cross-site scripting attacks.
+Input passed via the "_mbox" parameter to various scripts is not properly sanitised before being returned to the user. This can be exploited to execute arbitrary HTML and script code in a user's browser session in context of an affected site.</desc>
+	</fsa>
+	<fsa>
+		<id>735</id>
+		<date>2011-08-22</date>
+		<author>Miklos Vajna</author>
+		<package>xpdf</package>
+		<vulnerable>3.02-6</vulnerable>
+		<unaffected>3.02-7mores1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4236</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1188
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3603
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3604
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3606
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3608
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3609</cve>
+		<desc>Some vulnerabilities have been reported in Xpdf, which can be exploited by malicious people to potentially compromise a user's system.
+1) Multiple integer overflows in "SplashBitmap::SplashBitmap()" can be exploited to cause heap-based buffer overflows.
+2) An integer overflow error in "ObjectStream::ObjectStream()" can be exploited to cause a heap-based buffer overflow.
+3) Multiple integer overflows in "Splash::drawImage()" can be exploited to cause heap-based buffer overflows.
+4) An integer overflow error in "PSOutputDev::doImageL1Sep()" can be exploited to cause a heap-based buffer overflow when converting a PDF document to a PS file.
+Successful exploitation of the vulnerabilities may allow execution of arbitrary code by tricking a user into opening a specially crafted PDF file.</desc>
+	</fsa>
+	<fsa>
+		<id>734</id>
+		<date>2011-08-17</date>
+		<author>Miklos Vajna</author>
+		<package>flashplugin</package>
+		<vulnerable>10.3.181.34-1</vulnerable>
+		<unaffected>10.3.183.5-1mores1</unaffected>
+		<bts>http://bugs.frugalware.org/task/4545</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-2130
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-2134
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-2135
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-2136
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-2137
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-2138
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-2139
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-2140
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-2414
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-2415
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-2416
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-2417
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-2424
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-2425</cve>
+		<desc>Multiple vulnerabilities have been reported in Adobe Flash Player, which can be exploited by malicious people to disclose sensitive information and compromise a user's system.
+1) An unspecified error can be exploited to cause a buffer overflow and potentially execute arbitrary code.
+2) An unspecified error can be exploited to cause a buffer overflow and potentially execute arbitrary code.
+3) An error exists within a certain ActionScript function in the "flash.display" class when parsing certain parameters and can be exploited to corrupt memory and potentially execute arbitrary code.
+4) An integer overflow error within a certain ActionScript function can be exploited to corrupt memory and potentially execute arbitrary code.
+5) An unspecified error can be exploited to cause a buffer overflow and potentially execute arbitrary code.
+6) An integer overflow error when handling the "scroll" method of the ActionScript Bitmap class can be exploited to corrupt memory.
+7) An unspecified error can be exploited to disclose certain information from another domain.
+8) An unspecified error can be exploited to corrupt memory and potentially execute arbitrary code.
+9) An unspecified error can be exploited to cause a buffer overflow and potentially execute arbitrary code.
+10) An error within the "Setslot()" method when parsing a certain field from an SWF file can be exploited to cause a buffer overflow and potentially execute arbitrary code.
+11) An integer overflow error within a certain ActionScript function can be exploited to corrupt memory and potentially execute arbitrary code.
+12) An unspecified error can be exploited to corrupt memory and potentially execute arbitrary code.
+13) An error within the "Bitmapdata" class when parsing a certain field from an SWF file can be exploited to corrupt memory and potentially execute arbitrary code.
+14) 80 unspecified errors of various types when parsing SWF file content may be exploited to corrupt memory.</desc>
+	</fsa>
+</fsas>

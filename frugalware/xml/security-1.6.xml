@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fsas [
+<!ELEMENT fsas (fsa)*>
+<!ELEMENT fsa (id , date , author?, package, vulnerable , unaffected , bts , cve , desc)>
+<!-- must be an integer -->
+<!ELEMENT id (#PCDATA)>
+<!-- in YYYY-MM-DD format -->
+<!ELEMENT date (#PCDATA)>
+<!-- your nick, then the From header will be something like "nick <noreply@frugalware.org>" -->
+<!ELEMENT author (#PCDATA)>
+<!-- package name, without group, version, etc -->
+<!ELEMENT package (#PCDATA)>
+<!-- the old version -->
+<!ELEMENT vulnerable (#PCDATA)>
+<!-- the new (backported) version -->
+<!ELEMENT unaffected (#PCDATA)>
+<!-- bts url -->
+<!ELEMENT bts (#PCDATA)>
+<!-- cve url -->
+<!ELEMENT cve (#PCDATA)>
+<!-- description, can be more than one line -->
+<!ELEMENT desc (#PCDATA)>
+]>
+
+<!-- If you modify this file, be sure it's still valid - read /hooks/README! -->
+<!-- FSA skeleton:
+	<fsa>
+		<id></id>
+		<date></date>
+		<author></author>
+		<package></package>
+		<vulnerable></vulnerable>
+		<unaffected></unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-</cve>
+		<desc></desc>
+	</fsa>
+-->
+
+<fsas>
+	<fsa>
+		<id>761</id>
+		<date>2012-03-08</date>
+		<author>James Buren</author>
+		<package>drupal6-webform</package>
+		<vulnerable>6.x_3.15-1</vulnerable>
+		<unaffected>6.x_3.17-fermus1</unaffected>
+		<bts>https://bugs.frugalware.org/ticket/4671</bts>
+		<cve>none</cve>
+		<desc>A security issue and a vulnerability have been reported in drupal6-webform, which can be exploited by malicious people to manipulate certain data and bypass certain security restrictions.
+			1) Certain unspecified input is not properly sanitised before being used. This can be exploited to insert arbitrary HTML and script code, which will be executed in a user's browser session in context of an affected site when the malicious data is being viewed.</desc>
+	</fsa>
+	<fsa>
+		<id>760</id>
+		<date>2012-03-08</date>
+		<author>James Buren</author>
+		<package>phpmyadmin</package>
+		<vulnerable>3.4.9-1</vulnerable>
+		<unaffected>3.4.10.1-fermus1</unaffected>
+		<bts>https://bugs.frugalware.org/ticket/4659</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-1190</cve>
+		<desc>A security issue and a vulnerability have been reported in phpmyadmin, which can be exploited by malicious people to manipulate certain data and bypass certain security restrictions.
+			1) It was possible to conduct XSS using a crafted database name.</desc>
+	</fsa>
+	<fsa>
+		<id>759</id>
+		<date>2012-03-08</date>
+		<author>James Buren</author>
+		<package>thunderbird</package>
+		<vulnerable>10.0-1</vulnerable>
+		<unaffected>10.0.2-fermus1</unaffected>
+		<bts>https://bugs.frugalware.org/ticket/4663</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3026</cve>
+		<desc>A security issue and a vulnerability have been reported in thunderbird, which can be exploited by malicious people to manipulate certain data and bypass certain security restrictions.
+			1) Integer overflow in libpng, as used in Google Chrome before 17.0.963.56, allows remote attackers to cause a denial of service or possibly have unspecified other impact via unknown vectors that trigger an integer truncation. </desc>
+	</fsa>
+	<fsa>
+		<id>758</id>
+		<date>2012-03-08</date>
+		<author>James Buren</author>
+		<package>chromium-browser</package>
+		<vulnerable>16.0.912.63-2</vulnerable>
+		<unaffected>17.0.963.47-fermus1</unaffected>
+		<bts>https://bugs.frugalware.org/ticket/4664</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3026</cve>
+		<desc>A security issue and a vulnerability have been reported in chromium-browser, which can be exploited by malicious people to manipulate certain data and bypass certain security restrictions.
+			1) Integer overflow in libpng, as used in Google Chrome before 17.0.963.56, allows remote attackers to cause a denial of service or possibly have unspecified other impact via unknown vectors that trigger an integer truncation. </desc>
+	</fsa>
+	<fsa>
+		<id>757</id>
+		<date>2012-03-08</date>
+		<author>James Buren</author>
+		<package>firefox</package>
+		<vulnerable>10.0-1</vulnerable>
+		<unaffected>10.0.2-fermus1</unaffected>
+		<bts>https://bugs.frugalware.org/ticket/4662</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3026</cve>
+		<desc>A security issue and a vulnerability have been reported in firefox, which can be exploited by malicious people to manipulate certain data and bypass certain security restrictions.
+			1) Integer overflow in libpng, as used in Google Chrome before 17.0.963.56, allows remote attackers to cause a denial of service or possibly have unspecified other impact via unknown vectors that trigger an integer truncation. </desc>
+	</fsa>
+	<fsa>
+		<id>756</id>
+		<date>2012-03-08</date>
+		<author>James Buren</author>
+		<package>flashplugin</package>
+		<vulnerable>11.1.102.55-1</vulnerable>
+		<unaffected>11.1.102.63-fermus1</unaffected>
+		<bts>https://bugs.frugalware.org/ticket/4673</bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0768
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0769</cve>
+		<desc>A security issue and a vulnerability have been reported in flashplugin, which can be exploited by malicious people to manipulate certain data and bypass certain security restrictions.
+			1) The Matrix3D component in Adobe Flash Player before 10.3.183.16 and 11.x before 11.1.102.63 on Windows, Mac OS X, Linux, and Solaris; before 11.1.111.7 on Android 2.x and 3.x; and before 11.1.115.7 on Android 4.x allows attackers to execute arbitrary code or cause a denial of service (memory corruption) via unspecified vectors.
+			2) Adobe Flash Player before 10.3.183.16 and 11.x before 11.1.102.63 on Windows, Mac OS X, Linux, and Solaris; before 11.1.111.7 on Android 2.x and 3.x; and before 11.1.115.7 on Android 4.x does not properly handle integers, which allows attackers to obtain sensitive information via unspecified vectors. </desc>
+	</fsa>
+</fsas>
