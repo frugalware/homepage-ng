@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+		<id>957</id>
+		<date>2014-12-12</date>
+		<author>kikadf</author>
+		<package>graphviz</package>
+		<vulnerable>2.28.0-2arcturus2</vulnerable>
+		<unaffected>2.28.0-2arcturus3</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9157</cve>
+		<desc>It was discovered that graphviz incorrectly handled parsing errors.</desc>
+	</fsa>
+	<fsa>
                <id>956</id>
                <date>2014-12-12</date>
                <author>kikadf</author>
