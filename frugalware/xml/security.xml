@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+		<id>959</id>
+		<date>2014-12-12</date>
+		<author>kikadf</author>
+		<package>links</package>
+		<vulnerable>2.7-1</vulnerable>
+		<unaffected>2.7-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6050</cve>
+		<desc>Mikulas Patocka discovered an integer overflow in the parsing of HTML tables in the Links web browser.</desc>
+	</fsa>
+	<fsa>
 		<id>958</id>
 		<date>2014-12-12</date>
 		<author>kikadf</author>
