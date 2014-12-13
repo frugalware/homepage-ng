@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+               <id>960</id>
+               <date>2014-12-13</date>
+               <author>kikadf</author>
+               <package>mediawiki</package>
+               <vulnerable>1.19.20-1arcturus1</vulnerable>
+               <unaffected>1.19.22-1arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9277</cve>
+               <desc>A flaw was discovered in mediawiki, a wiki engine: cross-domain-policy mangling allows an article editor to inject code into API consumers that deserialize PHP representations of the page from the API.</desc>
+	</fsa>
+	<fsa>
 		<id>959</id>
 		<date>2014-12-12</date>
 		<author>kikadf</author>
