@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+		<id>962</id>
+		<date>2014-12-15</date>
+		<author>kikadf</author>
+		<package>libyaml</package>
+		<vulnerable>0.1.4-3arcturus2</vulnerable>
+		<unaffected>0.1.4-3arcturus3</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9130</cve>
+		<desc>Jonathan Gray and Stanislaw Pitucha found an assertion failure in the way wrapped strings are parsed in LibYAML, a fast YAML 1.1 parser and emitter library.</desc>
+	</fsa>
+	<fsa>
 		<id>961</id>
 		<date>2014-12-15</date>
 		<author>kikadf</author>
