@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+		<id>961</id>
+		<date>2014-12-15</date>
+		<author>kikadf</author>
+		<package>denyhosts</package>
+		<vulnerable>2.6-5</vulnerable>
+		<unaffected>2.6-6arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6890</cve>
+		<desc>Helmut Grohne discovered that denyhosts, a tool preventing SSH brute-force attacks, could be used to perform remote denial of service against the SSH daemon.</desc>
+	</fsa>
+	<fsa>
                <id>960</id>
                <date>2014-12-13</date>
                <author>kikadf</author>
