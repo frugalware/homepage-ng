@@ -40,7 +40,7 @@ original new!
     <title>Frugalware 2.0rc2 (Rigel) released</title>
     <date>Wed, 24 Dec 2014 09:47:14 +0100</date>
     <author>ryuo</author>
-    <hidden>1</hidden>
+    <hidden>0</hidden>
     <content><![CDATA[
       The Frugalware Developer Team is pleased to <a href=/news/261>announce</a> the immediate availability of Frugalware 2.0rc2, the second candidate of the upcoming 2.0 stable release.</p>
     <p>Here are some of the major improvements, fixes and updates since 2.0rc1:<br/>
@@ -48,6 +48,7 @@ original new!
         <li>Package updates:
           <ul>
             <li>LXDE 0.99.0</li>
+            <li>KDE 4.14.3</li>
           </ul>
         </li>
         <li>New features:
