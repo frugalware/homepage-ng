@@ -36,6 +36,32 @@ original new!
 
 <news>
   <post>
+    <id>261</id>
+    <title>Frugalware 2.0rc2 (Rigel) released</title>
+    <date>Wed, 24 Dec 2014 09:47:14 +0100</date>
+    <author>ryuo</author>
+    <hidden>1</hidden>
+    <content><![CDATA[
+      The Frugalware Developer Team is pleased to <a href=/news/261>announce</a> the immediate availability of Frugalware 2.0rc2, the second candidate of the upcoming 2.0 stable release.</p>
+    <p>Here are some of the major improvements, fixes and updates since 2.0rc1:<br/>
+      <ul>
+        <li>Package updates:
+          <ul>
+            <li>LXDE 0.99.0</li>
+          </ul>
+        </li>
+        <li>New features:
+          <ul>
+            <li>none</li>
+          </ul>
+        </li>
+      </ul>
+      Download for i686 and x86_64: See our <a href="http://frugalware.org/download/frugalware-current-iso">mirror list</a>. Don't forget to check the <a href="http://frugalware.org/download/frugalware-current-iso/SHA1SUMS">integrity</a> of the install images before burning!<br/>
+        ]]>
+    </content>
+    <icon>development</icon>
+  </post>	
+  <post>
     <id>260</id>
     <title>Frugalware 2.0rc1 (Rigel) released</title>
     <date>Thu, 20 Nov 2014 08:53:38 +0100</date>
