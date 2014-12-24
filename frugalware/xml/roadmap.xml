@@ -29,8 +29,8 @@
 		<newsid></newsid>
 		<prerelease>
 			<preversion>rc2</preversion>
-			<predate>Dec 22, 2014</predate>
-			<prestatus>0</prestatus>
+			<predate>Dec 24, 2014</predate>
+			<prestatus>1</prestatus>
 		</prerelease>
 		<prerelease>
 			<preversion>rc1</preversion>
