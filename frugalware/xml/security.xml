@@ -39,6 +39,21 @@
 
 <fsas>
 	<fsa>
+               <id>963</id>
+               <date>2014-12-25</date>
+               <author>kikadf</author>
+               <package>ntp</package>
+               <vulnerable>4.2.6p5-3arcturus1</vulnerable>
+               <unaffected>4.2.6p5-3arcturus2</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9293
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9294
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9295
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9296</cve>
+               <desc>ntpd generated a weak key for its internal use, with full administrative privileges. The ntp-keygen utility generated weak MD5 keys with insufficient entropy.
+			   ntpd had several buffer overflows (both on the stack and in the data section), allowing remote authenticated attackers to crash ntpd or potentially execute arbitrary code. The general packet processing function in ntpd did not handle an error case correctly.</desc>
+       </fsa>
+	<fsa>
 		<id>962</id>
 		<date>2014-12-15</date>
 		<author>kikadf</author>
