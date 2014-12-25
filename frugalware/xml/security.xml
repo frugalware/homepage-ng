@@ -39,6 +39,18 @@
 
 <fsas>
 	<fsa>
+               <id>965</id>
+               <date>2014-12-25</date>
+               <author>kikadf</author>
+               <package>jasper</package>
+               <vulnerable>1.900.1-6arcturus1</vulnerable>
+               <unaffected>1.900.1-6arcturus2</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8137
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8138</cve>
+               <desc>Jose Duart of the Google Security Team discovered a double free flaw (CVE-2014-8137) and a heap-based buffer overflow flaw (CVE-2014-8138) in JasPer, a library for manipulating JPEG-2000 files.</desc>
+       </fsa>
+	<fsa>
                <id>964</id>
                <date>2014-12-25</date>
                <author>kikadf</author>
