@@ -39,6 +39,18 @@
 
 <fsas>
 	<fsa>
+               <id>964</id>
+               <date>2014-12-25</date>
+               <author>kikadf</author>
+               <package>mailx</package>
+               <vulnerable>12.4-4</vulnerable>
+               <unaffected>12.4-5arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-2771
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-7844</cve>
+               <desc>Mailx interprets shell meta-characters in certain email addresses. An unexpected feature of mailx treats syntactically valid email addresses as shell commands to execute.</desc>
+       </fsa>
+	<fsa>
                <id>963</id>
                <date>2014-12-25</date>
                <author>kikadf</author>
