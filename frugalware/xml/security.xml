@@ -39,6 +39,20 @@
 
 <fsas>
 	<fsa>
+		<id>967</id>
+		<date>2014-12-28</date>
+		<author>kikadf</author>
+		<package>unzip</package>
+		<vulnerable>6.0-2</vulnerable>
+		<unaffected>6.0-3arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8139
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8140
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8141</cve>
+		<desc>Michele Spagnuolo of the Google Security Team discovered that unzip, an extraction utility for archives compressed in .zip format, is affected by heap-based buffer overflows within the CRC32 verification function (CVE-2014-8139), 
+			the test_compr_eb() function (CVE-2014-8140) and the getZip64Data() function (CVE-2014-8141), which may lead to the execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
 		<id>966</id>
 		<date>2014-12-28</date>
 		<author>kikadf</author>
