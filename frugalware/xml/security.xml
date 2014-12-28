@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+		<id>966</id>
+		<date>2014-12-28</date>
+		<author>kikadf</author>
+		<package>sox</package>
+		<vulnerable>14.3.2-1</vulnerable>
+		<unaffected>14.3.2-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8145</cve>
+		<desc>Michele Spagnuolo of the Google Security Team dicovered two heap-based buffer overflows in SoX, the Swiss Army knife of sound processing programs.</desc>
+	</fsa>
+	<fsa>
                <id>965</id>
                <date>2014-12-25</date>
                <author>kikadf</author>
