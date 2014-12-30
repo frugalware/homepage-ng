@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+		<id>968</id>
+		<date>2014-12-30</date>
+		<author>kikadf</author>
+		<package>pyyaml</package>
+		<vulnerable>3.10-1</vulnerable>
+		<unaffected>3.10-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9130</cve>
+		<desc>Jonathan Gray and Stanislaw Pitucha found an assertion failure in the way wrapped strings are parsed in Python-YAML, a YAML parser and emitter for Python.</desc>
+	</fsa>
+	<fsa>
 		<id>967</id>
 		<date>2014-12-28</date>
 		<author>kikadf</author>
