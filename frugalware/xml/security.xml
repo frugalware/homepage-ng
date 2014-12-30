@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+		<id>969</id>
+		<date>2014-12-30</date>
+		<author>kikadf</author>
+		<package>cpio</package>
+		<vulnerable>2.11-2</vulnerable>
+		<unaffected>2.11-3arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9112</cve>
+		<desc>Michal Zalewski discovered an out of bounds write issue in cpio, a tool for creating and extracting cpio archive files.</desc>
+	</fsa>
+	<fsa>
 		<id>968</id>
 		<date>2014-12-30</date>
 		<author>kikadf</author>
