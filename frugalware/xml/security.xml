@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+               <id>970</id>
+               <date>2015-01-28</date>
+               <author>kikadf</author>
+               <package>glibc</package>
+               <vulnerable>2.16.0-4arcturus2</vulnerable>
+               <unaffected>2.16.0-4arcturus3</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0235</cve>
+               <desc>Qualys discovered that the gethostbyname and gethostbyname2 functions were subject to a buffer overflow if provided with a crafted IP address argument.</desc>
+       </fsa>
+	<fsa>
 		<id>969</id>
 		<date>2014-12-30</date>
 		<author>kikadf</author>
