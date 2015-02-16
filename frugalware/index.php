@@ -61,57 +61,56 @@ if (isset($translatefile) and !empty($translatefile)) {
     $translatenews = $parser->document->post;
 }
 
-// I hate writing a lot. And also the parser creates too long and unuseful object hierarchy,
-// so create a better-readable one.
-$i = 0;
-while ($i < $news_limit)
-{
-    $indextrad = 0;
 
-    for ($j=(count($translatenews)-1); $j>-1; $j--)
-    {
-        if ($translatenews[$j]->id[0]->tagData == $news[$i]->id[0]->tagData)
-        {
-            $indextrad = $j;
-            $found = true;
+$loopIndex = 0;     // Using to feed the loop
+$visibleNews = 0;   // Using to put a new in $posts array
+
+while ($visibleNews < $news_limit) {
+
+    $translationIndex = NULL;
+
+    for ($j=(count($translatenews)-1); $j>-1; $j--) {
+
+        // Check if there is a translation for current new
+        if ($translatenews[$j]->id[0]->tagData == $news[$loopIndex]->id[0]->tagData) {
+            $translationIndex = $j;
             break;
         }
-        else
-            $found = false;
     }
 
-    if ($found)
-        $newpost = $translatenews[$indextrad];
-    else
-        $newpost = $news[$i];
+    // Get the translation new data
+    $postData = ($translationIndex != NULL ? $translatenews[$translationIndex] : $news[$loopIndex]);
 
-    if ($newpost->hidden[0]->tagData == 0)
-    {
+    // Get only visible data
+    if ($postData->hidden[0]->tagData == 0) {
+
         // We use icon from icon tag
-        if (isset($news[$i]->icon[0]->tagData) and !empty($news[$i]->icon[0]->tagData))
-            $posts[$i]['icon'] = $fwng_root . "images/categories/" . $news[$i]->icon[0]->tagData . ".png";
+        if (isset($news[$loopIndex]->icon[0]->tagData) and !empty($news[$loopIndex]->icon[0]->tagData))
+            $posts[$visibleNews]['icon'] = $fwng_root . "images/categories/" . $news[$loopIndex]->icon[0]->tagData . ".png";
         else
-            $posts[$i]['icon'] = $fwng_root . "images/categories/frugalware.png";
+            $posts[$visibleNews]['icon'] = $fwng_root . "images/categories/frugalware.png";
 
-        if ($i > 0)
-            $show = "<a class=\"news\" onclick=\"toggle_div(this,'new" . $i ."', 1);\"><img src=\"".$fwng_root."images/icons/more.png\" class=\"moreandless\" /></a>";
-        else
-            $show = "";
+        // Show an arrow next to new title
+        $show = ($visibleNews > 0 ? "<a class=\"news\" onclick=\"toggle_div(this,'new" . $visibleNews ."', 1);\"><img src=\"".$fwng_root."images/icons/more.png\" class=\"moreandless\" /></a>" : "");
 
-        $posts[$i]['id'] = $newpost->id[0]->tagData;
-        $posts[$i]['title'] = "<a class=\"boxheader\" href=\"" . $fwng_root . "news/" . $newpost->id[0]->tagData . "\"><img class=\"face\" src=\"" . $posts[$i]['icon'] . "\" width=\"16\" alt=\"\" /> " . $newpost->title[0]->tagData."</a> " . $show;
+        $posts[$visibleNews]['id'] = $postData->id[0]->tagData;
+
+        $posts[$visibleNews]['title'] = "<a class=\"boxheader\" href=\"" . $fwng_root . "news/" . $postData->id[0]->tagData . "\"><img class=\"face\" src=\"" . $posts[$visibleNews]['icon'] . "\" width=\"16\" alt=\"\" /> " . $postData->title[0]->tagData."</a> " . $show;
 
         date_default_timezone_set('America/New_York');
-        $date = new DateTime($newpost->date[0]->tagData);
-        $posts[$i]['date'] = $date->format('Y-m-d');
+        $date = new DateTime($postData->date[0]->tagData);
+        $posts[$visibleNews]['date'] = $date->format('Y-m-d');
 
-        $posts[$i]['author'] = $newpost->author[0]->tagData;
-        $posts[$i]['hidden'] = $newpost->hidden[0]->tagData;
-        $posts[$i]['content'] = $newpost->content[0]->tagData;
+        $posts[$visibleNews]['author'] = $postData->author[0]->tagData;
+        $posts[$visibleNews]['hidden'] = $postData->hidden[0]->tagData;
+        $posts[$visibleNews]['content'] = $postData->content[0]->tagData;
 
-        $i += 1;
+        $visibleNews += 1;
     }
+
+    $loopIndex += 1;
 }
+
 
 // About dialog
 $about = "
