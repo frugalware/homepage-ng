@@ -63,7 +63,8 @@ if (isset($translatefile) and !empty($translatefile)) {
 
 // I hate writing a lot. And also the parser creates too long and unuseful object hierarchy,
 // so create a better-readable one.
-for ( $i=0; $i<$news_limit; $i++)
+$i = 0;
+while ($i < $news_limit)
 {
     $indextrad = 0;
 
@@ -84,27 +85,32 @@ for ( $i=0; $i<$news_limit; $i++)
     else
         $newpost = $news[$i];
 
-    // We use icon from icon tag
-    if (isset($news[$i]->icon[0]->tagData) and !empty($news[$i]->icon[0]->tagData))
-        $posts[$i]['icon'] = $fwng_root . "images/categories/" . $news[$i]->icon[0]->tagData . ".png";
-    else
-        $posts[$i]['icon'] = $fwng_root . "images/categories/frugalware.png";
+    if ($newpost->hidden[0]->tagData == 0)
+    {
+        // We use icon from icon tag
+        if (isset($news[$i]->icon[0]->tagData) and !empty($news[$i]->icon[0]->tagData))
+            $posts[$i]['icon'] = $fwng_root . "images/categories/" . $news[$i]->icon[0]->tagData . ".png";
+        else
+            $posts[$i]['icon'] = $fwng_root . "images/categories/frugalware.png";
 
-    if ($i > 0)
-        $show = "<a class=\"news\" onclick=\"toggle_div(this,'new" . $i ."', 1);\"><img src=\"".$fwng_root."images/icons/more.png\" class=\"moreandless\" /></a>";
-    else
-        $show = "";
+        if ($i > 0)
+            $show = "<a class=\"news\" onclick=\"toggle_div(this,'new" . $i ."', 1);\"><img src=\"".$fwng_root."images/icons/more.png\" class=\"moreandless\" /></a>";
+        else
+            $show = "";
 
-    $posts[$i]['id'] = $newpost->id[0]->tagData;
-    $posts[$i]['title'] = "<a class=\"boxheader\" href=\"" . $fwng_root . "news/" . $newpost->id[0]->tagData . "\"><img class=\"face\" src=\"" . $posts[$i]['icon'] . "\" width=\"16\" alt=\"\" /> " . $newpost->title[0]->tagData."</a> " . $show;
+        $posts[$i]['id'] = $newpost->id[0]->tagData;
+        $posts[$i]['title'] = "<a class=\"boxheader\" href=\"" . $fwng_root . "news/" . $newpost->id[0]->tagData . "\"><img class=\"face\" src=\"" . $posts[$i]['icon'] . "\" width=\"16\" alt=\"\" /> " . $newpost->title[0]->tagData."</a> " . $show;
 
-    date_default_timezone_set('America/New_York');
-    $date = new DateTime($newpost->date[0]->tagData);
-    $posts[$i]['date'] = $date->format('Y-m-d');
+        date_default_timezone_set('America/New_York');
+        $date = new DateTime($newpost->date[0]->tagData);
+        $posts[$i]['date'] = $date->format('Y-m-d');
 
-    $posts[$i]['author'] = $newpost->author[0]->tagData;
-    $posts[$i]['hidden'] = $newpost->hidden[0]->tagData;
-    $posts[$i]['content'] = $newpost->content[0]->tagData;
+        $posts[$i]['author'] = $newpost->author[0]->tagData;
+        $posts[$i]['hidden'] = $newpost->hidden[0]->tagData;
+        $posts[$i]['content'] = $newpost->content[0]->tagData;
+
+        $i += 1;
+    }
 }
 
 // About dialog
