@@ -40,7 +40,7 @@ original new!
     <title>Frugalware 2.0 (Rigel) released</title>
     <date>Mon, 16 Feb 2015 10:09:09 +0100</date>
     <author>ryuo</author>
-    <hidden>1</hidden>
+    <hidden>0</hidden>
     <content><![CDATA[
       The Frugalware Developer Team is pleased to <a href=/news/262>announce</a> the immediate availability of Frugalware 2.0, our twentieth stable release.<br />
       No new features have been added since 2.0rc2. If you didn't follow the changes during the rc releases, here are the most important changes since 1.9 in no particular order:<br />
