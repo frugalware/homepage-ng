@@ -25,8 +25,8 @@
 		<definition>A planet in the Empire series. In the first millennium of the Galactic Era, its inhabitants developed a robotic culture. Because this made Rigellians so passive, they were easy prey for the warlord Moray. Thus, Rigel's fate resembled that of the Spacer worlds. Its name may come from the name of the star, Rigel.</definition>
 		<version>2.0</version>
 		<date>Feb 16, 2015</date>
-		<status>0</status>
-		<newsid></newsid>
+		<status>1</status>
+		<newsid>262</newsid>
 		<prerelease>
 			<preversion>rc2</preversion>
 			<predate>Dec 24, 2014</predate>
