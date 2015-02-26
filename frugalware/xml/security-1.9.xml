@@ -1,0 +1,2763 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fsas [
+<!ELEMENT fsas (fsa)*>
+<!ELEMENT fsa (id , date , author?, package, vulnerable , unaffected , bts , cve , desc)>
+<!-- must be an integer -->
+<!ELEMENT id (#PCDATA)>
+<!-- in YYYY-MM-DD format -->
+<!ELEMENT date (#PCDATA)>
+<!-- your nick, then the From header will be something like "nick <noreply@frugalware.org>" -->
+<!ELEMENT author (#PCDATA)>
+<!-- package name, without group, version, etc -->
+<!ELEMENT package (#PCDATA)>
+<!-- the old version -->
+<!ELEMENT vulnerable (#PCDATA)>
+<!-- the new (backported) version -->
+<!ELEMENT unaffected (#PCDATA)>
+<!-- bts url -->
+<!ELEMENT bts (#PCDATA)>
+<!-- cve url -->
+<!ELEMENT cve (#PCDATA)>
+<!-- description, can be more than one line -->
+<!ELEMENT desc (#PCDATA)>
+]>
+
+<!-- If you modify this file, be sure it's still valid - read /hooks/README! -->
+<!-- FSA skeleton:
+	<fsa>
+		<id></id>
+		<date></date>
+		<author></author>
+		<package></package>
+		<vulnerable></vulnerable>
+		<unaffected></unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-</cve>
+		<desc></desc>
+	</fsa>
+-->
+
+<fsas>
+	<fsa>
+               <id>970</id>
+               <date>2015-01-28</date>
+               <author>kikadf</author>
+               <package>glibc</package>
+               <vulnerable>2.16.0-4arcturus2</vulnerable>
+               <unaffected>2.16.0-4arcturus3</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0235</cve>
+               <desc>Qualys discovered that the gethostbyname and gethostbyname2 functions were subject to a buffer overflow if provided with a crafted IP address argument.</desc>
+       </fsa>
+	<fsa>
+		<id>969</id>
+		<date>2014-12-30</date>
+		<author>kikadf</author>
+		<package>cpio</package>
+		<vulnerable>2.11-2</vulnerable>
+		<unaffected>2.11-3arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9112</cve>
+		<desc>Michal Zalewski discovered an out of bounds write issue in cpio, a tool for creating and extracting cpio archive files.</desc>
+	</fsa>
+	<fsa>
+		<id>968</id>
+		<date>2014-12-30</date>
+		<author>kikadf</author>
+		<package>pyyaml</package>
+		<vulnerable>3.10-1</vulnerable>
+		<unaffected>3.10-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9130</cve>
+		<desc>Jonathan Gray and Stanislaw Pitucha found an assertion failure in the way wrapped strings are parsed in Python-YAML, a YAML parser and emitter for Python.</desc>
+	</fsa>
+	<fsa>
+		<id>967</id>
+		<date>2014-12-28</date>
+		<author>kikadf</author>
+		<package>unzip</package>
+		<vulnerable>6.0-2</vulnerable>
+		<unaffected>6.0-3arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8139
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8140
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8141</cve>
+		<desc>Michele Spagnuolo of the Google Security Team discovered that unzip, an extraction utility for archives compressed in .zip format, is affected by heap-based buffer overflows within the CRC32 verification function (CVE-2014-8139), 
+			the test_compr_eb() function (CVE-2014-8140) and the getZip64Data() function (CVE-2014-8141), which may lead to the execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
+		<id>966</id>
+		<date>2014-12-28</date>
+		<author>kikadf</author>
+		<package>sox</package>
+		<vulnerable>14.3.2-1</vulnerable>
+		<unaffected>14.3.2-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8145</cve>
+		<desc>Michele Spagnuolo of the Google Security Team dicovered two heap-based buffer overflows in SoX, the Swiss Army knife of sound processing programs.</desc>
+	</fsa>
+	<fsa>
+               <id>965</id>
+               <date>2014-12-25</date>
+               <author>kikadf</author>
+               <package>jasper</package>
+               <vulnerable>1.900.1-6arcturus1</vulnerable>
+               <unaffected>1.900.1-6arcturus2</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8137
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8138</cve>
+               <desc>Jose Duart of the Google Security Team discovered a double free flaw (CVE-2014-8137) and a heap-based buffer overflow flaw (CVE-2014-8138) in JasPer, a library for manipulating JPEG-2000 files.</desc>
+       </fsa>
+	<fsa>
+               <id>964</id>
+               <date>2014-12-25</date>
+               <author>kikadf</author>
+               <package>mailx</package>
+               <vulnerable>12.4-4</vulnerable>
+               <unaffected>12.4-5arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2004-2771
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-7844</cve>
+               <desc>Mailx interprets shell meta-characters in certain email addresses. An unexpected feature of mailx treats syntactically valid email addresses as shell commands to execute.</desc>
+       </fsa>
+	<fsa>
+               <id>963</id>
+               <date>2014-12-25</date>
+               <author>kikadf</author>
+               <package>ntp</package>
+               <vulnerable>4.2.6p5-3arcturus1</vulnerable>
+               <unaffected>4.2.6p5-3arcturus2</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9293
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9294
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9295
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9296</cve>
+               <desc>ntpd generated a weak key for its internal use, with full administrative privileges. The ntp-keygen utility generated weak MD5 keys with insufficient entropy.
+			   ntpd had several buffer overflows (both on the stack and in the data section), allowing remote authenticated attackers to crash ntpd or potentially execute arbitrary code. The general packet processing function in ntpd did not handle an error case correctly.</desc>
+       </fsa>
+	<fsa>
+		<id>962</id>
+		<date>2014-12-15</date>
+		<author>kikadf</author>
+		<package>libyaml</package>
+		<vulnerable>0.1.4-3arcturus2</vulnerable>
+		<unaffected>0.1.4-3arcturus3</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9130</cve>
+		<desc>Jonathan Gray and Stanislaw Pitucha found an assertion failure in the way wrapped strings are parsed in LibYAML, a fast YAML 1.1 parser and emitter library.</desc>
+	</fsa>
+	<fsa>
+		<id>961</id>
+		<date>2014-12-15</date>
+		<author>kikadf</author>
+		<package>denyhosts</package>
+		<vulnerable>2.6-5</vulnerable>
+		<unaffected>2.6-6arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6890</cve>
+		<desc>Helmut Grohne discovered that denyhosts, a tool preventing SSH brute-force attacks, could be used to perform remote denial of service against the SSH daemon.</desc>
+	</fsa>
+	<fsa>
+               <id>960</id>
+               <date>2014-12-13</date>
+               <author>kikadf</author>
+               <package>mediawiki</package>
+               <vulnerable>1.19.20-1arcturus1</vulnerable>
+               <unaffected>1.19.22-1arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9277</cve>
+               <desc>A flaw was discovered in mediawiki, a wiki engine: cross-domain-policy mangling allows an article editor to inject code into API consumers that deserialize PHP representations of the page from the API.</desc>
+	</fsa>
+	<fsa>
+		<id>959</id>
+		<date>2014-12-12</date>
+		<author>kikadf</author>
+		<package>links</package>
+		<vulnerable>2.7-1</vulnerable>
+		<unaffected>2.7-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6050</cve>
+		<desc>Mikulas Patocka discovered an integer overflow in the parsing of HTML tables in the Links web browser.</desc>
+	</fsa>
+	<fsa>
+		<id>958</id>
+		<date>2014-12-12</date>
+		<author>kikadf</author>
+		<package>pdns-recursor</package>
+		<vulnerable>3.3-8</vulnerable>
+		<unaffected>3.3-9arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8601</cve>
+		<desc>Florian Maury from ANSSI discovered a flaw in pdns-recursor, a recursive DNS server : a remote attacker controlling maliciously-constructed zones or a rogue server could affect the performance of pdns-recursor, thus leading to resource exhaustion and a potential denial-of-service.</desc>
+	</fsa>
+	<fsa>
+		<id>957</id>
+		<date>2014-12-12</date>
+		<author>kikadf</author>
+		<package>graphviz</package>
+		<vulnerable>2.28.0-2arcturus2</vulnerable>
+		<unaffected>2.28.0-2arcturus3</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9157</cve>
+		<desc>It was discovered that graphviz incorrectly handled parsing errors.</desc>
+	</fsa>
+	<fsa>
+               <id>956</id>
+               <date>2014-12-12</date>
+               <author>kikadf</author>
+               <package>bind</package>
+               <vulnerable>9.9.4-1arcturus1</vulnerable>
+               <unaffected>9.9.6-1arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8500</cve>
+               <desc>Florian Maury discovered that Bind incorrectly handled delegation.</desc>
+       </fsa>
+	<fsa>
+		<id>955</id>
+		<date>2014-12-11</date>
+		<author>kikadf</author>
+		<package>xorg-server</package>
+		<vulnerable>1.14.2-2</vulnerable>
+		<unaffected>1.14.2-3arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8091
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8092
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8093
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8094
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8095
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8096
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8097
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8098
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8099
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8100
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8101
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8102</cve>
+		<desc>Ilja van Sprundel discovered a multitude of security issues in the X.Org X server.</desc>
+	</fsa>
+	<fsa>
+               <id>954</id>
+               <date>2014-12-10</date>
+               <author>kikadf</author>
+               <package>qemu</package>
+               <vulnerable>1.5.2-3arcturus7</vulnerable>
+               <unaffected>1.5.2-3arcturus8</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8106
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-7840</cve>
+               <desc>Paolo Bonzini of Red Hat discovered that the blit region checks were insufficient in the Cirrus VGA emulator in qemu, a fast processor emulator.
+			   Invalid migration stream can cause arbitrary qemu memory overwrite.</desc>
+       </fsa>
+	<fsa>
+               <id>953</id>
+               <date>2014-12-10</date>
+               <author>kikadf</author>
+               <package>pcre</package>
+               <vulnerable>8.32-1</vulnerable>
+               <unaffected>8.32-2arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8964</cve>
+               <desc>Heap overflow while matching against an expression with an assertion with a zero minimum repeat as the condition in a conditional group.</desc>
+       </fsa>
+	<fsa>
+               <id>952</id>
+               <date>2014-12-10</date>
+               <author>kikadf</author>
+               <package>mod_wsgi</package>
+               <vulnerable>3.4-2arcturus1</vulnerable>
+               <unaffected>3.4-2arcturus2</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8583</cve>
+               <desc>It was discovered that mod_wsgi incorrectly handled errors when setting up the working directory and group access rights.</desc>
+       </fsa>
+	<fsa>
+               <id>951</id>
+               <date>2014-12-10</date>
+               <author>kikadf</author>
+               <package>libksba</package>
+               <vulnerable>1.2.0-1</vulnerable>
+               <unaffected>1.2.0-2arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9087</cve>
+               <desc>Hanno Böck discovered that Libksba incorrectly handled certain S/MIME messages or ECC based OpenPGP data.</desc>
+       </fsa>
+	<fsa>
+               <id>950</id>
+               <date>2014-12-10</date>
+               <author>kikadf</author>
+               <package>jasper</package>
+               <vulnerable>1.900.1-5</vulnerable>
+               <unaffected>1.900.1-6arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-4516
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-4517
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9029</cve>
+               <desc>Two buffer overflows were discovered in JasPer, a library for handling JPEG-2000 images, which could lead to the execution of arbitrary code.
+			   Josh Duart of the Google Security Team discovered heap-based buffer overflow flaws in JasPer, a library for manipulating JPEG-2000 files, which could lead to denial of service (application crash) or the execution of arbitrary code.</desc>
+       </fsa>
+	<fsa>
+               <id>949</id>
+               <date>2014-12-10</date>
+               <author>kikadf</author>
+               <package>glibc</package>
+               <vulnerable>2.16.0-4arcturus1</vulnerable>
+               <unaffected>2.16.0-4arcturus2</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4043
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6040
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-7817</cve>
+               <desc>Adhemerval Zanella Netto discovered that the GNU C Library incorrectly handled certain multibyte characters when using the iconv function.
+			   Tim Waugh discovered that the GNU C Library incorrectly enforced the WRDE_NOCMD flag when handling the wordexp function.</desc>
+       </fsa>
+	<fsa>
+               <id>948</id>
+               <date>2014-12-10</date>
+               <author>kikadf</author>
+               <package>dbus</package>
+               <vulnerable>1.6.8-10arcturus2</vulnerable>
+               <unaffected>1.6.8-10arcturus3</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-7824</cve>
+               <desc>It was discovered that DBus incorrectly handled a large number of file descriptor messages.</desc>
+       </fsa>
+	<fsa>
+               <id>947</id>
+               <date>2014-12-06</date>
+               <author>kikadf</author>
+               <package>tcpdump</package>
+               <vulnerable>4.4.0-2arcturus1</vulnerable>
+               <unaffected>4.4.0-2arcturus2</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9140</cve>
+               <desc>Buffer overflow in the PPP dissector.</desc>
+       </fsa>
+	<fsa>
+		<id>946</id>
+		<date>2014-12-06</date>
+		<author>kikadf</author>
+		<package>flac</package>
+		<vulnerable>1.2.1-3</vulnerable>
+		<unaffected>1.2.1-4arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8962
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9028</cve>
+		<desc>Michele Spagnuolo, of Google Security Team, and Miroslav Lichvar, of Red Hat, discovered two issues in flac, a library handling Free Lossless Audio Codec media: by providing a specially crafted FLAC file, an attacker could execute arbitrary code.</desc>
+	</fsa>
+	<fsa>
+               <id>945</id>
+               <date>2014-12-04</date>
+               <author>kikadf</author>
+               <package>openvpn</package>
+               <vulnerable>2.1.3-7arcturus1</vulnerable>
+               <unaffected>2.1.3-7arcturus2</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8104</cve>
+               <desc>Dragana Damjanovic discovered that an authenticated client could crash an OpenVPN server by sending a control packet containing less than four bytes as payload.</desc>
+       </fsa>
+	<fsa>
+               <id>944</id>
+               <date>2014-11-29</date>
+               <author>kikadf</author>
+               <package>clamav</package>
+               <vulnerable>0.98.1-1arcturus1</vulnerable>
+               <unaffected>0.98.5-1arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6497
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9050</cve>
+               <desc>Kurt Seifried discovered that ClamAV incorrectly handled certain JavaScript files. Damien Millescamp discovered that ClamAV incorrectly handled certain PE files.</desc>
+       </fsa>
+	<fsa>
+               <id>943</id>
+               <date>2014-11-29</date>
+               <author>kikadf</author>
+               <package>wireshark</package>
+               <vulnerable>1.8.15-1arcturus1</vulnerable>
+               <unaffected>1.8.15-1arcturus2</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8710
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8711
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8712
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8713
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8714</cve>
+               <desc>Multiple vulnerabilities were discovered in the dissectors/parsers for SigComp UDVM, AMQP, NCP and TN5250, which could result in denial of service.</desc>
+       </fsa>
+	<fsa>
+               <id>942</id>
+               <date>2014-11-24</date>
+               <author>kikadf</author>
+               <package>tcpdump</package>
+               <vulnerable>4.4.0-1</vulnerable>
+               <unaffected>4.4.0-2arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8767
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8769</cve>
+               <desc>Tcpdump program crash was reported when processing a malformed OLSR payload. The application decoder for the Ad hoc On-Demand Distance Vector (AODV) protocol fails to perform input validation and performs unsafe out-of-bound accesses.</desc>
+       </fsa>
+	<fsa>
+               <id>941</id>
+               <date>2014-11-24</date>
+               <author>kikadf</author>
+               <package>ruby</package>
+               <vulnerable>1.9.2-2</vulnerable>
+               <unaffected>1.9.2-3arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4975
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8080
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8090</cve>
+               <desc>Off-by-one error in the encodes function in pack.c, when using certain format string specifiers, allows context-dependent attackers to cause a denial of service (segmentation fault) via vectors that trigger a stack-based buffer overflow.
+			   Tomas Hoger discovered that Ruby incorrectly handled XML entity expansion.</desc>
+       </fsa>
+	<fsa>
+               <id>940</id>
+               <date>2014-11-24</date>
+               <author>kikadf</author>
+               <package>drupal6</package>
+               <vulnerable>6.33-1arcturus1</vulnerable>
+               <unaffected>6.34-1arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9015
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9016</cve>
+               <desc>Aaron Averill discovered that a specially crafted request can give a user access to another user's session, allowing an attacker to hijack a random session.
+			   Michael Cullum, Javier Nieto and Andres Rojas Guerrero discovered that the password hashing API allows an attacker to send specially crafted requests resulting in CPU and memory exhaustion.</desc>
+       </fsa>
+	<fsa>
+               <id>939</id>
+               <date>2014-11-24</date>
+               <author>kikadf</author>
+               <package>drupal7</package>
+               <vulnerable>7.22-2arcturus5</vulnerable>
+               <unaffected>7.22-2arcturus6</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9015
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9016</cve>
+               <desc>Aaron Averill discovered that a specially crafted request can give a user access to another user's session, allowing an attacker to hijack a random session.
+			   Michael Cullum, Javier Nieto and Andres Rojas Guerrero discovered that the password hashing API allows an attacker to send specially crafted requests resulting in CPU and memory exhaustion.</desc>
+       </fsa>
+	<fsa>
+               <id>938</id>
+               <date>2014-11-21</date>
+               <author>kikadf</author>
+               <package>graphicsmagick</package>
+               <vulnerable>1.3.18-1</vulnerable>
+               <unaffected>1.3.18-2arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1947</cve>
+               <desc>Buffer overflow when handling PSD images.</desc>
+       </fsa>
+	<fsa>
+               <id>937</id>
+               <date>2014-11-21</date>
+               <author>kikadf</author>
+               <package>python-3.0</package>
+               <vulnerable>3.3.0-2</vulnerable>
+               <unaffected>3.3.0-3arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4650</cve>
+               <desc>The CGIHTTPServer Python module does not properly handle URL-encoded path separators in URLs.</desc>
+       </fsa>
+	<fsa>
+               <id>936</id>
+               <date>2014-11-21</date>
+               <author>kikadf</author>
+               <package>python</package>
+               <vulnerable>2.7.5-2arcturus1</vulnerable>
+               <unaffected>2.7.5-2arcturus2</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4650</cve>
+               <desc>The CGIHTTPServer Python module does not properly handle URL-encoded path separators in URLs.</desc>
+       </fsa>
+	<fsa>
+               <id>935</id>
+               <date>2014-11-05</date>
+               <author>kikadf</author>
+               <package>qemu</package>
+               <vulnerable>1.5.2-3arcturus6</vulnerable>
+               <unaffected>1.5.2-3arcturus7</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3689
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-7815</cve>
+               <desc>A flaw was found in the way guest provided parameter validation was performed in vmware-vga driver in rectangle handling functionality.
+			   bits_per_pixel that are less than 8 could result in accessing non-initialized buffers later in the code due to the expectation that bytes_per_pixel value that is used to initialize these buffers is never zero.</desc>
+       </fsa>
+	<fsa>
+               <id>934</id>
+               <date>2014-11-05</date>
+               <author>kikadf</author>
+               <package>php</package>
+               <vulnerable>5.3.26-2arcturus6</vulnerable>
+               <unaffected>5.3.26-2arcturus7</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3668
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3669
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3670
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3710</cve>
+               <desc>Symeon Paraschoudis discovered that PHP incorrectly handled the mkgmtime function. Symeon Paraschoudis discovered that PHP incorrectly handled unserializing objects.
+			   Otto Ebeling discovered that PHP incorrectly handled the exif_thumbnail function. Francisco Alonso that PHP incorrectly handled ELF files in the fileinfo extension.</desc>
+       </fsa>
+	<fsa>
+               <id>933</id>
+               <date>2014-11-05</date>
+               <author>kikadf</author>
+               <package>dokuwiki</package>
+               <vulnerable>2012_10_13-1</vulnerable>
+               <unaffected>2014_09_29-1arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8761
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8762
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8763
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8764</cve>
+               <desc>Two vulnerabilities have been discovered in dokuwiki. Access control in the media manager was insufficiently restricted and authentication could be bypassed when using Active Directory for LDAP authentication.</desc>
+       </fsa>
+	<fsa>
+		<id>932</id>
+		<date>2014-10-31</date>
+		<author>kikadf</author>
+		<package>wget</package>
+		<vulnerable>1.13.4-2</vulnerable>
+		<unaffected>1.13.4-3arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4877</cve>
+		<desc>HD Moore discovered that Wget contained a path traversal vulnerability when downloading symlinks using FTP.</desc>
+	</fsa>
+	<fsa>
+		<id>931</id>
+		<date>2014-10-31</date>
+		<author>kikadf</author>
+		<package>libxml2</package>
+		<vulnerable>2.8.0-2arcturus1</vulnerable>
+		<unaffected>2.8.0-2arcturus2</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3660</cve>
+		<desc>Sogeti found a denial of service flaw in libxml2, a library providing support to read, modify and write XML and HTML files.</desc>
+	</fsa>
+	<fsa>
+		<id>930</id>
+		<date>2014-10-28</date>
+		<author>kikadf</author>
+		<package>quassel</package>
+		<vulnerable>0.8.0-2</vulnerable>
+		<unaffected>0.8.0-3arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8483</cve>
+		<desc>The ECB Blowfish decryption function assumed that encrypted input would always come in blocks of 12 characters, as specified. However, buggy clients or annoying people may not adhere to that assumption, causing the core to crash while trying to process the invalid base64 input.</desc>
+	</fsa>
+	<fsa>
+		<id>929</id>
+		<date>2014-10-28</date>
+		<author>kikadf</author>
+		<package>konversation</package>
+		<vulnerable>1.4-3</vulnerable>
+		<unaffected>1.4-4arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8483</cve>
+		<desc>The ECB Blowfish decryption function assumed that encrypted input would always come in blocks of 12 characters, as specified. However, buggy clients or annoying people may not adhere to that assumption, causing the core to crash while trying to process the invalid base64 input.</desc>
+	</fsa>
+	<fsa>
+               <id>928</id>
+               <date>2014-10-28</date>
+               <author>kikadf</author>
+               <package>file</package>
+               <vulnerable>5.14-2arcturus4</vulnerable>
+               <unaffected>5.14-2arcturus5</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3710</cve>
+               <desc>An out-of-bounds read flaw was found in file's donote() function in the way the file utility determined the note headers of a elf file.</desc>
+       </fsa>
+	<fsa>
+		<id>927</id>
+		<date>2014-10-19</date>
+		<author>kikadf</author>
+		<package>hostapd</package>
+		<vulnerable>1.1-2</vulnerable>
+		<unaffected>1.1-3arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3686</cve>
+		<desc>Jouni Malinen discovered an input sanitization issue in the wpa_cli and hostapd_cli tools included in the wpa package.</desc>
+	</fsa>
+	<fsa>
+		<id>926</id>
+		<date>2014-10-19</date>
+		<author>kikadf</author>
+		<package>wpa_supplicant</package>
+		<vulnerable>1.1-1</vulnerable>
+		<unaffected>1.1-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3686</cve>
+		<desc>Jouni Malinen discovered an input sanitization issue in the wpa_cli and hostapd_cli tools included in the wpa package.</desc>
+	</fsa>
+	<fsa>
+		<id>925</id>
+		<date>2014-10-17</date>
+		<author>kikadf</author>
+		<package>mysql</package>
+		<vulnerable>5.5.38-1arcturus1</vulnerable>
+		<unaffected>5.5.40-1arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-5615
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4274
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4287
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6463
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6464
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6469
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6478
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6484
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6491
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6494
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6495
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6496
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6500
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6505
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6507
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6520
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6530
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6551
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6555
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6559</cve>
+		<desc>Multiple security issues were discovered in MySQL and this update includes a new upstream MySQL version to fix these issues.</desc>
+	</fsa>
+	<fsa>
+		<id>924</id>
+		<date>2014-10-17</date>
+		<author>kikadf</author>
+		<package>drupal7</package>
+		<vulnerable>7.22-2arcturus4</vulnerable>
+		<unaffected>7.22-2arcturus5</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3704</cve>
+		<desc>Stefan Horst discovered a vulnerability in the Drupal database abstraction API, which may result in SQL injection.</desc>
+	</fsa>
+	<fsa>
+		<id>923</id>
+		<date>2014-10-17</date>
+		<author>kikadf</author>
+		<package>openssl</package>
+		<vulnerable>1.0.1-5arcturus6</vulnerable>
+		<unaffected>1.0.1-5arcturus7</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3513
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3566
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3567
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3568</cve>
+		<desc>A memory leak flaw was found in the way OpenSSL parsed the DTLS Secure Real-time Transport Protocol (SRTP) extension data.
+			A flaw was found in the way SSL 3.0 handled padding bytes when decrypting messages encrypted using block ciphers in cipher block chaining (CBC) mode.
+			A memory leak flaw was found in the way an OpenSSL handled failed session ticket integrity checks.
+			When OpenSSL is configured with "no-ssl3" as a build option, servers could accept and complete a SSL 3.0 handshake, and clients could be configured to send them.</desc>
+	</fsa>
+	<fsa>
+               <id>922</id>
+               <date>2014-10-17</date>
+               <author>kikadf</author>
+               <package>openjpeg</package>
+               <vulnerable>1.5.1-2</vulnerable>
+               <unaffected>1.5.1-3arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1447
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6045
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6052
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6053
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6887</cve>
+               <desc>Several vulnerabilities have been discovered in OpenJPEG, a JPEG 2000 image library, that may lead to denial of service via application crash or high memory consumption, possible code execution through heap buffer overflows, information disclosure.</desc>
+       </fsa>
+	<fsa>
+               <id>921</id>
+               <date>2014-10-12</date>
+               <author>kikadf</author>
+               <package>bash</package>
+               <vulnerable>4.2_045-5arcturus2</vulnerable>
+               <unaffected>4.2_053-1arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6277
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6278</cve>
+               <desc>Michal Zalewski discovered that Bash incorrectly handled parsing certain function definitions. If an attacker were able to create an environment variable containing a function definition with a very specific name, these
+			   issues could possibly be used to bypass certain environment restrictions and execute arbitrary code.</desc>
+       </fsa>
+	<fsa>
+               <id>920</id>
+               <date>2014-10-12</date>
+               <author>kikadf</author>
+               <package>rsyslog</package>
+               <vulnerable>5.8.13-2arcturus1</vulnerable>
+               <unaffected>5.8.13-2arcturus2</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3683</cve>
+               <desc>Incomplete fix for CVE-2014-3634.</desc>
+       </fsa>
+	<fsa>
+               <id>919</id>
+               <date>2014-10-08</date>
+               <author>kikadf</author>
+               <package>qemu</package>
+               <vulnerable>1.5.2-3arcturus5</vulnerable>
+               <unaffected>1.5.2-3arcturus6</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3615</cve>
+               <desc>An information leakage flaw was found in Qemu's VGA emulator. It could lead to leaking host memory bytes to a VNC client. It could occur when a guest GOP driver attempts to set a high display resolution.</desc>
+	</fsa>
+	<fsa>
+               <id>918</id>
+               <date>2014-10-07</date>
+               <author>kikadf</author>
+               <package>mediawiki</package>
+               <vulnerable>1.19.19-1arcturus1</vulnerable>
+               <unaffected>1.19.20-1arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-7295</cve>
+               <desc>It was reported that MediaWiki, a website engine for collaborative work, allowed to load user-created CSS on pages where user-created JavaScript is not allowed.</desc>
+	</fsa>
+	<fsa>
+               <id>917</id>
+               <date>2014-10-07</date>
+               <author>kikadf</author>
+               <package>mantis</package>
+               <vulnerable>1.2.8-2arcturus1</vulnerable>
+               <unaffected>1.2.8-2arcturus2</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6387</cve>
+               <desc>Mantis suffers from a null byte poisoning issue when LDAP authentication is used.</desc>
+       </fsa>
+	<fsa>
+               <id>916</id>
+               <date>2014-10-05</date>
+               <author>kikadf</author>
+               <package>openvpn</package>
+               <vulnerable>2.1.3-6</vulnerable>
+               <unaffected>2.1.3-7arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2013-2061</cve>
+               <desc>It was discovered that OpenVPN incorrectly handled HMAC comparisons when running in UDP mode.</desc>
+       </fsa>
+	<fsa>
+               <id>915</id>
+               <date>2014-10-05</date>
+               <author>kikadf</author>
+               <package>krb5</package>
+               <vulnerable>1.10.1-2arcturus1</vulnerable>
+               <unaffected>1.10.1-2arcturus2</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5351</cve>
+               <desc>It was reported that if a privileged user randomized the keys for a service principal, the old key would be returned to them. This could lead to ticket forgery attacks on the service in question.</desc>
+       </fsa>
+	<fsa>
+               <id>914</id>
+               <date>2014-10-05</date>
+               <author>kikadf</author>
+               <package>file</package>
+               <vulnerable>5.14-2arcturus3</vulnerable>
+               <unaffected>5.14-2arcturus4</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3587</cve>
+               <desc>It was discovered that file incorrectly handled certain CDF documents. A attacker could use this issue to cause file to hang or crash, resulting in a denial of service.</desc>
+       </fsa>
+	<fsa>
+               <id>913</id>
+               <date>2014-10-05</date>
+               <author>kikadf</author>
+               <package>putty</package>
+               <vulnerable>0.62-1</vulnerable>
+               <unaffected>0.62-2arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4206
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4207
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4208
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4852</cve>
+               <desc>Mark Wooding discovered a heap-corrupting buffer underrun bug in the modmul function which performs modular multiplication. 
+			   It was discovered that non-coprime values in DSA signatures can cause a buffer overflow in the calculation code of modular inverses when verifying a DSA signature. Such a signature is invalid.
+			   It was discovered that private keys were left in memory after being used by PuTTY tools.
+			   Gergely Eberhardt from SEARCH-LAB Ltd. discovered that PuTTY is vulnerable to an integer overflow leading to heap overflow during the SSH handshake before authentication due to improper bounds checking of the length parameter received from the SSH server.</desc>
+       </fsa>
+	<fsa>
+               <id>912</id>
+               <date>2014-10-04</date>
+               <author>kikadf</author>
+               <package>qemu</package>
+               <vulnerable>1.5.2-3arcturus4</vulnerable>
+               <unaffected>1.5.2-3arcturus5</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3640</cve>
+               <desc>When guest sends udp packet with source port and source addr 0, uninitialized socket is picked up when looking for matching and already created udp sockets, and later passed to sosendto() where NULL pointer dereference is hit during so->slirp->vnetwork_mask.s_addr access.</desc>
+       </fsa>
+	<fsa>
+               <id>911</id>
+               <date>2014-10-03</date>
+               <author>kikadf</author>
+               <package>rsyslog</package>
+               <vulnerable>5.8.13-1</vulnerable>
+               <unaffected>5.8.13-2arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3634</cve>
+               <desc>Rainer Gerhards, the rsyslog project leader, reported a vulnerability in Rsyslog, a system for log processing. As a consequence of this vulnerability an attacker can send malformed messages to a server, if this one accepts data from untrusted sources, and trigger a denial of service attack.</desc>
+	</fsa>
+	<fsa>
+               <id>910</id>
+               <date>2014-10-03</date>
+               <author>kikadf</author>
+               <package>libvncserver</package>
+               <vulnerable>0.9.8.1-2arcturus1</vulnerable>
+               <unaffected>0.9.8.1-2arcturus2</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6051
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6052
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6053
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6054</cve>
+               <desc>An integer overflow flaw, leading to a heap-based buffer overflow, was found in the way screen sizes were handled by LibVNCServer.
+			   A NULL pointer dereference flaw was reported in LibVNCServer's framebuffer setup. A malicious VNC server could use this flaw to cause a client to crash.
+			   A divide-by-zero flaw was reported in LibVNCServer's scaling factor handling. A VNC client could use this flaw to cause the VNC server to crash.</desc>
+	</fsa>
+	<fsa>
+               <id>909</id>
+               <date>2014-10-03</date>
+               <author>kikadf</author>
+               <package>krfb</package>
+               <vulnerable>4.11.1-2arcturus1</vulnerable>
+               <unaffected>4.11.1-2arcturus2</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6053
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6054</cve>
+               <desc>A malicious VNC server could use this flaw to cause a client to crash. A divide-by-zero flaw was reported in LibVNCServer's scaling factor handling. A VNC client could use this flaw to cause the VNC server to crash.</desc>
+	</fsa>
+	<fsa>
+               <id>908</id>
+               <date>2014-10-03</date>
+               <author>kikadf</author>
+               <package>ctags</package>
+               <vulnerable>5.8-1</vulnerable>
+               <unaffected>5.8-2arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-7204</cve>
+               <desc>A denial of service issue was discovered in ctags. This could lead to excessive CPU and disk space consumption.</desc>
+	</fsa>
+	<fsa>
+               <id>907</id>
+               <date>2014-09-26</date>
+               <author>kikadf</author>
+               <package>bash</package>
+               <vulnerable>4.2_045-5arcturus1</vulnerable>
+               <unaffected>4.2_045-5arcturus2</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-7169</cve>
+               <desc>Tavis Ormandy discovered that the patch applied to fix CVE-2014-6271 for bash, the GNU Bourne-Again Shell, was incomplete and could still allow some characters to be injected into another environment (CVE-2014-7169). With this update prefix and suffix for environment variable names which contain shell functions are added as hardening measure.</desc>
+       </fsa>
+	<fsa>
+		<id>906</id>
+		<date>2014-09-25</date>
+		<author>kikadf</author>
+		<package>libvncserver</package>
+		<vulnerable>0.9.8.1-1</vulnerable>
+		<unaffected>0.9.8.1-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6055</cve>
+		<desc>Several remotely exploitable security issues have been uncovered in libvncserver, some of which might allow a remote authenticated user code execution or application crashes.</desc>
+	</fsa>
+	<fsa>
+		<id>905</id>
+		<date>2014-09-25</date>
+		<author>kikadf</author>
+		<package>krfb</package>
+		<vulnerable>4.11.1-1</vulnerable>
+		<unaffected>4.11.1-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6055</cve>
+		<desc>Several remotely exploitable security issues have been uncovered in libvncserver, some of which might allow a remote authenticated user code execution or application crashes.</desc>
+	</fsa>
+	<fsa>
+		<id>904</id>
+		<date>2014-09-25</date>
+		<author>kikadf</author>
+		<package>bash</package>
+		<vulnerable>4.2_045-4</vulnerable>
+		<unaffected>4.2_045-5arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6271</cve>
+		<desc>Stephane Chazelas discovered a vulnerability in bash, the GNU Bourne-Again Shell, related to how environment variables are processed. In many common configurations, this vulnerability is exploitable over the network, especially if bash has been configured as the system shell.</desc>
+	</fsa>
+	<fsa>
+               <id>903</id>
+               <date>2014-09-25</date>
+               <author>kikadf</author>
+               <package>mantis</package>
+               <vulnerable>1.2.8-1</vulnerable>
+               <unaffected>1.2.8-2arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1608
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1609</cve>
+               <desc>Multiple SQL injection vulnerabilities have been discovered in the Mantis bug tracking system.</desc>
+       </fsa>
+	<fsa>
+               <id>902</id>
+               <date>2014-09-25</date>
+               <author>kikadf</author>
+               <package>nginx</package>
+               <vulnerable>1.4.1-1</vulnerable>
+               <unaffected>1.4.1-2arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4547
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3616</cve>
+               <desc>Ivan Fratric of the Google Security Team discovered a bug in nginx, a web server, which might allow an attacker to bypass security restrictions by using a specially crafted request.
+			   Antoine Delignat-Lavaud and Karthikeyan Bhargavan discovered that it was possible to reuse cached SSL sessions in unrelated contexts, allowing virtual host confusion attacks in some configurations by an attacker in a privileged network position.</desc>
+       </fsa>
+	<fsa>
+		<id>901</id>
+		<date>2014-09-23</date>
+		<author>kikadf</author>
+		<package>dbus</package>
+		<vulnerable>1.6.8-10arcturus1</vulnerable>
+		<unaffected>1.6.8-10arcturus2</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3635
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3636
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3637
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3638
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3639</cve>
+		<desc>On 64-bit platforms, file descriptor passing could be abused by local users to cause heap corruption in dbus-daemon, leading to a crash, or potentially to arbitrary code execution.
+			A denial-of-service vulnerability in dbus-daemon allowed local attackers to prevent new connections to dbus-daemon, or disconnect existing clients, by exhausting descriptor limits.
+			Malicious local users could create D-Bus connections to dbus-daemon which could not be terminated by killing the participating processes, resulting in a denial-of-service vulnerability.
+			dbus-daemon suffered from a denial-of-service vulnerability in the code which tracks which messages expect a reply, allowing local attackers to reduce the performance of dbus-daemon.
+			dbus-daemon did not properly reject malicious connections from local users, resulting in a denial-of-service vulnerability.</desc>
+	</fsa>
+	<fsa>
+               <id>900</id>
+               <date>2014-09-13</date>
+               <author>kikadf</author>
+               <package>squid</package>
+               <vulnerable>3.1.19-2arcturus1</vulnerable>
+               <unaffected>3.1.19-2arcturus2</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6270</cve>
+               <desc>Sebastian Krahmer discovered an off-by-one error, leading to a heap-based buffer overflow flaw, in the way Squid handled UDP SNMP requests.</desc>
+        </fsa>
+	<fsa>
+		<id>899</id>
+		<date>2014-09-13</date>
+		<author>kikadf</author>
+		<package>python-oauth2</package>
+		<vulnerable>1.5.211-3</vulnerable>
+		<unaffected>1.5.211-4arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4346
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4347</cve>
+		<desc>It was found that _check_signature() in python-oauth2, an application for authorization flows for web application, ignored the nonce values when validating signed urls.
+			It was found that in python-oauth2, an application for authorizing flows for web application,  the nonce value generated isn't random enough, because while doing bulk operations, nonce might get repeated, so there is a chance of predictability.</desc>
+	</fsa>
+	<fsa>
+		<id>898</id>
+		<date>2014-09-13</date>
+		<author>kikadf</author>
+		<package>xerces-j</package>
+		<vulnerable>2.11.0-1</vulnerable>
+		<unaffected>2.11.0-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4002</cve>
+		<desc>A resource consumption issue was found in the way Xerces-J handled XML declarations.</desc>
+	</fsa>
+	<fsa>
+               <id>897</id>
+               <date>2014-09-13</date>
+               <author>kikadf</author>
+               <package>curl</package>
+               <vulnerable>7.26.0-2arcturus3</vulnerable>
+               <unaffected>7.26.0-2arcturus4</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3613
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3620</cve>
+               <desc>By not detecting and rejecting domain names for partial literal IP addresses properly when parsing received HTTP cookies, libcurl can be fooled to both sending cookies to wrong sites and into allowing arbitrary sites to set cookies for others.
+		       libcurl wrongly allows cookies to be set for Top Level Domains (TLDs), thus making them apply broader than cookies are allowed.</desc>
+       </fsa>
+	<fsa>
+		<id>896</id>
+		<date>2014-09-11</date>
+		<author>kikadf</author>
+		<package>php</package>
+		<vulnerable>5.3.26-2arcturus5</vulnerable>
+		<unaffected>5.3.26-2arcturus6</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4698</cve>
+		<desc>Use-after-free vulnerability in ext/spl/spl_array.c in the SPL component in PHP through 5.5.14 allows context-dependent attackers to cause a denial of service or possibly have unspecified other impact via crafted ArrayIterator usage within applications in certain web-hosting environments.</desc>
+	</fsa>
+	<fsa>
+		<id>895</id>
+		<date>2014-09-05</date>
+		<author>kikadf</author>
+		<package>procmail</package>
+		<vulnerable>3.22-5</vulnerable>
+		<unaffected>3.22-6arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3618</cve>
+		<desc>Boris pi Piwinger and Tavis Ormandy reported a heap overflow vulnerability in procmail's formail utility when processing specially-crafted email headers.</desc>
+	</fsa>
+	<fsa>
+		<id>894</id>
+		<date>2014-09-05</date>
+		<author>kikadf</author>
+		<package>libgcrypt</package>
+		<vulnerable>1.5.0-4</vulnerable>
+		<unaffected>1.5.0-5arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4242
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5270</cve>
+		<desc>Yarom and Falkner discovered that RSA secret keys in applications using the libgcrypt11 library, for example GnuPG 2.x, could be leaked via a side channel attack, where a malicious local user could obtain private key information from another user on the system.
+			Daniel Genkin, Adi Shamir, and Eran Tromer discovered that Libgcrypt was susceptible to an adaptive chosen ciphertext attack via physical side channels.</desc>
+		</fsa>
+	<fsa>
+		<id>893</id>
+		<date>2014-09-05</date>
+		<author>kikadf</author>
+		<package>gnupg</package>
+		<vulnerable>1.4.14-2arcturus2</vulnerable>
+		<unaffected>1.4.14-2arcturus3</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5270</cve>
+		<desc>Daniel Genkin, Adi Shamir, and Eran Tromer discovered that GnuPG was susceptible to an adaptive chosen ciphertext attack via physical side channels.</desc>
+	</fsa>
+	<fsa>
+		<id>892</id>
+		<date>2014-09-02</date>
+		<author>kikadf</author>
+		<package>lua</package>
+		<vulnerable>5.1.5-2</vulnerable>
+		<unaffected>5.1.5-3arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5461</cve>
+		<desc>A heap-based overflow vulnerability was found in the way Lua, a simple, extensible, embeddable programming language, handles varargs functions with many fixed parameters called with few arguments, leading to application crashes or, potentially, arbitrary code execution.</desc>
+	</fsa>
+	<fsa>
+               <id>891</id>
+               <date>2014-09-02</date>
+               <author>kikadf</author>
+               <package>net-snmp</package>
+               <vulnerable>5.7.1-4arcturus1</vulnerable>
+               <unaffected>5.7.1-4arcturus2</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3565</cve>
+               <desc>snmptrapd crash when handling an SNMP trap containing a ifMtu with a NULL type.</desc>
+        </fsa>
+	<fsa>
+		<id>890</id>
+		<date>2014-08-30</date>
+		<author>kikadf</author>
+		<package>libmodplug</package>
+		<vulnerable>0.8.8.4-2</vulnerable>
+		<unaffected>0.8.8.5-1arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4233
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4234</cve>
+		<desc>Several vulnerabilities have been discovered in libmodplug, a library for mod music based on ModPlug, that might allow arbitrary code execution when processing specially-crafted ABC files through applications using the library, such as media players.</desc>
+	</fsa>
+	<fsa>
+               <id>889</id>
+               <date>2014-08-29</date>
+               <author>kikadf</author>
+               <package>squid</package>
+               <vulnerable>3.1.19-1</vulnerable>
+               <unaffected>3.1.19-2arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-5643
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-0189
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3609</cve>
+               <desc>Squid3, a fully featured Web proxy cache, is prone to a denial of service attack due to memory consumption caused by memory leaks in cachemgr.cgi. Matthew Daley discovered that Squid 3 did not properly perform input validation in request parsing.</desc>
+        </fsa>
+	<fsa>
+		<id>888</id>
+		<date>2014-08-28</date>
+		<author>kikadf</author>
+		<package>cups</package>
+		<vulnerable>1.6.1-3arcturus3</vulnerable>
+		<unaffected>1.6.1-3arcturus4</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5029
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5030
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5031</cve>
+		<desc>The web interface in CUPS 1.7.4 allows local users in the lp group to read arbitrary files via a symlink attack on a file in /var/cache/cups/rss/ and language[0] set to null. NOTE: this vulnerability exists because of an incomplete fix for CVE-2014-3537.
+			CUPS before 2.0 allows local users to read arbitrary files via a symlink attack on (1) index.html, (2) index.class, (3) index.pl, (4) index.php, (5) index.pyc, or (6) index.py.
+			The web interface in CUPS before 2.0 does not check that files have world-readable permissions, which allows remote attackers to obtains sensitive information via unspecified vectors.</desc>
+	</fsa>
+	<fsa>
+		<id>887</id>
+		<date>2014-08-28</date>
+		<author>kikadf</author>
+		<package>glibc</package>
+		<vulnerable>2.16.0-3</vulnerable>
+		<unaffected>2.16.0-4arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0475
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5119</cve>
+		<desc>A directory traveral flaw was found in the way glibc loaded locale files.
+			Tavis Ormandy reported an off-by-one error leading to a heap-based buffer overflow flaw in glibc's __gconv_translit_find() function.</desc>
+	</fsa>
+	<fsa>
+		<id>886</id>
+		<date>2014-08-28</date>
+		<author>kikadf</author>
+		<package>ipython</package>
+		<vulnerable>1.0.0-1</vulnerable>
+		<unaffected>1.0.0-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3429</cve>
+		<desc>Cross-domain websocket hijacking vulnerability.</desc>
+	</fsa>
+	<fsa>
+		<id>885</id>
+		<date>2014-08-26</date>
+		<author>kikadf</author>
+		<package>ppp</package>
+		<vulnerable>2.4.5-3</vulnerable>
+		<unaffected>2.4.5-4arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3158</cve>
+		<desc>Integer overflow in option parsing.</desc>
+	</fsa>
+	<fsa>
+		<id>884</id>
+		<date>2014-08-26</date>
+		<author>kikadf</author>
+		<package>mediawiki</package>
+		<vulnerable>1.19.16-1arcturus1</vulnerable>
+		<unaffected>1.19.18-1arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5241
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5243</cve>
+		<desc>It was discovered that MediaWiki, a website engine for collaborative work, is vulnerable to JSONP injection in Flash (CVE-2014-5241) and clickjacking between OutputPage and ParserOutput (CVE-2014-5243).</desc>
+	</fsa>
+	<fsa>
+		<id>883</id>
+		<date>2014-08-26</date>
+		<author>kikadf</author>
+		<package>django</package>
+		<vulnerable>1.5.2-2arcturus2</vulnerable>
+		<unaffected>1.5.9-1arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0480
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0481
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0482
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0483</cve>
+		<desc>Florian Apolloner discovered that in certain situations, URL reversing could generate scheme-relative URLs which could unexpectedly redirect a user to a different host, leading to phishing attacks.
+			David Wilson reported a file upload denial of service vulnerability. 
+			David Greisen discovered that under some circumstances, the use of the RemoteUserMiddleware middleware and the RemoteUserBackend authentication backend could result in one user receiving another user's session, if a change to the REMOTE_USER header occurred without corresponding logout/login actions.
+			Collin Anderson discovered that it is possible to reveal any field's data by modifying the popup and to_field parameters of the query string on an admin change form page.</desc>
+	</fsa>
+	<fsa>
+		<id>882</id>
+		<date>2014-08-26</date>
+		<author>kikadf</author>
+		<package>imaging</package>
+		<vulnerable>1.1.7-5arcturus1</vulnerable>
+		<unaffected>1.1.7-5arcturus2</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3589</cve>
+		<desc>Andrew Drake discovered that missing input sanitising in the icns decoder of the Python Imaging Library could result in denial of service if a malformed image is processed.</desc>
+	</fsa>
+	<fsa>
+		<id>881</id>
+		<date>2014-08-21</date>
+		<author>kikadf</author>
+		<package>php</package>
+		<vulnerable>5.3.26-2arcturus4</vulnerable>
+		<unaffected>5.3.26-2arcturus5</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3538
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3587
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4670</cve>
+		<desc>It was discovered that the CDF parser of the fileinfo module does not properly process malformed files in the Composite Document File (CDF) format, leading to crashes.
+			It was discovered that PHP incorrectly handled certain SPL Iterators. A local attacker could use this flaw to cause PHP to crash, resulting in a denial of service.</desc>
+	</fsa>
+	<fsa>
+		<id>880</id>
+		<date>2014-08-21</date>
+		<author>kikadf</author>
+		<package>cacti</package>
+		<vulnerable>0.8.8b-2arcturus1</vulnerable>
+		<unaffected>0.8.8b-2arcturus2</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5025
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5026
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5043
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5261
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5262</cve>
+		<desc>Multiple security issues (cross-site scripting, missing input sanitising and SQL injection) have been discovered in Cacti, a web interface for graphing of monitoring systems.</desc>
+	</fsa>
+	<fsa>
+               <id>879</id>
+               <date>2014-08-20</date>
+               <author>kikadf</author>
+               <package>wordpress</package>
+               <vulnerable>3.9-1arcturus1</vulnerable>
+               <unaffected>3.9.2-1arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2053
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5204
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5205
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5240
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5265
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5266</cve>
+               <desc>Multiple security issues have been discovered in Wordpress, a web blogging tool, resulting in denial of service or information disclosure.</desc>
+       </fsa>
+	<fsa>
+               <id>878</id>
+               <date>2014-08-20</date>
+               <author>kikadf</author>
+               <package>wireshark</package>
+               <vulnerable>1.8.13-1arcturus1</vulnerable>
+               <unaffected>1.8.15-1arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5161
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5162
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5163
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5164
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5165</cve>
+               <desc>Multiple vulnerabilities were discovered in the dissectors for Catapult DCT2000, IrDA, GSM Management, RLC ASN.1 BER, which could result in denial of service.</desc>
+       </fsa>
+	<fsa>
+               <id>877</id>
+               <date>2014-08-20</date>
+               <author>kikadf</author>
+               <package>tor</package>
+               <vulnerable>0.2.3.25-2</vulnerable>
+               <unaffected>0.2.4.23-1arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5117</cve>
+               <desc>Several issues have been discovered in Tor, a connection-based low-latency anonymous communication system, resulting in information leaks.</desc>
+       </fsa>
+	<fsa>
+               <id>876</id>
+               <date>2014-08-20</date>
+               <author>kikadf</author>
+               <package>serf</package>
+               <vulnerable>1.2.1-1</vulnerable>
+               <unaffected>1.2.1-2arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3504</cve>
+               <desc>Ben Reser discovered that serf did not correctly handle SSL certificates with NUL bytes in the CommonName or SubjectAltNames fields.</desc>
+       </fsa>
+	<fsa>
+               <id>875</id>
+               <date>2014-08-20</date>
+               <author>kikadf</author>
+               <package>openssl</package>
+               <vulnerable>1.0.1-5arcturus5</vulnerable>
+               <unaffected>1.0.1-5arcturus6</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3505
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3506
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3507
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3508
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3509
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3510
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3511
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3512
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5139</cve>
+               <desc>Multiple vulnerabilities have been identified in OpenSSL, a Secure Sockets Layer toolkit, that may result in denial of service (application crash, large memory consumption), information leak, protocol downgrade. Additionally, a buffer overrun affecting only applications explicitly set up for SRP has been fixed.</desc>
+       </fsa>
+	<fsa>
+               <id>874</id>
+               <date>2014-08-20</date>
+               <author>kikadf</author>
+               <package>kdelibs</package>
+               <vulnerable>4.11.1-1</vulnerable>
+               <unaffected>4.11.1-2arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5033</cve>
+               <desc>Sebastian Krahmer discovered that Kauth used Policykit insecurely by relying on the process ID. This could result in privilege escalation.</desc>
+       </fsa>
+	<fsa>
+               <id>873</id>
+               <date>2014-08-20</date>
+               <author>kikadf</author>
+               <package>krb5</package>
+               <vulnerable>1.10.1-1</vulnerable>
+               <unaffected>1.10.1-2arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4341
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4342
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4343
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4344
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4345</cve>
+               <desc>An unauthenticated remote attacker with the ability to inject packets into a legitimately established GSSAPI application session can cause a program crash due to invalid memory references when attempting to read beyond the end of a buffer.
+			   An unauthenticated remote attacker with the ability to inject packets into a legitimately established GSSAPI application session can cause a program crash due to invalid memory references when reading beyond the end of a buffer or by causing a null pointer dereference.
+			   An unauthenticated remote attacker with the ability to spoof packets appearing to be from a GSSAPI acceptor can cause a double-free condition in GSSAPI initiators (clients) which are using the SPNEGO mechanism, by returning a different underlying mechanism than was proposed by the initiator.
+			   An unauthenticated or partially authenticated remote attacker can cause a NULL dereference and application crash during a SPNEGO negotiation by sending an empty token as the second or later context token from initiator to acceptor.
+			   When kadmind is configured to use LDAP for the KDC database, an authenticated remote attacker can cause it to perform an out-of-bounds write (buffer overflow).</desc>
+       </fsa>
+	<fsa>
+               <id>872</id>
+               <date>2014-08-20</date>
+               <author>kikadf</author>
+               <package>lzo</package>
+               <vulnerable>2.0.6-1</vulnerable>
+               <unaffected>2.0.6-1arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4607</cve>
+               <desc>Don A. Bailey from Lab Mouse Security discovered an integer overflow flaw in the way the lzo library decompressed certain archives compressed with the LZO algorithm. An attacker could create a specially crafted LZO-compressed input that, when decompressed by an application using the lzo library, would cause that application to crash or, potentially, execute arbitrary code.</desc>
+       </fsa>
+	<fsa>
+               <id>871</id>
+               <date>2014-08-20</date>
+               <author>kikadf</author>
+               <package>gpgme</package>
+               <vulnerable>1.3.1-5</vulnerable>
+               <unaffected>1.3.1-6arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3564</cve>
+               <desc>Tomáš Trnka discovered a heap-based buffer overflow within the gpgsm status handler of GPGME, a library designed to make access to GnuPG easier for applications. An attacker could use this issue to cause an application using GPGME to crash (denial of service) or possibly to execute arbitrary code.</desc>
+       </fsa>
+	<fsa>
+               <id>870</id>
+               <date>2014-08-20</date>
+               <author>kikadf</author>
+               <package>drupal7</package>
+               <vulnerable>7.22-2arcturus3</vulnerable>
+               <unaffected>7.22-2arcturus4</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5265
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5266
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5267</cve>
+               <desc>A denial of service vulnerability was discovered in Drupal, a fully-featured content management framework. A remote attacker could exploit this flaw to cause CPU and memory exhaustion and the site's database to reach the maximum number of open connections, leading to the site becoming unavailable or unresponsive.</desc>
+       </fsa>
+	<fsa>
+               <id>869</id>
+               <date>2014-08-20</date>
+               <author>kikadf</author>
+               <package>drupal6</package>
+               <vulnerable>6.32-1arcturus1</vulnerable>
+               <unaffected>6.33-1arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5265
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5266
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5267</cve>
+               <desc>A denial of service vulnerability was discovered in Drupal, a fully-featured content management framework. A remote attacker could exploit this flaw to cause CPU and memory exhaustion and the site's database to reach the maximum number of open connections, leading to the site becoming unavailable or unresponsive.</desc>
+       </fsa>
+	<fsa>
+               <id>868</id>
+               <date>2014-08-20</date>
+               <author>kikadf</author>
+               <package>apache</package>
+               <vulnerable>2.2.23-3arcturus1</vulnerable>
+               <unaffected>2.2.23-3arcturus2</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0117
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0118
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0226
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0231</cve>
+               <desc>Marek Kroemeke discovered that the mod_proxy module incorrectly handled certain requests. Giancarlo Pellegrino and Davide Balzarotti discovered that the mod_deflate module incorrectly handled body decompression.
+			   Marek Kroemeke and others discovered that the mod_status module incorrectly handled certain requests. Rainer Jung discovered that the mod_cgid module incorrectly handled certain scripts.</desc>
+       </fsa>
+	<fsa>
+		<id>867</id>
+		<date>2014-07-23</date>
+		<author>kikadf</author>
+		<package>libtasn1</package>
+		<vulnerable>2.11-1</vulnerable>
+		<unaffected>2.11-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3467
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3468
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3469</cve>
+		<desc>It was discovered that Libtasn1 incorrectly handled certain ASN.1 data structures. It was discovered that Libtasn1 incorrectly handled negative bit lengths.</desc>
+	</fsa>
+	<fsa>
+		<id>866</id>
+		<date>2014-07-23</date>
+		<author>kikadf</author>
+		<package>cups</package>
+		<vulnerable>1.6.1-3arcturus2</vulnerable>
+		<unaffected>1.6.1-3arcturus3</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3537</cve>
+		<desc>Francisco Alonso discovered that the CUPS web interface incorrectly validated permissions on rss files.</desc>
+	</fsa>
+	<fsa>
+		<id>865</id>
+		<date>2014-07-23</date>
+		<author>kikadf</author>
+		<package>drupal6</package>
+		<vulnerable>6.31-1arcturus1</vulnerable>
+		<unaffected>6.32-1arcturus1</unaffected>
+		<bts></bts>
+		<cve>https://www.drupal.org/SA-CORE-2014-003</cve>
+		<desc>Multiple security issues have been discovered in the Drupal content management system, ranging from denial of service to cross-site scripting.</desc>
+	</fsa>
+	<fsa>
+		<id>864</id>
+		<date>2014-07-23</date>
+		<author>kikadf</author>
+		<package>drupal7</package>
+		<vulnerable>7.22-2arcturus2</vulnerable>
+		<unaffected>7.22-2arcturus3</unaffected>
+		<bts></bts>
+		<cve>https://www.drupal.org/SA-CORE-2014-003</cve>
+		<desc>Multiple security issues have been discovered in the Drupal content management system, ranging from denial of service to cross-site scripting.</desc>
+	</fsa>
+	<fsa>
+		<id>863</id>
+		<date>2014-07-20</date>
+		<author>kikadf</author>
+		<package>activerecord</package>
+		<vulnerable>3.2.13-1</vulnerable>
+		<unaffected>3.2.13-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3482
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3483</cve>
+		<desc>Sean Griffin discovered two vulnerabilities in the PostgreSQL adapter for Active Record which could lead to SQL injection.</desc>
+	</fsa>
+	<fsa>
+               <id>862</id>
+               <date>2014-07-20</date>
+               <author>kikadf</author>
+               <package>transmission-cli</package>
+               <vulnerable>2.81-1</vulnerable>
+               <unaffected>2.81-2arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4909</cve>
+               <desc>Ben Hawkes discovered that Transmission incorrectly handled certain peer messages.</desc>
+       </fsa>
+	<fsa>
+               <id>861</id>
+               <date>2014-07-20</date>
+               <author>kikadf</author>
+               <package>miniupnpc</package>
+               <vulnerable>1.7-1</vulnerable>
+               <unaffected>1.7-2arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3985</cve>
+               <desc>It was discovered that MiniUPnPc incorrectly handled certain buffer lengths.</desc>
+       </fsa>
+	<fsa>
+               <id>860</id>
+               <date>2014-07-20</date>
+               <author>kikadf</author>
+               <package>file</package>
+               <vulnerable>5.14-2arcturus2</vulnerable>
+               <unaffected>5.14-2arcturus3</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-7345
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0207
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3478
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3479
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3480
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3487
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3538</cve>
+               <desc>Mike Frysinger discovered that the file awk script detector used multiple wildcard with unlimited repetitions.
+			   Francisco Alonso discovered that file incorrectly handled certain CDF documents.
+			   Jan Kaluža discovered that file did not properly restrict the amount of data read during regex searches.</desc>
+       </fsa>
+	<fsa>
+		<id>859</id>
+		<date>2014-07-20</date>
+		<author>kikadf</author>
+		<package>fail2ban</package>
+		<vulnerable>0.8.4-3</vulnerable>
+		<unaffected>0.8.13-1arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-7176
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-7177</cve>
+		<desc>Two vulnerabilities were discovered in Fail2ban, a solution to ban hosts that cause multiple authentication errors.
+			When using Fail2ban to monitor Postfix or Cyrus IMAP logs, improper input validation in log parsing could enable a remote attacker to trigger an IP ban on arbitrary addresses, resulting in denial of service.</desc>
+	</fsa>
+	<fsa>
+               <id>858</id>
+               <date>2014-07-20</date>
+               <author>kikadf</author>
+               <package>mysql</package>
+               <vulnerable>5.5.37-1arcturus1</vulnerable>
+               <unaffected>5.5.38-1arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2494
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4207
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4258
+			   http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4260</cve>
+               <desc>Unspecified vulnerability in the MySQL Server component in Oracle MySQL 5.5.37 and earlier allows remote authenticated users to affect availability via vectors related to ENARC.
+			   Unspecified vulnerability in the MySQL Server component in Oracle MySQL 5.5.37 and earlier allows remote authenticated users to affect availability via vectors related to SROPTZR.
+			   Unspecified vulnerability in the MySQL Server component in Oracle MySQL 5.5.37 and earlier allows remote authenticated users to affect confidentiality, integrity, and availability via vectors related to SRINFOSC.
+			   Unspecified vulnerability in the MySQL Server component in Oracle MySQL 5.5.37 and earlier allows remote authenticated users to affect integrity and availability via vectors related to SRCHAR.</desc>
+       </fsa>
+	<fsa>
+		<id>857</id>
+		<date>2014-07-17</date>
+		<author>kikadf</author>
+		<package>php</package>
+		<vulnerable>5.3.26-2arcturus3</vulnerable>
+		<unaffected>5.3.26-2arcturus4</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0207
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3478
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3479
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3480
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3487
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4721</cve>
+		<desc>Francisco Alonso of the Red Hat Security Response Team reported an incorrect boundary check in the cdf_read_short_sector() function.
+			Francisco Alonso of the Red Hat Security Response Team discovered a flaw in the way the truncated pascal string size in the mconvert() function is computed.
+			Francisco Alonso of the Red Hat Security Response Team reported an incorrect boundary check in the cdf_check_stream_offset() function.
+			rancisco Alonso of the Red Hat Security Response Team reported an insufficient boundary check in the cdf_count_chain() function.
+			Francisco Alonso of the Red Hat Security Response Team discovered an incorrect boundary check in the cdf_read_property_info() funtion.
+			Stefan Esser discovered a type confusion issue affecting phpinfo(), which might allow an attacker to obtain sensitive information from process memory.</desc>
+	</fsa>
+	<fsa>
+		<id>856</id>
+		<date>2014-07-17</date>
+		<author>kikadf</author>
+		<package>vlc</package>
+		<vulnerable>2.0.8-2</vulnerable>
+		<unaffected>2.0.8-3arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4388</cve>
+		<desc>Multiple buffer overflows have been found in the VideoLAN media player. Processing malformed subtitles or movie files could lead to denial of service and potentially the execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
+		<id>855</id>
+		<date>2014-07-03</date>
+		<author>kikadf</author>
+		<package>dbus</package>
+		<vulnerable>1.6.8-9</vulnerable>
+		<unaffected>1.6.8-10arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2168
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3477
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3532
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3533</cve>
+		<desc>Alban Crequy at Collabora Ltd. discovered that dbus-daemon sends an AccessDenied error to the service instead of a client when the client is prohibited from accessing the service. 
+			Alban Crequy at Collabora Ltd. discovered a bug in dbus-daemon's support for file descriptor passing. 
+			Alban Crequy at Collabora Ltd. and Alejandro Martínez Suárez discovered that a malicious process could force services to be disconnected from the D-Bus system by causing dbus-daemon to attempt to forward invalid file descriptors to a victim process, leading to a denial of service.</desc>
+	</fsa>
+	<fsa>
+		<id>854</id>
+		<date>2014-07-03</date>
+		<author>kikadf</author>
+		<package>cacti</package>
+		<vulnerable>0.8.8b-1</vulnerable>
+		<unaffected>0.8.8b-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1435
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-5588
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-5589
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2327
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2327
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2328
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2708
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2709
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4002</cve>
+		<desc>Multiple security issues (cross-site scripting, cross-site request forgery, SQL injections, missing input sanitising) have been found in Cacti, a web frontend for RRDTool.</desc>
+	</fsa>
+	<fsa>
+		<id>853</id>
+		<date>2014-06-26</date>
+		<author>kikadf</author>
+		<package>gnupg2</package>
+		<vulnerable>2.0.20-1</vulnerable>
+		<unaffected>2.0.20-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4617</cve>
+		<desc>Jean-René Reinhard, Olivier Levillain and Florian Maury reported that GnuPG, the GNU Privacy Guard, did not properly parse certain garbled compressed data packets.</desc>
+	</fsa>
+	<fsa>
+		<id>852</id>
+		<date>2014-06-26</date>
+		<author>kikadf</author>
+		<package>gnupg</package>
+		<vulnerable>1.4.14-2arcturus1</vulnerable>
+		<unaffected>1.4.14-2arcturus2</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4617</cve>
+		<desc>Jean-René Reinhard, Olivier Levillain and Florian Maury reported that GnuPG, the GNU Privacy Guard, did not properly parse certain garbled compressed data packets.</desc>
+	</fsa>
+	<fsa>
+		<id>851</id>
+		<date>2014-06-26</date>
+		<author>kikadf</author>
+		<package>thunderbird</package>
+		<vulnerable>24.4.0-1arcturus1</vulnerable>
+		<unaffected>24.6.0-1arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1533
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1538
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1541
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1545</cve>
+		<desc>Multiple security issues have been found in the Mozilla Thunderbird mail and news client: multiple memory safety errors and buffer overflows may lead to the execution of arbitrary code or denial of service.</desc>
+	</fsa>
+	<fsa>
+               <id>850</id>
+               <date>2014-06-23</date>
+               <author>kikadf</author>
+               <package>samba</package>
+               <vulnerable>3.6.23-1arcturus1</vulnerable>
+               <unaffected>3.6.24-1arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0244
+		       http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3493</cve>
+               <desc>Denial of service (infinite CPU loop) in the nmbd Netbios name service daemon. Denial of service (daemon crash) in the smbd file server daemon.</desc>
+       </fsa>
+	<fsa>
+		<id>849</id>
+		<date>2014-06-23</date>
+		<author>kikadf</author>
+		<package>php</package>
+		<vulnerable>5.3.26-2arcturus2</vulnerable>
+		<unaffected>5.3.26-2arcturus3</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4049</cve>
+		<desc>Stefan Esser discovered that PHP incorrectly handled DNS TXT records.</desc>
+	</fsa>
+	<fsa>
+		<id>848</id>
+		<date>2014-06-23</date>
+		<author>kikadf</author>
+		<package>mediawiki</package>
+		<vulnerable>1.18.1-1</vulnerable>
+		<unaffected>1.19.16-1arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3966</cve>
+		<desc>Omer Iqbal discovered that Mediawiki, a wiki engine, parses invalid usernames on Special:PasswordReset as wikitext when $wgRawHtml is enabled. On such wikis this allows an unauthenticated attacker to insert malicious JavaScript, a cross site scripting attack.</desc>
+	</fsa>
+	<fsa>
+		<id>847</id>
+		<date>2014-06-25</date>
+		<author>kikadf</author>
+		<package>json-c</package>
+		<vulnerable>0.9-1</vulnerable>
+		<unaffected>0.9-2arcturus2</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6370</cve>
+		<desc>Florian Weimer discovered that json-c incorrectly handled buffer lengths.</desc>
+	</fsa>
+	<fsa>
+               <id>846</id>
+               <date>2014-06-18</date>
+               <author>kikadf</author>
+               <package>kernel</package>
+               <vulnerable>3.10-7</vulnerable>
+               <unaffected>3.10-8arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3153
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1739
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4014</cve>
+               <desc>Pinkie Pie discovered a flaw in the Linux kernel's futex subsystem. Kernel Infoleak vulnerability in media_enum_entities().
+		       Linux kernel user namespace bug. </desc>
+       </fsa>
+	<fsa>
+               <id>845</id>
+               <date>2014-06-14</date>
+               <author>kikadf</author>
+               <package>firefox</package>
+               <vulnerable>29.0-1arcturus1</vulnerable>
+               <unaffected>30.0-1arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1533
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1534
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1536
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1537
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1538
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1540
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1541
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1542</cve>
+               <desc>Gary Kwong, Christoph Diehl, Christian Holler, Hannes Verschore, Jan de Mooij, Ryan VanderMeulen, Jeff Walden, Kyle Huey, Jesse Ruderman, Gregor Wagner, Benoit Jacob and Karl Tomlinson discovered multiple memory safety issues in Firefox.
+			Abhishek Arya discovered multiple use-after-free and out-of-bounds read issues in Firefox. Tyson Smith and Jesse Schwartzentruber discovered a use-after-free in the event listener manager.
+			A use-after-free was discovered in the SMIL animation controller. Holger Fuhrmannek discovered a buffer overflow in Web Audio.</desc>
+       </fsa>
+	<fsa>
+               <id>844</id>
+               <date>2014-06-13</date>
+               <author>kikadf</author>
+               <package>chromium-browser</package>
+               <vulnerable>35.0.1916.114-1arcturus1</vulnerable>
+               <unaffected>35.0.1916.153-1arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3154
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3155
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3156
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3157</cve>
+               <desc> Use-after-free in filesystem api. Out-of-bounds read in SPDY. Buffer overflow in clipboard. Heap overflow in media.</desc>
+       </fsa>
+	<fsa>
+		<id>843</id>
+		<date>2014-06-06</date>
+		<author>kikadf</author>
+		<package>mupdf</package>
+		<vulnerable>1.1-1</vulnerable>
+		<unaffected>1.1-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2013</cve>
+		<desc>It was discovered that a buffer overflow in the MuPDF viewer might lead to the execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
+		<id>842</id>
+		<date>2014-06-05</date>
+		<author>kikadf</author>
+		<package>openssl</package>
+		<vulnerable>1.0.1-5arcturus4</vulnerable>
+		<unaffected>1.0.1-5arcturus5</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0195
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0221
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0224
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3470</cve>
+		<desc>Jüri Aedla discovered that OpenSSL incorrectly handled invalid DTLS fragments.
+			Imre Rad discovered that OpenSSL incorrectly handled DTLS recursions.
+			Kikuchi Masashi discovered that OpenSSL incorrectly handled certain handshakes.
+			Felix Gröbert and Ivan Fratrić discovered that OpenSSL incorrectly handled anonymous ECDH ciphersuites.</desc>
+	</fsa>
+	<fsa>
+               <id>841</id>
+               <date>2014-06-05</date>
+               <author>kikadf</author>
+               <package>python-gnupg</package>
+               <vulnerable>0.3.4-1</vulnerable>
+               <unaffected>0.3.6-1arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-7323
+		       http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1927
+		       http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1928
+		       http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1929</cve>
+               <desc>Multiple vulnerabilities were discovered in the Python wrapper for the Gnu Privacy Guard (GPG). Insufficient sanitising could lead to the execution of arbitrary shell commands.</desc>
+       </fsa>
+	<fsa>
+               <id>840</id>
+               <date>2014-06-05</date>
+               <author>kikadf</author>
+               <package>chkrootkit</package>
+               <vulnerable>49-1</vulnerable>
+               <unaffected>50-1arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0476</cve>
+               <desc>Thomas Stangner discovered a vulnerability in chkrootkit, a rootkit detector, which may allow local attackers to gain root access when /tmp is mounted without the noexec option.</desc>
+       </fsa>
+	<fsa>
+               <id>839</id>
+               <date>2014-06-05</date>
+               <author>kikadf</author>
+               <package>chromium-browser</package>
+               <vulnerable>34.0.1847.118-1arcturus1</vulnerable>
+               <unaffected>35.0.1916.114-1arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1743
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1744
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1745
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1746
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1747
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1748
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1749
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3152</cve>
+               <desc>Cloudfuzzer discovered a use-after-free issue in the Blink/Webkit document object model implementation. Aaron Staple discovered an integer overflow issue in audio input handling. Atte Kettunen discovered a use-after-free issue in the Blink/Webkit scalable vector graphics implementation. 
+			Holger Fuhrmannek discovered an out-of-bounds read issue in the URL protocol implementation for handling media. Packagesu discovered a cross-site scripting issue involving malformed MHTML files. Jordan Milne discovered a user interface spoofing issue.
+			The Google Chrome development team discovered and fixed multiple issues with potential security impact. An integer underflow issue was discovered in the v8 javascript library.</desc>
+       </fsa>
+	<fsa>
+		<id>838</id>
+		<date>2014-06-02</date>
+		<author>kikadf</author>
+		<package>php</package>
+		<vulnerable>5.3.26-2arcturus1</vulnerable>
+		<unaffected>5.3.26-2arcturus2</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0185
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0237
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0238
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2270</cve>
+		<desc>The default PHP FPM socket permission has been changed from 0666 to 0660 to mitigate a security vulnerability (CVE-2014-0185) in PHP FPM that allowed any local user to run a PHP code under the active user of FPM process via crafted FastCGI client.
+			Denial of service in the CDF parser of the fileinfo module. (CVE-2014-0237,0238) Denial of service in the fileinfo module. (CVE-2014-2270)</desc>
+	</fsa>
+	<fsa>
+		<id>837</id>
+		<date>2014-06-02</date>
+		<author>kikadf</author>
+		<package>gnutls</package>
+		<vulnerable>2.12.17-2arcturus1</vulnerable>
+		<unaffected>2.12.17-2arcturus2</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3466</cve>
+		<desc>Joonas Kuorilehto discovered that GNU TLS performed insufficient validation of session IDs during TLS/SSL handshakes. A malicious server could use this to execute arbitrary code or perform denial of service.</desc>
+	</fsa>
+	<fsa>
+		<id>836</id>
+		<date>2014-06-02</date>
+		<author>kikadf</author>
+		<package>mod_wsgi</package>
+		<vulnerable>3.4-1</vulnerable>
+		<unaffected>3.4-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0240</cve>
+		<desc>Robert Kisteleki discovered a potential privilege escalation in daemon mode.</desc>
+	</fsa>
+	<fsa>
+		<id>835</id>
+		<date>2014-05-24</date>
+		<author>kikadf</author>
+		<package>lxml</package>
+		<vulnerable>2.3-1</vulnerable>
+		<unaffected>2.3.5-1arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3146</cve>
+		<desc>It was discovered that the lxml.html.clean module incorrectly stripped control characters. 
+			An attacked could potentially exploit this to conduct cross-site scripting (XSS) attacks.</desc>
+	</fsa>
+	<fsa>
+		<id>834</id>
+		<date>2014-05-22</date>
+		<author>kikadf</author>
+		<package>pidgin</package>
+		<vulnerable>2.10.7-2arcturus2</vulnerable>
+		<unaffected>2.10.7-2arcturus3</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3775</cve>
+		<desc>It was discovered that Pidgin incorrectly handled certain messages from Gadu-Gadu file relay servers.</desc>
+	</fsa>
+	<fsa>
+		<id>833</id>
+		<date>2014-05-22</date>
+		<author>kikadf</author>
+		<package>libgadu</package>
+		<vulnerable>1.11.2-2arcturus1</vulnerable>
+		<unaffected>1.11.2-2arcturus2</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3775</cve>
+		<desc>It was discovered that libgadu incorrectly handled certain messages from file relay servers.</desc>
+	</fsa>
+	<fsa>
+               <id>832</id>
+               <date>2014-05-17</date>
+               <author>kikadf</author>
+               <package>actionpack</package>
+               <vulnerable>3.2.6-2arcturus1</vulnerable>
+               <unaffected>3.2.6-2arcturus2</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0081
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0082
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0130</cve>
+               <desc>The actionview/lib/action_view/helpers/number_helper.rb contains multiple cross-site scripting vulnerabilities. The actionpack/lib/action_view/template/text.rb performs symbol interning on MIME type strings, allowing remote denial-of-service attacks via increased memory consumption.
+			A directory traversal vulnerability in actionpack/lib/abstract_controller/base.rb allows remote attackers to read arbitrary files.</desc>
+       </fsa>
+	<fsa>
+		<id>831</id>
+		<date>2014-05-16</date>
+		<author>kikadf</author>
+		<package>libxml2</package>
+		<vulnerable>2.8.0-1</vulnerable>
+		<unaffected>2.8.0-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-5134
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-0339
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2877
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0191</cve>
+		<desc>It was discovered that libxml2 had a heap-based buffer underflow when parsing entities. It was discovered that libxml2 would load XML external entities by default.
+			It was discovered that libxml2 incorrectly handled documents that end abruptly. Daniel Berrange discovered that libxml2 would incorrectly perform entity substitution even when requested not to.</desc>
+	</fsa>
+	<fsa>
+		<id>830</id>
+		<date>2014-05-16</date>
+		<author>kikadf</author>
+		<package>dovecot</package>
+		<vulnerable>2.1.8-2</vulnerable>
+		<unaffected>2.1.8-3arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3430</cve>
+		<desc>It was discovered that Dovecot incorrectly handled closing inactive SSL/TLS connections.</desc>
+	</fsa>
+	<fsa>
+		<id>829</id>
+		<date>2014-05-15</date>
+		<author>kikadf</author>
+		<package>django</package>
+		<vulnerable>1.5.2-2arcturus1</vulnerable>
+		<unaffected>1.5.2-2arcturus2</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1418</cve>
+		<desc>Stephen Stewart, Michael Nelson, Natalia Bidart and James Westby discovered that Django improperly removed Vary and Cache-Control headers from HTTP responses when replying to a request from an Internet Explorer or Chrome Frame client.
+			Peter Kuma and Gavin Wahl discovered that Django did not correctly validate some malformed URLs, which are accepted by some browsers.</desc>
+	</fsa>
+	<fsa>
+		<id>828</id>
+		<date>2014-05-15</date>
+		<author>James Buren</author>
+		<package>kernel</package>
+		<vulnerable>3.10-6</vulnerable>
+		<unaffected>3.10-7</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0196
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1737
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1738
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2851
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3122</cve>
+		<desc>Jiri Slaby discovered a race condition in the pty layer, which could lead to denial of service or privilege escalation.
+			Matthew Daley discovered that missing input sanitising in the FDRAWCMD ioctl and an information leak could result in privilege escalation.
+			Incorrect reference counting in the ping_init_sock() function allows denial of service or privilege escalation. Incorrect locking of memory can result in local denial of service.</desc>
+	</fsa>
+	<fsa>
+		<id>827</id>
+		<date>2014-05-14</date>
+		<author>kikadf</author>
+		<package>libxfont</package>
+		<vulnerable>1.4.5-2arcturus2</vulnerable>
+		<unaffected>1.4.5-2arcturus3</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0209
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0210
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0211</cve>
+		<desc>Integer overflow of allocations in font metadata file parsing could allow a local user who is already authenticated to the X server to overwrite other memory in the heap.
+			Libxfont does not validate length fields when parsing xfs protocol replies allowing to write past the bounds of allocated memory when storing the returned data from the font server.
+			Integer overflows calculating memory needs for xfs replies could result in allocating too little memory and then writing the returned data from the font server past the end of the allocated buffer.</desc>
+	</fsa>
+	<fsa>
+		<id>826</id>
+		<date>2014-05-09</date>
+		<author>kikadf</author>
+		<package>rxvt-unicode</package>
+		<vulnerable>9.18-1</vulnerable>
+		<unaffected>9.18-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3121</cve>
+		<desc>Phillip Hallam-Baker discovered that window property values could be queried in rxvt-unicode, resulting in the potential execution of arbitrary commands.</desc>
+	</fsa>
+	<fsa>
+		<id>825</id>
+		<date>2014-05-07</date>
+		<author>kikadf</author>
+		<package>libtiff</package>
+		<vulnerable>3.9.5-1</vulnerable>
+		<unaffected>3.9.5-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-1173
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-2088
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-2113
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-3401
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-4447
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-4564
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-5581
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1960
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1961
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4231
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4232
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4243
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4244</cve>
+		<desc>It was discovered that LibTIFF incorrectly handled certain malformed images when using the gif2tiff tool.
+			If a user or automated system were tricked into opening a specially crafted GIF image, a remote attacker could crash the application, leading to a denial of service, or possibly execute arbitrary code with user privileges.</desc>
+	</fsa>
+	<fsa>
+               <id>824</id>
+               <date>2014-05-07</date>
+               <author>kikadf</author>
+               <package>strongswan</package>
+               <vulnerable>5.0.1-2arcturus1</vulnerable>
+               <unaffected>5.0.1-2arcturus2</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2891</cve>
+               <desc>A vulnerability has been found in the ASN.1 parser of strongSwan, an IKE/IPsec suite used to establish IPsec protected links.</desc>
+       </fsa>
+	<fsa>
+		<id>823</id>
+		<date>2014-05-07</date>
+		<author>kikadf</author>
+		<package>openssl</package>
+		<vulnerable>1.0.1-5arcturus3</vulnerable>
+		<unaffected>1.0.1-5arcturus4</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0198</cve>
+		<desc>It was discovered that OpenSSL incorrectly handled memory in the do_ssl3_write() function. 
+			A remote attacker could use this issue to possibly cause OpenSSL to crash, resulting in a denial of service.</desc>
+	</fsa>
+	<fsa>
+               <id>822</id>
+               <date>2014-04-30</date>
+               <author>kikadf</author>
+               <package>libmms</package>
+               <vulnerable>0.6.2-1</vulnerable>
+               <unaffected>0.6.2-2arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2892</cve>
+               <desc>Alex Chapman discovered that a buffer overflow in processing "MMS over HTTP" messages could result in the execution of arbitrary code.</desc>
+       </fsa>
+	<fsa>
+		<id>821</id>
+		<date>2014-04-28</date>
+		<author>kikadf</author>
+		<package>qemu</package>
+		<vulnerable>1.5.2-3arcturus3</vulnerable>
+		<unaffected>1.5.2-3arcturus4</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4544
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2894</cve>
+		<desc>Michael S. Tsirkin discovered that QEMU incorrectly handled vmxnet3 devices.
+			Benoît Canet discovered that QEMU incorrectly handled SMART self-tests. 
+			A local guest could possibly use this issue to cause a denial of service, or possibly execute arbitrary code on the host.</desc>
+	</fsa>
+	<fsa>
+		<id>820</id>
+		<date>2014-04-26</date>
+		<author>kikadf</author>
+		<package>drupal7</package>
+		<vulnerable>7.22-2arcturus1</vulnerable>
+		<unaffected>7.22-2arcturus2</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2983</cve>
+		<desc>An information disclosure vulnerability was discovered in Drupal, a fully-featured content management framework. When pages are cached for anonymous users, form state may leak between anonymous users. Sensitive or private information recorded for one anonymous user could thus be disclosed to other users interacting with the same form at the same time.</desc>
+	</fsa>
+	<fsa>
+		<id>819</id>
+		<date>2014-04-26</date>
+		<author>kikadf</author>
+		<package>drupal6</package>
+		<vulnerable>6.30-1arcturus1</vulnerable>
+		<unaffected>6.31-1arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2983</cve>
+		<desc>An information disclosure vulnerability was discovered in Drupal, a fully-featured content management framework. When pages are cached for anonymous users, form state may leak between anonymous users. Sensitive or private information recorded for one anonymous user could thus be disclosed to other users interacting with the same form at the same time.</desc>
+	</fsa>
+	<fsa>
+		<id>818</id>
+		<date>2014-04-25</date>
+		<author>kikadf</author>
+		<package>cups</package>
+		<vulnerable>1.6.1-3arcturus1</vulnerable>
+		<unaffected>1.6.1-3arcturus2</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2856</cve>
+		<desc>Alex Korobkin discovered that the CUPS web interface incorrectly protected against cross-site scripting (XSS) attacks.</desc>
+	</fsa>
+	<fsa>
+		<id>817</id>
+		<date>2014-04-22</date>
+		<author>kikadf</author>
+		<package>django</package>
+		<vulnerable>1.5.2-1</vulnerable>
+		<unaffected>1.5.2-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0472
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0473
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0474</cve>
+		<desc>Benjamin Bach discovered that Django incorrectly handled dotted Python paths when using the reverse() function.
+			Paul McMillan discovered that Django incorrectly cached certain pages that contained CSRF cookies.
+			Michael Koziarski discovered that Django did not always perform explicit conversion of certain fields when using a MySQL database.</desc>
+	</fsa>
+	<fsa>
+		<id>816</id>
+		<date>2014-04-20</date>
+		<author>kikadf</author>
+		<package>qemu</package>
+		<vulnerable>1.5.2-3arcturus2</vulnerable>
+		<unaffected>1.5.2-3arcturus3</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0150</cve>
+		<desc>Michael S. Tsirkin of Red Hat discovered a buffer overflow flaw in the way qemu processed MAC addresses table update requests from the guest.
+			A privileged guest user could use this flaw to corrupt qemu process memory on the host, which could potentially result in arbitrary code execution on the host with the privileges of the qemu process.</desc>
+	</fsa>
+	<fsa>
+		<id>815</id>
+		<date>2014-04-18</date>
+		<author>kikadf</author>
+		<package>openssl</package>
+		<vulnerable>1.0.1-5arcturus2</vulnerable>
+		<unaffected>1.0.1-5arcturus3</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-5298</cve>
+		<desc>A read buffer can be freed even when it still contains data that is used later on, leading to a use-after-free.
+			Given a race condition in a multi-threaded application it may permit an attacker to inject data from one connection into another or cause denial of service.</desc>
+	</fsa>
+	<fsa>
+               <id>814</id>
+               <date>2014-04-18</date>
+               <author>kikadf</author>
+               <package>ntp</package>
+               <vulnerable>4.2.6p5-2</vulnerable>
+               <unaffected>4.2.6p5-3arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-5211</cve>
+               <desc>The monlist feature in ntp_request.c in ntpd in NTP before 4.2.7p26 allows remote attackers to cause a denial of service (traffic amplification) via forged (1) REQ_MON_GETLIST or (2) REQ_MON_GETLIST_1 requests, as exploited in the wild in December 2013.</desc>
+       </fsa>
+	<fsa>
+               <id>813</id>
+               <date>2014-04-18</date>
+               <author>kikadf</author>
+               <package>openssh</package>
+               <vulnerable>6.1p1-1</vulnerable>
+               <unaffected>6.1p1-2arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4548
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2532
+						http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2653</cve>
+               <desc>Jann Horn discovered that OpenSSH incorrectly handled wildcards in AcceptEnv lines. A remote attacker could use this issue to trick OpenSSH into accepting any environment variable that contains the characters before the wildcard character.
+			Matthew Vernon reported that if a SSH server offers a HostCertificate that the ssh client doesn't accept, then the client doesn't check the DNS for SSHFP records. As a consequence a malicious server can disable SSHFP-checking by presenting a certificate.</desc>
+       </fsa>
+	<fsa>
+		<id>812</id>
+		<date>2014-04-18</date>
+		<author>kikadf</author>
+		<package>python</package>
+		<vulnerable>2.7.5-1</vulnerable>
+		<unaffected>2.7.5-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4238
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1912</cve>
+		<desc>Ryan Sleevi discovered that NULL characters in the subject alternate names of SSL cerficates were parsed incorrectly.
+			Ryan Smith-Roberts discovered a buffer overflow in the socket.recvfrom_into() function.</desc>
+	</fsa>
+	<fsa>
+               <id>811</id>
+               <date>2014-04-17</date>
+               <author>kikadf</author>
+               <package>imaging</package>
+               <vulnerable>1.1.7-4</vulnerable>
+               <unaffected>1.1.7-5arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1932
+		       http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1933</cve>
+               <desc>Jakub Wilk discovered that the Python Imaging Library incorrectly handled temporary files.
+		       A local attacker could possibly use this issue to overwrite arbitrary files, or gain access to temporary file contents.</desc>
+       </fsa>
+	<fsa>
+               <id>810</id>
+               <date>2014-04-17</date>
+               <author>kikadf</author>
+               <package>xalan-j</package>
+               <vulnerable>2.7.1-2</vulnerable>
+               <unaffected>2.7.1-3arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0107</cve>
+               <desc>Nicolas Gregoire discovered several vulnerabilities in libxalan2-java, a Java library for XSLT processing. Crafted XSLT programs could access system properties or load arbitrary classes, resulting in information disclosure and, potentially, arbitrary code execution.</desc>
+       </fsa>
+	<fsa>
+               <id>809</id>
+               <date>2014-04-17</date>
+               <author>kikadf</author>
+               <package>wordpress</package>
+               <vulnerable>3.5.1-1</vulnerable>
+               <unaffected>3.9-1arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0165
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0166</cve>
+               <desc>A user with a contributor role, using a specially crafted request, can publish posts, which is reserved for users of the next-higher role.
+		       Jon Cave of the WordPress security team discovered that the wp_validate_auth_cookie function in wp-includes/pluggable.php does not properly determine the validity of authentication cookies, allowing a remote attacker to obtain access via a forged cookie.</desc>
+       </fsa>
+	<fsa>
+               <id>808</id>
+               <date>2014-04-17</date>
+               <author>kikadf</author>
+               <package>strongswan</package>
+               <vulnerable>5.0.1-1</vulnerable>
+               <unaffected>5.0.1-2arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-5018
+		        http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6075
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2338</cve>
+               <desc>A vulnerability has been found in the ASN.1 parser of strongSwan, an IKE daemon used to establish IPsec protected links.
+			An authentication bypass vulnerability was found in charon, the daemon handling IKEv2 in strongSwan, an IKE/IPsec suite. The state machine handling the security association (IKE_SA) handled some state transitions incorrectly.</desc>
+       </fsa>
+	<fsa>
+               <id>807</id>
+               <date>2014-04-17</date>
+               <author>kikadf</author>
+               <package>samba</package>
+               <vulnerable>3.6.9-4arcturus1</vulnerable>
+               <unaffected>3.6.23-1arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4496
+		       http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6442</cve>
+               <desc>Andrew Bartlett discovered that Samba did not properly enforce the password guessing protection mechanism for all interfaces.
+		       Samba have a flaw in the smbcacls command. If smbcacls is used with the "-C|--chown name" or "-G|--chgrp name"
+		       command options it will remove the existing ACL on the object being modified, leaving the file or directory unprotected.</desc>
+       </fsa>
+	<fsa>
+               <id>806</id>
+               <date>2014-04-17</date>
+               <author>kikadf</author>
+               <package>postfixadmin</package>
+               <vulnerable>2.3.6-1</vulnerable>
+               <unaffected>2.3.6-2arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2655</cve>
+               <desc>An SQL injection vulnerability was discovered in postfixadmin, a web administration interface for the Postfix Mail Transport Agent, which allowed authenticated users to make arbitrary manipulations to the database.</desc>
+       </fsa>
+	<fsa>
+               <id>805</id>
+               <date>2014-04-16</date>
+               <author>kikadf</author>
+               <package>net-snmp</package>
+               <vulnerable>5.7.1-3</vulnerable>
+               <unaffected>5.7.1-4arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-6151
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2284
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2285</cve>
+               <desc>Ken Farnen discovered that Net-SNMP incorrectly handled AgentX timeouts. It was discovered that the Net-SNMP ICMP-MIB incorrectly validated input.
+			Viliam Púčik discovered that the Net-SNMP perl trap handler incorrectly handled NULL arguments.</desc>
+       </fsa>
+	<fsa>
+               <id>804</id>
+               <date>2014-04-16</date>
+               <author>kikadf</author>
+               <package>jbigkit</package>
+               <vulnerable>2.0-2</vulnerable>
+               <unaffected>2.0-3arcturus1</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6369</cve>
+               <desc>Florian Weimer of the Red Hat product security team discovered multiple buffer overflows in jbigkit, which could lead to the execution of arbitrary code when processing malformed images.</desc>
+       </fsa>
+	<fsa>
+               <id>803</id>
+               <date>2014-04-16</date>
+               <author>kikadf</author>
+               <package>curl</package>
+               <vulnerable>7.26.0-2arcturus2</vulnerable>
+               <unaffected>7.26.0-2arcturus3</unaffected>
+               <bts></bts>
+               <cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0138
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0139</cve>
+               <desc>Steve Holme discovered that libcurl can in some circumstances re-use the wrong connection when asked to do transfers using other protocols than HTTP and FTP.
+			Richard Moore from Westpoint Ltd. reported that libcurl does not behave compliant to RFC 2828 under certain conditions and incorrectly validates wildcard SSL certificates containing literal IP addresses.</desc>
+       </fsa>
+	<fsa>
+		<id>802</id>
+		<date>2014-04-14</date>
+		<author>kikadf</author>
+		<package>libyaml</package>
+		<vulnerable>0.1.4-3arcturus1</vulnerable>
+		<unaffected>0.1.4-3arcturus2</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2525</cve>
+		<desc>Ivan Fratric of the Google Security Team discovered a heap-based buffer overflow vulnerability in LibYAML, a fast YAML 1.1 parser and emitter library.</desc>
+	</fsa>
+	<fsa>
+		<id>801</id>
+		<date>2014-04-14</date>
+		<author>kikadf</author>
+		<package>apache</package>
+		<vulnerable>2.2.23-2</vulnerable>
+		<unaffected>2.2.23-3arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-3499
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-4558
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-4929
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1862
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1896
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6438
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0098</cve>
+		<desc>Ning Zhang and Amin Tora discovered that the mod_dav module incorrectly handled whitespace characters in CDATA sections.
+			Rainer M Canavan discovered that the mod_log_config module incorrectly handled certain cookies.</desc>
+	</fsa>
+	<fsa>
+		<id>800</id>
+		<date>2014-04-14</date>
+		<author>kikadf</author>
+		<package>actionmailer</package>
+		<vulnerable>3.2.6-1</vulnerable>
+		<unaffected>3.2.6-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4389</cve>
+		<desc>Aaron Neyer discovered that missing input sanitising in the logging component of Ruby Actionmailer could result in denial of service through a malformed e-mail message.</desc>
+	</fsa>
+	<fsa>
+		<id>799</id>
+		<date>2014-04-14</date>
+		<author>kikadf</author>
+		<package>actionpack</package>
+		<vulnerable>3.2.6-1</vulnerable>
+		<unaffected>3.2.6-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-3424
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-3463
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-3465
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-0155
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1855
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1857
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4389
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4491
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6414
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6415
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6417</cve>
+		<desc>Toby Hsieh, Peter McLarnan, Ankit Gupta, Sudhir Rao and Kevin Reintjes discovered multiple cross-site scripting and denial of service vulnerabilities in Ruby Actionpack.</desc>
+	</fsa>
+	<fsa>
+		<id>798</id>
+		<date>2014-04-12</date>
+		<author>kikadf</author>
+		<package>a2ps</package>
+		<vulnerable>4.14-4</vulnerable>
+		<unaffected>4.14-5arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2001-1953
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0466</cve>
+		<desc>The spy_user function which is called when a2ps is invoked with the --debug flag insecurely used temporary files.
+			Brian M. Carlson reported that a2ps's fixps script does not invoke gs with the -dSAFER option. 
+			Consequently executing fixps on a malicious PostScript file could result in files being deleted or arbitrary commands being executed with the privileges of the user running fixps.</desc>
+	</fsa>
+	<fsa>
+		<id>797</id>
+		<date>2014-04-08</date>
+		<author>James Buren</author>
+		<package>openssl</package>
+		<vulnerable>1.0.1-5arcturus1</vulnerable>
+		<unaffected>1.0.1-5arcturus2</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0160</cve>
+		<desc>A vulnerability has been discovered in OpenSSL's support for the TLS/DTLS Heartbeat extension. 
+			Up to 64KB of memory from either client or server can be recovered by an attacker. This vulnerability might allow an attacker to compromise the private key and other sensitive data in memory.</desc>
+	</fsa>
+	<fsa>
+		<id>796</id>
+		<date>2014-03-15</date>
+		<author>kikadf</author>
+		<package>lighttpd</package>
+		<vulnerable>1.4.32-2</vulnerable>
+		<unaffected>1.4.35-1arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2323
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2324
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4508
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4559
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4560</cve>
+		<desc>Jann Horn discovered that specially crafted host names can be used to inject arbitrary MySQL queries in lighttpd servers using the MySQL virtual hosting module (mod_mysql_vhost).
+			Jann Horn discovered that specially crafted host names can be used to traverse outside of the document root under certain situations in lighttpd servers using either the mod_mysql_vhost, mod_evhost, or mod_simple_vhost virtual hosting modules.</desc>
+	</fsa>
+	<fsa>
+		<id>795</id>
+		<date>2014-03-14</date>
+		<author>kikadf</author>
+		<package>mutt-devel</package>
+		<vulnerable>1.5.21-3</vulnerable>
+		<unaffected>1.5.21-4arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0467</cve>
+		<desc>Beatrice Torracca and Evgeni Golov discovered a buffer overflow in the mutt mailreader. Malformed RFC2047 header lines could result in denial of service or potentially the execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
+		<id>794</id>
+		<date>2014-03-13</date>
+		<author>kikadf</author>
+		<package>php</package>
+		<vulnerable>5.3.26-1</vulnerable>
+		<unaffected>5.3.26-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4413
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4248
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6420
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6712
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1943</cve>
+		<desc>It was discovered that file, a file type classification tool, contains a flaw in the handling of indirect magic rules in the libmagic library, which leads to an infinite recursion when trying to determine the file type of certain files.</desc>
+	</fsa>
+	<fsa>
+		<id>793</id>
+		<date>2014-03-13</date>
+		<author>kikadf</author>
+		<package>icedtea-web</package>
+		<vulnerable>1.3.1-1</vulnerable>
+		<unaffected>1.3.1-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6493</cve>
+		<desc>Michael Scherer discovered that IcedTea Web created temporary directories in an unsafe fashion.</desc>
+	</fsa>
+	<fsa>
+		<id>792</id>
+		<date>2014-03-13</date>
+		<author>kikadf</author>
+		<package>cups-filters</package>
+		<vulnerable>1.0.24-1</vulnerable>
+		<unaffected>1.0.24-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6474
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6475
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6476</cve>
+		<desc>Florian Weimer of the Red Hat Product Security Team discovered multiple vulnerabilities in the pdftoopvp CUPS filter, which could result in the execution of aribitrary code if a malformed PDF file is processed.</desc>
+	</fsa>
+	<fsa>
+		<id>791</id>
+		<date>2014-03-13</date>
+		<author>kikadf</author>
+		<package>libssh</package>
+		<vulnerable>0.5.3-1</vulnerable>
+		<unaffected>0.5.3-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-0176
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-0017</cve>
+		<desc>Aris Adamantiadis discovered that libssh allowed the OpenSSL PRNG state to be reused when implementing forking servers.</desc>
+	</fsa>
+	<fsa>
+		<id>790</id>
+		<date>2014-03-13</date>
+		<author>kikadf</author>
+		<package>udisks</package>
+		<vulnerable>1.0.4-7</vulnerable>
+		<unaffected>1.0.4-8arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0004</cve>
+		<desc>Florian Weimer discovered a buffer overflow in udisks's mount path parsing code which may result in privilege escalation.</desc>
+	</fsa>
+	<fsa>
+		<id>789</id>
+		<date>2014-03-13</date>
+		<author>kikadf</author>
+		<package>file</package>
+		<vulnerable>5.14-2arcturus1</vulnerable>
+		<unaffected>5.14-2arcturus2</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2270</cve>
+		<desc>Aaron Reffett reported a flaw in the way the file utility determined the type of Portable Executable (PE) format files, the executable format used on Windows. When processing a defective or intentionally prepared PE executable which contains invalid offset information, the file_strncmp routine will access memory that is out of bounds, causing file to crash.</desc>
+	</fsa>
+	<fsa>
+		<id>788</id>
+		<date>2014-03-13</date>
+		<author>kikadf</author>
+		<package>wireshark</package>
+		<vulnerable>1.8.6-1</vulnerable>
+		<unaffected>1.8.13-1arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2281
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2283
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2299</cve>
+		<desc>Moshe Kaplan discovered that the NFS dissector could be crashed, resulting in denial of service. It was discovered that the RLC dissector could be crashed, resulting in denial of service.
+			Wesley Neelen discovered a buffer overflow in the MPEG file parser, which could lead to the execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
+		<id>787</id>
+		<date>2014-03-13</date>
+		<author>kikadf</author>
+		<package>postgresql</package>
+		<vulnerable>9.1.9-1</vulnerable>
+		<unaffected>9.1.12-1arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0060
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0061
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0062
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0063
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0064
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0065
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0066
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0067</cve>
+		<desc>Shore up GRANT ... WITH ADMIN OPTION restrictions (Noah Misch). Prevent privilege escalation via manual calls to PL validator functions (Andres Freund). Avoid multiple name lookups during table and index DDL (Robert Haas, Andres Freund).
+			Prevent buffer overrun with long datetime strings (Noah Misch). Prevent buffer overrun due to integer overflow in size calculations (Noah Misch, Heikki Linnakangas). Prevent overruns of fixed-size buffers (Peter Eisentraut, Jozef Mlich).
+			Avoid crashing if crypt() returns NULL (Honza Horak, Bruce Momjian). Document risks of make check in the regression testing instructions (Noah Misch, Tom Lane).</desc>
+	</fsa>
+	<fsa>
+		<id>786</id>
+		<date>2014-03-05</date>
+		<author>kikadf</author>
+		<package>gnutls</package>
+		<vulnerable>2.12.17-1</vulnerable>
+		<unaffected>2.12.17-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0092
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1959</cve>
+		<desc>Nikos Mavrogiannopoulos of Red Hat discovered an X.509 certificate verification issue in GnuTLS, an SSL/TLS library. A certificate validation could be reported sucessfully even in cases were an error would prevent all verification steps to be performed.
+			Suman Jana reported that GnuTLS, deviating from the documented behavior, considers a version 1 intermediate certificate as a CA certificate by default.</desc>
+	</fsa>
+	<fsa>
+		<id>785</id>
+		<date>2014-02-27</date>
+		<author>kikadf</author>
+		<package>file</package>
+		<vulnerable>5.14-1</vulnerable>
+		<unaffected>5.14-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1943</cve>
+		<desc>It was discovered that file, a file type classification tool, contains a flaw in the handling of "indirect" magic rules in the libmagic library, which leads to an infinite recursion when trying to determine the file type of certain files.</desc>
+	</fsa>
+	<fsa>
+		<id>784</id>
+		<date>2014-02-27</date>
+		<author>kikadf</author>
+		<package>libtar</package>
+		<vulnerable>1.2.11-5</vulnerable>
+		<unaffected>1.2.20-1arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4397
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4420</cve>
+		<desc>Timo Warns reported multiple integer overflow vulnerabilities in libtar, a library for manipulating tar archives, which can result in the execution of arbitrary code.
+			A directory traversal attack was reported against libtar, a C library for manipulating tar archives. The application does not validate the filenames inside the tar archive, allowing to extract files in arbitrary path. 
+			An attacker can craft a tar file to override files beyond the tar_extract_glob and tar_extract_all prefix parameter.</desc>
+	</fsa>
+	<fsa>
+		<id>783</id>
+		<date>2014-02-14</date>
+		<author>kikadf</author>
+		<package>perl</package>
+		<vulnerable>5.14.1-5</vulnerable>
+		<unaffected>5.14.1-6arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-5526
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-6329
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1667</cve>
+		<desc>It was discovered that Perl's Locale::Maketext module incorrectly handled backslashes and fully qualified method names. 
+			An attacker could possibly use this flaw to execute arbitrary code when an application used untrusted templates.</desc>
+	</fsa>
+	<fsa>
+		<id>782</id>
+		<date>2014-02-14</date>
+		<author>kikadf</author>
+		<package>pidgin</package>
+		<vulnerable>2.10.7-1</vulnerable>
+		<unaffected>2.10.7-2arcturus2</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-6152
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6477
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6478
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6479
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6481
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6482
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6483
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6484
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6485
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6487
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6489
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6490
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0020</cve>
+		<desc>Jaime Breva Ribes discovered that a remote XMPP user can trigger a crash by sending a message with a timestamp in the distant future. Pidgin could be crashed through overly wide tooltip windows.
+			Jacob Appelbaum discovered that a malicious server or a "man in the middle" could send a malformed HTTP header resulting in denial of service. Daniel Atallah discovered that Pidgin could be crashed through malformed Yahoo! P2P messages.
+			Fabian Yamaguchi and Christian Wressnegger discovered that Pidgin could be crashed through malformed MSN messages.
+			Fabian Yamaguchi and Christian Wressnegger discovered that Pidgin could be crashed through malformed XMPP messages. 
+			It was discovered that incorrect error handling when reading the response from a STUN server could result in a crash. Matt Jones discovered a buffer overflow in the parsing of malformed HTTP responses. Yves Younan and Ryan Pentney discovered a buffer overflow when parsing Gadu-Gadu messages.
+			Yves Younan and Pawel Janic discovered an integer overflow when parsing MXit emoticons. Yves Younan discovered a buffer overflow when parsing SIMPLE headers. Daniel Atallah discovered that Pidgin could be crashed via malformed IRC arguments.</desc>
+	</fsa>
+	<fsa>
+		<id>781</id>
+		<date>2014-02-14</date>
+		<author>kikadf</author>
+		<package>mumble</package>
+		<vulnerable>1.2.4-1</vulnerable>
+		<unaffected>1.2.4-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0044
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0045</cve>
+		<desc>It was discovered that a malformed Opus voice packet sent to a Mumble client could trigger a NULL pointer dereference or an out-of-bounds array access. A malicious remote attacker could exploit this flaw to mount a denial of service attack against a mumble client by causing the application to crash.
+			It was discovered that a malformed Opus voice packet sent to a Mumble client could trigger a heap-based buffer overflow. A malicious remote attacker could use this flaw to cause a client crash (denial of service) or potentially use it to execute arbitrary code.</desc>
+	</fsa>
+	<fsa>
+		<id>780</id>
+		<date>2014-02-14</date>
+		<author>kikadf</author>
+		<package>libgadu</package>
+		<vulnerable>1.11.2-1</vulnerable>
+		<unaffected>1.11.2-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6487</cve>
+		<desc>Yves Younan and Ryan Pentney discovered that libgadu, a library for accessing the Gadu-Gadu instant messaging service, contained an integer overflow leading to a buffer overflow. Attackers which impersonate the server could crash clients and potentially execute arbitrary code.</desc>
+	</fsa>
+	<fsa>
+		<id>779</id>
+		<date>2014-02-07</date>
+		<author>kikadf</author>
+		<package>drupal6</package>
+		<vulnerable>6.28-1</vulnerable>
+		<unaffected>6.30-1arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6385
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6386
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1475</cve>
+		<desc>Multiple vulnerabilities have been discovered in Drupal, a fully-featured content management framework: Cross-site request forgery, insecure pseudo random number generation, code execution, incorrect security token validation and cross-site scripting.
+			Christian Mainka and Vladislav Mladenov reported a vulnerability in the OpenID module that allows a malicious user to log in as other users on the site, including administrators, and hijack their accounts.</desc>
+	</fsa>
+	<fsa>
+		<id>778</id>
+		<date>2014-02-07</date>
+		<author>kikadf</author>
+		<package>drupal7</package>
+		<vulnerable>7.22-1</vulnerable>
+		<unaffected>7.22-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6385
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6386
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6387
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6388
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6389
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1475
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1476</cve>
+		<desc>Multiple vulnerabilities have been discovered in Drupal, a fully-featured content management framework: Cross-site request forgery, insecure pseudo random number generation, code execution, incorrect security token validation and cross-site scripting.
+			Christian Mainka and Vladislav Mladenov reported a vulnerability in the OpenID module that allows a malicious user to log in as other users on the site, including administrators, and hijack their accounts.
+			Matt Vance and Damien Tournoud reported an access bypass vulnerability in the taxonomy module. Under certain circumstances, unpublished content can appear on listing pages provided by the taxonomy module and will be visible to users who should not have permission to see it.</desc>
+	</fsa>
+	<fsa>
+		<id>777</id>
+		<date>2014-02-06</date>
+		<author>kikadf</author>
+		<package>curl</package>
+		<vulnerable>7.26.0-2arcturus1</vulnerable>
+		<unaffected>7.26.0-2arcturus2</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0015</cve>
+		<desc>Paras Sethia and Yehezkel Horowitz discovered that libcurl incorrectly reused connections when NTLM authentication was being used. This could lead to the use of unintended credentials, possibly exposing sensitive information.</desc>
+	</fsa>
+	<fsa>
+		<id>776</id>
+		<date>2014-02-06</date>
+		<author>kikadf</author>
+		<package>libotr</package>
+		<vulnerable>3.2.0-3</vulnerable>
+		<unaffected>3.2.0-4arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-3461</cve>
+		<desc>Just Ferguson discovered that libotr, an off-the-record (OTR) messaging library, can be forced to perform zero-length allocations for heap buffers that are used in base64 decoding routines. An attacker can exploit this flaw by sending crafted messages to an application that is using libotr to perform denial of service attacks or potentially execute arbitrary code.</desc>
+	</fsa>
+	<fsa>
+		<id>775</id>
+		<date>2014-02-06</date>
+		<author>kikadf</author>
+		<package>libyaml</package>
+		<vulnerable>0.1.4-2</vulnerable>
+		<unaffected>0.1.4-3arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-CVE-2013-6393</cve>
+		<desc>Florian Weimer discovered that LibYAML incorrectly handled certain large yaml documents. An attacker could use this issue to cause LibYAML to crash, resulting in a denial of service, or possibly execute arbitrary code.</desc>
+	</fsa>
+	<fsa>
+		<id>774</id>
+		<date>2014-02-06</date>
+		<author>kikadf</author>
+		<package>qemu</package>
+		<vulnerable>1.5.2-2</vulnerable>
+		<unaffected>1.5.2-3arcturus2</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4344
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4375
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4377</cve>
+		<desc>Asias He discovered that QEMU incorrectly handled SCSI controllers with more than 256 attached devices. A local user could possibly use this flaw to elevate privileges. (CVE-2013-4344)
+			It was discovered that QEMU incorrectly handled Xen disks. A local guest could possibly use this flaw to consume resources, resulting in a denial of service. (CVE-2013-4375)
+			Sibiao Luo discovered that QEMU incorrectly handled device hot-unplugging. A local user could possibly use this flaw to cause a denial of service. (CVE-2013-4377)</desc>
+	</fsa>
+	<fsa>
+		<id>773</id>
+		<date>2014-01-18</date>
+		<author>kikadf</author>
+		<package>gnupg</package>
+		<vulnerable>1.4.14-1</vulnerable>
+		<unaffected>1.4.14-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4351
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4402
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4576</cve>
+		<desc>Daniel Kahn Gillmor discovered that GnuPG treated keys with empty usage flags as being valid for all usages. (CVE-2013-4351)
+			Taylor R Campbell discovered that GnuPG incorrectly handled certain OpenPGP messages. (CVE-2013-4402)
+			Daniel Genkin, Adi Shamir, and Eran Tromer discovered that GnuPG was susceptible to an adaptive chosen ciphertext attack via acoustic emanations. (CVE-2013-4576)</desc>
+	</fsa>
+	<fsa>
+		<id>772</id>
+		<date>2014-01-18</date>
+		<author>kikadf</author>
+		<package>curl</package>
+		<vulnerable>7.26.0-1</vulnerable>
+		<unaffected>7.26.0-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-0249
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1944
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2174
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4545
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6422</cve>
+		<desc>CVE-2013-0249: It was discovered that curl incorrectly handled SASL authentication when communicating over POP3, SMTP or IMAP.
+			CVE-2013-1944: Yamada Yasuharu discovered that cURL, an URL transfer library, is vulnerable to expose potentially sensitive information when doing requests across domains with matching tails.
+			CVE-2013-2174: Timo Sirainen discovered that cURL, an URL transfer library, is prone to a heap overflow vulnerability due to bad checking of the input data in the curl_easy_unescape function.
+			CVE-2013-4545: Scott Cantor discovered that curl, a file retrieval tool, would disable the CURLOPT_SSLVERIFYHOST check when the CURLOPT_SSL_VERIFYPEER setting was disabled. This would also disable ssl certificate host name checks when it should have only disabled verification of the certificate trust chain.
+			CVE-2013-6422: Marc Deslauriers discovered that curl, a file retrieval tool, would mistakenly skip verifying the CN and SAN name fields when digital signature verification was disabled in the libcurl GnuTLS backend.</desc>
+	</fsa>
+	<fsa>
+		<id>771</id>
+		<date>2014-01-17</date>
+		<author>kikadf</author>
+		<package>cups</package>
+		<vulnerable>1.6.1-2</vulnerable>
+		<unaffected>1.6.1-3arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6891</cve>
+		<desc>Jann Horn discovered that the CUPS lppasswd tool incorrectly read a user configuration file in certain configurations. A local attacker could use this to read sensitive information from certain files, bypassing access restrictions.</desc>
+	</fsa>
+	<fsa>
+		<id>770</id>
+		<date>2014-01-17</date>
+		<author>kikadf</author>
+		<package>nspr</package>
+		<vulnerable>4.9.2-3</vulnerable>
+		<unaffected>4.9.2-4arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-5607</cve>
+		<desc>It was discovered that NSPR, Netscape Portable Runtime library, could crash an application using the library when parsing a certificate that causes an integer overflow. This flaw only affects 64-bit systems.</desc>
+	</fsa>
+	<fsa>
+		<id>769</id>
+		<date>2014-01-17</date>
+		<author>kikadf</author>
+		<package>graphviz</package>
+		<vulnerable>2.28.0-1</vulnerable>
+		<unaffected>2.28.0-2arcturus2</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0978
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1236</cve>
+		<desc>CVE-2014-0978: It was discovered that user-supplied input used in the yyerror() function in lib/cgraph/scan.l is not bound-checked before beeing copied into an insufficiently sized memory buffer. A context-dependent attacker could supply a specially crafted input file containing a long line to cause a stack-based buffer overlow, resulting in a denial of service (application crash) or potentially allowing the execution of arbitrary code.
+			CVE-2014-1236: Sebastian Krahmer reported an overflow condition in the chkNum() function in lib/cgraph/scan.l that is triggered as the used regular expression accepts an arbitrary long digit list. With a specially crafted input file, a context-dependent attacker can cause a stack-based buffer overflow, resulting in a denial of service (application crash) or potentially allowing the execution of arbitrary code.</desc>
+	</fsa>
+	<fsa>
+		<id>768</id>
+		<date>2014-01-17</date>
+		<author>kikadf</author>
+		<package>djvulibre</package>
+		<vulnerable>3.5.25.2-1</vulnerable>
+		<unaffected>3.5.25.2-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-6535</cve>
+		<desc>It was discovered that djvulibre, the Open Source DjVu implementation project, can be crashed or possibly make it execute arbitrary code when processing a specially crafted djvu file.</desc>
+	</fsa>
+	<fsa>
+		<id>767</id>
+		<date>2014-01-16</date>
+		<author>kikadf</author>
+		<package>hplip</package>
+		<vulnerable>3.12.11-1</vulnerable>
+		<unaffected>3.12.11-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-4267
+		     http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4325
+		     http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6402
+		     http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6427</cve>
+		<desc>Multiple vulnerabilities have been found in the HP Linux Printing and Imaging System: Insecure temporary files, insufficient permission checks in PackageKit and the insecure hp-upgrade service has been disabled.</desc>
+	</fsa>
+	<fsa>
+		<id>766</id>
+		<date>2014-01-14</date>
+		<author>kikadf</author>
+		<package>bind</package>
+		<vulnerable>9.9.2-2</vulnerable>
+		<unaffected>9.9.4-1arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2266
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4854
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0591</cve>
+		<desc>libdns allows remote attackers to cause a denial of service (memory consumption) via a crafted regular expression, as demonstrated by a memory-exhaustion attack against a machine running a named process.
+			Maxim Shudrak and the HP Zero Day Initiative reported a denial of service vulnerability in BIND, a DNS server. A specially crafted query that includes malformed rdata can cause named daemon to terminate with an assertion failure while rejecting the malformed query.</desc>
+	</fsa>
+	<fsa>
+		<id>765</id>
+		<date>2014-01-13</date>
+		<author>kikadf</author>
+		<package>memcached</package>
+		<vulnerable>1.4.15-1</vulnerable>
+		<unaffected>1.4.15-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-7239</cve>
+		<desc>It was reported that SASL authentication could be bypassed due to a flaw related to the managment of the SASL authentication state. With a specially crafted request, a remote attacker may be able to authenticate with invalid SASL credentials.</desc>
+	</fsa>
+	<fsa>
+		<id>764</id>
+		<date>2014-01-12</date>
+		<author>kikadf</author>
+		<package>openssl</package>
+		<vulnerable>1.0.1-4</vulnerable>
+		<unaffected>1.0.1-5arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4353
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6449
+			http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6450</cve>
+		<desc>Anton Johansson discovered that an invalid TLS handshake package could crash OpenSSL with a NULL pointer dereference.
+			Multiple security issues have been fixed in OpenSSL: The TLS 1.2 support was susceptible to denial of service and retransmission of DTLS messages was fixed.
+			In addition this update disables the insecure Dual_EC_DRBG algorithm and no longer uses the RdRand feature available on some Intel CPUs as a sole source of entropy unless explicitly requested.</desc>
+	</fsa>
+	<fsa>
+		<id>763</id>
+		<date>2014-01-12</date>
+		<author>kikadf</author>
+		<package>spice</package>
+		<vulnerable>0.12.2-1</vulnerable>
+		<unaffected>0.12.2-2arcturus1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4130</cve>
+		<desc>David Gibson of Red Hat discovered that SPICE incorrectly handled certain network errors. A remote user able to initiate a SPICE connection to an application acting as a SPICE server could use this flaw to crash the application.</desc>
+	</fsa>
+	<fsa>
+		<id>762</id>
+		<date>2014-01-10</date>
+		<author>kikadf</author>
+		<package>libxfont</package>
+		<vulnerable>1.4.5-1</vulnerable>
+		<unaffected>1.4.5-2arcturus2</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6462</cve>
+		<desc>It was discovered that a buffer overflow in the processing of Glyph Bitmap Distribution fonts (BDF) could result in the execution of arbitrary code.</desc>
+	</fsa>
+</fsas>
