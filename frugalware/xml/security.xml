@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+		<id>973</id>
+		<date>2015-02-26</date>
+		<author>kikadf</author>
+		<package>samba</package>
+		<vulnerable>3.6.24-2</vulnerable>
+		<unaffected>3.6.25-1rigel1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0240</cve>
+		<desc>Richard van Eeden of Microsoft Vulnerability Research discovered that Samba, a SMB/CIFS file, print, and login server for Unix, contains a flaw in the netlogon server code which allows remote code execution with root privileges from an unauthenticated connection.</desc>
+	</fsa>
+	<fsa>
 		<id>972</id>
 		<date>2015-02-26</date>
 		<author>kikadf</author>
