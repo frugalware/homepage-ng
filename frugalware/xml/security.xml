@@ -39,6 +39,18 @@
 
 <fsas>
 	<fsa>
+		<id>977</id>
+		<date>2015-02-28</date>
+		<author>kikadf</author>
+		<package>file</package>
+		<vulnerable>5.14-6</vulnerable>
+		<unaffected>5.14-7rigel1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8116
+		http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8117</cve>
+		<desc>Thomas Jarosch discovered that file incorrectly handled certain ELF files. Thomas Jarosch discovered that file incorrectly limited recursion.</desc>
+	</fsa>
+	<fsa>
 		<id>976</id>
 		<date>2015-02-28</date>
 		<author>kikadf</author>
