@@ -39,6 +39,19 @@
 
 <fsas>
 	<fsa>
+		<id>979</id>
+		<date>2015-02-28</date>
+		<author>kikadf</author>
+		<package>ntp</package>
+		<vulnerable>4.2.8-1</vulnerable>
+		<unaffected>4.2.8-2rigel1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9297
+		http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9298</cve>
+		<desc>Stephen Roettger of the Google Security Team, Sebastian Krahmer of the SUSE Security Team and Harlan Stenn of Network Time Foundation discovered that the length value in extension fields is not properly validated in several code paths in ntp_crypto.c, which could lead to information leakage or denial of service (ntpd crash).
+		Stephen Roettger of the Google Security Team reported that ACLs based on IPv6 ::1 addresses can be bypassed.</desc>
+	</fsa>
+	<fsa>
 		<id>978</id>
 		<date>2015-02-28</date>
 		<author>kikadf</author>
