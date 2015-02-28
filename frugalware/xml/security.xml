@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+		<id>975</id>
+		<date>2015-02-28</date>
+		<author>kikadf</author>
+		<package>clamav</package>
+		<vulnerable>0.98.5-1</vulnerable>
+		<unaffected>0.98.6-1rigel1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9328</cve>
+		<desc>Sebastian Andrzej Siewior discovered that ClamAV incorrectly handled certain upack packer files.</desc>
+	</fsa>
+	<fsa>
 		<id>974</id>
 		<date>2015-02-28</date>
 		<author>kikadf</author>
