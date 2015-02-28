@@ -39,6 +39,21 @@
 
 <fsas>
 	<fsa>
+		<id>978</id>
+		<date>2015-02-28</date>
+		<author>kikadf</author>
+		<package>krb5</package>
+		<vulnerable>1.12.2-2</vulnerable>
+		<unaffected>1.12.3-1rigel1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5352
+		http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9421
+		http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9422
+		http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9423</cve>
+		<desc>Incorrect memory management in the libgssapi_krb5 library might result in denial of service or the execution of arbitrary code. Incorrect memory management in kadmind's processing of XDR data might result in denial of service or the execution of arbitrary code.
+		Incorrect processing of two-component server principals might result in impersonation attacks. An information leak in the libgssrpc library.</desc>
+	</fsa>
+	<fsa>
 		<id>977</id>
 		<date>2015-02-28</date>
 		<author>kikadf</author>
