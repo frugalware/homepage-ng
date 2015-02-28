@@ -39,6 +39,27 @@
 
 <fsas>
 	<fsa>
+		<id>974</id>
+		<date>2015-02-28</date>
+		<author>kikadf</author>
+		<package>binutils</package>
+		<vulnerable>2.24-4</vulnerable>
+		<unaffected>2.24-5rigel1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8484
+		http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8485
+		http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8501
+		http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8502
+		http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8503
+		http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8504
+		http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8737
+		http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8738</cve>
+		<desc>Michal Zalewski discovered that the srec_scan function in libbfd in GNU binutils allowed out-of-bounds reads. Michal Zalewski discovered that the setup_group function in libbfd in GNU binutils did not properly check group headers in ELF files.
+		Hanno Böck discovered that the _bfd_XXi_swap_aouthdr_in function in libbfd in GNU binutils allowed out-of-bounds writes. Hanno Böck discovered a heap-based buffer overflow in the pe_print_edata function in libbfd in GNU binutils.
+		Hanno Böck discovered a stack-based buffer overflow in the ihex_scan function in libbfd in GNU binutils. Michal Zalewski discovered a stack-based buffer overflow in the srec_scan function in libbfd in GNU binutils.
+		Alexander Cherepanov discovered multiple directory traversal vulnerabilities in GNU binutils. Alexander Cherepanov discovered the _bfd_slurp_extended_name_table function in libbfd in GNU binutils allowed invalid writes when handling extended name tables in an archive.</desc>
+	</fsa>
+	<fsa>
 		<id>973</id>
 		<date>2015-02-26</date>
 		<author>kikadf</author>
