@@ -39,6 +39,23 @@
 
 <fsas>
 	<fsa>
+		<id>980</id>
+		<date>2015-02-28</date>
+		<author>kikadf</author>
+		<package>php</package>
+		<vulnerable>5.5.18-2</vulnerable>
+		<unaffected>5.5.22-1rigel1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8142
+		http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9427
+		http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0231
+		http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0232
+		http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0235
+		http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0273</cve>
+		<desc>Brian Carpenter discovered that the PHP CGI component incorrectly handled invalid files. Stefan Esser discovered that PHP incorrectly handled unserializing objects.
+		Alex Eubanks discovered that PHP incorrectly handled EXIF data in JPEG images. </desc>
+	</fsa>
+	<fsa>
 		<id>979</id>
 		<date>2015-02-28</date>
 		<author>kikadf</author>
