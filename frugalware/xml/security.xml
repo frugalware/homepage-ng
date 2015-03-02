@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+		<id>986</id>
+		<date>2015-03-02</date>
+		<author>kikadf</author>
+		<package>cups</package>
+		<vulnerable>1.6.1-12</vulnerable>
+		<unaffected>1.6.1-13rigel1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9679</cve>
+		<desc>Peter De Wachter discovered that CUPS, the Common UNIX Printing System, did not correctly parse compressed raster files.</desc>
+	</fsa>
+	<fsa>
 		<id>985</id>
 		<date>2015-03-02</date>
 		<author>kikadf</author>
