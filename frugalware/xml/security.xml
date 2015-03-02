@@ -39,6 +39,23 @@
 
 <fsas>
 	<fsa>
+		<id>984</id>
+		<date>2015-03-02</date>
+		<author>kikadf</author>
+		<package>vlc</package>
+		<vulnerable>2.0.9-5</vulnerable>
+		<unaffected>2.0.9-6rigel2</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9626
+		http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9627
+		http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9628
+		http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9629
+		http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9630</cve>
+		<desc>The MP4 demuxer, when parsing string boxes, did not properly check the length of the box, leading to a possible integer underflow when using this length value in a call to memcpy().
+		The MP4 demuxer, when parsing string boxes, did not properly check that the conversion of the box length from 64bit integer to 32bit integer on 32bit platforms did not cause a truncation, leading to a possible buffer overflow.
+		The MP4 demuxer, when parsing string boxes, did not properly check the length of the box, leading to a possible buffer overflow. The Dirac and Schroedinger encoders did not properly check for an integer overflow on 32bit platforms, leading to a possible buffer overflow.</desc>
+	</fsa>
+	<fsa>
 		<id>983</id>
 		<date>2015-03-02</date>
 		<author>kikadf</author>
