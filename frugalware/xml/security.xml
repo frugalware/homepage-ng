@@ -39,6 +39,32 @@
 
 <fsas>
 	<fsa>
+		<id>987</id>
+		<date>2015-03-02</date>
+		<author>kikadf</author>
+		<package>freetype2</package>
+		<vulnerable>2.4.11-1</vulnerable>
+		<unaffected>2.4.11-2rigel1</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9656
+		http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9657
+		http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9658
+		http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9660
+		http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9661
+		http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9663
+		http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9664
+		http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9666
+		http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9667
+		http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9669
+		http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9670
+		http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9671
+		http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9672
+		http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9673
+		http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9674
+		http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9675</cve>
+		<desc>Mateusz Jurczyk discovered that FreeType did not correctly handle certain malformed font files.</desc>
+	</fsa>
+	<fsa>
 		<id>986</id>
 		<date>2015-03-02</date>
 		<author>kikadf</author>
