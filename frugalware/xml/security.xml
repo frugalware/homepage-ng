@@ -39,6 +39,17 @@
 
 <fsas>
 	<fsa>
+		<id>985</id>
+		<date>2015-03-02</date>
+		<author>kikadf</author>
+		<package>xorg-server</package>
+		<vulnerable>1.15.2-2</vulnerable>
+		<unaffected>1.15.2-3rigel2</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0255</cve>
+		<desc>Olivier Fourdan discovered that missing input validation in the Xserver's handling of XkbSetGeometry requests may result in an information leak or denial of service.</desc>
+	</fsa>
+	<fsa>
 		<id>984</id>
 		<date>2015-03-02</date>
 		<author>kikadf</author>
