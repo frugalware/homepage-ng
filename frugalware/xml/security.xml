@@ -39,6 +39,21 @@
 
 <fsas>
 	<fsa>
+		<id>981</id>
+		<date>2015-03-01</date>
+		<author>kikadf</author>
+		<package>postgresql</package>
+		<vulnerable>9.1.12-1</vulnerable>
+		<unaffected>9.1.15-1rigel2</unaffected>
+		<bts></bts>
+		<cve>http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8161
+		http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0241
+		http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0243
+		http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0244</cve>
+		<desc>A user with limited clearance on a table might have access to information in columns without SELECT rights on through server error messages. The function to_char() might read/write past the end of a buffer. This might crash the server when a formatting template is processed.
+		The pgcrypto module is vulnerable to stack buffer overrun that might crash the server. Emil Lenngren reported that an attacker can inject SQL commands when the synchronization between client and server is lost.</desc>
+	</fsa>
+	<fsa>
 		<id>980</id>
 		<date>2015-02-28</date>
 		<author>kikadf</author>
