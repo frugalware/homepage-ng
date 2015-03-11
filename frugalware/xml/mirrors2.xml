@@ -48,6 +48,7 @@ If you modify this file, be sure it's still valid - read /hooks/README!
 -->
 
 <mirrors>
+<!--
     <mirror>
         <id>0</id>
         <type>ftp</type>
@@ -62,6 +63,7 @@ If you modify this file, be sure it's still valid - read /hooks/README!
         <supplier_url>http://free.org/</supplier_url>
         <bandwidth>2 GBit</bandwidth>
     </mirror>
+-->
 <!--
     <mirror>
         <id>2</id>
@@ -131,12 +133,12 @@ If you modify this file, be sure it's still valid - read /hooks/README!
     <mirror>
         <id>8</id>
         <type>http</type>
-	<path>frugal/pub/frugalware</path>
+        <path>frugal/pub/frugalware</path>
         <link>frugalware.org</link>
         <country>USA</country>
         <country_code>us</country_code>
         <supplier>Go-Parts</supplier>
-       <supplier_url>http://www.go-parts.com/</supplier_url>
+        <supplier_url>http://www.go-parts.com/</supplier_url>
         <bandwidth>1 GBit</bandwidth>
     </mirror>
 <!--
