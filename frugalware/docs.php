@@ -78,20 +78,20 @@ $cont_dev = "<ul>
 </ul>";
 
 $cont = "<ul>
-    <li><a href=\"/docs/stable/index\">".gettext("Full manual")."</a>&nbsp;-&nbsp;(<a href=\"/docs/index\">".gettext("developpement version")."</a>)</li>
+    <li><a href=\"/docs/stable/index\">".gettext("Full manual")."</a>&nbsp;-&nbsp;(<a href=\"/docs/index\">".gettext("development version")."</a>)</li>
     <hr />
-    <li><a href=\"/docs/stable/install.html\">".gettext("How to install Frugalware")."</a>&nbsp;-&nbsp;(<a href=\"/docs/install.html\">".gettext("developpement version")."</a>)</li>
-    <li><a href=\"/docs/stable/upgrade.html\">".gettext("How to upgrade Frugalware")."</a>&nbsp;-&nbsp;(<a href=\"/docs/upgrade.html\">".gettext("developpement version")."</a>)</li>
-    <li><a href=\"/docs/stable/pacman-g2.html\">".gettext("How to use pacman-g2")."</a>&nbsp;-&nbsp;(<a href=\"/docs/pacman-g2.html\">".gettext("developpement version")."</a>)</li>
+    <li><a href=\"/docs/stable/install.html\">".gettext("How to install Frugalware")."</a>&nbsp;-&nbsp;(<a href=\"/docs/install.html\">".gettext("development version")."</a>)</li>
+    <li><a href=\"/docs/stable/upgrade.html\">".gettext("How to upgrade Frugalware")."</a>&nbsp;-&nbsp;(<a href=\"/docs/upgrade.html\">".gettext("development version")."</a>)</li>
+    <li><a href=\"/docs/stable/pacman-g2.html\">".gettext("How to use pacman-g2")."</a>&nbsp;-&nbsp;(<a href=\"/docs/pacman-g2.html\">".gettext("development version")."</a>)</li>
     <hr />
-    <li><a href=\"/docs/stable/mobile.html\">".gettext("Laptop generality")."</a>&nbsp;-&nbsp;(<a href=\"/docs/mobile.html\">".gettext("developpement version")."</a>)</li>
+    <li><a href=\"/docs/stable/mobile.html\">".gettext("Laptop generality")."</a>&nbsp;-&nbsp;(<a href=\"/docs/mobile.html\">".gettext("development version")."</a>)</li>
 </ul>";
 
 $cont_dev = "<ul>
     <li><a href=\"https://wiki.frugalware.org/index.php/Devel_intro\">".gettext("Developper introduction (Wiki)")."</a></li>
     <hr />
-    <li><a href=\"/docs/stable/getting-involved.html\">".gettext("How to contribute")."</a>&nbsp;-&nbsp;(<a href=\"/docs/getting-involved.html\">".gettext("developpement version")."</a>)</li>
-    <li><a href=\"/docs/stable/repos.html\">".gettext("Handling git repositories")."</a>&nbsp;-&nbsp;(<a href=\"/docs/repos.html\">".gettext("developpement version")."</a>)</li>
+    <li><a href=\"/docs/stable/getting-involved.html\">".gettext("How to contribute")."</a>&nbsp;-&nbsp;(<a href=\"/docs/getting-involved.html\">".gettext("development version")."</a>)</li>
+    <li><a href=\"/docs/stable/repos.html\">".gettext("Handling git repositories")."</a>&nbsp;-&nbsp;(<a href=\"/docs/repos.html\">".gettext("development version")."</a>)</li>
     <hr />
     <li><a href=\"https://wiki.frugalware.org/index.php/Category:D%C3%A9velopper\">".gettext("Developper informations (Wiki - French)")."</a></li>
 </ul>";
