@@ -160,7 +160,7 @@ If you modify this file, be sure it's still valid - read /hooks/README!
         <type>ftp</type>
         <type>http</type>
         <type>rsync</type>
-        <path>pub/linux/frugalware</path>
+        <path>frugalware</path>
         <link>frugalware.org</link>
         <host>frugalware.mirrors.tds.net</host>
         <country>USA</country>
