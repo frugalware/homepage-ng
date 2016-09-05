@@ -197,8 +197,8 @@ function showListNews ($post)
 
 function showGetWidget ($mode, $version, $number, $date, $id, $mirror)
 {
-    $archs = array("32", "64");
-    $devices = array("CD", "DVD");
+    $archs = array("64");
+    $devices = array("CD");
 
     if ($mode == "stable")
         $title = gettext("Stable version");
