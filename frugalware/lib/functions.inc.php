@@ -247,7 +247,7 @@ function showGetWidget ($mode, $version, $number, $date, $id, $mirror)
 
             // FTP
             if ($ftp)
-                $text .= "<a href=\"ftp://ftp".$dlpath."/frugalware-".$mode."-iso/fvbe-".$number.$flavor.$dlarch.".iso\">ftp</a>";
+                $text .= "<a href=\"ftp://ftp".$dlpath."/frugalware-".$mode."-iso/fvbe-".$number."-".$flavor.$dlarch.".iso\">ftp</a>";
 
                 // If we have both dl system, add a separator
                 if ($http)
@@ -255,7 +255,7 @@ function showGetWidget ($mode, $version, $number, $date, $id, $mirror)
 
             // HTTP
             if ($http)
-                $text .= "<a href=\"http://www".$dlpath."/frugalware-".$mode."-iso/fvbe-".$number.$flavor.$dlarch.".iso\">http</a>";
+                $text .= "<a href=\"http://www".$dlpath."/frugalware-".$mode."-iso/fvbe-".$number."-".$flavor.$dlarch.".iso\">http</a>";
 
             $text .= "
                                     </li>";
