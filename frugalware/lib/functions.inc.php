@@ -198,7 +198,7 @@ function showListNews ($post)
 function showGetWidget ($mode, $version, $number, $date, $id, $mirror)
 {
     $archs = array("64");
-    $devices = array("CD");
+    $flavors = array("basic", "gnome", "kde5");
 
     if ($mode == "stable")
         $title = gettext("Stable version");
@@ -238,20 +238,16 @@ function showGetWidget ($mode, $version, $number, $date, $id, $mirror)
                             <h6>" . $arch . "bits</h6>
                             <ul>";
 
-        // Device
-        foreach ($devices as $device)
+        // Flavors
+        foreach ($flavors as $flavor)
         {
-            if ($device == "CD")
-                $dldevice = "-basic";
-            else if ($device == "DVD")
-                $dldevice = "-full";
 
             $text .= "
-                                    <li>" . $device . " ";
+                                    <li>" . $flavor . " ";
 
             // FTP
             if ($ftp)
-                $text .= "<a href=\"ftp://ftp".$dlpath."/frugalware-".$mode."-iso/fvbe-".$number.$dldevice.$dlarch.".iso\">ftp</a>";
+                $text .= "<a href=\"ftp://ftp".$dlpath."/frugalware-".$mode."-iso/fvbe-".$number.$flavor.$dlarch.".iso\">ftp</a>";
 
                 // If we have both dl system, add a separator
                 if ($http)
@@ -259,7 +255,7 @@ function showGetWidget ($mode, $version, $number, $date, $id, $mirror)
 
             // HTTP
             if ($http)
-                $text .= "<a href=\"http://www".$dlpath."/frugalware-".$mode."-iso/fvbe-".$number.$dldevice.$dlarch.".iso\">http</a>";
+                $text .= "<a href=\"http://www".$dlpath."/frugalware-".$mode."-iso/fvbe-".$number.$flavor.$dlarch.".iso\">http</a>";
 
             $text .= "
                                     </li>";
