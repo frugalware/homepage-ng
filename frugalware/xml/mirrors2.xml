@@ -192,7 +192,7 @@ If you modify this file, be sure it's still valid - read /hooks/README!
         <link>frugalware.org</link>
         <host>mirror.math.princeton.edu</host>
         <country>USA</country>
-        <country_code>com</country_code>
+        <country_code>us</country_code>
         <supplier>Princeton University Mathematics Department</supplier>
         <supplier_url>https://www.math.princeton.edu/</supplier_url>
         <bandwidth>20 GBit</bandwidth>
