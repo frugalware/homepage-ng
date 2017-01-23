@@ -94,11 +94,11 @@ function main()
 
                         $db = new FwDB();
                         $db->doConnect($sqlhost, $sqluser, $sqlpass, "frugalware2");
-                        $query = "SELECT COUNT(id)  FROM `packages` WHERE `arch` LIKE 'i686' AND `size` != 0 AND `fwver` LIKE '".$releases[$i]->version[0]->tagData."'";
+                        $query = "SELECT COUNT(id)  FROM `packages` WHERE `arch` LIKE 'x86_64' AND `size` != 0 AND `fwver` LIKE '".$releases[$i]->version[0]->tagData."'";
                         $res = $db->doQuery($query);
                         $arr = $db->doFetchRow($res);
                         $binnum = $arr['COUNT(id)'];
-                        $query = "SELECT COUNT(id)  FROM `packages` WHERE `arch` LIKE 'i686' AND `size` = 0 AND `fwver` LIKE '".$releases[$i]->version[0]->tagData."'";
+                        $query = "SELECT COUNT(id)  FROM `packages` WHERE `arch` LIKE 'x86_64' AND `size` = 0 AND `fwver` LIKE '".$releases[$i]->version[0]->tagData."'";
                         $res = $db->doQuery($query);
                         $arr = $db->doFetchRow($res);
                         $srcnum = $arr['COUNT(id)'];
@@ -134,7 +134,6 @@ function main()
                     <td><b>".gettext("Arch")."</b></td>
                     <td>
                          <input type=\"radio\" id=\"archs\" name=\"arch\" value=\"all\">".gettext("All")."<br />
-                         <input type=\"radio\" id=\"archs\" name=\"arch\" value=\"i686\" " . ( !in_array(checkValue('arch'), array("x86_64", "ppc")) ? "checked=\"checked\" " : "") . ">i686<br />
                          <input type=\"radio\" id=\"archs\" name=\"arch\" value=\"x86_64\" " . ( checkValue('arch') == "x86_64" ? "checked=\"checked\" " : "") . ">x86_64<br />
                     </td>
                 </tr>

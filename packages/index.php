@@ -1,7 +1,7 @@
 <?php
 
 $fwversions = array('0.1', '0.2', '0.3', '0.4');
-$fwarchs = array('i686', 'x86_64', 'ppc');
+$fwarchs = array('x86_64');
 
 function bar($baz) {
 	return preg_replace('|/([a-z0-9_+-]+).*|','$1',urlencode($baz));
