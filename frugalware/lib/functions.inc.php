@@ -201,9 +201,9 @@ function showGetWidget ($mode, $version, $number, $date, $id, $mirror)
     $flavors = array("basic", "gnome", "kde5");
 
     if ($mode == "stable")
-        $title = gettext("Stable version");
+        $title = gettext("Current version");
     else if ($mode == "current")
-        $title = gettext("Development version");
+        $title = gettext("Current version");
 
     $ftp = false;
     $http = false;
@@ -228,10 +228,7 @@ function showGetWidget ($mode, $version, $number, $date, $id, $mirror)
     // Architecture
     foreach ($archs as $arch)
     {
-        if ($arch == "32")
-            $dlarch = "-i686";
-        else if ($arch == "64")
-            $dlarch = "-x86_64";
+        $dlarch = "-x86_64";
 
         $text .= "
                         <div class=\"dllist\">
