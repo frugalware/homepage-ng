@@ -1,0 +1,146 @@
+baseurl = "https://www.frugalware.org/"
+title = "Frugalware"
+languageCode = "en-us"
+DefaultContentLanguage = "en"
+HasCJKLanguage = false
+theme = "hugo-theme-frugalware"
+pygmentsStyle = "default"
+pygmentsUseClasses = true
+RSSUri = "feed.xml"
+
+[Languages]
+[Languages.en]
+weight = 1
+[Languages.fr]
+weight = 2
+[Languages.es]
+weight = 3
+[Languages.it]
+weight = 4
+
+SectionPagesMenu = "main"
+
+[Author]
+  Name = "Frugalware Linux"
+
+[Params]
+  AuthorHomepage = "https://www.frugalware.org/"
+  BottomIntroduce = "Introduce1 <br/> Introduce2"
+  Description = ""
+  Subtitle = "Let's make things frugal!"
+  GitHub = "frugalware"
+  Imglogo = "images/frugalware.png"
+  AuthorImg = "img/author.jpg"
+  DateFormat = "2006-01-02"
+  MonthFormat = "2006-01"
+  FancyBox = true
+
+  #[Params.DuoShuo]
+  #  ShortName = "coderzh"
+
+  #[Params.Disqus]
+  #  ShortName = "coderzh"
+
+  [Params.Strings]
+    Search = "Search"
+    PageNotFound = "Page not found"
+    ShowSideBar = "Show SideBar"
+    HideSideBar = "Hide Sidebar"
+    Categories = "Categories"
+    Archive = "Archive"
+    Tags = "Tags"
+    TagCloud = "Tag Cloud"
+    Rss = "RSS"
+    TableOfContents = "Table of contents"
+
+[Menu]
+  [[Menu.Main]]
+    Name = "Frugalware"
+    Weight = 1
+    [[Menu.Main]]
+      Name = "News"
+      URL = "/"
+      parent = "Frugalware"
+      Weight = 1
+    [[Menu.Frugalware]]
+      Name = "Documentation"
+      URL = "/docs"
+      Weight = 2
+    [[Menu.Frugalware]]
+      Name = "Screenshots"
+      URL = "/screenshots"
+      Weight = 3
+    [[Menu.Frugalware]]
+      Name = "Authors"
+      URL = "/authors"
+      Weight = 4
+    [[Menu.Frugalware]]
+      Name = "Press"
+      URL = "/media"
+      Weight = 5
+    [[Menu.Frugalware]]
+      Name = "News feeds"
+      URL = "/rss"
+      Weight = 6
+  [[Menu.Main]]
+    Name = "Community"
+    Weight = 2
+    [[Menu.Community]]
+      Name = "Forums"
+      URL = "https://forums.frugalware.org/"
+      Weight = 1
+    [[Menu.Community]]
+      Name = "IRC"
+      URL = "/irc"
+      Weight = 2
+    [[Menu.Community]]
+      Name = "Artwork"
+      URL = "http://www.frugalware-art.org/"
+      Weight = 3
+    [[Menu.Community]]
+      Name = "Pastebin"
+      URL = "/paste"
+      Weight = 4
+    [[Menu.Community]]
+      Name = "Mailing lists"
+      URL = "/mailman/listinfo"
+      Weight = 5
+  [[Menu.Main]]
+    Name = "Download"
+    URL = "/download"
+    Weight = 3
+  [[Menu.Main]]
+    Name = "Packages"
+    URL = "/package"
+    Weight = 4
+  [[Menu.Main]]
+    Name = "Wiki"
+    URL = "https://wiki.frugalware.org/"
+    Weight = 5
+  [[Menu.Main]]
+    Name = "Development"
+    Weight = 6
+    [[Menu.Development]]
+      Name = "Bug Tracker"
+      URL = "https://bugs.frugalware.org/"
+      Weight = 1
+    [[Menu.Development]]
+      Name = "Buildlogs"
+      URL = "/buildlogs"
+      Weight = 2
+    [[Menu.Development]]
+      Name = "Git repository"
+      URL = "http://git.frugalware.org/"
+      Weight = 3
+    [[Menu.Development]]
+      Name = "Roadmap"
+      URL = "/roadmap"
+      Weight = 4
+    [[Menu.Development]]
+      Name = "Security announcements"
+      URL = "/security"
+      Weight = 5
+    [[Menu.Development]]
+      Name = "Donations"
+      URL = "/donations"
+      Weight = 6
