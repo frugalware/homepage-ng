@@ -35,11 +35,8 @@ SectionPagesMenu = "main"
   MonthFormat = "2006-01"
   FancyBox = true
 
-  #[Params.DuoShuo]
-  #  ShortName = "coderzh"
-
-  #[Params.Disqus]
-  #  ShortName = "coderzh"
+  [Params.Disqus]
+    ShortName = "frugalware-1"
 
   [Params.Strings]
     Search = "Search"
