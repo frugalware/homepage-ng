@@ -36,6 +36,21 @@ original new!
 
 <news>
   <post>
+    <id>266</id>
+    <title>kernel bump to 4.11; nvidia nobuild</title>
+    <date>Tue, 02 May 2017 13:51:09 +0200</date>
+    <author>DeX77</author>
+    <hidden>0</hidden>
+    <content>
+      <![CDATA[
+      As of today the kernel in frugalware-current is version 4.11. As it stands now the nvidia module is - again - using some GPL only
+      functions so its impossible to provide a compiled package is it would be illegal.
+      Until nvidia provides a fixed package upstream nvidia package with the patch is marked as nobuild.
+      ]]>
+    </content>
+    <icon>development</icon>
+  </post>
+  <post>
     <id>265</id>
     <title>switch to multilib, drop of i686</title>
     <date>Wed, 09 Nov 2016 11:55:45 +0100</date>
