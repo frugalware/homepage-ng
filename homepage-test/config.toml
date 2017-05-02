@@ -25,8 +25,8 @@ SectionPagesMenu = "main"
 
 [Params]
   AuthorHomepage = "https://www.frugalware.org/"
-  BottomIntroduce = "Introduce1 <br/> Introduce2"
-  Description = ""
+  BottomIntroduce = "Whatever"
+  Description = "Frugalware Linux"
   Subtitle = "Let's make things frugal!"
   GitHub = "frugalware"
   Imglogo = "images/frugalware.png"
