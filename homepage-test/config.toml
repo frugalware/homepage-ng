@@ -34,9 +34,7 @@ SectionPagesMenu = "main"
   DateFormat = "2006-01-02"
   MonthFormat = "2006-01"
   FancyBox = true
-
-  [Params.Disqus]
-    ShortName = "frugalware-1"
+  DisqusShortName = "frugalware-1"
 
   [Params.Strings]
     Search = "Search"
