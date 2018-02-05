@@ -28,6 +28,127 @@ original new!
 
 <news>
   <post>
+	<id>266</id>
+	<title>Kernel mis à jour vers 4.11 : nvidia en nobuild</title>
+	<date>Tue, 02 May 2017 13:51:90 +0200</date>
+	<author>DeX77</author>
+	<hidden>0</hidden>
+	<content><![CDATA[
+			À partir d'aujourd'hui, le noyau est à la version 4.11. Tel qu'il
+			est disponible maintenant, le module nvidia utilise - de nouveau -
+			certaines fonctions sous licence GPL, ce qui rend impossible
+			de fournir un paquet compliqué, ce qui serait illégal. <br />
+			Jusqu'à ce que nvidia fournisse un paquet corrigé, le paquet nvidia
+			proposé par Frugalware, ainsi que le patch, restera marqué en
+			« nobuild ».
+		]]>
+	</content>
+	<icon>development</icon>
+  </post>
+  <post>
+	<id>265</id>
+	<title>Migration vers le « multilib », abandon du support x86</title>
+	<date>Wed, 09 Nov 2016 11:55:45 +0100</date>
+	<author>DeX77</author>
+	<hidden>0</hidden>
+	<content><![CDATA[
+			Après la mise à jour de la chaîne de construction vers gcc6, nous
+			avons rencontré des difficultés à reconstruire certains des plus
+			gros paquets pour l'architecture i686. Puisque tous les développeurs
+			utilisent une machine x86_64 et que le nombre d'utilisateurs de machines
+			i868 semblent assez peu important, la décision d'abandonner complètement
+			l'architecture 32 bits a été prise. <br />
+			Cela a mis en évidence la nécessité de migrer les paquets lib32-extra - 
+			principalement utilisés par Steam et wine - vers un système de construction
+			différent. crazy a réalisé une chaîne de construction complètement
+			« multilib » pour cela, ainsi qu'un script (cross32.sh) afin de pouvoir
+			fournir deux versions (x86_64 et lib32-extra) d'un même paquet.<br />
+			Ce travail a été intégré à -current hier et les deux paquets mentionnés
+			précédemment continuent à fonctionner. Si vous rencontrez des problèmes, 
+			n'hésitez pas à ouvrir un ticket sur notre bugtracker.
+			]]>
+	</content>
+	<icon>development</icon>
+  <post>
+  <post>
+	<id>264</id>
+	<title>Mise à jour de la chaîne de construction vers gcc6</title>
+	<date>Fri, 30 Sep 2016 14:48:21 +0200</date>
+	<author>DeX77</author>
+	<hidden>0</hidden>
+	<content><![CDATA[
+			Quelques semaines après la sortie de Frugalware 2.1, crazy a mis à jour
+			gcc à la version 6.2.1. Tous les développeurs ont participé, dans le
+			dépôt dédié, à la reconstruction des paquets avec la nouvelle chaine 
+			de construction. <br />
+			Hier, nous avons fusionné ce dépôt avec la branche -current. <br />
+			Si vous faites l'habituelle « pacman-g2 -Syu », il vous sera demandé 
+			de d'abord procéder à la mise à jour de pacman-g2. Ensuite, vous aurez
+			une erreur par rapport à llvm. Par conséquent, avant d'effectuer 
+			la mise à jour de pacman-g2, vous devrez supprimer llvm et le réinstaller
+			par la suite :
+			<ol>
+				<li>pacman-g2 -Rd llvm</li>
+				<li>pacman-g2 -Su</li>
+				<li>pacman-g2 -S llvm</li>
+				<li>pacman-g2 -Su</li>
+			</ol>
+		]]>
+	</content>
+	<icon>warning</icon>
+  </post>
+  <post>
+	<id>263</id>
+	<title>Frugalware 2.1 (Derowd) est disponible</title>
+	<date>Mon, 05 Sep 2016 13:51:34 +0200</date>
+	<author>DeX77</author>
+	<hidden>0</hidden>
+	<content><![CDATA[
+			L'équipe de développement de Frugalware a le plaisir de vous
+			annoncer la sortie de Frugalware 2.1, notre vingt-et-unième
+			version stable.<br />
+			Information importante : par le passé, Frugalware fournissait
+			une branche -stable et une branche -current. Cependant, du fait
+			de la réduction de notre équipe, nous manquons de main d'oeuvre
+			pour continuer à fournir une branche stable et sécurisée pendant
+			les dernières versions des paquets sur l'autre. Ainsi, nous avons
+			décider migrer tous les utilisateurs vers la branche -current.<br />
+			Pour les utilisateurs qui ne souhaitent pas effectuer cette migration, 
+			nous fournirons un cliché statique et non mis à jour de la branche
+			-current lorsque nous sortions une nouvelle version.<br />
+			Nous prévoyons également de faire paraître plus souvent de nouvelles
+			versions, afin que ce cliché soit le plus possible à jour. <br />
+			Voici quelques modifications qui ont été apportées depuis 
+			Frugalware 2.0 : <br />
+			<ul>
+				<li>Paquets mis à jour : 
+					<ul>
+						<li>Noyau Linux 4.7.2</li>
+						<li>Serveur Xorg 1.18.4</li>
+						<li>Mesa 12.0.1</li>
+						<li>KDE (Plasma) 5.7.3</li>
+						<li>GNOME 3.20.2</li>
+						<li>LibreOffice 5.2.1.2</li>
+						<li>Mozilla Firefox 48.0.2</li>
+						<li>Chromium 52.0.2743.116</li>
+					</ul>
+				</li>
+			</ul>
+			Veuillez vous référer au <a href="http://frugalware.org/download/frugalware-stable/ChangeLog.txt">journal des changements</a> pour plus d'informations.<br />
+			Nous ne fournissons plus d'images pour les architectures i686 (32 bits), mais
+			nous continuerons à fournir des paquets pour cette architecture car ils sont
+			entre autres nécessaires pour les paquets lib-extra de la branche x86_64
+			(64 bits).<br />
+			Téléchargement pour les systèmes 64 bits : consultez notre <a href="http://frugalware.org/download/frugalware-stable-iso"> liste de miroirs</a>. N'oubliez pas de vérifier
+			<a href="http://frugalware.org/download/frugalware-stable-iso/SHA1SUMS">
+			l'intégrité</a> des images avant de les graver !<br />
+			Si vous effectuez la mise à jour de Rigel (notre ancienne version stable) vers
+			Derowd, veuillez prendre connaissance de la partie « <a href="http://frugalware.org/docs/stable/upgrade"> mise à jour </a> » de notre documentation.
+			]]>
+	</content>
+	<icon>development</icon>
+  </post>
+  <post>
 	<id>262</id>
 	<title>Frugalware 2.0 (Rigel) est disponible</title>
 	<date>Mon, 16 Feb 2015 10:09:09 +0100</date>
