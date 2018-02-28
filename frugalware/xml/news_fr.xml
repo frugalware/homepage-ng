@@ -69,7 +69,7 @@ original new!
 			]]>
 	</content>
 	<icon>development</icon>
-  <post>
+  </post>
   <post>
 	<id>264</id>
 	<title>Mise à jour de la chaîne de construction vers gcc6</title>
