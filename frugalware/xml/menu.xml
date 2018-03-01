@@ -57,7 +57,7 @@
         <submenus>
             <_sublink url="https://bugs.frugalware.org">Bug Tracker</_sublink>
             <_sublink url="buildlogs">Buildlogs</_sublink>
-            <_sublink url="http://git.frugalware.org">Git repository</_sublink>
+            <_sublink url="http://github.com/frugalware">Git repository</_sublink>
             <_sublink url="roadmap">Roadmap</_sublink>
             <_sublink url="security">Security announcements</_sublink>
 <!--
