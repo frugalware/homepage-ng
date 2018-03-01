@@ -173,12 +173,7 @@ else
         case "stable":
             header('Content-Type: application/xml; charset=utf-8');
             print(file_get_contents("https://github.com/frugalware/frugalware-stable/commits/master.atom"));
-            die();
-        case "bugs":
-            header('Content-Type: application/xml; charset=utf-8');
-            //print(str_replace("index.php?do=details&amp;task_id=", "", file_get_contents("http://bugs.frugalware.org/feed.php?feed_type=rss2&project=1")));
-            print( file_get_contents( "https://bugs.frugalware.org/report/1?asc=1&format=rss" ) );
-            die();
+            die();      
         case "blogs":
             header('Content-Type: application/xml; charset=utf-8');
             print(file_get_contents("http://planet.frugalware.org/feed.php?type=atom"));

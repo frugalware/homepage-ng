@@ -61,7 +61,7 @@ $cont = "<ul>
     <li><a href=\"/docs/index\">".gettext("Full manual")."</a></li>
     <hr />
     <li><a href=\"/docs/install.html\">".gettext("How to install Frugalware")."</a></li>
-    <li><a href=\"https://bugs.frugalware.org/frugalware/frugalware-current/wikis/Post-Installation\">".gettext("Post-installation tutoriel (Wiki)")."</a></li>
+    <li><a href=\"https://github.com/frugalware/frugalware-current/wikis/Post-Installation\">".gettext("Post-installation tutoriel (Wiki)")."</a></li>
     <li><a href=\"/docs/upgrade.html\">".gettext("How to upgrade Frugalware")."</a></li>
     <li><a href=\"/docs/pacman-g2.html\">".gettext("How to use pacman-g2")."</a></li>
     <hr />
@@ -69,12 +69,12 @@ $cont = "<ul>
 </ul>";
 
 $cont_dev = "<ul>
-    <li><a href=\"https://bugs.frugalware.org/frugalware/frugalware-current/wikis/Devel_intro\">".gettext("Developper introduction (Wiki)")."</a></li>
+    <li><a href=\"https://github.com/frugalware/frugalware-current/wikis/Devel_intro\">".gettext("Developper introduction (Wiki)")."</a></li>
     <hr />
     <li><a href=\"/docs/getting-involved.html\">".gettext("How to contribute")."</a></li>
     <li><a href=\"/docs/repos.html\">".gettext("Handling git repositories")."</a></li>
     <hr />
-    <li><a href=\"https://bugs.frugalware.org/frugalware/frugalware-current/wikis/Category:D%C3%A9velopper\">".gettext("Developper informations (Wiki - French)")."</a></li>
+    <li><a href=\"https://github.com/frugalware/frugalware-current/wikis/Category:D%C3%A9velopper\">".gettext("Developper informations (Wiki - French)")."</a></li>
 </ul>";
 
 $cont = "<ul>
@@ -88,12 +88,12 @@ $cont = "<ul>
 </ul>";
 
 $cont_dev = "<ul>
-    <li><a href=\"https://bugs.frugalware.org/frugalware/frugalware-current/wikis/Devel_intro\">".gettext("Developper introduction (Wiki)")."</a></li>
+    <li><a href=\"https://github.com/frugalware/frugalware-current/wikis/Devel_intro\">".gettext("Developper introduction (Wiki)")."</a></li>
     <hr />
     <li><a href=\"/docs/stable/getting-involved.html\">".gettext("How to contribute")."</a>&nbsp;-&nbsp;(<a href=\"/docs/getting-involved.html\">".gettext("development version")."</a>)</li>
     <li><a href=\"/docs/stable/repos.html\">".gettext("Handling git repositories")."</a>&nbsp;-&nbsp;(<a href=\"/docs/repos.html\">".gettext("development version")."</a>)</li>
     <hr />
-    <li><a href=\"https://bugs.frugalware.org/frugalware/frugalware-current/wikis/Category:D%C3%A9velopper\">".gettext("Developper informations (Wiki - French)")."</a></li>
+    <li><a href=\"https://github.com/frugalware/frugalware-current/wikis/Category:D%C3%A9velopper\">".gettext("Developper informations (Wiki - French)")."</a></li>
 </ul>";
 
 print "<h2><img src=\"" . $fwng_root . "images/icons/docs.png\" />" . gettext("Online documentation") . "</h2>";
