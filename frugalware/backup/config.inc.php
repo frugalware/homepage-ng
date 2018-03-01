@@ -57,7 +57,6 @@ $menucontent .= "</div>\n";
 $menucontent .= '<a class="menu" href="' . $fwng_root . 'download">' . gettext('Get Frugalware') . "</a> | \n";
 $menucontent .= '<a class="menu" href="' . $fwng_root . 'packages">' . gettext('Packages') . "</a> | \n";
 $menucontent .= '<a class="menu" href="' . $fwng_root . 'docs">' . gettext('Documentation') . "</a> | \n";
-$menucontent .= '<a class="menu" href="http://forums.frugalware.org/">' . gettext('Discussion Forums') . "</a> | \n";
 $menucontent .= '<a class="menu" href="http://bugs.frugalware.org/">' . gettext('Bug Tracker') . "</a> | \n";
 $menucontent .= '<a class="menu" href="https://bugs.frugalware.org/frugalware/frugalware-current/wikis/home">' . gettext('Wiki') . "</a> | \n";
 
