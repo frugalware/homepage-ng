@@ -205,10 +205,6 @@ else
                     <li>× <a href=\"http://planet.frugalware.org/feed.php?type=atom&tribe_id=root-english\">" . gettext('English blogs') . "</a></li>
                     <li>× <a href=\"http://planet.frugalware.org/feed.php?type=atom&tribe_id=root-franyiais\">" . gettext('French blogs') . "</a></li>
                 </ul>
-            </ul>
-            <ul>
-                <li>× <a href=\"http://forums.frugalware.org/feed.php\">" . gettext('Forums posts') . "</a><br>
-                <em>" . gettext("Frugalware community forums") . "</em></li>
             </ul>");
 
             fwmiddlebox(gettext("Packages"),"<ul class=\"rss\">
