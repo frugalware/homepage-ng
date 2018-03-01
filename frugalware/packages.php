@@ -503,8 +503,7 @@ function pkg_from_id($id)
         if ($arr['size'] > 0)
             $content .= "<td><a href=\"/download/frugalware-" . $arr['fwver'] . "/frugalware-" . $arr['arch'] . "/" . $arr['pkgname'] . "-" . $arr['pkgver'] . "-" . $arr['arch'] . ".fpm\">" . $arr['pkgname'] . "-" . $arr['pkgver'] . "-" . $arr['arch'] . ".fpm</a></td></tr>";
         else
-            $content .= "<td><a href=\"/download/frugalware-" . $arr['fwver'] . "/source/" . $parent['group']."/".$parent['pkgname']. "/FrugalBuild\">FrugalBuild</a></td></tr>";
-        $content .= "<tr><td>" . gettext("Wiki:") . "</td><td><a href=\"http://wiki.frugalware.org/index.php/Special:Search?search=".$arr['pkgname']."\">".gettext("Related pages")."</a></td></tr>\n";
+            $content .= "<td><a href=\"/download/frugalware-" . $arr['fwver'] . "/source/" . $parent['group']."/".$parent['pkgname']. "/FrugalBuild\">FrugalBuild</a></td></tr>";        
         $content .= "<tr><td>" . gettext("Bug Tracking System:") . "</td><td><a href=\"http://bugs.frugalware.org/search?q=".$arr['pkgname']."\">" . gettext("Related open bugs") . "</a></td></tr>\n";
         $content .= "<tr><td>" . gettext("Syndicate:") . "</td><td><a href=\"/rss/packages/".($arr['fwver'] == "current" ? $arr['fwver'] : "stable")."/".$arr['arch']."/".$arr['pkgname']."\">" . gettext("RSS") . "</a></td></tr>\n";
         if ($arr['sha1sum'] != '') $content .= "<tr><td>" . gettext("SHA1 Sum:") . "</td><td>".$arr['sha1sum']."</td></tr>\n";
