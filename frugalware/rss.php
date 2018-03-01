@@ -168,11 +168,11 @@ else
 
         case "current":
             header('Content-Type: application/xml; charset=utf-8');
-            print(file_get_contents("http://git.frugalware.org/gitweb/gitweb.cgi?p=frugalware-current.git;a=rss;opt=--no-merges"));
+            print(file_get_contents("https://github.com/frugalware/frugalware-current/commits/master.atom"));
             die();
         case "stable":
             header('Content-Type: application/xml; charset=utf-8');
-            print(file_get_contents("http://git.frugalware.org/gitweb/gitweb.cgi?p=frugalware-stable.git;a=rss;opt=--no-merges"));
+            print(file_get_contents("https://github.com/frugalware/frugalware-stable/commits/master.atom"));
             die();
         case "bugs":
             header('Content-Type: application/xml; charset=utf-8');
