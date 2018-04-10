@@ -32,15 +32,18 @@
     <menu>
         <_link>Community</_link>
         <submenus>
+<!--
             <_sublink url="https://forums.frugalware.org">Forums</_sublink>
+-->
             <_sublink url="irc">IRC</_sublink>
             <_sublink></_sublink>
-            <_sublink url="http://www.frugalware-art.org/">Artwork</_sublink>
 <!--
+            <_sublink url="http://www.frugalware-art.org/">Artwork</_sublink>
+
             <_sublink url="http://planet.frugalware.org">Blogs</_sublink>
 -->
             <_sublink url="paste/">Pastebin</_sublink>
-            <_sublink url="https://frugalware.org/mailman/listinfo">Mailing lists</_sublink>
+            <_sublink url="https://groups.google.com/forum/#!forum/frugalware">Mailing lists</_sublink>
         </submenus>
     </menu>
     <menu>
@@ -55,7 +58,7 @@
     <menu>
         <_link>Development</_link>
         <submenus>
-            <_sublink url="https://bugs.frugalware.org">Bug Tracker</_sublink>
+            <_sublink url="https://github.com/frugalware/frugalware-current/issues">Bug Tracker</_sublink>
             <_sublink url="buildlogs">Buildlogs</_sublink>
             <_sublink url="http://github.com/frugalware">Git repository</_sublink>
             <_sublink url="roadmap">Roadmap</_sublink>
