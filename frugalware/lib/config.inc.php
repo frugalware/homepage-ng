@@ -44,7 +44,7 @@ $upfile = "/proc/uptime";
 # MODIFIABLE VARS
 $title = "Frugalware";
 $slogan = "Let's make things frugal!";
-$copydate = "2003-2017";
+$copydate = "2003-2018";
 $domain = 'homepage';
 $defaultMirror = "ie"; // Ireland
 
